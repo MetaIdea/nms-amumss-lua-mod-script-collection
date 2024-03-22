@@ -157,8 +157,8 @@ for i = 1, #ShipMaxUpgradeChanges do
     InventoryTable[#InventoryTable+1] =
     {
       ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"]     = "+1",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["LINE_OFFSET"] = "+1",
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"IGNORE", C},
         {"IGNORE", B},
@@ -182,7 +182,7 @@ for i = 1, #WeaponMaxUpgradeChanges do
     InventoryTable[#InventoryTable+1] =
     {
       ["PRECEDING_KEY_WORDS"] = {"WeaponInventoryMaxUpgradeSize", InvType},
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"C", C},
         {"B", B},
@@ -207,7 +207,7 @@ for i = 1, #VehicleMaxUpgradeChanges do
     InventoryTable[#InventoryTable+1] =
     {
       ["PRECEDING_KEY_WORDS"] = {"GenerationDataPerSizeType", VehicleType},
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"MinSlots",     Min},
         {"MaxSlots",     Max},

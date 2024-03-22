@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureTurnMin",             "0.5"},
                                 {"CreatureTurnMax",             "0.3"},
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FlyingSnakeData", "GcFlyingSnakeData.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CircleSpeed",           "6"},
                                 {"DefaultCircleDistance", "400"},
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PredatorProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "High"},
                             }
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Low"},
                             }
@@ -531,7 +531,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "HerbivoreProbabilityModifier", "GcCreatureRoleFrequencyModifier.xml"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureRoleFrequencyModifier", "Never"},
                             }
@@ -1031,14 +1031,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"EmissionRate", "TkEmitterFloatProperty.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FixedValue", "3"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.01"},
                             }
@@ -1051,14 +1051,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ColourMiddle", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ColourEnd", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"A", "0.1"},
                             }

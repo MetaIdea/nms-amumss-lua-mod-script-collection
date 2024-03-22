@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CreatureSmallHealth",   "400"},
                                 {"CreatureMedHealth",     "2400"},
@@ -42,13 +42,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ModelRenderData",       "TkModelRendererData.xml"},
                                 {"InteractionCameraData", "TkModelRendererData.xml"},
                             },
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LightIntensityMultiplier", "0"},
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PirateFreighterBattleNoTargetLeaderTime", "0"},
                                 {"TorchFoV",                                "70"},
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"JetpackForce",           "19"},
                                 {"JetpackBrake",           "0"},
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SettlementBuildingTimes"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Settlement_LandingZone",     "60"},
                                 {"Settlement_Bar",             "60"},
@@ -144,7 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"HandControllerValueMultiplier", "Vector3f.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "1"},
                             }
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OverspeedBrake", "0.75"},
                             }
@@ -186,7 +186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"InvSlotGradientFactorMin", "0"},
                                 {"InvSlotGradientFactor",    "0"},

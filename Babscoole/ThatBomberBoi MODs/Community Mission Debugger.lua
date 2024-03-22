@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"]  = "False",
+                            ["VALUE_MATCH"] = "False",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShowTimeToDeadline", "True"},

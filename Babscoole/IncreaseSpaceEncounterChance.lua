@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["MATH_OPERATION"]  = "*",
+                            ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"PulseEncounterChanceStandard", ChanceMultiplier}, --0.0066
                                 {"PulseEncounterChanceRed",      ChanceMultiplier}, --0.001

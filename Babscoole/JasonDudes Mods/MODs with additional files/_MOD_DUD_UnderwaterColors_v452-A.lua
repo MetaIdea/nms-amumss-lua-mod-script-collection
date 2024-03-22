@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Flags"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkMaterialFlags.xml">

@@ -359,7 +359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             -- ["SECTION_UP_SPECIAL"] = 1,
                             -- ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
-                            -- ["ADD_OPTION"]  = "ADDafterSECTION",
+                            -- ["ADD_OPTION"] = "ADDafterSECTION",
                             -- ["ADD"] =
 -- [[
           -- <Property value="GcObjectSpawnDataVariant.xml">
@@ -1378,7 +1378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1485,7 +1485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1602,7 +1602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">

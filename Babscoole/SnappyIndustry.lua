@@ -865,7 +865,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_Floor"},
-                            ["REMOVE"]  = "SECTION"
+                            ["REMOVE"] = "SECTION"
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SnapPoint_StairsTop1"},

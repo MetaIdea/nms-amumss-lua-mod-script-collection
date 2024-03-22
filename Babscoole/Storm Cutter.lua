@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-20"},
                                 {"Extreme", "-40"},

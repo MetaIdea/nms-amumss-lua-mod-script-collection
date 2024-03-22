@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "_Chest_Builders2"},
                                 {"Name", "_Chest_Builders3"},
                             },
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.01"},
                             }
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "B4Skirt"},
                                 {"Name", "SUB1B4Skirt"},
                             },
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ScaleX", "0"},
                                 {"ScaleY", "0"},

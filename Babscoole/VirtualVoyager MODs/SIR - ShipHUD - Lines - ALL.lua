@@ -227,7 +227,7 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 if NOLINES then
         local temp_table =
         {
-            ["VALUE_CHANGE_TABLE"]  =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"SpaceMapLineWidth", "0"},
                 {"SpaceMapLineBaseScale", "0"},
@@ -270,7 +270,7 @@ for i = 1, #ColorTable do
         {
             ["PRECEDING_KEY_WORDS"] = {PK},
             ["INTEGER_TO_FLOAT"] = "FORCE",
-            ["VALUE_CHANGE_TABLE"]  =
+            ["VALUE_CHANGE_TABLE"] =
             {
                 {"R",R},
                 {"G",G},

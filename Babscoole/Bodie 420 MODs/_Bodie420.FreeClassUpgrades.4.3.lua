@@ -123,11 +123,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "Costs",
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "",
-                            ["VALUE_MATCH_TYPE"]    = "",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["MATH_OPERATION"] = "*",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", COST_MULTIPLIER }
                             }

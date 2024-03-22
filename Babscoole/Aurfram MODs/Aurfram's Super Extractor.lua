@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "U_EXTRACTOR_S"},
                                 {"ID", "U_GASEXTRACTOR"},
                             },
-                            ["MATH_OPERATION"]  = "*",
+                            ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Rate",    MULTI},

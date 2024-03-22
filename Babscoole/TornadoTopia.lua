@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Effects"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="GcWeatherEffect.xml">
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="NMSString0x10.xml">
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="NMSString0x10.xml">
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="NMSString0x10.xml">
@@ -204,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="NMSString0x10.xml">

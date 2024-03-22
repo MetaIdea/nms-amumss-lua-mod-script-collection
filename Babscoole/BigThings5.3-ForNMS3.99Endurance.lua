@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "16",}
+                                {"MaxScale", "16"}
                             },
                         },
                         {
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "30",}
+                                {"MaxScale", "30"}
                             },
                         },
                         {
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.8",}
+                                {"MaxScale", "5.8"}
                             },
                         },
                         {
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.7",}
+                                {"MaxScale", "4.7"}
                             },
                         },
                         {
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.8",}
+                                {"MaxScale", "4.8"}
                             },
                         },
                         {
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.4",}
+                                {"MaxScale", "4.4"}
                             },
                         },
                         {
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                         {
@@ -83,7 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8, 10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "1",}
+                                {"MinScale", "1"}
                             },
                         },
                         {
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.3",}
+                                {"MinScale", "0.3"}
                             },
                         },
                         {
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13, 19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.9",}
+                                {"MinScale", "0.9"}
                             },
                         },
                         {
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                     }
@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "16",}
+                                -- {"MaxScale", "16"}
                             -- },
                         -- },
                         -- {
@@ -155,7 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {2},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "30",}
+                                -- {"MaxScale", "30"}
                             -- },
                         -- },
                         -- {
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.8",}
+                                -- {"MaxScale", "5.8"}
                             -- },
                         -- },
                         -- {
@@ -171,7 +171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.7",}
+                                -- {"MaxScale", "4.7"}
                             -- },
                         -- },
                         -- {
@@ -179,7 +179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.8",}
+                                -- {"MaxScale", "4.8"}
                             -- },
                         -- },
                         -- {
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.2",}
+                                -- {"MaxScale", "4.2"}
                             -- },
                         -- },
                         -- {
@@ -204,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.5",}
+                                -- {"MaxScale", "5.5"}
                             -- },
                         -- },
                         -- {
@@ -212,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {8, 10, 11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3",}
+                                -- {"MaxScale", "3"}
                             -- },
                         -- },
                         -- {
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5",}
+                                -- {"MaxScale", "5"}
                             -- },
                         -- },
                     -- }
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                         {
@@ -258,7 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -266,7 +266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {35},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -307,7 +307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                     }
@@ -321,7 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2,5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -337,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.6",}
+                                {"MaxScale", "5.6"}
                             },
                         },
                         {
@@ -345,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                         {
@@ -353,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {22, 29},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.5",}
+                                {"MinScale", "0.5"}
                             },
                         },
                         {
@@ -375,7 +375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.6",}
+                                {"MaxScale", "5.6"}
                             },
                         },
                         {
@@ -383,7 +383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -391,7 +391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -399,7 +399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -407,7 +407,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {24},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                     }
@@ -421,7 +421,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.7",}
+                                {"MaxScale", "4.7"}
                             },
                         },
                         {
@@ -429,7 +429,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2, 4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -445,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5, 7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -453,7 +453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.1",}
+                                {"MaxScale", "2.1"}
                             },
                         },
                     }
@@ -467,7 +467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "16",}
+                                {"MaxScale", "16"}
                             },
                         },
                         {
@@ -475,7 +475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "30",}
+                                {"MaxScale", "30"}
                             },
                         },
                         {
@@ -483,7 +483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.8",}
+                                {"MaxScale", "5.8"}
                             },
                         },
                         {
@@ -491,7 +491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.7",}
+                                {"MaxScale", "4.7"}
                             },
                         },
                         {
@@ -499,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.8",}
+                                {"MaxScale", "4.8"}
                             },
                         },
                         {
@@ -507,7 +507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.4",}
+                                {"MaxScale", "4.4"}
                             },
                         },
                         {
@@ -515,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -523,7 +523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8, 10, 11, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -531,7 +531,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                     }
@@ -545,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "16",}
+                                -- {"MaxScale", "16"}
                             -- },
                         -- },
                         -- {
@@ -553,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {2},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "30",}
+                                -- {"MaxScale", "30"}
                             -- },
                         -- },
                         -- {
@@ -561,7 +561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {3},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.8",}
+                                -- {"MaxScale", "5.8"}
                             -- },
                         -- },
                         -- {
@@ -569,7 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {4},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.7",}
+                                -- {"MaxScale", "4.7"}
                             -- },
                         -- },
                         -- {
@@ -577,7 +577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.8",}
+                                -- {"MaxScale", "4.8"}
                             -- },
                         -- },
                         -- {
@@ -586,7 +586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale", "4.4"},
-                                -- {"Coverage", "0.325",}
+                                -- {"Coverage", "0.325"}
                             -- },
                         -- },
                         -- {
@@ -594,7 +594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.2",}
+                                -- {"MaxScale", "4.2"}
                             -- },
                         -- },
                         -- {
@@ -602,7 +602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {8, 10, 11, 12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4",}
+                                -- {"MaxScale", "4"}
                             -- },
                         -- },
                         -- {
@@ -610,7 +610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.5",}
+                                -- {"MaxScale", "5.5"}
                             -- },
                         -- },
                         -- {
@@ -618,7 +618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"Coverage", "0.24",}
+                                -- {"Coverage", "0.24"}
                             -- },
                         -- },
                     -- }
@@ -650,7 +650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -742,7 +742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -784,7 +784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                     }
@@ -798,7 +798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -806,7 +806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -814,7 +814,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -822,7 +822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -830,7 +830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -838,7 +838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                         {
@@ -846,7 +846,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                     }
@@ -936,7 +936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -944,7 +944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -952,7 +952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -960,7 +960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.7",}
+                                {"MaxScale", "3.7"}
                             },
                         },
                         {
@@ -968,7 +968,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.8",}
+                                {"MaxScale", "4.8"}
                             },
                         },
                         {
@@ -976,7 +976,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19, 27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -984,7 +984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -992,7 +992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                         {
@@ -1000,7 +1000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.7",}
+                                {"MaxScale", "2.7"}
                             },
                         },
                         {
@@ -1008,7 +1008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                     }
@@ -1064,7 +1064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11, 17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -1081,7 +1081,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -1089,7 +1089,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                         {
@@ -1097,7 +1097,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {25},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.7",}
+                                {"MaxScale", "2.7"}
                             },
                         },
                         {
@@ -1105,7 +1105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -1113,7 +1113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                     }
@@ -1228,7 +1228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8, 9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -1244,7 +1244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -1252,7 +1252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -1260,7 +1260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                         {
@@ -1268,7 +1268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {26},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.7",}
+                                {"MaxScale", "2.7"}
                             },
                         },
                         {
@@ -1276,7 +1276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {27},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -1284,7 +1284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {28},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                     }
@@ -1307,7 +1307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2, 3, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "18",}
+                                {"MaxScale", "18"}
                             },
                         },
                         {
@@ -1315,7 +1315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "20",}
+                                {"MaxScale", "20"}
                             },
                         },
                         {
@@ -1323,7 +1323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.7",}
+                                {"MaxScale", "4.7"}
                             },
                         },
                         {
@@ -1331,7 +1331,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -1340,7 +1340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -1349,7 +1349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                         {
@@ -1357,7 +1357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -1365,7 +1365,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -1374,7 +1374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.1"},
-                                {"MaxScale", "5.15",}
+                                {"MaxScale", "5.15"}
                             },
                         },
                         {
@@ -1382,7 +1382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -1390,7 +1390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18, 22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                     }
@@ -1413,7 +1413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
-                                {"MaxScale", "7",}
+                                {"MaxScale", "7"}
                             },
                         },
                         {
@@ -1422,7 +1422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.6"},
-                                {"MaxScale", "7",}
+                                {"MaxScale", "7"}
                             },
                         },
                         {
@@ -1430,7 +1430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "2.5",}
+                                {"MinScale", "2.5"}
                             },
                         },
                         {
@@ -1438,7 +1438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.8",}
+                                {"MaxScale", "5.8"}
                             },
                         },
                         {
@@ -1446,7 +1446,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -1454,7 +1454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.7",}
+                                {"MinScale", "0.7"}
                             },
                         },
                         {
@@ -1470,7 +1470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -1478,7 +1478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {20, 22},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.1",}
+                                {"MaxScale", "4.1"}
                             },
                         },
                     }
@@ -1500,7 +1500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -1508,7 +1508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.9",}
+                                {"MaxScale", "3.9"}
                             },
                         },
                     }
@@ -1530,7 +1530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "8.4",}
+                                {"MaxScale", "8.4"}
                             },
                         },
                         {
@@ -1538,7 +1538,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "8.8",}
+                                {"MaxScale", "8.8"}
                             },
                         },
                         {
@@ -1554,7 +1554,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -1562,7 +1562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.2",}
+                                {"MaxScale", "5.2"}
                             },
                         },
                         {
@@ -1570,7 +1570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -1578,7 +1578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -1586,7 +1586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -1594,7 +1594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {17, 21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -1602,7 +1602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                     }
@@ -1624,7 +1624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.7",}
+                                {"MaxScale", "2.7"}
                             },
                         },
                         {
@@ -1632,7 +1632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.6",}
+                                {"MaxScale", "5.6"}
                             },
                         },
                         {
@@ -1648,7 +1648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -1656,7 +1656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -1664,7 +1664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -1672,7 +1672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -1680,7 +1680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.8",}
+                                {"MaxScale", "4.8"}
                             },
                         },
                         {
@@ -1688,7 +1688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -1696,7 +1696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                     }
@@ -1718,7 +1718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "8.2",}
+                                {"MaxScale", "8.2"}
                             },
                         },
                         {
@@ -1726,7 +1726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.7",}
+                                {"MaxScale", "2.7"}
                             },
                         },
                         {
@@ -1742,7 +1742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.2",}
+                                {"MaxScale", "5.2"}
                             },
                         },
                         {
@@ -1750,7 +1750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.6",}
+                                {"MaxScale", "5.6"}
                             },
                         },
                         {
@@ -1758,7 +1758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13, 15, 19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -1766,7 +1766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16, 20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.6",}
+                                {"MaxScale", "4.6"}
                             },
                         },
                     }
@@ -1788,7 +1788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.5",}
+                                {"MaxScale", "4.5"}
                             },
                         },
                         {
@@ -1796,7 +1796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.6",}
+                                {"MaxScale", "4.6"}
                             },
                         },
                         {
@@ -1812,7 +1812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -1820,7 +1820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -1828,7 +1828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -1836,7 +1836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -1844,7 +1844,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.5",}
+                                {"MaxScale", "2.5"}
                             },
                         },
                         {
@@ -1852,7 +1852,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -1860,7 +1860,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                     }
@@ -1900,7 +1900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {5},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "8",}
+                                -- {"MaxScale", "8"}
                             -- },
                         -- },
                         -- {
@@ -1908,7 +1908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.5",}
+                                -- {"MaxScale", "4.5"}
                             -- },
                         -- },
                         -- {
@@ -1925,7 +1925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3",}
+                                -- {"MaxScale", "3"}
                             -- },
                         -- },
                         -- {
@@ -1933,7 +1933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {10},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.6",}
+                                -- {"MaxScale", "3.6"}
                             -- },
                         -- },
                         -- {
@@ -1941,7 +1941,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.5",}
+                                -- {"MaxScale", "3.5"}
                             -- },
                         -- },
                         -- {
@@ -1949,7 +1949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4",}
+                                -- {"MaxScale", "4"}
                             -- },
                         -- },
                         -- {
@@ -1957,7 +1957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {13},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "2.2",}
+                                -- {"MaxScale", "2.2"}
                             -- },
                         -- },
                         -- {
@@ -1965,7 +1965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {14},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "2.5",}
+                                -- {"MaxScale", "2.5"}
                             -- },
                         -- },
                         -- {
@@ -1973,7 +1973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {15},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.2",}
+                                -- {"MaxScale", "3.2"}
                             -- },
                         -- },
                         -- {
@@ -1981,7 +1981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {17},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5",}
+                                -- {"MaxScale", "5"}
                             -- },
                         -- },
                     -- }
@@ -2055,7 +2055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -2063,7 +2063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.3",}
+                                {"MaxScale", "2.3"}
                             },
                         },
                         {
@@ -2079,7 +2079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                         {
@@ -2087,7 +2087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -2095,7 +2095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -2103,7 +2103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.5",}
+                                {"MaxScale", "3.5"}
                             },
                         },
                         {
@@ -2111,7 +2111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.4",}
+                                {"MaxScale", "2.4"}
                             },
                         },
                         {
@@ -2119,7 +2119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.5",}
+                                {"MaxScale", "2.5"}
                             },
                         },
                         {
@@ -2200,7 +2200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.3",}
+                                {"MaxScale", "2.3"}
                             },
                         },
                         {
@@ -2216,7 +2216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                         {
@@ -2224,7 +2224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.6",}
+                                {"MaxScale", "1.6"}
                             },
                         },
                         {
@@ -2232,7 +2232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -2280,7 +2280,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.1",}
+                                {"MaxScale", "3.1"}
                             },
                         },
                         {
@@ -2296,7 +2296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8, 20, 21},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -2304,7 +2304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.6",}
+                                {"MaxScale", "1.6"}
                             },
                         },
                         {
@@ -2312,7 +2312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.3",}
+                                {"MaxScale", "2.3"}
                             },
                         },
                         {
@@ -2366,7 +2366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -2391,7 +2391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.6",}
+                                {"MaxScale", "4.6"}
                             },
                         },
                         {
@@ -2424,7 +2424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                         {
@@ -2432,7 +2432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -2440,7 +2440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -2462,7 +2462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "16",}
+                                {"MaxScale", "16"}
                             },
                         },
                         {
@@ -2470,7 +2470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3, 5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -2479,7 +2479,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.3"},
-                                {"MaxScale", "3.7",}
+                                {"MaxScale", "3.7"}
                             },
                         },
                         {
@@ -2503,7 +2503,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -2520,7 +2520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -2552,7 +2552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -2560,7 +2560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -2568,7 +2568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14, 18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.3",}
+                                {"MinScale", "0.3"}
                             },
                         },
                         {
@@ -2576,7 +2576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "1.2",}
+                                {"MinScale", "1.2"}
                             },
                         },
                         {
@@ -2584,7 +2584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "1",}
+                                {"MinScale", "1"}
                             },
                         },
                     }
@@ -2598,7 +2598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "16",}
+                                -- {"MaxScale", "16"}
                             -- },
                         -- },
                         -- {
@@ -2660,7 +2660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.5",}
+                                -- {"MaxScale", "5.5"}
                             -- },
                         -- },
                         -- {
@@ -2691,7 +2691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "20",}
+                                {"MaxScale", "20"}
                             },
                         },
                         {
@@ -2699,7 +2699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "30",}
+                                {"MaxScale", "30"}
                             },
                         },
                         {
@@ -2707,7 +2707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -2715,7 +2715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -2723,7 +2723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.7",}
+                                {"MaxScale", "3.7"}
                             },
                         },
                         {
@@ -2731,7 +2731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -2739,7 +2739,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -2755,7 +2755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.5",}
+                                {"MaxScale", "4.5"}
                             },
                         },
                         {
@@ -2771,7 +2771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.9",}
+                                {"MinScale", "0.9"}
                             },
                         },
                         {
@@ -2779,7 +2779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.2",}
+                                {"MinScale", "0.2"}
                             },
                         },
                         {
@@ -2787,7 +2787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "1",}
+                                {"MinScale", "1"}
                             },
                         },
                         {
@@ -2796,7 +2796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -2804,7 +2804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale", "0.2",}
+                                {"MinScale", "0.2"}
                             },
                         },
                         {
@@ -2813,7 +2813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                     }
@@ -2827,7 +2827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {1},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "20",}
+                                -- {"MaxScale", "20"}
                             -- },
                         -- },
                         -- {
@@ -2853,7 +2853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {4, 6},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.8",}
+                                -- {"MaxScale", "3.8"}
                             -- },
                         -- },
                         -- {
@@ -2870,7 +2870,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {7},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.4",}
+                                -- {"MaxScale", "3.4"}
                             -- },
                         -- },
                         -- {
@@ -2878,7 +2878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {8},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.2",}
+                                -- {"MaxScale", "4.2"}
                             -- },
                         -- },
                         -- {
@@ -2894,7 +2894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {10},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4.5",}
+                                -- {"MaxScale", "4.5"}
                             -- },
                         -- },
                         -- {
@@ -2910,7 +2910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {13},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5",}
+                                -- {"MaxScale", "5"}
                             -- },
                         -- },
                         -- {
@@ -2918,7 +2918,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {17, 21},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3.6",}
+                                -- {"MaxScale", "3.6"}
                             -- },
                         -- },
                     -- }
@@ -2958,7 +2958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -2966,7 +2966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                     }
@@ -3082,7 +3082,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.5",}
+                                {"MaxScale", "2.5"}
                             },
                         },
                         {
@@ -3090,7 +3090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -3098,7 +3098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -3106,7 +3106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9, 10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -3114,7 +3114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.3",}
+                                {"MaxScale", "3.3"}
                             },
                         },
                         {
@@ -3122,7 +3122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12, 17, 23},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"LargeObjectCoverage",    "AlwaysPlace",}
+                                {"LargeObjectCoverage",    "AlwaysPlace"}
                             },
                         },
                     }
@@ -3187,7 +3187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -3195,7 +3195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                         {
@@ -3203,7 +3203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -3211,7 +3211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.5",}
+                                {"MaxScale", "2.5"}
                             },
                         },
                         {
@@ -3219,7 +3219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -3227,7 +3227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -3235,7 +3235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.3",}
+                                {"MaxScale", "3.3"}
                             },
                         },
                     }
@@ -3343,7 +3343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -3351,7 +3351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -3359,7 +3359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -3367,7 +3367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -3375,7 +3375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                     }
@@ -3414,7 +3414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.4",}
+                                {"MaxScale", "3.4"}
                             },
                         },
                         {
@@ -3423,7 +3423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.5"},
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -3432,7 +3432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.6"},
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -3440,7 +3440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.5",}
+                                {"MaxScale", "5.5"}
                             },
                         },
                         {
@@ -3448,7 +3448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -3456,7 +3456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -3465,7 +3465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1.2"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -3474,7 +3474,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "1"},
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                     }
@@ -3542,7 +3542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {9},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "5.5",}
+                                -- {"MaxScale", "5.5"}
                             -- },
                         -- },
                         -- {
@@ -3550,7 +3550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {10, 11},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "3",}
+                                -- {"MaxScale", "3"}
                             -- },
                         -- },
                         -- {
@@ -3558,7 +3558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["SECTION_ACTIVE"] = {12},
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
-                                -- {"MaxScale", "4",}
+                                -- {"MaxScale", "4"}
                             -- },
                         -- },
                     -- }
@@ -3572,7 +3572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1, 4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -3580,7 +3580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.1",}
+                                {"MaxScale", "3.1"}
                             },
                         },
                         {
@@ -3588,7 +3588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.8",}
+                                {"MaxScale", "3.8"}
                             },
                         },
                         {
@@ -3596,7 +3596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                     }
@@ -3685,7 +3685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.43",}
+                                {"MaxScale", "2.43"}
                             },
                         },
                         {
@@ -3718,7 +3718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.2",}
+                                {"MaxScale", "3.2"}
                             },
                         },
                         {
@@ -3726,7 +3726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.9",}
+                                {"MaxScale", "4.9"}
                             },
                         },
                         {
@@ -3734,7 +3734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.1",}
+                                {"MaxScale", "3.1"}
                             },
                         },
                         {
@@ -3742,7 +3742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.8",}
+                                {"MaxScale", "4.8"}
                             },
                         },
                         {
@@ -3750,7 +3750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.1",}
+                                {"MaxScale", "4.1"}
                             },
                         },
                         {
@@ -3758,7 +3758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.5",}
+                                {"MaxScale", "1.5"}
                             },
                         },
                         {
@@ -3766,7 +3766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -3774,7 +3774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.2",}
+                                {"MaxScale", "4.2"}
                             },
                         },
                         {
@@ -3782,7 +3782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {16},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.4",}
+                                {"MaxScale", "4.4"}
                             },
                         },
                         {
@@ -3790,7 +3790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {17},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -3798,7 +3798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.6",}
+                                {"MaxScale", "3.6"}
                             },
                         },
                         {
@@ -3806,7 +3806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {19},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.6",}
+                                {"MaxScale", "4.6"}
                             },
                         },
                         {
@@ -3814,7 +3814,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {20},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "7.6",}
+                                {"MaxScale", "7.6"}
                             },
                         },
                         {
@@ -3822,7 +3822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {37},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.4",}
+                                {"MaxScale", "2.4"}
                             },
                         },
                     }
@@ -3904,7 +3904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5, 6},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.4",}
+                                {"MaxScale", "2.4"}
                             },
                         },
                         {
@@ -3912,7 +3912,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7, 11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -3920,7 +3920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.9",}
+                                {"MaxScale", "2.9"}
                             },
                         },
                         {
@@ -3928,7 +3928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2",}
+                                {"MaxScale", "2"}
                             },
                         },
                         {
@@ -3936,7 +3936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {12, 14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.1",}
+                                {"MaxScale", "3.1"}
                             },
                         },
                         {
@@ -3944,7 +3944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13, 15},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -3969,7 +3969,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {18},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.7",}
+                                {"MaxScale", "3.7"}
                             },
                         },
                     }
@@ -4034,7 +4034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.6",}
+                                {"MaxScale", "2.6"}
                             },
                         },
                         {
@@ -4042,7 +4042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.8",}
+                                {"MaxScale", "2.8"}
                             },
                         },
                         {
@@ -4050,7 +4050,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9, 10, 13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "1.8",}
+                                {"MaxScale", "1.8"}
                             },
                         },
                         {
@@ -4058,7 +4058,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.2",}
+                                {"MaxScale", "2.2"}
                             },
                         },
                         {
@@ -4066,7 +4066,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {14},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "2.4",}
+                                {"MaxScale", "2.4"}
                             },
                         },
                     }
@@ -4080,7 +4080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {1, 2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "8.5",}
+                                {"MaxScale", "8.5"}
                             },
                         },
                         {
@@ -4088,7 +4088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "6",}
+                                {"MaxScale", "6"}
                             },
                         },
                         {
@@ -4096,7 +4096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "6.5",}
+                                {"MaxScale", "6.5"}
                             },
                         },
                         {
@@ -4104,7 +4104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5.4",}
+                                {"MaxScale", "5.4"}
                             },
                         },
                         {
@@ -4112,7 +4112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6, 8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -4120,7 +4120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3.3",}
+                                {"MaxScale", "3.3"}
                             },
                         },
                     }
@@ -4139,7 +4139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "15"},
-                                {"MaxScale", "30",}
+                                {"MaxScale", "30"}
                             },
                         },
                         {
@@ -4147,7 +4147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {4},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "7.3",}
+                                {"MaxScale", "7.3"}
                             },
                         },
                         {
@@ -4155,7 +4155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {6, 10},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4",}
+                                {"MaxScale", "4"}
                             },
                         },
                         {
@@ -4163,7 +4163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {7, 12},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "5",}
+                                {"MaxScale", "5"}
                             },
                         },
                         {
@@ -4171,7 +4171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {8},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "6",}
+                                {"MaxScale", "6"}
                             },
                         },
                         {
@@ -4179,7 +4179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {9},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "7",}
+                                {"MaxScale", "7"}
                             },
                         },
                         {
@@ -4187,7 +4187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {11},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "3",}
+                                {"MaxScale", "3"}
                             },
                         },
                         {
@@ -4195,7 +4195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {13},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxScale", "4.5",}
+                                {"MaxScale", "4.5"}
                             },
                         },
                     }

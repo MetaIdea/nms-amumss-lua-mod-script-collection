@@ -16,8 +16,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alien", "50"},
                             },

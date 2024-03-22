@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "U_BIOGENERATOR"},
                                 {"ID", "U_BATTERY_S"},
                             },
-                            ["MATH_OPERATION"]  = "*",
+                            ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Storage", 10},

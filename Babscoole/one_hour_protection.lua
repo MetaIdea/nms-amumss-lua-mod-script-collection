@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "T_COLDPROT"},
                                 {"ID", "T_HOTPROT"},
                             },
-                            ["MATH_OPERATION"]  = "*",
+                            ["MATH_OPERATION"] = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ChargeAmount",     Multiplier},

@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -87,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -288,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -337,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -386,7 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -488,7 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -583,7 +583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -639,7 +639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -709,7 +709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -772,7 +772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -831,7 +831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -916,7 +916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Gun1Ref"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1001,7 +1001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1058,7 +1058,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Turbine"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -1124,7 +1124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RefTurbineAR"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1173,7 +1173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingAnimData"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1222,7 +1222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -1318,7 +1318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_WingsK_B"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -1408,7 +1408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "AWingsL_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1434,7 +1434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "AWingsR_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1460,7 +1460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BWingsL_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1486,7 +1486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BWingsR_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1512,7 +1512,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "CWingsL_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1574,7 +1574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "CWingsR_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1636,7 +1636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FWingsL_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1662,7 +1662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FWingsR_JNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -1693,7 +1693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1773,7 +1773,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "CockpitDData"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -2060,7 +2060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingALeft"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -2140,7 +2140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingALeft"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -2219,7 +2219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2291,7 +2291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Data"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -2376,7 +2376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2448,7 +2448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Data"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -2533,7 +2533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2614,7 +2614,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2687,7 +2687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2750,7 +2750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2813,7 +2813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -2917,7 +2917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3027,7 +3027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3085,7 +3085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3136,7 +3136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3204,7 +3204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3272,7 +3272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3333,7 +3333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3395,7 +3395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "EngineBase"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -3427,7 +3427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_TopWing_A"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -3492,7 +3492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_TopWing_B"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -3568,7 +3568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_X36", "Name", "MESHLINK"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeAttributeData.xml">
@@ -3636,7 +3636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wings_B"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -3880,7 +3880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3929,7 +3929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -3978,7 +3978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -4093,7 +4093,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4169,7 +4169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4252,7 +4252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4310,7 +4310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4375,7 +4375,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4415,7 +4415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4462,7 +4462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4520,7 +4520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4585,7 +4585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4643,7 +4643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4708,7 +4708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4748,7 +4748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4795,7 +4795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "RTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4835,7 +4835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LTbodyJNT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                 <Property value="TkSceneNodeData.xml">
@@ -4973,7 +4973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_Acc_A"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5081,7 +5081,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "acc3"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
             <Property value="TkSceneNodeData.xml">
@@ -5120,7 +5120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_X4"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5207,7 +5207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_X2"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5265,7 +5265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "polySurface7"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5304,7 +5304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "polySurface8"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5351,7 +5351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingsLLeft"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
@@ -5398,7 +5398,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "polySurface1"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">

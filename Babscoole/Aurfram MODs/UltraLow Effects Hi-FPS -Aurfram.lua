@@ -343,8 +343,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["REPLACE_TYPE"]        = "RAW",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {[[    <Stage id="Shadow_0_Clear" enabled="false">]], [[    <Stage id="Shadow_0_Clear" enabled="true">]]},
                                 {[[    <Stage id="Shadow_1_Clear" enabled="false">]], [[    <Stage id="Shadow_1_Clear" enabled="true">]]},

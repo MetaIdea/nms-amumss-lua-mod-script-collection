@@ -255,7 +255,7 @@ for i = 1, #AddLoot do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_NewLoot",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"PercentageChance", Chance},
          {"ID",               LootID},

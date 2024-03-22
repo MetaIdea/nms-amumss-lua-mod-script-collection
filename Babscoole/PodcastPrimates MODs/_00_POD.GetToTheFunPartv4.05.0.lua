@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"InitialShipInventory", "GcInventoryContainer.xml", "Id", "SHIPROCKETS"},
                             ["SECTION_ACTIVE"] = 1,
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                               ["ADD"] =
 [[
           <Property value="GcInventoryElement.xml">
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory", "GcInventoryContainer.xml", "Id", "SCAN1"},
                             ["SECTION_ACTIVE"] = 1,
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
           <Property value="GcInventoryElement.xml">

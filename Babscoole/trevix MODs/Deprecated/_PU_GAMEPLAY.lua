@@ -26,27 +26,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Permadeath",            "GcDifficultySettingsData.xml"},
                                 {"PermadeathMinSettings", "GcDifficultySettingsData.xml"},
                             },
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TutorialEnabled", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DamageReceivedMultipliers"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "2.5"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "2"},
                             }
                         },
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShipMiningMul",                   "0"},
                                 {"CombatLevelBaseValueCannon",      "0.25"},
@@ -74,7 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TorchColour", "Colour.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.45"},
                                 {"G", "0.493"},
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"QuadLookTurnSpeeds", "Vector2f.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "2"},
                                 {"y", "2.2"},
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"QuadAttackTurnSpeeds", "Vector2f.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "2"},
                                 {"y", "2.4"},
@@ -131,14 +131,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Canon", "GcSentinelMechWeaponData.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ExplosionRadius", "1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"DroneControl", "GcDroneData.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DronePatrolDistanceMin", "30"},
                                 {"DronePatrolDistanceMax", "60"},
@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CoverResource", "GcSentinelResource.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HealthIncreasePerLevel", "100"},
                                 {"RepairThreshold",        "50"},
@@ -166,8 +166,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SettlementBuildingTimes"},
-                            ["MATH_OPERATION"]  = "/",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["MATH_OPERATION"] = "/",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Settlement_LandingZone",     10},
                                 {"Settlement_Bar",             10},
@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"HandControllerDeadZone", "Vector3f.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.1"},
                                 {"y", "0.1"},
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"StickData", "GcPlayerStickData.xml"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TurnFast", "1.8"},
                             }
@@ -1098,7 +1098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "F_HDRIVEBOOST2"},
                                 {"ID", "F_SCANNER"},
                             },
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TechnologyRarity", "Impossible"},
                             }

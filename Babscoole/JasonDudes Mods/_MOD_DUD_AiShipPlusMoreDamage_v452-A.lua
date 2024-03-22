@@ -555,14 +555,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG_MED"},
-                            ["VALUE_CHANGE_TABLE"]=
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Damage", "4" },
+                                {"Damage", "4"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTBIGGUN"},
-                            ["VALUE_CHANGE_TABLE"]=
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "7"},
                             }

@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "SUIT_ROCKET"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_PROTECT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SHIPDRIFT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_PULSESPEED"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "SHIPSCAN_COMBAT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -114,7 +114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_QUICKWARP"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -159,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SHIPSHIELD"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
 
@@ -178,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SHIPGUN"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SHIPLAS"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_BOLTBOUNCE"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -222,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "TERRAIN_GREN"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_RAIL_STUN"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["LINE_OFFSET"] = "+1",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "STEALTH"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -265,7 +265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_MINER"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -283,7 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SURVEY"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -301,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "MECH_PILOT"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -314,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "MECH_LASER1"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -327,7 +327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "MECH_GUN"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -340,7 +340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "MECH_MINER"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -353,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "F_HDRIVEBOOST3"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["LINE_OFFSET"] = "+1",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -366,7 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "F_SCANNER"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -379,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_PULSESPEED"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SECTION_ACTIVE"] = 2,
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -402,7 +402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_SHIPSHIELD"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SECTION_ACTIVE"] = 2,
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">

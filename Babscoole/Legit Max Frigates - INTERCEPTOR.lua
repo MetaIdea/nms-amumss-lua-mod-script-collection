@@ -313,7 +313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "EXPLORE_BAD_5"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Combat",      "0"},
                                 {"Exploration", "0"},

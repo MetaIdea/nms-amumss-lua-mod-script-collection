@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "ADD_TRIGGER",
                             ["PRECEDING_KEY_WORDS"] = {"Action"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_REWARDACTION"
                         },
                     }
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
                             ["SECTION_ACTIVE"] = {2},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_EMOTE",
                         },
                         {
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "ADD_EMOTE",
                         },
                     }

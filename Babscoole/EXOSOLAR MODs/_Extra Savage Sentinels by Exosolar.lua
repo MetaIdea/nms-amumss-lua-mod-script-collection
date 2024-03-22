@@ -111,7 +111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WalkerGunOffset2"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", -0.005},
                                 {"y", -0.007}
@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SPIDER_QUADRUPED.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             12000},
                                 {"HealthIncreasePerLevel", 25000},
@@ -262,7 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             15000},
                                 {"HealthIncreasePerLevel", 4500},
@@ -272,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONESHIELD.SCENE.MBIN"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             30000},
                                 {"HealthIncreasePerLevel", 4000},

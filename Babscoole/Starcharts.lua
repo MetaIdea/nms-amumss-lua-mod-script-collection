@@ -193,7 +193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_S2_BEACON"},
-                            ["ADD_OPTION"]     = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = table.concat(REWARD_ADDING_ALL)
                         },
                     },
@@ -204,7 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FOOD_CG_HONEY"},
-                            ["ADD_OPTION"]     = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = table.concat(GCPRODUCT_ADDING_ALL)
                         },
                     },
@@ -215,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "FOOD_R_BCREAM"},
-                            ["ADD_OPTION"]     = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = table.concat(CONSUMABLEITEM_ADDING_ALL)
                         },
                     },

@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\CUSTOMISER.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\CUSTOMISER.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\CHARCUSTOMISER.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\CHARCUSTOMISER.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -39,7 +39,7 @@ for i = 1, #DailyReward do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID, "Currency", "Specials"},
       ["SECTION_UP_SPECIAL"] = 1,
-      ["MATH_OPERATION"]  = "*",
+      ["MATH_OPERATION"] = "*",
       ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin", Multiplier},

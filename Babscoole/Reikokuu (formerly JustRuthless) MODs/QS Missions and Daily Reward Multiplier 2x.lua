@@ -64,7 +64,7 @@ for i = 1, #Quicksilver do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
       ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"PercentageChance", Chance},
         {"AmountMin"       , Min},
@@ -80,7 +80,7 @@ for i = 1, #DailyReward do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID, "Currency", "Specials"},
       ["SECTION_UP_SPECIAL"] = 1,
-      ["MATH_OPERATION"]  = "*",
+      ["MATH_OPERATION"] = "*",
       ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin", Multiplier},

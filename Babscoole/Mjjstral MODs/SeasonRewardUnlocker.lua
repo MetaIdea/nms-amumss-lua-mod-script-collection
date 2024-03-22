@@ -198,7 +198,7 @@ for i=#SEASON_TABLE, 1, -1 do
   EmoteTable[#EmoteTable+1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-        ["ADD_OPTION"]  = "ADDafterLINE",
+        ["ADD_OPTION"] = "ADDafterLINE",
         ["SEC_ADD_NAMED"] = "ADD_EMOTE",
     }
 

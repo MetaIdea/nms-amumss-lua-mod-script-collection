@@ -399,8 +399,8 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 
     local temp_table_eggtimers =
     {
-        ["REPLACE_TYPE"]        = "ALL",
-        ["VALUE_CHANGE_TABLE"]  =
+        ["REPLACE_TYPE"] = "ALL",
+        ["VALUE_CHANGE_TABLE"] =
         {
             {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
             {"PetIncubationTime",      CREATURE_INCUBATE_TIME}, --Original "86400"

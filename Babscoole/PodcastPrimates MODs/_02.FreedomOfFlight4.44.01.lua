@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight"},
                             ["INTEGER_TO_FLOAT"]    =   "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShipMinHeightForce",  "0.1"},
                             }
@@ -401,7 +401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHover"},
                             ["INTEGER_TO_FLOAT"]    =   "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ShipPlanetBrakeMinSpeed", "1"},
                                 {"ShipPlanetBrakeMaxSpeed", "25"},
@@ -410,7 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlBonusC"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "10"},
                                 {"ThrustForceMin", "0"},
@@ -420,7 +420,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlBonusB"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "20"},
                                 {"ThrustForceMin", "10"},
@@ -429,7 +429,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlBonusA"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "30"},
                                 {"ThrustForceMin", "20"},
@@ -438,7 +438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlBonusS"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForceMax", "40"},
                                 {"ThrustForceMin", "30"},

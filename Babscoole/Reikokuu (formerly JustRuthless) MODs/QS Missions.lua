@@ -55,7 +55,7 @@ for i = 1, #Quicksilver do
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
       ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"PercentageChance", Chance},
         {"AmountMin"       , Min},

@@ -1436,7 +1436,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BuildableOnPlanetBase",        "True"},
                                 {"BuildableOnSpaceBase",         "True"},
@@ -1544,7 +1544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 --{"DisableLimits",                 "True"},
                                 {"DisableBaseBuildingLimits",       "True"},
@@ -1559,7 +1559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxBuildHeight", "1024"} --ORIGINAL 64
                             }

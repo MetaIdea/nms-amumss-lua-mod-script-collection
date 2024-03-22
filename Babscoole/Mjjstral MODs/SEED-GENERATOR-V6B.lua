@@ -735,14 +735,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-                            ["SECTION_ACTIVE"]    = {2},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]               = ANIM_TEMPLATE_ALL
+                            ["SECTION_ACTIVE"] = {2},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = ANIM_TEMPLATE_ALL
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
-                            ["ADD"]                 = ACTION_TRIGGER_COMPONENT
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = ACTION_TRIGGER_COMPONENT
                         }
                     }
                 },
@@ -752,7 +752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Emotes"},
-                            ["ADD"]                 = QUICK_ACTION_BUTTON_ALL
+                            ["ADD"] = QUICK_ACTION_BUTTON_ALL
                         }
                     }
                 },
@@ -762,7 +762,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-                            ["ADD"]                 = CUSTOM_GENERICREWARD_ALL
+                            ["ADD"] = CUSTOM_GENERICREWARD_ALL
                         }
                     }
                 },

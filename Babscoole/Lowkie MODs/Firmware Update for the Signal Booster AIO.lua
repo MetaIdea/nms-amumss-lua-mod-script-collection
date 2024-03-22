@@ -234,7 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetReward",
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "GetMissionMessageReward",
                         },
                     },
@@ -267,8 +267,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StatDefinitionTable"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["LINE_OFFSET"]  = -1,
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["LINE_OFFSET"] = -1,
                             ["SEC_ADD_NAMED"] = "GetStatDef",
                         },
                     },
@@ -291,8 +291,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"GroupName", "GLOBAL_STATS"},
                             ["TrackedStats"] = {"StatDefinitionTable"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["LINE_OFFSET"]  = -2,
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["LINE_OFFSET"] = -2,
                             ["SEC_ADD_NAMED"] = "GetStatGp",
                         },
                     },
@@ -513,7 +513,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Missions"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"]  = -1,
+                            ["LINE_OFFSET"] = -1,
                             ["SEC_ADD_NAMED"] = "GetMission",
                         },
                         {
@@ -523,7 +523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetRewardModifyStat",
                             ["SPECIAL_KEY_WORDS"] = {"ModifyType", "Set"},
-                            ["LINE_OFFSET"]  = "+3",
+                            ["LINE_OFFSET"] = "+3",
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetRewardMissionSeeded",
                         },
@@ -582,7 +582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Missions"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"]  = -1,
+                            ["LINE_OFFSET"] = -1,
                             ["SEC_ADD_NAMED"] = "GetProxyMission",
                         },
                         {
@@ -685,7 +685,7 @@ for i=1, #ScanDataTable, 1 do
   ScanEventTablePlanet[#ScanEventTablePlanet+1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Events"},
-        ["ADD_OPTION"]  = "ADDafterSECTION",
+        ["ADD_OPTION"] = "ADDafterSECTION",
         ["LINE_OFFSET"] = "-1",
         ["SEC_ADD_NAMED"] = "GetCustomScanEvent",
     }

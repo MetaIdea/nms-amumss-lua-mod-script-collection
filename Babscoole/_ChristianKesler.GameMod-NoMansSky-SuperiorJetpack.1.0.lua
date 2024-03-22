@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpaceJetpackDrainRate",                 "0.1"},
                                 {"MaxFallSpeed",                          "16"},
                                 {"GroundWalkSpeed",                       "2.2"},
-                                {"GroundRunSpeed",                        "6",}
+                                {"GroundRunSpeed",                        "6"}
                             }
                         },
                         {

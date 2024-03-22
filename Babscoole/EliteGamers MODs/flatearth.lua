@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CloudHeightMin", "50"},
                                 {"CloudHeightMax", "100"},
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CloudHeightMin", "50"},
                                 {"CloudHeightMax", "100"},

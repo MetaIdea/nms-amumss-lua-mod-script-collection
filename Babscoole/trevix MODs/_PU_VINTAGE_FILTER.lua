@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "TEXTURES/LUT/FILTERS/DEFAULT.DDS"},
                             }

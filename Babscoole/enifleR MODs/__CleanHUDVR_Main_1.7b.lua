@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["REPLACE_TYPE"] = "RAW",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {
                                     [[      <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />]],

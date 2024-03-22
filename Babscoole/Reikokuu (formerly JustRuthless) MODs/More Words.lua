@@ -810,7 +810,7 @@ for i = 1, #WordChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddWord",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"AlienRace",             Race},
          {"UseCategory",           UseCategory},
@@ -842,7 +842,7 @@ for i = 1, #NewWordChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_NewReward",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",        NewWordID},
          {"AlienRace", Race},
@@ -859,7 +859,7 @@ for i = 1, #NewWordChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddWord",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"AlienRace",             Race},
          {"UseCategory",           UseCategory},
@@ -890,7 +890,7 @@ for i = 1, #PlaqueChanges do
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddReward",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Value", WordID},
       }
@@ -921,7 +921,7 @@ for i = 1, #MonolithChanges do
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_AddReward",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Value", WordID},
       }

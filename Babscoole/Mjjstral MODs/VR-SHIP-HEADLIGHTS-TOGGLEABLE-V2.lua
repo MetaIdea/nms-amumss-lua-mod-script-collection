@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "_PlayerCharacter_Mesh"},
-                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">

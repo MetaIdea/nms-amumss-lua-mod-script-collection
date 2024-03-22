@@ -110,7 +110,7 @@ if SHIPCHOICE == "Alien" then
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
       ["LINE_OFFSET"] = "+1",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "10"},
       }
@@ -120,7 +120,7 @@ if SHIPCHOICE == "Alien" then
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
       ["LINE_OFFSET"] = "+2",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "20"},
       }
@@ -130,7 +130,7 @@ if SHIPCHOICE == "Alien" then
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
       ["LINE_OFFSET"] = "+3",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "50"},
       }
@@ -140,7 +140,7 @@ if SHIPCHOICE == "Alien" then
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
       ["LINE_OFFSET"] = "+4",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "100"},
       }

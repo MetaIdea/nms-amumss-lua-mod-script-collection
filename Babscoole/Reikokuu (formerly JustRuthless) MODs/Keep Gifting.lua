@@ -152,7 +152,7 @@ for i = 1, #CostChanges do
     {
       ["SEC_EDIT"] = "ADD_COST",
       ["SPECIAL_KEY_WORDS"] = {"Cost" ,"GcCostProduct.xml"},
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",     CostID},
          {"Amount", Amount},
@@ -162,7 +162,7 @@ for i = 1, #CostChanges do
     CostTable[#CostTable+1] =
     {
       ["SEC_EDIT"] = "ADD_COST",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",                       NewID},
          {"RemoveOptionIfCantAfford", Remove},
@@ -191,7 +191,7 @@ for i = 1, #RewardChanges do
     RewardTable[#RewardTable+1] =
     {
       ["SEC_EDIT"] = "ADD_REWARD",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Id",        NewID},
          {"AlienRace", Race},
@@ -233,7 +233,7 @@ for i = 1, #OptionChanges do
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SEC_EDIT"] = "ADD_PUZZLE",
-      ["VALUE_CHANGE_TABLE"]  =
+      ["VALUE_CHANGE_TABLE"] =
       {
          {"Cost",     NewCost},
          {"Value",    Reward},

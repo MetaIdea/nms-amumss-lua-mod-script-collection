@@ -425,7 +425,7 @@ QUICK_ACTION_MENU =
             </Property>
 ]]
     },
-    ["HARVEST"] = {["TITLE"] = "Harvest All",["ICON"]  = "TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.PLANTGREEN.DDS",["ANIM"]  = "HARVEST",
+    ["HARVEST"] = {["TITLE"]="Harvest All",["ICON"]="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.PLANTGREEN.DDS",["ANIM"]="HARVEST",
         ["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
@@ -1424,7 +1424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
                             ["SECTION_ACTIVE"]    = {2},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = ANIMS
                         },
                         {
@@ -1444,12 +1444,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_KNEES"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = NEW_EMOTES_ALL
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Title", "Toggle Backpack"},
-                            ["REPLACE_TYPE"]  = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RidingAnimationName", ""},

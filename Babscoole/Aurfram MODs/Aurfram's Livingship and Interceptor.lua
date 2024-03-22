@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN"},
                             ["SECTION_ACTIVE"] = {2,3},
-                            ["ADD_OPTION"]  = "ADDafterSECTION", 
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
         <Property value="GcAISpaceshipModelData.xml">

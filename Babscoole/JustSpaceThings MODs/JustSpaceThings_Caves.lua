@@ -122,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION", 
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
       <Property value="GcObjectSpawnData.xml">

@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CT"] =
             {
                 {
-                    ["MBIN_FS"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT.SCENE.MBIN",
+                    ["MBIN_FS"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT.SCENE.MBIN",
                     ["EXML_CT"] =
                     {
                         {
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FS"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\COCKPITCHAIR.SCENE.MBIN",
+                    ["MBIN_FS"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\COCKPITCHAIR.SCENE.MBIN",
                     ["EXML_CT"] =
                     {
                         {

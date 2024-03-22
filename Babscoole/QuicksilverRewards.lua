@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_ABAND_NAN"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION", 
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C", "List", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"List"},
-                            ["ADD_OPTION"]  = "ADDafterLINE", 
+                            ["ADD_OPTION"] = "ADDafterLINE", 
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C", "List", "GcRewardTableItemList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"List"},
-                            ["ADD_OPTION"]  = "ADDafterLINE", 
+                            ["ADD_OPTION"] = "ADDafterLINE", 
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">

@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpaceJetpackDrainRate",                 "0.1"},
                                 {"MaxFallSpeed",                          "32"},
                                 {"GroundWalkSpeed", "2.2"},
-                                {"GroundRunSpeed", "10",}
+                                {"GroundRunSpeed", "10"}
                             }
                         },
                         {
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterUnarmedCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterRunCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterCombatCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -288,7 +288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterMiningCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -357,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterIndoorCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -426,7 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterAbandCombatCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -495,7 +495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterAbandCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -564,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterNexusCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -633,7 +633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterAirborneCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -702,7 +702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterMeleeBoostCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -771,7 +771,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterRocketBootsCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -839,7 +839,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterRocketBootsChargeCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -908,7 +908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterFallingCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -977,7 +977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterAirborneCombatCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -1046,7 +1046,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterSpaceCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -1115,7 +1115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterSteepSlopeCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -1184,7 +1184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterUnderwaterCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -1253,7 +1253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterUnderwaterCombatCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
@@ -1322,7 +1322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CharacterUnderwaterJetpackCam"},
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["VALUE_CHANGE_TABLE"] =
                             {  
                                 {"MinSpeed",                      "4"},
                                 {"SpeedRange",                    "20"},
