@@ -481,7 +481,7 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v452-B.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v452-C.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.52",
@@ -2057,7 +2057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunStrength",          "0.4"},
                                 {"SunSize",              "0.002"},
                                 {"SpaceFogPlanetMax",    "0.7"},
-                                {"NebulaCloudStrength1", "0"},
+                                {"NebulaCloudStrength1", "0.55"},
                             }
                         },
                         {
@@ -2067,7 +2067,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunStrength",              "0.8"},
                                 {"SpaceFogMax",              "0.9"},
                                 {"SpaceFogPlanetMax",        "0.7"},
-                                {"NebulaDistortionStrength", "0.3"},
+                                {"NebulaSeed",               "200"},
+                                {"NebulaDistortionStrength", "0.25"},
                             }
                         },
                     }

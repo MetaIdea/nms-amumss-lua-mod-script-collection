@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_SpaceshipFlight_v452-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_SpaceshipFlight_v452-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.52",
@@ -39,13 +39,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MiniWarpHUDArrowAttractAngle",             "3"},
                                 {"MiniWarpHUDArrowAttractAngleStation",      "3"},
                                 {"MiniWarpHUDArrowAttractAngleDense",        "3"},
+                                {"PowerSettingEngineMul",                    "1.15"},
+                                {"PowerSettingEngineDamper",                 "0.75"},
+                                {"PowerSettingWeaponMul",                    "1.1"},
+                                {"PowerSettingWeaponDamper",                 "0.75"},
+                                {"PowerSettingShieldMul",                    "1.15"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "20"},
+                                {"ThrustForce",       "30"},
                                 {"Falloff",           "0.6"},
                                 {"BoostThrustForce",  "80"},
                                 {"BoostFalloff",      "0.4"},
@@ -63,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "13"},
+                                {"ThrustForce",       "15"},
                                 {"MinSpeed",          "0.01"},
                                 {"Falloff",           "0.4"},
                                 {"BoostThrustForce",  "52"},
@@ -81,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "20"},
+                                {"ThrustForce",       "30"},
                                 {"MaxSpeed",          "180"},
                                 {"MinSpeed",          "10"},
                                 {"Falloff",           "0.6"},
@@ -102,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "13"},
+                                {"ThrustForce",       "15"},
                                 {"MaxSpeed",          "105"},
                                 {"Falloff",           "0.4"},
                                 {"BoostThrustForce",  "52"},
@@ -216,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "8"},
+                                {"ThrustForce",       "10"},
                                 {"MinSpeed",          "0.01"},
                                 {"Falloff",           "0.3"},
                                 {"BoostThrustForce",  "16"},
@@ -257,7 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "8"},
+                                {"ThrustForce",       "10"},
                                 {"MaxSpeed",          "110"},
                                 {"Falloff",           "0.3"},
                                 {"BoostThrustForce",  "16"},
@@ -276,7 +281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHover", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "20"},
+                                {"ThrustForce",       "25"},
                                 {"Falloff",           "0.6"},
                                 {"BoostThrustForce",  "80"},
                                 {"BoostMaxSpeed",     "1200"},
@@ -297,7 +302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHover", "PlanetEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",        "13"},
+                                {"ThrustForce",        "15"},
                                 {"MaxSpeed",           "125"},
                                 {"MinSpeed",           "0.01"},
                                 {"Falloff",            "0.4"},
@@ -322,7 +327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHover", "CombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "20"},
+                                {"ThrustForce",       "25"},
                                 {"MaxSpeed",          "180"},
                                 {"MinSpeed",          "10"},
                                 {"Falloff",           "0.6"},
@@ -344,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlHover", "AtmosCombatEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ThrustForce",       "13"},
+                                {"ThrustForce",       "15"},
                                 {"MaxSpeed",          "105"},
                                 {"Falloff",           "0.4"},
                                 {"BoostThrustForce",   "52"},

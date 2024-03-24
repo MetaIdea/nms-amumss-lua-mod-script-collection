@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v452-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v452-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.52",
@@ -681,11 +681,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"TurretRange",                      "2500"},
+                                {"TurretLaserAbortDistance",         "1500"},
                                 {"TurretShootPauseTime",             "2"},
                                 {"TurretBurstCount",                 "20"},
                                 {"TurretBurstTime",                  "0.2"},
-                                {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
-                                {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
+                                {"TurretMaxYawTurnSpeedDegPerSec",   "360"},
+                                {"TurretMaxPitchTurnSpeedDegPerSec", "180"},
                                 {"TurretAngle",                      "360"},
                                 {"TurretDispersionAngle",            "0"},
                             },
@@ -699,19 +701,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GunType",                          "Projectile"},
-                                {"LaserEffectId",                    "AI_FREIGHTER"},
-                                {"LaserMuzzleFlashId",               "AITURRETLASER"},
-                                {"ProjectileId",                     "FREIGHTGUN"},
-                                {"ProjectileMuzzleFlashId",          "TURRETGUN"},
-                                {"TurretLaserShootTime",             "3"},
-                                {"TurretLaserMoveSpeed",             "50"},
-                                {"TurretLaserChargeTime",            "0.5"},
+                                {"TurretRange",                      "2500"},
+                                {"TurretLaserShootTime",             "2"},
+                                {"TurretLaserMoveSpeed",             "5"},
+                                {"TurretLaserChargeTime",            "0"},
+                                {"TurretLaserAbortDistance",         "1500"},
                                 {"TurretShootPauseTime",             "2"},
-                                {"TurretBurstCount",                 "20"},
-                                {"TurretBurstTime",                  "0.2"},
-                                {"TurretMaxYawTurnSpeedDegPerSec",   "180"},
-                                {"TurretMaxPitchTurnSpeedDegPerSec", "90"},
+                                {"TurretBurstCount",                 "1"},
+                                {"TurretBurstTime",                  "0.15"},
+                                {"TurretMaxYawTurnSpeedDegPerSec",   "360"},
+                                {"TurretMaxPitchTurnSpeedDegPerSec", "180"},
                                 {"TurretAngle",                      "360"},
                                 {"TurretDispersionAngle",            "0"},
                             },

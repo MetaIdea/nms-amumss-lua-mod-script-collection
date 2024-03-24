@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v452-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v452-B.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
 ["NMS_VERSION"]             = "4.52",
@@ -186,6 +186,40 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpecialVehicleMouseRecentreTime", "5"},
                                 {"UnderwaterCameraSurfaceOffset",   "5"},
                                 {"MechCameraArmShootOffsetY",       "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"WarpSettings", "GcCameraWarpSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"OffsetZFrequency_1", "0.5"},
+                                {"OffsetZFrequency_2", "0.7"},
+                                {"OffsetZBias",        "-4"},
+                                {"OffsetZRange",       "3"},
+                                {"OffsetYFrequency_1", "0.4"},
+                                {"OffsetYFrequency_2", "0.6"},
+                                {"OffsetYRange",       "2"},
+                                {"OffsetXFrequency",   "0.2"},
+                                {"OffsetXRange",       "4.5"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FreighterWarpSettings", "GcCameraWarpSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"OffsetZBias",  "-30"},
+                                {"OffsetZRange", "90"},
+                                {"OffsetYRange", "300"},
+                                {"OffsetXRange", "400"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PirateFreighterWarpSettings", "GcCameraWarpSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"OffsetZBias",  "-45"},
+                                {"OffsetZRange", "90"},
+                                {"OffsetXRange", "400"},
                             }
                         },
                     }
