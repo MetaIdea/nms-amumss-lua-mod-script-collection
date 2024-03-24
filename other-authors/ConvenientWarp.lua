@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'ConvenientWarp.pak',
 	MOD_AUTHOR			= 'InfiniteSource',
-	NMS_VERSION			= '4.34',
+	NMS_VERSION			= '4.52',
 	MOD_DESCRIPTION		= [[
 							Increases the base warp distance just enough to get you close to the core ]],
 	MODIFICATIONS 		= {{
