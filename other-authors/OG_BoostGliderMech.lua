@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "OG_BoostGliderMechAI.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "v4.34.0.1 ",
+["NMS_VERSION"]				= "ORBITAL 4.6 ",
 ["MOD_DESCRIPTION"]			= "Mech will stay aloft longer, Camera Tweaks, etc",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] 			= 

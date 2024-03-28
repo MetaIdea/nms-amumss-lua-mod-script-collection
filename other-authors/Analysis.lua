@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Analysis.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "v4.25.0.1",
+["NMS_VERSION"]				= "ORBITAL 4.6",
 ["MOD_DESCRIPTION"]			= "Target scanning trigger time mimimized",
 ["MODIFICATIONS"] 			= 
 	{

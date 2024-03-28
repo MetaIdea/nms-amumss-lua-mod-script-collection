@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "ITEMS+FUNC"
-METADATA_NMS_VERSION    = "452_SEC"
+METADATA_NMS_VERSION    = "460"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for gameplay items and other functionality. Modifies files in METADATA\\REALITY."
 
 

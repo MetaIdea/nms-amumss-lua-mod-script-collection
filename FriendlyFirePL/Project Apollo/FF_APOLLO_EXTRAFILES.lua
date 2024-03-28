@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "FILES"
-METADATA_NMS_VERSION    = "448"
+METADATA_NMS_VERSION    = "460"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for generating extra files (trails, bobbleheads, objects). Adds new files into the MODELS directory."
 
 

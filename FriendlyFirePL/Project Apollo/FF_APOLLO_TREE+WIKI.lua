@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "TREE+WIKI"
-METADATA_NMS_VERSION    = "452_SEC"
+METADATA_NMS_VERSION    = "460"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for research tree and Catalogue and Guide section. Modifies files in METADATA\\REALITY."
 
 

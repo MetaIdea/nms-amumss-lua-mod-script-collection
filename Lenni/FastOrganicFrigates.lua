@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"]	=  
+							["SKW"]	=  
 							{  
 								{"MissionID", "BIO_FRIG", "MissionTitles", "GcNumberedTextList.xml"},
 								{"MissionID", "BIO_FRIG", "MissionSubtitles", "GcNumberedTextList.xml"},

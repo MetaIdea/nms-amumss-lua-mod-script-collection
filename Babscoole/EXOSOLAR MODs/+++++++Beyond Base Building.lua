@@ -42,6 +42,30 @@ CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default f
 -------- enable/disable features end --------
 ---------------------------------------------
 
+-------- variable settings begins -----------
+---------------------------------------------
+Multiplier = 1
+SolarRate = Multiplier      --Original 50
+SolarStorage = 0            --Original 0
+BioRate = Multiplier        --Original 50
+BioStorage = 180000         --Original 180000
+BatteryRate = 0             --Original 0
+BatteryStorage = Multiplier --Original 50000
+EMAnywhere = "Power"        --Power, None for EMAnywhere
+EMRate = 1                  --Original 1 (C=175, B=220, A=250, S=300
+EMLimit = 0                 --0
+MineralStorage = Multiplier --360000
+MineralRate = Multiplier    --100
+MineralLimit = 0            --0
+GasStorage = Multiplier     --360000
+GasRate = Multiplier        --100
+GasLimit = 0                --0
+SiloStorage = 1440000       --Original 1440000
+SiloLimit = 0               --0
+FreighterRate = 999999      --10000
+ParagonDistance = 100000    --1000
+-------- variable settings end --------------
+---------------------------------------------
 
 ------------ GUIF section begins ------------
 ---------------------------------------------
@@ -58,7 +82,49 @@ print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
 FREIGHTERROOMS_ON_PLANETBASE = GUIF({false, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = N.  Press ENTER for default value.]]},10)
 print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
 
+InputMultiplier = {Multiplier,
+[[
+    Choose a multiplier for Storage and Rates:
+    1 - Vanilla
+    2 - 2x   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    3 - 5x   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    4 - 10x  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    Default = 1 | Current = >> ]] .. (Multiplier) .. [[ <<
+]]}
 
+while Multiplier do
+  Multiplier = GUIF(InputMultiplier,10)
+
+  local minChoice = 1
+  local maxChoice = 4
+
+  if Multiplier < minChoice or Multiplier > maxChoice then
+    print("         >>> ["..Multiplier.."] is NOT a valid choice.  Must be a number between "..minChoice.."-"..maxChoice..".  Please retry! <<<")
+  else
+    break
+  end
+end
+
+if Multiplier == 1 then
+  Multiplier = 1
+  EMRate = 1
+  SiloStorage = 1440000
+elseif Multiplier == 2 then
+  Multiplier = 2
+  EMRate = 500
+  SiloStorage = 2880000
+elseif Multiplier == 3 then
+  Multiplier = 5
+  EMRate = 1000
+  SiloStorage = 7200000
+elseif Multiplier == 4 then
+  Multiplier = 10
+  EMRate = 2500
+  SiloStorage = 9999999
+end
+
+EMAnywhere = GUIF({false, [[Do you want to enable EMAnywhere (EM Generators do not need a hotspot and produce 250 power) ?  Default = N.  Press ENTER for default value.]]},10)
+print("EMAnywhere = "..tostring(EMAnywhere))
 ------------- GUIF section ends -------------
 ---------------------------------------------
 
@@ -177,10 +243,10 @@ if O2_ATMO_HARVESTERS_ANYWHERE then
 end
 
 -- Re-add planters and Pots after Endurance update
-PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3"}
+PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3", "PLANTPOT4"}
 
 -- Re-add Misc on freighters after Endurance update
-MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE"}
+MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE", "BUILDLANDINGPAD", "S_LANDINGZONE"}
 
 -- Plant in any biome
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
@@ -235,7 +301,8 @@ CUSTOM_BUILDCOUNT_LIMITS =
         {"BUILDSIGNAL",       0,                6,                0,                    0},        -- Signal Booster
         {"BUILDBEACON",       0,                6,                0,                    0},        -- Save Beacon
         {"BUILDSAVE",         0,                6,                0,                    0},        -- Save Point
-        {"MESSAGE",           0,                3,                0,                    0},        -- Communications Station
+        {"MESSAGE",           0,                2,                0,                    0},        -- Communications Station
+        {"MESSAGEMODULE",     0,                1,                0,                    0},        -- Message Module
         {"BLD_DATASIGN",      0,                0,                0,                    0},        -- Data Display Unit
         {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
         {"SPAWNER_BALL",      0,                0,                0,                    0},        -- Sphere Creator
@@ -282,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.52",
+    ["NMS_VERSION"]   = "4.62",
     ["MODIFICATIONS"] =
     {
         {
@@ -302,6 +369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CanScale",          "True"},
                                 {"CanChangeColour",   "True"},
                                 {"CanChangeMaterial", "True"},
+                                {"IsPlaceable",       "True"},
                             },
                         },
                         {
@@ -346,6 +414,124 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"IsDecoration", "True"},
                             },
+                        },
+                        {--Needed to avoid tutorial softlock
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"ID", "T_WALL"},
+                                {"ID", "T_FLOOR"},
+                                {"ID", "T_ROOF6"},
+                                {"ID", "T_DOOR1"},
+                                {"ID", "T_ARCH"},
+                                {"ID", "T_ROOF_C"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BuildableOnPlanet", "False"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_SOLAR_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Rate",                         "@*"..SolarRate},
+                                {"Storage",                      SolarStorage},
+                                {"DependsOnEnvironment",         "DayNight"},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_BIOGENERATOR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DependentRate",                "@*"..BioRate},
+                                {"Storage",                      BioStorage},
+                                {"BuildableOnSpaceBase",         "False"},
+                                {"BuildableOnFreighter",         "False"},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_BATTERY_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"Rate",                         BatteryRate},
+                                {"Storage",                      "@*"..BatteryStorage},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DependsOnHotspots",            EMAnywhere},
+                                {"Rate",                         EMRate},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"RegionLimit",                  EMLimit},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_EXTRACTOR_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Storage",                      "@*"..MineralStorage},
+                                {"Rate",                         "@*"..MineralRate},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"RegionLimit",                  MineralLimit},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_GASEXTRACTOR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Storage",                      "@*"..GasStorage},
+                                {"Rate",                         "@*"..GasRate},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"RegionLimit",                  GasLimit},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_SILO_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Storage",                      SiloStorage},
+                                {"BuildableOnPlanet",            "False"},
+                                {"BuildableOnPlanetWithProduct", "False"},
+                                {"PlanetBaseLimit",              SiloLimit},
+                            }
+                        },
+                        {--Increase paragon device distance
+                            ["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ConnectionDistance",ParagonDistance},
+                            }
+                        },
+                        {--Increase power provided by freighter
+                            ["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Rate", FreighterRate},
+                            }
+                        },
+                        {--Fix bug with bulkhead doors
+                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"IsPlaceable", "False"},
+                            }
+                        },
+                        {--Fix bug with interior freighter walls
+                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"IsPlaceable", "False"},
+                            }
                         },
                     },
                 },
@@ -528,7 +714,7 @@ if ALL_PARTS_ON_FREIGHTER then
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
-                ["LINE_OFFSET"]= "+0",
+                ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -551,7 +737,7 @@ end
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", BASE_CONTAINERID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
-                ["LINE_OFFSET"]= "+0",
+                ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -877,7 +1063,7 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
         ["PRECEDING_KEY_WORDS"] = {"Groups"},
-        ["LINE_OFFSET"]= "+0",
+        ["ADD_OPTION"] = "ADDafterLINE",
         ["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -907,7 +1093,7 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
         ["PRECEDING_KEY_WORDS"] = {"Groups"},
-        ["LINE_OFFSET"]= "+0",
+        ["ADD_OPTION"] = "ADDafterLINE",
         ["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -939,7 +1125,7 @@ if FREIGHTERROOMS_ON_PLANETBASE then
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE[i]},
             ["PRECEDING_KEY_WORDS"] = {"Groups"},
-            ["LINE_OFFSET"]= "+0",
+            ["ADD_OPTION"] = "ADDafterLINE",
             ["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -964,4 +1150,27 @@ if FREIGHTERROOMS_ON_PLANETBASE then
 ]]
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_subadd
+end
+
+if EMAnywhere then
+
+    local temp_table_emanywhere =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"DependsOnHotspots", "None"},
+        }
+    }
+        Change_Table_Array[#Change_Table_Array + 1] = temp_table_emanywhere
+else        
+    local temp_table_emanywhere =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"DependsOnHotspots", "Power"},
+        }
+    }
+        Change_Table_Array[#Change_Table_Array + 1] = temp_table_emanywhere
 end

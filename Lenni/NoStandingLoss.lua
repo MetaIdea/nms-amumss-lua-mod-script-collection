@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["FSKWG"]  = {
+							["SKW"]  = {
 								{"Id", "KILLED_CIV"},
 								{"Id", "STD_DEC_EXP"},
 								{"Id", "STD_DEC_TRA"},

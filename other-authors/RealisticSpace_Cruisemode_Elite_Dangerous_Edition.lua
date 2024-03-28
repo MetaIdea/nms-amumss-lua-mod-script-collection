@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_Cruisemode_ED.pak",
 ["MOD_DESCRIPTION"]		= "Realistic Space Combat, Elite Dangerous Edition, integrated cruise mode, combined with Gumsk's AlienTech",
-["MOD_AUTHOR"]			= "ChristianWidjaya","Gumsk","1800PETMEDS",
+["MOD_AUTHOR"]			= "ChristianWidjaya",
 ["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {

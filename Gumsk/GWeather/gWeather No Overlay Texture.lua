@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather No Overlay"
 ModNameSub = "Texture"
 BaseDescription = "Uses texture replacement to get rid of hazard overlays"
-GameVersion = "4462"
+GameVersion = "462"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

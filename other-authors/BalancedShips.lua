@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_BalancedShips.pak",
 ["MOD_DESCRIPTION"]		= "Changes class spawn rate, classes balancing",
-["MOD_AUTHOR"]			= "ChristianWidjaya", "1800PETMEDS",
+["MOD_AUTHOR"]			= "ChristianWidjaya",
 ["NMS_VERSION"]			= "261",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {

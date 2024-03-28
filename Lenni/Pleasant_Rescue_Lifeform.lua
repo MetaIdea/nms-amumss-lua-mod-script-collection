@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["FSKWG"]  = {
+							["SKW"]  = {
 								{"MissionID", "MPREP_ANALYSE_1"},
 								{"MissionID", "MPREP_ANALYSE_2"},
 								{"MissionID", "MPREP_ANALYSE_3"},
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Percent",	MissionSuccessChance},  --original : 50
+								{"Percent",	MissionSuccessChance},
 							},
 						},	
 					},

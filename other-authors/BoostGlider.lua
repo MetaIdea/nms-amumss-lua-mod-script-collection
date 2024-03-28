@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "BoostGlider.pak",
 ["MOD_AUTHOR"]		= "OTBP",
-["NMS_VERSION"]		= "v4.25.0.1",
+["NMS_VERSION"]		= "ORBITAL 4.6",
 ["MOD_DESCRIPTION"]	= "Walk, Run, Swim, Jet:Range, Height, Landing, Melee, Force, Speed, Refill, More..",
 ["MODIFICATIONS"]	=
 	{

@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Custom Binoc Panels-"..COLORNAME..".pak",
 ["MOD_AUTHOR"]              = "Babscoole & Exosolar",
-["NMS_VERSION"]             = "4.52",
+["NMS_VERSION"]             = "4.62",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -138,6 +138,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"PositionX", "154"},
                             }
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_PANEL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PositionY",       "29.4"},
+                                {"Height",          "220"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","SURVEY_LEFT"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
+                        },
+                        {
+                            ["SEC_EDIT"] = "ADD_PANEL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PositionY",       "28"},
+                                {"Height",          "320"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","MISSURVEY_LEFT"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_PANEL",
                         },
                     }
                 },
