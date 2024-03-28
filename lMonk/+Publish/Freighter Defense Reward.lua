@@ -5,7 +5,7 @@ local mod_desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-local mod_version = '1.45'
+local mod_version = '1.46'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'

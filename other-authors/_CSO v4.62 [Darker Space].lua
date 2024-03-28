@@ -40,7 +40,7 @@ COLOR_MODIFICATIONS_TABLE =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v4.50 [Darker Space].pak", 
+	["MOD_FILENAME"]	= "_CSO v4.62 [Darker Space].pak", 
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "3.03",		-- NMS version when first scripted
 	["MOD_DESCRIPTION"]	= "This mod keeps the original space color palette but makes it darker.",

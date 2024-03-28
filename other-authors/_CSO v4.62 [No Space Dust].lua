@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v4.50 [No Space Dust].pak",
+	["MOD_FILENAME"]	= "_CSO v4.62 [No Space Dust].pak",
 	["MOD_DESCRIPTION"]	= "No more space dust.",
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "2.61.1",		-- NMS version when first scripted

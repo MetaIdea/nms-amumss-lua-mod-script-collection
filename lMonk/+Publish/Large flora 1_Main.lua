@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
 local mod_desc = [[
   Utilizes the SCENE files' descriptive name and path to match 'tags'
-  from scale_tags table to each scene, then multiples the tags' values with the
-  properties in object_spawn_prop table.
+  from solar_modifiers table to each scene, then multiples the tags' values
+  with the properties in object_spawn_prop table.
 
   Multiple modifiers in the same scene path are averaged:
   - Example:
@@ -12,12 +12,12 @@ local mod_desc = [[
 
   - The correct tag can match anything from any scene files across all
    biomes (MODEL), to a single instance of one scene (VOLCANO).
-  - scale_tags.biomes are modifiers for specific source files. They can match more
-   than one source: LUSH will be applied to ALL lush biomes, and LUSHBUBBLE
-   applied to the one source with the matching name, overwriting LUSH.
-  - The biome-specific modifiers are added to -or replace scale_tags.global table
-   and are averaged with it.
-  - Adding u=true makes a tag unique - Other matches will be ignored, unless the
+  - solar_modifiers.biomes are modifiers for specific source files.
+   They can match more than one source: LUSH will be applied to ALL lush biomes,
+   and LUSHBUBBLE applied to the one source with the matching name, overwriting LUSH.
+  - The biome-specific modifiers are added to -or replace solar_modifiers.global_flora
+   table and are averaged with it.
+  - Adding o=true makes a tag an override - Other matches will be ignored, unless the
    the tag is overwritten by a biome tag.
   - A tag with the single modifier {i=true} causes the scene to be ignored.
   - Other properties of GcObjectSpawnData.xml can be modded by adding a property's
@@ -84,7 +84,7 @@ local solar_modifiers = {
 		{
 			biotg = 'LUSHROOMB',
 			flora = {
-				SHROOMSINGL	= {n=1.8,	x=2.85,	u=true}
+				SHROOMSINGL	= {n=1.8,	x=2.85,	o=true}
 			}
 		},
 		{
@@ -94,7 +94,7 @@ local solar_modifiers = {
 			}
 		},
 		{
-			biotg = 'RADIOBIGPROPS',
+			biotg = 'RADIOBIG',
 			flora = {
 				ROCK		= {n=1.1,	x=1.3,	c=0.95}
 			}
@@ -106,28 +106,18 @@ local solar_modifiers = {
 			}
 		},
 		{
-			biotg = 'TOXICBIGPROPS',
-			flora = {
-				HUGETOXIC	= {n=0.7,	x=1.05,	c=0.84}
-			}
-		},
-		{
-			biotg = 'HUGESCORCHED',
-			flora = {
-				HUGESPIRE	= {n=0.9,	x=0.95,	c=0.8}
-			},
-			flags = {
-				-- HUGESPIRE	= {ds=true},
-				MEDIUMSPIRE	= {dv=true}
-			}
-		},
-		{
-			biotg = 'SCORCHBIGPROPS',
+			biotg = 'SCORCHED',
 			flora = {
 				HUGESPIRE	= {n=0.9,	x=0.95,	c=0.8}
 			},
 			flags = {
 				MEDIUMSPIRE	= {dv=true}
+			}
+		},
+		{
+			biotg = 'TOXIC',
+			flora = {
+				HUGETOXIC	= {n=0.7,	x=0.96,	c=0.78}
 			}
 		},
 		{
@@ -140,15 +130,15 @@ local solar_modifiers = {
 		{
 			biotg = 'ROCKY',
 			flora = {-- less -and smaller rocks on rocky biomes
-				FACEBLEND	= {n=0.8,	x=0.84,	c=0.76,	u=true},
-				TOXICGRASS	= {x=1.9,	c=0.4},
+				FACEBLEND	= {n=0.8,	x=0.84,	c=0.76,	o=true},
+				TOXICGRASS	= {x=1.9,			c=1.05},
 			}
 		},
 		{
 			biotg = 'SWAMP',
 			flora = {
-				GROVELARGEF	= {n=1.05,	x=1.55,	c=1.05,	u=true},
-				GROVELARGE	= {n=0.8,	x=-0.7, c=0.82},
+				GROVELARGEF	= {n=1.05,	x=1.55,	c=1.02,	u=true,	o=true},
+				GROVELARGE	= {n=0.8,	x=-0.7, c=0.82,	u=true},
 				HQTREE		= {n=1.15,	x=2.5,	c=0.9},
 				FERN		= {n=1.5,	x=2.1},
 				FLOWER		= {n=1.4,	x=1.8, 	w=0.94}
@@ -166,15 +156,6 @@ local solar_modifiers = {
 			biotg = 'WEIRD',
 			flora = {
 				WEIRD		= {f=2.5,	l=2.0},
-			}
-		},
-		{
-			biotg = 'LEVELONE',
-			flora = {
-				DEBRIS		= {c=0, 	u=true},
-				CRATE		= {c=0, 	u=true},
-				UNDERGROUND	= {c=0.1, 	u=true},
-				WORDSTONE	= {c=0.33}
 			}
 		},
 		{
@@ -210,7 +191,6 @@ local solar_modifiers = {
 		LARGE		= {n=1.2,	x=1.6,	c=0.92},
 		MEDIUM		= {n=1.05,	x=0.95},
 		SMALL		= {n=0.95,	x=0.8},
-		FIENDEGG	= {c=0.4},
 
 	--- global lod multiplier
 		SCENE		= {l=1.25},
@@ -445,29 +425,36 @@ function spawn_data:averages()
 end
 --	copy scales to results in order to bypass averaging
 function spawn_data:copyRes(tag)
-	tag.u = nil
+	tag.o = nil
 	for k, d in pairs(tag) do
 		self.res[k] = d
 	end
 end
 
 -- find all tags for a single spawn and return their average
--- u=true tag marks unique values not to be averaged with others
--- i=true tag mark ignore. results are deleted and the spawn will be skipped
+-- o=true tag marks an override, values will not to be averaged with others
+-- i=true tag marks ignored. results are deleted and the spawn will be unchanged
 function spawn_data:averageScales(spawn, worktags)
 	-- Generate the modifiers and counters tables for each spawn
-	self.mods = {}
-	self.res  = {}
+	self.mods	= {}
+	self.res	= {}
+	self.ultra	= nil
 	for k,_ in pairs(self.calcs) do
 		self.mods[k] = {v=0, i=0}
 		self.res[k]  = -1 -- (-1 == empty)
 	end
 	for key, tag in pairs(worktags) do
 		if spawn:find(key) then
+			-- process special flags first
 			if tag.i then
 				self.res = nil
 				return
-			elseif tag.u then
+			end
+			if tag.u then
+				self.ultra = true
+				tag.u = nil
+			end
+			if tag.o then
 				self:copyRes(tag)
 				return
 			end
@@ -526,32 +513,33 @@ for _,mbin in pairs(source_mbins) do
 				if HasRes('x') then spn.MaxScale		  = spn.MaxScale * spawn_data.res.x end
 				if HasRes('w') then spn.ShearWindStrength = spn.ShearWindStrength * spawn_data.res.w end
 
-				if spn.QualityVariants then
-				--	loop thourgh GcObjectSpawnDataVariant objects
-					for _,var in ipairs(spn.QualityVariants) do
-						if HasRes('d') then
-							var.FlatDensity  = var.FlatDensity	* spawn_data.res.d
-							var.SlopeDensity = var.SlopeDensity	+ (spawn_data.res.d * 0.2)
-						end
-						if HasRes('f') then
-							var.FadeOutStartDistance = var.FadeOutStartDistance * spawn_data.res.f
-							var.FadeOutEndDistance	 = var.FadeOutStartDistance + 20
-						end
-						if HasRes('c') then var.Coverage = var.Coverage * spawn_data.res.c end
-
-						lod = HasRes('l') and spawn_data.res.l or 1.2
-						var.LodDistances[2].value = var.LodDistances[2].value * lod
-						var.LodDistances[3].value = var.LodDistances[3].value * lod
-						var.LodDistances[4].value = var.LodDistances[4].value * lod
-						var.LodDistances[5].value = var.LodDistances[5].value * lod
-
-						if HasRes('r') then
-							var.MaxRegionRadius = var.MaxRegionRadius + spawn_data.res.r
-						else
-							mr = tonumber(var.MaxRegionRadius)
-							var.MaxRegionRadius = var.MaxRegionRadius + ((mr < 15 and mr > 6) and 1 or 4)
-						end
+				--loop thourgh GcObjectSpawnDataVariant objects
+				for _,qvr in ipairs(spn.QualityVariants) do
+					if HasRes('d') then
+						qvr.FlatDensity  = qvr.FlatDensity * spawn_data.res.d
+						qvr.SlopeDensity = qvr.FlatDensity * 1.1
 					end
+					if HasRes('f') then
+						qvr.FadeOutStartDistance = qvr.FadeOutStartDistance * spawn_data.res.f
+						qvr.FadeOutEndDistance	 = qvr.FadeOutStartDistance + 20
+					end
+					if HasRes('c') then qvr.Coverage = qvr.Coverage * spawn_data.res.c end
+
+					lod = HasRes('l') and spawn_data.res.l or 1.25 -- overwritten by SCENE global
+					for i=2, #qvr.LodDistances do
+						qvr.LodDistances[i].value = qvr.LodDistances[i].value * lod
+					end
+					if HasRes('r') then
+						qvr.MaxRegionRadius = qvr.MaxRegionRadius + spawn_data.res.r
+					else
+						mr = tonumber(qvr.MaxRegionRadius)
+						qvr.MaxRegionRadius = qvr.MaxRegionRadius + ((mr < 15 and mr > 6) and 1 or 4)
+					end
+				end
+				-- add ultra quality (duplicates standard)
+				if #spn.QualityVariants == 1 and spawn_data.ultra then
+					spn.QualityVariants[2]    = MergeTables({spn.QualityVariants[1]})
+					spn.QualityVariants[2].ID = 'ULTRA'
 				end
 				--	loop through boolean flags
 				spawn_data:getFlags(spn.Resource.Filename, workflags)
@@ -570,7 +558,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak', -- set by the batch name
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.62',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	ADD_FILES			= ADF

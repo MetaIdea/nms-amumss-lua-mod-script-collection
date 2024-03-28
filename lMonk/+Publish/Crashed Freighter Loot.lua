@@ -3,7 +3,7 @@ local mod_desc = [[
   Update crashed freighters loot with a better selection
   including a small chance for freighter upgrades
 ]]---------------------------------------------------------
-local mod_version = '1.16'
+local mod_version = '1.17'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'

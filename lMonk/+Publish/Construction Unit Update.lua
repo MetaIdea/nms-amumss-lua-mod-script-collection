@@ -9,7 +9,7 @@ local mod_desc = [[
   - A new tree is inserted as 1st in its ItemTrees by default. Inesrting [after] work
    only on existing trees, not newly-added, and needs the 'after' Title.
 ]]------------------------------------------------------------------------------
-local version = 1.32
+local version = 1.33
 
 local unlockable_items = {
 	{--	construction unit: alloy base parts

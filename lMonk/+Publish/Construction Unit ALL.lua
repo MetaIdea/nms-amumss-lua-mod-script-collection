@@ -4,7 +4,7 @@ local mod_desc = [[
   * Does not include expedition rewards and quicksilver shop items.
 ]]----------------------------------------------------------------------
 
-local version = 1.32
+local version = 1.33
 
 local base_tree = {
 	{--	FreighterBase
