@@ -5,12 +5,11 @@ MODEL_LIST = {-- All entries must have all three keys ("ID","PATH,"SCALE"). "ID"
 	{
 		["PATH"] = "MODELS/SPACE/SPACESTATION/SPACESTATION.SCENE.MBIN",
 		["SCALE"] = 1,
-		["CHANCE"] = 0.1,
 	},
 	{
 		["PATH"] = "MODELS/SPACE/SPACESTATION/SPACESTATIONTYPEB.SCENE.MBIN",
 		["SCALE"] = 1,
-		["CHANCE"] = 0.9,
+		["WEIGHT"] = 9,
 	},
 }
 
@@ -95,7 +94,13 @@ function generate_descriptor_file(FINAL_MODEL_NAME,MODEL_LIST)
 	
 	--Insert each descriptor option  
 	for i, option in ipairs(MODEL_LIST) do
-		table.insert(text_table,[[        <Property value="TkResourceDescriptorData.xml">
+		if option["WEIGHT"] == nil then
+			option["WEIGHT"] = 1
+		end
+		
+		for w = 1, option["WEIGHT"] do
+			w = w
+			table.insert(text_table,[[        <Property value="TkResourceDescriptorData.xml">
           <Property name="Id" value="]]..TYPE_ID..i..[[" />
           <Property name="Name" value="]]..TYPE_ID..i..[[" />
           <Property name="ReferencePaths">
@@ -103,10 +108,11 @@ function generate_descriptor_file(FINAL_MODEL_NAME,MODEL_LIST)
               <Property name="Value" value="]]..option["PATH"]..[[" />
             </Property>
           </Property>
-          <Property name="Chance" value="]]..option["CHANCE"]..[[" />
+          <Property name="Chance" value="0" />
           <Property name="Children" />
         </Property>
 ]])
+		end
 	end
   --Insert the footer of the descriptor
   table.insert(text_table,[[      </Property>
@@ -155,3 +161,4 @@ NMS_MOD_DEFINITION_CONTAINER =
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
 --IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
 --DON'T ADD ANYTHING PASS THIS POINT HERE
+

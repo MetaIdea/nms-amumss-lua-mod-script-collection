@@ -55,6 +55,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SEC_EDIT"] = "ADD_NODE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name",     "SpacestationPortal"},
+                                {"NameHash", "3101089239"},
+                                {"TransX",   "-32"},
+                                {"TransY",   "-.05"},
+                                {"TransZ",   "-58"},
+                                {"RotY",     "59"},
+                                {"ScaleX",   "0.50"},
+                                {"ScaleY",   "0.50"},
+                                {"ScaleZ",   "0.50"},
+                                {"Value",    "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_SpaceStation_"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_NODE",
+                        },
+                    },
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -80,8 +108,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Name", "PillarsB"},
                                 {"Name", "PillarsA"},
-                                -- {"Name", "REFPortalMistVFX"},
-                                -- {"Name", "REFPortalCloudsVFX"},
+                                {"Name", "REFPortalMistVFX"},
+                                {"Name", "REFPortalCloudsVFX"},
                                 {"Name", "_Clump1"},
                                 {"Name", "_Clump2"},
                                 {"Name", "_Clump3"},
