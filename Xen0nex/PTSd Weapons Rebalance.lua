@@ -46,6 +46,10 @@ ParalysisMortarCharge =						8					--20
 MechStunWeaponCharge =						30					--400			(Amount of charge for the recharge bar of the Mech Sentinel Right Arm which stuns)
 MechStunWeaponChargeMultiplier =			0.1					--1				How effective substances are at recharging the charge bar
 
+--How many shots you get before needing to recharge with Carbon/Condensed Carbon/Oxygen
+NeutronCannonCharge =						250					--500			(Amount of charge for the recharge bar of the Neutron Cannon)
+NeutronCannonChargeMultiplier =				0.5					--1				How effective substances are at recharging the charge bar
+
 --Misc Weapon adjustments
 MechStunWeaponRadius =						4					--5				AOE Radius of minotaur stun weapon shots
 MechStunWeaponDuration =					3					--3				Duration in seconds of minotaur stun weapon effect
@@ -122,7 +126,7 @@ NeutronUpgradeSpeedMult =					1.0					--				Multiplier to apply to the bonus pro
 BoltcasterDMG =								1.458				--180			(1,350 theoretical burst DPS)
 PulseSpitterDMG =							1.106				--96 x 2		(1,536 theoretical burst DPS)
 ScatterBlasterDMG =							2.0					--150 x 8		(2,640 theoretical burst DPS)
-NeutronCannonDMG =							1.554				--120			(Uncharged)
+NeutronCannonDMG =							1.554*0.7				--120			(Uncharged)
 BlazeJavelinDMG =							2.071				--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
 PlasmaLauncherDMG =							1.45				--500
 GeologyCannonDMG =							1.21				--1000
@@ -2293,6 +2297,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"ChargeAmount", MechStunWeaponCharge},
 					{"ChargeMultiplier", MechStunWeaponChargeMultiplier}
+				}
+			},
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID", "CANNON"},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				--["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeAmount", NeutronCannonCharge},
+					{"ChargeMultiplier", NeutronCannonChargeMultiplier}
 				}
 			},
 			{

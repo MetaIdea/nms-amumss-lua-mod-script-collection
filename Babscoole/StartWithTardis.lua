@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "StartWithTardis.pak",
 ["MOD_AUTHOR"]    = "RemingtonRyder",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.47",
+["NMS_VERSION"]   = "4.62",
 ["MODIFICATIONS"] =
     {
         {

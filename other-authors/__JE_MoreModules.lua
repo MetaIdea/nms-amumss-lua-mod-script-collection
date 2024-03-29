@@ -2,21 +2,21 @@ Author = "Jaggid Edje"
 ModName = "MoreModules"
 ModNameSub = "__JE"
 BaseDescription = "Purchase more of an available Upgrade module from vendors Based on System Economy"
-GameVersion = "4.36"
--- ModVersion = "v4.36"
+GameVersion = "4.62"
+-- ModVersion = "v4.62"
 FileSource1 = "METADATA\REALITY\DEFAULTREALITY.MBIN"
 
 -- Original game settings in comments
-minPoor = 2            -- 1
-maxPoor = 2            -- 1
-minAverage = 3        -- 1
-maxAverage = 3        -- 1
-minWealthy = 4        -- 1
-maxWealthy = 4        -- 1
-minPirate = 4        -- 1
-maxPirate = 4        -- 1
+minPoor = 3            -- 1
+maxPoor = 5            -- 1
+minAverage = 4        -- 1
+maxAverage = 6        -- 1
+minWealthy = 5        -- 1
+maxWealthy = 7        -- 1
+minPirate = 3        -- 1
+maxPirate = 7        -- 1
 minPirateTech = 3    -- 1
-maxPirateTech = 6    -- 3
+maxPirateTech = 7    -- 3
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

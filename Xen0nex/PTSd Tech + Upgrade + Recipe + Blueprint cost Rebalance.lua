@@ -1,21 +1,21 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_52"
+GameVersion = "4_62"
 --Currently balancing around Survival Mode
 
---Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
+--Procedural Upgrade Module multipliers to the "BaseValue" cost
 UpgradeCMult	=		1.2							--Vanilla cost is	60		This multiplies the vanilla "BaseValue", affecting both purchase and selling prices.	E.G. "1.2" means you sell them for 1.2x the vanilla price, and shops charge 1.2x more
-UpgradeCBaseMarkup	=	0.2							--0.2						This replaces the vanilla "BuyBaseMarkup", affecting how much shops mark up the price ON TOP OF the actual value. E.G. "0.2" means shops charge BaseValue + (0.2 x BaseValue) for total price of 1.2x BaseValue. 
+UpgradeCBaseMarkup	=	0.35						--0.2						This replaces the vanilla "BuyBaseMarkup", affecting how much shops mark up the price ON TOP OF the actual value. E.G. "0.2" means shops charge BaseValue + (0.2 x BaseValue) for total price of 1.2x BaseValue. 
 UpgradeBMult	=		2.4							--Vanilla cost is	140
-UpgradeBBaseMarkup	=	0.2							--0.2
+UpgradeBBaseMarkup	=	0.35						--0.2
 UpgradeAMult	=		1.8							--Vanilla cost is	300
-UpgradeABaseMarkup	=	1							--0.2
+UpgradeABaseMarkup	=	1.25						--0.2
 UpgradeSMult	=		2.4							--Vanilla cost is	480
-UpgradeSBaseMarkup	=	2							--0.2
+UpgradeSBaseMarkup	=	2.375						--0.2
 UpgradeXMult	=		1.8							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
 UpgradeXBaseMarkup	=	0.2							--0.2
 
 RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects the buying AND selling price when using space station trade terminals or item vendors on outlaw stations ON TOP OF other values, e.g. a value of 0.5 means space stations charge & pay +50% more than other sources
-SusUpgradeSpaceStationMarkup = 1					--0						For suspicious upgrades in Outlaw stations.	Untested.
+SusUpgradeSpaceStationMarkup = 1					--0						For suspicious upgrades in Outlaw stations.
 
 UpgradeScannerMult	=	1							--Additional multiplier to apply to BaseValue of all Scanner upgrades (including X class) on top of the above multipliers
 
@@ -112,7 +112,7 @@ TechAdjustments =
 		"UT_QUICKWARP",	0.2				--Emergency Warp						240 Nanites
 	},
 	{
-		"UT_LAUNCHCHARGE",	0.4			--Launch System Recharger				460 Nanites
+		"UT_LAUNCHCHARGE",	0.4			--Launch Auto-Charger					460 Nanites
 	},
 	{
 		"EXO_RECHARGE",	1.5				--Icarus Fuel System					120 Nanites
@@ -166,13 +166,13 @@ TechAdjustments =
 		"STEALTH",	1.5					--Cloaking Device 
 	},
 	{
-		"HDRIVEBOOST1",	1.5				--Cadmium Drive							80 Nanites
+		"HDRIVEBOOST1",	2.25			--Cadmium Drive							80 Nanites
 	},
 	{
-		"HDRIVEBOOST2",	1.5				--Emeril Drive							120 Nanites
+		"HDRIVEBOOST2",	2.25			--Emeril Drive							120 Nanites
 	},
 	{
-		"HDRIVEBOOST3",	1.2				--Indium Drive							200 Nanites
+		"HDRIVEBOOST3",	2				--Indium Drive							200 Nanites
 	},
 	{
 		"CARGOSHIELD",	0.5				--Cargo Scan Deflector					240 Nanites
@@ -309,19 +309,19 @@ AddItems =
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Hull Fracture			
-		"SHIPSLOT_DMG1",		"TECH_COMP",		4,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG1",		"TECH_COMP",		6,		"Product",		--Wiring Loom
 	},
 	{	--Rusted Circuits			
 		"SHIPSLOT_DMG2",		"RED2",				320,	"Substance",	--Cadmium
 	},
 	{	--Shattered Bulwark			
-		"SHIPSLOT_DMG3",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG3",		"TECH_COMP",		6,		"Product",		--Wiring Loom
 	},
 	{	--Shattered Bulwark			
 		"SHIPSLOT_DMG3",		"BLUE2",			160,	"Substance",	--Indium
 	},
 	{	--Radiation Leak			
-		"SHIPSLOT_DMG4",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG4",		"TECH_COMP",		4,		"Product",		--Wiring Loom
 	},
 	{	--Damaged Gears			
 		"SHIPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		--Recycled Circuitry
@@ -342,7 +342,7 @@ AddItems =
 		"SHIPSLOT_DMG8",		"GREEN2",			240,	"Substance",	--Emeril
 	},
 	{	--Corroded Tanks			
-		"SHIPSLOT_DMG9",		"TECH_COMP",		2,		"Product",		--Wiring Loom
+		"SHIPSLOT_DMG9",		"TECH_COMP",		6,		"Product",		--Wiring Loom
 	},
 	{	--Corroded Tanks			
 		"SHIPSLOT_DMG9",		"RED2",				320,	"Substance",	--Cadmium
@@ -391,7 +391,7 @@ AddItems =
 ReplaceItems =
 {		--Tech ID				Item ID			# of Items	Item Type		Replaced Item
 	{	--Launch Auto-Charger 
-		"UT_LAUNCHCHARGE",		"ATLAS_SEED_6",		1,		"Product",		"ANTIMATTER",
+		"UT_LAUNCHCHARGE",		"ATLAS_SEED_7",		1,		"Product",		"ANTIMATTER",
 	},
 	{	--Warp Core Resonator 
 		"F_HDRIVEBOOST1",		"ATLAS_SEED_3",		1,		"Product",		"AM_HOUSING",
@@ -427,7 +427,7 @@ ReplaceItems =
 		"SUIT_ROCKET",			"ATLAS_SEED_4",		4,		"Product",		"LAUNCHSUB",
 	},
 	{	--Icarus Fuel System 
-		"EXO_RECHARGE",			"BLUE2",			50,		"Substance",	"MICROCHIP",
+		"EXO_RECHARGE",			"ATLAS_SEED_6",		1,		"Product",		"MICROCHIP",
 	},
 	{	--Radar Amplifier 
 		"VEHICLE_SCAN1",		"ATLAS_SEED_2",		1,		"Product",		"POWERCELL",
@@ -448,10 +448,10 @@ ReplaceItems =
 		"EXO_PROT_TOX",			"BLUE2",			50,		"Substance",	"NANOTUBES",
 	},
 	{	--High-Power Sonar 
-		"SUB_BINOCS",			"BLUE2",			50,		"Substance",	"LAND1",
+		"SUB_BINOCS",			"ATLAS_SEED_6",		1,		"Product",		"LAND1",
 	},
 	{	--Minotaur Radar Array 
-		"MECH_SCAN",			"BLUE2",			75,		"Substance",	"STELLAR2",
+		"MECH_SCAN",			"ATLAS_SEED_6",		1,		"Product",		"STELLAR2",
 	},
 	{	--Personal Refiner Mk 2 
 		"SUIT_REFINER2",		"GREEN2",			120,	"Substance",	"CAVE2",
@@ -473,10 +473,10 @@ ReplaceItems =
 		"SHIPSLOT_DMG7",		"COLD1",			80,		"Substance",	"OXYGEN",			--Was 100 Oxygen in Vanilla
 	},
 	{	--Burnt-Out Compressor
-		"SHIPSLOT_DMG10",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 4 Wiring Loom in Vanilla
+		"SHIPSLOT_DMG10",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 4 Wiring Loom in Vanilla
 	},
 	{	--Blown Transistor
-		"WEAPSLOT_DMG2",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 2 Wiring Loom in Vanilla
+		"WEAPSLOT_DMG2",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 2 Wiring Loom in Vanilla
 	},
 	{	--Corrupt Module
 		"WEAPSLOT_DMG5",		"SALVAGE_TECH7",	1,		"Product",		"TOXIC1",			--Was 50 Ammonia in Vanilla
@@ -491,10 +491,10 @@ ReplaceItems =
 		"WEAPSLOT_DMG6",		"SALVAGE_TECH7",	1,		"Product",		"LUSH1",			--Was 50 Paraffinium in Vanilla
 	},
 	{	--Corroded Actuator
-		"WEAPSLOT_DMG7",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 3 Wiring Loom in Vanilla
+		"WEAPSLOT_DMG7",		"TECH_COMP",		10,		"Product",		"TECH_COMP",		--Was 3 Wiring Loom in Vanilla
 	},
 	{	--Burnt-Out Terminal
-		"WEAPSLOT_DMG8",		"TECH_COMP",		6,		"Product",		"TECH_COMP",		--Was 1 Wiring Loom in Vanilla
+		"WEAPSLOT_DMG8",		"TECH_COMP",		8,		"Product",		"TECH_COMP",		--Was 1 Wiring Loom in Vanilla
 	},
 }
 

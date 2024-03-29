@@ -1,5 +1,5 @@
 ModName = "PTSd Higher Frigate Cost + Expedition Difficulty"
-GameVersion = "4_45"
+GameVersion = "4_62"
 Description = "Makes Frigates more expensive to buy, and enables 4 star difficulty Frigate missions, and increases by 2~3x how many stat points needed to make a fleet of a particular Star ranking"
 
 PercentChangeOfFrigateBeingPurchasable =			80			--60		Percentage of AI Frigates you encounter surrounding AI freigthers being purchasable
@@ -9,7 +9,7 @@ FrigateTraitOfferChanceMult =						1			--Multiplier to apply to the ChanceOfBein
 
 PercentChanceOfDamageOnFailedEvent = 				20			--20
 MaxDiceRollWhenCalculatingExpeditionEventResult =	25			--25
-
+PercentChanceOfInterventionEvent =					8			--8			Presumably how likely for a fleet expedition to request advice / assistance from the player
 
 MaxExpeditionStatValue = 							500			--150		This seems to limit the max amount of team of frigate's stats for an expedition that will "count" towards it's star ranking. IE, if you set this to less than 20, then your frigate teams will never be able to rate above 1 star, no matter how high their actual stats are.
 																			--Also the contribution that your freighter with upgrades and / or consumable missions buff items will be capped such that they will never cause the expedition's stats to exceed this value. I.E. if you set this to 20, and have a single frigate with a stat of 15, the most your freighter with upgrades and / or sonsumable can add will be 5.

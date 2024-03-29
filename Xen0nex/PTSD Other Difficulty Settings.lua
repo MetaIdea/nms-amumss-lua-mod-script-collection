@@ -1,5 +1,5 @@
 ModName = "PTSD Other Difficulty Settings"
-GameVersion = "451"
+GameVersion = "452"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
@@ -37,12 +37,12 @@ EDNormal =						1										--1
 EDFast =						1.5										--1.66
 
 --Multipliers for the "Substance Collection" difficulty			(Set by the "Natural Resources" setting)
-	--Affects how much substances you get after fully destroying minable objects, and also from interacting with ("harvesting") most plants, standing planters, or other interactable resource points. 
-	--However, the exception is harvesting the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
-	--Values * 0.9 to partially counter how you can supercharge your mining laser to get 1.2x yields from minable objects
-SCHigh =						1.3*0.9									--2.5
-SCNormal =						0.67*0.9								--1
-SCLow =							0.4*0.9									--0.66
+	--Affects how much substances you get from most sources, particularly ones considered "wild" or found out in the world/space: Includes after fully destroying minable objects, from interacting with ("harvesting") most plants, Frigate expedition substance rewards, standing planters, destroying Resource Depots, opening the procedural "boxes" from buried caches / subterranean organic structures, space station mission rewards (rarely are substances) and most other sources of substances
+	--Does not apply to substances in the "output" slot of machines such as refiners / mining drills, etc. settlement substance rewards, or any substance rewards with "DisableMultiplier" set to "True" in REWARDTABLE.MBIN, which is mostly for harvesting the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
+	--PTSd applies additional multipliers specifically for substances from either minable / non-minable objects in "PTSd Rewards Remixer.lua" that stack with these values
+SCHigh =						1.4										--2.5
+SCNormal =						0.8										--1
+SCLow =							0.5										--0.66
 --Multipliers for the "Laser Amount" difficulty					(Set by the "Natural Resources" setting)
 	--LaserAmount must be an integer (whole number)
 	--LaserAmount sets exactly how much substance you receive each tick of the "trickle" of resources you receive while actively mining an object, but before the object finally is destroyed.
@@ -53,6 +53,7 @@ SCLowLaserAmount =				1										--1
 --Inventory Stack Limits controlled in "PTSd Suit Inventory and Stack Sizes.lua"
 
 --Multipliers for the "Fuel Use" difficulty						(Set by the "Fuel Usage" setting)
+--This setting may also affect how much carbon is obtained from mining plants?
 FUFree =						0										--0
 FUCheap =						0.67									--0.43		For some reason the "Discounted" setting makes Mining Laser & Terrain Manipulator free?
 FUCheapTerrainEditor =			0.67									--0			For some reason the "Discounted" setting makes Mining Laser & Terrain Manipulator free?

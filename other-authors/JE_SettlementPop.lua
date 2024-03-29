@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "SettlementPop"
 ModNameSub = "JE"
 BaseDescription = "Increases population gain from Settlement events"
-GameVersion = "4.36"
--- ModVersion = "v4.36"
+GameVersion = "4.62"
+-- ModVersion = "v4.62"
 FileSource1 = "GCSETTLEMENTGLOBALS.MBIN"
 
 

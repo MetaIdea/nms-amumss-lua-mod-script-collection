@@ -158,28 +158,28 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_97",		3,					270},				--Makes Sodium Nitrate			x1		in	90 time
+		{"REFINERECIPE_97",		3,					120},				--Makes Sodium Nitrate			x1		in	90 time
 		{
 			{"CATALYST1",		2},										--Requires Sodium				x1
 			{"OXYGEN",			2},										--Requires Oxygen				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_98",		6,					270},				--Makes Sodium Nitrate			x2		in	90 time
+		{"REFINERECIPE_98",		6,					120},				--Makes Sodium Nitrate			x2		in	90 time
 		{
 			{"CATALYST2",		3},										--Requires Sodium Nitrate		x1
 			{"OXYGEN",			4},										--Requires Oxygen				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_99",		3,					270},				--Makes Sodium Nitrate			x1		in	90 time
+		{"REFINERECIPE_99",		3,					120},				--Makes Sodium Nitrate			x1		in	90 time
 		{
 			{"FUEL1",			2},										--Requires Carbon				x1
 			{"CATALYST1",		2}										--Requires Sodium				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_100",	3,					135},				--Makes Sodium Nitrate			x2		in	90 time
+		{"REFINERECIPE_100",	3,					60},				--Makes Sodium Nitrate			x2		in	90 time
 		{
 			{"FUEL2",			1},										--Requires Condensed Carbon		x1
 			{"CATALYST1",		3}										--Requires Sodium				x1
@@ -230,7 +230,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_211",	1,					120},				--Makes Sodium Nitrate			x1		in	120 time
+		{"REFINERECIPE_211",	1,					40},				--Makes Sodium Nitrate			x1		in	120 time
 		{
 			{"GAS3",			1},										--Requires Nitrogen				x1
 			{"LAND1",			2}										--Requires Ferrite Dust			x1
@@ -251,7 +251,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_214",	1,					60},				--Makes Sodium Nitrate			x2		in	120 time
+		{"REFINERECIPE_214",	1,					30},				--Makes Sodium Nitrate			x2		in	120 time
 		{
 			{"GAS3",			1},										--Requires Nitrogen				x1
 			{"LAND2",			1}										--Requires Pure Ferrite			x1
@@ -272,7 +272,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_217",	3,					120},				--Makes Sodium Nitrate			x3		in	120 time
+		{"REFINERECIPE_217",	3,					60},				--Makes Sodium Nitrate			x3		in	120 time
 		{
 			{"GAS3",			1},										--Requires Nitrogen				x1
 			{"LAND3",			2}										--Requires Magnetised Ferrite	x1
@@ -280,7 +280,7 @@ RecipeChanges =
 	},
 --Makes sure you can't make an infinite loop with Sodium/Sodium Nitrate & Marrow Bulbs
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_145",	2,					90},				--Makes Sodium					x2		in	90 time
+		{"REFINERECIPE_145",	2,					80},				--Makes Sodium					x2		in	90 time
 		{
 			{"PLANT_CAVE",		1},										--Requires Marrow Bulb			x1
 			{"FUEL1",			1}										--Requires Carbon				x1
@@ -294,34 +294,34 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_148",	2,					90},				--Makes Sodium Nitrate			x2		in	90 time
+		{"REFINERECIPE_148",	2,					80},				--Makes Sodium Nitrate			x2		in	90 time
 		{
 			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
 			{"CATALYST1",		1}										--Requires Sodium				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_154",	2,					45},				--Makes Sodium Nitrate			x2		in	90 time
+		{"REFINERECIPE_154",	2,					40},				--Makes Sodium Nitrate			x2		in	90 time
 		{
 			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
 			{"CATALYST2",		1}										--Requires Sodium Nitrate		x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_109",	2,					90},				--Makes Marrow Bulb				x3		in	90 time
+		{"REFINERECIPE_109",	2,					80},				--Makes Marrow Bulb				x3		in	90 time
 		{
 			{"CATALYST1",		3},										--Requires Sodium				x2
 			{"CREATURE1",		1}										--Requires Mordite				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_110",	4,					90},				--Makes Marrow Bulb				x4		in	90 time
+		{"REFINERECIPE_110",	4,					80},				--Makes Marrow Bulb				x4		in	90 time
 		{
 			{"CATALYST2",		3},										--Requires Sodium Nitrate		x1
 			{"CREATURE1",		3}										--Requires Mordite				x1
 		}
 	},
---Buffs a few recipes that either were inferiror to easier recipes, or to incentivise finding their raw ingredients
+--Buffs a few recipes that either were inferior to easier recipes, or to incentivise finding their raw ingredients
 	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_2",		125,				60},				--Makes Gold					x100	in	60 time
 		{
@@ -335,7 +335,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		35	,				90},				--Makes Sodium Nitrate			x50		in	60 time
+		{"REFINERECIPE_5",		35	,				60},				--Makes Sodium Nitrate			x50		in	60 time
 		{
 			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
 		}
@@ -482,6 +482,75 @@ RecipeChanges =
 		{"REFINERECIPE_32",		2,					70},				--Makes Chromatic Metal			x1		in	70 time
 		{
 			{"RED2",			2}										--Requires Cadmium				x2
+		}
+	},
+--Speeds up and balances some recipes for Sodium / Sodium Nitrate that were slower than recipes for other similar substances
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_27",		1,					40},				--Makes Sodium Nitrate			x1		in	100 time
+		{
+			{"CATALYST1",		2}										--Requires Sodium 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_64",		1,					40},				--Makes Sodium 					x1		in	60 time
+		{
+			{"PLANT_CAVE",		1}										--Requires Marrow Bulb			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_105",	2,					80},				--Makes Sodium Nitrate			x1		in	90 time
+		{
+			{"CATALYST1",		1},										--Requires Sodium 				x1
+			{"ROBOT1",			1}										--Requires Pugneum 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_106",	2,					40},				--Makes Sodium Nitrate			x3		in	90 time
+		{
+			{"CATALYST2",		1},										--Requires Sodium Nitrate		x1
+			{"ROBOT1",			1}										--Requires Pugneum 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_138",	1,					40},				--Makes Sodium Nitrate			x1		in	90 time
+		{
+			{"GAS3",			1},										--Requires Nitrogen				x1
+			{"CATALYST1",		1}										--Requires Sodium 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_139",	2,					40},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"GAS3",			3},										--Requires Nitrogen				x1
+			{"CATALYST2",		1}										--Requires Sodium Nitrate		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_149",	2,					80},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"PLANT_WATER",		2},										--Requires Kelp Sac				x1
+			{"CATALYST1",		1}										--Requires Sodium 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_150",	2,					80},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"PLANT_POOP",		2},										--Requires Faecium				x1
+			{"CATALYST1",		1}										--Requires Sodium 				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_155",	2,					40},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"PLANT_WATER",		2},										--Requires Kelp Sac				x1
+			{"CATALYST2",		1}										--Requires Sodium Nitrate		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_156",	2,					40},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"PLANT_POOP",		2},										--Requires Faecium				x1
+			{"CATALYST2",		1}										--Requires Sodium Nitrate		x1
 		}
 	},
 }

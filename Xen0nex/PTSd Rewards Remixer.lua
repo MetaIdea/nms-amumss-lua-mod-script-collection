@@ -1,8 +1,22 @@
-ModName = "PTSd Rewards Remixer test"
-GameVersion = "4_52"
+ModName = "PTSd Rewards Remixer"
+GameVersion = "4_62"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
+--WIP TESTS:
+--replace cockpits with whatever R_SALVAGEPROD gives
+CockpitTest = false					--false		Enables this test
+CockpitRewards = "R_SALVAGEPROD"	--"R_SALVAGECOCK"
+--allow salvaging C Class Reactor Cores from starships
+ReactorSalvageTest = false					--false		Enables this test
+
+--NOTE: Almost all rewards of substances in this file are also affected by the "Substance Collection" difficulty multiplier in "PTSD Other Difficulty Settings.lua" (adjustable with in-game difficulty setting)
+	--The exceptions in this file are any substance rewards with "DisableMultiplier" set to "True" in REWARDTABLE.MBIN, which is mostly just the "domesticated" version crops that are plantable in hydroponic trays, which instead have fixed values
+--Extra multipliers to apply to any substance rewards which are also affected by the "Substance Collection" difficulty multiplier
+MinableSubstanceMult =					0.85/1.2				--Multiplier for substance rewards for destroying minable objects like rocks or plants. Stacks with the "Substance Collection" difficulty multiplier. Divided by 1.2 to balance out how supercharging the mining laser increases yields by 1.2x
+NonMinableSubstanceMult =				1						--Multiplier for certain substance rewards from other sources, like harvesting wild plants, destroying Depots, Frigate Expeditions, various other rewards. Stacks with the "Substance Collection" difficulty multiplier
+
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
+NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
 
 --Changes the Class & inventory size when redeeming the three unique expedition reward starships or one unique Multi-Tool: Golden Vector, Utopia Speeder, and Starborn Runner starships and Atlas Sceptre Multi-Tool
 ExpShipClass = 							"C"						--"S"
@@ -19,9 +33,9 @@ AllTwitchExpRewardsToolSlots =			8						--Varies	Only used if AllTwitchExpReward
 --This controls what the COST (not reward) is certain dialogue choices with Travellers, such as asking directions to a grave
 TravellerNaniteCost =					"TECHFRAG_TRAV"			--"TECHFRAG_MD" 100 Nanites		"PTSd Expensive Pilots + Broadcast Receivers.lua" changes the value of TECHFRAG_MD and adds TECHFRAG_TRAV as a new entry costing 800 Nanites
 
---These multipleirs control the new reward for giving Travellers 15 nanites (vanilla gives 5,000-70,000 units before PTSd multipliers)
-TravRewardDiHydrMult =					1						--20 - 40 Di-Hydrogen
-TravRewardTritMult =					1						--20 - 40 Tritium
+--These multipliers control the new reward for giving Travellers 20 nanites (vanilla is giving 15 nanites for 5,000-70,000 units before PTSd multipliers)
+TravRewardDiHydrMult =					1						--30 - 50 Di-Hydrogen
+TravRewardTritMult =					1						--30 - 50 Tritium
 
 TravTechChance =						100						--200	Relative chance weight to receive tech memory fragment from certain traveller dialogue rewards instead of inventory memory fragment or products (Vanilla total chance weight pool is 500)
 MemFragInvBulkChance =					20						--0		Relative chance weight to receive Freighter Bulkhead from Inventory Memory Fragments (Vanilla total chance weight pool is 100)
@@ -29,9 +43,9 @@ MemFragProcChanceMult =					4						--Multiplier to apply to the relative chance 
 MemFragProcLauncherChanceMult =			0.4						--Multiplier to apply to the relative chance weight for Launcher proc tech, base of 300 (Most other proc tech have ~100 for their chance weight, with a few hazard/weapon ones having 15~25 instead)
 MemFragOutlierTechChance =				200						--500	Relative chance weight for certain regular techs in the tech memory fragment option pool, which normally have ~5x as much chance as others to be received (Specifically, Neural Stimulator, Advanced Mining Laser, Optical Drill, Launch Auto-Charger)
 
---Replacers for the relative chance weighting for getting certain techs / upgrades when opening Psychonic Eggs (all 6 kinds of procedural upgrdaes have chance weighting = 50)
+--Replacers for the relative chance weighting for getting certain techs / upgrades when opening Psychonic Eggs (all 6 kinds of procedural upgrades have chance weighting = 50)
 PsychonicWormhole =						250						--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
-PsychonicChloroplast =					30						--500	"Chloroplast Membrane" Launcher Autocharger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicChloroplast =					30						--500	"Chloroplast Membrane" Launch Auto-Charger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 PsychonicNeural =						250						--500	"Neural Shielding" Cargo Scan Deflector equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 
 --Changes how many Nanites you receive for choosing "Extract Nanites" at a Manufacturing Facility
@@ -298,9 +312,26 @@ CivilianFreighterRewardChanges =
 PirateFreighterLootChanges =
 {
 	{
-		{"R_PIR_FREI"},		--This seems to be the reward pool for the first few missions you take from space stations. Unsure when it switches from these to the other rewards below
+		{"R_PIR_FREI"},
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		5		A-Class Reactor
+			{"SHIP_CORE_S",				"FREI_INV_TOKEN",			3,	6,		300},		--1,	1,		2		S-Class Reactor
+			--{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
+			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
+		}
+	},
+}
+
+--Rewards for choosing a tech upgrade at the end of a Derelict Freighter
+FreighterTechLootChanges =
+{
+	{
+		{"R_FREI_TECH"},
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},	--1,	1,		20		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},	--1,	1,		25		B-Class Reactor
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},	--1,	1,		15		A-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		5		S-Class Reactor
 			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
 		}
 	},
@@ -354,7 +385,7 @@ SpaceStationMissionLootChanges =
 		{"R_MB_LOW"},		--"Low" reward, e.g. from low-level Space Station missions
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
-			{"LAUNCHFUEL",				"LAUNCHFUEL",			4,	4,		2},		--4,	4,		1		Launch Fuel
+			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	2,		2},		--4,	4,		1		Launch Fuel
 			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		2},		--1,	1,		2		Defence Chit
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0},		--1,	1,		1		Mind Control Device
@@ -406,7 +437,7 @@ SpaceStationMissionLootChanges =
 		{"R_MB_MED"},		--"Medium" reward
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
 			{"HYPERFUEL2",				"HYPERFUEL2",			2,	3,		1},		--1,	2,		1		Warp Hypercore
-			{"LAUNCHFUEL",				"LAUNCHFUEL",			5,	6,		0.5},	--4,	4,		1		Launch Fuel
+			{"LAUNCHFUEL",				"LAUNCHFUEL",			3,	3,		0.5},	--4,	4,		1		Launch Fuel
 			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	2,		2},		--1,	1,		1		Defence Chit
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0.5},	--1,	1,		1		Mind Control Device
@@ -458,8 +489,10 @@ SpaceStationMissionLootChanges =
 	{
 		{"R_MB_HIGH"},		--"High" reward
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		3		C-Class Reactor
 			{"HYPERFUEL2",				"HYPERFUEL2",			3,	4,		1},		--1,	2,		2		Warp Hypercore
-			{"LAUNCHFUEL",				"POLICE_TOKEN",			2,	3,		1},		--4,	4,		1		Launch Fuel					(Defence Chit)
+			{"LAUNCHFUEL",				"POLICE_TOKEN",			4,	4,		1},		--4,	4,		1		Launch Fuel					(Defence Chit)
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		1},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	2,		1},		--1,	1,		1		Mind Control Device
 			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	2,		1},		--1,	1,		1		Holographic Analyser
@@ -517,6 +550,10 @@ SpaceStationMissionLootChanges =
 	{
 		{"R_MB_MEGA"},		--"Mega" reward
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		3		B-Class Reactor
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		2		A-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		1		S-Class Reactor
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		0},		--1,	2,		2		Warp Hypercore
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		3,	5,		1},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		2,	3,		1},		--1,	1,		1		Mind Control Device
@@ -571,6 +608,10 @@ SpaceStationMissionLootChanges =
 	{
 		{"R_PIRATEBOARD_A"},		--Outlaw Station board mission items
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		4		B-Class Reactor
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		2		A-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		1		S-Class Reactor
 			{"REPAIRKIT",				"REPAIRKIT",			2,	3,		50},	--1,	3,		100		Repair Kit
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		50},	--1,	2,		100		Warp Hypercore
 			--{"LAUNCHFUEL",				"LAUNCHFUEL",			4,	4,		2},		--4,	4,		1		Launch Fuel
@@ -697,6 +738,31 @@ GuildGiftChanges =
 	}
 }
 
+--Changes the amounts & chances of rewards from claiming supplies at the entrance room for Derelict Freighters
+DerelictSuppliesChanges =
+{
+	{
+		{"R_ABAND_AMMO"},	--The physical crate you can open outside the main airlock door
+		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (All possible items are given, at the chance listed for each)
+			--Substances
+			{"LAND1",			"LAND1",			100,		200,		100},						--"LAND1",			250,		350,		100
+			{"FUEL2",			"FUEL2",			100,		200,		100},						--"FUEL2",			150,		250,		100
+			{"CATALYST1",		"CATALYST1",		40,			100,		100},						--"CATALYST1",		40,			100,		100
+			--Products
+			{"REPAIRKIT",		"REPAIRKIT",		1,			2,			100},						--"REPAIRKIT",		3,			3,			100
+		}
+	},
+	{
+		{"R_ABAND_GIFT"},	--The optional supplies you can choose in the dialogue tree when using the computer terminal to unlock the main airlock door
+		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (All possible items are given, at the chance listed for each)
+			--Products
+			{"AMMO",			"AMMO",				1000,		2000,		100},						--"AMMO",			4000,		6000,		100
+			{"PRODFUEL2",		"PRODFUEL2",		1,			2,			100},						--"PRODFUEL2",		3,			3,			100
+			{"POWERCELL",		"POWERCELL",		1,			2,			100},						--"POWERCELL",		3,			3,			100
+		}
+	}
+}
+
 --Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
 TaintedMetalMult =						3						--1
 
@@ -744,35 +810,36 @@ ExpeditionRewardChanceMultiplierlessthan100 =				1				--Multiplier to apply to t
 ExpeditionRewardChance0Replacer =							1				--If you use a value lower than 0.5 above, choose what value to replace any rewards which now have a % chance rounded down to 0%. Use 0 here to leave those reward chances rounded down to "0".
 
 --Replaces the possible Stellar Metal rewards when dismantling the "broken tech" consumable (from Buried Caches) with their Activated version instead
-BreakTechAmountMult =					0.5					--1			Default is 50 - 150 of Cadmium/Emeril/Indium
+BreakTechAmountMult =					0.6					--1			Default is 50 - 150 of Cadmium/Emeril/Indium
 BreakTechRed =							"EX_RED"			--"RED2"	Default is Cadmium
 BreakTechGreen =						"EX_GREEN"			--"GREEN2"	Default is Emeril
 BreakTechBlue =							"EX_BLUE"			--"BLUE2"	Default is Indium
 
 --Replaces the possible rewards from dismantling the consumable plant item from Subterranean Organic Structure
 	--Default Amount is 50-120, then multiplied by the "Amount Multiplier" below
+	--The "Substance Collection" in-game difficulty modifier applies to substances here (modified in "PTSD Other Difficulty Settings.lua")
 BreakPlantsChangesSubstance =
 {		--Old Reward			New Reward			Amount Multiplier
 	{	--Residual Goop 		Marrow Bulb   
-		"SPACEGUNK1",			"PLANT_CAVE",		1.5,
+		"SPACEGUNK1",			"PLANT_CAVE",		1.5/0.8,
 	},
 	{	--Runaway Mould    		Runaway Mould
-		"SPACEGUNK2",			"SPACEGUNK2",		2,	
+		"SPACEGUNK2",			"SPACEGUNK2",		2/0.8,	
 	},
 	{	--Faecium 				Faecium
-		"PLANT_POOP",			"PLANT_POOP",		1.5,
+		"PLANT_POOP",			"PLANT_POOP",		1.5/0.8,
 	},
 	{	--Mordite 				Mordite
-		"CREATURE1",			"CREATURE1",		1,	
+		"CREATURE1",			"CREATURE1",		1/0.8,	
 	},
 	{	--Cyto-Phosphate 		Cyto-Phosphate
-		"WATERPLANT",			"WATERPLANT",		1,	
+		"WATERPLANT",			"WATERPLANT",		1/0.8,	
 	},
 	{	--Condensed Carbon 		Condensed Carbon
-		"FUEL2",				"FUEL2",			1,	
+		"FUEL2",				"FUEL2",			1/0.8,	
 	},
 	{	--Carbon 				Carbon
-		"FUEL1",				"FUEL1",			1.5,
+		"FUEL1",				"FUEL1",			1.5/0.8,
 	}
 }
 --The same as above, but changes these rewards into Products instead of Substances
@@ -834,6 +901,33 @@ SentMirror				=	2			--??? Inverted Mirror		From interacting with damaged sentine
 SentQuad				=	2			--??? Quad Servo			From interacting with damaged sentinel machinery on Corrupt planets. Normally gives a random amount, up to ???
 ]]
 
+--Changes the amounts & chances of rewards from destroying Resource Depots
+ResourceDepotChanges =
+{
+	{
+		{"DE_DEPOT"},
+		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (relative weight to be compared against all other options combined?)
+			--Substances
+			{"ASTEROID1",		"ASTEROID1",		375,		625,		50},						--"ASTEROID1",		100,		250,		100
+			{"ASTEROID2",		"ASTEROID2",		375,		625,		50},						--"ASTEROID2",		100,		250,		100
+			{"ASTEROID3",		"ASTEROID3",		375,		625,		50},						--"ASTEROID3",		100,		250,		100
+			{"GAS1",			"GAS1",				375,		625,		25},						--"GAS1",			100,		250,		100
+			{"GAS2",			"GAS2",				375,		625,		25},						--"GAS2",			100,		250,		100
+			{"GAS3",			"GAS3",				375,		625,		25},						--"GAS3",			100,		250,		100
+			--Products
+			{"REACTION1",		"REACTION1",		3,			5,			100},						--"REACTION1",		3,			5,			100
+			{"REACTION2",		"REACTION2",		3,			5,			100},						--"REACTION2",		3,			5,			100
+			{"REACTION3",		"REACTION3",		3,			5,			100},						--"REACTION3",		3,			5,			100
+			{"ALLOY1",			"ALLOY1",			3,			5,			100},						--"ALLOY1",			3,			5,			100
+			{"ALLOY2",			"ALLOY2",			3,			5,			100},						--"ALLOY2",			3,			5,			100
+			{"ALLOY3",			"ALLOY3",			3,			5,			100},						--"ALLOY3",			3,			5,			100
+			{"ALLOY4",			"ALLOY4",			3,			5,			100},						--"ALLOY4",			3,			5,			100
+			{"ALLOY5",			"ALLOY5",			3,			5,			100},						--"ALLOY5",			3,			5,			100
+			{"ALLOY6",			"ALLOY6",			3,			5,			100},						--"ALLOY6",			3,			5,			100
+		}
+	}
+}
+
 --Changes the relative chances of rewards from Ancient Data Structures
 ADSNavDataChance		=	100			--100
 ADSExosuitChartChance	=	5			--10
@@ -841,11 +935,10 @@ ADSExosuitChartChance	=	5			--10
 --Multipliers to apply to rewards from some rare resource nodes
 MutantPlantSulphurine	=	0.75		--250 - 400
 CuriousDepositMould		=	0.6			--300 - 500
-	--Note: in practice, The following seem to only yield around half of these values
-OrganicRockChlorine		=	4			--25 - 60	
+OrganicRockChlorine		=	3			--25 - 60	
 OrganicRockMordite		=	0.27		--250 - 500			Unlike the other rare resource nodes here, this is unaffected by your Multi-Tool's Mining yield bonus
-MetalFingerGold			=	0.6			--                                                                                        100 - 200
-MetalFingerUranium		=	0.4			--200 - 250
+MetalFingerGold			=	0.45		--100 - 200
+MetalFingerUranium		=	0.3			--200 - 250
 MetalFingerUraniumChance=	0.5			--100	(Relative % Chance a Metal Finger will yield Uranium instead of Gold)
 
 GassyPods				=	0.5			--20 - 30		The 3 red "Gassy Pods" you can harvest from the common Gas Exploding plant hazardous flora on most planets
@@ -878,20 +971,20 @@ VortexCubeNanitesAmount	=					4				--0
 StormCrystalNanitesChance	=	50							--0			% Chance to receive Nanites from a Storm Crystal in addition to a Storm Crystal
 StormCrystalNanitesAmount	=				8				--0
 
---Multipliers to reduce certain plant yields. This is mainly to nerf farming slightly in relation to wild gathering
+--Multipliers to adjust certain plant yields. This is mainly to buff wild gathering slightly in relation to farming
 	--pre-4.0, this was also to balance out the increased crop yield from a Multi-Tool's Mining Stat with my PTSd Scanner and Mining Bonus.lua /  More Meaningful Multitools
 CropYieldReduction = 
 {
-	--Wild plants		Multiplier		(Wild plants values / 0.9 to counter the * 0.9 factor I use in "Substance Collection" intended just for minable objects)
-	{"WILD_BARREN",		1.25/0.9},				--40 - 60	Cactus Flesh
-	{"WILD_LUSH",		2.5/0.9},				--10 - 15	Star Bulb
-	{"WILD_RADIO",		1.75/0.9},				--18 - 30	Gamma Root
-	{"WILD_SNOW",		1.75/0.9},				--18 - 30	Frost Crystal
-	{"WILD_SCORCHED",	1.75/0.9},				--18 - 30	Solanium
-	{"WILD_TOXIC",		1.75/0.9},				--18 - 30	Fungal Mould
-	{"PLANT_COMMODITY",	1.33/0.9},				--9  - 18	Sodium			(1.333333 HardModeMultiplier pre-NMS 4.0)
-	{"PLANT_FUEL",		1.33/0.9},				--20 - 25	Oxygen			(1.333333 HardModeMultiplier pre-NMS 4.0)
-	--Farm plants
+	--Wild plants		Multiplier
+	{"WILD_BARREN",		1.25},					--40 - 60	Cactus Flesh
+	{"WILD_LUSH",		2.5},					--10 - 15	Star Bulb
+	{"WILD_RADIO",		1.75},					--18 - 30	Gamma Root
+	{"WILD_SNOW",		1.75},					--18 - 30	Frost Crystal
+	{"WILD_SCORCHED",	1.75},					--18 - 30	Solanium
+	{"WILD_TOXIC",		1.75},					--18 - 30	Fungal Mould
+	{"PLANT_COMMODITY",	1.15},					--9  - 18	Sodium			(1.333333 HardModeMultiplier pre-NMS 4.0)
+	{"PLANT_FUEL",		1.15},					--20 - 25	Oxygen			(1.333333 HardModeMultiplier pre-NMS 4.0)
+	--Farm plants	(Notable exception that is not affected by "Substance Collection" difficulty multiplier in "PTSD Other Difficulty Settings.lua")
 	{"PLANT_BARREN",	1},						--100		Cactus Flesh
 	{"PLANT_LUSH",		1},						--25		Star Bulb
 	{"PLANT_RADIO",		1},						--50		Gamma Root
@@ -902,10 +995,11 @@ CropYieldReduction =
 	{"PLANT_POOP",		1}						--25		Faecium
 }
 
---Multiplier to appy to the carbon reward from Standing Planters
-StandingPlanterMult = 0.5									--Vanilla gives 40 - 80 carbon
---New reward for harvesting plants on the walls of certain new freighter rooms.  "INTERIORPLANTS" gives 5 - 20 carbon
-FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" in vanilla copies reward of standing planters above (40 - 80 carbon)
+--Multiplier to appy to the carbon reward from different types of indoor plants
+StandingPlanterMult = 0.4									--Standing Planters, Vanilla gives 40 - 80 carbon
+InteriorPlantsMult = 0.75									--Various indoor plants, often in pots, Vanilla gives 5 - 20 carbon
+--New reward for harvesting plants on the walls of certain new freighter rooms.
+FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" (Same reward as Standing Planters above)
 
 --WIP attempt: Swaps the reward for "DE_SEAHORROR", which I am guessing is defeating an Abyssal Horror (anglerfish), which currently seems to drop no loot?
 	--Tested and this doesn't seem to be the case... Anglerfish seems to be refered to as FIENDFISHBIG in most files
@@ -921,8 +1015,9 @@ HiveConditionTest = "AnyFalse"														--"AnyFalse"		("AnyTrue")
 HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestroyed.xml")
 
 --Changes the amount of items harvested from various underwater objects
-CrystalSulphide = 2						--1
-AlluringSpecHadalCore = 1				--1
+CrystalSulphide = 2						--1		Changes the yield of Crystal Sulphide from underwater Thermal Vents
+CrystalSulphideOther = 1				--1		Changes the yield of Crystal Sulphide from both Glowing Mineral and Suspicious Packet (Goods)
+AlluringSpecHadalCore = 1				--1		Changes the yield of Hadal Core from underwater Alluring Specimens
 
 --Adds additional rewards to harvesting Aluuring Specimens
 	--NOTE: Currently rewarding 1 of each item instead of 2 of each item, since a side effect of making ship weapons not mine objects (disable explosions damaging objects) makes the Alluring Specimen no longer get destroyed by the Anglerfish when it spawns. 
@@ -1761,8 +1856,8 @@ NewTravReward =
                 <Property name="DefaultSubstanceType" value="None" />
               </Property>
               <Property name="ID" value="LAUNCHSUB" />
-              <Property name="AmountMin" value="]]..math.floor(20*TravRewardDiHydrMult)..[[" />
-              <Property name="AmountMax" value="]]..math.floor(40*TravRewardDiHydrMult)..[[" />
+              <Property name="AmountMin" value="]]..math.floor(30*TravRewardDiHydrMult)..[[" />
+              <Property name="AmountMax" value="]]..math.floor(50*TravRewardDiHydrMult)..[[" />
               <Property name="DisableMultiplier" value="False" />
               <Property name="RewardAsBlobs" value="False" />
               <Property name="UseFuelMultiplier" value="False" />
@@ -1785,6 +1880,76 @@ NewTravReward =
               <Property name="UseFuelMultiplier" value="False" />
               <Property name="Silent" value="False" />
               <Property name="UseMissionBoardDifficultyScale" value="False" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+
+SalvageReactorPuzzle =
+[[<Property value="GcAlienPuzzleOption.xml">
+          <Property name="Name" value="UI_COST_NO_SALVAGE" />
+          <Property name="Text" value="UI_SALVAGE_PROD_RES" />
+          <Property name="IsAlien" value="True" />
+          <Property name="Cost" value="C_SALVAGE_COR" />
+          <Property name="Rewards">
+            <Property value="NMSString0x10.xml">
+              <Property name="Value" value="R_SALVAGE_COR" />
+            </Property>
+          </Property>
+          <Property name="Mood" value="GcAlienMood.xml">
+            <Property name="Mood" value="Neutral" />
+          </Property>
+          <Property name="Prop" value="GcNPCPropType.xml">
+            <Property name="NPCProp" value="DontCare" />
+          </Property>
+          <Property name="OverrideWithAlienWord" value="False" />
+          <Property name="ReseedInteractionOnUse" value="False" />
+          <Property name="KeepOpen" value="False" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="TruncateCost" value="False" />
+          <Property name="MarkInteractionComplete" value="True" />
+          <Property name="NextInteraction" value="" />
+          <Property name="SelectedOnBackOut" value="False" />
+          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+            <Property name="AkEvent" value="INVALID_EVENT" />
+          </Property>
+          <Property name="TitleOverride" value="" />
+          <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+            <Property name="ConditionTest" value="AnyFalse" />
+          </Property>
+          <Property name="EnablingConditions" />
+          <Property name="EnablingConditionId" value="" />
+          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
+          </Property>
+        </Property>]]
+
+ReactorSalvageReward = 
+[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_SALVAGE_COR" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="ID" value="SHIP_CORE_C" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="HideAmountInMessage" value="False" />
+              <Property name="ForceSpecialMessage" value="False" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
             </Property>
           </Property>
         </Property>
@@ -1822,6 +1987,18 @@ TeachPellets =
 
 MemFragOutlierTechs =
 {"UP_T_JET", "UP_STRONGLASER", "UP_T_MINER", "UP_T_LAUNCHCHAR"}
+
+MinableObjects =
+{
+	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", 		
+	"DE_TENTACLE", "DE_SPOREVENT", "DE_FLYTRAP", 
+}
+
+CrashsiteTechRewards =
+{
+	"FOURTH_CRA_OPT_B_17", "FOURTH_CRA_OPT_B_15", "FOURTH_CRA_OPT_B_11", "FOURTH_CRA_OPT_A_9", "FOURTH_CRA_OPT_A_5", "FOURTH_CRA_OPT_A_4", "FOURTH_CRA_OPT_B_2", "WAR_CRA_OPT_A_20", "WAR_CRA_OPT_A_15", "WAR_CRA_OPT_A_12", "WAR_CRA_OPT_B_11", "WAR_CRA_OPT_A_11", "WAR_CRA_OPT_B_10", "WAR_CRA_OPT_A_10", "WAR_CRA_OPT_B_9", "WAR_CRA_OPT_A_9", "WAR_CRA_OPT_B_8", "WAR_CRA_OPT_B_7", "WAR_CRA_OPT_A_7", "WAR_CRA_OPT_A_6", "WAR_CRA_OPT_B_5", "WAR_CRA_OPT_A_5", "WAR_CRA_OPT_A_4", "WAR_CRA_OPT_B_3", "WAR_CRA_OPT_B_2", "WAR_CRA_OPT_B_1", "WAR_CRA_OPT_A_1", "EXP_CRA_OPT_A_20", "EXP_CRA_OPT_A_16", "EXP_CRA_OPT_A_15", "EXP_CRA_OPT_B_10", "EXP_CRA_OPT_B_9", "EXP_CRA_OPT_A_8", "EXP_CRA_OPT_B_7", "EXP_CRA_OPT_A_7", "EXP_CRA_OPT_A_6", "EXP_CRA_OPT_B_5", "EXP_CRA_OPT_A_5", "EXP_CRA_OPT_B_4", "EXP_CRA_OPT_B_3", "EXP_CRA_OPT_A_3", "EXP_CRA_OPT_B_2", "EXP_CRA_OPT_A_2", "EXP_CRA_OPT_B_1", "EXP_CRA_OPT_A_1", "TRA_CRA_OPT_A_20", "TRA_CRA_OPT_B_16", "TRA_CRA_OPT_A_15", "TRA_CRA_OPT_B_14", "TRA_CRA_OPT_A_12", "TRA_CRA_OPT_A_10", "TRA_CRA_OPT_A_8", "TRA_CRA_OPT_A_7", "TRA_CRA_OPT_A_6", "TRA_CRA_OPT_B_5", "TRA_CRA_OPT_A_5", "TRA_CRA_OPT_B_4", "TRA_CRA_OPT_A_4", "TRA_CRA_OPT_B_3", "TRA_CRA_OPT_A_3", "TRA_CRA_OPT_B_2", "TRA_CRA_OPT_A_2", "TRA_CRA_OPT_B_1", "TRA_CRA_OPT_A_1", 
+	"FOURTH_CRA_OPT_A_6", 
+}
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -2453,10 +2630,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	StandingPlanterMult},
 					{"AmountMax",	StandingPlanterMult},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "INTERIORPLANTS"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	InteriorPlantsMult},
+					{"AmountMax",	InteriorPlantsMult},
 				}
 			},
 			{
@@ -2653,6 +2842,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "ID", "VENTGEM"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	CrystalSulphideOther},
+					{"AmountMax",	CrystalSulphideOther}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_GEODE_RARE", "ID", "VENTGEM"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	CrystalSulphideOther},
+					{"AmountMax",	CrystalSulphideOther}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_FISHCORE", "ID", "FISHCORE"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
@@ -2673,6 +2884,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "RED2"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	BreakTechAmountMult},
@@ -2692,6 +2904,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "GREEN2"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	BreakTechAmountMult},
@@ -2711,6 +2924,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "BLUE2"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	BreakTechAmountMult},
@@ -2793,6 +3007,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"EnablingConditionId",	HiveEnablingConditionId}
 				}
 			},
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Name", "WAR_CRA_OPT_B_3",		"Value", "PROC_TECH_WEAP"},
+				["REMOVE"] = "SECTION"
+			},
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Name", "FOURTH_CRA_OPT_B_11",		"Value", "PROC_TECH_SHIP"},
+				["REMOVE"] = "SECTION"
+			}
 		}
 	},
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
@@ -3124,8 +3348,63 @@ for i = 1, #PirateMissionChanges do
 	end
 end
 
+local ChangesToDialogPuzzle = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+if NoNewTechAtCrashsites then
+for i = 1, #CrashsiteTechRewards do
+	local PuzzleName = CrashsiteTechRewards[i]
+
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"Name", PuzzleName,},
+				["VALUE_MATCH"] 		= "{^PROC_TECH_.+}",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "PROC_TECH_ONLY"}
+				}
+			}
+end
+end
+if CockpitTest then
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_MATCH"] 		= "C_SALVAGECOCK",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Cost",	CockpitRewards}
+				}
+			}
+end
+if ReactorSalvageTest then
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},
+				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
+				["ADD"] = SalvageReactorPuzzle,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+
+
 local ChangesToExpeditionMetals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 
+ChangesToExpeditionMetals[#ChangesToExpeditionMetals+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] 		= "ALL",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", NonMinableSubstanceMult},
+					{"AmountMax", NonMinableSubstanceMult}
+				}
+			}
 for i = 1, #ExpeditionMetalChanges do
 	local MetalID = ExpeditionMetalChanges[i][1]
 	local MetalMult = ExpeditionMetalChanges[i][2]
@@ -3147,6 +3426,47 @@ end
 
 local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
+if ReactorSalvageTest then
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["ADD"] = ReactorSalvageReward,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] 		= "ALL",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", NonMinableSubstanceMult},
+					{"AmountMax", NonMinableSubstanceMult}
+				}
+			}
+for i = 1, #MinableObjects do
+	local ObjectID = MinableObjects[i]
+
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["MATH_OPERATION"] 		= "*",
+				["REPLACE_TYPE"] 		= "ALL",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"ID", ObjectID,	"DisableMultiplier", "False"},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", MinableSubstanceMult/NonMinableSubstanceMult},
+					{"AmountMax", MinableSubstanceMult/NonMinableSubstanceMult}
+				}
+			}
+end
 if AllTwitchExpRewardsC then
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
@@ -3265,6 +3585,35 @@ for i = 1, #GuildGiftChanges do
 				["REPLACE_TYPE"] 		= "",
 				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Id", GiftPool, "ID", OldItemID},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+	end
+end
+for i = 1, #DerelictSuppliesChanges do
+	local SupplyId = DerelictSuppliesChanges[i][1][1]
+	local Items = DerelictSuppliesChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] 		= "",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"Id", SupplyId, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3421,6 +3770,36 @@ for i = 1, #BreakPlantsChangesProduct do
 				["ADD"] = ProductReward (NewReward, math.floor(50*AmountMult), math.floor(120*AmountMult), "100")
 			}
 end
+for i = 1, #ResourceDepotChanges do
+	local DepotId = ResourceDepotChanges[i][1][1]
+	local Items = ResourceDepotChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] 		= "",
+				--["PRECEDING_KEY_WORDS"] = {""},
+				["SPECIAL_KEY_WORDS"] = {"Id", DepotId, "ID", OldItemID},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+	end
+end
 for i = 1, #CropYieldChanges do
 	local PlantID = CropYieldChanges[i][1]
 	local Chance = CropYieldChanges[i][2]
@@ -3567,6 +3946,35 @@ end
 for i = 1, #PirateFreighterLootChanges do
 	local RewardType = PirateFreighterLootChanges[i][1][1]
 	local Items = PirateFreighterLootChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	Chance},
+					{"ID",	NewItemID},
+					{"AmountMin",	AmountMin},
+					{"AmountMax",	AmountMax}
+				}
+			}
+	end
+end
+for i = 1, #FreighterTechLootChanges do
+	local RewardType = FreighterTechLootChanges[i][1][1]
+	local Items = FreighterTechLootChanges[i][2]
 	
 	for j=1, #Items do
 		OldItemID = Items[j][1]

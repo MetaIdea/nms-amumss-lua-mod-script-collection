@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "451"
+GameVersion = "462"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -49,6 +49,10 @@ ShipScrappingItemChanges =
 		}
 	}
 }
+
+ClassItemFromShipSalvage =				"False"							--"False"		Unknwon effect, from RewardInventoryClassItemFromShipSalvage 
+MaxStandingTechDiscount =				0.8								--0.5			Presumably the minimum multiplier used for the price of upgrade modules when at maximum standing with the system race
+NonNaturalCostMul =						0.5								--0.5			Presumably a multiplier on the trade in / salvage value of custom built starships
 
 --Sets some Freighter Rooms & most Freighter Storage Room recipes to be unknwon at the start of the game, to require unlocking at the Anomaly
 UnknownRecipes =						
@@ -112,6 +116,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"MissionSurveyMaxGuidanceDistance", MissionSurveyMaxGuidanceDistance},
 					{"SpecialTechSlotBonus", SpecialTechSlotBonus},
 					{"StormBonusMiningAmountMod", StormBonusMiningAmountMod},
+					{"RewardInventoryClassItemFromShipSalvage", ClassItemFromShipSalvage},
+					{"MaxStandingTechDiscount", MaxStandingTechDiscount},
+					{"NonNaturalCostMul", NonNaturalCostMul},
 					
 					{"ShipMiningMul", ShipMiningMul},
 					{"TorpedoCooldown", TorpedoCooldown},

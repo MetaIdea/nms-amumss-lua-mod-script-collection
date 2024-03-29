@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Nexus"
 BaseDescription = ""
-GameVersion = "452"
+GameVersion = "462"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -79,19 +79,19 @@ AddLight = [[    <Property value="TkSceneNodeData.xml">
     </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= "Gumsk",
-	["LUA_AUTHOR"]		= "Gumsk",
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= "Gumsk",
+	LUA_AUTHOR		= "Gumsk",
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\SPACE\NEXUS\PARTS\LANDINGBAYS\LANDINGPAD.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = "MODELS\SPACE\NEXUS\PARTS\LANDINGBAYS\LANDINGPAD.SCENE.MBIN",
+					EXML_CHANGE_TABLE = {
 						{
-							["SPECIAL_KEY_WORDS"] = {
+							SPECIAL_KEY_WORDS = {
 								"Name","LandingPadLOD3"
 							},
 							["ADD_OPTION"] = "ADDafterSECTION",

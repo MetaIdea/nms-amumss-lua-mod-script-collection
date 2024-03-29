@@ -8,11 +8,12 @@ ShopOptionalSubstances = {"PLANT_POOP","CREATURE1","LAUNCHSUB2","GAS1","GAS2","G
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_ShopOverride.pak",
-["MOD_AUTHOR"]    = "InvalidCode",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.62",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_ShopOverride.pak",
+["MOD_AUTHOR"]              = "InvalidCode",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.62",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -119,6 +120,118 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Average", "3"},
                                 {"Wealthy", "3"},
                                 {"Pirate",  "6"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "LAUNCHFUEL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "10"},
+                                {"PriceMul",         "0.2"},
+                                {"RepLevelRequired", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "HYPERFUEL2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "5"},
+                                {"PriceMul",      "0.35"},
+                                {"ProductID",     "HYPERFUEL1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "ASTEROID2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "COMPOUND1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PriceMul", "0.15"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "FARMPROD9"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "FREI_INV_TOKEN"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "3"},
+                                {"PriceMul",      "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "GRENFUEL1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "5"},
+                                {"PriceMul",         "0.2"},
+                                {"RepLevelRequired", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "ROBOT1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "1000"},
+                                {"PriceMul",         "0.3"},
+                                {"RepLevelRequired", "4"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "U_BOLT3"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "CHART_HIVE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "3"},
+                                {"PriceMul",         "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "U_BOLT4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "POWERCELL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "15"},
+                                {"PriceMul",         "0.1"},
+                                {"RepLevelRequired", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "HYPERFUEL2"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "5"},
+                                {"PriceMul",         "0.33"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "CATALYST2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale",    "1000"},
                             }
                         },
                     },

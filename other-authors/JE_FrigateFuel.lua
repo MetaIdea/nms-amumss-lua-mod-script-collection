@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "FrigateFuel"
 ModNameSub = "JE"
 BaseDescription = "Adjusts frigate fuel useage maximums to be the same as minimum for all frigate types"
-GameVersion = "4.36"
--- ModVersion = "v4.36"
+GameVersion = "4.62"
+-- ModVersion = "v4.62"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 
 

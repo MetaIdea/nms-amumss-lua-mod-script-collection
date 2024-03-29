@@ -1,11 +1,11 @@
 ModName = "gLight Better Ship Lighting"
-ModNameSub = "Freighter"
+ModNameSub = "Station All"
 BaseDescription = ""
 GameVersion = "462"
 ModVersion = "a"
 
 --[[ Files Modified:
-MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN
+MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -17,8 +17,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MODIFICATIONS	= {
 		{
 			MBIN_CHANGE_TABLE = {
+				
 				{
-					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN",
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
+					EXML_CHANGE_TABLE = {
+						{
+							PRECEDING_KEY_WORDS = {
+								"SpaceStationLights"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"R",1.0},
+								{"G",1.0},
+								{"B",1.0}
+							}
+						}
+					}
+				},
+				{
+					MBIN_FILE_SOURCE = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {
@@ -49,88 +66,60 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {
-								"Name","pointLight1",
-								"Name","FALLOFF"
-							},
-							VALUE_CHANGE_TABLE = {
-								{"Value","linear"},
-							}
-						},
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","pointLight1",
+								"Name","spotlight7",
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",35000.0},
+								{"Value",60000.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","spotlight7",
+								"Name","FOV"
+							},
+							VALUE_CHANGE_TABLE = {
+								{"Value",120.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","spotlight8",
+								"Name","INTENSITY"
+							},
+							VALUE_CHANGE_TABLE = {
+								{"Value",60000.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","spotlight8",
+								"Name","FOV"
+							},
+							VALUE_CHANGE_TABLE = {
+								{"Value",120.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","spotlight9",
+								"Name","INTENSITY"
+							},
+							VALUE_CHANGE_TABLE = {
+								{"Value",60000.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","spotlight9",
+								"Name","FOV"
+							},
+							VALUE_CHANGE_TABLE = {
+								{"Value",120.0},
 							}
 						},
 					}
-				},
-				{
-					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_R"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_G"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_B"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-					}
-				},
-				{
-					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
-					EXML_CHANGE_TABLE = {
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_R"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_G"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-						{
-							SPECIAL_KEY_WORDS = {
-								"Name","COL_B"
-							},
-							REPLACE_TYPE = "ALL",
-							VALUE_CHANGE_TABLE = {
-								{"Value",1.0},
-							}
-						},
-					}
-				},
+				}
 			}
 		}
 	}

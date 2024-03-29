@@ -105,7 +105,7 @@ ProductSaleChanges =
 	
 	{"FOOD_DNUT_BLOB_NAME",	0.9},					--120,000		Gooey ProtoDoughnut
 	{"FOOD_DNUT_HON_NAME",	1.35},					--65,000		Honey Doughnut
-	{"FOOD_ICE_NAME",	0.78},						--48,000		Ice Cream
+	{"FOOD_ICE_NAME",		0.78},					--48,000		Ice Cream
 	{"FOOD_ICE_HONEY_NAME",	1.2},					--56,000		Honey Ice Cream
 	{"FOOD_ICE_STAR_NAME",	1.0},					--36,000		Stellar Ice Cream
 	{"FOOD_ICE_FISH_NAME",	0.68},					--36,000		Briney Rime
@@ -118,7 +118,9 @@ ProductSaleChanges =
 	{"FOOD_PIE_SCUST_NAME",	1.3},					--78,000		Stellar Custard Tart
 	{"FOOD_PIE_CREAM_NAME",	1.3},					--62,000		Creamy Treat
 	{"FOOD_PIE_GLOW_NAME",	1.3},					--40,000		Glowing Pie
-	{"FOOD_CB_SCUST_NAME",	0.8},					--92,300		Starbirth Delight
+	{"FOOD_CB_SCUST_NAME",	0.9},					--92,300		Starbirth Delight
+	{"FOOD_CG_SCUST_NAME",	0.9},					--92,300		Interstellar Curiosity
+	{"FOOD_CG_CACTUS_NAME",	0.9},					--71,500		Prickly Curiosity
 	{"FOOD_B_WEIRD_NAME",	1.12},					--40,000		Baked Anomaly
 	{"FOOD_B_BURN_NAME",	0.915},					--35,000		Well-Smoked Biscuit
 	{"FOOD_B_CHEESE_NAME",	1.45},					--60,000		Curdy Cracker
@@ -127,6 +129,8 @@ ProductSaleChanges =
 	{"FOOD_B_FISH_NAME",	0.667},					--60,000		Fish Biscuit
 	{"FOOD_B_HERB_NAME",	2.1036},				--60,000		Herbal Crunchie
 	{"FOOD_B_PLAIN_NAME",	0.893},					--28,000		Simple Biscuit
+	{"FOOD_B_HONEY_NAME",	1.6},					--38,000		Honey Waffle
+	{"FOOD_B_JAM_NAME",		1.4},					--38,000		Jammy Rounds
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -179,6 +183,12 @@ ProductSaleChanges =
 	{"UI_STAFF_HEAD4B_NAME",	1.0},				--999	(Bought with Void Motes)
 	{"UI_STAFF_HEAD5_NAME",		1.0},				--999	(Bought with Void Motes)
 	{"UI_STAFF_HEAD6_NAME",		1.0},				--999	(Bought with Void Motes)
+	
+	--Various Starship Reactor Cores		(making base value roughly equivalent to what you'd get in PTSd for selling all upgrade modules you get for scrapping a starship of this class)
+	{"UI_SHIP_CORE_C_NAME",		0.5},				--300	(Bought with Nanites)
+	{"UI_SHIP_CORE_B_NAME",		0.25},				--3000	(Bought with Nanites)
+	{"UI_SHIP_CORE_A_NAME",		0.25},				--6500	(Bought with Nanites)
+	{"UI_SHIP_CORE_S_NAME",		0.25},				--12000	(Bought with Nanites)
 }
 
 --These various "geode" style items are given values equal to 1.33x the expected value of opening & selling their contents on average (3x value for Tritium Hypercluster & Crystal Shard due to the difficulty in getting Tritium/Di-Hydrogen)
@@ -380,6 +390,12 @@ AdjustItems =
 	},
 	{	--Atlantideum Chamber	Wiring Loom
 		"STAFF_PART_B",			"TECH_COMP",		4,			--1
+	},
+	{	--Starship Launch Fuel 	Di-Hydrogen
+		"LAUNCHFUEL",			"LAUNCHSUB",		60,			--40
+	},
+	{	--Starship Launch Fuel 	Metal Plating
+		"LAUNCHFUEL",			"CASING",			2,			--1
 	},
 }
 --Adds various items as new components for certain objects
@@ -604,6 +620,11 @@ LoomSpaceStationMarkup = 			1				--0
 LoomBuyBaseMarkup = 				0.2				--0.2
 	--LoomBuyMarkupMod = 				2				--2
 
+CClassReactorBaseMarkup =			25.67			--0
+BClassReactorBaseMarkup =			15				--0
+AClassReactorBaseMarkup =			16.24			--0
+SClassReactorBaseMarkup =			14				--0
+
 --Miscellaneous other items
 LarvalCoreSpaceStationMarkup =		0				--0			(BaseValue 65000)
 LarvalCoreBaseMarkup =				1.4				--0.2
@@ -740,6 +761,12 @@ ProductCostChanges =
 	{"UI_BIO_NAME",					ComponentSpaceStationMarkup,	ComponentBuyBaseMarkup},				--BaseValue = 12300
 	
 	{"UI_TECHMOD_NAME",				LoomSpaceStationMarkup,	LoomBuyBaseMarkup},								--Wiring Loom?	BaseMarkup = 0.2,	BuyMarkupMod = 2,	BaseValue = 25000
+	--Starship Reactor Cores
+	{"UI_SHIP_CORE_C_NAME",			0,	CClassReactorBaseMarkup},								
+	{"UI_SHIP_CORE_B_NAME",			0,	BClassReactorBaseMarkup},								
+	{"UI_SHIP_CORE_A_NAME",			0,	AClassReactorBaseMarkup},								
+	{"UI_SHIP_CORE_S_NAME",			0,	SClassReactorBaseMarkup},								
+	
 	--Misc
 	{"UI_SUSPECT_GOODS_NAME",		SusGoodsSpaceStationMarkup,	SusGoodsBaseMarkup},						--BaseValue = 150
 	{"UI_SUSPECT_TECH_NAME",		SusTechSpaceStationMarkup,	SusTechBaseMarkup},							--BaseValue = 200

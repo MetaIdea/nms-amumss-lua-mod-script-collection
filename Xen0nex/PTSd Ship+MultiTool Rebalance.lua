@@ -94,8 +94,8 @@ ShipStatChanges	=
 			"Dropship"		--Hauler		Maneuverability: Low (150-250)				Speed: Low
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				0.75,	0.75,	0.75,	0.75},		--			+		0,			3-8,		8-15,		15-30	%
-			{"SHIP_SHIELD",				2.4,	2.4,	2.4,	2.4},		--			+		18-30,		40-55,		60-75,		95-125	%
+			{"SHIP_DAMAGE",				0.9,	0.9,	0.9,	0.9},		--			+		0,			3-8,		8-15,		15-30	%
+			{"SHIP_SHIELD",				2.9,	2.9,	2.9,	2.9},		--			+		18-30,		40-55,		60-75,		95-125	%
 			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2},		--			+		5-10,		8-15,		23-37,		45-58	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		0,			0-5,		5-10,		10-15,	%
 		}
@@ -106,7 +106,7 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0,			0,			0		%
-			{"SHIP_SHIELD",				2.5,	2.6,	2.8,	2.6},		--			+		0[2-4],		4-16,		15-25,		30-40	%
+			{"SHIP_SHIELD",				3.08,	3.2,	3.44,	3.2},		--			+		0[2-4],		4-16,		15-25,		30-40	%
 			{"SHIP_HYPERDRIVE",			2.95,	2.95,	2.95,	2.95},		--			+		15-25,		30-45,		50-85,		90-120	%				(up to ~4,200 ly maxed out in 3.99?)
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		5-10,		10-20,		20-25,		25-32,	%
 		}
@@ -162,7 +162,7 @@ LivingShipStatChanges =
 			"Alien"			--Living Ship	Maneuverability: Low (150-250)				Speed: Low
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				0.75,	0.75,	0.75,	0.75},		--			+		N/A,		N/A,		N/A,		50-75	%
+			{"SHIP_DAMAGE",				0.8,	0.8,	0.8,	0.8},		--			+		N/A,		N/A,		N/A,		50-75	%
 			{"SHIP_SHIELD",				1.75,	1.75,	1.75,	1.75},		--			+		N/A,		N/A,		N/A,		15-38	%
 			{"SHIP_HYPERDRIVE",			2.7,	2.7,	2.7,	2.7},		--			+		N/A,		N/A,		N/A,		75-95	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		N/A,		N/A,		N/A,		10-15,	%

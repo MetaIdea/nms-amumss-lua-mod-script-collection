@@ -2,7 +2,7 @@ Author = "Exosolar"			--Edited by Xen0nex
 --ModName = "gExos Challenge"
 ModNameSub = "Market StabilityX"
 BaseDescription = "Removes market crashing by narrowing the range in which prices can fluctuate, reduces the effect of player selling."
-GameVersion = "441"
+GameVersion = "462"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -19,13 +19,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["REPLACE_TYPE"]         = "ALL",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSellingPriceMultiplier", 0.8},						--0.7		Lowest price you will initially pay for this type of trade item		(The Buy:-XX% on Galactic Map)
-		{"MaxSellingPriceMultiplier", 0.99},					--0.9		Highest price you will initially  pay for this type of trade item	(The Buy:-XX% on Galactic Map)
-		{"MinBuyingPriceMultiplier", 1.01},						--1.4		Lowest price you will initially  sell this type of trade item for	(The Sell:XX% on Galactic Map)
-		{"MaxBuyingPriceMultiplier", 1.2}}},					--1.8		Highest price you will initially  sell this type of trade item for	(The Sell:XX% on Galactic Map)
+		{"MaxSellingPriceMultiplier", 0.99},					--0.9		Highest price you will initially pay for this type of trade item	(The Buy:-XX% on Galactic Map)
+		{"MinBuyingPriceMultiplier", 1.01},						--1.4		Lowest price you will initially sell this type of trade item for	(The Sell:XX% on Galactic Map)
+		{"MaxBuyingPriceMultiplier", 1.15},						--1.8		Highest price you will initially sell this type of trade item for	(The Sell:XX% on Galactic Map)
+		{"MinBuyingPriceMultiplierSurge", 1.15},				--1.8		Lowest price you will initially sell this type of trade item for during a Trade Surge
+		{"MaxBuyingPriceMultiplierSurge", 1.3}}},				--2.8		Highest price you will initially sell this type of trade item for during a Trade Surge
 	
 	{["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"MaxTradingMultiplier", 1.2},							--3			(1.01)
+		{"MaxTradingMultiplier", 1.3},							--3			(1.01)
 		{"MinTradingMultiplier", 0.8}}},						--0.2		(0.99)
 
 	{["SPECIAL_KEY_WORDS"] = {"Name","UI_TRADE_TYPE_MINERALS"},
