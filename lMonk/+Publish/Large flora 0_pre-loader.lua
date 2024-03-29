@@ -3,12 +3,12 @@ local mod_desc = [[
   This is a PRE-LOADER script.
   It's purpose it loading the mbins before the main script is processed... So it has to run first!
   
-  DO NOT CHANGE THE SCRIPT'S NAME! IT IS CALLED BY THE MAIN DIRECTLY! (or update your change in the main)
+  DO NOT CHANGE THE SCRIPT'S NAME!
 ]]--------------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '_mbin_preloader.pak',
-	MOD_BATCHNAME		= '_MOD.lMonk.large flora.2.11.pak',
+	MOD_BATCHNAME		= '_MOD.lMonk.large flora.2.12.pak',
 	MOD_AUTHOR			= 'lMonk',
 	NMS_VERSION			= '4.62',
 	MOD_DESCRIPTION		= mod_desc,

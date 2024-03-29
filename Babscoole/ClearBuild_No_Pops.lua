@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "ClearBuild_No HUD + Popups.pak",
+["MOD_FILENAME"]            = "ClearBuild_No_Pops.pak",
 ["MOD_AUTHOR"]              = "PakMack",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.62",
@@ -36,23 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "TOGGLESELECT"},
                                 {"ID", "TOGGLECAM"},
                                 {"ID", "TOGGLEWIRING"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IsHidden", "True"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDBUILDNOTIFY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"ID", "BUILD_INFO"},
-                                {"ID", "LARGE"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
