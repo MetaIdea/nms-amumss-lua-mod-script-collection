@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MechUpgrade.pak",
 ["MOD_DESCRIPTION"]			= "MechUpgrade",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "4.62",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -20,14 +20,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"VehicleSolarRegenFactor",     "0.25"},       -- Original "0.1"
-								{"MechJetpackTurnSpeed",		"0.5"},		-- Original "3"
+								{"MechJetpackTurnSpeed",		"0.75"},		-- Original "3"
 								{"MechTurretMaxAngleAir",        "360"},
 								{"MechWalkToRunTimeIdle",		"1"},		-- Original "2"
 								{"MechLandBrake",				"6"},		-- Original "4"
 								{"MechJetpackLandTime",			"0.4"},		-- Original "0.6"
 								{"MechTitanFallLandIntroTime",			"3.5"},		-- Original "4.5"
 								{"MechJetpackMaxSpeed", 		"30"},
-								{"VehicleBoostTime",           "3.0"},      -- Original "2.5"
+								{"VehicleBoostTime",           "3.5"},      -- Original "2.5"
 								{"VehicleBoostRechargeTime",   "1.5"},      -- Original "2.5"
 								{"VehicleBoostSpeedMultiplierPercent", 	"100"},
 								{"TopSpeedForward",             "3"},

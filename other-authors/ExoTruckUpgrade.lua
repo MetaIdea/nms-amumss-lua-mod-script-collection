@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "ExoTruckBoost.pak",
 ["MOD_DESCRIPTION"]			= "ExoCraftBoost",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "4.62",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 										
 										
 											{"TopSpeedForward",				"25"}, 	
-											{"TopSpeedReverse",				"10"},
+											{"TopSpeedReverse",				"20"},
 											{"UnderwaterEngineMaxSpeed",	"20"}, 	
 											{"VehicleBoostMaxSpeed", 		"40"},
 											{"VehicleBoostTime",			"2.5"},

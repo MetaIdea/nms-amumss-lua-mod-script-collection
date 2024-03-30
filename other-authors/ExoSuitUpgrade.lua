@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "ExoSuitUpgrade.pak",
 ["MOD_DESCRIPTION"]			= "ExoSuit Upgrade",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "4.62",
 ["MODIFICATIONS"] 			= 
 	{
 		{
