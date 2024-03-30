@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-50"
+GameVersion = "4-63"
 ModVersion = "1-3-2"
 
 --
@@ -846,6 +846,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -900,6 +901,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -994,6 +996,7 @@ MODIFICATIONS = {{
                   <Property name="SetAsSelected" value="False" />
                   <Property name="Restart" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
+                  <Property name="AlreadyActiveFailureMessage" value="" />
                 </Property>
               </Property>
             </Property>
@@ -1220,6 +1223,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -1313,6 +1317,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyFalse" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -1644,7 +1649,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="26" />
+          <Property name="Version" value="27" />
           <Property name="Progress" value="3" />
         </Property>
       </Property>
@@ -1689,6 +1694,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -1738,7 +1744,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -1754,7 +1760,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -1771,7 +1777,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="26" />
+              <Property name="Version" value="27" />
               <Property name="Progress" value="2" />
             </Property>
           </Property>
@@ -2029,6 +2035,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -2083,6 +2090,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -2313,6 +2321,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -3062,6 +3071,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -3116,6 +3126,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -3325,7 +3336,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="26" />
+          <Property name="Version" value="27" />
           <Property name="Progress" value="12" />
         </Property>
       </Property>
@@ -3370,6 +3381,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -3409,7 +3421,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -3425,7 +3437,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -3480,6 +3492,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyFalse" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -3515,7 +3528,7 @@ MODIFICATIONS = {{
                     <Property value="GcGenericMissionStage.xml">
                       <Property name="Versions">
                         <Property value="GcGenericMissionVersionProgress.xml">
-                          <Property name="Version" value="26" />
+                          <Property name="Version" value="27" />
                           <Property name="Progress" value="2" />
                         </Property>
                       </Property>
@@ -3579,6 +3592,7 @@ MODIFICATIONS = {{
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
+                        <Property name="DoConsequencesIfNeverActivated" value="True" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
                         <Property name="GalMapPathOverride" value="None" />
@@ -3614,7 +3628,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="26" />
+                                <Property name="Version" value="27" />
                                 <Property name="Progress" value="3" />
                               </Property>
                             </Property>
@@ -3641,7 +3655,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="26" />
+                                <Property name="Version" value="27" />
                                 <Property name="Progress" value="4" />
                               </Property>
                             </Property>
@@ -3701,6 +3715,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -3736,7 +3751,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="5" />
                   </Property>
                 </Property>
@@ -3751,7 +3766,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="6" />
                   </Property>
                 </Property>
@@ -3766,7 +3781,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="7" />
                   </Property>
                 </Property>
@@ -3788,7 +3803,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="8" />
                   </Property>
                 </Property>
@@ -3806,7 +3821,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="9" />
                   </Property>
                 </Property>
@@ -3832,7 +3847,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="26" />
+                    <Property name="Version" value="27" />
                     <Property name="Progress" value="10" />
                   </Property>
                 </Property>
@@ -3861,7 +3876,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="26" />
+              <Property name="Version" value="27" />
               <Property name="Progress" value="11" />
             </Property>
           </Property>
@@ -27220,6 +27235,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -27274,6 +27290,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -27424,6 +27441,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -27478,6 +27496,7 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
@@ -30806,6 +30825,7 @@ MODIFICATIONS = {{
                   <Property name="SetAsSelected" value="False" />
                   <Property name="Restart" value="False" />
                   <Property name="FailRewardIfMissionActive" value="False" />
+                  <Property name="AlreadyActiveFailureMessage" value="" />
                 </Property>
               </Property>
             </Property>
@@ -33472,6 +33492,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyFalse" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="Loop" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -33544,6 +33565,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -33647,6 +33669,7 @@ MODIFICATIONS = {{
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
+                        <Property name="DoConsequencesIfNeverActivated" value="True" />
                         <Property name="RepeatLogic" value="Loop" />
                         <Property name="IconStyle" value="Default" />
                         <Property name="GalMapPathOverride" value="None" />
@@ -33769,6 +33792,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="Loop" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -35628,6 +35652,7 @@ MODIFICATIONS = {{
               <Property name="ConditionTest" value="AnyTrue" />
             </Property>
             <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
             <Property name="RepeatLogic" value="None" />
             <Property name="IconStyle" value="Default" />
             <Property name="GalMapPathOverride" value="None" />
@@ -35703,6 +35728,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="None" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -35779,6 +35805,7 @@ MODIFICATIONS = {{
                           <Property name="ConditionTest" value="AnyTrue" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
+                        <Property name="DoConsequencesIfNeverActivated" value="True" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
                         <Property name="GalMapPathOverride" value="None" />
@@ -35853,6 +35880,7 @@ MODIFICATIONS = {{
                                 <Property name="ConditionTest" value="AnyFalse" />
                               </Property>
                               <Property name="HideFromLogIfConditionsMet" value="False" />
+                              <Property name="DoConsequencesIfNeverActivated" value="True" />
                               <Property name="RepeatLogic" value="None" />
                               <Property name="IconStyle" value="Default" />
                               <Property name="GalMapPathOverride" value="None" />
@@ -36097,6 +36125,7 @@ MODIFICATIONS = {{
                     <Property name="ConditionTest" value="AnyTrue" />
                   </Property>
                   <Property name="HideFromLogIfConditionsMet" value="False" />
+                  <Property name="DoConsequencesIfNeverActivated" value="True" />
                   <Property name="RepeatLogic" value="None" />
                   <Property name="IconStyle" value="Default" />
                   <Property name="GalMapPathOverride" value="None" />
@@ -36176,6 +36205,7 @@ MODIFICATIONS = {{
                           <Property name="ConditionTest" value="AnyFalse" />
                         </Property>
                         <Property name="HideFromLogIfConditionsMet" value="False" />
+                        <Property name="DoConsequencesIfNeverActivated" value="True" />
                         <Property name="RepeatLogic" value="None" />
                         <Property name="IconStyle" value="Default" />
                         <Property name="GalMapPathOverride" value="None" />
@@ -37569,6 +37599,7 @@ MODIFICATIONS = {{
               <Property name="SetAsSelected" value="False" />
               <Property name="Restart" value="False" />
               <Property name="FailRewardIfMissionActive" value="False" />
+              <Property name="AlreadyActiveFailureMessage" value="" />
             </Property>
           </Property>
         </Property>
@@ -37627,6 +37658,7 @@ MODIFICATIONS = {{
               <Property name="SetAsSelected" value="False" />
               <Property name="Restart" value="False" />
               <Property name="FailRewardIfMissionActive" value="True" />
+              <Property name="AlreadyActiveFailureMessage" value="" />
             </Property>
           </Property>
         </Property>
