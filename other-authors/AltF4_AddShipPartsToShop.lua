@@ -1,4 +1,4 @@
-ShipPartID = {
+local ShipPartID = {
     "FIGHT_COCKAA",
     "FIGHT_COCKAB",
     "FIGHT_COCKAC",
@@ -262,7 +262,7 @@ ShipPartID = {
     "SHUTT_WINGL"
 }
 
-function CreateShopID(NewID)
+local function CreateShopID(NewID)
     return [[
         <Property value="NMSString0x10.xml">
             <Property name="Value" value="]] .. NewID .. [[" />
@@ -270,17 +270,19 @@ function CreateShopID(NewID)
     ]]
 end
 
-ADDShipPartID = ""
-for _, id in ipairs(ShipPartID) do
-    ADDShipPartID = ADDShipPartID .. CreateShopID(id) .. "\n"
+local ADDShipPartID = {}
+for i=1,#ShipPartID do
+    ADDShipPartID[#ADDShipPartID + 1] = CreateShopID(ShipPartID[i])
 end
+
+local ADDShipPartID = table.concat(ADDShipPartID,"\n")
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
     ["NMS_VERSION"] = "4.63",
-    ["MOD_DESCRIPTION"] = "Add ship custom parts to space station shop",
+    ["MOD_DESCRIPTION"] = "Add ship custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -288,8 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
                             ["ADD"] = ADDShipPartID
                         },
                     }
