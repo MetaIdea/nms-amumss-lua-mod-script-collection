@@ -28,9 +28,9 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Docking.Fix.V.1.6.pak",
+["MOD_FILENAME"]            = "_Docking.Fix.V.1.7.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
-["NMS_VERSION"]             = "4.51",
+["NMS_VERSION"]             = "4.63",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -84,8 +84,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         "MODELS\COMMON\SPACECRAFT\DROPSHIPS\DROPSHIP_PROC.SCENE.MBIN",
                         "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC.SCENE.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD.SCENE.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.SCENE.MBIN",
                     },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SLOT_WINGS1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = TEXT_TO_ADD,
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -122,9 +133,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SCIENTIFIC_PROC"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SLOT_WINGSR"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = TEXT_TO_ADD,
                         },
                     },
@@ -135,18 +145,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] = TEXT_TO_ADD,
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = TEXT_TO_ADD,
@@ -231,28 +229,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TransZ", "5.138201"},
                             }
                         },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = 
-                    {
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
-                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Dock"},
-                            ["VCT"] =
-                            {
-                                {"TransY", "0.5"},
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "EXIT"},
                             ["VCT"] =
                             {
-                                {"TransY", "-0.5"},
+                                {"TransY", "-0.42215"},
                             }
                         },
                     },
