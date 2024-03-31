@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Buried Tech In The Wild 4.0.pak", 
+["MOD_FILENAME"] 			= "No Buried Tech In The Wild 4.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.41",
+["NMS_VERSION"]				= "4.63",
 ["MOD_DESCRIPTION"]			= "This mod removes buried technologies from planet landscape",
 ["MODIFICATIONS"] 			= 
 	{

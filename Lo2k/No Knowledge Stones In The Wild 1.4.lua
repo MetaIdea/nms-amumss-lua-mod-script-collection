@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Cargo Drops 2.9.pak", 
-["MOD_AUTHOR"]				= "Lo2k",
+["MOD_FILENAME"] 			= "No Knowledge Stones In The Wild 1.4.pak", 
+["MOD_AUTHOR"]				= "Lo2k (Mod idea by Agh1353)",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.41",
-["MOD_DESCRIPTION"]			= "This mod removes cargo drops from planet landscape",
+["NMS_VERSION"]				= "4.63",
+["MOD_DESCRIPTION"]			= "This mod removes knowledge Stones from planet landscape",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
 							["REMOVE"] 	= "SECTION",
 						},

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Exosuit Chambers in Space Stations 1.7.pak", 
+["MOD_FILENAME"] 			= "No Exosuit Chambers in Space Stations 1.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.12.1",
+["NMS_VERSION"]				= "4.63",
 ["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in Space Stations",
 ["MODIFICATIONS"] 			= 
 	{
@@ -19,7 +19,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"] 	= "SECTION",
 						},
 					},
-				}	
+				},	
+				{
+					["MBIN_FILE_SOURCE"] 	= {"MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\PARTS\SUITSHOPPARTS.SCENE.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "REFSuitSlot",},
+							["REMOVE"] 	= "SECTION",
+						},
+					},
+				},
 			}
 		}
 	}	

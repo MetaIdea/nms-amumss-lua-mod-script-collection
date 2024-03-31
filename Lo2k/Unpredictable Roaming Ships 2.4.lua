@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Unpredictable Roaming Ships 2.3.pak", 
+["MOD_FILENAME"] 			= "Unpredictable Roaming Ships 2.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.51",
+["NMS_VERSION"]				= "4.63",
 ["MOD_DESCRIPTION"]			= "This mod makes roaming ship formation unpredictable",
 ["MODIFICATIONS"] 			= 
 	{

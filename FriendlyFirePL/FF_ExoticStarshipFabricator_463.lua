@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ExoticStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "460"
+METADATA_NMS_VERSION    = "463"
 METADATA_MOD_DESC       = 
 [[
 This mod enables synthesis of exotic starships based on the Guppy / Ball cockpit in starship fabricators. 
@@ -282,6 +282,7 @@ LIST_SUBSTANCES =
 }
 
 
+
 --------------------------------------------------
 -- functions to work with SEC templates
 --------------------------------------------------
@@ -366,6 +367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VCT"] = 
                             {
                                 {"IsEnabled","True",},
+                                {"TitleLocId","UI_PORTAL_CAT_TECH_WEIRD_U",},
                                 {"Filename","MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC.SCENE.MBIN",},
                             },
                         },

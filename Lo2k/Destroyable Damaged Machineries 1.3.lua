@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Damaged Machineries In The Wild 1.8.pak", 
+["MOD_FILENAME"] 			= "Destroyable Damaged Machineries 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.41",
-["MOD_DESCRIPTION"]			= "This mod removes damaged machineries from planet landscape",
+["NMS_VERSION"]				= "4.63",
+["MOD_DESCRIPTION"]			= "This mod makes damaged machineries destroyable",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,7 +17,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
-							["REMOVE"] 	= "SECTION",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByTerrainEdit", "True"},
+							}
 						},
 					},
 				}	

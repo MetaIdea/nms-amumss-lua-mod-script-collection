@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Destroyable Damaged Machineries 1.2.pak", 
+["MOD_FILENAME"] 			= "No Cargo Drops 3.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.41",
-["MOD_DESCRIPTION"]			= "This mod makes damaged machineries destroyable",
+["NMS_VERSION"]				= "4.63",
+["MOD_DESCRIPTION"]			= "This mod removes cargo drops from planet landscape",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -15,12 +15,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
+							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByTerrainEdit", "True"},
-							}
+							["REMOVE"] 	= "SECTION",
 						},
 					},
 				}	
