@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Unsorted Saves 3.8.pak", 
+["MOD_FILENAME"] 			= "Unsorted Saves 3.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.51",
+["NMS_VERSION"]				= "4.63",
 ["MOD_DESCRIPTION"]			= "This mods makes save game slots standing still",
 ["MODIFICATIONS"] 			= 
 	{
