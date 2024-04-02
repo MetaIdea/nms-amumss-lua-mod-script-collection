@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
    ["MOD_FILENAME"]    = "duggelzWorseStart.pak",
    ["MOD_AUTHOR"]      = "duggelz",
    ["MOD_DESCRIPTION"] = "Adds a slower and more difficult starter planet experience.",
-   ["NMS_VERSION"]     = "4.52+",
+   ["NMS_VERSION"]     = "4.63+",
    ["MODIFICATIONS"]   = {{["MBIN_CHANGE_TABLE"] = MBIN_CHANGE_TABLE,}},
 }
 
