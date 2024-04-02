@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_InvOP.pak",
 ["MOD_AUTHOR"]    = "DarthRevanStarkiller",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.37",
+["NMS_VERSION"]   = "4.63",
 ["MODIFICATIONS"] =
     {
         {
@@ -134,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RangeMin", "150"},
+                                {"RangeMin", "1500"},
                             }
                         },
                         {
@@ -829,9 +829,47 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Poor",    "1000"},
+                                {"Average", "1500"},
+                                {"Wealthy", "2500"},
+                                {"Pirate",  "2000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"BuilderShop", "GcTradeData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Poor",    "500"},
+                                {"Average", "1500"},
+                                {"Wealthy", "2500"},
+                                {"Pirate",  "2000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"BuilderShop", "GcTradeData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Poor",    "1000"},
                                 {"Average", "3000"},
                                 {"Wealthy", "5000"},
                                 {"Pirate",  "4000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcRepShopItem.xml"},
+                            ["MATH_OPERATION"] = "*",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", 10},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExplorerGuild", "GcRepShopData.xml", "ProductID", "POWERCELL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountForSale", "500"},
                             }
                         },
                     }
@@ -895,7 +933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TechBounds"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxHeightLarge", "10"},
+                                {"MaxHeightLarge", "6"},
                             }
                         },
                         {
@@ -908,7 +946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Bounds"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxHeightLarge", "10"},
+                                {"MaxHeightLarge", "6"},
                             }
                         },
                         {
@@ -922,9 +960,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Bounds"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxHeightSmall",    "10"},
-                                {"MaxHeightStandard", "10"},
-                                {"MaxHeightLarge",    "10"},
+                                {"MaxHeightSmall",    "6"},
+                                {"MaxHeightStandard", "6"},
+                                {"MaxHeightLarge",    "6"},
                             }
                         },
                         {
@@ -932,9 +970,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TechBounds"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxHeightSmall",    "10"},
-                                {"MaxHeightStandard", "10"},
-                                {"MaxHeightLarge",    "10"},
+                                {"MaxHeightSmall",    "6"},
+                                {"MaxHeightStandard", "6"},
+                                {"MaxHeightLarge",    "6"},
                             }
                         },
                         {
@@ -942,668 +980,668 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"C", "0"},
-                                {"B", "20"},
-                                {"A", "70"},
-                                {"S", "100"},
+                                {"B", "10"},
+                                {"A", "25"},
+                                {"S", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryCostDataEntry.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinSlots", "15"},
-                                {"MinValueInMillions", "10"},
-                                {"MaxSlots", "48"},
-                                {"MaxValueInMillions", "120"},
-                                {"CoolMultiplier", "20"},
-                                {"B", "0"},
-                                {"A", "0"},
-                                {"S", "0"},
+                                {"MinSlots", "19"},
+                                {"MinValueInMillions", "4.2"},
+                                {"MaxSlots", "36"},
+                                {"MaxValueInMillions", "34.5"},
+                                {"CoolMultiplier", "0"},
+                                {"B", "10"},
+                                {"A", "25"},
+                                {"S", "50"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"C", "40"},
+                                {"C", "60"},
                                 {"B", "30"},
-                                {"A", "20"},
-                                {"S", "10"},
+                                {"A", "10"},
+                                {"S", "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Average"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"C", "30"},
-                                {"B", "40"},
-                                {"A", "20"},
-                                {"S", "10"},
+                                {"C", "49"},
+                                {"B", "35"},
+                                {"A", "15"},
+                                {"S", "1"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Wealthy"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"C", "10"},
-                                {"B", "20"},
-                                {"A", "30"},
-                                {"S", "40"},
+                                {"C", "30"},
+                                {"B", "40"},
+                                {"A", "28"},
+                                {"S", "2"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "18"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "40"},
+                                {"Max", "55"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
-                                {"Max", "30"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "60"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "23"},
+                                {"Max", "37"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "95"},
+                                {"Max", "125"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "45"},
+                                {"Max", "58"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "5"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "24"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
-                                {"Max", "30"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "50"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "24"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "20"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "70"},
+                                {"Max", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "24"},
+                                {"Max", "38"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "35"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "15"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "4"},
+                                {"Max", "16"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "30"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
-                                {"Max", "30"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "15"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "50"},
+                                {"Max", "85"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "30"},
+                                {"Max", "40"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "90"},
+                                {"Max", "120"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "25"},
+                                {"Max", "32"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
-                                {"Max", "30"},
+                                {"Min", "3"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "15"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "35"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "55"},
+                                {"Max", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "50"},
+                                {"Max", "65"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "35"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "55"},
+                                {"Max", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "50"},
+                                {"Max", "65"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "35"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "55"},
+                                {"Max", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "50"},
+                                {"Max", "65"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "50"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "70"},
+                                {"Max", "90"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "75"},
+                                {"Max", "95"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
+                                {"Min", "40"},
                                 {"Max", "50"},
                             }
                         },
@@ -1611,223 +1649,223 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "50"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "38"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "75"},
+                                {"Max", "95"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "23"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "8"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "15"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
-                                {"Max", "30"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "45"},
+                                {"Max", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "23"},
+                                {"Max", "38"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "30"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "20"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "60"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "23"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "38"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Sail", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
-                                {"Max", "50"},
+                                {"Min", "35"},
+                                {"Max", "40"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "20"},
-                                {"Max", "20"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "24"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "8"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "3"},
+                                {"Max", "8"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "30"},
+                                {"Min", "20"},
                                 {"Max", "30"},
                             }
                         },
@@ -1835,63 +1873,63 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "50"},
+                                {"Max", "75"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "12"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "3"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "40"},
-                                {"Max", "40"},
+                                {"Min", "20"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "60"},
+                                {"Max", "80"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_SHIELD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "20"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_HYPERDRIVE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "SHIP_AGILE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "50"},
+                                {"Min", "40"},
                                 {"Max", "50"},
                             }
                         },
@@ -1899,263 +1937,263 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "35"},
+                                {"Max", "40"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "20"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pistol", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "45"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "0"},
+                                {"Max", "0"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Rifle", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "40"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "60"},
+                                {"Max", "70"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
+                                {"Min", "80"},
                                 {"Max", "90"},
                             }
                         },
@@ -2163,16 +2201,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Pristine", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
@@ -2187,167 +2225,167 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "30"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "40"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "50"},
+                                {"Max", "60"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "40"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "60"},
+                                {"Max", "70"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
+                                {"Min", "80"},
                                 {"Max", "90"},
                             }
                         },
@@ -2355,16 +2393,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "15"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Royal", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "25"},
+                                {"Max", "30"},
                             }
                         },
                         {
@@ -2379,96 +2417,96 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "10"},
+                                {"Max", "20"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "0"},
+                                {"Max", "5"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "C", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "70"},
-                                {"Max", "70"},
+                                {"Min", "20"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "15"},
+                                {"Max", "25"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "B", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "80"},
-                                {"Max", "80"},
+                                {"Min", "30"},
+                                {"Max", "35"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "20"},
+                                {"Max", "30"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "5"},
+                                {"Max", "10"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "A", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "90"},
-                                {"Max", "90"},
+                                {"Min", "35"},
+                                {"Max", "45"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_DAMAGE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "32"},
+                                {"Max", "50"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_MINING"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "10"},
+                                {"Max", "15"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Robot", "GcInventoryGenerationBaseStatData.xml", "S", "GcInventoryGenerationBaseStatClassData.xml", "BaseStatID", "WEAPON_SCAN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Min", "100"},
-                                {"Max", "100"},
+                                {"Min", "45"},
+                                {"Max", "55"},
                             }
                         },
                         {
@@ -2476,14 +2514,63 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Freighter",  "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Dropship",   "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Fighter",    "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Scientific", "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Shuttle",    "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Royal",      "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Alien",      "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Sail",       "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Robot",      "GcShipInventoryMaxUpgradeCapacity.xml"},
                             },
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "60"},
+                                {"B", "80"},
+                                {"A", "100"},
+                                {"S", "120"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fighter", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "50"},
+                                {"B", "70"},
+                                {"A", "80"},
+                                {"S", "100"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Scientific", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "60"},
+                                {"B", "80"},
+                                {"A", "90"},
+                                {"S", "110"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "50"},
+                                {"B", "80"},
+                                {"A", "90"},
+                                {"S", "110"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Royal", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "105"},
+                                {"B", "105"},
+                                {"A", "105"},
+                                {"S", "105"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Alien", "GcShipInventoryMaxUpgradeCapacity.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2494,25 +2581,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Sail", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "50"},
+                                {"B", "70"},
+                                {"A", "90"},
+                                {"S", "110"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Freighter",  "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Dropship",   "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Fighter",    "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Scientific", "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Shuttle",    "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Royal",      "GcShipInventoryMaxUpgradeCapacity.xml"},
-                                {"Alien",      "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Sail",       "GcShipInventoryMaxUpgradeCapacity.xml"},
                                 {"Robot",      "GcShipInventoryMaxUpgradeCapacity.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"MaxTechInventoryCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"C", "99"},
-                                {"B", "99"},
-                                {"A", "99"},
-                                {"S", "99"},
+                                {"C", "30"},
+                                {"B", "40"},
+                                {"A", "50"},
+                                {"S", "60"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcShipInventoryMaxUpgradeCapacity.xml"},
+
+                            ["PRECEDING_KEY_WORDS"] = {"MaxTechInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "25"},
+                                {"B", "40"},
+                                {"A", "50"},
+                                {"S", "60"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Royal", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                                {"Alien", "GcShipInventoryMaxUpgradeCapacity.xml"},
+                            },
+                            ["PRECEDING_KEY_WORDS"] = {"MaxTechInventoryCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"C", "60"},
+                                {"B", "60"},
+                                {"A", "60"},
+                                {"S", "60"},
                             }
                         },
                         {
@@ -2520,10 +2642,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"C", "99"},
-                                {"B", "99"},
-                                {"A", "99"},
-                                {"S", "99"},
+                                {"C", "21"},
+                                {"B", "30"},
+                                {"A", "45"},
+                                {"S", "60"},
                             }
                         },
                     }
