@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_TractorBeam_v443-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_TractorBeam_v463-B.pak",
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.43",
+["NMS_VERSION"]     = "4.63",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
     {
@@ -49,6 +49,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"ApproachSpeed", "120"},
+                                {"LandingSpeed",  "5"},
+                                {"TakeOffSpeed",  "120"},
+                                {"TakeOffBoost",  "0"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"HasOwnGravity", "True"},
                                 {"ApproachSpeed", "120"},
                                 {"LandingSpeed",  "5"},
                                 {"TakeOffSpeed",  "120"},
