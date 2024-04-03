@@ -27,7 +27,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN",
+                        "MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.MBIN",
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -49,22 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ApproachSpeed", "120"},
-                                {"LandingSpeed",  "5"},
-                                {"TakeOffSpeed",  "120"},
-                                {"TakeOffBoost",  "0"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"HasOwnGravity", "True"},
                                 {"ApproachSpeed", "120"},
                                 {"LandingSpeed",  "5"},
                                 {"TakeOffSpeed",  "120"},
