@@ -1,13 +1,13 @@
-ModName         =   "_MPDv1.4"
+ModName         =   "MPD"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.51"
-ModVersion      =   "1.4"
+GameVersion     =   "4.63"
+ModVersion      =   "v1.5_Orbital"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_"..ModName.."_"..ModVersion..".pak",
+["MOD_FILENAME"]    = "_"..ModName..ModVersion..".pak",
 ["MOD_DESCRIPTION"] = BaseDescription,
 ["MOD_AUTHOR"]      = ModAuthor,
 ["LUA_AUTHOR"]      = LuaAuthor,
@@ -2878,10 +2878,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE", "Filename", "TkModelResource.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SHIPEXPLODE"},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISB.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
@@ -2948,8 +2951,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="UseSeedValue" value="False" />
           </Property>
         </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
 ]]
                         },
                         {
@@ -2976,6 +2977,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life", "0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STATIONSPARKS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "0.4"},
                             }
                         },
                         {
