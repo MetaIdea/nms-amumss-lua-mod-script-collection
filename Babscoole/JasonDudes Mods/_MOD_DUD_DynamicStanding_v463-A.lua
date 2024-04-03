@@ -1,7 +1,7 @@
 ER_TRADE =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="25" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
@@ -17,7 +17,7 @@ ER_TRADE =
 ER_WAR =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="25" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
@@ -33,7 +33,7 @@ ER_WAR =
 ER_EXPL =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="25" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardFactionStanding.xml">
               <Property name="Faction" value="GcMissionFaction.xml">
@@ -49,7 +49,7 @@ ER_EXPL =
 ER_STAND =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="25" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -57,6 +57,7 @@ ER_STAND =
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
 ]]
@@ -64,10 +65,10 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v452-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v463-A.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.52",
+["NMS_VERSION"]     = "4.63",
 ["MODIFICATIONS"]   =
     {
         {
@@ -135,6 +136,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "MB_STAND_PIRATE"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountMax", "3"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_CREW_GUILD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -173,7 +182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -181,10 +190,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -192,6 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
 ]]
@@ -203,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -211,10 +222,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -222,6 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
 ]]
@@ -233,7 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -241,10 +254,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="33" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -252,8 +266,35 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="AmountMin" value="-1" />
               <Property name="AmountMax" value="-1" />
+              <Property name="UseExpeditionEventSystemRace" value="False" />
             </Property>
           </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "INTERVN_FAILURE"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
+[[
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="INTERVN_F_MSG" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMissionMessage.xml">
+              <Property name="MessageID" value="FLEET_FAILURE" />
+              <Property name="BroadcastInMultiplayer" value="False" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
 ]]
                         },
                         {
@@ -273,8 +314,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Id", "MB_STAND_GUILD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AmountMin", "2"},
-                                {"AmountMax", "3"},
+                                {"AmountMin", "5"},
+                                {"AmountMax", "5"},
                             }
                         },
                         {
@@ -289,6 +330,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountMin", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTER_SAVED"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml", "GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountMin", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "R_S9_TREE_SHIP"},
+                                {"Id", "R_S9_TREE_EXO"},
+                                {"Id", "R_S9_TREE_WEP"},
+                                {"Id", "R_S9_TREE_SUIT"},
+                            },
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"UseMatchingExpeditionSeed", "True"},
                             }
                         },
                         {
@@ -551,6 +614,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = ER_STAND
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_INT_EXP_20AS2"},
+                            ["REMOVE"] = "SECTION"
+                        },
                     }
                 },
                 {
@@ -572,6 +639,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
+                  <Property name="UseExpeditionEventSystemRace" value="False" />
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
@@ -583,6 +651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
+                  <Property name="UseExpeditionEventSystemRace" value="False" />
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
@@ -594,6 +663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   </Property>
                   <Property name="AmountMin" value="-1" />
                   <Property name="AmountMax" value="-1" />
+                  <Property name="UseExpeditionEventSystemRace" value="False" />
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">

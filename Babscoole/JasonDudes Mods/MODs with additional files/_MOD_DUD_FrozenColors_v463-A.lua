@@ -148,10 +148,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_FrozenColors_v444-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_FrozenColors_v463-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.44",
+["NMS_VERSION"]   = "4.63",
 ["MODIFICATIONS"] =
     {
         {

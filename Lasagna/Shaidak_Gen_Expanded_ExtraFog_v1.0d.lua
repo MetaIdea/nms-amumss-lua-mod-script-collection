@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_ExtraFog_v1.0c.pak",       
+["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_ExtraFog_v1.0d.pak",       
 ["MOD_AUTHOR"]				= "FjordFish",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             

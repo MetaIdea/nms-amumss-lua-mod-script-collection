@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "FrigateFuel"
 ModNameSub = "JE"
 BaseDescription = "Adjusts frigate fuel useage maximums to be the same as minimum for all frigate types"
-GameVersion = "4.62"
--- ModVersion = "v4.62"
+GameVersion = "4.63"
+-- ModVersion = "v4.63"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 
 
@@ -42,8 +42,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FrigateInitialStats","FrigateClass","DeepSpace","Stats","FuelBurnRate",}, 
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Minimum", 6},
-								{"Maximum", 6} -- 8
+                                {"Minimum", 4},
+								{"Maximum", 4} -- 8
                             }
                         },
 						{
@@ -53,7 +53,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Minimum", 6}, -- 8
 								{"Maximum", 6} -- 12
                             }
-                        }
+                        },
+						{
+                            ["PRECEDING_KEY_WORDS"] = {"FrigateInitialStats","FrigateClass","Normandy","Stats","FuelBurnRate",}, 
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 6}, -- 8
+								{"Maximum", 6} -- 12
+                            }
+                        },
+						{
+                            ["PRECEDING_KEY_WORDS"] = {"FrigateInitialStats","FrigateClass","Pirate","Stats","FuelBurnRate",}, 
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 6}, -- 8
+								{"Maximum", 8} -- 12
+                            }
+                        },
 						
                     }
                 }

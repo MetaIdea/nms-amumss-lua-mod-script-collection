@@ -2031,8 +2031,8 @@ local AddSmallTree3Collisions =
 NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_BIOMES_v1.0c.pak",
-["MOD_AUTHOR"]				= "Renewed by FjordFish, original mod by Shaidak",
+["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_BIOMES_v1.0d.pak",
+["MOD_AUTHOR"]				= "Expanded by FjordFish, original mod by Shaidak",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
@@ -3607,11 +3607,11 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "GRASSCLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0.18, 5, "TRUE", "TRUE", "FALSE", 0.18, 0.06, 0.03, 0), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 60, 0.6, 1.4, 1, 1, 0.18, 5, "TRUE", "TRUE", "FALSE", 0.18, 0.06, 0.02, 0), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "GRASSCLUMP", -1, 128, 0, 60, 1, 2, 1, 1, 0.18, 5, "TRUE", "TRUE", "FALSE", 0.18, 0.01, 0.03, 0), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "ROCKCLUMP", -1, 128, 0, 60, 0.6, 1.4, 1, 1, 0.18, 5, "TRUE", "TRUE", "FALSE", 0.18, 0.01, 0.02, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/TOXIC/LARGE/TENDRIL.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 0.6, 1.4, 1, 1, 0.48, 5, "TRUE", "TRUE", "FALSE", 0.48, 0.036, 0.024, 0), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0.48, 5, "TRUE", "TRUE", "FALSE", 0.48, 0.08, 0.02, 0), }, --## 3c_biome_landm
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 3, 5, 1, 1, 0.44, 5, "TRUE", "TRUE", "FALSE", 0.44, 0.0855, 0.019, 0), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 1, 3, 1, 1, 0.48, 5, "TRUE", "TRUE", "FALSE", 0.48, 0.01, 0.02, 0), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.MBIN", "BARRENROCKCLUMP", -1, 128, 0, 60, 3, 5, 1, 1, 0.44, 5, "TRUE", "TRUE", "FALSE", 0.44, 0.015, 0.019, 0), }, --## 3c_biome_landm
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/MEDIUMPLANT.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 65, 0.8, 1.4, 1, 1, 0, 8, "TRUE", "TRUE", "FALSE", 0.24, 0.015, 0.015, 1), }, --## 3d_biome_obj
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/MEDIUMROCK.SCENE.MBIN", "FOREST", -1, 128, 0, 40, 0.5, 0.8, 1, 1, 0, 8, "TRUE", "TRUE", "FALSE", 0.14, 0.0065, 0.0065, 1), }, --## 3d_biome_obj
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddObjectProp("MODELS/PLANETS/BIOMES/TOXIC/MEDIUM/MEDIUMROCK.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 40, 1.2, 1.6, 1, 1, 0.2, 0, "TRUE", "TRUE", "FALSE", 0.12, 0.0125, 0.0125, 1), }, --## 3d_biome_obj

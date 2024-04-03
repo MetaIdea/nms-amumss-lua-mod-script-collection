@@ -97,8 +97,8 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER =  --## 2_bfn_start
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_SPAWNER_v1.0c.pak",
-["MOD_AUTHOR"]				= "Renewed by FjordFish, original mod by Shaidak",
+["MOD_FILENAME"] 			= "Shaidak_Gen_Expanded_SPAWNER_v1.0d.pak",
+["MOD_AUTHOR"]				= "Expanded by FjordFish, original mod by Shaidak",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
