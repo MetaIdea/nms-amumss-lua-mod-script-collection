@@ -49,120 +49,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ANTELOPE", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTANTELOPE", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TRICERATOPS", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "RODENT", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "COW", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CAT", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BONECAT", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "STRIDER", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TREX", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "TWOLEGANTELOPE", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCOW", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIXLEGCAT", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRUNT", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BLOB", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"MinPetSpeedScale", "0.7"},
-                                {"MaxPetSpeedScale", "1.2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "FLOATSPIDER", "Anim", "TROT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                                {"Id", "ANTELOPE",       "Anim", "TROT"},
+                                {"Id", "ROBOTANTELOPE",  "Anim", "TROT"},
+                                {"Id", "TRICERATOPS",    "Anim", "TROT"},
+                                {"Id", "RODENT",         "Anim", "TROT"},
+                                {"Id", "COW",            "Anim", "TROT"},
+                                {"Id", "CAT",            "Anim", "TROT"},
+                                {"Id", "BONECAT",        "Anim", "TROT"},
+                                {"Id", "STRIDER",        "Anim", "TROT"},
+                                {"Id", "TREX",           "Anim", "TROT"},
+                                {"Id", "TWOLEGANTELOPE", "Anim", "TROT"},
+                                {"Id", "SIXLEGCOW",      "Anim", "TROT"},
+                                {"Id", "SIXLEGCAT",      "Anim", "TROT"},
+                                {"Id", "GRUNT",          "Anim", "TROT"},
+                                {"Id", "BLOB",           "Anim", "TROT"},
+                                {"Id", "FLOATSPIDER",    "Anim", "TROT"},
+                            },
+                            [    "VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinPetSpeedScale", "0.7"},
                                 {"MaxPetSpeedScale", "1.2"},

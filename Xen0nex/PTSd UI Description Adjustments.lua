@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "4_41"
+GameVersion = "4_63"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 VesperSailDesc =
@@ -22,6 +22,30 @@ NipNipTime =
 
 SettlementRate =
 [[%NUM% every 6 hours]]
+
+SalvageConfirm =
+[[&lt;FUEL&gt;WARNING:&lt;&gt; starship '&lt;STELLAR&gt;%SHIPNAME%&lt;&gt;' will be destroyed along with all cargo.&lt;NEWLINE&gt;Select desired &lt;TECHNOLOGY&gt;customisation module&lt;&gt; to confirm salvage operation...&lt;NEWLINE&gt;Does not work on &lt;FUEL&gt;Solar, Living,&lt;&gt; or &lt;FUEL&gt;Interceptor&lt;&gt; starships]]
+
+SalvageAttempt =
+[[Attempt to extract Reactor]]
+
+SalvageEngine =
+[[Salvage Engines + Reactor]]
+
+SalvageWings =
+[[Salvage Wings + Reactor]]
+
+SalvageLWing =
+[[Salvage Left Wing + Reactor]]
+
+SalvageRWing =
+[[Salvage Right Wing + Reactor]]
+
+SalvageHull =
+[[Salvage Hull + Reactor]]
+
+SalvageCockpit =
+[[Salvage Cockpit + Reactor]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -83,6 +107,68 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Value", VesperSailDesc}
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_LOC8_ENGLISH.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SALVAGE_PROD_CONFIRM_LANG",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageConfirm}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_NO_SALVAGE_PRODS",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageAttempt}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_ENG",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageEngine}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageWings}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_L",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageLWing}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_R",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageRWing}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_HULL",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageHull}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_COCK",	"English", "VariableSizeString.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Value", SalvageCockpit}
 							}
 						},
 					}

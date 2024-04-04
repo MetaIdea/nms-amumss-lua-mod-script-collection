@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "462"
+GameVersion = "463"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -50,8 +50,8 @@ ShipScrappingItemChanges =
 	}
 }
 
-ClassItemFromShipSalvage =				"False"							--"False"		Unknwon effect, from RewardInventoryClassItemFromShipSalvage 
-MaxStandingTechDiscount =				0.8								--0.5			Presumably the minimum multiplier used for the price of upgrade modules when at maximum standing with the system race
+ClassItemFromShipSalvage =				"True"							--"False"		If True, when salvaging a specific item from a starship (not when salvaging for generic scrap), you also receive a Reactor Core matching the Class of the starship
+MaxStandingTechDiscount =				0.8								--0.5			The minimum multiplier used for the price of upgrade modules when at maximum standing with the system race. E.G. 0.8 means you pay 0.8x as much as normal, or a 20% discount in other words
 NonNaturalCostMul =						0.5								--0.5			Presumably a multiplier on the trade in / salvage value of custom built starships
 
 --Sets some Freighter Rooms & most Freighter Storage Room recipes to be unknwon at the start of the game, to require unlocking at the Anomaly

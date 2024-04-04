@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_52"
+GameVersion = "4_63"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -66,6 +66,7 @@ ProductSaleChanges =
 	
 	{"UI_STORMCRYSTAL_NAME",	0.6},				--206,000		Storm Crystal	(0.8x 126,000 in 3.99)
 	{"UI_SHIPCHARGE_NAME",	18.0},					--500			Starshield Battery
+	{"HYPERFUEL2_NAME",	3.0},						--46,750		Warp Hypercore	(Same value as Warp Cell)
 	
 	{"PROD_NIP_NAME",	0.841},						--17,776		Nip Nip Buds		(4hr grow time)
 	{"NEWPROD12_NAME",	2.0/2},						--64,000		Sac Venom			(3hr 20 min grow time)
@@ -144,7 +145,8 @@ ProductSaleChanges =
 	{"UI_MECH_PROD_NAME",	6.0},					--28,000		Hardframe Engine
 	{"UI_WALKER_PROD_NAME",	8.0},					--35,000		Walker Brain
 	{"UI_DRONE_SALVAGE_NAME",	2.0},				--17,000		Inverted Mirror
-	{"UI_DRONE_SHARD_NAME",	0.842},					--1900			Radiant Shard
+	{"UI_DRONE_SHARD_NAME",	0.842},					--1,900			Radiant Shard
+	{"UI_SENTFREI_PROD_NAME",	10},				--35,000		Carrier AI Fragment
 	
 	{"UI_ILLEGAL_PROD1_NAME",	2.0},				--2,000			Illegal Trade item
 	{"UI_ILLEGAL_PROD2_NAME",	2.0},				--9,000			Illegal Trade item
@@ -155,7 +157,8 @@ ProductSaleChanges =
 	{"UI_ILLEGAL_PROD7_NAME",	2.0},				--83,000		Illegal Trade item
 	{"UI_ILLEGAL_PROD8_NAME",	2.0},				--98,000		Illegal Trade item
 	
-	{"UI_SALVAGE_TECH_6_NAME",	10.0},				--12,000		Salvaged Trade item		(Based on the pattern of the other items in this series I suspect a typo missed a 0 in this price)
+	{"UI_SALVAGE_TECH_5_NAME",	1.0},				--10,000		Salvaged Trade item		(Price seems oddly low based on the other items in this series, but some vanilla rewards account for this price so leaving as-is) 
+	{"UI_SALVAGE_TECH_6_NAME",	1.0},				--12,000		Salvaged Trade item		(Price seems oddly low based on the other items in this series, but some vanilla rewards account for this price so leaving as-is) 
 	
 	{"UP_ROBOSUIT_NAME",		2.5},				--313			Rebuilt Exosuit Module (Bought with Void Motes)
 	--Different versions of the Staff Pole for Voltaic Staves
@@ -185,10 +188,10 @@ ProductSaleChanges =
 	{"UI_STAFF_HEAD6_NAME",		1.0},				--999	(Bought with Void Motes)
 	
 	--Various Starship Reactor Cores		(making base value roughly equivalent to what you'd get in PTSd for selling all upgrade modules you get for scrapping a starship of this class)
-	{"UI_SHIP_CORE_C_NAME",		0.5},				--300	(Bought with Nanites)
-	{"UI_SHIP_CORE_B_NAME",		0.25},				--3000	(Bought with Nanites)
-	{"UI_SHIP_CORE_A_NAME",		0.25},				--6500	(Bought with Nanites)
-	{"UI_SHIP_CORE_S_NAME",		0.25},				--12000	(Bought with Nanites)
+	{"UI_SHIP_CORE_C_NAME",		0.5*0.667},			--300	(Bought with Nanites)		(~150 = Average value of scrapping a C-Class ship and selling all upgrade modules)
+	{"UI_SHIP_CORE_B_NAME",		0.25*0.667},		--3000	(Bought with Nanites)		(~750 = Average value of scrapping a C-Class ship and selling all upgrade modules)
+	{"UI_SHIP_CORE_A_NAME",		0.25*0.667},		--6500	(Bought with Nanites)		(~1625 = Average value of scrapping a C-Class ship and selling all upgrade modules)
+	{"UI_SHIP_CORE_S_NAME",		0.25*0.667},		--12000	(Bought with Nanites)		(~3000 = Average value of scrapping a C-Class ship and selling all upgrade modules)
 }
 
 --These various "geode" style items are given values equal to 1.33x the expected value of opening & selling their contents on average (3x value for Tritium Hypercluster & Crystal Shard due to the difficulty in getting Tritium/Di-Hydrogen)
@@ -599,7 +602,7 @@ LaunchAndSubFuelBuyBaseMarkup	=	199				--98
 AntimatterBuyBaseMarkup	=			9				--5
 	--AntimatterAndFrigateFuelBuyMarkupMod =1.5			--1.5
 
-NavDataSpaceStationMarkup =			1				--0.5		Navigation Data
+NavDataSpaceStationMarkup =			0.2				--0.5		Navigation Data
 NavDataBuyBaseMarkup =				9				--0.2
 DropPodDataSpaceStationMarkup =		1				--0.5		Exosuit Upgrade Charts
 DropPodDataBuyBaseMarkup =			5				--0.2
@@ -620,10 +623,10 @@ LoomSpaceStationMarkup = 			1				--0
 LoomBuyBaseMarkup = 				0.2				--0.2
 	--LoomBuyMarkupMod = 				2				--2
 
-CClassReactorBaseMarkup =			25.67			--0
-BClassReactorBaseMarkup =			15				--0
-AClassReactorBaseMarkup =			16.24			--0
-SClassReactorBaseMarkup =			14				--0
+CClassReactorBaseMarkup =			0.5				--0			(BaseValue 100 in PTSd)
+BClassReactorBaseMarkup =			15				--0			(BaseValue 500 in PTSd)
+AClassReactorBaseMarkup =			21.15			--0			(BaseValue 1084 in PTSd)
+SClassReactorBaseMarkup =			27				--0			(BaseValue 2000 in PTSd)
 
 --Miscellaneous other items
 LarvalCoreSpaceStationMarkup =		0				--0			(BaseValue 65000)
@@ -632,6 +635,11 @@ HadalCoreSpaceStationMarkup =		0				--0			(BaseValue 97500)
 HadalCoreBaseMarkup =				1.4				--0.2
 NipNipSpaceStationMarkup =			0				--0			(BaseValue 17776)
 NipNipBaseMarkup =					16				--3		(8)
+SalvagedFrigateModuleBaseMarkup =	1.5				--0.2		(BaseValeu 95000)
+CargoBulkheadBaseMarkup =			3				--0.2		(BaseValeu 105000)
+BoundaryMapBaseMarkup =				15				--0			(BaseValeu 3200)
+ArtifactChartBaseMarkup =			19				--0			(BaseValeu 3200)
+AnomalyDetectorBaseMarkup =			19				--0.2		(BaseValeu 3200)
 --This items normally from scrapping starships, and added to shops in PTSd to be used for repairing Sentinel tech
 SalvagedTechSpaceStationMarkup =	0.05			--0
 SalvagedTechBaseMarkup =			0.1				--0.1
@@ -668,8 +676,8 @@ ProductBuyMarkupModChanges =
 SubstanceCostChanges =
 {
 	{"FUEL1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Carbon		BaseValue = 12
-	{"FUEL2",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
-	{"OXYGEN",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},
+	{"FUEL2",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},			--Condensed Carbon	BaseValue = 24
+	{"OXYGEN",			SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},			--Oxygen		BaseValue = 34
 	{"LAUNCHSUB",		SubstanceSpaceStationMarkup,	ExpensiveSubBuyBaseMarkup},			--Di-Hydrogen,	BaseValue = 34
 	{"LAUNCHSUB2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},
 	{"ROCKETSUB",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup},			--Tritium,		BaseValue = 6
@@ -775,6 +783,11 @@ ProductCostChanges =
 	{"UI_FIENDCORE_NAME",			LarvalCoreSpaceStationMarkup,	LarvalCoreBaseMarkup},
 	{"UI_FISHCORE_NAME",			HadalCoreSpaceStationMarkup,	HadalCoreBaseMarkup},
 	{"PROD_NIP_NAME",				NipNipSpaceStationMarkup,	NipNipBaseMarkup},
+	{"UI_FRIG_TOKEN_NAME",			0,	SalvagedFrigateModuleBaseMarkup},
+	{"UI_FREIGHT_INV_TOKEN_NAME",	0,	CargoBulkheadBaseMarkup},
+	{"UI_STARCHART_HIVE_NAME",		0,	BoundaryMapBaseMarkup},
+	{"UI_STARCHART_TREASURE_NAME",	0,	ArtifactChartBaseMarkup},
+	{"UI_POI_LOCATOR_NAME",			0,	AnomalyDetectorBaseMarkup},
 	
 	{"UI_SALVAGE_TECH_6_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},				--Spool of Nano-Cables	BaseValue = 12000	(x10 in PTSd)
 	{"UI_SALVAGE_TECH_7_NAME",		SalvagedTechSpaceStationMarkup,	SalvagedTechBaseMarkup,	0},				--Recycled Circuitry	BaseValue = 520000

@@ -1,30 +1,17 @@
 ModName = "PTSd Suit Inventory and Stack Sizes"
-GameVersion = "4_51"
+GameVersion = "4_63"
 Description = "Rebalance of inventory Slot stack sizes, as well as initial & max exosuit inventory size"
 
 --NOTE: certain specific items may have their stack size further adjusted in the "PTSd Resource + Product + Construction Rebalance" section
 	--No references to "Cargo" slots (the slots listed in the UI as "cargo" are actually renamed general slots) or to supercharged tech slots (SpecialTechSlots) in these files seem to have any effect in game 
 
-
---Unclear what these do, or whether they have any effect at all
-PersonalInventoryMinWidthMax =			5				--5
-PersonalInventoryMinHeightMax =			5 				--5
-PersonalTechInventoryMinWidthMax =		10 				--10
-PersonalTechInventoryMinHeightMax =		4				--6
-ShipInventoryMinWidthMax =				10 				--10
-ShipInventoryMinHeightMax =				7 				--12
-ShipTechInventoryMinWidthMax =			10				--10
-ShipTechInventoryMinHeightMax =			5				--6
-VehicleInventoryMinWidthMax =			10 				--10
-VehicleInventoryMinHeightMax =			5				--12
-WeaponInventoryMinWidthMax =			10 				--10
-WeaponInventoryMinHeightMax =			3 				--5
-
+SubstanceStackMult =		1				--1		Multiplies all the values in MaxSubstanceStackSizes below by this number, automatically rounded and capped at a minimum of 1
+ProductStackMult =			1				--1		Multiplies all the values in MaxProductStackSizes below by this number, automatically rounded and capped at a minimum of 1
 
 StackLimits =
 {
 	{
-		{"MaxSubstanceStackSizes"},
+		{"MaxSubstanceStackSizes",	SubstanceStackMult},
 		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
 			{"Default",				1000,		500,		300},			--	9999,		500,		150
 			{"Personal",			1000,		500,		300},			--	9999,		500,		300
@@ -38,7 +25,7 @@ StackLimits =
 		}
 	},
 	{
-		{"MaxProductStackSizes"},
+		{"MaxProductStackSizes",	ProductStackMult},
 		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
 			{"Default",				8,			5,			3},				--	5,			5,			3
 			{"Personal",			8,			5,			3},				--	10,			10,			3
@@ -76,6 +63,33 @@ StorageHeight =		5									--6
 RocketSlots =		7									--21		Doesn't seem to actually have any effect
 RocketWidth =		2									--7			Doesn't seem to actually have any effect
 RocketHeight =		4									--3			Doesn't seem to actually have any effect
+
+--Unclear what these do, or whether they have any effect at all
+PersonalInventoryMinWidthMax =			5				--5
+PersonalInventoryMinHeightMax =			5 				--5
+PersonalTechInventoryMinWidthMax =		10 				--10
+PersonalTechInventoryMinHeightMax =		4				--6
+ShipInventoryMinWidthMax =				10 				--10
+ShipInventoryMinHeightMax =				7 				--12
+ShipTechInventoryMinWidthMax =			10				--10
+ShipTechInventoryMinHeightMax =			5				--6
+VehicleInventoryMinWidthMax =			10 				--10
+VehicleInventoryMinHeightMax =			5				--12
+WeaponInventoryMinWidthMax =			10 				--10
+WeaponInventoryMinHeightMax =			3 				--5
+
+function RoundCapped (value)
+    roundValue = math.floor(value+0.5)
+	
+	if roundValue == 0 then
+	return
+	1
+	
+	else
+	return
+	roundValue
+	end
+end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -251,6 +265,7 @@ for i = 1, #Difficulties do
 	
 	for j = 1, #StackLimits do
 		local ItemType = StackLimits[j][1][1]
+		local StackMult = StackLimits[j][1][2]
 		
 		local Inventories = StackLimits[j][2]
 		local Default = Inventories[1][i+1]
@@ -270,15 +285,15 @@ for i = 1, #Difficulties do
 				["PRECEDING_KEY_WORDS"] = ItemType,
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
-					{"Default",				Default},
-					{"Personal",			Personal},
-					{"Ship",				Ship},
-					{"Freighter",			Freighter},
-					{"Vehicle",				Vehicle},
-					{"Chest",				Chest},
-					{"BaseCapsule",			BaseCapsule},
-					{"MaintenanceObject",	MaintenanceObject},
-					{"UIPopup",				UIPopup},
+					{"Default",				RoundCapped(StackMult*Default)},
+					{"Personal",			RoundCapped(StackMult*Personal)},
+					{"Ship",				RoundCapped(StackMult*Ship)},
+					{"Freighter",			RoundCapped(StackMult*Freighter)},
+					{"Vehicle",				RoundCapped(StackMult*Vehicle)},
+					{"Chest",				RoundCapped(StackMult*Chest)},
+					{"BaseCapsule",			RoundCapped(StackMult*BaseCapsule)},
+					{"MaintenanceObject",	RoundCapped(StackMult*MaintenanceObject)},
+					{"UIPopup",				RoundCapped(StackMult*UIPopup)},
 				}
 			}
 	end

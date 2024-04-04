@@ -1,6 +1,8 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "4_52"
+GameVersion = "4_63"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
+
+RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
 
 --Un-SuperCharger Mult - Enter the current Supercharged tech slot bonus value used in GCGAMEPLAYGLOBALS.GLOBAL.MBIN here to divide most affected base weapon tech values by this amount, so they start underpowered, and placing them on a supercharged slot brings that back to "normal" strength
 	--This includes the stats which are made worse when larger (ie, when supercharged), such as Reload time (except on Boltcaster), Recoil, Weapon charge time, Dispersion
@@ -2373,6 +2375,52 @@ for i = 1, #WeaponStatChanges do
 				}
 			}
 	end
+end
+if RevertMiningLaserOverheatChanges then
+			ChangesToWeaponStats[#ChangesToWeaponStats+1] =
+			{
+				["MATH_OPERATION"] 		= "/",
+				["SPECIAL_KEY_WORDS"] = {"ID", "LASER", "StatsType", "Weapon_Laser_ReloadTime"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Bonus", MiningOverheatMult}
+				}
+			}
+			ChangesToWeaponStats[#ChangesToWeaponStats+1] =
+			{
+				["MATH_OPERATION"] 		= "/",
+				["SPECIAL_KEY_WORDS"] = {"ID", "SOUL_LASER", "StatsType", "Weapon_Laser_ReloadTime"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Bonus", MiningOverheatMult}
+				}
+			}
+			ChangesToWeaponStats[#ChangesToWeaponStats+1] =
+			{
+				["MATH_OPERATION"] 		= "/",
+				["SPECIAL_KEY_WORDS"] = {"ID", "ATLAS_LASER", "StatsType", "Weapon_Laser_ReloadTime"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Bonus", RunicLensOverheatMult}
+				}
+			}
+			ChangesToWeaponStats[#ChangesToWeaponStats+1] =
+			{
+				["MATH_OPERATION"] 		= "/",
+				["SPECIAL_KEY_WORDS"] = {"ID", "SENT_LASER", "StatsType", "Weapon_Laser_ReloadTime"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Bonus", HijackMiningOverheatMult}
+				}
+			}
 end
 for i = 1, #WeaponSecondaryTechChanges do
 	local WeaponID = WeaponSecondaryTechChanges[i][1][1]

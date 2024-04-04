@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_62"
+GameVersion = "4_63"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -247,6 +247,21 @@ TechRarityChanges =
 	{
 		"F_HDRIVEBOOST2",		"Impossible",				--Plasmatic Warp Injector	"VeryRare"
 	},
+	{
+		"T_SHIPJUMP",			"Normal",					--Procedural Pulse Engine Upgrades	"Rare"
+	},
+	{
+		"T_LAUNCHER",			"Normal",					--Procedural Launch Thruster Upgrades	"Normal"
+	},
+	{
+		"T_HDRIVE",				"Normal",					--Procedural Hyperdrive Upgrades	"Rare"
+	},
+	{
+		"T_SHIPSHLD",			"Normal",					--Procedural Deflector Shield Upgrades	"Common"
+	},
+	{
+		"T_SHIPGUN",			"Normal",					--Procedural Photon Cannon Upgrades	"Normal"
+	},
 --Multi-Tool techs
 	{
 		"UT_SURVEY",			"Impossible",				--Survey Device			"Common"
@@ -280,6 +295,12 @@ TechRarityChanges =
 	},
 	{
 		"T_SCAN",				"Normal",					--Procedural Scan upgrade	"Common"
+	},
+	{
+		"T_LASER",				"Normal",					--Procedural Mining Laser upgrade	"Common"
+	},
+	{
+		"T_BOLT",				"Normal",					--Procedural Boltcaster upgrade	"Rare"
 	},
 }
 

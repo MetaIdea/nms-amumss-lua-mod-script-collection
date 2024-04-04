@@ -1,6 +1,8 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_52"
+GameVersion = "4_63"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
+
+RevertWeaponGripChanges = false		--false			Setting this to true will revert Rifle, Atlantid, Staff, and Sentinel(rifle-style) Multi-Tools back to using "WeaponLarge" tool sizing. This will re-enable the "rifle-style" grip animation instead of "pistol-style" when using them like in Vanilla, but also increase their maximum possible tech slots from 24 to 30
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
 --LandingCost = 	50									--0		(TakeOffCost is 100)	[18]		Unknown function
@@ -950,6 +952,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						}]]
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_STAFF"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--4		Unclear what this does
+								--{"MaxSize",	3},			--4		Unclear what this does
+								{"SizeType",	StaffSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOT"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								--{"MinSize",	2},			--2		Unclear what this does
+								--{"MaxSize",	3},			--3		Unclear what this does
+								{"SizeType",	SentinelPistolSize},
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
 							["MATH_OPERATION"] = "",
 							["REPLACE_TYPE"] 		= "",
@@ -994,17 +1018,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								--{"MinSize",	2},			--4		Unclear what this does
-								--{"MaxSize",	3},			--4		Unclear what this does
-								{"SizeType",	StaffSize},
-							}
-						},
-						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOTBIG"},
 							["MATH_OPERATION"] = "",
 							["REPLACE_TYPE"] 		= "",
@@ -1013,17 +1026,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"MinSize",	2},			--4		Unclear what this does
 								--{"MaxSize",	3},			--4		Unclear what this does
 								{"SizeType",	SentinelRifleSize},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOT"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								--{"MinSize",	2},			--2		Unclear what this does
-								--{"MaxSize",	3},			--3		Unclear what this does
-								{"SizeType",	SentinelPistolSize},
 							}
 						},
 					}
@@ -1091,9 +1093,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 }	
 
 
-
 local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
+if RevertWeaponGripChanges then
+	ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_Y"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_B"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOTBIG"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_STAFF"},
+							["MATH_OPERATION"] = "",
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"SizeType",	"WeaponLarge"},
+							}
+						}
+end
 if FixAgilityStat then
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
