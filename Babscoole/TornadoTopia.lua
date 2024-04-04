@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "~~~~~~~~TornadoTopia.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.44",
+["NMS_VERSION"]             = "4.63",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Effects"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
     <Property value="GcWeatherEffect.xml">
@@ -89,6 +89,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\DUSTWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "TORNADO"},
+                            ["SEC_SAVE_TO"] = "ADD_TORNADO",
+                        },
+                    },
+                },
+                {
                     ["MBIN_FILE_SOURCE"] =
                     {
                         "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
@@ -110,13 +120,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds", "NMSString0x10.xml"},
@@ -124,13 +129,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -155,12 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds", "NMSString0x10.xml"},
@@ -168,13 +163,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -191,12 +181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds", "NMSString0x10.xml"},
@@ -204,13 +189,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -227,22 +207,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherEffectsIds"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WeatherHazardsIds"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
-[[
-    <Property value="NMSString0x10.xml">
-      <Property name="Value" value="TORNADO" />
-    </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "ADD_TORNADO",
                         },
                         {
                             ["VALUE_CHANGE_TABLE"] =
