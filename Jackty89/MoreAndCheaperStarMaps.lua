@@ -9,6 +9,12 @@ Default_Reality_Path = "METADATA/REALITY/DEFAULTREALITY.MBIN"
 Starmap_Crashed_Ship_Id = "MAP_CRASHSHIP"
 HiveMap_Id = "CHART_HIVE"
 
+Id_List_For_Lower_Prices = 
+{
+    "CHART_SETTLE",
+    "CHART_TREASURE",
+    "NAV_DATA_DROP"
+}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -22,16 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = Product_Table_Path,
                     ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            -- This reduces the cost of settlement maps to 1
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "CHART_SETTLE"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RecipeCost", "1"}
-                            }
-                        }
-                    }
+                    {                    }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = Reward_Table_Path,
@@ -64,6 +61,19 @@ local Changes_To_Reward_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]
 local Changes_To_Consumable_Item_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 
+function Reduce_Map_cost()
+    for i = 1, #Id_List_For_Lower_Prices, 1 do
+        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+        {
+            -- This reduces the cost of settlement maps to 1
+            ["SPECIAL_KEY_WORDS"] = {"Id", Id_List_For_Lower_Prices[i]},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"RecipeCost", "1"}
+            }
+        }
+    end
+end
 function Create_New_Starmap(New_Id)
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
@@ -78,6 +88,7 @@ function Create_New_Starmap(New_Id)
             {"ID", New_Id},
             {"Name", "BUILDING_DISTRESSSIGNAL"},
             {"NameLower", "BUILDING_DISTRESSSIGNAL_L"},
+            {"RecipeCost", 1}
         }
     }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
@@ -211,6 +222,8 @@ function Create_Mapshop_Entry(Mapshop_Entry_Id)
         ["SEC_ADD_NAMED"] = "MAPSHOP_ENTRY"
     }
 end
+
+Reduce_Map_cost()
 
 Create_New_Starmap(Starmap_Crashed_Ship_Id)
 Create_Starmap_Reward("R_" .. Starmap_Crashed_Ship_Id)
