@@ -103,7 +103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DescriptorOption", "ARMOUR_NULL"},
                                 {"DescriptorOption", "BACKPACK_CAPE"},
                             },
-                            ["SECTION_ACTIVE"] = 2,
 							["REMOVE"] = "SECTION"
 						},
 						{
