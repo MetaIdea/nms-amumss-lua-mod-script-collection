@@ -2,18 +2,18 @@ Author = "Gumsk"
 ModName = "gWeather"
 ModNameSub = "No Storm Dust"
 BaseDescription = "Removes storm dust"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"] = BaseDescription,
-["MOD_AUTHOR"]      = Author,
-["NMS_VERSION"]     = GameVersion,
-["MODIFICATIONS"]   = {{
-    ["MBIN_CHANGE_TABLE"] = {
+MOD_FILENAME    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION = BaseDescription,
+MOD_AUTHOR      = Author,
+NMS_VERSION     = GameVersion,
+MODIFICATIONS   = {{
+    MBIN_CHANGE_TABLE = {
         {
-            ["MBIN_FILE_SOURCE"] = {
+            MBIN_FILE_SOURCE = {
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BUBBLEWEATHER.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
@@ -33,18 +33,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\TOXIC.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\WEIRDWEATHER.MBIN",
             },
-            ["EXML_CHANGE_TABLE"] = {
+            EXML_CHANGE_TABLE = {
                 {
-                    ["PRECEDING_KEY_WORDS"] = {"HeavyAir", "NMSString0x80.xml"},
+                    PRECEDING_KEY_WORDS = {"HeavyAir", "NMSString0x80.xml"},
                     ["SECTION_ACTIVE"]      = {1,},
-                    ["VALUE_CHANGE_TABLE"]  = {
+                    VALUE_CHANGE_TABLE  = {
                         {"Value",           ""},
                     },
                 },
             }
         },
         {
-            ["MBIN_FILE_SOURCE"] = {
+            MBIN_FILE_SOURCE = {
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\DUSTWEATHER.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\FIRESTORMWEATHER.MBIN",
@@ -59,10 +59,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SWAMPWEATHER.MBIN",
                 "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\TOXIC.MBIN",
             },
-            ["EXML_CHANGE_TABLE"] = {
+            EXML_CHANGE_TABLE = {
                 {
-                    ["PRECEDING_KEY_WORDS"] = {"GcScreenFilters.xml"},
-                    ["REPLACE_TYPE"]        = "ALL",
+                    PRECEDING_KEY_WORDS = {"GcScreenFilters.xml"},
+                    REPLACE_TYPE        = "ALL",
                     ["REMOVE"]              = "SECTION",
                 },
             }

@@ -4,7 +4,7 @@ Author			= "Gumsk"
 ModName 		= "gMultitool Mining Beam Colors"
 ModNameSub		= Color
 BaseDescription = "Changes the neutron cannon projectile color to "..Color
-GameVersion = "462"
+GameVersion = "464"
 ModVersion		= "a"
 
 ColorsRgb = {

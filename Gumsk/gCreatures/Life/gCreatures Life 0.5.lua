@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Life"
 ModNameSub = "0.5"
 BaseDescription = ModNameSub.."x normal life"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -11,21 +11,21 @@ METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["GLOBAL_INTEGER_TO_FLOAT"] = "PRESERVE",
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	GLOBAL_INTEGER_TO_FLOAT = "PRESERVE",
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
+					EXML_CHANGE_TABLE = {
 						{
-							["PRECEDING_KEY_WORDS"] = {"GroundGroupsPerKm"},
+							PRECEDING_KEY_WORDS = {"GroundGroupsPerKm"},
 							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Sparse",ModNameSub},
 								{"Normal",ModNameSub},
 								{"Dense",ModNameSub},
@@ -33,9 +33,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"WaterGroupsPerKm"},
+							PRECEDING_KEY_WORDS = {"WaterGroupsPerKm"},
 							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Sparse",ModNameSub},
 								{"Normal",ModNameSub},
 								{"Dense",ModNameSub},
@@ -43,9 +43,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AirGroupsPerKm"},
+							PRECEDING_KEY_WORDS = {"AirGroupsPerKm"},
 							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Sparse",ModNameSub},
 								{"Normal",ModNameSub},
 								{"Dense",ModNameSub},
@@ -53,9 +53,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm"},
+							PRECEDING_KEY_WORDS = {"CaveGroupsPerKm"},
 							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Sparse",ModNameSub},
 								{"Normal",ModNameSub},
 								{"Dense",ModNameSub},

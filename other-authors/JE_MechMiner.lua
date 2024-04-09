@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "MechMiner"
 ModNameSub = "JE"
 BaseDescription = "Adjusts the fuel maximum and charge of the Minotaur Bore"
-GameVersion = "4.62"
--- ModVersion = "v4.62"
+GameVersion = "4.64"
+-- ModVersion = "v4.64"
 FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
 MB_Charge = 1000 -- default is 200

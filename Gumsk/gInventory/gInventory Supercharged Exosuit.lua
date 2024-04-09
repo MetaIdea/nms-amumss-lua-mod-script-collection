@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gInventory Supercharged"
 ModNameSub = "Exosuit"
 BaseDescription = "Makes all exosuit slots supercharged"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
 
@@ -27,25 +27,25 @@ end
 AddSpecialSlots = AddSpecialSlots..[[          </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"Inventory_TechOnly","GcInventoryContainer.xml"},
-							["PRECEDING_KEY_WORDS"] = {"SpecialSlots"},
+							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml"},
+							PRECEDING_KEY_WORDS = {"SpecialSlots"},
 							["SECTION_ACTIVE"] = {1},
 							REMOVE = "SECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Inventory_TechOnly","GcInventoryContainer.xml","StackSizeGroup","GcInventoryStackSizeGroup.xml"},
-							["LINE_OFFSET"] = "+3",
+							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml","StackSizeGroup","GcInventoryStackSizeGroup.xml"},
+							LINE_OFFSET = "+3",
 							["SECTION_ACTIVE"] = {1},
 							ADD = AddSpecialSlots
 						},

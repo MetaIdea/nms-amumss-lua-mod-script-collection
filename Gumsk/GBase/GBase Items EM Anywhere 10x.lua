@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any 10x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -32,22 +32,22 @@ FreighterGroupTechOtherList = {"SUMMON_GARAGE","GARAGE_B","GARAGE_L","GARAGE_M",
 PlantableList = {"RADIOPLANT","TOXICPLANT","SNOWPLANT","SACVENOMPLANT","SCORCHEDPLANT","GRAVPLANT","CREATUREPLANT","BARRENPLANT","LUSHPLANT","PEARLPLANT","NIPPLANT"}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE = {
 						
 				--Blanket changes for all items, tweaked in lower sections
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = {
+							PRECEDING_KEY_WORDS = {""},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
 								{"IsDecoration","False"},
 								{"IsPlaceable","True"},
 								{"BuildableOnPlanetBase","True"},
@@ -75,60 +75,60 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						
 				--Limits on Communications Stations and Message Modules
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","MESSAGEMODULE"},
+							VALUE_CHANGE_TABLE = {
 								{"RegionLimit",MessageModRegion},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","MESSAGE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","MESSAGE"},
+							VALUE_CHANGE_TABLE = {
 								{"RegionLimit",1},
 							}
 						},
 						
 				--Needed to avoid tutorial softlock
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_WALL"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_WALL"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_FLOOR"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_FLOOR"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_ROOF6"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_ROOF6"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_DOOR1"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_DOOR1"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_ARCH"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_ARCH"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_ROOF_C"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_ROOF_C"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 							}
 						},
 				
 				--Industrial changes
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_SOLAR_S"},
+							VALUE_CHANGE_TABLE = {
 								{"Rate",SolarRate},
 								{"Storage",SolarStorage},
 								{"DependsOnEnvironment","DayNight"},
@@ -137,8 +137,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_BIOGENERATOR"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_BIOGENERATOR"},
+							VALUE_CHANGE_TABLE = {
 								{"DependentRate",BioRate},
 								{"Storage",BioStorage},
 								{"BuildableOnSpaceBase", "False"},
@@ -148,8 +148,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_BATTERY_S"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_BATTERY_S"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
 								{"Rate",BatteryRate},
@@ -157,8 +157,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_GENERATOR_S"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_GENERATOR_S"},
+							VALUE_CHANGE_TABLE = {
 								{"DependsOnHotspots",EMAnywhere},
 								{"Rate",EMRate},
 								{"BuildableOnPlanet", "False"},
@@ -167,8 +167,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_EXTRACTOR_S"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_EXTRACTOR_S"},
+							VALUE_CHANGE_TABLE = {
 								{"Storage",MineralStorage},
 								{"Rate",MineralRate},
 								{"BuildableOnPlanet", "False"},
@@ -177,8 +177,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_GASEXTRACTOR"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_GASEXTRACTOR"},
+							VALUE_CHANGE_TABLE = {
 								{"Storage",GasStorage},
 								{"Rate",GasRate},
 								{"BuildableOnPlanet", "False"},
@@ -187,8 +187,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_SILO_S"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_SILO_S"},
+							VALUE_CHANGE_TABLE = {
 								{"Storage",SiloStorage},
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
@@ -198,24 +198,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				
 				--Increase paragon device distance
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","U_PARAGON"},
+							VALUE_CHANGE_TABLE = {
 								{"ConnectionDistance",ParagonDistance},
 							}
 						},
 						
 				--Increase power provided by freighter
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","AIRLCKCONNECTOR"},
+							VALUE_CHANGE_TABLE = {
 								{"Rate", FreighterRate},
 							}
 						},
 				
 				--Make teleporter item only for planets
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","TELEPORTER"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
 								{"BuildableOnFreighter", "False"},
@@ -225,8 +225,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				
 				--Make freighter teleporter item only for freighters
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER_F"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","TELEPORTER_F"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
 								{"BuildableOnPlanetBase", "False"},
@@ -235,8 +235,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				
 				--Disable obsolete freighter items
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","CORSTAIRS_SPACE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","CORSTAIRS_SPACE"},
+							VALUE_CHANGE_TABLE = {
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
 								{"BuildableOnFreighter", "False"},
@@ -247,8 +247,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				
 				--Fix bug with bulkhead doors
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","FRE_FACE_DOOR_A"},
+							VALUE_CHANGE_TABLE = {
 								{"IsPlaceable", "False"},
 							}
 						},
@@ -266,8 +266,8 @@ local ExmlChangeTableArray = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["M
 for i = 1,#FreighterGroupBioList do
 	--Create a temporary table that adds the appropriate freighter group to each loop item
 	local TempTable = {
-		["SPECIAL_KEY_WORDS"] = {"ID",FreighterGroupBioList[i]},
-		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		SPECIAL_KEY_WORDS = {"ID",FreighterGroupBioList[i]},
+		PRECEDING_KEY_WORDS = {"Groups"},
 		["ADD"] = 
 			[[
 			<Property value="GcBaseBuildingEntryGroup.xml">
@@ -284,8 +284,8 @@ end
 for i = 1,#FreighterGroupTechOtherList do
 	--Create a temporary table that adds the appropriate freighter group to each loop item
 	local TempTable = {
-		["SPECIAL_KEY_WORDS"] = {"ID",FreighterGroupTechOtherList[i]},
-		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		SPECIAL_KEY_WORDS = {"ID",FreighterGroupTechOtherList[i]},
+		PRECEDING_KEY_WORDS = {"Groups"},
 		["ADD"] = 
 			[[
 			<Property value="GcBaseBuildingEntryGroup.xml">
@@ -302,8 +302,8 @@ end
 for i = 1,#PlantableList do
 	--Create a temporary table that makes plants plantable anywhere for each loop item
 	local TempTable = {
-		["SPECIAL_KEY_WORDS"] = {"ID",PlantableList[i]},
-		["VALUE_CHANGE_TABLE"] = {
+		SPECIAL_KEY_WORDS = {"ID",PlantableList[i]},
+		VALUE_CHANGE_TABLE = {
 			{"BaseBuildingDecorationType","Normal"},
 		},
 	}
@@ -312,9 +312,9 @@ for i = 1,#PlantableList do
 	
 	--Create a temporary table that makes plants plantable in any biome for each loop item
 	local TempTable2 = {
-		["SPECIAL_KEY_WORDS"] = {"ID",PlantableList[i],"Biome","GcBiomeType.xml"},
-		["LINE_OFFSET"] = "+1",
-		["VALUE_CHANGE_TABLE"] = {
+		SPECIAL_KEY_WORDS = {"ID",PlantableList[i],"Biome","GcBiomeType.xml"},
+		LINE_OFFSET = "+1",
+		VALUE_CHANGE_TABLE = {
 			{"Biome","All"},
 		},
 	}
@@ -323,9 +323,9 @@ for i = 1,#PlantableList do
 	
 	--Create a temporary table that gives plantable plants wireless power for 100u for each loop item
 	local TempTable3 = {
-		["SPECIAL_KEY_WORDS"] = {"ID",PlantableList[i]},
-		["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
-		["VALUE_CHANGE_TABLE"] = {
+		SPECIAL_KEY_WORDS = {"ID",PlantableList[i]},
+		PRECEDING_KEY_WORDS = {"DependentConnections"},
+		VALUE_CHANGE_TABLE = {
 			{"ConnectionDistance",30},
 		},
 	}

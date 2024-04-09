@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Boundary 2k"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
@@ -21,16 +21,16 @@ StartShelterMin = 800				-- Original value "800"
 StartShelterMax = 1000				-- Original value "1000"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
-	{["PRECEDING_KEY_WORDS"] = "",
-		["VALUE_CHANGE_TABLE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
+{MBIN_CHANGE_TABLE = {{
+MBIN_FILE_SOURCE = FileSource1,
+EXML_CHANGE_TABLE = {
+	{PRECEDING_KEY_WORDS = "",
+		VALUE_CHANGE_TABLE = {
 		{"MinRadiusForBases", MinRadiusForBases},
 		{"BaseRadiusExtension", BaseRadiusExtension},
 		{"MaxRadiusForPlanetBases", MaxRadiusForPlanetBases},
@@ -41,8 +41,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"StartShelterMinDistance", StartShelterMin},
 		{"StartShelterMaxDistance", StartShelterMax},
 	}},
-	{["PRECEDING_KEY_WORDS"] = "BuildingPlacementScaleMinMax",
-		["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "BuildingPlacementScaleMinMax",
+		VALUE_CHANGE_TABLE = {
 		{"x", BuildingPlacementScaleMin},
 		{"y", BuildingPlacementScaleMax},
 	}},

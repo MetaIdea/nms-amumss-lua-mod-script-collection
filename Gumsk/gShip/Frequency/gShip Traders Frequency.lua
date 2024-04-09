@@ -2,32 +2,32 @@ Author = "Gumsk"
 ModName = "gShip Traders Frequency"
 ModNameSub = "Normal"
 BaseDescription = "More traders at stations and trade outposts"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 FileSource2 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE = {
 						{
-							["PRECEDING_KEY_WORDS"] = {"OutpostSpawns","Count"},
-							["VALUE_CHANGE_TABLE"] = {
+							PRECEDING_KEY_WORDS = {"OutpostSpawns","Count"},
+							VALUE_CHANGE_TABLE = {
 								{"x",3},
 								{"y",3},
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"TraderSpawns","Count"},
-							["VALUE_CHANGE_TABLE"] = {
+							PRECEDING_KEY_WORDS = {"TraderSpawns","Count"},
+							VALUE_CHANGE_TABLE = {
 								{"x",2},
 								{"y",2},
 							},
@@ -35,10 +35,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] = FileSource2,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource2,
+					EXML_CHANGE_TABLE = {
 						{
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"FillUpOutposts","True"},					--False;Needed
 								{"MaxNumActiveTraders",30},					--15;Needed
 								{"SpaceStationTraderRequestTime",1},		--20

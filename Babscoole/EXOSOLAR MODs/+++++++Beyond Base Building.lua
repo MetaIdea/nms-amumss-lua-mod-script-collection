@@ -38,7 +38,7 @@ BASESTORAGE_ON_FREIGHTER = false                --Vanilla false // Mod default f
 O2_ATMO_HARVESTERS_ANYWHERE = false             --Vanilla false // Mod default false // true to make Oxygen and Atmosphere harvesters buildable NOT only on bare terrain (also makes them buildable but bugged on dead planets).
 CAN_SCALE_PREFAB_PARTS = false                  --Vanilla false // Mod Default false // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
 CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
-
+S9_ON_FREIGHTER = true                          --Vanilla false // Mod default true  // true to enable S9 blueprint stations on freighters, ALL_PARTS_ON_FREIGHTER must be true too.
 -------- enable/disable features end --------
 ---------------------------------------------
 
@@ -229,6 +229,8 @@ FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE = {"FRE_ROOM_FLEET", "FRE_ROOM_SCAN", "FRE
 -- Geobays buildable on freighters if GEOBAYS_ON_FREIGHTER is true
 GEOBAYS_ON_FREIGHTER_ID_TABLE = {"SUMMON_GARAGE", "GARAGE_B", "GARAGE_S", "GARAGE_M", "GARAGE_L", "GARAGE_MECH"}
 
+-- S9 blueprint stations buildable on freighters if S9_ON_FREIGHTER is true
+S9_ON_FREIGHTER_ID_TABLE = {"S9_SUITTREE", "S9_WEAPONTREE", "S9_EXOCRAFTTREE", "S9_SHIPTREE", "S9_BUILDERTREE"}
 
 -- Parts that can be built anywhere (not only on bare terrain)
 ANYTERRAIN_BUILDPART_ID_TABLE = {"FOUNDATION", "BUILDPAVING", "BUILDPAVING_BIG", "BUILDPAVINGTALL", "MESSAGE"}
@@ -349,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.62",
+    ["NMS_VERSION"]   = "4.64",
     ["MODIFICATIONS"] =
     {
         {
@@ -726,7 +728,44 @@ if ALL_PARTS_ON_FREIGHTER then
             }
             Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreightergroup
         end
-end
+    end
+    
+    -- S9 blueprint stations if S9_ON_FREIGHTER is true
+    if S9_ON_FREIGHTER then
+
+        for i = 1,#S9_ON_FREIGHTER_ID_TABLE do
+
+            local temp_table_s9freighter =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["VALUE_MATCH"] = "False",
+                ["VALUE_CHANGE_TABLE"] =
+                {
+                    {"BuildableOnFreighter", "True"},
+                },
+            }
+            Change_Table_Array[#Change_Table_Array + 1] = temp_table_s9freighter
+        end
+
+        for i = 1,#S9_ON_FREIGHTER_ID_TABLE do
+
+            local temp_table_s9freightergroup =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                ["ADD_OPTION"] = "ADDafterLINE",
+                ["ADD"] =
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+            }
+            Change_Table_Array[#Change_Table_Array + 1] = temp_table_s9freightergroup
+        end
+    end
 
     -- Sets Group assignment for Base Storage Containers if BASESTORAGE_ON_FREIGHTER is true
     if BASESTORAGE_ON_FREIGHTER then
@@ -749,7 +788,7 @@ end
             }
             Change_Table_Array[#Change_Table_Array + 1] = temp_table_storfreightergroup
         end
-end
+    end
 
     -- Specific exceptions list for parts not buildable on freighters
     for i = 1,#NOT_FREIGHTER_BUILDPART_ID_TABLE do
@@ -1084,7 +1123,7 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
         },
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreighterplace
- end
+end
 
  -- Re-add misc on freighters after Endurance update
 for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
@@ -1115,7 +1154,7 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
         },
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreighterallow
- end
+end
 
  -- Tech and Bio freighter rooms on planetbases after Endurance update
 if FREIGHTERROOMS_ON_PLANETBASE then

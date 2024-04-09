@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "S Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -402,45 +402,45 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"] 	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS 	= {
 		{
-			["MBIN_CHANGE_TABLE"] 	= {  
+			MBIN_CHANGE_TABLE 	= {  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					MBIN_FILE_SOURCE 	= "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
+					EXML_CHANGE_TABLE 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"}, 
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
+							SPECIAL_KEY_WORDS   = {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"}, 
+							REPLACE_TYPE        = "ADDAFTERSECTION",
 							["ADD"] 				= FinalPCAnimEntries
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
+							PRECEDING_KEY_WORDS = {"LodDistances"}, 
+							LINE_OFFSET 		= "-2",
 							["ADD"] 				= FinalPCTriggerEntries
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/UI/EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= {
+					MBIN_FILE_SOURCE 	= "METADATA/UI/EMOTEMENU.MBIN",
+					EXML_CHANGE_TABLE 	= {
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							PRECEDING_KEY_WORDS = {"Emotes"}, 
 								
 							["ADD"] 				= FinalEmoteEntries
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					MBIN_FILE_SOURCE 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+					EXML_CHANGE_TABLE 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
+							PRECEDING_KEY_WORDS = {"GenericTable"}, 
 								
 							["ADD"] 				= FinalRewardEntries
 						}
@@ -449,10 +449,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-	["ADD_FILES"] = {
+	ADD_FILES = {
 		{
-			["FILE_DESTINATION"] = [[MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			FILE_DESTINATION = [[MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.EXML]],
+			FILE_CONTENT 	 = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">

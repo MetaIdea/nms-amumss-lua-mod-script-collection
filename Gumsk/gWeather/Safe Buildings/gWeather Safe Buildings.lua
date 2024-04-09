@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather"
 ModNameSub = "Safe Buildings"
 BaseDescription = "Basic floor pieces have hazard protection"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
@@ -61,14 +61,14 @@ HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
         </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["ADD_FILES"] 		= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	ADD_FILES 		= {
 		{
-			["FILE_DESTINATION"] 		= [[GUMSK/GUMSKHEATER.ENTITY.EXML]],
-			["FILE_CONTENT"] 	= [[<?xml version="1.0" encoding="utf-8"?>
+			FILE_DESTINATION 		= [[GUMSK/GUMSKHEATER.ENTITY.EXML]],
+			FILE_CONTENT 	= [[<?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAttachmentData">
   <Property name="Components">
     <Property value="TkPhysicsComponentData.xml">
@@ -110,11 +110,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 </Data>]],
 		}
 	},
-	["MODIFICATIONS"]	= {
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = {
+					MBIN_FILE_SOURCE = {
 					--Timber Pieces
 					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\TIMBER\BASIC_FLOOR.SCENE.MBIN",
 					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\TIMBER\BASIC_FLOOR_QUARTER.SCENE.MBIN",
@@ -166,10 +166,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Light Pieces
 					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\LIGHT\BASIC_FLOOR_QUARTER.SCENE.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] = {
+					EXML_CHANGE_TABLE = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Physics"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							SPECIAL_KEY_WORDS = {"Name","Physics"},
+							REPLACE_TYPE = "ADDAFTERSECTION",
 							["ADD"] = HeaterAdd,
 						},
 					},

@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters and makes them always on"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 --Files Modified
@@ -76,43 +76,43 @@ Collision_Add = [[    <Property value="TkSceneNodeData.xml">
     </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN",
+					EXML_CHANGE_TABLE = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","RADIUS"},
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"Name","RADIUS"},
+							PRECEDING_KEY_WORDS = "",
+							VALUE_CHANGE_TABLE = {
 								{"Value",Range},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"TransY","0.730225"},
+							SPECIAL_KEY_WORDS = {"TransY","0.730225"},
 							["SECTION_UP"] = 1,
 							["REMOVE"] = "SECTION"
 						
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\STANDINGLIGHT_SMALL.ENTITY.MBIN"},
+							SPECIAL_KEY_WORDS = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\STANDINGLIGHT_SMALL.ENTITY.MBIN"},
 							["REMOVE"] = "SECTION"
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","INTERACT"},
+							SPECIAL_KEY_WORDS = {"Name","INTERACT"},
 							["REMOVE"] = "SECTION"
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","OFF"},
+							SPECIAL_KEY_WORDS = {"Name","OFF"},
 							["REMOVE"] = "SECTION"
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","StandingLight"},
+							SPECIAL_KEY_WORDS = {"Name","StandingLight"},
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] = Collision_Add
 						},

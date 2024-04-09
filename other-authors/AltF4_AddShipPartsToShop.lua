@@ -1,3 +1,4 @@
+-- Fighter, Hauler, Explorer
 local ShipPartID = {
     "FIGHT_COCKAA",
     "FIGHT_COCKAB",
@@ -29,6 +30,8 @@ local ShipPartID = {
     "FIGHT_WINGEC_FI",
     "FIGHT_WINGED",
     "FIGHT_WINGED_FI",
+    "FIGHT_WINGEE",
+    "FIGHT_WINGEE_FI",
     "FIGHT_WINGEF",
     "FIGHT_WINGEF_FI",
     "FIGHT_WINGFC",
@@ -235,31 +238,7 @@ local ShipPartID = {
     "SCIEN_WINGT_C",
     "SCIEN_WINGT_F",
     "SCIEN_WINGT_G",
-    "SCIEN_WINGT_I",
-    "SHUTT_COCKA",
-    "SHUTT_COCKB",
-    "SHUTT_CYLIN0A",
-    "SHUTT_CYLIN0B",
-    "SHUTT_CYLIN1A",
-    "SHUTT_CYLIN1B",
-    "SHUTT_CYLIN2A",
-    "SHUTT_2CYLIN1A",
-    "SHUTT_2CYLIN1B",
-    "SHUTT_2CYLIN2A",
-    "SHUTT_BOX0A",
-    "SHUTT_BOX1A",
-    "SHUTT_BOX2A",
-    "SHUTT_BOX3A",
-    "SHUTT_2BOX0A",
-    "SHUTT_2BOX1A",
-    "SHUTT_WINGA",
-    "SHUTT_WINGD",
-    "SHUTT_WINGG",
-    "SHUTT_WINGH",
-    "SHUTT_WINGI",
-    "SHUTT_WINGJ",
-    "SHUTT_WINGK",
-    "SHUTT_WINGL"
+    "SCIEN_WINGT_I"
 }
 
 local function CreateShopID(NewID)
@@ -281,13 +260,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.63",
+    ["NMS_VERSION"] = "4.64",
     ["MOD_DESCRIPTION"] = "Add ship custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},

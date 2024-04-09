@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_63"
+GameVersion = "4_64"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -570,8 +570,8 @@ QuadParts = [[<Property value="GcTechnologyRequirement.xml">
 
 --Changes various fuel related values for Minotaur exomech
 MinotaurFuelRate = 3						--0.5		Changes base fuel usage rate for Minotaur exomech engine (higher value uses fuel faster)
-MinotaurBoreChargeAmount = 500				--200		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
-MinotaurBoreChargeCost = 0.5				--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Terrain Manipulator is 1/3 as expensive to recharge as Minotaur Bore normally) E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
+MinotaurBoreChargeAmount = 700				--800 (200)		The "tank size" of how much "charge"/"fuel" the Minotaur Bore can hold. (Terrain Manipulator is 600)
+MinotaurBoreChargeCostMult = 2				--			Multiplier to apply to the cost of recharging the Minotaur Bore. (Minotaur Bore is normally 0.375x as expensive to recharge as Terrain Manipulator) E.G. a value of 2 means it costs twice as much substance to recharge the same size "tank" as vanilla
 
 --Changes how much substances it costs to refill the Biofuel Reactor for a set amount of time (the max size of the fuel tank is controlled in "gBase Items BasicX.lua")
 BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Carbon / 25 Oxygen for 25 hours worth of charge, so a "2" here means it would take 100 Carbon / 34 Cond. Carbon / 50 Oxygen to fill it for 25 hours worth of charge
@@ -1788,7 +1788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ChargeMultiplier",	Invert (MinotaurBoreChargeCost)},
+								{"ChargeMultiplier",	Invert (MinotaurBoreChargeCostMult)},
 							}
 						},
 						{

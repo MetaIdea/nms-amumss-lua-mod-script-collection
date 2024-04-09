@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "Scorching Fusion Plasma"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "450"
+GameVersion = "464"
 ModVersion = "a"
 
 TrailInfo = {
