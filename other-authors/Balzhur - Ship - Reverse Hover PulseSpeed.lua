@@ -1,11 +1,11 @@
 ModAuthor	= "Balzhur"
-LuaAuthor	= "Nexus site, Balzhur"
+LuaAuthor	= "Mjstral, Balzhur"
 Maintainer	= ""
 ModName		= "Reverse Hover PulseSpeed"
 ModCategory	= "Ship"
 ModDescription	= "Makes hover and reverse available, increases pulse speed"
-GameVersion	= "4.52"
-ModVersion	= "1.4"
+GameVersion	= "4.64"
+ModVersion	= "1.5"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName..".pak",
@@ -35,9 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"WarpInRangeFreighter",			"2000"},	-- Original "5000"
 					{"WarpOutRange",				"200"},		-- Original "1000"
 					{"WarpInRangeNexus",				"2000"},	-- Original "5000"
---					{"PulseDrivePlanetApproachHeight",		"2000"},	-- Original "6000"	-- 2k is too close - messes with pulsing to destination
 					{"HoverAlignTime",				"0.3"},		-- Original "0.7"
-					{"HoverSpeedFactor",				"0"},		-- Original "20"
 					{"HoverLandManeuvreTimeMin",			"0.3"},		-- Original "0.7"
 					{"HoverLandManeuvreTimeMax",			"1"},		-- Original "1.2"
 				}
