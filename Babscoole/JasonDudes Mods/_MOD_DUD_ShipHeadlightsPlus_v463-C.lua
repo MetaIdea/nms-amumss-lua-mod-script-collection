@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v463-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v463-C.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.63",
@@ -78,7 +78,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITB.SCENE.MBIN",
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -330,6 +334,44 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "StandingLight1"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB.SCENE.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.SCENE.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_E\COCKPIT_E.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight3"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_F\COCKPTF.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight3"},
+                                {"Name", "spotLight4"},
+                            },
                             ["REMOVE"] = "SECTION",
                         },
                     }
@@ -1066,6 +1108,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_B.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight1"},
+                                {"Name", "spotLight2"},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\NOSESECTION\NOSESECTION_A.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELSHIP_PROC.DESCRIPTOR.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -1188,31 +1254,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_K5" />
                   <Property name="NameHash" value="180785959" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="3.35302" />
+                    <Property name="TransY" value="-0.351762" />
+                    <Property name="TransZ" value="0.350143" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="-10.000001" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_K5" />
-                      <Property name="NameHash" value="180785959" />
+                      <Property name="Name" value="K1_16" />
+                      <Property name="NameHash" value="83416057" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.35302" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="0.350143" />
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.386351" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-10.000001" />
+                        <Property name="RotZ" value="0" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1222,30 +1294,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_14" />
-                      <Property name="NameHash" value="2774078647" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.35302" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="0.350143" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="10.000001" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1255,12 +1303,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="3669000037" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.35302" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="-1.036208" />
+                        <Property name="TransX" value="-6.604161" />
+                        <Property name="TransY" value="-1.164489" />
+                        <Property name="TransZ" value="-1.386351" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="10.000001" />
+                        <Property name="RotZ" value="20.000002" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1275,16 +1323,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Children" />
                     </Property>
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_16" />
-                      <Property name="NameHash" value="83416057" />
+                      <Property name="Name" value="K1_14" />
+                      <Property name="NameHash" value="2774078647" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.35302" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="-1.036208" />
+                        <Property name="TransX" value="-6.604161" />
+                        <Property name="TransY" value="-1.164489" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-10.000001" />
+                        <Property name="RotZ" value="20.000002" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1293,7 +1341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1303,11 +1351,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_L5" />
                   <Property name="NameHash" value="2695708742" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="-3.441777" />
+                    <Property name="TransY" value="-0.602342" />
+                    <Property name="TransZ" value="-0.663203" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
                     <Property name="RotZ" value="0" />
@@ -1315,16 +1363,46 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_L5" />
-                      <Property name="NameHash" value="2695708742" />
+                      <Property name="Name" value="WingsLL9" />
+                      <Property name="NameHash" value="3353204571" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.402264" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="1.233973" />
+                        <Property name="TransX" value="6.903338" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="-1.825708" />
+                        <Property name="RotX" value="0" />
+                        <Property name="RotY" value="0" />
+                        <Property name="RotZ" value="0" />
+                        <Property name="ScaleX" value="1" />
+                        <Property name="ScaleY" value="1" />
+                        <Property name="ScaleZ" value="1" />
+                      </Property>
+                      <Property name="Attributes">
+                        <Property value="TkSceneNodeAttributeData.xml">
+                          <Property name="Name" value="SCENEGRAPH" />
+                          <Property name="AltID" value="" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkSceneNodeData.xml">
+                      <Property name="Name" value="WingsLL13" />
+                      <Property name="NameHash" value="1198437685" />
+                      <Property name="Type" value="REFERENCE" />
+                      <Property name="Transform" value="TkTransformData.xml">
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.825708" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1346,57 +1424,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="825895430" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.402264" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="1.233973" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="WingsLL8" />
-                      <Property name="NameHash" value="3584193252" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.402264" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-0.592465" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="WingsLL9" />
-                      <Property name="NameHash" value="3353204571" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.402264" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-0.592465" />
+                        <Property name="TransX" value="6.903338" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1425,55 +1455,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_K6" />
                   <Property name="NameHash" value="1083047605" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="1.836215" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="5.33414" />
+                    <Property name="TransY" value="-0.745968" />
+                    <Property name="TransZ" value="-1.657709" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="-30.000002" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_K6" />
-                      <Property name="NameHash" value="1083047605" />
+                      <Property name="Name" value="K1_18" />
+                      <Property name="NameHash" value="3765177056" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.497925" />
-                        <Property name="TransY" value="-0.745968" />
-                        <Property name="TransZ" value="-1.657709" />
+                        <Property name="TransX" value="-6.042333" />
+                        <Property name="TransY" value="-3.526082" />
+                        <Property name="TransZ" value="-1.76615" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-30.000002" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_17" />
-                      <Property name="NameHash" value="3057432190" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.497925" />
-                        <Property name="TransY" value="-0.745968" />
-                        <Property name="TransZ" value="-1.657709" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="30.000002" />
+                        <Property name="RotZ" value="60.000004" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1488,16 +1500,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Children" />
                     </Property>
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_18" />
-                      <Property name="NameHash" value="3765177056" />
+                      <Property name="Name" value="K1_17" />
+                      <Property name="NameHash" value="3057432190" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.497925" />
-                        <Property name="TransY" value="-0.745968" />
-                        <Property name="TransZ" value="-3.423859" />
+                        <Property name="TransX" value="-6.042333" />
+                        <Property name="TransY" value="-3.526082" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="30.000002" />
+                        <Property name="RotZ" value="60.000004" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1516,12 +1528,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="279735136" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.497925" />
-                        <Property name="TransY" value="-0.745968" />
-                        <Property name="TransZ" value="-3.423859" />
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.76615" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-30.000002" />
+                        <Property name="RotZ" value="0" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1540,11 +1552,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_L6" />
                   <Property name="NameHash" value="2667199712" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="1.836215" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="-1.933784" />
+                    <Property name="TransY" value="-0.088212" />
+                    <Property name="TransZ" value="-1.756608" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
                     <Property name="RotZ" value="0" />
@@ -1552,16 +1564,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_L6" />
-                      <Property name="NameHash" value="2667199712" />
+                      <Property name="Name" value="WingsLL11" />
+                      <Property name="NameHash" value="2741562680" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.716782" />
-                        <Property name="TransY" value="-0.002981" />
-                        <Property name="TransZ" value="-1.692151" />
+                        <Property name="TransX" value="-5.2E-05" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.825708" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1583,9 +1601,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="2080054877" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.716782" />
-                        <Property name="TransY" value="-0.002981" />
-                        <Property name="TransZ" value="-1.692151" />
+                        <Property name="TransX" value="7.539994" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1603,37 +1621,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Children" />
                     </Property>
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="WingsLL11" />
-                      <Property name="NameHash" value="2741562680" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.716782" />
-                        <Property name="TransY" value="-0.002981" />
-                        <Property name="TransZ" value="-3.518589" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="WingsLL12" />
                       <Property name="NameHash" value="2442086789" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.716782" />
-                        <Property name="TransY" value="-0.002981" />
-                        <Property name="TransZ" value="-3.518589" />
+                        <Property name="TransX" value="7.539994" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="-1.825708" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1655,31 +1649,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_UWing_AxRARE1" />
                   <Property name="NameHash" value="1786533170" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="1.836215" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="4.914726" />
+                    <Property name="TransY" value="1.412158" />
+                    <Property name="TransZ" value="-1.739487" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="40.000004" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDUWING_AXRARE1" />
-                      <Property name="NameHash" value="1786533170" />
+                      <Property name="Name" value="K1_22" />
+                      <Property name="NameHash" value="2031828400" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.078511" />
-                        <Property name="TransY" value="1.412158" />
-                        <Property name="TransZ" value="-1.739487" />
+                        <Property name="TransX" value="-4.719974" />
+                        <Property name="TransY" value="3.953591" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="40.000004" />
+                        <Property name="RotZ" value="-80" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1688,31 +1688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_20" />
-                      <Property name="NameHash" value="2371216933" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="3.078511" />
-                        <Property name="TransY" value="1.412158" />
-                        <Property name="TransZ" value="-3.643028" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="40.000004" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1722,12 +1698,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="2074034872" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.078511" />
-                        <Property name="TransY" value="1.412158" />
-                        <Property name="TransZ" value="-3.643028" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-40.000004" />
+                        <Property name="TransX" value="-4.725473" />
+                        <Property name="TransY" value="3.947037" />
+                        <Property name="TransZ" value="-1.899248" />
+                        <Property name="RotX" value="-15.703662" />
+                        <Property name="RotY" value="-19.576735" />
+                        <Property name="RotZ" value="-77.27422" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1742,16 +1718,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Children" />
                     </Property>
                     <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_22" />
-                      <Property name="NameHash" value="2031828400" />
+                      <Property name="Name" value="K1_20" />
+                      <Property name="NameHash" value="2371216933" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-3.078511" />
-                        <Property name="TransY" value="1.412158" />
-                        <Property name="TransZ" value="-1.739487" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-40.000004" />
+                        <Property name="TransX" value="-3E-06" />
+                        <Property name="TransY" value="3E-06" />
+                        <Property name="TransZ" value="-1.903541" />
+                        <Property name="RotX" value="9.576579" />
+                        <Property name="RotY" value="11.599477" />
+                        <Property name="RotZ" value="0.974957" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1760,7 +1736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
@@ -1777,55 +1753,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_K3" />
                   <Property name="NameHash" value="3865692782" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="1.694366" />
+                    <Property name="TransY" value="-0.72795" />
+                    <Property name="TransZ" value="-2.142341" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="-30.000002" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
-                  <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_K3" />
-                      <Property name="NameHash" value="3865692782" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.694366" />
-                        <Property name="TransY" value="-0.72795" />
-                        <Property name="TransZ" value="-2.142341" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-30.000002" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                     </Property>
+                  </Property>
+                  <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="K1_5" />
                       <Property name="NameHash" value="2068730574" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.694366" />
-                        <Property name="TransY" value="-0.72795" />
-                        <Property name="TransZ" value="-2.142341" />
+                        <Property name="TransX" value="-2.934733" />
+                        <Property name="TransY" value="-1.694366" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="30.000002" />
+                        <Property name="RotZ" value="60.000004" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1844,12 +1802,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="2366174787" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.694366" />
-                        <Property name="TransY" value="-0.72795" />
-                        <Property name="TransZ" value="-3.702413" />
+                        <Property name="TransX" value="-2.934733" />
+                        <Property name="TransY" value="-1.694366" />
+                        <Property name="TransZ" value="-1.560072" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="30.000002" />
+                        <Property name="RotZ" value="60.000004" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1868,12 +1826,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="2067878584" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.694366" />
-                        <Property name="TransY" value="-0.72795" />
-                        <Property name="TransZ" value="-3.702413" />
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.560072" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-30.000002" />
+                        <Property name="RotZ" value="0" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -1892,11 +1850,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_L3" />
                   <Property name="NameHash" value="2536025401" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="-1.836394" />
+                    <Property name="TransY" value="-0.096541" />
+                    <Property name="TransZ" value="-2.587954" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
                     <Property name="RotZ" value="0" />
@@ -1904,64 +1862,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_L3" />
-                      <Property name="NameHash" value="2536025401" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.852592" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-1.784739" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="WingsLL1" />
-                      <Property name="NameHash" value="1444606919" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.852592" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-1.784739" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="0" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
                     <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="WingsLL3" />
                       <Property name="NameHash" value="4265231367" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.852592" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-3.611177" />
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.825708" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -1983,9 +1899,33 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="266135372" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.852592" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-3.611177" />
+                        <Property name="TransX" value="3.672784" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="-1.825708" />
+                        <Property name="RotX" value="0" />
+                        <Property name="RotY" value="0" />
+                        <Property name="RotZ" value="0" />
+                        <Property name="ScaleX" value="1" />
+                        <Property name="ScaleY" value="1" />
+                        <Property name="ScaleZ" value="1" />
+                      </Property>
+                      <Property name="Attributes">
+                        <Property value="TkSceneNodeAttributeData.xml">
+                          <Property name="Name" value="SCENEGRAPH" />
+                          <Property name="AltID" value="" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_L.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkSceneNodeData.xml">
+                      <Property name="Name" value="WingsLL1" />
+                      <Property name="NameHash" value="1444606919" />
+                      <Property name="Type" value="REFERENCE" />
+                      <Property name="Transform" value="TkTransformData.xml">
+                        <Property name="TransX" value="3.672784" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -2007,55 +1947,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_UWing_AxRARE" />
                   <Property name="NameHash" value="4275571826" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="1.539854" />
+                    <Property name="TransY" value="1.07938" />
+                    <Property name="TransZ" value="-1.739487" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="40.000004" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
-                  <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDUWING_AXRARE" />
-                      <Property name="NameHash" value="4275571826" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.539854" />
-                        <Property name="TransY" value="1.07938" />
-                        <Property name="TransZ" value="-1.739487" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="40.000004" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                     </Property>
+                  </Property>
+                  <Property name="Children">
                     <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="K1_8" />
                       <Property name="NameHash" value="2365584949" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.539854" />
-                        <Property name="TransY" value="1.07938" />
-                        <Property name="TransZ" value="-3.643028" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="40.000004" />
+                        <Property name="TransX" value="-3E-06" />
+                        <Property name="TransY" value="3E-06" />
+                        <Property name="TransZ" value="-1.903541" />
+                        <Property name="RotX" value="9.576579" />
+                        <Property name="RotY" value="11.599477" />
+                        <Property name="RotZ" value="0.974957" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -2074,12 +1996,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="1605802915" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.539854" />
-                        <Property name="TransY" value="1.07938" />
-                        <Property name="TransZ" value="-3.643028" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-40.000004" />
+                        <Property name="TransX" value="-2.34334" />
+                        <Property name="TransY" value="1.998486" />
+                        <Property name="TransZ" value="-1.899248" />
+                        <Property name="RotX" value="-15.703662" />
+                        <Property name="RotY" value="-19.576735" />
+                        <Property name="RotZ" value="-77.27422" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -2098,12 +2020,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="NameHash" value="3390889554" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.539854" />
-                        <Property name="TransY" value="1.07938" />
-                        <Property name="TransZ" value="-1.739487" />
+                        <Property name="TransX" value="-2.362607" />
+                        <Property name="TransY" value="1.975525" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-40.000004" />
+                        <Property name="RotZ" value="-80" />
                         <Property name="ScaleX" value="1" />
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
@@ -2129,143 +2051,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="_Wings0_K4" />
                   <Property name="NameHash" value="472397290" />
-                  <Property name="Type" value="LOCATOR" />
+                  <Property name="Type" value="REFERENCE" />
                   <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
+                    <Property name="TransX" value="1.56826" />
+                    <Property name="TransY" value="-0.351762" />
+                    <Property name="TransZ" value="0.350143" />
                     <Property name="RotX" value="0" />
                     <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
+                    <Property name="RotZ" value="-10.000001" />
                     <Property name="ScaleX" value="1" />
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
+                    </Property>
+                  </Property>
                   <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_K4" />
-                      <Property name="NameHash" value="472397290" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.56826" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="0.350143" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-10.000001" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_11" />
-                      <Property name="NameHash" value="1543635486" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.56826" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="0.350143" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="10.000001" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="K1_12" />
-                      <Property name="NameHash" value="2795902821" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.56826" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="-1.736494" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="10.000001" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
                     <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="K1_13" />
                       <Property name="NameHash" value="3632102163" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.56826" />
-                        <Property name="TransY" value="-0.351762" />
-                        <Property name="TransZ" value="-1.736494" />
-                        <Property name="RotX" value="0" />
-                        <Property name="RotY" value="0" />
-                        <Property name="RotZ" value="-10.000001" />
-                        <Property name="ScaleX" value="1" />
-                        <Property name="ScaleY" value="1" />
-                        <Property name="ScaleZ" value="1" />
-                      </Property>
-                      <Property name="Attributes">
-                        <Property value="TkSceneNodeAttributeData.xml">
-                          <Property name="Name" value="SCENEGRAPH" />
-                          <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
-                        </Property>
-                      </Property>
-                      <Property name="Children" />
-                    </Property>
-                  </Property>
-                </Property>
-                <Property value="TkSceneNodeData.xml">
-                  <Property name="Name" value="_Wings0_L4" />
-                  <Property name="NameHash" value="2230716628" />
-                  <Property name="Type" value="LOCATOR" />
-                  <Property name="Transform" value="TkTransformData.xml">
-                    <Property name="TransX" value="0" />
-                    <Property name="TransY" value="0" />
-                    <Property name="TransZ" value="0" />
-                    <Property name="RotX" value="0" />
-                    <Property name="RotY" value="0" />
-                    <Property name="RotZ" value="0" />
-                    <Property name="ScaleX" value="1" />
-                    <Property name="ScaleY" value="1" />
-                    <Property name="ScaleZ" value="1" />
-                  </Property>
-                  <Property name="Attributes" />
-                  <Property name="Children">
-                    <Property value="TkSceneNodeData.xml">
-                      <Property name="Name" value="DUDWINGS0_L4" />
-                      <Property name="NameHash" value="2230716628" />
-                      <Property name="Type" value="REFERENCE" />
-                      <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="-1.581435" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-1.151459" />
+                        <Property name="TransX" value="0" />
+                        <Property name="TransY" value="0" />
+                        <Property name="TransZ" value="-1.386351" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -2277,19 +2090,92 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="SCENEGRAPH" />
                           <Property name="AltID" value="" />
-                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_L.SCENE.MBIN" />
                         </Property>
                       </Property>
                       <Property name="Children" />
                     </Property>
                     <Property value="TkSceneNodeData.xml">
+                      <Property name="Name" value="K1_12" />
+                      <Property name="NameHash" value="2795902821" />
+                      <Property name="Type" value="REFERENCE" />
+                      <Property name="Transform" value="TkTransformData.xml">
+                        <Property name="TransX" value="-3.08887" />
+                        <Property name="TransY" value="-0.544648" />
+                        <Property name="TransZ" value="-1.386351" />
+                        <Property name="RotX" value="0" />
+                        <Property name="RotY" value="0" />
+                        <Property name="RotZ" value="20.000002" />
+                        <Property name="ScaleX" value="1" />
+                        <Property name="ScaleY" value="1" />
+                        <Property name="ScaleZ" value="1" />
+                      </Property>
+                      <Property name="Attributes">
+                        <Property value="TkSceneNodeAttributeData.xml">
+                          <Property name="Name" value="SCENEGRAPH" />
+                          <Property name="AltID" value="" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkSceneNodeData.xml">
+                      <Property name="Name" value="K1_11" />
+                      <Property name="NameHash" value="1543635486" />
+                      <Property name="Type" value="REFERENCE" />
+                      <Property name="Transform" value="TkTransformData.xml">
+                        <Property name="TransX" value="-3.08887" />
+                        <Property name="TransY" value="-0.544648" />
+                        <Property name="TransZ" value="0" />
+                        <Property name="RotX" value="0" />
+                        <Property name="RotY" value="0" />
+                        <Property name="RotZ" value="20.000002" />
+                        <Property name="ScaleX" value="1" />
+                        <Property name="ScaleY" value="1" />
+                        <Property name="ScaleZ" value="1" />
+                      </Property>
+                      <Property name="Attributes">
+                        <Property value="TkSceneNodeAttributeData.xml">
+                          <Property name="Name" value="SCENEGRAPH" />
+                          <Property name="AltID" value="" />
+                          <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSK\WINGSK_R.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkSceneNodeData.xml">
+                  <Property name="Name" value="_Wings0_L4" />
+                  <Property name="NameHash" value="2230716628" />
+                  <Property name="Type" value="REFERENCE" />
+                  <Property name="Transform" value="TkTransformData.xml">
+                    <Property name="TransX" value="-1.633075" />
+                    <Property name="TransY" value="-0.571601" />
+                    <Property name="TransZ" value="0" />
+                    <Property name="RotX" value="0" />
+                    <Property name="RotY" value="0" />
+                    <Property name="RotZ" value="0" />
+                    <Property name="ScaleX" value="1" />
+                    <Property name="ScaleY" value="1" />
+                    <Property name="ScaleZ" value="1" />
+                  </Property>
+                  <Property name="Attributes">
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="SCENEGRAPH" />
+                      <Property name="AltID" value="" />
+                      <Property name="Value" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSL\WINGSL_R.SCENE.MBIN" />
+                    </Property>
+                  </Property>
+                  <Property name="Children">
+                    <Property value="TkSceneNodeData.xml">
                       <Property name="Name" value="WingsLL4" />
                       <Property name="NameHash" value="575310887" />
                       <Property name="Type" value="REFERENCE" />
                       <Property name="Transform" value="TkTransformData.xml">
-                        <Property name="TransX" value="1.581435" />
-                        <Property name="TransY" value="-0.352871" />
-                        <Property name="TransZ" value="-1.151459" />
+                        <Property name="TransX" value="3.266145" />
+                        <Property name="TransY" value="4E-06" />
+                        <Property name="TransZ" value="0" />
                         <Property name="RotX" value="0" />
                         <Property name="RotY" value="0" />
                         <Property name="RotZ" value="0" />
@@ -2349,6 +2235,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "StandingLight1"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\CANOPY\CANOPYA.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight1"},
+                                {"Name", "spotLight2"},
+                                {"Name", "spotLight3"},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SHUTTLE\CANOPY\CANOPYB.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Name", "spotLight4"},
+                                {"Name", "spotLight5"},
+                                {"Name", "spotLight6"},
+                            },
                             ["REMOVE"] = "SECTION",
                         },
                     }

@@ -65,7 +65,7 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v463-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v463-C.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.63",
@@ -340,20 +340,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AmountMin", "2"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Id", "R_S9_TREE_SHIP"},
-                                {"Id", "R_S9_TREE_EXO"},
-                                {"Id", "R_S9_TREE_WEP"},
-                                {"Id", "R_S9_TREE_SUIT"},
-                            },
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"UseMatchingExpeditionSeed", "True"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] =
+                            -- {
+                                -- {"Id", "R_S9_TREE_SHIP"},
+                                -- {"Id", "R_S9_TREE_EXO"},
+                                -- {"Id", "R_S9_TREE_WEP"},
+                                -- {"Id", "R_S9_TREE_SUIT"},
+                            -- },
+                            -- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"UseMatchingExpeditionSeed", "True"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
@@ -667,7 +667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="20" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
@@ -679,7 +679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="20" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
@@ -691,7 +691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="20" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
