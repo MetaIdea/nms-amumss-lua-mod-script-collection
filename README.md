@@ -25,6 +25,7 @@ Mod script authors:
 - [Lyravega](https://www.nexusmods.com/nomanssky/users/2635811?tab=user+files)
 - [Syzzle](https://www.nexusmods.com/nomanssky/users/28917005?tab=user+files)
 - [FriendlyFirePL](https://www.nexusmods.com/nomanssky/users/90068138?tab=user+files)
+- [AltF4](https://www.nexusmods.com/nomanssky/users/133338988?tab=user+files)
 
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)

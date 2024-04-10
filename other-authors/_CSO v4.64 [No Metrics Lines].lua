@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v4.62 [No Metrics Lines].pak",
+	["MOD_FILENAME"]	= "_CSO v4.64 [No Metrics Lines].pak",
 	["MOD_DESCRIPTION"]	= "No more white lines in front of the ship at pulse speed.",
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "3.10",		-- NMS version when first scripted

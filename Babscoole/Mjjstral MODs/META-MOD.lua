@@ -402,7 +402,7 @@ QUICK_ACTION_MENU =
 ]]
     },
     ["POWER_STATE"] = {["TITLE"]="Emit Electricity (WIP)",["ICON"]="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.STORMCRYSTALS.DDS",["ANIM"]="POWER_STATE",
-        ["ACTION_TRIGGER"]=
+        ["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
