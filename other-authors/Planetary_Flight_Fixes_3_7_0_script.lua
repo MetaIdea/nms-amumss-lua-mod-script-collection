@@ -33,7 +33,7 @@ COSTMULT = 		0.33  -- This sets the ship launch fuel cost; The lower the number,
 							
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_3_6_7.pak", 
+  ["MOD_FILENAME"]             = "_Planetary_Flight_Fixes_3_7_0.pak", 
   ["MOD_AUTHOR"]               = "chronicallybored",
   ["NMS_VERSION"]              = "4.64",
   ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmosphere",
@@ -171,6 +171,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				}
 			}
-		},		
+		},
+		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.Precache.pak",
+			["MBIN_CHANGE_TABLE"] 	= 
+			{
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "SHIP"},
+							["PRECEDING_KEY_WORDS"] = {"Ship"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"] 	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PulseRange",					SCANRANGEMULT},	
+								{"PulseTime",					SCANSPEEDMULT},
+								{"ChargeTime",					COOLDOWNMULT},						
+							}
+						}
+					}
+				}
+			}
+		},
 	}
 }
