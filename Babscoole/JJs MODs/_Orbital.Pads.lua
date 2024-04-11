@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Orbital.Pads.pak",
+["MOD_FILENAME"]            = "_Orbital.Pads.V.1.1.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.63",
+["NMS_VERSION"]             = "4.64",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
