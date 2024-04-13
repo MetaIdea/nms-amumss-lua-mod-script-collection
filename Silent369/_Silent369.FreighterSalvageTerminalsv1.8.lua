@@ -121,7 +121,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN",
+                    ["MBIN_FILE_SOURCE"]    =
+                    {
+                        "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN",
+                        "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPIRATE.SCENE.MBIN",
+                    },
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
