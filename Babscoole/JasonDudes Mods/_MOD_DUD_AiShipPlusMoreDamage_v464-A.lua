@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v463-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v464-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.63",
+["NMS_VERSION"]             = "4.64",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -17,13 +17,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"SummonStartSpeed",                   "10"},
                                 {"MinimumCircleTimeBeforeLanding",     "20"},
                                 {"TradingPostTraderRequestTime",       "60"},
                                 {"TurretOriginOffset",                 "0"},
                                 {"SpaceStationTraderRequestTime",      "30"},
                                 {"DockingLandingTime",                 "2"},
                                 {"DockingLandingTimeDirectional",      "2"},
-                                {"DisableTradeRoutes",                 "True"},
                                 {"DockWaitMinTime",                    "60"},
                                 {"DockWaitMaxTime",                    "120"},
                                 {"LandingManuevreTime",                "2"},
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxDifficultySpaceCombatTurnExtra",  "0"},
                                 {"MaxDifficultySpaceCombatSpeedExtra", "0"},
                                 {"TurretOriginOffset",                 "15"},
-                                {"AsteroidMiningMinDistFromPlayer",    "300"},
+                                {"AsteroidMiningMinDistFromPlayer",    "1000"},
                             },
                         },
                         {
@@ -50,6 +50,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"y", "10"},
                                 {"z", "110"}
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AsteroidMiningPositioningTravelData", "GcSpaceshipTravelData.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxSpeed",   "80"},
+                                {"BoostSpeed", "150"},
+                                {"Force",      "20"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TradeRouteColours"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"A", "0"},
+                            },
                         },
                     }
                 },

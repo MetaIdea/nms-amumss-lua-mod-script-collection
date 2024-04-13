@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v463-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v464-A.pak",
 ["MOD_AUTHOR"]              = "JasonDude7116",
 ["LUA_AUTHOR"]              = "Babscoole and Wbertro",
-["NMS_VERSION"]             = "4.63",
+["NMS_VERSION"]             = "4.64",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -355,6 +355,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "cockpitSpotLight2s"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "Lights_spotLight1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TRUCK"},
+                            ["PRECEDING_KEY_WORDS"] = {"CockpitHeadlightNames", "NMSString0x100.xml", "NMSString0x100.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "Lights_spotLight3"},
                             }
                         },
                     }
