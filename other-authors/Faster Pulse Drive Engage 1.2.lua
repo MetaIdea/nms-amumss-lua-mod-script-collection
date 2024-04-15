@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Faster Pulse Drive Engage 1.1.pak", 
+["MOD_FILENAME"] 			= "Faster Pulse Drive Engage 1.2.pak", 
 ["MOD_AUTHOR"]				= "as0FF",
 ["LUA_AUTHOR"]				= "as0FF",
-["NMS_VERSION"]				= "4.5",
+["NMS_VERSION"]				= "4.64",
 ["MOD_DESCRIPTION"]			= "A simple mod that cuts the time it takes to go into pulse drive in half",
 ["MODIFICATIONS"] 			= 
 	{
