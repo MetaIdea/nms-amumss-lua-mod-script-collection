@@ -13,7 +13,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =  -- Allows for specifying multiple Special Keyword Pairs in one section of the Lua
+                            ["SPECIAL_KEY_WORDS"] =
+                        --    ["FOREACH_SKW_GROUP"] =  DEPRECATED "Command"-- Allows for specifying multiple Special Keyword Pairs in one section of the Lua
                             {
                                 {"ID", "SPIDER"},
                                 {"ID", "FLOATSPIDER"},
