@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_ED.pak",
 ["MOD_DESCRIPTION"]		= "Realistic Space Combat, NPC and players deal same damage",
-["MOD_AUTHOR"]			= "ChristianWidjaya",
+["MOD_AUTHOR"]			= "ChristianWidjaya, Gumsk, 1800PETMEDS",
 ["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
@@ -130,8 +130,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Allows NPC to keep shooting without stopping for a min straight and allow them to use laser at full hp.
 		["VALUE_CHANGE_TABLE"] = {
-			{"AttackShootTimeMax","60"},
-			{"AttackMaxTime","60"},
+			{"AttackReadyTime","5"},
+			{"AttackShootTimeMax","15"},
+			{"AttackMaxTime","15"},
 			{"LaserHealthPoint","1000"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{--Forces Raid Pirates not to use lasers when on planet
@@ -141,29 +142,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Disallow NPC to retreat and just tank the damage until certain value
 		["VALUE_CHANGE_TABLE"] = {
-			{"NumHitsBeforeBail","30000"},
-			{"NumHitsBeforeReposition","10000"}},
+			{"NumHitsBeforeBail","200000"},
+			{"NumHitsBeforeReposition","50000"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --NPC reposition logic
 		["VALUE_CHANGE_TABLE"] = {
 			{"AttackShootWaitTime","0"},
-			{"AttackApproachOffset","200"},
-			{"AttackApproachMinRange","100"},
-			{"AttackApproachMaxRange","800"},
-			{"AttackTooCloseRange","50"},
 			{"AttackBoostRange","800"},
-			{"AttackBoostTimeToRange","0"},
 			{"FleeBoost","250"},
-			{"FleeUrgentBoost","350"},
+			{"FleeUrgentBoost","250"},
 			{"FleeBrakeTime","1"},
 			{"FleeUrgentBrakeTime","1"},
 			{"FleeRepositionTime","3"},
 			{"FleeRepositionUrgentTime","3"},
 			{"FleeMaxTime","5"},
 			{"TurnMin","1.5"},
-			{"TurnMax","1.5"},
-			{"FleeRange","800"},
-			{"AttackTargetMinRange","100"}},
+			{"TurnMax","1.5"}},
 			["REPLACE_TYPE"] = "ALL"},	
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
