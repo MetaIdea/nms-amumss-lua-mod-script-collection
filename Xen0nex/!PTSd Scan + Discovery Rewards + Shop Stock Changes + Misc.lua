@@ -412,7 +412,7 @@ GuildShopAddAlts =
 	{
 		{"ExplorerGuild",	"DonatableItems",	"U_ROBOSUIT",				"EXP_CURIO2"},
 		--Additional Alt items to add
-		{""}
+		{}
 	},
 	{
 		{"ExplorerGuild",	"DonatableItems",	"PROC_CREW",				"PROC_CAPT"},
