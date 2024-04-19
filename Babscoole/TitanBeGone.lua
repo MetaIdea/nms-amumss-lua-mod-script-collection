@@ -18,6 +18,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage", "0"},
+                                {"Filename", ""},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "ROGUE_WORMS"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[<Property name="GroundWorms" value="GcSentinelSpawnSequenceGroupList.xml">]], [[<Property name="Reward" value="GcSentinelSpawnSequenceGroupList.xml">]]
+                                },
                             }
                         },
                     }
