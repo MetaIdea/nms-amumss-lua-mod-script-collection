@@ -23,31 +23,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IGNORE", YELLOW},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "PirateSystemProbability",
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", GREEN},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "PirateSystemProbability",
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", BLUE},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = "PirateSystemProbability",
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", RED},
+                                {"Yellow", YELLOW},
+                                {"Green",  GREEN},
+                                {"Blue",   BLUE},
+                                {"Red",    RED},
                             }
                         },
                     }

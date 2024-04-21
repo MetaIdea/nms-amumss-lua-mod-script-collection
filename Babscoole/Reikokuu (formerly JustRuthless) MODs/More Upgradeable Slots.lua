@@ -157,13 +157,12 @@ for i = 1, #ShipMaxUpgradeChanges do
     InventoryTable[#InventoryTable+1] =
     {
       ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"] = "+1",
       ["VALUE_CHANGE_TABLE"] =
       {
-        {"IGNORE", C},
-        {"IGNORE", B},
-        {"IGNORE", A},
-        {"IGNORE", S},
+        {"C", C},
+        {"B", B},
+        {"A", A},
+        {"S", S},
       },
     }
   end

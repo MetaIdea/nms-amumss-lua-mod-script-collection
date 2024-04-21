@@ -267,8 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StatDefinitionTable"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"] = -1,
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "GetStatDef",
                         },
                     },
@@ -290,9 +289,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"GroupName", "GLOBAL_STATS"},
-                            ["TrackedStats"] = {"StatDefinitionTable"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"] = -2,
+                            ["PRECEDING_KEY_WORDS"] = {"TrackedStats"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "GetStatGp",
                         },
                     },
@@ -512,8 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Missions"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"] = -1,
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "GetMission",
                         },
                         {
@@ -522,9 +519,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SEC_EDIT"] = "GetRewardModifyStat",
-                            ["SPECIAL_KEY_WORDS"] = {"ModifyType", "Set"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "GetRewardMissionSeeded",
                         },
                         {
@@ -581,8 +577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Missions"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["LINE_OFFSET"] = -1,
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["SEC_ADD_NAMED"] = "GetProxyMission",
                         },
                         {
@@ -685,8 +680,7 @@ for i=1, #ScanDataTable, 1 do
   ScanEventTablePlanet[#ScanEventTablePlanet+1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Events"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetCustomScanEvent",
     }
 end
@@ -722,8 +716,7 @@ for i=1, #MissionDataTable, 1 do
   RewardTable[#RewardTable+1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"SpecialRewardTable"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetReward",
     }
 end
@@ -761,8 +754,7 @@ for i = 1, #DialogDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN"},
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetPuzzleEntry",
     }
 
@@ -785,8 +777,7 @@ for i = 1, #DialogDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", EntryId},
         ["PRECEDING_KEY_WORDS"] = {"Options"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetOption",
     }
   end
@@ -802,8 +793,7 @@ for i = 1, #DialogDataTable do
     {
         ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN", "Id", EntryId},
         ["PRECEDING_KEY_WORDS"] = {"Options"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetMore",
     }
 end

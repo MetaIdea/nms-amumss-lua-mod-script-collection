@@ -113,36 +113,9 @@ if SHIPCHOICE == "Alien" then
       ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "10"},
-      }
-  }
-
-  Change_Table_Array[#Change_Table_Array + 1] =
-  {
-      ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-      ["LINE_OFFSET"] = "+2",
-      ["VALUE_CHANGE_TABLE"] =
-      {
           {"IGNORE", "20"},
-      }
-  }
-
-  Change_Table_Array[#Change_Table_Array + 1] =
-  {
-      ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-      ["LINE_OFFSET"] = "+3",
-      ["VALUE_CHANGE_TABLE"] =
-      {
           {"IGNORE", "50"},
-      }
-  }
-
-  Change_Table_Array[#Change_Table_Array + 1] =
-  {
-      ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-      ["LINE_OFFSET"] = "+4",
-      ["VALUE_CHANGE_TABLE"] =
-      {
           {"IGNORE", "100"},
       }
   }
-end
+end 

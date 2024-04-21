@@ -1841,7 +1841,7 @@ for i = 1, #GroupTable do
     }
 
   for j = 1, #Change do
-    local SubId   = Change[j][1]
+    local SubId = Change[j][1]
 
     BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
     {
@@ -1856,16 +1856,14 @@ for i = 1, #GroupTable do
     {
         ["SEC_EDIT"] = "GetGroup",
         ["PRECEDING_KEY_WORDS"] = {"SubGroups"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetSubGroup",
     }
   end
       BaseBuildingObjectsTable[#BaseBuildingObjectsTable+1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "PLANET_TECH"},
-        ["ADD_OPTION"] = "ADDafterLINE",
-        ["LINE_OFFSET"] = "-2",
+        ["SPECIAL_KEY_WORDS"] = {"ID", "FREIGHTER_IND"},
+        ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = "GetGroup",
     }
 end

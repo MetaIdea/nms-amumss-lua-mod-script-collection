@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOEXPL_FINAL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "GcDebrisData.xml", "GcDebrisData.xml", "Filename"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS2.SCENE.MBIN",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "MODELS/EFFECTS/DEBRIS/SHIPEXPLMODELDEBRISA.SCENE.MBIN"},
@@ -213,7 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "CARGOSHIPEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml", "Filename"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS1.SCENE.MBIN",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Filename", "MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS3.SCENE.MBIN"},
@@ -2480,6 +2480,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEWALKEREXPL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Scale", "8"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEWALKEREXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
@@ -2587,14 +2594,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEWALKEREXPL", "Life", "3"},
-                            ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Scale", "8"},
-                            }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DEBRISSPARKS"},

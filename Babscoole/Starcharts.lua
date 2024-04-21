@@ -26,23 +26,29 @@ function GetReward(ID_NAME, EVENT_NAME, LABELID_NAME)
 REWARD_ADDING =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="R_MAP_]] .. ID_NAME .. [[" />
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectAlwaysSilent" />
-        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="IncrementStat" value="" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="]] .. EVENT_NAME .. [[" />
+              <Property name="FailureOSD" value="" />
               <Property name="ScanEventTable" value="Planet" />
+              <Property name="StartDelay" value="0" />
               <Property name="DoAerialScan" value="True" />
+              <Property name="ForceSilentFailure" value="False" />
               <Property name="UseMissionSeedForEvent" value="False" />
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
+            <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="]] .. LABELID_NAME .. [[" />
           </Property>
         </Property>
+        <Property name="RewardChoice" value="SelectAlwaysSilent" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
       </Property>
+      <Property name="Id" value="R_MAP_]] .. ID_NAME .. [[" />
     </Property>
 ]]
 return REWARD_ADDING
@@ -53,79 +59,95 @@ function GetGCProduct(ID_NAME, LABELID_NAME, PATH)
 GCPRODUCT_ADDING =
 [[
     <Property value="GcProductData.xml">
-      <Property name="Id" value="MAP_]] .. ID_NAME .. [[" />
-      <Property name="Name" value="UI_STARCHART_NAME" />
-      <Property name="NameLower" value="UI_STARCHART_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. LABELID_NAME .. [[" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. LABELID_NAME .. [[" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-      </Property>
-      <Property name="BaseValue" value="3200" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.]] .. PATH .. [[.DDS" />
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-      </Property>
       <Property name="Colour" value="Colour.xml">
         <Property name="R" value="0.101960786" />
         <Property name="G" value="0.15294118" />
         <Property name="B" value="0.2" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="Hint" value="" />
+      <Property name="PinObjective" value="UI_FIND_OBJ" />
+      <Property name="PinObjectiveMessage" value="" />
+      <Property name="PinObjectiveTip" value="" />
+      <Property name="AltRequirements" />
+      <Property name="DeploysInto" value="" />
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="]] .. LABELID_NAME .. [[" />
+      </Property>
+      <Property name="GiveRewardOnSpecialPurchase" value="" />
+      <Property name="GroupID" value="" />
+      <Property name="ID" value="MAP_]] .. ID_NAME .. [[" />
+      <Property name="Requirements" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="]] .. LABELID_NAME .. [[" />
+      </Property>
+      <Property name="DebrisFile" value="TkModelResource.xml">
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+      </Property>
+      <Property name="HeroIcon" value="TkTextureResource.xml">
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Filename" value="" />
+      </Property>
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.]] .. PATH .. [[.DDS" />
+      </Property>
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="BuyBaseMarkup" value="0" />
+        <Property name="BuyMarkupMod" value="0" />
+        <Property name="HighPriceMod" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="SpaceStationMarkup" value="0" />
+      </Property>
+      <Property name="BaseValue" value="3200" />
       <Property name="Category" value="GcRealitySubstanceCategory.xml">
         <Property name="SubstanceCategory" value="Special" />
       </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="Curiosity" />
+      <Property name="ChargeValue" value="0" />
+      <Property name="CookingValue" value="0" />
+      <Property name="CraftAmountMultiplier" value="1" />
+      <Property name="CraftAmountStepSize" value="1" />
+      <Property name="DefaultCraftAmount" value="1" />
+      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="Legality" value="GcLegality.xml">
+        <Property name="Legality" value="Legal" />
+      </Property>
+      <Property name="Level" value="0" />
+      <Property name="NormalisedValueOffWorld" value="0.008278528" />
+      <Property name="NormalisedValueOnWorld" value="0.008278528" />
+      <Property name="PinObjectiveScannableType" value="GcScannerIconTypes.xml">
+        <Property name="ScanIconType" value="None" />
       </Property>
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Legal" />
-      </Property>
-      <Property name="Consumable" value="True" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="4" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0" />
-        <Property name="BuyBaseMarkup" value="0" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
       <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0.008278528" />
-      <Property name="NormalisedValueOffWorld" value="0.008278528" />
+      <Property name="StackMultiplier" value="4" />
       <Property name="TradeCategory" value="GcTradeCategory.xml">
         <Property name="TradeCategory" value="None" />
       </Property>
+      <Property name="Type" value="GcProductCategory.xml">
+        <Property name="ProductCategory" value="Curiosity" />
+      </Property>
       <Property name="WikiCategory" value="NotEnabled" />
-      <Property name="IsCraftable" value="False" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="UI_FIND_OBJ" />
-      <Property name="PinObjectiveTip" value="" />
+      <Property name="Name" value="UI_STARCHART_NAME" />
+      <Property name="NameLower" value="UI_STARCHART_NAME_L" />
+      <Property name="CanSendToOtherPlayers" value="True" />
+      <Property name="Consumable" value="True" />
       <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="False" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
+      <Property name="GoodForSelling" value="False" />
+      <Property name="IsCraftable" value="False" />
+      <Property name="IsTechbox" value="False" />
+      <Property name="PinObjectiveEasyToRefine" value="False" />
+      <Property name="SpecificChargeOnly" value="False" />
     </Property>
 ]]
 return GCPRODUCT_ADDING
@@ -136,17 +158,21 @@ function GetConsumableItem(ID_NAME)
 CONSUMABLEITEM_ADDING =
 [[
     <Property value="GcConsumableItem.xml">
+      <Property name="CustomOSD" value="" />
       <Property name="ID" value="MAP_]] .. ID_NAME .. [[" />
+      <Property name="RequiresMissionActive" value="" />
       <Property name="RewardID" value="R_MAP_]] .. ID_NAME .. [[" />
       <Property name="TutorialRewardID" value="" />
-      <Property name="ButtonLocID" value="UI_CHART_LABEL" />
-      <Property name="ButtonSubLocID" value="UI_CHART_SUB" />
-      <Property name="CloseInventoryWhenUsed" value="True" />
       <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
+      <Property name="ButtonLocID" value="UI_CHART_LABEL" />
+      <Property name="ButtonSubLocID" value="UI_CHART_SUB" />
       <Property name="RewardFailedLocID" value="" />
+      <Property name="AddCommunityTierClassIcon" value="False" />
+      <Property name="CloseInventoryWhenUsed" value="True" />
       <Property name="DestroyItemWhenConsumed" value="True" />
+      <Property name="SuppressResourceMessage" value="False" />
     </Property>
 ]]
 return CONSUMABLEITEM_ADDING
@@ -225,8 +251,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Value", "CHART_SETTLE"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["SPECIAL_KEY_WORDS"] = {"MapShop", "GcTradeData.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"AlwaysPresentProducts"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] = table.concat(DEFAULTREALITY_ADDING_ALL)
                         },
                     },

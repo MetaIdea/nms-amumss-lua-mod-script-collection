@@ -1006,7 +1006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "Rock",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Grass"}
@@ -1031,7 +1031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "Rock",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Grass"}

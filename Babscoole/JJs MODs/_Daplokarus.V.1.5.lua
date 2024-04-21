@@ -50,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SEASNAKE"},
-                            ["LINE_OFFSET"] = "-2",
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CRAB"},
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
     <Property value="GcCreatureData.xml">

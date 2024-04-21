@@ -278,8 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,
                 ["REPLACE_TYPE"] = "ALL",
-                ["ADD_OPTION"] = "ADDAFTERSECTION",
-                ["LINE_OFFSET"] = -1,
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
@@ -288,8 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_PIRATE_MSG"},
                 ["SECTION_UP"] = 2,
                 ["REPLACE_TYPE"] = "ALL",
-                ["ADD_OPTION"] = "ADDAFTERSECTION",
-                ["LINE_OFFSET"] = -1,
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
@@ -298,8 +296,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MPMISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,
                 ["REPLACE_TYPE"] = "ALL",
-                ["ADD_OPTION"] = "ADDAFTERSECTION",
-                ["LINE_OFFSET"] = -1,
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = MISSIONS_QS
             }}
         }}

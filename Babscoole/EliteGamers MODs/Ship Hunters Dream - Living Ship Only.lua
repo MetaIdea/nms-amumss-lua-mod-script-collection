@@ -25,29 +25,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "20"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "50"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "100"},
                             }
                         },

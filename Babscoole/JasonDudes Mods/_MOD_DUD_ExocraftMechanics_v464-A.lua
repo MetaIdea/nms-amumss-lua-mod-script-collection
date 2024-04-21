@@ -1968,9 +1968,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "spotLight5"},
-                            ["LINE_OFFSET"] = "-2",
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "_DecalPosD_Back" },
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">

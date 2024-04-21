@@ -21,29 +21,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
+                                {"IGNORE", "7"},
                                 {"IGNORE", "16"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "12"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
+                                {"IGNORE", "10"},
                                 {"IGNORE", "10"},
                             }
                         },
@@ -53,37 +34,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "3"},
                             }
                         },

@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "PLANET_TECH",
                             ["VALUE_CHANGE_TABLE"] =
-                                {
-                                    {"Group", "TECHNOLOGY"},
-                                }
+                            {
+                                {"Group", "TECHNOLOGY"},
+                            }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Objects", "GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "WALL_ART",
                             ["VALUE_CHANGE_TABLE"] =
@@ -118,8 +118,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Palettes"},
-                            ["LINE_OFFSET"] = -1,
+                            ["PRECEDING_KEY_WORDS"] = {"Objects"},
+                            ["ADD_OPTION"] = "ADDafterSECTION", 
                             ["ADD"] =
 [[
   <Property name="Groups">

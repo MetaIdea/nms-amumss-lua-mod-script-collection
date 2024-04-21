@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Value", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN"},
-                        --    ["LINE_OFFSET"] = "-4",
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["VALUE_CHANGE_TABLE"] =
                             {

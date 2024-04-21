@@ -132,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "HYPERFUEL2"},
+                            ["PRECEDING_KEY_WORDS"] = {"RepShops", "TradeGuild", "RepItems", "GcRepShopItem.xml", "GcRepShopItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountForSale", "5"},
@@ -236,7 +236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ProductID", "STORM_CRYSTAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"RepShops", "ExplorerGuild", "RepItems", "GcRepShopItem.xml", "GcRepShopItem.xml", "GcRepShopItem.xml", "GcRepShopItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountForSale",    "5"},
@@ -267,8 +267,7 @@ for i=1,#SpaceStationAlwaysPresentProducts do
     {
         ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"AlwaysPresentProducts"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -288,8 +287,7 @@ for i=1,#SpaceStationAlwaysPresentSubstances do
     {
         ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"AlwaysPresentSubstances"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -309,8 +307,7 @@ for i=1,#SpaceStationOptionalProducts do
     {
         ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"OptionalProducts"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -330,8 +327,7 @@ for i=1,#SpaceStationOptionalSubstances do
     {
         ["SPECIAL_KEY_WORDS"] = {"SpaceStation", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"OptionalSubstances"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -351,8 +347,7 @@ for i=1,#ShopAlwaysPresentProducts do
     {
         ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"AlwaysPresentProducts"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -372,8 +367,7 @@ for i=1,#ShopAlwaysPresentSubstances do
     {
         ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"AlwaysPresentSubstances"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end
@@ -393,8 +387,7 @@ for i=1,#ShopOptionalSubstances do
     {
         ["SPECIAL_KEY_WORDS"] = {"Shop", "GcTradeData.xml"},
         ["PRECEDING_KEY_WORDS"] = {"OptionalSubstances"},
-        ["ADD_OPTION"] = "ADDafterSECTION",
-        ["LINE_OFFSET"] = "-1",
+        ["ADD_OPTION"] = "ADDendSECTION",
         ["SEC_ADD_NAMED"] = "GetProd"
     }
 end

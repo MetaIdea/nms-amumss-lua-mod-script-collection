@@ -643,7 +643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "VARIANT", "Palette", "TkPaletteTexture.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "Rock",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "SkyNight"}
@@ -658,7 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTA", "Palette", "TkPaletteTexture.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "Rock",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "SkyNight"}
@@ -673,7 +673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Name", "VARIANTB", "Palette", "TkPaletteTexture.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["VALUE_MATCH"] = "Rock",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "SkyNight"}

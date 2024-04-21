@@ -15,21 +15,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ExternalObjectLists"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AllowLimiting", "False"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Features"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Crater", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ScreenFilter", "Weird4"},
-                            ["LINE_OFFSET"] = "+3",
+                            ["PRECEDING_KEY_WORDS"] = {"FilterOptions"},
+                            ["ADD_OPTION"] = "ADDendSECTION",  
                             ["ADD"] =
 [[
     <Property value="GcScreenFilterOption.xml">

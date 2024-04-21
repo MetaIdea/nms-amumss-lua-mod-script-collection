@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = {"METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"},
+                    ["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -134,9 +134,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_LAUNCHCHARGE"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "LAUNCHER", "Unlockable", "UT_LAUNCHCHARGE"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -237,9 +236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Unlockable", "UT_RAIL_STUN"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["LINE_OFFSET"] = "+1",
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -350,10 +347,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "F_HDRIVEBOOST3"},
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "F_HDRIVEBOOST2", "Unlockable", "F_HDRIVEBOOST3"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["LINE_OFFSET"] = "+1",
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
                       <Property value="GcUnlockableItemTreeNode.xml">
@@ -414,7 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

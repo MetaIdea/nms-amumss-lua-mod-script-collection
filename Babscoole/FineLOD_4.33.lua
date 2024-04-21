@@ -25,31 +25,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IGNORE", "1"} -- Original "3"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"} -- Original "2"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"} -- Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"} -- Original "1"
+                                {"IGNORE", "1"}, -- Original "3"
+                                {"IGNORE", "0"}, -- Original "2"
+                                {"IGNORE", "0"}, -- Original "1"
+                                {"IGNORE", "0"}, -- Original "1"
                             }
                         },
                     }
@@ -75,43 +54,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IGNORE", "3"} -- Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
-                            ["SECTION_ACTIVE"] = {4},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "3"} -- Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
-                            ["SECTION_ACTIVE"] = {4},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "3"} -- Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
-                            ["SECTION_ACTIVE"] = {4},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "3"} -- Original "1"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
-                            ["SECTION_ACTIVE"] = {4},
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "3"} -- Original "1"
+                                {"IGNORE", "3"}, -- Original "1"
+                                {"IGNORE", "3"}, -- Original "1"
+                                {"IGNORE", "3"}, -- Original "1"
+                                {"IGNORE", "3"}, -- Original "1"
+                                {"IGNORE", "3"}, -- Original "1"
                             }
                         },
                         {
