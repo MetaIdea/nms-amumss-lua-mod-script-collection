@@ -14,7 +14,7 @@
 --                             69420 (2082600000) -- The ultimate cringelord.
 --                             /\ --------------------- Pulse speed examples --------------------- /\
 --
-PULSE_SPEED_DEFINED          = 0.5 -- Define your pulse speed on this line by changing the number one immediately after the equals symbol (=)
+PULSE_SPEED_DEFINED          = 6 -- Define your pulse speed on this line by changing the number one immediately after the equals symbol (=)
 --
 --                               -- Look above for ---- Pulse speed examples ---- however cringey they may be.
 --                               -- NOTE: Get creative! You can set this value to whatever you desire.
@@ -22,7 +22,7 @@ PULSE_SPEED_DEFINED          = 0.5 -- Define your pulse speed on this line by ch
 --
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]             = "AtmoHover-PulseSpeed(x0.5)",
+["MOD_FILENAME"]             = "AtmoReverse-PulseSpeed(x6.0)",
 ["MOD_AUTHOR"]               = "BigEx20 AKA Chromos",
 ["LUA_AUTHOR"]				 = "BigEx20 AKA Chromos",
 ["MOD_DESCRIPTION"]          = "This mod allows hovering at 0u/s in the atmosphere and also brings quality-of-life adjustments to pulse engine speed defined by you via this .lua script.",
@@ -39,29 +39,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"HoverTakeoffHeight", "80"},                                    -- Original 90
-								{"HoverSpeedFactor",   "0.01"},                                  -- Original 20
-								{"HoverMinSpeed",      "0.01"},                                  -- Original 1
+								{"HoverSpeedFactor",   "-1"},                                  -- Original 20
+								{"HoverMinSpeed",      "-1"},                                  -- Original 1
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0.01"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0.01"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine","PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0.01"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{

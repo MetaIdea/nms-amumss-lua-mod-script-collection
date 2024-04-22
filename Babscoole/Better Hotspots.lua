@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Power",    "GcRegionHotspotData.xml"},
                                 {"Mineral1", "GcRegionHotspotData.xml"},
-                                {"mineral2", "GcRegionHotspotData.xml"},
+                                {"Mineral2", "GcRegionHotspotData.xml"},
                                 {"Mineral3", "GcRegionHotspotData.xml"},
                                 {"Gas1",     "GcRegionHotspotData.xml"},
                                 {"Gas2",     "GcRegionHotspotData.xml"},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Mineral1", "GcRegionHotspotData.xml"},
-                                {"mineral2", "GcRegionHotspotData.xml"},
+                                {"Mineral2", "GcRegionHotspotData.xml"},
                                 {"Mineral3", "GcRegionHotspotData.xml"},
                                 {"Gas1",     "GcRegionHotspotData.xml"},
                                 {"Gas2",     "GcRegionHotspotData.xml"},

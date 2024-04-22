@@ -38,29 +38,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"HoverTakeoffHeight", "80"},                                    -- Original 90
-								{"HoverSpeedFactor",   "0"},                                  -- Original 20
-								{"HoverMinSpeed",      "0"},                                  -- Original 1
+								{"HoverSpeedFactor",   "-1"},                                  -- Original 20
+								{"HoverMinSpeed",      "-1"},                                  -- Original 1
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetEngine","PlanetEngine","PlanetEngine"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinSpeed",           "0"},                                  -- Original 20
+								{"MinSpeed",           "-1"},                                  -- Original 20
 							}
 						},
 						{

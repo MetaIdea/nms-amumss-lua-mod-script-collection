@@ -1,4 +1,4 @@
---                             \\/ --------------------- Pulse speed examples --------------------- \\/
+--                             \/ --------------------- Pulse speed examples --------------------- \/
 --                             0.5   (15000)
 --                             1     (30000)      -- This is the default value set by Hello Games.
 --                             1.5   (45000)
@@ -12,7 +12,7 @@
 --                             420   (12600000)   -- Yolo swag.
 --                             1337  (40110000)   -- Because you're the most elite.
 --                             69420 (2082600000) -- The ultimate cringelord.
---                             /\\ --------------------- Pulse speed examples --------------------- /\\
+--                             /\ --------------------- Pulse speed examples --------------------- /\
 --
 PULSE_SPEED_DEFINED          = 1.5 -- Define your pulse speed on this line by changing the number one immediately after the equals symbol (=)
 --
