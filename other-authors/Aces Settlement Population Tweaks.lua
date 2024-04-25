@@ -1,4 +1,4 @@
-GameVersion = "3_82"
+GameVersion = "4_64"
 ModName = "Aces Populated Settlements"
 Author = "Acewinters"
 BaseDescription = "Increases the amount of NPCs that can be loaded in a settlement"
