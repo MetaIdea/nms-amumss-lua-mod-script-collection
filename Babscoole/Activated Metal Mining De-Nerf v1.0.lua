@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Activated Metal Mining De-Nerf v1.0.pak",
 ["MOD_AUTHOR"]    = "SamboNZ",
-["LUA_AUTHOR"]    = "Babscoole",
+["LUA_AUTHOR"]    = "Babscoole, minor modifications by SamboNZ",
 ["NMS_VERSION"]   = "4.64",
 ["MODIFICATIONS"] =
 	{
@@ -34,28 +34,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_YELLOW_NAME"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_YELLOW"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"BaseValue", "245"}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_RED_NAME"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_RED"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"BaseValue", "450"}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_GREEN_NAME"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_GREEN"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"BaseValue", "696"}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_BLUE_NAME"},
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_BLUE"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"BaseValue", "949"}
