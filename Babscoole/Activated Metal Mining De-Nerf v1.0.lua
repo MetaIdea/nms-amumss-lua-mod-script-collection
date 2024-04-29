@@ -61,13 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BaseValue", "949"}
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "UI_EX_YELLOW_NAME"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "245"}
-							}
-						},
 					}
 				},
 				{
