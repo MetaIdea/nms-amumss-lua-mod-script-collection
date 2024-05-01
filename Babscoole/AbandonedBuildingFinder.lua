@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "AbandonedBuildingFinder.pak",
 ["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) will only show abandoned buildings",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.64",
+["NMS_VERSION"]     = "4.65",
 ["MODIFICATIONS"]   =
     {
         {
@@ -23,31 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PercentageChance", "0"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PercentageChance", "0"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"PercentageChance", "0"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_B", "List", "GcRewardTableItemList.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"List", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml", "GcRewardTableItem.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SECTION_ACTIVE"] = {2,3,4,5},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentageChance", "0"},

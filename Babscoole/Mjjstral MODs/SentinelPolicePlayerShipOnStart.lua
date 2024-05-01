@@ -9,10 +9,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "PoliceShipOnStart.pak",
+["MOD_FILENAME"]            = "SentinelPolicePlayerShipOnStart.pak",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.64",
+["NMS_VERSION"]             = "4.65",
 ["DESCRIPTION"]             = "Makes the ship you get on a fresh game start the police ship by default",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -33,6 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CurrentShip", "Seed"},
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Seed", HexToDec(SHIP_SEED)},

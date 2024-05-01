@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak", 
+			--["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak", 
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							    {"DebugGalaxyMapInQuickMenu",			"true"},		--Oribital "False"							
 							}
 						}
-					} --9 global replacements
+					} --1 global replacements
 				}
 		    }
 	    }	

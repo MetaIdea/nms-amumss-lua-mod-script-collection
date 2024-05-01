@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"]	= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.Precache.pak ",
+			--["PAK_FILE_SOURCE"] 	= "NMSARC.Precache.pak ",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{

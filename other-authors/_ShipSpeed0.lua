@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak", 
+			--["PAK_FILE_SOURCE"] 	= "NMSARC.globals.pak", 
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{

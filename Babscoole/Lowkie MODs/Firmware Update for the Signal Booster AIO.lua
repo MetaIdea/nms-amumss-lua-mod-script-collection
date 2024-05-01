@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
-  ["NMS_VERSION"]     = "4.64",
+  ["NMS_VERSION"]     = "4.65",
   ["MODIFICATIONS"]   =
     {
         {
@@ -337,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
                             ["SPECIAL_KEY_WORDS"] = {"ConditionTest", "GcMissionConditionTest.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ConditionTest", "AnyTrue"},
@@ -671,7 +671,7 @@ for i=1, #ScanDataTable, 1 do
     {
         ["SEC_EDIT"] = "GetCustomScanEvent",
         ["SPECIAL_KEY_WORDS"] = {"BuildingClass", "GcBuildingClassification.xml"},
-        ["LINE_OFFSET"] = "+1",
+        ["REPLACE_TYPE"] = "ONCEINSIDE",
         ["VALUE_CHANGE_TABLE"] =
         {
             {"BuildingClass", BUILDINGCLASS},
@@ -722,6 +722,29 @@ for i=1, #MissionDataTable, 1 do
 end
 
 --Add ENABLINGCONDITIONSTABLE entries
+--Add ScanEvent Stat rewards
+for i = 1, #MissionDataTable do
+  local Id     = MissionDataTable[i][1]
+  local AMOUNT = MissionDataTable[i][2]
+
+    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    {
+        ["SEC_EDIT"] = "GetRewardModifyStat",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Id",     Id},
+            {"Amount", AMOUNT},
+        }
+    }
+    EnablingConditionsTable[#EnablingConditionsTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN"},
+        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+        ["ADD_OPTION"] = "ADDendSECTION",
+        ["SEC_ADD_NAMED"] = "GetRewardModifyStat",
+    }
+end
+
 --Add Puzzle Entries and Options
 for i = 1, #DialogDataTable do
   local EntryId         = DialogDataTable[i][1][1]
@@ -815,30 +838,6 @@ end
             {"KeepOpen", "False"},
         }
     }
-
---Add ScanEvent Stat rewards
-for i = #MissionDataTable, 1, -1 do
-  local Id     = MissionDataTable[i][1]
-  local AMOUNT = MissionDataTable[i][2]
-
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
-    {
-        ["SEC_EDIT"] = "GetRewardModifyStat",
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Id",     Id},
-            {"Amount", AMOUNT},
-        }
-    }
-    EnablingConditionsTable[#EnablingConditionsTable+1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"MissionID", "GPSL_SCAN"},
-        ["PRECEDING_KEY_WORDS"] = {"ScanEvents"},
-        ["LINE_OFFSET"] = "+1",
-        ["ADD_OPTION"] = "ADDafterLINE",
-        ["SEC_ADD_NAMED"] = "GetRewardModifyStat",
-    }
-end
 
 --Add proxy mission scan rewards
 for i = #MissionDataTable, 1, -1 do

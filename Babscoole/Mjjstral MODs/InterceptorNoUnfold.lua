@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]   = "InterceptorNoUnfold.pak",
 ["MOD_AUTHOR"]     = "Mjstral and maintenance by Babscoole",
 ["MOD_EXTRA_INFO"] = "Design your own fully customized sentinel ship (seed) on www.nms.center",
-["NMS_VERSION"]    = "4.64",
+["NMS_VERSION"]    = "4.65",
 ["MODIFICATIONS"]  =
     {
         {
@@ -19,7 +19,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "TAKEOFF"},
-                            ["VALUE_CHANGE_TABLE"] = {{"Filename", ""},}
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename", ""},
+                            }
                         },
                     }
                 },

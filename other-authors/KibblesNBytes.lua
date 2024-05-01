@@ -23,7 +23,7 @@ OVERRIDE2 = {
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_______KibblesNBytes-4.6.0.pak", 
+["MOD_FILENAME"] 			= "_______KibblesNBytes-4.64.pak", 
 ["MOD_AUTHOR"]				= "InstaKibs",
 ["NMS_VERSION"]				= "4.6+",
 ["MODIFICATIONS"] 			= 

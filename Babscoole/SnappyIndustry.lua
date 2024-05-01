@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "SnappyIndustry.pak",
 ["MOD_AUTHOR"]    = "Ethreon",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.64",
+["NMS_VERSION"]   = "4.65",
 ["DESCRIPTION"]   = "Add snapping points to commonly used industry buildings",
 ["MODIFICATIONS"] =
     {

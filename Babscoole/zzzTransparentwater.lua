@@ -44,6 +44,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Foam2Speed",            "0.05"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FoamColour", "Colour.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0.196"},
+                                {"G", "0.208"},
+                                {"B", "0.282"},
+                                {"A", "0.664"},
+                            }
+                        },
                     }
                 }
             }

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
 ["Maintainer"]    = "Babscoole",
-["NMS_VERSION"]   = "4.64",
+["NMS_VERSION"]   = "4.65",
 ["MODIFICATIONS"] =
     {
         {

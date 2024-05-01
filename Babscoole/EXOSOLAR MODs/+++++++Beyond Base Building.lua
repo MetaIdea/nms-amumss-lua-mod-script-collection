@@ -107,7 +107,7 @@ end
 
 if Multiplier == 1 then
   Multiplier = 1
-  EMRate = 1
+  EMRate = 250
   SiloStorage = 1440000
 elseif Multiplier == 2 then
   Multiplier = 2
@@ -351,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.64",
+    ["NMS_VERSION"]   = "4.65",
     ["MODIFICATIONS"] =
     {
         {
@@ -1039,7 +1039,7 @@ if FARM_IN_ANY_BIOME then
     local temp_table_farmanybiome =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i], "Biome", "GcBiomeType.xml"},
-        ["LINE_OFFSET"] = "+1",
+        ["REPLACE_TYPE"] = "ONCEINSIDE",
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Biome", "All"}

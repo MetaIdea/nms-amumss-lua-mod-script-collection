@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Gek",				"1"},	--Orbital "0",
 								{"Korvax",			"-1"},	--Orbital "0",
 								{"Vykeen",			"1"},	--Orbital "0",
-								{"TradeGuild" ,		"1"},	--Orbital "0",
+								{"TradeGuild",		"1"},	--Orbital "0",
 								{"WarriorGuild",	"2"},	--Orbital "0",
 								{"ExplorerGuild",	"-1"},	--Orbital "0",
 								{"Pirates",			"1"},	--Orbital "0",

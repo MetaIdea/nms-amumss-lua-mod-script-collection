@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Storm Cutter.pak",
 ["MOD_AUTHOR"]              = "Zurls",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.64",
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal", "3"},
+                                {"Normal",  "3"},
                                 {"Extreme", "20"},
                             }
                         },

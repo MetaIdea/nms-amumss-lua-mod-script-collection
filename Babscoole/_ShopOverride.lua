@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_ShopOverride.pak",
 ["MOD_AUTHOR"]              = "InvalidCode",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.64",
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -151,7 +151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"ProductID", "COMPOUND1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PriceMul", "0.5"},
+                                {"PriceMul", "0.15"},
                             }
                         },
                         {
@@ -159,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountForSale",    "2"},
-                                {"RepLevelRequired", "10"},
+                                {"RepLevelRequired", "8"},
                             }
                         },
                         {
@@ -239,8 +239,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"RepShops", "ExplorerGuild", "RepItems", "GcRepShopItem.xml", "GcRepShopItem.xml", "GcRepShopItem.xml", "GcRepShopItem.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AmountForSale",    "5"},
-                                {"PriceMul",         "0.15"},
+                                {"AmountForSale",    "1"},
+                                {"PriceMul",         "0"},
                             }
                         },
                     },
