@@ -2,28 +2,28 @@ Author = "N8Crafter Gumsk"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "462"
+GameVersion = "464"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["LUA_AUTHOR"]		= "Babscoole",
-["NMS_VERSION"]		= GameVersion,
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-["MODIFICATIONS"]           =
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+LUA_AUTHOR		= "Babscoole",
+NMS_VERSION		= GameVersion,
+GLOBAL_INTEGER_TO_FLOAT = "FORCE",
+MODIFICATIONS           =
     {
         {
-            ["MBIN_CHANGE_TABLE"] =
+            MBIN_CHANGE_TABLE =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSA\THRUSTERSA_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSA\THRUSTERSA_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -66,15 +66,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-50.894936"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Stage1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-50.894936"},
                             }
@@ -82,11 +82,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSA\THRUSTERSA_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSA\THRUSTERSA_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -129,15 +129,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-50.894936"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Stage1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-50.894936"},
                             }
@@ -145,11 +145,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -193,20 +193,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT"},
                             ["SECTION_ACTIVE"] = {1,2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.802999"},
                             }
@@ -214,11 +214,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -262,20 +262,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT"},
                             ["SECTION_ACTIVE"] = {1,2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.802999"},
                             }
@@ -283,11 +283,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSC\THRUSTERSC_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSC\THRUSTERSC_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -332,11 +332,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSC\THRUSTERSC_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSC\THRUSTERSC_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -381,11 +381,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -411,30 +411,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                                 {"RotZ", "0"},
@@ -442,39 +442,39 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.991504"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCube8"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pCube8"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "20.132439"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "31.008146"},
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EndGlow"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EndGlow"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Glow"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Glow"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                                 {"RotZ", "180"},
@@ -483,11 +483,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -513,30 +513,30 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                                 {"RotZ", "0"},
@@ -544,32 +544,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.991504"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "33.651634"},
                                 {"RotZ", "0.104513"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EndGlow"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EndGlow"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Glow"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Glow"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                                 {"RotZ", "180"},
@@ -578,11 +578,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COMBPOUNDENGINEFLAME.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COMBPOUNDENGINEFLAME.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -625,8 +625,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Trail"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -634,11 +634,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COMBPOUNDENGINEFLAMER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\COMBPOUNDENGINEFLAMER.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -681,8 +681,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Trail"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -690,25 +690,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_A\GOLDWINGS_A.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_A\GOLDWINGS_A.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSignL2_"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "66.26712"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSignL2_1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "66.26712"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
+                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -753,25 +753,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_A\WINGS_A.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_A\WINGS_A.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSignL2_"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "66.26712"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSignL2_1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "66.26712"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
+                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -816,21 +816,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_B\WINGSB.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_B\WINGSB.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","VERTRENDGRAPHIC"},
-                            ["REPLACE_TYPE"] = "ALL",
+                            SPECIAL_KEY_WORDS = {"Name","VERTRENDGRAPHIC"},
+                            REPLACE_TYPE = "ALL",
                             ["VALUE_MATCH"] = "415",
                             ["VALUE_MATCH_OPTIONS"] = "=",
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "411"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Stage2"},
+                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -911,11 +911,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_E\WINGSE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_E\WINGSE.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Gun1Ref"},
+                            SPECIAL_KEY_WORDS = {"Name","Gun1Ref"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -996,11 +996,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_F\WINGS_F.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1043,21 +1043,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWings_E"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","SubWings_E"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Turbine"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Turbine"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Turbine"},
+                            SPECIAL_KEY_WORDS = {"Name","Turbine"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1111,7 +1111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Contrail8"},
                                 {"Name", "Contrail9"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -1119,11 +1119,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_G\WINGSG.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_G\WINGSG.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RefTurbineAR"},
+                            SPECIAL_KEY_WORDS = {"Name","RefTurbineAR"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1168,11 +1168,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_H\WINGSH.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_H\WINGSH.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingAnimData"},
+                            SPECIAL_KEY_WORDS = {"Name","WingAnimData"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1217,11 +1217,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_K\WINGSK.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\FIGHTERS\WINGS\WINGS_K\WINGSK.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children","Children"},
+                            PRECEDING_KEY_WORDS = {"Children","Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1275,7 +1275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "_LetterRight_ALOD1"},
                                 {"Name", "_logoRight_ALOD1"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
@@ -1296,28 +1296,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Contrail8"},
                                 {"Name", "Contrail11"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWings_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","SubWings_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-31.337997"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWingsARight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","SubWingsARight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "31.337997"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_WingsK_B"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","_WingsK_B"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1360,8 +1360,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_RectangleRight_A3"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_RectangleRight_A3"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "59.149002"},
                                 {"RotY", "90"},
@@ -1369,8 +1369,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_RectangleLeft_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_RectangleLeft_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "59.148624"},
                                 {"RotZ", "0"},
@@ -1382,8 +1382,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "SubWings_C1"},
                                 {"Name", "SubWingsCRight1"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWings_C1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","SubWings_C1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
@@ -1394,7 +1394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Gun1Ref3"},
                                 {"Name", "Gun1Ref4"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
@@ -1402,12 +1402,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","AWingsL_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","AWingsL_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1432,8 +1432,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","AWingsR_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","AWingsR_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1458,8 +1458,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BWingsL_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","BWingsL_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1484,8 +1484,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","BWingsR_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","BWingsR_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1510,8 +1510,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CWingsL_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","CWingsL_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1572,8 +1572,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CWingsR_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","CWingsR_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1634,8 +1634,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FWingsL_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","FWingsL_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1660,8 +1660,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","FWingsR_JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","FWingsR_JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1688,11 +1688,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITA\BACK\COCKPITABACKB.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITA\BACK\COCKPITABACKB.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1717,22 +1717,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo1_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo1_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo2_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo2_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "-5.985569"},
                                 {"RotX",   "-88.681206"},
@@ -1741,20 +1741,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Number_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Number_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "38.172863"},
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter1_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter1_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "5.070969"},
                                 {"RotY", "87.78277"},
@@ -1762,8 +1762,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter2_A"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter2_A"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "4.86547"},
                                 {"RotY", "-85.22856"},
@@ -1771,8 +1771,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","CockpitDData"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","CockpitDData"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -1833,78 +1833,78 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Trail"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "30.782652"},
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Trail1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Trail1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "30.782652"},
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-48.134678"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-31.475044"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {7,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {5,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.835520"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RefLandingGear"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","RefLandingGear"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Gun1Ref3"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Gun1Ref3"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Gun1Ref4"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Gun1Ref4"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
@@ -1912,12 +1912,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSC\SUBWINGSC_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSC\SUBWINGSC_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingALeft"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","WingALeft"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1942,8 +1942,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -1951,12 +1951,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSC\SUBWINGSC_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSC\SUBWINGSC_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingARight"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","WingARight"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -1981,8 +1981,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -1990,12 +1990,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSD\SUBWINGSD_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSD\SUBWINGSD_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWingD"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","SubWingD"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -2022,12 +2022,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSD\SUBWINGSD_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SUBWINGS\SUBWINGSD\SUBWINGSD_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SubWingD"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","SubWingD"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -2054,12 +2054,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingALeft"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","WingALeft"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2102,31 +2102,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.162085"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -2134,12 +2134,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingALeft"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","WingALeft"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2182,31 +2182,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","RADIUS"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","RADIUS"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.324169"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "2.345738"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder8"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -2214,11 +2214,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBLEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2279,8 +2279,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransX", "4.476562"},
                                 {"TransY", "-0.867432"},
@@ -2289,8 +2289,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","Data"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2371,11 +2371,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2436,8 +2436,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransX", "-4.476562"},
                                 {"TransY", "-0.867432"},
@@ -2446,8 +2446,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Data"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","Data"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2528,11 +2528,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2575,16 +2575,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "0.117106"},
                                 {"RotZ", "0"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "1.145515"},
                                 {"RotY", "-90"},
@@ -2592,16 +2592,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "39.953564"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -2609,11 +2609,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCRIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCRIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2656,16 +2656,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "0.209196"},
                                 {"RotZ", "-14.142616"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-0.079342"},
                                 {"RotY", "89.146736"},
@@ -2673,8 +2673,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -2682,11 +2682,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDLEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2729,15 +2729,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -2745,11 +2745,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2792,15 +2792,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_logo_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -2808,11 +2808,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSG\WINGGLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSG\WINGGLEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2891,8 +2891,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSign_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSign_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-3.810077"},
                                 {"RotY", "90"},
@@ -2900,8 +2900,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransX", "2.363281"},
                                 {"TransY", "-0.927734"},
@@ -2912,11 +2912,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSG\WINGGRIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSG\WINGGRIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -2995,23 +2995,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_SmallSign_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_SmallSign_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "82.007126"},
                                 {"RotZ", "-93.42244"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransX", "-2.363281"},
                                 {"TransY", "-0.927734"},
@@ -3022,11 +3022,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKLEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKLEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3051,8 +3051,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Rectangle_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Rectangle_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-78.13243"},
                                 {"RotZ", "90"},
@@ -3065,14 +3065,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "EngineGlowLOD1"},
                                 {"Name", "EngineGlowLOD2"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Subwing1_L"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Subwing1_L"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "40"},
                             }
@@ -3080,11 +3080,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3109,8 +3109,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Rectangle_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Rectangle_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-112.13716"},
                                 {"RotZ", "90"},
@@ -3123,7 +3123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "EngineGlowLOD1"},
                                 {"Name", "EngineGlowLOD2"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -3131,11 +3131,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSL\WINGSL_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSL\WINGSL_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3178,8 +3178,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
@@ -3191,7 +3191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "EngineGlowLOD1"},
                                 {"Name", "EngineGlowLOD2"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -3199,11 +3199,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSL\WINGSL_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSL\WINGSL_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3246,8 +3246,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Letter_A1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
@@ -3259,7 +3259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "EngineGlowLOD1"},
                                 {"Name", "EngineGlowLOD2"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -3267,11 +3267,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3296,31 +3296,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.715366"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.769422"},
                             }
@@ -3328,11 +3328,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3357,31 +3357,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.769422"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.715366"},
                             }
@@ -3389,12 +3389,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\ENGINE\ENGINE_C.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\ENGINE\ENGINE_C.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineBase"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","EngineBase"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3421,12 +3421,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_A.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_A.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_TopWing_A"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","_TopWing_A"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3457,28 +3457,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Decal3"},
                                 {"Name", "Decal5"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Decal2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Decal2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","SpinFront"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","SpinFront"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -3486,12 +3486,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_B.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_B.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_TopWing_B"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","_TopWing_B"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3516,8 +3516,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Spin"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Spin"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "90"},
                             }
@@ -3529,21 +3529,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Decal3"},
                                 {"Name", "Decal5"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Decal4"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Decal4"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Decal6"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Decal6"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-52.69893"},
                                 {"RotY", "-72.361374"},
@@ -3551,8 +3551,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Decal7"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Decal7"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "129.33669"},
                                 {"RotY", "104.102844"},
@@ -3560,14 +3560,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Contrail"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","Contrail"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MirrorMerged_X36","Name","MESHLINK"},
+                            SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X36","Name","MESHLINK"},
                             ["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -3579,8 +3579,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX",   "-180"},
                                 {"RotY",   "11.474125"},
@@ -3589,22 +3589,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","FOV"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight1","Name","FOV"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "360.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight1","Name","VOLUMETRIC"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight1","Name","VOLUMETRIC"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight2"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX",   "180"},
                                 {"RotY",   "-11.474003"},
@@ -3614,15 +3614,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2","Name","FOV"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight2","Name","FOV"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "360.000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","spotLight2","Name","VOLUMETRIC"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","spotLight2","Name","VOLUMETRIC"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.000000"},
                             }
@@ -3630,12 +3630,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_B.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\WINGS\WINGS_B.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Wings_B"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","Wings_B"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3680,12 +3680,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEHBOTANI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEHBOTANI.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RBottom1JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RBottom1JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3710,15 +3710,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBottom1JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LBottom1JNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBottom1JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LBottom1JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3745,12 +3745,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEHTOPANI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEHTOPANI.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTop1JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTop1JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3775,15 +3775,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTop1JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTop1JNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTop1JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTop1JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3810,12 +3810,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMESIDESANI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMESIDESANI.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3840,15 +3840,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -3875,11 +3875,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVBOTA.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVBOTA.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3924,11 +3924,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVBOTB.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVBOTB.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -3973,11 +3973,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVTOP.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVTOP.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4022,12 +4022,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVTOPANI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENFLAMEVTOPANI.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTop3JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTop3JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -4052,15 +4052,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTop3JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTop3JNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTop3JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTop3JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -4087,12 +4087,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY1.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4153,22 +4153,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4229,15 +4229,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4246,12 +4246,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY2.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY2.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4294,22 +4294,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4352,15 +4352,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4369,12 +4369,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY3.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY3.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4399,22 +4399,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4439,15 +4439,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4456,12 +4456,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY4.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY4.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4504,22 +4504,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4562,15 +4562,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4579,12 +4579,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY5.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY5.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4627,22 +4627,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4685,15 +4685,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4702,12 +4702,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY6.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY6.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4732,22 +4732,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4772,15 +4772,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4789,12 +4789,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY7.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEBODY7.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4819,22 +4819,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LTbodyJNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -4859,15 +4859,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineLight"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotZ", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineParts"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"TransZ", "3.662417"},
                                 {"RotX",   "180"},
@@ -4876,20 +4876,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\PARTS\ENGINEFLAMEL.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBackClaw1JNT"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","LBackClaw1JNT"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "180"},
                                 {"RotY", "8.155582"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","LBackClaw3JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","LBackClaw3JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -4914,8 +4914,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","RBackClaw3JNT"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","RBackClaw3JNT"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -4952,7 +4952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "Stage7"},
                                 {"Name", "pCylinder10"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
@@ -4960,19 +4960,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","EngineGlow"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","EngineGlow"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_Acc_A"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","_Acc_A"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5015,48 +5015,48 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.592939"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.689445"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","_AA_3"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","_AA_3"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.874898"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.927902"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
                             ["SECTION_ACTIVE"] = {3,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.833797"},
                             }
@@ -5064,8 +5064,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYC.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYC.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
@@ -5073,14 +5073,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "pPlane2"},
                                 {"Name", "pPlane1"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","acc3"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","acc3"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5107,19 +5107,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYF.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYF.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MirrorMerged_X4"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X4"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5150,7 +5150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "polySurface10"},
                                 {"Name", "polySurface11"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "90"},
                             }
@@ -5158,12 +5158,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYG.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYG.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","Acc"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","Acc"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
@@ -5190,8 +5190,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
                             ["FOREACH_SKW_GROUP"] =
@@ -5199,14 +5199,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "pCylinder7"},
                                 {"Name", "pCylinder8"},
                             },
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MirrorMerged_X2"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X2"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5249,9 +5249,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {3,4,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "40.854893"},
                             }
@@ -5259,12 +5259,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","polySurface7"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","polySurface7"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5289,8 +5289,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -5298,12 +5298,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","polySurface8"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","polySurface8"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5328,16 +5328,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -5345,12 +5345,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","WingsLLeft"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","WingsLLeft"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5375,16 +5375,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }
@@ -5392,12 +5392,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT.SCENE.MBIN",
+                    EXML_CHANGE_TABLE =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","polySurface1"},
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            SPECIAL_KEY_WORDS = {"Name","polySurface1"},
+                            PRECEDING_KEY_WORDS = {"Children"},
                             ["ADD_OPTION"]  = "ADDafterLINE",
                             ["ADD"] =
 [[
@@ -5422,16 +5422,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT","Type","COLLISION"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT","Type","COLLISION"},
                             ["SECTION_ACTIVE"] = {2,},
-                            ["VALUE_CHANGE_TABLE"] =
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotY", "-180"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","pPlane1"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
+                            VALUE_CHANGE_TABLE =
                             {
                                 {"RotX", "-90"},
                             }

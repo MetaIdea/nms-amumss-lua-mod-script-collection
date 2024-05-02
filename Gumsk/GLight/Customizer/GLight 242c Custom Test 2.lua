@@ -60,7 +60,7 @@ ModName = "0_GLights"
 ModNameSub = "Custom"
 Description = "light modifications"
 GameVersion = "242"
-ModVersion = "c"
+ModVersion = "a"
 
 GroupMbinArray = {}
 NMS_MOD_DEFINITION_CONTAINER = {}
@@ -381,20 +381,20 @@ for x = 1,#GroupMbinArray do
 	ModFilename = ModName.." "..GameVersion..ModVersion.." "..ModNameSub.." "..LightSettingsArray[x+1][1].." "
 	
 	ExecuteScript = "{"
---	ExecuteScript = [[	["MOD_FILENAME"]		= ]]..ModFilename..[[,
-						-- ["MOD_DESCRIPTION"]		= ]]..Description..[[,
-						-- ["MOD_AUTHOR"]			= ]]..Author..[[,
-						-- ["NMS_VERSION"]			= ]]..GameVersion..[[,
-						-- ["MODIFICATIONS"] = {{
-						-- ["MBIN_CHANGE_TABLE"] = {{
-						-- ["EXML_CHANGE_TABLE"] = {"]]
+--	ExecuteScript = [[	MOD_FILENAME		= ]]..ModFilename..[[,
+						-- MOD_DESCRIPTION		= ]]..Description..[[,
+						-- MOD_AUTHOR			= ]]..Author..[[,
+						-- NMS_VERSION			= ]]..GameVersion..[[,
+						-- MODIFICATIONS = {{
+						-- MBIN_CHANGE_TABLE = {{
+						-- EXML_CHANGE_TABLE = {"]]
 						
 		if ModifyFov == "True" then
 			ModFilename = ModFilename..[[FOV]]..round(LightSettingsArray[x+1][2]).." "
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"]	=	{"Name","FOV"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+			[[{SPECIAL_KEY_WORDS	=	{"Name","FOV"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", ]]..LightSettingsArray[x+1][2]..[[
 			}}},]]
 		end
@@ -408,9 +408,9 @@ for x = 1,#GroupMbinArray do
 			end
 			
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"] 	=	{"Name","FALLOFF"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+			[[{SPECIAL_KEY_WORDS 	=	{"Name","FALLOFF"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", ]]..LightSettingsArray[x+1][3]..[[
 			}}},]]
 		end
@@ -418,10 +418,10 @@ for x = 1,#GroupMbinArray do
 		if ModifyIntensity == "True" then
 			ModFilename = ModFilename.."i"..round(LightSettingsArray[x+1][4],2).." "
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"] 	=	{"Name","INTENSITY","Value","IGNORE"},
+			[[{SPECIAL_KEY_WORDS 	=	{"Name","INTENSITY","Value","IGNORE"},
 					["MATH_OPERATION"]		= "*",
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"IGNORE", (]]..LightSettingsArray[x+1][4]..[[)
 			}}},]]
 		end
@@ -429,9 +429,9 @@ for x = 1,#GroupMbinArray do
 		if ModifyRed == "True" then
 			ModFilename = ModFilename.."r"..round(LightSettingsArray[x+1][5],2).." "
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"] =	{"Name","COL_R"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+			[[{SPECIAL_KEY_WORDS =	{"Name","COL_R"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (]]..LightSettingsArray[x+1][5]..[[)}}},
 			]]
 		end
@@ -439,9 +439,9 @@ for x = 1,#GroupMbinArray do
 		if ModifyGreen == "True" then
 			ModFilename = ModFilename.."g"..round(LightSettingsArray[x+1][6],2).." "
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"] =	{"Name","COL_G"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+			[[{SPECIAL_KEY_WORDS =	{"Name","COL_G"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (]]..LightSettingsArray[x+1][6]..[[)}}},
 			]]
 		end
@@ -449,9 +449,9 @@ for x = 1,#GroupMbinArray do
 		if ModifyBlue == "True" then
 			ModFilename = ModFilename.."b"..round(LightSettingsArray[x+1][7],2)
 			ExecuteScript = ExecuteScript..
-			[[{["SPECIAL_KEY_WORDS"] =	{"Name","COL_B"},	
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+			[[{SPECIAL_KEY_WORDS =	{"Name","COL_B"},	
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (]]..LightSettingsArray[x+1][7]..[[)}}},
 			]]
 		end
@@ -459,14 +459,14 @@ for x = 1,#GroupMbinArray do
 print(ExecuteScript)
 
 	NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
-		["MOD_FILENAME"]		= ModFilename..".pak",
-		["MOD_DESCRIPTION"]		= Description,
-		["MOD_AUTHOR"]			= Author,
-		["NMS_VERSION"]			= GameVersion,
-		["MODIFICATIONS"] = {{
-			["MBIN_CHANGE_TABLE"] = {{
-				["MBIN_FILE_SOURCE"] = GroupMbinArray[x],
-				["EXML_CHANGE_TABLE"] = ExecuteScript
+		MOD_FILENAME		= ModFilename..".pak",
+		MOD_DESCRIPTION		= Description,
+		MOD_AUTHOR			= Author,
+		NMS_VERSION			= GameVersion,
+		MODIFICATIONS = {{
+			MBIN_CHANGE_TABLE = {{
+				MBIN_FILE_SOURCE = GroupMbinArray[x],
+				EXML_CHANGE_TABLE = ExecuteScript
 		}}}}}
 
 end

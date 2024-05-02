@@ -4,7 +4,7 @@ local mod_desc = [[
   * Does not include expedition rewards and quicksilver shop items.
 ]]----------------------------------------------------------------------
 
-local version = 1.34
+local version = 1.35
 
 local base_tree = {
 	{--	FreighterBase
@@ -96,12 +96,12 @@ for _,node in ipairs(base_tree) do
 			ECT[#ECT+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
 				SECTION_ACTIVE		= -i,
-				SECTION_SAVE_TO		= 'unlockable_item_tree',
+				SEC_SAVE_TO			= 'unlockable_item_tree',
 			}
 			ECT[#ECT+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
 				PRECEDING_KEY_WORDS	= 'Trees',
-				SECTION_ADD_NAMED	= 'unlockable_item_tree',
+				SEC_ADD_NAMED		= 'unlockable_item_tree',
 			}
 		end
 	end
@@ -110,12 +110,12 @@ for _,node in ipairs(tech_tree) do
 	for _,subt in ipairs(node.subs) do
 		ECT[#ECT+1] = {
 			SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
-			SECTION_SAVE_TO		= 'unlockable_item_tree',
+			SEC_SAVE_TO			= 'unlockable_item_tree',
 		}
 		ECT[#ECT+1] = {
 			SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICTECH_TREE'},
 			PRECEDING_KEY_WORDS	= 'Trees',
-			SECTION_ADD_NAMED	= 'unlockable_item_tree',
+			SEC_ADD_NAMED		= 'unlockable_item_tree',
 		}
 	end
 end
@@ -123,7 +123,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.64',
+	NMS_VERSION			= '4.65',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

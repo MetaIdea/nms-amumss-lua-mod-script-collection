@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = "Close Range"
 BaseDescription = "Proximity base doors"
-GameVersion = "411"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR\ENTITIES\MAINDOOR.ENTITY.MBIN"
 FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR.SCENE.MBIN"
@@ -166,62 +166,62 @@ States = [[    <Property value="GcTriggerActionComponentData.xml">
 	
 	
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
 {
-	["MBIN_CHANGE_TABLE"] = {
+	MBIN_CHANGE_TABLE = {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource1,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource1,
+			EXML_CHANGE_TABLE = {
 				{
-					["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_OPEN.ANIM.MBIN",},
+					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_OPEN.ANIM.MBIN",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"Speed", 3}
 					}
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_CLOSE.ANIM.MBIN",},
+					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_CLOSE.ANIM.MBIN",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"Speed", 0.5}
 					}
 				},
 				{
-					["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
+					PRECEDING_KEY_WORDS = {"GcTriggerActionComponentData.xml"},
 					["REMOVE"] = "SECTION"
 				},
 				{
-					["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
+					PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
 					["ADD"] = States,
-					["REPLACE_TYPE"] = "ADDAFTERSECTION"
+					REPLACE_TYPE = "ADDAFTERSECTION"
 				}
 			}
 		},
 		{
-			["MBIN_FILE_SOURCE"] = FileSource2,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource2,
+			EXML_CHANGE_TABLE = {
 				{
-					["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene4"},
-					["LINE_OFFSET"] = "-1",
+					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene4"},
+					LINE_OFFSET = "-1",
 					["REMOVE"] = "SECTION"
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene5"},
-					["LINE_OFFSET"] = "-1",
+					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene5"},
+					LINE_OFFSET = "-1",
 					["REMOVE"] = "SECTION"
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene6"},
-					["LINE_OFFSET"] = "-1",
+					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene6"},
+					LINE_OFFSET = "-1",
 					["REMOVE"] = "SECTION"
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Name", "RefSnapScene7"},
-					["LINE_OFFSET"] = "-1",
+					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene7"},
+					LINE_OFFSET = "-1",
 					["REMOVE"] = "SECTION"
 				}
 			}

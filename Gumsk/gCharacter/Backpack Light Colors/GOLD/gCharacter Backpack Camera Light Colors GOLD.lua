@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCharacter Backpack Camera Light Colors"
 ModNameSub = "GOLD"
 BaseDescription = "Changes the main camera light colors on all backpacks."
-GameVersion = "448"
+GameVersion = "464"
 ModVersion = "a"
 
 ColorsRgb = {

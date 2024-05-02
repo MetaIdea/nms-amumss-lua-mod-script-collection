@@ -4,23 +4,23 @@ local mod_desc = [[
 ]]-------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.2.02.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.2.03.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.62',
+	NMS_VERSION			= '4.65',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{
-		MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/CHARACTERCUSTOMISATIONTEXTUREOPTIONDATA.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'EYES_BUILDER'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ColourAlt',	'Alternative3'} -- Alternative2
-				}
-			}
-		}
-	},
+	-- {
+		-- MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/CHARACTERCUSTOMISATIONTEXTUREOPTIONDATA.MBIN',
+		-- EXML_CHANGE_TABLE	= {
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'TextureOptionsID', 'EYES_BUILDER'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'ColourAlt',	'Alternative3'} -- Alternative2
+				-- }
+			-- }
+		-- }
+	-- },
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/UI/CHARACTERCUSTOMISATIONUIDATA.MBIN',
 		EXML_CHANGE_TABLE	= {

@@ -6,7 +6,7 @@ local mod_desc = [[
   Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-local mod_version = '1.99.6'
+local mod_version = '2.0'
 
 local scan_event = {
 	termimal =	{-- trade termimal
@@ -427,15 +427,15 @@ end
 local function VehicleScanEventsChangeTable()
 	local T = {
 		{
-			PRECEDING_KEY_WORDS		= 'GcScanEventData.xml',
-			SECTION_SAVE_TO			= 'gc_scan_event'
+			PRECEDING_KEY_WORDS	= 'GcScanEventData.xml',
+			SEC_SAVE_TO			= 'gc_scan_event'
 		}
 	}
 	for _,ev in pairs(scan_event) do
 		if ev.class then
 			T[#T+1] = {
-				SECTION_EDIT 			= 'gc_scan_event',
-				VALUE_CHANGE_TABLE 		= {
+				SEC_EDIT 			= 'gc_scan_event',
+				VALUE_CHANGE_TABLE 	= {
 					{'Name',						ev.event},
 					{'EventPriority',				ev.evprior	or 'Regular'},
 					{'BuildingLocation',			ev.blocal	or 'Nearest'},
@@ -447,17 +447,17 @@ local function VehicleScanEventsChangeTable()
 				}
 			}
 			T[#T+1] = {
-				SECTION_EDIT 			= 'gc_scan_event',
-				PRECEDING_KEY_WORDS		= 'BuildingClass',
-				VALUE_MATCH				= 'GcBuildingClassification.xml',
-				VALUE_MATCH_OPTIONS 	= '~=',
-				VALUE_CHANGE_TABLE 		= {
+				SEC_EDIT 			= 'gc_scan_event',
+				PRECEDING_KEY_WORDS	= 'BuildingClass',
+				VALUE_MATCH			= 'GcBuildingClassification.xml',
+				VALUE_MATCH_OPTIONS = '~=',
+				VALUE_CHANGE_TABLE 	= {
 					{'BuildingClass', ev.class}
 				}
 			}
 			T[#T+1] = {
-				PRECEDING_KEY_WORDS 	= 'Events',
-				SECTION_ADD_NAMED 		= 'gc_scan_event'
+				PRECEDING_KEY_WORDS = 'Events',
+				SEC_ADD_NAMED 		= 'gc_scan_event'
 			}
 		end
 	end
@@ -484,7 +484,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.64',
+	NMS_VERSION			= '4.65',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{

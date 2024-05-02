@@ -57,20 +57,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "0"},
+                                {"IGNORE", "8"},
                                 {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "25"},
+                                {"IGNORE", "500"},
                             }
                         },
                     }
@@ -276,20 +270,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "0"},
+                                {"IGNORE", "8"},
                                 {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "25"},
+                                {"IGNORE", "500"},
                             }
                         },
                     }
@@ -323,20 +311,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "0"},
+                                {"IGNORE", "8"},
                                 {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "25"},
+                                {"IGNORE", "500"},
                             }
                         },
                     }
@@ -359,30 +341,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "0"},
                                 {"IGNORE", "8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "25"},
+                                {"IGNORE", "500"},
                             }
                         },
                     }
@@ -406,30 +372,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "0"},
                                 {"IGNORE", "8"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "15"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "LodDistances"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "25"},
+                                {"IGNORE", "500"},
                             }
                         },
                     }

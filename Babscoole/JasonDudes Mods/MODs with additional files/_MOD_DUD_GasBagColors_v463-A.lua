@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "TRUNK", "Palette", "TkPaletteTexture.xml"},
-                            ["VALUE_MATCH"] = "Wood",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Stone"}
@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "BASE", "Palette", "TkPaletteTexture.xml"},
-                            ["VALUE_MATCH"] = "Plant",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Grass"}

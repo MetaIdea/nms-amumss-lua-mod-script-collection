@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "0"}, -- Original "3"

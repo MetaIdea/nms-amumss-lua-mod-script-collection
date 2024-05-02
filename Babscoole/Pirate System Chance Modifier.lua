@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Pirate System Chance Modifier.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.65",
 ["MODIFICATIONS"] =
     {
         {
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = "PirateSystemProbability",
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Yellow", YELLOW},

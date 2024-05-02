@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDebug"
 ModNameSub = "God"
 BaseDescription = "Changes to GCDEBUGOPTIONS.GLOBAL.MBIN"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 

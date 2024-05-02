@@ -1006,7 +1006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
-                            ["VALUE_MATCH"] = "Rock",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Grass"}
@@ -1031,7 +1031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "OVERLAY", "Palette", "TkPaletteTexture.xml"},
-                            ["VALUE_MATCH"] = "Rock",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Grass"}

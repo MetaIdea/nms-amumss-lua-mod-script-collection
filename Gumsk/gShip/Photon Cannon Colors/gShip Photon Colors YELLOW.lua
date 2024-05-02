@@ -7,7 +7,7 @@ Author			= "Gumsk"
 ModName			= "gShip Photon Colors"
 ModNameSub		= Color
 BaseDescription	= "Changes color of photon cannon to "..Color
-GameVersion = "464"
+GameVersion = "465"
 ModVersion		= "a"
 
 --[[Files Modified
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 		= "GUMSK/GUMSKPHOTON"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKPHOTON"..Color..".DDS",
+			EXTERNAL_FILE_SOURCE 	= "GUMSKPHOTON"..Color..".DDS",
 		},
 	},
 	MODIFICATIONS	= {

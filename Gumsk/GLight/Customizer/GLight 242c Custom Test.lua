@@ -60,7 +60,7 @@ ModName = "0_GLights"
 ModNameSub = "Custom"
 Description = "light modifications"
 GameVersion = "242"
-ModVersion = "c"
+ModVersion = "a"
 
 GroupMbinArray = {}
 NMS_MOD_DEFINITION_CONTAINER = {}
@@ -380,21 +380,21 @@ GroupMbinArray = {
 for x = 1,#GroupMbinArray do
 
 	ModFilename = ModFilename..LightSettingsArray[x+1][1]
-	ExecuteScript = [[	["MOD_FILENAME"]		= ]]..ModFilename..[[,
-						["MOD_DESCRIPTION"]		= ]]..BaseDescription..[[,
-						["MOD_AUTHOR"]			= ]]..Author..[[,
-						["NMS_VERSION"]			= ]]..GameVersion..[[,
-						["MODIFICATIONS"] = {{
-						["MBIN_CHANGE_TABLE"] = {{
-						["MBIN_FILE_SOURCE"] = ]]..GroupMbinArray[x]..[[,
-						["EXML_CHANGE_TABLE"] = {"]]
+	ExecuteScript = [[	MOD_FILENAME		= ]]..ModFilename..[[,
+						MOD_DESCRIPTION		= ]]..BaseDescription..[[,
+						MOD_AUTHOR			= ]]..Author..[[,
+						NMS_VERSION			= ]]..GameVersion..[[,
+						MODIFICATIONS = {{
+						MBIN_CHANGE_TABLE = {{
+						MBIN_FILE_SOURCE = ]]..GroupMbinArray[x]..[[,
+						EXML_CHANGE_TABLE = {"]]
 	
 	if ModifyFov == "True" then
 		ModFilename = ModFilename..[[ FOV]]..round(LightSettingsArray[x+1][2])
 		ExecuteScript =
-		[[			{["SPECIAL_KEY_WORDS"]		= {"Name","FOV"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+		[[			{SPECIAL_KEY_WORDS		= {"Name","FOV"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", ]]..LightSettingsArray[x+1][2]..[[}}},]]
 	end
 	if ModifyFalloff == "True" then
@@ -405,9 +405,9 @@ for x = 1,#GroupMbinArray do
 		end
 		ExecuteScript = ExecuteScript..
 		[[
-					{["SPECIAL_KEY_WORDS"] 		= {"Name","FALLOFF"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS 		= {"Name","FALLOFF"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", LightSettingsArray[x+1][3]}}},
 		]]
 	end
@@ -415,10 +415,10 @@ for x = 1,#GroupMbinArray do
 		ModFilename = ModFilename.." i"..round(LightSettingsArray[x+1][4],2)
 		ExecuteScript = ExecuteScript..
 		[[
-					{["SPECIAL_KEY_WORDS"] 		= {"Name","INTENSITY","Value","IGNORE"},
+					{SPECIAL_KEY_WORDS 		= {"Name","INTENSITY","Value","IGNORE"},
 					["MATH_OPERATION"]		= "*",
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"IGNORE", (LightSettingsArray[x+1][4])}}},
 		]]
 	end
@@ -426,9 +426,9 @@ for x = 1,#GroupMbinArray do
 		ModFilename = ModFilename.." r"..round(LightSettingsArray[x+1][5],2)
 		ExecuteScript = ExecuteScript..
 		[[
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_R"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_R"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (LightSettingsArray[x+1][5])}}},
 		]]
 	end
@@ -436,9 +436,9 @@ for x = 1,#GroupMbinArray do
 		ModFilename = ModFilename.." g"..round(LightSettingsArray[x+1][6],2)
 		ExecuteScript = ExecuteScript..
 		[[
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_G"},
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_G"},
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (LightSettingsArray[x+1][6])}}},
 		]]
 	end
@@ -446,72 +446,72 @@ for x = 1,#GroupMbinArray do
 		ModFilename = ModFilename.." b"..round(LightSettingsArray[x+1][7],2)
 		ExecuteScript = ExecuteScript..
 		[[
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_B"},	
-					["REPLACE_TYPE"] 		= "ALL",
-					["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_B"},	
+					REPLACE_TYPE 		= "ALL",
+					VALUE_CHANGE_TABLE	= {
 						{"Value", (LightSettingsArray[x+1][7])}}},
 		]]
 	end
 
 	--NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = --{{
-		-- {["MOD_FILENAME"]		= "]]ModFilename[[.pak",
-		-- ["MOD_DESCRIPTION"]		= "]]Description[[",
-		-- ["MOD_AUTHOR"]			= "]]Author[[",
-		-- ["NMS_VERSION"]			= "]]GameVersion[[",
-		-- ["MODIFICATIONS"] = {{
-			-- ["MBIN_CHANGE_TABLE"] = {{
-				-- ["MBIN_FILE_SOURCE"] = ]]GroupMbinArray[x][[,		--Get the list of MBINs that are members of this area group
-					-- ["EXML_CHANGE_TABLE"] = {
+		-- {MOD_FILENAME		= "]]ModFilename[[.pak",
+		-- MOD_DESCRIPTION		= "]]Description[[",
+		-- MOD_AUTHOR			= "]]Author[[",
+		-- NMS_VERSION			= "]]GameVersion[[",
+		-- MODIFICATIONS = {{
+			-- MBIN_CHANGE_TABLE = {{
+				-- MBIN_FILE_SOURCE = ]]GroupMbinArray[x][[,		--Get the list of MBINs that are members of this area group
+					-- EXML_CHANGE_TABLE = {
 						-- ]]..ExecuteScript..[[
 		-- }}}}}}}}]]
 
 
-		-- ["MOD_FILENAME"]		= "]]ModFilename[[.pak",
-		-- ["MOD_DESCRIPTION"]		= "]]Description[[",
-		-- ["MOD_AUTHOR"]			= "]]Author[[",
-		-- ["NMS_VERSION"]			= "]]GameVersion[[",
-		-- ["MODIFICATIONS"] = {{
-			-- ["MBIN_CHANGE_TABLE"] = {{
-				-- ["MBIN_FILE_SOURCE"] = ]]GroupMbinArray[x]
-					-- ["EXML_CHANGE_TABLE"] = {
+		-- MOD_FILENAME		= "]]ModFilename[[.pak",
+		-- MOD_DESCRIPTION		= "]]Description[[",
+		-- MOD_AUTHOR			= "]]Author[[",
+		-- NMS_VERSION			= "]]GameVersion[[",
+		-- MODIFICATIONS = {{
+			-- MBIN_CHANGE_TABLE = {{
+				-- MBIN_FILE_SOURCE = ]]GroupMbinArray[x]
+					-- EXML_CHANGE_TABLE = {
 						-- ..ExecuteScript..
 		-- }}}}}}}
 					NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
 						
-						["MOD_FILENAME"]		= ModFilename,	--Build PAK filename
-						["MOD_DESCRIPTION"]		= BaseDescription,
-						["MOD_AUTHOR"]			= Author,
-						["NMS_VERSION"]			= GameVersion,
-						["MODIFICATIONS"] = {{
-						["MBIN_CHANGE_TABLE"] = {{
+						MOD_FILENAME		= ModFilename,	--Build PAK filename
+						MOD_DESCRIPTION		= BaseDescription,
+						MOD_AUTHOR			= Author,
+						NMS_VERSION			= GameVersion,
+						MODIFICATIONS = {{
+						MBIN_CHANGE_TABLE = {{
 
-						["MBIN_FILE_SOURCE"] = GroupMbinArray[1],		--Pull the MBINs that are members of this group
+						MBIN_FILE_SOURCE = GroupMbinArray[1],		--Pull the MBINs that are members of this group
 
-						["EXML_CHANGE_TABLE"] = {
-							-- {["SPECIAL_KEY_WORDS"]		= {"Name","FOV"},
-								-- ["REPLACE_TYPE"] 		= "ALL",
-								-- ["VALUE_CHANGE_TABLE"]	= {
+						EXML_CHANGE_TABLE = {
+							-- {SPECIAL_KEY_WORDS		= {"Name","FOV"},
+								-- REPLACE_TYPE 		= "ALL",
+								-- VALUE_CHANGE_TABLE	= {
 									-- {"Value", LightFOV}}},
-							{["SPECIAL_KEY_WORDS"] 		= {"Name","FALLOFF"},
-								["REPLACE_TYPE"] 		= "ALL",
-								["VALUE_CHANGE_TABLE"]	= {
+							{SPECIAL_KEY_WORDS 		= {"Name","FALLOFF"},
+								REPLACE_TYPE 		= "ALL",
+								VALUE_CHANGE_TABLE	= {
 									{"Value", "linear"}}},
-							{["SPECIAL_KEY_WORDS"] 		= {"Name","INTENSITY","Value","IGNORE"},
+							{SPECIAL_KEY_WORDS 		= {"Name","INTENSITY","Value","IGNORE"},
 								["MATH_OPERATION"]		= "*",
-								["REPLACE_TYPE"] 		= "ALL",
-								["VALUE_CHANGE_TABLE"]	= {
+								REPLACE_TYPE 		= "ALL",
+								VALUE_CHANGE_TABLE	= {
 									{"IGNORE", (.25)}}},
-							{["SPECIAL_KEY_WORDS"] = {"Name","COL_R"},
-								["REPLACE_TYPE"] 		= "ALL",
-								["VALUE_CHANGE_TABLE"]	= {
+							{SPECIAL_KEY_WORDS = {"Name","COL_R"},
+								REPLACE_TYPE 		= "ALL",
+								VALUE_CHANGE_TABLE	= {
 									{"Value", (.25)}}},
-							{["SPECIAL_KEY_WORDS"] = {"Name","COL_G"},
-								["REPLACE_TYPE"] 		= "ALL",
-								["VALUE_CHANGE_TABLE"]	= {
+							{SPECIAL_KEY_WORDS = {"Name","COL_G"},
+								REPLACE_TYPE 		= "ALL",
+								VALUE_CHANGE_TABLE	= {
 									{"Value", (.25)}}},
-							{["SPECIAL_KEY_WORDS"] = {"Name","COL_B"},	
-							["REPLACE_TYPE"] 		= "ALL",
-								["VALUE_CHANGE_TABLE"]	= {
+							{SPECIAL_KEY_WORDS = {"Name","COL_B"},	
+							REPLACE_TYPE 		= "ALL",
+								VALUE_CHANGE_TABLE	= {
 									{"Value", (.25)}}}
 					}}}}}}
 

@@ -5,8 +5,7 @@ local mod_desc = [[
 ]]-------------------------------------------------------------------
 
 local function SingleLayerTextureMbin(diffuse, palette, altcolor)
-	return [[<?xml version="1.0" encoding="utf-8"?>
-	<Data template="TkProceduralTextureList">
+	return [[<Data template="TkProceduralTextureList">
 		<Property name="Layers">
 			<Property value="TkProceduralTextureLayer.xml">
 				<Property name="Name" value="BASE"/>
@@ -36,7 +35,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Ship Interior Procedural Color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.65',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES	= {
 		{
@@ -47,21 +46,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				'Alternative3'
 			)
 		},
-		{
-			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.TEXTURE.EXML',
-			FILE_CONTENT	 = SingleLayerTextureMbin(
-				'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.BASE.DDS',
-				'Paint',
-				'Primary'
-			)
-		},
-		{
-			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.TEXTURE.EXML',
-			FILE_CONTENT	 = SingleLayerTextureMbin(
-				'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.BASE.DDS',
-				'Paint',
-				'Primary'
-			)
-		}
+		-- {
+			-- FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.TEXTURE.EXML',
+			-- FILE_CONTENT	 = SingleLayerTextureMbin(
+				-- 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT1.BASE.DDS',
+				-- 'Paint',
+				-- 'Primary'
+			-- )
+		-- },
+		-- {
+			-- FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.TEXTURE.EXML',
+			-- FILE_CONTENT	 = SingleLayerTextureMbin(
+				-- 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAINALT2.BASE.DDS',
+				-- 'Paint',
+				-- 'Primary'
+			-- )
+		-- }
 	}
 }

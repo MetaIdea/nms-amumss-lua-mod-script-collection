@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GGame"
 ModNameSub = "Full 6500K"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "321"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -126,33 +126,33 @@ DeadPlanetGravityFactor = 0.4					--0.6
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {{
+MBIN_CHANGE_TABLE = {{
+MBIN_FILE_SOURCE = FileSource1,
+EXML_CHANGE_TABLE = {
 
 --Scanning
-	{["PRECEDING_KEY_WORDS"] = "ToolScan",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "ToolScan",
+	VALUE_CHANGE_TABLE = {
 		{"PulseRange", ToolScanPulseRangeEasy},
 		{"ChargeTime", ToolScanRechargeEasy}
 		}},
-	{["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "ToolScanHardMode",
+	VALUE_CHANGE_TABLE = {
 		{"PulseRange", ToolScanPulseRangeHard},
 		{"ChargeTime", ToolScanRechargeHard}
 		}},
-	{["PRECEDING_KEY_WORDS"] = "ShipScan",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "ShipScan",
+	VALUE_CHANGE_TABLE = {
 		{"PulseRange", ShipScanPulseRange},
 		{"ChargeTime", ShipScanRecharge}
 		}},
-	{["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "BinocularSelectedEffect",
+	VALUE_CHANGE_TABLE = {
 		{"BasecolourIntensity", BinocularSelectedColourIntensity},
 		{"ScanlinesSeparation", BinocularSelectedScanlines},
 		{"FresnelIntensity", BinocularSelectedFresnel},
@@ -160,22 +160,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"FadeInTime", BinocularFadeInTime},
 		{"FadeOutTime", BinocularFadeOutTime}
 		}},
-	{["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "BinocularSelectedColour",
+	VALUE_CHANGE_TABLE = {
 		{"R", BinocularSelectedKnownRed},
 		{"G", BinocularSelectedKnownGreen},
 		{"B", BinocularSelectedKnownBlue},
 		{"A", BinocularSelectedKnownAlpha}
 		}},	
-	{["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "BinocularSelectedUnknownColour",
+	VALUE_CHANGE_TABLE = {
 		{"R", BinocularSelectedUnknownRed},
 		{"G", BinocularSelectedUnknownGreen},
 		{"B", BinocularSelectedUnknownBlue},
 		{"A", BinocularSelectedUnknownAlpha}
 		}},					
 		
-	{["VALUE_CHANGE_TABLE"] = {
+	{VALUE_CHANGE_TABLE = {
 		{"TerrainResourceScanTime", TerrainResourceScanTime},
 		{"TerrainResourceScanRange", TerrainResourceScanRange},
 		{"BinocsDisplayUnknownCreatures", BinocsDisplayUnknownCreatures},
@@ -250,8 +250,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"TorchDimFoV", TorchDimFoV},
 		{"TorchDimStrength", TorchDimStrength},
 		}},
-	{["PRECEDING_KEY_WORDS"] = "TorchColour",
-	["VALUE_CHANGE_TABLE"] = {
+	{PRECEDING_KEY_WORDS = "TorchColour",
+	VALUE_CHANGE_TABLE = {
 		{"R", TorchColourRed},
 		{"G", TorchColourGreen},
 		{"B", TorchColourBlue},

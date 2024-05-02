@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName			= "gLonely"
 ModNameSub		= "Normal"
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion		= "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"

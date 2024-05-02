@@ -1,0 +1,1 @@
+Use the same DDS files as gShip Utopia Speeder Engine Colors. Place them in Modscript with the Luas.

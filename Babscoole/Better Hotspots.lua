@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Gas2",     "GcRegionHotspotData.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"ClassWeightings"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "1"},
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"ClassStrengths"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "450"},
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Gas2",     "GcRegionHotspotData.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"ClassStrengths"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "3"},

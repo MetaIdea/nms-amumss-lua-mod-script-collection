@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCharacter Chest Light Colors Glow"
 ModNameSub = "TURQ"
 BaseDescription = "Changes the chest light color on the Astro/Life Support armor."
-GameVersion = "448"
+GameVersion = "464"
 ModVersion = "a"
 
 --[[Files Modified:

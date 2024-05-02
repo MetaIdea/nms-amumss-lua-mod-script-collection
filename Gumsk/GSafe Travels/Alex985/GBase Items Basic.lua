@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GBase"
 ModNameSub = "Items Basic"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "321"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN"
 
@@ -28,17 +28,17 @@ FreighterRate = 999999		--10000
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {{
-	["PRECEDING_KEY_WORDS"] = {""},
-	["REPLACE_TYPE"] = "ALL",
-	["VALUE_CHANGE_TABLE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {{
+MBIN_CHANGE_TABLE = {{
+MBIN_FILE_SOURCE = FileSource1,
+EXML_CHANGE_TABLE = {{
+	PRECEDING_KEY_WORDS = {""},
+	REPLACE_TYPE = "ALL",
+	VALUE_CHANGE_TABLE = {
 		{"IsPlaceable","True"},
 		{"BuildableOnPlanetBase","True"},
 		{"BuildableOnPlanet","True"},
@@ -63,12 +63,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"RemovesAttachedDecoration","False"},
 		}},
 
-	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","MESSAGEMODULE"},
+	VALUE_CHANGE_TABLE = {
 		{"RegionLimit",MessageModRegion},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGE"},			--Buggy item; disabling it and letting message module take care of it.
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","MESSAGE"},			--Buggy item; disabling it and letting message module take care of it.
+	VALUE_CHANGE_TABLE = {
 		{"RegionLimit",1},
 		-- {"BuildableOnPlanetBase","False"},
 		-- {"BuildableOnSpaceBase","False"},
@@ -79,33 +79,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 		-- {"BuildableAboveWater","False"},
 		}},
 		
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_WALL"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","W_WALL"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_FLOOR"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","W_FLOOR"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_ROOF"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","W_ROOF"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_DOOR"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","W_DOOR"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		}},
 		
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_SOLAR_S"},
+	VALUE_CHANGE_TABLE = {
 		{"Rate",SolarRate},
 		{"Storage",SolarStorage},
 		{"DependsOnEnvironment","DayNight"},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_BIOGENERATOR"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_BIOGENERATOR"},
+	VALUE_CHANGE_TABLE = {
 		{"DependentRateRate",BioRate},
 		{"Storage",BioStorage},
 		{"BuildableOnSpacebase", "False"},
@@ -113,57 +113,57 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_BATTERY_S"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_BATTERY_S"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"Rate",BatteryRate},
 		{"Storage",BatteryStorage},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_GENERATOR_S"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_GENERATOR_S"},
+	VALUE_CHANGE_TABLE = {
 		{"DependsOnHotspots",EMAnywhere},
 		{"Rate",EMRate},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", EMLimit},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_EXTRACTOR_S"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_EXTRACTOR_S"},
+	VALUE_CHANGE_TABLE = {
 		{"Storage",MineralStorage},
 		{"Rate",MineralRate},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", MineralLimit},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_GASEXTRACTOR"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_GASEXTRACTOR"},
+	VALUE_CHANGE_TABLE = {
 		{"Storage",GasStorage},
 		{"Rate",GasRate},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", GasLimit},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","U_SILO_S"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","U_SILO_S"},
+	VALUE_CHANGE_TABLE = {
 		{"Storage",SiloStorage},
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"PlanetBaseLimit", SiloLimit},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","AIRLCKCONNECTOR"},
+	VALUE_CHANGE_TABLE = {
 		{"Rate", FreighterRate},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","TELEPORTER"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"BuildableOnFreighter", "False"},
 		{"BuildableOnSpaceBase", "False"},
 		}},	
-	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER_F"},
-	["VALUE_CHANGE_TABLE"] = {
+	{SPECIAL_KEY_WORDS = {"ID","TELEPORTER_F"},
+	VALUE_CHANGE_TABLE = {
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"BuildableOnPlanetBase", "False"},

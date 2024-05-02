@@ -216,7 +216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienShipEvolveCosts"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "0"},
@@ -410,7 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "999"},

@@ -5,42 +5,38 @@ local mod_desc = [[
 ]]--------------------------------------------------------------------------------
 
 local function WingK_LodFixes()
-	local section = {
-		'WingsK_ALOD',
-		'SUB1WingsK_ALOD',
-		'SUB3WingsK_ALOD'
-	}
-	local vals = {
-		{atr='BATCHSTARTPHYSI',	37668,		41736,		53247},
-		{atr='VERTRSTARTPHYSI',	21866,		24590,		31380},
-		{atr='VERTRENDPHYSICS',	24589,		29311,		33122},
-		{atr='BATCHCOUNT', 		4068,		7890,		2856},
-		{atr='VERTRENDGRAPHIC', 2723,		4721,		1742},
-		{atr='BOUNDHULLST', 	212,		248,		328},
-		{atr='BOUNDHULLED', 	248,		292,		352},
-		{atr='AABBMINX', 		-2.891207,	-3.749691,	-3.733948},
-		{atr='AABBMINY', 		0.836564,	nil,		0.712383},
-		{atr='AABBMINZ', 		-1.380045,	-2.157869,	-2.149216},
-		{atr='AABBMAXX', 		nil,		3.749691,	3.733998},
-		{atr='AABBMAXY', 		1.77087,	nil,		1.885870},
-		{atr='AABBMAXZ', 		0.631633,	1.163431,	0.729330},
-		{atr='MESHLINK',		'WingsK_ALODShape1', 'WingsK_ALODShape1', 'WingsK_ALODShape1'}
+	local attr = {
+		BATCHSTARTPHYSI	= {37668,			41736,			53247		},
+		VERTRSTARTPHYSI	= {21866,			24590,			31380		},
+		VERTRENDPHYSICS	= {24589,			29311,			33122		},
+		BATCHCOUNT		= {4068,			7890,			2856		},
+		VERTRENDGRAPHIC	= {2723,			4721,			1742		},
+		BOUNDHULLST		= {212,				248,			328			},
+		BOUNDHULLED		= {248,				292,			352			},
+		AABBMINX		= {-2.891207,		-3.749691,		-3.733948	},
+		AABBMINY		= {0.836564,		nil,			0.712383	},
+		AABBMINZ		= {-1.380045,		-2.157869,		-2.149216	},
+		AABBMAXX		= {nil,				3.749691,		3.733998	},
+		AABBMAXY		= {1.77087,			nil,			1.885870	},
+		AABBMAXZ		= {0.631633,		1.163431,		0.729330	},
+		MESHLINK		= {'WingsK_ALODShape1', 'WingsK_ALODShape1', 'WingsK_ALODShape1'}
 	}
 	local T = {}
-	for i, lod in ipairs(section) do
-		for _,v in ipairs(vals) do
-			if v[i] then
-				table.insert(T, {
+	for i, lod in ipairs({'WingsK_ALOD', 'SUB1WingsK_ALOD', 'SUB3WingsK_ALOD'}) do
+		for name, prop in pairs(attr) do
+			if prop[i] then
+				T[#T+1] = {
 					SECTION_ACTIVE		= -1,
-					SPECIAL_KEY_WORDS	= {'Name', (lod..'0'), 'Name', v.atr},
-					VALUE_CHANGE_TABLE 	= { {'Value', v[i]} }
-				})
+					SPECIAL_KEY_WORDS	= {'Name', (lod..'0'), 'Name', name},
+					VALUE_CHANGE_TABLE 	= { {'Value', prop[i]} }
+				}
 			end
 		end
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Name', (lod..'0')},
-			VALUE_CHANGE_TABLE 	= { {'Name', (lod..'1')} }
-		})
+		T[#T+1] = {
+			SPECIAL_KEY_WORDS	= {'Name', lod..'0'},
+			VALUE_MATCH			= lod..'0',
+			VALUE_CHANGE_TABLE 	= { {'Name', lod..'1'} }
+		}
 	end
 	return T
 end
@@ -48,7 +44,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.fighter wingK FIX.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '4.65',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -66,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
-				VALUE_CHANGE_TABLE 	= { {'Value', 5} }
+				VALUE_CHANGE_TABLE 	= { {'Value', 4} }
 			},
 			{
 				FOREACH_SKW_GROUP 	= {

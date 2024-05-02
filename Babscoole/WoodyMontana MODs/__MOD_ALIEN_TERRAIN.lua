@@ -173,7 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -203,7 +203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -241,8 +241,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -299,8 +299,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -335,8 +335,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -606,7 +606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -644,8 +644,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -702,8 +702,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -738,8 +738,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FloatingIslands", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -961,7 +961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -991,7 +991,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1029,8 +1029,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1087,8 +1087,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1123,8 +1123,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1311,7 +1311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1341,7 +1341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1379,8 +1379,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1437,8 +1437,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1473,8 +1473,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"GrandCanyon", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1652,7 +1652,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Small"},
-                            ["VALUE_MATCH"] = "1",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1685,7 +1685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1715,7 +1715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1752,8 +1752,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1810,8 +1810,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -1846,8 +1846,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2046,7 +2046,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Small"},
-                            ["VALUE_MATCH"] = "1",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2079,7 +2079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2109,7 +2109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2147,8 +2147,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2205,8 +2205,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2241,8 +2241,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MountainRavines", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2439,7 +2439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Small"},
-                            ["VALUE_MATCH"] = "1",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2477,7 +2477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -2518,7 +2518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2548,7 +2548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2586,8 +2586,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2644,8 +2644,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2679,8 +2679,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2898,7 +2898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Small"},
-                            ["VALUE_MATCH"] = "1",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -2937,7 +2937,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -2978,7 +2978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3008,7 +3008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3046,8 +3046,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3103,8 +3103,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3139,8 +3139,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"HugeArches", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3316,8 +3316,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -3356,8 +3356,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Large", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Large"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -3408,7 +3408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3438,7 +3438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3476,8 +3476,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3534,8 +3534,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3570,8 +3570,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3737,8 +3737,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -3776,8 +3776,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Large", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Large"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -3828,7 +3828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3858,7 +3858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3896,8 +3896,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3954,8 +3954,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -3990,8 +3990,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alien", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4194,16 +4194,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -4310,7 +4310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4340,7 +4340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4378,8 +4378,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4436,8 +4436,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4472,8 +4472,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4673,16 +4673,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -4789,7 +4789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4819,7 +4819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4857,8 +4857,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4915,8 +4915,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -4951,8 +4951,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Craters", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5142,8 +5142,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5176,7 +5176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5206,7 +5206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5244,8 +5244,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5302,8 +5302,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5338,8 +5338,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5513,8 +5513,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5547,7 +5547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5577,7 +5577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5615,8 +5615,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5673,8 +5673,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5709,8 +5709,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Caverns", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5915,7 +5915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5945,7 +5945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -5983,8 +5983,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6041,8 +6041,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6077,8 +6077,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6290,7 +6290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6320,7 +6320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6358,8 +6358,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6416,8 +6416,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6452,8 +6452,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpine", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6575,8 +6575,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -6642,7 +6642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6672,7 +6672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6710,8 +6710,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6768,8 +6768,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6804,8 +6804,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -6926,8 +6926,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "0"},
@@ -6993,7 +6993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7023,7 +7023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7061,8 +7061,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7119,8 +7119,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7155,8 +7155,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LilyPad", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7332,16 +7332,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -7372,8 +7372,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Large", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Large"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -7414,7 +7414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7444,7 +7444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7482,8 +7482,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7540,8 +7540,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7576,8 +7576,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Min", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7793,16 +7793,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Small", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -7833,8 +7833,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Large", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Large"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -7875,7 +7875,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7905,7 +7905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -7943,8 +7943,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Copper", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Copper"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -8001,8 +8001,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Aluminium", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Aluminium"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},
@@ -8037,8 +8037,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Desert", "TkVoxelGeneratorSettingsElement.xml", "Max", "TkVoxelGeneratorData.xml", "Resources_Gold", "TkNoiseGridData.xml", "VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Gold"},
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "5"},

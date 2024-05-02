@@ -35,72 +35,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"SquadronPilot", "GcFreighterNPCSpawnPriority.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "4"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SquadronPilot", "GcFreighterNPCSpawnPriority.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"SquadronPilot", "GcFreighterNPCSpawnPriority.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "2"},
+                                {"IGNORE", "1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"SquadronPilot", "GcFreighterNPCSpawnPriority.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+3",
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-        <Property value="1" />
+        <Property value="4" />
 ]]
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "4"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "2"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateCaptain", "GcFreighterNPCSpawnPriority.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"IGNORE", "1"},
                             }
                         },
@@ -112,38 +72,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
                             },
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IGNORE", "0"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml"},
-                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml"},
-                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
-                            },
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"WorkerBio",      "GcFreighterNPCSpawnPriority.xml"},
-                                {"WorkerTech",     "GcFreighterNPCSpawnPriority.xml"},
-                                {"WorkerIndustry", "GcFreighterNPCSpawnPriority.xml"},
-                            },
-                            ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"}
+                                {"IGNORE", "0"},
+                                {"IGNORE", "0"},
+                                {"IGNORE", "0"},
                             }
                         },
                         {

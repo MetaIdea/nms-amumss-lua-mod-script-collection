@@ -1,9 +1,9 @@
 -----------------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   Change the royal ships to a wider variety of colors by changing it to use
   a full palette of 64 colors in the 'SpaceBottom' palette.
   The unused 'SpaceBottom' is partially changed from the original.
-  
+
   * the colors can be represented in 3 formats:
     percentage	[0 - 1.0]:	{0.87, 0.16, 0.44}
     standard	[0 - 255]:	{221,  32,   112}
@@ -83,7 +83,7 @@ local function RebuildPaletteColors()
 	end
 	local function hex2rgb(hex)
 		local n = {}
-		for i=1, hex:len()-1, 2 do
+		for i=1, #hex-1, 2 do
 			table.insert(n, trunc(tonumber(hex:sub(i, i+1), 16) / 255, 3))
 		end
 		return n
@@ -120,8 +120,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.royal palette.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.0.1',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.65',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -174,7 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Ship/Royal/*.DDS',
+			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Ship/Royal/*.DDS',
 			FILE_DESTINATION	 = 'TEXTURES/COMMON/SPACECRAFT/S-CLASS/*.DDS',
 		}
 	}

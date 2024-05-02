@@ -2,32 +2,6 @@
 <!--File created using MBINCompiler version (3.12.0)-->
 <Data template="TkAttachmentData">
   <Property name="Components">
-    <Property value="TkPhysicsComponentData.xml">
-      <Property name="Data" value="TkPhysicsData.xml">
-        <Property name="Mass" value="0" />
-        <Property name="Friction" value="0.5" />
-        <Property name="RollingFriction" value="0.2" />
-        <Property name="AngularDamping" value="0.2" />
-        <Property name="LinearDamping" value="0.1" />
-        <Property name="Gravity" value="20" />
-      </Property>
-      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
-        <Property name="VolumeTriggerType" value="Open" />
-      </Property>
-      <Property name="SurfaceProperties" value="None" />
-      <Property name="TriggerVolume" value="False" />
-      <Property name="Climbable" value="False" />
-      <Property name="Floor" value="False" />
-      <Property name="IgnoreModelOwner" value="False" />
-      <Property name="NoVehicleCollide" value="False" />
-      <Property name="NoPlayerCollide" value="False" />
-      <Property name="CameraInvisible" value="False" />
-      <Property name="InvisibleForInteraction" value="False" />
-      <Property name="AllowTeleporter" value="False" />
-      <Property name="BlockTeleporter" value="False" />
-      <Property name="DisableGravity" value="False" />
-      <Property name="SpinOnCreate" value="0" />
-    </Property>
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
@@ -36,7 +10,7 @@
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -44,7 +18,9 @@
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHOFF" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+				  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -54,7 +30,7 @@
           <Property name="StateID" value="SWITCHOFF" />
           <Property name="Triggers">
 		    <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -78,7 +54,7 @@
               </Property>
             </Property>  
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcPlayerNearbyEvent.xml">
+              <Property name="Event" value="GcPlayerNearbyEvent.xml">
                 <Property name="RequirePlayerAction" value="OnFoot" />
                 <Property name="Distance" value="4" />
                 <Property name="Angle" value="360" />
@@ -97,7 +73,9 @@
 				<Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHON" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -150,7 +128,9 @@
 				<Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHOFF" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+				  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>

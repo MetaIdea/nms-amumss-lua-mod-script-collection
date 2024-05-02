@@ -2,24 +2,24 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Max"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "411"
+GameVersion = "464"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
 {
-	["MBIN_CHANGE_TABLE"] = {
+	MBIN_CHANGE_TABLE = {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource,
+			EXML_CHANGE_TABLE = {
 				{
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"BinocularRangePlanet",2000},				--1000
 						{"BinocularRangeSpace",20000},				--10000
 						{"PlayerTransferRange",200},				--20

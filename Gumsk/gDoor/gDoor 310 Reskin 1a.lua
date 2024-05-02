@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "GDoor"
-GameVersion = "320"
+GameVersion = "464"
 ModVersion = "a"
 
 NewTexture = {}
@@ -49,61 +49,61 @@ NewTexture = {
 for i = 1,#NewTexture do
 
 	NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
-		["MOD_FILENAME"]	= ModName.." Holo "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
-		["MOD_DESCRIPTION"]	= "Holodoor Reskin"..NewTexture[i][3],
-			["MOD_AUTHOR"]		= Author,
-			["NMS_VERSION"]		= GameVersion,
-			["MODIFICATIONS"]	= {
-			{["MBIN_CHANGE_TABLE"] = {{
-			["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DOOR_2/GLOWGRADIENT_SKINNEDMAT.MATERIAL.MBIN",
-			["EXML_CHANGE_TABLE"] = {{
-				["PRECEDING_KEY_WORDS"] = {"Samplers"},
-				["VALUE_CHANGE_TABLE"] = {
+		MOD_FILENAME	= ModName.." Holo "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
+		MOD_DESCRIPTION	= "Holodoor Reskin"..NewTexture[i][3],
+			MOD_AUTHOR		= Author,
+			NMS_VERSION		= GameVersion,
+			MODIFICATIONS	= {
+			{MBIN_CHANGE_TABLE = {{
+			MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DOOR_2/GLOWGRADIENT_SKINNEDMAT.MATERIAL.MBIN",
+			EXML_CHANGE_TABLE = {{
+				PRECEDING_KEY_WORDS = {"Samplers"},
+				VALUE_CHANGE_TABLE = {
 					{"Map", NewTexture[i][1].."/"..NewTexture[i][2]..".DDS"}
 		}}}}}}}
 	}
 
 	NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
-		["MOD_FILENAME"]	= ModName.." Moonpool "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
-		["MOD_DESCRIPTION"]	= "Moonpool Floor Reskin"..NewTexture[i][3],
-		["MOD_AUTHOR"]		= Author,
-		["NMS_VERSION"]		= GameVersion,
-		["MODIFICATIONS"]	= {{
-			["MBIN_CHANGE_TABLE"] = {
-			{["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/FLOOR_WATERDOOR/HOLOGRAMDISPLACEMENT_MAT.MATERIAL.MBIN",
-			["EXML_CHANGE_TABLE"] = {{
-				["PRECEDING_KEY_WORDS"] = {"Samplers"},
-				["VALUE_CHANGE_TABLE"] = {
+		MOD_FILENAME	= ModName.." Moonpool "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
+		MOD_DESCRIPTION	= "Moonpool Floor Reskin"..NewTexture[i][3],
+		MOD_AUTHOR		= Author,
+		NMS_VERSION		= GameVersion,
+		MODIFICATIONS	= {{
+			MBIN_CHANGE_TABLE = {
+			{MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/FLOOR_WATERDOOR/HOLOGRAMDISPLACEMENT_MAT.MATERIAL.MBIN",
+			EXML_CHANGE_TABLE = {{
+				PRECEDING_KEY_WORDS = {"Samplers"},
+				VALUE_CHANGE_TABLE = {
 		--Horizontal shifting overlay on top of pool. Placed on object in a radial pattern. Works best with a uniform pattern.
 					{"Map",NewTexture[i][1].."/"..NewTexture[i][2]..".DDS"}
 		}}}},
-			{["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/FLOOR_WATERDOOR/HOLOGRAMDISPLACEMENT_MAT1.MATERIAL.MBIN",
-			["EXML_CHANGE_TABLE"] = {{
-				["PRECEDING_KEY_WORDS"] = {"Samplers"},
-				["VALUE_CHANGE_TABLE"] = {
+			{MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/FLOOR_WATERDOOR/HOLOGRAMDISPLACEMENT_MAT1.MATERIAL.MBIN",
+			EXML_CHANGE_TABLE = {{
+				PRECEDING_KEY_WORDS = {"Samplers"},
+				VALUE_CHANGE_TABLE = {
 		--Vertical cylinder glow emanating from pool going down, like holodoor. Works best with a left to right fade.
 					{"Map",NewTexture[i][1].."/"..NewTexture[i][2]..".DDS"}
 		}}}}}}}
 	}
 
 	NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
-		["MOD_FILENAME"]	= ModName.." Watertight "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
-		["MOD_DESCRIPTION"]	= "Watertight Door Reskin"..NewTexture[i][3],
-		["MOD_AUTHOR"]		= Author,
-		["NMS_VERSION"]		= GameVersion,
-		["MODIFICATIONS"]	= {
-			{["MBIN_CHANGE_TABLE"] = {
-			{["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/DOOR/HOLOGRAMDISPLACEMENT_MAT2.MATERIAL.MBIN",
-			["EXML_CHANGE_TABLE"] = {{
-				["PRECEDING_KEY_WORDS"] = {"Samplers"},
-				["VALUE_CHANGE_TABLE"] = {
+		MOD_FILENAME	= ModName.." Watertight "..NewTexture[i][3].." "..GameVersion..ModVersion..".pak",
+		MOD_DESCRIPTION	= "Watertight Door Reskin"..NewTexture[i][3],
+		MOD_AUTHOR		= Author,
+		NMS_VERSION		= GameVersion,
+		MODIFICATIONS	= {
+			{MBIN_CHANGE_TABLE = {
+			{MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/DOOR/HOLOGRAMDISPLACEMENT_MAT2.MATERIAL.MBIN",
+			EXML_CHANGE_TABLE = {{
+				PRECEDING_KEY_WORDS = {"Samplers"},
+				VALUE_CHANGE_TABLE = {
 		--Flat surface across door entrance. Texture placed in a radial pattern starting at 09:30 with the bottom of the texture closest to the middle and becoming more compressed closer to the middle. Works best with a uniform texture.
 					{"Map",NewTexture[i][1].."/"..NewTexture[i][2]..".DDS"}
 		}}}},
-			{["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/DOOR/HOLOGRAMDISPLACEMENT_MAT3.MATERIAL.MBIN",
-			["EXML_CHANGE_TABLE"] = {{
-				["PRECEDING_KEY_WORDS"] = {"Samplers"},
-				["VALUE_CHANGE_TABLE"] = {
+			{MBIN_FILE_SOURCE = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UNDERWATERBASE/DOOR/HOLOGRAMDISPLACEMENT_MAT3.MATERIAL.MBIN",
+			EXML_CHANGE_TABLE = {{
+				PRECEDING_KEY_WORDS = {"Samplers"},
+				VALUE_CHANGE_TABLE = {
 		--Cylinder emanating horizontally from door. Texture placed around circumference in a clockwise pattern starting at 09:30. Works best with a top to bottom fade.
 					{"Map",NewTexture[i][1].."/"..NewTexture[i][2]..".DDS"}
 		}}}}}}}

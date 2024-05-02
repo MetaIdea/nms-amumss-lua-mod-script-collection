@@ -219,7 +219,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -242,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -250,7 +249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -293,7 +292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "50"},
@@ -301,7 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -347,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -375,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -383,7 +382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -410,7 +409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -418,7 +417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -445,7 +444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -453,7 +452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -480,7 +479,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -488,7 +487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "10"},
@@ -515,7 +514,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -523,7 +522,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -830,7 +829,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -851,7 +849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -859,7 +857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -902,7 +900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "50"},
@@ -910,7 +908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "10"},
@@ -937,7 +935,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -964,7 +962,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -991,7 +989,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -999,7 +997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -1026,7 +1024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1034,7 +1032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -1061,7 +1059,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1069,7 +1067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -1097,7 +1095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1105,7 +1103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "10"},
@@ -1131,17 +1129,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Max", "Resources_Emeril"},
-                            ["SPECIAL_KEY_WORDS"] = {"VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -1432,7 +1428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Small"},
-                            ["VALUE_MATCH"] = "5",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1456,7 +1452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1480,7 +1476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1504,7 +1500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1528,7 +1524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1552,7 +1548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1576,7 +1572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1600,7 +1596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1624,7 +1620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1905,7 +1901,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1938,7 +1933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1962,7 +1957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -1986,7 +1981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2010,7 +2005,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2034,7 +2029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2058,7 +2053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2082,7 +2077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyon", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2294,7 +2289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -2312,7 +2307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2320,7 +2315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -2346,7 +2341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -2371,7 +2366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -2396,7 +2391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2404,7 +2399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -2429,7 +2424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2437,7 +2432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -2462,7 +2457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2470,7 +2465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -2495,7 +2490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2503,7 +2498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -2528,7 +2523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2536,7 +2531,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -2724,7 +2719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -2742,7 +2737,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2750,7 +2745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -2775,7 +2770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -2800,7 +2795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -2825,7 +2820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2833,7 +2828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -2858,7 +2853,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2866,7 +2861,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -2891,7 +2886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2899,7 +2894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -2924,7 +2919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2932,7 +2927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -2957,7 +2952,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -2965,7 +2960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavines", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -3199,7 +3194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -3246,7 +3241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3254,7 +3249,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Large"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -3317,7 +3312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3341,7 +3336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3365,7 +3360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3389,7 +3384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3413,7 +3408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3692,7 +3687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -3740,7 +3735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3748,7 +3743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Large"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -3811,7 +3806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3835,7 +3830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3859,7 +3854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3883,7 +3878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -3907,7 +3902,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArches", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4202,7 +4197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -4237,7 +4232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4245,7 +4240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -4273,7 +4268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -4301,7 +4296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -4329,7 +4324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4337,7 +4332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -4365,7 +4360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4373,7 +4368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -4401,7 +4396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4409,7 +4404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -4438,7 +4433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4446,7 +4441,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -4481,7 +4476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4489,7 +4484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -4756,7 +4751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -4792,7 +4787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4800,7 +4795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -4828,7 +4823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -4856,7 +4851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -4884,7 +4879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4912,7 +4907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4920,7 +4915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -4948,7 +4943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4956,7 +4951,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -4984,7 +4979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -4992,7 +4987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -5020,7 +5015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5028,7 +5023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alien", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -5306,7 +5301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5331,7 +5326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5356,7 +5351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5381,7 +5376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5406,7 +5401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5632,7 +5627,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5688,7 +5683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5712,7 +5707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5736,7 +5731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5760,7 +5755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -5784,7 +5779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Craters", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6016,7 +6011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -6056,7 +6051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6064,7 +6059,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -6092,7 +6087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -6119,7 +6114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -6146,7 +6141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6154,7 +6149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -6181,7 +6176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6189,7 +6184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -6216,7 +6211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6224,7 +6219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -6251,7 +6246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6259,7 +6254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -6286,7 +6281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6294,7 +6289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -6575,7 +6570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6583,7 +6578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "10"},
@@ -6611,7 +6606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -6638,7 +6633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -6665,7 +6660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6673,7 +6668,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -6700,7 +6695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6708,7 +6703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -6735,7 +6730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6743,7 +6738,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -6770,7 +6765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6778,7 +6773,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -6805,7 +6800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -6813,7 +6808,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Caverns", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -7029,7 +7024,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7048,7 +7042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -7073,7 +7067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7081,7 +7075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -7114,7 +7108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -7147,7 +7141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -7180,7 +7174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7188,7 +7182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -7221,7 +7215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7229,7 +7223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -7262,7 +7256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7270,7 +7264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -7302,17 +7296,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Gold"},
-                            ["SPECIAL_KEY_WORDS"] = {"VaryRoll", "0"},
-                            ["LINE_OFFSET"] = "+2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -7345,7 +7337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7353,7 +7345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -7586,7 +7578,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7605,7 +7596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -7630,7 +7621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7638,7 +7629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -7671,7 +7662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -7704,7 +7695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -7737,7 +7728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7745,7 +7736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -7778,7 +7769,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7786,7 +7777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -7819,7 +7810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7827,7 +7818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -7860,7 +7851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7868,7 +7859,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -7901,7 +7892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -7909,7 +7900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Alpine", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -8137,7 +8128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -8185,7 +8176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -8213,7 +8204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -8241,7 +8232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8249,7 +8240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -8276,7 +8267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8284,7 +8275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -8311,7 +8302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8319,7 +8310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -8346,7 +8337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8354,7 +8345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -8381,7 +8372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8389,7 +8380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -8606,7 +8597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -8626,7 +8617,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -8653,7 +8644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -8680,7 +8671,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -8707,7 +8698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8715,7 +8706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -8742,7 +8733,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8750,7 +8741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -8777,7 +8768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8785,7 +8776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -8812,7 +8803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -8820,7 +8811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -8847,7 +8838,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPad", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9077,7 +9068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -9097,7 +9088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -9124,7 +9115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -9151,7 +9142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -9178,7 +9169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9186,7 +9177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -9213,7 +9204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9221,7 +9212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -9248,7 +9239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9256,7 +9247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -9283,7 +9274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9291,7 +9282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -9318,7 +9309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9326,7 +9317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -9551,7 +9542,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -9571,7 +9561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -9609,7 +9599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -9655,7 +9645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9663,7 +9653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -9690,7 +9680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9698,7 +9688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -9725,7 +9715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9733,7 +9723,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -9760,7 +9750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9768,7 +9758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -9795,7 +9785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -9803,7 +9793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -10051,7 +10041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -10095,7 +10085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "10",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10138,7 +10128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10168,7 +10158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10202,7 +10192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10238,7 +10228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10281,7 +10271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10320,7 +10310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10353,7 +10343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10627,7 +10617,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -10671,7 +10661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "10",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10714,7 +10704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10744,7 +10734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10778,7 +10768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10815,7 +10805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10857,7 +10847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10896,7 +10886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -10930,7 +10920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WaterworldPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11177,7 +11167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11193,7 +11183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -11226,7 +11216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11264,7 +11254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11294,7 +11284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11328,7 +11318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11364,7 +11354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11409,7 +11399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11440,7 +11430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11473,7 +11463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11713,7 +11703,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -11741,7 +11730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -11777,7 +11766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11815,7 +11804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11845,7 +11834,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11879,7 +11868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11916,7 +11905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11958,7 +11947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -11997,7 +11986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12031,7 +12020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12341,7 +12330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -12385,7 +12374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12445,7 +12434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12475,7 +12464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12509,7 +12498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12545,7 +12534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12588,7 +12577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12627,7 +12616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12660,7 +12649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -12944,7 +12933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -12989,7 +12978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13049,7 +13038,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13079,7 +13068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13113,7 +13102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13150,7 +13139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13192,7 +13181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13231,7 +13220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13265,7 +13254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13476,7 +13465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -13495,7 +13484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13503,7 +13492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -13529,7 +13518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13537,7 +13526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -13563,7 +13552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13571,7 +13560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -13597,7 +13586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13605,7 +13594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -13631,7 +13620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13639,7 +13628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -13665,7 +13654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13673,7 +13662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -13699,7 +13688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13707,7 +13696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -13733,7 +13722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13741,7 +13730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -13957,7 +13946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -13976,7 +13965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -13984,7 +13973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -14010,7 +13999,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14018,7 +14007,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -14044,7 +14033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14052,7 +14041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -14078,7 +14067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14086,7 +14075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -14112,7 +14101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14120,7 +14109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -14146,7 +14135,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14154,7 +14143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -14180,7 +14169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14188,7 +14177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -14214,7 +14203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14222,7 +14211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -14439,7 +14428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -14459,7 +14448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14467,7 +14456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -14494,7 +14483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14502,7 +14491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -14529,7 +14518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14537,7 +14526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -14564,7 +14553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14572,7 +14561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -14599,7 +14588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14607,7 +14596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -14634,7 +14623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14642,7 +14631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -14669,7 +14658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14677,7 +14666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -14704,7 +14693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14712,7 +14701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -14936,7 +14925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -14956,7 +14945,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "50",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -14964,7 +14953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -14991,7 +14980,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15019,7 +15008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15027,7 +15016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -15054,7 +15043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15062,7 +15051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -15089,7 +15078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15097,7 +15086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -15124,7 +15113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15132,7 +15121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -15159,7 +15148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15167,7 +15156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -15194,7 +15183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15202,7 +15191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -15458,7 +15447,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -15492,7 +15481,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15535,7 +15524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -15572,7 +15561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15602,7 +15591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15636,7 +15625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15672,7 +15661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15715,7 +15704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15754,7 +15743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -15787,7 +15776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16084,7 +16073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "4"},
@@ -16118,7 +16107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16161,7 +16150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "16",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -16198,7 +16187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16228,7 +16217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16262,7 +16251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16299,7 +16288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16343,7 +16332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16374,7 +16363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16408,7 +16397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlienPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16695,7 +16684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -16723,7 +16712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -16758,7 +16747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16786,7 +16775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "16"},
@@ -16816,7 +16805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16846,7 +16835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16880,7 +16869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16916,7 +16905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16959,7 +16948,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -16998,7 +16987,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17031,7 +17020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17304,7 +17293,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "0"},
@@ -17332,7 +17321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "0"},
@@ -17367,7 +17356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17395,7 +17384,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TileBlendMeters", "16"},
@@ -17425,7 +17414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17455,7 +17444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17489,7 +17478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17526,7 +17515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17568,7 +17557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17607,7 +17596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17641,7 +17630,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17918,7 +17907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17948,7 +17937,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -17978,7 +17967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18012,7 +18001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18048,7 +18037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18091,7 +18080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18130,7 +18119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18163,7 +18152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18405,7 +18394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18435,7 +18424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18465,7 +18454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18499,7 +18488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18536,7 +18525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18578,7 +18567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18617,7 +18606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18651,7 +18640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CavernsPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18921,7 +18910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18958,7 +18947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -18988,7 +18977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19022,7 +19011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19058,7 +19047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19101,7 +19090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19140,7 +19129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19173,7 +19162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19457,7 +19446,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19494,7 +19483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19524,7 +19513,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19558,7 +19547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19595,7 +19584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19637,7 +19626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19676,7 +19665,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19710,7 +19699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AlpinePrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -19949,24 +19938,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Octaves",         "4"},
                                 {"Width",           "12"},
                                 {"WaterFade",       "Below"},
-                                {"SeedOffset",      "4"},
                                 {"TileBlendMeters", "8"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 7,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SeedOffset", "7"},
+                                {"SeedOffset", "2"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "4",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SeedOffset", "2"},
+                                {"SeedOffset", "7"},
                             }
                         },
                         {
@@ -20005,7 +19993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "10"},
@@ -20013,7 +20001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -20040,7 +20028,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "10"},
@@ -20061,24 +20049,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Width",           "24"},
                                 {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
-                                {"SeedOffset",      "3"},
                                 {"TileBlendMeters", "8"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeedOffset", "0"},
                             }
                         },
                         {
@@ -20102,7 +20081,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20110,7 +20089,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -20131,13 +20110,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Width",           "120"},
                                 {"SmoothRadius",    "1"},
                                 {"WaterFade",       "Below"},
-                                {"SeedOffset",      "3"},
                                 {"TileBlendMeters", "8"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20145,18 +20123,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "3",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeedOffset", "0"},
                             }
                         },
                         {
@@ -20180,7 +20150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20188,7 +20158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -20215,7 +20185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20223,7 +20193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -20250,7 +20220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20258,7 +20228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -20505,7 +20475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -20547,7 +20517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "20",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "10"},
@@ -20555,7 +20525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -20582,7 +20552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -20628,7 +20598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20655,7 +20625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20663,7 +20633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -20690,7 +20660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20698,7 +20668,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -20725,7 +20695,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20733,7 +20703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -20760,7 +20730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -20768,7 +20738,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LilyPadPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -21032,7 +21002,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -21040,7 +21010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -21082,7 +21052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "10",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -21090,25 +21060,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
-                            ["VALUE_MATCH"] = "0",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeedOffset", "1"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"SeedOffset", "0"},
                             }
                         },
                         {
@@ -21133,7 +21088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "4"},
@@ -21161,7 +21116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -21189,7 +21144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21197,7 +21152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -21225,7 +21180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21233,7 +21188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -21261,7 +21216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21269,7 +21224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -21297,7 +21252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21305,7 +21260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "6"},
@@ -21333,7 +21288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21341,7 +21296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "3"},
@@ -21612,7 +21567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -21620,7 +21575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Small"},
-                            ["VALUE_MATCH"] = "2",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "9"},
@@ -21663,7 +21618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "10",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "20"},
@@ -21671,7 +21626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "1"},
@@ -21699,7 +21654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Heridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -21727,7 +21682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Iridium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -21755,7 +21710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21763,7 +21718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Copper"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},
@@ -21791,7 +21746,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21799,7 +21754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Nickel"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "7"},
@@ -21827,7 +21782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21835,7 +21790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Aluminium"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "8"},
@@ -21863,7 +21818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21871,7 +21826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Gold"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "2"},
@@ -21899,7 +21854,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SmoothRadius", "1"},
@@ -21907,7 +21862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Resources_Emeril"},
-                            ["VALUE_MATCH"] = "0",
+                            ["SUB_LEVEL"] = 6,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SeedOffset", "5"},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = ""
 BaseDescription = "Hotspot balancing"
-GameVersion = "411"
+GameVersion = "464"
 ModVersion = "a"
 
 --Files Changed
@@ -52,17 +52,17 @@ New_Hotspot_Array = {
 			}
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
+					EXML_CHANGE_TABLE = {
 					},
 				}
 			},
@@ -74,8 +74,8 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 for i = 1,6 do
 	local temp_table1 =
 		{
-			["SPECIAL_KEY_WORDS"] = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
-			["VALUE_CHANGE_TABLE"] = {
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			VALUE_CHANGE_TABLE = {
 				{"ProbabilityWeighting",New_Hotspot_Array[2][i]},
 				{"MinRange",New_Hotspot_Array[3][i]},
 				{"MaxRange",New_Hotspot_Array[4][i]},
@@ -85,9 +85,9 @@ for i = 1,6 do
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table1
 	local temp_table2 =
 		{
-			["SPECIAL_KEY_WORDS"] = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
-			["PRECEDING_KEY_WORDS"] = {"ClassWeightings"},
-			["VALUE_CHANGE_TABLE"] = {
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			PRECEDING_KEY_WORDS = {"ClassWeightings"},
+			VALUE_CHANGE_TABLE = {
 				{"C",New_Hotspot_Array[5][i]},
 				{"B",New_Hotspot_Array[6][i]},
 				{"A",New_Hotspot_Array[7][i]},
@@ -97,9 +97,9 @@ for i = 1,6 do
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table2	
 	local temp_table3 =
 		{
-			["SPECIAL_KEY_WORDS"] = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
-			["PRECEDING_KEY_WORDS"] = {"ClassStrengths"},
-			["VALUE_CHANGE_TABLE"] = {
+			SPECIAL_KEY_WORDS = {Original_Hotspot_Array[1][i],"GcRegionHotspotData.xml"},
+			PRECEDING_KEY_WORDS = {"ClassStrengths"},
+			VALUE_CHANGE_TABLE = {
 				{"C",New_Hotspot_Array[9][i]},
 				{"B",New_Hotspot_Array[10][i]},
 				{"A",New_Hotspot_Array[11][i]},

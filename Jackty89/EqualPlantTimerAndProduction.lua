@@ -80,7 +80,7 @@ Custom_Language_Desccription_Strings =
         {
             {
                 ["LANGUAGE"] = Languages["EN"],
-                ["DESCRIPTION"] = [[A medium-sized, farmable plant that yields an occasional harvest of valuable resrouces.&#xA;&#xA;Suitable for hydroponic indoor planting. Ensure the correct climate before planting outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;]]..Time..[[ seconds&lt;&gt;]]}
+                ["DESCRIPTION"] = [[A medium-sized, farmable plant that yields an occasional harvest of valuable resources.&#xA;&#xA;Suitable for hydroponic indoor planting. Ensure the correct climate before planting outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;]]..Time..[[ seconds&lt;&gt;]]}
         }
     }
 }

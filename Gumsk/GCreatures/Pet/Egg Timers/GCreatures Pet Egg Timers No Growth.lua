@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Pet Egg Timers"
 ModNameSub = "No Growth"
 BaseDescription = "Reduces pet egg timers"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 

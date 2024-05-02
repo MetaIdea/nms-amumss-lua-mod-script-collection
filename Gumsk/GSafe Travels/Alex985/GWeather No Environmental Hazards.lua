@@ -2,17 +2,17 @@ Author = "Gumsk"
 ModName = "GWeather Environmental Hazards"
 ModNameSub = "None"
 BaseDescription = "Removes all environmental hazards"
-GameVersion = "322"
+GameVersion = "464"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-	["MBIN_CHANGE_TABLE"] = {{
-		["MBIN_FILE_SOURCE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {{
+	MBIN_CHANGE_TABLE = {{
+		MBIN_FILE_SOURCE = {
 		"METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
 		"METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
 		"METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARWEATHER.MBIN",
@@ -31,9 +31,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		"METADATA\SIMULATION\SOLARSYSTEM\WEATHER\TOXIC.MBIN",
 		"METADATA\SIMULATION\SOLARSYSTEM\WEATHER\WEIRDWEATHER.MBIN",
 		},
-		["EXML_CHANGE_TABLE"] = {
+		EXML_CHANGE_TABLE = {
 			{
-				["VALUE_CHANGE_TABLE"] = {
+				VALUE_CHANGE_TABLE = {
 					{"OverrideTemperature","False"},
 					{"OverrideToxicity","False"},
 					{"OverrideRadiation","False"},

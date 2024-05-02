@@ -2,24 +2,24 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Normal"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "411"
+GameVersion = "464"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
 {
-	["MBIN_CHANGE_TABLE"] = {
+	MBIN_CHANGE_TABLE = {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource,
+			EXML_CHANGE_TABLE = {
 				{
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"BinocularRangePlanet",2000},				--1000
 						{"BinocularRangeSpace",20000},				--10000
 						{"PlayerTransferRange",200},				--20
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						-- {"FreeJetpackRange",7},						--3
 						-- {"FreeJetpackRangeNonTerrain",2},			--1.1
 						-- {"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",80},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",50},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
 						{"JetpackMaxSpeed",35},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not

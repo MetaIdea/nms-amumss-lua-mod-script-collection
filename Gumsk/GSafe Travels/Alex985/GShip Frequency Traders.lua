@@ -1,25 +1,25 @@
 Author = "Gumsk"
-ModName = "GShip Frequency"
+ModName = "gShip Frequency"
 ModNameSub = "Traders"
 BaseDescription = "More traders at stations and trade outposts"
-GameVersion = "321"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 FileSource2 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
+{MBIN_CHANGE_TABLE = {
 
 {
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
-	{["PRECEDING_KEY_WORDS"] = {"TraderSpawns","Count"},
-		["VALUE_CHANGE_TABLE"] = {
+MBIN_FILE_SOURCE = FileSource1,
+EXML_CHANGE_TABLE = {
+	{PRECEDING_KEY_WORDS = {"TraderSpawns","Count"},
+		VALUE_CHANGE_TABLE = {
 			{"x",3},
 			{"y",3},
 		},
@@ -27,10 +27,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }},
 
 {
-["MBIN_FILE_SOURCE"] = FileSource2,
-["EXML_CHANGE_TABLE"] = {
+MBIN_FILE_SOURCE = FileSource2,
+EXML_CHANGE_TABLE = {
 	{
-		["VALUE_CHANGE_TABLE"] = {
+		VALUE_CHANGE_TABLE = {
 			{"MinimumCircleTimeBeforeLanding",1},		--Mild impact
 			{"MinimumTimeBetweenOutpostLandings",1},	--Mild impact
 			{"FillUpOutposts","True"},					--Needed

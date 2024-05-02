@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = "Garage"
 BaseDescription = "Proximity garage doors"
-GameVersion = "430"
+GameVersion = "464"
 ModVersion = "a"
-FileSource1 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\BASICPARTS\\MESHES\\COMMON\\ENTITIES\\GARAGEDOOR.ENTITY.MBIN"
+FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\COMMON\ENTITIES\GARAGEDOOR.ENTITY.MBIN"
 
 States = [[
 		<Property value="GcTriggerActionComponentData.xml">
@@ -93,38 +93,38 @@ States = [[
 		</Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
 {
-	["MBIN_CHANGE_TABLE"] = {
+	MBIN_CHANGE_TABLE = {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource1,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource1,
+			EXML_CHANGE_TABLE = {
 				{
-					["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_OPEN.ANIM.MBIN",},
+					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_OPEN.ANIM.MBIN",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"Speed", 3}
 					}
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_CLOSE.ANIM.MBIN",},
+					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_CLOSE.ANIM.MBIN",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"Speed", 0.5}
 					}
 				},
 				{
-					["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
+					PRECEDING_KEY_WORDS = {"GcTriggerActionComponentData.xml"},
 					["REMOVE"] = "SECTION"
 				},
 				{
-					["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
+					PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
 					["ADD"] = States,
-					["REPLACE_TYPE"] = "ADDAFTERSECTION"
+					REPLACE_TYPE = "ADDAFTERSECTION"
 				}
 			}
 		}

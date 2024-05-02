@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANGUAGE"
-METADATA_NMS_VERSION    = "460"
+METADATA_NMS_VERSION    = "465"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom localization file. Modifies GCDEBUGOPTIONS.GLOBAL.MBIN."
 
 
@@ -13,6 +13,9 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom local
 ----------------------------------------------------------------------------------------------------
 -- languange entries: missions
 ----------------------------------------------------------------------------------------------------
+
+GAME_VERSION = "4.65"
+GAME_UPDATE = "Orbital"
 
 --------------------------------------------------
 -- main mission misc + tooltips
@@ -22,7 +25,7 @@ TEXT_MISSION_INSTALLED_OBJ = "Game Modification Installed"
 TEXT_MISSION_INSTALLED_TIP = 
 [[
 Project Apollo - Lost in Time&#xA;
-Author: &lt;CATALYST&gt;FriendlyFirePL&lt;&gt; &lt;IMG&gt;SLASH&lt;&gt; Version: &lt;TECHNOLOGY&gt;4.60&lt;&gt;&#xA;
+Author: &lt;CATALYST&gt;FriendlyFirePL&lt;&gt; &lt;IMG&gt;SLASH&lt;&gt; Version: &lt;TECHNOLOGY&gt;]]..GAME_VERSION..[[&lt;&gt;&#xA;
 Visit my NexusMods page for mod info and updates
 ]]
 
@@ -1707,11 +1710,11 @@ TEXT_WIKI_ABOUT_TITLE6 = "Technical info"
 TEXT_WIKI_ABOUT_ENTRY6 = 
 [[
 &lt;VAL_ON&gt;Game version:&lt;&gt;&#xA;
-4.60 (Orbital update)
+]]..GAME_VERSION..[[ (]]..GAME_UPDATE..[[ update)
 &#xA;&#xA;
 
 &lt;VAL_ON&gt;Mod version:&lt;&gt;&#xA;
-Release 1 / Dev 7
+Release 1 / Dev 8
 &#xA;&#xA;
 
 &lt;VAL_ON&gt;Visit my NexusMods page for mod info and updates:&lt;&gt;&#xA;

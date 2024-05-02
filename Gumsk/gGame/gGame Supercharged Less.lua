@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame Supercharged"
 ModNameSub = "Less"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

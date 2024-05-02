@@ -16,12 +16,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CivilianTraderSpaceshipsCacheCount",  "1000"},
+                                {"CivilianTraderSpaceshipsCacheCount", "1000"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "10"},
@@ -33,11 +33,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Dropship", "IGNORE"},
-                                {"Fighter", "IGNORE"},
+                                {"Dropship",   "IGNORE"},
+                                {"Fighter",    "IGNORE"},
                                 {"Scientific", "IGNORE"},
-                                {"Shuttle", "IGNORE"},
-                                {"Royal", "IGNORE"},
+                                {"Shuttle",    "IGNORE"},
+                                {"Royal",      "IGNORE"},
                             },
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =

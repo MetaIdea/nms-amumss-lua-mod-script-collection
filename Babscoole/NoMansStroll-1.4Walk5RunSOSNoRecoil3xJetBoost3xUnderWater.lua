@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "999"},
@@ -106,15 +106,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "JET1", "StatsType", "Suit_Jetpack_Tank"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["SPECIAL_KEY_WORDS"] = 
                             {
-                                {"Bonus", "9999"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "JET1", "StatsType", "Suit_Jetpack_Refill"},
+                                {"ID", "JET1", "StatsType", "Suit_Jetpack_Tank"},
+                                {"ID", "JET1", "StatsType", "Suit_Jetpack_Refill"},
+                            },
                             ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {

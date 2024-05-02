@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gStack"
 ModNameSub = Multiplier.."x"
 BaseDescription = "Multiplies stack sizes"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"
 

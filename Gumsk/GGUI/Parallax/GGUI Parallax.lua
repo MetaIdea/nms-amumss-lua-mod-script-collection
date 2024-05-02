@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGUI Parallax"
 ModNameSub = ""
 BaseDescription = "Removes mouse-based parallax movement in menus"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource1 = "GCUIGLOBALS.GLOBAL.MBIN"
 

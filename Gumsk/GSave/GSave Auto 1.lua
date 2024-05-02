@@ -2,24 +2,24 @@ Author = "Mjjstral+Gumsk+Babscoole"
 ModName = "gSave Auto"
 ModNameSub = "1"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "399"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] 	= {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE 	= {
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
+							PRECEDING_KEY_WORDS = {"LodDistances"}, 
+							LINE_OFFSET 		= "-2",
 							["ADD"] 				= 
 [[
     <Property value="TkReferenceComponentData.xml">
@@ -34,10 +34,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	["ADD_FILES"]		= {
+	ADD_FILES		= {
 		{
-			["FILE_DESTINATION"] = [[GUMSK/AUTOSAVE.SCENE.EXML]],
-			["FILE_CONTENT"] 	 = 
+			FILE_DESTINATION = [[GUMSK/AUTOSAVE.SCENE.EXML]],
+			FILE_CONTENT 	 = 
 [[<?xml version="1.0" encoding="utf-8"?>
 <Data template="TkSceneNodeData">
   <Property name="Name" value="GUMSK/AUTOSAVE" />
@@ -66,8 +66,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 </Data>]]			
 		},
 		{
-			["FILE_DESTINATION"] = [[GUMSK/AUTOSAVE.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			FILE_DESTINATION = [[GUMSK/AUTOSAVE.ENTITY.EXML]],
+			FILE_CONTENT 	 = 
 [[<?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAttachmentData">
   <Property name="Components">

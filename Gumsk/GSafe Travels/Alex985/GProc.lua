@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "322"
+GameVersion = "464"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -71,14 +71,14 @@ Mining_Bonus_Array = { --(Name [1]Part 1,[2]Part 2 Array Column,[3]Part 3),[4]Mi
 Upgrade_Text = ""
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource,
-["EXML_CHANGE_TABLE"] = {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {{
+MBIN_CHANGE_TABLE = {{
+MBIN_FILE_SOURCE = FileSource,
+EXML_CHANGE_TABLE = {
 {}
 },}},}}}
 
@@ -322,7 +322,7 @@ for i = 1,#Element_Name_Array do
 	for j = 1,#Element_Bonus_Array[1][4] do
 		temp_table =
 		{
-		["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Element_Name_Array[i][1]..j},
+		SPECIAL_KEY_WORDS = {"ID", "UP_"..Element_Name_Array[i][1]..j},
 		["REMOVE"] = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -333,7 +333,7 @@ for i = 1,#Water_Name_Array do
 	for j = 1,#Water_Bonus_Array[1][4] do
 		temp_table =
 		{
-		["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Water_Name_Array[i][1]..j},
+		SPECIAL_KEY_WORDS = {"ID", "UP_"..Water_Name_Array[i][1]..j},
 		["REMOVE"] = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -344,7 +344,7 @@ for i = 1,#Mining_Name_Array do
 	for j = 1,#Mining_Bonus_Array[1][4] do
 		temp_table =
 		{
-		["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
+		SPECIAL_KEY_WORDS = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
 		["REMOVE"] = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -352,40 +352,40 @@ for i = 1,#Mining_Name_Array do
 end
 
 temp_table = {
-		["SPECIAL_KEY_WORDS"] = {"ID","UP_SHLD4"},
+		SPECIAL_KEY_WORDS = {"ID","UP_SHLD4"},
 		["ADD"] = Upgrade_Text,
-		["REPLACE_TYPE"] = "ADDAFTERSECTION"}
+		REPLACE_TYPE = "ADDAFTERSECTION"}
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 
 
 temp_table = {
-		["SPECIAL_KEY_WORDS"] = {"ID","UP_EXGUN1","StatsType","Vehicle_GunRate"},
+		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN1","StatsType","Vehicle_GunRate"},
 		["SECTION_UP"] = 1,
-		["VALUE_CHANGE_TABLE"] = {
+		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.95"},
 			{"ValueMax","0.99"},
 		}}
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
-		["SPECIAL_KEY_WORDS"] = {"ID","UP_EXGUN2","StatsType","Vehicle_GunRate"},
+		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN2","StatsType","Vehicle_GunRate"},
 		["SECTION_UP"] = 1,
-		["VALUE_CHANGE_TABLE"] = {
+		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.9"},
 			{"ValueMax","0.95"},
 		}}
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
-		["SPECIAL_KEY_WORDS"] = {"ID","UP_EXGUN3","StatsType","Vehicle_GunRate"},
+		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN3","StatsType","Vehicle_GunRate"},
 		["SECTION_UP"] = 1,
-		["VALUE_CHANGE_TABLE"] = {
+		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.85"},
 			{"ValueMax","0.9"},
 		}}
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
-		["SPECIAL_KEY_WORDS"] = {"ID","UP_EXGUN4","StatsType","Vehicle_GunRate"},
+		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN4","StatsType","Vehicle_GunRate"},
 		["SECTION_UP"] = 1,
-		["VALUE_CHANGE_TABLE"] = {
+		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.8"},
 			{"ValueMax","0.85"},
 		}}

@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "1"}, -- Original "3"
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LODAdjust"},
                             ["SECTION_ACTIVE"] = {4},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "3"}, -- Original "1"

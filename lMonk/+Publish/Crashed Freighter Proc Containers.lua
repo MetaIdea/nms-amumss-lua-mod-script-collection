@@ -1,6 +1,147 @@
-------------------------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
-dofile('LIB/scene_tools.lua')
+-------------------------------------------------------------------------------
+---	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+---	A tool for converting exml to an equivalent lua table and back again.
+---	Helper functions for color class, vector class and string arrays
+---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+-------------------------------------------------------------------------------
+
+--	replace a boolean with its text equivalent (ignore otherwise)
+--	@param b: any value
+function bool(b)
+	return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
+end
+
+--	get the count of ALL objects in a table (non-recursive)
+--	@param t: any table
+function len2(t)
+	i=0; for _ in pairs(t) do i=i+1 end; return i
+end
+
+--	Generate an EXML-tagged text from a lua table representation of exml class
+--	@param class: a lua2exml formatted table
+function ToExml(class)
+	local function exml_r(tlua)
+		local exml = {}
+		function exml:add(t)
+			for _,v in ipairs(t) do self[#self+1] = v end
+		end
+		for key, cls in pairs(tlua) do
+			if key ~= 'META' then
+				exml[#exml+1] = '<Property '
+				if type(cls) == 'table' and cls.META then
+					local att, val = cls['META'][1], cls['META'][2]
+					-- add and recurs for an inner table
+					if att == 'name' or att == 'value' then
+						exml:add({att, '="', val, '">'})
+					else
+						exml:add({'name="', att, '" value="', val, '">'})
+					end
+					exml:add({exml_r(cls), '</Property>'})
+				else
+					-- add normal property
+					if type(cls) == 'table' then
+						key, cls = next(cls)
+					end
+					if key == 'name' or key == 'value' then
+						exml:add({key, '="', bool(cls), '"/>'})
+					else
+						exml:add({'name="', key, '" value="', bool(cls), '"/>'})
+					end
+				end
+			end
+		end
+		return table.concat(exml)
+	end
+	-------------------------------------------------------------------------
+	-- check the table level structure and meta placement
+	-- add the needed layer for the recursion and handle multiple tables
+	local klen = len2(class)
+	if klen == 1 and class[1].META then
+		return exml_r(class)
+	elseif class.META and klen > 1 then
+		return exml_r( {class} )
+	-- concatenate unrelated exml sections, instead of nested inside each other
+	elseif type(class[1]) == 'table' and klen > 1 then
+		local T = {}
+		for _, tb in pairs(class) do
+			T[#T+1] = exml_r((tb.META and klen > 1) and {tb} or tb)
+		end
+		return table.concat(T)
+	end
+end
+
+--	Build a TkSceneNodeData class
+--	@param props: a keyed table for scene class properties.
+--	{
+--	  name	= scene node name (NameHash is calculated automatically)
+--	  stype	= scene node type
+--	  form	= [optional] Transform data. a list of 9 ordered values or keyed values,
+--			  but NOT a combination of the two!
+--	  attr	= [optional] Attributes table of {name, value} pairs
+--	  child	= [optional] Children table for ScNode tables
+--	}
+function ScNode(props)
+	--	Builds a TkTransformData class
+	local function scTransform(T)
+		T = T or {}
+		return {
+			META	= {'Transform', 'TkTransformData.xml'},
+			TransX	= (T.tx or T[1]) or 0,
+			TransY	= (T.ty or T[2]) or 0,
+			TransZ	= (T.tz or T[3]) or 0,
+			RotX	= (T.rx or T[4]) or 0,
+			RotY	= (T.ry or T[5]) or 0,
+			RotZ	= (T.rz or T[6]) or 0,
+			ScaleX	= (T.sx or T[7]) or 1,
+			ScaleY	= (T.sy or T[8]) or 1,
+			ScaleZ	= (T.sz or T[9]) or 1
+		}
+	end
+	--	Builds a scene node attributes array
+	local function scAttributes(T)
+		local atr = {META = {'name', 'Attributes'}}
+		for _,at in ipairs(T) do
+			atr[#atr+1] = {
+				META	= {'value', 'TkSceneNodeAttributeData.xml'},
+				Name	= at[1],
+				Value	= at[2]
+			}
+		end
+		return atr
+	end
+	--	returns a jenkins hash from a string (by lyravega)
+	local function jenkinsHash(input)
+		local hash = 0
+		local t_chars = {string.byte(input:upper(), 1, #input)}
+
+		for i = 1, #input do
+			hash = (hash + t_chars[i]) & 0xffffffff
+			hash = (hash + (hash << 10)) & 0xffffffff
+			hash = (hash ~ (hash >> 6)) & 0xffffffff
+		end
+		hash = (hash + (hash << 3)) & 0xffffffff
+		hash = (hash ~ (hash >> 11)) & 0xffffffff
+		hash = (hash + (hash << 15)) & 0xffffffff
+		return tostring(hash)
+	end
+	-----------------------------------------------------------------
+	local T	= {
+		META	= {'value', 'TkSceneNodeData.xml'},
+		Name 		= props.name,
+		NameHash	= jenkinsHash(props.name),
+		Type		= props.stype
+	}
+	T[#T+1]		= scTransform(props.form or {})
+	if props.attr then
+		T[#T+1] = scAttributes(props.attr)
+	end
+	if props.child then
+		local tc = { META = {'name', 'Children'} }
+		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
+		T[#T+1]	= tc
+	end
+	return T
+end
 ------------------------------------------------------------------------------------------
 local mod_desc = [[
   procedurally placed containers in the crashed -and underwater-crashed freigther
@@ -68,15 +209,14 @@ local function AddSceneNodes()
 	local T = {}
 	for _,scn in ipairs(loot_containers) do
 		for i=1, #scn.form do
-			T[#T+1] = ScNode(scn.name..string.char(64 + i), 'LOCATOR')
-			T[#T+1] = ScNode(
-				scn.name..string.char(64 + i), 'REFERENCE', {
-					ScTransform(scn.form[i]),
-					ScAttributes({
-						{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
-					})
+			T[#T+1] = ScNode({
+				name	= scn.name..string.char(64 + i),
+				stype	= 'REFERENCE',
+				form	= scn.form[i],
+				attr	= {
+					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
 				}
-			)
+			})
 		end
 	end
 	return T
@@ -106,8 +246,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Procedural Containers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.65',
 	MOD_DESCRIPTION		= mod_desc,
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

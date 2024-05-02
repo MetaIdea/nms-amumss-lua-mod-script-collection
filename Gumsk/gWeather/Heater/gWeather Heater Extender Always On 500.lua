@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters and makes them always on"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 
 --Files Modified

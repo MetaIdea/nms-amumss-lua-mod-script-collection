@@ -433,38 +433,38 @@ for x = 1,#GroupMbinArray do
 	end
 
 	NMS_MOD_DEFINITION_CONTAINER[(#NMS_MOD_DEFINITION_CONTAINER+1)] = {
-		["MOD_FILENAME"]		= ModFilename..".pak",
-		["MOD_DESCRIPTION"]		= Description,
-		["MOD_AUTHOR"]			= Author,
-		["NMS_VERSION"]			= GameVersion,
-		["MODIFICATIONS"] = {{
-			["MBIN_CHANGE_TABLE"] = {{
-				["MBIN_FILE_SOURCE"] = GroupMbinArray[x],
-				["EXML_CHANGE_TABLE"] = {
-					{["SPECIAL_KEY_WORDS"]		= {"Name","FOV"},
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+		MOD_FILENAME		= ModFilename..".pak",
+		MOD_DESCRIPTION		= Description,
+		MOD_AUTHOR			= Author,
+		NMS_VERSION			= GameVersion,
+		MODIFICATIONS = {{
+			MBIN_CHANGE_TABLE = {{
+				MBIN_FILE_SOURCE = GroupMbinArray[x],
+				EXML_CHANGE_TABLE = {
+					{SPECIAL_KEY_WORDS		= {"Name","FOV"},
+						REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"Value",Fov}}},
-					{["SPECIAL_KEY_WORDS"] 		= {"Name","FALLOFF"},
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS 		= {"Name","FALLOFF"},
+						REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"Value",Falloff}}},
-					{["SPECIAL_KEY_WORDS"] 		= {"Name","INTENSITY","Value","IGNORE"},
+					{SPECIAL_KEY_WORDS 		= {"Name","INTENSITY","Value","IGNORE"},
 						["MATH_OPERATION"]		= "*",
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+						REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"IGNORE",Intensity}}},
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_R"},
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_R"},
+						REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"Value",Col_R}}},
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_G"},
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_G"},
+						REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"Value",Col_G}}},
-					{["SPECIAL_KEY_WORDS"] = {"Name","COL_B"},	
-					["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"]	= {
+					{SPECIAL_KEY_WORDS = {"Name","COL_B"},	
+					REPLACE_TYPE 		= "ALL",
+						VALUE_CHANGE_TABLE	= {
 							{"Value",Col_B}}}
 			}}}}}}
 end

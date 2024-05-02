@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Offset"
 BaseDescription = "Camera modifications"
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 

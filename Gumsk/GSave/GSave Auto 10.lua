@@ -2,7 +2,7 @@ Author = "Mjjstral+Gumsk"
 ModName = "gSave Auto"
 ModNameSub = "10"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "370"
+GameVersion = "464"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -137,19 +137,19 @@ AddText = [[
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] 	= {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE 	= {
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
+							PRECEDING_KEY_WORDS = {"LodDistances"}, 
+							LINE_OFFSET 		= "-2",
 							["ADD"] 				= AddText,
 						},
 					},

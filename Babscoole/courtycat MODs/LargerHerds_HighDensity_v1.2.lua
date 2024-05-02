@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -164,7 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["LINE_OFFSET"] = "+1",
+                            ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

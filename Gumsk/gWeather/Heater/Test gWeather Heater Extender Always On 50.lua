@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters and makes them always on"
-GameVersion = "408"
+GameVersion = "465"
 ModVersion = "a"
 
 --Files Modified
@@ -66,27 +66,27 @@ HeaterAdd = [[                <Property value="TkSceneNodeData.xml">
                 </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN",
+					EXML_CHANGE_TABLE = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","OFF"},
-							["PRECEDING_KEY_WORDS"] = {"Children"},
+							SPECIAL_KEY_WORDS = {"Name","OFF"},
+							PRECEDING_KEY_WORDS = {"Children"},
 							["ADD_OPTION"] = "ADDafterLINE",
 							["ADD"] = HeaterAdd
 						
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","RADIUS"},
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"Name","RADIUS"},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
 								{"Value",Range},
 							}
 						},

@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "GLight Proximity"
-GameVersion = "321"
+GameVersion = "464"
 ModVersion = "a"
 ModNameSub = "Small"
 BaseDescription = "Adds a proximity sensor to the small light and increases its intensity"
@@ -14,27 +14,27 @@ EntityText = [[		<Property value="TkSceneNodeAttributeData.xml">
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SMALLLIGHT.SCENE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["ADD_FILES"] = {
+MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+ADD_FILES = {
 	{
-		["FILE_DESTINATION"] 		= "GUMSK/GLIGHTPROXSMALL.ENTITY.EXML",
+		FILE_DESTINATION 		= "GUMSK/GLIGHTPROXSMALL.ENTITY.EXML",
 		["EXTERNAL_FILE_SOURCE"] 	= "GLIGHTPROXSMALL.ENTITY.EXML",
 	},
 },
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {
+MODIFICATIONS	= {{
+MBIN_CHANGE_TABLE = {
 {
-	["MBIN_FILE_SOURCE"] = FileSource1,
-	["EXML_CHANGE_TABLE"] = {	
-		{["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-			["LINE_OFFSET"] = "+14",
+	MBIN_FILE_SOURCE = FileSource1,
+	EXML_CHANGE_TABLE = {	
+		{SPECIAL_KEY_WORDS = {"Name","pointLight6"},
+			LINE_OFFSET = "+14",
 			["ADD"] = EntityText,
 		},
-		{["SPECIAL_KEY_WORDS"] = {"Name","INTENSITY"},
-			["VALUE_CHANGE_TABLE"] = {
+		{SPECIAL_KEY_WORDS = {"Name","INTENSITY"},
+			VALUE_CHANGE_TABLE = {
 				{"Value","50000"},
 			},
 		},

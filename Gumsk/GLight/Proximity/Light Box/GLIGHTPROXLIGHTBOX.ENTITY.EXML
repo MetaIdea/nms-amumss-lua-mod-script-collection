@@ -10,7 +10,7 @@
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -18,7 +18,9 @@
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHOFF" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -28,7 +30,7 @@
           <Property name="StateID" value="SWITCHOFF" />
           <Property name="Triggers"> 
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcPlayerNearbyEvent.xml">
+              <Property name="Event" value="GcPlayerNearbyEvent.xml">
                 <Property name="RequirePlayerAction" value="OnFoot" />
                 <Property name="Distance" value="8" />
                 <Property name="Angle" value="360" />
@@ -63,7 +65,9 @@
 				<Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHON" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -73,7 +77,7 @@
           <Property name="StateID" value="SWITCHON" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcPlayerNearbyEvent.xml">
+              <Property name="Event" value="GcPlayerNearbyEvent.xml">
                 <Property name="RequirePlayerAction" value="OnFoot" />
                 <Property name="Distance" value="6" />
                 <Property name="Angle" value="360" />
@@ -108,7 +112,9 @@
 				<Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SWITCHOFF" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
