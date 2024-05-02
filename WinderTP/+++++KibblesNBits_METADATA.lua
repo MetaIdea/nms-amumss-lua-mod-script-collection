@@ -7053,7 +7053,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["CanChangeColour"] = "True",
             ["CanChangeMaterial"] = "False",
 			["ShowInBuildMenu"] = "True",
-			["CompositePartObjectIDs"] = {"KBPRAILGLNEXU"},
+			["CompositePartObjectIDs"] = {"KBPRAILGLNEXU", "KBPRAILBONEXU"},
             ["RemovesAttachedDecoration"] = "False",
             ["EditsTerrain"] = "False",
             ["BaseTerrainEditShape"] = "Cube",
@@ -7120,6 +7120,49 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     },
     {
         ["OBJECT"] = {
+            ["ID"] = "KBPRAILBONEXU",
+            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRAILBONEXU_PLACEMENT.SCENE.MBIN",
+            ["Style"] = "None",
+            ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_BOUNDARY.SCENE.MBIN",
+            ["DecorationType"] = "Normal",
+            ["IsPlaceable"] = "True",
+            ["IsDecoration"] = "False",
+            ["Biome"] = "Lush",
+            ["BuildableOnFreighter"] = "True",
+            ["BuildableOnPlanet"] = "False",
+            ["CheckPlaceholderCollision"] = "False",
+            ["EnableCollision"] = "True",
+            ["CanScale"] = "True",
+            ["IsAux"] = "False",
+            ["SubGroupName"] = {"KBASIC"},
+            ["StorageContainerIndex"] = "-1",
+            ["CanChangeColour"] = "True",
+            ["CanChangeMaterial"] = "False",
+			["ShowInBuildMenu"] = "False",
+			["CompositePartObjectIDs"] = {},
+            ["RemovesAttachedDecoration"] = "False",
+            ["EditsTerrain"] = "False",
+            ["BaseTerrainEditShape"] = "Cube",
+            ["IsSealed"] = "False",
+            ["Connection"] = "DECOR",
+        },
+         ["PRODUCT"] = {
+            ["Name"] = "Nexus Boundary Railing",
+            ["NameLower"] = "Nexus Boundary Railing",
+            ["Subtitle"] = "Nexus Boundary Railing",
+            ["Description"] = "Nexus Boundary Railing",
+            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRAILBONEXU_ICON.DDS",
+            ["Requirements"] = {
+                {
+                    ["ID"] = "FUEL1",
+                    ["InventoryType"] = "Substance",
+                    ["Amount"] = "5"
+                }
+            }
+        }
+    },
+    {
+        ["OBJECT"] = {
             ["ID"] = "KBPRACUNEXU",
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRACUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
@@ -7139,7 +7182,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["CanChangeColour"] = "True",
             ["CanChangeMaterial"] = "False",
 			["ShowInBuildMenu"] = "True",
-			["CompositePartObjectIDs"] = {"KBPRACUGLNEXU"},
+			["CompositePartObjectIDs"] = {"KBPRACUGLNEXU", "KBPRACUBONEXU"},
             ["RemovesAttachedDecoration"] = "False",
             ["EditsTerrain"] = "False",
             ["BaseTerrainEditShape"] = "Cube",
@@ -7206,6 +7249,49 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
     },
     {
         ["OBJECT"] = {
+            ["ID"] = "KBPRACUBONEXU",
+            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRACUBONEXU_PLACEMENT.SCENE.MBIN",
+            ["Style"] = "None",
+            ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_BOUNDARY.SCENE.MBIN",
+            ["DecorationType"] = "Normal",
+            ["IsPlaceable"] = "True",
+            ["IsDecoration"] = "False",
+            ["Biome"] = "Lush",
+            ["BuildableOnFreighter"] = "True",
+            ["BuildableOnPlanet"] = "False",
+            ["CheckPlaceholderCollision"] = "False",
+            ["EnableCollision"] = "True",
+            ["CanScale"] = "True",
+            ["IsAux"] = "False",
+            ["SubGroupName"] = {"KBASIC"},
+            ["StorageContainerIndex"] = "-1",
+            ["CanChangeColour"] = "True",
+            ["CanChangeMaterial"] = "False",
+			["ShowInBuildMenu"] = "False",
+			["CompositePartObjectIDs"] = {},
+            ["RemovesAttachedDecoration"] = "False",
+            ["EditsTerrain"] = "False",
+            ["BaseTerrainEditShape"] = "Cube",
+            ["IsSealed"] = "False",
+            ["Connection"] = "DECOR",
+        },
+         ["PRODUCT"] = {
+            ["Name"] = "Nexus Boundary Curved Railing",
+            ["NameLower"] = "Nexus Boundary Curved Railing",
+            ["Subtitle"] = "Nexus Boundary Curved Railing",
+            ["Description"] = "Nexus Boundary Curved Railing",
+            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRACUBONEXU_ICON.DDS",
+            ["Requirements"] = {
+                {
+                    ["ID"] = "FUEL1",
+                    ["InventoryType"] = "Substance",
+                    ["Amount"] = "5"
+                }
+            }
+        }
+    },
+    {
+        ["OBJECT"] = {
             ["ID"] = "KBPRSCUNEXU",
             ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRSCUNEXU_PLACEMENT.SCENE.MBIN",
             ["Style"] = "None",
@@ -7225,7 +7311,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["CanChangeColour"] = "True",
             ["CanChangeMaterial"] = "False",
 			["ShowInBuildMenu"] = "True",
-			["CompositePartObjectIDs"] = {"KBPRSCUGLNEXU"},
+			["CompositePartObjectIDs"] = {"KBPRSCUGLNEXU", "KBPRSCUBONEXU"},
             ["RemovesAttachedDecoration"] = "False",
             ["EditsTerrain"] = "False",
             ["BaseTerrainEditShape"] = "Cube",
@@ -7281,6 +7367,49 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
             ["Subtitle"] = "Nexus Glow Curved Small Railing",
             ["Description"] = "Nexus Glow Curved Small Railing",
             ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRSCUGLNEXU_ICON.DDS",
+            ["Requirements"] = {
+                {
+                    ["ID"] = "FUEL1",
+                    ["InventoryType"] = "Substance",
+                    ["Amount"] = "5"
+                }
+            }
+        }
+    },
+    {
+        ["OBJECT"] = {
+            ["ID"] = "KBPRSCUBONEXU",
+            ["PlacementScene"] = "CUSTOMMODELS/KIBBLES/PLACEMENT/KBPRSCUBONEXU_PLACEMENT.SCENE.MBIN",
+            ["Style"] = "None",
+            ["Model"] = "CUSTOMMODELS/KIBBLES/BASICPARTS/NEXUS/NEXUS_RAILING_CURVED_SMALL_BOUNDARY.SCENE.MBIN",
+            ["DecorationType"] = "Normal",
+            ["IsPlaceable"] = "True",
+            ["IsDecoration"] = "False",
+            ["Biome"] = "Lush",
+            ["BuildableOnFreighter"] = "True",
+            ["BuildableOnPlanet"] = "False",
+            ["CheckPlaceholderCollision"] = "False",
+            ["EnableCollision"] = "True",
+            ["CanScale"] = "True",
+            ["IsAux"] = "False",
+            ["SubGroupName"] = {"KBASIC"},
+            ["StorageContainerIndex"] = "-1",
+            ["CanChangeColour"] = "True",
+            ["CanChangeMaterial"] = "False",
+			["ShowInBuildMenu"] = "False",
+			["CompositePartObjectIDs"] = {},
+            ["RemovesAttachedDecoration"] = "False",
+            ["EditsTerrain"] = "False",
+            ["BaseTerrainEditShape"] = "Cube",
+            ["IsSealed"] = "False",
+            ["Connection"] = "DECOR",
+        },
+         ["PRODUCT"] = {
+            ["Name"] = "Nexus Boundary Curved Small Railing",
+            ["NameLower"] = "Nexus Boundary Curved Small Railing",
+            ["Subtitle"] = "Nexus Boundary Curved Small Railing",
+            ["Description"] = "Nexus Boundary Curved Small Railing",
+            ["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRSCUBONEXU_ICON.DDS",
             ["Requirements"] = {
                 {
                     ["ID"] = "FUEL1",

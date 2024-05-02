@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------
-local mod_desc = [[
+local desc = [[
   Remove the jetpack trail line and smoke
 ]]------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.remove jetpack trail and smoke.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
-	MOD_DESCRIPTION		= mod_desc,
+	NMS_VERSION			= 3.81,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = 'Children',
-				REMOVE				= 'Section'
+				REMOVE				= 'SECTION'
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------------------
-local mod_desc = [[
+mod_desc = [[
   Removes the red glow from the sentinel ship cockpit the canopy.
   The 2 front monitors, scrolling pulse lines along the side wires, base of the system map
   and side walls along the back are affected.
@@ -8,7 +8,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Sentinel cockpit no red glow.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '4.21',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {

@@ -5,12 +5,13 @@ local mod_desc = [[
 ]]-----------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Scientific cockpitA trail FIX.pak',
-	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
-	MOD_DESCRIPTION		= mod_desc,
-	MODIFICATIONS 		= {{
-	MBIN_CHANGE_TABLE	= {
+	MOD_FILENAME 			= '_MOD.lMonk.Scientific cockpitA trail FIX.pak',
+	MOD_AUTHOR				= 'lMonk',
+	NMS_VERSION				= '4.65',
+	MOD_DESCRIPTION			= mod_desc,
+	GLOBAL_INTEGER_TO_FLOAT = 'Force',
+	MODIFICATIONS 			= {{
+	MBIN_CHANGE_TABLE		= {
 	{--	|Scientific cockpitA re-center trails|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/COCKPITA.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
