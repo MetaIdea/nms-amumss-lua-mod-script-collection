@@ -1,128 +1,117 @@
 ---------------------------------------------------------------------
-local mod_desc = [[
+local desc = [[
   Adds in-game customizing for the hardframe mech body!
   (Customizing is done through the mech's geobay menu)
 
-  * If you want to pack the texture files with the script,
+  * For obvious reasons, if you want the pak to include the textures,
    you'll need to set a relevant file path for them.
-   If you use ModExtraFilesToInclude, just comment/delete 'source'
 ]]-------------------------------------------------------------------
 
-local proc_texture_files = {
+local texture_layers = {
 	{
-	---	mech hardframe
-		label	= 'SENTINELTRIM',
-		source	= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/',
-		nmspath	= 'TEXTURES/COMMON/ROBOTS/',
+	---	hardframe (files are copied in collate script)
+		name = 'SENTINELTRIM',
+		path = 'TEXTURES/COMMON/ROBOTS/',
 		{
-			ly_name	= 'OVERLAY',
-			diff	= true,
+			layer	= 'OVERLAY',
+			diff	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.OVERLAY.DDS'
 		},{
-			ly_name	= 'PRIMARY',
+			layer	= 'PRIMARY',
 			palette = 'Paint',
 			color	= 'Primary',
-			diff	= true,
+			diff	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.PRIMARY.DDS'
 		},{
-			ly_name	= 'SECONDARY',
+			layer	= 'SECONDARY',
 			palette = 'Paint',
 			color	= 'Alternative1',
-			diff	= true,
+			diff	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.SECONDARY.DDS'
 		},{
-			ly_name	= 'TERTIARY',
+			layer	= 'TERTIARY',
 			palette = 'Paint',
 			color	= 'Alternative2',
-			diff	= true,
+			diff	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.TERTIARY.DDS'
 		},{
-			ly_name	= 'BASE',
-			diff	= true,
-			normal	= true,
-			masks	= true
+			layer	= 'BASE',
+			diff	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.BASE.DDS',
+			normal	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.BASE.NORMAL.DDS',
+			masks	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/FriendlyRobot/SENTINELTRIM.BASE.MASKS.DDS'
 		},
 	}
 }
 
-local function GetProcTextures(path, layer)
-	-- concat table with [.] separator
-	local function TexPath(arg)
-		if not arg.b then
-			return ''
-		end
-		local con = ''
-		for _,ar in ipairs(arg) do
-			if ar and #ar > 0 then
-				con = con..ar..'.'
-			end
-		end
-		return con..'DDS'
-	end
-	local tk_proc_tex = [[
-		<Property value="TkProceduralTexture.xml">
-			<Property name="Name" value="%s"/>
-			<Property name="Palette" value="TkPaletteTexture.xml">
-				<Property name="Palette" value="%s"/>
-				<Property name="ColourAlt" value="%s"/>
-			</Property>
-			<Property name="Probability" value="%s"/>
-			<Property name="Diffuse" value="%s"/>
-			<Property name="Normal" value="%s"/>
-			<Property name="Mask" value="%s"/>
-		</Property>]]
-	local exml = ''
-	-- handles 3 options: names list, {name, probability} list, or nothing
-	-- if no list found, name='' & probability=1
-	for _,name_prob in ipairs(layer.tx_name and layer.tx_name or {{'', 1}}) do
-		if type(name_prob) == 'string' then
-			name_prob = {name_prob, 1}
-		end
-		exml = exml..string.format(
-			tk_proc_tex,
-			name_prob[1],
-			layer.palette or 'Rock',
-			layer.color or 'None',
-			name_prob[2],
-			TexPath({b=layer.diff, path, layer.ly_name, name_prob[1]}),
-			TexPath({b=layer.normal, path, layer.ly_name, 'NORMAL'}),
-			TexPath({b=layer.masks, path, layer.ly_name, 'MASKS'})
-		)
-	end
-	return exml
+local function GetProceduralTexture(path, tl)
+	return [[
+	<Property value="TkProceduralTexture.xml">
+		<Property name="Name" value=""/>
+		<Property name="Palette" value="TkPaletteTexture.xml">
+			<Property name="Palette" value="]]..(tl.palette or 'Rock')..[["/>
+			<Property name="ColourAlt" value="]]..(tl.color or 'None')..[["/>
+		</Property>
+		<Property name="Probability" value="1"/>
+		<Property name="Diffuse" value="]]..path..'.'..tl.layer..[[.DDS"/>
+		<Property name="Normal" value="]]..
+			(tl.normal and path..'.'..tl.layer..'.NORMAL.DDS' or '')..[["/>
+		<Property name="Mask" value="]]..
+			(tl.masks and path..'.'..tl.layer..'.MASKS.DDS' or '')..[["/>
+	</Property>]]
 end
 
-local function BuildProcTexListMbin(tex_layer)
+local function GetProceduralTextureLayer(tl, layer)
+	return [[
+		<Property value="TkProceduralTextureLayer.xml">
+			<Property name="Name" value="]]..(layer or '')..[["/>
+			<Property name="Probability" value="1"/>
+			]]..(tl and '<Property name="Textures">'..tl..'</Property>' or '')..[[
+		</Property>
+	]]
+end
+
+local function BuildProcTextureLayers(tex_layer)
 	local T = {}
-	-- build proc-tex layers
-	for _,ly in ipairs(tex_layer) do
-		table.insert( T, [[
-			<Property value="TkProceduralTextureLayer.xml">
-				<Property name="Name" value="]]..(ly.ly_name or '')..[["/>
-				<Property name="Probability" value="]]..(tex_layer.ly_prob or 1)..[["/>
-				<Property name="Group" value="]]..(tex_layer.group or '')..[["/>
-				<Property name="Textures">]]..
-				GetProcTextures(tex_layer.nmspath..tex_layer.label, ly)..
-			[[</Property></Property>]]
+	-- multi layers here
+	for _,tl in ipairs(tex_layer) do
+		table.insert( T,
+			GetProceduralTextureLayer(
+				GetProceduralTexture(tex_layer.path..tex_layer.name, tl),
+				tl.layer
+			)
 		)
 	end
 	-- silly fixed length array
-	for _=1, (8 - #tex_layer) do
-		table.insert(T, '<Property value="TkProceduralTextureLayer.xml"/>')
-	end
+	for _=1, (8 - #tex_layer) do table.insert(T, GetProceduralTextureLayer()) end
 	return [[<?xml version="1.0" encoding="utf-8"?>
 		<Data template="TkProceduralTextureList">
 		<Property name="Layers">]]..table.concat(T)..[[</Property></Data>]]
 end
 
-local function AddProcTexFiles()
+local function add_tex_layers_files()
 	local T = {}
-	for _,ptf in ipairs(proc_texture_files) do
+	for _,lt in ipairs(texture_layers) do
 		table.insert(T, {
-			FILE_CONTENT		= BuildProcTexListMbin(ptf),
-			FILE_DESTINATION	= ptf.nmspath..ptf.label..'.TEXTURE.EXML'
+			FILE_CONTENT		= BuildProcTextureLayers(lt),
+			FILE_DESTINATION	= lt.path..lt.name..'.TEXTURE.EXML'
 		})
-		if ptf.source then
-			table.insert(T, {
-				EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
-				FILE_DESTINATION	= ptf.nmspath..'*.DDS'
-			})
+	end
+	for _,lt in ipairs(texture_layers) do
+		for _,tx in ipairs(lt) do
+			if tx.diff then
+				table.insert(T, {
+					EXTERNAL_FILE_SOURCE= tx.diff,
+					FILE_DESTINATION	= lt.path..lt.name..'.'..tx.layer..'.DDS'
+				})
+			end
+			if tx.normal then
+				table.insert(T, {
+					EXTERNAL_FILE_SOURCE= tx.normal,
+					FILE_DESTINATION	= lt.path..lt.name..'.'..tx.layer..'.NORMAL.DDS'
+				})
+			end
+			if tx.masks then
+				table.insert(T, {
+					EXTERNAL_FILE_SOURCE= tx.masks,
+					FILE_DESTINATION	= lt.path..lt.name..'.'..tx.layer..'.MASKS.DDS'
+				})
+			end
 		end
 	end
 	return T
@@ -131,7 +120,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Mech Hardframe Customizing.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
-	MOD_DESCRIPTION		= mod_desc,
-	ADD_FILES			= AddProcTexFiles()
+	NMS_VERSION			= 3.98,
+	MOD_DESCRIPTION		= desc,
+	MODIFICATIONS		= {},
+	ADD_FILES			= add_tex_layers_files()
 }

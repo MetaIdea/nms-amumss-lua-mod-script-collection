@@ -14,7 +14,7 @@ Anomaly_Detectors_Mult = 3		-- Vanilla 1 // Mod Default 3 // Multiplies the chan
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v4.64 [Asteroid Fields Overhaul].pak", 
+	["MOD_FILENAME"]	= "_CSO v4.65 [Asteroid Fields Overhaul].pak", 
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "3.02",	-- NMS version when first scripted
 	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",

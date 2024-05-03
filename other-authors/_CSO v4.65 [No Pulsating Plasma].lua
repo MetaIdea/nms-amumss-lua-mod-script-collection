@@ -1,10 +1,10 @@
--- Clean Space Origins [No Space Dust] --
+-- Clean Space Origins [No Pulsating Plasma] --
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v4.64 [No Space Dust].pak",
-	["MOD_DESCRIPTION"]	= "No more space dust.",
+	["MOD_FILENAME"]	= "_CSO v4.65 [No Pulsating Plasma].pak",
+	["MOD_DESCRIPTION"]	= "No more pulsating plasma in space.",
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "2.61.1",		-- NMS version when first scripted
 	["MODIFICATIONS"]	= 
@@ -15,11 +15,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			
 
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\ANIMATEDDUST\ANIMATEDDUST.MATERIAL.MBIN",
+					["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACE\PLASMA\PLASMA.MATERIAL.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							-- no more space dust
+							-- no more pulsating plasma in space
 							["SPECIAL_KEY_WORDS"] = {"Name", "AnimatedSmokeMat"},
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = 

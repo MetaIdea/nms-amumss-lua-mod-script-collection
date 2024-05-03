@@ -1,13 +1,13 @@
 ------------------------------------------------------------------
-local mod_desc = [[
+local desc = [[
   Sailship: Restore procedural lights who match the sail's color
 ]]----------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.sailship proc lights.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.sailship procedural lights.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
-	MOD_DESCRIPTION		= mod_desc,
+	NMS_VERSION			= 3.89,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
