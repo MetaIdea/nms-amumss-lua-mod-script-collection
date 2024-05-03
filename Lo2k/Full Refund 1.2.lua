@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Full Refund 1.1.pak", 
+["MOD_FILENAME"] 			= "Full Refund 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.0",
+["NMS_VERSION"]				= "4.65",
 ["MOD_DESCRIPTION"]			= "This mods changes refund from 50% to 100%",
 ["MODIFICATIONS"] 			= 
 	{

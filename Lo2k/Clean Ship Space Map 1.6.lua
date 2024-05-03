@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "Clean Ship Space Map 1.5.pak",
+	["MOD_FILENAME"]	= "Clean Ship Space Map 1.6.pak",
 	["MOD_AUTHOR"]		= "Lo2k",
+	["LUA_AUTHOR"]		= "Lo2k",
 	["MOD_DESCRIPTION"]	= "This mod makes ship space map cleaner",
-	["NMS_VERSION"]		= "4.41",	
+	["NMS_VERSION"]		= "4.65",	
 	["MODIFICATIONS"]	= 
 	{
 		{
