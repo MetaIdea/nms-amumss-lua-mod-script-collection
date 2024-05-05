@@ -991,7 +991,8 @@ end
 function GetFoodInHand(PARENT, NAME, REFERENCE, TRAN_X, TRAN_Y, TRAN_Z, ROT_X, ROT_Y, ROT_Z, SCALE)
 return {
 	["SPECIAL_KEY_WORDS"]	= {"Name", PARENT}, 
-	["LINE_OFFSET"] 		= "+21",
+	["PRECEDING_KEY_WORDS"] = {"Children"},
+	-- ["LINE_OFFSET"] 		= "+21",
 	-- ["REPLACE_TYPE"] 		= "RAW",
 	["ADD"] 	= [[
 											<Property value="TkSceneNodeData.xml">
@@ -1044,7 +1045,7 @@ end
 -- Adding the emote
 TRIGGER_ANIM = ""
 ACTIVATE_ACTION = ""
-for i,j in pairs(EMOTE_ACTION) do
+for _i,j in pairs(EMOTE_ACTION) do
 	-- Adding anim for triggering additional trigger actions
 	if j["INTO"] ~= "" then
 		ACTIVATE_ACTION = ACTIVATE_ACTION .. GetQuickAction(j["NAME"], j["INTO"], j["ICON"], "False", j["CHAT_MSG"], j["CHAT_NAME"], j["ACTION"])
@@ -1059,7 +1060,7 @@ TRIGGER_ACTION = GetTriggerAction(EMOTE_ACTION[1]["ACTION"], EMOTE_ACTION[1]["RE
 TRIGGER_ACTION = TRIGGER_ACTION .. GetTriggerAction_Drink(EMOTE_ACTION[2]["ACTION"], EMOTE_ACTION[2]["REWARD_ID"][1], EMOTE_ACTION[2]["REWARD_ID"][2], REFERENCES["CHUG"]["NAME"])
 
 REFERENCE_INJECT = {}
-for i,j in pairs(REFERENCES) do
+for _i,j in pairs(REFERENCES) do
 	REFERENCE_TEMP = GetFoodInHand(j["JOINT"], j["NAME"], j["SCENEGRAPH"], j["TransX"], j["TransY"], j["TransZ"], j["RotX"], j["RotY"], j["RotZ"], j["Scale"])
 	table.insert(REFERENCE_INJECT, REFERENCE_TEMP)
 end
@@ -1095,13 +1096,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Trees"},  
-							["LINE_OFFSET"] 		= "-2",
+							["PRECEDING_KEY_WORDS"] = {"Anims"},  
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= TRIGGER_ANIM
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
+							["PRECEDING_KEY_WORDS"] = {"Components"}, 
+							-- ["LINE_OFFSET"] 		= "-2",
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= TRIGGER_ACTION
 						}
 					}
@@ -1115,8 +1117,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							--["LINE_OFFSET"] 		= "+0",
+							-- ["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= ACTIVATE_ACTION
 						},
 					}

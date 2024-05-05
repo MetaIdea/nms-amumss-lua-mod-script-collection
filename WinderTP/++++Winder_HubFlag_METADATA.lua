@@ -70789,8 +70789,11 @@ return [[
       <Property name="ID" value="_]] .. ID .. [[" />
       <Property name="StyleModels">
         <Property value="GcBaseBuildingPartStyleModel.xml">
-          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
-            <Property name="Style" value="]] .. STYLE .. [[" />
+          <Property name="Inactive" value="TkModelResource.xml">
+            <Property name="Filename" value="]] .. INACTIVE .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. MODEL .. [[" />
@@ -70798,11 +70801,8 @@ return [[
 			  <Property name="ResourceID" value="0" />
 			</Property>
           </Property>
-          <Property name="Inactive" value="TkModelResource.xml">
-            <Property name="Filename" value="]] .. INACTIVE .. [[" />
-			<Property name="ResHandle" value="GcResource.xml">
-			  <Property name="ResourceID" value="0" />
-			</Property>
+          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+            <Property name="Style" value="]] .. STYLE .. [[" />
           </Property>
         </Property>
       </Property>
@@ -70818,8 +70818,11 @@ for _k,l in pairs(MODELS) do
 end
 	STYLEMODEL_INJECT = STYLEMODEL_INJECT .. [[
         <Property value="GcBaseBuildingPartStyleModel.xml">
-          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
-            <Property name="Style" value="]] .. l["Style"] .. [[" />
+          <Property name="Inactive" value="TkModelResource.xml">
+            <Property name="Filename" value="]] .. INACTIVE_INJECT .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. l["Filename"] .. [[" />
@@ -70827,11 +70830,8 @@ end
 			  <Property name="ResourceID" value="0" />
 			</Property>
           </Property>
-          <Property name="Inactive" value="TkModelResource.xml">
-            <Property name="Filename" value="]] .. INACTIVE_INJECT .. [[" />
-			<Property name="ResHandle" value="GcResource.xml">
-			  <Property name="ResourceID" value="0" />
-			</Property>
+          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+            <Property name="Style" value="]] .. l["Style"] .. [[" />
           </Property>
         </Property>
 ]]
@@ -70857,59 +70857,11 @@ return [[
 ]]
 end
 
-function GetLanguageEntry(NAME, VALUE)
+function GetLanguageEntry(NAME, VALUE, LOCALE)
 return[[
     <Property value="TkLocalisationEntry.xml">
       <Property name="Id" value="]] .. NAME .. [[" />
-      <Property name="English" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="French" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Italian" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="German" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Spanish" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Russian" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Polish" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Dutch" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Portuguese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="BrazilianPortuguese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="SimplifiedChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="TraditionalChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="TencentChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Korean" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="Japanese" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
-      <Property name="USEnglish" value="VariableSizeString.xml">
+      <Property name="]] .. LOCALE .. [[" value="VariableSizeString.xml">
         <Property name="Value" value="]] .. VALUE .. [[" />
       </Property>
     </Property>
@@ -70921,6 +70873,11 @@ AUTO_PART_DATA =
 {
 	["DECOR"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-2.025391" />
@@ -70963,11 +70920,6 @@ AUTO_PART_DATA =
             <Property name="z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
-        </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
       <Property name="NodesCost" value="7" />
@@ -70982,6 +70934,11 @@ AUTO_PART_DATA =
 ]],
 	["BASIC"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="1.619202" />
+          <Property name="z" value="0.072216" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-2.666016" />
@@ -71004,11 +70961,6 @@ AUTO_PART_DATA =
             <Property name="z" value="-2.378021" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="1.619202" />
-          <Property name="z" value="0.072216" />
-        </Property>
         <Property name="Radius" value="3.775765" />
       </Property>
       <Property name="NodesCost" value="8" />
@@ -71023,6 +70975,11 @@ AUTO_PART_DATA =
 ]],
 	["CUBEROOM"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-2.025391" />
@@ -71064,11 +71021,6 @@ AUTO_PART_DATA =
             <Property name="y" value="0" />
             <Property name="z" value="2.025391" />
           </Property>
-        </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
         </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
@@ -71084,6 +71036,11 @@ AUTO_PART_DATA =
 ]],
 	["SPACECUBE"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-4.136719" />
@@ -71126,11 +71083,6 @@ AUTO_PART_DATA =
             <Property name="z" value="4.136719" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
-        </Property>
         <Property name="Radius" value="6.207068" />
       </Property>
       <Property name="NodesCost" value="42" />
@@ -71145,6 +71097,11 @@ AUTO_PART_DATA =
 ]],
 	["OUTPOST"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="-0.010125" />
+          <Property name="y" value="-2.512929" />
+          <Property name="z" value="-0.079006" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="2.511888" />
@@ -71207,11 +71164,6 @@ AUTO_PART_DATA =
             <Property name="z" value="-4.957936" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="-0.010125" />
-          <Property name="y" value="-2.512929" />
-          <Property name="z" value="-0.079006" />
-        </Property>
         <Property name="Radius" value="7.33845" />
       </Property>
       <Property name="NodesCost" value="39" />
@@ -71226,6 +71178,11 @@ AUTO_PART_DATA =
 ]],
 	["FARMING"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="-0.006828" />
+          <Property name="y" value="0.53475" />
+          <Property name="z" value="-0.068122" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="0.361726" />
@@ -71268,11 +71225,6 @@ AUTO_PART_DATA =
             <Property name="z" value="0.24025" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="-0.006828" />
-          <Property name="y" value="0.53475" />
-          <Property name="z" value="-0.068122" />
-        </Property>
         <Property name="Radius" value="1.328481" />
       </Property>
       <Property name="NodesCost" value="21" />
@@ -71287,6 +71239,11 @@ AUTO_PART_DATA =
 ]],
 	["PLANTER"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="-0.00038" />
+          <Property name="y" value="1.384704" />
+          <Property name="z" value="2.1E-05" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="0.480906" />
@@ -71329,11 +71286,6 @@ AUTO_PART_DATA =
             <Property name="z" value="-0.480925" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="-0.00038" />
-          <Property name="y" value="1.384704" />
-          <Property name="z" value="2.1E-05" />
-        </Property>
         <Property name="Radius" value="1.644543" />
       </Property>
       <Property name="NodesCost" value="84" />
@@ -71348,6 +71300,11 @@ AUTO_PART_DATA =
 ]],
 	["BATTERY"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-2.025391" />
@@ -71390,11 +71347,6 @@ AUTO_PART_DATA =
             <Property name="z" value="2.025391" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
-        </Property>
         <Property name="Radius" value="2.997921" />
       </Property>
       <Property name="NodesCost" value="7" />
@@ -71409,6 +71361,11 @@ AUTO_PART_DATA =
 ]],
 	["FLAG"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0.000302" />
+          <Property name="y" value="-0.753974" />
+          <Property name="z" value="0.743435" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="0.000302" />
@@ -71451,11 +71408,6 @@ AUTO_PART_DATA =
             <Property name="z" value="1.366735" />
           </Property>
         </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0.000302" />
-          <Property name="y" value="-0.753974" />
-          <Property name="z" value="0.743435" />
-        </Property>
         <Property name="Radius" value="0.841943" />
       </Property>
       <Property name="NodesCost" value="11" />
@@ -71470,6 +71422,11 @@ AUTO_PART_DATA =
 ]],
 	["DECAL"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
         <Property name="Vertices">
           <Property value="Vector3f.xml">
             <Property name="x" value="-1" />
@@ -71491,11 +71448,6 @@ AUTO_PART_DATA =
             <Property name="y" value="-0.033131" />
             <Property name="z" value="-1" />
           </Property>
-        </Property>
-        <Property name="Centre" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
         </Property>
         <Property name="Radius" value="0.93584" />
       </Property>
@@ -71695,7 +71647,6 @@ BUILDING_DISTANCE_CHANGE =
 					{
 						{
 							--["PRECEDING_KEY_WORDS"] = 	{""},
-                                                        ["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
 								{"BuildingPlacementMaxDistance",	BUILD_DISTANCE_MAX},
@@ -72346,16 +72297,18 @@ BASEBUILD_ENTRIES =
 						}
 					},
 					{
-						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
+						["PRECEDING_KEY_WORDS"] = {"Objects"},
 						-- --["LINE_OFFSET"] 		= "+0",
-						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
-						["LINE_OFFSET"] 		= "-3",
+						-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
+						-- ["LINE_OFFSET"] 		= "-3",
+						["ADD_OPTION"]  = "ADDendSECTION", 
 						["ADD"] 				= EXPORT_BASEOBJECTS
 					},
 					{
 						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml",},
 						["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
-						["LINE_OFFSET"] 		= "-1",
+						-- ["LINE_OFFSET"] 		= "-1",
+						["ADD_OPTION"]  = "ADDbeforeSECTION", 
 						["ADD"] 				= EXPORT_GROUPS
 					},
 				}
@@ -72718,8 +72671,8 @@ for _i,j in pairs(LANGUAGE_TYPE) do
 	for _k,l in pairs(ADD_LANGUAGE_LIST) do
 		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
 		if l["Value"][j] == "" then
-			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
-		else table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"][j])) 
+			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"],j))
+		else table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"][j],j)) 
 		end
 	end
 		table.insert(EXPORT_LANGUAGE, [[

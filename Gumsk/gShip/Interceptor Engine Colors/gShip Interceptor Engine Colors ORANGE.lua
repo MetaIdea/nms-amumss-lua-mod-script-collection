@@ -2,7 +2,7 @@ Color = "ORANGE"
 
 ModName = "gShip Interceptor Engine Colors"
 ModNameSub = Color
-GameVersion = "464"
+GameVersion = "465"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -14,11 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 		= "GUMSK\UTOPIA_ENGINEGLOW_"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "UTOPIA_ENGINEGLOW_"..Color..".DDS",
+			EXTERNAL_FILE_SOURCE 	= "UTOPIA_ENGINEGLOW_"..Color..".DDS",
 		},
 		{
 			FILE_DESTINATION 		= "GUMSK\UTOPIA_ENGINEJET_"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "UTOPIA_ENGINEJET_"..Color..".DDS",
+			EXTERNAL_FILE_SOURCE 	= "UTOPIA_ENGINEJET_"..Color..".DDS",
 		},
 	},
 	MODIFICATIONS	= {

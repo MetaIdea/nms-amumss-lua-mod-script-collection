@@ -28,7 +28,7 @@ ALL_PARTS_ON_PLANETBASE = true                  --Vanilla false // Mod default t
 NO_BUILDCOUNT_LIMIT = false                     --Vanilla false // Mod Default false // true to remove build-count limits on almost all parts. If false, all parts NOT related to resources farming will be unlimited
 
 -- Specific placements/limits :
-MARINESHELTER_ABOVE_WATER = false               --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
+MARINESHELTER_ABOVE_WATER = true               --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
 EXOMATERIALISER_ON_PLANETBASE = false           --Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
 FREIGHTERROOMS_ON_PLANETBASE = false            --Vanilla false // Mod default false // true to enable freighter tech and bio rooms on planet bases
 FARM_IN_ANY_BIOME = false                       --Vanilla false // Mod default false // true to enable planting in any biome
@@ -84,11 +84,15 @@ print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
 
 InputMultiplier = {Multiplier,
 [[
-    Choose a multiplier for Storage and Rates:
-    1 - Vanilla
-    2 - 2x   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
-    3 - 5x   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
-    4 - 10x  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    Choose a multiplier for Storage and Rates and EMAnywhere status:
+    1 - Vanilla multiplier no EMAnywhere
+    2 - Vanilla multiplier with EMAnywhere
+    3 - 2x multiplier no EMAnywhere    WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    4 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    5 - 5x multiplier no EMAnywhere    WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    6 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    7 - 10x multiplier no EMAnywhere   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    8 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
     Default = 1 | Current = >> ]] .. (Multiplier) .. [[ <<
 ]]}
 
@@ -96,7 +100,7 @@ while Multiplier do
   Multiplier = GUIF(InputMultiplier,10)
 
   local minChoice = 1
-  local maxChoice = 4
+  local maxChoice = 8
 
   if Multiplier < minChoice or Multiplier > maxChoice then
     print("         >>> ["..Multiplier.."] is NOT a valid choice.  Must be a number between "..minChoice.."-"..maxChoice..".  Please retry! <<<")
@@ -107,24 +111,45 @@ end
 
 if Multiplier == 1 then
   Multiplier = 1
+  EMRate = 1
+  SiloStorage = 1440000
+  EMAnywhere = "Power" 
+elseif Multiplier == 2 then
+  Multiplier = 1
   EMRate = 250
   SiloStorage = 1440000
-elseif Multiplier == 2 then
+  EMAnywhere = "None" 
+elseif Multiplier == 3 then
+  Multiplier = 2
+  EMRate = 1
+  SiloStorage = 2880000
+  EMAnywhere = "Power" 
+elseif Multiplier == 4 then
   Multiplier = 2
   EMRate = 500
   SiloStorage = 2880000
-elseif Multiplier == 3 then
+  EMAnywhere = "None" 
+elseif Multiplier == 5 then
+  Multiplier = 5
+  EMRate = 1
+  SiloStorage = 7200000
+  EMAnywhere = "Power" 
+elseif Multiplier == 6 then
   Multiplier = 5
   EMRate = 1000
   SiloStorage = 7200000
-elseif Multiplier == 4 then
+  EMAnywhere = "None" 
+elseif Multiplier == 7 then
+  Multiplier = 10
+  EMRate = 1
+  SiloStorage = 9999999
+  EMAnywhere = "Power" 
+elseif Multiplier == 8 then
   Multiplier = 10
   EMRate = 2500
   SiloStorage = 9999999
+  EMAnywhere = "None" 
 end
-
-EMAnywhere = GUIF({false, [[Do you want to enable EMAnywhere (EM Generators do not need a hotspot and produce 250 power) ?  Default = N.  Press ENTER for default value.]]},10)
-print("EMAnywhere = "..tostring(EMAnywhere))
 ------------- GUIF section ends -------------
 ---------------------------------------------
 
@@ -1189,27 +1214,4 @@ if FREIGHTERROOMS_ON_PLANETBASE then
 ]]
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table_subadd
-end
-
-if EMAnywhere then
-
-    local temp_table_emanywhere =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"DependsOnHotspots", "None"},
-        }
-    }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_emanywhere
-else        
-    local temp_table_emanywhere =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "U_GENERATOR_S"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"DependsOnHotspots", "Power"},
-        }
-    }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_emanywhere
 end

@@ -402,7 +402,8 @@ for _i,j in pairs(SPECIAL_LIST) do
 	SPECIAL_EXPORT =
 	{
 		["SKW"] = {"ShopNumber", j["ShopNumber"]},
-		["LINE_OFFSET"] = "-3",
+		["ADD_OPTION"] = "ADDbeforeSECTION",
+		-- ["LINE_OFFSET"] = "-4",
 		["ADD"] = table.concat(SHOP_LIST_TEMP)
 	}
 	table.insert(NEW_SPECIAL, SPECIAL_EXPORT)

@@ -226,10 +226,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							--["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
 							--["LINE_OFFSET"] 		= "+0",
-							["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+							-- ["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= NEW_EMOTES_EXPORT
 						}
 					}
