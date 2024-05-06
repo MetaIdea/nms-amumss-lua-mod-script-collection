@@ -1586,718 +1586,28 @@ Products =
           <Property name="Value" value="CHART_HIVE" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKAA" />
+          <Property name="Value" value="SPIDER_PROD" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKAB" />
+          <Property name="Value" value="ROBOT2" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKAC" />
+          <Property name="Value" value="DRONE_SHARD" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKAD" />
+          <Property name="Value" value="DRONE_SALVAGE" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKAE" />
+          <Property name="Value" value="CHART_ROBOT" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKB" />
+          <Property name="Value" value="SHIPBRAIN_CLEAN" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKD" />
+          <Property name="Value" value="MYSTERY_BEACON" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_COCKF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGA_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGB_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBA_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBB_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBC_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGBD_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEA_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEB_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEC_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGED" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGED_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEE_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGEF_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFC_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFD_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGFE_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGG_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGH_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHA_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHB_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHC_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGHD_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGI_FI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGJLOW" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGJMID" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGJFULL" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGKA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGKAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGKBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGKBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_WINGKBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_ENGIB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_ENGIC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FIGHT_ENGID" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_COCKH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_ENGIC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGEMP" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAAI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGABI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGAC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGACI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBAI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBBI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGBCI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCAI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCBI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCCI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGCDI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDAX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDAH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDAI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBAX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBBX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBHX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WINGDBIX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WING1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DROPS_WING2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKAAA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKABA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKACA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKAAB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKABB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKACB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKDA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_COCKDB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGEMP" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGBA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGBB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGBC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGBD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGDA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGDB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGDC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGDD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGF" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGFA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGGA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGHA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGHB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGHC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGHD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGI" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGKA" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGKB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGKC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGKD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGL" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGT_A" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGT_C" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGT_F" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGT_G" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SCIEN_WINGT_I" />
+          <Property name="Value" value="SENTFREI_PROD" />
         </Property>
 ]]
 Substances = 
@@ -3027,6 +2337,720 @@ ShipTechSpecialist =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SHIP_CORE_S" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKAC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKAD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKAE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_COCKF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGA_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGB_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBA_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBB_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBC_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGBD_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEA_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEB_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEC_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGED" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGED_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEE_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGEF_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFC_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFD_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGFE_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGG_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGH_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHA_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHB_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHC_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGHD_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGI_FI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGJLOW" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGJMID" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGJFULL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGKA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGKAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGKBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGKBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_WINGKBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_ENGIB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_ENGIC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FIGHT_ENGID" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_COCKH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_ENGIC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGEMP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAAI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGABI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGAC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGACI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBBI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBCI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCAI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCBI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCCI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGCDI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDAX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDAH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDAI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBAX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBBX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBHX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGDBIX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WING1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WING2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKAAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKABA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKACA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKAAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKABB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKACB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKDA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_COCKDB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGEMP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGBA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGBB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGBC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGBD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGDA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGDB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGDC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGDD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGF" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGFA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGGA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGHA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGHB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGHC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGHD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGI" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGKA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGKB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGKC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGKD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGT_A" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGT_C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGT_F" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGT_G" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SCIEN_WINGT_I" />
         </Property>
 ]]
 VehicleTechSpecialist = 
