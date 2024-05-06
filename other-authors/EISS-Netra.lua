@@ -1589,9 +1589,6 @@ Products =
           <Property name="Value" value="SPIDER_PROD" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="DRONE_SHARD" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -1782,6 +1779,9 @@ Substances =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="ROBOT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROBOT2" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SUNGOLD" />
