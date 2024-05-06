@@ -28,9 +28,9 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Docking.Fix.V.1.7.pak",
+["MOD_FILENAME"]            = "_Docking.Fix.V.1.8.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
-["NMS_VERSION"]             = "4.63",
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
