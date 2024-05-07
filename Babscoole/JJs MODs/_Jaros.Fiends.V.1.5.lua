@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Jaros.Fiends.V.1.4.pak",
+["MOD_FILENAME"]            = "_Jaros.Fiends.V.1.5.pak",
 ["MOD_AUTHOR"]              = "JJHookah",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.51",
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IncreaseFiendWanted",       "True"},
-                                {"IncreaseFiendWantedChance", "0.05"},
+                                {"IncreaseFiendWantedChance", "0.03"},
                             }
                         },
                     }
