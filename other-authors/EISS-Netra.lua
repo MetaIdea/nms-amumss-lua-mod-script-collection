@@ -1589,9 +1589,6 @@ Products =
           <Property name="Value" value="SPIDER_PROD" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="DRONE_SHARD" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -1608,735 +1605,6 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SENTFREI_PROD" />
-        </Property>
-]]
-Substances = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FUEL1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="FUEL2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="OXYGEN" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAUNCHSUB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAUNCHSUB2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROCKETSUB" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAND1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAND2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAND3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SAND1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CATALYST1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CATALYST2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CAVE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CAVE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="WATER1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="WATER2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="WATERPLANT" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="YELLOW2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="RED2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="GREEN2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="BLUE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="STELLAR2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LUSH1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="DUSTY1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TOXIC1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="RADIO1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="COLD1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="HOT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="LAVA1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CREATURE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ASTEROID1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ASTEROID2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ASTEROID3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="GAS1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="GAS2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="GAS3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="EX_YELLOW" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="EX_RED" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="EX_GREEN" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="EX_BLUE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_TOXIC" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_SNOW" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_RADIO" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_DUST" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_HOT" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_LUSH" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_CAVE" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_WATER" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="PLANT_POOP" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPACEGUNK1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPACEGUNK2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPACEGUNK3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPACEGUNK4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPACEGUNK5" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SPECIAL_POOP" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SUNGOLD" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SOULFRAG" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AF_METAL" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="TECHFRAG" />
-        </Property>
-]]
-WeapTechSpecialist = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SCANNER1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SCANNER2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SCANNER3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SCANNER4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SCANNERX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LASER1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LASER2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LASER3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LASER4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LASERX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_BOLT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_BOLT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_BOLT3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_BOLT4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_BOLTX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_GRENADE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_GRENADE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_GRENADE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_GRENADE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_GRENADEX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TGRENADE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TGRENADE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TGRENADE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TGRENADE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TGRENADEX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAIL1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAIL2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAIL3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAIL4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAILX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHOTGUN1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHOTGUN2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHOTGUN3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHOTGUN4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHOTGUNX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SMG1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SMG2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SMG3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SMG4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SMGX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_CANNON1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_CANNON2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_CANNON3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_CANNON4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_CANNONX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SENTGUN" />
-        </Property>
-]]
-SuitTechSpecialist = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_ENERGY1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_ENERGY2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_ENERGY3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_ENERGYX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIELDBOOST1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIELDBOOST2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIELDBOOST3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIELDBOOST4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIELDBOOSTX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_JETBOOST1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_JETBOOST2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_JETBOOST3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_JETBOOST4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_JETBOOSTX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_COLDPROT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_COLDPROT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_COLDPROT3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HOTPROT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HOTPROT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HOTPROT3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TOX1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TOX2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_TOX3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAD1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAD2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_RAD3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_UNW1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_UNW2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_UNW3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HAZARDX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SENTSUIT" />
-        </Property>
-]]
-ShipTechSpecialist = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LAUNCH1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LAUNCH2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LAUNCH3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LAUNCH4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_LAUNCHX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_PULSE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_PULSE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_PULSE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_PULSE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_PULSEX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HYPER1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HYPER2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HYPER3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HYPER4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_HYPERX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHIELD1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHIELD2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHIELD3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHIELD4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHIELDX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPGUN1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPGUN2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPGUN3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPGUN4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPGUNX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPLAS1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPLAS2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPLAS3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPLAS4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPLASX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHOT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHOT2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHOT3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHOT4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPSHOTX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPMINI1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPMINI2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPMINI3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPMINI4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPMINIX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPBLOB1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPBLOB2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPBLOB3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPBLOB4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_SHIPBLOBX" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_PULSE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_PULSE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_PULSE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_PULSE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_LAUNCH1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_LAUNCH2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_LAUNCH3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_LAUNCH4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_HYPER1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_HYPER2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_HYPER3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_HYPER4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPSHIELD1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPSHIELD2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPSHIELD3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPSHIELD4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPGUN1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPGUN2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPGUN3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPGUN4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPLAS1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPLAS2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPLAS3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="AP_SHIPLAS4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_HYP1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_HYP2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_HYP3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_HYP4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_SPE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_SPE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_SPE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_SPE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_FUEL1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_FUEL2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_FUEL3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_FUEL4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_COM1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_COM2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_COM3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_COM4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_TRA1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_TRA2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_TRA3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_TRA4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_EXP1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_EXP2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_EXP3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_EXP4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_MINE1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_MINE2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_MINE3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_FR_MINE4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SHIP_CORE_C" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SHIP_CORE_B" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SHIP_CORE_A" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="SHIP_CORE_S" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="FIGHT_COCKAA" />
@@ -3051,6 +2319,738 @@ ShipTechSpecialist =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SCIEN_WINGT_I" />
+        </Property>
+]]
+Substances = 
+[[
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FUEL1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FUEL2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="OXYGEN" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAUNCHSUB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAUNCHSUB2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROCKETSUB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAND1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAND2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAND3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAND1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CATALYST1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CATALYST2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CAVE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CAVE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WATER1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WATER2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WATERPLANT" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="YELLOW2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="RED2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="GREEN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="BLUE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STELLAR2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LUSH1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DUSTY1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TOXIC1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="RADIO1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="COLD1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="HOT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="LAVA1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CREATURE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROBOT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ASTEROID1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ASTEROID2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ASTEROID3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="GAS1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="GAS2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="GAS3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="EX_YELLOW" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="EX_RED" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="EX_GREEN" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="EX_BLUE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_TOXIC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_SNOW" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_RADIO" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_DUST" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_HOT" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_LUSH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_CAVE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_WATER" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="PLANT_POOP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPACEGUNK1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPACEGUNK2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPACEGUNK3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPACEGUNK4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPACEGUNK5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SPECIAL_POOP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROBOT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROBOT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SUNGOLD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SOULFRAG" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AF_METAL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TECHFRAG" />
+        </Property>
+]]
+WeapTechSpecialist = 
+[[
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SCANNER1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SCANNER2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SCANNER3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SCANNER4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SCANNERX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LASER1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LASER2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LASER3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LASER4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LASERX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_BOLT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_BOLT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_BOLT3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_BOLT4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_BOLTX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_GRENADE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_GRENADE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_GRENADE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_GRENADE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_GRENADEX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TGRENADE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TGRENADE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TGRENADE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TGRENADE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TGRENADEX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAIL1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAIL2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAIL3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAIL4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAILX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHOTGUN1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHOTGUN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHOTGUN3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHOTGUN4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHOTGUNX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SMG1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SMG2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SMG3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SMG4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SMGX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_CANNON1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_CANNON2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_CANNON3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_CANNON4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_CANNONX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SENTGUN" />
+        </Property>
+]]
+SuitTechSpecialist = 
+[[
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_ENERGY1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_ENERGY2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_ENERGY3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_ENERGYX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIELDBOOST1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIELDBOOST2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIELDBOOST3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIELDBOOST4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIELDBOOSTX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_JETBOOST1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_JETBOOST2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_JETBOOST3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_JETBOOST4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_JETBOOSTX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_COLDPROT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_COLDPROT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_COLDPROT3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HOTPROT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HOTPROT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HOTPROT3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TOX1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TOX2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_TOX3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAD1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAD2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_RAD3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_UNW1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_UNW2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_UNW3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HAZARDX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SENTSUIT" />
+        </Property>
+]]
+ShipTechSpecialist = 
+[[
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LAUNCH1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LAUNCH2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LAUNCH3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LAUNCH4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_LAUNCHX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_PULSE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_PULSE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_PULSE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_PULSE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_PULSEX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HYPER1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HYPER2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HYPER3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HYPER4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_HYPERX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHIELD1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHIELD2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHIELD3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHIELD4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHIELDX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPGUN1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPGUN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPGUN3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPGUN4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPGUNX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPLAS1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPLAS2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPLAS3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPLAS4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPLASX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHOT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHOT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHOT3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHOT4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPSHOTX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPMINI1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPMINI2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPMINI3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPMINI4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPMINIX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPBLOB1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPBLOB2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPBLOB3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPBLOB4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_SHIPBLOBX" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_PULSE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_PULSE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_PULSE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_PULSE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_LAUNCH1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_LAUNCH2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_LAUNCH3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_LAUNCH4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_HYPER1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_HYPER2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_HYPER3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_HYPER4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPSHIELD1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPSHIELD2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPSHIELD3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPSHIELD4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPGUN1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPGUN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPGUN3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPGUN4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPLAS1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPLAS2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPLAS3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="AP_SHIPLAS4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_HYP1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_HYP2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_HYP3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_HYP4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_SPE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_SPE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_SPE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_SPE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_FUEL1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_FUEL2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_FUEL3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_FUEL4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_COM1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_COM2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_COM3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_COM4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_TRA1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_TRA2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_TRA3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_TRA4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_EXP1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_EXP2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_EXP3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_EXP4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_MINE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_MINE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_MINE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_FR_MINE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SHIP_CORE_C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SHIP_CORE_B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SHIP_CORE_A" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SHIP_CORE_S" />
         </Property>
 ]]
 VehicleTechSpecialist = 
