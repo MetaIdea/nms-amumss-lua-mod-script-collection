@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "Private Alternative Landing Pads 1.5.pak",
+	["MOD_FILENAME"]	= "Private Alternative Landing Pads 1.6.pak",
 	["MOD_AUTHOR"]		= "Northener69 (published by Lo2k)",
 	["LUA_AUTHOR"]		= "Droseran",
 	["MOD_DESCRIPTION"]	= "Prevents AI ships from landing on our own alternative landing pads.",
-	["NMS_VERSION"]		= "4.12",
+	["NMS_VERSION"]		= "4.65",
 	["MODIFICATIONS"]	= 
 	{
 		{

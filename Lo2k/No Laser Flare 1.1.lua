@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Laser Flare.pak", 
+["MOD_FILENAME"] 			= "No Laser Flare 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.93",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "4.65",
 ["MOD_DESCRIPTION"]			= "This mod removes laser horizontal flare",
 ["MODIFICATIONS"] 			= 
 	{

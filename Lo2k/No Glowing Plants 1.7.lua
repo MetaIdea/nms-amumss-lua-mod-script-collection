@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Glowing Plants 1.6.pak", 
+["MOD_FILENAME"] 			= "No Glowing Plants 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.51",
+["NMS_VERSION"]				= "4.65",
 ["MOD_DESCRIPTION"]			= "This mod removes light from common red, blue and yellow plants",
 ["MODIFICATIONS"] 			= 
 	{
