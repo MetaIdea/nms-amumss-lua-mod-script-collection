@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.4.Standard.pak",
+["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.5.Standard.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "4.63",
+["NMS_VERSION"]   = "4.65",
 ["MODIFICATIONS"] =
     {
         {
