@@ -1,11 +1,9 @@
-Version = "4.48b"
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_FastTextView"..Version..".pak",
 ["MOD_AUTHOR"]              = "UserPro66",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = Version,
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
