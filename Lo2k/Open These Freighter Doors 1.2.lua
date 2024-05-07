@@ -20,7 +20,7 @@ for i = 1,181 do
   local current_change =  
   {
 
-	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml"},  --top door
+	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml"},  --top door
 	["REPLACE_TYPE"]    = "ONCE",  
 	["SECTION_ACTIVE"] = {i,}, 
 	["INTEGER_TO_FLOAT"] = "FORCE",
@@ -40,7 +40,7 @@ local change_bottomdoor_table = {}
 for i = 1,181 do
   local current_change =  
   {
-	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml"},  --bottom door
+	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml"},  --bottom door
 	["REPLACE_TYPE"]    = "ONCE",  
 	["SECTION_ACTIVE"] = {i,}, 
 	["INTEGER_TO_FLOAT"] = "FORCE",
@@ -59,7 +59,7 @@ local change_bottomrays_table = {}  -- original goes from 0.4 to 4.2
 for i = 1,181 do
   local current_change =  
   {
-	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml"},  --bottom rays
+	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml"},  --bottom rays
 	["REPLACE_TYPE"]    = "ONCE",  
 	["SECTION_ACTIVE"] = {i,}, 
 	["INTEGER_TO_FLOAT"] = "FORCE",
@@ -78,7 +78,7 @@ local change_toprays_table = {}  -- original goes from
 for i = 1,181 do
   local current_change =  
   {
-	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml"},  --bottom rays
+	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml"},  --bottom rays
 	["REPLACE_TYPE"]    = "ONCE",  
 	["SECTION_ACTIVE"] = {i,}, 
 	["INTEGER_TO_FLOAT"] = "FORCE",
@@ -97,7 +97,7 @@ local change_unk_table = {}  -- original goes from 0.4 -> -0.87
 for i = 1,181 do
   local current_change =  
   {
-	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml", "Vector3f.xml"},  
+	["PRECEDING_KEY_WORDS"] = {"Translations", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml", "Vector4f.xml"},  
 	["REPLACE_TYPE"]    = "ONCE",  
 	["SECTION_ACTIVE"] = {i,}, 
 	["INTEGER_TO_FLOAT"] = "FORCE",
@@ -113,10 +113,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Open These Freighter Doors 1.1.pak", 
+["MOD_FILENAME"] 			= "Open These Freighter Doors 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.10",
+["NMS_VERSION"]				= "4.65",
 ["MOD_DESCRIPTION"]			= "This mod opens wide the freighter doors",
 ["MODIFICATIONS"] 			= 
 	{
