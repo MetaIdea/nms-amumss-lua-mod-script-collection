@@ -14,21 +14,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "Green",
+                            ["SPECIAL_KEY_WORDS"] = {"Green", "GcBiomeList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Green", "1000000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "Blue",
+                            ["SPECIAL_KEY_WORDS"] = {"Blue", "GcBiomeList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Blue", "1000000"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "Red",
+                            ["SPECIAL_KEY_WORDS"] = {"Red", "GcBiomeList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"BiomeProbability"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Red", "1000000"},

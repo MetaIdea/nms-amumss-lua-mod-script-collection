@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_63"
+GameVersion = "4_65"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1549,11 +1549,30 @@ PIRATLTEASYRewards =
 [[<Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="PIRATLTEASY" />
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectAlways" />
+        <Property name="RewardChoice" value="GiveFirst_ThenAlsoSelectAlwaysFromRest" />
         <Property name="OverrideZeroSeed" value="True" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
           <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="0" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="ID" value="PIRATE_PROD" />
+              <Property name="AmountMin" value="0" />
+              <Property name="AmountMax" value="1" />
+              <Property name="HideAmountInMessage" value="False" />
+              <Property name="ForceSpecialMessage" value="False" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
+            </Property>
+          </Property>
+		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
@@ -1699,11 +1718,30 @@ PIRATLTHARDRewards =
 [[<Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="PIRATLTHARD" />
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectAlways" />
+        <Property name="RewardChoice" value="GiveFirst_ThenAlsoSelectAlwaysFromRest" />
         <Property name="OverrideZeroSeed" value="True" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="IncrementStat" value="" />
 		<Property name="List">
           <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="0" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="ID" value="PIRATE_PROD" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="2" />
+              <Property name="HideAmountInMessage" value="False" />
+              <Property name="ForceSpecialMessage" value="False" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
+            </Property>
+          </Property>
+		  <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
 			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">

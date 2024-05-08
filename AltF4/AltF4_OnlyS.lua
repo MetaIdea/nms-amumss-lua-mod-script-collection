@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_OnlyS.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.50",
+    ["NMS_VERSION"] = "4.65",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
@@ -53,8 +53,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"PercentChangeOfFrigateBeingPurchasable",100},			--60
-                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},	--55
+                                {"PercentChangeOfFrigateBeingPurchasable",100},         --60
+                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},   --55
                             },
                         },
                         {

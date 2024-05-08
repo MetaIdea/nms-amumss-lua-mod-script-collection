@@ -3,8 +3,8 @@ MaxInventorySlotsShip = 120
 MinTechSlotsShip = 60
 MaxTechSlotsShip = 60
 
-MinInventorySlotsMultiTool = 24
-MaxInventorySlotsMultiTool = 24
+MinTechSlotsMultiTool = 60
+MaxTechSlotsMultiTool = 60
 
 MinInventorySlotsFreighter = 120
 MaxInventorySlotsFreighter = 120
@@ -27,18 +27,18 @@ CClassMaxInventorySize = 120
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_SquareSCSlots_OnlyS_MaxSlots.pak",
     ["MOD_AUTHOR"] = "AltF4",
-    ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.50",
+	["LUA_AUTHOR"] = "AltF4",
+    ["NMS_VERSION"] = "4.65",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class with max slots and square super charged slots. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = { 
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SpecialTechSlotMaxIndex",
+                            ["PRECEDING_KEY_WORDS"] = {"SpecialTechSlotMaxIndex"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_MATCH"] = "",
                             ["VALUE_CHANGE_TABLE"] = 
@@ -48,8 +48,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SciSmall",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"SciSmall"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -58,8 +58,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SciMedium",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"SciMedium"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -68,8 +68,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SciLarge",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"SciLarge"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RobotSmall",
+                            ["PRECEDING_KEY_WORDS"] = {"RobotSmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RobotMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"RobotMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RobotLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"RobotLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FgtSmall",
+                            ["PRECEDING_KEY_WORDS"] = {"FgtSmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FgtMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"FgtMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FgtLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"FgtLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "ShuSmall",
+                            ["PRECEDING_KEY_WORDS"] = {"ShuSmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -148,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "ShtMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"ShtMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "ShtLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"ShtLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "DrpSmall",
+                            ["PRECEDING_KEY_WORDS"] = {"DrpSmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -178,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "DrpMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"DrpMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "DrpLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"DrpLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -198,7 +198,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RoySmall",
+                            ["PRECEDING_KEY_WORDS"] = {"RoySmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -208,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RoyMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"RoyMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -218,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "RoyLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"RoyLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SailSmall",
+                            ["PRECEDING_KEY_WORDS"] = {"SailSmall"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -238,7 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SailMedium",
+                            ["PRECEDING_KEY_WORDS"] = {"SailMedium"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -248,7 +248,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "SailLarge",
+                            ["PRECEDING_KEY_WORDS"] = {"SailLarge"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"MinSlots", MinInventorySlotsShip},
@@ -258,8 +258,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "AlienSmall",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"AlienSmall"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -268,8 +268,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "AlienMedium",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"AlienMedium"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -278,8 +278,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "AlienLarge",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"AlienLarge"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsShip},
                                 {"MaxSlots", MaxInventorySlotsShip},
@@ -288,32 +288,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "WeaponSmall",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"WeaponSmall"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"MinSlots", MinInventorySlotsMultiTool},
-                                {"MaxSlots", MaxInventorySlotsMultiTool},
+                                {"MinTechSlots", MinTechSlotsMultiTool},
+                                {"MaxTechSlots", MaxTechSlotsMultiTool},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "WeaponMedium",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"WeaponMedium"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"MinSlots", MinInventorySlotsMultiTool},
-                                {"MaxSlots", MaxInventorySlotsMultiTool},
+                                {"MinTechSlots", MinTechSlotsMultiTool},
+                                {"MaxTechSlots", MaxTechSlotsMultiTool},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "WeaponLarge",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"WeaponLarge"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"MinSlots", MinInventorySlotsMultiTool},
-                                {"MaxSlots", MaxInventorySlotsMultiTool},
+                                {"MinTechSlots", MinTechSlotsMultiTool},
+                                {"MaxTechSlots", MaxTechSlotsMultiTool},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FreighterSmall",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"FreighterSmall"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsFreighter},
                                 {"MaxSlots", MaxInventorySlotsFreighter},
@@ -322,8 +322,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FreighterMedium",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"FreighterMedium"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsFreighter},
                                 {"MaxSlots", MaxInventorySlotsFreighter},
@@ -332,8 +332,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "FreighterLarge",
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] = {"FreighterLarge"},
+                            ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"MinSlots", MinInventorySlotsFreighter},
                                 {"MaxSlots", MaxInventorySlotsFreighter},
@@ -382,10 +382,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = "MaxInventoryCapacity",
-                            ["REPLACE_TYPE"] 		= "ALL",
-                            ["VALUE_MATCH"] 		= "",
-                            ["VALUE_CHANGE_TABLE"] 	=
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_MATCH"] = "",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 { "C", CClassMaxInventorySize },
                                 { "B", BClassMaxInventorySize },
@@ -400,8 +400,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"PercentChangeOfFrigateBeingPurchasable",100},			--60
-                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},	--55
+                                {"PercentChangeOfFrigateBeingPurchasable",100},         --60
+                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},   --55
                             },
                         },
                         {
@@ -517,5 +517,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 },
             },
         },
-    }
+    }	
 }
