@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Freighter Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Freighter Tweaks 1.7 + several modified functions for pirate freighter]]
+local gameVersion = "4.65"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -9,7 +9,7 @@ local gameVersion = "4.21"
 	Below in the 'tweakStates' table are modification names and what they do is commented next to them
 	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
 
-	Ways to disable a modification: 
+	Ways to disable a modification:
 		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
 		• Set the value of the modification to false / ex: 'modification = false,'
 		• Use the 'lyr_tweakOverrides.txt' file and disable modifications from there
@@ -162,6 +162,29 @@ local freighterBridgeScanner = function()
 					Value = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]
 				}
 			},
+		},
+		["MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINALPIRATE.SCENE.MBIN"] = {
+			{
+				precedingKeyWords = "Children",
+				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="Base" />]])},
+				pasteSection = lyr.nodeTemplate.section
+			},
+			{
+				specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+				fields = {
+					Name = "lyr_bridgeScanner",
+					Type = "LOCATOR",
+					TransY = 0.5,
+				}
+			},
+			{
+				specialKeyWords = {"Name", "lyr_bridgeScanner"},
+				precedingKeyWords = "TkSceneNodeAttributeData.xml",
+				fields = {
+					Name = "ATTACHMENT",
+					Value = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]
+				}
+			},
 		}
 	}
 
@@ -175,7 +198,7 @@ local hangarSalvageTerminal = function()
 		lyr:createNodeTemplate(),
 		{
 			-- mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"},
-			mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN"},
+			mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN","MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"},
 			{
 				precedingKeyWords = {"Children"},
 				pasteSection = lyr.nodeTemplate.section
@@ -532,6 +555,57 @@ local systemWideTelepads = function()
 				}
 			}, --#endregion
 			-- END OF STATION TELEPAD PLACEMENT
+			--#region NEW STATION TELEPAD PLACEMENT
+			{
+				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN]],
+				{
+					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="_SpaceStation_" />]])},
+					precedingKeyWords = "Children",
+					pasteSection = lyr.nodeTemplate.section
+				},
+				{
+					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+					fields = {
+						Name = "lyr_stationTelepad_left",
+						Type = "REFERENCE",
+						TransX = 7.5,
+						TransZ = -73,
+						RotY = -120
+					}
+				},
+				{
+					specialKeyWords = {"Name", "lyr_stationTelepad_left"},
+					precedingKeyWords = "Attributes",
+					fields = {
+						Name = "SCENEGRAPH",
+						Value = telepads.stationLeft.scene
+					}
+				},
+				{
+					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="_SpaceStation_" />]])},
+					precedingKeyWords = "Children",
+					pasteSection = lyr.nodeTemplate.section
+				},
+				{
+					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+					fields = {
+						Name = "lyr_stationTelepad_right",
+						Type = "REFERENCE",
+						TransX = -7.5,
+						TransZ = -73,
+						RotY = 120
+					}
+				},
+				{
+					specialKeyWords = {"Name", "lyr_stationTelepad_right"},
+					precedingKeyWords = "Attributes",
+					fields = {
+						Name = "SCENEGRAPH",
+						Value = telepads.stationRight.scene
+					}
+				}
+			}, --#endregion
+			-- END OF NEW STATION TELEPAD PLACEMENT
 			--#region PIRATE STATION TELEPAD PLACEMENT
 			{
 				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN]],
@@ -585,7 +659,10 @@ local systemWideTelepads = function()
 			-- END OF PIRATE STATION TELEPAD PLACEMENT
 			--#region HANGAR TELEPAD PLACEMENT
 			{
-				mbinPaths = [[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN]],
+				mbinPaths = {
+					"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN",
+					"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"
+				},
 				{
 					precedingKeyWords = "Children",
 					pasteSection = lyr.nodeTemplate.section
@@ -989,7 +1066,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_freighterTweaks.pak",
 	MOD_BATCHNAME = batchPakName or nil,
 	MOD_AUTHOR = "lyravega",
-	LUA_AUTHOR = "lyravega",
+	LUA_AUTHOR = "lyravega, Babscoole, AltF4",
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
