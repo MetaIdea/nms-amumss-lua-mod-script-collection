@@ -524,6 +524,24 @@ Products =
           <Property name="Value" value="ATLAS_SEED_10" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ATLAS_SEED1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ATLAS_SEED2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ATLAS_SEED3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ATLAS_SEED4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ATLAS_SEED5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_FRAGMENT" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="HEXCORE" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -1598,6 +1616,36 @@ Products =
           <Property name="Value" value="CHART_ROBOT" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ROBO_HEAD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ROBO_BODY" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ROBO_ARMS" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ROBO_CORE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_ROBO_LEGS" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S10_SOUL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S12_POI_SEED1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S12_POI_SEED2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S12_POI_SEED3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S12_POI_SEED4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="SHIPBRAIN_CLEAN" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -1605,6 +1653,99 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SENTFREI_PROD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="GAS_BRAIN_LOC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_CORE6" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD4A" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD4B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_HEAD6" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_PART_A" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_PART_B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_PART_C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="STAFF_POLE6" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMBOOK" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMCORE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMPROD" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMSCROLL1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMSCROLL2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMSCROLL3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMSCROLL4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMSCROLL5" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="FIGHT_COCKAA" />
@@ -1943,7 +2084,13 @@ Products =
           <Property name="Value" value="DROPS_WINGBAA" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="DROPS_WINGBAB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="DROPS_WINGBAA" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="DROPS_WINGBAC" />
@@ -2417,6 +2564,9 @@ Substances =
           <Property name="Value" value="ROBOT1" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ROBOT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="ASTEROID1" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -2489,13 +2639,10 @@ Substances =
           <Property name="Value" value="SPACEGUNK5" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="BUI_SCRAP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="SPECIAL_POOP" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="ROBOT2" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SUNGOLD" />
@@ -2505,6 +2652,15 @@ Substances =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="AF_METAL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="WORMDUST" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TIMEDUST" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TIMEMILK" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="TECHFRAG" />
@@ -3159,9 +3315,10 @@ VehicleTechSpecialist =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] = "EISS.pak",
-  ["MOD_AUTHOR"] = "musty123",
-  ["NMS_VERSION"] = "3.82",
+  ["MOD_FILENAME"] = "EISS_Netra.pak",
+  ["MOD_AUTHOR"] = "musty123 & MasterNetra",
+  ["LUA_AUTHOR"] = "MasterNetra",
+  ["NMS_VERSION"] = "4.65",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station trade terminal.",
   ["MODIFICATIONS"] =
   {
