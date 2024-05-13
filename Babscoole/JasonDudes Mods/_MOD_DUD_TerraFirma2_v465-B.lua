@@ -11,6 +11,155 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Shelter",                    "GcBuildingDefinitionData.xml"},
+                                {"Abandoned",                  "GcBuildingDefinitionData.xml"},
+                                {"Terminal",                   "GcBuildingDefinitionData.xml"},
+                                {"Shop",                       "GcBuildingDefinitionData.xml"},
+                                {"Outpost",                    "GcBuildingDefinitionData.xml"},
+                                {"Waypoint",                   "GcBuildingDefinitionData.xml"},
+                                {"Beacon",                     "GcBuildingDefinitionData.xml"},
+                                {"RadioTower",                 "GcBuildingDefinitionData.xml"},
+                                {"Observatory",                "GcBuildingDefinitionData.xml"},
+                                {"Depot",                      "GcBuildingDefinitionData.xml"},
+                                {"Factory",                    "GcBuildingDefinitionData.xml"},
+                                {"Harvester",                  "GcBuildingDefinitionData.xml"},
+                                {"Plaque",                     "GcBuildingDefinitionData.xml"},
+                                {"Monolith",                   "GcBuildingDefinitionData.xml"},
+                                {"Portal",                     "GcBuildingDefinitionData.xml"},
+                                {"Ruin",                       "GcBuildingDefinitionData.xml"},
+                                {"Debris",                     "GcBuildingDefinitionData.xml"},
+                                {"DamagedMachine",             "GcBuildingDefinitionData.xml"},
+                                {"DistressSignal",             "GcBuildingDefinitionData.xml"},
+                                {"LandingPad",                 "GcBuildingDefinitionData.xml"},
+                                {"Base",                       "GcBuildingDefinitionData.xml"},
+                                {"MissionTower",               "GcBuildingDefinitionData.xml"},
+                                {"CrashedFreighter",           "GcBuildingDefinitionData.xml"},
+                                {"GraveInCave",                "GcBuildingDefinitionData.xml"},
+                                {"StoryGlitch",                "GcBuildingDefinitionData.xml"},
+                                {"TreasureRuins",              "GcBuildingDefinitionData.xml"},
+                                {"GameStartSpawn",             "GcBuildingDefinitionData.xml"},
+                                {"NPCDistressSignal",          "GcBuildingDefinitionData.xml"},
+                                {"NPCDebris",                  "GcBuildingDefinitionData.xml"},
+                                {"LargeBuilding",              "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Hub",             "GcBuildingDefinitionData.xml"},
+                                {"Settlement_LandingZone",     "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Bar",             "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Tower",           "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Market",          "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Small",           "GcBuildingDefinitionData.xml"},
+                                {"Settlement_SmallIndustrial", "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Medium",          "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Large",           "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Monument",        "GcBuildingDefinitionData.xml"},
+                                {"Settlement_SheriffsOffice",  "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Double",          "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Farm",            "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Factory",         "GcBuildingDefinitionData.xml"},
+                                {"Settlement_Clump",           "GcBuildingDefinitionData.xml"},
+                                {"DroneHive",                  "GcBuildingDefinitionData.xml"},
+                                {"SentinelDistressSignal",     "GcBuildingDefinitionData.xml"},
+                                {"AbandonedRobotCamp",         "GcBuildingDefinitionData.xml"},
+                                {"RobotHead",                  "GcBuildingDefinitionData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"WaterPlacement", "Underwater"},
+                                {"MinHeight",      "120"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYWEIRDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADFROZENBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADFROZENWEIRDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLARBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLESBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMABIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRABIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICROCKYBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Terrain", "GcTerrainControls.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Continent",             "1"},
+                                {"ForceContinentalNoise", "True"},
+                            }
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -122,7 +271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FloatingIslands", "Min", "Resources_Aluminium"},
                                 {"FloatingIslands", "Min", "Resources_Gold"},
                                 {"FloatingIslands", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -310,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FloatingIslands", "Max", "Resources_Aluminium"},
                                 {"FloatingIslands", "Max", "Resources_Gold"},
                                 {"FloatingIslands", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -526,7 +675,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"GrandCanyon", "Min", "Resources_Aluminium"},
                                 {"GrandCanyon", "Min", "Resources_Gold"},
                                 {"GrandCanyon", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -756,7 +905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"GrandCanyon", "Max", "Resources_Aluminium"},
                                 {"GrandCanyon", "Max", "Resources_Gold"},
                                 {"GrandCanyon", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -946,7 +1095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MountainRavines", "Min", "Resources_Aluminium"},
                                 {"MountainRavines", "Min", "Resources_Gold"},
                                 {"MountainRavines", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1114,7 +1263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MountainRavines", "Max", "Resources_Aluminium"},
                                 {"MountainRavines", "Max", "Resources_Gold"},
                                 {"MountainRavines", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1647,7 +1796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Alien", "Min", "Resources_Aluminium"},
                                 {"Alien", "Min", "Resources_Gold"},
                                 {"Alien", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1836,7 +1985,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Alien", "Max", "Resources_Aluminium"},
                                 {"Alien", "Max", "Resources_Gold"},
                                 {"Alien", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2046,7 +2195,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Craters", "Min", "Resources_Aluminium"},
                                 {"Craters", "Min", "Resources_Gold"},
                                 {"Craters", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2252,7 +2401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Craters", "Max", "Resources_Aluminium"},
                                 {"Craters", "Max", "Resources_Gold"},
                                 {"Craters", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2437,7 +2586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Caverns", "Min", "Resources_Aluminium"},
                                 {"Caverns", "Min", "Resources_Gold"},
                                 {"Caverns", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2623,7 +2772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Caverns", "Max", "Resources_Aluminium"},
                                 {"Caverns", "Max", "Resources_Gold"},
                                 {"Caverns", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2787,7 +2936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Alpine", "Min", "Resources_Aluminium"},
                                 {"Alpine", "Min", "Resources_Gold"},
                                 {"Alpine", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2951,7 +3100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Alpine", "Max", "Resources_Aluminium"},
                                 {"Alpine", "Max", "Resources_Gold"},
                                 {"Alpine", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3120,7 +3269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LilyPad", "Min", "Resources_Aluminium"},
                                 {"LilyPad", "Min", "Resources_Gold"},
                                 {"LilyPad", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3298,7 +3447,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LilyPad", "Max", "Resources_Aluminium"},
                                 {"LilyPad", "Max", "Resources_Gold"},
                                 {"LilyPad", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3491,7 +3640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Desert", "Min", "Resources_Aluminium"},
                                 {"Desert", "Min", "Resources_Gold"},
                                 {"Desert", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3708,7 +3857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Desert", "Max", "Resources_Aluminium"},
                                 {"Desert", "Max", "Resources_Gold"},
                                 {"Desert", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -3947,7 +4096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WaterworldPrime", "Min", "Resources_Aluminium"},
                                 {"WaterworldPrime", "Min", "Resources_Gold"},
                                 {"WaterworldPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -4189,7 +4338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WaterworldPrime", "Max", "Resources_Aluminium"},
                                 {"WaterworldPrime", "Max", "Resources_Gold"},
                                 {"WaterworldPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -4368,7 +4517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FloatingIslandsPrime", "Min", "Resources_Aluminium"},
                                 {"FloatingIslandsPrime", "Min", "Resources_Gold"},
                                 {"FloatingIslandsPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -4553,7 +4702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FloatingIslandsPrime", "Max", "Resources_Aluminium"},
                                 {"FloatingIslandsPrime", "Max", "Resources_Gold"},
                                 {"FloatingIslandsPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -4787,7 +4936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"GrandCanyonPrime", "Min", "Resources_Aluminium"},
                                 {"GrandCanyonPrime", "Min", "Resources_Gold"},
                                 {"GrandCanyonPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5003,7 +5152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"GrandCanyonPrime", "Max", "Resources_Aluminium"},
                                 {"GrandCanyonPrime", "Max", "Resources_Gold"},
                                 {"GrandCanyonPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5175,7 +5324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MountainRavinesPrime", "Min", "Resources_Aluminium"},
                                 {"MountainRavinesPrime", "Min", "Resources_Gold"},
                                 {"MountainRavinesPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5362,7 +5511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MountainRavinesPrime", "Max", "Resources_Aluminium"},
                                 {"MountainRavinesPrime", "Max", "Resources_Gold"},
                                 {"MountainRavinesPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5545,7 +5694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HugeArchesPrime", "Min", "Resources_Aluminium"},
                                 {"HugeArchesPrime", "Min", "Resources_Gold"},
                                 {"HugeArchesPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5751,7 +5900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HugeArchesPrime", "Max", "Resources_Aluminium"},
                                 {"HugeArchesPrime", "Max", "Resources_Gold"},
                                 {"HugeArchesPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -5932,7 +6081,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AlienPrime", "Min", "Resources_Aluminium"},
                                 {"AlienPrime", "Min", "Resources_Gold"},
                                 {"AlienPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6135,7 +6284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"AlienPrime", "Max", "Resources_Aluminium"},
                                 {"AlienPrime", "Max", "Resources_Gold"},
                                 {"AlienPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6347,7 +6496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"SmoothRadius", "12"},
                             }
-                        }, 
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Min", "Large", "TurbulenceNoiseLayer"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -6367,7 +6516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CratersPrime", "Min", "Resources_Aluminium"},
                                 {"CratersPrime", "Min", "Resources_Gold"},
                                 {"CratersPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6565,7 +6714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"SmoothRadius", "12"},
                             }
-                        }, 
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"CratersPrime", "Max", "Large", "TurbulenceNoiseLayer"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -6586,7 +6735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CratersPrime", "Max", "Resources_Aluminium"},
                                 {"CratersPrime", "Max", "Resources_Gold"},
                                 {"CratersPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6779,7 +6928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CavernsPrime", "Min", "Resources_Aluminium"},
                                 {"CavernsPrime", "Min", "Resources_Gold"},
                                 {"CavernsPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -6974,7 +7123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CavernsPrime", "Max", "Resources_Aluminium"},
                                 {"CavernsPrime", "Max", "Resources_Gold"},
                                 {"CavernsPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7137,7 +7286,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                               {"AlpinePrime", "Min", "Resources_Aluminium"},
                               {"AlpinePrime", "Min", "Resources_Gold"},
                               {"AlpinePrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7303,7 +7452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                               {"AlpinePrime", "Max", "Resources_Aluminium"},
                               {"AlpinePrime", "Max", "Resources_Gold"},
                               {"AlpinePrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7587,7 +7736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LilyPadPrime", "Min", "Resources_Aluminium"},
                                 {"LilyPadPrime", "Min", "Resources_Gold"},
                                 {"LilyPadPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -7887,7 +8036,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LilyPadPrime", "Max", "Resources_Aluminium"},
                                 {"LilyPadPrime", "Max", "Resources_Gold"},
                                 {"LilyPadPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -8103,7 +8252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DesertPrime", "Min", "Resources_Aluminium"},
                                 {"DesertPrime", "Min", "Resources_Gold"},
                                 {"DesertPrime", "Min", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -8320,7 +8469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DesertPrime", "Max", "Resources_Aluminium"},
                                 {"DesertPrime", "Max", "Resources_Gold"},
                                 {"DesertPrime", "Max", "Resources_Emeril"},
-                                
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
