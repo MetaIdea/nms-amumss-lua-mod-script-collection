@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_63"
+GameVersion = "4_65"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -327,7 +327,7 @@ ProductStackChanges =
 	{"NEWPROD14_NAME",			4,					1},				--5		Albumen Pearl
 	{"NEWPROD11_NAME",			3,					1},				--5		Vortex Cube
 	{"UI_CLAMPEARL_NAME",		1,					1},				--15	Living Pearl
-	{"UI_VENTGEM_NAME",			2,					1},				--5		Crystal Sulphide
+	{"UI_VENTGEM_NAME",			4,					1},				--5		Crystal Sulphide
 	{"UI_EYEBALL_NAME",			1,					1},				--5		Hypnotic Eye
 	{"UI_DRONE_SHARD_NAME",		3,					1},				--5		Radiant SHard
 

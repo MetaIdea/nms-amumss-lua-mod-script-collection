@@ -148,16 +148,18 @@ ShipLootChanges =
 			{"FRIG_BOOST_TRA",		"FRIG_BOOST_TRA",		1,			1,			50},				--"FRIG_BOOST_TRA",			1,			1,			100
 		}	--(Also drop random upgrade modules for starship Pulse Engine, and Shields at 100 chance weight each)
 	},
-	{	--Smugglers? Seems to be Smuggler freighter cargo pods in pirate systems???		
+	{	--Seems to be Smuggler Freighter Cargo Pods, found in pirate/outlaw systems	
+			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"SMUGGLELOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
 			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_3",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
 			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			80},				--"FRIG_TOKEN",			1,			1,			20
-			{"LAND3",				"LAND3",				200,		250,		80},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				200,		250,		80},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				200,		250,		80},				--"CAVE2",				200,		250,		100
-			{"ASTEROID2",			"ASTEROID2",			200,		250,		80},				--"ASTEROID2",			200,		250,		100
-			{"RADIO1",				"RADIO1",				200,		250,		80},				--"RADIO1",				200,		250,		100
+			{"LAND3",				"LAND3",				200*5,		250*5,		80},				--"LAND3",				200,		250,		100
+			{"STELLAR2",			"STELLAR2",				200*5,		250*5,		80},				--"STELLAR2",			200,		250,		100
+			{"CAVE2",				"CAVE2",				200*5,		250*5,		80},				--"CAVE2",				200,		250,		100
+			{"ASTEROID2",			"ASTEROID2",			200*5,		250*5,		80},				--"ASTEROID2",			200,		250,		100
+			{"ASTEROID3",			"ASTEROID3",			100*5,		250*5,		100},				--"ASTEROID3",			100,		250,		100
+			{"RADIO1",				"RADIO1",				200*5,		250*5,		80},				--"RADIO1",				200,		250,		100
 			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			4,			40},				--"ILLEGAL_PROD8",		1,			2,			100
 			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		10,			20,			100},				--"ILLEGAL_PROD2",		5,			10,			100
 			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		8,			20,			100},				--"ILLEGAL_PROD3",		4,			10,			100
@@ -167,16 +169,18 @@ ShipLootChanges =
 			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		2,			5,			50},				--"ILLEGAL_PROD7",		1,			2,			100
 		}
 	},
-	{	--Freighter Cargo pods
+	{	--Freighter Cargo Pods
+			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"FREIGHTERLOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
 			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_3",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
 			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			60},				--"FRIG_TOKEN",			1,			1,			20
-			{"LAND3",				"LAND3",				200,		250,		100},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				200,		250,		100},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				200,		250,		100},				--"CAVE2",				200,		250,		100
-			{"ASTEROID2",			"ASTEROID2",			200,		250,		100},				--"ASTEROID2",			200,		250,		100
-			{"RADIO1",				"RADIO1",				200,		250,		100},				--"RADIO1",				200,		250,		100
+			{"LAND3",				"LAND3",				200*5,		250*5,		100},				--"LAND3",				200,		250,		100
+			{"STELLAR2",			"STELLAR2",				200*5,		250*5,		100},				--"STELLAR2",			200,		250,		100
+			{"CAVE2",				"CAVE2",				200*5,		250*5,		100},				--"CAVE2",				200,		250,		100
+			{"ASTEROID2",			"ASTEROID2",			200*5,		250*5,		100},				--"ASTEROID2",			200,		250,		100
+			{"ASTEROID3",			"ASTEROID3",			100*5,		250*5,		100},				--"ASTEROID3",			100,		250,		100
+			{"RADIO1",				"RADIO1",				200*5,		250*5,		100},				--"RADIO1",				200,		250,		100
 			{"TRA_COMMODITY3",		"TRA_COMMODITY3",		16,			20,			100},				--"TRA_COMMODITY3",		8,			10,			100
 			{"TRA_COMPONENT1",		"TRA_COMPONENT1",		35,			50,			100},				--"TRA_COMPONENT1",		25,			25,			100
 			{"TRA_ENERGY4",			"TRA_ENERGY4",			16,			20,			100},				--"TRA_ENERGY4",		8,			10,			100
@@ -323,6 +327,8 @@ PirateFreighterLootChanges =
 		}
 	},
 }
+
+PirateFreighterTechQualityOverride = 1				--3		May affect the class of procedural Freighter Upgrade Modules founds from destroying freighters. 3 = S Class, -1 = Random
 
 --Rewards for choosing a tech upgrade at the end of a Derelict Freighter
 FreighterTechLootChanges =
@@ -2874,6 +2880,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"FreighterTechQualityOverride",	PirateFreighterTechQualityOverride}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA_DROP"},
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
@@ -4117,8 +4131,8 @@ for i = 1, #ShipLootChanges do
 				{
 					{"PercentageChance", Chance},
 					{"ID", NewItemID},
-					{"AmountMin", AmountMin},
-					{"AmountMax", AmountMax}
+					{"AmountMin", math.floor(AmountMin)},
+					{"AmountMax", math.floor(AmountMax)}
 				}
 			}
 	end
