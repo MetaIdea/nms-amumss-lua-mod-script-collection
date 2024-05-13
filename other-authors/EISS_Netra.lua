@@ -3315,11 +3315,11 @@ VehicleTechSpecialist =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] = "EISS_Netra.pak",
-  ["MOD_AUTHOR"] = "musty123 & MasterNetra",
-  ["LUA_AUTHOR"] = "MasterNetra",
+  ["MOD_FILENAME"] = "NotAnotherTradeMod.pak",
+  ["MOD_AUTHOR"] = "MasterNetra & musty123",
+  ["LUA_AUTHOR"] = "MasterNetra & musty123",
   ["NMS_VERSION"] = "4.65",
-  ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station trade terminal.",
+  ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.",
   ["MODIFICATIONS"] =
   {
     {
