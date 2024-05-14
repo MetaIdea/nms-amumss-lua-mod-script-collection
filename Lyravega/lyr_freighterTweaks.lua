@@ -1,5 +1,5 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Freighter Tweaks 1.7 + several modified functions for pirate freighter]]
+local modDescription = [[Lyravega's Freighter Tweaks 1.7 + improvement of default enabled functions]]
 local gameVersion = "4.65"
 
 --[=============================================================================================================================[
@@ -198,7 +198,10 @@ local hangarSalvageTerminal = function()
 		lyr:createNodeTemplate(),
 		{
 			-- mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"},
-			mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN","MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"},
+			mbinPaths = {
+				"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"
+			},
 			{
 				precedingKeyWords = {"Children"},
 				pasteSection = lyr.nodeTemplate.section
@@ -1009,7 +1012,10 @@ local extendedFreighterBase = function()
 
 	local tweak = {
 		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
+			mbinPaths = {
+				"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
+				"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN"
+			},
 			{
 				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="BaseBuildingArea" />]])},
 				fields = {
