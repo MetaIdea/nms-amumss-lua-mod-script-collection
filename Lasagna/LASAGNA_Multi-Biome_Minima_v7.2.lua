@@ -97,8 +97,8 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v7.11.1.pak",
-["MOD_AUTHOR"]				= "FjordFish - inspired by trevix's Parallel Universe",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v7.2.pak",
+["MOD_AUTHOR"]				= "goosetehmoose - inspired by trevix's Parallel Universe",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
