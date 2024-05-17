@@ -1114,19 +1114,22 @@ for _i,j in pairs(LEGACY_OBJECTS) do
 	if j["Enabled"] then
 	for _k,l in pairs(j["Objects"]) do
 		if l["AddGroup"] == 1 then
-			ADDGROUP = { [[<Property name="Groups">]] }
+			ADDGROUP = {}
 			for _m,n in pairs(l["Groups"]) do
 				table.insert(ADDGROUP, GetGroupData(n[1],n[2]))
 			end
-			table.insert(ADDGROUP, [[</Property>]])
+			-- table.insert(ADDGROUP, [[</Property>]])
 			table.insert(CHANGE_LEOPARDON, 
 					{
 						["SPECIAL_KEY_WORDS"] = {"ID", l["ID"]},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], table.concat(ADDGROUP) },
-						}
+							["PRECEDING_KEY_WORDS"] = {"Groups"},
+						-- ["REPLACE_TYPE"] 		= "RAW",
+							["CREATE_HOS"] 		= "TRUE",
+							["ADD"] 			= table.concat(ADDGROUP)
+						-- ["VALUE_CHANGE_TABLE"] 	= 
+						-- {
+							-- { [[<Property name="Groups" />]], table.concat(ADDGROUP) },
+						-- }
 					})
 		elseif l["AddGroup"] == 2 then
 			table.insert(CHANGE_LEOPARDON, 			
