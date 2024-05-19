@@ -1,5 +1,5 @@
 -- Custom Stats for No Man's Sky - OVERKILL
--- Mod_Version = "0.1.1"
+-- Mod_Version = "0.1.2"
 
 -- You can change the stats you want below
 -- Default stats are indicated as comments next to the variables
@@ -1140,12 +1140,12 @@ BaseStatChanges =
 
 
 -- File Settings --
-FileName    = "CustomStats_0.1.1_OVERKILL.pak"
+FileName    = "CustomStats_0.1.2_OVERKILL.pak"
 ModAuthor   = "Elsia"
 LuaAuthor   = "Elsia"
 ModMaintenance = "Probably Elsia"
 Description = "Change base stats for freighters, ships and multitools, too much."
-NMS_Version = "3.99"
+NMS_Version = "4.65"
 
 
 -- File Source --

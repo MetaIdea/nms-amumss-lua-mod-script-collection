@@ -1,11 +1,10 @@
--- Custom Stats for No Man's Sky - MAX
--- Mod_Version = "0.1.1"
+-- Custom Stats for No Man's Sky - Ship - DEFAULT
+-- Mod_Version = "0.1.2"
 
 -- You can change the stats you want below
 -- Default stats are indicated as comments next to the variables
 -- HD means HyperDrive
 -- Dmg means Damage
--- MT has been added in front of multitools variables to avoid conflicts with ships
 
 
 -------------------------------
@@ -17,183 +16,183 @@
 AlienS_Ship_Max = "1" -- "1"
 AlienS_Ship_Min = "1" -- "1"
 AlienS_Dmg_Max = "50" -- "50"
-AlienS_Dmg_Min = "50" -- "35"
+AlienS_Dmg_Min = "35" -- "35"
 AlienS_HD_Max = "65" -- "65"
-AlienS_HD_Min = "65" -- "50"
+AlienS_HD_Min = "50" -- "50"
 AlienS_Shield_Max = "25" -- "25"
-AlienS_Shield_Min = "25" -- "10"
+AlienS_Shield_Min = "10" -- "10"
 
 --- DROPSHIP (HAULER) ---
 
 DropshipC_Dmg_Max = "0" -- "0"
 DropshipC_Dmg_Min = "0" -- "0"
 DropshipC_HD_Max = "5" -- "5"
-DropshipC_HD_Min = "5" -- "0"
+DropshipC_HD_Min = "0" -- "0"
 DropshipC_Shield_Max = "20" -- "20"
-DropshipC_Shield_Min = "20" -- "12"
+DropshipC_Shield_Min = "12" -- "12"
 
 DropshipB_Dmg_Max = "5" -- "5"
-DropshipB_Dmg_Min = "5" -- "0"
+DropshipB_Dmg_Min = "0" -- "0"
 DropshipB_HD_Max = "10" -- "10"
-DropshipB_HD_Min = "10" -- "5"
+DropshipB_HD_Min = "5" -- "5"
 DropshipB_Shield_Max = "35" -- "35"
-DropshipB_Shield_Min = "35" -- "25"
+DropshipB_Shield_Min = "25" -- "25"
 
 DropshipA_Dmg_Max = "10" -- "10"
-DropshipA_Dmg_Min = "10" -- "5"
+DropshipA_Dmg_Min = "5" -- "5"
 DropshipA_HD_Max = "25" -- "25"
-DropshipA_HD_Min = "25" -- "15"
+DropshipA_HD_Min = "15" -- "15"
 DropshipA_Shield_Max = "50" -- "50"
-DropshipA_Shield_Min = "50" -- "40"
+DropshipA_Shield_Min = "40" -- "40"
 
 DropshipS_Dmg_Max = "20" -- "20"
-DropshipS_Dmg_Min = "20" -- "10"
+DropshipS_Dmg_Min = "10" -- "10"
 DropshipS_HD_Max = "35" -- "35"
-DropshipS_HD_Min = "35" -- "30"
+DropshipS_HD_Min = "30" -- "30"
 DropshipS_Shield_Max = "85" -- "85"
-DropshipS_Shield_Min = "85" -- "65"
+DropshipS_Shield_Min = "65" -- "65"
 
 --- FIGHTER ---
 
 FighterC_Dmg_Max = "10" -- "10"
-FighterC_Dmg_Min = "10" -- "5"
+FighterC_Dmg_Min = "5" -- "5"
 FighterC_HD_Max = "0" -- "0"
 FighterC_HD_Min = "0" -- "0"
 FighterC_Shield_Max = "0" -- "0"
 FighterC_Shield_Min = "0" -- "0"
 
 FighterB_Dmg_Max = "30" -- "30"
-FighterB_Dmg_Min = "30" -- "15"
+FighterB_Dmg_Min = "15" -- "15"
 FighterB_HD_Max = "0" -- "0"
 FighterB_HD_Min = "0" -- "0"
 FighterB_Shield_Max = "10" -- "10"
-FighterB_Shield_Min = "10" -- "5"
+FighterB_Shield_Min = "5" -- "5"
 
 FighterA_Dmg_Max = "50" -- "50"
-FighterA_Dmg_Min = "50" -- "35"
+FighterA_Dmg_Min = "35" -- "35"
 FighterA_HD_Max = "0" -- "0"
 FighterA_HD_Min = "0" -- "0"
 FighterA_Shield_Max = "20" -- "20"
-FighterA_Shield_Min = "20" -- "15"
+FighterA_Shield_Min = "15" -- "15"
 
 FighterS_Dmg_Max = "60" -- "60"
-FighterS_Dmg_Min = "60" -- "55"
+FighterS_Dmg_Min = "55" -- "55"
 FighterS_HD_Max = "0" -- "0"
 FighterS_HD_Min = "0" -- "0"
 FighterS_Shield_Max = "25" -- "25"
-FighterS_Shield_Min = "25" -- "15"
+FighterS_Shield_Min = "15" -- "15"
 
 --- FREIGHTER (CARGO) ---
 
 FreighterC_Fleet_Max = "10" -- "10"
-FreighterC_Fleet_Min = "10" -- "1"
+FreighterC_Fleet_Min = "1" -- "1"
 FreighterC_HD_Max = "15" -- "15"
-FreighterC_HD_Min = "15" -- "7"
+FreighterC_HD_Min = "7" -- "7"
 
 FreighterB_Fleet_Max = "20" -- "20"
 FreighterB_Fleet_Min = "10" -- "10"
 FreighterB_HD_Max = "19" -- "19"
-FreighterB_HD_Min = "19" -- "10"
+FreighterB_HD_Min = "10" -- "10"
 
 FreighterA_Fleet_Max = "40" -- "40"
-FreighterA_Fleet_Min = "40" -- "20"
+FreighterA_Fleet_Min = "20" -- "20"
 FreighterA_HD_Max = "60" -- "60"
-FreighterA_HD_Min = "60" -- "40"
+FreighterA_HD_Min = "40" -- "40"
 
 FreighterS_Fleet_Max = "60" -- "60"
-FreighterS_Fleet_Min = "60" -- "40"
+FreighterS_Fleet_Min = "40" -- "40"
 FreighterS_HD_Max = "80" -- "80"
-FreighterS_HD_Min = "80" -- "60"
+FreighterS_HD_Min = "60" -- "60"
 
 --- ROYAL (EXOTIC) ---
 
 RoyalC_Dmg_Max = "50" -- "50"
-RoyalC_Dmg_Min = "50" -- "35"
+RoyalC_Dmg_Min = "35" -- "35"
 RoyalC_HD_Max = "65" -- "65"
-RoyalC_HD_Min = "65" -- "50"
+RoyalC_HD_Min = "50" -- "50"
 RoyalC_Shield_Max = "60" -- "60"
-RoyalC_Shield_Min = "60" -- "55"
+RoyalC_Shield_Min = "55" -- "55"
 
 RoyalB_Dmg_Max = "50" -- "50"
-RoyalB_Dmg_Min = "50" -- "35"
+RoyalB_Dmg_Min = "35" -- "35"
 RoyalB_HD_Max = "65" -- "65"
-RoyalB_HD_Min = "65" -- "50"
+RoyalB_HD_Min = "50" -- "50"
 RoyalB_Shield_Max = "60" -- "60"
-RoyalB_Shield_Min = "60" -- "55"
+RoyalB_Shield_Min = "55" -- "55"
 
 RoyalA_Dmg_Max = "50" -- "50"
-RoyalA_Dmg_Min = "50" -- "35"
+RoyalA_Dmg_Min = "35" -- "35"
 RoyalA_HD_Max = "65" -- "65"
-RoyalA_HD_Min = "65" -- "50"
+RoyalA_HD_Min = "50" -- "50"
 RoyalA_Shield_Max = "60" -- "60"
-RoyalA_Shield_Min = "60" -- "55"
+RoyalA_Shield_Min = "55" -- "55"
 
 RoyalS_Dmg_Max = "50" -- "50"
-RoyalS_Dmg_Min = "50" -- "35"
+RoyalS_Dmg_Min = "35" -- "35"
 RoyalS_HD_Max = "65" -- "65"
-RoyalS_HD_Min = "65" -- "50"
+RoyalS_HD_Min = "50" -- "50"
 RoyalS_Shield_Max = "60" -- "60"
-RoyalS_Shield_Min = "60" -- "55"
+RoyalS_Shield_Min = "55" -- "55"
 
 --- SAIL (SOLAR) ---
 
 SailC_Dmg_Max = "10" -- "10"
-SailC_Dmg_Min = "10" -- "5"
+SailC_Dmg_Min = "5" -- "5"
 SailC_HD_Max = "10" -- "10"
-SailC_HD_Min = "10" -- "5"
+SailC_HD_Min = "5" -- "5"
 SailC_Shield_Max = "10" -- "10"
-SailC_Shield_Min = "10" -- "5"
+SailC_Shield_Min = "5" -- "5"
 
 SailB_Dmg_Max = "30" -- "30"
-SailB_Dmg_Min = "30" -- "15"
+SailB_Dmg_Min = "15" -- "15"
 SailB_HD_Max = "20" -- "20"
-SailB_HD_Min = "20" -- "10"
+SailB_HD_Min = "10" -- "10"
 SailB_Shield_Max = "20" -- "20"
-SailB_Shield_Min = "20" -- "5"
+SailB_Shield_Min = "5" -- "5"
 
 SailA_Dmg_Max = "40" -- "40"
-SailA_Dmg_Min = "40" -- "30"
+SailA_Dmg_Min = "30" -- "30"
 SailA_HD_Max = "30" -- "30"
-SailA_HD_Min = "30" -- "20"
+SailA_HD_Min = "20" -- "20"
 SailA_Shield_Max = "25" -- "25"
-SailA_Shield_Min = "25" -- "15"
+SailA_Shield_Min = "15" -- "15"
 
 SailS_Dmg_Max = "50" -- "50"
-SailS_Dmg_Min = "50" -- "40"
+SailS_Dmg_Min = "40" -- "40"
 SailS_HD_Max = "35" -- "35"
-SailS_HD_Min = "35" -- "25"
+SailS_HD_Min = "25" -- "25"
 SailS_Shield_Max = "35" -- "35"
-SailS_Shield_Min = "35" -- "15"
+SailS_Shield_Min = "15" -- "15"
 
 --- SCIENTIFIC (EXPLORER) ---
 
 ScientificC_Dmg_Max = "0" -- "0"
 ScientificC_Dmg_Min = "0" -- "0"
 ScientificC_HD_Max = "15" -- "15"
-ScientificC_HD_Min = "15" -- "7"
+ScientificC_HD_Min = "7" -- "7"
 ScientificC_Shield_Max = "0" -- "0"
 ScientificC_Shield_Min = "0" -- "0"
 
 ScientificB_Dmg_Max = "0" -- "0"
 ScientificB_Dmg_Min = "0" -- "0"
 ScientificB_HD_Max = "30" -- "30"
-ScientificB_HD_Min = "30" -- "20"
+ScientificB_HD_Min = "20" -- "20"
 ScientificB_Shield_Max = "8" -- "8"
-ScientificB_Shield_Min = "8" -- "0"
+ScientificB_Shield_Min = "0" -- "0"
 
 ScientificA_Dmg_Max = "0" -- "0"
 ScientificA_Dmg_Min = "0" -- "0"
 ScientificA_HD_Max = "45" -- "45"
-ScientificA_HD_Min = "45" -- "35"
+ScientificA_HD_Min = "35" -- "35"
 ScientificA_Shield_Max = "15" -- "15"
-ScientificA_Shield_Min = "15" -- "10"
+ScientificA_Shield_Min = "10" -- "10"
 
 ScientificS_Dmg_Max = "0" -- "0"
 ScientificS_Dmg_Min = "0" -- "0"
 ScientificS_HD_Max = "80" -- "80"
-ScientificS_HD_Min = "80" -- "60"
+ScientificS_HD_Min = "60" -- "60"
 ScientificS_Shield_Max = "25" -- "25"
-ScientificS_Shield_Min = "25" -- "20"
+ScientificS_Shield_Min = "20" -- "20"
 
 --- SHUTTLE ---
 
@@ -205,179 +204,25 @@ ShuttleC_Shield_Max = "0" -- "0"
 ShuttleC_Shield_Min = "0" -- "0"
 
 ShuttleB_Dmg_Max = "5" -- "5"
-ShuttleB_Dmg_Min = "5" -- "0"
+ShuttleB_Dmg_Min = "0" -- "0"
 ShuttleB_HD_Max = "5" -- "5"
-ShuttleB_HD_Min = "5" -- "0"
+ShuttleB_HD_Min = "0" -- "0"
 ShuttleB_Shield_Max = "5" -- "5"
-ShuttleB_Shield_Min = "5" -- "0"
+ShuttleB_Shield_Min = "0" -- "0"
 
 ShuttleA_Dmg_Max = "10" -- "10"
-ShuttleA_Dmg_Min = "10" -- "5"
+ShuttleA_Dmg_Min = "5" -- "5"
 ShuttleA_HD_Max = "10" -- "10"
-ShuttleA_HD_Min = "10" -- "5"
+ShuttleA_HD_Min = "5" -- "5"
 ShuttleA_Shield_Max = "10" -- "10"
-ShuttleA_Shield_Min = "10" -- "5"
+ShuttleA_Shield_Min = "5" -- "5"
 
 ShuttleS_Dmg_Max = "20" -- "20"
-ShuttleS_Dmg_Min = "20" -- "15"
+ShuttleS_Dmg_Min = "15" -- "15"
 ShuttleS_HD_Max = "20" -- "20"
-ShuttleS_HD_Min = "20" -- "15"
+ShuttleS_HD_Min = "15" -- "15"
 ShuttleS_Shield_Max = "20" -- "20"
-ShuttleS_Shield_Min = "20" -- "15"
-
----------------------------------
------- WEAPONBASESTATSDATA ------
----------------------------------
-
---- ALIEN ---
-
-MT_AlienC_Dmg_Max = "15" -- "15"
-MT_AlienC_Dmg_Min = "15" -- "10"
-MT_AlienC_Mining_Max = "5" -- "5"
-MT_AlienC_Mining_Min = "5" -- "0"
-MT_AlienC_Scan_Max = "25" -- "25"
-MT_AlienC_Scan_Min = "25" -- "20"
-
-MT_AlienB_Dmg_Max = "20" -- "20"
-MT_AlienB_Dmg_Min = "20" -- "15"
-MT_AlienB_Mining_Max = "10" -- "10"
-MT_AlienB_Mining_Min = "10" -- "5"
-MT_AlienB_Scan_Max = "35" -- "35"
-MT_AlienB_Scan_Min = "35" -- "30"
-
-MT_AlienA_Dmg_Max = "25" -- "25"
-MT_AlienA_Dmg_Min = "25" -- "20"
-MT_AlienA_Mining_Max = "15" -- "15"
-MT_AlienA_Mining_Min = "15" -- "10"
-MT_AlienA_Scan_Max = "45" -- "45"
-MT_AlienA_Scan_Min = "45" -- "40"
-
-MT_AlienS_Dmg_Max = "35" -- "35"
-MT_AlienS_Dmg_Min = "35" -- "25"
-MT_AlienS_Mining_Max = "20" -- "20"
-MT_AlienS_Mining_Min = "20" -- "15"
-MT_AlienS_Scan_Max = "60" -- "60"
-MT_AlienS_Scan_Min = "60" -- "50"
-
---- PISTOL ---
-
-MT_PistolC_Dmg_Max = "0" -- "0"
-MT_PistolC_Dmg_Min = "0" -- "0"
-MT_PistolC_Mining_Max = "10" -- "10"
-MT_PistolC_Mining_Min = "10" -- "5"
-MT_PistolC_Scan_Max = "20" -- "20"
-MT_PistolC_Scan_Min = "20" -- "10"
-
-MT_PistolB_Dmg_Max = "0" -- "0"
-MT_PistolB_Dmg_Min = "0" -- "0"
-MT_PistolB_Mining_Max = "15" -- "15"
-MT_PistolB_Mining_Min = "15" -- "10"
-MT_PistolB_Scan_Max = "30" -- "30"
-MT_PistolB_Scan_Min = "30" -- "25"
-
-MT_PistolA_Dmg_Max = "0" -- "0"
-MT_PistolA_Dmg_Min = "0" -- "0"
-MT_PistolA_Mining_Max = "20" -- "20"
-MT_PistolA_Mining_Min = "20" -- "15"
-MT_PistolA_Scan_Max = "40" -- "40"
-MT_PistolA_Scan_Min = "40" -- "35"
-
-MT_PistolS_Dmg_Max = "0" -- "0"
-MT_PistolS_Dmg_Min = "0" -- "0"
-MT_PistolS_Mining_Max = "35" -- "35"
-MT_PistolS_Mining_Min = "35" -- "20"
-MT_PistolS_Scan_Max = "50" -- "50"
-MT_PistolS_Scan_Min = "50" -- "45"
-
---- PRISTINE ---
-
-MT_PristineC_Dmg_Max = "5" -- "5"
-MT_PristineC_Dmg_Min = "5" -- "0"
-MT_PristineC_Mining_Max = "10" -- "10"
-MT_PristineC_Mining_Min = "10" -- "5"
-MT_PristineC_Scan_Max = "50" -- "50"
-MT_PristineC_Scan_Min = "50" -- "40"
-
-MT_PristineB_Dmg_Max = "10" -- "10"
-MT_PristineB_Dmg_Min = "10" -- "5"
-MT_PristineB_Mining_Max = "20" -- "20"
-MT_PristineB_Mining_Min = "20" -- "10"
-MT_PristineB_Scan_Max = "70" -- "70"
-MT_PristineB_Scan_Min = "70" -- "60"
-
-MT_PristineA_Dmg_Max = "15" -- "15"
-MT_PristineA_Dmg_Min = "15" -- "10"
-MT_PristineA_Mining_Max = "25" -- "25"
-MT_PristineA_Mining_Min = "25" -- "20"
-MT_PristineA_Scan_Max = "90" -- "90"
-MT_PristineA_Scan_Min = "90" -- "80"
-
-MT_PristineS_Dmg_Max = "25" -- "25"
-MT_PristineS_Dmg_Min = "25" -- "15"
-MT_PristineS_Mining_Max = "30" -- "30"
-MT_PristineS_Mining_Min = "30" -- "25"
-MT_PristineS_Scan_Max = "100" -- "100"
-MT_PristineS_Scan_Min = "100" -- "100"
-
---- RIFLE ---
-
-MT_RifleC_Dmg_Max = "5" -- "5"
-MT_RifleC_Dmg_Min = "5" -- "0"
-MT_RifleC_Mining_Max = "0" -- "0"
-MT_RifleC_Mining_Min = "0" -- "0"
-MT_RifleC_Scan_Max = "5" -- "5"
-MT_RifleC_Scan_Min = "5" -- "0"
-
-MT_RifleB_Dmg_Max = "10" -- "10"
-MT_RifleB_Dmg_Min = "10" -- "5"
-MT_RifleB_Mining_Max = "0" -- "0"
-MT_RifleB_Mining_Min = "0" -- "0"
-MT_RifleB_Scan_Max = "10" -- "10"
-MT_RifleB_Scan_Min = "10" -- "5"
-
-MT_RifleA_Dmg_Max = "15" -- "15"
-MT_RifleA_Dmg_Min = "15" -- "10"
-MT_RifleA_Mining_Max = "0" -- "0"
-MT_RifleA_Mining_Min = "0" -- "0"
-MT_RifleA_Scan_Max = "15" -- "15"
-MT_RifleA_Scan_Min = "15" -- "10"
-
-MT_RifleS_Dmg_Max = "20" -- "20"
-MT_RifleS_Dmg_Min = "20" -- "15"
-MT_RifleS_Mining_Max = "0" -- "0"
-MT_RifleS_Mining_Min = "0" -- "0"
-MT_RifleS_Scan_Max = "20" -- "20"
-MT_RifleS_Scan_Min = "20" -- "15"
-
---- ROYAL ---
-
-MT_RoyalC_Dmg_Max = "5" -- "5"
-MT_RoyalC_Dmg_Min = "5" -- "0"
-MT_RoyalC_Mining_Max = "10" -- "10"
-MT_RoyalC_Mining_Min = "10" -- "5"
-MT_RoyalC_Scan_Max = "50" -- "50"
-MT_RoyalC_Scan_Min = "50" -- "40"
-
-MT_RoyalB_Dmg_Max = "10" -- "10"
-MT_RoyalB_Dmg_Min = "10" -- "5"
-MT_RoyalB_Mining_Max = "20" -- "20"
-MT_RoyalB_Mining_Min = "20" -- "10"
-MT_RoyalB_Scan_Max = "70" -- "70"
-MT_RoyalB_Scan_Min = "70" -- "60"
-
-MT_RoyalA_Dmg_Max = "15" -- "15"
-MT_RoyalA_Dmg_Min = "15" -- "10"
-MT_RoyalA_Mining_Max = "25" -- "25"
-MT_RoyalA_Mining_Min = "25" -- "20"
-MT_RoyalA_Scan_Max = "90" -- "90"
-MT_RoyalA_Scan_Min = "90" -- "80"
-
-MT_RoyalS_Dmg_Max = "25" -- "25"
-MT_RoyalS_Dmg_Min = "25" -- "15"
-MT_RoyalS_Mining_Max = "30" -- "30"
-MT_RoyalS_Mining_Min = "30" -- "25"
-MT_RoyalS_Scan_Max = "100" -- "100"
-MT_RoyalS_Scan_Min = "100" -- "100"
+ShuttleS_Shield_Min = "15" -- "15"
 
 
 -- Don't change code past this line unless you know what you are doing. --
@@ -826,326 +671,16 @@ BaseStatChanges =
       },
     }
   },
-  {
-  "WeaponBaseStatsData",
-    {
-      {
-      "Alien",
-        {
-          {
-          "C",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_AlienC_Dmg_Max, MT_AlienC_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_AlienC_Mining_Max, MT_AlienC_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_AlienC_Scan_Max, MT_AlienC_Scan_Min, }
-              },
-            }
-          },
-          {
-          "B",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_AlienB_Dmg_Max, MT_AlienB_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_AlienB_Mining_Max, MT_AlienB_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_AlienB_Scan_Max, MT_AlienB_Scan_Min, }
-              },
-            }
-          },
-          {
-          "A",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_AlienA_Dmg_Max, MT_AlienA_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_AlienA_Mining_Max, MT_AlienA_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_AlienA_Scan_Max, MT_AlienA_Scan_Min, }
-              },
-            }
-          },
-          {
-          "S",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_AlienS_Dmg_Max, MT_AlienS_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_AlienS_Mining_Max, MT_AlienS_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_AlienS_Scan_Max, MT_AlienS_Scan_Min, }
-              },
-            }
-          },
-        }
-      },
-      {
-      "Pistol",
-        {
-          {
-          "C",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PistolC_Dmg_Max, MT_PistolC_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PistolC_Mining_Max, MT_PistolC_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PistolC_Scan_Max, MT_PistolC_Scan_Min, }
-              },
-            }
-          },
-          {
-          "B",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PistolB_Dmg_Max, MT_PistolB_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PistolB_Mining_Max, MT_PistolB_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PistolB_Scan_Max, MT_PistolB_Scan_Min, }
-              },
-            }
-          },
-          {
-          "A",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PistolA_Dmg_Max, MT_PistolA_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PistolA_Mining_Max, MT_PistolA_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PistolA_Scan_Max, MT_PistolA_Scan_Min, }
-              },
-            }
-          },
-          {
-          "S",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PistolS_Dmg_Max, MT_PistolS_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PistolS_Mining_Max, MT_PistolS_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PistolS_Scan_Max, MT_PistolS_Scan_Min, }
-              },
-            }
-          },
-        }
-      },
-      {
-      "Pristine",
-        {
-          {
-          "C",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PristineC_Dmg_Max, MT_PristineC_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PristineC_Mining_Max, MT_PristineC_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PristineC_Scan_Max, MT_PristineC_Scan_Min, }
-              },
-            }
-          },
-          {
-          "B",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PristineB_Dmg_Max, MT_PristineB_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PristineB_Mining_Max, MT_PristineB_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PristineB_Scan_Max, MT_PristineB_Scan_Min, }
-              },
-            }
-          },
-          {
-          "A",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PristineA_Dmg_Max, MT_PristineA_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PristineA_Mining_Max, MT_PristineA_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PristineA_Scan_Max, MT_PristineA_Scan_Min, }
-              },
-            }
-          },
-          {
-          "S",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_PristineS_Dmg_Max, MT_PristineS_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_PristineS_Mining_Max, MT_PristineS_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_PristineS_Scan_Max, MT_PristineS_Scan_Min, }
-              },
-            }
-          },
-        }
-      },
-      {
-      "Rifle",
-        {
-          {
-          "C",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RifleC_Dmg_Max, MT_RifleC_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RifleC_Mining_Max, MT_RifleC_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RifleC_Scan_Max, MT_RifleC_Scan_Min, }
-              },
-            }
-          },
-          {
-          "B",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RifleB_Dmg_Max, MT_RifleB_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RifleB_Mining_Max, MT_RifleB_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RifleB_Scan_Max, MT_RifleB_Scan_Min, }
-              },
-            }
-          },
-          {
-          "A",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RifleA_Dmg_Max, MT_RifleA_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RifleA_Mining_Max, MT_RifleA_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RifleA_Scan_Max, MT_RifleA_Scan_Min, }
-              },
-            }
-          },
-          {
-          "S",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RifleS_Dmg_Max, MT_RifleS_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RifleS_Mining_Max, MT_RifleS_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RifleS_Scan_Max, MT_RifleS_Scan_Min, }
-              },
-            }
-          },
-        }
-      },
-      {
-      "Royal",
-        {
-          {
-          "C",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RoyalC_Dmg_Max, MT_RoyalC_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RoyalC_Mining_Max, MT_RoyalC_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RoyalC_Scan_Max, MT_RoyalC_Scan_Min, }
-              },
-            }
-          },
-          {
-          "B",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RoyalB_Dmg_Max, MT_RoyalB_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RoyalB_Mining_Max, MT_RoyalB_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RoyalB_Scan_Max, MT_RoyalB_Scan_Min, }
-              },
-            }
-          },
-          {
-          "A",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RoyalA_Dmg_Max, MT_RoyalA_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RoyalA_Mining_Max, MT_RoyalA_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RoyalA_Scan_Max, MT_RoyalA_Scan_Min, }
-              },
-            }
-          },
-          {
-          "S",
-            {
-              {"WEAPON_DAMAGE",
-                { MT_RoyalS_Dmg_Max, MT_RoyalS_Dmg_Min, }
-              },
-              {"WEAPON_MINING",
-                { MT_RoyalS_Mining_Max, MT_RoyalS_Mining_Min, }
-              },
-              {"WEAPON_SCAN",
-                { MT_RoyalS_Scan_Max, MT_RoyalS_Scan_Min, }
-              },
-            }
-          },
-        }
-      },
-    }
-  },
 }
 
 
 -- File Settings --
-FileName    = "CustomStats_0.1.1_MAX.pak"
+FileName    = "CustomStats_0.1.2_SHIP_DEFAULT.pak"
 ModAuthor   = "Elsia"
 LuaAuthor   = "Elsia"
 ModMaintenance = "Probably Elsia"
-Description = "Change base stats for freighters, ships & multitools to maximize their potential while respecting their type and class."
-NMS_Version = "3.99"
+Description = "Change base stats for freighters & ships."
+NMS_Version = "4.65"
 
 
 -- File Source --

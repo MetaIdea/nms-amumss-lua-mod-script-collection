@@ -279,7 +279,7 @@ MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BY
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
 -- Exceptions to {"CanScale", "True"}
-NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG", "BUILDLANDINGPAD", "S_LANDINGZONE"}
+NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG"} --, "BUILDLANDINGPAD", "S_LANDINGZONE"
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
 EXTRACTORS_ID_TABLE = {"U_EXTRACTOR_S", "U_GASEXTRACTOR"}
@@ -726,7 +726,7 @@ if ALL_PARTS_ON_FREIGHTER then
             local temp_table_geofreighter =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
-                ["VALUE_MATCH"] = "False",
+                --["VALUE_MATCH"] = "False",
                 ["VALUE_CHANGE_TABLE"] =
                 {
                     {"BuildableOnFreighter", "True"},
@@ -763,7 +763,7 @@ if ALL_PARTS_ON_FREIGHTER then
             local temp_table_s9freighter =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
-                ["VALUE_MATCH"] = "False",
+                -- ["VALUE_MATCH"] = "False",
                 ["VALUE_CHANGE_TABLE"] =
                 {
                     {"BuildableOnFreighter", "True"},
@@ -923,17 +923,17 @@ end
 
 -- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)
 -- Vehicles parts are matched by their "Groups" keyword : if any new one is added by the devs it should trigger this.
-local temp_table_vehiclenotscale =
-{
-    ["SPECIAL_KEY_WORDS"] = {"SubGroupName", "PLANETEXOCRAFT"},
-    ["SECTION_UP"] = 2,
-    ["REPLACE_TYPE"] = "ALL",
-    ["VALUE_CHANGE_TABLE"] =
-    {
-        {"CanScale", "False"},
-    },
-}
-Change_Table_Array[#Change_Table_Array + 1] = temp_table_vehiclenotscale
+-- local temp_table_vehiclenotscale =
+-- {
+    -- ["SPECIAL_KEY_WORDS"] = {"SubGroupName", "PLANETEXOCRAFT"},
+    -- ["SECTION_UP"] = 2,
+    -- ["REPLACE_TYPE"] = "ALL",
+    -- ["VALUE_CHANGE_TABLE"] =
+    -- {
+        -- {"CanScale", "False"},
+    -- },
+-- }
+-- Change_Table_Array[#Change_Table_Array + 1] = temp_table_vehiclenotscale
 
 -- Reverts "CanScale" to "True" for vehicles parts that should be scaleable
 for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do

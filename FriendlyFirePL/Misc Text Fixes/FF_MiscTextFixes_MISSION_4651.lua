@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "MISSION"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "4651"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,8 +14,8 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_MISSIONS_FLEET =       "METADATA\\SIMULATION\\MISSIONS\\FLEETMISSIONTABLE.MBIN"
-FILE_MISSIONS_PIRATE =      "METADATA\\SIMULATION\\MISSIONS\\PIRATEMISSIONTABLE.MBIN"
+FILE_MISSIONS_FLEET =       "METADATA\SIMULATION\MISSIONS\FLEETMISSIONTABLE.MBIN"
+FILE_MISSIONS_PIRATE =      "METADATA\SIMULATION\MISSIONS\PIRATEMISSIONTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -83,6 +83,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = FILE_MISSIONS_PIRATE,
                     ["EXML_CHANGE_TABLE"] = 
                     {
+                        {
+                            ["SKW"] = {"MissionID","PIRATE_STATION",},
+                            ["VCT"] = {{"RepeatLogic","None",},},
+                        },
+
                         {
                             ["SKW"] = {"MissionID","PIRATE_STATION","Stat","PIRATE_SYSTEMS",},
                             ["VCT"] = {{"Level",1,},},
