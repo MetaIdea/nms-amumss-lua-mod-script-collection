@@ -97,7 +97,7 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v7.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_MoreDensity_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose - inspired by trevix's Parallel Universe",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -5297,6 +5297,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL_GHOSTLYNEW.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -5753,6 +5765,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -6035,6 +6143,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -6156,6 +6276,168 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For each tiletype options, add multiple:
 						{
@@ -7115,6 +7397,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -7397,6 +7775,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -7518,6 +7908,168 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For each tiletype options, add multiple:
 						{
@@ -8471,6 +9023,480 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSMOONOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEALIENOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADWEIRDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSLOW_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD_GHOSTLYNEW.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW107.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -8478,6 +9504,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For each tiletype options, add multiple:
 						{
@@ -8765,6 +9887,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For each tiletype options, add multiple:
@@ -8892,6 +10026,168 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY25CITYFLOATINGISLANDS4.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY24CITYFLOATINGISLANDS3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY9STYLIZEDTREENORM3.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY8STYLIZEDTREENORM2.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY7STYLIZEDTREENORM1.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY2GIANTFLOWERSFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITYFLOATINGISLANDS.MBIN"),
+						},
+						--For each tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For each tiletype options, add multiple:
 						{
@@ -11884,6 +13180,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -12166,6 +13558,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -12287,6 +13691,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -12435,6 +13953,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -12717,6 +14331,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -12838,6 +14464,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -13442,6 +15182,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -13718,6 +15554,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -13803,6 +15651,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -14090,6 +16034,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -14211,6 +16167,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -14371,6 +16441,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -14653,6 +16819,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -14774,6 +16952,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -15378,6 +17670,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -15649,6 +18037,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -16295,18 +18695,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW107.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY88.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -16362,180 +18750,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY67.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY88.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY87.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY86.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY85.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY84.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY83.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY82.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY81.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY80.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY79.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY78.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY77.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY76.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY75.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY74.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY73.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY72.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY71.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY70.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY69.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY68.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY67.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY66.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY65.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY64.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY63.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY62.MBIN"),
-						},
-						--For biome tiletype options, add multiple:
-						{
-							["PRECEDING_KEY_WORDS"] = { "Options", },
-							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY61.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -16834,6 +19048,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -17116,6 +19426,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -17237,6 +19559,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -17853,6 +20289,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -18135,6 +20667,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -18256,6 +20800,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -18416,6 +21074,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -18698,6 +21452,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -18819,6 +21585,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -18967,6 +21847,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -19249,6 +22225,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -19370,6 +22358,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -19992,6 +23094,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -20274,6 +23472,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -20395,6 +23605,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -21143,6 +24467,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -21419,6 +24839,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -21605,6 +25037,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -21892,6 +25420,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -22013,6 +25553,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -22623,6 +26277,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -22894,6 +26644,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -23090,6 +26852,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -23372,6 +27230,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -23493,6 +27363,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -23641,6 +27625,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -23923,6 +28003,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -24044,6 +28136,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -24192,6 +28398,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -24474,6 +28776,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -24595,6 +28909,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -24743,6 +29171,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -25025,6 +29549,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -25146,6 +29682,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -26025,6 +30675,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -26307,6 +31053,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -26433,6 +31191,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSMID.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -26457,7 +31329,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMABIOME.EXML",
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMABIOME.EXML",
+						"METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMBBIOME.EXML",
+					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						
@@ -27044,6 +31920,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -27320,6 +32292,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -27506,6 +32490,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -27793,6 +32873,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -27914,6 +33006,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -28530,6 +33736,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -28801,6 +34103,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -29009,6 +34323,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -29291,6 +34701,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -29412,6 +34834,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -29572,6 +35108,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -29854,6 +35486,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -29975,6 +35619,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -30135,6 +35893,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -30417,6 +36271,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -30538,6 +36404,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -31154,6 +37134,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -31430,6 +37506,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -31515,6 +37603,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -31802,6 +37986,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -31923,6 +38119,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -32545,6 +38855,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW107.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY82.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -32648,6 +39054,90 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -32785,6 +39275,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -33072,6 +39658,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -33193,6 +39791,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -33815,6 +40527,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -34097,6 +40905,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -34218,6 +41038,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -34708,6 +41642,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -34990,6 +42020,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -35111,6 +42153,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -35331,6 +42487,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -35613,6 +42865,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -35734,6 +42998,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -35954,6 +43332,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -36236,6 +43710,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -36357,6 +43843,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -36577,6 +44177,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -36859,6 +44555,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -36980,6 +44688,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -37200,6 +45022,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -37482,6 +45400,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -37603,6 +45533,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -37823,6 +45867,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -38105,6 +46245,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -38226,6 +46378,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -38374,6 +46640,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -38656,6 +47018,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -38777,6 +47151,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -39381,6 +47869,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -39652,6 +48236,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -39848,6 +48444,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -40130,6 +48822,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -40251,6 +48955,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -40411,6 +49229,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -40693,6 +49607,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -40814,6 +49740,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -41418,6 +50458,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -41700,6 +50836,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -41821,6 +50969,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -42605,6 +51867,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -42887,6 +52245,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -43008,6 +52378,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -43318,6 +52802,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -43600,6 +53180,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -43721,6 +53313,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -43881,6 +53587,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -44163,6 +53965,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -44284,6 +54098,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -44900,6 +54828,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -45176,6 +55200,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBOBJECTS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -45362,6 +55398,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW106.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -45649,6 +55781,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -45770,6 +55914,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -46374,6 +56632,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -46656,6 +57010,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -46777,6 +57143,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -47081,6 +57561,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -47363,6 +57939,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -47484,6 +58072,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -48088,6 +58790,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -48359,6 +59157,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY54.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -49017,6 +59827,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -49299,6 +60205,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -49420,6 +60338,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY1CITY.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{
@@ -49724,6 +60756,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW105.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW104.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW103.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW102.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW101.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW100.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW99.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW98.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW97.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW96.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW95.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW94.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW93.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW92.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW91.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLYNEW90.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY89.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -50006,6 +61134,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY53.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY52.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY50.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
@@ -50127,6 +61267,120 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Options", },
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY26.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY23ALIENSWAMP2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY22ALIENSWAMP1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY21ALIENFOLIAGE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY20TREESPINE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY19TREESPINE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY18TREESPALM2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY17TREESPALM1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY16TREESNORMAL2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY15TREESNORMAL1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY14TREESMAPLE2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY13TREESMAPLE1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY12TREESBIRCH2.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY11TREESBIRCH1.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10BSTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY10ASTYLIZEDTREEPINE.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY6STYLIZEDTREEDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY5STYLIZEDTREEBIRCHDEAD.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY4STYLIZEDTREEBIRCH.MBIN"),
+						},
+						--For biome tiletype options, add multiple:
+						{
+							["PRECEDING_KEY_WORDS"] = { "Options", },
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = addBiomeOptions("METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES\GHOSTLY3GIANTFLOWERS.MBIN"),
 						},
 						--For biome tiletype options, add multiple:
 						{

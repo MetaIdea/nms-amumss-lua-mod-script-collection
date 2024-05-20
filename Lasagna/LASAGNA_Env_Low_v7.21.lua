@@ -793,7 +793,7 @@ local replaceObjects =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v7.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -8295,7 +8295,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 39, 1.6, 3, 1, 1, 0.5, 5, "TRUE", "TRUE", "FALSE", 0.45, 0.08, 0.02, 2), },
 					}, },
 
-					{ ["MBIN_FILE_SOURCE"] 	=  { "METADATA/SIMULATION/SOLARSYSTEM/CUSTOMBIOMES/UNUSED/GHOSTLYUNUSE3D9.MBIN", },
+
+					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/CUSTOMBIOMES/UNUSED/GHOSTLYUNUSE3D9.MBIN","METADATA/SIMULATION/SOLARSYSTEM/CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY9.MBIN"}, },
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["REPLACE_TYPE"] = "ADDAFTERSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
@@ -8309,6 +8310,35 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/HOVERINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0.15, 0.02, 0.02, 3), },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/ROTATINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0.15, 0.01, 0.01, 3), },
 					}, },
+
+					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY9.MBIN", "METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN"}, },
+					["EXML_CHANGE_TABLE"] 	= {
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["REPLACE_TYPE"] = "ADDAFTERSECTION", },
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/ROTATINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0, 0.01, 0.01, 3), },
+					}, },
+					
+					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD37.MBIN", "METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN"}, },
+					["EXML_CHANGE_TABLE"] 	= {
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["REPLACE_TYPE"] = "ADDAFTERSECTION", },
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/ROTATINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0, 0.01, 0.01, 3), },
+					}, },
+					
+					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD38.MBIN", "METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN"}, },
+					["EXML_CHANGE_TABLE"] 	= {
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["REPLACE_TYPE"] = "ADDAFTERSECTION", },
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/ROTATINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0, 0.01, 0.01, 3), },
+					}, },
+					
+					{ ["MBIN_FILE_SOURCE"] 	=  { "METADATA\SIMULATION\SOLARSYSTEM\CUSTOMBIOMES/DEAD/GHOSTLYDEAD39.MBIN", },
+					["EXML_CHANGE_TABLE"] 	= {
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["REPLACE_TYPE"] = "ADDAFTERSECTION", },
+						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddRockProp("MODELS/PLANETS/BIOMES/WEIRD/HEXAGON/ROTATINGDETAIL.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 50, 0.5, 2, 1, 1, 0, 0, "TRUE", "TRUE", "FALSE", 0, 0.01, 0.01, 3), },
+					}, },
+			
 			
 				{
 				--Modify placement/regions on a planet, i.e. high density areas & expansive open areas
@@ -8484,6 +8514,44 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 					},
 				},
+				
+				
+
+				--REMOVE grass, doubles up = crash.. maybe
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSINGGLOW.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSING.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+
+					},
+				},
+				
+				
 			
 			}
 		},

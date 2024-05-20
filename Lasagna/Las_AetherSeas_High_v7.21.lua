@@ -634,7 +634,7 @@ local replaceObjects =
 NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "Las_AetherSeas_High_v7.2.pak",
+["MOD_FILENAME"] 			= "Las_AetherSeas_High_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

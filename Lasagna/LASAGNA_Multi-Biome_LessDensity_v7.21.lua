@@ -97,7 +97,7 @@ local addEachBiomeHeader =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_LessDensity_v7.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_LessDensity_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose - inspired by trevix's Parallel Universe",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -30853,9 +30853,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				
+
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMABIOME.EXML",
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMABIOME.EXML",
+						"METADATA/SIMULATION/SOLARSYSTEM//BIOMES/LUSH/LUSHROOMBBIOME.EXML",
+					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						

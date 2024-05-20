@@ -2027,7 +2027,7 @@ AddSmallTree3Collisions =
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v7.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

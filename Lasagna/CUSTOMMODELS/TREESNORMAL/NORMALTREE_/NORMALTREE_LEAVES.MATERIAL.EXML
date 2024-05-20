@@ -15,13 +15,28 @@
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
+      <Property name="MaterialFlag" value="_F11_ALPHACUTOUT" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F23_TRANSLUCENT" />
+      <Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F36_DOUBLESIDED" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F40_SUBSURFACE_MASK" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F56_MATCH_GROUND" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F58_USE_CENTRAL_NORMAL" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F61_CLAMP_AMBIENT" />
     </Property>
   </Property>
   <Property name="Uniforms">

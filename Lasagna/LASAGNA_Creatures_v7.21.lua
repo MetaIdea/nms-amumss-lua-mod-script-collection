@@ -28,7 +28,7 @@ local SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**Thi
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE", --remove notices that a variable was not used
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v7.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v7.21.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

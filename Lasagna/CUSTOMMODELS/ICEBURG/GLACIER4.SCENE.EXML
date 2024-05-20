@@ -206,7 +206,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\ICEBURG\GLACIER4\ICE.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\ICEBURG\GLACIER1HUGE\ICE.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />

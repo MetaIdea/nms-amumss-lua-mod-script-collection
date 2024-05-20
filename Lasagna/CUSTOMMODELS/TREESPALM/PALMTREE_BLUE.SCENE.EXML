@@ -330,7 +330,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\TREESPALM\PALMTREE_BLUE\PALMTREE_TRUNK.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\TREESPALM\PALMTREE_NORMAL\PALMTREE_TRUNK.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />

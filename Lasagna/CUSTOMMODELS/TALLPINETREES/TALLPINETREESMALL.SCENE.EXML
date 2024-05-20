@@ -206,7 +206,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\TALLPINETREES\TALLPINETREESMALL\M_LEAVES.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\TALLPINETREES\TALLPINETREEBIG\M_LEAVES.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -330,7 +330,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\TALLPINETREES\TALLPINETREESMALL\M_TRUNK.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\TALLPINETREES\TALLPINETREEBIG\M_TRUNK.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />

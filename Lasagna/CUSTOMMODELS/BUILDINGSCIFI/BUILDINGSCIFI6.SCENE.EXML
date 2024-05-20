@@ -142,7 +142,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6\WHITELIGHT.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1\WHITELIGHT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -266,7 +266,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6\METAL2.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI1\METAL2.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />

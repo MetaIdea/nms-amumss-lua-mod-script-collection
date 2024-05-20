@@ -142,7 +142,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\TREESBIRCH\BIRCHTREE_GREEN\BIRCHTREE_LEAVES.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\TREESBIRCH\BIRCHTREE_NORMAL\BIRCHTREE_LEAVES.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
@@ -266,7 +266,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="CUSTOMMODELS\TREESBIRCH\BIRCHTREE_GREEN\BIRCHTREE_BARK.MATERIAL.MBIN" />
+          <Property name="Value" value="CUSTOMMODELS\TREESBIRCH\BIRCHTREE_NORMAL\BIRCHTREE_BARK.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
