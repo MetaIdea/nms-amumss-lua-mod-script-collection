@@ -90,9 +90,9 @@ InputMultiplier = {Multiplier,
     3 - 2x multiplier no EMAnywhere    WARNING: Bases built with these changes cannot be uploaded for multiplayer.
     4 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
     5 - 5x multiplier no EMAnywhere    WARNING: Bases built with these changes cannot be uploaded for multiplayer.
-    6 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    6 - 5x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
     7 - 10x multiplier no EMAnywhere   WARNING: Bases built with these changes cannot be uploaded for multiplayer.
-    8 - 2x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
+    8 - 10x multiplier with EMAnywhere  WARNING: Bases built with these changes cannot be uploaded for multiplayer.
     Default = 1 | Current = >> ]] .. (Multiplier) .. [[ <<
 ]]}
 
