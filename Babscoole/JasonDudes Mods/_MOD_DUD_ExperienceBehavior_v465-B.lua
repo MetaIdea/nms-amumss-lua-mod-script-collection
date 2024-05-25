@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v465-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v465-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.63",
+["NMS_VERSION"]             = "4.65",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -168,6 +168,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MinDist", "700"},
                                 {"MaxDist", "900"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"MiningFlybySpawns"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinRange", "1000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"MiningFlybySpawns", "Count"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"MiningFlybySpawns", "Array"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Time", "300"},
                             }
                         },
                     },

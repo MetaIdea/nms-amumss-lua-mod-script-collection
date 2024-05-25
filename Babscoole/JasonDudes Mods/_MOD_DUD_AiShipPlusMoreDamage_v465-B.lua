@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v465-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v465-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.64",
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxDifficultySpaceCombatTurnExtra",  "0"},
                                 {"MaxDifficultySpaceCombatSpeedExtra", "0"},
                                 {"TurretOriginOffset",                 "15"},
-                                {"AsteroidMiningMinDistFromPlayer",    "1000"},
+                                {"AsteroidMiningMinDistFromPlayer",    "500"},
                             },
                         },
                         {
@@ -52,12 +52,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"AsteroidMiningPositioningTravelData", "GcSpaceshipTravelData.xml"},
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"AsteroidMiningPositioningTravelData", "GcSpaceshipTravelData.xml"},
+                                {"AsteroidMiningTravelData",            "GcSpaceshipTravelData.xml"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",   "80"},
-                                {"BoostSpeed", "150"},
-                                {"Force",      "20"},
+                                {"Force", "20"},
                             }
                         },
                         {

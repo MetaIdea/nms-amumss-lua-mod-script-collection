@@ -481,7 +481,7 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v465-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v465-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.65",
@@ -1885,7 +1885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FlightFogBlend",     "2500"},
                                 {"HeavyAirHeightMin",  "1450"},
                                 {"HeavyAirHeightMax",  "1500"},
-                                {"HorizonBlendHeight", "1500"},
+                                {"HorizonBlendHeight", "1000"},
                                 {"HorizonBlendLength", "1000"},
                             }
                         },
@@ -2003,10 +2003,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FogStrength",              "0.04"},
                                 {"FogMax",                   "0.95"},
                                 {"FogColourMax",             "1"},
-                                {"HeightFogStrength",        "0.3"},
-                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
-                                {"FogHeight",                "192"},
+                                {"FogHeight",                "128"},
                                 {"DepthOfFieldDistance",     "10"},
                             }
                         },
@@ -2017,10 +2017,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FogStrength",              "0.1"},
                                 {"FogMax",                   "0.95"},
                                 {"FogColourStrength",        "10"},
-                                {"HeightFogStrength",        "0.3"},
-                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
-                                {"FogHeight",                "192"},
+                                {"FogHeight",                "128"},
                                 {"DepthOfFieldDistance",     "10"},
                             }
                         },
@@ -2030,10 +2030,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"FogStrength",              "0.2"},
                                 {"FogColourStrength",        "10"},
-                                {"HeightFogStrength",        "0.3"},
-                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
-                                {"FogHeight",                "192"},
+                                {"FogHeight",                "128"},
                                 {"DepthOfFieldDistance",     "10"},
                                 {"DepthOfFieldFade",         "1000"},
                             }
@@ -2043,10 +2043,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax",                   "0.95"},
-                                {"HeightFogStrength",        "0.3"},
-                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
                                 {"HeightFogMax",             "0.98"},
-                                {"FogHeight",                "192"},
+                                {"FogHeight",                "128"},
                                 {"DepthOfFieldDistance",     "10"},
                             }
                         },
@@ -2056,7 +2056,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"SunStrength",          "0.4"},
                                 {"SunSize",              "0.002"},
-                                {"SpaceFogPlanetMax",    "0.7"},
+                                {"SpaceFogPlanetMax",    "0.8"},
                                 {"NebulaCloudStrength1", "0.55"},
                             }
                         },
@@ -2065,8 +2065,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength",              "0.8"},
-                                {"SpaceFogMax",              "0.9"},
-                                {"SpaceFogPlanetMax",        "0.7"},
+                                {"SpaceFogMax",              "0.8"},
+                                {"SpaceFogPlanetMax",        "0.9"},
                                 {"NebulaSeed",               "200"},
                                 {"NebulaDistortionStrength", "0.25"},
                             }
