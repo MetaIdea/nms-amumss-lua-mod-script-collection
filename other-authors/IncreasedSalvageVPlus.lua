@@ -20,8 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"List","List","GcRewardTableItem.xml"},
-							["SPECIAL_KEY_WORDS"] = {"ID","BP_SALVAGE"},
+							["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE","ID","BP_SALVAGE"},
 							["MATH_OPERATION"] 		= "*",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
