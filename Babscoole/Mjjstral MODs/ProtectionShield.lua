@@ -33,22 +33,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -72,22 +68,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -111,22 +103,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -150,22 +138,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -189,22 +173,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -228,22 +208,18 @@ SHIELD_COLLISION =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_THICKNESS .. [[" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="]] .. SHIELD_COLLISION_RADIUS*2 .. [[" />
             </Property>
           </Property>
@@ -271,12 +247,10 @@ COLLISION_NODE =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_A.ENTITY.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN" />
             </Property>
           </Property>
@@ -311,12 +285,10 @@ SHIELD_SCENE =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -339,107 +311,86 @@ SHIELD_SCENE =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5195" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="27072" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5195" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="48" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-6.468001" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-6.467999" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-6.468003" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6.468001" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6.467996" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6.468003" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="11983898666187494753" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\SHIELD_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="BubbleShieldShape" />
         </Property>
       </Property>
@@ -463,107 +414,86 @@ SHIELD_SCENE =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="27072" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5196" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7793" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="13536" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2597" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="48" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="96" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-6.468001" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-6.467999" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-6.468003" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.468001" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.467996" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.468003" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5167344949006180630" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\SCANLINES_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="BubbleShield1Shape" />
             </Property>
           </Property>
@@ -587,107 +517,86 @@ SHIELD_SCENE =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="42888" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8233" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="9530" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6768" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1297" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="144" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="176" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-6.468001" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-6.468003" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.468001" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.467996" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6.468003" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6390201444109758130" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELD\GRAD_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="BubbleShield2Shape" />
             </Property>
           </Property>
@@ -711,52 +620,42 @@ SHIELD_SCENE =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="360.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="quadratic" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF_RATE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="110000.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.717800" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VOLUMETRIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
           </Property>
@@ -780,52 +679,42 @@ SHIELD_SCENE =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="360.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="quadratic" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF_RATE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="40000.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.238700" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VOLUMETRIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
             </Property>
           </Property>
@@ -842,7 +731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "ProtectionShield.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.65",
+["NMS_VERSION"]     = "4.70",
 ["DESCRIPTION"]     = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
     {

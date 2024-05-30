@@ -4,7 +4,7 @@ local mod_desc = [[
   items to the derelict freighter encounter mission.
   Adds a slow tumble to floating items to make the scene more dynamic
 ]]-------------------------------------------------------------------------
-local mod_version = '1.0'
+local mod_version = '1.01'
 
 -------------------------------------------------------------------------------
 ---	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
@@ -324,7 +324,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Derelict Procedural Additions.'..mod_version..'.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '4.70',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

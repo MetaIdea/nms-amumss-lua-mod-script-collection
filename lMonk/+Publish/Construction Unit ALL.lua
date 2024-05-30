@@ -4,56 +4,43 @@ local mod_desc = [[
   * Does not include expedition rewards and quicksilver shop items.
 ]]----------------------------------------------------------------------
 
-local version = 1.35
+local version = 1.36
 
 local base_tree = {
+	{--	BaseParts
+		title	= 'UI_PURCHASABLE_BASEPARTS_TREE',
+		subs	= {
+			'UI_MAINROOM_TREE',
+			'UI_CUBEROOM_TREE',
+			'UI_BASETECH_TREE',
+			'UI_EXOCRAFT_TREE',
+			'UI_WATER_TREE',
+			'UI_DECALS_TREE',
+			'UI_POSTERS_TREE',
+			{'UI_DECORATION_TREE', 6},
+			'UI_LIGHTS_TREE',
+			'UI_POWER_TREE',
+			'UI_FARMING_TREE',
+			'UI_BASIC_TIMBER_SUB',
+			'UI_BASIC_TIMBER_ROOFS_SUB',
+			'UI_BASIC_STONE_SUB',
+			'UI_BASIC_STONE_ROOFS_SUB',
+			'UI_BASIC_FIBREGLASS_SUB',
+			'UI_BASIC_FIBREGLASS_ROOFS_SUB',
+			'UI_SHAPES_TREE',
+			'UI_STORAGE_TREE',
+		}
+	},
 	{--	FreighterBase
 		title	= 'UI_FREIGHTER_TREE',
 		subs	= {
 			'UI_FRE_BASE_TREE'
 		}
-	},
-	{--	BaseParts
-		title	= 'UI_PURCHASABLE_BASEPARTS_TREE',
-		subs	= {
-			'UI_POSTERS_TREE',
-			'UI_DECALS_TREE',
-			'UI_SHAPES_TREE',
-			'UI_BASIC_STONE_ROOFS_SUB',
-			'UI_BASIC_STONE_SUB',
-			'UI_BASIC_FIBREGLASS_ROOFS_SUB',
-			'UI_BASIC_FIBREGLASS_SUB',
-			'UI_BASIC_TIMBER_ROOFS_SUB',
-			'UI_BASIC_TIMBER_SUB',
-			{'UI_DECORATION_TREE', 5},
-			'UI_LIGHTS_TREE',
-			'UI_FARMING_TREE',
-			'UI_POWER_TREE',
-			'UI_WATER_TREE',
-			'UI_EXOCRAFT_TREE',
-			'UI_STORAGE_TREE',
-			'UI_BASETECH_TREE',
-			'UI_CUBEROOM_TREE',
-			'UI_MAINROOM_TREE',
-		}
 	}
 }
 local tech_tree = {
-	{--	FreighterTech
-		title	= 'UI_FREIGHTER_TREE',
-		subs	= {
-			'UI_TECH_TREE_SUB'
-		}
-	},
-	{--	CraftProducts
-		title	= 'UI_PRODUCT_TREE',
-		subs	= {
-			'UI_PRODUCT_TREE_FARM',
-			'UI_PRODUCT_TREE_CRAFT'
-		}
-	},
-	{--	ExocraftTech
-		title	= 'UI_EXOCRAFT_TECH_TREE',
+	{--	SuitTech
+		title	= 'UI_SUIT_TECH_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
 		}
@@ -70,10 +57,23 @@ local tech_tree = {
 			'UI_TECH_TREE_SUB'
 		}
 	},
-	{--	SuitTech
-		title	= 'UI_SUIT_TECH_TREE',
+	{--	FreighterTech
+		title	= 'UI_FREIGHTER_TREE',
 		subs	= {
 			'UI_TECH_TREE_SUB'
+		}
+	},
+	{--	ExocraftTech
+		title	= 'UI_EXOCRAFT_TECH_TREE',
+		subs	= {
+			'UI_TECH_TREE_SUB'
+		}
+	},
+	{--	CraftProducts
+		title	= 'UI_PRODUCT_TREE',
+		subs	= {
+			'UI_PRODUCT_TREE_FARM',
+			'UI_PRODUCT_TREE_CRAFT'
 		}
 	}
 }
@@ -101,6 +101,7 @@ for _,node in ipairs(base_tree) do
 			ECT[#ECT+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
 				PRECEDING_KEY_WORDS	= 'Trees',
+				ADD_OPTION			= 'AddEndSection',
 				SEC_ADD_NAMED		= 'unlockable_item_tree',
 			}
 		end
@@ -115,6 +116,7 @@ for _,node in ipairs(tech_tree) do
 		ECT[#ECT+1] = {
 			SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICTECH_TREE'},
 			PRECEDING_KEY_WORDS	= 'Trees',
+			ADD_OPTION			= 'AddEndSection',
 			SEC_ADD_NAMED		= 'unlockable_item_tree',
 		}
 	end
@@ -123,7 +125,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '4.70',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

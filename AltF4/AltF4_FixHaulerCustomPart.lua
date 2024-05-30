@@ -1,19 +1,3 @@
-local AddHaulerWingModule = [[
-            <Property value="GcModularCustomisationSlotItemData.xml">
-              <Property name="ItemID" value="DROPS_WINGCDC" />
-              <Property name="DescriptorGroupSalvageRule" value="All" />
-              <Property name="DescriptorGroupData">
-                <Property value="GcModularCustomisationDescriptorGroupData.xml">
-                  <Property name="ActivatedDescriptorGroupID" value="DROPS_WINGCDC" />
-                </Property>
-              </Property>
-              <Property name="SetInventoryClass" value="False" />
-              <Property name="InventoryClass" value="GcInventoryClass.xml">
-                <Property name="InventoryClass" value="C" />
-              </Property>
-            </Property>
-]]
-
 local AddHaulerWingProduct = [[
       <Property value="GcProductData.xml">
         <Property name="ID" value="DROPS_WINGCDD" />
@@ -112,21 +96,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.64",
+    ["NMS_VERSION"] = "4.70",
     ["MOD_DESCRIPTION"] = "Fix Hauler Custom Part.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\PLAYERDATA\MODULARCUSTOMISATIONDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"ItemID","DROPS_WINGCDB"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = AddHaulerWingModule
-                        },
-                    }
-                },
+
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {

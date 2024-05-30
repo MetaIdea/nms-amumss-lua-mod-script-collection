@@ -2119,7 +2119,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD01.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2143,7 +2142,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/DUDCLEARCOLD/DUDFOGCLEARCOLD02.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2501,7 +2499,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/DUDFOGSWAMP.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2525,7 +2522,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/FOGSWAMP.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2549,7 +2545,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2573,7 +2568,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE2.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2597,7 +2591,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/ALPINE/ALPINE3.HEAVYAIR.MBIN" />
         </Property>
       </Property>
@@ -2757,7 +2750,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/SNOW/SNOW2.HEAVYAIR.MXML" />
         </Property>
       </Property>
@@ -2781,7 +2773,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/SNOW/SNOW1.HEAVYAIR.MXML" />
         </Property>
       </Property>
@@ -2805,7 +2796,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FOGSWAMP/DUDFOGSWAMP.HEAVYAIR.MBIN" />
         </Property>
       </Property>

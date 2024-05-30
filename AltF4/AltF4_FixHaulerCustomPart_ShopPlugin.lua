@@ -4,7 +4,6 @@
 local ShipPartID = {
     "DROPS_WINGBAB",
     "DROPS_WINGBAC",
-    "DROPS_WINGCDC",
     "DROPS_WINGCDD"
 }
 
@@ -27,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart_ShopPlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.64",
+    ["NMS_VERSION"] = "4.70",
     ["MOD_DESCRIPTION"] = "Add fixed Hauler custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {

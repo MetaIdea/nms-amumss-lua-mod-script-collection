@@ -449,6 +449,105 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Maximum", 4}, -- Original 0
                             },
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                                {"Maximum", 5}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                                {"Maximum", 2}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","FuelCapacity"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Speed"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 3}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","ExtraLoot"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 2}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Repair"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 0}, -- Original 0
+                                {"Maximum", 0}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Invulnerable"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 1}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GhostShip","GcFrigateStats.xml",},
+                            ["PRECEDING_KEY_WORDS"] = {"Stats","Stealth"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Minimum", 4}, -- Original 0
+                                {"Maximum", 4}, -- Original 4
+                            },
+                        },
                     }
                 },
                 {
@@ -497,6 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"DeepSpace",       "0"},
                                 {"DeepSpaceCommon", "0"},
                                 {"Pirate",          "0"},
+				{"GhostShip",       "0"},
                             }
                         },
                     }

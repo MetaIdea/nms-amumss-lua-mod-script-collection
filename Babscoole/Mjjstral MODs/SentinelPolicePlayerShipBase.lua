@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase.pak",
 ["MOD_AUTHOR"]              = "Mjjstral",
 ["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.65",
+["NMS_VERSION"]             = "4.70",
 ["DESCRIPTION"]             = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -102,12 +102,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -165,7 +163,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
             </Property>
           </Property>
@@ -188,7 +185,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="ATTACHMENT" />
-                  <Property name="AltID" value="" />
                   <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/COCKPITA/ENTITIES/COCKPIT_A.ENTITY.MBIN" />
                 </Property>
               </Property>
@@ -301,22 +297,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="TYPE" />
-                      <Property name="AltID" value="" />
                       <Property name="Value" value="Box" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="WIDTH" />
-                      <Property name="AltID" value="" />
                       <Property name="Value" value="1" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HEIGHT" />
-                      <Property name="AltID" value="" />
                       <Property name="Value" value="1" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="DEPTH" />
-                      <Property name="AltID" value="" />
                       <Property name="Value" value="1" />
                     </Property>
                   </Property>
@@ -375,7 +367,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="ATTACHMENT" />
-                          <Property name="AltID" value="" />
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENTITIES/FIGHTERBASE.ENTITY.MBIN" />
                         </Property>
                       </Property>

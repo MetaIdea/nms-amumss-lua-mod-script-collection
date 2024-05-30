@@ -1,3 +1,5 @@
+-- Change the price you like
+local Price = 1000000
 -- Fighter, Hauler, Explorer
 local ShipPartID = {
     "FIGHT_COCKAA",
@@ -73,6 +75,7 @@ local ShipPartID = {
     "DROPS_COCKF",
     "DROPS_COCKG",
     "DROPS_COCKH",
+    "DROPS_COCKS13",
     "DROPS_ENGIA",
     "DROPS_ENGIAA",
     "DROPS_ENGIAB",
@@ -80,6 +83,7 @@ local ShipPartID = {
     "DROPS_ENGIBA",
     "DROPS_ENGIBB",
     "DROPS_ENGIC",
+    "DROPS_ENGIS13",
     "DROPS_WINGEMP",
     "DROPS_WINGAA",
     "DROPS_WINGAAA",
@@ -174,7 +178,6 @@ local ShipPartID = {
     "DROPS_WINGCD",
     "DROPS_WINGCDA",
     "DROPS_WINGCDB",
-    "DROPS_WINGCDC",
     "DROPS_WINGCDE",
     "DROPS_WINGCDF",
     "DROPS_WINGCDG",
@@ -196,6 +199,7 @@ local ShipPartID = {
     "DROPS_WINGDBBX",
     "DROPS_WINGDBHX",
     "DROPS_WINGDBIX",
+    "DROPS_WINGS13",
     "DROPS_WING1",
     "DROPS_WING2",
     "SCIEN_COCKAA",
@@ -244,22 +248,21 @@ local ShipPartID = {
 local ChangeTable = {}
 for i = 1, #ShipPartID do
     local ProductId = ShipPartID[i]
-    table.insert(ChangeTable,
+    ChangeTable[#ChangeTable + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", ProductId},
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"] = {
-            {"BaseValue", 1000000}
+                {"BaseValue", Price}
             }
         }
-    )
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop_PricePlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.64",
+    ["NMS_VERSION"] = "4.70",
     ["MOD_DESCRIPTION"] = "Custom ship parts price in the space station shop.",
     ["MODIFICATIONS"] = {
         {

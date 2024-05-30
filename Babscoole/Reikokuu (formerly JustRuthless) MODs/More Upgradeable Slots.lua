@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Upgradeable Slots.pak",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds more upgradeable inventory, technology, and cargo slots to exocrafts, multitools, ships, and freighters",
-["NMS_VERSION"]     = "4.65",
+["NMS_VERSION"]     = "4.70",
 ["MODIFICATIONS"]   =
     {
         {

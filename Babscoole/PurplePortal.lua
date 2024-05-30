@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "PurplePortal.pak",
 ["MOD_AUTHOR"]    = "FriendlyFire & Babscoole",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "4.70",
 ["MODIFICATIONS"] =
     {
         {

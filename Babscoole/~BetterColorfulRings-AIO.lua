@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "~BetterColorfulRings-"..PAKNAME..".pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.65",
+["NMS_VERSION"]     = "4.70",
 ["MODIFICATIONS"]   =
     {
         {

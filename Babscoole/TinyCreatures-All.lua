@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-All.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.65",
+["NMS_VERSION"]             = "4.70",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

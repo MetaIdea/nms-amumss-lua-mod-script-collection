@@ -1,10 +1,9 @@
--- Must be run using AMUMSS v3.9.5.98W or later.  Contains parameters that do not exist in previous versions.
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Storm Cutter.pak",
 ["MOD_AUTHOR"]              = "Zurls",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.65",
+["NMS_VERSION"]             = "4.70",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -39,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength", "8"},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength",       "0.1"},
@@ -47,7 +46,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -102,21 +100,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength", "5"},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HeightFogStrength", "0.3"},
+                                {"CloudRatio",        "0.3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Speed", "0.2"},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness", "0.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Alpha2", "0.7"},
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alpha1", "0.5"},
@@ -124,31 +123,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldDistance", "2000"},
+                            ["PRECEDING_KEY_WORDS"] = {"Storms", "GcStormProperties.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CloudRatio", "0.3"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting", "1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Weighting", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogColourStrength", "0.8"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FogStrength",       "3"},
-                                {"FogColourStrength", "0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"DepthOfFieldFade", "500"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
+                                {"Weighting",            "0"},
+                                {"FogStrength",          "3"},
+                                {"FogColourStrength",    "0.5"},
                                 {"DepthOfFieldDistance", "500"},
                                 {"DepthOfFieldFade",     "1000"},
                             }
@@ -185,73 +165,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Toxicity",  "Ambient"},
+                                {"Toxicity",  "Cave"},
+                                {"Toxicity",  "Storm"},
+                                {"Toxicity",  "Night"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Water"},
+                                {"Radiation", "Cave"},
+                                {"Radiation", "Storm"},
+                                {"Radiation", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "10"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Toxicity", "Water"},
+                                {"Toxicity", "Cave"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "6"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "6"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
                             }
                         },
                     }
@@ -261,7 +200,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -309,7 +247,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Toxicity",  "Ambient"},
+                                {"Toxicity",  "Storm"},
+                                {"Toxicity",  "Night"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Water"},
+                                {"Radiation", "Cave"},
+                                {"Radiation", "Storm"},
+                                {"Radiation", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "5"},
@@ -329,55 +277,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "3"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
-                            }
-                        },
                     }
                 },
                 {
@@ -385,7 +284,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -394,15 +292,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "-5"},
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Water"},
+                                {"Temperature", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-5"},
@@ -417,14 +312,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "-5"},
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -433,7 +320,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Toxicity", "Water"},
+                                {"Toxicity", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "10"},
@@ -456,15 +347,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "10"},
-                                {"Extreme", "30"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "1"},
@@ -487,14 +374,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "1"},
-                                {"Extreme", "4"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"Radiation", "Night"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -508,7 +387,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -533,7 +411,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Cave"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Cave"},
+                                {"Temperature", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "2"},
@@ -541,7 +423,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Storm"},
+                                {"Toxicity",    "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "20"},
@@ -549,15 +435,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "2"},
-                                {"Extreme", "6"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
+                                {"Toxicity",  "Ambient"},
+                                {"Toxicity",  "Night"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Water"},
+                                {"Radiation", "Cave"},
+                                {"Radiation", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "10"},
@@ -578,49 +464,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "8"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "20"},
-                                {"Extreme", "40"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
                     }
                 },
                 {
@@ -628,7 +471,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -637,7 +479,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Water"},
+                                {"Temperature", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-5"},
@@ -645,25 +492,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Cave"},
+                                {"Toxicity",    "Ambient"},
+                                {"Toxicity",    "Storm"},
+                                {"Toxicity",    "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal",  "-5"},
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "-5"},
                                 {"Extreme", "10"},
                             }
                         },
@@ -673,13 +510,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Normal",  "-7"},
                                 {"Extreme", "4"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
                             }
                         },
                         {
@@ -698,20 +528,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
                             ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -720,7 +536,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Radiation", "Water"},
+                                {"Radiation", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "10"},
@@ -742,14 +562,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "60"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "10"},
-                                {"Extreme", "30"},
-                            }
-                        },
                     }
                 },
                 {
@@ -758,35 +570,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog"},
-                            ["SECTION_ACTIVE"] = {"1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogColourStrength", "1"},
                                 {"HeightFogStrength", "0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "Settings", "GcHeavyAirSettingValues.xml"},
-                            ["SECTION_ACTIVE"] = {"1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Speed", "0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "Settings", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
-                            ["SECTION_ACTIVE"] = {"1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Speed", "0.5"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Fog"},
-                            ["SECTION_ACTIVE"] = {"1"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
                                 {"DepthOfFieldFade", "5000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "0.5"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "0.5"},
                             }
                         },
                         {
@@ -805,21 +607,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Weighting", "1"},
+                            ["PRECEDING_KEY_WORDS"] = {"Storms", "GcStormProperties.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Weighting", "0.5"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FogStrength", "2"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
+                                {"Weighting",   "0.5"},
                                 {"FogStrength", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.4"},
@@ -828,7 +623,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Water"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-5"},
@@ -836,15 +635,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "-5"},
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Cave"},
+                                {"Temperature", "Cave"},
+                                {"Toxicity",    "Water"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "5"},
@@ -867,17 +662,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Toxicity",  "Ambient"},
+                                {"Toxicity",  "Storm"},
+                                {"Toxicity",  "Night"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Water"},
+                                {"Radiation", "Cave"},
+                                {"Radiation", "Storm"},
+                                {"Radiation", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "5"},
                             }
                         },
                         {
@@ -888,55 +686,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "7"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
                     }
                 },
                 {
@@ -944,7 +693,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.8"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -1039,7 +787,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -1048,7 +795,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "10"},
@@ -1079,14 +830,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "40"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "10"},
-                                {"Extreme", "20"},
-                            }
-                        },
                     }
                 },
                 {
@@ -1094,7 +837,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -1103,15 +845,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "-10"},
-                                {"Extreme", "-20"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Water"},
+                                {"Temperature", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-10"},
@@ -1134,14 +873,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "-40"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "-10"},
-                                {"Extreme", "-20"},
-                            }
-                        },
                     }
                 },
                 {
@@ -1149,7 +880,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ExtremeWeatherChance", "0.4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LowStormsChance",      "0.2"},
@@ -1158,7 +888,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Ambient"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Ambient"},
+                                {"Temperature", "Water"},
+                                {"Temperature", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "-5"},
@@ -1166,25 +901,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Water"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Temperature", "Cave"},
+                                {"Radiation", "Ambient"},
+                                {"Radiation", "Water"},
+                                {"Radiation", "Cave"},
+                                {"Radiation", "Storm"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Normal",  "-5"},
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Temperature", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "-5"},
                                 {"Extreme", "10"},
                             }
                         },
@@ -1197,15 +923,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Normal",  "10"},
-                                {"Extreme", "20"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Water"},
+                                {"Toxicity", "Ambient"},
+                                {"Toxicity", "Water"},
+                                {"Toxicity", "Night"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Normal",  "10"},
@@ -1227,42 +950,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Extreme", "30"},
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Toxicity", "Night"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Normal",  "10"},
-                                {"Extreme", "20"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Ambient"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Water"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Cave"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Radiation", "Storm"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Extreme", "10"},
-                            }
-                        },
                     }
                 },
                 {
@@ -1270,7 +957,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Table", "Dust"},
+                            ["PRECEDING_KEY_WORDS"] =
+                            {
+                                {"Table", "Dust"},
+                                {"Table", "Snow"},
+                                {"Table", "Toxic"},
+                                {"Table", "Scorched"},
+                                {"Table", "Radioactive"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
@@ -1283,34 +977,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 -- {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
                             -- }
                         -- },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table", "Snow"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table", "Toxic"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table", "Scorched"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Table", "Radioactive"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/CLEARWEATHER.MXML"},
-                            }
-                        },
                     }
                 },
             }
