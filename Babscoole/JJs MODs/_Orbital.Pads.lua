@@ -175,7 +175,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\XLANDINGPAD2.SCENE.MBIN" />
             </Property>
           </Property>

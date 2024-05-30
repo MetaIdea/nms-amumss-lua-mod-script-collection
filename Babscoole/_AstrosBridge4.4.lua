@@ -64,7 +64,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -88,7 +87,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -112,7 +110,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -312,7 +309,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.MBIN" />
         </Property>
       </Property>
@@ -367,7 +363,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -391,7 +386,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -415,7 +409,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -644,7 +637,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -676,7 +668,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN" />
             </Property>
           </Property>
@@ -753,7 +744,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\HELMDESK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -777,7 +767,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -801,7 +790,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -825,7 +813,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -849,7 +836,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -873,7 +859,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -897,7 +882,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -921,7 +905,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
@@ -945,7 +928,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
@@ -969,7 +951,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.MBIN" />
         </Property>
       </Property>
@@ -993,7 +974,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1017,7 +997,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1041,7 +1020,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1065,7 +1043,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1089,7 +1066,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1113,7 +1089,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1137,7 +1112,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1161,7 +1135,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1185,7 +1158,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1299,7 +1271,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1323,7 +1294,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1347,7 +1317,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1371,7 +1340,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1395,7 +1363,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1419,7 +1386,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1443,7 +1409,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1467,7 +1432,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1491,7 +1455,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1515,7 +1478,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1539,7 +1501,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -1608,17 +1569,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Cylinder" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="RADIUS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="23" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -1642,22 +1600,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.5" />
         </Property>
       </Property>
@@ -1681,22 +1635,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0.5" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0.2" />
         </Property>
       </Property>
@@ -1720,22 +1670,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3.4" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -1759,22 +1705,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3.4" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -1798,22 +1740,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="7" />
         </Property>
       </Property>
@@ -1837,22 +1775,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
@@ -1876,22 +1810,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
@@ -1915,22 +1845,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -1954,22 +1880,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -1993,22 +1915,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -2032,22 +1950,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Box" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="WIDTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HEIGHT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DEPTH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
@@ -2071,107 +1985,86 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10434" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6189" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="12801" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="13080" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6612" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6189" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6233" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-23.228102" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-7.687941" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-18.851116" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="23.228102" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="18.096102" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="24.392599" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2137990186080367095" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\SHADOWMAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ShadowMeshShape" />
         </Property>
       </Property>
@@ -2195,107 +2088,86 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="133176" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="78035" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="83464" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10236" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5429" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6745" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6777" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-9.897927" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-1.631440" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-9.897912" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="9.897923" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.831879" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="9.897942" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="10759583304982549435" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF1_HANGARCOMMON_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="FloorBaseLOD0Shape" />
         </Property>
       </Property>
@@ -2318,107 +2190,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="143412" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="83465" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="84624" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1740" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1159" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6777" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6805" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.696324" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.158248" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.701613" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.714484" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.245664" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.709197" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="17630016262498311864" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="ODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF4_SERVER_PHONG45.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="FloorBaseLOD0Shape" />
             </Property>
           </Property>
@@ -2442,107 +2293,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="145152" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="84625" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="86163" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8064" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1538" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6805" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6853" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-4.180789" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1.673839" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-7.214862" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.218541" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.064166" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.203368" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1582530034772582811" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="ODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF4_FREIGHTERPROC_MAT3.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="FloorBaseLOD0Shape" />
             </Property>
           </Property>
@@ -2566,107 +2396,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="153216" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="86164" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="87315" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2592" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1151" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6853" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6869" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.659807" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1.222416" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.665095" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.677967" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.299478" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.672679" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="17121513308831618240" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="ODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\GLOW_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="FloorBaseLOD0Shape" />
             </Property>
           </Property>
@@ -2690,107 +2499,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="155808" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="87316" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="95806" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="17820" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8490" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6869" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="6885" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.690941" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1.635249" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-8.696230" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.709102" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.713464" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8.703814" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="14548006144699384856" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="ODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF4_INTERIORPROPS_MAT4.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="FloorBaseLOD0Shape" />
             </Property>
           </Property>
@@ -2816,107 +2604,86 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="443277" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="227417" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="232574" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="11424" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5157" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8455" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8497" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-19.529444" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.312211" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-7.763052" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-13.991841" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6.065077" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="7.763052" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="18128065324071268616" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF1_HANGARCOMMON_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="connection1Shape" />
         </Property>
       </Property>
@@ -2939,107 +2706,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="454701" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="232575" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="232918" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="480" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="343" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8497" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8503" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-19.457899" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5.240825" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1.278657" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-19.457884" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5.581564" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.278657" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="11007817121298849567" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\GLOW_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection1Shape" />
             </Property>
           </Property>
@@ -3063,107 +2809,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="455181" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="232919" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233570" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1758" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="651" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8503" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8545" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-18.846334" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.651948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-15.893100" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.651948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="16261751436935521191" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\DUALFREIGHTERBASEMAT6.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection1Shape" />
             </Property>
           </Property>
@@ -3187,107 +2912,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="456939" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233571" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233734" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="456" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="163" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8545" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8561" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-18.846334" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-18.596331" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="4920782791453160047" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\DUALFREIGHTERBASEPOMMAT11.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection1Shape" />
             </Property>
           </Property>
@@ -3311,107 +3015,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="457395" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233735" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233810" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="216" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="75" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8561" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8581" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-17.612204" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.680565" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.585948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-16.767956" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2.188714" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.585948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2275372163279647382" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF7_INTERIORLIGHTS_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection1Shape" />
             </Property>
           </Property>
@@ -3435,107 +3118,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="457611" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="233811" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="234146" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="516" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="335" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8581" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8625" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-18.790888" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-14.827192" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="15112066088525659051" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\CUBEROOM_TILINGTEXTURE_MAT10.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection1Shape" />
             </Property>
           </Property>
@@ -3561,107 +3223,86 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="458127" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="234147" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="239304" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="11424" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5157" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8625" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="8667" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="13.991841" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.312211" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-7.763052" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="19.529444" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6.065077" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="7.763052" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="4665886774695358214" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF1_HANGARCOMMON_MAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="connection2Shape" />
         </Property>
       </Property>
@@ -3684,107 +3325,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="469551" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="239305" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="239648" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="480" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="343" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8667" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8673" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="19.457899" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5.240825" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-1.278657" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="19.457914" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5.581564" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.278657" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2346311374624127985" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\GLOW_MAT1.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection2Shape" />
             </Property>
           </Property>
@@ -3808,107 +3428,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="470031" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="239649" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240300" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1758" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="651" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8673" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8715" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="15.893100" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.651948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="18.846334" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.651948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="5806703354944568271" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\DUALFREIGHTERBASEMAT6.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection2Shape" />
             </Property>
           </Property>
@@ -3932,107 +3531,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="471789" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240301" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240464" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="456" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="163" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8715" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8731" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="18.596331" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="18.846334" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="9736369380025643459" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\DUALFREIGHTERBASEPOMMAT11.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection2Shape" />
             </Property>
           </Property>
@@ -4056,107 +3634,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="472245" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240465" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240540" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="216" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="75" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8731" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8751" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="16.767956" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0.680565" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.585948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="17.612204" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="2.188714" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.585948" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="11901523944566993661" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\TKDEREF7_INTERIORLIGHTS_MAT.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection2Shape" />
             </Property>
           </Property>
@@ -4180,107 +3737,86 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="472461" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTPHYSI" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240541" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDPHYSICS" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="240876" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="516" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTARTGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRENDGRAPHIC" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="335" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FIRSTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LASTSKINMAT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="LODLEVEL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="0" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLST" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8751" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BOUNDHULLED" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="8795" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="14.827192" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-0.210048" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMINZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="-3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXX" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="18.790888" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXY" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="7.789871" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="AABBMAXZ" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="3.500153" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="12007368796239738060" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\CUBEROOM_TILINGTEXTURE_MAT10.MATERIAL.MBIN" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MESHLINK" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="connection2Shape" />
             </Property>
           </Property>
@@ -4306,107 +3842,86 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="682503" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="300305" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="300492" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="384" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="187" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="9294" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="9326" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-3.075405" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.953985" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="14.145103" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3.075405" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5.560449" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="17.778934" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="6450166387569183546" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\PHONG104.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="BackWallDetailShape" />
         </Property>
       </Property>
@@ -4430,7 +3945,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\ENTITIES\NPCPLACEMENTFREIGHTER.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -4579,7 +4093,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN" />
             </Property>
           </Property>
@@ -4696,7 +4209,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\AUDIO_SMALLROOM.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -5962,7 +5474,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LAYOUTS\LAYOUT_HOLOGRAMA\ENTITIES\HOLOGRAMAUDIODATA.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -5986,7 +5497,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\ENTITIES\PROXIMITIYHIDE.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -6026,7 +5536,6 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="SCENEGRAPH" />
-                  <Property name="AltID" value="" />
                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
                 </Property>
               </Property>
@@ -6054,7 +5563,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE\ENTITIES\BASEDETAILTRIGGER.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -6096,7 +5604,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER\ENTITIES\COLOURDATA.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -6119,7 +5626,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6143,7 +5649,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6167,7 +5672,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\PARTS\EXTERIORDOOR.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6191,7 +5695,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\LSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6215,7 +5718,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6239,7 +5741,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6263,7 +5764,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\PARTS\LIFT_DOOR.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6287,7 +5787,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6311,7 +5810,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6335,7 +5833,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6359,7 +5856,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6383,7 +5879,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\PARTS\EXTERIORDOOR.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6407,7 +5902,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\LSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6431,7 +5925,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6455,7 +5948,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6479,7 +5971,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\PARTS\LIFT_DOOR.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6503,7 +5994,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6527,7 +6017,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\STRAIGHTSHAPE0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6551,7 +6040,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTCAP0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6575,7 +6063,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\EXTCAP0.SCENE.MBIN" />
             </Property>
           </Property>
@@ -6601,37 +6088,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="360.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="40000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_G" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_B" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
@@ -6655,37 +6135,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="360.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="40000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_G" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_B" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
@@ -6709,37 +6182,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="360.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="40000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_G" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_B" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
@@ -6763,37 +6229,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="360.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="linear" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="40000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_G" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_B" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
@@ -6817,7 +6276,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6841,7 +6299,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\ROOFMONITOR\ROOFMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6865,7 +6322,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6889,7 +6345,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6913,7 +6368,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\CORRIDOR\A\PARTS\DOORWAY0.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6937,7 +6391,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6961,7 +6414,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -6985,7 +6437,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7009,7 +6460,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7033,7 +6483,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7057,7 +6506,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7081,7 +6529,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7105,7 +6552,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7129,7 +6575,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7153,7 +6598,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\BIOROOM_FRAME.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7177,7 +6621,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7201,7 +6644,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7225,7 +6667,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7249,7 +6690,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7273,7 +6713,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7297,7 +6736,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7321,7 +6759,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7345,7 +6782,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7369,7 +6805,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7393,7 +6828,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7417,7 +6851,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7441,7 +6874,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7465,7 +6897,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7489,7 +6920,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7513,7 +6943,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7537,7 +6966,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7561,7 +6989,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7585,7 +7012,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7609,7 +7035,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7633,7 +7058,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7657,7 +7081,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7681,7 +7104,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7705,7 +7127,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7729,7 +7150,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7753,7 +7173,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7777,7 +7196,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7801,7 +7219,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7825,7 +7242,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7849,7 +7265,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7873,7 +7288,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7897,7 +7311,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7921,7 +7334,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7945,7 +7357,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7969,7 +7380,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -7993,7 +7403,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8017,7 +7426,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8041,7 +7449,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8065,7 +7472,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8089,7 +7495,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8113,7 +7518,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8137,7 +7541,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8161,7 +7564,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8185,7 +7587,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8209,7 +7610,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8233,7 +7633,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8257,7 +7656,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8281,7 +7679,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8305,7 +7702,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8329,7 +7725,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8353,7 +7748,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8377,7 +7771,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8401,7 +7794,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8425,7 +7817,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8449,7 +7840,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8473,7 +7863,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8497,7 +7886,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8521,7 +7909,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8570,7 +7957,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN" />
             </Property>
           </Property>
@@ -8691,12 +8077,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -8719,7 +8103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8743,7 +8126,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8767,7 +8149,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8791,7 +8172,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8815,7 +8195,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8839,7 +8218,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8863,7 +8241,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8887,7 +8264,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8911,7 +8287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8935,7 +8310,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8959,7 +8333,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -8983,7 +8356,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9007,7 +8379,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9031,7 +8402,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9055,7 +8425,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9079,7 +8448,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9103,7 +8471,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9127,7 +8494,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9151,7 +8517,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9175,7 +8540,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9199,7 +8563,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9223,7 +8586,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9247,7 +8609,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9271,7 +8632,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9295,7 +8655,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9319,7 +8678,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9343,7 +8701,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9367,7 +8724,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9391,7 +8747,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9415,7 +8770,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9439,7 +8793,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9463,7 +8816,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9487,7 +8839,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9511,7 +8862,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9535,7 +8885,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9559,7 +8908,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9583,7 +8931,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9607,7 +8954,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9631,7 +8977,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9655,7 +9000,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9679,7 +9023,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\VENTILATION\VENTUNIT.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9703,7 +9046,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9727,7 +9069,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9761,12 +9102,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -9789,7 +9128,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9813,7 +9151,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9837,7 +9174,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9861,7 +9197,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9885,7 +9220,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9909,7 +9243,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9933,7 +9266,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9957,7 +9289,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\SMALLCONSOLE.SCENE.MBIN" />
         </Property>
       </Property>
@@ -9981,7 +9312,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\DATA_PAD.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10005,7 +9335,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\SCREENS\DROPPODSCREEN.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10029,7 +9358,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10053,7 +9381,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10077,7 +9404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10101,7 +9427,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10125,7 +9450,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10149,7 +9473,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10183,12 +9506,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -10211,7 +9532,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10235,7 +9555,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10269,12 +9588,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -10297,7 +9614,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10321,7 +9637,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
       </Property>
@@ -10345,7 +9660,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
       </Property>
