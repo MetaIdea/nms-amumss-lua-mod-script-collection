@@ -135,7 +135,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA" />
+  <Property name="Name" value="VariableSizeString.xml">
+    <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA" />
+  </Property>
   <Property name="NameHash" value="3916463041" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -153,17 +155,23 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN" />
+      <Property name="Value" value="VariableSizeString.xml">
+        <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTA.GEOMETRY.MBIN" />
+      </Property>
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="1" />
+      <Property name="Value" value="VariableSizeString.xml">
+        <Property name="Value" value="1" />
+      </Property>
     </Property>
   </Property>
   <Property name="Children">
     <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="WeaponShop" />
+      <Property name="Name" value="VariableSizeString.xml">
+        <Property name="Value" value="WeaponShop" />
+      </Property>
       <Property name="NameHash" value="2569483507" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
@@ -181,12 +189,16 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTSHOP.ENTITY.MBIN" />
+          <Property name="Value" value="VariableSizeString.xml">
+            <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\ENTITIES\NPCPLACEMENTSHOP.ENTITY.MBIN" />
+          </Property>
         </Property>
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Tent" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Tent" />
+          </Property>
           <Property name="NameHash" value="759779585" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -204,13 +216,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SMALLSHACK.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\SMALLSHACK.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Rug" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Rug" />
+          </Property>
           <Property name="NameHash" value="0" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -228,13 +244,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\RUG0.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\RUG0.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Desk" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Desk" />
+          </Property>
           <Property name="NameHash" value="382806720" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -252,18 +272,24 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CURVEDDESK.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CURVEDDESK.SCENE.MBIN" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\DEFAULTCOLOUR.ENTITY.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="NPCWEAP_STAND_" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="NPCWEAP_STAND_" />
+          </Property>
           <Property name="NameHash" value="2356873476" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -281,7 +307,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_L1" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_L1" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -299,13 +327,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_L2" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_L2" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -323,13 +355,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_L3" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_L3" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -347,13 +383,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_R1" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_R1" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -371,13 +411,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_R2" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_R2" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -395,13 +439,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="Weapons_R3" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="Weapons_R3" />
+          </Property>
           <Property name="NameHash" value="980202722" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -419,13 +467,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MODELS\3CRATE.SCENE.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="pointLight5" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="pointLight5" />
+          </Property>
           <Property name="NameHash" value="2789731183" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -443,58 +495,80 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="360.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="360.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="quadratic" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="quadratic" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="2.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="2.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="20000.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="20000.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="-1" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="-1" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="0.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="pointLight5" />
+          <Property name="Name" value="VariableSizeString.xml">
+            <Property name="Value" value="pointLight5" />
+          </Property>
           <Property name="NameHash" value="2789731183" />
           <Property name="Type" value="LIGHT" />
           <Property name="Transform" value="TkTransformData.xml">
@@ -512,52 +586,72 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="360.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="360.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="quadratic" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="quadratic" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FALLOFF_RATE" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="2.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="2.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="20000.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="20000.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="1.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="-1" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="-1" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VOLUMETRIC" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.000000" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="0.000000" />
+              </Property>
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+              <Property name="Value" value="VariableSizeString.xml">
+                <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+              </Property>
             </Property>
           </Property>
           <Property name="Children" />
@@ -575,7 +669,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
+  <Property name="Name" value="VariableSizeString.xml">
+    <Property name="Value" value="MODELS\EFFECTS\SPHERE" />
+  </Property>
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -593,16 +689,23 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
+      <Property name="Value" value="VariableSizeString.xml">
+        <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
+      </Property>
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="1" />
+      <Property name="Value" value="VariableSizeString.xml">
+        <Property name="Value" value="1" />
+      </Property>
     </Property>
   </Property>
   <Property name="Children">
     <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="VariableSizeString.xml">
+        <Property name="Value" value="Weapon_1" />
+      </Property>
       <Property name="Name" value="Weapon_1" />
       <Property name="NameHash" value="980202722" />
       <Property name="Type" value="REFERENCE" />
@@ -621,13 +724,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          <Property name="Value" value="VariableSizeString.xml">
+            <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          </Property>
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="Weapon_2" />
+      <Property name="Name" value="VariableSizeString.xml">
+        <Property name="Value" value="Weapon_2" />
+      </Property>
       <Property name="NameHash" value="980202722" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData.xml">
@@ -645,13 +752,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          <Property name="Value" value="VariableSizeString.xml">
+            <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          </Property>
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="Weapon_3" />
+      <Property name="Name" value="VariableSizeString.xml">
+        <Property name="Value" value="Weapon_3" />
+      </Property>
       <Property name="NameHash" value="980202722" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData.xml">
@@ -669,7 +780,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          <Property name="Value" value="VariableSizeString.xml">
+            <Property name="Value" value="MODELS\CRATE_WEAPON.SCENE.MBIN" />
+          </Property>
         </Property>
       </Property>
       <Property name="Children" />
