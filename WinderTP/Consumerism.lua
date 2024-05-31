@@ -1,6 +1,31 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "91",
+		["Table"] =  
+		{
+			{ ["ID"] = "DROPS_COCKS13",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "DROPS_ENGIS13",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "DROPS_WINGS13",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER13A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER13B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER13C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_SHIPBREAK1",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_SHIPBREAK2",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_SHIPBREAK3",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_SHIPBREAK4",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_SHIPBREAK5",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIPMAT13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP_METAL",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_GHOSTFRIG",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP13",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "88",
 		["Table"] =  
 		{

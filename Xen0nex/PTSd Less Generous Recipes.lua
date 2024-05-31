@@ -724,14 +724,14 @@ NewRecipe2 =
       <Property name="Id" value="DIH_ALBUMENPEARL" />
       <Property name="RecipeType" value="RECIPE_LAUNCHSUB" />
       <Property name="RecipeName" value="PTSd: Di-Hydrogen Extraction" />
-      <Property name="TimeToMake" value="1200" />
+      <Property name="TimeToMake" value="600" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
         <Property name="Id" value="LAUNCHSUB" />
         <Property name="Type" value="GcInventoryType.xml">
           <Property name="InventoryType" value="Substance" />
         </Property>
-        <Property name="Amount" value="100" />
+        <Property name="Amount" value="50" />
       </Property>
       <Property name="Ingredients">
         <Property value="GcRefinerRecipeElement.xml">
@@ -739,14 +739,14 @@ NewRecipe2 =
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="2" />
+          <Property name="Amount" value="1" />
         </Property>
 		<Property value="GcRefinerRecipeElement.xml">
           <Property name="Id" value="ALBUMENPEARL" />
           <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="4" />
+          <Property name="Amount" value="2" />
         </Property>
       </Property>
     </Property>]]

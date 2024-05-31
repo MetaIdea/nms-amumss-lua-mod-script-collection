@@ -1080,7 +1080,6 @@ return [[
 		  <Property name="Attributes">
 			<Property value="TkSceneNodeAttributeData.xml">
 			  <Property name="Name" value="SCENEGRAPH" />
-			  <Property name="AltID" value="" />
 			  <Property name="Value" value="]] .. SCENEGRAPH .. [[" />
 			</Property>
 		  </Property>
@@ -1109,7 +1108,6 @@ return [[
 		  <Property name="Attributes">
 			<Property value="TkSceneNodeAttributeData.xml">
 			  <Property name="Name" value="SCENEGRAPH" />
-			  <Property name="AltID" value="" />
 			  <Property name="Value" value="]] .. SCENEGRAPH .. [[" />
 			</Property>
 		  </Property>
@@ -1219,12 +1217,10 @@ PROC_SCENE["SCENE"]["Contents"] =
   <Property name="Attributes">
     <!-- <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="CUSTOMMODELS\SPAWNERS\CONSTRUCTSPAWNER.GEOMETRY.MBIN" />
     </Property> -->
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -1511,7 +1507,6 @@ Default is YES (Y)
   <Property name="Attributes">
 	<Property value="TkSceneNodeAttributeData.xml">
 	  <Property name="Name" value="NUMLODS" />
-	  <Property name="AltID" value="" />
 	  <Property name="Value" value="1" />
 	</Property>
   </Property>

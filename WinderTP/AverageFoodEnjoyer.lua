@@ -943,12 +943,10 @@ return [[
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. PARTICLE_A .. [[" />
         </Property>
       </Property>
@@ -972,12 +970,10 @@ return [[
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. PARTICLE_B .. [[" />
         </Property>
       </Property>
@@ -1030,7 +1026,6 @@ return {
 												  <Property name="Attributes">
 													<Property value="TkSceneNodeAttributeData.xml">
 													  <Property name="Name" value="SCENEGRAPH" />
-													  <Property name="AltID" value="" />
 													  <Property name="Value" value="]] .. REFERENCE .. [[" />
 													</Property>
 												  </Property>

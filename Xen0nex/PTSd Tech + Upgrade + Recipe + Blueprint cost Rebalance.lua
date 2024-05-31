@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_64"
+GameVersion = "4_70"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -1209,12 +1209,8 @@ NewInterceptorRepairTech =
       <Property name="Group" value="" />
       <Property name="Name" value="Broken AI Valves" />
       <Property name="NameLower" value="broken ai valves" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_MAINTAIN_TECH_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_MAINTAIN_TECH5_DESC" />
-      </Property>
+      <Property name="Subtitle" value="UI_MAINTAIN_TECH_SUB" />
+      <Property name="Description" value="UI_MAINTAIN_TECH5_DESC" />
       <Property name="Teach" value="False" />
       <Property name="HintStart" value="" />
       <Property name="HintEnd" value="" />
@@ -1299,9 +1295,7 @@ NewInterceptorRepairTech =
         <Property name="TechnologyRarity" value="Impossible" />
       </Property>
       <Property name="WikiEnabled" value="False" />
-      <Property name="DamagedDescription" value="VariableSizeString.xml">
-        <Property name="Value" value="" />
-      </Property>
+      <Property name="DamagedDescription" value="" />
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
 	  <Property name="ExclusivePrimaryStat" value="False" />

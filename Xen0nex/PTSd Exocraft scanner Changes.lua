@@ -1,5 +1,5 @@
 ModName = "PTSd Exocraft scanner Changes"
-GameVersion = "4_41"
+GameVersion = "4_70"
 
 AddMechScan0 = 
 [[<Property value="GcTechnology.xml">
@@ -7,12 +7,8 @@ AddMechScan0 =
       <Property name="Group" value="" />
       <Property name="Name" value="MINOTAUR BASIC RADAR ARRAY" />
       <Property name="NameLower" value="Minotaur Basic Radar Array" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_MECH_SCAN_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_MECH_SCAN_DESC" />
-      </Property>
+      <Property name="Subtitle" value="UI_MECH_SCAN_SUB" />
+      <Property name="Description" value="UI_MECH_SCAN_DESC" />
       <Property name="Teach" value="False" />
       <Property name="HintStart" value="" />
       <Property name="HintEnd" value="" />
@@ -119,9 +115,7 @@ AddMechScan0 =
         <Property name="TechnologyRarity" value="Impossible" />
       </Property>
       <Property name="WikiEnabled" value="True" />
-      <Property name="DamagedDescription" value="VariableSizeString.xml">
-        <Property name="Value" value="" />
-      </Property>
+      <Property name="DamagedDescription" value="" />
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
 	  <Property name="ExclusivePrimaryStat" value="False" />
@@ -133,12 +127,8 @@ AddSubBinocs0 =
       <Property name="Group" value="" />
       <Property name="Name" value="BASIC SONAR" />
       <Property name="NameLower" value="Basic Sonar" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_SUB_BINOCS_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_SUB_BINOCS_DESC" />
-      </Property>
+      <Property name="Subtitle" value="UI_SUB_BINOCS_SUB" />
+      <Property name="Description" value="UI_SUB_BINOCS_DESC" />
       <Property name="Teach" value="False" />
       <Property name="HintStart" value="" />
       <Property name="HintEnd" value="" />
@@ -245,9 +235,7 @@ AddSubBinocs0 =
         <Property name="TechnologyRarity" value="Impossible" />
       </Property>
       <Property name="WikiEnabled" value="True" />
-      <Property name="DamagedDescription" value="VariableSizeString.xml">
-        <Property name="Value" value="" />
-      </Property>
+      <Property name="DamagedDescription" value="" />
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
 	  <Property name="ExclusivePrimaryStat" value="False" />
@@ -365,10 +353,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN",		"Description", "VariableSizeString.xml"},
+				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "Allows for additional building types to be acquired by the Minotaur Basic Radar Array."},
+					{"Description", "Allows for additional building types to be acquired by the Minotaur Basic Radar Array."},
 				}
 			},
 			{
@@ -388,10 +376,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS",		"Description", "VariableSizeString.xml"},
+				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", "Allows for additional building types to be acquired by the Basic Sonar."},
+					{"Description", "Allows for additional building types to be acquired by the Basic Sonar."},
 				}
 			},
 			{

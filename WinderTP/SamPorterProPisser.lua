@@ -717,12 +717,10 @@ return [[
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. PARTICLE_A .. [[" />
         </Property>
       </Property>
@@ -746,12 +744,10 @@ return [[
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. MATERIAL .. [[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]] .. PARTICLE_B .. [[" />
         </Property>
       </Property>
@@ -827,6 +823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Winder with block pieces from Mjjstral",
 ["MOD_DESCRIPTION"]			= "You take a piss on the floor, possibly while walking",
 ["NMS_VERSION"]				= "3.21+",
+["AMUMSS_SUPPRESS_MSG"] 	= "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -837,13 +834,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Trees"},  
-							["LINE_OFFSET"] 		= "-2",
+							["PRECEDING_KEY_WORDS"] = {"Anims"},  
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= TRIGGER_ANIM
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
+							["PRECEDING_KEY_WORDS"] = {"Components"}, 
+							-- ["LINE_OFFSET"] 		= "-2",
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= TRIGGER_ACTION
 						}
 					}
@@ -853,8 +851,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							--["LINE_OFFSET"] 		= "+0",
+							-- ["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
+							["ADD_OPTION"]  = "ADDendSECTION", 
 							["ADD"] 				= ACTIVATE_ACTION
 						},
 					}

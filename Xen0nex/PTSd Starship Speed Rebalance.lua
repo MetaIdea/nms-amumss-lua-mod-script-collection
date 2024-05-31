@@ -1,6 +1,6 @@
 ModName = "PTSd Starship Speed Rebalance"
 ModAuthor = 'Xen0nex'
-GameVersion = "4.41"
+GameVersion = "4.70"
 Description = 'Makes all ships start out slower but end up faster with enough upgrades, tweaks balance of boosting speed for different ship types'
 
 ThrustMult = 1												--	Global multiplier for Thrust for all ships. (accelration?)
@@ -31,7 +31,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"PlanetEngine"},						--Speed in atmosphere	???
+				{"PlanetEngine"},						--Speed in atmosphere
 				{
 					{"ThrustForce",						30*ThrustMult},						--20		Thrust / acceleration?
 					{"MaxSpeed",						130*MaxSpeedMult},					--125		Top Speed?
@@ -41,7 +41,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"CombatEngine"},						--Speed while fighting in space		???
+				{"CombatEngine"},						--Speed while fighting in space
 				{
 					{"ThrustForce",						40*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						115*MaxSpeedMult},					--115		Top Speed?
@@ -51,7 +51,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere		???
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
 				{
 					{"ThrustForce",						40*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						80*MaxSpeedMult},					--80		Top Speed?
@@ -76,7 +76,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"PlanetEngine"},						--Speed in atmosphere	???
+				{"PlanetEngine"},						--Speed in atmosphere
 				{
 					{"ThrustForce",						40*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						150*MaxSpeedMult},					--125		Top Speed?
@@ -86,7 +86,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"CombatEngine"},						--Speed while fighting in space		???
+				{"CombatEngine"},						--Speed while fighting in space
 				{
 					{"ThrustForce",						60*ThrustMult},						--80		Thrust / acceleration?
 					{"MaxSpeed",						130*MaxSpeedMult},					--130		Top Speed?
@@ -96,7 +96,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere		???
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
 				{
 					{"ThrustForce",						60*ThrustMult},						--80		Thrust / acceleration?
 					{"MaxSpeed",						90*MaxSpeedMult},					--80		Top Speed?
@@ -121,7 +121,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"PlanetEngine"},						--Speed in atmosphere	???
+				{"PlanetEngine"},						--Speed in atmosphere
 				{
 					{"ThrustForce",						20*ThrustMult},						--20		Thrust / acceleration?
 					{"MaxSpeed",						110*MaxSpeedMult},					--130		Top Speed?
@@ -131,7 +131,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"CombatEngine"},						--Speed while fighting in space		???
+				{"CombatEngine"},						--Speed while fighting in space
 				{
 					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						100*MaxSpeedMult},					--100		Top Speed?
@@ -141,7 +141,52 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere		???
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						70*MaxSpeedMult},					--80		Top Speed?
+					{"BoostThrustForce",				60*BoostThrustMult},				--50		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					120*MaxBoostSpeedMult},				--120		Boosting Top Speed?
+					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
+				}
+			},
+		}
+	},
+	{
+		{"ControlHeavyHover"},							--Iron Vulture (or any custom Hauler using the Iron Vulture wings)
+		{
+			{
+				{"SpaceEngine"},						--Speed in open space
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						150*MaxSpeedMult},					--180		Top Speed?
+					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"TurnStrength",					0.6*ManMult},						--0.6		Maneuverability?
+				}
+			},
+			{
+				{"PlanetEngine"},						--Speed in atmosphere
+				{
+					{"ThrustForce",						20*ThrustMult},						--20		Thrust / acceleration?
+					{"MaxSpeed",						110*MaxSpeedMult},					--130		Top Speed?
+					{"BoostThrustForce",				50*BoostThrustMult},				--20		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					140*MaxBoostSpeedMult},				--185		Boosting Top Speed?
+					{"TurnStrength",					0.7*ManMult},						--0.7		Maneuverability?
+				}
+			},
+			{
+				{"CombatEngine"},						--Speed while fighting in space
+				{
+					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
+					{"MaxSpeed",						100*MaxSpeedMult},					--100		Top Speed?
+					{"BoostThrustForce",				400*BoostThrustMult},				--500		Boosting Thrust / acceleration?
+					{"BoostMaxSpeed",					1000*MaxBoostSpeedMult},			--1100		Boosting Top Speed?
+					{"TurnStrength",					1*ManMult},							--1			Maneuverability?
+				}
+			},
+			{
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
 				{
 					{"ThrustForce",						30*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						70*MaxSpeedMult},					--80		Top Speed?
@@ -166,7 +211,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"PlanetEngine"},						--Speed in atmosphere	???
+				{"PlanetEngine"},						--Speed in atmosphere
 				{
 					{"ThrustForce",						33*ThrustMult},						--20		Thrust / acceleration?
 					{"MaxSpeed",						135*MaxSpeedMult},					--130		Top Speed?
@@ -176,7 +221,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"CombatEngine"},						--Speed while fighting in space		???
+				{"CombatEngine"},						--Speed while fighting in space
 				{
 					{"ThrustForce",						45*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						120*MaxSpeedMult},					--80		Top Speed?
@@ -186,7 +231,7 @@ ShipSpeedChanges =
 				}
 			},
 			{
-				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere		???
+				{"AtmosCombatEngine"},					--Speed while fighting in atmosphere
 				{
 					{"ThrustForce",						45*ThrustMult},						--40		Thrust / acceleration?
 					{"MaxSpeed",						83*MaxSpeedMult},					--80		Top Speed?
@@ -202,7 +247,7 @@ ShipSpeedChanges =
 ClassSpeedBonuses = 
 {
 	{
-		{"ControlBonusC"},								--Extra Speed stats for being Class C	???
+		{"ControlBonusC"},								--Extra Speed stats for being Class C
 		{
 			{"ThrustForceMax",						30*ThrustMult*ClassBonusMult},			--30		Largest possible bonus?
 			{"ThrustForceMin",						-5*ThrustMult*ClassBonusMult},			-- -5		Smallest possible bonus?
@@ -215,7 +260,7 @@ ClassSpeedBonuses =
 		}
 	},
 	{
-		{"ControlBonusB"},								--Extra Speed stats for being Class B	???
+		{"ControlBonusB"},								--Extra Speed stats for being Class B
 		{
 			{"ThrustForceMax",						60*ThrustMult*ClassBonusMult},			--60		Largest possible bonus?
 			{"ThrustForceMin",						20*ThrustMult*ClassBonusMult},			--20		Smallest possible bonus?
@@ -228,7 +273,7 @@ ClassSpeedBonuses =
 		}
 	},
 	{
-		{"ControlBonusA"},								--Extra Speed stats for being Class A	???
+		{"ControlBonusA"},								--Extra Speed stats for being Class A
 		{
 			{"ThrustForceMax",						100*ThrustMult*ClassBonusMult},			--100		Largest possible bonus?
 			{"ThrustForceMin",						50*ThrustMult*ClassBonusMult},			--50		Smallest possible bonus?
@@ -241,7 +286,7 @@ ClassSpeedBonuses =
 		}
 	},
 	{
-		{"ControlBonusS"},								--Extra Speed stats for being Class S	???
+		{"ControlBonusS"},								--Extra Speed stats for being Class S
 		{
 			{"ThrustForceMax",						250*ThrustMult*ClassBonusMult},			--250		Largest possible bonus?
 			{"ThrustForceMin",						50*ThrustMult*ClassBonusMult},			--50		Smallest possible bonus?

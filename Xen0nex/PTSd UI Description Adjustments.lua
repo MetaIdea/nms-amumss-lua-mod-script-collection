@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "4_63"
+GameVersion = "4_70"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 VesperSailDesc =
@@ -63,17 +63,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "PLANT_PEARL_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "PLANT_PEARL_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", PearlTime}
+								{"English", PearlTime}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "PLANT_NIP_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "PLANT_NIP_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", NipNipTime}
+								{"English", NipNipTime}
 							}
 						},
 					}
@@ -83,10 +83,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_BIO_SHIP_MISSION1_MSG2B",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_BIO_SHIP_MISSION1_MSG2B"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", ConsciousnessBridgeMissionHint}
+								{"English", ConsciousnessBridgeMissionHint}
 							}
 						},
 					}
@@ -96,17 +96,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SETTLEMENT_PROD_RATE_NUM",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SETTLEMENT_PROD_RATE_NUM"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SettlementRate}
+								{"English", SettlementRate}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SOLAR_SAIL_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SOLAR_SAIL_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", VesperSailDesc}
+								{"English", VesperSailDesc}
 							}
 						},
 					}
@@ -116,59 +116,59 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SALVAGE_PROD_CONFIRM_LANG",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SALVAGE_PROD_CONFIRM_LANG"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageConfirm}
+								{"English", SalvageConfirm}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_NO_SALVAGE_PRODS",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_NO_SALVAGE_PRODS"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageAttempt}
+								{"English", SalvageAttempt}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_ENG",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_ENG"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageEngine}
+								{"English", SalvageEngine}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageWings}
+								{"English", SalvageWings}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_L",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_L"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageLWing}
+								{"English", SalvageLWing}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_R",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_WING_R"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageRWing}
+								{"English", SalvageRWing}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_HULL",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_HULL"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageHull}
+								{"English", SalvageHull}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_COCK",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_COCK"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", SalvageCockpit}
+								{"English", SalvageCockpit}
 							}
 						},
 					}
@@ -178,31 +178,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANTPROD_NIP_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANTPROD_NIP_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", NipNipTime}
+								{"English", NipNipTime}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_11_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_11_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", NipNipTime}
+								{"English", NipNipTime}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_12_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_12_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", VenomTime}
+								{"English", VenomTime}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_13_DESC",	"English", "VariableSizeString.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANT_13_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"Value", GravTime}
+								{"English", GravTime}
 							}
 						},
 					}

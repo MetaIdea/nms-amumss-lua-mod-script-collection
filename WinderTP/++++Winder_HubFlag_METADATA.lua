@@ -70688,12 +70688,8 @@ return [[
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="Name" value="]] .. NAMEUP_INJECT .. [[" />
       <Property name="NameLower" value="]] .. NAMEL .. [[" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. SUBTITLE_INJECT .. [[" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. DESCRIPT .. [[" />
-      </Property>
+      <Property name="Subtitle" value="]] .. SUBTITLE_INJECT .. [[" />
+      <Property name="Description" value="]] .. DESCRIPT .. [[" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
@@ -70861,9 +70857,7 @@ function GetLanguageEntry(NAME, VALUE, LOCALE)
 return[[
     <Property value="TkLocalisationEntry.xml">
       <Property name="Id" value="]] .. NAME .. [[" />
-      <Property name="]] .. LOCALE .. [[" value="VariableSizeString.xml">
-        <Property name="Value" value="]] .. VALUE .. [[" />
-      </Property>
+      <Property name="]] .. LOCALE .. [[" value="]] .. VALUE .. [[" />
     </Property>
 ]]
 end
@@ -72338,18 +72332,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_2"},
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_2"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_2"},
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_2"},
 							}
 						},
 						{
@@ -72373,18 +72367,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_3"},
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_3"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_3"},
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_3"},
 							}
 						},
 						{
@@ -72408,18 +72402,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
@@ -72443,18 +72437,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
@@ -72478,18 +72472,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Subtitle", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"Description", "UI_SETTLEMENT_MISS_MARKER_1"},
 							}
 						},
 						{
@@ -72513,18 +72507,18 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
-							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "BLD_TOWER_SUBTITLE"},
+								{"Subtitle", "BLD_TOWER_SUBTITLE"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
-							["PRECEDING_KEY_WORDS"] = {"Description"},
+							-- ["PRECEDING_KEY_WORDS"] = {"Description"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", "BLD_TOWER_DESCRIPTION"},
+								{"Description", "BLD_TOWER_DESCRIPTION"},
 							}
 						},
 						{

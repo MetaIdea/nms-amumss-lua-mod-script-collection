@@ -638,7 +638,7 @@ COLOUR_CHANGE_TABLE = {}
 for i,j in pairs(NEW_COLOURS) do	
     if DEBUG_TEXT then print(i) end
 	ADD_COLOUR_ENTRY =
-	{	["SPECIAL_KEY_WORDS"] = { "Player", "GcPaletteData.xml" },
+	{	["SPECIAL_KEY_WORDS"] = { "ID", "PLAYER" },
 		["PRECEDING_KEY_WORDS"] = { "Colour.xml" },
 		["INTEGER_TO_FLOAT"] = "FORCE",
 		["SECTION_ACTIVE"] = -(NUM_VANILLA_COLOUR + i),

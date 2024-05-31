@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_65"
+GameVersion = "4_70"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -13,12 +13,14 @@ NonMinableSubstanceMult =				1						--Multiplier for certain substance rewards f
 TeachCreaturePelletsEarly = true		--false	 	Set true to teach the Creature Pellet Recipe during the tutorial when teaching the Hermetic Seal recipe instead of later on, false otherwise
 NoNewTechAtCrashsites = true			--false		Set true to ensure all starship crashsite Distress Beacon rewards only give random-Class Upgrade Modules, not teaching a new core tech blueprint
 
---Changes the Class & inventory size when redeeming the three unique expedition reward starships or one unique Multi-Tool: Golden Vector, Utopia Speeder, and Starborn Runner starships and Atlas Sceptre Multi-Tool
+--Changes the Class & inventory size when redeeming the four unique expedition reward starships or one unique Multi-Tool: Golden Vector, Utopia Speeder, Starborn Runner, and Iron Vulture starships and Atlas Sceptre Multi-Tool
 ExpShipClass = 							"C"						--"S"
 ExpShipCargoSlots = 					8						--36				The game adds 1 to whatever value is entered here
+ExpShipHaulerCargoSlots = 				20						--36				(For Iron Vulture) The game adds 1 to whatever value is entered here
 ExpShipSize = 							"FgtSmall"				--"FgtLarge"		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
+ExpShipHaulerSize = 					"DrpSmall"				--"DrpLarge"		(For Iron Vulture) Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range)
 
---If set to "true", makes all starships & multitools rewarded from Expeditions & Twitch streams come as C Class and with the inventory sizes defined below
+--If set to "true", makes all other starships & multitools rewarded from Expeditions & Twitch streams come as C Class and with the inventory sizes defined below
 AllTwitchExpRewardsC =					false					--false
 AllTwitchExpRewardsCargo =				8						--Varies	Only used if AllTwitchExpRewardsC = true		The game adds 1 to whatever value is entered here
 AllTwitchExpRewardsShipSize =			"FgtSmall"				--Varies	Only used if AllTwitchExpRewardsC = true		Affects how many Tech slots it will start with based on INVENTORYTABLE.MBIN, list of options detailed in "PTSd Ship+MultiTool Rebalance.lua" (Seems to pick exactly between the Min & Max range, or sometimes uses the Max value?)
@@ -314,21 +316,21 @@ CivilianFreighterRewardChanges =
 	}
 }
 
---Presumably rewards for destroying Pirate Freighters (added in NMS v4.4)
+--Seems to be rewards for destroying Freighters (added in NMS v4.4)
 PirateFreighterLootChanges =
 {
 	{
 		{"R_PIR_FREI"},
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},		--1,	1,		5		A-Class Reactor
-			{"SHIP_CORE_S",				"FREI_INV_TOKEN",		2,	4,		300},	--1,	1,		2		S-Class Reactor
+			{"SHIP_CORE_A",				"FRIG_TOKEN",			1,	1,		200},	--1,	1,		5		A-Class Reactor
+			{"SHIP_CORE_S",				"FREI_INV_TOKEN",		1,	1,		300},	--1,	1,		2		S-Class Reactor
 			--{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
 			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
 		}
 	},
 }
 
-PirateFreighterTechQualityOverride = 1				--3		May affect the class of procedural Freighter Upgrade Modules founds from destroying freighters. 3 = S Class, -1 = Random
+PirateFreighterTechQualityOverride = 1				--3		Affects the class of procedural Freighter Upgrade Modules founds from destroying freighters. 3 = S Class, -1 = based on System seed
 
 --Rewards for choosing a tech upgrade at the end of a Derelict Freighter
 FreighterTechLootChanges =
@@ -2400,92 +2402,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["EXML_CHANGE_TABLE"]	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_SHIP"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_SHIP"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_SHIP"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_PHASE3"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					--{"SizeType",	ExpShipSize}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_STAFF"},
-				["MATH_OPERATION"] 		= "", 
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					--{"SizeType",	ExpShipSize}
-				}
-			},
-			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
 				["MATH_OPERATION"] 		= "", 
 				["SECTION_UP"] = 1,
@@ -3971,6 +3887,125 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 				}
 			}
 end
+
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_SHIP"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_COMPLETE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_SHIP"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_COMPLETE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_SHIP"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_COMPLETE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_PHASE3"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					--{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_STAFF"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					--{"SizeType",	ExpShipSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_SHIP"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipHaulerCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipHaulerSize}
+				}
+			}
+ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_COMPLETE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	ExpShipHaulerCargoSlots},
+					{"InventoryClass",	ExpShipClass},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	ExpShipHaulerSize}
+				}
+			}
 
 if TeachCreaturePelletsEarly then
 

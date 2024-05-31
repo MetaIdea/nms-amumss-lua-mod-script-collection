@@ -1,6 +1,6 @@
 -- if set to true, the script will automatically run
 -- without asking for user input for non-capital freighter spawn pool
-AUTORUN = false
+AUTORUN = true
 
 -------------------------------------------------
 -- NON-CAPITAL FREIGHTER USER DEFAULTS SECTION --
@@ -24,7 +24,8 @@ VANILLA_FREIGHTER_REPEAT = 1
 -- COLLECTIONS SECTION --
 -------------------------
 
-SHIPS_COLLECTION = {"ALL"}
+-- SHIPS_COLLECTION = {"TEST"}
+SHIPS_COLLECTION = {"ALL", "GFREIGHTER"}
 -- AFFECTS CAPITAL FREIGHTERS ONLY
 -- USES LISTS IN COLLECTIONS_LIST
 -- "ALL", "GFREIGHTER"
@@ -81,8 +82,6 @@ COLLECTIONS_LIST =
 					},
 	["TEST"] =		{	
 						"ARMADA",
-						"ARMADA CAPITAL",
-						"VANILLA",
 					},
 					
 }
@@ -165,7 +164,6 @@ return [[
 		  <Property name="Attributes">
 			<Property value="TkSceneNodeAttributeData.xml">
 			  <Property name="Name" value="SCENEGRAPH" />
-			  <Property name="AltID" value="" />
 			  <Property name="Value" value="]] .. SCENEGRAPH .. [[" />
 			</Property>
 		  </Property>
@@ -373,7 +371,6 @@ NOCAP_SCENE["SCENE"]["Contents"] =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
