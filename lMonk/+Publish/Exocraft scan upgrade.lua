@@ -6,7 +6,7 @@ local mod_desc = [[
   Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-local mod_version = '2.0'
+local mod_version = '2.01'
 
 local scan_event = {
 	termimal =	{-- trade termimal
@@ -69,7 +69,7 @@ local scan_event = {
 		event	= 'SETTLEMENT',
 		evprior	= 'High',
 		blocal	= 'AllNearest',
-		btype	= 'UnownedSettlement',
+		buildt	= 'UnownedSettlement',
 		class	= 'Settlement_Hub',
 		osd		= 'UI_SETTLEMENT_LOCATED_OSD',
 		tip		= 'UI_SETTLEMENT_LOCATED',
@@ -125,75 +125,93 @@ local scan_event = {
 		tip		= 'UI_CAMP_REVEAL_MSG',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ROBOTHEAD.ON.DDS'
 	},
-	monolith =	{--	ORG: monolith
+	monolith =	{--	monolith
+		org		= true,
 		event	= 'MONOLITH',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS'
 	},
-	radio =		{--	ORG: radiotower
+	radio =		{--	radiotower
+		org		= true,
 		event	= 'RADIOTOWER',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS'
 	},
-	factory =	{--	ORG: factory
+	factory =	{--	factory
+		org		= true,
 		event	= 'FACTORY',
 		icon	= 'TEXTURES/UI/HUD/ICONS/WIKI/BASE4.DDS'
 	},
-	abandoned =	{--	ORG: abandoned
+	abandoned =	{--	abandoned
+		org		= true,
 		event	= 'ABANDONED',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},
-	outpost =	{--	ORG: trading post
+	outpost =	{--	trading post
+		org		= true,
 		event	= 'OUTPOST',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS'
 	},
-	shop =		{--	ORG: shop
+	shop =		{--	shop
+		org		= true,
 		event	= 'SHOP',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SMALLBUILDING.DDS'
 	},
-	observe =	{-- ORG: observatory
+	observe =	{-- observatory
+		org		= true,
 		event	= 'OBSERVATORY',
 		icon	= 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.PLANET.DDS'
 	},
-	crash =		{--	ORG: crashed ship
+	crash =		{--	crashed ship
+		org		= true,
 		event	= 'DISTRESS',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SHIP.MSHOP.DDS'
 	},
-	freighter =	{--	ORG: crashed freighter
+	freighter =	{--	crashed freighter
+		org		= true,
 		event	= 'CRASHED_FREIGHTER',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FREIGHTER.MSHOP.DDS'
 	},
-	npc =		{--	ORG: NPC in distress
+	npc =		{--	NPC in distress
+		org		= true,
 		event	= 'DISTRESS_NPC',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SHIP.MSHOP.DDS'
 	},
-	harvester =	{--	ORG: harvester
+	harvester =	{--	harvester
+		org		= true,
 		event	= 'HARVESTER',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SCIENCEMISSIONS.MSHOP.DDS'
 	},
-	depot =		{--	ORG: sentinel depot
+	depot =		{--	sentinel depot
+		org		= true,
 		event	= 'DEPOT',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.DEPOTRAID.MSHOP.DDS'
 	},
-	ruin =		{-- ORG: ruin
+	ruin =		{-- ruin
+		org		= true,
 		event	= 'RUIN',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
 	},
-	droppod =	{-- ORG: drop pod
+	droppod =	{-- drop pod
+		org		= true,
 		event	= 'DROPPOD',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS'
 	},
-	wcrash =	{--	ORG: underwater crashed ship
+	wcrash =	{--	underwater crashed ship
+		org		= true,
 		event	= 'UW_SHIPCRASH',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SHIP.MSHOP.DDS'
 	},
-	wfreight =	{--	ORG: underwater crashed freighter
+	wfreight =	{--	underwater crashed freighter
+		org		= true,
 		event	= 'UW_FREIGHTCRASH',
 		icon	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FREIGHTER.MSHOP.DDS'
 	},
-	wabandon =	{--	ORG: underwater building
+	wabandon =	{--	underwater building
+		org		= true,
 		event	= 'UW_ABANDONED',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},
-	wruin =		{--	ORG: underwater ruin
+	wruin =		{--	underwater ruin
+		org		= true,
 		event	= 'UW_RUIN',
 		icon	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
 	}
@@ -432,36 +450,31 @@ local function VehicleScanEventsChangeTable()
 		}
 	}
 	for _,ev in pairs(scan_event) do
-		if ev.class then
+		if not ev.org then
 			T[#T+1] = {
 				SEC_EDIT 			= 'gc_scan_event',
+				VALUE_MATCH			= '{%.xml$}',
+				VALUE_MATCH_OPTIONS = '~=',
 				VALUE_CHANGE_TABLE 	= {
 					{'Name',						ev.event},
+					{'InteractionType',				ev.Intert	or 'IGNORE'},
 					{'EventPriority',				ev.evprior	or 'Regular'},
 					{'BuildingLocation',			ev.blocal	or 'Nearest'},
 					{'ReplaceEventIfAlreadyActive',	ev.replace	or false},
-					{'BuildingType',				ev.btype	or 'BuildingClass'},
+					{'BuildingType',				ev.buildt	or 'BuildingClass'},
+					{'BuildingClass',				ev.class	or 'None'},
 					{'MarkerLabel',					ev.mlabel	or ''},
 					{'OSDMessage',					ev.osd},
 					{'TooltipMessage',				ev.tip}
 				}
 			}
 			T[#T+1] = {
-				SEC_EDIT 			= 'gc_scan_event',
-				PRECEDING_KEY_WORDS	= 'BuildingClass',
-				VALUE_MATCH			= 'GcBuildingClassification.xml',
-				VALUE_MATCH_OPTIONS = '~=',
-				VALUE_CHANGE_TABLE 	= {
-					{'BuildingClass', ev.class}
-				}
-			}
-			T[#T+1] = {
-				PRECEDING_KEY_WORDS = 'Events',
-				SEC_ADD_NAMED 		= 'gc_scan_event'
+				PRECEDING_KEY_WORDS	= 'Events',
+				SEC_ADD_NAMED		= 'gc_scan_event'
 			}
 		end
 	end
--- add/replace marker icon for found targets
+	-- add/replace marker icon for found targets
 	for _,ev in pairs(scan_event) do
 		T[#T+1] = {
 			SPECIAL_KEY_WORDS	= {'Name', ev.event},
@@ -475,7 +488,9 @@ local function VehicleScanEventsChangeTable()
 	T[#T+1] = {
 		SPECIAL_KEY_WORDS	= {'Name', 'RUIN'},
 		VALUE_CHANGE_TABLE 	= {
-			{'OSDMessage', 'UI_SIGNAL_TREASURERUIN'}
+			{'OSDMessage',		scan_event.truin.osd},
+			{'TooltipMessage',	scan_event.truin.tip}
+			
 		}
 	}
 	return T
@@ -484,7 +499,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '4.70',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{

@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
-  ["NMS_VERSION"]     = "4.70",
+  ["NMS_VERSION"]     = "4.71",
   ["MODIFICATIONS"]   =
     {
         {
@@ -301,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id" , "R_DM_EXOTUT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DM_EXOTUT"},
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SEC_SAVE_TO"] = "GetRewardMissionSeeded",
                         },
@@ -623,6 +623,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceReward",
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SIGNALSCANNER\ENTITIES\SIGNALSCANNER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Mission", "S13_DUMMY"},
+                            ["REMOVE"] = "SECTION"
                         },
                     },
                 },

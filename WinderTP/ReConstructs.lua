@@ -905,7 +905,6 @@ MISC_REPLACEMENTS =
 			["Scale"] = "1",
 		},
 	},
-	
 }
 
 -- CONSTRUCT PLANET RING SCENE LIST

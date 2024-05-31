@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Lumen.pak",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.70",
+["NMS_VERSION"]             = "4.71",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

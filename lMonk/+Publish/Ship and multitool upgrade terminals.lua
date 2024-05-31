@@ -4,8 +4,7 @@ local mod_desc = [[
   The multitool upgrade and salvage menus from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------------------
-local mod_version = '2.01'
-
+local mod_version = '1.82'
 
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
@@ -170,7 +169,7 @@ local buildparts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '4.71',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{

@@ -1382,7 +1382,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "SubWings_C1"},
                                 {"Name", "SubWingsCRight1"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "SubWings_C1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"RotX", "90"},

@@ -5,27 +5,28 @@ REWARD_TITLE	= "Iron Vulture"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Iron Vulture Unlocker.pak",
-["MOD_AUTHOR"]				= "Mjstral & Babscoole",
-["MOD_DESCRIPTION"]			= "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]				= "4.70",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
+["MOD_AUTHOR"]      = "Mjstral & Babscoole",
+["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
+["NMS_VERSION"]     = "4.71",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Anims"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
+                            ["SECTION_ACTIVE"] = {2},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] = 
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TRIGGERANIM" />
-          <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+          <Property name="Filename" value="MODELS/TESTS/EFFECTTEST.ANIM.MBIN" />
           <Property name="AnimType" value="OneShot" />
           <Property name="FrameStart" value="0" />
           <Property name="FrameEnd" value="0" />
@@ -54,9 +55,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -131,13 +132,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+							["ADD"] = 
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. REWARD_TITLE .. [[" />
@@ -189,6 +190,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
 					}
 				},
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\TESTS\EFFECTTEST.ANIM.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FrameCount", "10"},
+                                {"NodeCount",  "0"},
+                            }
+                        },
+                    }
+                },
 			}
 		}		
 	},

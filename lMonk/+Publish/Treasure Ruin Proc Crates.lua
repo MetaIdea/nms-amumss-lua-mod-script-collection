@@ -169,7 +169,7 @@ local mod_desc = [[
   4 Alternate placements for the treasure chest
 ]]--------------------------------------------------------------------
 
-local keys = {
+local key_nodes = {
 	tid	 = '_CRATES_KEY_',
 	name = '_Cratekey_',
 	form = {
@@ -182,7 +182,7 @@ local keys = {
 	}
 }
 
-local locks = {
+local lock_nodes = {
 	tid	 = '_CRATES_LOCK_',
 	name = '_Cratelock_',
 	form = {
@@ -200,9 +200,9 @@ end
 
 local function AddSceneNodes()
 	local T = {}
-	for i, f in ipairs(keys.form) do
+	for i, f in ipairs(key_nodes.form) do
 		T[#T+1] = ScNode({
-			name	= AddChar(keys.name, i),
+			name	= AddChar(key_nodes.name, i),
 			stype	= 'REFERENCE',
 			form	= f,
 			attr	= {
@@ -210,9 +210,9 @@ local function AddSceneNodes()
 			}
 		})
 	end
-	for i, f in ipairs(locks.form) do
+	for i, f in ipairs(lock_nodes.form) do
 		T[#T+1] = ScNode({
-			name	= AddChar(locks.name, i),
+			name	= AddChar(lock_nodes.name, i),
 			stype	= 'REFERENCE',
 			form	= f,
 			attr	= {
@@ -273,41 +273,44 @@ local function GenerateDescriptor()
 			}
 		}
 	end
-	local function RsrcList(tid)
-		return {
-			META		= {'value', 'TkResourceDescriptorList.xml'},
-			TypeId		= tid,
-			Descriptors	= {META = {'name', 'Descriptors'}}
-		}
-	end
-	local combinations = {}
-	--	generate combinations for 6 crate-keys
-	for i=1, 4 do
-		for j=i+1, 5 do
-			for k=j+1, 6 do
-				combinations[#combinations+1] = {i, j, k}
-			end
-		end
-	end
 	local T = {
 		--	file wrapper template
 		META = {'template', 'TkModelDescriptorList'},
 		List = {
 			META = {'name', 'List'},
-			[1]  = RsrcList(keys.tid)
+			Keys = {
+			-- keys descriptor
+				META		= {'value', 'TkResourceDescriptorList.xml'},
+				TypeId		= key_nodes.tid,
+				Descriptors	= {META = {'name', 'Descriptors'}}
+			},
+			Locks = {
+			-- locks descriptor
+				META		= {'value', 'TkResourceDescriptorList.xml'},
+				TypeId		= lock_nodes.tid,
+				Descriptors	= {META = {'name', 'Descriptors'}}
+			}
 		}
 	}
-	-- Add key crates
-	for i, k in ipairs(combinations) do
-		table.insert(T.List[1].Descriptors, Rsrc3Group(keys.name, i, k))
+	local combinations = {}
+	--	generate combinations of 3 from all key_nodes
+	for i = 1, #key_nodes.form - 2 do
+		for j = i + 1, #key_nodes.form - 1 do
+			for k = j + 1, #key_nodes.form do
+				combinations[#combinations+1] = {i, j, k}
+			end
+		end
+	end
+	-- Add keys
+	for i, cmb in ipairs(combinations) do
+		table.insert(T.List.Keys.Descriptors, Rsrc3Group(key_nodes.name, i, cmb))
 	end
 	-- Add lock crates
-	T.List[#T.List+1] = RsrcList(locks.tid)
-	for i=1, #locks do
-		table.insert(T.List[2].Descriptors, {
+	for i=1, #lock_nodes.form do
+		table.insert(T.List.Locks.Descriptors, {
 			META	= {'value', 'TkResourceDescriptorData.xml'},
-			Id		= AddChar(locks.name, i, true),
-			Name	= AddChar(locks.name, i)
+			Id		= AddChar(lock_nodes.name, i, true),
+			Name	= AddChar(lock_nodes.name, i)
 		})
 	end
 	return T

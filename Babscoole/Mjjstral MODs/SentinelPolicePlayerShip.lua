@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "4.70",
+["NMS_VERSION"]             = "4.71",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
