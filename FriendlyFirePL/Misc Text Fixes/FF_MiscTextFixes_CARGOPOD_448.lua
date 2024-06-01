@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "CHAT"
-METADATA_NMS_VERSION    = "465"
+METADATA_MOD_MODULE     = "CARGOPOD"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,7 +14,7 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_METADATA_MESSAGES = "METADATA\\GAMESTATE\\MESSAGES\\STATUSMESSAGEDEFINITIONS.MBIN"
+FILE_MODELS_CARGOPOD_JUNK = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\CRASHEDFREIGHTER\\PARTS\\CONTAINERTERMINAL\\ENTITIES\\TERMINALCHAR.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,17 +30,11 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_MESSAGES,
+                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_CARGOPOD_JUNK,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SKW"] = {"Id","FEED_CREATURE"},
-                            ["VCT"] =
-                            {
-                                {"Message",""},
-                                {"ReplicateTo","None"},
-                                {"PostLocally","False"},
-                            },
+                            ["VCT"] = {{"Description","UI_MAINTAIN_ABANDONED_SUB",},},
                         },
                     },
                 }

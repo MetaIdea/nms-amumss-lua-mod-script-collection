@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "CRAFT"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -48,13 +48,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             -- Supply Pipe, Mineral Extractor, Gas Extractor
                             -- change blueprint subtitle to one used by the depot
-                            ["FSKWG"] = 
+                            ["SKW"] = 
                             {
                                 {"ID","U_PIPELINE"},
                                 {"ID","U_GASEXTRACTOR"},
                                 {"ID","U_EXTRACTOR_S"},
                             },
-                            ["VCT"] = {{"Value","BLD_SILO_SUB"},},
+                            ["VCT"] = {{"Subtitle","BLD_SILO_SUB"},},
                         },
                     },
                 }

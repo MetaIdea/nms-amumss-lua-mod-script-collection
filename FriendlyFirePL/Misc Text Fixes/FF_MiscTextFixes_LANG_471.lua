@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANG"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -1073,9 +1073,7 @@ function BuildTextProperty(id,value) return
 [[
 <Property value="TkLocalisationEntry.xml">
     <Property name="Id" value="]]..id..[[" />
-    <Property name="]]..SUFFIX..[[" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..value..[[" />
-    </Property>
+    <Property name="]]..SUFFIX..[[" value="]]..value..[[" />
 </Property>
 ]]
 end

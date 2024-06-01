@@ -2,8 +2,8 @@ ModName         =   "MPD"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.63"
-ModVersion      =   "v1.5_Orbital"
+GameVersion     =   "4.71"
+ModVersion      =   "v1.6_Adrift"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

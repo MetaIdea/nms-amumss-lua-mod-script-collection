@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "LiminalOpportunities"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "452"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = 
 [[
 This mod adds a custom Nexus mission revolving around exploring a derelict freighter.  
@@ -3093,9 +3093,7 @@ function BuildTextProperty(id,value) return
 [[
 <Property value="TkLocalisationEntry.xml">
     <Property name="Id" value="]]..id..[[" />
-    <Property name="English" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..value..[[" />
-    </Property>
+    <Property name="English" value="]]..value..[[" />
 </Property>
 ]]
 end
@@ -3157,8 +3155,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- small change to one vanilla item name
-                        {   ["SKW"] = {"Id","UI_ROGUE_GRAVE_KEY_NAME",},      ["VCT"] = {{"Value","DREADFUL WAILING"},},    },
-                        {   ["SKW"] = {"Id","UI_ROGUE_GRAVE_KEY_NAME_L",},    ["VCT"] = {{"Value","Dreadful Wailing"},},    },
+                        {   ["SKW"] = {"Id","UI_ROGUE_GRAVE_KEY_NAME",},      ["VCT"] = {{"English","DREADFUL WAILING"},},    },
+                        {   ["SKW"] = {"Id","UI_ROGUE_GRAVE_KEY_NAME_L",},    ["VCT"] = {{"English","Dreadful Wailing"},},    },
 
                         -- add all the new text entries
                         {   ["PKW"] = "Table",    ["ADD"] = BuildLocList(LIST_TEXT_DERELICT),   },

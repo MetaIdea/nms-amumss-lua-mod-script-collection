@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "AugmentedStarSeed"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "464"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = "This mod adds the discovery mechanic from Mark of the Denier to Star Seed suit technology and allows players to collect some rewards from it. Modifies NMS_LOC1_ENGLISH language file and files in METADATA\\REALITY\\TABLES."
 
 
@@ -62,16 +62,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- change description of Star Seed module, get template for new text entries
-                        {   ["SKW"] = {"Id","STARBIRTH_ITEM_DESC",},    ["VCT"] = {{"Value",TEXT_STARSEED_DESC},},                      },
-                        {   ["SKW"] = {"Id","SCAN_NO_TECH",},           ["SEC_SAVE_TO"] = "SEC_TEXT",                                   },
+                        {   ["SKW"] = {"Id","STARBIRTH_ITEM_DESC",},    ["VCT"] = {{"English",TEXT_STARSEED_DESC},},    },
+                        {   ["SKW"] = {"Id","SCAN_NO_TECH",},           ["SEC_SAVE_TO"] = "SEC_TEXT",                   },
 
                         -- add interaction button label
-                        {   ["SEC_EDIT"] = "SEC_TEXT",  ["VCT"] = {{"Id","TEXT_STARSEED_BUTTON",},{"Value",TEXT_STARSEED_BUTTON,},},    },
+                        {   ["SEC_EDIT"] = "SEC_TEXT",  ["VCT"] = {{"Id","TEXT_STARSEED_BUTTON",},{"English",TEXT_STARSEED_BUTTON,},},  },
                         {   ["PKW"] = "Table",  ["SEC_ADD_NAMED"] = "SEC_TEXT",                                                         },
 
                         -- add interaction button subtitle
-                        {   ["SEC_EDIT"] = "SEC_TEXT",  ["VCT"] = {{"Id","TEXT_STARSEED_SUB",},{"Value",TEXT_STARSEED_SUB,},},          },
-                        {   ["PKW"] = "Table",  ["SEC_ADD_NAMED"] = "SEC_TEXT",                                                         },
+                        {   ["SEC_EDIT"] = "SEC_TEXT",  ["VCT"] = {{"Id","TEXT_STARSEED_SUB",},{"English",TEXT_STARSEED_SUB,},},    },
+                        {   ["PKW"] = "Table",  ["SEC_ADD_NAMED"] = "SEC_TEXT",                                                     },
                     },
                 },
 

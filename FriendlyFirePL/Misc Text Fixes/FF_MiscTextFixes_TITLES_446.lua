@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "MEMORY"
-METADATA_NMS_VERSION    = "465"
+METADATA_MOD_MODULE     = "TITLES"
+METADATA_NMS_VERSION    = "471"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,7 +14,7 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_METADATA_CONSUMABLE_TABLE = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN"
+FILE_METADATA_PLAYERTITLES = "METADATA\\GAMESTATE\\PLAYERDATA\\PLAYERTITLEDATA.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,20 +30,17 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_CONSUMABLE_TABLE,
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_PLAYERTITLES,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["FSKWG"] = 
-                            {
-                                {"ID","TECHBOX",},
-                                {"ID","INVBOX",},
-                            },
-                            ["VCT"] = 
-                            {
-                                {"ButtonLocID","UI_DISMANTLE_TECHBOX",},
-                                {"ButtonSubLocID","UI_DISMANTLE_TECHBOX_SUB",},
-                            },
+                            ["SKW"] = {"ID","T_ABANDLORE3"},
+                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},
+                        },
+
+                        {
+                            ["SKW"] = {"ID","T_ABANDLORE4"},
+                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},
                         },
                     },
                 }
