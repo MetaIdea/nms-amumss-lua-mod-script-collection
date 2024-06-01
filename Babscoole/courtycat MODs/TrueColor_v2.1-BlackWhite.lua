@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]  = "TrueColor_v2.1-BW.pak",
     ["MOD_AUTHOR"]    = "courtykat",
     ["LUA_AUTHOR"]    = "Babscoole, and courtykat",
-    ["NMS_VERSION"]   = "4.08",
+    ["NMS_VERSION"]   = "4.71",
     ["MODIFICATIONS"] =
     {
         {
@@ -541,43 +541,43 @@ CustomColors =
 CustomDataTable =
 {
     {
-        ["PALETTE"] = "Player",
+        ["PALETTE"] = "PLAYER",
         ["NUMCOLOURS"] = "All"
     },
     {
-        ["PALETTE"] = "Vehicle",
+        ["PALETTE"] = "VEHICLE",
         ["NUMCOLOURS"] = "All",
     },
     -- {
-        -- ["PALETTE"] = "Vehicle_Bike",
+        -- ["PALETTE"] = "BIKE",
         -- ["NUMCOLOURS"] = "All",
     -- },
     -- {
-        -- ["PALETTE"] = "Vehicle_Truck",
+        -- ["PALETTE"] = "TRUCK",
         -- ["NUMCOLOURS"] = "All",
     -- },
     -- {
-        -- ["PALETTE"] = "Vehicle_WheeledBike",
+        -- ["PALETTE"] = "WHEELEDBIKE",
         -- ["NUMCOLOURS"] = "All",
     -- },
     -- {
-        -- ["PALETTE"] = "Vehicle_Hovercraft",
+        -- ["PALETTE"] = "HOVERCRAFT",
         -- ["NUMCOLOURS"] = "All",
     -- },
     -- {
-        -- ["PALETTE"] = "Vehicle_Submarine",
+        -- ["PALETTE"] = "SUBMARINE",
         -- ["NUMCOLOURS"] = "All",
     -- },
     -- {
-        -- ["PALETTE"] = "Vehicle_Mech",
+        -- ["PALETTE"] = "MECH",
         -- ["NUMCOLOURS"] = "All",
     -- },
     {
-        ["PALETTE"] = "Freighter",
+        ["PALETTE"] = "FREIGHTER",
         ["NUMCOLOURS"] = "All",
     },
     -- {
-        -- ["PALETTE"] = "Pet",
+        -- ["PALETTE"] = "PET",
         -- ["NUMCOLOURS"] = "All",
     -- },
 }
@@ -645,14 +645,14 @@ for i = 1, #CustomDataTable do
 
     BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {"ID", Palette, "NumColours", PaletteNumColours},
         ["PRECEDING_KEY_WORDS"] = {"Colours"},
         ["REMOVE"] = "SECTION"
     }
 
     BaseColourPalettesTable2[#BaseColourPalettesTable2 +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours},
+        ["SPECIAL_KEY_WORDS"] = {"ID", Palette, "NumColours", PaletteNumColours},
         ["ADD"] = CreateColoursProperty(PaletteColours)
     }
     end
