@@ -9,7 +9,7 @@ MODEL_LIST = {-- All entries must have all three keys ("ID","PATH,"SCALE"). "ID"
 	{
 		["PATH"] = "MODELS/SPACE/SPACESTATION/SPACESTATIONTYPEB.SCENE.MBIN",
 		["SCALE"] = 1,
-		["WEIGHT"] = 9,
+		["WEIGHT"] = 19,
 	},
 }
 
@@ -18,7 +18,6 @@ function generate_scene(FINAL_MODEL_NAME,MODEL_LIST)
   text_table = {}
   --Add the scene header
   table.insert(text_table,[[<?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.42.0)-->
 <Data template="TkSceneNodeData">
   <Property name="Name" value="]]..string.gsub(FINAL_MODEL_NAME,".SCENE.MBIN","")..[[" />
   <Property name="NameHash" value="0" />
@@ -37,7 +36,6 @@ function generate_scene(FINAL_MODEL_NAME,MODEL_LIST)
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -64,7 +62,6 @@ function generate_scene(FINAL_MODEL_NAME,MODEL_LIST)
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]]..option["PATH"]..[[" />
         </Property>
       </Property>
@@ -125,7 +122,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"] 			= PAK_NAME,
-	["MOD_DESCRIPTION"]		= "",
+	["MOD_DESCRIPTION"]		= "Space stations have a 5% chance of spawning with pre-Orbital Update design.",
 	["MOD_AUTHOR"]				= "",
 	["NMS_VERSION"]				= "",
 	["ADD_FILES"] 			= 

@@ -284,7 +284,7 @@ Requirements =
         {
             {"EX_YELLOW", "100", Invetory_Type["Substance"]},
             {"TECH_COMP", "1", Invetory_Type["Product"]},
-            {"STELLAR2", "500", Invetory_Type["Substance"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]}
         },
         ["REQUIREMENT_COST"] = "1000"
     },
@@ -294,7 +294,7 @@ Requirements =
         {
             {"EX_RED", "200", Invetory_Type["Substance"]},
             {"TECH_COMP", "2", Invetory_Type["Product"]},
-            {"STELLAR2", "500", Invetory_Type["Substance"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]}
         },
         ["REQUIREMENT_COST"] = "2500"
     },
@@ -304,7 +304,7 @@ Requirements =
             --A Requirement
             {"EX_GREEN", "300", Invetory_Type["Substance"]},
             {"TECH_COMP", "3", Invetory_Type["Product"]},
-            {"STELLAR2", "500", Invetory_Type["Substance"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]}
         },
         ["REQUIREMENT_COST"] = "5000"
     },
@@ -315,7 +315,7 @@ Requirements =
             --S Requirement
             {"EX_BLUE", "500", Invetory_Type["Substance"]},
             {"TECH_COMP", "5", Invetory_Type["Product"]},
-            {"STELLAR2", "500", Invetory_Type["Substance"]},
+            {"STELLAR2", "500", Invetory_Type["Substance"]}
         },
         ["REQUIREMENT_COST"] = "10000"
     },
@@ -326,14 +326,14 @@ Requirements =
             --X Requirement
             {"EX_RED", "300", Invetory_Type["Substance"]},
             {"EX_BLUE", "300", Invetory_Type["Substance"]},
-            {"TECH_COMP", "5", Invetory_Type["Product"]},
+            {"TECH_COMP", "5", Invetory_Type["Product"]}
         },
         --Factory/Synthesis station uses a multiplier of X250 so 20*250=5000
         ["REQUIREMENT_COST"] = "20"
     }
 }
 
-Class_Choice = 4
+Class_Choice = 1
 Input_Class_Choice =
 {
     Class_Choice,
@@ -343,7 +343,7 @@ Input_Class_Choice =
         * 2 = B -> S
         * 3 = A -> S
         * 4 = S
-        Default = 4 | Current = >> ]] .. Class_Choice .. [[ <<
+        Default = 1 | Current = >> ]] .. Class_Choice .. [[ <<
     ]]
 }
 Class_Choice = GUIF(Input_Class_Choice, 10)
@@ -467,7 +467,7 @@ function New_Language_File_Entry(newDescId)
     return result
 end
 
-function Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Mod_Data)
+function Get_All_Mod_Ids_And_Add_Requirement_Cost_And_Section_Name(Mod_Data)
     for i = 1, #Mod_Data do
         local Mod_Upgrade_Data = Mod_Data[i]["UPGRADE_DATA"]
         for j = 1, #Mod_Upgrade_Data do
@@ -479,7 +479,7 @@ function Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Mod_Data)
                 {
                     ["MOD_ID"] = Upgrade_Mod ,
                     ["REQUIREMENT_SEC_ID"] = Requirements[#Requirements]["SECTION_NAME"],
-                    ["REQUIREMENT_COST"] = Requirements[#Requirements]["REQUIREMENT_COST"],
+                    ["REQUIREMENT_COST"] = Requirements[#Requirements]["REQUIREMENT_COST"]
                 }
             else
                 if tonumber(Starting_Number_Upgrade) < Class_Choice then
@@ -495,14 +495,14 @@ function Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Mod_Data)
                         {
                             ["MOD_ID"] = Upgrade_Mod..math.floor(l) ,
                             ["REQUIREMENT_SEC_ID"] = Requirements[l +1]["SECTION_NAME"],
-                            ["REQUIREMENT_COST"] = Requirements[l +1]["REQUIREMENT_COST"],
+                            ["REQUIREMENT_COST"] = Requirements[l +1]["REQUIREMENT_COST"]
                         }
                     else
                         Mods_Requirement_Data[#Mods_Requirement_Data +1] =
                         {
                             ["MOD_ID"] = Upgrade_Mod..math.floor(l) ,
                             ["REQUIREMENT_SEC_ID"] = Requirements[l]["SECTION_NAME"],
-                            ["REQUIREMENT_COST"] = Requirements[l]["REQUIREMENT_COST"],
+                            ["REQUIREMENT_COST"] = Requirements[l]["REQUIREMENT_COST"]
                         }
                     end
                 end
@@ -520,7 +520,7 @@ function Create_Requirement(Requirement)
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", "CASING"},
         ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-        ["SEC_SAVE_TO"] = "SINGLE_REQ",
+        ["SEC_SAVE_TO"] = "SINGLE_REQ"
     }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
@@ -538,8 +538,7 @@ function Create_Requirement_Sections()
     for i = 1, #Requirements do
         Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-            ["SEC_SAVE_TO"] = Requirements[i]["SECTION_NAME"],
+            ["SEC_EMPTY"] = Requirements[i]["SECTION_NAME"]
         }
 
         RequirementsArray = Requirements[i]["REQUIREMENT_ELEMENTS"]
@@ -548,17 +547,10 @@ function Create_Requirement_Sections()
             Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
             {
                 ["SEC_EDIT"] = Requirements[i]["SECTION_NAME"],
-                ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
                 ["ADD_OPTION"] = "ADDafterSECTION",
                 ["SEC_ADD_NAMED"] = "SINGLE_REQ"
             }
         end
-        Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-        {
-            ["SEC_EDIT"] = Requirements[i]["SECTION_NAME"],
-            ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-            ["REMOVE"] = "SECTION",
-        }
     end
 end
 
@@ -653,9 +645,8 @@ function Create_New_Custom_Mod_Deploys(Copy_Deploy_ID, ModDeployID)
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         ["SEC_EDIT"] = "PROC_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
         ["ADD_OPTION"] = "ADDafterSECTION",
-        ["SEC_ADD_NAMED"] = ModDeployID.."PROCSEC",
+        ["SEC_ADD_NAMED"] = ModDeployID.."PROCSEC"
     }
 end
 
@@ -673,49 +664,37 @@ function Create_New_Custom_Mod(Copy_Mod_ID, ModID, ModName, ModNameL,ModDeploysI
             {"ID", ModID},
             {"Name", ModName},
             {"NameLower", ModNameL},
-            {"DeploysInto", ModDeploysInto},
+            {"Description", Crafted_Freighter_Mod_Descr_Id},
+            {"DeploysInto", ModDeploysInto}
         }
     }
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
-        ["SEC_EDIT"] = ModID.."PRODSEC",
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Value", Crafted_Freighter_Mod_Descr_Id},
-        }
-    }
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     -- ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
+    --     ["SEC_EDIT"] = ModID.."PRODSEC",
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Description", Crafted_Freighter_Mod_Descr_Id},
+    --     }
+    -- }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
         ["ADD_OPTION"] = "ADDafterSECTION",
-        ["SEC_ADD_NAMED"] = ModID.."PRODSEC",
+        ["SEC_ADD_NAMED"] = ModID.."PRODSEC"
     }
 end
 
 function Create_Custom_Freighter_Mods()
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-        ["SEC_SAVE_TO"] = "PRODUCT_SEC_MASTER",
+        ["SEC_EMPTY"] = "PRODUCT_SEC_MASTER"
     }
 
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
-        ["SEC_SAVE_TO"] = "PROC_SEC_MASTER",
+        ["SEC_EMPTY"] = "PROC_SEC_MASTER"
     }
-
-    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    -- {
-    --     ["SEC_EMPTY"] = "PRODUCT_SEC_MASTER",
-    -- }
-
-    -- Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
-    -- {
-    --     ["SEC_EMPTY"] = "PROC_SEC_MASTER",
-    -- }
     for i = 1, #Custom_Freighter_Mod_Data do
         local Custom_Freighter_Upgrade_Data = Custom_Freighter_Mod_Data[i]["UPGRADE_DATA"]
         for l = 1, #Custom_Freighter_Upgrade_Data do
@@ -750,25 +729,13 @@ function Create_Custom_Freighter_Mods()
 
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-        ["REMOVE"] = "SECTION",
-    }
-    Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
-    {
-        ["SEC_EDIT"] = "PROC_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UP_LASER1"},
-        ["REMOVE"] = "SECTION",
-    }
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["SEC_ADD_NAMED"] = "PRODUCT_SEC_MASTER",
+        ["SEC_ADD_NAMED"] = "PRODUCT_SEC_MASTER"
     }
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["SEC_ADD_NAMED"] = "PROC_SEC_MASTER",
+        ["SEC_ADD_NAMED"] = "PROC_SEC_MASTER"
     }
 end
 
@@ -805,7 +772,7 @@ function Create_New_Tree_Root(Main_Tree, Item_Tree, Tree_Root, Cost_Type)
         ["SEC_EDIT"] = Main_Tree.."_ROOT_SEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"CostTypeID", Cost_Type},
+            {"CostTypeID", Cost_Type}
         }
     }
     Changes_To_Unlockable_Item_Trees[#Changes_To_Unlockable_Item_Trees + 1] =
@@ -814,7 +781,7 @@ function Create_New_Tree_Root(Main_Tree, Item_Tree, Tree_Root, Cost_Type)
         ["PRECEDING_KEY_WORDS"] = {"Root"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Unlockable", Tree_Root},
+            {"Unlockable", Tree_Root}
         }
     }
 end
@@ -830,7 +797,7 @@ function Create_Item_Tree_Node(Item_Id)
         ["SEC_EDIT"] = "ITEM_TREE_NODE",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Unlockable", Item_Id},
+            {"Unlockable", Item_Id}
         }
     }
 end
@@ -985,9 +952,9 @@ Create_Custom_Freighter_Mods()
 Create_Requirement_Sections()
 
 Create_New_Item_Trees()
-Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Special_Mods)
-Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Custom_Freighter_Mod_Data)
-Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(General_Upgrade_Mods)
-Get_All_Mod_Ids_And_Add_Requiement_Cost_And_Section_Name(Bio_Ship_Mods)
+Get_All_Mod_Ids_And_Add_Requirement_Cost_And_Section_Name(Special_Mods)
+Get_All_Mod_Ids_And_Add_Requirement_Cost_And_Section_Name(Custom_Freighter_Mod_Data)
+Get_All_Mod_Ids_And_Add_Requirement_Cost_And_Section_Name(General_Upgrade_Mods)
+Get_All_Mod_Ids_And_Add_Requirement_Cost_And_Section_Name(Bio_Ship_Mods)
 
 Add_Requirements_And_Enable_Craftable_To_All_Mods()

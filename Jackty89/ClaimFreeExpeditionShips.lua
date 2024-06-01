@@ -2,7 +2,7 @@ ModName = "ClaimFreeExpeditionShips"
 Author = "Jackty89"
 
 Reward_Table_Path = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
-SHIP_REWARD_IDS = {"RS_S1_SHIP", "RS_S9_SHIP",  "RS_S12_SHIP"};
+SHIP_REWARD_IDS = {"RS_S1_SHIP", "RS_S9_SHIP", "RS_S12_SHIP", "RS_S13_SHIP"} -- change this to a regex (RS_S.*_SHIP)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

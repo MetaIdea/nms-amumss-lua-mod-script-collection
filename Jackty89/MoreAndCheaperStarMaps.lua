@@ -88,27 +88,29 @@ function Create_New_Starmap(New_Id)
             {"ID", New_Id},
             {"Name", "BUILDING_DISTRESSSIGNAL"},
             {"NameLower", "BUILDING_DISTRESSSIGNAL_L"},
-            {"RecipeCost", 1}
+            {"RecipeCost", 1},
+            {"Subtitle", "UI_CORE_TUTORIAL1_MSG1C"},
+            {"Description", "UI_STARCHART_DESC_DISTRESS"}
         }
     }
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
-        ["SEC_EDIT"] = "STARCHART_COPY",
-        ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Value", "UI_CORE_TUTORIAL1_MSG1C"}
-        }
-    }
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
-        ["SEC_EDIT"] = "STARCHART_COPY",
-        ["PRECEDING_KEY_WORDS"] = {"Description"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Value", "UI_STARCHART_DESC_DISTRESS"}
-        }
-    }
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     ["SEC_EDIT"] = "STARCHART_COPY",
+    --     ["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Value", "UI_CORE_TUTORIAL1_MSG1C"}
+    --     }
+    -- }
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     ["SEC_EDIT"] = "STARCHART_COPY",
+    --     ["PRECEDING_KEY_WORDS"] = {"Description"},
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Value", "UI_STARCHART_DESC_DISTRESS"}
+    --     }
+    -- }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = "STARCHART_COPY",

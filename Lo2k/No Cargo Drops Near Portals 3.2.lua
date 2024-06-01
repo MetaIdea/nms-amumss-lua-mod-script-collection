@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Cargo Drops Near Portals 3.1.pak", 
+["MOD_FILENAME"] 			= "No Cargo Drops Near Portals 3.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lowkie",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "4.71.1",
 ["MOD_DESCRIPTION"]			= "This mod removes cargo drops near each portal",
 ["MODIFICATIONS"] 			= 
 	{

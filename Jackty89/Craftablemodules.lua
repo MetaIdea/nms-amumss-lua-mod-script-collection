@@ -329,10 +329,9 @@ function ChangeProductDescriptionID()
             Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
-                ["PRECEDING_KEY_WORDS"] = {"Subtitle", "Description"},
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"Value", NewDescriptionID}
+                    {"Description", NewDescriptionID}
                 }
             }
         end

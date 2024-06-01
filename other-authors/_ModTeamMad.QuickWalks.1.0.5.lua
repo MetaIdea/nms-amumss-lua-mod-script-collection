@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]	= "_ModTeamMad.QuickWalks.1.0.4.pak",
+["MOD_FILENAME"]	= "_ModTeamMad.QuickWalks.1.0.5.pak",
 ["MOD_AUTHOR"]		= "Mod Team Mad",
-["NMS_VERSION"]		= "4.65",
+["NMS_VERSION"]		= "4.71.1",
 ["MOD_DESCRIPTION"]	= "Fast walking and sprinting",
 ["MODIFICATIONS"]	=
 	{

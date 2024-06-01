@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Freighter Room Teleporter Fix 1.1.pak", 
+["MOD_FILENAME"] 			= "Freighter Room Teleporter Fix 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "4.71.1",
 ["MOD_DESCRIPTION"]			= "This mod aligns the teleporter with the modular room",
 ["MODIFICATIONS"] 			= 
 	{

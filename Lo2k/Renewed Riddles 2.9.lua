@@ -121,11 +121,11 @@ Obs_Array = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"] 			= "Renewed Riddles 2.8.pak",
+["MOD_FILENAME"] 			= "Renewed Riddles 2.9.pak",
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k (with bits of WinderTP)",
 ["MOD_DESCRIPTION"]			= "Changes all riddles with new ones",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "4.71.1",
 ["MODIFICATIONS"]	= {{
 ["PAK_FILE_SOURCE"] = "",
 ["MBIN_CHANGE_TABLE"] = {{
@@ -140,7 +140,7 @@ local temp_table =
 		["SPECIAL_KEY_WORDS"] = {"Id",Radio_Array[i][1]},
 		["VALUE_CHANGE_TABLE"] = 
 		{
-			{"Value", Radio_Array[i][2]}
+			{"English", Radio_Array[i][2]}
 		}
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -152,7 +152,7 @@ local temp_table =
 		["SPECIAL_KEY_WORDS"] = {"Id",Obs_Array[i][1]},
 		["VALUE_CHANGE_TABLE"] = 
 		{
-			{"Value", Obs_Array[i][2]}
+			{"English", Obs_Array[i][2]}
 		}
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table

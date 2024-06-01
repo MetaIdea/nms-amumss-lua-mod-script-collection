@@ -280,6 +280,10 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
             {"NameLower", New_Product_Name_Lc},
             {"BaseValue", New_Product_Value},
             {"StackMultiplier", New_Product_Stack_Size},
+            {"Subtitle", New_Product_Subtitle},
+            {"Description", New_Product_Description},
+
+
             -- IF i want to use the QS store
             -- {"GiveRewardOnSpecialPurchase", "R_"..New_Product_ID},
             -- {"Consumable", "False"}
@@ -288,21 +292,35 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-        ["SPECIAL_KEY_WORDS"] = {"Subtitle", "VariableSizeString.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"Cost", "GcItemPriceModifiers.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Value", New_Product_Subtitle},
+            {"SpaceStationMarkup", "0"},
+            {"LowPriceMod", "0"},
+            {"LowPriceMod", "0"},
+            {"HighPriceMod", "0"},
+            {"BuyBaseMarkup", "0"},
+            {"BuyMarkupMod", "0"}
         }
     }
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
-        ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
-        ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Value", New_Product_Description},
-        }
-    }
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
+    --     ["SPECIAL_KEY_WORDS"] = {"Subtitle", "VariableSizeString.xml"},
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Value", New_Product_Subtitle},
+    --     }
+    -- }
+    -- Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
+    -- {
+    --     ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
+    --     ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
+    --     ["VALUE_CHANGE_TABLE"] =
+    --     {
+    --         {"Value", New_Product_Description},
+    --     }
+    -- }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = New_Product_ID.."_PRODSEC",
@@ -334,9 +352,8 @@ function Create_New_Product(New_Product_ID, New_Product_Name, New_Product_Name_L
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
         ["ADD_OPTION"] = "ADDafterSECTION",
-        ["SEC_ADD_NAMED"] = New_Product_ID.."_PRODSEC",
+        ["SEC_ADD_NAMED"] = New_Product_ID.."_PRODSEC"
     }
 end
 
@@ -358,7 +375,6 @@ function Create_New_Consumable(New_Product_ID, New_Product_Consumable_Reward_ID)
     Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
     {
         ["SEC_EDIT"] = "CONSUMABLE_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UT_BUI_SCAN2"},
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = New_Product_ID.."_CONSSEC"
     }
@@ -406,7 +422,6 @@ function Create_Reward_Table_Entry(Reward_ID, Reward_Choice, Reward_Entries)
     Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
     {
         ["SEC_EDIT"] = "REWARD_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = Reward_ID.."_REWARD_SEC"
     }
@@ -512,7 +527,6 @@ function Create_Shop_Entry(Entry_ID)
     Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
         ["SEC_EDIT"] = "SHOP_MASTER_SEC",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
         ["ADD_OPTION"] = "ADDafterSECTION",
         ["SEC_ADD_NAMED"] = "SHOP_ENTRY"
     }
@@ -717,40 +731,29 @@ end
 function Create_Master_Sec()
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-        ["SEC_SAVE_TO"] = "PRODUCT_SEC_MASTER"
+        ["SEC_EMPTY"] = "PRODUCT_SEC_MASTER"
     }
     Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UT_BUI_SCAN2"},
-        ["SEC_SAVE_TO"] = "CONSUMABLE_SEC_MASTER"
+        ["SEC_EMPTY"] = "CONSUMABLE_SEC_MASTER"
     }
     Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
-        ["SEC_SAVE_TO"] = "REWARD_SEC_MASTER"
+        ["SEC_EMPTY"] = "REWARD_SEC_MASTER"
     }
     Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
-        ["SEC_SAVE_TO"] = "SHOP_MASTER_SEC"
+        ["SEC_EMPTY"] = "SHOP_MASTER_SEC"
     }
     -- IF i want to use the QS store
     -- Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
     -- {
-    --     ["SPECIAL_KEY_WORDS"] = {"ID", "DECAL_CREFLY"},
-    --     ["SEC_SAVE_TO"] = "SPECIAL_MASTER_SEC"
+    --     ["SEC_EMPTY"] = "SPECIAL_MASTER_SEC"
     -- }
 end
 
 function Add_Master_Sec()
     --Accumilative Add to Product_Table
-    Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
-    {
-        ["SEC_EDIT"] = "PRODUCT_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-        ["REMOVE"] = "Section"
-    }
     Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -759,22 +762,10 @@ function Add_Master_Sec()
     --Accumilative Add to Consumable_Item_Table
     Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
     {
-        ["SEC_EDIT"] = "CONSUMABLE_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"ID", "UT_BUI_SCAN2"},
-        ["REMOVE"] = "Section"
-    }
-    Changes_To_Consumable_Item_Table[#Changes_To_Consumable_Item_Table + 1] =
-    {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
         ["SEC_ADD_NAMED"] = "CONSUMABLE_SEC_MASTER"
     }
     --Accumilative Add to Reward_Table
-    Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
-    {
-        ["SEC_EDIT"] = "REWARD_SEC_MASTER",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
-        ["REMOVE"] = "Section"
-    }
     Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
@@ -783,23 +774,11 @@ function Add_Master_Sec()
     --Accumilative Add to Default_Reality
     Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
     {
-        ["SEC_EDIT"] = "SHOP_MASTER_SEC",
-        ["SPECIAL_KEY_WORDS"] = {"Id", "R_CLEAR_WANTED"},
-        ["REMOVE"] = "Section"
-    }
-    Changes_To_Default_Reality[#Changes_To_Default_Reality + 1] =
-    {
         ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
         ["SEC_ADD_NAMED"] = "SHOP_MASTER_SEC"
     }
     -- IF i want to use the QS store
     --Accumilative Add to Purchasable_Specials
-    -- Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
-    -- {
-    --     ["SEC_EDIT"] = "SPECIAL_MASTER_SEC",
-    --     ["SPECIAL_KEY_WORDS"] = {"ID", "DECAL_CREFLY"},
-    --     ["REMOVE"] = "Section"
-    -- }
     -- Changes_To_Purchasable_Specials[#Changes_To_Purchasable_Specials + 1] =
     -- {
     --     ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -858,7 +837,6 @@ function Start()
     Add_Master_Sec()
 end
 
-Start()
 ----------------------------------------------------------------------------------------------
 -------------------------------     Language file creation     -------------------------------
 ----------------------------------------------------------------------------------------------
@@ -929,10 +907,15 @@ function FillCustomlangFile()
     return NewLanguagueFile(table.concat(NewProductLangEntries))
 end
 
-for _Key , Language in pairs(Languages) do
-    AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
-    {
-        ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
-        ["FILE_CONTENT"] = FillCustomlangFile()
-    }
+function AddLangauges()
+    for _Key , Language in pairs(Languages) do
+        AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
+        {
+            ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
+            ["FILE_CONTENT"] = FillCustomlangFile()
+        }
+    end
 end
+
+Start()
+AddLangauges()

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Laser Immune Creatures 3.3.pak", 
+["MOD_FILENAME"] 			= "Laser Immune Creatures 3.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "4.71.1",
 ["MOD_DESCRIPTION"]			= "This mod immunizes creatures against mining laser",
 ["MODIFICATIONS"] 			= 
 	{
