@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.65.0)-->
+<!--File created using MBINCompiler version (4.71.0)-->
 <Data template="TkSceneNodeData">
   <Property name="Name" value="CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN" />
   <Property name="NameHash" value="2586528389" />
@@ -18,12 +18,10 @@
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="AltID" value="" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
@@ -46,7 +44,6 @@
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\TREES\PARTS\TRUNKA\ENTITIES\_TRUNK_A.ENTITY.MBIN" />
         </Property>
       </Property>
@@ -69,22 +66,18 @@
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="Box" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.605745" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.091414" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="1.000000" />
             </Property>
           </Property>
@@ -110,107 +103,86 @@
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="254" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1080" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="254" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="64" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-2.332882" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-2.059143" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="3.178989" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.805098" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2.071206" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5.555437" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="17413946656931302751" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN\PINETREE_LEAVES.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Tree_1Shape" />
         </Property>
       </Property>
@@ -234,107 +206,86 @@
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1080" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="255" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDPHYSICS" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="714" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHCOUNT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1332" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTGRAPH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRENDGRAPHIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="459" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FIRSTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LASTSKINMAT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="LODLEVEL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLST" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="64" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BOUNDHULLED" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="108" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-1.903029" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-1.084796" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMINZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0.011173" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0.540469" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="0.434159" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="AABBMAXZ" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="5.182299" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="7602046390575033866" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN\BARK.001.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MESHLINK" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="Tree_1.001Shape" />
         </Property>
       </Property>
