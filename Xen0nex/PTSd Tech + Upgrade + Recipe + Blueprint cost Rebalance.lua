@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_70"
+GameVersion = "4_71"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -70,10 +70,10 @@ TechAdjustments =
 		"MECH_PILOT",	0.6875			--Minotaur AI Pilot						480 Nanites
 	},
 	{
-		"MECH_SCAN0",	1				--Minotaur Basic Radar Array (added by PTSd)	120 Nanites
+		"MECH_SCAN",	1				--Minotaur Basic Radar Array			120 Nanites
 	},
 	{
-		"MECH_SCAN",	2				--Minotaur Radar Array					120 Nanites
+		"MECH_SCAN0",	1				--Minotaur Ultra Radar Array (added by PTSd)	240 Nanites
 	},
 	{
 		"MECH_LASER1",	0.7143			--Precision Minotaur Laser				210 Nanites
@@ -127,10 +127,10 @@ TechAdjustments =
 		"SUB_GUN",	0.5					--Nautilon Cannon						250 Nanites
 	},
 	{
-		"SUB_BINOCS0",	1				--Basic Sonar (Added by PTSd)			120 Nanites
+		"SUB_BINOCS",	12				--Basic Sonar 							10 Nanites
 	},
 	{
-		"SUB_BINOCS",	24				--High-Power Sonar 						10 Nanites
+		"SUB_BINOCS0",	1				--High-Power Sonar (Added by PTSd)		240 Nanites
 	},
 	{
 		"SUIT_REFINER",	0.4				--Personal Refiner						360 nanites
@@ -467,12 +467,6 @@ ReplaceItems =
 	},
 	{	--Air Filtration Unit 
 		"EXO_PROT_TOX",			"BLUE2",			50,		"Substance",	"NANOTUBES",
-	},
-	{	--High-Power Sonar 
-		"SUB_BINOCS",			"ATLAS_SEED_6",		1,		"Product",		"LAND1",
-	},
-	{	--Minotaur Radar Array 
-		"MECH_SCAN",			"ATLAS_SEED_6",		1,		"Product",		"STELLAR2",
 	},
 	{	--Personal Refiner Mk 2 
 		"SUIT_REFINER2",		"GREEN2",			120,	"Substance",	"CAVE2",

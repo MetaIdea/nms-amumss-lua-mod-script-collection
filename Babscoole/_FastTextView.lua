@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_FastTextView"..Version..".pak",
+["MOD_FILENAME"]            = "_FastTextView.pak",
 ["MOD_AUTHOR"]              = "UserPro66",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.65",

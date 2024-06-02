@@ -1,14 +1,14 @@
 ModName = "PTSd Exocraft scanner Changes"
-GameVersion = "4_70"
+GameVersion = "4_71"
 
 AddMechScan0 = 
 [[<Property value="GcTechnology.xml">
       <Property name="ID" value="MECH_SCAN0" />
       <Property name="Group" value="" />
-      <Property name="Name" value="MINOTAUR BASIC RADAR ARRAY" />
-      <Property name="NameLower" value="Minotaur Basic Radar Array" />
+      <Property name="Name" value="MINOTAUR ULTRA RADAR ARRAY" />
+      <Property name="NameLower" value="Minotaur Ultra Radar Array" />
       <Property name="Subtitle" value="UI_MECH_SCAN_SUB" />
-      <Property name="Description" value="UI_MECH_SCAN_DESC" />
+      <Property name="Description" value="Allows for additional building types to be acquired by the Minotaur Basic Radar Array." />
       <Property name="Teach" value="False" />
       <Property name="HintStart" value="" />
       <Property name="HintEnd" value="" />
@@ -35,8 +35,8 @@ AddMechScan0 =
       <Property name="BuildFullyCharged" value="False" />
       <Property name="UsesAmmo" value="False" />
       <Property name="AmmoId" value="" />
-      <Property name="PrimaryItem" value="True" />
-      <Property name="Upgrade" value="False" />
+      <Property name="PrimaryItem" value="False" />
+      <Property name="Upgrade" value="True" />
       <Property name="Core" value="False" />
       <Property name="RepairTech" value="False" />
       <Property name="Procedural" value="False" />
@@ -49,11 +49,11 @@ AddMechScan0 =
       <Property name="Value" value="10" />
       <Property name="Requirements">
         <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="STELLAR2" />
+          <Property name="ID" value="ATLAS_SEED_6" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
+            <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="75" />
+          <Property name="Amount" value="1" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="ASTEROID2" />
@@ -79,7 +79,7 @@ AddMechScan0 =
             <Property name="StatsType" value="Vehicle_Scan" />
           </Property>
           <Property name="Bonus" value="1" />
-          <Property name="Level" value="1" />
+          <Property name="Level" value="3" />
         </Property>
       </Property>
       <Property name="RequiredTech" value="" />
@@ -110,7 +110,7 @@ AddMechScan0 =
       <Property name="DispensingRace" value="GcAlienRace.xml">
         <Property name="AlienRace" value="None" />
       </Property>
-      <Property name="FragmentCost" value="120" />
+      <Property name="FragmentCost" value="240" />
       <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
         <Property name="TechnologyRarity" value="Impossible" />
       </Property>
@@ -125,10 +125,10 @@ AddSubBinocs0 =
 [[<Property value="GcTechnology.xml">
       <Property name="ID" value="SUB_BINOCS0" />
       <Property name="Group" value="" />
-      <Property name="Name" value="BASIC SONAR" />
-      <Property name="NameLower" value="Basic Sonar" />
+      <Property name="Name" value="UI_SUB_BINOCS_NAME" />
+      <Property name="NameLower" value="UI_SUB_BINOCS_NAME_L" />
       <Property name="Subtitle" value="UI_SUB_BINOCS_SUB" />
-      <Property name="Description" value="UI_SUB_BINOCS_DESC" />
+      <Property name="Description" value="Allows for additional building types to be acquired by the Basic Sonar." />
       <Property name="Teach" value="False" />
       <Property name="HintStart" value="" />
       <Property name="HintEnd" value="" />
@@ -155,8 +155,8 @@ AddSubBinocs0 =
       <Property name="BuildFullyCharged" value="True" />
       <Property name="UsesAmmo" value="False" />
       <Property name="AmmoId" value="" />
-      <Property name="PrimaryItem" value="True" />
-      <Property name="Upgrade" value="False" />
+      <Property name="PrimaryItem" value="False" />
+      <Property name="Upgrade" value="True" />
       <Property name="Core" value="False" />
       <Property name="RepairTech" value="False" />
       <Property name="Procedural" value="False" />
@@ -183,11 +183,11 @@ AddSubBinocs0 =
           <Property name="Amount" value="3" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="LAND1" />
+          <Property name="ID" value="ATLAS_SEED_6" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
+            <Property name="InventoryType" value="Product" />
           </Property>
-          <Property name="Amount" value="50" />
+          <Property name="Amount" value="1" />
         </Property>
       </Property>
       <Property name="BaseStat" value="GcStatsTypes.xml">
@@ -199,7 +199,7 @@ AddSubBinocs0 =
             <Property name="StatsType" value="Vehicle_Scan" />
           </Property>
           <Property name="Bonus" value="1" />
-          <Property name="Level" value="1" />
+          <Property name="Level" value="3" />
         </Property>
       </Property>
       <Property name="RequiredTech" value="" />
@@ -230,7 +230,7 @@ AddSubBinocs0 =
       <Property name="DispensingRace" value="GcAlienRace.xml">
         <Property name="AlienRace" value="None" />
       </Property>
-      <Property name="FragmentCost" value="120" />
+      <Property name="FragmentCost" value="240" />
       <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
         <Property name="TechnologyRarity" value="Impossible" />
       </Property>
@@ -241,18 +241,18 @@ AddSubBinocs0 =
 	  <Property name="ExclusivePrimaryStat" value="False" />
     </Property>]]
 
-AddMechScan =
+AddMechScan0Tree =
 [[<Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="MECH_SCAN" />
+                        <Property name="Unlockable" value="MECH_SCAN0" />
                         <Property name="Children" />
                       </Property>]]
 
-AddSubBinocs =
+AddSubBinocs0Tree =
 [[<Property value="GcUnlockableItemTreeNode.xml">
-                    <Property name="Unlockable" value="SUB_BINOCS0" />
+                    <Property name="Unlockable" value="SUB_BINOCS" />
                     <Property name="Children">
                       <Property value="GcUnlockableItemTreeNode.xml">
-                        <Property name="Unlockable" value="SUB_BINOCS" />
+                        <Property name="Unlockable" value="SUB_BINOCS0" />
                         <Property name="Children" />
                       </Property>
                     </Property>
@@ -276,8 +276,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Value","MONOLITH"},
 				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 2,
@@ -287,29 +285,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Value","UW_ABANDONED"},
-				["SECTION_UP"] = 2,
+				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_CRASH"},
+				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RequiredTech", "SUB_BINOCS0"}
 				}
 			},
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Value","UW_RUIN"},
-				["SECTION_UP"] = 2,
+				["SPECIAL_KEY_WORDS"] = {"Name","SUB_RADAR_SCAN_FREIGHTER"},
+				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RequiredTech", "SUB_BINOCS0"}
 				}
 			},
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_DEPOT"},
+				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_FACT"},
 				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -317,9 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_OUTPOST"},
+				["SPECIAL_KEY_WORDS"] = {"Name","MECH_SCAN_CRASH"},
 				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -346,48 +336,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Name", "MINOTAUR ULTRA RADAR ARRAY"},
-					{"NameLower", "Minotaur Ultra Radar Array"},
-					{"PrimaryItem", "False"},
-					{"Upgrade", "True"},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Description", "Allows for additional building types to be acquired by the Minotaur Basic Radar Array."},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","MECH_SCAN"},
-				["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Level", 3}
+					{"Name", "MINOTAUR BASIC RADAR ARRAY"},
+					{"NameLower", "Minotaur Basic Radar Array"},
 				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"PrimaryItem", "False"},
-					{"Upgrade", "True"},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Description", "Allows for additional building types to be acquired by the Basic Sonar."},
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"ID","SUB_BINOCS"},
-				["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Level", 3}
+					{"Name", "BASIC SONAR"},
+					{"NameLower", "Basic Sonar"},
 				}
 			},
 		}
@@ -397,30 +355,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_SCAN"},
-				--["SECTION_UP"] = 1,
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Unlockable", "MECH_SCAN0"}
-				}
-			},
-			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_PILOT"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddMechScan
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_SCAN"},
-				--["SECTION_UP"] = 1,
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Unlockable", "MECH_SCAN0"}
-				}
+				["ADD"] = AddMechScan0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "MECH_PILOT"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddMechScan
+				["ADD"] = AddMechScan0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
@@ -437,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"ExocraftTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddSubBinocs
+				["ADD"] = AddSubBinocs0Tree
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
@@ -454,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"S9ExoTech", "GcUnlockableItemTrees.xml",		"Title", "UI_EXOCRAFT_TECH_TREE",		"Unlockable", "SUB_GUN"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-				["ADD"] = AddSubBinocs
+				["ADD"] = AddSubBinocs0Tree
 			},
 		}
 	}
