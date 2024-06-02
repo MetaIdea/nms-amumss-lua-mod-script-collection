@@ -191,12 +191,7 @@ function New_Languague_File(Description_Entries)
 end
 
 function New_Language_Entry(Language, NewDescription)
-    return
-    [[
-        <Property name="]]..Language..[[" value="VariableSizeString.xml">
-            <Property name="Value" value="]]..NewDescription..[[" />
-        </Property>
-    ]]
+    return [[<Property name="]]..Language..[[" value="]]..NewDescription..[[" />]]
 end
 
 function New_Description_Text(newDescId, Language_Entries)
