@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter Battle Frequency"
 ModNameSub = "Always"
 BaseDescription = "Changes the frequency of freighter battles"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

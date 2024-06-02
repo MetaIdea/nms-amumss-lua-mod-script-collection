@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Terrarium"
 BaseDescription = "Mutes the Terrarium"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

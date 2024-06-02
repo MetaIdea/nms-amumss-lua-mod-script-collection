@@ -2,7 +2,7 @@ Author = "N8Crafter Gumsk"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -3573,7 +3573,6 @@ MODIFICATIONS           =
 [[
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
-              <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_B\ENTITIES\.ENTITY.MBIN" />
             </Property>
 ]]

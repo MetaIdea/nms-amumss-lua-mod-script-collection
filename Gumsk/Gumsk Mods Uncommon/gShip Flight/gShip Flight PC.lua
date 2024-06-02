@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Flight PC"
 ModNameSub = ""
 BaseDescription = "Flight modifications"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 

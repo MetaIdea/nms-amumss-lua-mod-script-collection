@@ -2,7 +2,7 @@ Color = "WHITE"
 
 ModName = "gShip Interceptor Engine Colors"
 ModNameSub = Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

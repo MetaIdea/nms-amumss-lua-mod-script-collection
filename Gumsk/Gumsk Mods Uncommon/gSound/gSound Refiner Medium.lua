@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Refiner Medium"
 BaseDescription = "Mutes the medium refiner"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

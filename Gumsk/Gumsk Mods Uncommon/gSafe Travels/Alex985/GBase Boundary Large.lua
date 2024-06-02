@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GBase"
 ModNameSub = "Boundary-Wire-Pipe Large"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 

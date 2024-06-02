@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "NPC Station Farming"
 BaseDescription = "Mutes the NPC farming station"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

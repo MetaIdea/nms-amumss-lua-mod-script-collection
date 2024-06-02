@@ -8,7 +8,7 @@ Author = "Gumsk,lMonk"
 ModName = "GMech"
 ModNameSub = "Mechjets Reskin "..Color
 BaseDescription = "Reskin of all the lighting sources on the mech"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 CoreFile = "GUMSK."..Color..".MECHJETPACKRIM.DDS"
@@ -68,37 +68,30 @@ SpotlightText = [[					<Property value="TkSceneNodeData.xml">
 					  <Property name="Attributes">
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="FOV" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..SpotlightFOV..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="FALLOFF" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..SpotlightFalloff..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="INTENSITY" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..SpotlightIntensity..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="COL_R" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..Red..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="COL_G" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..Green..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="COL_B" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="]]..Blue..[[" />
 						</Property>
 						<Property value="TkSceneNodeAttributeData.xml">
 						  <Property name="Name" value="MATERIAL" />
-						  <Property name="AltID" value="" />
 						  <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
 						</Property>
 					  </Property>

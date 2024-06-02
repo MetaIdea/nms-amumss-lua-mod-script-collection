@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gCreatures Pet Helios Reskin"
 ModNameSub = Color
 BaseDescription = "Changes color of of the child of Helios pet to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 FileSource1 = "MODELS/PLANETS/CREATURES/FISH/LANDJELLYFISH/GLOWAURACAM_MAT.MATERIAL.MBIN"

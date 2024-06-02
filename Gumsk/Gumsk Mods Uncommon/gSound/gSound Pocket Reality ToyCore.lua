@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Pocket Reality ToyCore"
 BaseDescription = "Mutes the Pocket Reality Generator ToyCore"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

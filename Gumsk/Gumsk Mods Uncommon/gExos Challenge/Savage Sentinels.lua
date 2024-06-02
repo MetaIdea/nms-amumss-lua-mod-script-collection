@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "gExos Challenge"
 ModNameSub = "Savage Sentinels"
 BaseDescription = "Makes sentinels harder"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 

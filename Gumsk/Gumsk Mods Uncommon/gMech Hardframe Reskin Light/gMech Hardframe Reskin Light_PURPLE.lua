@@ -5,7 +5,7 @@ BlueAmount = "0.6"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin Light"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 ModNameSub = Color
 BaseDescription = "Changes color of hardframe exomech light to "..Color

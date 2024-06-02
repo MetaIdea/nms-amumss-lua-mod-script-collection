@@ -1,13 +1,12 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 ModNameSub = "Wall White"
 BaseDescription = "Makes Wall Light White work without power and improves lighting."
 
 EntityText = [[		<Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="GUMSK/GLIGHTALWAYSON.ENTITY.MBIN" />
         </Property>]]
 

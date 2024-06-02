@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Colored Vector"
 ModNameSub = "REDGOLD"
 BaseDescription = "Recolors the Golden Vector"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

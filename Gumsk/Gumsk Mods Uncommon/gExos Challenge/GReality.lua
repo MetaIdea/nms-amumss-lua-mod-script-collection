@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gExos Challenge"
 ModNameSub = "Reality"
 BaseDescription = "Increases suit upgrade prices"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 SuitMainPrices = [[ <Property name="SuitUpgradePrices">

@@ -7,7 +7,7 @@ Author			= "Gumsk"
 ModName 		= "gMultitool Boltcaster"
 ModNameSub		= ColorName
 BaseDescription = "Changes the boltcaster projectile, trail, and impact colors to "..ColorName
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion		= "a"
 
 --[[Files Modified

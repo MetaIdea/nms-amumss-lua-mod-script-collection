@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "No Falling Damage"
 BaseDescription = "No falling damage"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

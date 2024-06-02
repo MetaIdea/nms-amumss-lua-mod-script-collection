@@ -1,6 +1,6 @@
 ModName = "gShip Interceptor Missing Trails"
 ModNameSub = ""
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 ENGINEFLAME1_ADD = [[        <Property value="TkSceneNodeData.xml">

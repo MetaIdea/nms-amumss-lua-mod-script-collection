@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Photon Cannon Damage"
 ModNameSub = "2"		--Change this to change the multiplier
 BaseDescription = "Increases ship photon cannon/spewing vents damage"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 --Files Modified

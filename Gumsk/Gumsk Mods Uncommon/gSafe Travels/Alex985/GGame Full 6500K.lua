@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GGame"
 ModNameSub = "Full 6500K"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

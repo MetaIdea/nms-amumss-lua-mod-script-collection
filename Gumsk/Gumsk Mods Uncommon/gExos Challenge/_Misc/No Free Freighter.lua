@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "GExos Challenge"
 ModNameSub = "Exos No Free Freighter"
 BaseDescription = "No free first freighter"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 FreighterPuzzleReplace = [[		<Property value="GcAlienPuzzleOption.xml">

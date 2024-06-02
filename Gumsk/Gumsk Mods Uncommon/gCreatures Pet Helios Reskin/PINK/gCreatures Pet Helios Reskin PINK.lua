@@ -7,7 +7,7 @@ Author = "Gumsk+Jasondude"
 ModName = "gCreatures Pet Helios Reskin"
 ModNameSub = Color
 BaseDescription = "Changes color of of the child of Helios pet to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 FileSource1 = "MODELS/PLANETS/CREATURES/FISH/LANDJELLYFISH.SCENE.MBIN"
@@ -35,52 +35,42 @@ LightText = [[
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="360.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="quadratic" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FALLOFF_RATE" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="2.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="12500.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]]..RedAmount..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_G" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]]..GreenAmount..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_B" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="]]..BlueAmount..[[" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COOKIE_IDX" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="-1" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VOLUMETRIC" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="1.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>

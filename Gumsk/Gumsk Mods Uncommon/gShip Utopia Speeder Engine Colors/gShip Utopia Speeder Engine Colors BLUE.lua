@@ -2,7 +2,7 @@ Color = "BLUE"
 
 ModName = "gShip Utopia Speeder Engine Colors"
 ModNameSub = Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 --[[ Files Modified

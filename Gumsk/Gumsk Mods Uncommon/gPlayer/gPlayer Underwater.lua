@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "UnderwaterSpeed"
 BaseDescription = "Increase to underwater player speed"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   

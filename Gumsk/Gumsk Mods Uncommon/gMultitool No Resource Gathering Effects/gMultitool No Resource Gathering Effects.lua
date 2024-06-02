@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gMultitool No Resource Gathering Effects"
 ModNameSub = ""
 BaseDescription = "Removes resource gathering effects"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 --Files Modified

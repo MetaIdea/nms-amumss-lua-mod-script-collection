@@ -1,7 +1,7 @@
 ModName = "gExos Challenge"
 ModNameSub = "Remove Activated"
 BaseDescription = "Removes activated metals from gameplay"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 RecipeAdd = [[	<Property value="GcRefinerRecipe.xml">

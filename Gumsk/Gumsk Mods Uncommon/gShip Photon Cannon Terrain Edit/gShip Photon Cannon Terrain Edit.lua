@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName 		= "gShip Photon Cannon Terrain Edit"
 ModNameSub		= ""
 BaseDescription = "Makes the photon cannon destroy terrain"
-GameVersion 	= "415"
+GameVersion 	= "4711"
 ModVersion		= "a"
 
 --[[Files Modified

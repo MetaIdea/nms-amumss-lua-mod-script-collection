@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Shield Station"
 BaseDescription = "Mutes the shield station"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

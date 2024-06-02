@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = "Garage Slow"
 BaseDescription = "Proximity garage doors"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\COMMON\ENTITIES\GARAGEDOOR.ENTITY.MBIN"
 

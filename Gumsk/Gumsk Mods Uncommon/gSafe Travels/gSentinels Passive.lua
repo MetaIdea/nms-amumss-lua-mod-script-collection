@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSentinels"
 ModNameSub = "Passive"
 BaseDescription = "Passive Sentinels"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCROBOTGLOBALS.MBIN"
 

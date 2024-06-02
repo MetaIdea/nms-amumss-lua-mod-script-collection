@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Movement"
 ModNameSub = "Normal"
 BaseDescription = "Exocraft modifications"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip"
 ModNameSub = "Engine".." "..Color
 BaseDescription = "Changes color of engine glow to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 FileSource1 = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENGINEGLOW_MAT.MATERIAL.MBIN"

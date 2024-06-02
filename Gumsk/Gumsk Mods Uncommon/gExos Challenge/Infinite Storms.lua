@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "gExos Challenge"
 ModNameSub = "Infinite Storms"
 BaseDescription = "Makes storms permanent on extreme planets"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

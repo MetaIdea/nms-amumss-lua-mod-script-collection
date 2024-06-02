@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Fireplace"
 BaseDescription = "Mutes the Fireplace"
-GameVersion = "464"
-ModVersion = "a"+
+GameVersion = "4711"
+ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

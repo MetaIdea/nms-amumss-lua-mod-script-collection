@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gFreighter Roberts Lights Colors Primary"
 ModNameSub = Color
 BaseDescription = "Changes color of primary external lights on Roberts class freighters to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

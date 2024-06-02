@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gLight Always On"
 ModNameSub = "All"
 BaseDescription = ""
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

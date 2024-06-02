@@ -2,7 +2,7 @@ Color = "CAMOBLUE"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 ModNameSub = Color
 BaseDescription = "Changes color of hardframe exomech parts to "..Color

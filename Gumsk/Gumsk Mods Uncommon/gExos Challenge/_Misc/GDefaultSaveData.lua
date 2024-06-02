@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "DefaultSaveData"
 BaseDescription = "Changes starting conditions"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 

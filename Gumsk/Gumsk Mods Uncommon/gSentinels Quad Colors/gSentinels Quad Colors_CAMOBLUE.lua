@@ -6,7 +6,7 @@ Color = "CAMOBLUE"
 
 Author = "Gumsk"
 ModName = "gSentinels Quad Colors"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 ModNameSub = Color
 BaseDescription = "Changes color of quad pet to "..Color

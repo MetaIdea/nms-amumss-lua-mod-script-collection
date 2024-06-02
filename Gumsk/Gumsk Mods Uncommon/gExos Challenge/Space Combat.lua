@@ -2,7 +2,7 @@ Author = "Xaliber"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat"
 BaseDescription = "Adaptation of part of Xaliber's Space Combat Reworked"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 

@@ -1,13 +1,12 @@
 Author = "Gumsk"
 ModName = "GLight Proximity"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 ModNameSub = "Ceiling"
 BaseDescription = "Adds a proximity sensor to the ring ceiling light"
 
 EntityText = [[		<Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="GUMSK/GLIGHTPROXIMITYCEILING.ENTITY.MBIN" />
         </Property>]]
 

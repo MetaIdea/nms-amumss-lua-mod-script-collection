@@ -3,7 +3,7 @@ StripeColor = "GOLD"
 
 ModName = "gShip Utopia Speeder Colors"
 ModNameSub = BodyColor..".METAL."..StripeColor
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

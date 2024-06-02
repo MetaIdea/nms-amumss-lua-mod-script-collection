@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "GDoor"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NewTexture = {}

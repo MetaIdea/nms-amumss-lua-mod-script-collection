@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "gExos Challenge"
 ModNameSub = "Market Stability"
 BaseDescription = "Removes market crashing"
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

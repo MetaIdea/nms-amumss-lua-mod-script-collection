@@ -7,7 +7,7 @@ Author = "Gumsk"
 ModName = "gShip Trail"
 ModNameSub = "Timeloop "..Color
 BaseDescription = "Changes color of stealth/dark ship trail to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 
 --[[Files Modified:

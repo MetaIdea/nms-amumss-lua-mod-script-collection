@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip Trail Sputtering"
 ModNameSub = Color
 BaseDescription = "Changes color of stealth/dark ship trail to "..Color
-GameVersion = "464"
+GameVersion = "4711"
 ModVersion = "a"
 FileSource = "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\SPLUTTERINGTRAIL.MATERIAL.MBIN"
 
