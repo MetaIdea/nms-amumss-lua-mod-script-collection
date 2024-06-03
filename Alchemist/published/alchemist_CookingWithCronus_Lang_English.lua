@@ -6,7 +6,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-65"
+GameVersion = "4-71"
 ModVersion = "1-3-2"
 
 -- =========
@@ -310,9 +310,7 @@ end
 
 local function langEntry(language, value)
   return [[
-      <Property name="]]..language..[[" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..value..[[" />
-      </Property>
+      <Property name="]]..language..[[" value="]]..value..[[" />
 ]]
 end
 

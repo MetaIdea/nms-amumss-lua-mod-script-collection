@@ -5,7 +5,7 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-65"
+GameVersion = "4-71"
 ModVersion = "2-4-3"
 
 -- =========
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 248
+-- Total keys: 252
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -265,6 +265,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_RE_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Biome ~ Corrupted Sentinels", --
   ["ALCH_SCAN_PQ_RE_MENU"] = "Corrupted Sentinels", --
   ["ALCH_SCAN_PQ_RE_TITLE"] = "Planet Query ~ Corrupted Sentinels", --
+  ["ALCH_SCAN_PQ_RF_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Robotic Fauna", --
+  ["ALCH_SCAN_PQ_RF_MENU"] = "Robotic Fauna", --
+  ["ALCH_SCAN_PQ_RF_TITLE"] = "Planet Query ~ Robotic Fauna", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ"] = "Search Registered with Navigation Computer", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ_TIP"] = "This planetary query has been registered with the ship's navigation computer and will proceed during normal <SPECIAL>space flight<>.\n<STELLAR>ADVISORY<> ~ Portal travel and Nexus missions cause <FUEL>interdimension interference<>. All active queries will be paused for the duration of these activities.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
@@ -288,6 +291,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_RC_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_RD_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_RE_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_RF_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
   ["ALCH_SCAN_SCAN_FAST_DESC"] = "Tuned to common signals...", --
   ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hibernating...<>", --
@@ -344,9 +348,7 @@ end
 
 local function langEntry(language, value)
   return [[
-      <Property name="]]..language..[[" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..value..[[" />
-      </Property>
+      <Property name="]]..language..[[" value="]]..value..[[" />
 ]]
 end
 

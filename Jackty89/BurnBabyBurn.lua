@@ -26,11 +26,6 @@ New_Weapon_Stats =
         ["STAT_TYPE"] = "Weapon_Projectile_Bounce",
         ["BONUS"] = "2",
         ["LEVEL"] = "3"
-    },
-    {
-        ["STAT_TYPE"] = "Weapon_Projectile",
-        ["BONUS"] = "50",
-        ["LEVEL"] = "1"
     }
 }
 

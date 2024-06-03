@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-65"
+GameVersion = "4-71"
 ModVersion = "1-3-2"
 
 --
@@ -197,6 +197,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -766,6 +767,7 @@ MODIFICATIONS = {{
           <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
+          <Property name="ReplacementMaintData" value="" />
           <Property name="ForceOverridesAll" value="True" />
           <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
@@ -846,8 +848,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -901,8 +904,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -1177,6 +1181,19 @@ MODIFICATIONS = {{
           <Property name="DisplayMilestoneNumber" value="1" />
           <Property name="Test" value="TkEqualityEnum.xml">
             <Property name="EqualityEnum" value="Equal" />
+          </Property>
+        </Property>
+        <Property value="GcMissionConditionGroup.xml">
+          <Property name="OnlyUsedForTextFormatting" value="False" />
+          <Property name="ValueToReturnForTextFormatting" value="False" />
+          <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+            <Property name="ConditionTest" value="AnyTrue" />
+          </Property>
+          <Property name="Conditions">
+            <Property value="GcMissionConditionIsMissionInProgress.xml">
+              <Property name="MissionID" value="S13_DUMMY" />
+              <Property name="MustBeSelectedMission" value="False" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1499,6 +1516,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -1649,7 +1667,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="27" />
+          <Property name="Version" value="28" />
           <Property name="Progress" value="3" />
         </Property>
       </Property>
@@ -1744,7 +1762,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -1760,7 +1778,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -1777,7 +1795,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="27" />
+              <Property name="Version" value="28" />
               <Property name="Progress" value="2" />
             </Property>
           </Property>
@@ -1899,6 +1917,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -1955,6 +1974,7 @@ MODIFICATIONS = {{
           <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
+          <Property name="ReplacementMaintData" value="" />
           <Property name="ForceOverridesAll" value="True" />
           <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
@@ -2035,8 +2055,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -2090,8 +2111,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -2535,6 +2557,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -2991,6 +3014,7 @@ MODIFICATIONS = {{
           <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
+          <Property name="ReplacementMaintData" value="" />
           <Property name="ForceOverridesAll" value="True" />
           <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
@@ -3071,8 +3095,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -3126,8 +3151,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -3336,7 +3362,7 @@ MODIFICATIONS = {{
       <Property name="CancelingConditions" />
       <Property name="FinalStageVersions">
         <Property value="GcGenericMissionVersionProgress.xml">
-          <Property name="Version" value="27" />
+          <Property name="Version" value="28" />
           <Property name="Progress" value="12" />
         </Property>
       </Property>
@@ -3421,7 +3447,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="0" />
                   </Property>
                 </Property>
@@ -3437,7 +3463,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="1" />
                   </Property>
                 </Property>
@@ -3528,7 +3554,7 @@ MODIFICATIONS = {{
                     <Property value="GcGenericMissionStage.xml">
                       <Property name="Versions">
                         <Property value="GcGenericMissionVersionProgress.xml">
-                          <Property name="Version" value="27" />
+                          <Property name="Version" value="28" />
                           <Property name="Progress" value="2" />
                         </Property>
                       </Property>
@@ -3628,7 +3654,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="27" />
+                                <Property name="Version" value="28" />
                                 <Property name="Progress" value="3" />
                               </Property>
                             </Property>
@@ -3655,7 +3681,7 @@ MODIFICATIONS = {{
                           <Property value="GcGenericMissionStage.xml">
                             <Property name="Versions">
                               <Property value="GcGenericMissionVersionProgress.xml">
-                                <Property name="Version" value="27" />
+                                <Property name="Version" value="28" />
                                 <Property name="Progress" value="4" />
                               </Property>
                             </Property>
@@ -3751,7 +3777,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="5" />
                   </Property>
                 </Property>
@@ -3766,7 +3792,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="6" />
                   </Property>
                 </Property>
@@ -3781,7 +3807,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="7" />
                   </Property>
                 </Property>
@@ -3803,7 +3829,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="8" />
                   </Property>
                 </Property>
@@ -3821,7 +3847,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="9" />
                   </Property>
                 </Property>
@@ -3847,7 +3873,7 @@ MODIFICATIONS = {{
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions">
                   <Property value="GcGenericMissionVersionProgress.xml">
-                    <Property name="Version" value="27" />
+                    <Property name="Version" value="28" />
                     <Property name="Progress" value="10" />
                   </Property>
                 </Property>
@@ -3876,7 +3902,7 @@ MODIFICATIONS = {{
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions">
             <Property value="GcGenericMissionVersionProgress.xml">
-              <Property name="Version" value="27" />
+              <Property name="Version" value="28" />
               <Property name="Progress" value="11" />
             </Property>
           </Property>
@@ -3993,6 +4019,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -7316,6 +7343,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -27155,6 +27183,7 @@ MODIFICATIONS = {{
           <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
+          <Property name="ReplacementMaintData" value="" />
           <Property name="ForceOverridesAll" value="True" />
           <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
@@ -27235,8 +27264,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -27290,8 +27320,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -27361,6 +27392,7 @@ MODIFICATIONS = {{
           <Property name="MustMatchStoryUtilityPuzzle" value="" />
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
+          <Property name="ReplacementMaintData" value="" />
           <Property name="ForceOverridesAll" value="True" />
           <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
@@ -27441,8 +27473,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -27496,8 +27529,9 @@ MODIFICATIONS = {{
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
             <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForRobotCreatureDiscovery" value="False" />
+            <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
@@ -33971,6 +34005,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -35972,17 +36007,19 @@ MODIFICATIONS = {{
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions" />
                                   <Property name="Stage" value="GcMissionSequenceCreateSpecificPulseEncounter.xml">
+                                    <Property name="ShipHUDOverrideWhenReady" value="" />
+                                    <Property name="PulseEncounterID" value="PE_CHEF_SONG" />
+                                    <Property name="MinTimeInPulse" value="5.5" />
+                                    <Property name="DebugText" value="" />
                                     <Property name="Message" value="ALCH_CHEF_WHALE_NEARBY_MSG1" />
+                                    <Property name="MessageEncounterReady" value="" />
                                     <Property name="MessageNoShip" value="ALCH_CHEF_WHALE_NEARBY_MSG2" />
                                     <Property name="MessageNotPulsing" value="ALCH_CHEF_WHALE_NEARBY_MSG3" />
                                     <Property name="MessageSignalBlocked" value="ALCH_CHEF_WHALE_NEARBY_MSG4" />
-                                    <Property name="MinTimeInPulse" value="5.5" />
-                                    <Property name="PulseEncounterID" value="PE_CHEF_SONG" />
-                                    <Property name="TakeEncounterIDFromSeasonData" value="False" />
                                     <Property name="AllowAnyEncounter" value="False" />
-                                    <Property name="Silent" value="False" />
                                     <Property name="AllowOutsideShip" value="False" />
-                                    <Property name="DebugText" value="" />
+                                    <Property name="Silent" value="False" />
+                                    <Property name="TakeEncounterIDFromSeasonData" value="False" />
                                   </Property>
                                 </Property>
                                 <Property value="GcGenericMissionStage.xml">
@@ -36414,6 +36451,7 @@ MODIFICATIONS = {{
         <Property name="A" value="1" />
       </Property>
       <Property name="BeginCheckFrequency" value="1" />
+      <Property name="WikiMissionBlockedBySeasons" />
       <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
         <Property name="PrimarySubstances" />
         <Property name="SecondarySubstances" />
@@ -37280,12 +37318,8 @@ MODIFICATIONS = {{
       <Property name="ID" value="P_CHEF_SONG" />
       <Property name="Name" value="UI_P_CHEF_SONG_NAME" />
       <Property name="NameLower" value="UI_P_CHEF_SONG_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_P_CHEF_SONG_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_P_CHEF_SONG_DESC" />
-      </Property>
+      <Property name="Subtitle" value="UI_P_CHEF_SONG_SUB" />
+      <Property name="Description" value="UI_P_CHEF_SONG_DESC" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
@@ -37393,12 +37427,8 @@ MODIFICATIONS = {{
       <Property name="ID" value="P_CHEF_SONG_X" />
       <Property name="Name" value="UI_P_CHEF_SONG_X_NAME" />
       <Property name="NameLower" value="UI_P_CHEF_SONG_X_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_P_CHEF_SONG_X_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_P_CHEF_SONG_X_DESC" />
-      </Property>
+      <Property name="Subtitle" value="UI_P_CHEF_SONG_X_SUB" />
+      <Property name="Description" value="UI_P_CHEF_SONG_X_DESC" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
@@ -37730,6 +37760,7 @@ MODIFICATIONS = {{
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
         </Property>
+        <Property name="RangeOverride" value="-1" />
       </Property>
     </Property>
 ]],
