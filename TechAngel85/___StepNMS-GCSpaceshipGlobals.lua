@@ -12,8 +12,8 @@ LandingHoverOffset = 1.5				--  | 3 | 16
 LandingMargin = 0.7						-- The size of the area that must be considered "cleared" of object to allow for landing | 1.4 | 19
 LandingObstacleMinHeight = 2.5			-- The minimum height of objects that obstruct landing | 2 | 20
 
-HoverSpeedFactor = 0					-- Speed at which ship hovers | 20 | 351
-HoverMinSpeed = 0.1						-- Minimum speed at which ship will hover | 1 | 353
+HoverSpeedFactor = 1					-- Speed at which ship hovers | 20 | 351
+HoverMinSpeed = 1						-- Minimum speed at which ship will hover | 1 | 353
 LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 377
 
 NoBoostAnomalyDistance = 1500			-- Distance from Anomaly that boost is disabled | 3000 | 1138
@@ -51,7 +51,7 @@ ControlSERollAutoTime = 1				-- The length of time it takes for an auto-roll cor
 -- Control/PlanetEngine
 ControlPEThrustForce = 30				--  | 20| 454
 ControlPEMaxSpeed = 250					--  | 125 |
-ControlPEMinSpeed = 0.1					--  | 20 | 
+ControlPEMinSpeed = 1					--  | 20 | 
 ControlPEFalloff = 0.35					--  | 0.5 | 
 ControlPEBoostMaxSpeed = 375			--  | 155 | 
 ControlPEReverseBrake = 1.5				--  | 1 | 
@@ -80,7 +80,7 @@ ControlLTSERollAutoTime = 1				--  | 2 |
 -- ControlLight/PlanetEngine
 ControlLTPEThrustForce = 50				--  | 40| 603
 ControlLTPEMaxSpeed = 375				--  | 125 | 
-ControlLTPEMinSpeed = 0.1					--  | 20 | 
+ControlLTPEMinSpeed = 1					--  | 20 | 
 ControlLTPEFalloff = 0.25				--  | 0.5 |
 ControlLTPEBoostMaxSpeed = 550			--  | 150 | 
 ControlLTPEDirectionBrakeMin = 1.1		--  | 0.75 | 
@@ -110,7 +110,7 @@ ControlHVYSERollAutoTime = 1			--  | 2 |
 -- ControlHeavy/PlanetEngine
 ControlHVYPEThrustForce = 35			--  | 20| 752
 ControlHVYPEMaxSpeed = 200				--  | 130 | 
-ControlHVYPEMinSpeed = 0.1				--  | 20 | 
+ControlHVYPEMinSpeed = 1				--  | 20 | 
 ControlHVYPEBoostThrustForce = 40		--  | 20 | 
 ControlHVYPEBoostMaxSpeed = 275			--  | 185 | 
 ControlHVYPEBoostingTurnDamp = 0.2		--  | 0.15 | 

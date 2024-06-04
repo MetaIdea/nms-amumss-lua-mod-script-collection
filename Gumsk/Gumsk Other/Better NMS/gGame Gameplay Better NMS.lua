@@ -96,110 +96,110 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							VALUE_CHANGE_TABLE = {
-								{"TerrainResourceScanTime",30},						--30; 
+								-- {"TerrainResourceScanTime",30},						--30; 
 								{"TerrainResourceScanRange",2000},					--1200; 
-								{"BinocsDisplayUnknownCreatures","False"},			--False; 
-								{"BinocularScanTargetMinHeight",5},					--5; 
-								{"BinocularScanTargetHeightRange",0},				--0; 
+								-- {"BinocsDisplayUnknownCreatures","False"},			--False; 
+								-- {"BinocularScanTargetMinHeight",5},					--5; 
+								-- {"BinocularScanTargetHeightRange",0},				--0; 
 								{"BinocTimeBeforeScan",0.2},						--0.5; 
 								{"BinocMinScanTime",0.5},							--3.9; 
 								{"BinocScanTime",0.5},								--3.9; 
 								{"BinocCreatureScanTime",0.5},						--3.9; 
-								{"ScanStartTimeDelayMinDist",30},					--30; 
-								{"ScanStartTimeDelayRange",100},					--100; 
-								{"ScanStartTimeDistanceDelayTime",1},				--1; 
-								{"ScanStickyDecay",3},								--3; 
-								{"CreatureScanStickyDecay",0.8},					--0.8; 
-								{"CreatureScanAngle",0.08},							--0.08; 
-								{"CreatureMinScanTime",0.8},						--0.8; 
-								{"ScanAngle",0.04},									--0.04; 
+								-- {"ScanStartTimeDelayMinDist",30},					--30; 
+								-- {"ScanStartTimeDelayRange",100},					--100; 
+								-- {"ScanStartTimeDistanceDelayTime",1},				--1; 
+								-- {"ScanStickyDecay",3},								--3; 
+								-- {"CreatureScanStickyDecay",0.8},					--0.8; 
+								-- {"CreatureScanAngle",0.08},							--0.08; 
+								-- {"CreatureMinScanTime",0.8},						--0.8; 
+								-- {"ScanAngle",0.04},									--0.04; 
 								{"NewDiscoveryDisplayTime",0.3},					--2; 
 								{"SurveyMaxDistance",2000},							--400; How far away the scanner can detect hotspots, in u. Maximum is about 1300, but over 1000 is unreliable.
 								{"SurveySonarMinPulseSpeed",-2.4},					--0.4; Frequency for sweeps or pings of the hotspot scanner. Lower is slower.
 
 			--Grouping
 								-- {"TechMustBeInTechInventory", "False"},			--True
-								{"MaxNumSameGroupTech", 3},							--3; Maximum number of same tech group on one inventory page
-								{"BonusSameTypeElementsAdd", 0.06},					--0.06; 
-								{"BonusSameTypeElementsMultiply", 0.04},			--0.04; 
-								{"BonusChildTypeElementsAdd", 0.05},				--0.05; 
-								{"BonusChildTypeElementsMultiply", 0.03},			--0.03; 
+								-- {"MaxNumSameGroupTech", 3},							--3; Maximum number of same tech group on one inventory page
+								-- {"BonusSameTypeElementsAdd", 0.06},					--0.06; 
+								-- {"BonusSameTypeElementsMultiply", 0.04},			--0.04; 
+								-- {"BonusChildTypeElementsAdd", 0.05},				--0.05; 
+								-- {"BonusChildTypeElementsMultiply", 0.03},			--0.03; 
 
 			--Random
 								{"AtmosphereEntryTime",1.0},						--1.5; 
 								{"ShipInteractRadius",300},							--80; 
 								{"LightStrength",1.1},								--1; All lights. 4 is blinding in small areas or up close
 								{"AirLockDoorRange",3},								--3; 
-								{"UseTradingCostTable","False"},					--False; 
-								{"ChangePricesLocally","False"},					--False; 
-								{"ProductItemStockDecayTime",60},					--60; 
-								{"ProductItemStockReplenishTime",60},				--60; 
-								{"SubstanceItemStockDecayTime",2},					--2; 
-								{"SubstanceItemStockReplenishTime",2},				--2; 
-								{"RefinerProductsMadeInTime",20},					--2; 
+								-- {"UseTradingCostTable","False"},					--False; 
+								-- {"ChangePricesLocally","False"},					--False; 
+								-- {"ProductItemStockDecayTime",60},					--60; 
+								-- {"ProductItemStockReplenishTime",60},				--60; 
+								-- {"SubstanceItemStockDecayTime",2},					--2; 
+								-- {"SubstanceItemStockReplenishTime",2},				--2; 
+								{"RefinerProductsMadeInTime",10},					--2; 
 								{"RefinerSubsMadeInTime",1000},						--250; 
 								{"RefinerProductsMadeInTimeSurvival",4},			--1; 
 								{"RefinerSubsMadeInTimeSurvival",400},				--100; 
 								{"FourthRaceSpawnPercentage",4},					--3; 
-								{"NonDominantRaceSpawnPercentage",30},				--30; 
-								{"ViciousStormProbability",0.5},					--0.5; 
-								{"ViciousWeatherProbability",0.5},					--0.5; 
-								{"WarpsBetweenBattles",5},							--5; 
-								{"HoursBetweenBattles",3},							--3; 
+								-- {"NonDominantRaceSpawnPercentage",30},				--30; 
+								-- {"ViciousStormProbability",0.5},					--0.5; 
+								-- {"ViciousWeatherProbability",0.5},					--0.5; 
+								-- {"WarpsBetweenBattles",5},							--5; 
+								-- {"HoursBetweenBattles",3},							--3; 
 								{"DeadPlanetGravityFactor",0.5},					--0.6; 
 
 			--Sentinels
-								{"ViciousSentinelProbability",0.25},				--0.25; 
-								{"AggressiveSentinelProbability",0.13},				--0.13; 
-								{"AggressiveSentinelProbabilitySurvival",0.13},		--0.13; 
-								{"LowSentinelProbability",0.55},					--0.55; 
-								{"LowSentinelProbabilitySurvival",0.25},			--0.25; 
-								{"NonAggressiveLushSurvivalProbabability",0.5},		--0.5; 
-								{"MaxDronesLow",0},									--0; 
-								{"MaxDronesLowSurvival",1},							--1; 
-								{"MaxDronesNormal",2},								--2; 
-								{"MaxDronesNormalSurvival",2},						--2; 
-								{"MaxDronesAggressive",1},							--1; 
-								{"MaxDronesAggressiveSurvival",1},					--1; 
+								-- {"ViciousSentinelProbability",0.25},				--0.25; 
+								-- {"AggressiveSentinelProbability",0.13},				--0.13; 
+								-- {"AggressiveSentinelProbabilitySurvival",0.13},		--0.13; 
+								-- {"LowSentinelProbability",0.55},					--0.55; 
+								-- {"LowSentinelProbabilitySurvival",0.25},			--0.25; 
+								-- {"NonAggressiveLushSurvivalProbabability",0.5},		--0.5; 
+								-- {"MaxDronesLow",0},									--0; 
+								-- {"MaxDronesLowSurvival",1},							--1; 
+								-- {"MaxDronesNormal",2},								--2; 
+								-- {"MaxDronesNormalSurvival",2},						--2; 
+								-- {"MaxDronesAggressive",1},							--1; 
+								-- {"MaxDronesAggressiveSurvival",1},					--1; 
 
 			--Terrain Resources
-								{"ResourceReducer",10},								--10; Reduces amount of standard resource deposit yields. Higher means fewer resources.
-								{"ResourceMinAmount",1},							--1; Minimum amount of standard resource deposit yields per hit.
-								{"ResourceMaxAmount",2},							--2; Maximum amount of standard resource deposit yields per hit.
-								{"ResourceCommonReducer",5},						--5 ???
-								{"ResourceCommonMinAmount",1},						--1 ???
-								{"ResourceCommonMaxAmount",8},						--8 ???
-								{"ResourceDirtReducer",40},							--40; Reduces amount of silicate powder yields. Higher means fewer silicate powder.
-								{"ResourceDirtMinAmount",1},						--1; Minimum amount of silicate powder yields per hit.
-								{"ResourceDirtMaxAmount",8},						--8; Maximum amount of silicate powder yields per hit.
+								-- {"ResourceReducer",10},								--10; Reduces amount of standard resource deposit yields. Higher means fewer resources.
+								-- {"ResourceMinAmount",1},							--1; Minimum amount of standard resource deposit yields per hit.
+								-- {"ResourceMaxAmount",2},							--2; Maximum amount of standard resource deposit yields per hit.
+								-- {"ResourceCommonReducer",5},						--5 ???
+								-- {"ResourceCommonMinAmount",1},						--1 ???
+								-- {"ResourceCommonMaxAmount",8},						--8 ???
+								-- {"ResourceDirtReducer",40},							--40; Reduces amount of silicate powder yields. Higher means fewer silicate powder.
+								-- {"ResourceDirtMinAmount",1},						--1; Minimum amount of silicate powder yields per hit.
+								-- {"ResourceDirtMaxAmount",8},						--8; Maximum amount of silicate powder yields per hit.
 
 			--Torch
-								{"TorchFoV", 120},									--120; 
-								{"TorchStrength", 4.2},								--3.5; 
-								{"TorchCookieIndex", 0},							--0; 
-								{"TorchDimFoV", 65},								--65; Derelict freighter FOV
-								{"TorchDimStrength", 2.2},							--1.5; Derelict freighter strength
-								{"InteractionTorchFoV", 120},						--120; 
-								{"InteractionTorchStrength", 1.5},					--2; 
-								{"UndergroundTorchFoV", 70},						--70; 
-								{"UndergroundTorchFoVFar", 100},					--100; 
-								{"UndergroundTorchStrength", 3.0},					--2.5; 
-								{"UndergroundTorchStrengthFar", 7.5},				--6.5; 
-								{"TorchOffsetX", 0},								--0; Torch source, + right, -left of centerline of character, in u
+								-- {"TorchFoV", 120},									--120; 
+								{"TorchStrength", 4.4},								--3.5; 
+								-- {"TorchCookieIndex", 0},							--0; 
+								-- {"TorchDimFoV", 65},								--65; Derelict freighter FOV
+								{"TorchDimStrength", 2.3},							--1.5; Derelict freighter strength
+								-- {"InteractionTorchFoV", 120},						--120; 
+								{"InteractionTorchStrength", 1.4},					--2; 
+								-- {"UndergroundTorchFoV", 70},						--70; 
+								-- {"UndergroundTorchFoVFar", 100},					--100; 
+								{"UndergroundTorchStrength", 3.3},					--2.5; 
+								{"UndergroundTorchStrengthFar", 8},					--6.5; 
+								-- {"TorchOffsetX", 0},								--0; Torch source, + right, -left of centerline of character, in u
 								{"TorchOffsetY", -0.35},							--"-0.5"; Torch source, + above, -below top of character head, in u
 								{"TorchOffsetZ", -0.85},							--"-0.75"; Torch source, + behind, - in front of centerline of character, in u
-								{"TorchRotation", 0.0},								--0.0; 
+								-- {"TorchRotation", 0.0},								--0.0; 
 							},
 						},
-						{
-							PRECEDING_KEY_WORDS = "TorchColour",
-							VALUE_CHANGE_TABLE = {
-								{"R", 0.95},										--0.95; torch red saturation percent
-								{"G", 0.993},										--0.993; torch green saturation percent
-								{"B", 0.994},										--0.994; torch blue saturation percent
-								{"A", 1}											--1; torch alpha?
-							},
-						},
+						-- {
+							-- PRECEDING_KEY_WORDS = "TorchColour",
+							-- VALUE_CHANGE_TABLE = {
+								-- {"R", 0.95},										--0.95; torch red saturation percent
+								-- {"G", 0.993},										--0.993; torch green saturation percent
+								-- {"B", 0.994},										--0.994; torch blue saturation percent
+								-- {"A", 1}											--1; torch alpha?
+							-- },
+						-- },
 					},
 				},
 			}

@@ -42,34 +42,35 @@ MODIFICATIONS	= {
 						-- {"EnergyDischargeRateLow",0.01},			--0.02
 						-- {"EnergyDischargeRateMedium",0.1},			--0.25
 						-- {"EnergyDischargeRateHigh",0.5},			--0.9
-						{"EnergyDischargeRateFloatingInSpace",0},	--30
+						-- {"EnergyDischargeRateFloatingInSpace",0},	--30
 						-- {"ShieldRestoreSpeed",1.0},					--0.2
 						-- {"ShieldRestoreDelay",5},					--10
 						-- {"ShieldRechargeMinTimeSinceDamage",10},	--30
 						-- {"ShieldRechargeRate",30},					--10
 						-- {"DeathDamageTechBrokenPercent",8},			--40
 						{"HardLandMax",150},						--18
-						{"GroundWalkSpeed",2.9},						--4.4
-						{"GroundRunSpeed",11},						--8
-						-- {"AnimWalkSpeed",2},						--1.5
-						-- {"AnimRunSpeed",6},							--4
-						{"MaxFallSpeed",45},						--30
+						{"GroundWalkSpeed",3.5},						--4.4
+						{"GroundRunSpeed",10},						--8
+						{"AnimWalkSpeed",2.5},						--1.5
+						{"AnimRunSpeed",5.5},							--4
+						{"AnimWalkToRunSpeed",1},					--4.5
+						{"MaxFallSpeed",41},						--30
 						-- {"FreeJetpackRange",7},						--3
 						-- {"FreeJetpackRangeNonTerrain",2},			--1.1
 						-- {"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",45},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",38},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-						{"JetpackMaxSpeed",15},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
-						{"JetpackMaxUpSpeed",45},					--30
-						{"JetpackUpForce",50},						--30 ; Needs to be above about 20 to overcome standard gravity
-						{"JetpackIgnitionForce",80},				--60 ; Initial force applied before JetpackIgnitionTime
+						{"JetpackMaxSpeed",9},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
+						{"JetpackMaxUpSpeed",40},					--30
+						{"JetpackUpForce",38},						--30 ; Needs to be above about 20 to overcome standard gravity
+						{"JetpackIgnitionForce",68},				--60 ; Initial force applied before JetpackIgnitionTime
 						{"JetpackIgnitionTime",9999},				--0.4 ; How many seconds until transition from JetpackIgnitionForce to JetpackForce and JetpackUpForce
 						{"JetpackMinIgnitionTime",0.1},				--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
-						-- {"JetpackFillRate",1},						--0.5
-						{"JetpackUpForceDeadPlanetExtra",17},		--10
-						{"JetpackForceDeadPlanetExtra",25},			--15
-						{"JetpackIgnitionForceDeadPlanetExtra",55},	--45
+						{"JetpackFillRate",0.7},						--0.5
+						{"JetpackUpForceDeadPlanetExtra",14},		--10
+						{"JetpackForceDeadPlanetExtra",20},			--15
+						{"JetpackIgnitionForceDeadPlanetExtra",52},	--45
 						-- SpaceJetpackForce = 40								--40
 						-- SpaceJetpackUpForce = 30								--30
 						-- SpaceJetpackIgnitionForce = 15						--15
@@ -104,9 +105,9 @@ MODIFICATIONS	= {
 						{"JetpackUnderwaterDrainRate",0.35},			--0.4
 						{"JetpackUnderwaterFillRate",1.2},			--1
 						{"UnderwaterMaxSpeed",6},					--4
-						{"UnderwaterForce",25},						--15
-						{"UnderwaterMaxJetpackSpeed",16},			--8
-						{"UnderwaterJetpackForce",40},				--25
+						{"UnderwaterForce",20},						--15
+						{"UnderwaterMaxJetpackSpeed",13},			--8
+						{"UnderwaterJetpackForce",30},				--25
 						{"AutoLandRange",150},						--100
 						-- {"AutoLandTime",1},							--2
 						-- {"MeleeCooldown",0.3},						--0.62
@@ -164,7 +165,7 @@ MODIFICATIONS	= {
 						-- {"ChargeTime",0.3},							--0.4
 						-- {"EnergyBallSpeed",300},					--200
 						-- {"ChargedEnergyBallSpeed",150},				--75
-						{"DamageRateWhenUnderNoGravity",0.1},		--10
+						-- {"DamageRateWhenUnderNoGravity",0.01},		--10
 					}
 				},
 			}
