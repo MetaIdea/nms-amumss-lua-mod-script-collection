@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "CuriosityScanner"
-GameVersion = "4.62"
-ModVersion = "1.8"
+GameVersion = "4.71"
+ModVersion = "1.9"
 Description = "increase number curiosities spawn on planet surface"
 
 
