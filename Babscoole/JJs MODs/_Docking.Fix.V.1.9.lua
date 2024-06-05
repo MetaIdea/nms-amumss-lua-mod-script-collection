@@ -27,9 +27,9 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Docking.Fix.V.1.8.No.Disc.pak",
+["MOD_FILENAME"]            = "_Docking.Fix.V.1.9.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
-["NMS_VERSION"]             = "4.65",
+["NMS_VERSION"]             = "4.71",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -229,42 +229,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "LandingPad", "Name", "ATTACHMENT"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "EXIT"},
                             ["VCT"] =
                             {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Name", "Dock"},
-                                {"Name", "EXIT"},
-                            },
-                            ["VCT"] =
-                            {
-                                {"TransY", "0"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Disk", "Name", "ATTACHMENT"},
-                            ["VCT"] =
-                            {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\DISK.ENTITY.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Disk", "Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD"},
-                            ["VCT"] =
-                            {
-                                {"Type", ""},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "PadDust", "Name", "ATTACHMENT"},
-                            ["VCT"] =
-                            {
-                                {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\PADDUST.ENTITY.MBIN"},
+                                {"TransY", "-0.42215"},
                             }
                         },
                     },
