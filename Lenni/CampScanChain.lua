@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "CampScanChain.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.21",
+["NMS_VERSION"]				= "4.65",
 ["MOD_DESCRIPTION"]			= "Allows to scan for more camps while at a camp",
 ["MODIFICATIONS"] 			=
 	{
@@ -10,9 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	=
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {
-												"METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-											},
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
@@ -35,9 +33,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SKW"]					= {"Text", "UI_ROBOT_CAMP_OPEN_DESC"},
-							["PKW"]					= "GcAlienPuzzleOption.xml",
-							["SECTION_ACTIVE"]		= "-2",
+							["SKW"]					= {"Name", "UI_ROBO_CAMP_SHIP_OPT"},
+							["SECTION_ACTIVE"]		= {1, 2},
 							["ADD_OPTION"]			= "ADDafterSECTION",
 							["SEC_ADD_NAMED"]		= "PuzzleOption",
 						},

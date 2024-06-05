@@ -555,6 +555,10 @@ CustomDataTable =
         ["PALETTE"] = "VEHICLE",
         ["NUMCOLOURS"] = "All",
     },
+    {
+        ["PALETTE"] = "SHIP",
+        ["NUMCOLOURS"] = "All",
+    },
     -- {
         -- ["PALETTE"] = "BIKE",
         -- ["NUMCOLOURS"] = "All",

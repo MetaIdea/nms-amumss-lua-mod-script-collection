@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Increased Starship Free Look Range.pak",
 ["MOD_AUTHOR"]    = "DaLuxen",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
+["NMS_VERSION"]   = "4.71",
 ["MODIFICATIONS"] =
     {
         {
