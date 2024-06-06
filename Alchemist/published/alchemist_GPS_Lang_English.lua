@@ -6,7 +6,7 @@ building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
 GameVersion = "4-71"
-ModVersion = "2-4-3"
+ModVersion = "2-5-0"
 
 -- =========
 -- CONSTANTS
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 252
+-- Total keys: 262
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -169,6 +169,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_MENU_PQ_NAME_PO"] = "Outlier Pattern Query...", --
   ["ALCH_SCAN_MENU_PQ_NAME_PR"] = "Resource Pattern Query...", --
   ["ALCH_SCAN_MENU_PQ_NAME_S"] = "System Query...", --
+  ["ALCH_SCAN_MENU_PQ_NAME_Z"] = "Generic Query...", --
   ["ALCH_SCAN_MENU_SCAN_EXACT"] = "Focused Scan...", --
   ["ALCH_SCAN_MENU_SCAN_FAST"] = "Quick Scan...", --
   ["ALCH_SCAN_MENU_SHIP_RANGE_ERR"] = "Deep Space Scanning <HIGHLIGHT>//<> UNAVAILABLE <HIGHLIGHT>//<> Interference detected", --
@@ -273,7 +274,14 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in a <TECHNOLOGY>remote system<>.\nUse ship or freighter's <STELLAR>Galactic Map<> and travel to the marked system.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_WAIT"] = "<TITLE>Query result located in<> <TECHNOLOGY>remote system<>\nUse ship or freighter's <STELLAR>Galactic Map<> to initiate warp travel", --
+  ["ALCH_SCAN_PQ_ZA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Unmapped Planet", --
+  ["ALCH_SCAN_PQ_ZA_MENU"] = "Unmapped Planet", --
+  ["ALCH_SCAN_PQ_ZA_TITLE"] = "Planet Query ~ Unmapped Planet", --
+  ["ALCH_SCAN_PQ_ZB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Unmapped Prime Planet", --
+  ["ALCH_SCAN_PQ_ZB_MENU"] = "Unmapped Prime Planet", --
+  ["ALCH_SCAN_PQ_ZB_TITLE"] = "Planet Query ~ Unmapped Prime Planet", --
   ["ALCH_SCAN_PR_DESC"] = "<TECHNOLOGY>Resource<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
+  ["ALCH_SCAN_PZ_DESC"] = "<TECHNOLOGY>Generic Planet<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_QA_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_QB_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_QC_SUB_1"] = "Active Deep Space Scan", --
@@ -295,6 +303,8 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
   ["ALCH_SCAN_SCAN_FAST_DESC"] = "Tuned to common signals...", --
   ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hibernating...<>", --
+  ["ALCH_SCAN_ZA_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_ZB_SUB_1"] = "Active Deep Space Scan", --
   ["D_ALSCFB_BOOT_LANG"] = "Commander, this freighter's <TECHNOLOGY>DEEP SPACE SCANNING<> system is now available but it requires configuration.\nIf <STELLAR>IMMERSIVE MODE<> is enabled then an <TECHNOLOGY>Interstellar Scanner<> must be installed in this freighter and all scans will require <FUEL>Anomaly Detectors<>. Enable <STELLAR>IMMERSIVE MODE<>?", --
   ["D_ALSCFB_BOOT_RES_A"] = "Confirmed, immersive mode <TRADE>ENABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --
   ["D_ALSCFB_BOOT_RES_B"] = "Confirmed, immersive mode <FUEL>DISABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --

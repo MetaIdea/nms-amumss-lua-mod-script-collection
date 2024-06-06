@@ -370,6 +370,8 @@ SPECIAL_LIST =
 		["ShopNumber"] = "49",
 		["Table"] =  
 		{
+			{ ["ID"] = "SPEC_SPOOKYHEAD", 	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_XOHELMET", 	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "BLD_EXPD_BASE01", 	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_HELMET01", 	["IsConsumable"] = "False", ["IsCape"] = "False"},
 			{ ["ID"] = "EXPD_BACKPACK01", 	["IsConsumable"] = "False", ["IsCape"] = "False"},

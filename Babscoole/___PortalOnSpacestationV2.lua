@@ -64,9 +64,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Name",     "SpacestationPortal"},
                                 {"NameHash", "3101089239"},
-                                {"TransX",   "-32"},
-                                {"TransY",   "-.05"},
-                                {"TransZ",   "-58"},
+                                {"TransX",   "-44"},
+                                {"TransY",   "-.09"},
+                                {"TransZ",   "-37"},
                                 {"RotY",     "59"},
                                 {"ScaleX",   "0.50"},
                                 {"ScaleY",   "0.50"},
@@ -95,21 +95,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
-                            ["VCT"] =
-                            {
-                                {"ScaleX", "0.5"},
-                                {"ScaleY", "0.5"},
-                                {"ScaleZ", "0.5"},
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
+                                {"Name", "Base"},
                                 {"Name", "PillarsB"},
                                 {"Name", "PillarsA"},
-                                {"Name", "REFPortalMistVFX"},
-                                {"Name", "REFPortalCloudsVFX"},
+                                -- {"Name", "REFPortalMistVFX"},
+                                -- {"Name", "REFPortalCloudsVFX"},
                                 {"Name", "_Clump1"},
                                 {"Name", "_Clump2"},
                                 {"Name", "_Clump3"},
