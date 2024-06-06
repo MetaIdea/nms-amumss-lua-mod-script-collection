@@ -131,8 +131,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 7}, --4
 						{"OffsetX", CharacterOffsetXMedium}, --0.8
-						{"OffsetY", 0.1}, --(-0.6)
-						{"BackMinDistance", 3}, --4
+						{"OffsetY", 0}, --(-0.6)
+						{"BackMinDistance", 3.1}, --4
 						{"BackMaxDistance", 5}, --5.4
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
@@ -154,8 +154,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 14}, --8.8
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", 0.1}, --(-0.85)
-						{"BackMinDistance", 3}, --4
+						{"OffsetY", 0}, --(-0.85)
+						{"BackMinDistance", 3.2}, --4
 						{"BackMaxDistance", 5.5}, --6.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
@@ -177,9 +177,9 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"MinSpeed", 4}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.7
-						{"OffsetY", 0.1}, --(-0.45)
-						{"BackMinDistance", 1.3}, --1.5
-						{"BackMaxDistance", 4}, --5.2
+						{"OffsetY", 0}, --(-0.45)
+						{"BackMinDistance", 1.4}, --1.5
+						{"BackMaxDistance", 4.2}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -203,9 +203,9 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "CharacterMiningCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
-						{"OffsetY", 0.1}, --(-0.6)
-						{"BackMinDistance", 1.7}, --2
-						{"BackMaxDistance", 4.3}, --5.2
+						{"OffsetY", 0}, --(-0.6)
+						{"BackMinDistance", 1.8}, --2
+						{"BackMaxDistance", 4.5}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -222,9 +222,9 @@ MODIFICATIONS	= {
 						{"MinSpeed", 4}, --10
 						{"SpeedRange", 20}, --1
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
-						{"OffsetY", -0.2}, --(-0.8)
-						{"BackMinDistance", 2}, --2.3
-						{"BackMaxDistance", 2.4}, --2.9
+						{"OffsetY", -0.4}, --(-0.8)
+						{"BackMinDistance", 2.1}, --2.3
+						{"BackMaxDistance", 2.6}, --2.9
 						{"PanNear", 0}, --1
 						{"PanFar", 0}, --(-1)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -244,7 +244,7 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "CharacterAbandCombatCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
-						{"OffsetY", -0.1}, --(-0.75)
+						{"OffsetY", -0.2}, --(-0.75)
 						{"BackMinDistance", 1.6}, --1.6
 						{"BackMaxDistance", 1.8}, --1.8
 						{"VertRotationSpeed", 20}, --15
@@ -263,7 +263,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", -0.2}, --(-0.75)
 						{"BackMinDistance", 1.8}, --2
-						{"BackMaxDistance", 3}, --4
+						{"BackMaxDistance", 3.2}, --4
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -280,9 +280,9 @@ MODIFICATIONS	= {
 						{"MinSpeed", 4}, --6
 						{"SpeedRange", 20}, --5
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
-						{"OffsetY", -0.1}, --(-0.8)
-						{"BackMinDistance", 2.8}, --3.5
-						{"BackMaxDistance", 3.5}, --4.2
+						{"OffsetY", 0}, --(-0.8)
+						{"BackMinDistance", 2.9}, --3.5
+						{"BackMaxDistance", 3.6}, --4.2
 						{"PanNear", 0}, --1
 						{"PanFar", -1.5}, --(-3)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -324,7 +324,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 20}, --8.8
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", 0}, --(-0.85)
+						{"OffsetY", -0.1}, --(-0.85)
 						{"BackMinDistance", 2}, --2.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
@@ -389,7 +389,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXLarge}, --0.8
 						{"OffsetY", 0}, --(-0.6)
 						{"BackMinDistance", 3}, --4
-						{"BackMaxDistance", 12}, --20
+						{"BackMaxDistance", 13}, --20
 						{"UpMaxDistance", 0}, --(-5)
 						{"PanFar", 0}, --3
 						{"HorizRotationAngleMaxPerFrame", 20}, --0
@@ -458,7 +458,7 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "CharacterSteepSlopeCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
-						{"OffsetY", -0.3}, --(-1.2)
+						{"OffsetY", -0.4}, --(-1.2)
 						{"BackMaxDistance", 5}, --6
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Quieter.Customiser.V.2.1.pak",
+["MOD_FILENAME"]  = "_Quieter.Customiser.V.2.2.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "4.71",
 ["MODIFICATIONS"] =
     {
         {

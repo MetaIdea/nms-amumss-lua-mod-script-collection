@@ -3,7 +3,7 @@ ModName = "Better NMS"
 ModNameSub = "Normal"
 BaseDescription = ""
 GameVersion = "4711"
-ModVersion = "a"
+ModVersion = "c"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
