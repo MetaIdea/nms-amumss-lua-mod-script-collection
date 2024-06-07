@@ -158,17 +158,17 @@ for j = 1, #ProductIds do
     
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", productId, "Description", "VariableSizeString.xml"},
+        -- ["SPECIAL_KEY_WORDS"] = {"ID", productId, "Description", "VariableSizeString.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"ID", productId},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Value", "CUI_PLANT_DESC"}
+            {"Description", "CUI_PLANT_DESC"}
         }
     }
 end
 
 local ChangesToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for k = 1, #PlantRewardIds do
-    
     local rewardId = PlantRewardIds[k]
     ChangesToRewardTable[#ChangesToRewardTable +1] =
     {
@@ -198,12 +198,7 @@ function NewLanguagueFile(DescriptionEntries)
 end
 
 function NewLanguageEntry(Language, NewDescription)
-    return
-    [[
-        <Property name="]]..Language..[[" value="VariableSizeString.xml">
-            <Property name="Value" value="]]..NewDescription..[[" />
-        </Property>
-    ]]
+    return [[<Property name="]]..Language..[[" value="]]..NewDescription..[[" />]]
 end
 
 function NewDescriptionText(newDescId, LanguageEntries)
