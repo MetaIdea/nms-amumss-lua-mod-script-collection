@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANGUAGE"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "472"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom localization file. Modifies GCDEBUGOPTIONS.GLOBAL.MBIN."
 
 
@@ -14,8 +14,8 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom local
 -- languange entries: missions
 ----------------------------------------------------------------------------------------------------
 
-GAME_VERSION = "4.65"
-GAME_UPDATE = "Orbital"
+GAME_VERSION = "4.72"
+GAME_UPDATE = "Adrift"
 
 --------------------------------------------------
 -- main mission misc + tooltips
@@ -206,13 +206,14 @@ Chart a path to the target system using Galaxy Map (&lt;IMG&gt;QUICK_MENU&lt;&gt
 ]]
 TEXT_MAIN_STAGE2_TIP3 = 
 [[
-Investigate the &lt;SPECIAL&gt;temporal signature&lt;&gt;&#xA;
+Investigate the temporal signature&#xA;
 Land near approximate coordinates on planet %PLANET%
 ]]
 TEXT_MAIN_STAGE2_TIP4 = 
 [[
-Investigate the &lt;SPECIAL&gt;temporal signature&lt;&gt;&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Investigate the temporal signature&#xA;
+Reach approximate coordinates: &lt;SPECIAL&gt;%GPS%&lt;&gt;&#xA;
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_MAIN_STAGE2_TIP5 = 
 [[
@@ -352,18 +353,29 @@ Chart a path to the target system using Galaxy Map (&lt;IMG&gt;QUICK_MENU&lt;&gt
 ]]
 TEXT_PLATING_STAGE1_TIP3 = 
 [[
-Locate the &lt;TECHNOLOGY&gt;research facility&lt;&gt;&#xA;
+Locate the research facility&#xA;
 Land near approximate coordinates on planet %PLANET%
 ]]
 TEXT_PLATING_STAGE1_TIP4 = 
 [[
-Locate the &lt;TECHNOLOGY&gt;research facility&lt;&gt;&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Locate the research facility&#xA;
+Reach approximate coordinates: &lt;SPECIAL&gt;%GPS%&lt;&gt;&#xA;
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_PLATING_STAGE1_TIP5 = 
 [[
-Interact with the terminal at &lt;TECHNOLOGY&gt;research facility&lt;&gt;&#xA;
+Interact with the terminal at research facility&#xA;
 Breaking into facilities may &lt;FUEL&gt;alert the Sentinels&lt;&gt;
+]]
+TEXT_PLATING_STAGE1_TIP6 = 
+[[
+Gather &lt;TECHNOLOGY&gt;Nanites&lt;&gt; to repair the connection: %CURRENT% / 256&#xA;
+Consult the Catalogue and Guide (&lt;IMG&gt;OPTIONS&lt;&gt;) to learn how to collect nanites
+]]
+TEXT_PLATING_STAGE1_TIP7 = 
+[[
+Gather &lt;TECHNOLOGY&gt;Nanites&lt;&gt; to repair the connection&#xA;
+Return to the terminal
 ]]
 
 TEXT_PLATING_INTER1_LABEL = "Research facility terminal"
@@ -419,18 +431,29 @@ Chart a path to the target system using Galaxy Map (&lt;IMG&gt;QUICK_MENU&lt;&gt
 ]]
 TEXT_FRAGMENT_STAGE1_TIP3 = 
 [[
-Follow the temporal energy signature&#xA;
+Follow the energy signature&#xA;
 Land near the approximate coordinates on planet %PLANET%
 ]]
 TEXT_FRAGMENT_STAGE1_TIP4 = 
 [[
-Follow the temporal energy signature&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Follow the energy signature&#xA;
+Reach approximate coordinates: &lt;SPECIAL&gt;%GPS%&lt;&gt;&#xA;
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_FRAGMENT_STAGE1_TIP5 = 
 [[
 Examine the monolith structure&#xA;
 &lt;SPECIAL&gt;Warning:&lt;&gt; temporal abberation detected!
+]]
+TEXT_FRAGMENT_STAGE1_TIP6 = 
+[[
+Stabilize the rift with &lt;FUEL&gt;an Atlas seed&lt;&gt;&#xA;
+Craft the Captured Nanode in your inventory (&lt;IMG&gt;INVENTORY&lt;&gt;)
+]]
+TEXT_FRAGMENT_STAGE1_TIP7 = 
+[[
+Stabilize the rift with &lt;FUEL&gt;an Atlas seed&lt;&gt;&#xA;
+Interact with the monolith again
 ]]
 
 TEXT_FRAGMENT_INTER1_LABEL = "Unstable Monolith"
@@ -505,18 +528,30 @@ Chart a path to the target system using Galaxy Map (&lt;IMG&gt;QUICK_MENU&lt;&gt
 ]]
 TEXT_CIRCUIT_STAGE1_TIP3 = 
 [[
-Locate the &lt;TRANS_BUI&gt;Autophage encampment&lt;&gt;&#xA;
+Locate the Autophage encampment&#xA;
 Land near the approximate coordinates on planet %PLANET%
 ]]
 TEXT_CIRCUIT_STAGE1_TIP4 = 
 [[
-Locate the &lt;TRANS_BUI&gt;Autophage encampment&lt;&gt;&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Locate the Autophage encampment&#xA;
+Reach approximate coordinates: &lt;SPECIAL&gt;%GPS%&lt;&gt;&#xA;
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_CIRCUIT_STAGE1_TIP5 = 
 [[
 Examine the workings of the Autophage race&#xA;
 Interact with the central terminal
+]]
+TEXT_CIRCUIT_STAGE1_TIP6 = 
+[[
+Restore the harmonic mainframe&#xA;
+Defeat a &lt;RARE&gt;corrupted Sentinel Quad&lt;&gt;&#xA;
+Collect the Crystallised Heart from felled machine
+]]
+TEXT_CIRCUIT_STAGE1_TIP7 = 
+[[
+Restore the harmonic mainframe&#xA;
+Return to the central terminal
 ]]
 
 TEXT_CIRCUIT_INTER1_LABEL = "Autophage Terminal"
@@ -579,7 +614,7 @@ TEXT_MISSION_SCANNER_DESC = "Impossible Fabricator detected a temporal signature
 TEXT_SCANNER_STAGE1_OBJ = "Extract data from the crash site"
 TEXT_SCANNER_STAGE1_DESC = 
 [[
-&lt;SPECIAL&gt;Temporal signature&lt;&gt; detected on planet %PLANET%.&#xA;
+&lt;VISOR&gt;Temporal signature&lt;&gt; detected on planet %PLANET%.&#xA;
 Investigate the crash site to extract &lt;TECHNOLOGY&gt;starship technology data&lt;&gt;.
 ]]
 
@@ -590,13 +625,14 @@ TEXT_SCANNER_SCAN1_TARGET = "[ Temporal signature detected ]"
 
 TEXT_SCANNER_STAGE1_TIP1 = 
 [[
-Fallen Traveller's &lt;SPECIAL&gt;temporal signature&lt;&gt; detected&#xA;
+Fallen Traveller's &lt;VISOR&gt;temporal signature&lt;&gt; detected&#xA;
 Land near the approximate coordinates on planet %PLANET%
 ]]
 TEXT_SCANNER_STAGE1_TIP2 = 
 [[
-Fallen Traveller's &lt;SPECIAL&gt;temporal signature&lt;&gt; detected&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Fallen Traveller's &lt;VISOR&gt;temporal signature&lt;&gt; detected&#xA;
+Reach approximate coordinates: &lt;SPECIAL&gt;%GPS%&lt;&gt;&#xA;
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_SCANNER_STAGE1_TIP3 = 
 [[
@@ -693,7 +729,7 @@ Land near approximate coordinates on &lt;SPECIAL&gt;planet %PLANET%&lt;&gt;
 TEXT_BOXA_STAGE1_TIP3 =
 [[
 Find a suitable interface to decrypt the temporal memory&#xA;
-Use the Analysis Visor (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
+Use the &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to perform a Target Sweep
 ]]
 TEXT_BOXA_STAGE1_TIP4 =
 [[
@@ -2162,6 +2198,8 @@ LIST =
     TEXT_PLATING_STAGE1_TIP3            = TEXT_PLATING_STAGE1_TIP3,
     TEXT_PLATING_STAGE1_TIP4            = TEXT_PLATING_STAGE1_TIP4,
     TEXT_PLATING_STAGE1_TIP5            = TEXT_PLATING_STAGE1_TIP5,
+    TEXT_PLATING_STAGE1_TIP6            = TEXT_PLATING_STAGE1_TIP6,
+    TEXT_PLATING_STAGE1_TIP7            = TEXT_PLATING_STAGE1_TIP7,
     TEXT_PLATING_INTER1_LABEL           = TEXT_PLATING_INTER1_LABEL,
     TEXT_PLATING_ITER1_STORY1           = TEXT_PLATING_ITER1_STORY1,
     TEXT_PLATING_INTER1_OPTIONA         = TEXT_PLATING_INTER1_OPTIONA,
@@ -2182,6 +2220,8 @@ LIST =
     TEXT_FRAGMENT_STAGE1_TIP3           = TEXT_FRAGMENT_STAGE1_TIP3,
     TEXT_FRAGMENT_STAGE1_TIP4           = TEXT_FRAGMENT_STAGE1_TIP4,
     TEXT_FRAGMENT_STAGE1_TIP5           = TEXT_FRAGMENT_STAGE1_TIP5,
+    TEXT_FRAGMENT_STAGE1_TIP6           = TEXT_FRAGMENT_STAGE1_TIP6,
+    TEXT_FRAGMENT_STAGE1_TIP7           = TEXT_FRAGMENT_STAGE1_TIP7,
     TEXT_FRAGMENT_INTER1_LABEL          = TEXT_FRAGMENT_INTER1_LABEL,
     TEXT_FRAGMENT_INTER1_STORY1         = TEXT_FRAGMENT_INTER1_STORY1,
     TEXT_FRAGMENT_INTER1_STORY2         = TEXT_FRAGMENT_INTER1_STORY2,
@@ -2206,6 +2246,8 @@ LIST =
     TEXT_CIRCUIT_STAGE1_TIP3            = TEXT_CIRCUIT_STAGE1_TIP3,
     TEXT_CIRCUIT_STAGE1_TIP4            = TEXT_CIRCUIT_STAGE1_TIP4,
     TEXT_CIRCUIT_STAGE1_TIP5            = TEXT_CIRCUIT_STAGE1_TIP5,
+    TEXT_CIRCUIT_STAGE1_TIP6            = TEXT_CIRCUIT_STAGE1_TIP6,
+    TEXT_CIRCUIT_STAGE1_TIP7            = TEXT_CIRCUIT_STAGE1_TIP7,
     TEXT_CIRCUIT_INTER1_LABEL           = TEXT_CIRCUIT_INTER1_LABEL,
     TEXT_CIRCUIT_INTER1_STORY1          = TEXT_CIRCUIT_INTER1_STORY1,
     TEXT_CIRCUIT_INTER1_OPTIONA         = TEXT_CIRCUIT_INTER1_OPTIONA,
@@ -2700,9 +2742,7 @@ function BuildTextProperty(id,value) return
 [[
 <Property value="TkLocalisationEntry.xml">
     <Property name="Id" value="]]..id..[[" />
-    <Property name="]]..SUFFIX..[[" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..value..[[" />
-    </Property>
+    <Property name="]]..SUFFIX..[[" value="]]..value..[[" />
 </Property>
 ]]
 end

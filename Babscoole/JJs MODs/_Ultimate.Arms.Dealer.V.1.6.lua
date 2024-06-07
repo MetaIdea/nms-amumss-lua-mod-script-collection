@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.5.Standard.pak",
+["MOD_FILENAME"]  = "_Ultimate.Arms.Dealer.V.1.6.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole & Lyravega",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "4.72",
 ["MODIFICATIONS"] =
     {
         {
@@ -49,13 +49,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\WEAPONS\MULTITOOL\MULTITOOL.DESCRIPTOR.MBIN",
+                    ["REGEXBEFORE"] =
+                    {
+                        {[[(<Property name="Name") value="(.*)xRARE" \/>]], [[\1 value="\2" \/>]]}, --REGEX, provided by Lyravega, searches for Name properties ending in xRARE and removes those characters
+                    },
+                },
+                {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        {
-                            [[MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN]],
-                            [[MODELS/PHONG15.MATERIAL.MBIN]],
-                            "REMOVE"
-                        },
+                        {"MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/SHOPWEAPON/PHONG15.MATERIAL.MBIN", "MODELS/PHONG15.MATERIAL.MBIN", "REMOVE"},
                     },
                 },
                 {
