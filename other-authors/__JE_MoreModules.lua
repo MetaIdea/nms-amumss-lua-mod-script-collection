@@ -2,9 +2,7 @@ Author = "Jaggid Edje"
 ModName = "MoreModules"
 ModNameSub = "__JE"
 BaseDescription = "Purchase more of an available Upgrade module from vendors Based on System Economy"
-GameVersion = "4.64"
--- ModVersion = "v4.64"
-FileSource1 = "METADATA\REALITY\DEFAULTREALITY.MBIN"
+GameVersion = "4.72"
 
 -- Original game settings in comments
 minPoor = 3            -- 1
@@ -29,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "ShipTechSpecialist", "MinAmountOfProductAvailable"},

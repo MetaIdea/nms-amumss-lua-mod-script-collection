@@ -2,12 +2,7 @@ Author = "Jaggid Edje"
 ModName = "FrigateFuel"
 ModNameSub = "JE"
 BaseDescription = "Adjusts frigate fuel useage maximums to be the same as minimum for all frigate types"
-GameVersion = "4.64"
--- ModVersion = "v4.64"
-FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
-
-
-
+GameVersion = "4.72"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -20,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         
 						{
