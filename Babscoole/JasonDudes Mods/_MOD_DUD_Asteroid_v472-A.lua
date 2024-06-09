@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_Asteroid_v465-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_Asteroid_v472-A.pak",
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.63",
+["NMS_VERSION"]     = "4.72",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
     {
