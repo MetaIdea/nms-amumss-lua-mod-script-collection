@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 ModNameSub = "Wall Blue"
 BaseDescription = "Makes Wall Light Blue work without power and improves lighting."

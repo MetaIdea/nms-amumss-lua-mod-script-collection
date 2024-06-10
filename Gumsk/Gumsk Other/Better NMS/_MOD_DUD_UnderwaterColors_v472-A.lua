@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_UnderwaterColors_v465-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_UnderwaterColors_v472-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4711",
+["NMS_VERSION"]   = "4.72",
 ["MODIFICATIONS"] =
     {
         {
@@ -162,6 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="" />
@@ -177,6 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -204,6 +206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -231,6 +234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -290,6 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="" />
@@ -305,6 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -332,6 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -359,6 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -418,6 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="BASE.1" />
@@ -433,6 +442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -506,6 +516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="BASE" />
@@ -521,6 +532,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -594,6 +606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="BASE" />
@@ -609,6 +622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -682,6 +696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="1.BASE" />
@@ -697,6 +712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />
@@ -770,6 +786,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkProceduralTextureList">
+  <Property name="AlwaysEnableUnnamedTextureLayers" value="False" />
   <Property name="Layers">
     <Property value="TkProceduralTextureLayer.xml">
       <Property name="Name" value="BASE" />
@@ -785,6 +802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />

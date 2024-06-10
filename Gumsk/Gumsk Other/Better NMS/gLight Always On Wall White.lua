@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 ModNameSub = "Wall White"
 BaseDescription = "Makes Wall Light White work without power and improves lighting."

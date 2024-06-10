@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 ModNameSub = "Ceiling"
 BaseDescription = "Makes Ceiling Light work without power and improves lighting."

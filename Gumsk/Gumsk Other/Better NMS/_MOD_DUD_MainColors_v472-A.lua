@@ -998,10 +998,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_MainColors_v465-B.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_MainColors_v472-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "4.72",
 ["MODIFICATIONS"] =
     {
         {

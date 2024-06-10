@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 
 --[[ Files Modified:

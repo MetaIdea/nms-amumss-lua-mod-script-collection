@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGUI Parallax"
 ModNameSub = "Lo2k Fast Action and Small Cursor"
 BaseDescription = "Removes mouse-based parallax movement in menus"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 FileSource1 = "GCUIGLOBALS.GLOBAL.MBIN"
 

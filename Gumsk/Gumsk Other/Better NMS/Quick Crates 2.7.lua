@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_AUTHOR"]		= "Lo2k",
 	["LUA_AUTHOR"]		= "Lo2k & Babscoole",
 	["MOD_DESCRIPTION"]	= "This mod opens crates in one click",
-	["NMS_VERSION"]		= "4711",	
+	["NMS_VERSION"]		= "472",	
 	["MODIFICATIONS"]	= 
 	{
 		{

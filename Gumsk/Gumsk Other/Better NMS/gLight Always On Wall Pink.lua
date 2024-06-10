@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 ModNameSub = "Wall Pink"
 BaseDescription = "Makes Wall Light Pink work without power and improves lighting."

@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_GasBagColors_v465-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_GasBagColors_v472-A.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4711",
+["NMS_VERSION"]   = "4.72",
 ["MODIFICATIONS"] =
     {
         {
@@ -44,6 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
+          <Property name="Multiply" value="False" />
           <Property name="OverrideAverageColour" value="False" />
           <Property name="AverageColour" value="Colour.xml">
             <Property name="R" value="0" />

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Movement"
 ModNameSub = "Better NMS"
 BaseDescription = "Exocraft modifications"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

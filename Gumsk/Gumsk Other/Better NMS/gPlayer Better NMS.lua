@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Better NMS"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   

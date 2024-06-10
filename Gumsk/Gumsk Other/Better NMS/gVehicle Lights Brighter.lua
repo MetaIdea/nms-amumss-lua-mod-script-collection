@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Lights"
 ModNameSub = "Brighter"
 BaseDescription = "Increases vehicle headlight intensity"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 FileSource = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

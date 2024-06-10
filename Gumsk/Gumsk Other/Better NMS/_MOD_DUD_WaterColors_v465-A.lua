@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]  = "_MOD_DUD_WaterColors_v465-A.pak",
     ["MOD_AUTHOR"]    = "jasondude7116",
     ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",
-    ["NMS_VERSION"]   = "4711",
+    ["NMS_VERSION"]   = "472",
     ["MODIFICATIONS"] =
     {
         {

@@ -1,6 +1,6 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Better NMS"
-GameVersion = "4711"
+GameVersion = "472"
 ModVersion = "a"
 
 --[[ Files Modified:
