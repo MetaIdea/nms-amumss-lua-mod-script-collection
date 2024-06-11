@@ -20,16 +20,109 @@ SubstanceSection = [[
 Products = 
 [[
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CASING" />
+          <Property name="Value" value="TRA_COMMODITY1" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="NANOTUBES" />
+          <Property name="Value" value="TRA_COMMODITY2" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="CARBON_SEAL" />
+          <Property name="Value" value="TRA_COMMODITY3" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="MICROCHIP" />
+          <Property name="Value" value="TRA_COMMODITY4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMMODITY5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_EXOTICS1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_EXOTICS2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_EXOTICS3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_EXOTICS4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_EXOTICS5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ALLOY1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ALLOY2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ALLOY3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ALLOY4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ALLOY5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ENERGY1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ENERGY2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ENERGY3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ENERGY4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_ENERGY5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_MINERALS1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_MINERALS2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_MINERALS3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_MINERALS4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_MINERALS5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMPONENT1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMPONENT2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMPONENT3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMPONENT4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_COMPONENT5" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_TECH1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_TECH2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_TECH3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_TECH4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="TRA_TECH5" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="PRODFUEL1" />
@@ -60,6 +153,18 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="TECH_COMP" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CASING" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="NANOTUBES" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CARBON_SEAL" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MICROCHIP" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="JELLY" />
@@ -2475,7 +2580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
         {
         
-          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
           ["EXML_CHANGE_TABLE"] =
           {
             --Remove all optional products & substances found in shops.
