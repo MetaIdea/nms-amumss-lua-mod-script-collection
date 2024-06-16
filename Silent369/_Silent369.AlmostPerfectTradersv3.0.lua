@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "2.8"
+local lua_version = "3.0"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 

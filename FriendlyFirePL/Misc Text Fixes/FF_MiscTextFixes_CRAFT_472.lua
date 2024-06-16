@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "CRAFT"
-METADATA_NMS_VERSION    = "471"
+METADATA_NMS_VERSION    = "472"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -55,6 +55,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID","U_EXTRACTOR_S"},
                             },
                             ["VCT"] = {{"Subtitle","BLD_SILO_SUB"},},
+                        },
+
+                        {
+                            -- hauler S-Wing Megalith Engine - restore proper lowercase name
+                            ["SKW"] = {"ID","DROPS_ENGIAB"},
+                            ["VCT"] = {{"NameLower","UI_DROPSHIP_ENGI_AB_NAME_L"},},
                         },
                     },
                 }

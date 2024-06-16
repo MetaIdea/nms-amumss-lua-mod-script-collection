@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANG"
-METADATA_NMS_VERSION    = "471"
+METADATA_NMS_VERSION    = "472"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -407,7 +407,15 @@ Summon the Space Anomaly from the Quick Menu (&lt;IMG&gt;QUICK_MENU&lt;&gt;) whe
 -- UI - replaced  the // signs in NPC trader space encounter OSD with the fancy slash icon
 TEXT_TRADER_OSD = "INCOMING MESSAGE &lt;IMG&gt;SLASH&lt;&gt; TRADE FREQUENCY"
 
+-- MISC - added missing text entry for MARKINGS_COLOUR in pirate dreadnought customisation window
+TEXT_DREADNOUGHT_MARKINGS = "Decals Colour"
 
+-- ITEM - changed description on Deuterium to mention using Silicate Powder (added with exped 13)
+TEXT_DESC_DEUTERIUM = 
+[[
+A stable hydrogen isotope used heavily in both small-scale fusion reactors and neutron-scattering shield technology.&#xA;&#xA;
+Deuterium very rarely occurs naturally. Most of the galaxy's supply comes from processing &lt;TECHNOLOGY&gt;Di-hydrogen&lt;&gt; with other elements, such as &lt;VAL_ON&gt;Tritium&lt;&gt; or &lt;STELLAR&gt;Silicate Powder&lt;&gt;, in advanced refiners.
+]]
 
 ----------------------------------------------------------------------------------------------------
 -- localization file 5
@@ -788,6 +796,33 @@ The corrupted swarm feeds on disharmonic energy&#xA;
 Activate a &lt;STELLAR&gt;Target Sweep&lt;&gt; (&lt;IMG&gt;AIM&lt;&gt;) to locate their foul extractors
 ]]
 
+-- QUEST - changed blue to red star systems for expedition milestore regarding mechanical fauna
+TEXT_EXPED_MECHFAUNA_1A =
+[[
+Discover synthetic creatures: %CURRENT%/%AMOUNT%&#xA;
+Locate synthetic life in &lt;FUEL&gt;red&lt;&gt; star systems&#xA;
+Complete the &lt;EXPED&gt;%MILESTONE%&lt;&gt; milestone to learn appropriate warp upgrades&#xA;
+Select milestones from the Expedition log (&lt;IMG&gt;OPTIONS&lt;&gt;)
+]]
+
+-- QUEST - changed blue to red star systems for expedition milestore regarding mechanical fauna
+TEXT_EXPED_MECHFAUNA_1B =
+[[
+Discover synthetic creatures: %CURRENT%/%AMOUNT%&#xA;
+Locate synthetic life in &lt;FUEL&gt;red&lt;&gt; star systems&#xA;
+Install the &lt;TECHNOLOGY&gt;%ITEM%&lt;&gt; to enable advanced warp navigation&#xA;
+Pin (&lt;IMG&gt;PIN&lt;&gt;) blueprints for detailed assembly instructions
+]]
+
+-- QUEST - changed blue to red star systems for expedition milestore regarding mechanical fauna
+TEXT_EXPED_MECHFAUNA_2 =
+[[
+Discover synthetic creatures: %CURRENT%/%AMOUNT%&#xA;
+Locate synthetic life in &lt;FUEL&gt;red&lt;&gt; star systems&#xA;
+Use the &lt;STELLAR&gt;Galaxy Map&lt;&gt; to locate appropriate systems&#xA;
+Access the galaxy map with &lt;IMG&gt;QUICK_MENU&lt;&gt; while in the starship
+]]
+
 
 
 ----------------------------------------------------------------------------------------------------
@@ -935,6 +970,8 @@ LIST_FIXES =
     UI_TUT_ADV_MATS_MSG6A_VR        = TEXT_AWAKENINGS_VISOR_3_VR,
     TUT_BASEBUILD_MSGC              = TEXT_AWAKENINGS_RESEARCH_1,
     UI_RETURN_MPMISSION_OBJ1_MSG    = TEXT_NEXUS_RETURN_DOTS,
+    MARKINGS_COLOUR                 = TEXT_DREADNOUGHT_MARKINGS,
+    UI_LAUNCHSUB2_DESC              = TEXT_DESC_DEUTERIUM,
 
     --------------------------------------------------
 
@@ -1031,6 +1068,9 @@ LIST_FIXES =
     UI_MP_CORRUPT_SURVEY            = TEXT_SWARM_FEEDS_2,
     UI_MP_CORRUPT_SURVEY_SWAP       = TEXT_SWARM_FEEDS_3,
     UI_MP_CORRUPT_SURVEY_OFF        = TEXT_SWARM_FEEDS_4,
+    UI_EXPED_CRE_ROBOT_MSG1A        = TEXT_EXPED_MECHFAUNA_1A,
+    UI_EXPED_CRE_ROBOT_MSG1B        = TEXT_EXPED_MECHFAUNA_1B,
+    UI_EXPED_CRE_ROBOT_MSG2         = TEXT_EXPED_MECHFAUNA_2,
 }
 
 

@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightFullNoReverse"
+local modfilename = "AlmostPerfectFlightFull"
 local lua_author  = "Silent"
-local lua_version = "2.9"
+local lua_version = "3.1"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -41,7 +41,7 @@ local _brakeMult = 0.8
 local _dir_Break = 2.5
 local _rev_break = 2
 local _lsptrnDmp = 0.1
-local _min_speed = 0.01
+local _min_speed = -1
 local _overBreak = 0.15
 local _rolAmount = 2
 local _rollForce = 2
@@ -121,7 +121,7 @@ if _warpSpeedMulti then
     })
 end
 
---| Flight Control, 3rd Person Data
+--| Flight Control & 3rd Person Data
 --|=======================================================================================--
 
 local function insert3rdPersonData()
@@ -146,7 +146,7 @@ local function insert3rdPersonData()
             {"_3rdPersonLowHeightMax",                 _3rdPerson},
             {"_3rdPersonLowHeightOffsetVertRotationY", _3rdPerson},
             {"_3rdPersonLowHeightOffsetY",             _3rdPerson},
-            {"_3rdPersonLowHeightSpringTime",          _3rdPerson},
+            {"_3rdPersonLowHeightSpringTime",          _3rdPerson}
         }
     }
     table.insert(TableData, entry)
@@ -176,7 +176,7 @@ local function insertEngineData(engineType, controlType)
             {"TurnBrakeMax",       _turnBMult},
             {"RollAmount",         _rolAmount},
             {"RollForce",          _rollForce},
-            {"RollAutoTime",       _rollATime},
+            {"RollAutoTime",       _rollATime}
         }
     }
     table.insert(TableData, entry)

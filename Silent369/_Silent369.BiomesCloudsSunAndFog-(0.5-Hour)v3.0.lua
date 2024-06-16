@@ -1,8 +1,8 @@
-local modfilename = "Biomes.CloudsSunAndFog-(48-Hour)"
+local modfilename = "Biomes.CloudsSunAndFog-(0.5-Hour)"
 local lua_author  = "Silent"
-local lua_version = "2.8"
+local lua_version = "3.0"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -31,7 +31,7 @@ Also disables all Bloom effects but leaves lensing effects intact.
 --96 Hr = 345600
 --192Hr = 691200
 
-_Day_Length              = 172800 --Original "1800"
+_Day_Length              = 1800 --Original "1800"
 
 --CLOUD ANIM SPEED
 _Anim_Scale              = 25   --Original "50" wtf!
@@ -79,10 +79,10 @@ _SampleScalar            = 3    --Original "5"
 _SampleThreshold         = 0.3  --Original "0.25"
 _CloudBottomFade         = 1    --Original "1"
 _DetailScale             = 7    --Original "6"
-_ErosionEdgeSize         = 0.65 --Original "0.5"
-_CloudDistortion         = 69   --Original "50"
-_CloudDistortionScale    = 0.85 --Original "1"
-_MaxIterations           = 128  --Original "128"
+_ErosionEdgeSize         = 0.75 --Original "0.5"
+_CloudDistortion         = 79   --Original "50"
+_CloudDistortionScale    = 1.15 --Original "1"
+_MaxIterations           = 256  --Original "128"
 
 --Horizon
 _HorizonFadeStartAlpha   = -0.3 --Original "0"
@@ -697,6 +697,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                {"AtmosphereThickness","0.1595575"}, --Original "0.319115"
                                 {"SunSize",              "0.00001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
@@ -708,6 +709,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                {"AtmosphereThickness","0.1595575"}, --Original "0.319115"
                                 {"SunSize",              "0.00001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
@@ -718,6 +720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
                                 {"SunSize",              "0.00001"}, --Original "0.005"
                                 {"StarVisibility",          "0.50"}, --Original "0.82"
                                 {"CenterPower",                "2"}, --Original "2.5"
@@ -729,6 +732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
                                 {"SunSize",               "0.0001"}, --Original "0.005"
                                 {"StarVisibility",          "0.50"}, --Original "0.82"
                                 {"CenterPower",                "2"}, --Original "2.5"
@@ -808,8 +812,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"PhotoModeVignette", "Vector2f.xml"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"x",                         "1"}, --Original "0.9"
-                                {"y",                         "1"}, --Original "0.3"
+                                {"x",                         "1.0"}, --Original "0.9"
+                                {"y",                         "1.0"}, --Original "0.3"
                             }
                         },
 
@@ -927,7 +931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Offset3",                     "5"}, --Original "0"
                                 {"RateOfChange",             "0.01"}, --Original "0.1"
                                 {"SecondaryRateOfChange",   "0.025"}, --Original "0.15"
-                                {"Cloudiness",              "ClearWithCloudySpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+                                {"Cloudiness",              "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
                             }
                         },
                         {
@@ -945,7 +949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Offset3",                    "15"}, --Original "5"
                                 {"RateOfChange",             "0.01"}, --Original "0.1"
                                 {"SecondaryRateOfChange",   "0.045"}, --Original "0.15"
-                                {"Cloudiness",              "ClearWithCloudySpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+                                {"Cloudiness",              "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
                             }
                         },
                     }

@@ -1,8 +1,8 @@
 local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
-local lua_version = "2.2"
+local lua_version = "2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 

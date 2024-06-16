@@ -1,8 +1,9 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "2.2"
+local lua_version = "2.5"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local contributor = "Spectrus1702"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -15,11 +16,11 @@ Auto Scan planet entities (objects, structures) within given range.
 
 ------------------------------------------------------------------------------------------
 
-local _ScanRange = "15000"   --max based on lod? range ~2,100u
-local _ScanTime  = "30"
-local _RangeMult = "1"
-local _ShowRange = "15000"
-local _Override  = "-1"      --hide when this close
+local _ScanRange = 1E+09   --max based on lod? range ~2,100u
+local _ScanTime  = 5
+local _RangeMult = 1E+09
+local _ShowRange = 1E+09
+local _Override  = -1      --hide when this close
 
 ------------------------------------------------------------------------------------------
 -- Create Scannable Component Data
@@ -75,7 +76,7 @@ AddObserver    = CreateScannableComponentData(_ScanRange, "BUILDING_OBSERVATORY_
 AddOutpost     = CreateScannableComponentData(_ScanRange, "BUILDING_OUTPOST_L",          _ScanTime, _RangeMult, _ShowRange, "FreighterDoor",      "True") --BUILDING_OUTPOST_L
 AddPSettlement = CreateScannableComponentData(_ScanRange, "UI_SETTLEMENT_LOCATED_OSD",   _ScanTime, _RangeMult, _ShowRange, "HazardPlant",       "False") --UI_SETTLEMENT_LOCATED_OSD
 AddPortal      = CreateScannableComponentData(_ScanRange, "BUILDING_PORTAL_L",           _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False") --BUILDING_PORTAL_L
-AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "CustomMarker",       "True") --BUILDING_RADIOTOWER_L
+AddRadioTower  = CreateScannableComponentData(_ScanRange, "BUILDING_RADIOTOWER_L",       _ScanTime, _RangeMult, _ShowRange, "SignalBooster",      "True") --BUILDING_RADIOTOWER_L
 AddRuin        = CreateScannableComponentData(_ScanRange, "UI_SIGNAL_TREASURERUIN",      _ScanTime, _RangeMult, _ShowRange, "Artifact",           "True")
 AddTreasure    = CreateScannableComponentData(_ScanRange, "PLANT_FOOD_38",               _ScanTime, _RangeMult, _ShowRange, "ArtifactCrate",      "True")
 AddSentinelH   = CreateScannableComponentData(_ScanRange, "UI_MP_HIVE_LABEL",            _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
@@ -83,14 +84,24 @@ AddSentinelD   = CreateScannableComponentData(_ScanRange, "UI_MP_HIVE_LABEL",   
 AddMinorSettle = CreateScannableComponentData(_ScanRange, "BUILDING_SHOP_L",             _ScanTime, _RangeMult, _ShowRange, "Hazard",            "False")
 AddTerminal    = CreateScannableComponentData(_ScanRange, "SIGNAL_TERMINAL",             _ScanTime, _RangeMult, _ShowRange, "FreighterTerminal", "False")
 
+
 --FLORA TEST                                               SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
-AddRunawayMold = CreateScannableComponentData(_ScanRange, "UI_WEIRD_BALL_NAME_L",        _ScanTime, _RangeMult, _ShowRange, "Rare3",              "True")
+AddRunawayMold = CreateScannableComponentData(_ScanRange, "UI_WEIRD_BALL_NAME_L",        _ScanTime, _RangeMult, _ShowRange, "Rare3",             "True")
 
 --ROBOTS TEST                                              SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
-AddSentinCrash = CreateScannableComponentData(_ScanRange, "SENT_CRASH_CORRUPT",          _ScanTime, _RangeMult, _ShowRange, "Drone",              "True")
+AddSentinCrash = CreateScannableComponentData(_ScanRange, "UI_SENTINEL_CRASH_MARKER",    _ScanTime, _RangeMult, _ShowRange, "Drone",              "True") --Changed to correct tip (SIGNAL/SCAN TYPE)
 
 --STORY GLITCH TEST                                        SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddStoryGlitch = CreateScannableComponentData(_ScanRange, "Alien Anomaly Detected",      _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
+
+--DROP POD TEST - Spectrus1702
+AddDropPod     = CreateScannableComponentData(_ScanRange, "BUILDING_DAMAGEDMACHINE_L",   _ScanTime, _RangeMult, _ShowRange, "Tech",              "False")
+
+--CORRUPTED PILLAR TEST - Spectrus1702
+AddPillar      = CreateScannableComponentData(_ScanRange, "UI_MINIHIVE_CORRUPT_NAME",    _ScanTime, _RangeMult, _ShowRange, "CorruptedMachine",  "False")
+
+--ROBOT CAMP TEST - Spectrus1702
+AddCamp        = CreateScannableComponentData(_ScanRange, "UI_ROBOT_CAMP_TERMINAL_NAME", _ScanTime, _RangeMult, _ShowRange, "RobotHead",         "False")
 
 ------------------------------------------------------------------------------------------
 -- SOUND EFFECT
@@ -116,6 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["LUA_AUTHOR"]              = lua_author,
     ["MOD_AUTHOR"]              = mod_author,
     ["NMS_VERSION"]             = nms_version,
+    ["CONTRIBUTOR"]             = contributor,
     ["MOD_DESCRIPTION"]         = description,
     ["MOD_MAINTENANCE"]         = maintenance,
     ["MODIFICATIONS"]           =
@@ -123,29 +135,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-                    ----------------------------------------------------------------------------------------------
-                    --BUILDING SCAN DISTANCE / TIMING DATA
-                    ----------------------------------------------------------------------------------------------
-                --{
-                --    ["MBIN_FILE_SOURCE"]  = [[GCBUILDINGGLOBALS.GLOBAL.MBIN]],
-                --    ["EXML_CHANGE_TABLE"] =
-                --    {
-                --        {
-                --            ["PRECEDING_KEY_WORDS"] = "",
-                --            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                --            ["VALUE_CHANGE_TABLE"]  =
-                --            {
-                --                {"MaxLineLength",               "0"}, --Original "30" Line length from object to icon
-                --                {"MaxTimeBetweenEvents",      "120"}, --Original "240"
-                --                {"ShowTimeNotDistance",         "1"}, --Original "2" Change to "1" range and icon!
-                --                {"UnknownBuildingRange", _ScanRange}, --Original "600"
-                --                {"MaxIconRange",         _ShowRange}, --Original "1200"
-                --                {"MinShipScanBuildings",        "1"}, --Original "0"
-                --                {"MaxShipScanBuildings",        "3"}, --Original "2"
-                --            }
-                --        },
-                --    }
-                --},
                     ----------------------------------------------------------------------------------------------
                     --SENTINEL CRASH SCENE
                     ----------------------------------------------------------------------------------------------
@@ -172,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                    }
                },
                     ----------------------------------------------------------------------------------------------
-                    --RUNAWAY MOLD - Already has GcScannableComponentData, but we're overriding for AllowMerge
+                    --RUNAWAY MOLD - Already has GcScannableComponentData, we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                {
                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\ROLLINGPLANT\ENTITIES\ROLLINGPROP.ENTITY.MBIN]],
@@ -190,7 +179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                    }
                },
                     ----------------------------------------------------------------------------------------------
-                    --TRAVELLER GRAVE - Already has GcScannableComponentData, but we're overriding for AllowMerge
+                    --TRAVELLER GRAVE - Already has GcScannableComponentData, we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                {
                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\GRAVEINCAVE\GRAVEINCAVE\ENTITIES\GRAVEINCAVE.ENTITY.MBIN]],
@@ -204,6 +193,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                            ["PRECEDING_KEY_WORDS"] = {"Components"},
                            ["LINE_OFFSET"]         = "+0",
                            ["ADD"]                 = AddGrave,
+                       },
+                   }
+               },
+                    ----------------------------------------------------------------------------------------------
+                    --DISSONANCE RESONATOR - Already has GcScannableComponentData, we're overriding for AllowMerge
+                    ----------------------------------------------------------------------------------------------
+               {
+                   ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\CORRUPTDRONEPILLAR\ENTITIES\DATA.ENTITY.MBIN]],
+                   ["EXML_CHANGE_TABLE"] =
+                   {
+                       {
+                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["REMOVE"]              = "SECTION",
+                       },
+                       {
+                           ["PRECEDING_KEY_WORDS"] = {"Components"},
+                           ["LINE_OFFSET"]         = "+0",
+                           ["ADD"]                 = AddPillar,
+                       },
+                   }
+               },
+                    ----------------------------------------------------------------------------------------------
+                    --DROP PODS - Spectrus1702
+                    ----------------------------------------------------------------------------------------------
+               {
+                   ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\DAMAGEDMACHINERY\DAMAGEDMACHINERY_POD\ENTITIES\DAMAGEDMACHINERY_POD.ENTITY.MBIN]],
+                   ["EXML_CHANGE_TABLE"] =
+                   {
+                       {
+                           ["PRECEDING_KEY_WORDS"] = {"Components"},
+                           ["LINE_OFFSET"]         = "+0",
+                           ["ADD"]                 = AddDropPod,
                        },
                    }
                },
@@ -222,7 +243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                     ----------------------------------------------------------------------------------------------
-                    --STORY GLITCH
+                    --STORY GLITCH (ANOMOLY RINGS)
                     ----------------------------------------------------------------------------------------------
                 {
                     ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BUILDINGSIZEDPROPS\ALIENRING\ENTITIES\ALIENRING.ENTITY.MBIN]],
@@ -291,7 +312,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --PLANETARY SETTLEMENT
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\TOWER_STONE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]],
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\TOWER_STONE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\MONUMENT\MONUMENT0_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN]]
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -338,10 +363,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERSCIENTIFIC\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERWARRIOR\ENTITIES\RADIOTOWERWARRIOR.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERTRADER\ENTITIES\RADIOTOWERTRADER.ENTITY.MBIN]]
+                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\SCIENTIFICRADIOTOWERPARTS\SCIENTIFICTERMINAL\ENTITIES\SCIENTIFICRADIOTOWER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERSCIENTIFIC\ENTITIES\RADIOTOWERINERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERWARRIOR\ENTITIES\RADIOTOWERINTERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RADIOTOWER\RADIOTOWERTRADER\ENTITIES\RADIOTOWERINTERACTION.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -360,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\INTERACTIONPLATFORM\ENTITIES\INTERACTIONPLATFORM.ENTITY.MBIN]],
                         [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\CENTERPIECE\RUBIXCUBE\ENTITIES\RUBIXCUBE.ENTITY.MBIN]],
-                        ---[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\MONOLITH\ENTITIES\MONOLITH.ENTITY.MBIN]]
+                        --[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\MONOLITH\ENTITIES\MONOLITH.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -446,9 +471,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\SCIENTIFICFACTORY.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYTRADER.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORY.ENTITY.MBIN]]
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -534,7 +559,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                     ----------------------------------------------------------------------------------------------
-                    --RARE RESOURCE, Already has GcScannableComponentData, but we're overriding for AllowMerge
+                    --ROBOT CAMP
+                    ----------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\COMMON\BUILDINGS\ROBOT\ROBOTBASE\ENTITIES\TERMINAL.ENTITY.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = AddCamp,
+                        },
+                    }
+                },
+                    ----------------------------------------------------------------------------------------------
+                    --RARE RESOURCE, Already has GcScannableComponentData, we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                 --{
                 --  ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\BONEPILE\ENTITIES\BONEPILE.ENTITY.MBIN]],

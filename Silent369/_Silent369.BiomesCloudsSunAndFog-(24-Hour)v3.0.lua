@@ -1,8 +1,8 @@
 local modfilename = "Biomes.CloudsSunAndFog-(24-Hour)"
 local lua_author  = "Silent"
-local lua_version = "2.8"
+local lua_version = "3.0"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -79,10 +79,10 @@ _SampleScalar            = 3    --Original "5"
 _SampleThreshold         = 0.3  --Original "0.25"
 _CloudBottomFade         = 1    --Original "1"
 _DetailScale             = 7    --Original "6"
-_ErosionEdgeSize         = 0.65 --Original "0.5"
-_CloudDistortion         = 69   --Original "50"
-_CloudDistortionScale    = 0.85 --Original "1"
-_MaxIterations           = 128  --Original "128"
+_ErosionEdgeSize         = 0.75 --Original "0.5"
+_CloudDistortion         = 79   --Original "50"
+_CloudDistortionScale    = 1.15 --Original "1"
+_MaxIterations           = 256  --Original "128"
 
 --Horizon
 _HorizonFadeStartAlpha   = -0.3 --Original "0"

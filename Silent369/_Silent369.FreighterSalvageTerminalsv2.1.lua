@@ -1,8 +1,8 @@
 local modfilename = "FreighterSalvageTerminals"
 local lua_author  = "Silent"
-local lua_version = "1.9"
+local lua_version = "2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -138,7 +138,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-            }
+                {
+                    ["MBIN_FILE_SOURCE"]    =
+                    {
+                        "MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARGHOST.SCENE.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "HangarPadLOD4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _SalvageTerminalL
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "SalvageTerminalL"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _SalvageTerminalR
+                        },
+                    }
+                },
+            },
         }
     }
 }

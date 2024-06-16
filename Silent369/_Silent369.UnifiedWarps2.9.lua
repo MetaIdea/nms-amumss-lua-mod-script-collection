@@ -1,8 +1,8 @@
-local modfilename = "UnifiedWarpsNoLines"
+local modfilename = "UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "2.7"
+local lua_version = "2.9"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gDiffuseMap"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Map",             ""}, --TEXTURES/EFFECTS/WARP/LINES.DDS
+                                {"Map",             "TEXTURES/EFFECTS/WARP/LINES.DDS"}, --TEXTURES/EFFECTS/WARP/LINES.DDS
                             }
                         },
                     }

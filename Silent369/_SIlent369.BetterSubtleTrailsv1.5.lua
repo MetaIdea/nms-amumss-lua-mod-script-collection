@@ -1,8 +1,8 @@
 local modfilename = "BetterSubtleTrails"
 local lua_author  = "Silent"
-local lua_version = "1.3"
+local lua_version = "1.5"
 local mod_author  = "Silent369"
-local nms_version = "4.65"
+local nms_version = "4.72"
 local maintenance = mod_author
 local description = [[
 
