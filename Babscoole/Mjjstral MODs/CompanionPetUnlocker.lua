@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["CONTRIBUTORS"]            = "Silent369 and Corvus",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "4.73",
 ["DESCRIPTION"]             = "Enables more creatures to become companion pets",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -397,7 +397,7 @@ if EGG_TIMERS then
 
 local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
 
-    local temp_table_eggtimers =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_CHANGE_TABLE"] =
@@ -415,5 +415,4 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
             {"PetEggModificationTime", "1"},                    --Original "5"
         }
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_eggtimers
 end

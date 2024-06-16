@@ -97,7 +97,7 @@ InputMultiplier = {Multiplier,
 ]]}
 
 while Multiplier do
-  Multiplier = GUIF(InputMultiplier,10)
+  Multiplier = GUIF(InputMultiplier,20)
 
   local minChoice = 1
   local maxChoice = 8
@@ -376,7 +376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.71",
+    ["NMS_VERSION"]   = "4.73",
     ["MODIFICATIONS"] =
     {
         {
@@ -576,7 +576,7 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 -- Disable terrain edit for the designated parts
 if DISABLE_TERRAINEDIT_FOR_ALL then
 
-    local temp_table_disableterrainall =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "True",
@@ -585,13 +585,12 @@ if DISABLE_TERRAINEDIT_FOR_ALL then
             {"EditsTerrain", "False"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_disableterrainall
 
 else
 
     if #DISABLE_TERRAINEDIT_ID_TABLE > 0 then
         for i = 1, #DISABLE_TERRAINEDIT_ID_TABLE do
-            local temp_table_disableterrainid =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", DISABLE_TERRAINEDIT_ID_TABLE[i]},
                 ["VALUE_MATCH"] = "True",
@@ -600,13 +599,12 @@ else
                     {"EditsTerrain", "False"},
                 },
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_disableterrainid
         end
     end
 
     if #DISABLE_TERRAINEDIT_KEYWORD_TABLE > 0 then
         for i = 1, #DISABLE_TERRAINEDIT_KEYWORD_TABLE do
-            local temp_table_disableterrainkey =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"SubGroupName", DISABLE_TERRAINEDIT_KEYWORD_TABLE[i]},
                 ["SECTION_UP"] = 2,
@@ -617,7 +615,6 @@ else
                     {"EditsTerrain", "False"},
                 },
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_disableterrainkey
         end
     end
 end
@@ -628,7 +625,7 @@ end
 if ALL_PARTS_ABOVE_WATER then
 
     -- Makes all parts buildable above water
-    local temp_table_allabovewater =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "False",
@@ -637,12 +634,11 @@ if ALL_PARTS_ABOVE_WATER then
             {"BuildableAboveWater", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_allabovewater
 
     -- Reverts Marine Shelter so it can't be built above water to avoid dangers
     if MARINESHELTER_ABOVE_WATER == false then
 
-        local temp_table_marinefalse =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", "WATERBUBBLE"},
             ["VALUE_CHANGE_TABLE"] =
@@ -650,13 +646,12 @@ if ALL_PARTS_ABOVE_WATER then
                 {"BuildableAboveWater", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_marinefalse
     end
 
     -- Specific exceptions list for parts not buildable above water
     for i = 1,#NOT_ABOVE_WATER_BUILDPART_ID_TABLE do
 
-        local temp_table_notabovewater =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_ABOVE_WATER_BUILDPART_ID_TABLE[i]},
             ["VALUE_MATCH"] = "True",
@@ -665,7 +660,6 @@ if ALL_PARTS_ABOVE_WATER then
                 {"BuildableAboveWater", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_notabovewater
     end
 end
 ---- All parts buildable above water end ----
@@ -675,7 +669,7 @@ end
 -- All parts buildable under water
 if ALL_PARTS_UNDER_WATER then
 
-    local temp_table_allunderwater =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "False",
@@ -684,7 +678,6 @@ if ALL_PARTS_UNDER_WATER then
             {"BuildableUnderwater", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_allunderwater
 end
 
 
@@ -693,7 +686,7 @@ end
 if ALL_PARTS_ON_FREIGHTER then
 
     -- Makes all parts buildable on freighters
-    local temp_table_allfreighter =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "False",
@@ -702,11 +695,10 @@ if ALL_PARTS_ON_FREIGHTER then
             {"BuildableOnFreighter", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_allfreighter
 
     -- Reverts "BuildableOnFreighter" to "False" for vehicles
     -- Vehicles parts are matched by their "SubGroupName" keyword : if any new one is added by the devs it should trigger this.
-    local temp_table_notfreightervehicle =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"SubGroupName", "PLANETEXOCRAFT"},
         ["SECTION_UP"] = 2,
@@ -716,14 +708,13 @@ if ALL_PARTS_ON_FREIGHTER then
             {"BuildableOnFreighter", "False"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_notfreightervehicle
 
     -- Reverts "BuildableOnFreighter" to "True" for geobays if GEOBAYS_ON_FREIGHTER is true
     if GEOBAYS_ON_FREIGHTER then
 
         for i = 1,#GEOBAYS_ON_FREIGHTER_ID_TABLE do
 
-            local temp_table_geofreighter =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
@@ -731,12 +722,11 @@ if ALL_PARTS_ON_FREIGHTER then
                     {"BuildableOnFreighter", "True"},
                 },
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreighter
         end
 
         for i = 1,#GEOBAYS_ON_FREIGHTER_ID_TABLE do
 
-            local temp_table_geofreightergroup =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -750,7 +740,6 @@ if ALL_PARTS_ON_FREIGHTER then
         </Property>
 ]]
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreightergroup
         end
     end
     
@@ -759,7 +748,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
         for i = 1,#S9_ON_FREIGHTER_ID_TABLE do
 
-            local temp_table_s9freighter =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
@@ -767,12 +756,11 @@ if ALL_PARTS_ON_FREIGHTER then
                     {"BuildableOnFreighter", "True"},
                 },
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_s9freighter
         end
 
         for i = 1,#S9_ON_FREIGHTER_ID_TABLE do
 
-            local temp_table_s9freightergroup =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -786,7 +774,6 @@ if ALL_PARTS_ON_FREIGHTER then
         </Property>
 ]]
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_s9freightergroup
         end
     end
 
@@ -795,7 +782,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
         for i = 1,#BASE_CONTAINERID_TABLE do
 
-            local temp_table_storfreightergroup =
+            Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", BASE_CONTAINERID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -809,14 +796,13 @@ if ALL_PARTS_ON_FREIGHTER then
         </Property>
 ]]
             }
-            Change_Table_Array[#Change_Table_Array + 1] = temp_table_storfreightergroup
         end
     end
 
     -- Specific exceptions list for parts not buildable on freighters
     for i = 1,#NOT_FREIGHTER_BUILDPART_ID_TABLE do
 
-        local temp_table_notfreighter =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_FREIGHTER_BUILDPART_ID_TABLE[i]},
             ["VALUE_MATCH"] = "True",
@@ -825,7 +811,6 @@ if ALL_PARTS_ON_FREIGHTER then
                 {"BuildableOnFreighter", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_notfreighter
     end
 end
 ----- All parts on freighters rules end -----
@@ -837,7 +822,7 @@ end
 if ALL_PARTS_ON_PLANETBASE then
 
     -- Makes all parts buildable on planet bases
-    local temp_table_allplanet =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["REPLACE_TYPE"] = "ALL",
         ["VALUE_MATCH"] = "False",
@@ -846,13 +831,12 @@ if ALL_PARTS_ON_PLANETBASE then
             {"BuildableOnPlanetBase", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_allplanet
 
     -- Reverts the Orbital Exocraft Materialiser if EXOMATERIALISER_ON_PLANETBASE is false
     -- if built on planet, it won't work to summon vehicles in the system, decorative purpose only
     if EXOMATERIALISER_ON_PLANETBASE == false then
 
-        local temp_table_matnotplanet =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", "GARAGE_FREIGHT"},
             ["VALUE_CHANGE_TABLE"] =
@@ -860,13 +844,12 @@ if ALL_PARTS_ON_PLANETBASE then
                 {"BuildableOnPlanetBase", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_matnotplanet
     end
 
     -- Reverts "BuildableOnPlanetBase" to "False" for the exceptions list
     for i = 1,#NOT_PLANETBASE_BUILDPART_ID_TABLE do
 
-        local temp_table_exceptnotplanet =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", NOT_PLANETBASE_BUILDPART_ID_TABLE[i]},
             ["VALUE_CHANGE_TABLE"] =
@@ -874,7 +857,6 @@ if ALL_PARTS_ON_PLANETBASE then
                 {"BuildableOnPlanetBase", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_exceptnotplanet
     end
 end
 ---- All parts on planet bases rules end ----
@@ -888,7 +870,7 @@ if CAN_SCALE_PREFAB_PARTS == false then
     -- Reverts "CanScale" to "False" for prefab parts
     for i = 1,#PREFAB_KEYWORDS_TABLE do
 
-        local temp_table_prefabnotscale =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"Group", PREFAB_KEYWORDS_TABLE[i]},
             ["SECTION_UP"] = 2,
@@ -899,13 +881,12 @@ if CAN_SCALE_PREFAB_PARTS == false then
                 {"CanScale", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_prefabnotscale
     end
 
     -- Reverts "CanScale" to "False" for freighter storage containers
     for i = 1,#FREIGHTER_CONTAINERS_ID_TABLE do
 
-        local temp_table_conexnotscale =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"]    = {"ID", FREIGHTER_CONTAINERS_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = "True",
@@ -915,13 +896,12 @@ if CAN_SCALE_PREFAB_PARTS == false then
                 {"CanScale", "False"},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_conexnotscale
     end
 end
 
 -- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)
 -- Vehicles parts are matched by their "Groups" keyword : if any new one is added by the devs it should trigger this.
--- local temp_table_vehiclenotscale =
+-- Change_Table_Array[#Change_Table_Array + 1] =
 -- {
     -- ["SPECIAL_KEY_WORDS"] = {"SubGroupName", "PLANETEXOCRAFT"},
     -- ["SECTION_UP"] = 2,
@@ -931,12 +911,11 @@ end
         -- {"CanScale", "False"},
     -- },
 -- }
--- Change_Table_Array[#Change_Table_Array + 1] = temp_table_vehiclenotscale
 
 -- Reverts "CanScale" to "True" for vehicles parts that should be scaleable
 for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
 
-    local temp_table_vehiclescale =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", SCALEABLE_VEHICLESPART_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
@@ -944,13 +923,12 @@ for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
             {"CanScale", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_vehiclescale
 end
 
 -- Specific exceptions list for building parts not scaleable
 for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
 
-    local temp_table =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", NOT_SCALEABLE_BUILDPART_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
@@ -958,7 +936,6 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
             {"CanScale", "False"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table
 end
 ------------ CanScale rules end -------------
 ---------------------------------------------
@@ -969,7 +946,7 @@ end
 if NO_BUILDCOUNT_LIMIT then
 
     -- No build-count limit
-    local temp_table_notbuildlimit =
+    Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_MATCH"] = 0,
@@ -982,12 +959,11 @@ if NO_BUILDCOUNT_LIMIT then
                 {"FreighterBaseLimit", 0},
             },
         }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_notbuildlimit
 
 else
 
     -- no build-count limit for storage type parts
-    local temp_table_stornotbuildlimit =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"SubGroupName", "TECHSTORAGE"},
         ["SECTION_UP"] = 2,
@@ -1000,12 +976,11 @@ else
                 {"FreighterBaseLimit", 0},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_stornotbuildlimit
 
     -- Removes build-count limit on all parts NOT related to resources farming
     for i = 1,#UNLIMITED_BUILPART_ID_TABLE do
 
-        local temp_table_nofarmnotbuildlimit =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = 0,
@@ -1019,14 +994,13 @@ else
                 {"FreighterBaseLimit", 0},
             },
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_nofarmnotbuildlimit
     end
 end
 
 -- Applies custom build-count limits for specific parts
 for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
 
-    local temp_table_custombuildlimit =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", CUSTOM_BUILDCOUNT_LIMITS[i][1]},
         ["VALUE_CHANGE_TABLE"] =
@@ -1037,7 +1011,6 @@ for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
             {"FreighterBaseLimit", tostring(CUSTOM_BUILDCOUNT_LIMITS[i][5])},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_custombuildlimit
 end
 ---------- Build-count limits end -----------
 ---------------------------------------------
@@ -1048,7 +1021,7 @@ if FARM_IN_ANY_BIOME then
 
     for i = 1,#FARM_IN_ANY_BIOME_ID_TABLE do
 
-    local temp_table_farmanydeco =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
@@ -1057,9 +1030,8 @@ if FARM_IN_ANY_BIOME then
             {"BuildableOnPlanet",          "False"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanydeco
+    Change_Table_Array[#Change_Table_Array + 1] =
 
-    local temp_table_farmanybiome =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i], "Biome", "GcBiomeType.xml"},
         ["REPLACE_TYPE"] = "ONCEINSIDE",
@@ -1068,9 +1040,8 @@ if FARM_IN_ANY_BIOME then
             {"Biome", "All"}
         }
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanybiome
+    Change_Table_Array[#Change_Table_Array + 1] =
 
-    local temp_table_farmanypower =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i]},
         ["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
@@ -1079,7 +1050,6 @@ if FARM_IN_ANY_BIOME then
             {"ConnectionDistance", 100}
         }
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanypower
     end
 end
 
@@ -1089,7 +1059,7 @@ if METAL_PARTS_OUTSIDE_BASE then
 
     for i = 1,#METAL_OUTSIDE_BASE_ID_TABLE do
 
-        local temp_table_metal =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", METAL_OUTSIDE_BASE_ID_TABLE[i]},
             ["VALUE_CHANGE_TABLE"] =
@@ -1097,7 +1067,6 @@ if METAL_PARTS_OUTSIDE_BASE then
                 {"BuildableOnPlanet", "True"}
             }
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_metal
     end
 end
 
@@ -1105,7 +1074,7 @@ end
 -- Allows to build some parts (Foundation, Pavings (x3), Communications Station) not only on bare terrains
 for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
 
-    local temp_table_notbare =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", ANYTERRAIN_BUILDPART_ID_TABLE[i]},
         ["REPLACE_TYPE"] = "ALL",
@@ -1115,13 +1084,12 @@ for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
             {"BaseBuildingDecorationType", "Normal"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_notbare
 end
 
 -- Re-add planters on freighters after Endurance update
 for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
 
-    local temp_table_planterfreightergroup =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
         ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -1135,9 +1103,8 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
         </Property>
 ]]
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreightergroup
+    Change_Table_Array[#Change_Table_Array + 1] =
 
-    local temp_table_planterfreighterplace =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
@@ -1145,13 +1112,12 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
             {"IsPlaceable", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreighterplace
 end
 
  -- Re-add misc on freighters after Endurance update
 for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
 
-    local temp_table_miscfreightergroup =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
         ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -1165,9 +1131,8 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
         </Property>
 ]]
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreightergroup
+    Change_Table_Array[#Change_Table_Array + 1] =
 
-    local temp_table_miscfreighterallow =
     {
         ["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
         ["VALUE_CHANGE_TABLE"] =
@@ -1176,14 +1141,13 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
             {"BuildableOnFreighter", "True"},
         },
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreighterallow
 end
 
  -- Tech and Bio freighter rooms on planetbases after Endurance update
 if FREIGHTERROOMS_ON_PLANETBASE then
     for i = 1,#FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE do
 
-        local temp_table_freighterroomsgroup =
+        Change_Table_Array[#Change_Table_Array + 1] =
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE[i]},
             ["PRECEDING_KEY_WORDS"] = {"Groups"},
@@ -1197,9 +1161,8 @@ if FREIGHTERROOMS_ON_PLANETBASE then
         </Property>
 ]]
         }
-        Change_Table_Array[#Change_Table_Array + 1] = temp_table_freighterroomsgroup
     end
-    local temp_table_subadd =
+    Change_Table_Array[#Change_Table_Array + 1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", "FRE_IND_SUB"},
         ["ADD_OPTION"] = "ADDafterSECTION",
@@ -1211,5 +1174,4 @@ if FREIGHTERROOMS_ON_PLANETBASE then
         </Property>
 ]]
     }
-    Change_Table_Array[#Change_Table_Array + 1] = temp_table_subadd
 end
