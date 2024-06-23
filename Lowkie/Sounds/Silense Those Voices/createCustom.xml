@@ -1,0 +1,5 @@
+<psarc>
+	<create archive="_Silent Refiners.pak" overwrite="true">
+		<directory path="AUDIO"/>
+	</create>
+</psarc>

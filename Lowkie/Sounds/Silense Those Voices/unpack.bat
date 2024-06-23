@@ -1,0 +1,1 @@
+for /f %%p in ('dir /b *.pak') do files\psarc.exe -y extract %%p --to=GAMEDATA

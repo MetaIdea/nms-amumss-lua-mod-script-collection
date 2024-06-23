@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.71.0)-->
+<!--File created using MBINCompiler version (4.73.0)-->
 <Data template="TkGeometryData">
   <Property name="VertexCount" value="4006" />
   <Property name="IndexCount" value="10686" />

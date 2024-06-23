@@ -1,0 +1,322 @@
+Event	ID	Name			Wwise Object Path	Notes
+	38032730	NOTIFY_LANDING			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_LANDING	
+	69438469	HUD_JUMPING			\Vocal_Localised\Suit_ENG\Notifications\HUD_JUMPING	
+	86795735	NOTIFY_TOXICPRO_OFFLINE			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_TOXICPRO_OFFLINE	
+	95899052	VO_Tut_StationCoordsReceived			\Vocal_Localised\Suit_ENG\Notifications\VO_Tut_StationCoordsReceived	
+	107759759	NOTIFY_RADPRO_OFFLINE			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_RADPRO_OFFLINE	
+	161497825	Suit_Init_End			\Default Work Unit\UI\Suit_Init_End	
+	275059059	HAZ_CRIT_SHIELD_FALLING			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_SHIELD_FALLING	
+	329188022	WPN_NOAMMO			\Vocal_Localised\Suit_ENG\Notifications\WPN_NOAMMO	
+	356986526	WARN_HOSTILE_SCAN			\Vocal_Localised\Suit_ENG\Warnings\WARN_HOSTILE_SCAN	
+	392980480	NOTIFY_HIT_RAD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HIT_RAD	
+	426122696	NOTIFY_PRO_PERCENT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_PRO_PERCENT	
+	431752453	SuitBoot_Weapon			\Vocal_Localised\Suit_ENG\SuitBoot_Weapon	
+	435489312	NOTIFY_Hostiles			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Hostiles	
+	457440512	NOTIFY_Units_Depleted			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Units_Depleted	
+	461300987	VO_Inventory_Full			\Vocal_Localised\Suit_ENG\Notifications\VO_Inventory_Full	
+	465183449	NOTIFY_TRANSFERRED_PRODUCT			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_TRANSFERRED_PRODUCT	
+	474393726	NOTIFY_HAZ_CRIT_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CRIT_HEAT	
+	484434477	NOTIFY_HAZ_CRIT_RADIATION			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CRIT_RADIATION	
+	547693767	VO_Tech_Recharged			\Vocal_Localised\Suit_ENG\Notifications\VO_Tech_Recharged	
+	639589435	NOTIFY_WARP			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_WARP	
+	659288159	HAZ_CRIT_SHIELD_STABLE			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_SHIELD_STABLE	
+	799059747	SuitBoot_Finished			\Vocal_Localised\Suit_ENG\SuitBoot_Finished	
+	806590379	VO_Tech_Offline			\Vocal_Localised\Suit_ENG\Notifications\VO_Tech_Offline	
+	808375119	Play_VO_WarningSentinelElite			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningSentinelElite	
+	813596697	Suit_Init_Lifesupport			\Default Work Unit\UI\Suit_Init_Lifesupport	
+	892660151	NOTIFY_CRITICAL_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITICAL_COLD	
+	917892820	NOTIFY_Product_Received			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Product_Received	
+	986240791	HUD_JUMP_ENGAGE			\Vocal_Localised\Suit_ENG\Notifications\HUD_JUMP_ENGAGE	
+	1105027473	WARN_HOSTILE_APPROACH			\Vocal_Localised\Suit_ENG\Warnings\WARN_HOSTILE_APPROACH	
+	1176087477	NOTIFY_SHIELD_DOWN			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_SHIELD_DOWN	
+	1178838907	HAZ_CRIT_SHIELD			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_SHIELD	
+	1252372101	NOTIFY_HAZ_CRIT_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CRIT_TOXIC	
+	1273218079	WARN_HOSTILE_DETECTED			\Vocal_Localised\Suit_ENG\Warnings\WARN_HOSTILE_DETECTED	
+	1276438582	HAZ_CRIT_COLD			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_COLD	
+	1312806878	NOTIFY_NEW_SHIP			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_NEW_SHIP	
+	1346950468	NOTIFY_NEW_SLOT			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_NEW_SLOT	
+	1347699473	VO_Product_Constructed			\Vocal_Localised\Suit_ENG\Notifications\VO_Product_Constructed	
+	1406265891	SuitBoot_Init			\Vocal_Localised\Suit_ENG\SuitBoot_Init	
+	1437305169	HAZ_CRIT_TOXIC_STABLE			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_TOXIC_STABLE	
+	1467584186	Play_VO_WarningSentinelIncoming			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningSentinelIncoming	
+	1470641535	NOTIFY_INVENTORY_SUIT_FULL			\Vocal_Localised\Suit_ENG\Inventory\NOTIFY_INVENTORY_SUIT_FULL	
+	1479268681	HAZ_CRIT_RAD			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_RAD	
+	1482865360	SENTINELS_INCOMING1			\Vocal_Localised\Suit_ENG\Warnings\SENTINELS_INCOMING1	
+	1482865362	SENTINELS_INCOMING3			\Vocal_Localised\Suit_ENG\Warnings\SENTINELS_INCOMING3	
+	1482865363	SENTINELS_INCOMING2			\Vocal_Localised\Suit_ENG\Warnings\SENTINELS_INCOMING2	
+	1482865364	SENTINELS_INCOMING5			\Vocal_Localised\Suit_ENG\Warnings\SENTINELS_INCOMING5	
+	1482865365	SENTINELS_INCOMING4			\Vocal_Localised\Suit_ENG\Warnings\SENTINELS_INCOMING4	
+	1485219709	NOTIFY_HOSTILES_DEFEATED			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HOSTILES_DEFEATED	
+	1539850459	NOTIFY_HAZ_WATER_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_WATER_HEAT	
+	1575856134	NOTIFY_PRO_OFFLINE			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_PRO_OFFLINE	
+	1689749890	WARN_DISTRESS_DETECTED			\Vocal_Localised\Suit_ENG\Warnings\WARN_DISTRESS_DETECTED	
+	1689829510	NOTIFY_Item_Received			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Item_Received	
+	1721024114	NOTIFY_CRITICAL_RAD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITICAL_RAD	
+	1725123493	NOTIFY_WARPING			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_WARPING	
+	1853471466	NOTIFY_HAZ_WATER_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_WATER_TOXIC	
+	1866008241	HAZ_CRIT_RAD_FALLING			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_RAD_FALLING	
+	1900849373	NOTIFY_HAZ_NIGHT_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_NIGHT_TOXIC	
+	1914115581	DISCOVER_PLANET			\Vocal_Localised\Suit_ENG\Notifications\DISCOVER_PLANET	
+	1932832400	Play_VO_WarningWalker			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningWalker	
+	1995270154	SuitBoot_Shield			\Vocal_Localised\Suit_ENG\SuitBoot_Shield	
+	2011857548	NOTIFY_Units_Insufficient			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Units_Insufficient	
+	2078447401	Suit_Init_StartUp			\Default Work Unit\UI\Suit_Init_StartUp	
+	2146088396	NOTIFY_INVENTORY_SHIP_FULL			\Vocal_Localised\Suit_ENG\Inventory\NOTIFY_INVENTORY_SHIP_FULL	
+	2178840095	NOTIFY_HAZ_WATER_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_WATER_COLD	
+	2211008373	NOTIFY_ExtremeSentinelPlanet			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_ExtremeSentinelPlanet	
+	2258430031	NOTIFY_HIT_ENERGY			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HIT_ENERGY	
+	2266384552	SuitBoot_LifeSupport			\Vocal_Localised\Suit_ENG\SuitBoot_LifeSupport	
+	2430961461	NOTIFY_HAZ_NIGHT_RADIATION			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_NIGHT_RADIATION	
+	2439887260	NOTIFY_LOW_ENERGY			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_LOW_ENERGY	
+	2465459844	NOTIFY_TRANSFERRED_ELEMENT			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_TRANSFERRED_ELEMENT	
+	2606967900	NOTIFY_HIT_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HIT_TOXIC	
+	2686710122	VO_Tut_CoordsReceived			\Vocal_Localised\Suit_ENG\Notifications\VO_Tut_CoordsReceived	
+	2733524485	HAZ_CRIT_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_TOXIC	
+	2784902906	WPN_BROKEN			\Vocal_Localised\Suit_ENG\Inventory\WPN_BROKEN	
+	2816386511	Play_VO_WarningDrone_Combat			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningDrone_Combat	
+	2860017406	HAZ_CRIT_HEAT			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_HEAT	
+	2908898829	HAZ_CRIT_RAD_STABLE			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_RAD_STABLE	
+	2943062140	NOTIFY_CRITIAL_ENERGY			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITIAL_ENERGY	
+	2976777968	Play_VO_WarningDrone_Activated			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningDrone_Activated	
+	2986048385	NOTIFY_TRANSFERRED			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_TRANSFERRED	
+	3034335991	NOTIFY_CRITIAL_HIT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITIAL_HIT	
+	3043790127	NOTIFY_HAZ_TEMP_STABLE			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_TEMP_STABLE	
+	3066321237	SuitBoot_Scanner			\Vocal_Localised\Suit_ENG\SuitBoot_Scanner	
+	3145604772	NOTIFY_OBJECTIVE_COMPLETE			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_OBJECTIVE_COMPLETE	
+	3181582258	WPN_NOTOOL			\Vocal_Localised\Suit_ENG\Inventory\WPN_NOTOOL	
+	3181938407	HAZ_CRIT_O2			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_O2	
+	3185782198	NOTIFY_HAZ_CRIT_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CRIT_COLD	
+	3286703312	Suit_Init_Jetpack			\Default Work Unit\UI\Suit_Init_Jetpack	
+	3299690607	NOTIFY_HAZ_CAVE_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CAVE_HEAT	
+	3337728422	NOTIFY_HAZ_CAVE_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CAVE_TOXIC	
+	3340557645	HAZ_CRIT_TOXIC_FALLING			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_TOXIC_FALLING	
+	3402123552	NEW_TECH			\Vocal_Localised\Suit_ENG\Inventory\NEW_TECH	
+	3437182990	Play_VO_WarningDrone_Engaged			\Vocal_Localised\Suit_ENG\Warnings\Play_VO_WarningDrone_Engaged	
+	3493785085	SuitBoot_Jetpack			\Vocal_Localised\Suit_ENG\SuitBoot_Jetpack	
+	3549052141	NOTIFY_HIT_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HIT_COLD	
+	3608735718	VO_Tech_Repaired			\Vocal_Localised\Suit_ENG\Notifications\VO_Tech_Repaired	
+	3649334222	NOTIFY_HAZ_NIGHT_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_NIGHT_COLD	
+	3650641058	WPN_NOTECHTOOL			\Vocal_Localised\Suit_ENG\Inventory\WPN_NOTECHTOOL	
+	3688258070	WEATHER_WARN			\Vocal_Localised\Suit_ENG\Environment\WEATHER_WARN	
+	3802609344	NOTIFY_Units_Received			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_Units_Received	
+	3808275034	POLICE_INCOMING			\Vocal_Localised\Suit_ENG\Warnings\POLICE_INCOMING	
+	3838732551	NOTIFY_ENERGY_PERCENT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_ENERGY_PERCENT	
+	3862412372	Suit_Init_Scanner			\Default Work Unit\UI\Suit_Init_Scanner	
+	3893114722	NOTIFY_CRITICAL_TOXIC			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITICAL_TOXIC	
+	3912212713	NOTIFY_HIT_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HIT_HEAT	
+	3943299355	NOTIFY_NEW_SYSTEM			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_NEW_SYSTEM	
+	3953313476	DEATHSHOUT			\Vocal_Localised\Suit_ENG\DEATHSHOUT	
+	3960755587	NOTIFY_WARNING			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_WARNING	
+	4003460323	NOTIFY_CRITICAL_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITICAL_HEAT	
+	4008949373	TUT_ELEMENT_TRANSFER_SUCCESS			\Vocal_Localised\Suit_ENG\Notifications\TUT_ELEMENT_TRANSFER_SUCCESS	
+	4052699366	NOTIFY_HAZ_CAVE_RADIATION			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CAVE_RADIATION	
+	4058033412	VO_Tech_Installed			\Vocal_Localised\Suit_ENG\Notifications\VO_Tech_Installed	
+	4078635131	NOTIFY_HAZ_CAVE_COLD			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_CAVE_COLD	
+	4097271277	NOTIFY_ExtremeHazardPlanet			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_ExtremeHazardPlanet	
+	4112096461	NOTIFY_INV_TRANSFERRED			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_INV_TRANSFERRED	
+	4117517243	EQUIP_DAMAGED			\Vocal_Localised\Suit_ENG\Inventory\EQUIP_DAMAGED	
+	4128053670	HAZ_CRIT_THERM_FALLING			\Vocal_Localised\Suit_ENG\Warnings\HAZ_CRIT_THERM_FALLING	
+	4139171360	WEATHER_OVER			\Vocal_Localised\Suit_ENG\Environment\WEATHER_OVER	
+	4145593944	NOTIFY_CRITICAL_NOOXYGEN			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_CRITICAL_NOOXYGEN	
+	4155971206	NOTIFY_HAZ_NIGHT_HEAT			\Vocal_Localised\Suit_ENG\Warnings\NOTIFY_HAZ_NIGHT_HEAT	
+	4174773896	DISCOVERY_UPLOADED			\Vocal_Localised\Suit_ENG\Notifications\DISCOVERY_UPLOADED	
+	4191451164	NOTIFY_NEW_WEAPON			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_NEW_WEAPON	
+	4255502616	NOTIFY_PULSE			\Vocal_Localised\Suit_ENG\Notifications\NOTIFY_PULSE	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	26646476	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	35259070	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	102810878	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	115601556	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	142623267	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	223787624	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	225881966	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	259486445	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	270980999	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	286193363	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	312641775	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	332948117	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	360849495	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	365251100	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	417542361	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	443812460	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	451915717	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	476525160	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	485608863	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	486633196	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	532764302	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	596603565	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	596993259	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	642475384	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	656639786	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	708871418	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	732058708	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	772131861	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	775296143	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	799895449	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	859281521	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	877528835	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	894057317	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	909383134	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Item_Received\Wwise Silence	
+	1005189519	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	1011905422	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+	1040412315	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	1065371745	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeHazardPlanet\Wwise Silence	
+	1065758516	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_ExtremeSentinelPlanet\Wwise Silence	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	5787808	VO_Warning_ExtremeHeat	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeHeat_9344E057.wem	5787808.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeHeat	
+	7953891	VO_Inv_Transferred	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Inv_Transferred_9344E057.wem	7953891.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Inv_Transferred	
+	24624261	VO_Danger_ColdCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ColdCritical_9344E057.wem	24624261.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ColdCritical	
+	24816612	VO_Tech_Installed	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tech_Installed_9344E057.wem	24816612.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tech_Installed	
+	48628640	UI_Suit_Voice_01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_01_9344E057.wem	48628640.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_01	
+	56007741	VO_Warning_ExtremeNightRadiation	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeNightRadiation_9344E057.wem	56007741.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeNightRadiation	
+	74908031	VO_Death04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death04_9344E057.wem	74908031.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death04	
+	92062762	VO_Shield_Down05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down05_9344E057.wem	92062762.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down05	
+	94909760	Suit_Init_Jetpack_Rr	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_Jetpack_Rr_9344E057.wem	94909760.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_Jetpack_Rr	
+	101938628	VO_Tut_StationCoordsReceived	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tut_StationCoordsReceived_9344E057.wem	101938628.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tut_StationCoordsReceived	
+	104882532	VO_Warning_ExtremeRadiation	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeRadiation_9344E057.wem	104882532.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeRadiation	
+	137153992	VO_Hostiles	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Hostiles_9344E057.wem	137153992.wem	\Actor-Mixer Hierarchy\Voices\Suit\__NOT_USED_VO_IMPORT\VO_Hostiles	
+	140417040	VO_SlotsFail_Ship	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_SlotsFail_Ship_9344E057.wem	140417040.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_SlotsFail_Ship	
+	152830856	UI_Suit_Voice_05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_05_9344E057.wem	152830856.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_05	
+	166550129	VO_Units_Depleted	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Units_Depleted_9344E057.wem	166550129.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Units_Depleted	
+	171701111	VO_Transferred	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Transferred_9344E057.wem	171701111.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Transferred	
+	181645972	VO_Warning01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning01_9344E057.wem	181645972.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning01	
+	183282549	VO_DiscoveryUploaded02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_DiscoveryUploaded02_9344E057.wem	183282549.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\DISCOVERY_UPLOADED\VO_DiscoveryUploaded02	
+	189175450	VO_Danger_RadiationCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_RadiationCritical_9344E057.wem	189175450.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_RadiationCritical	
+	199832381	VO_Danger_Hypothermia	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_Hypothermia_9344E057.wem	199832381.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_Hypothermia	
+	213747268	VO_SlotsFail_Suit_Alt01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_SlotsFail_Suit_Alt01_9344E057.wem	213747268.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_SlotsFail_Suit_Alt01	
+	214927287	VO_IntroBoot_Weapon	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_Weapon_9344E057.wem	214927287.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_Weapon	
+	228809787	VO_Warning_ExtremeCaveRadiation	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeCaveRadiation_9344E057.wem	228809787.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeCaveRadiation	
+	229642413	VO_Warning_ExtremeNightCold	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeNightCold_9344E057.wem	229642413.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeNightCold	
+	233218288	VO_Danger_ThermalProtection_Falling	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ThermalProtection_Falling_9344E057.wem	233218288.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ThermalProtection_Falling	
+	241195461	Suit_Init_Scanner	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_Scanner_9344E057.wem	241195461.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_Scanner	
+	252531522	VO_Warning02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning02_9344E057.wem	252531522.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning02	
+	253303990	VO_Storm_Warning	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Storm_Warning_9344E057.wem	253303990.wem	\Actor-Mixer Hierarchy\Voices\Suit\Environment\VO_Storm_Warning	
+	255621754	VO_Storm_Update_Clearing	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Storm_Update_Clearing_9344E057.wem	255621754.wem	\Actor-Mixer Hierarchy\Voices\Suit\Environment\VO_Storm_Update_Clearing	
+	258040575	VO_Danger_Shield_Critical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_Shield_Critical_9344E057.wem	258040575.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_Shield_Critical	
+	269173252	VO_Warning06	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning06_9344E057.wem	269173252.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning06	
+	270212340	VO_WarningDrone_Combat	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningDrone_Combat_9344E057.wem	270212340.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningDrone_Combat	
+	270252579	VO_IntroBoot_Shield	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_Shield_9344E057.wem	270252579.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_Shield	
+	272194910	VO_Death08	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death08_9344E057.wem	272194910.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death08	
+	276537292	VO_Tech_Recharged	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tech_Recharged_9344E057.wem	276537292.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tech_Recharged	
+	277644414	VO_Danger_RadiationProtection_Falling	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_RadiationProtection_Falling_9344E057.wem	277644414.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_RadiationProtection_Falling	
+	290415583	VO_Hostiles_Defeated	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Hostiles_Defeated_9344E057.wem	290415583.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Hostiles_Defeated	
+	290821544	UI_Objective_Complete_04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Objective_Complete_04_9344E057.wem	290821544.wem	\Actor-Mixer Hierarchy\UI\UI\Notifications\UI_ObjectiveComplete\UI_Objective_Complete_04	
+	296159245	VO_Warning05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning05_9344E057.wem	296159245.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning05	
+	316858964	VO_Objective_Complete	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Objective_Complete_9344E057.wem	316858964.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Objective_Complete	
+	319612940	VO_Danger_OxygenCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_OxygenCritical_9344E057.wem	319612940.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_OxygenCritical	
+	323613137	VO_Warning_ExtremeWaterHeat	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeWaterHeat_9344E057.wem	323613137.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeWaterHeat	
+	325248808	VO_Wpn_WeaponDepleted	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Wpn_WeaponDepleted_9344E057.wem	325248808.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Wpn_WeaponDepleted	
+	336354802	VO_Damage_Taken01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Damage_Taken01_9344E057.wem	336354802.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Damage_Taken01	
+	355312083	VO_NewPlanetAnalysed	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_NewPlanetAnalysed_9344E057.wem	355312083.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_NewPlanetAnalysed	
+	355626638	VO_DeviceDamageCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_DeviceDamageCritical_9344E057.wem	355626638.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_DeviceDamageCritical	
+	365122521	VO_Distress_Detected	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Distress_Detected_9344E057.wem	365122521.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Distress_Detected	
+	367114679	VO_WarningWalker	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningWalker_9344E057.wem	367114679.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningWalker	
+	371405123	VO_Warning_ExtremeCaveCold	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeCaveCold_9344E057.wem	371405123.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeCaveCold	
+	382179683	VO_PowerCellsDepleted	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_PowerCellsDepleted_9344E057.wem	382179683.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_PowerCellsDepleted	
+	382939619	UI_Suit_Voice_02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_02_9344E057.wem	382939619.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_02	
+	386239855	VO_Inventory_Full	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Inventory_Full_9344E057.wem	386239855.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Inventory_Full	
+	395404778	VO_Danger_ToxicProtection_Stable	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicProtection_Stable_9344E057.wem	395404778.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicProtection_Stable	
+	400140409	VO_Danger_RadiationProtection_OffLine	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_RadiationProtection_OffLine_9344E057.wem	400140409.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_RadiationProtection_OffLine	
+	404912280	VO_Warning_ExtremeCold	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeCold_9344E057.wem	404912280.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeCold	
+	406439975	Pl_Hazard_Critical_Hit_04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_04_4BD2034C.wem	406439975.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_04	
+	416384899	VO_Tech_Offline	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tech_Offline_9344E057.wem	416384899.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tech_Offline	
+	420486927	VO_Warning_Support_Critical01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_Support_Critical01_9344E057.wem	420486927.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_Support_Critical01	
+	424150649	VO_Warp_Engaged	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warp_Engaged_9344E057.wem	424150649.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Warp_Engaged	
+	435485342	VO_EquipmentDamageCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_EquipmentDamageCritical_9344E057.wem	435485342.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_EquipmentDamageCritical	
+	439144984	VO_Temp_Stable	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Temp_Stable_9344E057.wem	439144984.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Temp_Stable	
+	446807491	UI_Objective_Complete_02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Objective_Complete_02_9344E057.wem	446807491.wem	\Actor-Mixer Hierarchy\UI\UI\Notifications\UI_ObjectiveComplete\UI_Objective_Complete_02	
+	448505160	VO_Units_Insufficient	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Units_Insufficient_9344E057.wem	448505160.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Units_Insufficient	
+	454814405	VO_Death06	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death06_9344E057.wem	454814405.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death06	
+	457959268	VO_Warning_ExtremeNightHeat	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeNightHeat_9344E057.wem	457959268.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeNightHeat	
+	458895386	VO_Danger_HeatDamage01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_HeatDamage01_9344E057.wem	458895386.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_HeatDamage01	
+	466101569	VO_Warning_HostileShips_02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_HostileShips_02_9344E057.wem	466101569.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_HostileShips_02	
+	477744580	VO_Hostile_Scan	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Hostile_Scan_9344E057.wem	477744580.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Hostile_Scan	
+	486233060	VO_Danger_HeatCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_HeatCritical_9344E057.wem	486233060.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_HeatCritical	
+	487233905	VO_Units_Received	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Units_Received_9344E057.wem	487233905.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Units_Received	
+	493650142	VO_Product_Transferred	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Product_Transferred_9344E057.wem	493650142.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Product_Transferred	
+	500290107	VO_Wpn_MultitoolNoTech	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Wpn_MultitoolNoTech_9344E057.wem	500290107.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_Wpn_MultitoolNoTech	
+	507186123	UI_Suit_Voice_04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_04_9344E057.wem	507186123.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_04	
+	513821420	UI_Suit_Voice_03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_03_9344E057.wem	513821420.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_03	
+	518407755	VO_Warning_ExtremeNightToxicity	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeNightToxicity_9344E057.wem	518407755.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeNightToxicity	
+	520434513	VO_Danger_ThermalProtection_OffLine	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ThermalProtection_OffLine_9344E057.wem	520434513.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ThermalProtection_OffLine	
+	521124643	VO_Warning_LifeSupport_Off	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_LifeSupport_Off_9344E057.wem	521124643.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_LifeSupport_Off	
+	531367701	VO_IntroBootComplete	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBootComplete_9344E057.wem	531367701.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBootComplete	
+	532697197	VO_Wpn_MultiToolDepleted	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Wpn_MultiToolDepleted_9344E057.wem	532697197.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_Wpn_MultiToolDepleted	
+	534287588	VO_New_Ship	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_New_Ship_9344E057.wem	534287588.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_New_Ship	
+	536290886	VO_Danger_ShieldProtection_Falling	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ShieldProtection_Falling_9344E057.wem	536290886.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ShieldProtection_Falling	
+	551995418	VO_Death09	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death09_9344E057.wem	551995418.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death09	
+	557680445	VO_Danger_RadiationProtection_Stable	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_RadiationProtection_Stable_9344E057.wem	557680445.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_RadiationProtection_Stable	
+	562165249	VO_Transferred_Element	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Transferred_Element_9344E057.wem	562165249.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Transferred_Element	
+	570321462	VO_Tut_ElementTransfer_Success	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tut_ElementTransfer_Success_9344E057.wem	570321462.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tut_ElementTransfer_Success	
+	572241738	VO_Warning_ExtremeToxicity	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeToxicity_9344E057.wem	572241738.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeToxicity	
+	581018777	VO_IntroBoot_LifeSupport	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_LifeSupport_9344E057.wem	581018777.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_LifeSupport	
+	599482378	VO_JumpEngaged	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_JumpEngaged_9344E057.wem	599482378.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_JumpEngaged	
+	602493473	VO_Warning_ExtremeWaterToxicity	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeWaterToxicity_9344E057.wem	602493473.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeWaterToxicity	
+	603084534	VO_IntroBoot_Init	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_Init_9344E057.wem	603084534.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_Init	
+	607923743	VO_Warning_ExtremeWaterCold	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeWaterCold_9344E057.wem	607923743.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeWaterCold	
+	623181012	VO_Product_Received	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Product_Received_9344E057.wem	623181012.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Product_Received	
+	623994467	VO_Tech_Repaired	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tech_Repaired_9344E057.wem	623994467.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tech_Repaired	
+	645296259	VO_New_Weapon	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_New_Weapon_9344E057.wem	645296259.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_New_Weapon	
+	650348050	VO_WarningDrone_Activated	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningDrone_Activated_9344E057.wem	650348050.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningDrone_Activated	
+	660758884	Suit_Init_End	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_End_9344E057.wem	660758884.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_End	
+	662579185	VO_DiscoveryUploaded03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_DiscoveryUploaded03_9344E057.wem	662579185.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\DISCOVERY_UPLOADED\VO_DiscoveryUploaded03	
+	697781349	VO_Danger_ToxicRain_Breach	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicRain_Breach_9344E057.wem	697781349.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicRain_Breach	
+	704080866	VO_Death02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death02_9344E057.wem	704080866.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death02	
+	707882312	VO_Pulse_Engaged	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Pulse_Engaged_9344E057.wem	707882312.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Pulse_Engaged	
+	709416102	VO_Danger_ToxicDamage01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicDamage01_9344E057.wem	709416102.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicDamage01	
+	711974505	VO_Death01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death01_9344E057.wem	711974505.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death01	
+	724807981	Suit_Init_01_Rr	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_01_Rr_9344E057.wem	724807981.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_01_Rr	
+	727190659	VO_Warning08	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning08_9344E057.wem	727190659.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning08	
+	728792075	VO_IntroBoot_Jetpack	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_Jetpack_9344E057.wem	728792075.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_Jetpack	
+	729201112	Suit_Init_01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_01_9344E057.wem	729201112.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_01	
+	732198666	VO_Tut_CoordsReceived	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Tut_CoordsReceived_9344E057.wem	732198666.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Tut_CoordsReceived	
+	732549141	VO_Danger_Heat_Critical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_Heat_Critical_9344E057.wem	732549141.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_Heat_Critical	
+	733573338	UI_Objective_Complete_01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Objective_Complete_01_9344E057.wem	733573338.wem	\Actor-Mixer Hierarchy\UI\UI\Notifications\UI_ObjectiveComplete\UI_Objective_Complete_01	
+	748640726	VO_WarningSentinelIncoming	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningSentinelIncoming_9344E057.wem	748640726.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningSentinelIncoming	
+	763789314	Pl_Hazard_Critical_Hit_02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_02_4BD2034C.wem	763789314.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_02	
+	779923941	Pl_Hazard_Critical_Hit_06	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_06_4BD2034C.wem	779923941.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_06	
+	786735938	VO_Danger_ToxicProtection_OffLine	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicProtection_OffLine_9344E057.wem	786735938.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicProtection_OffLine	
+	790941688	VO_IntroBoot_Scanner_Alt01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_IntroBoot_Scanner_Alt01_9344E057.wem	790941688.wem	\Actor-Mixer Hierarchy\Voices\Suit\Initialisation\VO_IntroBoot_Scanner_Alt01	
+	794036826	VO_Shield_Down04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down04_9344E057.wem	794036826.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down04	
+	794414092	VO_Warning07	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning07_9344E057.wem	794414092.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning07	
+	801211076	VO_Warning_ExtremeCaveToxicity	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeCaveToxicity_9344E057.wem	801211076.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeCaveToxicity	
+	818697376	VO_Warning04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning04_9344E057.wem	818697376.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning04	
+	834290385	VO_Warping	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warping_9344E057.wem	834290385.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Warping	
+	840278215	VO_New_Slot	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_New_Slot_9344E057.wem	840278215.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_New_Slot	
+	842117093	VO_DiscoveryUploaded04	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_DiscoveryUploaded04_9344E057.wem	842117093.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\DISCOVERY_UPLOADED\VO_DiscoveryUploaded04	
+	847792252	VO_Jumping	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Jumping_9344E057.wem	847792252.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Jumping	
+	848622129	VO_NewTech	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_NewTech_9344E057.wem	848622129.wem	\Actor-Mixer Hierarchy\Voices\Suit\Inventory\VO_NewTech	
+	859101313	UI_Objective_Complete_03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Objective_Complete_03_9344E057.wem	859101313.wem	\Actor-Mixer Hierarchy\UI\UI\Notifications\UI_ObjectiveComplete\UI_Objective_Complete_03	
+	861808726	VO_Danger_RadiationDamage01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_RadiationDamage01_9344E057.wem	861808726.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_RadiationDamage01	
+	866537875	VO_Death03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death03_9344E057.wem	866537875.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death03	
+	869231442	VO_Shield_Down01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down01_9344E057.wem	869231442.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down01	
+	872315289	Suit_Init_Lifesupport	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_Lifesupport_9344E057.wem	872315289.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_Lifesupport	
+	888266608	VO_Danger_ToxicityCritical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicityCritical_9344E057.wem	888266608.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicityCritical	
+	890480160	VO_WarningDrone_Engaged	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningDrone_Engaged_9344E057.wem	890480160.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningDrone_Engaged	
+	896066455	VO_Death07	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death07_9344E057.wem	896066455.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death07	
+	904066710	VO_Warning03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning03_9344E057.wem	904066710.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\Warning\VO_Warning03	
+	908990573	VO_Danger_ColdDamage01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ColdDamage01_9344E057.wem	908990573.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ColdDamage01	
+	909385433	VO_WarningSentinelElite	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_WarningSentinelElite_9344E057.wem	909385433.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_WarningSentinelElite	
+	926581726	VO_Danger_Oxygen_Critical	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_Oxygen_Critical_9344E057.wem	926581726.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_Oxygen_Critical	
+	932372011	VO_DiscoveryUploaded01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_DiscoveryUploaded01_9344E057.wem	932372011.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\DISCOVERY_UPLOADED\VO_DiscoveryUploaded01	
+	943059388	Pl_Hazard_Critical_Hit_05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_05_4BD2034C.wem	943059388.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_05	
+	946025547	VO_Product_Constructed	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Product_Constructed_9344E057.wem	946025547.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Product_Constructed	
+	947925811	Pl_Hazard_Critical_Hit_03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_03_4BD2034C.wem	947925811.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_03	
+	955371490	VO_Danger_Radiation_Breach	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_Radiation_Breach_9344E057.wem	955371490.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_Radiation_Breach	
+	960184520	VO_Shield_Down02	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down02_9344E057.wem	960184520.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down02	
+	966424679	UI_Suit_Voice_06	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\UI_Suit_Voice_06_9344E057.wem	966424679.wem	\Actor-Mixer Hierarchy\UI\UI\UI_Suit_Voice\UI_Suit_Voice_06	
+	968331548	VO_Warning_HostileShips_05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_HostileShips_05_9344E057.wem	968331548.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_HostileShips_05	
+	968410697	VO_Ship_LandingInitiated	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Ship_LandingInitiated_9344E057.wem	968410697.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_Ship_LandingInitiated	
+	971877318	VO_Shield_Down03	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down03_9344E057.wem	971877318.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down03	
+	972737950	VO_Danger_ShieldProtection_Stable	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ShieldProtection_Stable_9344E057.wem	972737950.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ShieldProtection_Stable	
+	1027634221	VO_Warning_ExtremeCaveHeat	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_ExtremeCaveHeat_9344E057.wem	1027634221.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_ExtremeCaveHeat	
+	1029547248	VO_Danger_ToxicProtection_Falling	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Danger_ToxicProtection_Falling_9344E057.wem	1029547248.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Danger_ToxicProtection_Falling	
+	1031729153	VO_Shield_Down06	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Shield_Down06_9344E057.wem	1031729153.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\NOTIFY_SHIELD_DOWN\VO_Shield_Down06	
+	1034969448	VO_New_System	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_New_System_9344E057.wem	1034969448.wem	\Actor-Mixer Hierarchy\Voices\Suit\Notifications\VO_New_System	
+	1056086999	VO_Death05	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Death05_9344E057.wem	1056086999.wem	\Actor-Mixer Hierarchy\Voices\Suit\DEATHSHOUT\VO_Death05	
+	1069216714	Suit_Init_Jetpack_Fr	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Suit_Init_Jetpack_Fr_9344E057.wem	1069216714.wem	\Actor-Mixer Hierarchy\UI\UI\Suit_Init\Suit_Init_Jetpack_Fr	
+	1072383023	VO_Warning_LifeSupport01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\Voices\Portuguese(Portugal)\VO_Warning_LifeSupport01_9344E057.wem	1072383023.wem	\Actor-Mixer Hierarchy\Voices\Suit\Warnings\VO_Warning_LifeSupport01	
+	1073692451	Pl_Hazard_Critical_Hit_01	D:\DEV\NOMANSSKYLATEST\GAME\ASSETS\EXPORTED\AUDIO\.cache\Windows\SFX\UI\Pl_Hazard_Critical_Hit_01_4BD2034C.wem	1073692451.wem	\Actor-Mixer Hierarchy\Player\Hazard\Pl_Hazard_Critical_Hit\Pl_Hazard_Critical_Hit_01	
+

@@ -95,8 +95,8 @@ local AddHaulerWingProduct = [[
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart.pak",
     ["MOD_AUTHOR"] = "AltF4",
-    ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.70",
+    ["LUA_AUTHOR"] = "AltF4, FriendlyFirePL",
+    ["NMS_VERSION"] = "4.72",
     ["MOD_DESCRIPTION"] = "Fix Hauler Custom Part.",
     ["MODIFICATIONS"] = {
         {
@@ -107,21 +107,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","UI_DROPSHIP_WING_BAB_NAME"},
-                            ["LINE_OFFSET"] = -1,
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"ID","DROPS_WINGBAB"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","UI_DROPSHIP_WING_BAC_NAME"},
-                            ["LINE_OFFSET"] = -1,
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"ID","DROPS_WINGBAC"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID","POWERCELL2"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"ID","DROPS_ENGIAB"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"NameLower","UI_DROPSHIP_ENGI_AB_NAME_L"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Table"},
                             ["ADD"] = AddHaulerWingProduct
                         },
                     }

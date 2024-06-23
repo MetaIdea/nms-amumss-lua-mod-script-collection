@@ -1,0 +1,11 @@
+##total= 9
+
+#1# VO_Danger_ShieldProtection_Falling | "Thermal protection falling"
+#2# VO_Warning_LifeSupport01 | "Life support power low"
+#3# VO_Danger_ToxicProtection_Falling | "Toxic protection falling"
+#4# VO_Danger_RadiationProtection_Falling | "Radiation protection falling"
+#5# VO_Danger_ThermalProtection_Falling | "Thermal protection falling"
+#6# VO_Units_Received | "Units received"
+#7# VO_Inventory_Full | "Invetory full"
+#8# VO_SlotsFail_Suit_Alt01 | "No free slots in suit inventory"
+#9# VO_SlotsFail_Ship | "No free slots in ship inventory"

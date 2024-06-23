@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart_ShopPlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.70",
+    ["NMS_VERSION"] = "4.72",
     ["MOD_DESCRIPTION"] = "Add fixed Hauler custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {
