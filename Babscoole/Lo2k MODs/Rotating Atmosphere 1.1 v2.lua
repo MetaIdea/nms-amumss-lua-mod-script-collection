@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Rotating Atmosphere 1.1.pak",
 ["MOD_AUTHOR"]    = "Lo2k",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.22",
+["NMS_VERSION"]   = "4.72",
 ["MODIFICATIONS"] =
     {
         {
@@ -20,7 +20,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.MBIN" />
         </Property>
 ]],
@@ -38,7 +37,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
-          <Property name="AltID" value="" />
           <Property name="Value" value="MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.MBIN" />
         </Property>
 ]],
@@ -56,22 +54,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" />
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-      <Property name="Rotations" />
-      <Property name="Translations" />
-      <Property name="Scales" />
+<Data template="TkAttachmentData">
+  <Property name="Components">
+    <Property value="TkRotationComponentData.xml">
+      <Property name="Speed" value="0.0007" />
+      <Property name="Axis" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="1" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="SyncGroup" value="-1" />
     </Property>
   </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
- </Property>
+  <Property name="LodDistances">
+    <Property value="0" />
+    <Property value="50" />
+    <Property value="80" />
+    <Property value="150" />
+    <Property value="500" />
+  </Property>
 </Data>
 ]],
         },

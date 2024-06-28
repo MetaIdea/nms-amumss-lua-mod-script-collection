@@ -137,7 +137,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
-          <Property name="AltId" value="" />
           <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
             <Property name="Samplers" />
           </Property>
