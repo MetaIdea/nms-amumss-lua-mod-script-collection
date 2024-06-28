@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_WeirdColors_v472-A.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_WeirdColors_v472-B.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.72",
@@ -6156,7 +6156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Trader" />
-            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
@@ -6246,7 +6246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Trader" />
-            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
@@ -6336,7 +6336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Trader" />
-            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
@@ -6426,7 +6426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Trader" />
-            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
@@ -6516,7 +6516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Trader" />
-            <Property name="ColourAlt" value="Alternative1" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
@@ -7056,7 +7056,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Name" value="" />
           <Property name="Palette" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Scientific" />
-            <Property name="ColourAlt" value="Alternative2" />
+            <Property name="ColourAlt" value="Primary" />
           </Property>
           <Property name="Probability" value="1" />
           <Property name="TextureGameplayUse" value="IgnoreName" />
