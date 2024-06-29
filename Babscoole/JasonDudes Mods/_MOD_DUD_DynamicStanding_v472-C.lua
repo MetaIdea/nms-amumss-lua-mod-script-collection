@@ -81,7 +81,7 @@ ER_EXPL =
 ER_STAND =
 [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="50" />
+            <Property name="PercentageChance" value="70" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardStanding.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -97,7 +97,7 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v472-B.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v472-C.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.72",
