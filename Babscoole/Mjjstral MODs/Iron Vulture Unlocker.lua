@@ -1,28 +1,28 @@
-REWARD_ID 		= "RS_S13_SHIP"
-REWARD_ICON		= "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS"
-REWARD_TITLE	= "Iron Vulture"
+REWARD_ID       = "RS_S13_SHIP"
+REWARD_ICON     = "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS"
+REWARD_TITLE    = "Iron Vulture"
 
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
 ["NMS_VERSION"]     = "4.71",
-["MODIFICATIONS"]   = 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
-				{
-					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
+["MODIFICATIONS"]   =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "0H_GREET_MOB_04"},
                             ["SECTION_ACTIVE"] = {2},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = 
+                            ["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TRIGGERANIM" />
@@ -52,12 +52,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-							
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = 
+                            ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -70,13 +70,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-              </Property>		  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -92,12 +92,12 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Action">
                 <Property value="GcRewardAction.xml">
                   <Property name="Reward" value="]] .. REWARD_ID .. [[" />
-                </Property>	
+                </Property>
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -110,15 +110,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="TRIGGERANIM" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -126,19 +126,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
-]]							
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+    </Property>
+]]
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
                             ["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+                            ["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. REWARD_TITLE .. [[" />
@@ -186,10 +186,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Filename" value="" />
       </Property>
     </Property>
-]]							
-						}
-					}
-				},
+]]
+                        }
+                    }
+                },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\TESTS\EFFECTTEST.ANIM.MBIN",
                     ["EXML_CHANGE_TABLE"] =
@@ -203,34 +203,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-			}
-		}		
-	},
-["ADD_FILES"] = 
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+            }
+        }
+    },
+["ADD_FILES"] =
+    {
+        {
+            ["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
+            ["FILE_CONTENT"]     =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    <Property name="Rotations" />
+    <Property name="Translations" />
+    <Property name="Scales" />
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+    <Property name="Translations" />
+    <Property name="Scales" />
  </Property>
-</Data>	
-]]			
-		}
-	}
+</Data>
+]]
+        }
+    }
 }

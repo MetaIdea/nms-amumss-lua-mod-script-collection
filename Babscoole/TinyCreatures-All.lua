@@ -15,31 +15,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-						{
-							["MATH_OPERATION"] = "/",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
+                        {
+                            ["MATH_OPERATION"] = "/",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",    DIVISOR},
-				                {"MaxScale",    DIVISOR},
-							},
-						},
+                                {"MaxScale",    DIVISOR},
+                            },
+                        },
                     },
                 },
-				{
-					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["MATH_OPERATION"] = "/",
-							["VALUE_CHANGE_TABLE"] =
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["MATH_OPERATION"] = "/",
+                            ["VALUE_CHANGE_TABLE"] =
                             {
-								{"MaxCreatureSize", DIVISOR},
+                                {"MaxCreatureSize", DIVISOR},
                                 {"MinRideSize",     "1"},
-							},
-						},
-					}
-				},
+                            },
+                        },
+                    }
+                },
             }
         },
     },

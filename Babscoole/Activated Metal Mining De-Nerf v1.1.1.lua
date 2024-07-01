@@ -5,77 +5,77 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole, additional modifications by SamboNZ",
 ["NMS_VERSION"]   = "4.65",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "U_EXTRACTOR_S"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Storage", "36000"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "U_SILO_S"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Storage", "144000"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "EX_YELLOW"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "245"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "EX_RED"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "450"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "EX_GREEN"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "696"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "EX_BLUE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "949"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "WATER2"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"BaseValue", "602"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_EXTRACTOR_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Storage", "36000"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_SILO_S"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Storage", "144000"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "EX_YELLOW"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BaseValue", "245"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "EX_RED"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BaseValue", "450"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "EX_GREEN"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BaseValue", "696"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "EX_BLUE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BaseValue", "949"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "WATER2"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BaseValue", "602"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"SubstanceId", "EX_YELLOW"},
                                 {"SubstanceId", "EX_RED"},
@@ -103,14 +103,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SubstanceId", "ASTEROID2"},
                                 {"SubstanceId", "ASTEROID1"},
                             },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"AmountCost", "36000"}
-							}
-						},
-					}
-				},
-			}
-		}
-	}
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AmountCost", "36000"}
+                            }
+                        },
+                    }
+                },
+            }
+        }
+    }
 }

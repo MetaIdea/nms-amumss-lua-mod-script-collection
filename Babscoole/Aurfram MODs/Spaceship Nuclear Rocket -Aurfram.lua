@@ -16,32 +16,32 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Damage"},
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "650000"},
                             }
                         },
                         {
-							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Range"},
-							["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Range"},
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "50000000"},
                             }
                         },
                         {
-							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Scale"},
-							["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Scale"},
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "25"},
                             }
                         },
                         {
-							["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Damage_Radius"},
-							["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS", "StatsType", "Ship_Weapons_Guns_Damage_Radius"},
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "150"},

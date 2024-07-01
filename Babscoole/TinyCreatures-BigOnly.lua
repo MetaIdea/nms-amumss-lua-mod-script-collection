@@ -20,19 +20,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                     },
                 },
-				{
-					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MaxCreatureSize", "5"},
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxCreatureSize", "5"},
                                 {"MinRideSize",     "1"},
-							}
-						},
-					}
-				},
+                            }
+                        },
+                    }
+                },
             }
         },
     },
@@ -46,10 +46,10 @@ for i=1,#ShrinkCreature do
         {
             ["SPECIAL_KEY_WORDS"] = {"ID", value},
             ["MATH_OPERATION"] = "/",
-			["VALUE_CHANGE_TABLE"] =
-			{
+            ["VALUE_CHANGE_TABLE"] =
+            {
                 {"MinScale",    DIVISOR},
-				{"MaxScale",    DIVISOR},
-			}
+                {"MaxScale",    DIVISOR},
+            }
         }
 end

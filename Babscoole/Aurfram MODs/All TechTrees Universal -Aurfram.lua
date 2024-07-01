@@ -59,11 +59,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="CHARGER_ALIEN" />
                             <Property name="Children">
-							  <Property value="GcUnlockableItemTreeNode.xml">
+                              <Property value="GcUnlockableItemTreeNode.xml">
                                 <Property name="Unlockable" value="PHOTONIX_CORE" />
                                 <Property name="Children" />
                               </Property>
-							</Property>
+                            </Property>
                           </Property>
                         </Property>
                       </Property>
@@ -82,10 +82,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
                             <Property name="Children">
-           	             <Property value="GcUnlockableItemTreeNode.xml">
-             	              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
-            	              <Property name="Children" />
-            	             </Property>
+                         <Property value="GcUnlockableItemTreeNode.xml">
+                              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+                              <Property name="Children" />
+                             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -384,10 +384,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           <Property value="GcUnlockableItemTreeNode.xml">
                             <Property name="Unlockable" value="SHIPJUMP_SPEC" />
                             <Property name="Children">
-           	             <Property value="GcUnlockableItemTreeNode.xml">
-             	              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
-            	              <Property name="Children" />
-            	             </Property>
+                         <Property value="GcUnlockableItemTreeNode.xml">
+                              <Property name="Unlockable" value="SHIPJUMP_ALIEN" />
+                              <Property name="Children" />
+                             </Property>
                             </Property>
                           </Property>
                         </Property>
@@ -414,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                        
+
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -422,7 +422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                        
+
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"ID", "SHIPJUMP1"},
@@ -469,43 +469,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "A_SHIPSHLD"},
                                 {"ID", "A_SHIPGUN"},
                                 {"ID", "A_SHIPLAS"},
-								{"ID", "SHIPLAS1"},
-								{"ID", "UT_SHIPMINI"},
-								{"ID", "UT_PULSEFUEL"},
-								{"ID", "UT_PULSESPEED"},
-								{"ID", "SHIP_TELEPORT"},
-								{"ID", "UT_SHIPLAS"},
-								{"ID", "PHOTONIX_CORE"},
-								{"ID", "SHIPSCAN_COMBAT"},
-								{"ID", "UT_LAUNCHCHARGE"},
-								{"ID", "SHIPPLASMA"},
-								{"ID", "UT_ROCKETS"},
-								{"ID", "UT_SHIPBLOB"},
-								{"ID", "SHIPSHOTGUN"},
-								{"ID", "SHIPROCKETS"},
-								{"ID", "UT_SHIPSHIELD"},
-								{"ID", "UT_SHIPSHOT"},
-								{"ID", "UT_QUICKWARP"},
-								{"ID", "SHIPMINIGUN"},
-								{"ID", "SHIPSCAN_ECON"},
-								{"ID", "HDRIVEBOOST2"},
-								{"ID", "CARGOSHIELD"},
-								{"ID", "UT_SHIPDRIFT"},
-								{"ID", "HDRIVEBOOST3"},
-								{"ID", "HDRIVEBOOST1"},
-								{"ID", "UT_SHIPGUN"},
-								{"ID", "UT_LAUNCHER"},
-								{"ID", "T_SHIPJUMP"},
-								{"ID", "T_LAUNCHER"},
-								{"ID", "T_HDRIVE"},
-								{"ID", "T_SHIPSHLD"},
-								{"ID", "T_SHIPGUN"},
-								{"ID", "T_SHIPLAS"},
-								{"ID", "T_SHIPSHOT"},
-								{"ID", "T_SHIPMINI"},
-								{"ID", "T_SHIPBLOB"},
+                                {"ID", "SHIPLAS1"},
+                                {"ID", "UT_SHIPMINI"},
+                                {"ID", "UT_PULSEFUEL"},
+                                {"ID", "UT_PULSESPEED"},
+                                {"ID", "SHIP_TELEPORT"},
+                                {"ID", "UT_SHIPLAS"},
+                                {"ID", "PHOTONIX_CORE"},
+                                {"ID", "SHIPSCAN_COMBAT"},
+                                {"ID", "UT_LAUNCHCHARGE"},
+                                {"ID", "SHIPPLASMA"},
+                                {"ID", "UT_ROCKETS"},
+                                {"ID", "UT_SHIPBLOB"},
+                                {"ID", "SHIPSHOTGUN"},
+                                {"ID", "SHIPROCKETS"},
+                                {"ID", "UT_SHIPSHIELD"},
+                                {"ID", "UT_SHIPSHOT"},
+                                {"ID", "UT_QUICKWARP"},
+                                {"ID", "SHIPMINIGUN"},
+                                {"ID", "SHIPSCAN_ECON"},
+                                {"ID", "HDRIVEBOOST2"},
+                                {"ID", "CARGOSHIELD"},
+                                {"ID", "UT_SHIPDRIFT"},
+                                {"ID", "HDRIVEBOOST3"},
+                                {"ID", "HDRIVEBOOST1"},
+                                {"ID", "UT_SHIPGUN"},
+                                {"ID", "UT_LAUNCHER"},
+                                {"ID", "T_SHIPJUMP"},
+                                {"ID", "T_LAUNCHER"},
+                                {"ID", "T_HDRIVE"},
+                                {"ID", "T_SHIPSHLD"},
+                                {"ID", "T_SHIPGUN"},
+                                {"ID", "T_SHIPLAS"},
+                                {"ID", "T_SHIPSHOT"},
+                                {"ID", "T_SHIPMINI"},
+                                {"ID", "T_SHIPBLOB"},
 
-								
+
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {

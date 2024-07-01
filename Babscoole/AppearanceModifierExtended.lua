@@ -5,72 +5,72 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.65",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "RACE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Anomaly"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "GEK_BASE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Gek"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "VYKEEN_BASE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Vy'keen"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "KORVAX_BASE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Korvax"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "FOURTH_BASE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Traveller"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "BUILDERS_BASE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip", "Autophage"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "CHAR_ARMOUR"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Tip",                "No armour"},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\PLAYERDATA\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RACE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Anomaly"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "GEK_BASE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Gek"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "VYKEEN_BASE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Vy'keen"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "KORVAX_BASE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Korvax"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "FOURTH_BASE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Traveller"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "BUILDERS_BASE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip", "Autophage"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "CHAR_ARMOUR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Tip",                "No armour"},
                                 {"HiddenInCustomiser", "False"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "BACKPACK_CAPE"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupID", "BACKPACK_ATLAS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "BACKPACK_CAPE"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupID", "BACKPACK_ATLAS"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                            ["ADD"] =
 [[
         <Property value="GcCustomisationDescriptorGroup.xml">
           <Property name="GroupID" value="BACKPACK_CAPE" />
@@ -87,18 +87,18 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="HiddenInCustomiser" value="False" />
         </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupTitle", "BODY_SHAPE_U"},
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\UI\CHARACTERCUSTOMISATIONUIDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupTitle", "BODY_SHAPE_U"},
                             ["PRECEDING_KEY_WORDS"] = {"DescriptorOptions"},
                             ["CREATE_HOS"] = "TRUE",
-							["ADD"] =
+                            ["ADD"] =
 [[
               <Property value="GcCustomisationDescriptorGroupOptions.xml">
                 <Property name="GroupTitle" value="(UNSTABLE) Body base" />
@@ -198,12 +198,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="PrerequisiteGroup" />
               </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupTitle", "BODY_SHAPE_U"},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupTitle", "BODY_SHAPE_U"},
                             ["PRECEDING_KEY_WORDS"] = {"BoneScales"},
                             ["ADD_OPTION"] = "ADDendSECTION",
-							["ADD"] =
+                            ["ADD"] =
 [[
               <Property value="GcCustomisationBoneScales.xml">
                 <Property name="GroupTitle" value="Gek body" />
@@ -214,28 +214,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "TORSO_BUILDERS"},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "TORSO_BUILDERS"},
                             ["PRECEDING_KEY_WORDS"] =
                             {
                                 {"UnselectingRemovesGroup"},
                                 {"UnselectingAddsGroup"},
                             },
-							["CREATE_HOES"] = "TRUE",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CHEST_ARMOUR"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FirstOptionIsEmpty", "True"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CHEST_ARMOUR"},
+                            ["CREATE_HOES"] = "TRUE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CHEST_ARMOUR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FirstOptionIsEmpty", "True"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CHEST_ARMOUR"},
                             ["PRECEDING_KEY_WORDS"] = {"DescriptorGroupOptions"},
                             ["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                            ["ADD"] =
 [[
                   <Property value="GcCustomisationDescriptorGroupOption.xml">
                     <Property name="DescriptorOption" value="ARMOUR_NULL" />
@@ -253,20 +253,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="UnselectingAddsGroup" />
                   </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "ARMOUR_NULL"},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "ARMOUR_NULL"},
                             ["SECTION_ACTIVE"] = 2,
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "BACKPACK_CAPE"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CUSTOMISE_BACKPACK_L", "DescriptorOption", "BACKPACK_ROYAL"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "BACKPACK_CAPE"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"GroupTitle", "CUSTOMISE_BACKPACK_L", "DescriptorOption", "BACKPACK_ROYAL"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                            ["ADD"] =
 [[
                   <Property value="GcCustomisationDescriptorGroupOption.xml">
                     <Property name="DescriptorOption" value="BACKPACK_CAPE" />
@@ -284,19 +284,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="UnselectingAddsGroup" />
                   </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "CAPE_NULL"},
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DescriptorOption", "CAPE_NULL"},
                             ["PRECEDING_KEY_WORDS"] =
                             {
                                 {"SelectingRemovesGroup"},
                                 {"SelectingAddsGroup"},
                             },
-							["CREATE_HOES"] = "TRUE",
-						},
-					}
-				},
-			}
-		}
-	}
+                            ["CREATE_HOES"] = "TRUE",
+                        },
+                    }
+                },
+            }
+        }
+    }
 }

@@ -27,18 +27,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TorchOffsetX",                 "0"},
                             }
                         },
-						{
-							["PRECEDING_KEY_WORDS"] =
+                        {
+                            ["PRECEDING_KEY_WORDS"] =
                             {
                                 {"FlybyTimers", "High"},
                                 {"FlybyTimers", "Normal"},
                                 {"FlybyTimers", "Low"},
                             },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"y", "@*2"},
-							}
-						},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "@*2"},
+                            }
+                        },
                     },
                 },
             },

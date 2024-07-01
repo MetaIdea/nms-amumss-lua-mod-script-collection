@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_Water No Foam 1.0.pak",
 ["MOD_AUTHOR"]      = "justylefty",
 ["LUA_AUTHOR"]      = "Babscoole",
-["MOD_DESCRIPTION"]	= "minimize foam",
+["MOD_DESCRIPTION"] = "minimize foam",
 ["NMS_VERSION"]     = "4.45",
 ["MODIFICATIONS"]   =
     {

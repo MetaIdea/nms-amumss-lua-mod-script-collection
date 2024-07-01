@@ -5,81 +5,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.50",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"StartCrashSiteMinDistance", "500000"},
-								{"StartCrashSiteMaxDistance", "1000000"},
-								{"StartShelterMinDistance",   "2500"},
-								{"StartShelterMaxDistance",   "5000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialShipInventory", "Slots"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialShipInventory"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"StartCrashSiteMinDistance", "500000"},
+                                {"StartCrashSiteMaxDistance", "1000000"},
+                                {"StartShelterMinDistance",   "2500"},
+                                {"StartShelterMaxDistance",   "5000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialShipInventory", "Slots"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialShipInventory"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property name="Slots" />
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialWeaponInventory", "Slots", "GcInventoryElement.xml", "GcInventoryElement.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"DamageFactor", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "InitialShipInventory", "Slots"},
-							["REMOVE"] = "SECTION"
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData","InitialShipInventory"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownDisabledData", "InitialWeaponInventory", "Slots", "GcInventoryElement.xml", "GcInventoryElement.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DamageFactor", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "InitialShipInventory", "Slots"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData","InitialShipInventory"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property name="Slots" />
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "InitialWeaponInventory", "Slots", "GcInventoryElement.xml", "GcInventoryElement.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"DamageFactor", "0"},
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Inventory"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Slots", "IGNORE"},
-							},
-							["ADD_OPTION"] = "REPLACEatLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StartWithAllItemsKnownEnabledData", "InitialWeaponInventory", "Slots", "GcInventoryElement.xml", "GcInventoryElement.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DamageFactor", "0"},
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Inventory"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Slots", "IGNORE"},
+                            },
+                            ["ADD_OPTION"] = "REPLACEatLINE",
+                            ["ADD"] =
 [[
       <Property name="Slots">
         <Property value="GcInventoryElement.xml">
@@ -112,26 +112,26 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ShipInventory", "Slots"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"InventoryType", "Technology"},
-								{"Id",            "SHIPSLOT_DMG12"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ShipLayout"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Slots", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Value", "FRE_FACE_DOOR_A"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipInventory", "Slots"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"InventoryType", "Technology"},
+                                {"Id",            "SHIPSLOT_DMG12"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ShipLayout"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Slots", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "FRE_FACE_DOOR_A"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
       <Property value="NMSString0x10.xml">
         <Property name="Value" value="CARBON_SEAL" />
@@ -152,11 +152,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Value" value="AM_HOUSING" />
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Value", "MECH_BOOST"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Value", "MECH_BOOST"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
       <Property value="NMSString0x10.xml">
         <Property name="Value" value="TERRAINEDITOR" />
@@ -168,74 +168,74 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Value" value="STRONGLASER" />
       </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = 
-							{  
-								{"ShipStartingLayout",         "GcInventoryLayout.xml"},  
-								{"ShipTechOnlyStartingLayout", "GcInventoryLayout.xml"},
-							}, 
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Slots", "0"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"ID", "GARAGE_B"},  
-								{"ID", "GARAGE_S"},
-								{"ID", "GARAGE_M"},  
-								{"ID", "GARAGE_L"},
-								{"ID", "GARAGE_MECH"},  
-								{"ID", "GARAGE_SUB"},
-							}, 
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"CanPickUp", "True"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK07"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Filename",     ""},
-								{"SinglePartID", "_SPEC_FIREWORK07"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK08"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Filename",     ""},
-								{"SinglePartID", "_SPEC_FIREWORK08"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK09"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Filename",     ""},
-								{"SinglePartID", "_SPEC_FIREWORK09"},
-							}
-						},
-					}
-				},
-			}
-		},
-	},
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"ShipStartingLayout",         "GcInventoryLayout.xml"},
+                                {"ShipTechOnlyStartingLayout", "GcInventoryLayout.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Slots", "0"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"ID", "GARAGE_B"},
+                                {"ID", "GARAGE_S"},
+                                {"ID", "GARAGE_M"},
+                                {"ID", "GARAGE_L"},
+                                {"ID", "GARAGE_MECH"},
+                                {"ID", "GARAGE_SUB"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CanPickUp", "True"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK07"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename",     ""},
+                                {"SinglePartID", "_SPEC_FIREWORK07"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK08"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename",     ""},
+                                {"SinglePartID", "_SPEC_FIREWORK08"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SPEC_FIREWORK09"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Filename",     ""},
+                                {"SinglePartID", "_SPEC_FIREWORK09"},
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    },
 ["ADD_FILES"] =
     {
         {
