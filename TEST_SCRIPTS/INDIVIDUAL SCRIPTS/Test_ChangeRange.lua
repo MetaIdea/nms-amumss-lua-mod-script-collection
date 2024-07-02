@@ -17,8 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-            -- Operation-1 alters every value from 10000 and up by a multiplier of 4.
+            
 						{
+              COMMENT = [[-- Operation-1 alters every value from 10000 and up by a multiplier of 4.]],
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "10000",
@@ -29,8 +30,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax", 4},
 							},
 						},
-            -- Operation-2 alters every value < 10000 by a multiplier of 10.
+            
 						{
+              COMMENT = [[-- Operation-2a alters every value < 10000 by a multiplier of 10.]],
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "10000",
@@ -41,8 +43,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax", 10},
 							},
 						},
-            -- Operation-2a reverting Operation-2 for every value < 2 by a divider of 10.
+            
 						{
+              COMMENT = [[-- Operation-2b reverting Operation-2a for every value < 2 by a divider of 10.]],
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "2",
@@ -53,9 +56,46 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax", 10},
 							},
 						},
+            
+						{
+              COMMENT = [[-- Operation-2c Testing ~= ]],
+							["REPLACE_TYPE"] 		= "ONCE",
+							["VALUE_MATCH"] 		= "2",
+							["VALUE_MATCH_OPTIONS"]	= "~=",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"AmountMin", 10},
+								{"AmountMax", 10},
+							},
+						},
+            
+            {
+              COMMENT = [[-- Operation-3a alters every value in the RANGE '40000-50000' AND also '100']],
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_MATCH"] = { {40000,50000}, 100 }, -- RANGE is 40000-50000 and value '100'
+							-- ["VALUE_MATCH_OPTIONS"]	= "=", -- this is the default
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"AmountMin", 10},
+								{"AmountMax", 10},
+							},
             },
+            
+            {
+              COMMENT = [[-- Operation-3b alters every value NOT in the RANGE '160000-800000' and not '200' or '10']],
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_MATCH"] = { {800000,160000}, 200, 10 }, -- notice that RANGE will be 160000-800000 AND also '200' and '10' will not match
+							["VALUE_MATCH_OPTIONS"]	= "~=",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"AmountMin", 10},
+								{"AmountMax", 10},
+							},
+            },
+            
+          },
 				},
 			},
 		},
-	}, --4025 global replacements
+	}, --5775 global replacements
 }
