@@ -18,7 +18,8 @@ Items_To_Add_To_KnownProducts =
     "BASE_FLAG",
     "BP_ANALYSER",
     "ANTIMATTER",
-    "AM_HOUSING"
+    "AM_HOUSING",
+    "BASE_SWAMP3"
 }
 
 Items_To_Add_To_KnownTech =

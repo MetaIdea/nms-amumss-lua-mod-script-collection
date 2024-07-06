@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "All Generated Ships, Multi tools, freighters, are S-class with extremely high stats",
 ["MOD_AUTHOR"]      = "pyronoxomega",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.62",
+["NMS_VERSION"]     = "4.71",
 ["MODIFICATIONS"]   =
     {
         {

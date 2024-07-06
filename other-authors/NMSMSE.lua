@@ -1,11 +1,11 @@
 Languages =
 {
-    ["English"]				= "English",
-	["Italian"]					= "Italian",
-	["French"]					= "French",
-	["Spanish"]				= "Spanish",
-    ["German"]				= "German",
-	["Russian"]				= "Russian",
+    ["English"] = "English",
+    ["Italian"] = "Italian",
+    ["French"] = "French",
+    ["Spanish"] = "Spanish",
+    ["German"] = "German",
+    ["Russian"] = "Russian",
 }
 
 SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
@@ -15,48 +15,47 @@ SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
 -- TLDR: --
 -- Speed is in SECONDS and MUST be a negative value, THE LOWER THE VALUE, THE FASTER THE EXTRACTOR FILLS
 --Storage is self explanatory lol
-gExtrSpeed =  -3600 -- 1hr
-gExtrCap = 9999 -- max cap
+GExtrSpeed =  -3600 -- 1hr
+GExtrCap = 9999 -- max cap
 
-gExtrConfTable =
+GExtrConfTable =
 {
-	DoExtrConf = { false, [[Would you like to set Extraction Speed and Capacity?]] },
-	gExtrSpeed			= { gExtrSpeed, [[Extr Speed, (default: ]]..gExtrSpeed..[[ )
-	enter a number less than or equal to -1  (Must be negative) :
-	]]},
-	gExtrCap				= { gExtrCap, [[gExtrCap (default: ]]..gExtrCap..[[)
-	enter a number between 1 and 9999 (inclusive):
-	]]}
+    doExtrConf = { false, [[Would you like to set Extraction Speed and Capacity?]] },
+    gExtrSpeed = { GExtrSpeed, [[Extr Speed, (default: ]]..GExtrSpeed..[[ )
+    enter a number less than or equal to -1  (Must be negative) :
+    ]]},
+    gExtrCap = { GExtrCap, [[GExtrCap (default: ]]..GExtrCap..[[)
+    enter a number between 1 and 9999 (inclusive):
+    ]]}
 }
 
-DoExtrConf = GUIF( gExtrConfTable.DoExtrConf )
+DoExtrConf = GUIF( GExtrConfTable.doExtrConf )
 if DoExtrConf then
-	gExtrSpeed = GUIF( gExtrConfTable.gExtrSpeed )
-	gExtrCap = GUIF( gExtrConfTable.gExtrCap )
+    GExtrSpeed = GUIF( GExtrConfTable.gExtrSpeed )
+    GExtrCap = GUIF( GExtrConfTable.gExtrCap )
 end
 
-assert(type(gExtrSpeed) == "number" and gExtrSpeed <= -1, "Invalid Extractor Speed defined: Must be a numeric value less than -1")
-assert(type(gExtrCap) == "number" and gExtrCap >= 1 and gExtrCap <= 9999, "Invalid Extractor Capacity defined: Must be a numeric value between 1 and 9999 (inclusive)")
+assert(type(GExtrSpeed) == "number" and GExtrSpeed <= -1, "Invalid Extractor Speed defined: Must be a numeric value less than -1")
+assert(type(GExtrCap) == "number" and GExtrCap >= 1 and GExtrCap <= 9999, "Invalid Extractor Capacity defined: Must be a numeric value between 1 and 9999 (inclusive)")
 
--- Extr Speed is calculated as a countdown, the lower the countdown value, the faster the extractor fills up. Higher Capacity + Smaller gExtrSpeed = Higher Yields.
--- gExtrSpeed Default is -79200, or 22 hrs. I currently have it set to -3600, which is 1 hr
--- gExtrCap Default is 350, I set it to 9999.
+-- Extr Speed is calculated as a countdown, the lower the countdown value, the faster the extractor fills up. Higher Capacity + Smaller GExtrSpeed = Higher Yields.
+-- GExtrSpeed Default is -79200, or 22 hrs. I currently have it set to -3600, which is 1 hr
+-- GExtrCap Default is 350, I set it to 9999.
 -- You can adjust this stuff to suit your needs, just be aware that making the extractors too fast/too slow may break immersion
-
 
 AddNewExtrRooms =
 {
     {
-        ["ProductID"]           = "FRE_ROOM_EMEXTR",
-		["Requirements"]        =
+        ["ProductID"] = "FRE_ROOM_EMEXTR",
+        ["Requirements"] =
         {
-			{"ASTEROID1",      "60", SubstanceOrProduct["Substance"]},
-            {"ASTEROID2",      "45", SubstanceOrProduct["Substance"]},
-			{"LAND3",				"40", SubstanceOrProduct["Substance"]},
+            {"ASTEROID1", "60", SubstanceOrProduct["Substance"]},
+            {"ASTEROID2", "45", SubstanceOrProduct["Substance"]},
+            {"LAND3", "40", SubstanceOrProduct["Substance"]},
         },
         ["Languages"] =
         {
-            --					language									name											subtitle																								description																																																		UI Description--
+            --                    language                                    name                                            subtitle                                                                                                description                                                                                                                                                                                                        UI Description--
             {Languages["English"], "Stellar Extractor: Exotic Materials", "Moar Useful Elements", "Naturally occurring in Stars, Helium is the product of the nuclear fusion of hydrogen atoms. New synthesis technologies allow for Helium to be created in refiners.", "Harvest Exotic Materials"},
             {Languages["French"], "Extracteur Stellaire : Matériaux Exotiques", "Plus d'Éléments Utiles", "Naturellement présent dans les étoiles, l'hélium est le produit de la fusion nucléaire des atomes d'hydrogène. De nouvelles technologies de synthèse permettent de créer de l'hélium dans les raffineries.", "Récoltez des Matériaux Exotiques"},
             {Languages["Italian"], "Estrattore Stellare: Materiali Esotici", "Elementi più Utili", "Presente naturalmente nelle stelle, l'elio è il prodotto della fusione nucleare degli atomi di idrogeno. Nuove tecnologie di sintesi consentono di creare elio nei raffinatori.", "Raccogli Materiali Esotici"},
@@ -66,61 +65,61 @@ AddNewExtrRooms =
 
         }
     },
-	{
-        ["ProductID"]           = "FRE_ROOM_GEXTR",
-		["Requirements"]        =
+    {
+        ["ProductID"] = "FRE_ROOM_GEXTR",
+        ["Requirements"] =
         {
-			{"ASTEROID1",      "60", SubstanceOrProduct["Substance"]},
-            {"ASTEROID2",      "45", SubstanceOrProduct["Substance"]},
-			{"LAND3",				"40", SubstanceOrProduct["Substance"]},
+            {"ASTEROID1", "60", SubstanceOrProduct["Substance"]},
+            {"ASTEROID2", "45", SubstanceOrProduct["Substance"]},
+            {"LAND3", "40", SubstanceOrProduct["Substance"]},
         },
         ["Languages"] =
         {
-            --					language									name											subtitle																								description					--
+            --                    language                                    name                                            subtitle                                                                                                description                    --
             {Languages["English"], "Stellar Extractor: Gasses", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Gasses like Carbon, Di-Hydrogen, and Ammonia from matter-dense Nebulae.", "Harvest Space Gasses"},
-			{Languages["French"], "Extracteur Stellaire : Gaz", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des gaz comme le carbone, le di-hydrogène et l'ammoniac à partir de nébuleuses riches en matière.", "Récolte de gaz spatiaux"},
-			{Languages["Italian"], "Estrattore Stellare: Gas", "Più Estrattori Stellari", "Una variante modificata dello Stellar Extractor standard, questo estrattore raccoglie gas come Carbonio, Di-Idrogeno e Ammoniaca da nebulose dense di materia.", "Raccogli Gas Spaziali"},
-			{Languages["Spanish"], "Extractora Estelar: Gases", "Más extractoras estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha gases como Carbono, Di-Hidrógeno y Amoniaco de nebulosas densas en materia.", "Cosecha de gases espaciales"},
-			{Languages["German"], "Stellar Extraktor: Gase", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Gase wie Kohlenstoff, Di-Wasserstoff und Ammoniak aus dichtem Nebel.", "Ernte von Weltraumgasen"},
-			{Languages["Russian"], "Звездный экстрактор: газы", "Больше звездных экстракторов", "Измененный вариант стандартного звездного экстрактора, этот экстрактор собирает газы, такие как углерод, ди-водород и аммиак, из плотных туманностей.", "Сбор космических газов"}
+            {Languages["French"], "Extracteur Stellaire : Gaz", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des gaz comme le carbone, le di-hydrogène et l'ammoniac à partir de nébuleuses riches en matière.", "Récolte de gaz spatiaux"},
+            {Languages["Italian"], "Estrattore Stellare: Gas", "Più Estrattori Stellari", "Una variante modificata dello Stellar Extractor standard, questo estrattore raccoglie gas come Carbonio, Di-Idrogeno e Ammoniaca da nebulose dense di materia.", "Raccogli Gas Spaziali"},
+            {Languages["Spanish"], "Extractora Estelar: Gases", "Más extractoras estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha gases como Carbono, Di-Hidrógeno y Amoniaco de nebulosas densas en materia.", "Cosecha de gases espaciales"},
+            {Languages["German"], "Stellar Extraktor: Gase", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Gase wie Kohlenstoff, Di-Wasserstoff und Ammoniak aus dichtem Nebel.", "Ernte von Weltraumgasen"},
+            {Languages["Russian"], "Звездный экстрактор: газы", "Больше звездных экстракторов", "Измененный вариант стандартного звездного экстрактора, этот экстрактор собирает газы, такие как углерод, ди-водород и аммиак, из плотных туманностей.", "Сбор космических газов"}
         }
     },
-	{
-        ["ProductID"]           = "FRE_ROOM_MEXTR",
-		["Requirements"]        =
+    {
+        ["ProductID"] = "FRE_ROOM_MEXTR",
+        ["Requirements"] =
         {
-			{"ASTEROID1",      "60", SubstanceOrProduct["Substance"]},
-            {"ASTEROID2",      "45", SubstanceOrProduct["Substance"]},
-			{"LAND3",				"40", SubstanceOrProduct["Substance"]},
+            {"ASTEROID1", "60", SubstanceOrProduct["Substance"]},
+            {"ASTEROID2", "45", SubstanceOrProduct["Substance"]},
+            {"LAND3", "40", SubstanceOrProduct["Substance"]},
         },
         ["Languages"] =
         {
-            --					language									name											subtitle																								description					--
+            --                    language                                    name                                            subtitle                                                                                                description                    --
             {Languages["English"], "Stellar Extractor: Metals", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Metals like Pure Ferrite, Cobalt, and Salt from matter-dense Nebulae.", "Harvest Deep Space Metals"},
-			{Languages["French"], "Extracteur stellaire : Métaux", "Plus d'extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des métaux tels que la ferrite pure, le cobalt et le sel à partir de nébuleuses riches en matière.", "Récoltez des métaux en profondeur dans l'espace"},
-			{Languages["Italian"], "Estrattore Stellare: Metalli", "Più Estrattori Stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie metalli come la ferrite pura, il cobalto e il sale dalle nebulose dense di materia.", "Raccogli metalli profondi nello spazio"},
-			{Languages["Spanish"], "Extractor Estelar: Metales", "Más Extractores Estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha metales como ferrita pura, cobalto y sal de nebulosas densas en materia.", "Cosecha metales profundos del espacio"},
-			{Languages["German"], "Stellar Extraktor: Metalle", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Metalle wie Reine Ferrite, Kobalt und Salz aus materiedichten Nebeln.", "Ernte tiefe Raummetalle"},
-			{Languages["Russian"], "Звездный экстрактор: металлы", "Больше звездных экстракторов", "Измененная версия стандартного звездного экстрактора, этот экстрактор собирает металлы, такие как чистый феррит, кобальт и соль из плотных туманностей материи.", "Собирайте глубокие космические металлы"} 
+            {Languages["French"], "Extracteur stellaire : Métaux", "Plus d'extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des métaux tels que la ferrite pure, le cobalt et le sel à partir de nébuleuses riches en matière.", "Récoltez des métaux en profondeur dans l'espace"},
+            {Languages["Italian"], "Estrattore Stellare: Metalli", "Più Estrattori Stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie metalli come la ferrite pura, il cobalto e il sale dalle nebulose dense di materia.", "Raccogli metalli profondi nello spazio"},
+            {Languages["Spanish"], "Extractor Estelar: Metales", "Más Extractores Estelares", "Una variante modificada del Extractor Estelar estándar, este extractor cosecha metales como ferrita pura, cobalto y sal de nebulosas densas en materia.", "Cosecha metales profundos del espacio"},
+            {Languages["German"], "Stellar Extraktor: Metalle", "Mehr Stellar Extraktoren", "Eine modifizierte Variante des Standard Stellar Extraktors, dieser Extraktor erntet Metalle wie Reine Ferrite, Kobalt und Salz aus materiedichten Nebeln.", "Ernte tiefe Raummetalle"},
+            {Languages["Russian"], "Звездный экстрактор: металлы", "Больше звездных экстракторов", "Измененная версия стандартного звездного экстрактора, этот экстрактор собирает металлы, такие как чистый феррит, кобальт и соль из плотных туманностей материи.", "Собирайте глубокие космические металлы"} 
         }
     },
-	{
-        ["ProductID"]           = "FRE_ROOM_SMEXTR",
-		["Requirements"]        =
+    {
+        ["ProductID"] = "FRE_ROOM_SMEXTR",
+        ["Requirements"] =
         {
-			{"ASTEROID1",      "60", SubstanceOrProduct["Substance"]},
-            {"ASTEROID2",      "45", SubstanceOrProduct["Substance"]},
-			{"LAND3",				"40", SubstanceOrProduct["Substance"]},
+            {"ASTEROID1", "60", SubstanceOrProduct["Substance"]},
+            {"ASTEROID2", "45", SubstanceOrProduct["Substance"]},
+            {"LAND3", "40", SubstanceOrProduct["Substance"]},
         },
         ["Languages"] =
         {
-            --					language									name											subtitle																								description					--
+            --                    language                                    name                                            subtitle                                                                                                description                    --
             {Languages["English"], "Stellar Extractor: Stellar Materials", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Stellar Materials like Copper, Cadmium, and Indium from matter-dense Nebulae.", "Harvest Stellar Materials"},
-			{Languages["French"], "Extracteur Stellaire : Matériaux stellaires", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des matériaux stellaires comme le cuivre, le cadmium et l'indium à partir de nébuleuses riches en matière.", "Récolte de matériaux stellaires"},
-			{Languages["Italian"], "Estrattore Stellare: Materiali stellari", "Altri estrattori stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie Materiali stellari come Rame, Cadmio e Indio dalle nebulose dense di materia.", "Raccolta di Materiali stellari"},
-			{Languages["Spanish"], "Extractor Estelar: Materiales estelares", "Más extractores estelares", "Una variante modificada del Extractor Estelar estándar, este extractor recolecta materiales estelares como Cobre, Cadmio e Indio de nebulosas densas de materia.", "Recolección de materiales estelares"},
-			{Languages["German"], "Sternenextraktor: Sternmaterialien", "Mehr Sternenextraktoren", "Eine modifizierte Variante des Standard-Sternenextraktors, dieser Extraktor erntet Sternmaterialien wie Kupfer, Cadmium und Indium aus materialreichen Nebeln.", "Ernte von Sternmaterialien"},
-			{Languages["Russian"], "Звездный экстрактор: звездные материалы", "Еще звездные экстракторы", "Измененный вариант стандартного Звездного экстрактора, этот экстрактор собирает звездные материалы, такие как медь, кадмий и индий из плотных небул.", "Сбор звездных материалов"}
+            {Languages["French"], "Extracteur Stellaire : Matériaux stellaires", "Moar extracteurs stellaires", "Une variante modifiée de l'extracteur stellaire standard, cet extracteur récolte des matériaux stellaires comme le cuivre, le cadmium et l'indium à partir de nébuleuses riches en matière.", "Récolte de matériaux stellaires"},
+            {Languages["Italian"], "Estrattore Stellare: Materiali stellari", "Altri estrattori stellari", "Una variante modificata dello standard Estrattore Stellare, questo Estrattore raccoglie Materiali stellari come Rame, Cadmio e Indio dalle nebulose dense di materia.", "Raccolta di Materiali stellari"},
+            {Languages["Spanish"], "Extractor Estelar: Materiales estelares", "Más extractores estelares", "Una variante modificada del Extractor Estelar estándar, este extractor recolecta materiales estelares como Cobre, Cadmio e Indio de nebulosas densas de materia.", "Recolección de materiales estelares"},
+            {Languages["German"], "Sternenextraktor: Sternmaterialien", "Mehr Sternenextraktoren", "Eine modifizierte Variante des Standard-Sternenextraktors, dieser Extraktor erntet Sternmaterialien wie Kupfer, Cadmium und Indium aus materialreichen Nebeln.", "Ernte von Sternmaterialien"},
+            {Languages["Russian"], "Звездный экстрактор: звездные материалы", "Еще звездные экстракторы", "Измененный вариант стандартного Звездного экстрактора, этот экстрактор собирает звездные материалы, такие как медь, кадмий и индий из плотных небул.", "Сбор звездных материалов"}
         }
     }
 }
@@ -128,217 +127,218 @@ AddNewExtrRooms =
 AddNewBBObjects =
 {
     {
-        ["BBObjectID"]           		= "FRE_ROOM_EMEXTR",
-		["BBObjectFileName"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"
+        ["BBObjectID"] = "FRE_ROOM_EMEXTR",
+        ["BBObjectFileName"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"
     },
-	{
-        ["BBObjectID"]           		= "FRE_ROOM_GEXTR",
-		["BBObjectFileName"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT.SCENE.MBIN"
+    {
+        ["BBObjectID"] = "FRE_ROOM_GEXTR",
+        ["BBObjectFileName"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT.SCENE.MBIN"
     },
-	{
-        ["BBObjectID"]           		= "FRE_ROOM_MEXTR",
-		["BBObjectFileName"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT.SCENE.MBIN"
+    {
+        ["BBObjectID"] = "FRE_ROOM_MEXTR",
+        ["BBObjectFileName"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT.SCENE.MBIN"
     },
-	{
-        ["BBObjectID"]           		= "FRE_ROOM_SMEXTR",
-		["BBObjectFileName"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"
+    {
+        ["BBObjectID"] = "FRE_ROOM_SMEXTR",
+        ["BBObjectFileName"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"
     }
 }
 
 AddNewBBParts =
 {
-	{
-		["Floor0ID"]						= "_FRE_ROOM_EMEXTR_FLOOR0",
-		["Floor0Path"]					= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
-	},
-	{
-		["Floor0ID"]						= "_FRE_ROOM_GEXTR_FLOOR0",
-		["Floor0Path"]					= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
-	},
-	{
-		["Floor0ID"]						= "_FRE_ROOM_MEXTR_FLOOR0",
-		["Floor0Path"]					= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
-	},
-	{
-		["Floor0ID"]						= "_FRE_ROOM_SMEXTR_FLOOR0",
-		["Floor0Path"]					= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
-	}
+    {
+        ["Floor0ID"] = "_FRE_ROOM_EMEXTR_FLOOR0",
+        ["Floor0Path"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
+    },
+    {
+        ["Floor0ID"] = "_FRE_ROOM_GEXTR_FLOOR0",
+        ["Floor0Path"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
+    },
+    {
+        ["Floor0ID"] = "_FRE_ROOM_MEXTR_FLOOR0",
+        ["Floor0Path"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
+    },
+    {
+        ["Floor0ID"] = "_FRE_ROOM_SMEXTR_FLOOR0",
+        ["Floor0Path"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"
+    }
 }
 
 AddNewBBPartsNavData =
 {
-	{
-		["BBPartsNavID"] = "_FRE_ROOM_EMEXTR_FLOOR0"
-	},
-	{
-		["BBPartsNavID"] = "_FRE_ROOM_GEXTR_FLOOR0"
-	},	
-	{
-		["BBPartsNavID"] = "_FRE_ROOM_MEXTR_FLOOR0"
-	},
-	{
-		["BBPartsNavID"] = "_FRE_ROOM_SMEXTR_FLOOR0"
-	}
+    {
+        ["BBPartsNavID"] = "_FRE_ROOM_EMEXTR_FLOOR0"
+    },
+    {
+        ["BBPartsNavID"] = "_FRE_ROOM_GEXTR_FLOOR0"
+    },    
+    {
+        ["BBPartsNavID"] = "_FRE_ROOM_MEXTR_FLOOR0"
+    },
+    {
+        ["BBPartsNavID"] = "_FRE_ROOM_SMEXTR_FLOOR0"
+    }
 }
 
 -- new PlacementData.Entity entry for SnapPoint_Front
 AddNewPDEFront =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_Front",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_Front",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_Front",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_Front",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_Front",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_Front",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_Front",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_Front",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_Back
 AddNewPDEBack =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_Back",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_Back",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_Back",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_Back",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_Back",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_Back",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_Back",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_Back",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_Left
 AddNewPDELeft =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_Left",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_Left",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_Left",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_Left",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_Left",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_Left",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_Left",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_Left",
     }
 }
+
 -- new PlacementData.Entity entry for SnapPoint_Right
 AddNewPDERight =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_Right",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_Right",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_Right",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_Right",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_Right",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_Right",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_Right",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_Right",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_FrontRight
 AddNewPDEFR =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontRight",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontRight",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontRight",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontRight",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontRight",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_FrontLeft
 AddNewPDEFL =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontLeft",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_FrontLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_FrontLeft",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_BackRight
 AddNewPDEBR =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackRight",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackRight",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackRight",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackRight",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackRight",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackRight",
     }
 }
 -- new PlacementData.Entity entry for SnapPoint_BackLeft
 AddNewPDEBL =
 {
     {
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackLeft",
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackLeft",
     },
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_BackLeft",
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_BackLeft",
     }
 }
 
@@ -346,692 +346,729 @@ AddNewPDEBL =
 --SnapPoint_Face
 AddNewSnapPTFace =
 {
-	{
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_Face",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_Face",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_Face",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_Face",
-	}
+    {
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_Face",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_Face",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_Face",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_Face",
+    }
 }
 
 --SnapPoint_SPIGN_Face1
 AddNewSnapPTSpignFace =
 {
-	{
-		["EntityId"]	=	"FRE_ROOM_EMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_GEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_MEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
-	},
-	{
-		["EntityId"]	=	"FRE_ROOM_SMEXTR",
-		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
-	}
+    {
+        ["EntityId"] = "FRE_ROOM_EMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_Face1",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_GEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_Face1",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_MEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_Face1",
+    },
+    {
+        ["EntityId"] = "FRE_ROOM_SMEXTR",
+        ["SnapPt"] = "SnapPoint_SPIGN_Face1",
+    }
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--------------------------------		CODE LOGIC STARTS HERE, NO TOUCHY UNLESS YOU WANNA BREAKY		------------------------------------
+-------------------------------        CODE LOGIC STARTS HERE, NO TOUCHY UNLESS YOU WANNA BREAKY        ------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ModName 						= "Moar Stellar Extractors "
-Author								= "EchoTree"
-LuaAuthor							= "EchoTree & Jackty89"
-ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"v4.2.3"
-Build									= ".1"
-CustomLanguageTag		= "NMSMSE"
+ModName = "Moar Stellar Extractors "
+Author = "EchoTree"
+LuaAuthor = "EchoTree & Jackty89"
+ModDescription = "Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
+GameVersion = "v4.2.3"
+Build = ".1"
+CustomLanguageTag = "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] 			= Author.."'s "..ModName..GameVersion..Build..".pak",
-	["MOD_DESCRIPTION"]      = ModDescription.."Compatible with NMS"..GameVersion,
-	["MOD_AUTHOR"]				= Author,
-	["LUA_AUTHOR"]					= LuaAuthor,
-	["NMS_VERSION"]				= GameVersion,
-	["ADD_FILES"]           			=
-	{
-	},
-	["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{		--																																												MBIN CLONING																																										--
-				{		--																													CLONING FILES FROM STANDARD SE TO EXOTIC MATERIALS EXTRACTOR					1																										--
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0\ENTITIES\EMEXTRACTORTERMINAL.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"},
-					}
-				},
-				{		--																															CLONING FILES FROM STANDARD SE TO GAS EXTRACTOR										2																										--
-					["MBIN_FILE_SOURCE"]	=
-					{
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0\ENTITIES\GEXTRACTORTERMINAL.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT.SCENE.MBIN"},
-					}
-				},
-				{		--																															CLONING FILES FROM STANDARD SE TO METAL EXTRACTOR									3																										--
-					["MBIN_FILE_SOURCE"]	=
-					{
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0\ENTITIES\MEXTRACTORTERMINAL.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT.SCENE.MBIN"},
-					}
-				},
-				{		--																													CLONING FILES FROM STANDARD SE TO EXOTIC MATERIALS EXTRACTOR					4																										--
-					["MBIN_FILE_SOURCE"]	=
-					{
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0\ENTITIES\SMEXTRACTORTERMINAL.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"},
-					}
-				},
-				
-					--																																										BEGIN EXML EDITING																																										--
+    ["MOD_FILENAME"] = Author.."'s "..ModName..GameVersion..Build..".pak",
+    ["MOD_DESCRIPTION"] = ModDescription.."Compatible with NMS"..GameVersion,
+    ["MOD_AUTHOR"] = Author,
+    ["LUA_AUTHOR"] = LuaAuthor,
+    ["NMS_VERSION"] = GameVersion,
+    ["ADD_FILES"] =
+    {
+    },
+    ["MODIFICATIONS"] = 
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                -- MBIN CLONING --
+                {
+                    -- CLONING FILES FROM STANDARD SE TO EXOTIC MATERIALS EXTRACTOR                    1 --
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0/ENTITIES/EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0/ENTITIES/EMEXTRACTORTERMINAL.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"},
+                    }
+                },
+                {
+                    -- CLONING FILES FROM STANDARD SE TO GAS EXTRACTOR                                 2 --
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0/ENTITIES/EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0/ENTITIES/GEXTRACTORTERMINAL.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT.SCENE.MBIN"},
+                    }
+                },
+                {
+                    -- CLONING FILES FROM STANDARD SE TO METAL EXTRACTOR                               3 --
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0/ENTITIES/EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0/ENTITIES/MEXTRACTORTERMINAL.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT.SCENE.MBIN"},
+                    }
+                },
+                {
+                    -- CLONING FILES FROM STANDARD SE TO EXOTIC MATERIALS EXTRACTOR                    4 --
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0/ENTITIES/EXTRACTORTERMINAL.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0/ENTITIES/SMEXTRACTORTERMINAL.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                        {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT.SCENE.MBIN", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"},
+                    }
+                },
 
-				{	--																																								 EMEXTRACTOR PLACEMENT.SCENE.MBIN 									5																										--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"}
-							}
-						},
-					}
-				},
-				{	-- 																																					EMEXTRACTOR PLACEMENTDATA.ENTITY.MBIN								6																										--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PartID",				"_FRE_ROOM_EMEXTR_FLOOR0"}
-							}
-						},
-					}
-				},
-				{	-- 																																						EMEXTRACTOR FLOOR0_NAV.SCENE.MBIN 									7																										--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0_NAV"}
-							}
-						},
-					}
-				},
-				{	-- 																																							EMEXTRACTOR FLOOR0.SCENE.MBIN 											8																										--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0\ENTITIES\EMEXTRACTORTERMINAL.ENTITY.MBIN"}
-							}
-						},
-					}
-				},				
-				{	-- 																																							EMEXTRACTORTERMINAL.ENTITY.MBIN										9																										--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\PARTS\FLOOR0\ENTITIES\EMEXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{	--								YELLOW							--
-							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"ROCKETSUB"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								 GREEN								--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"ASTEROID2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  BLUE									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"ASTEROID3"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  RED									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id", "ASTEROID1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Description",				"UI_FRE_ROOM_EMEXTR_DESC"}
-							},
-						},
-					}
-				},
-				{	--																																								 GEXTRACTOR PLACEMENT.SCENE.MBIN 									10																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"}
-							}
-						},
-					}
-				},
-				{	-- 																																					GEXTRACTOR PLACEMENTDATA.ENTITY.MBIN									11																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PartID",				"_FRE_ROOM_GEXTR_FLOOR0"}
-							}
-						},
-					}
-				},
-				{	-- 																																						GEXTRACTOR FLOOR0_NAV.SCENE.MBIN 										12																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0_NAV"}
-							}
-						},
-					}
-				},
-				{	-- 																																							GEXTRACTOR FLOOR0.SCENE.MBIN 											13																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0\ENTITIES\GEXTRACTORTERMINAL.ENTITY.MBIN"}
-							}
-						},
-					}
-				},				
-				{	-- 																																							GEXTRACTORTERMINAL.ENTITY.MBIN											14																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\PARTS\FLOOR0\ENTITIES\GEXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{	--								YELLOW							--
-							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"OXYGEN"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								 GREEN								--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"TOXIC1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  BLUE									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"LAUNCHSUB"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  RED									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"FUEL1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Description",				"UI_FRE_ROOM_GEXTR_DESC"}
-							},
-						},
-					}
-				},
-				{	--																																								 MEXTRACTOR PLACEMENT.SCENE.MBIN 									15																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"}
-							}
-						},
-					}
-				},
-				{	-- 																																					MEXTRACTOR PLACEMENTDATA.ENTITY.MBIN									16																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PartID",				"_FRE_ROOM_MEXTR_FLOOR0"}
-							}
-						},
-					}
-				},
-				{	-- 																																						MEXTRACTOR FLOOR0_NAV.SCENE.MBIN 										17																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0_NAV"}
-							}
-						},
-					}
-				},
-				{	-- 																																							MEXTRACTOR FLOOR0.SCENE.MBIN 											18																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0\ENTITIES\MEXTRACTORTERMINAL.ENTITY.MBIN"}
-							}
-						},
-					}
-				},				
-				{	-- 																																							MEXTRACTORTERMINAL.ENTITY.MBIN										19																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\PARTS\FLOOR0\ENTITIES\MEXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{	--								YELLOW							--
-							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"CATALYST1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								 GREEN								--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"WATER1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  BLUE									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id", "CAVE1"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed},
-							},
-						},
-						{	--								  RED									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"LAND2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}								
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Description",				"UI_FRE_ROOM_MEXTR_DESC"}
-							},
-						},
-					}
-				},
-				{	--																																								 SMEXTRACTOR PLACEMENT.SCENE.MBIN 									20																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"}
-							}
-						},
-					}
-				},
-				{	-- 																																					SMEXTRACTOR PLACEMENTDATA.ENTITY.MBIN								21																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PartID",				"_FRE_ROOM_SMEXTR_FLOOR0"}
-							}
-						},
-					}
-				},
-				{	-- 																																						SMEXTRACTOR FLOOR0_NAV.SCENE.MBIN 									22																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0_NAV.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0_NAV",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0_NAV"}
-							}
-						},
-					}
-				},
-				{	-- 																																							SMEXTRACTOR FLOOR0.SCENE.MBIN 											23																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0.SCENE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Name",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",				"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0\ENTITIES\SMEXTRACTORTERMINAL.ENTITY.MBIN"}
-							}
-						},
-					}
-				},				
-				{	-- 																																							SMEXTRACTORTERMINAL.ENTITY.MBIN										24																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\PARTS\FLOOR0\ENTITIES\SMEXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{	--								YELLOW							--
-							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"YELLOW2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								 GREEN								--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"GREEN2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  BLUE									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"BLUE2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  RED									--
-							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Id",				"RED2"},
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Description",				"UI_FRE_ROOM_SMEXTR_DESC"}
-							},
-						},
-					}
-				},
-				{	-- 																																								EXTRACTORTERMINAL.ENTITY.MBIN										25																									--
-					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{	--								YELLOW							--
-						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod",				gExtrSpeed}
-							},
-						},											
-						{	--								 GREEN								--
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod",				 gExtrSpeed}
-							},
-						},
-						{	--								  BLUE									--
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod", 				gExtrSpeed}
-							},
-						},
-						{	--								  RED									--
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",				gExtrCap},
-								{"AmountEmptyTimePeriod",				gExtrSpeed}
-							},
-						},					
-					}
-				},
-				
-				
-				--																																										METADATA/REALITY/TABLES																																							--
-				
-				{	--																																								BASEBUILDING OBJECSTS TABLE													26																									--
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                -- BEGIN EXML EDITING --
+                {
+                    -- EMEXTRACTOR PLACEMENT.SCENE.MBIN                                                5 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"}
+                            }
+                        },
                     }
-				},
-				{	--																																								BASEBUILDING PARTS TABLE															27																									--
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                },
+                {
+                    -- EMEXTRACTOR PLACEMENTDATA.ENTITY.MBIN                                           6 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PartID", "_FRE_ROOM_EMEXTR_FLOOR0"}
+                            }
+                        },
                     }
-				},
-				{	--																																						BASEBUILDINGPARTS NAV DATA TABLE												28																									--
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGPARTSNAVDATATABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                },
+                {
+                    -- EMEXTRACTOR FLOOR0_NAV.SCENE.MBIN                                               7 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0_NAV"}
+                            }
+                        },
                     }
-				},
-				{	--																																											PRODUCT TABLE																	29																									--
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                },
+                {
+                    -- EMEXTRACTOR FLOOR0.SCENE.MBIN                                                   8 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0/ENTITIES/EMEXTRACTORTERMINAL.ENTITY.MBIN"}
+                            }
+                        },
                     }
-				},
-                {	--																																										DEFAULT SAVEDATA																30																									--
-                    ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                },
+                {
+                    -- EMEXTRACTORTERMINAL.ENTITY.MBIN                                                   9 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/PARTS/FLOOR0/ENTITIES/EMEXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            --                                YELLOW                            --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "ROCKETSUB"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                 GREEN                                --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "ASTEROID2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                  BLUE                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "ASTEROID3"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                  RED                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "ASTEROID1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Description", "UI_FRE_ROOM_EMEXTR_DESC"}
+                            },
+                        },
+                    }
+                },
+                {
+                    --                                                                                                                                                                 GEXTRACTOR PLACEMENT.SCENE.MBIN                                     10                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- GEXTRACTOR PLACEMENTDATA.ENTITY.MBIN                                    11 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PartID", "_FRE_ROOM_GEXTR_FLOOR0"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- GEXTRACTOR FLOOR0_NAV.SCENE.MBIN                                         12 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0_NAV"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- GEXTRACTOR FLOOR0.SCENE.MBIN                                             13 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0/ENTITIES/GEXTRACTORTERMINAL.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- GEXTRACTORTERMINAL.ENTITY.MBIN                                            14 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/PARTS/FLOOR0/ENTITIES/GEXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            --                                YELLOW                            --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "OXYGEN"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                 GREEN                                --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "TOXIC1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                  BLUE                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "LAUNCHSUB"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                  RED                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "FUEL1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Description", "UI_FRE_ROOM_GEXTR_DESC"}
+                            },
+                        },
+                    }
+                },
+                {
+                    -- MEXTRACTOR PLACEMENT.SCENE.MBIN                                     15 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- MEXTRACTOR PLACEMENTDATA.ENTITY.MBIN                                    16 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PartID", "_FRE_ROOM_MEXTR_FLOOR0"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- MEXTRACTOR FLOOR0_NAV.SCENE.MBIN                                         17 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0_NAV"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- MEXTRACTOR FLOOR0.SCENE.MBIN                                             18 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0/ENTITIES/MEXTRACTORTERMINAL.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- MEXTRACTORTERMINAL.ENTITY.MBIN                                        19 --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/PARTS/FLOOR0/ENTITIES/MEXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {    --                                YELLOW                            --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "CATALYST1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                 GREEN                                --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "WATER1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                  BLUE                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "CAVE1"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed},
+                            },
+                        },
+                        {    --                                  RED                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "LAND2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Description", "UI_FRE_ROOM_MEXTR_DESC"}
+                            },
+                        },
+                    }
+                },
+                {
+                    -- SMEXTRACTOR PLACEMENT.SCENE.MBIN                                     20 --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {    -- SMEXTRACTOR PLACEMENTDATA.ENTITY.MBIN                                21                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"PositionLocator","GROUND_",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PartID", "_FRE_ROOM_SMEXTR_FLOOR0"}
+                            }
+                        },
+                    }
+                },
+                {    --                                                                                                                                                         SMEXTRACTOR FLOOR0_NAV.SCENE.MBIN                                     22                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0_NAV.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0_NAV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0_NAV"}
+                            }
+                        },
+                    }
+                },
+                {
+                    --                                                                                                                                                             SMEXTRACTOR FLOOR0.SCENE.MBIN                                             23                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0.SCENE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Name", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ATTACHMENT",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0/ENTITIES/SMEXTRACTORTERMINAL.ENTITY.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    -- SMEXTRACTORTERMINAL.ENTITY.MBIN                                        24                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/PARTS/FLOOR0/ENTITIES/SMEXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {    --                                YELLOW                            --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "YELLOW2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                 GREEN                                --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "GREEN2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                  BLUE                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "BLUE2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {    --                                  RED                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id", "RED2"},
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Description",                 "UI_FRE_ROOM_SMEXTR_DESC"}
+                            },
+                        },
+                    }
+                },
+                {
+                    -- EXTRACTORTERMINAL.ENTITY.MBIN                                        25                                                                                                    --
+                    ["MBIN_FILE_SOURCE"] =    {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/PARTS/FLOOR0/ENTITIES/EXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {    --                                YELLOW                            --
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                 GREEN                                --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                  BLUE                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                        {
+                            --                                  RED                                    --
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MaxCapacity", GExtrCap},
+                                {"AmountEmptyTimePeriod", GExtrSpeed}
+                            },
+                        },
+                    }
+                },
+                -- METADATA/REALITY/TABLES --
+                {
+                    -- BASEBUILDING OBJECSTS TABLE                                                    26 --
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
-				{	--																																							ROOM PLACEMENT DATA EDITING													31																									--
-                    ["MBIN_FILE_SOURCE"] 	= 
-					{
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\GEXTRROOM\ROOM_GEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\MEXTRROOM\ROOM_MEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SMEXTRROOM\ROOM_SMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT0\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT1\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT2\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT3\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT4\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT5\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT6\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT7\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT8\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\STORAGEROOM\ROOM_STORAGE_PLACEMENT9\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\VEHICLEROOM\ROOM_VEHICLE_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\REFINERROOM\ROOM_REFINER_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\NPCWEAROOM\ROOM_NPCWEA_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\INDUSTROOM\ROOM_INDUST_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\ROOM_EXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-					},
-                    ["EXML_CHANGE_TABLE"] 	=
+                {
+                    -- BASEBUILDING PARTS TABLE                                                            27 --
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
-				{	--																																							WALL PLACEMENT DATA EDITING													32																									--
-                    ["MBIN_FILE_SOURCE"] 	= 
-					{
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\FACE_DOOR_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\WALL\FACE_WALL_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\WINDOW\A\FACE_WINDOW_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
-					},
-                    ["EXML_CHANGE_TABLE"] 	=
+                {
+                    -- BASEBUILDINGPARTS NAV DATA TABLE                                                28 --
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGPARTSNAVDATATABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
-                {	--																																						ADDING LANG REF TO DEBUGOPTIONS												33																									--
-                    ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                {
+                    -- PRODUCT TABLE                                                                    29 --
+                    ["MBIN_FILE_SOURCE"]     = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"]     =
+                    {
+                    }
+                },
+                {
+                    -- DEFAULT SAVEDATA                                                                30 --
+                    ["MBIN_FILE_SOURCE"] = "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    -- ROOM PLACEMENT DATA EDITING                                                    31 --
+                    ["MBIN_FILE_SOURCE"] = 
+                    {
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EMEXTRROOM/ROOM_EMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/GEXTRROOM/ROOM_GEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/MEXTRROOM/ROOM_MEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SMEXTRROOM/ROOM_SMEXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT0/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT1/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT2/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT3/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT4/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT5/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT6/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT7/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT8/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/STORAGEROOM/ROOM_STORAGE_PLACEMENT9/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/VEHICLEROOM/ROOM_VEHICLE_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/REFINERROOM/ROOM_REFINER_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/NPCWEAROOM/ROOM_NPCWEA_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/INDUSTROOM/ROOM_INDUST_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/EXTRROOM/ROOM_EXTR_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    -- WALL PLACEMENT DATA EDITING                                                    32 --
+                    ["MBIN_FILE_SOURCE"]     =
+                    {
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/FACE/DOOR/A/FACE_DOOR_A_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/FACE/WALL/FACE_WALL_A_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                        "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/FACE/WINDOW/A/FACE_WINDOW_A_PLACEMENT/ENTITIES/PLACEMENTDATA.ENTITY.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {    -- ADDING LANG REF TO DEBUGOPTIONS                                                33 --
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-                            ["ADD"] 	=
+                            ["ADD"]     =
                             [[
                                 <Property value="NMSString0x20.xml">
                                     <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
@@ -1040,160 +1077,148 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-			}
-		},
-	}
+            }
+        },
+    }
 }
-
-function CreateNewProduct(NewProductID, NewProductName, NewProductNameLc, NewProductSub, NewProductDesc, NewProductRequirements)
-    local RequirementsString = ""
-    if NewProductRequirements ~= "" then
-        RequirementsString = [[<Property name="Requirements">]]..NewProductRequirements..[[</Property>]]
-    else
-        RequirementsString = [[<Property name="Requirements" />]]
-    end
-
-    local result =
-    [[
-    <Property value="GcProductData.xml">
-      <Property name="ID" value="]]..NewProductID..[[" />
-      <Property name="Name" value="]]..NewProductName..[[" />
-      <Property name="NameLower" value="]]..NewProductNameLc..[[" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..NewProductSub..[[" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="]]..NewProductDesc..[[" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="BaseValue" value="1" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/FREIGHTERBASE/FREIGHTERBASE_ROOM.EXTR.DDS" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.17254902" />
-        <Property name="G" value="0.4862745" />
-        <Property name="B" value="0.62352943" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
-        <Property name="SubstanceCategory" value="BuildingPart" />
-      </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="BuildingPart" />
-      </Property>
-      <Property name="Rarity" value="GcRarity.xml">
-        <Property name="Rarity" value="Common" />
-      </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Legal" />
-      </Property>
-      <Property name="Consumable" value="False" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="0" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      ]]..RequirementsString..[[
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0" />
-        <Property name="BuyBaseMarkup" value="0" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
-      <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0" />
-      <Property name="NormalisedValueOffWorld" value="0" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
-        <Property name="TradeCategory" value="None" />
-      </Property>
-      <Property name="WikiCategory" value="Construction" />
-      <Property name="IsCraftable" value="True" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="" />
-      <Property name="PinObjectiveTip" value="" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="False" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="False" />
-      <Property name="IsTechbox" value="False" />
-    </Property>
-    ]]
-
-    return result
-end
-
-function CreateProductRequirement(IngredientID, IngredientType, IngredientAmount)
-    return
-    [[
-        <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="]]..IngredientID..[[" />
-          <Property name="Type" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="]]..IngredientType..[[" />
-          </Property>
-          <Property name="Amount" value="]]..IngredientAmount..[[" />
-        </Property>
-    ]]
-end
-
+----------------------------------------------------------------------------------------------
+-------------------------------     CREATE CUSTOM ROOM PRODUCTS     -------------------------------
+----------------------------------------------------------------------------------------------
 local AddToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][29]["EXML_CHANGE_TABLE"]
-local PTETable = {}
-for i = 1, #AddNewExtrRooms do
-    local Requirements        = {}
-    local ProductID           = string.upper(AddNewExtrRooms[i]["ProductID"])
-    local ProductName         = "BLD_"..string.upper(ProductID).."_NAME"
-    local ProductNameLC       = "BLD_"..string.upper(ProductID).."_NAME_L"
-    local ProductDesc         = "BLD_"..string.upper(ProductID).."_DESC"
-    local ProductSub          = "BLD_"..string.upper(ProductID).."_SUB"
+function Create_New_Product(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductReqMaster)
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR"},
+        ["SEC_SAVE_TO"] = ProductID.."_PRODSEC",
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductID.."_PRODSEC",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID", ProductID},
+            {"Name", ProductName},
+            {"NameLower", ProductNameLC},
+        }
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductID.."_PRODSEC",
+        ["SPECIAL_KEY_WORDS"] = {"Subtitle", "VariableSizeString.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", ProductSub}
+        }
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductID.."_PRODSEC",
+        ["SPECIAL_KEY_WORDS"] = {"Description", "VariableSizeString.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", ProductDesc}
+        }
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductID.."_PRODSEC",
+        ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
+        ["PRECEDING_KEY_WORDS"] = { "GcTechnologyRequirement.xml"},
+        ["REPLACE_TYPE"] = "ALL",
+        ["REMOVE"] = "SECTION"
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductID.."_PRODSEC",
+        ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
+        ["PRECEDING_KEY_WORDS"] = {"Requirements",},
+        ["SEC_ADD_NAMED"] = ProductReqMaster
+    }
 
-	local RequirementsList    = AddNewExtrRooms[i]["Requirements"]
-
-    for k = 1, #RequirementsList  do
-        local RequirementID     = ""
-        local RequirementType   = ""
-        local RequirementAmount = ""
-
-        RequirementID           = RequirementsList[k][1]
-        RequirementType         = RequirementsList[k][3]
-        RequirementAmount       = RequirementsList[k][2]
-        table.insert(Requirements, CreateProductRequirement(RequirementID, RequirementType, RequirementAmount))
-    end
-    
-		table.insert(PTETable, CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, table.concat(Requirements)))
-
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = "PRODUCT_MASTER",
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] =  ProductID.."_PRODSEC"
+    }
 end
-AddToProductTable[#AddToProductTable + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",},
-	["ADD_OPTION"] = "ADDafterSECTION",
-	["ADD"] = table.concat(PTETable)
-}
 
+function Create_Requirement(ProductReqMaster,Requirement)
+    local RequirementID = Requirement[1]
+    local RequirementInventoryType = Requirement[3]
+    local RequirementAmount = Requirement[2]
+
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "CASING"},
+        ["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
+        ["SEC_SAVE_TO"] = "SINGLE_REQ"
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = "SINGLE_REQ",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"ID", RequirementID},
+            {"InventoryType", RequirementInventoryType},
+            {"Amount", RequirementAmount}
+        }
+    }
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EDIT"] = ProductReqMaster,
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "SINGLE_REQ"
+    }
+end
+
+function Create_Requirement_Sections(ProductReqMaster, Requirements)
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EMPTY"] = ProductReqMaster
+    }
+
+    for i = 1, #Requirements do
+        Create_Requirement(ProductReqMaster, Requirements[i])
+    end
+end
+
+function AddNewExtractorRooms()
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SEC_EMPTY"] = "PRODUCT_MASTER"
+    }
+
+    for i = 1, #AddNewExtrRooms do
+        -- local Requirements = {}
+        local ProductID = string.upper(AddNewExtrRooms[i]["ProductID"])
+        local ProductReqMaster = ProductID .. "_REQ_MASTER"
+        local ProductName = "BLD_"..string.upper(ProductID).."_NAME"
+        local ProductNameLC = "BLD_"..string.upper(ProductID).."_NAME_L"
+        local ProductDesc = "BLD_"..string.upper(ProductID).."_DESC"
+        local ProductSub = "BLD_"..string.upper(ProductID).."_SUB"
+
+        local RequirementsList = AddNewExtrRooms[i]["Requirements"]
+        Create_Requirement_Sections(ProductReqMaster, RequirementsList)
+        Create_New_Product(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc,ProductReqMaster)
+    end
+
+    AddToProductTable[#AddToProductTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",},
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "PRODUCT_MASTER"
+    }
+end
+
+AddNewExtractorRooms()
+
+----------------------------------------------------------------------------------------------
+-------------------------------     CREATE NEW BBOBJECTS     -------------------------------
+----------------------------------------------------------------------------------------------
 function CreateNewBBObjects(NewBBObjectID, NewBBObjectFileName)
-	return [[
-	<Property value="GcBaseBuildingEntry.xml">
+    return [[
+    <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]]..NewBBObjectID..[[" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="False" />
@@ -1315,20 +1340,20 @@ end
 local AddToBBObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][26]["EXML_CHANGE_TABLE"]
 local BBOTable = {}
 for i = 1, #AddNewBBObjects do
-    local BBObjectID         				= string.upper(AddNewBBObjects[i]["BBObjectID"])
+    local BBObjectID                         = string.upper(AddNewBBObjects[i]["BBObjectID"])
     local BBObjectFileName          = string.upper(AddNewBBObjects[i]["BBObjectFileName"])
-	
-	table.insert(BBOTable, CreateNewBBObjects(BBObjectID, BBObjectFileName))
+    
+    table.insert(BBOTable, CreateNewBBObjects(BBObjectID, BBObjectFileName))
 end
 AddToBBObjectsTable[#AddToBBObjectsTable + 1]  =
 {
-	["PRECEDING_KEY_WORDS"] = {"Objects"},
-	["ADD"] = table.concat(BBOTable)
+    ["PRECEDING_KEY_WORDS"] = {"Objects"},
+    ["ADD"] = table.concat(BBOTable)
 }
 
 function CreateNewBBParts(NewFloor0ID, NewFloor0Path)
     return [[
-	<Property value="GcBaseBuildingPart.xml">
+    <Property value="GcBaseBuildingPart.xml">
       <Property name="ID" value="]]..NewFloor0ID..[[" />
       <Property name="StyleModels">
         <Property value="GcBaseBuildingPartStyleModel.xml">
@@ -1356,21 +1381,21 @@ end
 local AddToBBPartsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][27]["EXML_CHANGE_TABLE"]
 local BBPartsTable = {}
 for i = 1, #AddNewBBParts do
-    local Floor0ID         				= string.upper(AddNewBBParts[i]["Floor0ID"])
-	local Floor0Path					= string.upper(AddNewBBParts[i]["Floor0Path"])
-	
-	table.insert(BBPartsTable, CreateNewBBParts(Floor0ID, Floor0Path))
+    local Floor0ID                         = string.upper(AddNewBBParts[i]["Floor0ID"])
+    local Floor0Path                    = string.upper(AddNewBBParts[i]["Floor0Path"])
+    
+    table.insert(BBPartsTable, CreateNewBBParts(Floor0ID, Floor0Path))
 end
 AddToBBPartsTable[#AddToBBPartsTable + 1]  =
 {
-	["PRECEDING_KEY_WORDS"] = {"Parts"},
-	["ADD"] = table.concat(BBPartsTable)
+    ["PRECEDING_KEY_WORDS"] = {"Parts"},
+    ["ADD"] = table.concat(BBPartsTable)
 }
 
 function CreateNewBBPartsNavData(NewBBPartsNavID)
-	return 
-	[[
-		<Property value="GcBaseBuildingPartNavData.xml">
+    return 
+    [[
+        <Property value="GcBaseBuildingPartNavData.xml">
       <Property name="PartID" value="]]..NewBBPartsNavID..[[" />
       <Property name="SharedInteractions" />
       <Property name="NavNodeData">
@@ -1649,16 +1674,16 @@ function CreateNewBBPartsNavData(NewBBPartsNavID)
         </Property>
       </Property>
     </Property>
-	]]
+    ]]
 end
 
 local AddToBBPartsNavDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][28]["EXML_CHANGE_TABLE"]
 local BBPartsNavTable = {}
 
 for i = 1, #AddNewBBPartsNavData do
-    local BBPartsNavID   				= string.upper(AddNewBBPartsNavData[i]["BBPartsNavID"])
-	
-	table.insert(BBPartsNavTable, CreateNewBBPartsNavData(BBPartsNavID))
+    local BBPartsNavID                   = string.upper(AddNewBBPartsNavData[i]["BBPartsNavID"])
+    
+    table.insert(BBPartsNavTable, CreateNewBBPartsNavData(BBPartsNavID))
     AddToBBPartsNavDataTable[#AddToBBPartsNavDataTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Parts"},
@@ -1666,7 +1691,10 @@ for i = 1, #AddNewBBPartsNavData do
     }
 end
 
-
+----------------------------------------------------------------------------------------------
+-------------------------------     ADDING KNOWN PRODUCTS     -------------------------------
+----------------------------------------------------------------------------------------------
+local AddToDefaultSaveData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][30]["EXML_CHANGE_TABLE"]
 function CreateKnownProduct(ProductID)
     return [[
         <Property value="NMSString0x10.xml">
@@ -1675,47 +1703,23 @@ function CreateKnownProduct(ProductID)
     ]]
 end
 
-local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][30]["EXML_CHANGE_TABLE"]
-
-for i = 1, #AddNewExtrRooms do
-    local ProductID         = string.upper(AddNewExtrRooms[i]["ProductID"])
-
-    AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnownProduct(ProductID)
-    }
+function AddExtractorRoomsToKnownProducts()
+    for i = 1, #AddNewExtrRooms do
+        local ProductID = string.upper(AddNewExtrRooms[i]["ProductID"])
+    
+        AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
+        {
+            ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+            ["ADD"] = CreateKnownProduct(ProductID)
+        }
+    end
 end
 
-function CreateNewPDEntity(NewEntityId, NewSnapPt)
-    return
-    [[
-		<Property value="GcSnapPointCondition.xml">
-		  <Property name="SnapPoint" value="]]..NewSnapPt..[[" />
-		  <Property name="SnapState" value="GcBaseSnapState.xml">
-			<Property name="SnapState" value="NotSnapped" />
-		  </Property>
-		  <Property name="ObjectId" value="]]..NewEntityId..[[" />
-		  <Property name="SnapPointIndex" value="0" />
-		</Property>
-	]]
-end
+AddExtractorRoomsToKnownProducts()
 
-function CreateNewFaceSnaps(NewEntityID, NewSnapPt)
-	return
-	[[
-		<Property value="GcSnapPointCondition.xml">
-		  <Property name="SnapPoint" value="]]..NewSnapPt..[[" />
-		  <Property name="SnapState" value="GcBaseSnapState.xml">
-			<Property name="SnapState" value="IsSnapped" />
-		  </Property>
-		  <Property name="ObjectId" value="]]..NewEntityID..[[" />
-		  <Property name="SnapPointIndex" value="0" />
-		</Property>
-	]]
-end
-
-
+----------------------------------------------------------------------------------------------
+-------------------------------     PDE CHANGES     -------------------------------
+----------------------------------------------------------------------------------------------
 local AddToPDEFront = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
 local AddToPDEBack = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
 local AddToPDELeft = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
@@ -1736,148 +1740,182 @@ local PDEBLTable = {}
 local SPtFaceTable = {}
 local SPtSpignFaceTable = {}
 
-for i = 1, #AddNewPDEFront do
-    local EntityId           = (AddNewPDEFront[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFront[i]["SnapPt"])
-	
-	table.insert(PDEFrontTable, CreateNewPDEntity(EntityId, SnapPt))
+function CreateNewPDEntity(NewEntityId, NewSnapPt)
+    return
+    [[
+        <Property value="GcSnapPointCondition.xml">
+          <Property name="SnapPoint" value="]]..NewSnapPt..[[" />
+          <Property name="SnapState" value="GcBaseSnapState.xml">
+            <Property name="SnapState" value="NotSnapped" />
+          </Property>
+          <Property name="ObjectId" value="]]..NewEntityId..[[" />
+          <Property name="SnapPointIndex" value="0" />
+        </Property>
+    ]]
 end
 
-for i = 1, #AddNewPDEBack do
-    local EntityId           = (AddNewPDEBack[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBack[i]["SnapPt"])
-	
-	table.insert(PDEBackTable, CreateNewPDEntity(EntityId, SnapPt))
+function CreateNewFaceSnaps(NewEntityID, NewSnapPt)
+    return
+    [[
+        <Property value="GcSnapPointCondition.xml">
+          <Property name="SnapPoint" value="]]..NewSnapPt..[[" />
+          <Property name="SnapState" value="GcBaseSnapState.xml">
+            <Property name="SnapState" value="IsSnapped" />
+          </Property>
+          <Property name="ObjectId" value="]]..NewEntityID..[[" />
+          <Property name="SnapPointIndex" value="0" />
+        </Property>
+    ]]
 end
 
-for i = 1, #AddNewPDELeft do
-    local EntityId           = (AddNewPDELeft[i]["EntityId"])
-	local SnapPt			  = (AddNewPDELeft[i]["SnapPt"])
-	
-	table.insert(PDELeftTable, CreateNewPDEntity(EntityId, SnapPt))
+function AddPDE()
+    for i = 1, #AddNewPDEFront do
+        local EntityId           = (AddNewPDEFront[i]["EntityId"])
+        local SnapPt              = (AddNewPDEFront[i]["SnapPt"])
+        
+        table.insert(PDEFrontTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDEBack do
+        local EntityId           = (AddNewPDEBack[i]["EntityId"])
+        local SnapPt              = (AddNewPDEBack[i]["SnapPt"])
+        
+        table.insert(PDEBackTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDELeft do
+        local EntityId           = (AddNewPDELeft[i]["EntityId"])
+        local SnapPt              = (AddNewPDELeft[i]["SnapPt"])
+        
+        table.insert(PDELeftTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDERight do
+        local EntityId           = (AddNewPDERight[i]["EntityId"])
+        local SnapPt              = (AddNewPDERight[i]["SnapPt"])
+        
+        table.insert(PDERightTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDEFR do
+        local EntityId           = (AddNewPDEFR[i]["EntityId"])
+        local SnapPt              = (AddNewPDEFR[i]["SnapPt"])
+        
+        table.insert(PDEFRTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDEFL do
+        local EntityId           = (AddNewPDEFL[i]["EntityId"])
+        local SnapPt              = (AddNewPDEFL[i]["SnapPt"])
+        
+        table.insert(PDEFLTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDEBR do
+        local EntityId           = (AddNewPDEBR[i]["EntityId"])
+        local SnapPt              = (AddNewPDEBR[i]["SnapPt"])
+        
+        table.insert(PDEBRTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewPDEBL do
+        local EntityId           = (AddNewPDEBL[i]["EntityId"])
+        local SnapPt              = (AddNewPDEBL[i]["SnapPt"])
+        
+        table.insert(PDEBLTable, CreateNewPDEntity(EntityId, SnapPt))
+    end
+    
+    for i = 1, #AddNewSnapPTFace do
+        local EntityId           = (AddNewSnapPTFace[i]["EntityId"])
+        local SnapPt              = (AddNewSnapPTFace[i]["SnapPt"])
+        
+        table.insert(SPtFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))
+    end
+    
+    for j = 1, #AddNewSnapPTSpignFace do
+        local EntityId           = (AddNewSnapPTSpignFace[j]["EntityId"])
+        local SnapPt              = (AddNewSnapPTSpignFace[j]["SnapPt"])
+        
+        table.insert(SPtSpignFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))    
+    end
+    
+    
+    AddToPDEFront[#AddToPDEFront + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {5,7,11,20,23,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEFrontTable)
+    }
+    AddToPDEBack[#AddToPDEBack + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {1,3,9,14,17,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEBackTable)
+    }
+    AddToPDELeft[#AddToPDELeft + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {4,6,12,18,21,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDELeftTable)
+    }
+    AddToPDERight[#AddToPDERight + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {2,8,10,15,24,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDERightTable)
+    }
+    AddToPDEFR[#AddToPDEFR + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {22,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEFRTable)
+    }
+    AddToPDEFL[#AddToPDEFL + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {19,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEFLTable)
+    }
+    AddToPDEnBR[#AddToPDEnBR + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {13,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEBRTable)
+    }
+    AddToPDEBL[#AddToPDEBL + 1]  =
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {16,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(PDEBLTable)
+    }
+    AddToFaceSnaps[#AddToFaceSnaps + 1] =   
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {1, 2,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(SPtFaceTable)
+    }
+    AddToFaceSnaps[#AddToFaceSnaps + 1] =   
+    {
+        ["SPECIAL_KEY_WORDS"]              =     {"ObjectId", "FRE_ROOM_EXTR",},
+        ["SECTION_ACTIVE"]                      =      {1, 2,},
+        ["ADD_OPTION"]                             =     "ADDafterSECTION",
+        ["ADD"]                                             =      table.concat(SPtSpignFaceTable)
+    }
 end
 
-for i = 1, #AddNewPDERight do
-    local EntityId           = (AddNewPDERight[i]["EntityId"])
-	local SnapPt			  = (AddNewPDERight[i]["SnapPt"])
-	
-	table.insert(PDERightTable, CreateNewPDEntity(EntityId, SnapPt))
-end
-
-for i = 1, #AddNewPDEFR do
-    local EntityId           = (AddNewPDEFR[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFR[i]["SnapPt"])
-	
-	table.insert(PDEFRTable, CreateNewPDEntity(EntityId, SnapPt))
-end
-
-for i = 1, #AddNewPDEFL do
-    local EntityId           = (AddNewPDEFL[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFL[i]["SnapPt"])
-	
-	table.insert(PDEFLTable, CreateNewPDEntity(EntityId, SnapPt))
-end
-
-for i = 1, #AddNewPDEBR do
-    local EntityId           = (AddNewPDEBR[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBR[i]["SnapPt"])
-	
-	table.insert(PDEBRTable, CreateNewPDEntity(EntityId, SnapPt))
-end
-
-for i = 1, #AddNewPDEBL do
-    local EntityId           = (AddNewPDEBL[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBL[i]["SnapPt"])
-	
-	table.insert(PDEBLTable, CreateNewPDEntity(EntityId, SnapPt))
-end
-
-for i = 1, #AddNewSnapPTFace do
-    local EntityId           = (AddNewSnapPTFace[i]["EntityId"])
-	local SnapPt			  = (AddNewSnapPTFace[i]["SnapPt"])
-	
-	table.insert(SPtFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))
-end
-
-for j = 1, #AddNewSnapPTSpignFace do
-    local EntityId           = (AddNewSnapPTSpignFace[j]["EntityId"])
-	local SnapPt			  = (AddNewSnapPTSpignFace[j]["SnapPt"])
-	
-	table.insert(SPtSpignFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))	
-end
-
-
-AddToPDEFront[#AddToPDEFront + 1] =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{5,7,11,20,23,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEFrontTable)
-}
-AddToPDEBack[#AddToPDEBack + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{1,3,9,14,17,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEBackTable)
-}
-AddToPDELeft[#AddToPDELeft + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{4,6,12,18,21,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDELeftTable)
-}
-AddToPDERight[#AddToPDERight + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{2,8,10,15,24,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDERightTable)
-}
-AddToPDEFR[#AddToPDEFR + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{22,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEFRTable)
-}
-AddToPDEFL[#AddToPDEFL + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{19,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEFLTable)
-}
-AddToPDEnBR[#AddToPDEnBR + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{13,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEBRTable)
-}
-AddToPDEBL[#AddToPDEBL + 1]  =
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{16,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(PDEBLTable)
-}
-AddToFaceSnaps[#AddToFaceSnaps + 1]  =	
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{1, 2,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(SPtFaceTable)
-}
-AddToFaceSnaps[#AddToFaceSnaps + 1]  =	
-{
-	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-	["SECTION_ACTIVE"] 						= 		{1, 2,},
-	["ADD_OPTION"]								=		"ADDafterSECTION",
-	["ADD"]												= 		table.concat(SPtSpignFaceTable)
-}
-
+AddPDE()
+----------------------------------------------------------------------------------------------
+-------------------------------     Language file creation     -------------------------------
+----------------------------------------------------------------------------------------------
 function NewLanguagueFile(DescriptionEntries)
     return
     [[<?xml version="1.0" encoding="utf-8"?>
@@ -1914,7 +1952,7 @@ function FillCustomlangFile(Data)
 
     for i = 1, #Data do
         local ProductID = string.upper(Data[i]["ProductID"])
-		local UIDescEntries = {}
+        local UIDescEntries = {}
         local DescriptionEntries = {}
         local SubtitleEntries = {}
         local NameLCEntries = {}
@@ -1926,8 +1964,8 @@ function FillCustomlangFile(Data)
         local NameLCID = "BLD_"..ProductID.."_NAME_L"
         local SubID = "BLD_"..ProductID.."_SUB"
         local DescID = "BLD_"..ProductID.."_DESC"
-		
-		local UIDescID = "UI_"..ProductID.."_DESC"
+        
+        local UIDescID = "UI_"..ProductID.."_DESC"
 
         for j = 1, #LanguagesData do
             local Language = LanguagesData[j][1]
@@ -1943,36 +1981,39 @@ function FillCustomlangFile(Data)
 
             local NewDescription = LanguagesData[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
-			
-			local NewUIDesc = LanguagesData[j][5]
-			table.insert(UIDescEntries, NewLanguageEntry(Language, NewUIDesc))
+            
+            local NewUIDesc = LanguagesData[j][5]
+            table.insert(UIDescEntries, NewLanguageEntry(Language, NewUIDesc))
         end
 
         table.insert(NewProductLangEntries, NewDescriptionText(NameLCID, table.concat(NameLCEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(NameID, table.concat(NameEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(SubID, table.concat(SubtitleEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(DescID, table.concat(DescriptionEntries)))
-		table.insert(NewProductLangEntries, NewDescriptionText(UIDescID, table.concat(UIDescEntries)))
+        table.insert(NewProductLangEntries, NewDescriptionText(UIDescID, table.concat(UIDescEntries)))
     end
     return NewLanguagueFile(table.concat(NewProductLangEntries))
 end
 
 local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for Language in pairs(Languages) do
+function AddLanguageFiles()
+    for Language in pairs(Languages) do
 
-    local LanguageData = { ["ProductID"] = "" , ["Languages"] = {}}
-    for i = 1, #AddNewExtrRooms do
-        LanguageData[#LanguageData+1] = 
+        local LanguageData = { ["ProductID"] = "" , ["Languages"] = {}}
+        for i = 1, #AddNewExtrRooms do
+            LanguageData[#LanguageData+1] = 
+            {
+                ["ProductID"] = AddNewExtrRooms[i]["ProductID"],
+                ["Languages"] = AddNewExtrRooms[i]["Languages"] ,
+            }
+        end
+
+        AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
         {
-            ["ProductID"] = AddNewExtrRooms[i]["ProductID"],
-            ["Languages"] = AddNewExtrRooms[i]["Languages"] ,
+            ["FILE_DESTINATION"]  = "LANGUAGE//NMS_"..CustomLanguageTag.."_"..Language..".EXML",
+            ["FILE_CONTENT"]      = FillCustomlangFile(LanguageData)
         }
+
     end
-
-    AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
-    {
-        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Language..".EXML",
-        ["FILE_CONTENT"] 		=	FillCustomlangFile(LanguageData)
-    }
-
 end
+AddLanguageFiles()
