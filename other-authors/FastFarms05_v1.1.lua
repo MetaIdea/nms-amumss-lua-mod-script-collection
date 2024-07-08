@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    = "FastFarmsINSTA_v1.1.pak",
+    ["MOD_FILENAME"]    = "FastFarms05_v1.1.pak",
     ["MOD_DESCRIPTION"]    = "Who wants to farm? Just give me my stuff already",
     ["MOD_AUTHOR"]        = "courtykat.aka.MusicAndSilence",
     ["LUA_AUTHOR"]        = "DeathWrench+RealGenuineHuman",
@@ -29,28 +29,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                 ["SPECIAL_KEY_WORDS"]          = {"TriggerAction", "STEP1_ENTER"},
                 ["VALUE_CHANGE_TABLE"]         =
                 {
-                    {"Time",    "1"},
+                    {"Time",    "149"},
                 }
             },
             {
                 ["SPECIAL_KEY_WORDS"]          = {"TriggerAction", "STEP1"},
                 ["VALUE_CHANGE_TABLE"]         =
                 {
-                    {"Time",    "2"},
+                    {"Time",    "150"},
                 }
             },
             {
                 ["SPECIAL_KEY_WORDS"]          = {"TriggerAction", "STEP2_ENTER"},
                 ["VALUE_CHANGE_TABLE"]         =
                 {
-                    {"Time",    "2"},
+                    {"Time",    "299"},
                 }
             },
             {
                 ["SPECIAL_KEY_WORDS"]       = {"TriggerAction", "STEP2"},
                 ["VALUE_CHANGE_TABLE"]         =
                 {
-                    {"Time",    "3"},
+                    {"Time",    "300"},
                 }
             },
             {
