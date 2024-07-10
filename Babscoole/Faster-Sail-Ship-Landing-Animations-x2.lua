@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Faster Sail Ship Landing Animations.pak",
+["MOD_FILENAME"]  = "Faster-Sail-Ship-Landing-Animations-x2.pak",
 ["MOD_AUTHOR"]    = "Strange7",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.72",
