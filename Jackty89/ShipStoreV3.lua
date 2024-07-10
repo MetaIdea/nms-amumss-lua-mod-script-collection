@@ -125,7 +125,7 @@ Ship_Types =
     ["Sail"] = "Sail",
     ["Alien"] = "Alien",
     ["Robot"] = "Robot",
-    -- ["Freighter"] = "Freighter"
+    ["Freighter"] = "Freighter"
 }
 
 for Key, _Value in pairs(Ship_Types) do

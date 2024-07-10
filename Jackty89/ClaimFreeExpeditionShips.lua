@@ -30,6 +30,7 @@ function ChangeCostOfExpeditionShips()
     for i = 1, #SHIP_REWARD_IDS do
         Changes_To_Reward_Table[#Changes_To_Reward_Table + 1] =
         {
+            -- ["VALUE_MATCH"] = "{^RS_%s+_SHIP}",
             ["SPECIAL_KEY_WORDS"] = {"Id", SHIP_REWARD_IDS[i]},
             ["VALUE_CHANGE_TABLE"] =
             {

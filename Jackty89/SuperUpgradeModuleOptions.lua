@@ -112,43 +112,43 @@ Language_Data =
         {
             ["NAME"] = "Weapon Class Upgrade Module",
             ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you upgrade your weapon's class.",
-            ["SUBTITLE"] = "This weapon module created by the engineers of H.G. Corp. will let you upgrade your weapon's class."
+            ["SUBTITLE"] = "Weapon Class Upgrade Module"
         },
         ["CL_UPSHIPB"] =
         {
             ["NAME"] = "Ship B-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "hip B-Class Upgrade Module"
         },
         ["CL_UPSHIPA"] =
         {
             ["NAME"] = "Ship A-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "Ship A-Class Upgrade Module"
         },
         ["CL_UPSHIPS"] =
         {
             ["NAME"] = "Ship S-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "Ship S-Class Upgrade Module"
         },
         ["CL_UPINVSHIP"] =
         {
             ["NAME"] = "Ship Inventory Expansion Module",
-            ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots.\nThis will add 10 slots onto your ship cargo capacity.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots."
+            ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots.&#xA;This will add "..Ship_Inv_Slot.." slots onto your ship cargo capacity.",
+            ["SUBTITLE"] = "Ship Inventory Expansion Module"
         },
         ["CL_UPINVSUIT"] =
         {
             ["NAME"] = "Suit Inventory Expansion Module",
-            ["DESCRIPTION"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots.\nThis will add 10 slots onto your suit cargo capacity.",
+            ["DESCRIPTION"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots.&#xA;This will add "..Suit_Inv_Slot.." slots onto your suit cargo capacity.",
             ["SUBTITLE"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots."
         },
         ["CL_UPINVWEAP"] =
         {
             ["NAME"] = "Weapon Inventory Expansion Module",
-            ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots.\nThis will add 10 slots for your current weapon.",
-            ["SUBTITLE"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots."
+            ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots.&#xA;This will add "..Weap_Inv_Slot.." slots for your current weapon.",
+            ["SUBTITLE"] = "Weapon Inventory Expansion Module"
         }
     },
     [Languages["US"]] =
@@ -157,43 +157,88 @@ Language_Data =
         {
             ["NAME"] = "Weapon Class Upgrade Module",
             ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you upgrade your weapon's class.",
-            ["SUBTITLE"] = "This weapon module created by the engineers of H.G. Corp. will let you upgrade your weapon's class."
+            ["SUBTITLE"] = "Weapon Class Upgrade Module"
         },
         ["CL_UPSHIPB"] =
         {
             ["NAME"] = "Ship B-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "hip B-Class Upgrade Module"
         },
         ["CL_UPSHIPA"] =
         {
             ["NAME"] = "Ship A-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "Ship A-Class Upgrade Module"
         },
         ["CL_UPSHIPS"] =
         {
             ["NAME"] = "Ship S-Class Upgrade Module",
             ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you upgrade your ship's class."
+            ["SUBTITLE"] = "Ship S-Class Upgrade Module"
         },
         ["CL_UPINVSHIP"] =
         {
             ["NAME"] = "Ship Inventory Expansion Module",
-            ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots.\nThis will add 10 slots onto your ship cargo capacity.",
-            ["SUBTITLE"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots."
+            ["DESCRIPTION"] = "This ship module created by the engineers of H.G. Corp. will let you expand your ship slots.&#xA;This will add 10 slots onto your ship cargo capacity.",
+            ["SUBTITLE"] = "Ship Inventory Expansion Module"
         },
         ["CL_UPINVSUIT"] =
         {
             ["NAME"] = "Suit Inventory Expansion Module",
-            ["DESCRIPTION"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots.\nThis will add 10 slots onto your suit cargo capacity.",
+            ["DESCRIPTION"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots.&#xA;This will add 10 slots onto your suit cargo capacity.",
             ["SUBTITLE"] = "This suit module created by the engineers of H.G. Corp. will let you expand your suit slots."
         },
         ["CL_UPINVWEAP"] =
         {
             ["NAME"] = "Weapon Inventory Expansion Module",
-            ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots.\nThis will add 10 slots for your current weapon.",
-            ["SUBTITLE"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots."
+            ["DESCRIPTION"] = "This weapon module created by the engineers of H.G. Corp. will let you expand your weapon slots.&#xA;This will add 10 slots for your current weapon.",
+            ["SUBTITLE"] = "Weapon Inventory Expansion Module"
+        }
+    },
+    [Languages["RU"]] =
+    {
+        ["CL_UPWEAP"] =
+        {
+            ["NAME"] = "Модуль улучшения класса мультитула",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам повысить класс вашего мультитула.",
+            ["SUBTITLE"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам повысить класс вашего мультитула."
+        },
+        ["CL_UPSHIPB"] =
+        {
+            ["NAME"] = "Модуль улучшения звездолета B-класса",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам повысить класс вашего звездолета до B-класса.",
+            ["SUBTITLE"] = "Повышает класс вашего звездолета до B-класса."
+        },
+        ["CL_UPSHIPA"] =
+        {
+            ["NAME"] = "Модуль улучшения звездолета A-класса",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам повысить класс вашего звездолета до A-класса.",
+            ["SUBTITLE"] = "Повышает класс вашего звездолета до A-класса."
+        },
+        ["CL_UPSHIPS"] =
+        {
+            ["NAME"] = "Модуль улучшения звездолета S-класса",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам повысить класс вашего звездолета до S-класса.",
+            ["SUBTITLE"] = "Повышает класс вашего звездолета до S-класса."
+        },
+        ["CL_UPINVSHIP"] =
+        {
+            ["NAME"] = "Модуль расширения инвентаря звездолета",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего звездолета. Модуль добавит "..Ship_Inv_Slot.." слотов к вашему звездолету.",
+            ["SUBTITLE"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего звездолета."
+        },
+        ["CL_UPINVSUIT"] =
+        {
+            ["NAME"] = "Модуль расширения инвентаря экзокостюма",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего костюма. Модуль добавит "..Suit_Inv_Slot.." слотов к вашему костюму.",
+            ["SUBTITLE"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего костюма."
+        },
+        ["CL_UPINVWEAP"] =
+        {
+            ["NAME"] = "Модуль расширения инвентаря мультитула",
+            ["DESCRIPTION"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего мультитула. Модуль добавит "..Weap_Inv_Slot.." слотов к вашему мультитулу.",
+            ["SUBTITLE"] = "Этот модуль, созданный инженерами H.G. Corp., позволит вам расширить слоты вашего мультитула."
         }
     }
 }
@@ -441,12 +486,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
+
 local Changes_To_Product_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 local Changes_To_Reward_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local Changes_To_Consumable_Item_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local Changes_To_Default_Reality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 local Changes_To_Language = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
-
 
 function Create_New_Product(Product_Id, Product_Name_Id, Product_Name_LC_Id, Product_Subtitle_Id, Product_Description_Id,
     Product_Price, Product_StackSize, Product_Is_Consumable, Product_Icon)

@@ -40,6 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HoverMaxSpeed",                       "350"},
                                 {"MiniWarpPlanetRadius",                "200"},
                                 {"MiniWarpStationRadius",               "200"},
+                                {"MiniWarpChargeTime",                  "0.5"},
                                 {"MiniWarpSpeed",                       "100000"},
                                 {"MiniWarpCooldownTime",                "0.75"},
                                 {"MiniWarpMinPlanetDistance",           "300"},

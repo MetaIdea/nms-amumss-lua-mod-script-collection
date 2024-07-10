@@ -115,7 +115,8 @@ function Change_Product_Requirement_And_Set_Craftable()
 
         Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Id", ProductId},
+            ["SPECIAL_KEY_WORDS"] = {"ID", ProductId, "CraftAmountMultiplier", "1"},
+            ["PRECEDING_KEY_WORDS"] = {"Requirements"},
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"IsCraftable", "True"}
@@ -123,7 +124,7 @@ function Change_Product_Requirement_And_Set_Craftable()
         }
         Changes_To_Product_Table[#Changes_To_Product_Table + 1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Id", ProductId,"CraftAmountMultiplier","1"},
+            ["SPECIAL_KEY_WORDS"] = {"ID", ProductId, "CraftAmountMultiplier", "1"},
             ["PRECEDING_KEY_WORDS"] = {"Requirements"},
             ["CREATE_HOS"] = "TRUE",
             ["SEC_ADD_NAMED"] = "PRODUCT_REQ_MASTER"

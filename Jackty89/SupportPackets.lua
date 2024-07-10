@@ -46,7 +46,7 @@ Language_Data =
         {
             ["NAME"] = "Health Package",
             ["DESCRIPTION"] = "This health package engineered by the engineers at H.G. Corp. will restore you back to full health.",
-            ["SUBTITLE"] = "Healh Package"
+            ["SUBTITLE"] = "Health Package"
         },
         ["SHIELD_PACK"] =
         {
