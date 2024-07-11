@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "CargoScanDeflectorFix.pak",
-["MOD_AUTHOR"]    = "lMonk and Babscoole",
-["NMS_VERSION"]   = "4.45",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "CargoScanDeflectorFix.pak",
+["MOD_AUTHOR"]      = "lMonk and Babscoole",
+["NMS_VERSION"]     = "4.45",
+["MOD_DESCRIPTION"] = "Improves cargo scan deflector",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

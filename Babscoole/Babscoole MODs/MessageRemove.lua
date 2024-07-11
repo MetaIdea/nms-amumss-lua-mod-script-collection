@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MessageRemove.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.45",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "MessageRemove.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.45",
+["MOD_DESCRIPTION"] = "Removes selected notification messages",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

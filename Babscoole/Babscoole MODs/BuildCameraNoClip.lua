@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "BuildCameraNoClip.pak",
-["MOD_AUTHOR"]    = "Gumsk and Babscoole",
-["NMS_VERSION"]   = "4.48",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "BuildCameraNoClip.pak",
+["MOD_AUTHOR"]      = "Gumsk and Babscoole",
+["NMS_VERSION"]     = "4.48",
+["MOD_DESCRIPTION"] = "Removes build camera clipping",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

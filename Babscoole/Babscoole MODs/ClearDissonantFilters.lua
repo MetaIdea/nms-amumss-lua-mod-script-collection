@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "ClearDissonantFilters.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.52",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "ClearDissonantFilters.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.52",
+["MOD_DESCRIPTION"] = "Removes disonant planet filter",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

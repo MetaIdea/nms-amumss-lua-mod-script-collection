@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "BoneFinder.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "BoneFinder.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.71",
+["MOD_DESCRIPTION"] = "Shows Ancient Bones on scanner better",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

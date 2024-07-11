@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "BioShipNoFlyingAnim.pak",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["NMS_VERSION"]     = "4.23",
+["MOD_DESCRIPTION"] = "Removes living ship flying animations",
 ["MODIFICATIONS"]   =
     {
         {

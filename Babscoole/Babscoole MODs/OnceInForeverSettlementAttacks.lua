@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "OnceInForeverSettlementAttacks.pak",
-    ["MOD_DESCRIPTION"] = "",
+    ["MOD_DESCRIPTION"] = "Increases time between settlement attacks",
     ["MOD_AUTHOR"]      = "lMonk",
     ["LUA_AUTHOR"]      = "Babscoole",
     ["NMS_VERSION"]     = "4.47",

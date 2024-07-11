@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
 ["NMS_VERSION"]             = "4.73",
+["MOD_DESCRIPTION"]         = "Adds portal to new, old, abandoned, and pirate space stations",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

@@ -78,6 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "~BetterColorfulPlanetRings.pak",
 ["MOD_AUTHOR"]      = "Babscoole with Palette by lMonk",
 ["NMS_VERSION"]     = "4.65",
+["MOD_DESCRIPTION"] = "Change palette colors for planetary rings",
 ["MODIFICATIONS"]   =
     {
         {

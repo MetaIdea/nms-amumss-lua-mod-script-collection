@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "NoAbandonedBuildingEggs.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.15",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "NoAbandonedBuildingEggs.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.15",
+["MOD_DESCRIPTION"] = "Removes fiend egg nests from the abandoned building scene",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

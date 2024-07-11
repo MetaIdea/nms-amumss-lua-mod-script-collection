@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "ScaleAll.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.88",
-["MODIFICATIONS"] =
+["MOD_FILENAME"] = "ScaleAll.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "3.88",
+["MOD_DESCRIPTION"] = "Scale all base build objects",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

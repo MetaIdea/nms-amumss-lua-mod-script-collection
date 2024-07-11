@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "~~~~~~~~TornadoTopia.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.63",
+["MOD_DESCRIPTION"]         = "Greatly increases spawn chances, strength, and numbers of tornados",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

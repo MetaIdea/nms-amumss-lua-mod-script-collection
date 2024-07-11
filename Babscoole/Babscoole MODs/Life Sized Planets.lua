@@ -5,6 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]              = "",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",
+["MOD_DESCRIPTION"]         = "Larger planet sizes",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]  = "KeepMapping.pak",
-  ["MOD_AUTHOR"]    = "Babscoole",
-  ["NMS_VERSION"]   = "4.05",
-  ["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "KeepMapping.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.05",
+["MOD_DESCRIPTION"] = "Keeps map seller dialog open, so you can buy multiple maps in the same session",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

@@ -2,10 +2,11 @@ ReplaceCreature = {"SEASNAKE","FLYINGSNAKE","SANDWORM"}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Anti-Ophidiophobia.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.73",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Anti-Ophidiophobia.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.73",
+["MOD_DESCRIPTION"] = "Removes snake like creatures",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "FuelandTechPlantCollisionFix.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "FuelandTechPlantCollisionFix.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.71",
+["MOD_DESCRIPTION"] = "Fixes collision in Oxygen and Deuterium Rich Plants",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

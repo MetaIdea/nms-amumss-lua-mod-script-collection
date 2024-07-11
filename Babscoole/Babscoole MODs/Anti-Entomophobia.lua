@@ -2,10 +2,11 @@ ReplaceCreature = {"BUTTERFLY","BUTTERFLOCK","LARGEBUTTERFLY","FLYINGBEETLE","SP
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Anti-Entomophobia.pak",
-["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.73",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Anti-Entomophobia.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.73",
+["MOD_DESCRIPTION"] = "Removes insect like creatures",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "NoGrass.pak",
-["MOD_AUTHOR"]    = "jasondude7116, Babscoole, Gumsk",
-["NMS_VERSION"]   = "4.48",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "NoGrass.pak",
+["MOD_AUTHOR"]      = "jasondude7116, Babscoole, Gumsk",
+["NMS_VERSION"]     = "4.48",
+["MOD_DESCRIPTION"] = "Removes grass spawning on lush planets",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "BuildMenuRedo.pak",
-["MOD_AUTHOR"]    = "WinderTP and Babscoole",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.82",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "BuildMenuRedo.pak",
+["MOD_AUTHOR"]      = "WinderTP and Babscoole",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "3.82",
+["MOD_DESCRIPTION"] = "Reduces number of vanilla Groups and Subgroups in build menu",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
