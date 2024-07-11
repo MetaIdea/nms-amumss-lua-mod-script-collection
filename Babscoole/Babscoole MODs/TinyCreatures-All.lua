@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-All.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "4.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinScale",    DIVISOR},
-                                {"MaxScale",    DIVISOR},
+                                {"MinScale", DIVISOR},
+                                {"MaxScale", DIVISOR},
                             },
                         },
                     },

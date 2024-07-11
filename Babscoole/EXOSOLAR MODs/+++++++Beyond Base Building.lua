@@ -39,6 +39,7 @@ O2_ATMO_HARVESTERS_ANYWHERE = false             --Vanilla false // Mod default f
 CAN_SCALE_PREFAB_PARTS = false                  --Vanilla false // Mod Default false // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
 CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
 S9_ON_FREIGHTER = true                          --Vanilla false // Mod default true  // true to enable S9 blueprint stations on freighters, ALL_PARTS_ON_FREIGHTER must be true too.
+NPCSTATION_ON_FREIGHTER = false                 --Vanilla false // Mod default false // true to enable NPC stations on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Only enable if main story completed.
 -------- enable/disable features end --------
 ---------------------------------------------
 
@@ -254,6 +255,9 @@ FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE = {"FRE_ROOM_FLEET", "FRE_ROOM_SCAN", "FRE
 -- Geobays buildable on freighters if GEOBAYS_ON_FREIGHTER is true
 GEOBAYS_ON_FREIGHTER_ID_TABLE = {"SUMMON_GARAGE", "GARAGE_B", "GARAGE_S", "GARAGE_M", "GARAGE_L", "GARAGE_MECH"}
 
+-- NPC Stations buildable on freighters if NPCSTATION_ON_FREIGHTER is true
+NPCSTATION_ON_FREIGHTER_ID_TABLE = {"NPCBUILDERTERM", "NPCFARMTERM", "NPCSCIENCETERM", "NPCVEHICLETERM", "NPCWEAPONTERM"}
+
 -- S9 blueprint stations buildable on freighters if S9_ON_FREIGHTER is true
 S9_ON_FREIGHTER_ID_TABLE = {"S9_SUITTREE", "S9_WEAPONTREE", "S9_EXOCRAFTTREE", "S9_SHIPTREE", "S9_BUILDERTREE"}
 
@@ -273,7 +277,7 @@ end
 PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3", "PLANTPOT4"}
 
 -- Re-add Misc on freighters after Endurance update
-MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE", "BUILDLANDINGPAD", "S_LANDINGZONE"}
+MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BASECAPSULE"}
 
 -- Plant in any biome
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
@@ -729,6 +733,40 @@ if ALL_PARTS_ON_FREIGHTER then
             Change_Table_Array[#Change_Table_Array + 1] =
             {
                 ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                ["ADD_OPTION"] = "ADDafterLINE",
+                ["ADD"] =
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+            }
+        end
+    end
+
+    -- NPC stations on freighters if NPCSTATION_ON_FREIGHTER is true
+    if NPCSTATION_ON_FREIGHTER then
+
+        for i = 1,#NPCSTATION_ON_FREIGHTER_ID_TABLE do
+
+            Change_Table_Array[#Change_Table_Array + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", NPCSTATION_ON_FREIGHTER_ID_TABLE[i]},
+                ["VALUE_CHANGE_TABLE"] =
+                {
+                    {"BuildableOnFreighter", "True"},
+                },
+            }
+        end
+
+        for i = 1,#NPCSTATION_ON_FREIGHTER_ID_TABLE do
+
+            Change_Table_Array[#Change_Table_Array + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", NPCSTATION_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =

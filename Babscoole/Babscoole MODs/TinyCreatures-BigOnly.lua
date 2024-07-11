@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-BigOnly.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "4.73",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -17,7 +17,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-
                     },
                 },
                 {
@@ -48,8 +47,8 @@ for i=1,#ShrinkCreature do
             ["MATH_OPERATION"] = "/",
             ["VALUE_CHANGE_TABLE"] =
             {
-                {"MinScale",    DIVISOR},
-                {"MaxScale",    DIVISOR},
+                {"MinScale", DIVISOR},
+                {"MaxScale", DIVISOR},
             }
         }
 end
