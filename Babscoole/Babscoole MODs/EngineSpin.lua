@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkRotationComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Speed", "0.5"} -- Org 0.1
+                                {"Speed", "@*5"} -- Org 0.1
                             }
                         },
                     }
