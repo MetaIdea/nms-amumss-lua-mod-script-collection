@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "EngineSpin.pak",
+["MOD_FILENAME"]    = "EngineSpinDoctor.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.72",
+["NMS_VERSION"]     = "4.73",
 ["MOD_DESCRIPTION"] = "Change the spin rate for certain engines used in fighters and sailships",
 ["MODIFICATIONS"]   =
     {
