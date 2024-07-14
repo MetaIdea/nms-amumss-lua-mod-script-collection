@@ -170,7 +170,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"MaterialFlag", "_F22_TRANSPARENT_SCALAR"},
                                 {"MaterialFlag", "_F48_WARPED_DIFFUSE_LIGHTING"},
                                 {"MaterialFlag", "_F49_DISABLE_AMBIENT"},
                                 {"MaterialFlag", "_F50_DISABLE_POSTPROCESS"},
@@ -180,15 +179,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"] = "SECTION"
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
-                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F09_TRANSPARENT"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
     </Property>
 ]]
                         },
