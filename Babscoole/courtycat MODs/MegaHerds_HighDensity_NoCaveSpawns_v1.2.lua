@@ -89,9 +89,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALLINSIDESECTION",
+                            ["SUB_LEVEL"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "VeryDense"},
@@ -162,9 +161,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALLINSIDESECTION",
+                            ["SUB_LEVEL"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "VeryDense"},
@@ -225,9 +223,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Density", "GcCreatureGenerationDensity.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALLINSIDESECTION",
+                            ["SUB_LEVEL"] = 4,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Density", "VeryDense"},

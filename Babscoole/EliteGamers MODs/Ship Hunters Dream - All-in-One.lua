@@ -109,7 +109,7 @@ if SHIPCHOICE == "Alien" then
   Change_Table_Array[#Change_Table_Array + 1] =
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-      ["LINE_OFFSET"] = "+1",
+      ["REPLACE_TYPE"] = "ONCEINSIDE",
       ["VALUE_CHANGE_TABLE"] =
       {
           {"IGNORE", "10"},

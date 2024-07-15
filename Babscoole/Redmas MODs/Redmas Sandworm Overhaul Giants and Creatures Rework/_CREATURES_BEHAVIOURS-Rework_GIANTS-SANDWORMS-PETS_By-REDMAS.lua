@@ -302,8 +302,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "TongueJNT3"},
-                            ["LINE_OFFSET"] = "-2",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "TongueJNT2"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
                                     <Property value="TkSceneNodeData.xml">
