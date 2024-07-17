@@ -2,13 +2,13 @@
 -- "MaxIsSuperRare" > "MaxIsRare" > "MaxIsUncommon" > "NoWeighting" > "MinIsUncommon" > "MinIsRare" > "MinIsSuperRare"
 -- How will each rarity be replaced
 -- NO_WEIGHT may be best to be kept intact as most (I believe all) of the values have no range
-MAX_SUPER_RARE = "MinIsSuperRare"
-MAX_RARE = "MinIsSuperRare"
+MAX_SUPER_RARE = "MinIsUncommon"
+MAX_RARE = "MinIsRare"
 MAX_UNCOMMON = "MinIsSuperRare"
 NO_WEIGHT = "NoWeighting"
 MIN_UNCOMMON = "MaxIsSuperRare"
-MIN_RARE = "MaxIsSuperRare"
-MIN_SUPER_RARE = "MaxIsSuperRare"
+MIN_RARE = "MaxIsRare"
+MIN_SUPER_RARE = "MaxIsUncommon"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
