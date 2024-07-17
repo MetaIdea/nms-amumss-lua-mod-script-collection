@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "___StarCitizenPulse.pak",
+["MOD_FILENAME"]  = "___SupercruisePulseDrive.pak",
 ["MOD_AUTHOR"]    = "GuitarGuy7",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.72",
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MiniWarpChargeTime", "3"},
+                                {"MiniWarpChargeTime", "4"},
                             }
                         },
                     }

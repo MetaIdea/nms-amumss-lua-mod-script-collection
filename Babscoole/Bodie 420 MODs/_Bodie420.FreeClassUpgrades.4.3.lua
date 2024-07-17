@@ -17,108 +17,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_STATIONKEY"},
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "C_STATIONKEY"},
+                                {"Id", "C_SUIT_SLOT"},
+                                {"Id", "C_PET_CUSTOMISE"},
+                                {"Id", "C_PET_SLOT"},
+                                {"Id", "C_PET_ADOPT"},
+                                {"Id", "C_PET_EGG_READY"},
+                                {"Id", "C_PET_MILK"},
+                                {"Id", "C_PET_RIDE"},
+                                {"Id", "C_PET_TREAT"},
+                                {"Id", "C_LIB_VAULT_FC"},
+                                {"Id", "C_LIB_VAULT_FU"},
+                                {"Id", "C_LIB_VAULT_FR"},
+                                {"Id", "C_LIB_VAULT_TC"},
+                                {"Id", "C_WEAP_UPGRADE"},
+                                {"Id", "C_REPAIRPART"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_SUIT_SLOT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_CUSTOMISE"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_SLOT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_ADOPT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_EGG_READY"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_MILK"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_RIDE"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_PET_TREAT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_LIB_VAULT_FC"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_LIB_VAULT_FU"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_LIB_VAULT_FR"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_LIB_VAULT_TC"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_WEAP_UPGRADE"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_REPAIRPART"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"DontCharge", "True"}, -- Original "False"
+                                {"DontCharge", "True"},
                             }
                         },
                         {
