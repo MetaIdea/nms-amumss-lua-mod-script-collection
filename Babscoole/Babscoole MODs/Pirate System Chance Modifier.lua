@@ -3,6 +3,7 @@ YELLOW = 0.25 --original 0.25
 GREEN  = 0.15 --original 0.15
 BLUE   = 0.15 --original 0.15
 RED    = 0.5  --original 0.5
+PURPLE = 0    --original 0
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -28,6 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Green",  GREEN},
                                 {"Blue",   BLUE},
                                 {"Red",    RED},
+                                {"Purple", PURPLE},
                             }
                         },
                     }
