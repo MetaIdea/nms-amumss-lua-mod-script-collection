@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MechUpgrade.pak",
 ["MOD_DESCRIPTION"]			= "MechUpgrade",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.62",
+["NMS_VERSION"]				= "5.0",
 ["MODIFICATIONS"] 			= 
 	{
 		{

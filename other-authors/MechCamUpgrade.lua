@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MechCamUpgrade.pak",
 ["MOD_DESCRIPTION"]			= "MechCamUpgrade",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "5.0",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechCameraArmShootOffsetY",           "2"}
+								{"MechCameraArmShootOffsetY",           "3"}
 								
 							},
 							
@@ -46,9 +46,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"OffsetY",                             "2"},
-								{"OffsetYAlt",                          "2"},
-								{"OffsetYSlopeExtra",                   "1.0"}
+								{"OffsetY",                             "2.5"},
+								{"OffsetX",                             "2.5"},
+								{"OffsetYAlt",                          "2.5"},
+								{"OffsetYSlopeExtra",                   "1.5"},
+								{"OffsetZFlat",                         "1.5"}
 							},
 							
 							

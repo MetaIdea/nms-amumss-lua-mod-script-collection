@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MultipleFreighters.pak",
 ["MOD_DESCRIPTION"]			= "MultipleFreighters",
 ["MOD_AUTHOR"]				= "Gobi42",
-["NMS_VERSION"]				= "4.23",
+["NMS_VERSION"]				= "5.0",
 ["MODIFICATIONS"] 			= 
 	{
 		{

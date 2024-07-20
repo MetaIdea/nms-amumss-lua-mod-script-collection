@@ -1,5 +1,5 @@
 ModName = "noatmonodust"
-GameVersion = "3_81"
+GameVersion = "5_00"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "NMSString0x80.xml",
+							["PRECEDING_KEY_WORDS"] = "VariableSizeString.xml",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "NMSString0x80.xml",
+							["PRECEDING_KEY_WORDS"] = "VariableSizeString.xml",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
