@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "470"
+GameVersion = "5001"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -56,18 +56,18 @@ Upgrade_Text = ""
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-   MOD_FILENAME	    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-   MOD_DESCRIPTION	= BaseDescription,
-   MOD_AUTHOR		= Author,
-   NMS_VERSION		= GameVersion,
-   MODIFICATIONS	=
+   ["MOD_FILENAME"]	    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+   ["MOD_DESCRIPTION"]	= BaseDescription,
+   ["MOD_AUTHOR"]		= Author,
+   ["NMS_VERSION"]		= GameVersion,
+   ["MODIFICATIONS"]	=
    {
       {
-         MBIN_CHANGE_TABLE =
+         ["MBIN_CHANGE_TABLE"] =
          {
             {
-               MBIN_FILE_SOURCE = FileSource,
-               EXML_CHANGE_TABLE =
+               ["MBIN_FILE_SOURCE"] = FileSource,
+               ["EXML_CHANGE_TABLE"] =
                {
 
 
@@ -320,7 +320,7 @@ for i = 1,#Element_Name_Array do
    for j = 1,#Element_Bonus_Array[1][4] do
       temp_table =
       {
-         SPECIAL_KEY_WORDS = {"ID", "UP_"..Element_Name_Array[i][1]..j},
+         ["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Element_Name_Array[i][1]..j},
          ["REMOVE"] = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -331,7 +331,7 @@ for i = 1,#Water_Name_Array do
    for j = 1,#Water_Bonus_Array[1][4] do
       temp_table =
       {
-         SPECIAL_KEY_WORDS = {"ID", "UP_"..Water_Name_Array[i][1]..j},
+         ["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Water_Name_Array[i][1]..j},
          ["REMOVE"] = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -342,7 +342,7 @@ for i = 1,#Mining_Name_Array do
    for j = 1,#Mining_Bonus_Array[1][4] do
       temp_table =
       {
-         SPECIAL_KEY_WORDS = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
+         ["SPECIAL_KEY_WORDS"] = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
          ["REMOVE"] = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
@@ -352,7 +352,7 @@ end
 
 
 temp_table = {
-   SPECIAL_KEY_WORDS = {"ID","UP_SHLD4"},
+   ["SPECIAL_KEY_WORDS"] = {"ID","UP_SHLD4"},
    ["ADD"] = Upgrade_Text,
-   REPLACE_TYPE = "ADDAFTERSECTION"}
+   ["REPLACE_TYPE"] = "ADDAFTERSECTION"}
    Change_Table_Array[#Change_Table_Array + 1] = temp_table

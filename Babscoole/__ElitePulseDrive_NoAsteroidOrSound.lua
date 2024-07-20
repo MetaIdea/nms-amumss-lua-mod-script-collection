@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "__ElitePulseDrive_NoAsteroidOrSound.pak",
 ["MOD_AUTHOR"]    = "GuitarGuy7",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.72",
+["NMS_VERSION"]   = "5.00",
 ["MODIFICATIONS"] =
     {
         {

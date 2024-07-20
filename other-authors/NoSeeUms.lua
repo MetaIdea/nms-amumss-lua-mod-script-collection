@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"","",},
+							--["SPECIAL_KEY_WORDS"] 	= {"","",},
 							["PRECEDING_KEY_WORDS"] 	= "",
 							["VALUE_CHANGE_TABLE"] 		= 
 							{	

@@ -1,6 +1,6 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Full"
-GameVersion = "470"
+GameVersion = "5001"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -9,22 +9,22 @@ GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	MOD_DESCRIPTION	= "Various modifications to gameplay globals",
-	MOD_AUTHOR		= "Gumsk",
-	LUA_AUTHOR		= "Gumsk",
-	NMS_VERSION		= GameVersion,
-	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	MODIFICATIONS	= {
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= "Various modifications to gameplay globals",
+	["MOD_AUTHOR"]		= "Gumsk",
+	["LUA_AUTHOR"]		= "Gumsk",
+	["NMS_VERSION"]		= GameVersion,
+	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+	["MODIFICATIONS"]	= {
 		{
-			MBIN_CHANGE_TABLE = {
+			["MBIN_CHANGE_TABLE"] = {
 			--Scanning
 				{
-					MBIN_FILE_SOURCE = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
-					EXML_CHANGE_TABLE = {
+					["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
+					["EXML_CHANGE_TABLE"] = {
 						{
-							PRECEDING_KEY_WORDS = "ScannerRechargeMultipliers",
-							VALUE_CHANGE_TABLE = {
+							["PRECEDING_KEY_WORDS"] = "ScannerRechargeMultipliers",
+							["VALUE_CHANGE_TABLE"] = {
 								{"VeryFast",10},								--10; 
 								{"Fast",10},									--5; 
 								{"Normal",10},									--1.66; 
@@ -34,40 +34,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					}
 				},
 				{
-					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN",
-					EXML_CHANGE_TABLE = {
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = {
 						{
-							SPECIAL_KEY_WORDS = {
+							["SPECIAL_KEY_WORDS"] = {
 								"ID", "TOOL",
 							},
-							VALUE_CHANGE_TABLE = {
+							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--200; Multitool scan range, in u, easy mode
 							},
 						},
 						{
-							SPECIAL_KEY_WORDS = {
+							["SPECIAL_KEY_WORDS"] = {
 								"ID", "TOOL_HARD",
 							},
-							VALUE_CHANGE_TABLE = {
+							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",500},									--150; Multitool scan range, in u, hard mode
 							},
 						},
 						{
-							SPECIAL_KEY_WORDS = {
+							["SPECIAL_KEY_WORDS"] = {
 								"ID", "SHIP",
 							},
-							VALUE_CHANGE_TABLE = {
+							["VALUE_CHANGE_TABLE"] = {
 								{"PulseRange",30000},								--10000; Ship scan range, in u
 							},
 						},
 					},
 				},
 				{
-					MBIN_FILE_SOURCE = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					EXML_CHANGE_TABLE = {
+					["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = {
 						{
-							PRECEDING_KEY_WORDS = "BinocularSelectedEffect",
-							VALUE_CHANGE_TABLE = {
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
+							["VALUE_CHANGE_TABLE"] = {
 								{"BasecolourIntensity",2.0},						--0.4; 
 								{"ScanlinesSeparation",5},							--5; 
 								{"FresnelIntensity",-10},							--"-10"; 
@@ -77,8 +77,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							PRECEDING_KEY_WORDS = "BinocularSelectedColour",
-							VALUE_CHANGE_TABLE = {
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
+							["VALUE_CHANGE_TABLE"] = {
 								{"R",0},											--0.588; 
 								{"G",1},											--1; 
 								{"B",0},											--0.639; 
@@ -86,8 +86,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},	
 						{
-							PRECEDING_KEY_WORDS = "BinocularSelectedUnknownColour",
-							VALUE_CHANGE_TABLE = {
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
+							["VALUE_CHANGE_TABLE"] = {
 								{"R",1},											--0.926; 
 								{"G",0},											--0.539; 
 								{"B",0},											--1; 
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							VALUE_CHANGE_TABLE = {
+							["VALUE_CHANGE_TABLE"] = {
 								{"TerrainResourceScanTime",30},						--30; 
 								{"TerrainResourceScanRange",2000},					--1200; 
 								{"BinocsDisplayUnknownCreatures","False"},			--False; 
@@ -192,8 +192,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							PRECEDING_KEY_WORDS = "TorchColour",
-							VALUE_CHANGE_TABLE = {
+							["PRECEDING_KEY_WORDS"] = "TorchColour",
+							["VALUE_CHANGE_TABLE"] = {
 								{"R", 0.95},										--0.95; torch red saturation percent
 								{"G", 0.993},										--0.993; torch green saturation percent
 								{"B", 0.994},										--0.994; torch blue saturation percent

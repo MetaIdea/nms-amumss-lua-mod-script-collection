@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Sandworms"
 ModNameSub = "No"
 BaseDescription = "No Sandworms"
-GameVersion = "470"
+GameVersion = "5001"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
@@ -12,18 +12,18 @@ SandWormSpawnChanceMin = 0		--0.01
 SandWormSpawnChanceMax = 0		--0.2
 
 NMS_MOD_DEFINITION_CONTAINER = {
-MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-MOD_DESCRIPTION	= BaseDescription,
-MOD_AUTHOR		= Author,
-NMS_VERSION		= GameVersion,
-MODIFICATIONS	= {
-{MBIN_CHANGE_TABLE = {
+["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_DESCRIPTION"]	= BaseDescription,
+["MOD_AUTHOR"]		= Author,
+["NMS_VERSION"]		= GameVersion,
+["MODIFICATIONS"]	= {
+{["MBIN_CHANGE_TABLE"] = {
 
 {
-MBIN_FILE_SOURCE = FileSource1,
-EXML_CHANGE_TABLE = {
-	{PRECEDING_KEY_WORDS = {"SandwormPresenceChance"},
-		VALUE_CHANGE_TABLE = {
+["MBIN_FILE_SOURCE"] = FileSource1,
+["EXML_CHANGE_TABLE"] = {
+	{["PRECEDING_KEY_WORDS"] = {"SandwormPresenceChance"},
+		["VALUE_CHANGE_TABLE"] = {
 			{"Lush", SandwormPresenceChance},			--0.1
 			{"Toxic", SandwormPresenceChance},			--0.25
 			{"Scorched", SandwormPresenceChance},		--0.25
@@ -44,10 +44,10 @@ EXML_CHANGE_TABLE = {
 }},
 
 {
-MBIN_FILE_SOURCE = FileSource2,
-EXML_CHANGE_TABLE = {
-	{PRECEDING_KEY_WORDS = {""},
-		VALUE_CHANGE_TABLE = {
+["MBIN_FILE_SOURCE"] = FileSource2,
+["EXML_CHANGE_TABLE"] = {
+	{["PRECEDING_KEY_WORDS"] = {""},
+		["VALUE_CHANGE_TABLE"] = {
 			{"SandWormSpawnChanceMin", SandWormSpawnChanceMin},
 			{"SandWormSpawnChanceMax", SandWormSpawnChanceMax},
 			{"SandWormSpawnChanceInfested", SandWormSpawnChanceMin},

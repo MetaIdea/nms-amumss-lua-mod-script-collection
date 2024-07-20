@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Techs"
-GameVersion = "4.70"
+GameVersion = "5.0"
 --ModVersion = "v1.4"
 Description = "Add the Expedition exclusive Ship Techs, Exosuit Techs, Freighter Tech and unavailable Multitool Tech to the Anomaly list to be unlocked."
 

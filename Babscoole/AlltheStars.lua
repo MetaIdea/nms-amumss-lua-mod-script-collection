@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "starproject.pak",
 ["MOD_AUTHOR"]    = "VonBraunZ, CodenameAwesome, and darkmessenger84",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "5.00",
 ["MODIFICATIONS"] = 
     {
         {

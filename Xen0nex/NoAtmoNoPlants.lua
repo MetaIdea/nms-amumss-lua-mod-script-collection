@@ -1,5 +1,5 @@
 ModName = "NoAtmoNoPlants"
-GameVersion = "4_65"
+GameVersion = "5_00"
 
 MinHeight =				250					-- -1			Height (above sea level) it is allowed to spawn?
 MaxHeight =				252					-- 128
@@ -47,12 +47,10 @@ ChangesToObjects[#ChangesToObjects+1] =
 			["EXML_CHANGE_TABLE"] 	= 
 			{
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/GRASSVARIATION01.SCENE.MBIN"},
 					["SECTION_UP"] = 1,
 					["REPLACE_TYPE"] = "ALL",
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -72,12 +70,10 @@ for i = 1, #FrozenFilepaths do
 			["EXML_CHANGE_TABLE"] 	= 
 			{
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/FROZEN/MEDIUMPROPS/MEDIUMPLANT.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -87,12 +83,10 @@ for i = 1, #FrozenFilepaths do
 					}
 				},
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -102,12 +96,10 @@ for i = 1, #FrozenFilepaths do
 					}
 				},
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -117,12 +109,10 @@ for i = 1, #FrozenFilepaths do
 					}
 				},
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -132,12 +122,10 @@ for i = 1, #FrozenFilepaths do
 					}
 				},
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -158,12 +146,10 @@ for i = 1, #FrozenWeirdFilepaths do
 			["EXML_CHANGE_TABLE"] 	= 
 			{
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},
@@ -173,12 +159,10 @@ for i = 1, #FrozenWeirdFilepaths do
 					}
 				},
 				{
-					--["PRECEDING_FIRST"] = "TRUE",
-					--["PRECEDING_KEY_WORDS"] = {"BaseBuildingTriggerActions"},
 					["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
 					["REPLACE_TYPE"] = "ALL",
 					["SECTION_UP"] = 1,
-					--["REMOVE"] = "SECTION",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] 	=
 					{
 						{"MinHeight", MinHeight},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDebug"
 ModNameSub = "Main"
 BaseDescription = "Changes to GCDEBUGOPTIONS.GLOBAL.MBIN"
-GameVersion = "470"
+GameVersion = "5001"
 ModVersion = "a"
 FileSource = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 
@@ -59,18 +59,18 @@ AlwaysAllowVehicleOperations = "True"		--False
 AlwaysAllowFreighterInventoryAccess = "True"--False
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	MOD_DESCRIPTION	= BaseDescription,
-	MOD_AUTHOR		= Author,
-	NMS_VERSION		= GameVersion,
-	MODIFICATIONS	= {
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
 		{
-			MBIN_CHANGE_TABLE = {
+			["MBIN_CHANGE_TABLE"] = {
 				{
-					MBIN_FILE_SOURCE = FileSource,
-					EXML_CHANGE_TABLE 	= {
+					["MBIN_FILE_SOURCE"] = FileSource,
+					["EXML_CHANGE_TABLE"] 	= {
 						{
-							VALUE_CHANGE_TABLE = {
+							["VALUE_CHANGE_TABLE"] = {
 								{"GodMode", GodMode},
 								{"TakeNoDamage", TakeNoDamage},
 								{"DebugGalaxyMapInQuickMenu", DebugGalaxyMapInQuickMenu},
