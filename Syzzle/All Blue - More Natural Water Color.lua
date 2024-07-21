@@ -37,6 +37,66 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SECTION_UP"] = 1,
               ["REMOVE"] = "SECTION",
             },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.716",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.647",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.225",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.326",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.466",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.215",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.539",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.664",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.579",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.773",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.154",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"WaterFogColourNear","Colour.xml","R","0.258",},
+              ["SECTION_UP"] = 1,
+              ["REMOVE"] = "SECTION",
+            },
           }
         },	
       }
@@ -49,6 +109,7 @@ if NATURAL_COLOR_SHADE == true then
   local fog_near_true =
   {
     ["SPECIAL_KEY_WORDS"]  = {"WaterFogColourNear","Colour.xml"},
+    ["REPLACE_TYPE"]  = "ALL",
     ["VALUE_CHANGE_TABLE"]  =
     {
       {"R",0.237},
@@ -61,6 +122,7 @@ if NATURAL_COLOR_SHADE == true then
   local fog_far_true =
   {
     ["SPECIAL_KEY_WORDS"]  = {"WaterFogColourFar","Colour.xml"},
+    ["REPLACE_TYPE"]  = "ALL",
     ["VALUE_CHANGE_TABLE"]  =
     {
       {"R",0.316},
@@ -73,6 +135,7 @@ if NATURAL_COLOR_SHADE == true then
   local base_true =
   {
     ["SPECIAL_KEY_WORDS"]  = {"WaterColourBase","Colour.xml"},
+    ["REPLACE_TYPE"]  = "ALL",
     ["VALUE_CHANGE_TABLE"]  =
     {
       {"R",0.079},
@@ -85,6 +148,7 @@ if NATURAL_COLOR_SHADE == true then
   local add_true =
   {
     ["SPECIAL_KEY_WORDS"]  = {"WaterColourAdd","Colour.xml"},
+    ["REPLACE_TYPE"]  = "ALL",
     ["VALUE_CHANGE_TABLE"]  =
     {
       {"R",0.359},

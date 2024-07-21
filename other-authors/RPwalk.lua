@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
   ["MOD_FILENAME"]	= "RPwalk.pak",
   ["MOD_DESCRIPTION"]	= "Realistic Walking for Immersion",
   ["MOD_AUTHOR"]	= "earlyPlanet",
-  ["NMS_VERSION"]	= "4.72",
+  ["NMS_VERSION"]	= "5.00.1",
   ["MODIFICATIONS"]	=	
 	{
 		{
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"GroundWalkSpeed",	"2.2",},
-								{"GroundRunSpeed","6",}
+								{"GroundRunSpeed","6.5",}
 							}	
 						},
 					}

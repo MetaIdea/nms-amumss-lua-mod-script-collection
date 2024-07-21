@@ -14,13 +14,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["PRECEDING_KEY_WORDS"] =
                             {
-                                {"Traders",   "NMSString0x80.xml"},
-                                {"Warriors",  "NMSString0x80.xml"},
-                                {"Explorers", "NMSString0x80.xml"},
-                                {"Diplomats", "NMSString0x80.xml"},
-                                {"Exotics",   "NMSString0x80.xml"},
+                                {"NPCModelNames", "Traders"},
+                                {"NPCModelNames", "Warriors"},
+                                {"NPCModelNames", "Explorers"},
+                                {"NPCModelNames", "Diplomats"},
+                                {"NPCModelNames", "Exotics"},
+                                {"NPCModelNames", "Builders"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
