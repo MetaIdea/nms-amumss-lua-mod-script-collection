@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Easy Build 1.6.pak", 
+["MOD_FILENAME"] 			= "Easy Build 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "5.00.1",
 ["MOD_DESCRIPTION"]			= "This mods reduces snapping distance",
 ["MODIFICATIONS"] 			= 
 	{

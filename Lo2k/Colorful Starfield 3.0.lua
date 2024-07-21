@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Colorful Starfield 2.9 - colourblind.pak", 
+["MOD_FILENAME"] 			= "Colorful Starfield 3.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "5.00.1",
 ["MOD_DESCRIPTION"]			= "This mod enhances star colors",
 ["MODIFICATIONS"] 			= 
 	{
@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{"R",	"1"},  
-								{"G",	"0.92"},  
-								{"B",	"0.23"},  
+								{"G",	"0.713"},  
+								{"B",	"0"},  
 								{"A",	"0.35"},  
 							},
 						},	
@@ -30,9 +30,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"R",	"0.17"},  
-								{"G",	"0.95"},  
-								{"B",	"0.184"},  
+								{"R",	"0.145"},  
+								{"G",	"0.737"},  
+								{"B",	"0"},  
 								{"A",	"0.6"},  
 							},
 						},	
@@ -41,9 +41,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"R",	"0.13"},  
-								{"G",	"0.49"},  
-								{"B",	"0.96"},  
+								{"R",	"0.096"},  
+								{"G",	"0.321"},  
+								{"B",	"1"},  
 								{"A",	"0.6"},  
 							},
 						},	
@@ -52,9 +52,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"R",	"0.96"},  
-								{"G",	"0.21"},  
-								{"B",	"0.21"},  
+								{"R",	"1"},  
+								{"G",	"0.17"},  
+								{"B",	"0.17"},  
 								{"A",	"0.6"},  
 							},
 						},							
