@@ -4,7 +4,7 @@ local mod_desc = [[
   items to the derelict freighter encounter mission.
   Adds a slow tumble to floating items to make the scene more dynamic
 ]]-------------------------------------------------------------------------
-local mod_version = '1.01'
+local mod_version = '1.02'
 
 -------------------------------------------------------------------------------
 ---	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
@@ -33,10 +33,10 @@ function ToExml(class)
 			for _,v in ipairs(t) do self[#self+1] = v end
 		end
 		for key, cls in pairs(tlua) do
-			if key ~= 'META' then
+			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
-				if type(cls) == 'table' and cls.META then
-					local att, val = cls['META'][1], cls['META'][2]
+				if type(cls) == 'table' and cls.meta then
+					local att, val = cls['meta'][1], cls['meta'][2]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
 						exml:add({att, '="', val, '">'})
@@ -63,22 +63,22 @@ function ToExml(class)
 	-- check the table level structure and meta placement
 	-- add the needed layer for the recursion and handle multiple tables
 	local klen = len2(class)
-	if klen == 1 and class[1].META then
+	if klen == 1 and class[1].meta then
 		return exml_r(class)
-	elseif class.META and klen > 1 then
+	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
 	-- concatenate unrelated exml sections, instead of nested inside each other
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
-			T[#T+1] = exml_r((tb.META and klen > 1) and {tb} or tb)
+			T[#T+1] = exml_r((tb.meta and klen > 1) and {tb} or tb)
 		end
 		return table.concat(T)
 	end
 end
 
 --	Adds the xml header and data template
---	Uses the contained template META if found (instead of the received variable)
+--	Uses the contained template meta if found (instead of the received variable)
 --	@param data: a lua2exml formatted table
 --	@param template: an nms file template string
 function FileWrapping(data, template)
@@ -89,10 +89,10 @@ function FileWrapping(data, template)
 	-- remove the extra table added by ToLua
 	if data.template then data = data.template end
 	-- table loaded from file
-	if data.META[1] == 'template' then
+	if data.meta[1] == 'template' then
 		-- strip mock template
-		local txt_data = ToExml(data):sub(#data.META[2] + 36, -12)
-		return string.format(wrapper, data.META[2], txt_data)
+		local txt_data = ToExml(data):sub(#data.meta[2] + 36, -12)
+		return string.format(wrapper, data.meta[2], txt_data)
 	else
 		return string.format(wrapper, template, ToExml(data))
 	end
@@ -113,7 +113,7 @@ function ScNode(props)
 	local function scTransform(T)
 		T = T or {}
 		return {
-			META	= {'Transform', 'TkTransformData.xml'},
+			meta	= {'Transform', 'TkTransformData.xml'},
 			TransX	= (T.tx or T[1]) or 0,
 			TransY	= (T.ty or T[2]) or 0,
 			TransZ	= (T.tz or T[3]) or 0,
@@ -127,10 +127,10 @@ function ScNode(props)
 	end
 	--	Builds a scene node attributes array
 	local function scAttributes(T)
-		local atr = {META = {'name', 'Attributes'}}
+		local atr = {meta = {'name', 'Attributes'}}
 		for _,at in ipairs(T) do
 			atr[#atr+1] = {
-				META	= {'value', 'TkSceneNodeAttributeData.xml'},
+				meta	= {'value', 'TkSceneNodeAttributeData.xml'},
 				Name	= at[1],
 				Value	= at[2]
 			}
@@ -154,7 +154,7 @@ function ScNode(props)
 	end
 	-----------------------------------------------------------------
 	local T	= {
-		META	= {'value', 'TkSceneNodeData.xml'},
+		meta	= {'value', 'TkSceneNodeData.xml'},
 		Name 		= props.name,
 		NameHash	= jenkinsHash(props.name),
 		Type		= props.stype
@@ -164,7 +164,7 @@ function ScNode(props)
 		T[#T+1] = scAttributes(props.attr)
 	end
 	if props.child then
-		local tc = { META = {'name', 'Children'} }
+		local tc = { meta = {'name', 'Children'} }
 		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
 		T[#T+1]	= tc
 	end
@@ -300,18 +300,18 @@ end
 
 local function GenerateDescriptor()
 	local T = {
-		META = {'template', 'TkModelDescriptorList'},
-		List = {META = {'name', 'List'}}
+		meta = {'template', 'TkModelDescriptorList'},
+		List = {meta = {'name', 'List'}}
 	}
 	for _,group in ipairs(assets) do
 		local tmp = {
-			META		= {'value', 'TkResourceDescriptorList.xml'},
+			meta		= {'value', 'TkResourceDescriptorList.xml'},
 			TypeId		= group.name:upper(),
-			Descriptors	= {META = {'name', 'Descriptors'}}
+			Descriptors	= {meta = {'name', 'Descriptors'}}
 		}
 		for i,_ in ipairs(group.node or group.desc) do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
-				META	= {'value', 'TkResourceDescriptorData.xml'},
+				meta	= {'value', 'TkResourceDescriptorData.xml'},
 				Id		= (group.name..string.char(64 + i)):upper(),
 				Name	= group.name..string.char(64 + i),
 			}
@@ -324,7 +324,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Derelict Procedural Additions.'..mod_version..'.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.70',
+	NMS_VERSION			= '5.00.1',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -348,20 +348,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			FILE_DESTINATION = 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.EXML',
 			FILE_CONTENT	 = FileWrapping({
-				META = {'template', 'TkAttachmentData'},
+				meta = {'template', 'TkAttachmentData'},
 				Components = {
-					META = {'name', 'Components'},
-					rotate = {
-						META  = {'value', 'TkRotationComponentData.xml'},
-						Speed = 0.001,
-						Axis  = {
-							META = {'Axis', 'Vector3f.xml'},
-							x = 1,
-							y = -1,
-							z = 1
+					meta = {'name', 'Components'},
+					{
+						meta = {'value','LinkableNMSTemplate.xml'},
+						Template = {
+							meta = {'Template','TkRotationComponentData.xml'},
+							Speed = 0.001,
+							Axis  = {
+								meta = {'Axis', 'Vector3f.xml'},
+								x = 1,
+								y = 1,
+								z = 1
+							},
+							AlwaysUpdate = true,
+							SyncGroup    = -1
 						},
-						AlwaysUpdate = true,
-						SyncGroup    = -1
+						Linked	= ''
 					}
 				}
 			})

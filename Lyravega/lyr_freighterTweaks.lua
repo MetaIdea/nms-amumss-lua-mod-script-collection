@@ -136,7 +136,8 @@ local freighterBridgeScanner = function()
 		{
 			mbinPaths = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]],
 			{
-				precedingKeyWords = "GcMaintenanceComponentData.xml",
+                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+                selectLevel = 1,
 				removeSection = true
 			}
 		},
@@ -412,7 +413,8 @@ local systemWideTelepads = function()
 				mbinPaths = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\TELEPORTER_STATION\ENTITIES\TELEPORTERSTATIONINTERACTION.ENTITY.MBIN]],
 				discardMbin = true,
 				{
-					precedingKeyWords = "GcInteractionComponentData.xml",
+                    specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+                    selectLevel = 1,
 					copySection = true
 				}
 			},
@@ -423,7 +425,7 @@ local systemWideTelepads = function()
 					pasteSection = true
 				},
 				{
-					precedingKeyWords = "GcInteractionComponentData.xml",
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
 					fields = {
 						UseInteractCamera = false,
 						BlendToCameraTime = 0.1
@@ -486,7 +488,7 @@ local systemWideTelepads = function()
 					telepads.stationRight.entity,
 				},
 				{
-					precedingKeyWords = {"GcInteractionComponentData.xml"},
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Station",
@@ -499,7 +501,7 @@ local systemWideTelepads = function()
 					telepads.hangarRight.entity,
 				},
 				{
-					precedingKeyWords = {"GcInteractionComponentData.xml"},
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Base",
@@ -838,7 +840,8 @@ local harvestDrone = function()
 		{
 			mbinPaths = [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]],
 			{
-				precedingKeyWords = "TkAnimationComponentData.xml",
+                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="TkAnimationComponentData.xml">]])},
+                selectLevel = 1,
 				removeSection = true
 			},
 			{
@@ -961,6 +964,7 @@ local noHangarPadRotation = function()
 		{
 			mbinPaths = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],
 			{
+                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				precedingKeyWords = "GcOutpostComponentData.xml",
 				fields = {
 					RotateToDock = false

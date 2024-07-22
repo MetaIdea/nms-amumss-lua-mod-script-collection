@@ -4,9 +4,9 @@ local mod_desc = [[
 ]]-------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.2.04.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Construct separate light color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.71',
+	NMS_VERSION			= '5.00.1',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

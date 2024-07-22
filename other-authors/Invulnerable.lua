@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "ZNE_Invulnerable.pak",
     ["MOD_AUTHOR"] = "ZNECrode",
     ["LUA_AUTHOR"] = "ZNECrode",
-    ["NMS_VERSION"] = "4.70",
+    ["NMS_VERSION"] = "5.0",
     ["MOD_DESCRIPTION"] = "Makes personal and ship shield regain immediately.",
     ["MODIFICATIONS"] = {  
         {

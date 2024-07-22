@@ -77,7 +77,7 @@ ECT[#ECT+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '5.00.1',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -99,15 +99,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
+					{'CastShadow', false},
 					{'Shader', 'SHADERS/UBERSHADER.SHADER.BIN'},
 					{'ShaderMillDataHash', 0},
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'MaterialFlag', '_F38_NO_DEFORM'},
-				VALUE_CHANGE_TABLE 	= {
-					{'MaterialFlag', '_F10_NORECEIVESHADOW'}
-				}
+				PRECEDING_KEY_WORDS = 'Flags',				
+				ADD					= '<Property value="TkMaterialFlags.xml"><Property name="MaterialFlag" value="_F10_NORECEIVESHADOW"/></Property>'
 			}
 		}
 	},

@@ -5,7 +5,7 @@ local mod_desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-local mod_version = '1.50'
+local mod_version = '1.51'
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -189,7 +189,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.71',
+	NMS_VERSION			= '5.00.1',
 	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{

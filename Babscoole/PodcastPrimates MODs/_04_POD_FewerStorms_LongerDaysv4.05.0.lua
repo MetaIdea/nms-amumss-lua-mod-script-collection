@@ -107,8 +107,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DayLength",                           "7200"},
-                                {"SafeSkyMaxIndex",                     "342"},
-                                {"FrozenSkyMaxIndex",                   "342"},
                                 {"StormScreenFilterFadeTime",           "2"},
                                 {"MaxTimeBetweenStormsLow",             "27000"},
                                 {"MinTimeBetweenStormsHigh",            "900"},

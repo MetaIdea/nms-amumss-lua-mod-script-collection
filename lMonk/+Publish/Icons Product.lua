@@ -5,7 +5,7 @@ local mod_desc = [[
   * The ADD_FILES section can be safely disabled/ignored if you prefer
    to add the texture files in a different method.
 ]]--------------------------------------------------------------------
-local mod_version = '1.51'
+local mod_version = '1.52'
 
 local prod_icons = {
 	CARBON_SEAL		= 'PRODUCTS/PRODUCT.MSEAL.DDS',
@@ -42,7 +42,7 @@ local prod_icons = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Product Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.72',
+	NMS_VERSION			= '5.00.1',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

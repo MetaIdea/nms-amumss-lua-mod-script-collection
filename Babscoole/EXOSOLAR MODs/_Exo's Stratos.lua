@@ -3926,8 +3926,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SafeSkyMaxIndex",            "9999"},
-                                {"FrozenSkyMaxIndex",          "9999"},
                                 {"SunClampAngle",              "85"},
                                 {"NoAtmosphereFogStrength",    "0.02"},
                                 {"NoAtmosphereFogMax",         "0"},

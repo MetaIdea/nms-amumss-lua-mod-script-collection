@@ -1898,8 +1898,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"SafeSkyMaxIndex",                "342"},
-                                {"FrozenSkyMaxIndex",              "342"},
                                 {"StormScreenFilterFadeTime",      "2"},
                                 {"StormWarningTime",               "20"},
                                 {"MaxCloudCover",                  "0.6"},
