@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ExoSpeedIncrease_MECHchanges_infinite jetpack.pak",
+["MOD_FILENAME"] 			= "ExoSpeedIncrease_MECHchanges infinite jetpack.pak",
 ["MOD_AUTHOR"]				= "Viking",
 ["NMS_VERSION"]				= "5.0",
 ["MODIFICATIONS"] 			= 
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MechJetpackMaxSpeed",		"60"}, 	-- Original "20"
 								{"MechJetpackMaxUpSpeed",	"60"}, 	-- Original "20"
-								{"MechJetpackDrainRate",	".4"}, 	-- Original ".5"
+								{"MechJetpackDrainRate",	"0"}, 	-- Original ".5"
 								{"MechJetpackFillRate",		"0.5"}, 	-- Original ".5"
 								{"MechJetpackTurnSpeed",		"6"}, 	-- Original "3"
 								--{"TopSpeedForward",				"48"}, 	-- Original "16"

@@ -39,61 +39,142 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/FRACTCUBEOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HEXAGONOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HOUDINIPROPSOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGELUSHOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOBIGPROPSOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
@@ -102,61 +183,187 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSMOONOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGERINGOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEROCKOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGESCORCHOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICSPORESOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BEAMSOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGETOXICOBJECTSFULL.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BONESPIREOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEUWPLANTOBJECTS.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSMOONOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICSPORESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HOUDINIPROPSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BEAMSOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BONESPIREOBJECTSDEAD.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HYDROGARDENOBJECTSDEAD.MBIN" />
@@ -168,16 +375,46 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CONTOUROBJECTSDEAD.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRISHELLSOBJECTSDEAD.MBIN" />
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SHARDSOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/FRACTCUBEOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HEXAGONOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOBIGPROPSOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGELUSHOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGERINGOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEROCKOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGESCORCHOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGETOXICOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEUWPLANTOBJECTS.MBIN" />
         </Property>
 ]]
                         },
@@ -250,22 +487,94 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="ChooseUsingLifeLevel" value="False" />
           <Property name="Options">
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGELUSHOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOBIGPROPSOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
@@ -274,61 +583,187 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSMOONOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGERINGOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEROCKOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGESCORCHOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICSPORESOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BEAMSOBJECTSDEAD.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGETOXICOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BONESPIREOBJECTSDEAD.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEUWPLANTOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHULTRAOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENPEACOCKOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYWEIRDOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOSPIKECRYSTALSOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSMOONOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICSPORESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICTENTACLESOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HOUDINIPROPSOBJECTS.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BEAMSOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BONESPIREOBJECTSDEAD.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HYDROGARDENOBJECTSDEAD.MBIN" />
@@ -340,31 +775,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CONTOUROBJECTSDEAD.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRADIATEDOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/NOXIOUSOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/IRRISHELLSOBJECTSDEAD.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SHARDSOBJECTSDEAD.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEALIENOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/FRACTCUBEOBJECTSDEAD.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEGLOWOBJECTS.MBIN" />
-            </Property>
-            <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENCORALOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HEXAGONOBJECTSDEAD.MBIN" />
@@ -373,22 +790,31 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSDEAD.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/SWAMPOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHIVESOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOBIGPROPSOBJECTS.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HOUDINIPROPSOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICBIGPROPSOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHBUBBLEOBJECTS.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGELUSHOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGERINGOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEROCKOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGESCORCHOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGETOXICOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEUWPLANTOBJECTS.MBIN" />
             </Property>
           </Property>
         </Property>
