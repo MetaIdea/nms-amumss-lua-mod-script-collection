@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Fine_LOD.pak",
 ["MOD_AUTHOR"] = "Prof Horatio Hafnaugels",
 ["LUA_AUTHOR"] = "Babscoole",
-["NMS_VERSION"] = "4.65",
+["NMS_VERSION"] = "5.00",
 ["MODIFICATIONS"] =
     {
         {
@@ -40,12 +40,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AnimationScale",        "10"},  -- Original "50"
+                                -- {"AnimationScale",        "10"},  -- Original "50"
                                 {"TerrainFadeTime",       "1"},   -- Original "2"
                                 {"TerrainFadeTimeInShip", "1"},   -- Original "2"
                                 {"CreatureFadeTime",      "0.7"}, -- Original "1.5"
-                                {"FloraFadeTimeMin",      "1"}, -- Original "0.6"
-                                {"FloraFadeTimeMax",      "1.5"}  -- Original "2.25"
+                                {"FloraFadeTimeMin",      "0.3"}, -- Original "0.6"
+                                {"FloraFadeTimeMax",      "1"}  -- Original "2.25"
                             }
                         },
                         {
@@ -95,18 +95,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"WaveHeight", "-0.2"} -- Original "1.5"
-                            }
-                        }
-                    }
-                }
+                -- {
+                    -- ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
+                    -- ["EXML_CHANGE_TABLE"] =
+                    -- {
+                        -- {
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"WaveHeight", "-0.2"} -- Original "1.5"
+                            -- }
+                        -- }
+                    -- }
+                -- }
             }
         }
     }
