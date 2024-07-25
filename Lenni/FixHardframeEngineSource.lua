@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PKW"]		= "GcDestructableComponentData.xml",
+							["SKW"]		= {"Template", "GcDestructableComponentData.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GivesReward", "MECH_LOOT"},

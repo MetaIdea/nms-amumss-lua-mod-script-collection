@@ -19,18 +19,18 @@ PacksList =
 function GetPack(Pack)
     return
 [[
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="]]..Pack..[[" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
+                  <Property value="GcNodeActivationAction.xml">
+                    <Property name="NodeActiveState" value="Toggle" />
+                    <Property name="Name" value="]]..Pack..[[" />
+                    <Property name="SceneToAdd" value="" />
+                    <Property name="IncludePhysics" value="True" />
+                    <Property name="IncludeChildPhysics" value="True" />
+                    <Property name="NotifyNPC" value="False" />
+                    <Property name="UseMasterModel" value="True" />
+                    <Property name="UseLocalNode" value="False" />
+                    <Property name="RestartEmitters" value="False" />
+                    <Property name="AffectModels" value="True" />
+                  </Property>
 ]]
 end
 
@@ -43,10 +43,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "BackpackToggle.pak",
-["MOD_AUTHOR"]      = "Mjjstral",
-["MOD_MAINTENANCE"] = "Babscoole",
+["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "4.71",
+["NMS_VERSION"]     = "5.1.1",
 ["MODIFICATIONS"]   =
     {
         {
@@ -75,39 +74,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
+                            ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="BACKPACK_TOGGLE" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
+        <Property name="HideModel" value="False" />
+        <Property name="StartInactive" value="False" />
+        <Property name="States">
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="BACKPACK_TOGGLE" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
 ]] .. table.concat(PACKS_ADDING_ALL) .. [[
-                <Property value="GcPlayAudioAction.xml">
-                  <Property name="Sound" value="Obj_Shield_Repairer_Off" />
-                  <Property name="UseOcclusion" value="False" />
-                  <Property name="OcclusionRadius" value="2" />
+                  <Property value="GcPlayAudioAction.xml">
+                    <Property name="Sound" value="Obj_Shield_Repairer_Off" />
+                    <Property name="UseOcclusion" value="False" />
+                    <Property name="OcclusionRadius" value="2" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
+        <Property name="Persistent" value="False" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="False" />
+        <Property name="LinkStateToBaseGrid" value="False" />
       </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
+      <Property name="Linked" value="" />
     </Property>
 ]]
                         }

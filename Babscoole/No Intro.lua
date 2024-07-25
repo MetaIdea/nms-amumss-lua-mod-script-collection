@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "No Intro.pak",
 ["MOD_AUTHOR"]    = "Flugelwulff",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.51",
+["NMS_VERSION"]   = "5.00",
 ["MODIFICATIONS"] =
     {
         {

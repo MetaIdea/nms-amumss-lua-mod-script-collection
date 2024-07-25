@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "CuriosityFinder"
-GameVersion = "4.71"
-ModVersion = "1.9"
+GameVersion = "5.1"
+ModVersion = "2.0"
 Description = "easily find curiosities on planet surface"
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ScanRange",				"4000"},
+								{"ScanRange",				"5000"},
 								{"ScanTime",				"999999"},
 								{"CompassRangeMultiplier",	"501.25"},
 								{"ClearTagOnArrival",		"False"},
@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ScanRange",				"4000"},
+								{"ScanRange",				"5000"},
 								{"ScanTime",				"999999"},
 								{"CompassRangeMultiplier",	"501.15"},
 								{"ScannableType",			"Scanner"},				
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ScanRange",				"4000"},
+								{"ScanRange",				"5000"},
 								{"ScanTime",				"999999"},
 								{"CompassRangeMultiplier",	"501.2"},
 								{"ScannableType",			"Scanner"},				

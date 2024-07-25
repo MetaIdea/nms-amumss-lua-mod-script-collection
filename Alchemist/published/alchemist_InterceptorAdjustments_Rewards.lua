@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Rewards"
 BaseDescription = [[Balance adjustments for rewards added by the Interceptor update.]]
-GameVersion = "4-21"
-ModVersion = "1"
+GameVersion = "5-01-1"
+ModVersion = "2"
 
 local Config = {
   RobotSubstanceReduction = {
@@ -263,15 +263,19 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
     MBIN_FILE_SOURCE = Config.SmallSpiderDiscreteLoot.Source.EntityToFile,
     EXML_CHANGE_TABLE = {
       {
-        PRECEDING_KEY_WORDS = {"GcSimpleInteractionComponentData.xml"},
+        SPECIAL_KEY_WORDS = {
+          {"Template","GcSimpleInteractionComponentData.xml"}
+        },
         VALUE_CHANGE_TABLE = {
           {"Id", "SM_SPIDER_LOOT"},
         }
       },
       {
-        PRECEDING_KEY_WORDS = {"GcDestructableComponentData.xml"},
+        SPECIAL_KEY_WORDS = {
+          {"Template","GcDestructableComponentData.xml"}
+        },
         VALUE_CHANGE_TABLE = {
-          {"GivesREward", "SM_SPIDER_LOOT"},
+          {"GivesReward", "SM_SPIDER_LOOT"},
         }
       }
     },
@@ -281,8 +285,10 @@ if Config.SmallSpiderDiscreteLoot.Enabled then
     MBIN_FILE_SOURCE = "MODELS/COMMON/ROBOTS/SPIDER_SMALLQUAD/ENTITIES/SPIDERSMALLQUAD.ENTITY.MBIN",
     EXML_CHANGE_TABLE = {
       {
+        SPECIAL_KEY_WORDS = {
+          {"Template","GcDestructableComponentData.xml"}
+        },
         PRECEDING_KEY_WORDS = {
-          "GcDestructableComponentData.xml",
           "DestroyedModel"
         },
         VALUE_CHANGE_TABLE = {

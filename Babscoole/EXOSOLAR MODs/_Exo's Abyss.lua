@@ -1009,10 +1009,8 @@ DataTable =
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_Exo's Abyss.pak",
-["MOD_AUTHOR"]              = "Exosolar",
-["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
-["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["MOD_AUTHOR"]              = "Exosolar & Babscoole",
+["NMS_VERSION"]             = "5.1.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -1101,6 +1099,7 @@ function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5)
     return
 [[
     <Property value="GcPlanetWaterColourData.xml">
+      <Property name="SelectionWeighting" value="1" />
       <Property name="WaterFogColourNear" value="Colour.xml">
         <Property name="R" value="]].. R1 ..[[" />
         <Property name="G" value="]].. G1 ..[[" />

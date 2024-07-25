@@ -1,9 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShipBase.pak",
-["MOD_AUTHOR"]              = "Mjjstral",
-["MOD_MAINTENANCE"]         = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
+["NMS_VERSION"]             = "5.1.1",
 ["DESCRIPTION"]             = "This is just in case you already own the ship and don't need the menu interaction to get the ship anymore",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -65,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
             </Property>
           </Property>

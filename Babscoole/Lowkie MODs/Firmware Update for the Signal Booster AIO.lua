@@ -145,9 +145,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
-  ["MOD_AUTHOR"]      = "Lowkie",
-  ["MOD_MAINTENANCE"] = "Babscoole",
-  ["NMS_VERSION"]     = "4.71",
+  ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
+  ["NMS_VERSION"]     = "5.1.1",
   ["MODIFICATIONS"]   =
     {
         {
@@ -623,16 +622,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceReward",
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SIGNALSCANNER\ENTITIES\SIGNALSCANNER.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Mission", "S13_DUMMY"},
-                            ["REMOVE"] = "SECTION"
                         },
                     },
                 },

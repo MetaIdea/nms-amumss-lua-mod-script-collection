@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Keep Talking Chef.pak",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes NPC Cronus dialogue stay open when trading food for nanites",
-["NMS_VERSION"]     = "4.71",
+["NMS_VERSION"]     = "5.1.1",
 ["MODIFICATIONS"]   =
     {
         {

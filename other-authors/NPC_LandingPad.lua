@@ -158,12 +158,8 @@ PRODUCT_ADDING =
 	  <Property name="ID" value="]].. ID_NAME ..[[" />
       <Property name="Name" value="]].. NAME ..[[" />
       <Property name="NameLower" value="]].. NAMELOWER ..[[" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="BLD_LANDINGPAD_SUBTITLE" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. DESC ..[[" />
-      </Property>
+      <Property name="Subtitle" value="BLD_LANDINGPAD_SUBTITLE" />
+      <Property name="Description" value="]].. DESC ..[[" />
       <Property name="Hint" value="" />
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
@@ -340,57 +336,23 @@ function GetLanguageSection(ID, String)
 LOC_ENTRY = [[
     <Property value="TkLocalisationEntry.xml">
       <Property name="Id" value="]].. ID ..[[" />
-      <Property name="English" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="French" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Italian" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="German" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Spanish" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Russian" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Polish" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Dutch" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Portuguese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="BrazilianPortuguese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="SimplifiedChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="TraditionalChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="TencentChinese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Korean" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="Japanese" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
-      <Property name="USEnglish" value="VariableSizeString.xml">
-        <Property name="Value" value="]].. String ..[[" />
-      </Property>
+      <Property name="English" value="]].. String ..[[" />
+      <Property name="French" value="]].. String ..[[" />
+      <Property name="Italian" value="]].. String ..[[" />
+      <Property name="German" value="]].. String ..[[" />
+      <Property name="Spanish" value="]].. String ..[[" />
+      <Property name="Russian" value="]].. String ..[[" />
+      <Property name="Polish" value="]].. String ..[[" />
+      <Property name="Dutch" value="]].. String ..[[" />
+      <Property name="Portuguese" value="]].. String ..[[" />
+      <Property name="LatinAmericanSpanish" value="]].. String ..[[" />
+      <Property name="BrazilianPortuguese" value="]].. String ..[[" />
+      <Property name="SimplifiedChinese" value="]].. String ..[[" />
+      <Property name="TraditionalChinese" value="]].. String ..[[" />
+      <Property name="TencentChinese" value="]].. String ..[[" />
+      <Property name="Korean" value="]].. String ..[[" />
+      <Property name="Japanese" value="]].. String ..[[" />
+      <Property name="USEnglish" value="]].. String ..[[" />
     </Property>
 ]]
 return LOC_ENTRY
@@ -532,7 +494,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"]	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"]	= "METADATA/GAMESTATE/DIFFICULTYCONFIG.MBIN",
 					["EXML_CHANGE_TABLE"]	=
 					{
 						{
@@ -673,9 +635,8 @@ NMS_MOD_DEFINITION_CONTAINER	=
 						},
 						{
 							["SKW"] = {"Id", "BLD_LANDINGPAD_DESCRIPTION"},
-							["REPLACE_TYPE"] = "ALL",
 							["VCT"] = {
-								{"Value", "{:} Hier können keine NPCs landen."},
+								{"German", "{:} Hier können keine NPCs landen."},
 							}
 						},
 						{
@@ -709,7 +670,8 @@ NMS_MOD_DEFINITION_CONTAINER	=
 							["SKW"] = {"Id", "BLD_LANDINGPAD_DESCRIPTION"},
 							["REPLACE_TYPE"] = "ALL",
 							["VCT"] = {
-								{"Value", "{:} No NPCs can land here."},
+								{"USEnglish", "{:} No NPCs can land here."},
+								{"English", "{:} No NPCs can land here."},
 							}
 						},
 						{

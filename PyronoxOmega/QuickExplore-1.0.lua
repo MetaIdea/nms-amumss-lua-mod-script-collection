@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "QuickExplore-beta"
-GameVersion = "4.71"
-ModVersion = "2.0"
+GameVersion = "5.1"
+ModVersion = "2.1"
 Description = "Quick Exploration"
 
 

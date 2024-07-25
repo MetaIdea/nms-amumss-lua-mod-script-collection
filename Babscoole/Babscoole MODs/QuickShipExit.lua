@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "QuickShipExit.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.71",
+["NMS_VERSION"]     = "5.1.1",
 ["MOD_DESCRIPTION"] = "Exit ships instantly in 1st person",
 ["MODIFICATIONS"]   =
     {
@@ -21,7 +21,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\S-CLASS\INTERIORS\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITB_INTERIOR\ENTITIES\COCKPITB.ENTITY.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA_INTERIOR\ENTITIES\COCKPITA.ENTITY.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -31,6 +30,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Anim", "EXIT"},
                                 {"Anim", "EJECT"},
                             },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Speed", "5"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA_INTERIOR\ENTITIES\COCKPITA.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim", "EXIT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "5"},

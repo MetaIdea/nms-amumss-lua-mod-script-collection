@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "RelicGateWarp.pak",
-["NMS_VERSION"]     = "4.71",
+["NMS_VERSION"]     = "5.1.1",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
 ["MODIFICATIONS"]   =
@@ -26,7 +26,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcTriggerActionComponentData.xml"},
+                            ["SECTION_UP"] = 1,
                             ["SEC_SAVE_TO"] = "ADD_TRIGGER",
                         },
                         {
@@ -74,7 +75,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
+                            ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "ADD_TRIGGER",
                         }

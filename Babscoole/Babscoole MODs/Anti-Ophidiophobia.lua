@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Anti-Ophidiophobia.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.73",
+["NMS_VERSION"]     = "5.1.1",
 ["MOD_DESCRIPTION"] = "Removes snake like creatures",
 ["MODIFICATIONS"]   =
     {

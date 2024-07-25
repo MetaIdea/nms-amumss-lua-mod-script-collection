@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Production_harvest_All"
-GameVersion = "4.62"
-ModVersion = "1.9"
+GameVersion = "5.1"
+ModVersion = "2.1"
 Description = "Freighter Production Enhancement"
 
 
@@ -32,14 +32,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] =
 							{		
-								{"Radius","1e+7"},	
+								{"Radius","10000000"},	
 															
 							}
 						}
 					}
 				},
-				
-				
 			}
 		},
 	}	

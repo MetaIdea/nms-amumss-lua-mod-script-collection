@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "5.1.1",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -67,56 +67,60 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_ADD_NAMED"] = "ADD_ANIM",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcPlayerEffectsComponentData.xml"},
+                            ["SECTION_UP"] = 1,
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="POLICE" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
+        <Property name="HideModel" value="False" />
+        <Property name="StartInactive" value="False" />
+        <Property name="States">
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="POLICE" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="REWARD" />
+                  </Property>
+                </Property>
               </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="REWARD" />
+            </Property>
+          </Property>
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="REWARD" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcRewardAction.xml">
+                    <Property name="Reward" value="POLICE" />
+                  </Property>
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="BOOT" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="REWARD" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="POLICE" />
-                </Property>
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BOOT" />
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
+        <Property name="Persistent" value="False" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="False" />
+        <Property name="LinkStateToBaseGrid" value="False" />
       </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
+      <Property name="Linked" value="" />
     </Property>
 ]]
                         }
@@ -355,7 +359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_SHIP_POLICE" />
           <Property name="Name" value="_Ship_Police" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
             </Property>
           </Property>

@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Refiner"
 BaseDescription = [[Balance adjustments for refinement recipes added by the Interceptor update.]]
-GameVersion = "4-21"
-ModVersion = "1"
+GameVersion = "5-01-1"
+ModVersion = "2"
 
 local Config = {
   ModRefinerRecipes = {
@@ -25,7 +25,7 @@ local Config = {
         }
       },
 
-      -- Original: SHIPBRAIN -> TECHFRAG (260)
+      -- Original: SHIPBRAIN -> TECHFRAG (230)
       R_NAME_SHIPBRAIN = {
         Result = {
           {"Amount", 250},

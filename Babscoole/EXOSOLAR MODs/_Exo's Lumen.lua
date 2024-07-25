@@ -78,13 +78,13 @@ WALLLIGHT_YELLOW = GetBlock("pointLight6", "3087372010", "0",     "0.25", "0",  
 HANGLAMP0        = GetBlock("Lite1",       "1008033010", "0",     "2.85", "0",      "-90", "0",   "-180", "0.75", "0.75", "0.75",  "360.000000", "linear",    "12500.000000", "1.000000", "0.80000",   "0.50000",  "0.000000")
 HANGLAMP3        = GetBlock("Lite1",       "1008033010", "0",     "0.5",  "0",      "90",  "0",   "-180", "0.75", "0.75", "0.75",  "172.000000", "linear",    "20000.000000", "1.000000", "0.98000",   "0.95000",  "0.000000")
 
---Add FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
+--Add WALLIGHT01, FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_Exo's Lumen.pak",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "5.1.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -903,6 +903,47 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] = HANGLAMP3
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\WALLLIGHT01.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "FALLOFF"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "20500.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_G"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.98000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Lite1", "Name", "COL_B"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95000"},
+                            }
                         },
                     }
                 },

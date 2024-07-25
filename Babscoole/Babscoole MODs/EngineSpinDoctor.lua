@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "EngineSpinDoctor.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.73",
+["NMS_VERSION"]     = "5.1.1",
 ["MOD_DESCRIPTION"] = "Change the spin rate for certain engines used in fighters and sailships",
 ["MODIFICATIONS"]   =
     {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkRotationComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkRotationComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "@*5"} -- Org 0.1

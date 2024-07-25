@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "4.73",
+["NMS_VERSION"]             = "5.1.1",
 ["MOD_DESCRIPTION"]         = "Adds portal to new, old, abandoned, and pirate space stations",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -161,7 +161,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "GcMaintenanceComponentData.xml",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcMaintenanceComponentData.xml"},
+                            ["SECTION_UP"] = 1,
                             ["REMOVE"] = "SECTION",
                         }
                     }

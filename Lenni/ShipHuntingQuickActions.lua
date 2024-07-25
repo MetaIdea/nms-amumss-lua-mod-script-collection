@@ -137,27 +137,32 @@ function GetTriggerAnim(ANIM)
 return [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="]] .. ANIM .. [[" />
-          <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShot" />
+		  <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+          <Property name="AnimType" value="OneShotBlendable" />
+          <Property name="AnimGroupOverride" value="False" />
+          <Property name="Priority" value="0" />
           <Property name="FrameStart" value="0" />
           <Property name="FrameEnd" value="0" />
+          <Property name="FrameEndGame" value="0" />
           <Property name="StartNode" value="" />
           <Property name="ExtraStartNodes" />
-          <Property name="Priority" value="0" />
+          <Property name="AdditiveBaseAnim" value="" />
+          <Property name="AdditiveBaseFrame" value="0" />
+          <Property name="Mask" value="" />
           <Property name="OffsetMin" value="0" />
           <Property name="OffsetMax" value="0" />
           <Property name="Delay" value="0" />
           <Property name="Speed" value="1" />
           <Property name="ActionStartFrame" value="0" />
           <Property name="ActionFrame" value="-1" />
+          <Property name="Actions" />
           <Property name="CreatureSize" value="AllSizes" />
           <Property name="Additive" value="False" />
           <Property name="Mirrored" value="False" />
           <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
+		  <Property name="Has30HzFrames" value="False" />
+		  <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="RootMotion" value="None" />
             <Property name="BlockPlayerMovement" value="False" />
             <Property name="BlockPlayerWeapon" value="Unblocked" />
           </Property>
@@ -196,7 +201,8 @@ end
 
 function GetComponents(TRIGGER_ACTION)
 return [[
-    <Property value="GcTriggerActionComponentData.xml">
+  <Property value="LinkableNMSTemplate.xml">
+	<Property name="Template" value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
@@ -212,6 +218,8 @@ return [[
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
+	<Property name="Linked" value="" />
+  </Property>
 ]]
 end
 

@@ -1,10 +1,10 @@
-ReplaceCreature = {"SPIDER","FLOATSPIDER","ROCKCREATURE","SCUTTLER","CRAB"}
+ReplaceCreature = {"SPIDER","FLOATSPIDER","ROCKCREATURE","SCUTTLER","CRAB","ARTHROPOD"}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Anti-Arachnophobia.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.73",
+["NMS_VERSION"]     = "5.1.1",
 ["MOD_DESCRIPTION"] = "Removes spider like creatures",
 ["MODIFICATIONS"]   =
     {

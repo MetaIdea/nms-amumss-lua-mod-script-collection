@@ -1,9 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "SolarShipAlwaysSails.pak",
-["MOD_AUTHOR"]      = "Mjstral",
-["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.71",
+["MOD_AUTHOR"]      = "Mjstral & Babscoole",
+["NMS_VERSION"]     = "5.1.1",
 ["MODIFICATIONS"]   =
     {
         {

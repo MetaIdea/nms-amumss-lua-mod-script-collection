@@ -1,10 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "AbandonedBuildingFinder.pak",
-["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) will only show abandoned buildings",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.71",
-["MOD_DESCRIPTION"] = "Makes finding Abandoned buildings easier to source Whispering Eggs",
+["NMS_VERSION"]     = "5.1.1",
+["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) will only show abandoned buildings",
 ["MODIFICATIONS"]   =
     {
         {

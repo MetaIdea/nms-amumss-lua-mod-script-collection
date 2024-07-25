@@ -41,9 +41,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] 	= 
 			{
 				{"BuyBaseMarkup","0"},
-				{"BuyMarkupMod","0"},
+				{"BuyMarkupMod","0"}},
 				["REPLACE_TYPE"] = "ALL"},
-		},
 		--Inflate S class Freighter modules
 		{ --S mining
 		["SPECIAL_KEY_WORDS"] = {"Id","U_FR_MINE4","Cost","GcItemPriceModifiers.xml"},

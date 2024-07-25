@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "5.1.1",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"] =
     {
@@ -81,192 +81,195 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Components"},
                             ["ADD"] =
 [[
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
+        <Property name="HideModel" value="False" />
+        <Property name="StartInactive" value="False" />
+        <Property name="States">
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="DISABLE_LIGHT" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
               </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="DISABLE_LIGHT" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
+            </Property>
+          </Property>
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BASE_STATE" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="HND_CTRL_CPIT_R" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="HND_CTRL_CPIT_R" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="HND_CPIT_EJCT_L" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="DISABLE_LIGHT" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="HND_CPIT_EJCT_R" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="DISABLE_LIGHT" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="HND_CTRL_CPIT_R" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="HND_CPIT_EJCT_L" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="ENABLE_LIGHT" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="1.0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="BASE_STATE" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="DISABLE_LIGHT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcNodeActivationAction.xml">
+                    <Property name="NodeActiveState" value="Deactivate" />
+                    <Property name="Name" value="HEADLIGHTS" />
+                    <Property name="SceneToAdd" value="" />
+                    <Property name="IncludePhysics" value="False" />
+                    <Property name="IncludeChildPhysics" value="False" />
+                    <Property name="NotifyNPC" value="False" />
+                    <Property name="UseMasterModel" value="True" />
+                    <Property name="UseLocalNode" value="False" />
+                    <Property name="RestartEmitters" value="False" />
+                    <Property name="AffectModels" value="False" />
+                  </Property>
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="BASE_STATE" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="ENABLE_LIGHT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="1.0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcNodeActivationAction.xml">
+                    <Property name="NodeActiveState" value="Activate" />
+                    <Property name="Name" value="HEADLIGHTS" />
+                    <Property name="SceneToAdd" value="" />
+                    <Property name="IncludePhysics" value="False" />
+                    <Property name="IncludeChildPhysics" value="False" />
+                    <Property name="NotifyNPC" value="False" />
+                    <Property name="UseMasterModel" value="True" />
+                    <Property name="UseLocalNode" value="False" />
+                    <Property name="RestartEmitters" value="False" />
+                    <Property name="AffectModels" value="False" />
+                  </Property>
+                  <Property value="GcGoToStateAction.xml">
+                    <Property name="State" value="BASE_STATE" />
+                    <Property name="Broadcast" value="False" />
+                    <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                      <Property name="BroadcastLevel" value="Local" />
+                    </Property>
                   </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BASE_STATE" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="HND_CTRL_CPIT_R" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="HND_CTRL_CPIT_R" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="HND_CPIT_EJCT_L" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="DISABLE_LIGHT" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="HND_CPIT_EJCT_R" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="DISABLE_LIGHT" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="HND_CTRL_CPIT_R" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="HND_CPIT_EJCT_L" />
-                <Property name="FrameStart" value="0" />
-                <Property name="StartFromEnd" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="ENABLE_LIGHT" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="1.0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BASE_STATE" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="DISABLE_LIGHT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Deactivate" />
-                  <Property name="Name" value="HEADLIGHTS" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="False" />
-                  <Property name="IncludeChildPhysics" value="False" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="False" />
-                </Property>
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BASE_STATE" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="ENABLE_LIGHT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="1.0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Activate" />
-                  <Property name="Name" value="HEADLIGHTS" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="False" />
-                  <Property name="IncludeChildPhysics" value="False" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="False" />
-                </Property>
-                <Property value="GcGoToStateAction.xml">
-                  <Property name="State" value="BASE_STATE" />
-                  <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-                    <Property name="BroadcastLevel" value="Local" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
+        <Property name="Persistent" value="False" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="False" />
+        <Property name="LinkStateToBaseGrid" value="False" />
       </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
+      <Property name="Linked" value="" />
     </Property>
 ]]
                         }

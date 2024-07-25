@@ -1,5 +1,5 @@
-modName = "NCAC"
-gameVersion = "501"
+modName = "NoCameraAutoCenter"
+gameVersion = "511"
 
 NMS_MOD_DEFINITION_CONTAINER = {
     MOD_FILENAME = modName.."_"..gameVersion..".pak",
@@ -193,7 +193,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"UseSpeedBasedSpring", "False"},
                                 {"SpringSpeed", 0},
                                 {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
+                                {"VertRotationMax", 80},
+                                {"BackMaxDistance", 6.5}
                             }
                         },
                         {
@@ -335,7 +336,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"SpringSpeed", 0},
                                 {"LockToObjectOnIdle", "False"},
                                 {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
+                                {"VertRotationMax", 80},
+                                {"DistStiffness", 0.2}
                             }
                         },
                         {
@@ -367,7 +369,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"VertRotationMin", -80},
                                 {"VertRotationMax", 80}
                             }
-                        },
+                        }
                     }
                 }
             }

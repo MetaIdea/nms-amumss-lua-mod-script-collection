@@ -393,12 +393,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_Exo's Expanse Black Edition.pak",
-["MOD_AUTHOR"]      = "Exosolar",
-["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
-["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.71",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]  = "_Exo's Expanse Black Edition.pak",
+["MOD_AUTHOR"]    = "Exosolar & Babscoole",
+["NMS_VERSION"]   = "5.1.1",
+["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

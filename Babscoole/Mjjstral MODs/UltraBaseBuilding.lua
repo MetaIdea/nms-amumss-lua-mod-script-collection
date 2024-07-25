@@ -1236,45 +1236,76 @@ PLACEMENTDATA_ENTITY =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="TkPhysicsComponentData.xml">
-      <Property name="Data" value="TkPhysicsData.xml">
-        <Property name="Mass" value="0" />
-        <Property name="Friction" value="0.5" />
-        <Property name="RollingFriction" value="0.2" />
-        <Property name="AngularDamping" value="0.2" />
-        <Property name="LinearDamping" value="0.1" />
-        <Property name="Gravity" value="20" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="TkPhysicsComponentData.xml">
+        <Property name="Data" value="TkPhysicsData.xml">
+          <Property name="Mass" value="0" />
+          <Property name="Friction" value="0.5" />
+          <Property name="RollingFriction" value="0.2" />
+          <Property name="AngularDamping" value="0.2" />
+          <Property name="LinearDamping" value="0.1" />
+          <Property name="Gravity" value="20" />
+        </Property>
+        <Property name="NavMeshInclusion" value="TkNavMeshInclusionParams.xml">
+          <Property name="InclusionType" value="TkNavMeshInclusionType.xml">
+            <Property name="NavMeshInclusionType" value="Auto" />
+          </Property>
+          <Property name="InclusionMinSize" value="0" />
+          <Property name="AreaType" value="TkNavMeshAreaType.xml">
+            <Property name="NavMeshAreaType" value="Auto" />
+          </Property>
+        </Property>
+        <Property name="TriggerVolume" value="False" />
+        <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
+          <Property name="VolumeTriggerType" value="Open" />
+        </Property>
+        <Property name="SurfaceProperties" value="None" />
+        <Property name="ModelOwnership" value="Model" />
+        <Property name="Climbable" value="False" />
+        <Property name="Walkable" value="True" />
+        <Property name="Floor" value="False" />
+        <Property name="IgnoreModelOwner" value="False" />
+        <Property name="NoVehicleCollide" value="False" />
+        <Property name="NoPlayerCollide" value="False" />
+        <Property name="NoFireCollide" value="False" />
+        <Property name="NoFallDamage" value="False" />
+        <Property name="IgnoreAllCollisions" value="False" />
+        <Property name="BlocksInteract" value="True" />
+        <Property name="CameraInvisible" value="False" />
+        <Property name="InvisibleForInteraction" value="False" />
+        <Property name="AllowTeleporter" value="False" />
+        <Property name="BlockTeleporter" value="False" />
+        <Property name="DisableGravity" value="False" />
+        <Property name="SpinOnCreate" value="0" />
+        <Property name="ScaleAffectsMass" value="False" />
+        <Property name="AllowedDefaultCollision" value="True" />
+        <Property name="Animated" value="False" />
+        <Property name="UseBasePartOptimisation" value="False" />
+        <Property name="IsTransporter" value="False" />
+        <Property name="UseSimpleCharacterCollision" value="False" />
+        <Property name="RotateSimpleCharacterCollisionCapsule" value="False" />
+        <Property name="SimpleCharacterCollisionRadius" value="0.5" />
+        <Property name="SimpleCharacterCollisionHeight" value="2" />
+        <Property name="SimpleCharacterCollisionHeightOffset" value="0" />
+        <Property name="SimpleCharacterCollisionFwdOffset" value="0" />
       </Property>
-      <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
-        <Property name="VolumeTriggerType" value="Open" />
-      </Property>
-      <Property name="SurfaceProperties" value="None" />
-      <Property name="TriggerVolume" value="False" />
-      <Property name="Climbable" value="False" />
-      <Property name="Floor" value="False" />
-      <Property name="IgnoreModelOwner" value="False" />
-      <Property name="NoVehicleCollide" value="False" />
-      <Property name="NoPlayerCollide" value="False" />
-      <Property name="CameraInvisible" value="False" />
-      <Property name="InvisibleForInteraction" value="False" />
-      <Property name="AllowTeleporter" value="False" />
-      <Property name="BlockTeleporter" value="False" />
-      <Property name="DisableGravity" value="False" />
-      <Property name="SpinOnCreate" value="0" />
-      <Property name="UseBasePartOptimisation" value="False" />
-      <Property name="IsTransporter" value="False" />
+      <Property name="Linked" value="" />
     </Property>
-    <Property value="GcBasePlacementComponentData.xml">
-      <Property name="Rules">
-        <Property value="GcBasePlacementRule.xml">
-          <Property name="Conditions" />
-          <Property name="PositionLocator" value="" />
-          <Property name="PartID" value="_]].. ID_NAME ..[[" />
-          <Property name="ORConditions" value="False" />
-          <Property name="TwinCriteria" value="None" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcBasePlacementComponentData.xml">
+        <Property name="Rules">
+          <Property value="GcBasePlacementRule.xml">
+            <Property name="Conditions" />
+            <Property name="PositionLocator" value="" />
+            <Property name="PartID" value="_]].. ID_NAME ..[[" />
+            <Property name="ORConditions" value="False" />
+            <Property name="TwinCriteria" value="None" />
+          </Property>
         </Property>
       </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -1476,7 +1507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "5.1.1",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {

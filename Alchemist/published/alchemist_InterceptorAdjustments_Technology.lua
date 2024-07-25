@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Technology"
 BaseDescription = [[Balance adjustments for technology added by the Interceptor update.]]
-GameVersion = "4-21"
-ModVersion = "1"
+GameVersion = "5-01-1"
+ModVersion = "2"
 
 local Config = {
   ModifyProductCharge = {

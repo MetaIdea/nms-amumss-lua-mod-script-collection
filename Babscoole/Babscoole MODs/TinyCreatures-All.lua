@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-All.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.73",
+["NMS_VERSION"]             = "5.1.1",
 ["MOD_DESCRIPTION"]         = "Reduces size for all creature types by ~50%",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =

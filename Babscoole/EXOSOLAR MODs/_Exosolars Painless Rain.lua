@@ -1,10 +1,9 @@
-Author = "Exosolar"
+Author = "Exosolar & Babscoole"
 LuaAuthor = "Gumsk"
-Maintainer = "Babscoole"
 ModName = "_Exosolars Painless Rain"
 --ModNameSub = ""
 BaseDescription = "Makes lush storms harmless"
-GameVersion = "4.71"
+GameVersion = "5.1.1"
 --ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN"
 
@@ -13,7 +12,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"] = BaseDescription,
 ["MOD_AUTHOR"]      = Author,
 ["LUA_AUTHOR"]      = LuaAuthor,
-["MOD_MAINTENANCE"] = Maintainer,
 ["NMS_VERSION"]     = GameVersion,
 ["MODIFICATIONS"]   = {{
     ["MBIN_CHANGE_TABLE"] = {{

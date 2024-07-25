@@ -1,11 +1,11 @@
 --Type your own wanted Capacity for the Portable Refinery
-Capacity = 80 --Mults with the Multiplier
+Capacity = 80 --Default 80
 
---Dont Edit Anything below this
-Multiplier = 0.8 --Dont Changeable
+--Don't edit anything below this
+Multiplier = 0.8
 BaseTime = 300 --Time in Seconds
-XiCapacity = math.floor(Capacity/Multiplier)
-XiTime = math.floor((XiCapacity/100)*BaseTime)
+calculatedCapacity = math.floor(Capacity/Multiplier)
+calculatedTime = math.floor((calculatedCapacity/100)*BaseTime)
 
 
 
@@ -33,8 +33,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]	= {"ID", "MAINT_FUEL1"},
 							["VALUE_CHANGE_TABLE"]	= 
 							{	
-								{ "MaxCapacity", XiCapacity },				
-								{ "AmountEmptyTimePeriod", XiTime },				
+								{ "MaxCapacity", calculatedCapacity },				
+								{ "AmountEmptyTimePeriod", calculatedTime },				
 							}
 						},
 					},

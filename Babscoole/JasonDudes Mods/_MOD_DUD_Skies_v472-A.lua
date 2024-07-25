@@ -2811,6 +2811,7 @@ function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,
     return
 [[
       <Property value="GcPlanetWeatherColourData.xml">
+        <Property name="SelectionWeighting" value="1" />
         <Property name="SkyColour" value="Colour.xml">
           <Property name="R" value="]].. R1 ..[[" />
           <Property name="G" value="]].. G1 ..[[" />
