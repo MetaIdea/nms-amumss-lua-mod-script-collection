@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "4_71"
+GameVersion = "500"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -112,7 +112,10 @@ TechAdjustments =
 		"UT_QUICKWARP",	0.2				--Emergency Warp						240 Nanites
 	},
 	{
-		"UT_LAUNCHCHARGE",	0.4			--Launch Auto-Charger					460 Nanites
+		"SHIP_TELEPORT",	1			--Teleport Receiver						150 Nanites
+	},
+	{
+		"UT_LAUNCHCHARGE",	0.5			--Launch Auto-Charger					460 Nanites
 	},
 	{
 		"EXO_RECHARGE",	1.5				--Icarus Fuel System					120 Nanites
@@ -204,6 +207,9 @@ TechAdjustments =
 	{
 		"UT_ROCKETS",	3				--Large Rocket Tubes					50 Nanites
 	},
+	{
+		"WATER_LANDER",	0.75			--Aqua-Jets								240 Nanites
+	},
 }
 
 --Weapon Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult)
@@ -261,6 +267,9 @@ TechRarityChanges =
 	},
 	{
 		"T_SHIPGUN",			"Normal",					--Procedural Photon Cannon Upgrades	"Normal"
+	},
+	{
+		"WATER_LANDER",			"Impossible",				--Aqua-Jets	"VeryRare"
 	},
 --Multi-Tool techs
 	{
@@ -327,6 +336,12 @@ AddItems =
 	},
 	{	--Precision Minotaur Laser 
 		"MECH_LASER1",			"RED2",				50,		"Substance",
+	},
+	{	--Mech Liquidator Left Arm 
+		"MECH_ARMY_L_ARM",		"MECH_PROD",		1,		"Product",
+	},
+	{	--Mech Liquidator Legs 
+		"MECH_ARMY_LEGS",		"MECH_PROD",		1,		"Product",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Hull Fracture			
@@ -473,6 +488,21 @@ ReplaceItems =
 	},
 	{	--Polyphonic Core
 		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
+	},
+	{	--Mech Liquidator Flamethrower
+		"MECH_ARMY_R_ARM",		"MECH_PROD",		1,		"Product",		"FUEL2",
+	},
+	{	--Mech Liquidator Legs
+		"MECH_ARMY_LEGS",		"QUAD_PROD",		2,		"Product",		"QUAD_PROD",
+	},
+	{	--Mech Liquidator Head
+		"MECH_ARMY_HEAD",		"MECH_PROD",		1,		"Product",		"COMPUTER",
+	},
+	{	--Aqua-Jets
+		"WATER_LANDER",			"ATLAS_SEED_5",		1,		"Product",		"ANTIMATTER",
+	},
+	{	--Aqua-Jets
+		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Containment Failure
@@ -1310,6 +1340,7 @@ NewInterceptorTechRepairSlot =
           <Property name="AmountEmptyTimePeriod" value="0" />
           <Property name="HideWhenComplete" value="False" />
           <Property name="BlockDiscardWhenAllowedForParent" value="False" />
+		  <Property name="LocatorOverride" value="" />
           <Property name="UpdateType" value="UpdatesAlways" />
           <Property name="DamagedAfterTimePeriodMin" value="0" />
           <Property name="DamagedAfterTimePeriodMax" value="0" />

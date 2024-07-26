@@ -124,8 +124,11 @@ return [[
 					<Property value="GcNGuiLayerData.xml">
                       <Property name="ElementData" value="GcNGuiElementData.xml">
                         <Property name="ID" value="DIVIDER]] .. COUNTER .. [[" />
-                        <Property name="PresetID" value="" />
                         <Property name="IsHidden" value="False" />
+                        <Property name="IgnoreInput" value="False" />
+                        <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+                          <Property name="EditorVisibility" value="UseData" />
+                        </Property>
                         <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
                           <Property name="NGuiForcedStyle" value="None" />
                         </Property>
@@ -193,7 +196,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -205,6 +210,14 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
                         </Property>
                         <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
                           <Property name="Colour" value="Colour.xml">
@@ -246,7 +259,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -258,6 +273,14 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
                         </Property>
                         <Property name="Active" value="TkNGuiGraphicStyleData.xml">
                           <Property name="Colour" value="Colour.xml">
@@ -299,7 +322,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -311,6 +336,27 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
+                        </Property>
+                        <Property name="InheritStyleFromParentLayer" value="False" />
+                        <Property name="HighlightTime" value="0.1" />
+                        <Property name="HighlightScale" value="1" />
+                        <Property name="GlobalFade" value="1" />
+                        <Property name="Animate" value="None" />
+                        <Property name="AnimTime" value="0.5" />
+                        <Property name="AnimSplit" value="0.4" />
+                        <Property name="AnimCurve1" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="AnimCurve2" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
                         </Property>
                         <Property name="CustomMinStart" value="Vector2f.xml">
                           <Property name="x" value="1" />
@@ -320,19 +366,6 @@ return [[
                           <Property name="x" value="1" />
                           <Property name="y" value="1" />
                         </Property>
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="Animate" value="None" />
-                        <Property name="InheritStyleFromParentLayer" value="False" />
                       </Property>
                       <Property name="Image" value="" />
                       <Property name="Children" />
@@ -347,8 +380,11 @@ return [[
 					<Property value="GcNGuiLayerData.xml">
                       <Property name="ElementData" value="GcNGuiElementData.xml">
                         <Property name="ID" value="ITEM]] .. COUNTER .. [[" />
-                        <Property name="PresetID" value="" />
                         <Property name="IsHidden" value="False" />
+                        <Property name="IgnoreInput" value="False" />
+                        <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+                          <Property name="EditorVisibility" value="UseData" />
+                        </Property>
                         <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
                           <Property name="NGuiForcedStyle" value="None" />
                         </Property>
@@ -366,10 +402,8 @@ return [[
                             <Property name="Horizontal" value="Left" />
                           </Property>
                           <Property name="WidthPercentage" value="False" />
-																	  
                           <Property name="HeightPercentage" value="False" />
                           <Property name="ConstrainProportions" value="True" />
-																			  
                           <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="False" />
                           <Property name="AnchorPercent" value="False" />
@@ -418,7 +452,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -430,6 +466,14 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
                         </Property>
                         <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
                           <Property name="Colour" value="Colour.xml">
@@ -471,7 +515,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -483,6 +529,14 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
                         </Property>
                         <Property name="Active" value="TkNGuiGraphicStyleData.xml">
                           <Property name="Colour" value="Colour.xml">
@@ -524,7 +578,9 @@ return [[
                           <Property name="CornerRadius" value="0" />
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
+                          <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                            <Property name="NGuiEditorIcon" value="none" />
+                          </Property>
                           <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -536,6 +592,27 @@ return [[
                           <Property name="HasInnerGradient" value="False" />
                           <Property name="GradientOffsetPercent" value="False" />
                           <Property name="StrokeGradient" value="False" />
+                          <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                            <Property name="Active" value="False" />
+                            <Property name="BlendFrames" value="False" />
+                            <Property name="FramesPerSecond" value="10" />
+                            <Property name="TotalFrames" value="0" />
+                            <Property name="FramesHorizontal" value="1" />
+                            <Property name="FramesVertical" value="1" />
+                          </Property>
+                        </Property>
+                        <Property name="InheritStyleFromParentLayer" value="False" />
+                        <Property name="HighlightTime" value="0.1" />
+                        <Property name="HighlightScale" value="1" />
+                        <Property name="GlobalFade" value="1" />
+                        <Property name="Animate" value="SimpleWipe" />
+                        <Property name="AnimTime" value="0.5" />
+                        <Property name="AnimSplit" value="0.4" />
+                        <Property name="AnimCurve1" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="AnimCurve2" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
                         </Property>
                         <Property name="CustomMinStart" value="Vector2f.xml">
                           <Property name="x" value="1" />
@@ -545,19 +622,6 @@ return [[
                           <Property name="x" value="1" />
                           <Property name="y" value="1" />
                         </Property>
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="Animate" value="SimpleWipe" />
-                        <Property name="InheritStyleFromParentLayer" value="False" />
                       </Property>
                       <Property name="Image" value="" />
                       <Property name="Children" />

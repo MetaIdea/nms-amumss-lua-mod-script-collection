@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_AstralEnvironments.pak",
 ["MOD_AUTHOR"]    = "AstralNut",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.00",
+["NMS_VERSION"]   = "5.1.1",
 ["MODIFICATIONS"] =
     {
         {

@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "4_65"
+GameVersion = "5_01"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -395,6 +395,12 @@ RecipeChanges =
 			{"CATALYST1",		5}										--Requires Sodium				10
 		}
 	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_1122",			16,					5},					--Makes Nourishing Slime		x1		in	5 time
+		{
+			{"FOOD_M_GRUB",		1}										--Requires Juicy Grub			x1
+		}
+	},
 --Some Nutrient Processor Recipes with ingredients that are very easy to obtain passively or in huge quantities have had their costs increased, to indirectly nerf cooking profits & incentivize harvesting wild ingredients
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_2",			1,					5},					--Makes Silicon Egg				x1		in	5 time
@@ -591,12 +597,30 @@ RecipeIngredientChanges =
 	},
 }
 
+--Changes recipes, including changing which items are produced and the ingredients
+RecipeOutputChanges =
+{
+	--Switches the output so the recipe isn't a total loss
+	{												--Amount per batch	--Time per batch
+		{"REFINERECIPE_3",		"SPACEGUNK2",		666,				60},	--Makes "SPACEGUNK4" Living Slime   ( Jn )		x50		in	60 time
+		{--Vanilla ingredient	PTSd ingredient
+			{"EYEBALL",			"EYEBALL",			1},							--Requires Hypnotic Eye		x1
+		}
+	},
+}
+
 --Adds additional ingredients to recipes
 RecipeAddedIngredients =
 {
 	--	Recipe				New Ingredients		Amount	Type of Item
 	{
 		"RECIPE_941",		"FOOD_R_SUGAR",		1,		"Product",				--Adds 1 Processed Sugar to recipe for Herbal Crunchie
+	},
+	{
+		"RECIPE_1072",		"FOOD_R_SUGAR",		1,		"Product",				--Adds 1 Processed Sugar to recipe for Syrup-Drenched Delight (Cake Batter version)
+	},
+	{
+		"RECIPE_1081",		"FOOD_R_SUGAR",		1,		"Product",				--Adds 1 Processed Sugar to recipe for Syrup-Drenched Delight (Cake Batter version)
 	},
 }
 
@@ -1434,6 +1458,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REMOVE"] = "SECTION"
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_1108"},			--Removes the Cake of Eternal Sleep alternative recipe that uses Syrupy Batter (through Monstrous Custard), as it is significantly less profitable than the Wailing Batter recipes
+				["REPLACE_TYPE"] 		= "",
+				--["SECTION_UP"] = 1,
+				["REMOVE"] = "SECTION"
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RECIPE_895"},
 				["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
 				--["SECTION_UP"] = 1,
@@ -1553,6 +1583,56 @@ for i = 1, #RecipeIngredientChanges do
 				{
 					{"TimeToMake", Time},
 					{"Amount", AmountResult}
+				}
+			}
+end
+for i = 1, #RecipeOutputChanges do
+	local RecipeId = RecipeOutputChanges[i][1][1]
+	local NewOutput = RecipeOutputChanges[i][1][2]
+	local Time = RecipeOutputChanges[i][1][4]
+	local AmountResult = RecipeOutputChanges[i][1][3]
+	local Ingredients = RecipeOutputChanges[i][2]
+	
+		for j = 1, #Ingredients do
+			OldINGId = Ingredients[j][1]
+			NewINGId = Ingredients[j][2]
+			AmountING = Ingredients[j][3]
+			
+			ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId, "Id", OldINGId},
+				--["PRECEDING_KEY_WORDS"] = {"GcRefinerRecipeElement.xml"},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id", NewINGId},
+					{"Amount", AmountING}
+				}
+			}
+		end
+		
+		ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"TimeToMake", Time},
+					{"Amount", AmountResult}
+				}
+			}
+			
+		ChangesToRecipes[#ChangesToRecipes+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", RecipeId},
+				["PRECEDING_KEY_WORDS"] = {"Result"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id", NewOutput}
 				}
 			}
 end

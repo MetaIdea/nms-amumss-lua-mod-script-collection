@@ -1,6 +1,6 @@
 -- Change the price you like
 local Price = 1000000
--- Fighter, Hauler, Explorer
+-- Fighter, Hauler, Explorer, Sail
 local ShipPartID = {
     "FIGHT_COCKAA",
     "FIGHT_COCKAB",
@@ -242,7 +242,46 @@ local ShipPartID = {
     "SCIEN_WINGT_C",
     "SCIEN_WINGT_F",
     "SCIEN_WINGT_G",
-    "SCIEN_WINGT_I"
+    "SCIEN_WINGT_I",
+    "SAIL_BODYA",
+    "SAIL_BODYB",
+    "SAIL_BODYC",
+    "SAIL_BODYD",
+    "SAIL_BODYE",
+    "SAIL_BODYF",
+    "SAIL_WINGAA",
+    "SAIL_WINGAB",
+    "SAIL_WINGAC",
+    "SAIL_WINGAD",
+    "SAIL_WINGAE",
+    "SAIL_WINGBA",
+    "SAIL_WINGBB",
+    "SAIL_WINGBC",
+    "SAIL_WINGBD",
+    "SAIL_WINGBE",
+    "SAIL_WINGCA",
+    "SAIL_WINGCB",
+    "SAIL_WINGCC",
+    "SAIL_WINGCD",
+    "SAIL_WINGCE",
+    "SAIL_WINGDA",
+    "SAIL_WINGDB",
+    "SAIL_WINGDC",
+    "SAIL_WINGDD",
+    "SAIL_WINGDE",
+    "SAIL_WINGEA",
+    "SAIL_WINGEB",
+    "SAIL_WINGEC",
+    "SAIL_WINGED",
+    "SAIL_WINGEE",
+    "SAIL_WINGFA",
+    "SAIL_WINGFB",
+    "SAIL_WINGFC",
+    "SAIL_WINGFD",
+    "SAIL_WINGFE",
+    "SAIL_SAILA",
+    "SAIL_SAILB",
+    "SAIL_SAILC"
 }
 
 local ChangeTable = {}
@@ -262,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop_PricePlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.70",
+    ["NMS_VERSION"] = "5.1.1",
     ["MOD_DESCRIPTION"] = "Custom ship parts price in the space station shop.",
     ["MODIFICATIONS"] = {
         {

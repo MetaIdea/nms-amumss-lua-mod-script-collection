@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "441"
+GameVersion = "5_01"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -124,8 +124,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG"},				--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 4.5*Fauna}}}, --default 1, HardModeMultiplier 1.5
+		{"Damage", 10*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
+	{["SPECIAL_KEY_WORDS"] = {"Id","BUG_DMG"},						--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 60*Fauna}}}, --default 20
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","QUEEN_DMG"},					--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 105*Fauna}}}, --default 35
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","QUEENSPIT_DMG"},				--This is used by both Vile Queens and Titan Worms	Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 30*Fauna}}}, --default 5
+	
 	{["SPECIAL_KEY_WORDS"] = {"Id","WORM_DMG"},						--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
@@ -163,13 +175,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 40*Starships}, --default 20
 		{"TechDamageChance", 0.05*StarshipTech}}}, --default 0.05		Added Xen0nex
-		
-	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
-	["VALUE_CHANGE_TABLE"] = {	
-		{"Id", "BOUNTYLASER3"}}}, --In case HG ever corrects this typo, this redundant edit will make sure the edit below doesn't "overcorrect"
-	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
-	["VALUE_CHANGE_TABLE"] = {	
-		{"Id", "BOUNTYLASER2"}}}, --default "BOUNTYLASER3", presumably a typo
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -247,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SPORE_VENT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 125*Flora}}}, --default 25, HardModeMultiplier 1.5
+		{"Damage", 120*Flora}}}, --default 20, HardModeMultiplier 1.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	

@@ -2,7 +2,7 @@ Author = "Exosolar"			--Edited by Xen0nex
 --ModName = "gExos Challenge"
 ModNameSub = "Infinite Storms AltX"
 BaseDescription = "Makes storms permanent on extreme planets; edited to just make them more frequent and longer"
-GameVersion = "446"
+GameVersion = "500"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -18,8 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["VALUE_CHANGE_TABLE"] = {
 		{"RainbowAlpha", "0.15"},
 		{"RainbowStormAlpha", "0.3"},
-		{"SafeSkyMaxIndex", "15416"},
-		{"FrozenSkyMaxIndex", "440"},
+		--{"SafeSkyMaxIndex", "15416"},						--Deprecated in NMS v 5.00
+		--{"FrozenSkyMaxIndex", "440"},						--Deprecated in NMS v 5.00
 		{"StormWarningTime", "25"},							--25				X
 		{"StormTransitionTime", "20"},						--20				X
 		{"MinTimeBetweenStormsLow", "720"},					--900				X	12min

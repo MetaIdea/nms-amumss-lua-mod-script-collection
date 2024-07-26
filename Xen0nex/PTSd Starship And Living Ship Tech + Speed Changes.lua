@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '4.41'
+Version = '4.72'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -954,7 +954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '',
 				VALUE_MATCH 		= 'ROBOT1',
 				VALUE_MATCH_OPTIONS = '=',
-				REPLACE_TYPE 		= '',	
+				REPLACE_TYPE 		= 'ALL',	
 				VALUE_CHANGE_TABLE 	= {
 					{'Substance',		ConBridgeSubstance}
 				}

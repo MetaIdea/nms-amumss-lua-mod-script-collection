@@ -77,7 +77,7 @@ LFHigh =						1.5										--1.2
 LFHighShipSummon =				3										--4
 
 --Multipliers for the "Currency Cost" difficulty settings
---Unclear what "Specials" is, is not salvaged data / salvaged frigate modules.
+--Unclear what "Specials" is, is not salvaged data / salvaged frigate modules. Perhaps Quicksilver shop?
 --The Units/Nanites/Specials settings below don't apply to generic substances/products in shop/vendor lists, but to prices when selecting an option from a menu/dialogue tree, such as purchasing an inventory upgrade on a Space Station, etc.
 	--The Units multipliers appear to also apply to the purchase, trade-in, & scan value of starships, but not the salvage value.
 --The "BuyPriceMarkup" settings below apply a multiplier to the existing "BuyBaseMarkup" attribute for most items in shop/vendor lists. "BuyBaseMarkup" controls how much higher an item's purchase price is compared to its base value/selling price.

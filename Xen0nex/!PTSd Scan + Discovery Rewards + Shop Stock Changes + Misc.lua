@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan + Discovery Rewards + Shop Stock Changes + Misc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "463"
+GameVersion = "5_01"
 
 --UnderwaterProtectionMultiplier = 2				--Default Range 0 - 310
 
@@ -106,11 +106,11 @@ GuildShopChanges =
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
 				{"LAUNCHFUEL",		"BAIT_BASIC",		2,		0,			"Units",		3},				--Starship Launch Fuel		3,		0,		"Units",	3
 				{	--Old Item ID		New Item ID		(Other possible items that can appear in this slot)
-					{"BP_SALVAGE",		"BAIT_BASIC"},														--Salvaged Data
+					{"HYPERFUEL1",		"BAIT_BASIC"},														--Warp Cell
 				},
 			},
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
-				{"HYPERFUEL2",		"LAUNCHFUEL",		1,		0.3,		"Units",		4},				--Warp Hypercore			1,		0,		"Units",	4
+				{"SCRAP_GOODS",		"LAUNCHFUEL",		1,		0.3,		"Units",		4},				--Suspicious Packet (Goods)			1,		0,		"Units",	4
 				{	--Old Item ID		New Item ID		(Other possible items that can appear in this slot)
 				},
 			},
@@ -155,7 +155,7 @@ GuildShopChanges =
 				},
 			},
 			{	--Old Item ID			New Item ID				Donation Value	Max Donations (unclear if this is per-vist or total for all time)
-				{"HYPERFUEL2",			"TRA_CURIO2",			1,				3},							--Warp Hypercore		1,		3
+				{"FRIGATE_FUEL_3",			"TRA_CURIO2",			1,				3},						--Frigate Fuel (200 Tonnes)		1,		3
 				{	--Old Item ID		New Item ID		(Other possible items that can be used in this slot)
 					{"REPAIRKIT",		"REPAIRKIT"},														--Repair Kit
 				},
@@ -210,8 +210,6 @@ GuildShopChanges =
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
 				{"GRENFUEL1",		"GRENFUEL1",		1,		0.6,		"Units",		4},				--Unstable Plasma			1,		0,		"Units",	4
 				{	--Old Item ID		New Item ID		(Other possible items that can appear in this slot)
-					{"SPIDER_PROD",		"POLICE_TOKEN"},													--Crystallised Heart
-					{"WALKER_PROD",		"QUAD_PROD"},														--Walker Brain
 				},
 			},
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
@@ -318,9 +316,9 @@ GuildShopChanges =
 				},
 			},
 			{	--Old Item ID		New Item ID			Amount	PriceMult	Currency		Reputation Level
-				{"STORM_CRYSTAL",	"U_SCANNER3",		1,		0.7,		"Nanites",		6},				--Storm Crystal				1,		0,		"Units",	6
+				{"SACVENOM",		"U_SCANNER3",		1,		0.7,		"Nanites",		6},				--Storm Crystal				1,		0,		"Units",	6
 				{	--Old Item ID		New Item ID		(Other possible items that can appear in this slot)
-					{"FISHCORE",		"U_HYPER3"},														--Hadal Core
+					{"EYEBALL",			"U_HYPER3"},														--Hadal Core
 					{"FIENDCORE",		"U_JETBOOST3"},														--Larval Core
 					{"U_UNW2",			"U_EXO_ENG3"},														--A Class Underwater protection upgrade
 					{"U_RAD2",			"U_EXOBOOST3"},														--A Class Radiation protection upgrade
@@ -366,7 +364,7 @@ GuildShopChanges =
 				},
 			},
 			{	--Old Item ID			New Item ID				Donation Value	Max Donations (unclear if this is per-vist or total for all time)
-				{"CHART_TREASURE",		"U_ROBOSUIT",			1,				3},							--Artifact Chart		1,		3
+				{"NAV_DATA_DROP",		"U_ROBOSUIT",			1,				3},							--Exosuit Upgrade Chart		1,		3
 				{	--Old Item ID		New Item ID		(Other possible items that can be used in this slot)
 				},
 			},
@@ -394,6 +392,11 @@ GuildShopChanges =
 --Adds AltIDs (Other possible items that can be used in this slot) to certain entries in a Guild Shop
 GuildShopAddAlts =
 {		--Guild type		Shop type			New Item to add alts to		First Alt item to add
+	{
+		{"WarriorGuild",	"RepItems",			"GRENFUEL1",				"POLICE_TOKEN"},
+		--Additional Alt items to add
+		{"QUAD_PROD"}
+	},
 	{
 		{"WarriorGuild",	"DonatableItems",	"U_SENTGUN",				"WAR_CURIO2"},
 		--Additional Alt items to add
@@ -498,10 +501,27 @@ FiendCrimeChanges =
 		}
 	},
 	{
+		{"FishCarnage"},	--The "crime" committed to spawn the enemies	(Unclear what this is, added in NMS v5.0)
+		{
+			{
+				{"FiendFishBig",	4},	--The type of enemy spawned
+			--Number of enemies spawned on:	Off		Slow	Normal	Fast	Difficulty Setting
+				{"MinNum",					0,		1,		3,		4},				--0,	1,	3,	3
+				{"MaxNum",					0,		1,		3,		4},				--0,	1,	3,	3
+			},
+			{
+				{"FiendFishSmall",	5},	--The type of enemy spawned
+			--Number of enemies spawned on:	Off		Slow	Normal	Fast	Difficulty Setting
+				{"MinNum",					0,		3,		10,		12},			--0, 3, 10, 10
+				{"MaxNum",					0,		3,		10,		12},			--0, 3, 10, 10
+			},
+		}
+	},
+	{
 		{"GroundPropDamage"},	--The "crime" committed to spawn the enemies
 		{
 			{
-				{"MiniFiend",	4},	--The type of enemy spawned
+				{"MiniFiend",	6},	--The type of enemy spawned
 			--Number of enemies spawned on:	Off		Slow	Normal	Fast	Difficulty Setting
 				{"MinNum",					0,		2,		3,		4},				--0,	1,	2,	2
 				{"MaxNum",					0,		4,		8,		10},			--0,	1,	2,	7

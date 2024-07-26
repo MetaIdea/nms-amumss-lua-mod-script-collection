@@ -683,11 +683,14 @@ DEBUG_TEXT = false
 -- EXML DATA BLOCKS
 COLOUR_START =  [[
 		<!--BuildFrame-->
-		<Property value="GcNGuiSpacingData.xml">
+        <Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -718,8 +721,11 @@ COLOUR_START =  [[
         <Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -752,8 +758,11 @@ SPACING = [[
         <Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -786,8 +795,11 @@ LINE_BREAK = [[
         <Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="THIS ONE" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -797,7 +809,7 @@ LINE_BREAK = [[
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="7" />
-              <Property name="Height" value="2" />
+              <Property name="Height" value="12" />
               <Property name="ConstrainAspect" value="1" />
               <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
@@ -818,8 +830,11 @@ LINE_BREAK = [[
         <Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -829,7 +844,7 @@ LINE_BREAK = [[
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="0" />
-              <Property name="Height" value="2" />
+              <Property name="Height" value="12" />
               <Property name="ConstrainAspect" value="1" />
               <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
@@ -964,8 +979,11 @@ return [[
 		<Property value="GcNGuiLayerData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="OPTION]] .. NUM .. [[" />
-            <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="IgnoreInput" value="False" />
+            <Property name="EditorVisible" value="GcNGuiEditorVisibility.xml">
+              <Property name="EditorVisibility" value="UseData" />
+            </Property>
             <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
               <Property name="NGuiForcedStyle" value="None" />
             </Property>
@@ -1033,7 +1051,9 @@ return [[
               <Property name="CornerRadius" value="0" />
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
+              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                <Property name="NGuiEditorIcon" value="none" />
+              </Property>
               <Property name="Desaturation" value="0" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />
@@ -1045,6 +1065,14 @@ return [[
               <Property name="HasInnerGradient" value="False" />
               <Property name="GradientOffsetPercent" value="False" />
               <Property name="StrokeGradient" value="True" />
+              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                <Property name="Active" value="False" />
+                <Property name="BlendFrames" value="False" />
+                <Property name="FramesPerSecond" value="10" />
+                <Property name="TotalFrames" value="0" />
+                <Property name="FramesHorizontal" value="1" />
+                <Property name="FramesVertical" value="1" />
+              </Property>
             </Property>
             <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
               <Property name="Colour" value="Colour.xml">
@@ -1086,7 +1114,9 @@ return [[
               <Property name="CornerRadius" value="0" />
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
+              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                <Property name="NGuiEditorIcon" value="none" />
+              </Property>
               <Property name="Desaturation" value="0" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />
@@ -1098,6 +1128,14 @@ return [[
               <Property name="HasInnerGradient" value="False" />
               <Property name="GradientOffsetPercent" value="False" />
               <Property name="StrokeGradient" value="True" />
+              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                <Property name="Active" value="False" />
+                <Property name="BlendFrames" value="False" />
+                <Property name="FramesPerSecond" value="10" />
+                <Property name="TotalFrames" value="0" />
+                <Property name="FramesHorizontal" value="1" />
+                <Property name="FramesVertical" value="1" />
+              </Property>
             </Property>
             <Property name="Active" value="TkNGuiGraphicStyleData.xml">
               <Property name="Colour" value="Colour.xml">
@@ -1139,7 +1177,9 @@ return [[
               <Property name="CornerRadius" value="0" />
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
+              <Property name="EditorIcon" value="TkNGuiEditorIcons.xml">
+                <Property name="NGuiEditorIcon" value="none" />
+              </Property>
               <Property name="Desaturation" value="0" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />
@@ -1151,6 +1191,27 @@ return [[
               <Property name="HasInnerGradient" value="False" />
               <Property name="GradientOffsetPercent" value="False" />
               <Property name="StrokeGradient" value="True" />
+              <Property name="Animated" value="TkNGuiGraphicAnimatedImageData.xml">
+                <Property name="Active" value="False" />
+                <Property name="BlendFrames" value="False" />
+                <Property name="FramesPerSecond" value="10" />
+                <Property name="TotalFrames" value="0" />
+                <Property name="FramesHorizontal" value="1" />
+                <Property name="FramesVertical" value="1" />
+              </Property>
+            </Property>
+            <Property name="InheritStyleFromParentLayer" value="False" />
+            <Property name="HighlightTime" value="0.1" />
+            <Property name="HighlightScale" value="1" />
+            <Property name="GlobalFade" value="1" />
+            <Property name="Animate" value="None" />
+            <Property name="AnimTime" value="0.5" />
+            <Property name="AnimSplit" value="0.4" />
+            <Property name="AnimCurve1" value="TkCurveType.xml">
+              <Property name="Curve" value="Linear" />
+            </Property>
+            <Property name="AnimCurve2" value="TkCurveType.xml">
+              <Property name="Curve" value="Linear" />
             </Property>
             <Property name="CustomMinStart" value="Vector2f.xml">
               <Property name="x" value="1" />
@@ -1160,19 +1221,6 @@ return [[
               <Property name="x" value="1" />
               <Property name="y" value="1" />
             </Property>
-            <Property name="HighlightTime" value="0.1" />
-            <Property name="HighlightScale" value="1" />
-            <Property name="GlobalFade" value="1" />
-            <Property name="AnimTime" value="0.5" />
-            <Property name="AnimSplit" value="0.4" />
-            <Property name="AnimCurve1" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
-            </Property>
-            <Property name="AnimCurve2" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
-            </Property>
-            <Property name="Animate" value="None" />
-            <Property name="InheritStyleFromParentLayer" value="False" />
           </Property>
           <Property name="Image" value="" />
           <Property name="Children" />
@@ -1291,7 +1339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "Selection Augmentation for Colour System", -- AKA Palette Augmentation and Tailoring System (PAnTS)
 ["NMS_VERSION"]				= "",
 ["GLOBAL_INTEGER_TO_FLOAT"]	= "PRESERVE",
-["AMUMSS_SUPPRESS_MSG"]     = "UNUSED_VARIABLE",
+["AMUMSS_SUPPRESS_MSG"] 	= "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{
 		{

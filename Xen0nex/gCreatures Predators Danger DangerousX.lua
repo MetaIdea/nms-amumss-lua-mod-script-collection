@@ -2,15 +2,25 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "Danger DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "441"
+GameVersion = "5_00"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
 FileSource3 = "MODELS\PLANETS\CREATURES\FISH\GRABBYPLANT\ENTITIES\GRABBYPLANT.ENTITY.MBIN"
 
 --This section added by Xen0nex
-WormHealthMult = 3							--Multiplier to the Default 2600	(The big "Hungering Tendrils" / "Titan Worms" on infested planets)
 EyeballHealthMult = 6						--Multiplier to the Default 1600	(The underwater Eyeball monster / "Abyssal Horror")
+WormHealthMult = 3							--Multiplier to the Default 2600	(The big "Hungering Tendrils" / "Titan Worms" on infested planets)
+GroundWormSpawnMin = 3						--Default 3		(The same "Hungering Tendrils" as above)
+GroundWormSpawnMax = 5						--Default 3
+
+BugQueenHealth = 48000						--Default 32000		(The Vile Queen boss bug)
+QueenHealthLevelMul = 2						--Default 1.5
+BugQueenSpitCount = 16						--Default 12
+BugQueenSpitRadius = 18						--Default 15
+BugQueenSpitballSpeed = 10					--Default 8
+BugQueenSpitballExplosionRadius = 2.8		--Default 2.8
+BugFiendHealth = 2000						--Default 700		(Likely the smaller helpers for the The Vile Queen boss bug)
 
 CreatureSmallHealth = 500					--Default 200
 CreatureMedHealth = 2100					--Default 1400
@@ -66,6 +76,7 @@ FiendZigZagSpeed = 0						--Default 0
 FiendZigZagStrength = 0						--Default 0
 FiendEggsToUnlockSpit = 0					--Default 0
 MaxFiendsToSpawn = 8						--Default 6
+MaxFiendsToSpawnCarnage = 12				--Default 10		Added by Xen0nex
 FiendMinSpawnTime = 0.2						--Default 0.25
 FiendMaxSpawnTime = 2.3						--Default 3
 FiendAggroIncreaseDamageEgg = 1				--Default 1
@@ -77,11 +88,11 @@ FiendDistReduceForBeingShot = 70			--Default 70
 FiendBeingShotMemoryTime = 10				--Default 10
 MaxFishFiends = 14							--Default 10
 FishFiendSmallHealth = 600					--Default 400
-FishFiendBigHealth = 18000					--Default 9000		(12000)
+FishFiendBigHealth = 18000					--Default 9000		(12000)		Added by Xen0nex
 FishFiendSmallBoostStrength = 14			--Default 10
 FishFiendSmallBoostTime = 0.7				--Default 0.5
 FishFiendSmallScale = 0.3					--Default 0.3
-FishFiendBigBoostStrength = 6				--Default 4			(5)
+FishFiendBigBoostStrength = 6				--Default 4			(5)			Added by Xen0nex
 FishFiendBigBoostTime = 2					--Default 1
 FishFiendBigScale = 4						--Default 3
 PredatorSpeedMultiplier = 1.3				--Default 1.1
@@ -101,10 +112,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["PRECEDING_KEY_WORDS"] = {""},
 							["VALUE_CHANGE_TABLE"] = {
 								--These added by Xen0nex
+								{"GroundWormSpawnMin", GroundWormSpawnMin},
+								{"GroundWormSpawnMax", GroundWormSpawnMax},
+								{"BugQueenHealth", BugQueenHealth},
+								{"BugQueenSpitCount", BugQueenSpitCount},
+								{"BugQueenSpitRadius", BugQueenSpitRadius},
+								{"BugQueenSpitballSpeed", BugQueenSpitballSpeed},
+								{"BugQueenSpitballExplosionRadius", BugQueenSpitballExplosionRadius},
+								{"BugFiendHealth", BugFiendHealth},
+								{"QueenHealthLevelMul", QueenHealthLevelMul},
 								{"CreatureSmallHealth", CreatureSmallHealth},
 								{"CreatureMedHealth", CreatureMedHealth},
 								{"CreatureLargeHealth", CreatureLargeHealth},
 								{"CreatureHugeHealth", CreatureHugeHealth},
+								{"MaxFiendsToSpawnCarnage", MaxFiendsToSpawnCarnage},
 								{"FishFiendBigHealth", FishFiendBigHealth},
 								{"FishFiendBigBoostTime", FishFiendBigBoostTime},
 								

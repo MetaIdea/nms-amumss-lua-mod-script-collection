@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "4_70"
+GameVersion = "5_00"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 VesperSailDesc =
@@ -24,7 +24,7 @@ SettlementRate =
 [[%NUM% every 6 hours]]
 
 SalvageConfirm =
-[[&lt;FUEL&gt;WARNING:&lt;&gt; starship '&lt;STELLAR&gt;%SHIPNAME%&lt;&gt;' will be destroyed along with all cargo.&lt;NEWLINE&gt;Select desired &lt;TECHNOLOGY&gt;customisation module&lt;&gt; to confirm salvage operation...&lt;NEWLINE&gt;Does not work on &lt;FUEL&gt;Solar, Living,&lt;&gt; or &lt;FUEL&gt;Interceptor&lt;&gt; starships]]
+[[&lt;FUEL&gt;WARNING:&lt;&gt; starship '&lt;STELLAR&gt;%SHIPNAME%&lt;&gt;' will be destroyed along with all cargo.&lt;NEWLINE&gt;Select desired &lt;TECHNOLOGY&gt;customisation module&lt;&gt; to confirm salvage operation...&lt;NEWLINE&gt;Does not work on &lt;FUEL&gt;Living,&lt;&gt; or &lt;FUEL&gt;Interceptor&lt;&gt; starships]]
 
 SalvageAttempt =
 [[Attempt to extract Reactor]]
@@ -46,6 +46,9 @@ SalvageHull =
 
 SalvageCockpit =
 [[Salvage Cockpit + Reactor]]
+
+SalvageSails =
+[[Salvage Sails + Reactor]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -169,6 +172,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", SalvageCockpit}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_COST_SALVAGE_PRODS_SAIL"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", SalvageSails}
 							}
 						},
 					}

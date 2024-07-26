@@ -1,5 +1,5 @@
 -- if set to true, the script will automatically run without asking for user input
-AUTORUN = true
+AUTORUN = false
 
 ---------------------------
 -- USER DEFAULTS SECTION --
@@ -10,7 +10,7 @@ AUTORUN = true
 ---------------------------
 
 -- Edition of Getting Head to use
-DEFAULT_EDITION = "Traveller" -- Anomaly, Traveller
+DEFAULT_EDITION = "Anomaly" -- Anomaly, Traveller
 
 -- Default value to remove armour piece and allow subsequent torso piece selection
 REMOVE_ARMOUR = true
@@ -231,7 +231,7 @@ RACES =	{ 	["ASTRO"] = 	{ 	["Name"] = "ASTRO",
 								["Head"] = "BUILDER_HEAD"
 							}
 		}
-RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4"}
+RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD"}
 RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS"}
 
 -- heads to apply per race to exclude
@@ -257,6 +257,10 @@ HEADS =
 										"REG_HEAD_HOOD01",
 										"HEAD_BUCKET",
 										"HEAD_ATLAS",
+										"HEAD_APODSPIKE",
+										"HEAD_APODWASP",
+										"HEAD_APODCRY",
+										"HEAD_APODTOXIC",
 									  },
 					  },
 		["BUI"] 	= {	["EXCLUDE"] = "BUI",

@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "4_70"
+GameVersion = "5_01"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -47,6 +47,7 @@ MemFragOutlierTechChance =				200						--500	Relative chance weight for certain 
 PsychonicWormhole =						250						--500	"Wormhole Brain" Conflict/Economy Scanner equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 PsychonicChloroplast =					30						--500	"Chloroplast Membrane" Launch Auto-Charger equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 PsychonicNeural =						250						--500	"Neural Shielding" Cargo Scan Deflector equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
+PsychonicWaterLand =					30						--500	"Saline Carapace" Aqua-Jets equivalent (will not spawn if this tech is currently in an accessible cargo/storage inventory or already installed in active starship)
 
 --Changes how many Nanites you receive for choosing "Extract Nanites" at a Manufacturing Facility
 FactoryMin = 							300						--90 Nanites
@@ -1036,6 +1037,14 @@ BreakPlantsChangesProduct =
 	},
 }
 
+--Adds new rewards for defeating Vile Queens
+QueenProductID			=				"EYEBALL"			-- N/A		(Hypnotic Eye)	This product loot is awarded every time you defeat a Vile Queen
+QueenProductAmount		=				1					-- N/A
+QueenSubstanceID		=				"SPACEGUNK2"		-- N/A		(Runaway Mould)	This substance loot is awarded every time you defeat a Vile Queen
+QueenSubstanceAmount	=				256					-- N/A
+QueenProcType			=				"SpaceHorror"		-- N/A		This procedural loot is awarded 50% of the time when defeating a Vile Queen (the other 50% of the time is a chance to attempt getting one of the 4 bug helmets)
+QueenProcRarity			=				"Uncommon"			-- N/A		The rarity of the procedural loot. Can be Common, Uncommon, or Rare
+
 --% Chance & amounts to drop the "Salvaged Glass" item when opening the loot capsules from dead sentinels
 DroneGlassDropChance	=	1			--66
 DroneGlassMin			=	1			--1
@@ -1526,8 +1535,75 @@ NewCrashedFreighterLoot =
             </Property>
           </Property>]]
 
+NewQueenLoot = 
+[[<Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="0" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMultiSpecificItems.xml">
+              <Property name="Silent" value="False" />
+              <Property name="Items">
+                <Property value="GcMultiSpecificItemEntry.xml">
+                  <Property name="MultiItemRewardType" value="Product" />
+                  <Property name="Id" value="]]..QueenProductID..[[" />
+                  <Property name="Amount" value="]]..QueenProductAmount..[[" />
+                  <Property name="ProcTechGroup" value="" />
+                  <Property name="ProcTechQuality" value="0" />
+                  <Property name="IllegalProcTech" value="False" />
+                  <Property name="SentinelProcTech" value="False" />
+                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
+                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
+                    <Property name="ProceduralProductCategory" value="Loot" />
+                  </Property>
+                  <Property name="ProcProdRarity" value="GcRarity.xml">
+                    <Property name="Rarity" value="Common" />
+                  </Property>
+                  <Property name="CommunityTierProductList" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="CustomRewardLocID" value="" />
+                </Property>
+                <Property value="GcMultiSpecificItemEntry.xml">
+                  <Property name="MultiItemRewardType" value="Substance" />
+                  <Property name="Id" value="]]..QueenSubstanceID..[[" />
+                  <Property name="Amount" value="]]..QueenSubstanceAmount..[[" />
+                  <Property name="ProcTechGroup" value="" />
+                  <Property name="ProcTechQuality" value="0" />
+                  <Property name="IllegalProcTech" value="False" />
+                  <Property name="SentinelProcTech" value="False" />
+                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
+                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
+                    <Property name="ProceduralProductCategory" value="Loot" />
+                  </Property>
+                  <Property name="ProcProdRarity" value="GcRarity.xml">
+                    <Property name="Rarity" value="Common" />
+                  </Property>
+                  <Property name="CommunityTierProductList" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="CustomRewardLocID" value="" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="400" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardProceduralProduct.xml">
+              <Property name="Type" value="GcProceduralProductCategory.xml">
+                <Property name="ProceduralProductCategory" value="]]..QueenProcType..[[" />
+              </Property>
+              <Property name="OSDMessage" value="" />
+              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
+              <Property name="OverrideRarity" value="True" />
+              <Property name="Rarity" value="GcRarity.xml">
+                <Property name="Rarity" value="]]..QueenProcRarity..[[" />
+              </Property>
+              <Property name="FreighterTechQualityOverride" value="-1" />
+            </Property>
+          </Property>]]
+
 GlassDrop = [[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="400" />
 			<Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardSpecificProduct.xml">
               <Property name="Default" value="GcDefaultMissionProductEnum.xml">
@@ -2564,6 +2640,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_WATERLAND"},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	PsychonicWaterLand},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = CrewManGuildUnitReward,
@@ -2643,6 +2730,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_QUEEN"},
+				["REPLACE_TYPE"] 		= "",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"RewardChoice",	"GiveFirst_ThenAlsoSelectAlwaysFromRest"} 		--"TryEachSilent"
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_QUEEN"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = NewQueenLoot,
+				["ADD_OPTION"] = "ADDBEFORESECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DRONE_LOOT"},
@@ -3526,9 +3627,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
-				--["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
+				--["PRECEDING_KEY_WORDS"] = {"LinkableNMSTemplate.xml"},
 				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{

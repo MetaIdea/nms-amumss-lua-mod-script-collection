@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "4_63"
+GameVersion = "500"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -45,8 +45,10 @@ ShipWeaponsCargoMult = 0.2								--1		(0.2)
 PlasmaLauncherCharge =						16					--20
 GeologyCannonCharge =						10					--20
 ParalysisMortarCharge =						8					--20
-MechStunWeaponCharge =						30					--400			(Amount of charge for the recharge bar of the Mech Sentinel Right Arm which stuns)
+MechStunWeaponCharge =						30					--400			(Amount of charge for the recharge bar of the Mech Sentinel Right Arm or Liquidator Left Arm which stuns)
 MechStunWeaponChargeMultiplier =			0.1					--1				How effective substances are at recharging the charge bar
+MechFlameCharge =							400					--400			(Amount of charge for the recharge bar of the Mech Liquidator Flamethrower)
+MechFlameChargeMultiplier =					1					--1				How effective substances are at recharging the charge bar
 
 --How many shots you get before needing to recharge with Carbon/Condensed Carbon/Oxygen
 NeutronCannonCharge =						250					--500			(Amount of charge for the recharge bar of the Neutron Cannon)
@@ -57,6 +59,7 @@ MechStunWeaponRadius =						4					--5				AOE Radius of minotaur stun weapon shot
 MechStunWeaponDuration =					3					--3				Duration in seconds of minotaur stun weapon effect
 MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
+MechFlameUpgradesDMG =						2.0					--				Multiplier to apply to the bonus damage for Flamethrower upgrades (1 ~ 2 for Class B ~ S, increased to 1 ~ 6 for Class B ~ S by !PTSd Procedural Upgrade Adjustment.lua)
 
 PhaseBeamLeechAmountMult =					0.5					--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
 LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
@@ -133,9 +136,10 @@ BlazeJavelinDMG =							2.071				--1500			(500 theoretical sustained DPS)					(l
 PlasmaLauncherDMG =							1.45				--500
 GeologyCannonDMG =							1.21				--1000
 
-ExocraftCannonDMG =							1.0					--320			(160 theoretical sustained DPS, plus explosions with AOE???)
-NautilonCannonDMG =							1.0					--220			(110 theoretical sustained DPS, plus explosions with AOE???)
-MinotaurCannonDMG =							1.0					--420			(147 theoretical sustained DPS, plus explosions with AOE???)
+ExocraftCannonDMG =							1.0					--340			(680 theoretical sustained DPS, plus explosions with AOE???)
+NautilonCannonDMG =							1.0					--220			(440 theoretical sustained DPS, plus explosions with AOE???)
+MinotaurCannonDMG =							1.0					--420			(1200 theoretical sustained DPS, plus explosions with AOE???)
+MechFlameDMG =								1.0					--3				(37.5 theoretical sustained DPS, plus 25 Fire DOT DPS)
 
 PhaseBeamDMG =								1.4					--250
 LivingShipBeamDMG =							1.1					--280
@@ -195,7 +199,7 @@ WeaponStatChanges =
 				"Weapon_FireDOT_Duration",	1/USCMult,	"FORCE"					--5
 			},
 			{
-				"Weapon_FireDOT_DPS",		1/USCMult,	"FORCE"					--50
+				"Weapon_FireDOT_DPS",		1/USCMult,	"PRESERVE"				--50
 			}
 		}
 	},
@@ -416,7 +420,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Vehicle_GunDamage",	ExocraftCannonDMG*GXD/USCMult,	"FORCE"	--320		(160 theoretical sustained DPS, plus explosions with AOE???)
+				"Vehicle_GunDamage",	ExocraftCannonDMG*GXD/USCMult,	"FORCE"	--320		(640 theoretical sustained DPS, plus explosions with AOE???)
 			},
 			{
 				"Vehicle_GunRate",	1/USCMult,	"FORCE"							--0.5		
@@ -432,7 +436,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Vehicle_GunDamage",	NautilonCannonDMG*GXD/USCMult,	"FORCE"	--220		(110 theoretical sustained DPS, plus explosions with AOE???)
+				"Vehicle_GunDamage",	NautilonCannonDMG*GXD/USCMult,	"FORCE"	--220		(440 theoretical sustained DPS, plus explosions with AOE???)
 			},
 			{
 				"Vehicle_GunRate",	1/USCMult,	"FORCE"							--0.5		
@@ -455,6 +459,28 @@ WeaponStatChanges =
 			},
 			{
 				"Vehicle_GunHeatTime",	1,	"FORCE"							--1
+			}
+		}
+	},
+	{
+		{
+			"MECH_ARMY_R_ARM"			--Liquidator Mech Flamethrower
+		},
+		{
+			{
+				"Vehicle_GunDamage",	MechFlameDMG*GXD/USCMult,	"FORCE"		--3
+			},
+			{
+				"Vehicle_GunRate",	1/USCMult,	"FORCE"							--0.08		
+			},
+			{
+				"Vehicle_GunHeatTime",	1,	"FORCE"								--0.75
+			},
+			{
+				"Weapon_FireDOT_Duration",	1/USCMult,	"FORCE"					--3	
+			},
+			{
+				"Weapon_FireDOT_DPS",	1/USCMult,	"PRESERVE"					--25	
 			}
 		}
 	},
@@ -981,7 +1007,7 @@ NPCStarshipDamageMults =
 	--{"BOUNTYGUN3",			2},									--800	DefaultDamage		Removed in NMS v3.85
 	{"BASE_TURRET_M",		2},									--200	DefaultDamage
 	{"PIRATERAIDGUN",		10},								--15	DefaultDamage		(Maybe pirates attacking buildings ???)
-	{"SQUADGUN",			4.5},								--40	DefaultDamage		(Maybe your wingmen ???)
+	{"SQUADGUN",			4.5},								--40	DefaultDamage		(Your Squadron Wingmen allies)
 	
 	--Space Laser Beams
 	{"AI_SHIP",				10},								--9		DefaultDamage		(Most NPC Starships)
@@ -1177,6 +1203,10 @@ UpgradeDamageChanges =
 	{
 		{"Vehicle_GunDamage",	MinotaurCannonDMG*GXD},					--Minotaur Cannon		
 		{"UP_MCGUN2", "UP_MCGUN3", "UP_MCGUN4"}
+	},
+	{
+		{"Vehicle_GunDamage",	MechFlameDMG*MechFlameUpgradesDMG*GXD},						--Mech Liquidator Flamethrower		
+		{"UP_MFIRE2", "UP_MFIRE3", "UP_MFIRE4"}
 	},
 	{
 		{"Ship_Weapons_Lasers_Damage",	PhaseBeamDMG*PhaseBeamUpgradesDMGMult*GSD},			--Phase Beam		
@@ -2299,6 +2329,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"ChargeAmount", MechStunWeaponCharge},
 					{"ChargeMultiplier", MechStunWeaponChargeMultiplier}
+				}
+			},
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ARMY_L_ARM"},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				--["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeAmount", MechStunWeaponCharge},
+					{"ChargeMultiplier", MechStunWeaponChargeMultiplier}
+				}
+			},
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ARMY_R_ARM"},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				--["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeAmount", MechFlameCharge},
+					{"ChargeMultiplier", MechFlameChargeMultiplier}
 				}
 			},
 			{

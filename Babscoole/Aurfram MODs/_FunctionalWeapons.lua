@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_FunctionalWeapons.pak",
 ["MOD_AUTHOR"]    = "Aufram",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.72",
+["NMS_VERSION"]   = "5.02",
 ["MODIFICATIONS"] =
     {
         {
@@ -35,6 +35,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "16"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "SHIPROCKETS"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TechnologyCategory", "AllShips"},
                             }
                         },
                         {

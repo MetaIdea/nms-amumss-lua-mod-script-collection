@@ -1,5 +1,5 @@
 ModName = "PTSD Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "463"
+GameVersion = "500"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
@@ -59,7 +59,7 @@ UnknownRecipes =
 {"FRE_ROOM_SHOP", "FRE_ROOM_PLANT1", "FRE_ROOM_REFINE", "FRE_ROOM_STORE1", "FRE_ROOM_STORE2", "FRE_ROOM_STORE3", "FRE_ROOM_STORE4", "FRE_ROOM_STORE5", "FRE_ROOM_STORE6", "FRE_ROOM_STORE7", "FRE_ROOM_STORE8", "FRE_ROOM_STORE9"}
 
 --All below changes are WIP changes for NMS v4.4x
-ShipMiningMul =							0.2									--0.2		Unknown effect, possibly a reduction in damage or resource amount when using ship weapons to mine planetary objects?
+--[[ShipMiningMul =							0.2									--0.2		Unknown effect, possibly a reduction in damage or resource amount when using ship weapons to mine planetary objects?
 --Changes to MissionSubstanceDifficultyMultipliers (unknown effect, possibly changes the amounts of substances rewarded by, or required for, certain missions? possibly depending on a difficulty setting?)
 MissionSubEasy =						1									--1
 MissionSubNormal =						1.5									--1.5
@@ -87,6 +87,7 @@ PirateFreightChancePirate =				0.2									--0.2
 --Turret AI Targeting changes (unkown effect, possibly the turrets on Pirate Freighters during "trench runs"?)
 TurretAITargetingLastHitFactor =		10									--10
 TurretAITargetingFocusPlayerFactor =	2									--2
+]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -119,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"RewardInventoryClassItemFromShipSalvage", ClassItemFromShipSalvage},
 					{"MaxStandingTechDiscount", MaxStandingTechDiscount},
 					{"NonNaturalCostMul", NonNaturalCostMul},
-					
+					--[[
 					{"ShipMiningMul", ShipMiningMul},
 					{"TorpedoCooldown", TorpedoCooldown},
 					{"MaxTorpedoesInFlight", MaxTorpedoesInFlight},
@@ -136,6 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"FreighterCargoPodHealthFraction", FreighterCargoPodHealthFraction},
 					{"TurretAITargetingLastHitFactor", TurretAITargetingLastHitFactor},
 					{"TurretAITargetingFocusPlayerFactor", TurretAITargetingFocusPlayerFactor},
+					]]
 				}
 			},
 			{
@@ -161,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"430", EvolveSeven},
 				}
 			},
-			
+			--[[
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
@@ -185,6 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"Pirate", PirateFreightChancePirate},
 				}
 			},
+			]]
 		}
 	},
 	{

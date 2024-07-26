@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-71"
-ModVersion = "1-3-2"
+GameVersion = "5-01-1"
+ModVersion = "1-4-0"
 
 -- =========
 -- CONSTANTS
@@ -78,7 +78,7 @@ files.
 
 --]]
 
--- Total keys: 213
+-- Total keys: 236
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
@@ -128,6 +128,7 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_BRIBE_INTRO_RES"] = "What's that Traveler, is the Ingredient Market not in your favor today? Lucky for you, we are friends! I will do you a favor.\nWhat you can buy today is locked in because of market forces and previous arrangements, but...", --
   ["CHEF_MENU_00_BRIBE_LANG"] = "For a small processing fee, I will let you choose what you can sell at the market today.", --
   ["CHEF_MENU_00_DAILY_CHANGE"] = "<TITLE>The Daily Favorite and Ingredient Market have changed<>\nVisit Cronus to learn today's specials", --
+  ["CHEF_MENU_00_EVENT_HOOK"] = "What culinary curiosities have you discovered during your travels? Has the excitement surrounding those new alien ingredients inspired a creative concoction? Or will you tempt my palate with a familiar favorite?", --
   ["CHEF_MENU_00_HIGH_DEMAND"] = "In Demand", --
   ["CHEF_MENU_00_OOS_LABEL"] = "Out of Stock", --
   ["CHEF_MENU_00_P2_TEXT"] = "Something else you wish to discuss?", --
@@ -137,6 +138,8 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMC11"] = "On Sale ~ Craw Milk", --
   ["CHEF_MENU_00_SALE_IMC12"] = "On Sale ~ Creature Egg", --
   ["CHEF_MENU_00_SALE_IMC13"] = "On Sale ~ Wild Milk", --
+  ["CHEF_MENU_00_SALE_IMC14"] = "On Sale ~ Nourishing Slime", --
+  ["CHEF_MENU_00_SALE_IMC15"] = "On Sale ~ Syrupy Nectar", --
   ["CHEF_MENU_00_SALE_IMC2"] = "On Sale ~ Giant Egg", --
   ["CHEF_MENU_00_SALE_IMC3"] = "On Sale ~ Regis Grease", --
   ["CHEF_MENU_00_SALE_IMC4"] = "On Sale ~ Leopard-Fruit", --
@@ -147,22 +150,25 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMC9"] = "On Sale ~ Foraged Mushrooms", --
   ["CHEF_MENU_00_SALE_IMM0"] = "On Sale ~ Salty Fingers", --
   ["CHEF_MENU_00_SALE_IMM1"] = "On Sale ~ Meaty Wings", --
-  ["CHEF_MENU_00_SALE_IMM10"] = "On Sale ~ Leg Meat", --
-  ["CHEF_MENU_00_SALE_IMM11"] = "On Sale ~ Scooped Innards", --
-  ["CHEF_MENU_00_SALE_IMM12"] = "On Sale ~ Crystal Flesh", --
-  ["CHEF_MENU_00_SALE_IMM13"] = "On Sale ~ Latticed Sinew", --
-  ["CHEF_MENU_00_SALE_IMM14"] = "On Sale ~ Crunchy Wings", --
-  ["CHEF_MENU_00_SALE_IMM15"] = "On Sale ~ Lumpy Brainstem", --
-  ["CHEF_MENU_00_SALE_IMM16"] = "On Sale ~ Dirty Meat", --
-  ["CHEF_MENU_00_SALE_IMM17"] = "On Sale ~ Meaty Chunks", --
+  ["CHEF_MENU_00_SALE_IMM10"] = "On Sale ~ Strider Sausage", --
+  ["CHEF_MENU_00_SALE_IMM11"] = "On Sale ~ Raw Steak", --
+  ["CHEF_MENU_00_SALE_IMM12"] = "On Sale ~ Leg Meat", --
+  ["CHEF_MENU_00_SALE_IMM13"] = "On Sale ~ Scooped Innards", --
+  ["CHEF_MENU_00_SALE_IMM14"] = "On Sale ~ Crystal Flesh", --
+  ["CHEF_MENU_00_SALE_IMM15"] = "On Sale ~ Latticed Sinew", --
+  ["CHEF_MENU_00_SALE_IMM16"] = "On Sale ~ Crunchy Wings", --
+  ["CHEF_MENU_00_SALE_IMM17"] = "On Sale ~ Lumpy Brainstem", --
+  ["CHEF_MENU_00_SALE_IMM18"] = "On Sale ~ Dirty Meat", --
+  ["CHEF_MENU_00_SALE_IMM19"] = "On Sale ~ Juicy Thorax", --
   ["CHEF_MENU_00_SALE_IMM2"] = "On Sale ~ Fiendish Roe", --
-  ["CHEF_MENU_00_SALE_IMM3"] = "On Sale ~ Offal Sac", --
-  ["CHEF_MENU_00_SALE_IMM4"] = "On Sale ~ ProtoSausage", --
-  ["CHEF_MENU_00_SALE_IMM5"] = "On Sale ~ Diplo Chunks", --
-  ["CHEF_MENU_00_SALE_IMM6"] = "On Sale ~ Scaly Meat", --
-  ["CHEF_MENU_00_SALE_IMM7"] = "On Sale ~ Feline Liver", --
-  ["CHEF_MENU_00_SALE_IMM8"] = "On Sale ~ Strider Sausage", --
-  ["CHEF_MENU_00_SALE_IMM9"] = "On Sale ~ Raw Steak", --
+  ["CHEF_MENU_00_SALE_IMM20"] = "On Sale ~ Meaty Chunks", --
+  ["CHEF_MENU_00_SALE_IMM3"] = "On Sale ~ Rancid Flesh", --
+  ["CHEF_MENU_00_SALE_IMM4"] = "On Sale ~ Juicy Grub", --
+  ["CHEF_MENU_00_SALE_IMM5"] = "On Sale ~ Offal Sac", --
+  ["CHEF_MENU_00_SALE_IMM6"] = "On Sale ~ ProtoSausage", --
+  ["CHEF_MENU_00_SALE_IMM7"] = "On Sale ~ Diplo Chunks", --
+  ["CHEF_MENU_00_SALE_IMM8"] = "On Sale ~ Scaly Meat", --
+  ["CHEF_MENU_00_SALE_IMM9"] = "On Sale ~ Feline Liver", --
   ["CHEF_MENU_00_SALE_IMP0"] = "On Sale ~ Impulse Beans", --
   ["CHEF_MENU_00_SALE_IMP1"] = "On Sale ~ Fireberry", --
   ["CHEF_MENU_00_SALE_IMP2"] = "On Sale ~ Frozen Tubers", --
@@ -172,19 +178,36 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_SALE_IMP6"] = "On Sale ~ Hexaberry", --
   ["CHEF_MENU_00_WHALE_OPT"] = "Ask about whalesong...", --
   ["D_ALCF_BUY_LANG"] = "Each shipment contains <SPECIAL>50<> of the purchased item. Limited to <SPECIAL>5<> shipments of each category per day.", --
-  ["D_ALCF_DV_0_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>The Stellarator<>. A doughnut made of starlight, sublime!", --
-  ["D_ALCF_DV_1_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Fungal Omelette<>. Nutritious non-toxic fungi, delicious!", --
-  ["D_ALCF_DV_2_LANG"] = "Today I will pay <TRADE>190<> nanites per unit of <SPECIAL>Chocolate Curiosity<>. Such decadence in one cake, preposterous!", --
-  ["D_ALCF_DV_3_LANG"] = "Today I will pay <TRADE>200<> nanites per unit of <SPECIAL>The Spawning Tart<>. A creamy larval custard pie, a classic!", --
-  ["D_ALCF_DV_4_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>Cake of Burning Dread<>. Don't be nervous, it's just a name. Probably.", --
-  ["D_ALCF_DV_5_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Syrupy Viscera<>. A delicate balance of sweetness and nightmares. Ingenius!", --
-  ["D_ALCF_HOME_LANG"] = "Good day to you, Traveler. Do you have a delivery of <SPECIAL>Today's Favorite<>, or would you like to trade on the <TRADE>Ingredients Market<>?", --
-  ["D_ALCF_HOME_OPT_A"] = "Today's Favorite ~ The Stellarator", --
-  ["D_ALCF_HOME_OPT_B"] = "Today's Favorite ~ Fungal Omelette", --
-  ["D_ALCF_HOME_OPT_C"] = "Today's Favorite ~ Chocolate Curiosity", --
-  ["D_ALCF_HOME_OPT_D"] = "Today's Favorite ~ The Spawning Tart", --
-  ["D_ALCF_HOME_OPT_E"] = "Today's Favorite ~ Cake of Burning Dread", --
-  ["D_ALCF_HOME_OPT_F"] = "Today's Favorite ~ Syrupy Viscera", --
+  ["D_ALCF_DV_A0_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>The Stellarator<>. A doughnut made of starlight, sublime!", --
+  ["D_ALCF_DV_A1_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Fungal Omelette<>. Nutritious non-toxic fungi, delicious!", --
+  ["D_ALCF_DV_A2_LANG"] = "Today I will pay <TRADE>190<> nanites per unit of <SPECIAL>Chocolate Curiosity<>. Such decadence in one cake, preposterous!", --
+  ["D_ALCF_DV_A3_LANG"] = "Today I will pay <TRADE>200<> nanites per unit of <SPECIAL>The Spawning Tart<>. A creamy larval custard pie, a classic!", --
+  ["D_ALCF_DV_A4_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>Cake of Burning Dread<>. Don't be nervous, it's just a name. Probably.", --
+  ["D_ALCF_DV_A5_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Syrupy Viscera<>. A delicate balance of sweetness and nightmares. Ingenius!", --
+  ["D_ALCF_DV_B0_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Frosted Mire<>. If you followed the directions, it's not supposed to be moving.", --
+  ["D_ALCF_DV_B1_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Gelatinous Sponge<>. Squishy and delicious, and not at all alive. Not sure about that last part.", --
+  ["D_ALCF_DV_B2_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Mucal Curiosity<>. Try not to think of the name while you eat it. Or do, it's your choice.", --
+  ["D_ALCF_DV_B3_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Nourishing Oozer<>. The healthy choice for the discerning bug hunter. Or just the hungry.", --
+  ["D_ALCF_DV_B4_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Primordial Sponge<>. Did you break the laws of space-time to acquire the ingredients? No? Then it's not authentic.", --
+  ["D_ALCF_DV_B5_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Splicer&#39;s Delight<>. Whoever thought to use bugs in a cake? You? Oh, well then, I commend you!", --
+  ["D_ALCF_DV_B6_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Squirming Fancy<>. Is it supposed to move like that? Why yes, yes it is!", --
+  ["D_ALCF_DV_B7_LANG"] = "Today I will pay <TRADE>400<> nanites per unit of <SPECIAL>Slime Pop<>. It's cold and slimy, perfect for surviving on superheated planets!", --
+  ["D_ALCF_EP_1_OPT_A"] = "Today&#39;s Favorite ~ The Stellarator", --
+  ["D_ALCF_EP_1_OPT_B"] = "Today&#39;s Favorite ~ Fungal Omelette", --
+  ["D_ALCF_EP_1_OPT_C"] = "Today&#39;s Favorite ~ Chocolate Curiosity", --
+  ["D_ALCF_EP_1_OPT_D"] = "Today&#39;s Favorite ~ The Spawning Tart", --
+  ["D_ALCF_EP_1_OPT_E"] = "Today&#39;s Favorite ~ Cake of Burning Dread", --
+  ["D_ALCF_EP_1_OPT_F"] = "Today&#39;s Favorite ~ Syrupy Viscera", --
+  ["D_ALCF_EP_1_OPT_G"] = "Event Special ~ Frosted Mire", --
+  ["D_ALCF_EP_1_OPT_H"] = "Event Special ~ Gelatinous Sponge", --
+  ["D_ALCF_EP_1_OPT_I"] = "Event Special ~ Mucal Curiosity", --
+  ["D_ALCF_EP_1_OPT_J"] = "Event Special ~ Nourishing Oozer", --
+  ["D_ALCF_EP_1_OPT_K"] = "Event Special ~ Primordial Sponge", --
+  ["D_ALCF_EP_1_OPT_L"] = "Event Special ~ Splicer&#39;s Delight", --
+  ["D_ALCF_EP_1_OPT_M"] = "Event Special ~ Squirming Fancy", --
+  ["D_ALCF_EP_1_OPT_N"] = "Event Special ~ Slime Pop", --
+  ["D_ALCF_HOME_LANG"] = "Good day to you, Traveler. Interested in today's <SPECIAL>Events &amp; Specials<>, or would you like to trade on the <TRADE>Ingredients Market<>?", --
+  ["D_ALCF_HOME_OPT_A"] = "Events &amp; Specials", --
   ["D_ALCF_IM_LANG"] = "Are you looking to buy or sell?", --
   ["D_ALCF_IM_OPT_A"] = "Buy...", --
   ["D_ALCF_IM_OPT_B"] = "Sell...", --

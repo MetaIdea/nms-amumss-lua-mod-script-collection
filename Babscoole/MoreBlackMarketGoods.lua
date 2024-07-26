@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "MoreBlackMarketGoods.pak",
 ["MOD_AUTHOR"]    = "RemingtonRyder",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.62",
+["NMS_VERSION"]   = "4.51",
 ["MODIFICATIONS"] =
     {
         {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
                                 {"SmugglerStation", "GcTradeData.xml"},
                                 {"PirateVisitor",   "GcTradeData.xml"},
@@ -22,11 +22,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Pirate",  "20"},
+                                {"Pirate",  "40"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
                                 {"SmugglerStation", "GcTradeData.xml"},
                                 {"PirateVisitor",   "GcTradeData.xml"},
@@ -34,11 +34,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Pirate",  "250"},
+                                {"Pirate",  "500"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
                                 {"PirateVisitor", "GcTradeData.xml", "Value", "POLICE_TOKEN"},
                                 {"PirateVisitor", "GcTradeData.xml", "Value", "SACVENOM"},

@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gGame"
 ModNameSub = "Misc Changes X"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "441"
+GameVersion = "500"
 ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -15,8 +15,8 @@ BonusChildMult = 0.03							--0.03 ;
 
 
 --Torch Adjustments
-TorchFoV = 120									--Torch arc width, in degrees. 181+=360 degrees. Original value "120"
-TorchStrength = 4.2								--Torch brightness. Original value "3.5"
+TorchFoV = 110									--Torch arc width, in degrees. 181+=360 degrees. Original value "110" (120)
+TorchStrength = 4.2								--Torch brightness. Original value "4" (3.5)
 TorchCookieIndex = 0							--0
 TorchDimFoV = 65								--65 Derelict Freighter FOV
 TorchDimStrength = 2.2							--1.5 Derelict Freighter Strength
@@ -28,7 +28,7 @@ UndergroundTorchStrength = 3.0					--2.5
 UndergroundTorchStrengthFar = 7.5				--6.5
 TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
 TorchOffsetY = -0.35							--Torch source, + above, -below top of character head, in u. Original value "-0.5"
-TorchOffsetZ = -0.7								--Torch source, + behind, - in front of centerline of character, in u. Original value "-0.75"
+TorchOffsetZ = -1.0								--Torch source, + behind, - in front of centerline of character, in u. Original value "-1.2" (-0.75)
 TorchRotation = 0.0								--???
 TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
 TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"

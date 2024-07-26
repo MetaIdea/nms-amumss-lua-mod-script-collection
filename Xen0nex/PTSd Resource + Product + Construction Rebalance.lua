@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "4_65"
+GameVersion = "5_01"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -89,14 +89,16 @@ ProductSaleChanges =
 	{"FOOD_CK_MCUST_NAME",	0.7},					--200,000		Horrifying, Gooey Delight
 	{"FOOD_DNUT_MCUST_NAME",	0.9},				--180,000		Monstrous Doughnut
 	{"FOOD_PIE_MCUST_NAME",	1.16},					--160,000		The Spawning Tart
-	{"FOOD_CM_APPLE_NAME",	0.9},					--176,900		'Apple' Cake of Lost Souls
+	{"FOOD_CM_APPLE_NAME",	0.85},					--176,900		'Apple' Cake of Lost Souls
+	{"FOOD_CM_BLOBBUT_NAME",	1.02},				--167,200		Gooey Screamer
 	{"FOOD_CM_CACTUS_NAME",	0.9},					--170,300		Choking Monstrosity Cake
 	{"FOOD_CM_CREAM_NAME",	1.15},					--152,300		Doomed Cream Cake
-	{"FOOD_MM_HONEY_NAME",	1.2},					--125,400		Tortured Honey Cake
+	{"FOOD_MM_HONEY_NAME",	1.25},					--125,400		Tortured Honey Cake
 	{"FOOD_MM_BLOB_NAME",	1.1},					--142,900		Itching, Creeping Honey Sponge
-	{"FOOD_CM_HONEY_NAME",	1.1},					--149,700		Monstrous Honey Cake
+	{"FOOD_CM_HONEY_NAME",	1.15},					--149,700		Monstrous Honey Cake
 	{"FOOD_MM_APPLE_NAME",	0.95},					--149,400		Cake of Sin
 	{"FOOD_MM_CREAM_NAME",	1.15},					--128,000		Unbound Cream Horn
+	{"FOOD_MM_CUST_NAME",	0.85},					--199,200		Cake of the Lost
 	{"FOOD_MM_JAM_NAME",	1.1},					--153,300		Writhing Jam Puff
 	{"FOOD_MM_JGLITCH_NAME",	1.1},				--152,200		Unbound Monstrosity
 	{"FOOD_MM_JHOT_NAME",	1.1},					--149,400		Burning Jam Surprise
@@ -105,17 +107,17 @@ ProductSaleChanges =
 	{"FOOD_EGGPIE_M_NAME",	1.2},					--180,000		Whispering Omelette
 	
 	{"FOOD_DNUT_BLOB_NAME",	0.9},					--120,000		Gooey ProtoDoughnut
-	{"FOOD_DNUT_HON_NAME",	1.35},					--65,000		Honey Doughnut
+	{"FOOD_DNUT_HON_NAME",	1.4},					--65,000		Honey Doughnut
 	{"FOOD_ICE_NAME",		0.78},					--48,000		Ice Cream
 	{"FOOD_ICE_HONEY_NAME",	1.2},					--56,000		Honey Ice Cream
 	{"FOOD_ICE_STAR_NAME",	1.0},					--36,000		Stellar Ice Cream
 	{"FOOD_ICE_FISH_NAME",	0.68},					--36,000		Briney Rime
 	{"FOOD_DNUT_CUST_NAME",	1.1},					--105,000		Custard Doughnut
-	{"FOOD_MC_CUST_NAME",	0.5},					--98,400		Soft Custard Fancy
+	{"FOOD_MC_CUST_NAME",	0.47},					--98,400		Soft Custard Fancy
 	{"FOOD_MC_CHOC_NAME",	1.25},					--19,200		Chocolate Dream
 	{"FOOD_MC_CARM_NAME",	1.18},					--23,600		Fluffy Caramel Delight
 	{"FOOD_CB_CACTUS_NAME",	0.9},					--71,500		Honied Throat-Sticker
-	{"FOOD_PIE_HONEY_NAME",	1.4},					--48,000		Honey Tart
+	{"FOOD_PIE_HONEY_NAME",	1.5},					--48,000		Honey Tart
 	{"FOOD_PIE_SCUST_NAME",	1.3},					--78,000		Stellar Custard Tart
 	{"FOOD_PIE_CREAM_NAME",	1.3},					--62,000		Creamy Treat
 	{"FOOD_PIE_GLOW_NAME",	1.3},					--40,000		Glowing Pie
@@ -132,6 +134,34 @@ ProductSaleChanges =
 	{"FOOD_B_PLAIN_NAME",	0.893},					--28,000		Simple Biscuit
 	{"FOOD_B_HONEY_NAME",	1.6},					--38,000		Honey Waffle
 	{"FOOD_B_JAM_NAME",		1.4},					--38,000		Jammy Rounds
+	
+	{"FOOD_MC_PCAT_NAME",	0.41},					--94,800		Nectar Islands
+	{"FOOD_MC_BUGJAM_NAME",	1.3},					--35,200		Frosted Mire
+	{"FOOD_CK_BUGJAM_NAME",	1.2},					--68,100		Gelatinous Sponge
+	{"FOOD_CB_BUGJAM_NAME",	1.06},					--81,900		Nourishing Oozer
+	{"FOOD_CP_APPLE_NAME",	0.8},					--78,000		Candied 'Apples'
+	{"FOOD_CP_BUGJAM_NAME",	1.05},					--81,900		Splicer's Delight
+	{"FOOD_CP_CACTUS_NAME",	0.9},					--71,500		Hybrid Cake
+	{"FOOD_CP_CREAM_NAME",	1.2},					--64,900		Creamy Clouds of Nectar
+	{"FOOD_CP_FCUST_NAME",	0.95},					--92,300		Sweet and Salty Puff
+	{"FOOD_CP_HONEY_NAME",	1.2},					--62,200		Ambrosial Wonder
+	{"FOOD_CP_JAM_NAME",	1.05},					--81,900		Jammy Burster
+	{"FOOD_CP_JGLITCH_NAME",	1.1},				--80,800		Xeno-Sponge
+	{"FOOD_CP_JHOT_NAME",	1.1},					--78,000		Syrupy Tingler
+	{"FOOD_CK_PCATBUT_NAME",	1.04},				--73,600		Syrup-Drenched Delight
+	{"FOOD_CG_BUGJAM_NAME",	1.1},					--81,900		Mucal Curiosity
+	{"FOOD_DNUT_PCAT_NAME",	0.9},					--120,000		Pollen Puffball
+	{"FOOD_PIE_BUGJAM_NAME",	1.2},				--62,000		Muculent Tart
+	{"FOOD_B_BUG_NAME",		0.67},					--56,000		Chewy Biscuit
+	{"FOOD_CM_BUGJAM_NAME",	1.2},					--148,000		Primordial Sponge
+	{"FOOD_CM_PCATBUT_NAME",	1.02},				--167,200		Cake of Eternal Sleep
+	{"FOOD_MM_PCAT_NAME",	0.8},					--199,200		Ambrosial Curse
+	{"FOOD_MM_BUGJAM_NAME",	1.1},					--153,300		Squirming Fancy
+	{"FOOD_EVIL_STEW_NAME",	1.125},					--96,000		The Worst Stew
+	{"UI_GRUB_POD_NAME",	6.0},					--11,000		Juicy Grub
+	{"FOOD_PCAT_VEG_NAME",	2.0},					--1,600			Syrupy Nectar
+	{"FOOD_HORROR_MEAT_NAME",	0.5},				--6,200			Rancid Flesh
+	{"FOOD_R_HORROR_NAME",	0.6},					--9,200			Purged Ribs
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -227,7 +257,7 @@ CookedFoodGroupSaleChanges =
 			2.1					--	Foods cooked with Extra Fluffy Batter
 		},
 		{--List of IDs
-			"FOOD_MC_APPLE", "FOOD_MC_BLOB", "FOOD_MC_CACTUS", "FOOD_MC_CARM", "FOOD_MC_CHOC", "FOOD_MC_CREAM", "FOOD_MC_CUST", "FOOD_MC_HONEY", "FOOD_MC_JAM", "FOOD_MC_JGLITCH", "FOOD_MC_JHOT", 
+			"FOOD_MC_APPLE", "FOOD_MC_BLOB", "FOOD_MC_CACTUS", "FOOD_MC_CARM", "FOOD_MC_CHOC", "FOOD_MC_CREAM", "FOOD_MC_CUST", "FOOD_MC_HONEY", "FOOD_MC_JAM", "FOOD_MC_JGLITCH", "FOOD_MC_JHOT", "FOOD_MC_PCAT", "FOOD_MC_BUGJAM",
 		}
 	},
 	{
@@ -235,15 +265,23 @@ CookedFoodGroupSaleChanges =
 			1.25				--	Foods cooked with Cake Batter
 		},
 		{
-			"FOOD_CK_APPLE", "FOOD_CK_BLOBBUT", "FOOD_CK_CACTUS", "FOOD_CK_CARM", "FOOD_CK_CHOC", "FOOD_CK_CREAM", "FOOD_CK_CUST", "FOOD_CK_FCUST", "FOOD_CK_HONEY", "FOOD_CK_JAM", "FOOD_CK_JGLITCH", "FOOD_CK_JHOT", "FOOD_CK_MCUST", "FOOD_CK_SCUST",
+			"FOOD_CK_APPLE", "FOOD_CK_BLOBBUT", "FOOD_CK_CACTUS", "FOOD_CK_CARM", "FOOD_CK_CHOC", "FOOD_CK_CREAM", "FOOD_CK_CUST", "FOOD_CK_FCUST", "FOOD_CK_HONEY", "FOOD_CK_JAM", "FOOD_CK_JGLITCH", "FOOD_CK_JHOT", "FOOD_CK_MCUST", "FOOD_CK_SCUST", "FOOD_CK_BUGJAM", 
 		}
 	},
 	{
 		{
-			1.4					--	Foods cooked with Thick, Sweet Batter
+			1.25					--	Foods cooked with Thick, Sweet Batter
 		},
 		{
-			"FOOD_CB_APPLE", "FOOD_CB_CACTUS", "FOOD_CB_CARM", "FOOD_CB_CREAM", "FOOD_CB_CUST", "FOOD_CB_FCUST", "FOOD_CB_HONEY", "FOOD_CB_JAM", "FOOD_CB_JGLITCH", "FOOD_CB_JHOT", "FOOD_CB_SCUST",
+			"FOOD_CB_APPLE", "FOOD_CB_CACTUS", "FOOD_CB_CARM", "FOOD_CB_CREAM", "FOOD_CB_CUST", "FOOD_CB_FCUST", "FOOD_CB_HONEY", "FOOD_CB_JAM", "FOOD_CB_JGLITCH", "FOOD_CB_JHOT", "FOOD_CB_SCUST", "FOOD_CB_BUGJAM",
+		}
+	},
+	{
+		{
+			1.25					--	Foods cooked with Syrupy Batter
+		},
+		{
+			"FOOD_CP_APPLE", "FOOD_CP_BUGJAM", "FOOD_CP_CACTUS", "FOOD_CP_CARM", "FOOD_CP_CHOC", "FOOD_CP_CREAM", "FOOD_CP_CUST", "FOOD_CP_FCUST", "FOOD_CP_HONEY", "FOOD_CP_JAM", "FOOD_CP_JGLITCH", "FOOD_CP_JHOT", "FOOD_CP_SCUST", "FOOD_CK_PCATBUT",
 		}
 	},
 	{
@@ -251,7 +289,7 @@ CookedFoodGroupSaleChanges =
 			1.15				--	Foods cooked with Proto Batter
 		},
 		{
-			"FOOD_CG_APPLE", "FOOD_CG_CACTUS", "FOOD_CG_CARM", "FOOD_CG_CHOC", "FOOD_CG_CREAM", "FOOD_CG_CUST", "FOOD_CG_JAM", "FOOD_CG_SCUST"
+			"FOOD_CG_APPLE", "FOOD_CG_CACTUS", "FOOD_CG_CARM", "FOOD_CG_CHOC", "FOOD_CG_CREAM", "FOOD_CG_CUST", "FOOD_CG_JAM", "FOOD_CG_SCUST", "FOOD_CG_BUGJAM", "FOOD_CG_PCAT",
 		}
 	},
 	{
@@ -259,7 +297,7 @@ CookedFoodGroupSaleChanges =
 			1.23				--	Ice Creams (often cooked with Viscous / Very Thick Custard)
 		},
 		{
-			"FOOD_ICE", "FOOD_ICE_APPLE", "FOOD_ICE_BONE", "FOOD_ICE_CARM", "FOOD_ICE_CHOC", "FOOD_ICE_FIEND", "FOOD_ICE_FISH", "FOOD_ICE_FRUIT", "FOOD_ICE_GLITCH", "FOOD_ICE_GRAH", "FOOD_ICE_HONEY", "FOOD_ICE_HOT", "FOOD_ICE_STAR",
+			"FOOD_ICE", "FOOD_ICE_APPLE", "FOOD_ICE_BONE", "FOOD_ICE_CARM", "FOOD_ICE_CHOC", "FOOD_ICE_FIEND", "FOOD_ICE_FISH", "FOOD_ICE_FRUIT", "FOOD_ICE_GLITCH", "FOOD_ICE_GRAH", "FOOD_ICE_HONEY", "FOOD_ICE_HOT", "FOOD_ICE_STAR", "FOOD_ICE_BUG"
 		}
 	},
 	{
@@ -267,7 +305,7 @@ CookedFoodGroupSaleChanges =
 			1.15				--	Foods cooked with Lumpen Doughnut (and Proto-Beignet)
 		},
 		{
-			"FOOD_R_DONUT", "FOOD_R_GONUT", "FOOD_DNUT_AJAM", "FOOD_DNUT_BLOB", "FOOD_DNUT_CARM", "FOOD_DNUT_CHOC", "FOOD_DNUT_CJAM", "FOOD_DNUT_CUST", "FOOD_DNUT_FCUST", "FOOD_DNUT_HON", "FOOD_DNUT_HONB", "FOOD_DNUT_JAM", "FOOD_DNUT_MCUST", "FOOD_DNUT_MEAT", "FOOD_DNUT_SCUST",
+			"FOOD_R_DONUT", "FOOD_R_GONUT", "FOOD_DNUT_AJAM", "FOOD_DNUT_BLOB", "FOOD_DNUT_CARM", "FOOD_DNUT_CHOC", "FOOD_DNUT_CJAM", "FOOD_DNUT_CUST", "FOOD_DNUT_FCUST", "FOOD_DNUT_HON", "FOOD_DNUT_HONB", "FOOD_DNUT_JAM", "FOOD_DNUT_MCUST", "FOOD_DNUT_MEAT", "FOOD_DNUT_SCUST", "FOOD_DNUT_PCAT",
 		}
 	},
 	{
@@ -275,7 +313,7 @@ CookedFoodGroupSaleChanges =
 			0.8					--	Foods cooked with Pie Case
 		},
 		{
-			"FOOD_R_PIECASE", "FOOD_PIE_BALL", "FOOD_PIE_BEET", "FOOD_PIE_BERRY", "FOOD_PIE_BONE", "FOOD_PIE_CACTUS", "FOOD_PIE_CARM", "FOOD_PIE_CAT", "FOOD_PIE_CHEESE", "FOOD_PIE_CHOC", "FOOD_PIE_CRAB", "FOOD_PIE_CRABJ", "FOOD_PIE_CREAM", "FOOD_PIE_CUST", "FOOD_PIE_DIG", "FOOD_PIE_DRILL", "FOOD_PIE_FIEND", "FOOD_PIE_FISH", "FOOD_PIE_GEK", "FOOD_PIE_GLOW", "FOOD_PIE_GREASE", "FOOD_PIE_HONEY", "FOOD_PIE_JAM", "FOOD_PIE_MCUST", "FOOD_PIE_MEAT", "FOOD_PIE_MOLE", "FOOD_PIE_MUSH", "FOOD_PIE_ORGAN", "FOOD_PIE_ROOTS", "FOOD_PIE_SCUST", "FOOD_PIE_SMEAT", "FOOD_PIE_VCHEE", "FOOD_PIE_VEG", "FOOD_PIE_WEIRD",
+			"FOOD_R_PIECASE", "FOOD_PIE_BALL", "FOOD_PIE_BEET", "FOOD_PIE_BERRY", "FOOD_PIE_BONE", "FOOD_PIE_CACTUS", "FOOD_PIE_CARM", "FOOD_PIE_CAT", "FOOD_PIE_CHEESE", "FOOD_PIE_CHOC", "FOOD_PIE_CRAB", "FOOD_PIE_CRABJ", "FOOD_PIE_CREAM", "FOOD_PIE_CUST", "FOOD_PIE_DIG", "FOOD_PIE_DRILL", "FOOD_PIE_FIEND", "FOOD_PIE_FISH", "FOOD_PIE_GEK", "FOOD_PIE_GLOW", "FOOD_PIE_GREASE", "FOOD_PIE_HONEY", "FOOD_PIE_JAM", "FOOD_PIE_MCUST", "FOOD_PIE_MEAT", "FOOD_PIE_MOLE", "FOOD_PIE_MUSH", "FOOD_PIE_ORGAN", "FOOD_PIE_ROOTS", "FOOD_PIE_SCUST", "FOOD_PIE_SMEAT", "FOOD_PIE_VCHEE", "FOOD_PIE_VEG", "FOOD_PIE_WEIRD", "FOOD_PIE_BMEAT", "FOOD_PIE_BUGJAM",
 		}
 	},
 	{
@@ -283,7 +321,7 @@ CookedFoodGroupSaleChanges =
 			0.55				--	Foods cooked with Sugar Dough (Biscuits)
 		},
 		{
-			"FOOD_B_APPLE", "FOOD_B_BURN", "FOOD_B_CACTUS", "FOOD_B_CARAMEL", "FOOD_B_CAT", "FOOD_B_CHEESE", "FOOD_B_CHOCO", "FOOD_B_CREAM", "FOOD_B_FIEND", "FOOD_B_FISH", "FOOD_B_FLOWER", "FOOD_B_HERB", "FOOD_B_HONEY", "FOOD_B_HOT", "FOOD_B_JAM", "FOOD_B_MEAT", "FOOD_B_MILK", "FOOD_B_MUSHROOM", "FOOD_B_PLAIN", "FOOD_B_SALT", "FOOD_B_VEG", "FOOD_B_WEIRD", "FOOD_B_WORM", 
+			"FOOD_B_APPLE", "FOOD_B_BURN", "FOOD_B_CACTUS", "FOOD_B_CARAMEL", "FOOD_B_CAT", "FOOD_B_CHEESE", "FOOD_B_CHOCO", "FOOD_B_CREAM", "FOOD_B_FIEND", "FOOD_B_FISH", "FOOD_B_FLOWER", "FOOD_B_HERB", "FOOD_B_HONEY", "FOOD_B_HOT", "FOOD_B_JAM", "FOOD_B_MEAT", "FOOD_B_MILK", "FOOD_B_MUSHROOM", "FOOD_B_PLAIN", "FOOD_B_SALT", "FOOD_B_VEG", "FOOD_B_WEIRD", "FOOD_B_WORM", "FOOD_B_BUG",
 		}
 	},
 	{
@@ -291,7 +329,7 @@ CookedFoodGroupSaleChanges =
 			0.9				--	Foods cooked with Wailing Batter (Larval Cores)
 		},
 		{
-			"FOOD_CM_APPLE", "FOOD_CM_BLOBBUT", "FOOD_CM_CACTUS", "FOOD_CM_CARM", "FOOD_CM_CHOC", "FOOD_CM_CREAM", "FOOD_CM_HONEY", "FOOD_CM_JAM", "FOOD_CM_JGLITCH", "FOOD_CM_JHOT",
+			"FOOD_CM_APPLE", "FOOD_CM_BLOBBUT", "FOOD_CM_CACTUS", "FOOD_CM_CARM", "FOOD_CM_CHOC", "FOOD_CM_CREAM", "FOOD_CM_HONEY", "FOOD_CM_JAM", "FOOD_CM_JGLITCH", "FOOD_CM_JHOT", "FOOD_CM_BUGJAM", "FOOD_CM_PCATBUT",
 		}
 	},
 	{
@@ -299,7 +337,7 @@ CookedFoodGroupSaleChanges =
 			0.92			--	Foods cooked with Writhing, Roiling Batter (Larval Cores)
 		},
 		{
-			"FOOD_MM_APPLE", "FOOD_MM_BLOB", "FOOD_MM_CACTUS", "FOOD_MM_CARM", "FOOD_MM_CHOC", "FOOD_MM_CREAM", "FOOD_MM_CUST", "FOOD_MM_HONEY", "FOOD_MM_JAM", "FOOD_MM_JGLITCH", "FOOD_MM_JHOT",
+			"FOOD_MM_APPLE", "FOOD_MM_BLOB", "FOOD_MM_CACTUS", "FOOD_MM_CARM", "FOOD_MM_CHOC", "FOOD_MM_CREAM", "FOOD_MM_CUST", "FOOD_MM_HONEY", "FOOD_MM_JAM", "FOOD_MM_JGLITCH", "FOOD_MM_JHOT", "FOOD_MM_PCAT", "FOOD_MM_BUGJAM",
 		}
 	},
 }

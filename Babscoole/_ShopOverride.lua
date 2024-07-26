@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_ShopOverride.pak",
 ["MOD_AUTHOR"]              = "InvalidCode",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "5.1.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

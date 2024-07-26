@@ -1,12 +1,9 @@
-modName = "NoCameraAutoCenter"
-gameVersion = "511"
-
 NMS_MOD_DEFINITION_CONTAINER = {
-    MOD_FILENAME = modName.."_"..gameVersion..".pak",
+    MOD_FILENAME = "NoCameraAutoCenter_511.pak",
     MOD_DESCRIPTION = "Disable camera auto center",
-    MOD_AUTHOR = "aditya25",
-    LUA_AUTHOR = "aditya25",
-    NMS_VERSION = gameVersion,
+    MOD_AUTHOR = "clawdius25",
+    LUA_AUTHOR = "clawdius25",
+    NMS_VERSION = "511",
     GLOBAL_INTEGER_TO_FLOAT = "FORCE",
     MODIFICATIONS = {
         {
@@ -336,8 +333,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 {"SpringSpeed", 0},
                                 {"LockToObjectOnIdle", "False"},
                                 {"VertRotationMin", -80},
-                                {"VertRotationMax", 80},
-                                {"DistStiffness", 0.2}
+                                {"VertRotationMax", 80}
                             }
                         },
                         {
