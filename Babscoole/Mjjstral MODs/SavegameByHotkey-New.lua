@@ -113,6 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_EDIT"] = "ADD_EMOTE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"EmoteID",             "SAVEGAMEW"},
                                 {"AvailableUnderwater", "True"},
                             }
                         },

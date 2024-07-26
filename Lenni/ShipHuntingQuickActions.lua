@@ -171,21 +171,61 @@ return [[
 end
 
 function GetQuickAction(TITLE, ANIM, ICON, UNDERWATER)
+local INDEX
+if UNDERWATER == "True" then
+	INDEX = 1
+else
+	INDEX = 0
+end
 return [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM .. [[" />
+      <Property name="EmoteID" value="]] .. ANIM .. INDEX .. [[" />
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
       <Property name="LoopAnimUntilMove" value="" />
       <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="False" />
+      <Property name="MoveToCancel" value="True" />
       <Property name="GekAnimationName" value="" />
       <Property name="GekLoopAnimUntilMove" value="" />
       <Property name="AvailableUnderwater" value="]] .. UNDERWATER .. [[" />
@@ -194,6 +234,15 @@ return [[
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]
@@ -247,7 +296,6 @@ ACTIONCOMPONENTS 	= ""
 ACTIONCOMPONENTS_TABLE = {}
 EMOTEMENU 			= ""
 REWARDTABLE 		= ""
-SCANEVENTTABLE		= ""
 ACTIONCOMPONENTS_COUNT = 0
 ACTIONCOMPONENTS_LIMIT = 28 --actually 32
 	
@@ -275,9 +323,6 @@ for i=1,#QUICK_ACTION_LIST,1 do
 		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"] then
 			REWARDTABLE 		= REWARDTABLE 		.. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARDTABLE"]
 		end
-		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"] then
-			SCANEVENTTABLE = SCANEVENTTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"]
-		end
 	else --pure reward
 		ACTIONCOMPONENTS 	= ACTIONCOMPONENTS 	.. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])	
 		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "True")
@@ -300,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Lenni",
 ["LUA_AUTHOR"]				= "Lenni, Babscoole",
 ["MOD_DESCRIPTION"]			= "Quick Action to find various POIs for ship hunters",
-["NMS_VERSION"]				= "4.43",
+["NMS_VERSION"]				= "5.01.1",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -354,17 +399,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= REWARDTABLE
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Events"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= SCANEVENTTABLE
 						}
 					}
 				},
@@ -440,13 +474,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 if REWARDTABLE == "" then table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3) 
-end
-if SCANEVENTTABLE == "" then 
-	if #NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"] > 3 then
-		table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 4)
-	else
-		table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)	
-	end
 end
 
 --"TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\EMOTE_MENU.DDS", "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"

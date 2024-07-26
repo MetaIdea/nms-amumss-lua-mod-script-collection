@@ -4,8 +4,8 @@ SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
     "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS",
-    "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
-    "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
+    "FREIGHTER", "CAPFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
+    "SCIENCEFRIG", "SUPPORTFRIG", "INDUSTRIALFRIG", "COMBATFRIG", "DIPLOMATICFRIG", "LIVINGFRIG", "GHOSTFRIG",
     "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
     "ANTELOPE", "BEETLE", "SHARK", "BIRD", "FISH", "FLYINGLIZARD", "BUTTERFLY", "RODENT", "COW", "TRICERATOPS", "CAT",
     "FLYINGSNAKE", "STRIDER", "TREX", "SIXLEGCOW", "TWOLEGANTELOPE", "SIXLEGCAT", "GRUNT", "BLOB", "SPIDER", "QUAD", "FLOATSPIDER", "SWIMCOW",
@@ -33,18 +33,18 @@ SEED_TYPE_PATH =
     ["STAFFMTATLAS"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOLATLAS.SCENE.MBIN",
 
     ["FREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN",
-    ["CAPITALFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
-    ["CREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
+    ["CAPFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
 
     ["FREIGHTERSMALL"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC.SCENE.MBIN",
     ["FREIGHTERTINY"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN",
 
-    ["SCIENCEFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SCIENCEFRIGATELOD0.SCENE.MBIN",
-    ["SUPPORTFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD0.SCENE.MBIN",
-    ["INDUSTRIALFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/INDUSTRIALFRIGATELOD0.SCENE.MBIN",
-    ["COMBATFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMBATFRIGATELOD0.SCENE.MBIN",
-    ["DIPLOMATICFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/DIPLOMATICFRIGATELOD0.SCENE.MBIN",
-    ["LIVINGFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATELOD0.SCENE.MBIN",
+    ["SCIENCEFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SCIENCEFRIGATELOD0.SCENE.MBIN",
+    ["SUPPORTFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD0.SCENE.MBIN",
+    ["INDUSTRIALFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/INDUSTRIALFRIGATELOD0.SCENE.MBIN",
+    ["COMBATFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMBATFRIGATELOD0.SCENE.MBIN",
+    ["DIPLOMATICFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/DIPLOMATICFRIGATELOD0.SCENE.MBIN",
+    ["LIVINGFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATELOD0.SCENE.MBIN",
+    ["GHOSTFRIG"]="MODELS/COMMON/SPACECRAFT/FRIGATES/GHOSTSHIPFRIGATELOD0.SCENE.MBIN",
 
     ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",
     ["POLICEFREIGHTER"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICEFREIGHTER.SCENE.MBIN",
@@ -285,31 +285,35 @@ ANIM_TEMPLATE =
 [[
           <Property value="TkAnimationData.xml">
             <Property name="Anim" value="]] .. ANIM_ID .. [[" />
-            <Property name="AdditiveBaseAnim" value="" />
             <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
-            <Property name="StartNode" value="" />
-            <Property name="ExtraStartNodes" />
-            <Property name="GameData" value="TkAnimationGameData.xml">
-              <Property name="RootMotion" value="None" />
-              <Property name="BlockPlayerMovement" value="False" />
-              <Property name="BlockPlayerWeapon" value="Unblocked" />
-            </Property>
+            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
             <Property name="FrameStart" value="0" />
             <Property name="FrameEnd" value="0" />
-            <Property name="Priority" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
             <Property name="OffsetMin" value="0" />
             <Property name="OffsetMax" value="0" />
             <Property name="Delay" value="0" />
             <Property name="Speed" value="1" />
             <Property name="ActionStartFrame" value="0" />
             <Property name="ActionFrame" value="-1" />
-            <Property name="AdditiveBaseFrame" value="0" />
-            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="Actions" />
             <Property name="CreatureSize" value="AllSizes" />
             <Property name="Additive" value="False" />
             <Property name="Mirrored" value="False" />
             <Property name="Active" value="True" />
             <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="False" />
+              <Property name="BlockPlayerWeapon" value="Unblocked" />
+            </Property>
           </Property>
 ]]
 return ANIM_TEMPLATE
@@ -473,12 +477,18 @@ QUICK_ACTION_BUTTON_TEMPLATE =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[W" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="PropData" value="GcPlayerEmotePropData.xml">
         <Property name="Model" value="" />
@@ -533,6 +543,12 @@ QUICK_ACTION_BUTTON_TEMPLATE =
         <Property name="ResHandle" value="GcResource.xml">
           <Property name="ResourceID" value="0" />
         </Property>
+      </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]

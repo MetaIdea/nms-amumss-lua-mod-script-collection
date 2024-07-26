@@ -2,7 +2,7 @@ QUICK_ACTION_LIST =
 {
     "SAVE",
     "GALACTICMAP",
-    "PLANETARYSCANNER",
+    "PLANETSCANNER",
     "TOGGLE_BACKPACK",
     "REVEAL_PORTAL",
     "HEALTH_SUIT",
@@ -11,7 +11,7 @@ QUICK_ACTION_LIST =
     "HARVEST",
     "PLANET_FINDER",
     "TOGGLE_SHIELD",
-    "TOGGLE_INVISIBLE",
+    "TOGGLE_INVIS",
     "REVEAL_RUNES",
     "R_CHART_ROBOT",
     "R_SCANSENTCRASH",
@@ -211,18 +211,18 @@ QUICK_ACTION_MENU =
     </Property>
 ]]
     },
-    ["PLANETARYSCANNER"] = {["TITLE"]="Planetary Scanner",["ICON"]="TEXTURES\UI\HUD\ICONS\SCANNING\SCAN.PLANET.DDS",["ANIM"]="PLANETARYSCANNER",
+    ["PLANETSCANNER"] = {["TITLE"]="Planetary Scanner",["ICON"]="TEXTURES\UI\HUD\ICONS\SCANNING\SCAN.PLANET.DDS",["ANIM"]="PLANETSCANNER",
         ["ACTION_TRIGGER"] =
 [[
               <Property value="GcActionTrigger.xml">
                 <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="PLANETARYSCANNER" />
+                  <Property name="Anim" value="PLANETSCANNER" />
                   <Property name="FrameStart" value="0" />
                   <Property name="StartFromEnd" value="False" />
                 </Property>
                 <Property name="Action">
                   <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="PLANETARYSCANNER" />
+                    <Property name="State" value="PLANETSCANNER" />
                     <Property name="Broadcast" value="True" />
                     <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
                       <Property name="BroadcastLevel" value="Scene" />
@@ -235,7 +235,7 @@ QUICK_ACTION_MENU =
 [[
     <Property value="LinkableNMSTemplate.xml">
       <Property name="Template" value="TkReferenceComponentData.xml">
-        <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLANETARYSCANNER.SCENE.MBIN" />
+        <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLANETSCANNER.SCENE.MBIN" />
         <Property name="LSystem" value="" />
       </Property>
       <Property name="Linked" value="" />
@@ -274,12 +274,12 @@ QUICK_ACTION_MENU =
               </Property>
 ]]
     },
-    ["TOGGLE_INVISIBLE"] = {["TITLE"]="Toggle Invisibility",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",["ANIM"]="TOGGLE_INVISIBLE",
+    ["TOGGLE_INVIS"] = {["TITLE"]="Toggle Invisibility",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",["ANIM"]="TOGGLE_INVIS",
         ["ACTION_TRIGGER"] =
 [[
               <Property value="GcActionTrigger.xml">
                 <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="TOGGLE_INVISIBLE" />
+                  <Property name="Anim" value="TOGGLE_INVIS" />
                   <Property name="FrameStart" value="0" />
                   <Property name="StartFromEnd" value="False" />
                 </Property>
@@ -959,42 +959,52 @@ function GetTriggerAnim(ANIM)
 return [[
           <Property value="TkAnimationData.xml">
             <Property name="Anim" value="]] .. ANIM .. [[" />
-            <Property name="AdditiveBaseAnim" value="" />
             <Property name="Filename" value="MODELS/TESTS/EFFECTTEST.ANIM.MBIN" />
-            <Property name="StartNode" value="" />
-            <Property name="ExtraStartNodes" />
-            <Property name="GameData" value="TkAnimationGameData.xml">
-              <Property name="RootMotion" value="None" />
-              <Property name="BlockPlayerMovement" value="False" />
-              <Property name="BlockPlayerWeapon" value="Unblocked" />
-            </Property>
+            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
             <Property name="FrameStart" value="0" />
             <Property name="FrameEnd" value="0" />
-            <Property name="Priority" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
             <Property name="OffsetMin" value="0" />
             <Property name="OffsetMax" value="0" />
             <Property name="Delay" value="0" />
             <Property name="Speed" value="1" />
             <Property name="ActionStartFrame" value="0" />
             <Property name="ActionFrame" value="-1" />
-            <Property name="AdditiveBaseFrame" value="0" />
-            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="Actions" />
             <Property name="CreatureSize" value="AllSizes" />
             <Property name="Additive" value="False" />
             <Property name="Mirrored" value="False" />
             <Property name="Active" value="True" />
             <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="False" />
+              <Property name="BlockPlayerWeapon" value="Unblocked" />
+            </Property>
           </Property>
 ]]
 end
 
 function GetQuickAction(TITLE, ANIM, ICON, UNDERWATER)
+local INDEX
+if UNDERWATER == "True" then
+	INDEX = 1
+else
+	INDEX = 0
+end
 return [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM .. [[" />
+      <Property name="EmoteID" value="]] .. ANIM .. INDEX .. [[" />
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
       <Property name="PropData" value="GcPlayerEmotePropData.xml">
         <Property name="Model" value="" />
@@ -1049,6 +1059,12 @@ return [[
         <Property name="ResHandle" value="GcResource.xml">
           <Property name="ResourceID" value="0" />
         </Property>
+      </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]
@@ -3568,13 +3584,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETARYSCANNER.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETSCANNER.SCENE.EXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETARYSCANNER" />
+  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETSCANNER" />
   <Property name="NameHash" value="2823582375" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
@@ -3591,7 +3607,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="ATTACHMENT" />
-      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETARYSCANNER.ENTITY.MBIN" />
+      <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETSCANNER.ENTITY.MBIN" />
     </Property>
   </Property>
   <Property name="Children" />
@@ -3599,7 +3615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETARYSCANNER.ENTITY.EXML",
+            ["FILE_DESTINATION"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLANETSCANNER.ENTITY.EXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
@@ -3706,7 +3722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcActionTriggerState.xml">
-            <Property name="StateID" value="PLANETARYSCANNER" />
+            <Property name="StateID" value="PLANETSCANNER" />
             <Property name="Triggers">
               <Property value="GcActionTrigger.xml">
                 <Property name="Event" value="GcStateTimeEvent.xml">
@@ -3732,13 +3748,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="Triggers">
               <Property value="GcActionTrigger.xml">
                 <Property name="Event" value="GcAnimFrameEvent.xml">
-                  <Property name="Anim" value="PLANETARYSCANNER" />
+                  <Property name="Anim" value="PLANETSCANNER" />
                   <Property name="FrameStart" value="0" />
                   <Property name="StartFromEnd" value="False" />
                 </Property>
                 <Property name="Action">
                   <Property value="GcGoToStateAction.xml">
-                    <Property name="State" value="PLANETARYSCANNER" />
+                    <Property name="State" value="PLANETSCANNER" />
                     <Property name="Broadcast" value="False" />
                     <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
                       <Property name="BroadcastLevel" value="Local" />

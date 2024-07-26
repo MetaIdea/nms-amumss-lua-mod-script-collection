@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Early.Character.Creator.V.1.4.pak",
+["MOD_FILENAME"]  = "_Early.Character.Creator.V.1.5.pak",
 ["MOD_AUTHOR"]    = "JJhookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "5.1.1",
 ["MODIFICATIONS"] =
     {
         {
@@ -123,6 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -136,9 +137,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="3832378185" />
       <Property name="Type" value="REFERENCE" />
       <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
+        <Property name="TransX" value="-0.064624" />
         <Property name="TransY" value="0" />
-        <Property name="TransZ" value="0" />
+        <Property name="TransZ" value="-0.780548" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
@@ -146,6 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -159,9 +161,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
+        <Property name="TransX" value="-0.064624" />
         <Property name="TransY" value="2" />
-        <Property name="TransZ" value="0" />
+        <Property name="TransZ" value="-0.780548" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
@@ -169,6 +171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -222,7 +225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAudioComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAudioComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxDistance", "3"},

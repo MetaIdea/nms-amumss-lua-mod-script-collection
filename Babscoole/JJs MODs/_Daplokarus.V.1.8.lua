@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Daplokarus.V.1.7.pak",
+["MOD_FILENAME"]  = "_Daplokarus.V.1.8.pak",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.71",
+["NMS_VERSION"]   = "5.1.1",
 ["MODIFICATIONS"] =
     {
         {
@@ -27,8 +27,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ID", "HOVER_PET"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["PRECEDING_KEY_WORDS"] = {"Table"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
     <Property value="GcCreatureFilename.xml">
@@ -105,6 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="HeightMax" value="128" />
           <Property name="HeightTime" value="1" />
           <Property name="Herd" value="False" />
+          <Property name="IgnoreRotationInPounce" value="False" />
         </Property>
       </Property>
     </Property>
@@ -159,6 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="HeightMax" value="128" />
           <Property name="HeightTime" value="1" />
           <Property name="Herd" value="False" />
+          <Property name="IgnoreRotationInPounce" value="False" />
         </Property>
       </Property>
     </Property>

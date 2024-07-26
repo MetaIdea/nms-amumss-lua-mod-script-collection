@@ -431,31 +431,35 @@ ANIM_TEMPLATE =
 [[
           <Property value="TkAnimationData.xml">
             <Property name="Anim" value="]] .. ANIM_ID .. [[" />
-            <Property name="AdditiveBaseAnim" value="" />
             <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
-            <Property name="StartNode" value="" />
-            <Property name="ExtraStartNodes" />
-            <Property name="GameData" value="TkAnimationGameData.xml">
-              <Property name="RootMotion" value="None" />
-              <Property name="BlockPlayerMovement" value="False" />
-              <Property name="BlockPlayerWeapon" value="Unblocked" />
-            </Property>
+            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
             <Property name="FrameStart" value="0" />
             <Property name="FrameEnd" value="0" />
-            <Property name="Priority" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
             <Property name="OffsetMin" value="0" />
             <Property name="OffsetMax" value="0" />
             <Property name="Delay" value="0" />
             <Property name="Speed" value="1" />
             <Property name="ActionStartFrame" value="0" />
             <Property name="ActionFrame" value="-1" />
-            <Property name="AdditiveBaseFrame" value="0" />
-            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="Actions" />
             <Property name="CreatureSize" value="AllSizes" />
             <Property name="Additive" value="False" />
             <Property name="Mirrored" value="False" />
             <Property name="Active" value="True" />
             <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="False" />
+              <Property name="BlockPlayerWeapon" value="Unblocked" />
+            </Property>
           </Property>
 ]]
 return ANIM_TEMPLATE
@@ -619,12 +623,18 @@ QUICK_ACTION_BUTTON_TEMPLATE =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
-      <Property name="EmoteID" value="]] .. ANIM_ID .. [[" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[W" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="PropData" value="GcPlayerEmotePropData.xml">
         <Property name="Model" value="" />
@@ -679,6 +689,12 @@ QUICK_ACTION_BUTTON_TEMPLATE =
         <Property name="ResHandle" value="GcResource.xml">
           <Property name="ResourceID" value="0" />
         </Property>
+      </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
 ]]
