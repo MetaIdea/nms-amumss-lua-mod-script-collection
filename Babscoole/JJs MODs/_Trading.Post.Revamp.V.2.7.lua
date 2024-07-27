@@ -28889,19 +28889,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="TkRotationComponentData.xml">
-      <Property name="Speed" value="0.15" />
-      <Property name="Axis" value="Vector3f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="1" />
-        <Property name="z" value="0" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="TkRotationComponentData.xml">
+        <Property name="Speed" value="0.15" />
+        <Property name="Axis" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="1" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="AlwaysUpdate" value="False" />
+        <Property name="SyncGroup" value="-1" />
       </Property>
-      <Property name="AlwaysUpdate" value="False" />
-      <Property name="SyncGroup" value="-1" />
+      <Property name="Linked" value="" />
     </Property>
-    <Property value="EmptyNode.xml" />
-    <Property value="EmptyNode.xml" />
   </Property>
   <Property name="LodDistances">
     <Property value="0" />
@@ -50524,32 +50526,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.75" />
-        <Property name="G" value="1" />
-        <Property name="B" value="1" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.75" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50569,32 +50575,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.45" />
-        <Property name="G" value="0.71" />
-        <Property name="B" value="1" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.45" />
+          <Property name="G" value="0.71" />
+          <Property name="B" value="1" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50614,32 +50624,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="1" />
-        <Property name="G" value="1" />
-        <Property name="B" value="0" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="0" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50659,32 +50673,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.2" />
-        <Property name="G" value="0.41" />
-        <Property name="B" value="0.18" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.2" />
+          <Property name="G" value="0.41" />
+          <Property name="B" value="0.18" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50704,32 +50722,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50749,33 +50771,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="1" />
-        <Property name="G" value="0.55" />
-        <Property name="B" value="0" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="1" />
+          <Property name="G" value="0.55" />
+          <Property name="B" value="0" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-    </Property>
+      <Property name="Linked" value="" />
+    </Property>      
   </Property>
   <Property name="LodDistances">
     <Property value="0" />
@@ -50794,32 +50820,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.82" />
-        <Property name="G" value="0.76" />
-        <Property name="B" value="0.94" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.82" />
+          <Property name="G" value="0.76" />
+          <Property name="B" value="0.94" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50839,32 +50869,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.55" />
-        <Property name="G" value="0.2" />
-        <Property name="B" value="0.2" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.55" />
+          <Property name="G" value="0.2" />
+          <Property name="B" value="0.2" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50884,32 +50918,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="0.883" />
-        <Property name="G" value="0.883" />
-        <Property name="B" value="0.883" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="0.883" />
+          <Property name="G" value="0.883" />
+          <Property name="B" value="0.883" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.883" />
+          <Property name="G" value="0.883" />
+          <Property name="B" value="0.883" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.883" />
-        <Property name="G" value="0.883" />
-        <Property name="B" value="0.883" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -50929,32 +50967,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="GcColouriseComponentData.xml">
-      <Property name="PrimaryColour" value="Colour.xml">
-        <Property name="R" value="1" />
-        <Property name="G" value="1" />
-        <Property name="B" value="0.87" />
-        <Property name="A" value="1" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcColouriseComponentData.xml">
+        <Property name="PrimaryColour" value="Colour.xml">
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="0.87" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="SecondaryColour" value="Colour.xml">
+          <Property name="R" value="0.5" />
+          <Property name="G" value="0.5" />
+          <Property name="B" value="0.5" />
+          <Property name="A" value="1" />
+        </Property>
+        <Property name="TernaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
+        <Property name="QuaternaryColour" value="Colour.xml">
+          <Property name="R" value="0" />
+          <Property name="G" value="0" />
+          <Property name="B" value="0" />
+          <Property name="A" value="0" />
+        </Property>
       </Property>
-      <Property name="SecondaryColour" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.5" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="TernaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
-      <Property name="QuaternaryColour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="0" />
-      </Property>
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">

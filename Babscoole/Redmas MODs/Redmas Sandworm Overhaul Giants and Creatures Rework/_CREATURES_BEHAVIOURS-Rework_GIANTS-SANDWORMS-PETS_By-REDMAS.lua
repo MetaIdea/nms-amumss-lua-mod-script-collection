@@ -77,108 +77,84 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM02"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM02"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM03"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM03"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "EAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "POUNCE3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "POUNCE3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "POUNCE1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "POUNCE1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -214,36 +190,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "HAPPY01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SAD01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -435,72 +403,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SWIM"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SWIM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "LEFT"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "LEFT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "RIGHT"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "RIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "FASTSWIM"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "FASTSWIM"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_HEADLOOK01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "DET_HEADLOOK01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -513,108 +465,84 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "HAPPY01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SAD01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEP"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLEEP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "EAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -642,234 +570,182 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "HAPPY01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLOWWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "FASTWALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "WALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ATTACK3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PAIN3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEPSTART"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLEEPSTART"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEP"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLEEP"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEPEND"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SLEEPEND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "TURN_WALK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "TURN_WALK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "ROAR"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "ROAR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM02"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM02"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM03"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM03"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM04"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORM04"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORMATK"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "PERFORMATK"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "DEATH01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "DEATH01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_BLINK01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "DET_BLINK01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_SNIFF01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "DET_SNIFF01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_BARK01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "DET_BARK01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "EAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -889,36 +765,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "IDLE"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD03"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SAD03"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD02"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SAD02"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-                            ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01"},
-                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAnimationComponentData.xml", "Anim", "SAD01"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},

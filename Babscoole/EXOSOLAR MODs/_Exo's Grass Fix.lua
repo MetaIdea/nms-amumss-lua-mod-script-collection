@@ -1359,11 +1359,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Samplers"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "Samplers"},
                             ["CREATE_HOES"] = "TRUE",
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Placement",           "GRASS"},
@@ -1380,7 +1385,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariantData"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData"},
+                            -- ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariantData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",          "0.21"},
@@ -1391,7 +1399,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",              "0.21"},
@@ -1406,7 +1416,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "LodDistances"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml", "LodDistances"},
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -1418,7 +1430,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1442,18 +1456,6 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
 ]]
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DetailObjects", "GcObjectSpawnData.xml", "GcObjectSpawnData.xml", "QualityVariants", "GcObjectSpawnDataVariant.xml", "GcObjectSpawnDataVariant.xml", "LodDistances"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IGNORE", "0"},
-                                {"IGNORE", "10"},
-                                {"IGNORE", "20"},
-                                {"IGNORE", "35"},
-                                {"IGNORE", "180"},
-                            }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN", "Seed", "GcSeed.xml"},
@@ -1529,7 +1531,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
@@ -1649,7 +1651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["PRECEDING_KEY_WORDS"] = {"QualityVariantData", "GcObjectSpawnDataVariant.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants", "GcObjectSpawnDataVariant.xml"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[

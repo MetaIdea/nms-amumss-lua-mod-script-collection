@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "Multi-tool Weapon Tweaks.pak",
   ["MOD_DESCRIPTION"]		= "Attempts to balance Multi-Tool weapons",
   ["MOD_AUTHOR"]				= "Rynax15",
-  ["NMS_VERSION"]				= "4.41",
+  ["NMS_VERSION"]				= "5.02",
   ["MODIFICATIONS"] 		=
 	{
 		{
@@ -25,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","RAILGUN"},
-							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ChargeAmount",		"250"},		-- Original "50"
@@ -92,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",		"3"},		-- Original "1"
+								{"Bonus",		"2"},		-- Original "1"
 							}
 						}
 					}

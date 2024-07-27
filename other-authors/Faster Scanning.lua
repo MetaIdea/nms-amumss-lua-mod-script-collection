@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "FasterScanning.pak",
-["MOD_AUTHOR"]				= "Flugelwulff",
-["NMS_VERSION"]				= "4.51",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"] = "FasterScanning.pak",
+["MOD_AUTHOR"] = "Flugelwulff",
+["LUA_AUTHOR"] = "Flugelwulff",
+["NMS_VERSION"] = "5.02",
+["MODIFICATIONS"] =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
@@ -21,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BinocScanTime",						"0"}, 	-- Original "3.9"
 								{"BinocCreatureScanTime",				"0"},	-- Original "3.2"
 							}
-						}
+						},
 					}
 				}
 			}

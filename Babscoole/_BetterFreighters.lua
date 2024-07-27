@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcShootableComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcShootableComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AutoAimTarget", "True"}

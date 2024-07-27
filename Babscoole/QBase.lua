@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"TkAudioComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "TkAudioComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Ambient", ""}

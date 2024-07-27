@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ScanRange",                  "10000"},

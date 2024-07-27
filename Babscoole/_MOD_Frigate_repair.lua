@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcMaintenanceComponentData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DamageStatus", "Repaired"},

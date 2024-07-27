@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "No Intro.pak",
-["MOD_AUTHOR"]    = "Flugelwulff",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.00",
+["MOD_FILENAME"] = "No Intro.pak",
+["MOD_AUTHOR"] = "Flugelwulff",
+["LUA_AUTHOR"] = "Babscoole",
+["NMS_VERSION"] = "5.02",
 ["MODIFICATIONS"] =
     {
         {
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DisplayTime"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "0"}, -- Original "3"

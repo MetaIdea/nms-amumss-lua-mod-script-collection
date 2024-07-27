@@ -55,15 +55,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 <?xml version="1.0" encoding="utf-8"?>
 
 <Data template="TkAttachmentData">
+  <Property name="AdditionalData" />
   <Property name="Components">
-    <Property value="TkRotationComponentData.xml">
-      <Property name="Speed" value="0.0007" />
-      <Property name="Axis" value="Vector3f.xml">
-        <Property name="x" value="0" />
-        <Property name="y" value="1" />
-        <Property name="z" value="0" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="TkRotationComponentData.xml">
+        <Property name="Speed" value="0.0007" />
+        <Property name="Axis" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="1" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="SyncGroup" value="-1" />
       </Property>
-      <Property name="SyncGroup" value="-1" />
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
