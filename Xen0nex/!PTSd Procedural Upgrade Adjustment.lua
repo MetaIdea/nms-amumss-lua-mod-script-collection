@@ -378,7 +378,7 @@ MultiplicativeUpgradeChanges =
 		}
 	},
 	{
-		{"Vehicle_GunHeatTime",	AllExoCannonUpMult},
+		{"Vehicle_GunHeatTime",	AllExoCannonUpMult},		--This is actually the fuel efficiency of the flamethrower
 		{
 			{--	Upgrade			Min		Max
 				"UP_MFIRE2",	0.9,	0.95							--0.9,	0.95

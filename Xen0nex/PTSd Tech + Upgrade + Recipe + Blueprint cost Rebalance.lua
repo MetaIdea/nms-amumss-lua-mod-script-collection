@@ -332,10 +332,10 @@ AddItems =
 		"POWERGLOVE",			"RED2",				50,		"Substance",
 	},
 	{	--Advanced Exocraft Laser 
-		"VEHICLE_LASER1",		"RED2",				50,		"Substance",
+		"VEHICLE_LASER1",		"ATLAS_SEED_2",		1,		"Product",
 	},
 	{	--Precision Minotaur Laser 
-		"MECH_LASER1",			"RED2",				50,		"Substance",
+		"MECH_LASER1",			"ATLAS_SEED_4",		1,		"Product",
 	},
 	{	--Mech Liquidator Left Arm 
 		"MECH_ARMY_L_ARM",		"MECH_PROD",		1,		"Product",
@@ -499,7 +499,7 @@ ReplaceItems =
 		"MECH_ARMY_HEAD",		"MECH_PROD",		1,		"Product",		"COMPUTER",
 	},
 	{	--Aqua-Jets
-		"WATER_LANDER",			"ATLAS_SEED_5",		1,		"Product",		"ANTIMATTER",
+		"WATER_LANDER",			"ATLAS_SEED_6",		1,		"Product",		"ANTIMATTER",
 	},
 	{	--Aqua-Jets
 		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",

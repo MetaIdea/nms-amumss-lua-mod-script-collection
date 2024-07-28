@@ -59,7 +59,7 @@ MechStunWeaponRadius =						4					--5				AOE Radius of minotaur stun weapon shot
 MechStunWeaponDuration =					3					--3				Duration in seconds of minotaur stun weapon effect
 MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
-MechFlameUpgradesDMG =						2.0					--				Multiplier to apply to the bonus damage for Flamethrower upgrades (1 ~ 2 for Class B ~ S, increased to 1 ~ 6 for Class B ~ S by !PTSd Procedural Upgrade Adjustment.lua)
+MechFlameUpgradesDMGMult =					0.185				--				Multiplier to apply to the bonus damage for Flamethrower upgrades (1 ~ 2 for Class B ~ S, increased to 1 ~ 6 for Class B ~ S by !PTSd Procedural Upgrade Adjustment.lua)
 
 PhaseBeamLeechAmountMult =					0.5					--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
 LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
@@ -136,10 +136,10 @@ BlazeJavelinDMG =							2.071				--1500			(500 theoretical sustained DPS)					(l
 PlasmaLauncherDMG =							1.45				--500
 GeologyCannonDMG =							1.21				--1000
 
-ExocraftCannonDMG =							1.0					--340			(680 theoretical sustained DPS, plus explosions with AOE???)
+ExocraftCannonDMG =							0.85				--340			(680 theoretical sustained DPS, plus explosions with AOE???)
 NautilonCannonDMG =							1.0					--220			(440 theoretical sustained DPS, plus explosions with AOE???)
-MinotaurCannonDMG =							1.0					--420			(1200 theoretical sustained DPS, plus explosions with AOE???)
-MechFlameDMG =								1.0					--3				(37.5 theoretical sustained DPS, plus 25 Fire DOT DPS)
+MinotaurCannonDMG =							0.85				--420			(1200 theoretical sustained DPS, plus explosions with AOE???)
+MechFlameDMG =								16.0				--3				NOTE: Even ignoring the Fire DOT, this value only controls a very small portion (less than 4%) of the actual base damage of the flamethrower
 
 PhaseBeamDMG =								1.4					--250
 LivingShipBeamDMG =							1.1					--280
@@ -468,19 +468,19 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Vehicle_GunDamage",	MechFlameDMG*GXD/USCMult,	"FORCE"		--3
+				"Vehicle_GunDamage",	MechFlameDMG*GXD/USCMult,	"FORCE"		--3			Even ignoring the Fire DOT, this value only controls a very small portion (less than 4%) of the actual base damage of the flamethrower
 			},
 			{
 				"Vehicle_GunRate",	1/USCMult,	"FORCE"							--0.08		
 			},
 			{
-				"Vehicle_GunHeatTime",	1,	"FORCE"								--0.75
+				"Vehicle_GunHeatTime",	1,	"FORCE"								--0.75		This is actually the fuel efficiency of the flamethrower
 			},
 			{
 				"Weapon_FireDOT_Duration",	1/USCMult,	"FORCE"					--3	
 			},
 			{
-				"Weapon_FireDOT_DPS",	1/USCMult,	"PRESERVE"					--25	
+				"Weapon_FireDOT_DPS",	10/USCMult,	"PRESERVE"					--25	
 			}
 		}
 	},
@@ -1047,6 +1047,16 @@ WeaponProjChanges =
 	},
 	{
 		{
+			"VEHICLEGUN"							--Exocraft / Minotaur Cannon
+		},
+		{
+			{
+				"DroneImpulse",	0.15				--5		How far it knocks back sentinel drones on hit
+			},
+		}
+	},
+	{
+		{
 			"SHIPGUN"								--Photon Cannon / Spewing Vents
 		},
 		{
@@ -1205,7 +1215,7 @@ UpgradeDamageChanges =
 		{"UP_MCGUN2", "UP_MCGUN3", "UP_MCGUN4"}
 	},
 	{
-		{"Vehicle_GunDamage",	MechFlameDMG*MechFlameUpgradesDMG*GXD},						--Mech Liquidator Flamethrower		
+		{"Vehicle_GunDamage",	MechFlameDMG*MechFlameUpgradesDMGMult*GXD},						--Mech Liquidator Flamethrower		
 		{"UP_MFIRE2", "UP_MFIRE3", "UP_MFIRE4"}
 	},
 	{
@@ -1850,17 +1860,6 @@ UpgradeOtherChangesInt =
 function BonusMult (base, mult)
     return
     (base-1)*mult+1
-end
-
-function AddShieldLeech (LeechAmount)
-    return
-[[<Property value="GcStatsBonus.xml">
-          <Property name="Stat" value="GcStatsTypes.xml">
-            <Property name="StatsType" value="Ship_Weapons_ShieldLeech" />
-          </Property>
-          <Property name="Bonus" value="]]..LeechAmount..[[" />
-          <Property name="Level" value="1" />
-        </Property>]]
 end
 
 function DamageMult (Damagetype,	Mult)

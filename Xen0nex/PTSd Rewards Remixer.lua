@@ -1434,26 +1434,6 @@ function ProductReward (Product, Min, Max, Chance)
           </Property>]]
 end
 
-function SubstanceReward (Substance, Min, Max, Chance)
-    return
-[[<Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="]]..Chance..[[" />
-			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
-              <Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
-                <Property name="DefaultSubstanceType" value="None" />
-              </Property>
-              <Property name="ID" value="]]..Substance..[[" />
-              <Property name="AmountMin" value="]]..Min..[[" />
-              <Property name="AmountMax" value="]]..Max..[[" />
-              <Property name="DisableMultiplier" value="False" />
-              <Property name="RewardAsBlobs" value="False" />
-              <Property name="UseFuelMultiplier" value="False" />
-              <Property name="Silent" value="False" />
-            </Property>
-          </Property>]]
-end
-
 function CropNanites (NanitesChance, NanitesAmount)
     return
 [[<Property value="GcRewardTableItem.xml">

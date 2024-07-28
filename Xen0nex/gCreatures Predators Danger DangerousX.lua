@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "Danger DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "5_00"
+GameVersion = "5_01"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
@@ -16,10 +16,10 @@ GroundWormSpawnMax = 5						--Default 3
 
 BugQueenHealth = 48000						--Default 32000		(The Vile Queen boss bug)
 QueenHealthLevelMul = 2						--Default 1.5
-BugQueenSpitCount = 16						--Default 12
-BugQueenSpitRadius = 18						--Default 15
-BugQueenSpitballSpeed = 10					--Default 8
-BugQueenSpitballExplosionRadius = 2.8		--Default 2.8
+BugQueenSpitCount = 36						--Default 12		How many shots of spit are fired with each attack
+BugQueenSpitRadius = 18						--Default 15		This seems be how closely the shots of spit are grouped together
+BugQueenSpitballSpeed = 8					--Default 8			This is the speed at which they are initially shot upwards into the air, so higher value means it takes longer for it actually hit the ground
+BugQueenSpitballExplosionRadius = 4.2		--Default 2.8
 BugFiendHealth = 2000						--Default 700		(Likely the smaller helpers for the The Vile Queen boss bug)
 
 CreatureSmallHealth = 500					--Default 200
