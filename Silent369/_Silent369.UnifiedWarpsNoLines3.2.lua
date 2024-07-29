@@ -1,8 +1,8 @@
-local modfilename = "UnifiedWarps"
+local modfilename = "UnifiedWarpsNoLines"
 local lua_author  = "Silent"
-local lua_version = "2.9"
+local lua_version = "3.2"
 local mod_author  = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -25,12 +25,12 @@ Unifies Blackhole/Portal/Ship/Teleporter Warps
 --|----------------------------------------------------------------------------------------
 
 _FOV        = "360.000000"
-_FALLOFF    = "quadratic"
+_FALLOFF    = "linear"
 _FALLOFF_R  = "2.500000"
 _INTENSITY  = "000100.000000"
-_COL_R      = "0.850000"
+_COL_R      = "1.850000"
 _COL_G      = "0.255000"
-_COL_B      = "1.500000"
+_COL_B      = "0.500000"
 
 _UVScroll = [[
     <Property value="TkMaterialFlags.xml">
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "gradientCloud"},
                                 {"Name", "gradientCloudAlt"},
                                 {"Name", "pointLight5"},
-                                {"Name", "EndGlowCaps"},
+                                --{"Name", "EndGlowCaps"},
                                 {"Name", "LightStreaks"},
                                 {"Name", "LightStreaksSmall"},
                                 {"Name", "LightStreaks1"},
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gDiffuseMap"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Map",             "TEXTURES/EFFECTS/WARP/LINES.DDS"}, --TEXTURES/EFFECTS/WARP/LINES.DDS
+                                {"Map",             ""}, --TEXTURES/EFFECTS/WARP/LINES.DDS
                             }
                         },
                     }
@@ -276,11 +276,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Class", "Glow"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Class",           "Opaque"}, --Original "Glow"
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"x",               "20"}, --Original "40"
+                                {"y",               "80"}, --Original "40"
                             }
                         },
                         {

@@ -1,8 +1,8 @@
 local modfilename = "NativeSentinelShips"
 local lua_author  = "Silent"
-local lua_version = "1.5"
+local lua_version = "1.8"
 local mod_author  = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -25,7 +25,7 @@ increase their spawn chance. (Max: 100).
 --METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN
 
 ------------------------------------------------------------------------------------------------------
-local _RobotSpawnWeighting = 1   --Original "0"
+local _RobotSpawnWeighting = 1 --Original "0"
 ------------------------------------------------------------------------------------------------------
 local _SpawnFrequencyMulti = 1 --Spawn Frequencies within T1-T3 and Pirate economies. Resumed Default!
 ------------------------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ end
 
 local function GcAISpaceshipModelDataArray()
     local change_table = {}
-    local sources = {"Player", "Civilian", "Pirate"}
+    local sources = {"Civilian"} --Civilian, Pirate, Player
 
     for _, source in ipairs(sources) do
         local change_entry          = {

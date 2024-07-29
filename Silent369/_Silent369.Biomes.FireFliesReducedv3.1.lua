@@ -1,8 +1,8 @@
 local modfilename = "Biomes.FireFliesReduced"
 local lua_author  = "Silent"
-local lua_version = "2.8"
+local lua_version = "3.1"
 local mod_author  = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -15,7 +15,7 @@ local divider = 0.1    -- Modifies the number of heavyair particles.
 local speed_v = 0.1    -- Modifies the visible speed of particles.
 local multply = 1.5    -- Modifies the particles radius / radiusY.
 local fades_m = 0.5    -- Modifies fade speed of rendered particles.
-local scale_m = 2.0    -- Modifies the x,y,z particles scale ranges.
+local scale_m = 1.0    -- Modifies the x,y,z particles scale ranges.
 local rotat_r = 0.5    -- Modifies the rotational range of particles.
 ------------------------------------------------------------------------------
 

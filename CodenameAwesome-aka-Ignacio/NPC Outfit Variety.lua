@@ -500,14 +500,15 @@ for _, NPC in ipairs(SETTINGS) do
 	
 	COMPONENTS = {
 		"GcClothComponentData.xml",
-		"GcSpringAttachmentComponentData.xml",
+		"GcSpringComponentData.xml",
 	}
 	for _, component in ipairs(COMPONENTS) do
 		MBIN_CHANGE_TABLE[#MBIN_CHANGE_TABLE+1] = {
 			["MBIN_FILE_SOURCE"] = {"MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN"},
 			["EXML_CHANGE_TABLE"] = {
 				{
-					["PRECEDING_KEY_WORDS"] = {component},
+					["SPECIAL_KEY_WORDS"] = {"Template", component},
+                    ["SECTION_UP"] = 1,
 					["SEC_COPY"] = component
 				}
 			}
@@ -677,7 +678,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "Spacefarer-NPCOutfitVariety.pak",
+  ["MOD_FILENAME"] 			= "NPC Outfit Variety.pak",
   ["MOD_DESCRIPTION"]		= "NPCs now have more outfit variety, sometimes spawning with capes or with customization options from other factions.",
   ["MOD_AUTHOR"]				= "CodenameAwesome",
   ["MODIFICATIONS"] 		=

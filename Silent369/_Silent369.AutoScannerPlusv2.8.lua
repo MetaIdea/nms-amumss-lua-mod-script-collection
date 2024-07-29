@@ -1,9 +1,9 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "2.5"
+local lua_version = "2.8"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -16,10 +16,10 @@ Auto Scan planet entities (objects, structures) within given range.
 
 ------------------------------------------------------------------------------------------
 
-local _ScanRange = 1E+09   --max based on lod? range ~2,100u
-local _ScanTime  = 5
+local _ScanRange = 12500   --max based on lod? range ~2,100u
+local _ScanTime  = 20
 local _RangeMult = 1E+09
-local _ShowRange = 1E+09
+local _ShowRange = 12500
 local _Override  = -1      --hide when this close
 
 ------------------------------------------------------------------------------------------
@@ -28,29 +28,32 @@ local _Override  = -1      --hide when this close
 
 function CreateScannableComponentData(ScanRange, ScanName, ScanTime, RangeMult, ShowRange, DisplayIcon, AllowMerge)
     local result = [[
-    <Property value="GcScannableComponentData.xml">
-      <Property name="ScanRange" value="]]..ScanRange..[[" />
-      <Property name="ScanName" value="]]..ScanName..[[" />
-      <Property name="ScanTime" value="]]..ScanTime..[[" />
-      <Property name="CompassRangeMultiplier" value="]]..RangeMult..[[" />
-      <Property name="AlwaysShowRange" value="]]..ShowRange..[[" />
-      <Property name="CanTagIcon" value="True" />
-      <Property name="ClearTagOnArrival" value="True" />
-      <Property name="DisableIfBuildingPart" value="True" />
-      <Property name="DisableIfInBase" value="True" />
-      <Property name="UseModelNode" value="True" />
-      <Property name="Icon" value="GcScannerIconTypes.xml">
-        <Property name="ScanIconType" value="]]..DisplayIcon..[[" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcScannableComponentData.xml">
+        <Property name="ScanRange" value="]]..ScanRange..[[" />
+        <Property name="ScanName" value="]]..ScanName..[[" />
+        <Property name="ScanTime" value="]]..ScanTime..[[" />
+        <Property name="CompassRangeMultiplier" value="]]..RangeMult..[[" />
+        <Property name="AlwaysShowRange" value="]]..ShowRange..[[" />
+        <Property name="CanTagIcon" value="True" />
+        <Property name="ClearTagOnArrival" value="True" />
+        <Property name="DisableIfBuildingPart" value="True" />
+        <Property name="DisableIfInBase" value="True" />
+        <Property name="UseModelNode" value="True" />
+        <Property name="Icon" value="GcScannerIconTypes.xml">
+          <Property name="ScanIconType" value="]]..DisplayIcon..[[" />
+        </Property>
+        <Property name="ScannableType" value="Marker" />
+        <Property name="IsPlacedMarker" value="False" />
+        <Property name="ShowInFreighterBranchRoom" value="False" />
+        <Property name="TellPlayerIfFreighterObjectUsed" value="False" />
+        <Property name="FreighterObjectAlreadyUsedLocID" value="UI_ABAND_LOG_READ" />
+        <Property name="AllowedToMerge" value="]]..AllowMerge..[[" />
+        <Property name="MarkerActiveWithNodeInactive" value="True" />
+        <Property name="MissionSurveyId" value="" />
+        <Property name="MinDisplayDistanceOverride" value="]].._Override..[[" />
       </Property>
-      <Property name="ScannableType" value="Marker" />
-      <Property name="IsPlacedMarker" value="False" />
-      <Property name="ShowInFreighterBranchRoom" value="False" />
-      <Property name="TellPlayerIfFreighterObjectUsed" value="False" />
-      <Property name="FreighterObjectAlreadyUsedLocID" value="UI_ABAND_LOG_READ" />
-      <Property name="AllowedToMerge" value="]]..AllowMerge..[[" />
-      <Property name="MarkerActiveWithNodeInactive" value="True" />
-      <Property name="MissionSurveyId" value="" />
-      <Property name="MinDisplayDistanceOverride" value="]].._Override..[[" />
+      <Property name="Linked" value="" />
     </Property>]]
     return result
 end
@@ -103,21 +106,20 @@ AddPillar      = CreateScannableComponentData(_ScanRange, "UI_MINIHIVE_CORRUPT_N
 --ROBOT CAMP TEST - Spectrus1702
 AddCamp        = CreateScannableComponentData(_ScanRange, "UI_ROBOT_CAMP_TERMINAL_NAME", _ScanTime, _RangeMult, _ShowRange, "RobotHead",         "False")
 
-------------------------------------------------------------------------------------------
--- SOUND EFFECT
-------------------------------------------------------------------------------------------
-
 DistressSound =
 [[
-    <Property value="GcAudioAreaTriggerComponentData.xml">
-      <Property name="EventEnter" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="WARN_DISTRESS_DETECTED" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcAudioAreaTriggerComponentData.xml">
+        <Property name="EventEnter" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="WARN_DISTRESS_DETECTED" />
+        </Property>
+        <Property name="EventExit" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="INVALID_EVENT" />
+        </Property>
+        <Property name="EnterDistance" value="]].._ShowRange..[[" />
+        <Property name="ExitDistance" value="]].._ShowRange..[[" />
       </Property>
-      <Property name="EventExit" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="INVALID_EVENT" />
-      </Property>
-      <Property name="EnterDistance" value="]].._ShowRange..[[" />
-      <Property name="ExitDistance" value="]].._ShowRange..[[" />
+      <Property name="Linked" value="" />
     </Property>
 ]]
 
@@ -154,7 +156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                            ["ADD"]                 = AddSentinCrash,
                        },
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["PRECEDING_KEY_WORDS"] = {"LinkableNMSTemplate.xml"},
                            ["ADD_OPTION"]          = "ADDendSECTION",
                            ["ADD"]                 = [[</Property>]],
                        },
@@ -168,12 +170,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
                            ["REMOVE"]              = "SECTION",
                        },
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"Components"},
-                           ["LINE_OFFSET"]         = "+0",
+                           ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                           ["ADD_OPTION"]          = "ADDafterSECTION",
                            ["ADD"]                 = AddRunawayMold,
                        },
                    }
@@ -186,12 +188,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
                            ["REMOVE"]              = "SECTION",
                        },
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"Components"},
-                           ["LINE_OFFSET"]         = "+0",
+                           ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                           ["ADD_OPTION"]          = "ADDafterSECTION",
                            ["ADD"]                 = AddGrave,
                        },
                    }
@@ -204,12 +206,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
                            ["REMOVE"]              = "SECTION",
                        },
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"Components"},
-                           ["LINE_OFFSET"]         = "+0",
+                           ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                           ["ADD_OPTION"]          = "ADDafterSECTION",
                            ["ADD"]                 = AddPillar,
                        },
                    }
@@ -222,8 +224,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["PRECEDING_KEY_WORDS"] = {"Components"},
-                           ["LINE_OFFSET"]         = "+0",
+                           ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                           ["ADD_OPTION"]          = "ADDafterSECTION",
                            ["ADD"]                 = AddDropPod,
                        },
                    }
@@ -236,8 +238,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddMessage,
                         },
                     },
@@ -250,8 +252,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddStoryGlitch,
                         },
                     },
@@ -268,8 +270,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddBase,
                         },
                     },
@@ -285,8 +287,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddOutpost,
                         },
                     }
@@ -302,8 +304,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddMinorSettle,
                         },
                     }
@@ -320,8 +322,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddPSettlement,
                         },
                     }
@@ -334,8 +336,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddDistress..DistressSound,
                         },
                     }
@@ -351,8 +353,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddTerminal,
                         },
                     }
@@ -371,8 +373,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddRadioTower,
                         },
                     }
@@ -390,8 +392,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddMonolith,
                         },
                     }
@@ -404,23 +406,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddPortal,
                         },
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
-                            ["ADD"]                 = AddPortal,
-                        },
-                    }
-                },
+                --{
+                --    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
+                --    ["EXML_CHANGE_TABLE"] =
+                --    {
+                --        {
+                --            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                --            ["ADD_OPTION"]          = "ADDafterSECTION",
+                --            ["ADD"]                 = AddPortal,
+                --        },
+                --    }
+                --},
                     ----------------------------------------------------------------------------------------------
                     --ANCIENT RUINS
                     ----------------------------------------------------------------------------------------------
@@ -429,8 +431,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddRuin,
                         },
                     }
@@ -440,8 +442,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddTreasure,
                         },
                     }
@@ -459,8 +461,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddDepot,
                         },
                     }
@@ -478,8 +480,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddFactory,
                         },
                     }
@@ -495,8 +497,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddObserver,
                         },
                     }
@@ -510,8 +512,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddObserver,
                         },
                     }
@@ -524,8 +526,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddSentinelH,
                         },
                     }
@@ -538,8 +540,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddSentinelD,
                         },
                     }
@@ -552,8 +554,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddAbandoned,
                         },
                     }
@@ -566,8 +568,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddCamp,
                         },
                     }
@@ -576,19 +578,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --RARE RESOURCE, Already has GcScannableComponentData, we're overriding for AllowMerge
                     ----------------------------------------------------------------------------------------------
                 --{
-                --  ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\BONEPILE\ENTITIES\BONEPILE.ENTITY.MBIN]],
-                --  ["EXML_CHANGE_TABLE"] =
-                --  {
+                --    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\BONEPILE\ENTITIES\BONEPILE.ENTITY.MBIN]],
+                --    ["EXML_CHANGE_TABLE"] =
+                --    {
                 --          {
-                --              ["PRECEDING_KEY_WORDS"] = {"GcScannableComponentData.xml"},
+                --              ["PRECEDING_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
                 --              ["REMOVE"]              = "SECTION",
                 --          },
-                --        {
-                --          ["PRECEDING_KEY_WORDS"] = {"Components"},
-                --          ["LINE_OFFSET"]         = "+0",
-                --          ["ADD"]                 = AddBones,
-                --        }
-                --  },
+                --          {
+                --             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                --             ["ADD_OPTION"]          = "ADDafterSECTION",
+                --             ["ADD"]                 = AddBones,
+                --          }
+                --    },
                 --},
                     ----------------------------------------------------------------------------------------------
                     --CRASHED FREIGHTER
@@ -598,8 +600,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components"},
-                            ["LINE_OFFSET"]         = "+0",
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddFreighter..DistressSound,
                         },
                     }

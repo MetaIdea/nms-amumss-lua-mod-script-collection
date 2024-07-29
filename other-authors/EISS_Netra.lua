@@ -2588,18 +2588,6 @@ ShipTechSpecialist =
 VehicleTechSpecialist = 
 [[
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXO_ENG1" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXO_ENG2" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXO_ENG3" />
-        </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXO_ENG4" />
-        </Property>
-        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_EXOBOOST1" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -2610,6 +2598,18 @@ VehicleTechSpecialist =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_EXOBOOST4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_EXOGUN1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_EXOGUN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_EXOGUN3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_EXOGUN4" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_EXOLAS1" />
@@ -2624,16 +2624,16 @@ VehicleTechSpecialist =
           <Property name="Value" value="U_EXOLAS4" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXOGUN1" />
+          <Property name="Value" value="U_EXO_ENG1" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXOGUN2" />
+          <Property name="Value" value="U_EXO_ENG2" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXOGUN3" />
+          <Property name="Value" value="U_EXO_ENG3" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_EXOGUN4" />
+          <Property name="Value" value="U_EXO_ENG4" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_EXO_SUB1" />
@@ -2660,13 +2660,22 @@ VehicleTechSpecialist =
           <Property name="Value" value="U_EXO_SUBGUN4" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECH_ENG2" />
+          <Property name="Value" value="U_MECHFLAME2" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECH_ENG3" />
+          <Property name="Value" value="U_MECHFLAME3" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECH_ENG4" />
+          <Property name="Value" value="U_MECHFLAME4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_MECHGUN2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_MECHGUN3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_MECHGUN4" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_MECHLAS2" />
@@ -2678,13 +2687,13 @@ VehicleTechSpecialist =
           <Property name="Value" value="U_MECHLAS4" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECHGUN2" />
+          <Property name="Value" value="U_MECH_ENG2" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECHGUN3" />
+          <Property name="Value" value="U_MECH_ENG3" />
         </Property>
         <Property value="NMSString0x10.xml">
-          <Property name="Value" value="U_MECHGUN4" />
+          <Property name="Value" value="U_MECH_ENG4" />
         </Property>
 ]]
 --EDITABLE SECTION ENDS HERE
@@ -2693,8 +2702,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] = "NotAnotherTradeMod.pak",
   ["MOD_AUTHOR"] = "MasterNetra & musty123",
-  ["LUA_AUTHOR"] = "MasterNetra & musty123",
-  ["NMS_VERSION"] = "5.0",
+  ["LUA_AUTHOR"] = "Babscoole & MasterNetra",
+  ["NMS_VERSION"] = "5.01.1",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(Less Food Version)",
   ["MODIFICATIONS"] =
   {
@@ -2703,277 +2712,138 @@ NMS_MOD_DEFINITION_CONTAINER =
       {
         {
         
-          ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/DEFAULTREALITY.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
           ["EXML_CHANGE_TABLE"] =
           {
             --Remove all optional products & substances found in shops.
             {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","OptionalProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","OptionalSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings","SpaceStation","OptionalProducts"},
+                {"TradeSettings","SpaceStation","OptionalSubstances"},
+                {"TradeSettings","Shop","OptionalProducts"},
+                {"TradeSettings","Shop","OptionalSubstances"},
+                {"TradeSettings","TechShop","OptionalProducts"},
+                {"TradeSettings","ShipTechSpecialist","OptionalProducts"},
+                {"TradeSettings","SuitTechSpecialist","OptionalProducts"},
+                {"TradeSettings","WeapTechSpecialist","OptionalProducts"},
+                {"TradeSettings","VehicleTechSpecialist","OptionalProducts"},
+              },
+              ["CREATE_HOES"] = "TRUE", 
             },
             --Clear all shop lists by removing whole sections.
             {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","AlwaysPresentProducts"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","AlwaysPresentSubstances"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
+                {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
+                {"TradeSettings","Shop","AlwaysPresentProducts"},
+                {"TradeSettings","TechShop","AlwaysPresentProducts"},
+                {"TradeSettings","ShipTechSpecialist","AlwaysPresentProducts"},
+                {"TradeSettings","SuitTechSpecialist","AlwaysPresentProducts"},
+                {"TradeSettings","WeapTechSpecialist","AlwaysPresentProducts"},
+              },
+              ["CREATE_HOES"] = "TRUE", 
             },
             --Clear never sellable item table(s).
             {
               ["PRECEDING_KEY_WORDS"] = {"NeverSellableItems"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
+              ["CREATE_HOES"] = "TRUE",
             },
             {
               ["PRECEDING_KEY_WORDS"] = {"NeverOfferedForSale"},
-              ["REPLACE_TYPE"]  = "ALL",
-              ["REMOVE"] = "SECTION",
-            },
-            --Recreate removed sections with blank content.
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist"},
-              ["ADD"] = SubstanceSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist"},
-              ["ADD"] = ProductSection,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist"},
-              ["ADD"] = SubstanceSection,
-            },          
+              ["CREATE_HOES"] = "TRUE",
+            },        
             --Add items & substances to shops.
             {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
+                {"TradeSettings","Shop","AlwaysPresentProducts"},
+                {"TradeSettings","TechShop","AlwaysPresentProducts"},
+              },
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = Products,
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
-              ["ADD"] = Substances,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentProducts"},
-              ["ADD"] = Products,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentSubstances"},
-              ["ADD"] = Substances,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentProducts"},
-              ["ADD"] = Products,
-            },
-            {
-              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] =
+              {
+                {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
+                {"TradeSettings","Shop","AlwaysPresentSubstances"},
+                {"TradeSettings","TechShop","AlwaysPresentSubstances"},
+              },
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = Substances,
             },
             -- Ship Tech Specialist --
             {
               ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = ShipTechSpecialist
             },
             -- Suit Tech Specialist --
             {
               ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = SuitTechSpecialist
             },
             -- Weapon Tech Specialist --
             {
               ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = WeapTechSpecialist
             },
             -- Vehicle Tech Specialist --
             {
               ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist", "AlwaysPresentProducts"},
+              ["CREATE_HOS"] = "TRUE",
               ["ADD"] = VehicleTechSpecialist
             },
             --Amount of Products available
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfProductAvailable"  },["LINE_OFFSET"]="1",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfProductAvailable"  },["LINE_OFFSET"]="2",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfProductAvailable"  },["LINE_OFFSET"]="3",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfProductAvailable"  },["LINE_OFFSET"]="1",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfProductAvailable"  },["LINE_OFFSET"]="2",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfProductAvailable"  },["LINE_OFFSET"]="3",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxProductQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfSubstanceAvailable"},["LINE_OFFSET"]="1",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfSubstanceAvailable"},["LINE_OFFSET"]="2",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MinAmountOfSubstanceAvailable"},["LINE_OFFSET"]="3",["VALUE_CHANGE_TABLE"]={{"IGNORE",MinSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfSubstanceAvailable"},["LINE_OFFSET"]="1",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfSubstanceAvailable"},["LINE_OFFSET"]="2",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
-              {["PRECEDING_KEY_WORDS"]={"MaxAmountOfSubstanceAvailable"},["LINE_OFFSET"]="3",["VALUE_CHANGE_TABLE"]={{"IGNORE",MaxSubstanceQuantity}},["REPLACE_TYPE"]="ALL",},
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MinProductQuantity},
+                {"Average", MinProductQuantity},
+                {"Wealthy", MinProductQuantity},
+                {"Pirate",  MinProductQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MaxProductQuantity},
+                {"Average", MaxProductQuantity},
+                {"Wealthy", MaxProductQuantity},
+                {"Pirate",  MaxProductQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MinSubstanceQuantity},
+                {"Average", MinSubstanceQuantity},
+                {"Wealthy", MinSubstanceQuantity},
+                {"Pirate",  MinSubstanceQuantity},
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable"},
+              ["REPLACE_TYPE"] = "ALL",
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Poor",    MaxSubstanceQuantity},
+                {"Average", MaxSubstanceQuantity},
+                {"Wealthy", MaxSubstanceQuantity},
+                {"Pirate",  MaxSubstanceQuantity},
+              }
+            },
           },
         },
       },

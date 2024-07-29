@@ -1,8 +1,8 @@
 local modfilename = "Biomes.DarkerSpaceAndNebulae"
 local lua_author = "Silent"
-local lua_version = "2.0"
+local lua_version = "2.3"
 local mod_author = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -16,16 +16,16 @@ local mbinfilepaths  = {
 }
 
 local strengthValues = {
-    spaceSky    = 0.1,
-    nightSky    = 0.1,
+    spaceSky    = 0.0,
+    nightSky    = 0.0,
     spaceClouds = 0.1,
-    starLight   = 0.9,
-    nebula      = 0.2,
+    starLight   = 1.0,
+    nebula      = 0.1,
     spaceFog    = 0.1,
 }
 
 local alphaValues = {
-    nebula      = 0.2,
+    nebula      = 0.5,
     spaceFog    = 0.2,
 }
 

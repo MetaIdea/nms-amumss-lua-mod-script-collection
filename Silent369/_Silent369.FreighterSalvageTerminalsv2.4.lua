@@ -1,15 +1,15 @@
 local modfilename = "FreighterSalvageTerminals"
 local lua_author  = "Silent"
-local lua_version = "2.1"
+local lua_version = "2.4"
 local mod_author  = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
 Adds MultiTool / Ship Salvage Terminals to the rear of your Freighter's Hanger Teleport
 Lift Area where there are accessible stairs for easy access. The terminals have been
 scaled down very slightly in order to fit better within the selected area.
-
+The mod also replaces the freighter dock landing pads with that of the space station.
 ]]
 
 --Inspired by TheLich's original mod: https://www.nexusmods.com/nomanssky/mods/1734
@@ -136,6 +136,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = _SalvageTerminalR
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"Name", "Dock3C"},
+                                {"Name", "Dock3B"},
+                                {"Name", "Dock3A"},
+                                {"Name", "Dock2C"},
+                                {"Name", "Dock2B"},
+                                {"Name", "Dock2A"},
+                                {"Name", "Dock1C"},
+                                {"Name", "Dock1B"},
+                                {"Name", "Dock1A"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"RotY",  "0"},
+                                {"Value", "MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\LANDINGPAD.SCENE.MBIN"},
+                            }
+                        },
                     }
                 },
                 {
@@ -161,4 +178,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-

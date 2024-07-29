@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "3.0"
+local lua_version = "3.3"
 local mod_author  = "Silent369"
-local nms_version = "4.72"
+local nms_version = "5.01.1"
 local maintenance = mod_author
 local description = [[
 
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcOutpostComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Template", "GcOutpostComponentData.xml"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -169,7 +169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"GcOutpostComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Template", "GcOutpostComponentData.xml"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "GEARDOWN"},
                             ["SECTION_ACTIVE"]      = {1,},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -210,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "GEARUP"},
                             ["SECTION_ACTIVE"]      = {1,},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -276,8 +276,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LandingTipAngle",                        "15"}, --Original "25"
                                 {"LandingLongTipAngle",                     "7"}, --Original "10"
                                 {"MaxNumActiveTraders",                    "30"}, --Original "15"
-                                {"SpaceStationTraderRequestTime",           "5"}, --Original "20"
-                                {"TraderArriveSpeed",                     "600"}, --Original "300"
+                                {"SpaceStationTraderRequestTime",           "1"}, --Original "20"
+                                {"TraderArriveSpeed",                     "800"}, --Original "300"
                                 {"TraderArriveTime",                        "1"}, --Original "3"
                             }
                         },
