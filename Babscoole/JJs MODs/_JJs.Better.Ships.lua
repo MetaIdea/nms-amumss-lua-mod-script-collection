@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_JJs.Better.Ships.V.4.1.pak",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.1.1",
+["NMS_VERSION"]     = "5.01.1",
 ["MODIFICATIONS"]   =
     {
         {

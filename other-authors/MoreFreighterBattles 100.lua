@@ -1,6 +1,8 @@
 --Frighter battle settings
 SPAWNCHANCE = "100" --original 40
-LOW = "1" --original 0
+WARPS = "0"			--original 5
+HOURS = "0"			--original 3
+LOW = "0" --original 0
 DEFAULT = "1" --original 0
 HIGH = "1" --original 0.1
 PIRATE = "1" --original 0.2
@@ -9,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "MoreFreighterBattles 100.pak",
     ["MOD_AUTHOR"] = "TwistedViking",
 	["LUA_AUTHOR"] = "Ray Khouri, mrgamemafia, and Bladehawke",
-    ["NMS_VERSION"] = "3.51+",
+    ["NMS_VERSION"] = "5+",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
@@ -21,6 +23,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = 
 							{
                                 {"FreighterSpawnRate", SPAWNCHANCE}
+                            }
+                        }
+                    }
+                },
+				{
+                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {""},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"WarpsBetweenBattles", WARPS},
+                                {"HoursBetweenBattles", HOURS}
                             }
                         }
                     }

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_AstralGameplayandGraphics.pak",
 ["MOD_AUTHOR"]    = "AstralNut",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.1.1",
+["NMS_VERSION"]   = "5.01.1",
 ["MODIFICATIONS"] =
     {
         {
@@ -21,19 +21,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CreatureChatter",                     "True"},
                                 {"CreatureErrors",                      "True"},
                                 {"DrawCreaturesInRoutines",             "True"},
+                                {"ShaderCaching",                       "True"},
+                                {"DrawCreaturesInRoutines",             "False"},
+                                {"DiscoveryAutoSyncIntervalSeconds",    "3600"},
+                                {"BodyTurning",                         "True"},
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TerrainAnisoUlt",         "16"},
-                                {"TargetTextureMemUsageMB", "2042"},
+                                {"AllowSpaceScanEvents",           "True"},
+                                {"MaxNumSameGroupTech",            "5"},
+                                {"BinocMinScanTime",               "1.1"},
+                                {"BinocScanTime",                  "1.1"},
+                                {"MissionEventAllowResetDistance", "42"},
+                                {"ChangePricesLocally",            "True"},
                             }
                         },
                     }

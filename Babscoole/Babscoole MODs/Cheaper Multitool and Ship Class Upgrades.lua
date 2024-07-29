@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Cheaper Multitool and Ship Class Upgrades.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Cuts multiTool and ship class upgrade costs in half",
-["NMS_VERSION"]     = "5.1.1",
+["NMS_VERSION"]     = "5.01.1",
 ["MODIFICATIONS"]   =
     {
         {

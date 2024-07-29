@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Return of Maglock.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.1.1",
+["NMS_VERSION"]   = "5.01.1",
 ["MODIFICATIONS"] =
     {
         {

@@ -4402,7 +4402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_Jasondude and Exosolar's Hybrid Stratos.pak",
 ["MOD_AUTHOR"]              = "Exosolar and Jasondude and Babscoole",
-["NMS_VERSION"]             = "5.1.1",
+["NMS_VERSION"]             = "5.01.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

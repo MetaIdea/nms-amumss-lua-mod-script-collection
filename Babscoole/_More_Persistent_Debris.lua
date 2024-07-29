@@ -2,8 +2,8 @@ ModName         =   "MPD"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "4.71"
-ModVersion      =   "v1.6_Adrift"
+GameVersion     =   "5.01.1"
+ModVersion      =   "_WorldsPart1"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -2179,17 +2179,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "8"},
-                                {"Speed",  "3"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BAITDEBRIS"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Radius", "1"},
-                                {"Speed",  "3"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "BAITDEBRIS"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Radius", "1"},
+                                -- {"Speed",  "3"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDDEATH"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -2223,6 +2222,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDDIG"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "10"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDSPLAT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -2252,6 +2258,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Radius", "3"},
                                 {"Scale",  "0.5"},
                                 {"Speed",  "3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STORMCRYSELEC"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Life", "60"},
                             }
                         },
                         {
@@ -2647,10 +2660,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Id", "YELLOWEXPLODE"},
                                 {"Id", "SENTINELARMOUR"},
                                 {"Id", "DRONEWALKEREXPL"},
+                                {"Id", "BUGDEATH"},
+                                {"Id", "QUEENBUGDEATH"},
+                                {"Id", "QUEENARMOURL"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",  "60"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BUGDEATH"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Number", "6"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUEENBUGDEATH"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Number", "25"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "QUEENARMOURL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Number", "10"},
                             }
                         },
                     }
@@ -2701,13 +2738,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Number", "4"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "LASERNEEDTECH"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Life", "0.7"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "LASERNEEDTECH"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Life", "0.7"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "TERRAIN_FLATTEN"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -2715,13 +2752,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Number", "6"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRENEXPROBOT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Life", "3"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "GRENEXPROBOT"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"Life", "3"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {

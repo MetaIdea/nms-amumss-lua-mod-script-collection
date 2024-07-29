@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "C_Only_Fast_Ship.pak",
 ["MOD_AUTHOR"]              = "Strange7",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.1.1",
+["NMS_VERSION"]             = "5.01.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

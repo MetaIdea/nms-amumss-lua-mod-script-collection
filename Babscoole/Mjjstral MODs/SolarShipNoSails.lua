@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "SolarShipNoSails.pak",
 ["MOD_AUTHOR"]    = "Mjstral and JJHookah and Babscoole",
-["NMS_VERSION"]   = "5.1.1",
+["NMS_VERSION"]   = "5.01.1",
 ["MODIFICATIONS"] =
     {
         {

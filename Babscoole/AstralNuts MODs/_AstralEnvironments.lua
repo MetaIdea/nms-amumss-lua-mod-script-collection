@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_AstralEnvironments.pak",
 ["MOD_AUTHOR"]    = "AstralNut",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.1.1",
+["NMS_VERSION"]   = "5.01.1",
 ["MODIFICATIONS"] =
     {
         {
@@ -24,9 +24,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"CloudProperties", "GcCloudProperties.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AnimationScale",  "18"},
+                                {"AnimationScale",  "14"},
                                 {"DetailScale",     "10"},
-                                {"CloudDistortion", "24"},
+                                {"CloudDistortion", "42"},
                                 {"MaxIterations",   "256"},
                             }
                         },
