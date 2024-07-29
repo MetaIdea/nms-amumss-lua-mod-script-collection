@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "__MOD_ALIEN_TERRAIN.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.50",
+["NMS_VERSION"]   = "5.1.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -31,6 +31,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_MATCH"] = "1",
+                            ["VALUE_MATCH_OPTIONS"] = "=", 
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TileBlendMeters", "0"},
+                            }
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min"},
                             ["VALUE_CHANGE_TABLE"] =

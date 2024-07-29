@@ -224,98 +224,114 @@ end
 
 function GetTriggerAnim(ANIM, FILEPATH, ANIM_INTO, FILEPATH_INTO)
 return [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM .. [[" />
-          <Property name="Filename" value="]] .. FILEPATH .. [[" />
-          <Property name="AnimType" value="Loop" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="StartNode" value="player01_spine_01SHJnt" />
-          <Property name="ExtraStartNodes" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="True" />
-            <Property name="BlockPlayerWeapon" value="Sheathed" />
+          <Property value="TkAnimationData.xml">
+            <Property name="Anim" value="]] .. ANIM .. [[" />
+			<Property name="Filename" value="]] .. FILEPATH .. [[" />
+            <Property name="AnimType" value="Loop" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
+            <Property name="FrameStart" value="0" />
+            <Property name="FrameEnd" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="player01_spine_01SHJnt" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
+            <Property name="OffsetMin" value="0" />
+            <Property name="OffsetMax" value="0" />
+            <Property name="Delay" value="0" />
+            <Property name="Speed" value="1" />
+            <Property name="ActionStartFrame" value="0" />
+            <Property name="ActionFrame" value="-1" />
+            <Property name="Actions" />
+            <Property name="CreatureSize" value="AllSizes" />
+            <Property name="Additive" value="False" />
+            <Property name="Mirrored" value="False" />
+            <Property name="Active" value="True" />
+            <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="True" />
+              <Property name="BlockPlayerWeapon" value="Sheathed" />
+            </Property>
           </Property>
-        </Property>
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM_INTO .. [[" />
-          <Property name="Filename" value="]] .. FILEPATH_INTO .. [[" />
-          <Property name="AnimType" value="OneShotBlendable" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="StartNode" value="player01_spine_01SHJnt" />
-          <Property name="ExtraStartNodes" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="True" />
-            <Property name="BlockPlayerWeapon" value="Sheathed" />
+          <Property value="TkAnimationData.xml">
+            <Property name="Anim" value="]] .. ANIM_INTO .. [[" />
+			<Property name="Filename" value="]] .. FILEPATH_INTO .. [[" />
+            <Property name="AnimType" value="OneShotBlendable" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
+            <Property name="FrameStart" value="0" />
+            <Property name="FrameEnd" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="player01_spine_01SHJnt" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
+            <Property name="OffsetMin" value="0" />
+            <Property name="OffsetMax" value="0" />
+            <Property name="Delay" value="0" />
+            <Property name="Speed" value="1" />
+            <Property name="ActionStartFrame" value="0" />
+            <Property name="ActionFrame" value="-1" />
+            <Property name="Actions" />
+            <Property name="CreatureSize" value="AllSizes" />
+            <Property name="Additive" value="False" />
+            <Property name="Mirrored" value="False" />
+            <Property name="Active" value="True" />
+            <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="True" />
+              <Property name="BlockPlayerWeapon" value="Sheathed" />
+            </Property>
           </Property>
-        </Property>
 ]]
 end
 
 function GetTriggerAnim_NoInto(ANIM, FILEPATH)
 return [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]] .. ANIM .. [[" />
-          <Property name="Filename" value="]] .. FILEPATH .. [[" />
-          <Property name="AnimType" value="Loop" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="StartNode" value="" />
-          <Property name="ExtraStartNodes" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="True" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          <Property value="TkAnimationData.xml">
+            <Property name="Anim" value="]] .. ANIM .. [[" />
+			<Property name="Filename" value="]] .. FILEPATH .. [[" />
+            <Property name="AnimType" value="Loop" />
+            <Property name="AnimGroupOverride" value="False" />
+            <Property name="Priority" value="0" />
+            <Property name="FrameStart" value="0" />
+            <Property name="FrameEnd" value="0" />
+            <Property name="FrameEndGame" value="0" />
+            <Property name="StartNode" value="" />
+            <Property name="ExtraStartNodes" />
+            <Property name="AdditiveBaseAnim" value="" />
+            <Property name="AdditiveBaseFrame" value="0" />
+            <Property name="Mask" value="" />
+            <Property name="OffsetMin" value="0" />
+            <Property name="OffsetMax" value="0" />
+            <Property name="Delay" value="0" />
+            <Property name="Speed" value="1" />
+            <Property name="ActionStartFrame" value="0" />
+            <Property name="ActionFrame" value="-1" />
+            <Property name="Actions" />
+            <Property name="CreatureSize" value="AllSizes" />
+            <Property name="Additive" value="False" />
+            <Property name="Mirrored" value="False" />
+            <Property name="Active" value="True" />
+            <Property name="Has30HzFrames" value="False" />
+            <Property name="GameData" value="TkAnimationGameData.xml">
+              <Property name="RootMotion" value="None" />
+              <Property name="BlockPlayerMovement" value="True" />
+              <Property name="BlockPlayerWeapon" value="Unblocked" />
+            </Property>
           </Property>
-        </Property>
 ]]
 end
 
 function GetTriggerAction(ANIM, REWARD, FOOD_1, FOOD_2)
 return [[
-    <Property value="GcTriggerActionComponentData.xml">
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
@@ -463,12 +479,15 @@ return [[
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
+      <Property name="Linked" value="" />
+    </Property>
 ]]
 end
 
 function GetTriggerAction_Drink(ANIM, REWARD_1, REWARD_2, FOOD)
 return [[
-    <Property value="GcTriggerActionComponentData.xml">
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
@@ -582,6 +601,8 @@ return [[
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
+    </Property>
+      <Property name="Linked" value="" />
     </Property>
 ]]
 end

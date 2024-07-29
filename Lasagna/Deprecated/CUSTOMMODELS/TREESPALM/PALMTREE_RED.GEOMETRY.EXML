@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.73.0)-->
+<Data template="TkGeometryData">
+  <Property name="VertexCount" value="307" />
+  <Property name="IndexCount" value="1032" />
+  <Property name="Indices16Bit" value="1" />
+  <Property name="CollisionIndexCount" value="0" />
+  <Property name="JointBindings" />
+  <Property name="JointExtents" />
+  <Property name="JointMirrorPairs" />
+  <Property name="JointMirrorAxes" />
+  <Property name="SkinMatrixLayout" />
+  <Property name="MeshVertRStart">
+    <Property value="0" />
+    <Property value="192" />
+  </Property>
+  <Property name="MeshVertREnd">
+    <Property value="191" />
+    <Property value="306" />
+  </Property>
+  <Property name="BoundHullVertSt">
+    <Property value="0" />
+    <Property value="20" />
+  </Property>
+  <Property name="BoundHullVertEd">
+    <Property value="20" />
+    <Property value="66" />
+  </Property>
+  <Property name="MeshBaseSkinMat" />
+  <Property name="MeshAABBMin">
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-2.4827547" />
+      <Property name="y" value="-2.253325" />
+      <Property name="z" value="2.1964867" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.25744322" />
+      <Property name="y" value="-0.18195201" />
+      <Property name="z" value="-0.03743773" />
+      <Property name="t" value="1" />
+    </Property>
+  </Property>
+  <Property name="MeshAABBMax">
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.9901334" />
+      <Property name="y" value="1.9688334" />
+      <Property name="z" value="4.628427" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.18696678" />
+      <Property name="y" value="0.31804046" />
+      <Property name="z" value="2.9023378" />
+      <Property name="t" value="1" />
+    </Property>
+  </Property>
+  <Property name="BoundHullVerts">
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.7532431" />
+      <Property name="y" value="1.4596251" />
+      <Property name="z" value="2.2277744" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.21011482" />
+      <Property name="y" value="1.5973517" />
+      <Property name="z" value="2.453092" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-1.3439784" />
+      <Property name="y" value="-1.0223619" />
+      <Property name="z" value="2.1964867" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-1.7088174" />
+      <Property name="y" value="-0.105480455" />
+      <Property name="z" value="2.351459" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.15743716" />
+      <Property name="y" value="-1.7348887" />
+      <Property name="z" value="2.2403204" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.8795253" />
+      <Property name="y" value="-1.5636424" />
+      <Property name="z" value="2.3701823" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.5892363" />
+      <Property name="y" value="0.17006488" />
+      <Property name="z" value="2.3161526" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.4084704" />
+      <Property name="y" value="-0.85857797" />
+      <Property name="z" value="2.4913616" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-2.4827547" />
+      <Property name="y" value="0.8840644" />
+      <Property name="z" value="4.248852" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-1.4658647" />
+      <Property name="y" value="1.9688334" />
+      <Property name="z" value="4.394735" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-1.8683412" />
+      <Property name="y" value="1.312021" />
+      <Property name="z" value="4.495805" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.34300593" />
+      <Property name="y" value="-2.2527328" />
+      <Property name="z" value="4.1363378" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-1.5251057" />
+      <Property name="y" value="-1.6988202" />
+      <Property name="z" value="4.1659765" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.8779828" />
+      <Property name="y" value="-1.8518287" />
+      <Property name="z" value="4.303485" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.9901334" />
+      <Property name="y" value="-1.3049632" />
+      <Property name="z" value="4.4409165" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.8365713" />
+      <Property name="y" value="-2.253325" />
+      <Property name="z" value="4.4853644" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.3075944" />
+      <Property name="y" value="-1.652263" />
+      <Property name="z" value="4.628427" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.76878715" />
+      <Property name="y" value="1.6991761" />
+      <Property name="z" value="4.1446524" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.5480316" />
+      <Property name="y" value="0.7848893" />
+      <Property name="z" value="4.2585588" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="1.0517601" />
+      <Property name="y" value="1.1605649" />
+      <Property name="z" value="4.3300853" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.21682087" />
+      <Property name="y" value="0.007827711" />
+      <Property name="z" value="0.24574818" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.11730843" />
+      <Property name="y" value="0.27183768" />
+      <Property name="z" value="0.94172597" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.25744322" />
+      <Property name="y" value="0.12747538" />
+      <Property name="z" value="0.9621407" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.0084053185" />
+      <Property name="y" value="0.17517091" />
+      <Property name="z" value="-0.0374377" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.17453137" />
+      <Property name="y" value="0.13533251" />
+      <Property name="z" value="0.24573645" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.18696678" />
+      <Property name="y" value="-0.003390565" />
+      <Property name="z" value="-0.03743773" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.008405303" />
+      <Property name="y" value="-0.18195201" />
+      <Property name="z" value="-0.0374377" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.1743477" />
+      <Property name="y" value="-0.11933998" />
+      <Property name="z" value="0.24575572" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.17015615" />
+      <Property name="y" value="-0.0033905494" />
+      <Property name="z" value="-0.037437674" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.25091308" />
+      <Property name="y" value="0.043640383" />
+      <Property name="z" value="0.56780994" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.22230391" />
+      <Property name="y" value="0.23530617" />
+      <Property name="z" value="0.957028" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.12551577" />
+      <Property name="y" value="0.13053055" />
+      <Property name="z" value="-0.03743768" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.21179761" />
+      <Property name="y" value="0.16331229" />
+      <Property name="z" value="0.56647414" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.1423264" />
+      <Property name="y" value="0.13053055" />
+      <Property name="z" value="-0.037437722" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.12551577" />
+      <Property name="y" value="-0.13731165" />
+      <Property name="z" value="-0.03743768" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.21143214" />
+      <Property name="y" value="-0.07552586" />
+      <Property name="z" value="0.5665112" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.1423264" />
+      <Property name="y" value="-0.13731165" />
+      <Property name="z" value="-0.037437722" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.071861476" />
+      <Property name="y" value="0.2895675" />
+      <Property name="z" value="1.7488736" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.060848437" />
+      <Property name="y" value="0.013107791" />
+      <Property name="z" value="2.4841223" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.11285412" />
+      <Property name="y" value="0.31804046" />
+      <Property name="z" value="1.3568659" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.23625861" />
+      <Property name="y" value="0.19099995" />
+      <Property name="z" value="1.3854179" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.032038383" />
+      <Property name="y" value="0.2163502" />
+      <Property name="z" value="2.119988" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.077615" />
+      <Property name="y" value="0.10430587" />
+      <Property name="z" value="2.115395" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.013809175" />
+      <Property name="y" value="0.25988066" />
+      <Property name="z" value="1.7360201" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.15743612" />
+      <Property name="y" value="0.26103717" />
+      <Property name="z" value="1.7616588" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.10203514" />
+      <Property name="y" value="0.06838372" />
+      <Property name="z" value="2.8593712" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.017567843" />
+      <Property name="y" value="-0.051672906" />
+      <Property name="z" value="2.8586695" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.10203483" />
+      <Property name="y" value="-0.17082936" />
+      <Property name="z" value="2.8593686" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.22163738" />
+      <Property name="y" value="-0.050772797" />
+      <Property name="z" value="2.8600705" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.033885654" />
+      <Property name="y" value="0.09427696" />
+      <Property name="z" value="2.4841857" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.033885803" />
+      <Property name="y" value="-0.06750586" />
+      <Property name="z" value="2.4841907" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.1615868" />
+      <Property name="y" value="-0.11055262" />
+      <Property name="z" value="2.9022214" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.04248283" />
+      <Property name="y" value="-0.111000896" />
+      <Property name="z" value="2.9015226" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.042482913" />
+      <Property name="y" value="0.008107232" />
+      <Property name="z" value="2.9015234" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.16158685" />
+      <Property name="y" value="0.008554956" />
+      <Property name="z" value="2.9022217" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.20537415" />
+      <Property name="y" value="0.28598613" />
+      <Property name="z" value="1.3777702" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.02045226" />
+      <Property name="y" value="0.286712" />
+      <Property name="z" value="1.3360999" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="0.050200403" />
+      <Property name="y" value="0.18750623" />
+      <Property name="z" value="2.1165457" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.19173697" />
+      <Property name="y" value="0.038819354" />
+      <Property name="z" value="2.859896" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.18143734" />
+      <Property name="y" value="-0.05092406" />
+      <Property name="z" value="2.9023378" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.10203485" />
+      <Property name="y" value="-0.13062799" />
+      <Property name="z" value="2.9018717" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.012332844" />
+      <Property name="y" value="0.03814496" />
+      <Property name="z" value="2.858844" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.022632249" />
+      <Property name="y" value="-0.051521633" />
+      <Property name="z" value="2.9014075" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.012332725" />
+      <Property name="y" value="-0.14126544" />
+      <Property name="z" value="2.8588428" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.10203505" />
+      <Property name="y" value="0.02818234" />
+      <Property name="z" value="2.9018734" />
+      <Property name="t" value="1" />
+    </Property>
+    <Property value="Vector4f.xml">
+      <Property name="x" value="-0.19173689" />
+      <Property name="y" value="-0.1405902" />
+      <Property name="z" value="2.859895" />
+      <Property name="t" value="1" />
+    </Property>
+  </Property>
+  <Property name="VertexLayout" value="TkVertexLayout.xml">
+    <Property name="ElementCount" value="4" />
+    <Property name="Stride" value="24" />
+    <Property name="PlatformData" value="0" />
+    <Property name="VertexElements">
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="0" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="5131" />
+        <Property name="Offset" value="0" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="1" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="5131" />
+        <Property name="Offset" value="8" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="2" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="36255" />
+        <Property name="Offset" value="16" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="3" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="36255" />
+        <Property name="Offset" value="20" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="SmallVertexLayout" value="TkVertexLayout.xml">
+    <Property name="ElementCount" value="2" />
+    <Property name="Stride" value="16" />
+    <Property name="PlatformData" value="0" />
+    <Property name="VertexElements">
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="0" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="5131" />
+        <Property name="Offset" value="0" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+      <Property value="TkVertexElement.xml">
+        <Property name="SemanticID" value="1" />
+        <Property name="Size" value="4" />
+        <Property name="Type" value="5131" />
+        <Property name="Offset" value="8" />
+        <Property name="Normalise" value="0" />
+        <Property name="Instancing" value="PerVertex" />
+        <Property name="PlatformData" value="0" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="IndexBuffer">
+    <Property value="19" />
+    <Property value="15" />
+    <Property value="16" />
+    <Property value="13" />
+    <Property value="8" />
+    <Property value="10" />
+    <Property value="14" />
+    <Property value="8" />
+    <Property value="17" />
+    <Property value="11" />
+    <Property value="5" />
+    <Property value="2" />
+    <Property value="9" />
+    <Property value="10" />
+    <Property value="8" />
+    <Property value="168" />
+    <Property value="7" />
+    <Property value="6" />
+    <Property value="6" />
+    <Property value="5" />
+    <Property value="169" />
+    <Property value="17" />
+    <Property value="12" />
+    <Property value="16" />
+    <Property value="14" />
+    <Property value="16" />
+    <Property value="15" />
+    <Property value="19" />
+    <Property value="12" />
+    <Property value="18" />
+    <Property value="4" />
+    <Property value="18" />
+    <Property value="0" />
+    <Property value="4" />
+    <Property value="20" />
+    <Property value="19" />
+    <Property value="40" />
+    <Property value="36" />
+    <Property value="37" />
+    <Property value="34" />
+    <Property value="29" />
+    <Property value="31" />
+    <Property value="35" />
+    <Property value="29" />
+    <Property value="38" />
+    <Property value="32" />
+    <Property value="26" />
+    <Property value="23" />
+    <Property value="30" />
+    <Property value="31" />
+    <Property value="29" />
+    <Property value="170" />
+    <Property value="28" />
+    <Property value="27" />
+    <Property value="27" />
+    <Property value="26" />
+    <Property value="171" />
+    <Property value="38" />
+    <Property value="33" />
+    <Property value="37" />
+    <Property value="35" />
+    <Property value="37" />
+    <Property value="36" />
+    <Property value="40" />
+    <Property value="33" />
+    <Property value="39" />
+    <Property value="25" />
+    <Property value="39" />
+    <Property value="21" />
+    <Property value="25" />
+    <Property value="41" />
+    <Property value="40" />
+    <Property value="61" />
+    <Property value="57" />
+    <Property value="58" />
+    <Property value="55" />
+    <Property value="50" />
+    <Property value="52" />
+    <Property value="56" />
+    <Property value="50" />
+    <Property value="59" />
+    <Property value="53" />
+    <Property value="47" />
+    <Property value="44" />
+    <Property value="51" />
+    <Property value="52" />
+    <Property value="50" />
+    <Property value="172" />
+    <Property value="49" />
+    <Property value="48" />
+    <Property value="48" />
+    <Property value="47" />
+    <Property value="173" />
+    <Property value="59" />
+    <Property value="54" />
+    <Property value="58" />
+    <Property value="56" />
+    <Property value="58" />
+    <Property value="57" />
+    <Property value="61" />
+    <Property value="54" />
+    <Property value="60" />
+    <Property value="46" />
+    <Property value="60" />
+    <Property value="42" />
+    <Property value="46" />
+    <Property value="62" />
+    <Property value="61" />
+    <Property value="82" />
+    <Property value="78" />
+    <Property value="79" />
+    <Property value="76" />
+    <Property value="71" />
+    <Property value="73" />
+    <Property value="77" />
+    <Property value="71" />
+    <Property value="80" />
+    <Property value="74" />
+    <Property value="68" />
+    <Property value="65" />
+    <Property value="72" />
+    <Property value="73" />
+    <Property value="71" />
+    <Property value="174" />
+    <Property value="70" />
+    <Property value="69" />
+    <Property value="69" />
+    <Property value="68" />
+    <Property value="175" />
+    <Property value="80" />
+    <Property value="75" />
+    <Property value="79" />
+    <Property value="77" />
+    <Property value="79" />
+    <Property value="78" />
+    <Property value="82" />
+    <Property value="75" />
+    <Property value="81" />
+    <Property value="67" />
+    <Property value="81" />
+    <Property value="63" />
+    <Property value="67" />
+    <Property value="83" />
+    <Property value="82" />
+    <Property value="103" />
+    <Property value="99" />
+    <Property value="100" />
+    <Property value="97" />
+    <Property value="92" />
+    <Property value="94" />
+    <Property value="98" />
+    <Property value="92" />
+    <Property value="101" />
+    <Property value="95" />
+    <Property value="89" />
+    <Property value="86" />
+    <Property value="93" />
+    <Property value="94" />
+    <Property value="92" />
+    <Property value="176" />
+    <Property value="91" />
+    <Property value="90" />
+    <Property value="90" />
+    <Property value="89" />
+    <Property value="177" />
+    <Property value="97" />
+    <Property value="100" />
+    <Property value="101" />
+    <Property value="98" />
+    <Property value="100" />
+    <Property value="99" />
+    <Property value="103" />
+    <Property value="96" />
+    <Property value="102" />
+    <Property value="88" />
+    <Property value="102" />
+    <Property value="84" />
+    <Property value="88" />
+    <Property value="104" />
+    <Property value="103" />
+    <Property value="124" />
+    <Property value="120" />
+    <Property value="121" />
+    <Property value="118" />
+    <Property value="113" />
+    <Property value="115" />
+    <Property value="119" />
+    <Property value="113" />
+    <Property value="122" />
+    <Property value="116" />
+    <Property value="110" />
+    <Property value="107" />
+    <Property value="114" />
+    <Property value="115" />
+    <Property value="113" />
+    <Property value="178" />
+    <Property value="112" />
+    <Property value="111" />
+    <Property value="111" />
+    <Property value="110" />
+    <Property value="179" />
+    <Property value="118" />
+    <Property value="121" />
+    <Property value="122" />
+    <Property value="119" />
+    <Property value="121" />
+    <Property value="120" />
+    <Property value="124" />
+    <Property value="117" />
+    <Property value="123" />
+    <Property value="109" />
+    <Property value="123" />
+    <Property value="105" />
+    <Property value="109" />
+    <Property value="125" />
+    <Property value="124" />
+    <Property value="145" />
+    <Property value="141" />
+    <Property value="142" />
+    <Property value="139" />
+    <Property value="134" />
+    <Property value="136" />
+    <Property value="140" />
+    <Property value="134" />
+    <Property value="143" />
+    <Property value="137" />
+    <Property value="131" />
+    <Property value="128" />
+    <Property value="135" />
+    <Property value="136" />
+    <Property value="134" />
+    <Property value="180" />
+    <Property value="133" />
+    <Property value="132" />
+    <Property value="132" />
+    <Property value="131" />
+    <Property value="181" />
+    <Property value="139" />
+    <Property value="142" />
+    <Property value="143" />
+    <Property value="140" />
+    <Property value="142" />
+    <Property value="141" />
+    <Property value="145" />
+    <Property value="138" />
+    <Property value="144" />
+    <Property value="130" />
+    <Property value="144" />
+    <Property value="126" />
+    <Property value="130" />
+    <Property value="146" />
+    <Property value="145" />
+    <Property value="166" />
+    <Property value="162" />
+    <Property value="163" />
+    <Property value="160" />
+    <Property value="155" />
+    <Property value="157" />
+    <Property value="161" />
+    <Property value="155" />
+    <Property value="164" />
+    <Property value="158" />
+    <Property value="152" />
+    <Property value="149" />
+    <Property value="156" />
+    <Property value="157" />
+    <Property value="155" />
+    <Property value="182" />
+    <Property value="154" />
+    <Property value="153" />
+    <Property value="153" />
+    <Property value="152" />
+    <Property value="183" />
+    <Property value="160" />
+    <Property value="163" />
+    <Property value="164" />
+    <Property value="161" />
+    <Property value="163" />
+    <Property value="162" />
+    <Property value="166" />
+    <Property value="159" />
+    <Property value="165" />
+    <Property value="151" />
+    <Property value="165" />
+    <Property value="147" />
+    <Property value="151" />
+    <Property value="167" />
+    <Property value="166" />
+    <Property value="19" />
+    <Property value="20" />
+    <Property value="15" />
+    <Property value="13" />
+    <Property value="17" />
+    <Property value="8" />
+    <Property value="14" />
+    <Property value="7" />
+    <Property value="8" />
+    <Property value="11" />
+    <Property value="9" />
+    <Property value="5" />
+    <Property value="9" />
+    <Property value="11" />
+    <Property value="10" />
+    <Property value="184" />
+    <Property value="8" />
+    <Property value="7" />
+    <Property value="6" />
+    <Property value="3" />
+    <Property value="5" />
+    <Property value="17" />
+    <Property value="13" />
+    <Property value="12" />
+    <Property value="14" />
+    <Property value="17" />
+    <Property value="16" />
+    <Property value="19" />
+    <Property value="16" />
+    <Property value="12" />
+    <Property value="4" />
+    <Property value="19" />
+    <Property value="18" />
+    <Property value="4" />
+    <Property value="1" />
+    <Property value="20" />
+    <Property value="40" />
+    <Property value="41" />
+    <Property value="36" />
+    <Property value="34" />
+    <Property value="38" />
+    <Property value="29" />
+    <Property value="35" />
+    <Property value="28" />
+    <Property value="29" />
+    <Property value="32" />
+    <Property value="30" />
+    <Property value="26" />
+    <Property value="30" />
+    <Property value="32" />
+    <Property value="31" />
+    <Property value="185" />
+    <Property value="29" />
+    <Property value="28" />
+    <Property value="27" />
+    <Property value="24" />
+    <Property value="26" />
+    <Property value="38" />
+    <Property value="34" />
+    <Property value="33" />
+    <Property value="35" />
+    <Property value="38" />
+    <Property value="37" />
+    <Property value="40" />
+    <Property value="37" />
+    <Property value="33" />
+    <Property value="25" />
+    <Property value="40" />
+    <Property value="39" />
+    <Property value="25" />
+    <Property value="22" />
+    <Property value="41" />
+    <Property value="61" />
+    <Property value="62" />
+    <Property value="57" />
+    <Property value="55" />
+    <Property value="59" />
+    <Property value="50" />
+    <Property value="56" />
+    <Property value="49" />
+    <Property value="50" />
+    <Property value="53" />
+    <Property value="51" />
+    <Property value="47" />
+    <Property value="51" />
+    <Property value="53" />
+    <Property value="52" />
+    <Property value="186" />
+    <Property value="50" />
+    <Property value="49" />
+    <Property value="48" />
+    <Property value="45" />
+    <Property value="47" />
+    <Property value="59" />
+    <Property value="55" />
+    <Property value="54" />
+    <Property value="56" />
+    <Property value="59" />
+    <Property value="58" />
+    <Property value="61" />
+    <Property value="58" />
+    <Property value="54" />
+    <Property value="46" />
+    <Property value="61" />
+    <Property value="60" />
+    <Property value="46" />
+    <Property value="43" />
+    <Property value="62" />
+    <Property value="82" />
+    <Property value="83" />
+    <Property value="78" />
+    <Property value="76" />
+    <Property value="80" />
+    <Property value="71" />
+    <Property value="77" />
+    <Property value="70" />
+    <Property value="71" />
+    <Property value="74" />
+    <Property value="72" />
+    <Property value="68" />
+    <Property value="72" />
+    <Property value="74" />
+    <Property value="73" />
+    <Property value="187" />
+    <Property value="71" />
+    <Property value="70" />
+    <Property value="69" />
+    <Property value="66" />
+    <Property value="68" />
+    <Property value="80" />
+    <Property value="76" />
+    <Property value="75" />
+    <Property value="77" />
+    <Property value="80" />
+    <Property value="79" />
+    <Property value="82" />
+    <Property value="79" />
+    <Property value="75" />
+    <Property value="67" />
+    <Property value="82" />
+    <Property value="81" />
+    <Property value="67" />
+    <Property value="64" />
+    <Property value="83" />
+    <Property value="103" />
+    <Property value="104" />
+    <Property value="99" />
+    <Property value="97" />
+    <Property value="101" />
+    <Property value="92" />
+    <Property value="98" />
+    <Property value="91" />
+    <Property value="92" />
+    <Property value="95" />
+    <Property value="93" />
+    <Property value="89" />
+    <Property value="93" />
+    <Property value="95" />
+    <Property value="94" />
+    <Property value="188" />
+    <Property value="92" />
+    <Property value="91" />
+    <Property value="90" />
+    <Property value="87" />
+    <Property value="89" />
+    <Property value="97" />
+    <Property value="96" />
+    <Property value="100" />
+    <Property value="98" />
+    <Property value="101" />
+    <Property value="100" />
+    <Property value="103" />
+    <Property value="100" />
+    <Property value="96" />
+    <Property value="88" />
+    <Property value="103" />
+    <Property value="102" />
+    <Property value="88" />
+    <Property value="85" />
+    <Property value="104" />
+    <Property value="124" />
+    <Property value="125" />
+    <Property value="120" />
+    <Property value="118" />
+    <Property value="122" />
+    <Property value="113" />
+    <Property value="119" />
+    <Property value="112" />
+    <Property value="113" />
+    <Property value="116" />
+    <Property value="114" />
+    <Property value="110" />
+    <Property value="114" />
+    <Property value="116" />
+    <Property value="115" />
+    <Property value="189" />
+    <Property value="113" />
+    <Property value="112" />
+    <Property value="111" />
+    <Property value="108" />
+    <Property value="110" />
+    <Property value="118" />
+    <Property value="117" />
+    <Property value="121" />
+    <Property value="119" />
+    <Property value="122" />
+    <Property value="121" />
+    <Property value="124" />
+    <Property value="121" />
+    <Property value="117" />
+    <Property value="109" />
+    <Property value="124" />
+    <Property value="123" />
+    <Property value="109" />
+    <Property value="106" />
+    <Property value="125" />
+    <Property value="145" />
+    <Property value="146" />
+    <Property value="141" />
+    <Property value="139" />
+    <Property value="143" />
+    <Property value="134" />
+    <Property value="140" />
+    <Property value="133" />
+    <Property value="134" />
+    <Property value="137" />
+    <Property value="135" />
+    <Property value="131" />
+    <Property value="135" />
+    <Property value="137" />
+    <Property value="136" />
+    <Property value="190" />
+    <Property value="134" />
+    <Property value="133" />
+    <Property value="132" />
+    <Property value="129" />
+    <Property value="131" />
+    <Property value="139" />
+    <Property value="138" />
+    <Property value="142" />
+    <Property value="140" />
+    <Property value="143" />
+    <Property value="142" />
+    <Property value="145" />
+    <Property value="142" />
+    <Property value="138" />
+    <Property value="130" />
+    <Property value="145" />
+    <Property value="144" />
+    <Property value="130" />
+    <Property value="127" />
+    <Property value="146" />
+    <Property value="166" />
+    <Property value="167" />
+    <Property value="162" />
+    <Property value="160" />
+    <Property value="164" />
+    <Property value="155" />
+    <Property value="161" />
+    <Property value="154" />
+    <Property value="155" />
+    <Property value="158" />
+    <Property value="156" />
+    <Property value="152" />
+    <Property value="156" />
+    <Property value="158" />
+    <Property value="157" />
+    <Property value="191" />
+    <Property value="155" />
+    <Property value="154" />
+    <Property value="153" />
+    <Property value="150" />
+    <Property value="152" />
+    <Property value="160" />
+    <Property value="159" />
+    <Property value="163" />
+    <Property value="161" />
+    <Property value="164" />
+    <Property value="163" />
+    <Property value="166" />
+    <Property value="163" />
+    <Property value="159" />
+    <Property value="151" />
+    <Property value="166" />
+    <Property value="165" />
+    <Property value="151" />
+    <Property value="148" />
+    <Property value="167" />
+    <Property value="192" />
+    <Property value="216" />
+    <Property value="201" />
+    <Property value="192" />
+    <Property value="219" />
+    <Property value="203" />
+    <Property value="203" />
+    <Property value="205" />
+    <Property value="193" />
+    <Property value="203" />
+    <Property value="200" />
+    <Property value="192" />
+    <Property value="193" />
+    <Property value="218" />
+    <Property value="203" />
+    <Property value="193" />
+    <Property value="223" />
+    <Property value="206" />
+    <Property value="194" />
+    <Property value="273" />
+    <Property value="208" />
+    <Property value="193" />
+    <Property value="222" />
+    <Property value="204" />
+    <Property value="207" />
+    <Property value="274" />
+    <Property value="194" />
+    <Property value="208" />
+    <Property value="209" />
+    <Property value="194" />
+    <Property value="195" />
+    <Property value="221" />
+    <Property value="211" />
+    <Property value="194" />
+    <Property value="220" />
+    <Property value="207" />
+    <Property value="210" />
+    <Property value="209" />
+    <Property value="195" />
+    <Property value="211" />
+    <Property value="201" />
+    <Property value="195" />
+    <Property value="213" />
+    <Property value="202" />
+    <Property value="196" />
+    <Property value="201" />
+    <Property value="210" />
+    <Property value="195" />
+    <Property value="196" />
+    <Property value="217" />
+    <Property value="212" />
+    <Property value="259" />
+    <Property value="198" />
+    <Property value="233" />
+    <Property value="232" />
+    <Property value="212" />
+    <Property value="257" />
+    <Property value="241" />
+    <Property value="234" />
+    <Property value="275" />
+    <Property value="262" />
+    <Property value="224" />
+    <Property value="240" />
+    <Property value="237" />
+    <Property value="276" />
+    <Property value="224" />
+    <Property value="224" />
+    <Property value="259" />
+    <Property value="233" />
+    <Property value="197" />
+    <Property value="217" />
+    <Property value="211" />
+    <Property value="211" />
+    <Property value="214" />
+    <Property value="197" />
+    <Property value="260" />
+    <Property value="197" />
+    <Property value="214" />
+    <Property value="215" />
+    <Property value="205" />
+    <Property value="198" />
+    <Property value="198" />
+    <Property value="219" />
+    <Property value="213" />
+    <Property value="234" />
+    <Property value="214" />
+    <Property value="199" />
+    <Property value="233" />
+    <Property value="213" />
+    <Property value="258" />
+    <Property value="199" />
+    <Property value="221" />
+    <Property value="208" />
+    <Property value="208" />
+    <Property value="277" />
+    <Property value="199" />
+    <Property value="235" />
+    <Property value="212" />
+    <Property value="197" />
+    <Property value="278" />
+    <Property value="199" />
+    <Property value="279" />
+    <Property value="257" />
+    <Property value="226" />
+    <Property value="232" />
+    <Property value="263" />
+    <Property value="225" />
+    <Property value="241" />
+    <Property value="264" />
+    <Property value="225" />
+    <Property value="238" />
+    <Property value="225" />
+    <Property value="260" />
+    <Property value="234" />
+    <Property value="260" />
+    <Property value="227" />
+    <Property value="235" />
+    <Property value="236" />
+    <Property value="243" />
+    <Property value="261" />
+    <Property value="236" />
+    <Property value="240" />
+    <Property value="226" />
+    <Property value="240" />
+    <Property value="232" />
+    <Property value="226" />
+    <Property value="249" />
+    <Property value="237" />
+    <Property value="262" />
+    <Property value="239" />
+    <Property value="242" />
+    <Property value="264" />
+    <Property value="261" />
+    <Property value="227" />
+    <Property value="239" />
+    <Property value="243" />
+    <Property value="235" />
+    <Property value="227" />
+    <Property value="250" />
+    <Property value="238" />
+    <Property value="263" />
+    <Property value="228" />
+    <Property value="280" />
+    <Property value="237" />
+    <Property value="228" />
+    <Property value="268" />
+    <Property value="246" />
+    <Property value="246" />
+    <Property value="281" />
+    <Property value="228" />
+    <Property value="261" />
+    <Property value="230" />
+    <Property value="236" />
+    <Property value="251" />
+    <Property value="238" />
+    <Property value="229" />
+    <Property value="229" />
+    <Property value="270" />
+    <Property value="247" />
+    <Property value="247" />
+    <Property value="251" />
+    <Property value="229" />
+    <Property value="264" />
+    <Property value="231" />
+    <Property value="239" />
+    <Property value="230" />
+    <Property value="262" />
+    <Property value="236" />
+    <Property value="252" />
+    <Property value="245" />
+    <Property value="230" />
+    <Property value="230" />
+    <Property value="268" />
+    <Property value="249" />
+    <Property value="252" />
+    <Property value="239" />
+    <Property value="231" />
+    <Property value="251" />
+    <Property value="248" />
+    <Property value="231" />
+    <Property value="231" />
+    <Property value="265" />
+    <Property value="252" />
+    <Property value="258" />
+    <Property value="196" />
+    <Property value="232" />
+    <Property value="233" />
+    <Property value="240" />
+    <Property value="224" />
+    <Property value="271" />
+    <Property value="256" />
+    <Property value="244" />
+    <Property value="267" />
+    <Property value="254" />
+    <Property value="282" />
+    <Property value="269" />
+    <Property value="255" />
+    <Property value="283" />
+    <Property value="256" />
+    <Property value="266" />
+    <Property value="284" />
+    <Property value="255" />
+    <Property value="271" />
+    <Property value="285" />
+    <Property value="253" />
+    <Property value="267" />
+    <Property value="286" />
+    <Property value="287" />
+    <Property value="269" />
+    <Property value="288" />
+    <Property value="266" />
+    <Property value="253" />
+    <Property value="289" />
+    <Property value="247" />
+    <Property value="254" />
+    <Property value="267" />
+    <Property value="247" />
+    <Property value="253" />
+    <Property value="272" />
+    <Property value="245" />
+    <Property value="256" />
+    <Property value="271" />
+    <Property value="248" />
+    <Property value="253" />
+    <Property value="266" />
+    <Property value="245" />
+    <Property value="255" />
+    <Property value="268" />
+    <Property value="248" />
+    <Property value="256" />
+    <Property value="265" />
+    <Property value="246" />
+    <Property value="255" />
+    <Property value="269" />
+    <Property value="246" />
+    <Property value="290" />
+    <Property value="291" />
+    <Property value="201" />
+    <Property value="202" />
+    <Property value="192" />
+    <Property value="192" />
+    <Property value="200" />
+    <Property value="216" />
+    <Property value="192" />
+    <Property value="202" />
+    <Property value="219" />
+    <Property value="203" />
+    <Property value="219" />
+    <Property value="205" />
+    <Property value="203" />
+    <Property value="218" />
+    <Property value="200" />
+    <Property value="193" />
+    <Property value="204" />
+    <Property value="218" />
+    <Property value="193" />
+    <Property value="205" />
+    <Property value="223" />
+    <Property value="194" />
+    <Property value="292" />
+    <Property value="293" />
+    <Property value="193" />
+    <Property value="206" />
+    <Property value="222" />
+    <Property value="207" />
+    <Property value="294" />
+    <Property value="295" />
+    <Property value="208" />
+    <Property value="221" />
+    <Property value="209" />
+    <Property value="195" />
+    <Property value="209" />
+    <Property value="221" />
+    <Property value="194" />
+    <Property value="209" />
+    <Property value="220" />
+    <Property value="210" />
+    <Property value="220" />
+    <Property value="209" />
+    <Property value="211" />
+    <Property value="217" />
+    <Property value="201" />
+    <Property value="213" />
+    <Property value="219" />
+    <Property value="202" />
+    <Property value="201" />
+    <Property value="216" />
+    <Property value="210" />
+    <Property value="196" />
+    <Property value="202" />
+    <Property value="217" />
+    <Property value="259" />
+    <Property value="215" />
+    <Property value="198" />
+    <Property value="232" />
+    <Property value="196" />
+    <Property value="212" />
+    <Property value="241" />
+    <Property value="225" />
+    <Property value="234" />
+    <Property value="262" />
+    <Property value="237" />
+    <Property value="224" />
+    <Property value="237" />
+    <Property value="296" />
+    <Property value="297" />
+    <Property value="224" />
+    <Property value="298" />
+    <Property value="259" />
+    <Property value="197" />
+    <Property value="212" />
+    <Property value="217" />
+    <Property value="211" />
+    <Property value="221" />
+    <Property value="214" />
+    <Property value="260" />
+    <Property value="235" />
+    <Property value="197" />
+    <Property value="215" />
+    <Property value="223" />
+    <Property value="205" />
+    <Property value="198" />
+    <Property value="205" />
+    <Property value="219" />
+    <Property value="234" />
+    <Property value="260" />
+    <Property value="214" />
+    <Property value="233" />
+    <Property value="198" />
+    <Property value="213" />
+    <Property value="199" />
+    <Property value="214" />
+    <Property value="221" />
+    <Property value="208" />
+    <Property value="299" />
+    <Property value="300" />
+    <Property value="235" />
+    <Property value="257" />
+    <Property value="212" />
+    <Property value="301" />
+    <Property value="234" />
+    <Property value="199" />
+    <Property value="257" />
+    <Property value="243" />
+    <Property value="226" />
+    <Property value="263" />
+    <Property value="238" />
+    <Property value="225" />
+    <Property value="264" />
+    <Property value="242" />
+    <Property value="225" />
+    <Property value="225" />
+    <Property value="242" />
+    <Property value="260" />
+    <Property value="260" />
+    <Property value="242" />
+    <Property value="227" />
+    <Property value="236" />
+    <Property value="226" />
+    <Property value="243" />
+    <Property value="236" />
+    <Property value="262" />
+    <Property value="240" />
+    <Property value="240" />
+    <Property value="258" />
+    <Property value="232" />
+    <Property value="249" />
+    <Property value="228" />
+    <Property value="237" />
+    <Property value="239" />
+    <Property value="227" />
+    <Property value="242" />
+    <Property value="261" />
+    <Property value="243" />
+    <Property value="227" />
+    <Property value="243" />
+    <Property value="257" />
+    <Property value="235" />
+    <Property value="250" />
+    <Property value="229" />
+    <Property value="238" />
+    <Property value="228" />
+    <Property value="302" />
+    <Property value="303" />
+    <Property value="228" />
+    <Property value="249" />
+    <Property value="268" />
+    <Property value="246" />
+    <Property value="304" />
+    <Property value="305" />
+    <Property value="261" />
+    <Property value="252" />
+    <Property value="230" />
+    <Property value="251" />
+    <Property value="264" />
+    <Property value="238" />
+    <Property value="229" />
+    <Property value="250" />
+    <Property value="270" />
+    <Property value="247" />
+    <Property value="272" />
+    <Property value="251" />
+    <Property value="264" />
+    <Property value="251" />
+    <Property value="231" />
+    <Property value="230" />
+    <Property value="249" />
+    <Property value="262" />
+    <Property value="252" />
+    <Property value="265" />
+    <Property value="245" />
+    <Property value="230" />
+    <Property value="245" />
+    <Property value="268" />
+    <Property value="252" />
+    <Property value="261" />
+    <Property value="239" />
+    <Property value="251" />
+    <Property value="272" />
+    <Property value="248" />
+    <Property value="231" />
+    <Property value="248" />
+    <Property value="265" />
+    <Property value="258" />
+    <Property value="213" />
+    <Property value="196" />
+    <Property value="233" />
+    <Property value="258" />
+    <Property value="240" />
+    <Property value="247" />
+    <Property value="270" />
+    <Property value="254" />
+    <Property value="247" />
+    <Property value="267" />
+    <Property value="253" />
+    <Property value="245" />
+    <Property value="265" />
+    <Property value="256" />
+    <Property value="248" />
+    <Property value="272" />
+    <Property value="253" />
+    <Property value="245" />
+    <Property value="271" />
+    <Property value="255" />
+    <Property value="248" />
+    <Property value="266" />
+    <Property value="256" />
+    <Property value="246" />
+    <Property value="268" />
+    <Property value="255" />
+    <Property value="246" />
+    <Property value="269" />
+    <Property value="306" />
+    <Property value="201" />
+    <Property value="217" />
+    <Property value="202" />
+  </Property>
+  <Property name="StreamMetaDataArray">
+    <Property value="TkMeshMetaData.xml">
+      <Property name="IdString" value="PalmTree_3" />
+      <Property name="Hash" value="6256187302448160389" />
+      <Property name="VertexDataSize" value="4608" />
+      <Property name="VertexDataOffset" value="432" />
+      <Property name="IndexDataSize" value="1152" />
+      <Property name="IndexDataOffset" value="5040" />
+      <Property name="DoubleBufferGeometry" value="False" />
+    </Property>
+    <Property value="TkMeshMetaData.xml">
+      <Property name="IdString" value="PalmTree_3.001" />
+      <Property name="Hash" value="5018537392354853572" />
+      <Property name="VertexDataSize" value="2760" />
+      <Property name="VertexDataOffset" value="6192" />
+      <Property name="IndexDataSize" value="912" />
+      <Property name="IndexDataOffset" value="8952" />
+      <Property name="DoubleBufferGeometry" value="False" />
+    </Property>
+  </Property>
+</Data>

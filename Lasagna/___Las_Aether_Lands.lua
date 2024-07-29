@@ -22,6 +22,13 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 --This adds the exml "context" for each model, i.e. the max scale.
 function AddDistantProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
+
+-- Check if flatDensity is greater than 0.05
+if flatDensity > 0.05 then
+    -- reduce flatDensity by 50%
+    flatDensity = flatDensity * 0.66
+end
+
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
@@ -129,6 +136,13 @@ end
 
 
 function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxAngle, minScale, maxScale, minScaleY, maxScaleY, patchEdgeSc, maxRotation, maxYRotation, maxRaise, maxLower, destroyableByShip, destroyableByTerrEdit, isFloatingIsland, creatureCanEat, coverage, flatDensity, slopeDensity, slopeMultiplier)
+
+-- Check if flatDensity is greater than 0.05
+if flatDensity > 0.05 then
+    -- reduce flatDensity by 50%
+    flatDensity = flatDensity * 0.66
+end
+
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
