@@ -15,6 +15,7 @@ TEXT_TO_ADD =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -27,9 +28,9 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_Docking.Fix.V.1.9.No.Disc.pak",
+["MOD_FILENAME"]            = "_Docking.Fix.V.2.0.No.Disc.pak",
 ["MOD_AUTHOR"]              = "JJhookah",
-["NMS_VERSION"]             = "4.71",
+["NMS_VERSION"]             = "5.01.1",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -247,17 +248,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD|Collision"},
+                            ["VCT"] =
+                            {
+                                {"Type", ""},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Disk", "Name", "ATTACHMENT"},
                             ["VCT"] =
                             {
                                 {"Value", "ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD\ENTITIES\DISK.ENTITY.MBIN"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Disk", "Name", "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\LANDINGPAD"},
-                            ["VCT"] =
-                            {
-                                {"Type", ""},
                             }
                         },
                         {
