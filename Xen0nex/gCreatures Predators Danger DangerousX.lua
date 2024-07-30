@@ -7,6 +7,7 @@ ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
 FileSource3 = "MODELS\PLANETS\CREATURES\FISH\GRABBYPLANT\ENTITIES\GRABBYPLANT.ENTITY.MBIN"
+FileSource4 = "MODELS\COMMON\ROBOTS\WALKING_BUILDING\WALKINGBUILDING.ENTITY.MBIN"
 
 --This section added by Xen0nex
 EyeballHealthMult = 6						--Multiplier to the Default 1600	(The underwater Eyeball monster / "Abyssal Horror")
@@ -26,6 +27,8 @@ CreatureSmallHealth = 500					--Default 200
 CreatureMedHealth = 2100					--Default 1400
 CreatureLargeHealth = 3600					--Default 2800
 CreatureHugeHealth = 5400					--Default 3600
+
+WalkBuildingType = "WALKINGBUILDING"		--"CREATURE"		Sets the damage multipliers for various weapons vs this target. PTSd adds a custom "WALKINGBUILDING" type in PTSd Weapons Rebalance.lua
 
 --Original section below
 SharkAttackSpeed = 15						--Default 10
@@ -69,14 +72,14 @@ FiendOnscreenMarkers = "False"				--Default True
 FiendHealth = 1500							--Default 1000
 FiendPerceptionDistance = 80				--Default 60
 FiendAggroTime = 30							--Default 45
-FiendMaxEngaged = 8							--Default 6
-FiendMaxAttackers = 4						--Default 2
+FiendMaxEngaged = 10						--Default 6
+FiendMaxAttackers = 6						--Default 2
 FiendMaxVerticalForPounce = 0.5				--Default 0.3
 FiendZigZagSpeed = 0						--Default 0
 FiendZigZagStrength = 0						--Default 0
 FiendEggsToUnlockSpit = 0					--Default 0
-MaxFiendsToSpawn = 8						--Default 6
-MaxFiendsToSpawnCarnage = 12				--Default 10		Added by Xen0nex
+MaxFiendsToSpawn = 12						--Default 6
+MaxFiendsToSpawnCarnage = 16				--Default 10		Added by Xen0nex
 FiendMinSpawnTime = 0.2						--Default 0.25
 FiendMaxSpawnTime = 2.3						--Default 3
 FiendAggroIncreaseDamageEgg = 1				--Default 1
@@ -110,6 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["PRECEDING_KEY_WORDS"] = {""},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = {
 								--These added by Xen0nex
 								{"GroundWormSpawnMin", GroundWormSpawnMin},
@@ -221,6 +225,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["VALUE_CHANGE_TABLE"] = {
 								{"Health", EyeballHealthMult},
 							},
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = FileSource4,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["REPLACE_TYPE"] 		= "ONCE",
+							["VALUE_MATCH"]         = "CREATURE", 
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"DamageMultiplier", WalkBuildingType},
+							}
 						},
 					},
 				},

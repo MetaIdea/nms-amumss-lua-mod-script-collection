@@ -16,6 +16,7 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
         <Property name="ScaleY" value="]].. ScaleY ..[[" />
         <Property name="ScaleZ" value="]].. ScaleZ ..[[" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -84,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Lumen.pak",
 ["MOD_AUTHOR"]              = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.01.1",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

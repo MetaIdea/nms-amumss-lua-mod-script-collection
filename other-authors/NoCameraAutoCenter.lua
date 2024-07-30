@@ -1,374 +1,78 @@
-NMS_MOD_DEFINITION_CONTAINER = {
-    MOD_FILENAME = "NoCameraAutoCenter_511.pak",
-    MOD_DESCRIPTION = "Disable camera auto center",
-    MOD_AUTHOR = "clawdius25",
-    LUA_AUTHOR = "clawdius25",
-    NMS_VERSION = "511",
-    GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-    MODIFICATIONS = {
-        {
-            MBIN_CHANGE_TABLE = {
+local modfilename = "NoCameraAutoCenter_511"
+local lua_author = "clawdius25 & Silent369"
+local lua_version = "1.1"
+local mod_author = "clawdius25"
+local nms_version = "5.01.1"
+local maintenance = mod_author
+local description = [[
+
+Disable Camera Auto-Center
+
+]]
+
+NMS_MOD_DEFINITION_CONTAINER =
+    {
+        ["MOD_FILENAME"]= string.format("%s%s.pak", modfilename, "v"..lua_version),
+        ["LUA_AUTHOR"] = lua_author,
+        ["MOD_AUTHOR"] = mod_author,
+        ["NMS_VERSION"] = nms_version,
+        ["MOD_DESCRIPTION"]= description,
+        ["MOD_MAINTENANCE"]= maintenance,
+        ["MODIFICATIONS"] =
+            {
                 {
-                    MBIN_FILE_SOURCE = "GCCAMERAGLOBALS.GLOBAL.MBIN",
-                    EXML_CHANGE_TABLE = {
+                    ["MBIN_CHANGE_TABLE"] =
+                    {
                         {
-                            PRECEDING_KEY_WORDS = "CharacterUnarmedCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
+                        ["MBIN_FILE_SOURCE"] = {"GCCAMERAGLOBALS.GLOBAL.MBIN"},
+                        ["EXML_CHANGE_TABLE"] =
                         {
-                            PRECEDING_KEY_WORDS = "CharacterRunCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterCombatCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterMiningCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterIndoorCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterAbandCombatCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterAbandCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterNexusCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterAirborneCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterMeleeBoostCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRocketBootsCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRocketBootsChargeCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterFallingCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80},
-                                {"BackMaxDistance", 6.5}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterAirborneCombatCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterSpaceCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterSteepSlopeCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterUnderwaterCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterUnderwaterCombatCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterUnderwaterJetpackCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterGrabbedCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterSitCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRideCam",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"LockToObjectOnIdle", "False"},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRideCamMedium",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"LockToObjectOnIdle", "False"},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRideCamLarge",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"LockToObjectOnIdle", "False"},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
-                            }
-                        },
-                        {
-                            PRECEDING_KEY_WORDS = "CharacterRideCamHuge",
-                            VALUE_CHANGE_TABLE = {
-                                {"CenterStartTime", 0},
-                                {"CenterBlendingTime", 0},
-                                {"CenterMaxSpring", 0},
-                                {"CenterMaxSpeed", 0},
-                                {"CenterStartSpeed", 0},
-                                {"UseSpeedBasedSpring", "False"},
-                                {"SpringSpeed", 0},
-                                {"LockToObjectOnIdle", "False"},
-                                {"VertRotationMin", -80},
-                                {"VertRotationMax", 80}
+                            {
+                                ["SPECIAL_KEY_WORDS"]= {
+                                    {"CharacterUnarmedCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRunCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterCombatCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterMiningCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterIndoorCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterAbandCombatCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterAbandCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterNexusCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterAirborneCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterMeleeBoostCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRocketBootsCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRocketBootsChargeCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterFallingCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterAirborneCombatCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterSpaceCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterSteepSlopeCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterUnderwaterCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterUnderwaterCombatCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterUnderwaterJetpackCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterGrabbedCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterSitCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRideCam", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRideCamMedium", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRideCamLarge", "GcCameraFollowSettings.xml"},
+                                    {"CharacterRideCamHuge", "GcCameraFollowSettings.xml"},
+                                },
+                                ["INTEGER_TO_FLOAT"] = "FORCE",
+                                ["REPLACE_TYPE"] = "ALLINSECTION",
+                                ["VALUE_CHANGE_TABLE"] =
+                                {
+                                    {"VertRotationMin",-80},
+                                    {"VertRotationMax", 80},
+                                    {"SpringSpeed",0},
+                                    {"CenterStartTime", 0},
+                                    {"CenterBlendTime", 0},
+                                    {"CenterMaxSpring", 0},
+                                    {"CenterMaxSpeed",0},
+                                    {"CenterStartSpeed", 0},
+                                    {"UseSpeedBasedSpring", "False"}
+                                }
                             }
                         }
+                        },
                     }
-                }
+                },
             }
-        }
     }
-}

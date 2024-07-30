@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "DontHideAutophageCamps.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.43",
+["NMS_VERSION"]				= "5.01.1",
 ["MOD_DESCRIPTION"]			= "Do not hide Autophage camps",
 ["MODIFICATIONS"] 			=
 	{

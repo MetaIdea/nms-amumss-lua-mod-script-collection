@@ -1,6 +1,6 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "2.8"
+local lua_version = "2.9"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
 local nms_version = "5.01.1"
@@ -16,11 +16,11 @@ Auto Scan planet entities (objects, structures) within given range.
 
 ------------------------------------------------------------------------------------------
 
-local _ScanRange = 12500   --max based on lod? range ~2,100u
-local _ScanTime  = 20
-local _RangeMult = 1E+09
-local _ShowRange = 12500
-local _Override  = -1      --hide when this close
+local _ScanRange = 10000   --max based on lod? range ~2,100u
+local _ScanTime  = 30
+local _RangeMult = 1
+local _ShowRange = 10000
+local _Override  = 100     --hide when this close
 
 ------------------------------------------------------------------------------------------
 -- Create Scannable Component Data
@@ -170,12 +170,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"]   = {"Template", "GcScannableComponentData.xml"},
+                           ["SECTION_UP_SPECIAL"]  = 1,
                            ["REMOVE"]              = "SECTION",
                        },
                        {
                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                           ["ADD_OPTION"]          = "ADDafterSECTION",
+                           ["ADD_OPTION"]          = "ADDbeforeSECTION",
                            ["ADD"]                 = AddRunawayMold,
                        },
                    }
@@ -188,7 +189,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"]   = {"Template", "GcScannableComponentData.xml"},
+                           ["SECTION_UP_SPECIAL"]  = 1,
                            ["REMOVE"]              = "SECTION",
                        },
                        {
@@ -206,7 +208,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                    ["EXML_CHANGE_TABLE"] =
                    {
                        {
-                           ["SPECIAL_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
+                           ["SPECIAL_KEY_WORDS"]   = {"Template", "GcScannableComponentData.xml"},
+                           ["SECTION_UP_SPECIAL"]  = 1,
                            ["REMOVE"]              = "SECTION",
                        },
                        {
@@ -239,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddMessage,
                         },
                     },
@@ -262,16 +265,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --BASE SITE (WILD)
                     ----------------------------------------------------------------------------------------------
                 {
-                    ["MBIN_FILE_SOURCE"]  =
-                    {
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DEFAULTROOM\ENTITIES\DEFAULTROOM.ENTITY.MBIN]]
-                    },
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\ENTITIES\BASECOMPUTER.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
                             ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = AddBase,
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DEFAULTROOM\ENTITIES\DEFAULTROOM.ENTITY.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddBase,
                         },
                     },
@@ -287,7 +297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml", "LinkableNMSTemplate.xml"},
                             ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = AddOutpost,
                         },
@@ -354,7 +364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddTerminal,
                         },
                     }
@@ -407,22 +417,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddPortal,
                         },
                     }
                 },
-                --{
-                --    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
-                --    ["EXML_CHANGE_TABLE"] =
-                --    {
-                --        {
-                --            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                --            ["ADD_OPTION"]          = "ADDafterSECTION",
-                --            ["ADD"]                 = AddPortal,
-                --        },
-                --    }
-                --},
+                {
+                    ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\PORTAL.ENTITY.MBIN]],
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
+                            ["ADD"]                 = AddPortal,
+                        },
+                    }
+                },
                     ----------------------------------------------------------------------------------------------
                     --ANCIENT RUINS
                     ----------------------------------------------------------------------------------------------
@@ -432,7 +442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddRuin,
                         },
                     }
@@ -443,7 +453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddTreasure,
                         },
                     }
@@ -462,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddDepot,
                         },
                     }
@@ -473,15 +483,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  =
                     {
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]],
-                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORYINTERACTION.ENTITY.MBIN]]
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYSCIENTIFIC\ENTITIES\SCIENTIFICFACTORY.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYTRADER\ENTITIES\FACTORYTRADER.ENTITY.MBIN]],
+                        [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\FACTORY\FACTORYWARRIOR\ENTITIES\FACTORY.ENTITY.MBIN]]
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddFactory,
                         },
                     }
@@ -498,7 +508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddObserver,
                         },
                     }
@@ -555,7 +565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD_OPTION"]          = "ADDbeforeSECTION",
                             ["ADD"]                 = AddAbandoned,
                         },
                     }
@@ -567,6 +577,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = [[MODELS\PLANETS\COMMON\BUILDINGS\ROBOT\ROBOTBASE\ENTITIES\TERMINAL.ENTITY.MBIN]],
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Template", "GcScannableComponentData.xml"},
+                            ["SECTION_UP_SPECIAL"]  = 1,
+                            ["REMOVE"]              = "SECTION",
+                        },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Components", "LinkableNMSTemplate.xml"},
                             ["ADD_OPTION"]          = "ADDafterSECTION",
@@ -583,6 +598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 --    {
                 --          {
                 --              ["PRECEDING_KEY_WORDS"] = {"Template", "GcScannableComponentData.xml"},
+                --              ["SECTION_UP_SPECIAL"]  = 1,
                 --              ["REMOVE"]              = "SECTION",
                 --          },
                 --          {

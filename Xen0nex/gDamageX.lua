@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG"},				--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10*Fauna}}}, --default 1, HardModeMultiplier 1.5
+		{"Damage", 20*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BUG_DMG"},						--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","QUEENSPIT_DMG"},				--This is used by both Vile Queens and Titan Worms	Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30*Fauna}}}, --default 5
+		{"Damage", 35*Fauna}}}, --default 5
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","WORM_DMG"},						--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	

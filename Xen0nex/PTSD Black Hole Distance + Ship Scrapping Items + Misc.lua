@@ -141,8 +141,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["PRECEDING_KEY_WORDS"] = {"AlienShipEvolveCosts"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -153,8 +151,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["PRECEDING_KEY_WORDS"] = {"AlienShipEvolveCosts"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -165,8 +161,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			--[[
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["PRECEDING_KEY_WORDS"] = {"MissionSubstanceDifficultyMultipliers"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -176,8 +170,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["PRECEDING_KEY_WORDS"] = {"ChanceOfPirateFreighterBattleOnWarpToSystem"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -194,18 +186,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
-			{
-				--Intentionally left blank to be filled in by function below
-			}
+			--This entry intentionally left blank, to be filled in by the loops at the bottom of this script
 		}
 	},
 	{
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
-			{
-				--Intentionally left blank to be filled in by function below
-			}
+			--This entry intentionally left blank, to be filled in by the loops at the bottom of this script
 		}
 	}
 }}}}
@@ -224,8 +212,6 @@ for i = 1, #ShipScrappingItemChanges do
 			ChangesToGamePlayGlobals[#ChangesToGamePlayGlobals+1] = 
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				--["SPECIAL_KEY_WORDS"] = {"Id", "SELF_SHIP"},
 				["PRECEDING_KEY_WORDS"] = {ItemType},
 				["VALUE_MATCH"]         = OldItem, 

@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "5-01-1"
-ModVersion = "1-4-0"
+GameVersion = "5-03"
+ModVersion = "1-4-1"
 
 -- =========
 -- CONSTANTS
@@ -78,7 +78,7 @@ files.
 
 --]]
 
--- Total keys: 236
+-- Total keys: 266
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
@@ -109,6 +109,30 @@ LANGUAGE_TABLE = {
   ["ALCH_CHEF_OFFER_TITLE_1"] = "Forgotten Songs", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ"] = "Follow the offering's guidance", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ_TIP"] = "The <SPECIAL>Offering of a Forgotten Song<> is seeking a harmonic partner. Follow it's guidance to unlock it's secrets.", --
+  ["ALCH_CHEF_RESET_RST_DAY_0"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Stellarator<> and <SPECIAL>Gelatinous Sponge<>. At the <STELLAR>Ingredients Market<>, <FLORA>Fireberry<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_1"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Cake of Burning Dread<> and <SPECIAL>Gelatinous Sponge<>. At the <STELLAR>Ingredients Market<>, <FUEL>ProtoSausage<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_10"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Syrupy Viscera<> and <SPECIAL>Splicer's Delight<>. At the <STELLAR>Ingredients Market<>, <FLORA>Impulse Beans<> are available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_11"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Chocolate Curiosity<> and <SPECIAL>Frosted Mire<>. At the <STELLAR>Ingredients Market<>, <RARE>Leopard-Fruit<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_12"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Chocolate Curiosity<> and <SPECIAL>Nourishing Oozer<>. At the <STELLAR>Ingredients Market<>, <RARE>Crab 'Apple'<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_13"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Syrupy Viscera<> and <SPECIAL>Mucal Curiosity<>. At the <STELLAR>Ingredients Market<>, <FUEL>Crunchy Wings<> are in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_14"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Syrupy Viscera<> and <SPECIAL>Nourishing Oozer<>. At the <STELLAR>Ingredients Market<>, <FLORA>Frozen Tubers<> are in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_15"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Fungal Omelette<> and <SPECIAL>Mucal Curiosity<>. At the <STELLAR>Ingredients Market<>, <RARE>Regis Grease<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_16"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Stellarator<> and <SPECIAL>Mucal Curiosity<>. At the <STELLAR>Ingredients Market<>, <FUEL>Meaty Chunks<> are available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_17"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Cake of Burning Dread<> and <SPECIAL>Frosted Mire<>. At the <STELLAR>Ingredients Market<>, <FUEL>Juicy Thorax<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_18"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Fungal Omelette<> and <SPECIAL>Squirming Fancy<>. At the <STELLAR>Ingredients Market<>, <FUEL>Fiendish Roe<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_19"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Spawning Tart<> and <SPECIAL>Squirming Fancy<>. At the <STELLAR>Ingredients Market<>, <FLORA>Grahberry<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_2"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Fungal Omelette<> and <SPECIAL>Primordial Sponge<>. At the <STELLAR>Ingredients Market<>, <RARE>Regis Grease<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_20"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Cake of Burning Dread<> and <SPECIAL>Splicer's Delight<>. At the <STELLAR>Ingredients Market<>, <FLORA>Impulse Beans<> are in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_21"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Spawning Tart<> and <SPECIAL>Gelatinous Sponge<>. At the <STELLAR>Ingredients Market<>, <RARE>Warm Proto-Milk<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_22"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Fungal Omelette<> and <SPECIAL>Frosted Mire<>. At the <STELLAR>Ingredients Market<>, <FUEL>Lumpy Brainstem<> is in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_23"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Spawning Tart<> and <SPECIAL>Slime Pop<>. At the <STELLAR>Ingredients Market<>, <FLORA>Hexaberry<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_3"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Chocolate Curiosity<> and <SPECIAL>Nourishing Oozer<>. At the <STELLAR>Ingredients Market<>, <FUEL>Rancid Flesh<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_4"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Stellarator<> and <SPECIAL>Slime Pop<>. At the <STELLAR>Ingredients Market<>, <RARE>Craw Milk<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_5"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Chocolate Curiosity<> and <SPECIAL>Primordial Sponge<>. At the <STELLAR>Ingredients Market<>, <RARE>Chewy Wires<> are in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_6"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Cake of Burning Dread<> and <SPECIAL>Slime Pop<>. At the <STELLAR>Ingredients Market<>, <FLORA>Aloe Flesh<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_7"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Spawning Tart<> and <SPECIAL>Splicer's Delight<>. At the <STELLAR>Ingredients Market<>, <FUEL>Diplo Chunks<> are in <SPECIAL>high demand<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_8"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>Syrupy Viscera<> and <SPECIAL>Squirming Fancy<>. At the <STELLAR>Ingredients Market<>, <RARE>Sticky 'Honey'<> is available at a <TRADE>discount<>. }}-", --
+  ["ALCH_CHEF_RESET_RST_DAY_9"] = "<VISOR>Cronus<>: -{{ Greetings Traveler! Today's <STELLAR>daily specials<> are <SPECIAL>The Stellarator<> and <SPECIAL>Primordial Sponge<>. At the <STELLAR>Ingredients Market<>, <FLORA>Aloe Flesh<> is in <SPECIAL>high demand<>. }}-", --
   ["ALCH_CHEF_TDONE_INTRO_DESC"] = "<HIGHLIGHT>Iteration Cronus<> has expanded their offerings for Travelers visiting the Nexus! Fair  compensation and competitive prices for all your cuisine preparation needs.", --
   ["ALCH_CHEF_TDONE_INTRO_P1"] = "Cronus is now willing to pay a premium for some of their <SPECIAL>favorite dishes<>  but what they are in the mood for changes daily.", --
   ["ALCH_CHEF_TDONE_INTRO_P2"] = "Through the <TRADE>Ingredients Market<>, Cronus allows Travelers to sell their  excess farm and harvest products. Ingredient selection changes daily.", --
@@ -215,6 +239,7 @@ LANGUAGE_TABLE = {
   ["D_ALCF_P2_ALT_RES_B"] = "Persistent, very well. The <SPECIAL>alchemist<> gave me this recipe, said I would know the right time to pass it along.\nA word of warning, however. Only Travelers with a <TECHNOLOGY>FREIGHTER<> will be able to unlock it's true potential.", --
   ["D_ALCF_PAGE2_OPT_D"] = "Replace lost offering", --
   ["D_ALCF_PAGE2_OPT_E"] = "Forgotten Songs...", --
+  ["D_ALCF_PAGE2_OPT_F"] = "Manage Preferences...", --
   ["D_ALCF_PAGE2_RES_B"] = "I do not think we are ready to discuss such matters, Traveler. Come and see me once you have woken from the <RARE>Dream<>.", --
   ["D_ALCF_SELL_LANG"] = "When selling your goods, I will pay average market per-shipment price of <SPECIAL>300<> for creature byproducts, <SPECIAL>200<> for meat, and <SPECIAL>100<> for plants.", --
   ["D_ALCF_WS_BUY_LANG"] = "The universe has many more secrets to uncover. Shall we attune to the song in it's memories once more?", --
@@ -222,6 +247,11 @@ LANGUAGE_TABLE = {
   ["D_ALCF_WS_BUY_OPT_B"] = "Acquire Recipe", --
   ["D_ALCF_WS_BUY_RES_A"] = "You tell Cronus a story from your travels amung the sea of stars. Before long, a familiar chorus drifts through the market stall.", --
   ["D_ALCF_WS_BUY_RES_B"] = "I will miss the stories, but I cannot stand in the way of your discovery. Here you are my friend, please help the universe remember.", --
+  ["D_ALCF_WS_PREF_LANG"] = "How can I best tailor my services to your needs, Traveler?", --
+  ["D_ALCF_WS_PREF_OPT_A"] = "Subscribe to daily menu notifications", --
+  ["D_ALCF_WS_PREF_OPT_B"] = "Unsubscribe from daily menu notifications", --
+  ["D_ALCF_WS_PREF_RES_A"] = "Fantastic! I will be sure to keep you informed of the day's events and specials.", --
+  ["D_ALCF_WS_PREF_RES_B"] = "Very well. I will no longer bother you with the day's events and specials.", --
   ["D_ALCF_WS_TUT1_FLOW_DESC_1"] = "Cronus searches for a sign of recognition in your expression.", --
   ["D_ALCF_WS_TUT1_FLOW_LANG_0"] = "What a fascinating topic! Yes, it appears that cosmic megafauna are now migrating through the galaxy.\nThese are just rumors though, or perhaps you have seen them?", --
   ["D_ALCF_WS_TUT1_FLOW_LANG_2"] = "You HAVE seen them! What fortuitus circumstances we find ourselves in.\nI theorize that within the wake of these cosmic beings are memories, lost even to them.\nIf we could attune to these memories, it would capture the attention of a nearby migratory fleet.", --

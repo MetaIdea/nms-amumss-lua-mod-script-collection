@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "500"
+GameVersion = "5_03"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -11,11 +11,11 @@ UpgradeAMult	=		1.8							--Vanilla cost is	300
 UpgradeABaseMarkup	=	1.25						--0.2
 UpgradeSMult	=		2.4							--Vanilla cost is	480
 UpgradeSBaseMarkup	=	2.375						--0.2
-UpgradeXMult	=		1.8							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
-UpgradeXBaseMarkup	=	0.2							--0.2
+UpgradeXMult	=		0.9							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
+UpgradeXBaseMarkup	=	1.4							--0.2
 
 RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects the buying AND selling price when using space station trade terminals or item vendors on outlaw stations ON TOP OF other values, e.g. a value of 0.5 means space stations charge & pay +50% more than other sources
-SusUpgradeSpaceStationMarkup = 1					--0						For suspicious upgrades in Outlaw stations.
+SusUpgradeSpaceStationMarkup = 1					--0						To make suspicious upgrades in Outlaw stations cost more than buying from planetary smugglers. Side effect doubles value when selling in any space station, which is why UpgradeXMult is so low to compensate.
 
 UpgradeScannerMult	=	1							--Additional multiplier to apply to BaseValue of all Scanner upgrades (including X class) on top of the above multipliers
 
@@ -503,6 +503,24 @@ ReplaceItems =
 	},
 	{	--Aqua-Jets
 		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",
+	},
+	{	--Procedural Starship Pulse Engine Upgrades (Used for repairing / dismantling them)
+		"T_SHIPJUMP",			"Stellar2",			150,	"Substance",	"RED2",
+	},
+	{	--Procedural Starship Photon Cannon Upgrades (Used for repairing / dismantling them)
+		"T_SHIPGUN",			"Stellar2",			250,	"Substance",	"RED2",
+	},
+	{	--Procedural Starship Phase Beam Upgrades (Used for repairing / dismantling them)
+		"T_SHIPLAS",			"Stellar2",			250,	"Substance",	"RED2",
+	},
+	{	--Procedural Starship Positron Ejector Upgrades (Used for repairing / dismantling them)
+		"T_SHIPSHOT",			"Stellar2",			250,	"Substance",	"RED2",
+	},
+	{	--Procedural Starship Infraknife Accelerator Upgrades (Used for repairing / dismantling them)
+		"T_SHIPMINI",			"Stellar2",			250,	"Substance",	"RED2",
+	},
+	{	--Procedural Starship Cyclotron Ballista Upgrades (Used for repairing / dismantling them)
+		"T_SHIPBLOB",			"Stellar2",			250,	"Substance",	"RED2",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Containment Failure

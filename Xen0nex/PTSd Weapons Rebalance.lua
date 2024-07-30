@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "500"
+GameVersion = "5_01"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -25,6 +25,9 @@ LaserCreatureMult = 1									--1		Lowering this value appears to disable the cr
 VehicleLaserCreatureMult = 0.2							--1
 LaserSentinelMult = 0.75									--0.6
 VehicleLaserSentinelMult = 0.2							--0.2
+
+--Default damage multiplier against Walking Buildings (new custom type added by PTSd used in gCreatures Predators Danger DangerousX.lua)
+WalkingBuildingMult = 0.15								--In vanilla is a CREATURE type
 
 --Damage multipliers against DOORs and DEPOTs
 ShipWeaponDoorMult = 0.02								--1
@@ -1955,6 +1958,15 @@ function ShipCargoDamageMult (Mult)
 	</Property>]]
 end
 
+function AddNewTargetType (Name, Mult)
+    return
+[[<Property value="GcDamageMultiplierLookup.xml">
+      <Property name="Id" value="]]..Name..[[" />
+      <Property name="Default" value="]]..Mult..[[" />
+      <Property name="Multipliers" />
+    </Property>]]
+end
+
 AddRocketDamage = 
 [[<Property value="GcStatsBonus.xml">
           <Property name="Stat" value="GcStatsTypes.xml">
@@ -2156,6 +2168,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["LINE_OFFSET"] = "1",
 				["REPLACE_TYPE"] = "",
 				["ADD"] = ShipCargoDamageMult (ShipWeaponsCargoMult)
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplierLookup.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION",  
+				["ADD"] = AddNewTargetType ("WALKINGBUILDING", WalkingBuildingMult)
 			},
 			{
 				--["PRECEDING_FIRST"] = "TRUE",

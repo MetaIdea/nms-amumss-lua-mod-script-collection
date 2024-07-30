@@ -323,6 +323,12 @@ RecipeChanges =
 	},
 --Buffs a few recipes that either were inferior to easier recipes, or to incentivise finding their raw ingredients
 	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_1",		20,					320},				--Makes Nanites					15	in	320 time
+		{
+			{"BP_SALVAGE",		1}										--Requires Salvaged Data			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_2",		125,				60},				--Makes Gold					x100	in	60 time
 		{
 			{"CLAMPEARL",		1}										--Requires Living Pearl			x1
@@ -775,7 +781,7 @@ NewRecipe2 =
       </Property>
     </Property>]]
 
---Adds Recipe for refining Navigation Data into 10 Nanites
+--Adds Recipe for refining Navigation Data into 8 Nanites
 NewRecipe3 = 
 [[<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="NANITE_NAVDATA" />
@@ -788,7 +794,7 @@ NewRecipe3 =
         <Property name="Type" value="GcInventoryType.xml">
           <Property name="InventoryType" value="Substance" />
         </Property>
-        <Property name="Amount" value="10" />
+        <Property name="Amount" value="8" />
       </Property>
       <Property name="Ingredients">
         <Property value="GcRefinerRecipeElement.xml">

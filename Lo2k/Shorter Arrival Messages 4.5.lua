@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Cursor 5.9.pak", 
+["MOD_FILENAME"] 			= "Shorter Arrival Messages 4.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.0",
-["MOD_DESCRIPTION"]			= "This mods reduces the size of the main game cursor",
+["NMS_VERSION"]				= "5.03",
+["MOD_DESCRIPTION"]			= "This mods reduces hang time when arriving at a new location",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,8 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FrontendCursorSize", "14"},
-								{"FrontendCursorWidth",	"7"}
+								{"DiscoverPlanetTotalTime",	"5"}, -- original 10
+								{"DiscoverPlanetMessageWait",	"0"},  -- original 1
+								{"DiscoverPlanetMessageTime",	"3"},  --original 7
 							}
 						}
 					}

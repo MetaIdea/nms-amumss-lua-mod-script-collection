@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["NMS_VERSION"]     = "5.01.1",
+["NMS_VERSION"]     = "5.03",
 ["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
 ["MODIFICATIONS"]   =
     {

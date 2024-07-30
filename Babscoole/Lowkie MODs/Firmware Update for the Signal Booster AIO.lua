@@ -6,8 +6,9 @@ InputCOSTCHOICE = {COSTCHOICE,
     Choose a cost option:
     0 - No cost
     1 - Cost of 1 NAVDATA
-    2 - Cost of 5 NAVDATA
-    3 - Cost of 10 NAVDATA
+    2 - Cost of 3 NAVDATA
+    3 - Cost of 5 NAVDATA
+    4 - Cost of 10 NAVDATA
     Default = 0 | Current = >> ]] .. (COSTCHOICE) .. [[ <<
 ]]}
 
@@ -15,7 +16,7 @@ while COSTCHOICE do
   COSTCHOICE = GUIF(InputCOSTCHOICE,10)
 
   local minChoice = 0
-  local maxChoice = 3
+  local maxChoice = 4
 
   if COSTCHOICE < minChoice or COSTCHOICE > maxChoice then
     print("         >>> ["..COSTCHOICE.."] is NOT a valid choice.  Must be a number between "..minChoice.."-"..maxChoice..".  Please retry! <<<")
@@ -31,9 +32,12 @@ elseif COSTCHOICE == 1 then
   COSTCHOICE = "C_NAVDATA"
   FILENAME = " NiF"
 elseif COSTCHOICE == 2 then
-  COSTCHOICE = "C_NAVDATA5"
+  COSTCHOICE = "C_NAVDATA3"
   FILENAME = " NiF"
 elseif COSTCHOICE == 3 then
+  COSTCHOICE = "C_NAVDATA5"
+  FILENAME = " NiF"
+elseif COSTCHOICE == 4 then
   COSTCHOICE = "C_NAVDATA10"
   FILENAME = " NiF"
 end
@@ -146,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.01.1",
+  ["NMS_VERSION"]     = "5.03",
   ["MODIFICATIONS"]   =
     {
         {
@@ -622,6 +626,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Stages"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["SEC_ADD_NAMED"] = "GetMissionSequenceReward",
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\COSTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_NAVDATA5"},
+                            ["SEC_SAVE_TO"] = "GetCost",
+                        },
+                        {
+                            ["SEC_EDIT"] = "GetCost",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Id",     "C_NAVDATA3"},
+                                {"Amount", "3"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "C_NAVDATA" },
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SEC_ADD_NAMED"] = "GetCost",
                         },
                     },
                 },

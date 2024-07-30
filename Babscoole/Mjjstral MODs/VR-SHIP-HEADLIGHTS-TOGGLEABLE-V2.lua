@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "5.03",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"] =
     {
@@ -38,6 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />

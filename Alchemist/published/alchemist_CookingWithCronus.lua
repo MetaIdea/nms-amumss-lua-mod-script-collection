@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "5-01-1"
-ModVersion = "1-4-0"
+GameVersion = "5-03"
+ModVersion = "1-4-1"
 
 --
 
@@ -60,6 +60,7 @@ METADATA/GAMESTATE/STATS/STATDEFINITIONSTABLE.MBIN
 - CHEF_LORE
 - CHEF_TUT
 - CHEF_POE
+- CHEF_DCM
 - CHEF_API_A
 - CHEF_API_B
 - CHEF_CDH
@@ -84,6 +85,7 @@ METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN
 - CHEF_LORE
 - CHEF_TUT
 - CHEF_POE
+- CHEF_DCM
 - CHEF_API_A
 - CHEF_API_B
 - CHEF_CDH
@@ -4127,6 +4129,209 @@ MODIFICATIONS = {{
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_CHEFXD_CHAT" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="SelectAlways" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_0" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_1" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_2" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_3" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_4" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_5" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_6" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_7" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_8" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_9" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_10" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_11" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_12" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_13" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_14" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_15" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_16" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_17" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_18" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_19" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_20" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_21" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_22" />
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="CHEF_CHAT" />
+                  <Property name="CustomText" value="ALCH_CHEF_RESET_RST_DAY_23" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_CHEFXD_API_A" />
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="SelectAlways" />
@@ -7488,6 +7693,123 @@ MODIFICATIONS = {{
         </Property>
         <Property value="GcGenericMissionStage.xml">
           <Property name="Versions" />
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True" />
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value="" />
+              <Property name="ResHandle" value="GcResource.xml">
+                <Property name="ResourceID" value="0" />
+              </Property>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None" />
+            </Property>
+            <Property name="PageDataLocID" value="" />
+            <Property name="BuildMenuHint" value="" />
+            <Property name="InventoryHint" value="" />
+            <Property name="TerrainTarget" value="" />
+            <Property name="DebugText" value="" />
+            <Property name="ObjectiveID" value="" />
+            <Property name="ObjectiveTipID" value="" />
+            <Property name="HasCategoryOverride" value="False" />
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission" />
+            </Property>
+            <Property name="HasColourOverride" value="False" />
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1" />
+              <Property name="G" value="1" />
+              <Property name="B" value="1" />
+              <Property name="A" value="1" />
+            </Property>
+            <Property name="PrefixTitle" value="False" />
+            <Property name="PrefixTitleText" value="" />
+            <Property name="BlockPinning" value="False" />
+            <Property name="AutoPinRepairs" value="False" />
+            <Property name="BlockSpaceBattles" value="False" />
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse" />
+            </Property>
+            <Property name="HideFromLogIfConditionsMet" value="False" />
+            <Property name="DoConsequencesIfNeverActivated" value="True" />
+            <Property name="RepeatLogic" value="None" />
+            <Property name="IconStyle" value="Default" />
+            <Property name="GalMapPathOverride" value="None" />
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None" />
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False" />
+              <Property name="FormattableObjective" value="" />
+              <Property name="FormattableObjectiveTip" value="" />
+            </Property>
+            <Property name="SeasonalObjectiveOverrides" value="GcSeasonalObjectiveOverrides.xml">
+              <Property name="ApplicableSeasonNumbers" />
+              <Property name="OverrideObjective" value="" />
+              <Property name="OverrideObjectiveTip" value="" />
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value="" />
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False" />
+              <Property name="TargetMissionSurveyDefinitelyExistsWithResourceHint" value="False" />
+              <Property name="SurveyInactiveHint" value="" />
+              <Property name="SurveySwapHint" value="" />
+              <Property name="SurveyHint" value="" />
+              <Property name="SurveyVehicleHint" value="" />
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False" />
+              <Property name="NotifyDisplayTime" value="0" />
+              <Property name="NotifyPauseTime" value="0" />
+            </Property>
+            <Property name="Conditions">
+              <Property value="GcMissionConditionStatLevel.xml">
+                <Property name="Stat" value="CHEF_TUT" />
+                <Property name="StatGroup" value="GLOBAL_STATS" />
+                <Property name="Level" value="1" />
+                <Property name="LevelledStatRank" value="-1" />
+                <Property name="TakeLevelFromSeasonData" value="False" />
+                <Property name="ForceIgnoreLevelledStat" value="False" />
+                <Property name="MulAmountBySeasonTier" value="False" />
+                <Property name="CompareStat" value="" />
+                <Property name="DisplayMilestoneNumber" value="1" />
+                <Property name="Test" value="TkEqualityEnum.xml">
+                  <Property name="EqualityEnum" value="Equal" />
+                </Property>
+              </Property>
+              <Property value="GcMissionConditionStatLevel.xml">
+                <Property name="Stat" value="CHEF_DCM" />
+                <Property name="StatGroup" value="GLOBAL_STATS" />
+                <Property name="Level" value="1" />
+                <Property name="LevelledStatRank" value="-1" />
+                <Property name="TakeLevelFromSeasonData" value="False" />
+                <Property name="ForceIgnoreLevelledStat" value="False" />
+                <Property name="MulAmountBySeasonTier" value="False" />
+                <Property name="CompareStat" value="" />
+                <Property name="DisplayMilestoneNumber" value="1" />
+                <Property name="Test" value="TkEqualityEnum.xml">
+                  <Property name="EqualityEnum" value="Equal" />
+                </Property>
+              </Property>
+            </Property>
+            <Property name="Consequences" />
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions" />
+                <Property name="Stage" value="GcMissionSequenceReward.xml">
+                  <Property name="Message" value="UI_REWARD_FAILED_MSG" />
+                  <Property name="Reward" value="R_CHEFXD_CHAT" />
+                  <Property name="DoMissionBoardOverride" value="False" />
+                  <Property name="Silent" value="False" />
+                  <Property name="RewardInventoryOverride" value="None" />
+                  <Property name="DebugText" value="" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions" />
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="UI_REWARD_FAILED_MSG" />
             <Property name="Reward" value="R_CHEFXD_API_A" />
@@ -8282,6 +8604,39 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALCF_PAGE2_OPT_F" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_WS_PREF" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_CHEF_MENU_BACK_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
@@ -8462,6 +8817,184 @@ MODIFICATIONS = {{
                 <Property name="TruncateCost" value="False" />
                 <Property name="MarkInteractionComplete" value="False" />
                 <Property name="NextInteraction" value="D_ALCF_HOME" />
+                <Property name="SelectedOnBackOut" value="True" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText" />
+            <Property name="AdditionalTextAlien" />
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral" />
+            </Property>
+            <Property name="Prop" value="GcNPCPropType.xml">
+              <Property name="NPCProp" value="DontCare" />
+            </Property>
+            <Property name="AdvancedInteractionFlow" />
+            <Property name="PersistancyBufferOverride" value="None" />
+            <Property name="CustomFreighterTextIndex" value="-1" />
+            <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
+            <Property name="AllowNoOptions" value="False" />
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT" />
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1" />
+            <Property name="MinProgressionForSelection" value="0" />
+            <Property name="Id" value="D_ALCF_WS_PREF" />
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None" />
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None" />
+            </Property>
+            <Property name="Category" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default" />
+            </Property>
+            <Property name="AdditionalOptions" value="None" />
+            <Property name="Title" value="" />
+            <Property name="Text" value="" />
+            <Property name="TextAlien" value="D_ALCF_WS_PREF_LANG" />
+            <Property name="TranslateAlienText" value="False" />
+            <Property name="TranslationBrackets" value="True" />
+            <Property name="ProgressiveDialogue" value="False" />
+            <Property name="RequiresScanEvent" value="" />
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALCF_WS_PREF_OPT_A" />
+                <Property name="Text" value="D_ALCF_WS_PREF_RES_A" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_CHAT_EN" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_WS_PREF" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_DCM" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="1" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="MulAmountBySeasonTier" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALCF_WS_PREF_OPT_B" />
+                <Property name="Text" value="D_ALCF_WS_PREF_RES_B" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_CHAT_DIS" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_WS_PREF" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_DCM" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="0" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="MulAmountBySeasonTier" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_CHEF_MENU_BACK_OPT" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_PAGE2" />
                 <Property name="SelectedOnBackOut" value="True" />
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
@@ -32678,6 +33211,54 @@ MODIFICATIONS = {{
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_CHAT_EN" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_DCM" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_CHAT_DIS" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_DCM" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALCF_DV_A0A" />
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
@@ -45275,6 +45856,26 @@ MODIFICATIONS = {{
         <Property name="StatDisplayType" value="None" />
       </Property>
       <Property name="DefaultValue" value="GcStatValueData.xml">
+        <Property name="IntValue" value="1" />
+        <Property name="FloatValue" value="0" />
+        <Property name="Denominator" value="0" />
+      </Property>
+      <Property name="Id" value="CHEF_DCM" />
+      <Property name="TelemetryUpload" value="False" />
+      <Property name="IsProgression" value="False" />
+      <Property name="MissionMessageDecimals" value="0" />
+    </Property>
+    <Property value="GcStatDefinition.xml">
+      <Property name="Type" value="GcStatType.xml">
+        <Property name="StatType" value="Int" />
+      </Property>
+      <Property name="TrackType" value="GcStatTrackType.xml">
+        <Property name="StatTrackType" value="Set" />
+      </Property>
+      <Property name="DisplayType" value="GcStatDisplayType.xml">
+        <Property name="StatDisplayType" value="None" />
+      </Property>
+      <Property name="DefaultValue" value="GcStatValueData.xml">
         <Property name="IntValue" value="0" />
         <Property name="FloatValue" value="0" />
         <Property name="Denominator" value="0" />
@@ -45604,7 +46205,7 @@ MODIFICATIONS = {{
       <Property name="ReplicateTo" value="None" />
       <Property name="PostLocally" value="True" />
       <Property name="Distance" value="0" />
-      <Property name="DisplayDurationMultiplier" value="0.25" />
+      <Property name="DisplayDurationMultiplier" value="0.35" />
       <Property name="OnlyInMultiplayer" value="False" />
       <Property name="OnlyOnFireteam" value="False" />
       <Property name="MissionMarkup" value="GcStatusMessageMissionMarkup.xml">
@@ -45633,6 +46234,9 @@ MODIFICATIONS = {{
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="CHEF_POE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="CHEF_DCM" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="CHEF_API_A" />

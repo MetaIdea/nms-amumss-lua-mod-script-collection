@@ -617,6 +617,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="DRONESUMMONER",  ["P_NAME"]="DRONESUMMONER",            ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="QUADRUPED",      ["P_NAME"]="QUADRUPED",                ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="WALKER",         ["P_NAME"]="WALKER",                   ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="WALKING_BLDG",   ["P_NAME"]="WALKING_BUILDING",         ["PATH"]="MODELS/COMMON/ROBOTS/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="HMDDRONE",       ["P_NAME"]="HMDDRONE",                 ["PATH"]="MODELS/COMMON/HMD/",                                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="PORTAL",         ["P_NAME"]="PORTAL",                   ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/",                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="PORTALTERMINAL", ["P_NAME"]="PORTALTERMINAL",           ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/",                             ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
@@ -1353,6 +1354,7 @@ PLACEMENT_SCENE =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -1379,6 +1381,7 @@ PLACEMENT_SCENE =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -1401,6 +1404,7 @@ PLACEMENT_SCENE =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -1436,6 +1440,7 @@ PLACEMENT_SCENE =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
@@ -1544,7 +1549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "zzz-UltraBaseBuildingRemover.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "5.03",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {

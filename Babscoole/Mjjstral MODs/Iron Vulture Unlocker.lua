@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "5.01.1",
+["NMS_VERSION"]     = "5.03",
 ["MODIFICATIONS"]   =
     {
         {
@@ -188,6 +188,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. REWARD_ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -202,6 +205,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="IconResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+      <Property name="IconPetCommandResource" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
@@ -210,8 +222,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChatUsesPrefix" value="False" />
       <Property name="EmoteID" value="TRIGGERANIMW" />
       <Property name="AnimationName" value="TRIGGERANIM" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. REWARD_ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />

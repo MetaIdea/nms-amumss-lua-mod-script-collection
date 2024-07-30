@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Sentinel Cockpit No Red Circuitry View.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.01.1",
+["NMS_VERSION"]     = "5.03",
 ["MOD_DESCRIPTION"] = "Removes the red glowing circuitry from the canopy",
 ["MODIFICATIONS"]   =
     {

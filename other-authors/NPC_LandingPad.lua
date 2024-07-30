@@ -381,9 +381,8 @@ NMS_MOD_DEFINITION_CONTAINER	=
 {
 ["MOD_FILENAME"] 			=	"NPC_LandingPad.pak",
 ["MOD_AUTHOR"]				=	"XiNaaru",
-["MOD_VERSION"]				=	"1.1",
+["NMS_VERSION"]				= 	"5.01.1",
 ["LUA_AUTHOR"]				=	"Lenni",
-["NMS_VERSION"]				=	"4.43",
 ["MODIFICATIONS"]			=
 	{
 		{

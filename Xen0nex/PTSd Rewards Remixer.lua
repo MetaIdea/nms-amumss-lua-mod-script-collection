@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_01"
+GameVersion = "5_03"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -226,19 +226,19 @@ ShipCurrencyChanges =
 	{
 		{"PIRATELOOT"},
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	80,			200,		100}			--100,			250,		100		
+			{"Nanites",	120,		300,		100}			--100,			250,		100		
 		}
 	},
 	{
 		{"PIRATLTEASY"},		--Added by this mod
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	50,			150,		100}			--100,			250,		100		
+			{"Nanites",	65,			215,		100}			--100,			250,		100		
 		}
 	},
 	{
 		{"PIRATLTHARD"},		--Added by this mod
 		{	--Currency	Min			Max			%Chance (relative weight, not necessarily out of 100)
-			{"Nanites",	120,		300,		100}			--100,			250,		100		
+			{"Nanites",	180,		450,		100}			--100,			250,		100		
 		}
 	},
 	{
@@ -1342,6 +1342,10 @@ ExtraChestArtifact = [[<Property value="GcRewardTableItem.xml">
               </Property>
             </Property>
           </Property>]]
+
+--Sets the amounts of Salvaged Data found in Buried Technology Modules
+BuriedTechSalvageMin =					2						--2
+BuriedTechSalvageMax =					4						--4
 
 --Set which recipes for Storage Containers to remove from most rewards where the game normally awards all 10 recipes
 RemoveContainerRewards = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
@@ -2459,7 +2463,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
-				["MATH_OPERATION"] 		= "", 
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2524,8 +2527,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD"},
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	CrewManGuildStand},
@@ -2534,8 +2535,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_CAPT_GUILD"},
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	CaptLogGuildStand},
@@ -2544,8 +2543,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NPC_VEHICLE16S"},
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	ExocraftMinUnits},
@@ -2566,7 +2563,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"Reward", "GcRewardProcTechProduct.xml"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
@@ -2577,8 +2573,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"Group", "LAUNCHER_NAME_L"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2588,9 +2582,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_CARGOSHIELD"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2599,9 +2590,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_LAUNCHCHARGE"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2610,9 +2598,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_SHIPSCAN"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2621,9 +2606,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_ALIEN_TECH",	"ID", "UA_WATERLAND"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2644,7 +2626,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_LOW"},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	LowStandingReward},
@@ -2653,7 +2634,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_MED"},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	MedStandingReward},
@@ -2662,7 +2642,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_HIGH"},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	HighStandingReward},
@@ -2671,7 +2650,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_GUILD"},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	GuildStandingReward},
@@ -2699,21 +2677,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPJUMP_NAME_L"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPSHIELD_NAME_L"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 1,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_QUEEN"},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RewardChoice",	"GiveFirst_ThenAlsoSelectAlwaysFromRest"} 		--"TryEachSilent"
@@ -2728,7 +2701,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DRONE_LOOT"},
 				["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	DroneGlassDropChance}, 
@@ -2744,9 +2716,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","QUAD_LOOT","ID","SENTINEL_LOOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	QuadGlassDropChance}, 
@@ -2762,9 +2732,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","MECH_LOOT","ID","SENTINEL_LOOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	MechGlassDropChance}, 
@@ -2780,9 +2748,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","WALKER_LOOT","ID","SENTINEL_LOOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	WalkerGlassDropChance}, 
@@ -2792,9 +2758,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_HIVESUB","ID","SENTINEL_LOOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	PillarGlassDropChance}, 
@@ -2804,9 +2768,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAPHEAP","ID","CHART_HIVE"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SalvageSentMapChance}, 
@@ -2814,9 +2776,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_LOOT","ID","CHART_ROBOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SpiderMapChance}, 
@@ -2824,9 +2784,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_MINIHIVE","ID","CHART_ROBOT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	DisResMapChance}, 
@@ -2834,9 +2792,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","U_SENTGUN"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SentGunChance}
@@ -2844,9 +2800,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","U_SENTSUIT"},
-				--["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
 				["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	SentSuitChance}
@@ -2886,8 +2840,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA_DROP"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2897,8 +2849,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2908,7 +2858,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_COLD"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2919,7 +2868,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_DUSTY"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2930,7 +2878,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_HOT"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2941,7 +2888,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_ROLLER"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -2952,7 +2898,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","ASTEROID2"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2964,7 +2909,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_RARE_GOLD",	"ID","RADIO1"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
@@ -2977,7 +2921,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPOREVENT"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3017,8 +2960,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RARE_OBJECT"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RewardChoice",	"GiveAll"}
@@ -3051,7 +2992,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3062,7 +3002,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "INTERIORPLANTS"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3172,22 +3111,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C",	"Rarity","Common"},
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C",	"Rarity","Uncommon"},
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_C"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
+
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"PercentageChance",	"100"} 	
@@ -3196,55 +3132,41 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_LIB_VAULT_U",	"Rarity","Uncommon"},
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{	--Removes Cadmium, Emeril, Indium Drives from random tech reward pool
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST1"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST2"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST3"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST1"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST2"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST3"},
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","WORD"},
-				--["REPLACE_TYPE"] 		= "",
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = AddOneWord("None")
@@ -3252,9 +3174,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--[[
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_SEAHORROR"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ProceduralProductCategory",	SeaHorrorReward} 	
@@ -3263,9 +3182,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			]]
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_VENTGEM", "ID", "VENTGEM"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	CrystalSulphide},
@@ -3274,9 +3190,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "ID", "VENTGEM"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	CrystalSulphideOther},
@@ -3285,9 +3198,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_GEODE_RARE", "ID", "VENTGEM"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	CrystalSulphideOther},
@@ -3296,9 +3206,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","DE_FISHCORE", "ID", "FISHCORE"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	AlluringSpecHadalCore},
@@ -3312,8 +3219,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE", "ID", "BP_SALVAGE"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	BuriedTechSalvageMin},
+					{"AmountMax",	BuriedTechSalvageMax}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "RED2"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3324,8 +3238,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "RED2"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID",	BreakTechRed}
@@ -3333,7 +3245,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "GREEN2"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3344,8 +3255,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "GREEN2"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID",	BreakTechGreen}
@@ -3353,7 +3262,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "BLUE2"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3364,8 +3272,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_BREAK_TECH", "ID", "BLUE2"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID",	BreakTechBlue}
@@ -3392,8 +3298,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "FTH_NPC_OPT_B_16"},
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Cost",	TravellerNaniteCost}
@@ -3401,7 +3305,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "FTH_REQUEST_DIRECTIONS"},
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3410,7 +3313,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "ALL_OFFER_NANITES"},
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3419,7 +3321,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "ALL_FAC_REWARD_OPT_A"},
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -3429,8 +3330,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "?DRONE_HIVE_COMBAT_SHUTDOWN"},
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
 				--["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3439,12 +3338,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Name", "WAR_CRA_OPT_B_3",		"Value", "PROC_TECH_WEAP"},
 				["REMOVE"] = "SECTION"
 			},
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Name", "FOURTH_CRA_OPT_B_11",		"Value", "PROC_TECH_SHIP"},
 				["REMOVE"] = "SECTION"
 			}
@@ -3522,7 +3419,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "0",
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -3565,10 +3461,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_COM_EASY_1",	"ID", "BLUE2"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3577,10 +3470,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_COMBAT_1",	"ID", "BLUE2"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3589,10 +3479,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"ID", "BLUE2"},
 				["VALUE_MATCH"] 		= "BLUE2", 
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3608,7 +3495,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				--["PRECEDING_KEY_WORDS"] = {"LinkableNMSTemplate.xml"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Id",	FreighterCarbonWallReward}		--PLANTER_CARBON
@@ -3623,7 +3509,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "SENTINEL_LOOT"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentGlass}		--0
@@ -3631,7 +3516,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "WALKER_PROD"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentBrain}		--0
@@ -3639,7 +3523,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "DRONE_SALVAGE"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentMirror}		--0
@@ -3647,7 +3530,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Sentinels", "GcMaintenanceGroup.xml",		"Id", "QUAD_PROD"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"OverrideAmount",	SentQuad}		--0
@@ -3679,7 +3561,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["PRECEDING_KEY_WORDS"] = {"PreInstalledTech"},
-				["MATH_OPERATION"] 		= "", 
 				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3697,8 +3578,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_EXOTUT_LOOP"},
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"AmountMin",	math.floor(1*ExocraftMinUnits)},
@@ -3719,7 +3598,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
-				["MATH_OPERATION"] 		= "", 
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3731,13 +3609,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Value","R_D_EXOTUT"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = AddedExocraftNPCMoneyID,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_D_EXOTUT"},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = AddedExocraftNPCMoney,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
@@ -3776,10 +3652,6 @@ for i = 1, #PirateMissionChanges do
 
 			ChangesToPirateMissions_temp =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"MissionID", Mission},
 				["VALUE_MATCH"] 		= OldReward, 	
 				["VALUE_MATCH_OPTIONS"] = "=",
@@ -3800,7 +3672,6 @@ for i = 1, #CrashsiteTechRewards do
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Name", PuzzleName,},
 				["VALUE_MATCH"] 		= "{^PROC_TECH_.+}",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3833,10 +3704,8 @@ local ChangesToExpeditionMetals = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][
 
 ChangesToExpeditionMetals[#ChangesToExpeditionMetals+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3851,10 +3720,8 @@ for i = 1, #ExpeditionMetalChanges do
 
 			ChangesToExpeditionMetals[#ChangesToExpeditionMetals+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"ID", MetalID},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -3884,10 +3751,8 @@ end
 
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"DisableMultiplier", "False"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3901,10 +3766,8 @@ for i = 1, #MinableObjects do
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"ID", ObjectID,	"DisableMultiplier", "False"},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3970,7 +3833,6 @@ end
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_SHIP"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -3982,7 +3844,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -3994,7 +3855,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_SHIP"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4006,7 +3866,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4018,7 +3877,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_SHIP"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4030,7 +3888,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4042,7 +3899,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_PHASE3"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4053,7 +3909,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_STAFF"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
@@ -4064,7 +3919,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_SHIP"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipHaulerCargoSlots},
@@ -4076,7 +3930,6 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_COMPLETE"},
-				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipHaulerCargoSlots},
@@ -4090,7 +3943,6 @@ if TeachCreaturePelletsEarly then
 
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "TUT_INGREDS"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -4146,10 +3998,10 @@ for i = 1, #GuildGiftChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
+
+
+
+
 				["SPECIAL_KEY_WORDS"] = {"Id", GiftPool, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4175,10 +4027,10 @@ for i = 1, #DerelictSuppliesChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
+
+
+
+
 				["SPECIAL_KEY_WORDS"] = {"Id", SupplyId, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4209,7 +4061,6 @@ for i = 1, #ShipLootChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["REPLACE_TYPE"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", ShipId},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REMOVE"] = "SECTION"
@@ -4217,7 +4068,6 @@ for i = 1, #ShipLootChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["REPLACE_TYPE"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", ShipId, "Reward", "GcRewardShield.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4235,10 +4085,6 @@ for i = 1, #ShipLootChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Id", ShipId, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4264,9 +4110,6 @@ for i = 1, #ShipCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",ShipType,	"Currency", Currency},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4298,7 +4141,6 @@ for i = 1, #BreakPlantsChangesSubstance do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4310,7 +4152,6 @@ for i = 1, #BreakPlantsChangesSubstance do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_BREAK_BIO",	"ID", OldReward},
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID",	NewReward}
@@ -4349,10 +4190,6 @@ for i = 1, #ResourceDepotChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["SPECIAL_KEY_WORDS"] = {"Id", DepotId, "ID", OldItemID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["SECTION_UP"] = 1,
@@ -4374,8 +4211,6 @@ for i = 1, #CropYieldChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",PlantID},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					--{"RewardChoice",	"SelectAlways"},
@@ -4418,9 +4253,6 @@ for i = 1, #CrashedFreighterLootChances do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"ID", ItemID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4443,9 +4275,7 @@ for i = 1, #CrashedFreighterCurrencyChances do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"Currency", OldCurrency},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 2,
 				["VALUE_MATCH"] 	= OldChance,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4457,8 +4287,6 @@ for i = 1, #CrashedFreighterCurrencyChances do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"Currency", OldCurrency},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["SECTION_UP"] = 1,
@@ -4472,9 +4300,6 @@ for i = 1, #CrashedFreighterCurrencyChances do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",CrashType,	"Currency", OldCurrency},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_MATCH"] 	= OldCurrency,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4496,9 +4321,6 @@ for i = 1, #CivilianFreighterRewardChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"Currency", Currency},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4523,9 +4345,6 @@ for i = 1, #PirateFreighterLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4552,9 +4371,6 @@ for i = 1, #FreighterTechLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4581,9 +4397,6 @@ for i = 1, #SpaceStationMissionLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4634,9 +4447,6 @@ for i = 1, #NexusMissionCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", RewardType,	"PercentageChance", OldChance},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_MATCH"] = {"Units","Nanites",},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4647,9 +4457,6 @@ for i = 1, #NexusMissionCurrencyChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"PercentageChance", OldChance},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				--["SECTION_UP"] = 2,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4676,9 +4483,6 @@ for i = 1, #StationLootChanges do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id",RewardType,	"ID", OldItemID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4722,9 +4526,6 @@ for i = 1, #MemFragOutlierTechs do
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","R_TECHBOX",	"ID", TechID},
-				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4737,7 +4538,6 @@ for i = 1, #RemoveContainerRewards do
 		
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "NPC_BUILD_GOTO",	"Value",	ContainerID},
 				["REMOVE"] = "SECTION"
 			}

@@ -2,30 +2,30 @@
 author = "Umaroth"
 luaAuthor = "Umaroth"
 modName = "WordRewardsEnhanced"
-description = "Increases the number of words learned from nearly all sources. Fully configurable."
+description = "Increases the number of words learned from nearly all sources. Fully configurable. Also optionally adds word rewards to all Atlas Orbs as well as increasing Salvaged Data rewards."
 gameVersion = "5.1.1"
-modVersion = "1.1"
+modVersion = "1.2"
 
 -- ======== SETTINGS ========
--- Edit to your preference. Have not tested Maximums.
+-- Edit to your preference. Have not tested Maximums. Always edits 'METADATA\REALITY\TABLES\REWARDTABLE.MBIN'.
 STONE_WORDS        = 2       -- Word Stones.
-ENCYCLO_WORDS      = 4       -- Encylopedias, set to 0 for same as Word Stones.
-CHAT_WORDS         = 3       -- NPC Dialogue Options. Applies to all races except for Altas. (Including Autophage, but I don't know how you're supposed to speak with them.) There's no entry for the "Friendship" option in dialogue, not sure how I'm supposed to add extra rewards to that one.
-WORD_WORDS         = 5       -- Not 100% sure where these ones are given but I got it once in the main quest from an NPC just after installing Artemis' translator. Only Traders, Explorers and Warriors have these which makes sense because those are the only races you'd find during that quest.
+ENCYCLO_WORDS      = 4       -- Encylopedias, set to 0 for same as Word Stones and to avoid editing 'MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN'
+CHAT_WORDS         = 3       -- NPC Dialogue Options. Applies to all races except for Altas. (Including Autophage, but I don't know how you're supposed to speak with them.)
+WORD_WORDS         = 5       -- Not 100% sure where these ones are given but I got it once in the main quest from an NPC just after installing Artemis' translator. Only Traders, Explorers and Warriors have these so I believe these are Non-Autophage(Builder) quest rewards.
 TEACHWORD_WORDS    = 5       -- This applies to NPCs in Buildings, Ancient Ruins and Ancient Plaques. (I think it also applies to Autophage quests but haven't been able to test that yet.)
-ATLAS_WORDS        = 7       -- Atlas glowing orbs are linked to TEACHWORD_ATLAS but I made Atlas a separate option from the other races.
-CHAT_CATEGORY_TYPE = "MISC"  -- "KEEP": Give word of category selected during dialogue with NPC. | "MISC": Give word of any category. | Note: Even if set to "KEEP" there will always be one random-category word.
+ATLAS_WORDS        = 3       -- Atlas glowing orbs are linked to TEACHWORD_ATLAS but I made Atlas a separate option from the other races.
+ALL_ATLAS_ORBS     = "Y"     -- Add words to all Atlas Orbs? Y/N - Setting to N avoids editing 'MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB_DUMMY\ENTITIES\ORBSTONE_DUMMY.ENTITY.MBIN'
+KEEP_CATEGORY      = "N"     -- Keep category selected during dialogue with NPC? Y/N | Note: Even if set to "Y" there will always be one random-category word. (so if you only get one word it's because you're out of words in that category and got only the random one)
 INCLUDE_SALV_DATA  = "N"     -- Also Boost Salvaged Data? Y/N
 SALV_DATA_MIN      = 8
 SALV_DATA_MAX      = 16
 
-modNameSub = "Default"       --Subname in produced .pak.
---modNameSub = STONE_WORDS.."-"..ENCYCLO_WORDS.."-"..WORD_WORDS.."-"..CHAT_WORDS.."-"..TEACHWORD_WORDS.."-"..ATLAS_WORDS.."-"..string.upper(CHAT_CATEGORY_TYPE)
+modNameSub = "Default"       --Subname in produced .pak
 
 -- ========== CODE ==========
 --Copies of some code blocks we'll need later. This one is repeated once for each additional word.
 REWARDTABLEITEM = [[<Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="LabelID" value="" /><Property name="Reward" value="GcRewardTeachWord.xml"><Property name="Race" value="GcAlienRace.xml"><Property name="AlienRace" value="None" /></Property><Property name="UseCategory" value="False" /><Property name="Category" value="GcWordCategoryTableEnum.xml"><Property name="wordcategorytableEnum" value="MISC" /></Property><Property name="AmountMin" value="1" /><Property name="AmountMax" value="1" /></Property></Property>]]
---This one is needed to be able to separate stone and encyclopedia rewards.
+--This one is needed to be able to give Encyclopedias a different reward from Stones.
 GENERICREWARDTABLEENTRY = [[<Property value="GcGenericRewardTableEntry.xml"><Property name="Id" value="WORD_ENCYCLO" /><Property name="List" value="GcRewardTableItemList.xml"><Property name="RewardChoice" value="GiveAll" /><Property name="OverrideZeroSeed" value="False" /><Property name="UseInventoryChoiceOverride" value="False" /><Property name="IncrementStat" value="" /><Property name="List"><Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="LabelID" value="" /><Property name="Reward" value="GcRewardTeachWord.xml"><Property name="Race" value="GcAlienRace.xml"><Property name="AlienRace" value="None" /></Property><Property name="UseCategory" value="False" /><Property name="Category" value="GcWordCategoryTableEnum.xml"><Property name="wordcategorytableEnum" value="MISC" /></Property><Property name="AmountMin" value="1" /><Property name="AmountMax" value="1" /></Property></Property></Property></Property></Property>]]
 
 WORD_ID = {"TRA_WORD","EXP_WORD","WAR_WORD"}                                                          --ID's for each of the "WORD" entries.
@@ -40,30 +40,32 @@ CHAT_RACE = {"Traders","Explorers","Warriors","Builders"}                       
 CHAT_TOPIC = {"DIRECTIONS","HELP","TRADE","LORE","TECH","THREAT","MISC"}                              --Matching values to replace "MISC" inside REWARDTABLEITEM with to target correct topic.
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]    = modName.."_"..modNameSub.."_".."v"..modVersion.."_nms"..gameVersion..".pak",
+	["MOD_FILENAME"]    = modName.."_"..modNameSub.."_v"..modVersion.."_nms"..gameVersion..".pak",
 	["MOD_DESCRIPTION"] = description,
 	["MOD_AUTHOR"]      = author,
 	["LUA_AUTHOR"]      = luaAuthor,
 	["NMS_VERSION"]     = gameVersion,
-                                                                                           -- Only need the structure here. Code below will add all necessary changes based on user settings.
-    ["MODIFICATIONS"] = {{["MBIN_CHANGE_TABLE"]={{["MBIN_FILE_SOURCE"]="METADATA/REALITY/TABLES/REWARDTABLE.MBIN",["EXML_CHANGE_TABLE"]={}}}}}
+    -- Only need the structure here. Code below will add all necessary changes based on user settings.
+    ["MODIFICATIONS"] = {{["MBIN_CHANGE_TABLE"]={{["MBIN_FILE_SOURCE"]="METADATA\REALITY\TABLES\REWARDTABLE.MBIN",["EXML_CHANGE_TABLE"]={}}}}}
 }
 
 MBIN_CHANGE_TABLE = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 REWARDTABLE_EXML = MBIN_CHANGE_TABLE[1]["EXML_CHANGE_TABLE"]
 
+--STONE SECTION
 if STONE_WORDS >= 2 then                                                                   --Don't need to add code if only 1 word.
 	local STONE_CODE = string.rep(REWARDTABLEITEM, STONE_WORDS - 1)                        --Just have to repeat REWARDTABLEITEM the chosen number of times, -1 because there's one of these reward code blocks already there.
 	local temp_table =                                                                     --Create temporary table to add to above ["EXML_CHANGE_TABLE"].
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			["ADD_OPTION"]  = "ADDafterSECTION",
 
 			["ADD"] = STONE_CODE,
 		}
 	REWARDTABLE_EXML[#REWARDTABLE_EXML + 1] = temp_table                                   --Add temporary table to the ["EXML_CHANGE_TABLE"].
 end
 
+--ENCYCLOPEDIA SECTION
 if ENCYCLO_WORDS > 0 and ENCYCLO_WORDS ~= STONE_WORDS then                                 --Check if Encylopedia needs to be set.
 	local temp_table =                                                                     --Need to edit entity file for Encylopedias to separate their rewards from Word Stones.
 		{
@@ -85,7 +87,7 @@ if ENCYCLO_WORDS > 0 and ENCYCLO_WORDS ~= STONE_WORDS then                      
 	temp_table =                                                                          --Need to add new GENERICREWARDTABLEENTRY for Encylopedias to target.
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = GENERICREWARDTABLEENTRY,
 		}
@@ -95,7 +97,7 @@ if ENCYCLO_WORDS > 0 and ENCYCLO_WORDS ~= STONE_WORDS then                      
 	temp_table = 
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", "WORD_ENCYCLO", "PercentageChance", "IGNORE"},
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = ENYCLO_CODE,
 		}
@@ -104,6 +106,7 @@ if ENCYCLO_WORDS > 0 and ENCYCLO_WORDS ~= STONE_WORDS then                      
 	end
 end
 
+--WORD SECTION
 for i=1,#WORD_ID do                                                                       --Loop through WORD ID's to target each.
 	local ID = WORD_ID[i]
 	local WORD_CODE = string.gsub(REWARDTABLEITEM, "None", WORD_RACE[i])                  --Replace "None" with correct race.
@@ -111,7 +114,7 @@ for i=1,#WORD_ID do                                                             
 	local temp_table = 
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", ID, "PercentageChance", "IGNORE"},
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = WORD_CODE,                                                          --Add code formatted above to targeted ID.
 		}
@@ -120,6 +123,7 @@ for i=1,#WORD_ID do                                                             
 	end
 end
 
+--TEACHWORD & ATLAS SECTION
 for i=1,#TEACHWORD_ID do                                                                  --Same thing as WORD code.
 	local ID = TEACHWORD_ID[i]
 	local TEACHWORD_CODE = string.gsub(REWARDTABLEITEM, "None", TEACHWORD_RACE[i])
@@ -133,7 +137,7 @@ for i=1,#TEACHWORD_ID do                                                        
 	local temp_table =
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", ID, "PercentageChance", "IGNORE"},
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = TEACHWORD_CODE,
 		}
@@ -151,13 +155,14 @@ for i=1,#TEACHWORD_ID do                                                        
 	end
 end
 
+--CHAT SECTION
 for i=1,#CHAT_RACE_ID do
 	for e=1, #CHAT_TOPIC_ID do                                               --Need an extra loop to get both Race and Topic because these ID's use both.
 		local ID = CHAT_RACE_ID[i].."_WORD_"..CHAT_TOPIC_ID[e]               --Build ID from race and topic.
 		local CHAT_CODE = string.gsub(REWARDTABLEITEM, "None", CHAT_RACE[i])
 		
-		if string.upper(CHAT_CATEGORY_TYPE) == "KEEP" then                   --Check if user wants categoried words or random ones and if categoried. "Misc" setting does nothing.
-			CHAT_CODE = string.gsub(CHAT_CODE, "MISC", CHAT_TOPIC[e])        --set category in reward block
+		if string.upper(KEEP_CATEGORY) == "Y" then                           --Check if user wants categoried words or random ones and if categoried
+			CHAT_CODE = string.gsub(CHAT_CODE, "MISC", CHAT_TOPIC[e])        --set Category in reward block
 			CHAT_CODE = string.gsub(CHAT_CODE, "False", "True")              --and set "UseCategory" to True
 		end
 		
@@ -175,7 +180,7 @@ for i=1,#CHAT_RACE_ID do
 		local temp_table2 = 
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", ID, "PercentageChance", "IGNORE"},
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 				
 				["ADD"] = CHAT_CODE,
 			}
@@ -189,7 +194,27 @@ for i=1,#CHAT_RACE_ID do
 	end
 end
 
-if string.upper(INCLUDE_SALV_DATA) == "Y" then  -- Add section for Salvaged Data
+--ALL ATLAS ORBS SECTION
+if string.upper(ALL_ATLAS_ORBS) == "Y" then
+	local temp_table = 
+		{
+			["MBIN_FILE_SOURCE"]  = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB_DUMMY\ENTITIES\ORBSTONE_DUMMY.ENTITY.MBIN",
+			["EXML_CHANGE_TABLE"] =
+			{
+				{
+					["SPECIAL_KEY_WORDS"] = {"StateID","GIVEWORD"},
+					["PRECEDING_KEY_WORDS"] = {"Sound"},
+					["ADD_OPTION"]  = "ADDafterSECTION",
+
+					["ADD"] = [[<Property value="GcRewardAction.xml"><Property name="Reward" value="TEACHWORD_ATLAS" /></Property>]],
+				}
+			}
+		}
+	MBIN_CHANGE_TABLE[#MBIN_CHANGE_TABLE + 1] = temp_table
+end
+
+--SALVAGED DATA SECTION
+if string.upper(INCLUDE_SALV_DATA) == "Y" then
 	local temp_table = 
 		{
 			["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE", "ID", "BP_SALVAGE"},

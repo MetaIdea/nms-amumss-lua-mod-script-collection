@@ -160,8 +160,8 @@ ProductSaleChanges =
 	{"FOOD_EVIL_STEW_NAME",	1.125},					--96,000		The Worst Stew
 	{"UI_GRUB_POD_NAME",	6.0},					--11,000		Juicy Grub
 	{"FOOD_PCAT_VEG_NAME",	2.0},					--1,600			Syrupy Nectar
-	{"FOOD_HORROR_MEAT_NAME",	0.5},				--6,200			Rancid Flesh
-	{"FOOD_R_HORROR_NAME",	0.6},					--9,200			Purged Ribs
+	{"FOOD_HORROR_MEAT_NAME",	0.8},				--6,200			Rancid Flesh
+	{"FOOD_R_HORROR_NAME",	0.9},					--9,200			Purged Ribs
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER

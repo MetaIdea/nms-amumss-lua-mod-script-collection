@@ -128,7 +128,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						--[[{
 							["PRECEDING_KEY_WORDS"] = {"StatsMaxValues"},
-							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] = "*", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -137,7 +136,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"StatProductivityContributionModifiers"},
-							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] = "/", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -145,8 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},]]
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -160,9 +156,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["REPLACE_TYPE"] 		= "",
-							["MATH_OPERATION"] = "", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MaxProductionSlotUnits",	MaxProductionSlotUnits},
@@ -173,8 +166,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--[[
 						{
 							["PRECEDING_KEY_WORDS"] = {"StatProductivityContributionModifiers"},
-							["REPLACE_TYPE"] 		= "",
-							["MATH_OPERATION"] = "", 
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"Production",	ProductionContributionModifier},
@@ -223,8 +214,6 @@ for i = 1, #ProducedItemChanges do
 
 			ChangesToProducedItems[#ChangesToProducedItems+1] =
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["PRECEDING_KEY_WORDS"] = {SettlementType},
 				["VALUE_MATCH"] 	= OldItem,
 				["VALUE_CHANGE_TABLE"] 	=

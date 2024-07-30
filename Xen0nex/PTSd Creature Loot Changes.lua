@@ -8,6 +8,9 @@ AngryRockProportionSurvival = 0.5			--Default 0.5		Unclear this effect, there is
 --Changes loot dropped from killing the "living rocks" you rarely encounter while mining
 RockCreatureLoot = "GEODE_RARE"				--Default 5/8/12 (depending on size of rock?) of "FOOD_M_MEAT" (Meaty Chunks)
 
+--Changes loot dropped from killing the "robot antelope" rarely found in empty systems
+RobotAntelopeLoot = "TRA_ENERGY2"			--Default usually 5/8 "TECHFRAG" (Nanites)
+
 --Changes the amount of meat/loot dropped by killing creatures
 CreatureKillRewardAmountSmall = 1			--Default 5
 CreatureKillRewardAmountMed = 2				--Default 8
@@ -32,6 +35,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["MATH_OPERATION"] 		= "", 
 				["VALUE_CHANGE_TABLE"] = {
 					{"Item", RockCreatureLoot},
+				},
+			},
+			{
+				["PRECEDING_FIRST"] = "TRUE",
+				["PRECEDING_KEY_WORDS"] = {"KillingProducts"},
+				["SPECIAL_KEY_WORDS"] = {"CreatureType","ROBOTANTELOPE"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] = {
+					{"Item", RobotAntelopeLoot},
 				},
 			},
 			{

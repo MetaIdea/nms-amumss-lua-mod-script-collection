@@ -247,9 +247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
-							--Intentionally left blank to be filled in by function below
-						}
+						--Intentionally left blank to be filled in by function below
 					}
 				}
             }
