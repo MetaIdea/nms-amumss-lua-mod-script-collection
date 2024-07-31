@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_MOD_Better_Buildings_Scans.pak", 
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"]				= "NooBzPoWaH",
-["NMS_VERSION"]				= "4.+",
+["NMS_VERSION"]				= "5.+",
 ["MOD_DESCRIPTION"]			= "This mods increases the ships and visor's scans range to find buildings",
 ["MODIFICATIONS"] 			= 
 	{

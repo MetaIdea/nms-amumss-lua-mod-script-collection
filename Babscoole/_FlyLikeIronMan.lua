@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_DooDooJetpack.pak",
+["MOD_FILENAME"]  = "_FlyLikeIronMan.pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "5.03",

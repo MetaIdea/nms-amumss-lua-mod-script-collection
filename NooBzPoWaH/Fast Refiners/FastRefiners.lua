@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "FastRefiners.pak",
 ["MOD_AUTHOR"]				= "wim95-NooBzPoWaH",
 ["MOD_DESCRIPTION"]			= "This Mod makes Refiners speed 10 times faster",
-["NMS_VERSION"]				= "4.xx",
+["NMS_VERSION"]				= "5.xx",
 ["MODIFICATIONS"] 			= 
 	{
 		{

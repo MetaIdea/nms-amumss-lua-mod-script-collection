@@ -260,7 +260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_FILENAME"] = "_MOD_InstantTextDisplay.pak",
 	["MOD_AUTHOR"] = "NooBzPoWaH -- Lua Script by Makto",
 	["MOD_DESCRIPTION"] = "This mod displays the text pretty instantly when interacting with objects or aliens (NPCs).",
-	["NMS_VERSION"] = "3.+",
+	["NMS_VERSION"] = "5.+",
 	["MODIFICATIONS"] =
 	{
 		{
