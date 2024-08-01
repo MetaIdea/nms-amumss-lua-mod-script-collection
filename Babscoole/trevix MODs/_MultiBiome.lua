@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_MultiBiome.pak",
 ["MOD_AUTHOR"]              = "trevix",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.00",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -20,6 +20,78 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
+        </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
         </Property>
@@ -788,6 +860,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/RADIOACTIVEOBJECTSDEAD.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
+            </Property>
+            <Property value="VariableSizeString.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
             </Property>
             <Property value="VariableSizeString.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENBIGPROPSOBJECTSFULL.MBIN" />
@@ -2397,6 +2475,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Coverage", "0"},
                             }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DebugName", "LARGEPLANT"},
+                            ["SEC_SAVE_TO"] = "getIRRPLANT",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"DebugName", "LARGEPLANT"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SEC_EDIT"] = {"getIRRPLANT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"AlignToNormal", "True"},
+                                {"Coverage",      "0.1"},
+                                {"FlatDensity",   "0.1"},
+                            }
+                        },
+                        {
+                            ["SEC_EDIT"] = {"getIRRPLANT"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FlatDensity", "0.009"},
+                            }
+                        },
+                        {
+                            ["SEC_EDIT"] = {"getIRRPLANT"},
+                            ["PRECEDING_KEY_WORDS"] = {"QualityVariants"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FlatDensity", "0.009"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Landmarks"},
+                            ["SEC_ADD_NAMED"] = "getIRRPLANT",
                         },
                     }
                 },

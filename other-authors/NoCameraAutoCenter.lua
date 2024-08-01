@@ -1,8 +1,8 @@
 local modfilename = "NoCameraAutoCenter_511"
 local lua_author = "clawdius25 & Silent369"
-local lua_version = "1.1"
+local lua_version = "1.2"
 local mod_author = "clawdius25"
-local nms_version = "5.01.1"
+local nms_version = "5.03.0"
 local maintenance = mod_author
 local description = [[
 
@@ -67,7 +67,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                     {"CenterMaxSpring", 0},
                                     {"CenterMaxSpeed",0},
                                     {"CenterStartSpeed", 0},
-                                    {"UseSpeedBasedSpring", "False"}
+                                    {"UseSpeedBasedSpring", "False"},
+									{"LockToObjectOnIdle", "False"}
                                 }
                             }
                         }
