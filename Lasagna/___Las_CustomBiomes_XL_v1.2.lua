@@ -132,7 +132,7 @@ function AddLandmarkProp(modelPath, placem, minHeight, maxHeight, minAngle, maxA
 return [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
+        <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="]] .. modelPath .. [[" />
           <Property name="ResHandle" value="GcResource.xml">

@@ -1,364 +1,76 @@
-ModName = "ExtendedExocraftAndShipScanner"
+Mod_Name = "ExtendedExocraftAndShipScanner"
 
-VehicleScanTablePath = "METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.MBIN"
-BuildingGlobalsPath = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
-VehicleScanEventTablePath = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN"
+Vehicle_Scan_Table_Path = "METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.MBIN"
+Building_Globals_Path = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
+Vehicle_Scan_Event_Table_Path = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN"
+Scan_Event_Table_Planet_Path = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEPLANET.MBIN"
 
 --Scanner lvl 0 = base scanner, lvl 1 = 1st uprgade, lvl 2 = 2nd uprgade
-----Exocraft can now scan for TradePosts with scanner lvl2
-AddCrashedShipExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="DISTRESS" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_DISTRESSSIGNAL_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN2" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SHIP.DDS" />
-        </Property>
-    </Property>
-]]
-
---Exocraft can now scan for TradePosts with scanner lvl0
-AddCrashedFreighterExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="CRASHED_FREIGHTER" />
-            </Property>
-        </Property>
-        <Property name="Name" value="UI_CORE_ACT2_STEP8_MARKER" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.FREIGHTER.DDS" />
-        </Property>
-    </Property>
-]]
-
 --Exocraft can now scan for TradePosts with scanner lvl2
-AddDistressedNPCExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="DISTRESS_NPC" />
-            </Property>
-        </Property>
-        <Property name="Name" value="Distressed NPC" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN1" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.REPAIR.DDS" />
-        </Property>
-    </Property>
-]]
 
---Exocraft can now scan for TradePosts with scanner lvl2
-AddFactoryExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="FACTORY" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_FACTORY_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN2" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.COLLECT.DDS" />
-        </Property>
-    </Property>
-]]
-
---Exocraft can now scan for TradePosts with scanner lvl1
-AddHarvesterExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="HARVESTER" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_HARVESTER_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN1" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.WHEAT.DDS" />
-        </Property>
-    </Property>
-]]
-
---Exocraft can now scan for TradePosts with scanner lvl1
-AddObservatoryExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="OBSERVATORY" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_OBSERVATORY_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN1" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.PLANET.DDS" />
-        </Property>
-    </Property>
-]]
-
---Exocraft can now scan for TradePosts with scanner lvl1
-AddRadioTowerExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="RADIOTOWER" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_RADIOTOWER_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN1" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SCAN.DDS" />
-        </Property>
-    </Property>
-]]
-
---Exocraft can now scan for TradePosts with scanner lvl0
-AddSettlementExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="SHOP" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_SHOP_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.CONSTRUCTION.DDS" />
-        </Property>
-    </Property>
-]]
-
-AddPortalExoCraft =
-[[
-    <Property value="GcVehicleScanTableEntry.xml">
-        <Property name="ScanList">
-            <Property value="NMSString0x20.xml">
-                <Property name="Value" value="PORTAL" />
-            </Property>
-        </Property>
-        <Property name="Name" value="BUILDING_SHOP_L" />
-        <Property name="RequiredTech" value="VEHICLE_SCAN2" />
-        <Property name="Icon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES\UI\HUD\ICONS/SCANNING\BUILDING.PORTAL.DDS" />
-        </Property>
-    </Property>
-]]
-
-
-AddPortalEvent = [[
-    <Property value="GcScanEventData.xml">
-        <Property name="Name" value="PORTAL" />
-        <Property name="ForceInteraction" value="" />
-        <Property name="ForceInteractionType" value="GcInteractionType.xml">
-            <Property name="InteractionType" value="Portal" />
-        </Property>
-        <Property name="RequireInteractionRace" value="GcAlienRace.xml">
-            <Property name="AlienRace" value="None" />
-        </Property>
-        <Property name="ForceBroken" value="False" />
-        <Property name="ForceFixed" value="False" />
-        <Property name="ForceOverridesAll" value="True" />
-        <Property name="ForceOverrideEncounter" value="" />
-        <Property name="IsCommunityPortalOverride" value="False" />
-        <Property name="ClearForcedInteractionOnCompletion" value="False" />
-        <Property name="BuildingPreventionRadius" value="0" />
-        <Property name="AlwaysShow" value="False" />
-        <Property name="NeverShow" value="False" />
-        <Property name="PlanetLabelText" value="" />
-        <Property name="SurveyDistance" value="0" />
-        <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
-        <Property name="EventStartType" value="ObjectScan" />
-        <Property name="EventEndType" value="Proximity" />
-        <Property name="EventPriority" value="High" />
-        <Property name="CanEndFromOutsideMission" value="False" />
-        <Property name="DisableMultiplayerSync" value="False" />
-        <Property name="ReplaceEventIfAlreadyActive" value="False" />
-        <Property name="BuildingLocation" value="AllNearest" />
-        <Property name="BuildingType" value="BuildingClass" />
-        <Property name="BuildingClass" value="GcBuildingClassification.xml">
-            <Property name="BuildingClass" value="Portal" />
-        </Property>
-        <Property name="AllowFriendsBases" value="False" />
-        <Property name="ForceWideRandom" value="False" />
-        <Property name="MustFindSystem" value="False" />
-        <Property name="AllowOverriddenBuildings" value="True" />
-        <Property name="SolarSystemLocation" value="LocalOrNear" />
-        <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-            <Property name="UseStarType" value="False" />
-            <Property name="UseWealth" value="False" />
-            <Property name="UseTrading" value="False" />
-            <Property name="UseRace" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="None" />
-            </Property>
-            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-                <Property name="GalaxyStarAnomaly" value="None" />
-            </Property>
-            <Property name="UseConflict" value="GcPlayerConflictData.xml">
-                <Property name="ConflictLevel" value="Default" />
-            </Property>
-            <Property name="StarType" value="GcGalaxyStarTypes.xml">
-                <Property name="GalaxyStarType" value="Yellow" />
-            </Property>
-            <Property name="TradingData" value="GcPlanetTradingData.xml">
-                <Property name="WealthClass" value="GcWealthClass.xml">
-                    <Property name="WealthClass" value="Average" />
-                </Property>
-                <Property name="TradingClass" value="GcTradingClass.xml">
-                    <Property name="TradingClass" value="Mining" />
-                </Property>
-            </Property>
-            <Property name="AllowUnsafeMatches" value="False" />
-            <Property name="NeverAllowEmpty" value="False" />
-            <Property name="NeverAllowAbandoned" value="False" />
-            <Property name="RequireUndiscovered" value="False" />
-            <Property name="NeedsWaterPlanet" value="False" />
-            <Property name="NeedsPrimePlanet" value="False" />
-            <Property name="NeedsExtremeSentinelPlanet" value="False" />
-            <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-            <Property name="NeedsExtremeWeatherPlanet" value="False" />
-            <Property name="NeedsExtremeHazardPlanet" value="False" />
-            <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-            <Property name="AnyRGBBiome" value="False" />
-            <Property name="AnyInfestedBiome" value="False" />
-            <Property name="NeedsBiome" value="False" />
-            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-                <Property name="Biome" value="Lush" />
-            </Property>
-            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-                <Property name="BiomeSubType" value="None" />
-            </Property>
-            <Property name="NeedsEmptySystem" value="False" />
-            <Property name="NeedsAbandonedSystem" value="False" />
-            <Property name="NeedsResourceHint" value="" />
-            <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForCreatureTaming" value="False" />
-            <Property name="SamePlanetAsEvent" value="" />
-        </Property>
-        <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
-            <Property name="UseStarType" value="False" />
-            <Property name="UseWealth" value="False" />
-            <Property name="UseTrading" value="False" />
-            <Property name="UseRace" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="None" />
-            </Property>
-            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-                <Property name="GalaxyStarAnomaly" value="None" />
-            </Property>
-            <Property name="UseConflict" value="GcPlayerConflictData.xml">
-                <Property name="ConflictLevel" value="Default" />
-            </Property>
-            <Property name="StarType" value="GcGalaxyStarTypes.xml">
-                <Property name="GalaxyStarType" value="Yellow" />
-            </Property>
-            <Property name="TradingData" value="GcPlanetTradingData.xml">
-                <Property name="WealthClass" value="GcWealthClass.xml">
-                    <Property name="WealthClass" value="Average" />
-                </Property>
-                <Property name="TradingClass" value="GcTradingClass.xml">
-                    <Property name="TradingClass" value="Mining" />
-                </Property>
-            </Property>
-            <Property name="AllowUnsafeMatches" value="False" />
-            <Property name="NeverAllowEmpty" value="False" />
-            <Property name="NeverAllowAbandoned" value="False" />
-            <Property name="RequireUndiscovered" value="False" />
-            <Property name="NeedsWaterPlanet" value="False" />
-            <Property name="NeedsPrimePlanet" value="False" />
-            <Property name="NeedsExtremeSentinelPlanet" value="False" />
-            <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
-            <Property name="NeedsExtremeWeatherPlanet" value="False" />
-            <Property name="NeedsExtremeHazardPlanet" value="False" />
-            <Property name="AnyBiomeNotWeirdOrDead" value="False" />
-            <Property name="AnyRGBBiome" value="False" />
-            <Property name="AnyInfestedBiome" value="False" />
-            <Property name="NeedsBiome" value="False" />
-            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
-                <Property name="Biome" value="Lush" />
-            </Property>
-            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-                <Property name="BiomeSubType" value="None" />
-            </Property>
-            <Property name="NeedsEmptySystem" value="False" />
-            <Property name="NeedsAbandonedSystem" value="False" />
-            <Property name="NeedsResourceHint" value="" />
-            <Property name="SuitableForCreatureDiscovery" value="False" />
-            <Property name="SuitableForCreatureTaming" value="False" />
-            <Property name="SamePlanetAsEvent" value="" />
-        </Property>
-        <Property name="ForceRestartInteraction" value="True" />
-        <Property name="HasReward" value="" />
-        <Property name="NextOption" value="" />
-        <Property name="TriggerActions" value="GcScanEventTriggers.xml">
-            <Property name="Range" value="100" />
-            <Property name="Triggers" />
-            <Property name="AllowRetrigger" value="False" />
-        </Property>
-        <Property name="UAsList" />
-        <Property name="TechShopType" value="GcTechnologyCategory.xml">
-            <Property name="TechnologyCategory" value="All" />
-        </Property>
-        <Property name="OSDMessage" value="UI_CORE_ACT2_STEP15_OSD1" />
-        <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
-        <Property name="MarkerLabel" value="" />
-        <Property name="MarkerIcon" value="TkTextureResource.xml">
-            <Property name="Filename" value="" />
-        </Property>
-        <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-            <Property name="ScannerIconHighlightType" value="Diamond" />
-        </Property>
-        <Property name="StartTime" value="0" />
-        <Property name="MessageTime" value="0" />
-        <Property name="MessageDisplayTime" value="4" />
-        <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-            <Property name="AkEvent" value="MUS_STORYMODE_MUSICCUE_20" />
-        </Property>
-        <Property name="IconTime" value="4" />
-        <Property name="TooltipTime" value="10" />
-        <Property name="TooltipRepeats" value="False" />
-        <Property name="ShowEndTooltip" value="False" />
-        <Property name="TooltipMessage" value="" />
-        <Property name="ResourceOverride" value="GcResourceElement.xml">
-            <Property name="Filename" value="" />
-            <Property name="Seed" value="GcSeed.xml">
-                <Property name="Seed" value="0" />
-                <Property name="UseSeedValue" value="False" />
-            </Property>
-            <Property name="AltId" value="" />
-            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                <Property name="Samplers" />
-            </Property>
-        </Property>
-    </Property>	
-]]
-
-AddedScanEventsExoCraft =
-AddCrashedShipExoCraft ..
-AddCrashedFreighterExoCraft ..
-AddDistressedNPCExoCraft ..
-AddFactoryExoCraft ..
-AddHarvesterExoCraft ..
-AddObservatoryExoCraft ..
-AddRadioTowerExoCraft ..
-AddSettlementExoCraft..
-AddPortalExoCraft
+Scan_Entries =
+{
+    {
+        -- CRASHED_SHIP
+        ["Value"] = "DISTRESS",
+        ["Name"] = "ABANDONED_SHIP_TITLE_L",
+        ["RequiredTech"] = "VEHICLE_SCAN2",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SHIP.DDS"
+    },
+    {
+        -- CRASHED_FREIGHTER
+        ["Value"] = "CRASHED_FREIGHTER",
+        ["Name"] = "UI_CORE_ACT2_STEP8_MARKER",
+        ["RequiredTech"] = "VEHICLE_SCAN",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.FREIGHTER.DDS"
+    },
+    {
+        -- DISTRESS_NPC
+        ["Value"] = "DISTRESS_NPC",
+        ["Name"] = "UI_PULSE_ENCOUNTER_NAME_REPAIR",
+        ["RequiredTech"] = "VEHICLE_SCAN1",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.REPAIR.DDS"
+    },
+    {
+        -- FACTORY
+        ["Value"] = "FACTORY",
+        ["Name"] = "BUILDING_FACTORY_L",
+        ["RequiredTech"] = "VEHICLE_SCAN2",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.COLLECT.DDS"
+    },
+    {
+        -- HARVESTER
+        ["Value"] = "HARVESTER",
+        ["Name"] = "BUILDING_HARVESTER_L",
+        ["RequiredTech"] = "VEHICLE_SCAN1",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.WHEAT.DDS"
+    },
+    {
+        -- OBSERVATORY
+        ["Value"] = "OBSERVATORY",
+        ["Name"] = "BUILDING_OBSERVATORY_L",
+        ["RequiredTech"] = "VEHICLE_SCAN1",
+        ["Icon"] = "EXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"
+    },
+    {
+        -- RADIOTOWER
+        ["Value"] = "RADIOTOWER",
+        ["Name"] = "BUILDING_RADIOTOWER_L",
+        ["RequiredTech"] = "VEHICLE_SCAN1",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.SCAN.DDS"
+    },
+    {
+        -- ROBOT_CAMP
+        ["Value"] = "ROBOT_CAMP",
+        ["Name"] = "ROBOT_CAMP",
+        ["RequiredTech"] = "VEHICLE_SCAN2",
+        ["Icon"] = "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ROBOTHEAD.DDS"
+    },
+}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = ModName .. ".pak",
-    ["MOD_DESCRIPTION"] = "",
+    ["MOD_FILENAME"] = Mod_Name .. ".pak",
     ["MOD_AUTHOR"] = "Jackty89",
     ["MODIFICATIONS"] =
     {
@@ -366,33 +78,24 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = VehicleScanTablePath,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"VehicleScanTable"},
-                            ["LINE_OFFSET"] = "+0",
-                            ["ADD"] = AddedScanEventsExoCraft
-                        }
-                    }
+                    ["MBIN_FILE_SOURCE"] = Vehicle_Scan_Table_Path,
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = VehicleScanEventTablePath,
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"Events"},
-                            ["LINE_OFFSET"] = "+0",
-                            ["ADD"] = AddPortalEvent
-                        }
-                    }
+                    ["MBIN_FILE_SOURCE"] = Scan_Event_Table_Planet_Path,
+                    ["MBIN_FS_DISCARD"] = "TRUE",
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = BuildingGlobalsPath,
+                    ["MBIN_FILE_SOURCE"] = Vehicle_Scan_Event_Table_Path,
+                    ["EXML_CHANGE_TABLE"] = {}
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = Building_Globals_Path,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                        ["VALUE_CHANGE_TABLE"] =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"UnknownBuildingRange", "10000"},
                                 {"MaxIconRange", "10000"},
@@ -406,3 +109,63 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
+
+local Changes_To_Vehicle_Scan_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Changes_To_Scan_Event_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local Changes_Vehicle_Scan_Event_Table = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+function Add_Single_Scan_Event_For_Vehicle(Value, Name, RequiredTech, Icon)
+    Changes_To_Vehicle_Scan_Table[#Changes_To_Vehicle_Scan_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"GcVehicleScanTableEntry.xml"},
+        ["SEC_SAVE_TO"] = "SCAN_EVENT"
+    }
+    Changes_To_Vehicle_Scan_Table[#Changes_To_Vehicle_Scan_Table + 1] =
+    {
+        ["SEC_EDIT"] = "SCAN_EVENT",
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Value", Value},
+            {"Name", Name},
+            {"RequiredTech", RequiredTech},
+            {"Filename", Icon},
+        }
+    }
+    Changes_To_Vehicle_Scan_Table[#Changes_To_Vehicle_Scan_Table + 1] =
+    {
+        ["SEC_EDIT"] = "SCAN_EVENTS_MASTER",
+        ["ADD_OPTION"] = "ADDafterSECTION",
+        ["SEC_ADD_NAMED"] = "SCAN_EVENT"
+    }
+end
+
+function Add_New_Scan_Events_For_Vehicle()
+    Changes_To_Vehicle_Scan_Table[#Changes_To_Vehicle_Scan_Table + 1] =
+    {
+        ["SEC_EMPTY"] = "SCAN_EVENTS_MASTER"
+    }
+    for i = 1, #Scan_Entries do
+        Add_Single_Scan_Event_For_Vehicle(Scan_Entries[i]["Value"], Scan_Entries[i]["Name"], Scan_Entries[i]["RequiredTech"], Scan_Entries[i]["Icon"])
+    end
+    Changes_To_Vehicle_Scan_Table[#Changes_To_Vehicle_Scan_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"VehicleScanTable"},
+        ["SEC_ADD_NAMED"] = "SCAN_EVENTS_MASTER"
+    }
+end
+
+function Add_New_Scan_Event()
+    Changes_To_Scan_Event_Table[#Changes_To_Scan_Event_Table + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Name", "ROBOT_CAMP"},
+        ["SEC_SAVE_TO"] = "ROBOT_CAMP"
+    }
+    Changes_Vehicle_Scan_Event_Table[#Changes_Vehicle_Scan_Event_Table + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Events"},
+        ["SEC_ADD_NAMED"] = "ROBOT_CAMP"
+    }
+end
+
+Add_New_Scan_Events_For_Vehicle()
+Add_New_Scan_Event()

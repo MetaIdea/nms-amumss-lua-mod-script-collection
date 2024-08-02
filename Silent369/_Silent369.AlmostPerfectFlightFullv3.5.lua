@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightLiteNoReverse"
+local modfilename = "AlmostPerfectFlightFull"
 local lua_author  = "Silent"
-local lua_version = "3.4"
+local lua_version = "3.5"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -16,11 +16,11 @@ With optional settings to make flight much easier (a bit cheaty, hence optional)
 
 --|=======================================================================================--
 
-local _cheatySettings = false
-local _launchFuelCost = false
-local _controlBonuses = false
+local _cheatySettings = true
+local _launchFuelCost = true
+local _controlBonuses = true
 local _shipHoverSpeed = true
-local _shipStatsBonus = false
+local _shipStatsBonus = true
 local _warpSpeedMulti = true
 
 --|=======================================================================================--
@@ -30,18 +30,18 @@ local _cheatMult = 50
 local _cheatTime = 0.1
 
 --Boosts
-local _boostMult = 1.25
-local _boostMxSp = 2
-local _max_speed = 1.75
-local _thrstMult = 1.25
-local _warpSMult = 2.2
+local _boostMult = 2
+local _boostMxSp = 5
+local _max_speed = 2.5
+local _thrstMult = 2.5
+local _warpSMult = 4.2
 
 --Handling
 local _brakeMult = 0.8
 local _dir_Break = 2.5
 local _rev_break = 2
 local _lsptrnDmp = 0.1
-local _min_speed = 0.01
+local _min_speed = -1
 local _overBreak = 0.15
 local _rolAmount = 2
 local _rollForce = 2

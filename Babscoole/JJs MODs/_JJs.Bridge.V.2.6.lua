@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_JJs.Bridge.V.2.5.pak",
+["MOD_FILENAME"]    = "_JJs.Bridge.V.2.6.pak",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.72",
+["NMS_VERSION"]     = "5.03",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
     {
@@ -15,10 +15,64 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = 
+                            {
+                                {"Name", "TREE46"},
+                                {"Name", "FERN"},
+                                {"Name", "MEDIUMBUSH"},
+                                {"Name", "LILY"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "NEWCROSSGRASS"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
+    <Property value="GcSelectableObjectList.xml">
+      <Property name="Name" value="TREE46" />
+      <Property name="Race" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="Options">
+        <Property value="GcSelectableObjectData.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/TREE46.SCENE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcSelectableObjectList.xml">
+      <Property name="Name" value="FERN" />
+      <Property name="Race" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="Options">
+        <Property value="GcSelectableObjectData.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcSelectableObjectList.xml">
+      <Property name="Name" value="MEDIUMBUSH" />
+      <Property name="Race" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="Options">
+        <Property value="GcSelectableObjectData.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/MEDIUMBUSH.SCENE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcSelectableObjectList.xml">
+      <Property name="Name" value="LILY" />
+      <Property name="Race" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="Options">
+        <Property value="GcSelectableObjectData.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/GROUNDFLOWER.SCENE.MBIN" />
+        </Property>
+      </Property>
+    </Property>
     <Property value="GcSelectableObjectList.xml">
       <Property name="Name" value="GLOBES" />
       <Property name="Race" value="GcAlienRace.xml">
@@ -102,22 +156,22 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Options">
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -191,6 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -213,14 +268,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash", "0"},
-                                {"Name",     "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "GEOMETRY"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Value", "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN"},
                             }
                         },
                         {
@@ -265,6 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -292,14 +340,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Logo14"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "72.04727"},
+                                {"RotX", "72.04728"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Logo15"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "72.04727"},
+                                {"RotX", "72.04728"},
                             }
                         },
                         {
@@ -339,14 +387,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "80.000000"},
+                                {"Value", "50.000000"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "80.000000"},
+                                {"Value", "60.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "70.000000"},
                             }
                         },
                     }
@@ -371,7 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "30.000000"},
+                                {"Value", "40.000000"},
                             }
                         },
                         {
@@ -385,7 +440,39 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "LODDIST3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Value", "90.000000"},
+                                {"Value", "60.000000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                        {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN", "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN", "REMOVE"},
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\APOLLOBOBBLEHEAD.SCENE.MBIN",
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ARTEMISBOBBLEHEAD.SCENE.MBIN",
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\ATLASBOBBLEHEAD.SCENE.MBIN",
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NADABOBBLEHEAD.SCENE.MBIN",
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN",
+                        "MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Headjnt"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Type", "LOCATOR"},
                             }
                         },
                     }
@@ -423,6 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -449,6 +537,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -524,7 +613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="9851563883507156251" />
+          <Property name="Value" value="18180412735944908248" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -551,6 +640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -626,7 +716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="12272493151277984689" />
+              <Property name="Value" value="6079641787113891015" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -654,6 +744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -729,7 +820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="6600348077942222769" />
+              <Property name="Value" value="18163205498116011668" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -759,6 +850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -781,6 +873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -856,7 +949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8672081153804521203" />
+              <Property name="Value" value="9633541995994608064" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -883,6 +976,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -958,7 +1052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1125099433324781011" />
+                  <Property name="Value" value="9799215853299631566" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -974,8 +1068,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_HANGAR" />
-          <Property name="NameHash" value="916296859" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_HANGAR|collisionBox" />
+          <Property name="NameHash" value="876352835" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -988,6 +1082,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -1023,6 +1118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -1043,10 +1139,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER.SCENE.MBIN" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -1066,6 +1167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1099,6 +1201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -1125,6 +1228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1152,6 +1256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1179,6 +1284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1206,6 +1312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1229,6 +1336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="0.1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1256,6 +1364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1283,6 +1392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1306,6 +1416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1329,6 +1440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1362,6 +1474,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -1388,6 +1501,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1411,6 +1525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1434,6 +1549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1457,6 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1480,6 +1597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="3" />
         <Property name="ScaleZ" value="3" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1503,6 +1621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1526,6 +1645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1549,6 +1669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1572,6 +1693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1595,6 +1717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1618,6 +1741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1641,6 +1765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1664,6 +1789,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1687,6 +1813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1710,6 +1837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1733,6 +1861,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1756,6 +1885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1779,6 +1909,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1802,6 +1933,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1835,6 +1967,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -1861,6 +1994,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
@@ -1892,6 +2026,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
@@ -1923,6 +2058,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1946,6 +2082,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.557503" />
         <Property name="ScaleZ" value="0.557503" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1969,6 +2106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.519386" />
         <Property name="ScaleZ" value="0.519386" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -1992,6 +2130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.519386" />
         <Property name="ScaleZ" value="0.519386" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2015,6 +2154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.557503" />
         <Property name="ScaleZ" value="0.557503" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2038,6 +2178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.7" />
         <Property name="ScaleZ" value="0.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2061,6 +2202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.7" />
         <Property name="ScaleZ" value="0.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2084,6 +2226,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.7" />
         <Property name="ScaleZ" value="0.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2107,6 +2250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.7" />
         <Property name="ScaleZ" value="0.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2130,6 +2274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="5" />
         <Property name="ScaleZ" value="5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2153,6 +2298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="5" />
         <Property name="ScaleZ" value="5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2176,6 +2322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
@@ -2211,6 +2358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="TYPE" />
@@ -2246,6 +2394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.383999" />
         <Property name="ScaleZ" value="1.383999" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2269,6 +2418,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.383999" />
         <Property name="ScaleZ" value="1.383999" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2292,6 +2442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.383999" />
         <Property name="ScaleZ" value="1.383999" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2315,6 +2466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.383999" />
         <Property name="ScaleZ" value="1.383999" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2338,6 +2490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2361,6 +2514,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2384,6 +2538,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2407,6 +2562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2430,6 +2586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2453,6 +2610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2476,6 +2634,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2499,6 +2658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2522,6 +2682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2545,6 +2706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.31" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2568,6 +2730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.31" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2591,6 +2754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="0.1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2614,6 +2778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="0.1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2637,6 +2802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.2" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2660,6 +2826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.45" />
         <Property name="ScaleZ" value="0.3" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2683,6 +2850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="2.92" />
         <Property name="ScaleZ" value="0.2" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2706,6 +2874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="2.92" />
         <Property name="ScaleZ" value="0.2" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2729,6 +2898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.305" />
         <Property name="ScaleZ" value="1.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2752,6 +2922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.305" />
         <Property name="ScaleZ" value="1.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2775,6 +2946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="10" />
         <Property name="ScaleZ" value="10" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2798,6 +2970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="10.5" />
         <Property name="ScaleZ" value="10" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2821,6 +2994,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="5" />
         <Property name="ScaleZ" value="10" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2844,6 +3018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="5" />
         <Property name="ScaleZ" value="10" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2877,6 +3052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -2903,6 +3079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2926,6 +3103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2949,6 +3127,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2972,6 +3151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -2995,6 +3175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="3" />
         <Property name="ScaleZ" value="3" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3018,6 +3199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3041,6 +3223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3064,6 +3247,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3087,6 +3271,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3110,6 +3295,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3133,6 +3319,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3156,6 +3343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3179,6 +3367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3202,6 +3391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3225,6 +3415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3248,6 +3439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3271,6 +3463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3294,6 +3487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3317,6 +3511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.15" />
         <Property name="ScaleZ" value="0.15" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3340,6 +3535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.15" />
         <Property name="ScaleZ" value="0.15" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3363,6 +3559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -3432,6 +3629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -3458,6 +3656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3481,6 +3680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="1.05" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3508,6 +3708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="1.05" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3535,6 +3736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3562,6 +3764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3589,6 +3792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3612,6 +3816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.31" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3635,6 +3840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3658,6 +3864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3681,6 +3888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3704,6 +3912,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3727,6 +3936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3750,6 +3960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3783,6 +3994,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -3809,6 +4021,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3832,6 +4045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="1.05" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3859,6 +4073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="1.05" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3886,6 +4101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3913,6 +4129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3940,6 +4157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3963,6 +4181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.31" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -3986,6 +4205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4009,6 +4229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4032,6 +4253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4055,6 +4277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4078,6 +4301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4101,6 +4325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -4134,6 +4359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -4160,6 +4386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -4182,6 +4409,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4200,6 +4428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4231,6 +4460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4249,6 +4479,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4280,6 +4511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4298,6 +4530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4329,6 +4562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4347,6 +4581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4378,6 +4613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4396,6 +4632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4427,6 +4664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4445,6 +4683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4488,6 +4727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -4514,6 +4754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -4536,6 +4777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4554,6 +4796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4585,6 +4828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4603,6 +4847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4634,6 +4879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4652,6 +4898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4683,6 +4930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4701,6 +4949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4732,6 +4981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4750,6 +5000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4781,6 +5032,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -4799,6 +5051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -4842,6 +5095,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -4868,6 +5122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -4943,7 +5198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="13959957812173723135" />
+          <Property name="Value" value="940566617639208750" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -4960,8 +5215,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
-          <Property name="NameHash" value="3615956715" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL|collisionBox" />
+          <Property name="NameHash" value="2793219730" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -4974,6 +5229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -5011,6 +5267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -5028,6 +5285,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5046,6 +5304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5066,6 +5325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -5083,6 +5343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5101,6 +5362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5131,6 +5393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -5157,6 +5420,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5232,7 +5496,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="13959957812173723135" />
+          <Property name="Value" value="940566617639208750" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -5249,8 +5513,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL" />
-          <Property name="NameHash" value="3615956715" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL|collisionBox" />
+          <Property name="NameHash" value="2793219730" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -5263,6 +5527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -5300,6 +5565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -5317,6 +5583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5335,6 +5602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5355,6 +5623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -5372,6 +5641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5390,6 +5660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -5421,6 +5692,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -5459,6 +5731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -5481,6 +5754,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5556,7 +5830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="406296954309364564" />
+              <Property name="Value" value="9704939017818138008" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -5588,6 +5862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5663,7 +5938,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14940773656413665560" />
+              <Property name="Value" value="3872053516668784531" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -5691,6 +5966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5766,7 +6042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1886275259468841389" />
+              <Property name="Value" value="16698407189740503912" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -5794,6 +6070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5869,7 +6146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11376176500686571889" />
+              <Property name="Value" value="14692487609442524788" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -5897,6 +6174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -5972,7 +6250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16514596494992946251" />
+              <Property name="Value" value="314586332057389538" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6004,6 +6282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6079,7 +6358,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="543405891031587275" />
+              <Property name="Value" value="12355483007626660775" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6107,6 +6386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6182,7 +6462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7339454781886412357" />
+              <Property name="Value" value="18432982114317369707" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6210,6 +6490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6285,7 +6566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="17850704136780316121" />
+              <Property name="Value" value="15377771747689932226" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6313,6 +6594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6388,7 +6670,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1115398951929567185" />
+              <Property name="Value" value="11073740794062688181" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6420,6 +6702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6495,7 +6778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16258547893229200002" />
+              <Property name="Value" value="10284452980091885467" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6523,6 +6806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6598,7 +6882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16871868893024211167" />
+              <Property name="Value" value="12107600642737267265" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6626,6 +6910,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6701,7 +6986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15633269005639427749" />
+              <Property name="Value" value="304353363964779926" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6729,6 +7014,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6804,7 +7090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7527153341040201742" />
+              <Property name="Value" value="9281952354127877027" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6832,6 +7118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -6907,7 +7194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15618141677206430755" />
+              <Property name="Value" value="10255290954561585012" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -6935,6 +7222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7010,7 +7298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="10961423363084954269" />
+              <Property name="Value" value="17031463194948192531" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7038,6 +7326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7113,7 +7402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="5971163659584820029" />
+              <Property name="Value" value="11494617276338273084" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7141,6 +7430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7167,7 +7457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\CONCRETE\BASIC_WALL_WINDOW_LOD" />
-  <Property name="NameHash" value="4262346560" />
+  <Property name="NameHash" value="1991471269" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
     <Property name="TransX" value="0" />
@@ -7180,6 +7470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -7206,6 +7497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7281,7 +7573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="14557662721032370923" />
+          <Property name="Value" value="4689119790705149135" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -7319,6 +7611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -7345,6 +7638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7420,7 +7714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="15505469311391512983" />
+          <Property name="Value" value="3784327337445310201" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -7447,6 +7741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7522,7 +7817,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="12261149344215452114" />
+              <Property name="Value" value="13563746449589963851" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7550,6 +7845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7625,7 +7921,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1030887226276020658" />
+              <Property name="Value" value="8051562566852240579" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7653,6 +7949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7728,7 +8025,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8280703399930939292" />
+              <Property name="Value" value="13031934267979763865" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -7758,6 +8055,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.041337" />
         <Property name="ScaleZ" value="1.041337" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -7833,7 +8131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="1276225374563422293" />
+          <Property name="Value" value="11297194428867866965" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -7861,6 +8159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -7869,8 +8168,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER" />
-          <Property name="NameHash" value="3662478814" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\TELEPORTER|collision1" />
+          <Property name="NameHash" value="1813086219" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="-0.00835" />
@@ -7883,6 +8182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -7938,6 +8238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
@@ -7946,8 +8247,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
-              <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE" />
-              <Property name="NameHash" value="2317532854" />
+              <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE|collisionBox" />
+              <Property name="NameHash" value="730963579" />
               <Property name="Type" value="COLLISION" />
               <Property name="Transform" value="TkTransformData.xml">
                 <Property name="TransX" value="0" />
@@ -7960,6 +8261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="TYPE" />
@@ -7997,6 +8299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
@@ -8014,6 +8317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -8073,6 +8377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8148,7 +8453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16977091372901732431" />
+                  <Property name="Value" value="16357058463818326686" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -8176,6 +8481,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8251,7 +8557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1631517434299231623" />
+                  <Property name="Value" value="8834274710205940742" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -8279,6 +8585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8354,7 +8661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6539754788125513743" />
+                  <Property name="Value" value="1453254178309291304" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -8382,10 +8689,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="Value" value="ODELS\EFFECTS\ABANDONEDFREIGHTER\AIRLOCKTUBEMIST.SCENE.MBIN" />
+                </Property>
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="EMBEDGEOMETRY" />
+                  <Property name="Value" value="TRUE" />
                 </Property>
               </Property>
               <Property name="Children" />
@@ -8405,6 +8717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -8432,6 +8745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -8449,6 +8763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1.050616" />
                     <Property name="ScaleZ" value="1.050616" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8524,7 +8839,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="7879301685950195486" />
+                      <Property name="Value" value="10036218522679445245" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -8556,10 +8871,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="SCENEGRAPH" />
                       <Property name="Value" value="MODELS\EFFECTS\BASE\MINITELEPORTSPARKS.SCENE.MBIN" />
+                    </Property>
+                    <Property value="TkSceneNodeAttributeData.xml">
+                      <Property name="Name" value="EMBEDGEOMETRY" />
+                      <Property name="Value" value="TRUE" />
                     </Property>
                   </Property>
                   <Property name="Children" />
@@ -8583,6 +8903,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8658,7 +8979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="3470908285339508284" />
+              <Property name="Value" value="18324791533808275642" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -8689,6 +9010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -8764,7 +9086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="17676497693253388291" />
+                  <Property name="Value" value="10669762593058898559" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -8794,6 +9116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -8824,6 +9147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -8850,6 +9174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="JOINTINDEX" />
@@ -8872,6 +9197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -8894,6 +9220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
@@ -8912,6 +9239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
@@ -8930,6 +9258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9005,7 +9334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13777210200643977408" />
+                  <Property name="Value" value="11517654829453746825" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -9035,6 +9364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9110,7 +9440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1869421915116514208" />
+              <Property name="Value" value="8021501874633422552" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -9137,6 +9467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9212,7 +9543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1682235188963379652" />
+                  <Property name="Value" value="3622694916052053393" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -9242,6 +9573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9317,7 +9649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15427808255821234862" />
+              <Property name="Value" value="10968516006148912630" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -9344,6 +9676,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9419,7 +9752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="319778502770987946" />
+                  <Property name="Value" value="419827318121900514" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -9449,6 +9782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9524,7 +9858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14235810418906026042" />
+              <Property name="Value" value="3456318232383826931" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -9551,6 +9885,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9626,7 +9961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="12272306288998418739" />
+                  <Property name="Value" value="1592777830036043793" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -9656,6 +9991,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9731,7 +10067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="13414402641975908157" />
+              <Property name="Value" value="2928980493163164754" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -9758,6 +10094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -9833,7 +10170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="10619908625559532072" />
+                  <Property name="Value" value="15895303116009756568" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -9865,6 +10202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -9873,8 +10211,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA" />
-          <Property name="NameHash" value="1347520393" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA|collisionSphere1" />
+          <Property name="NameHash" value="804382256" />
           <Property name="Type" value="" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="-12.867457" />
@@ -9887,6 +10225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -9916,6 +10255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -9934,6 +10274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -10003,6 +10344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -10010,19 +10352,19 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST1" />
-      <Property name="Value" value="10.000000" />
+      <Property name="Value" value="40.000000" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST2" />
-      <Property name="Value" value="20.000000" />
+      <Property name="Value" value="50.000000" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="LODDIST3" />
-      <Property name="Value" value="30.000000" />
+      <Property name="Value" value="60.000000" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
-      <Property name="Value" value="1" />
+      <Property name="Value" value="4" />
     </Property>
   </Property>
   <Property name="Children">
@@ -10041,6 +10383,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10116,7 +10459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="18003248911100850767" />
+          <Property name="Value" value="5236320413509334385" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -10143,6 +10486,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10218,7 +10562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="2212478626845774030" />
+              <Property name="Value" value="11757788076134420343" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10246,6 +10590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10321,7 +10666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="9609711706577437567" />
+              <Property name="Value" value="10003003691139813144" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10349,6 +10694,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10424,7 +10770,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11054792753127514471" />
+              <Property name="Value" value="8003762409947112533" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10452,6 +10798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10527,7 +10874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="13230005052112435149" />
+              <Property name="Value" value="8241205632404816760" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10555,6 +10902,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10630,7 +10978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8355276210491906497" />
+              <Property name="Value" value="18256836872498634816" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10658,6 +11006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10733,7 +11082,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="6225023353275830633" />
+              <Property name="Value" value="17017107717404818018" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10761,6 +11110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -10836,7 +11186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="18160132417384941015" />
+              <Property name="Value" value="1406335124334720538" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -10864,6 +11214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
@@ -10909,8 +11260,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA" />
-          <Property name="NameHash" value="3962994453" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA|collisionBox" />
+          <Property name="NameHash" value="4261759811" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -10923,6 +11274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -10960,6 +11312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11035,7 +11388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="8928399190497165892" />
+          <Property name="Value" value="9745595364769747833" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -11062,6 +11415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11137,7 +11491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="12483506539993649142" />
+              <Property name="Value" value="8609196154791640463" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11165,6 +11519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11240,7 +11595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8337007457743827872" />
+              <Property name="Value" value="1641605025430242235" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11268,6 +11623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11343,7 +11699,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1912347734459579479" />
+              <Property name="Value" value="15828284834222719419" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11371,6 +11727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11446,7 +11803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11317810142468721989" />
+              <Property name="Value" value="8914568654023664214" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11474,6 +11831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11549,7 +11907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8675668638811147216" />
+              <Property name="Value" value="18413376449739013713" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11577,6 +11935,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11652,7 +12011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1049092409496217615" />
+              <Property name="Value" value="17282842311584863067" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11680,6 +12039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
@@ -11725,8 +12085,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA" />
-          <Property name="NameHash" value="3962994453" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA|collisionBox_2" />
+          <Property name="NameHash" value="2609789108" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -11739,6 +12099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -11776,6 +12137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11851,7 +12213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="15040979303937393590" />
+          <Property name="Value" value="8571735377371087110" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -11878,6 +12240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -11953,7 +12316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7290277349929601433" />
+              <Property name="Value" value="14232582101381390903" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -11981,6 +12344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12056,7 +12420,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11220515074483003494" />
+              <Property name="Value" value="9324970814690303005" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12084,6 +12448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12159,7 +12524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="2540243967431837231" />
+              <Property name="Value" value="11769559888432585663" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12187,6 +12552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12262,7 +12628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14622926700742808702" />
+              <Property name="Value" value="12019824415756446770" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12290,6 +12656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12365,7 +12732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="12993913788147565682" />
+              <Property name="Value" value="10829044284302237310" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12393,6 +12760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12468,7 +12836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15162482054879316909" />
+              <Property name="Value" value="8299595252324889566" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12496,6 +12864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
@@ -12557,6 +12926,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12632,7 +13002,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="11480964552238748564" />
+          <Property name="Value" value="6104207924047253160" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -12659,6 +13029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12734,7 +13105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11307311010181001014" />
+              <Property name="Value" value="7868034808177755922" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12762,6 +13133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -12837,7 +13209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8322978408956048827" />
+              <Property name="Value" value="12360609744532891239" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -12867,6 +13239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -12900,6 +13273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -12926,6 +13300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="JOINTINDEX" />
@@ -12948,6 +13323,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -12970,6 +13346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="JOINTINDEX" />
@@ -12992,6 +13369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13067,7 +13445,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="4452747352293533113" />
+                      <Property name="Value" value="16391823545347496276" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13095,6 +13473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13170,7 +13549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="11338788509567207473" />
+                      <Property name="Value" value="3306017096124258504" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13198,6 +13577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13273,7 +13653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="15289965129054497505" />
+                      <Property name="Value" value="18180168605323631892" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13301,6 +13681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13376,7 +13757,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="1708322498286631293" />
+                      <Property name="Value" value="634550999099746412" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13406,6 +13787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
@@ -13424,6 +13806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13499,7 +13882,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="3019239728868205563" />
+                  <Property name="Value" value="3917934901540664357" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -13526,6 +13909,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13601,7 +13985,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="9200689081032714656" />
+                      <Property name="Value" value="11571962557641996417" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13629,6 +14013,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13704,7 +14089,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="8329529207135355241" />
+                      <Property name="Value" value="1466665607146854735" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13732,6 +14117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13807,7 +14193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="3521145680159665569" />
+                      <Property name="Value" value="11713637264183966434" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -13837,6 +14223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -13912,7 +14299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="12644176759479439003" />
+                  <Property name="Value" value="11044389560706575238" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -13939,6 +14326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14014,7 +14402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="14739551243412774104" />
+                      <Property name="Value" value="10804563425323907428" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14042,6 +14430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14117,7 +14506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="6279510894748292477" />
+                      <Property name="Value" value="6629790798835498396" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14145,6 +14534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14220,7 +14610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="12597740163756996040" />
+                      <Property name="Value" value="17258113715760105203" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14250,6 +14640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14325,7 +14716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="9728941397307010330" />
+                  <Property name="Value" value="18124608231838925983" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -14352,6 +14743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14427,7 +14819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="3718713325298304212" />
+                      <Property name="Value" value="12363822915689840240" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14455,6 +14847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14530,7 +14923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="6947636058446347191" />
+                      <Property name="Value" value="9977600937736068000" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14558,6 +14951,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14633,7 +15027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="11876716652994580619" />
+                      <Property name="Value" value="14300426493138024408" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14663,6 +15057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14738,7 +15133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7738236395734028303" />
+                  <Property name="Value" value="9749060388140390883" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -14765,6 +15160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14840,7 +15236,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="14208077788593756298" />
+                      <Property name="Value" value="1104688824248257374" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14868,6 +15264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -14943,7 +15340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="14598460887527688427" />
+                      <Property name="Value" value="6207712982600619315" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -14971,6 +15368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15046,7 +15444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="1663466785575314054" />
+                      <Property name="Value" value="16410602654457847717" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -15078,6 +15476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15153,7 +15552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7925858280533933637" />
+              <Property name="Value" value="15651847940597853920" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -15180,6 +15579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15255,7 +15655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14581494379928845408" />
+                  <Property name="Value" value="11524461850825857591" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -15285,6 +15685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15360,7 +15761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7731554568962281520" />
+              <Property name="Value" value="17872237403227158292" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -15387,6 +15788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15462,7 +15864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4092332556959029530" />
+                  <Property name="Value" value="6445331490638592113" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -15492,6 +15894,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15567,7 +15970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="4894839234510275997" />
+              <Property name="Value" value="15761062429975623704" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -15594,6 +15997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15669,7 +16073,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="11785767154964732439" />
+                  <Property name="Value" value="7253304770602928968" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -15699,6 +16103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15774,7 +16179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="2515801391326461029" />
+              <Property name="Value" value="8197378389513847136" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -15801,6 +16206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15876,7 +16282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14570971178338896333" />
+                  <Property name="Value" value="9166477675985662981" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -15908,6 +16314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -15983,7 +16390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="927013235445985425" />
+          <Property name="Value" value="1186756105136753898" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -16010,6 +16417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16085,7 +16493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7384494350110072312" />
+              <Property name="Value" value="9086392473798969535" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -16113,6 +16521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16188,7 +16597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="10227136614166792524" />
+              <Property name="Value" value="3768673015453533185" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -16218,6 +16627,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -16240,12 +16650,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\DESTRUCTIBLEPARTS\ANTISHIPTURRET" />
-          <Property name="NameHash" value="119901120" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\DESTRUCTIBLEPARTS\ANTISHIPTURRET|collisionCapsule" />
+          <Property name="NameHash" value="2567324282" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="-8.451054" />
@@ -16258,6 +16669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -16291,6 +16703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -16309,6 +16722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -16327,6 +16741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -16350,6 +16765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -16419,6 +16835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -16457,6 +16874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16532,7 +16950,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="14083099494308603914" />
+          <Property name="Value" value="6932627263213284431" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -16559,6 +16977,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16634,7 +17053,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="6568562384193890074" />
+              <Property name="Value" value="17619666113432315574" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -16664,6 +17083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.320834" />
         <Property name="ScaleZ" value="0.456725" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16739,7 +17159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="5557182573155477748" />
+          <Property name="Value" value="14510298080531437821" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -16767,6 +17187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.320834" />
         <Property name="ScaleZ" value="0.456725" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16842,7 +17263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="5846115099393954610" />
+          <Property name="Value" value="6152842882458496107" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -16870,6 +17291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -16945,7 +17367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="7823576784098050326" />
+          <Property name="Value" value="4769803713026215075" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -16972,6 +17394,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17047,7 +17470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="6747952240359907873" />
+              <Property name="Value" value="5755874687753982900" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17075,6 +17498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17150,7 +17574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="5863093639635261215" />
+              <Property name="Value" value="16969275839361225765" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17178,6 +17602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17253,7 +17678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="6508181451828975910" />
+              <Property name="Value" value="13256359445143297422" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17281,6 +17706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17356,7 +17782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="2440707107206162529" />
+              <Property name="Value" value="2562913793107630809" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17384,6 +17810,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17459,7 +17886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7088376053567733976" />
+              <Property name="Value" value="6692271376437265529" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17487,6 +17914,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17562,7 +17990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="3379896766470562326" />
+              <Property name="Value" value="13984781595866012007" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17590,6 +18018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17665,7 +18094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="3549601695939735431" />
+              <Property name="Value" value="9004192546435981954" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17695,6 +18124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17770,7 +18200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="10689406843696803893" />
+          <Property name="Value" value="15882041078203311412" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -17797,6 +18227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17872,7 +18303,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="18203748154004798662" />
+              <Property name="Value" value="17701389988809203515" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -17900,6 +18331,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -17975,7 +18407,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11414776393574519904" />
+              <Property name="Value" value="12056909437705359426" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18003,6 +18435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18078,7 +18511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="3676638513404521043" />
+              <Property name="Value" value="12986065595084037739" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18106,6 +18539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18181,7 +18615,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14067250999889470309" />
+              <Property name="Value" value="4840857719945519738" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18209,6 +18643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18284,7 +18719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="10510421659123005748" />
+              <Property name="Value" value="2876183456312768511" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18312,6 +18747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18387,7 +18823,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16828939523044333552" />
+              <Property name="Value" value="13018161302707745574" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18415,6 +18851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18490,7 +18927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14575939116506503551" />
+              <Property name="Value" value="7273376738963734406" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18520,6 +18957,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18595,7 +19033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="5899434664158174365" />
+          <Property name="Value" value="16640092911907991494" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -18622,6 +19060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18697,7 +19136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="4007095416452247358" />
+              <Property name="Value" value="9293038196161774946" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18725,6 +19164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18800,7 +19240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="17720817218418036996" />
+              <Property name="Value" value="344022517503720783" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18828,6 +19268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -18903,7 +19344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="2367071185635572934" />
+              <Property name="Value" value="2927233994810367196" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -18931,6 +19372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19006,7 +19448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="8571632205346654604" />
+              <Property name="Value" value="11757826263118956010" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -19036,6 +19478,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19111,7 +19554,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="1171117788697178347" />
+          <Property name="Value" value="7597876234138600551" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -19138,6 +19581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19213,7 +19657,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="5348015832689192057" />
+              <Property name="Value" value="10225594921451193721" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -19241,6 +19685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19316,7 +19761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="9338301484168683611" />
+              <Property name="Value" value="12905167563158105932" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -19346,6 +19791,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19421,7 +19867,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="3085270340827496586" />
+          <Property name="Value" value="6333184189123969897" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -19453,6 +19899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19528,7 +19975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="3002697877710819798" />
+          <Property name="Value" value="11451595659400049310" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -19560,6 +20007,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19635,7 +20083,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="927013235445985425" />
+          <Property name="Value" value="1186756105136753898" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -19662,6 +20110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19737,7 +20186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7384494350110072312" />
+              <Property name="Value" value="9086392473798969535" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -19767,6 +20216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.034184" />
         <Property name="ScaleZ" value="0.034184" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -19789,6 +20239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
@@ -19806,6 +20257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -19881,7 +20333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7355166083985745240" />
+                  <Property name="Value" value="10369049709218174961" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -19909,6 +20361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -19926,6 +20379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20001,7 +20455,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="14099486307889672870" />
+                      <Property name="Value" value="15017547952204907776" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -20028,6 +20482,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20103,7 +20558,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="17287674055054012994" />
+                          <Property name="Value" value="2530901583838444052" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -20133,6 +20588,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20208,7 +20664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="8970382543394231995" />
+                      <Property name="Value" value="2879694313637790981" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -20235,6 +20691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20310,7 +20767,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="15926752537787026391" />
+                          <Property name="Value" value="9959243198233246697" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -20340,6 +20797,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20415,7 +20873,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="6703900560982491340" />
+                      <Property name="Value" value="7221738812139457049" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -20442,6 +20900,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20517,7 +20976,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="16862463252943637866" />
+                          <Property name="Value" value="16112585185208556080" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -20549,6 +21008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20624,7 +21084,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="12320058454000538545" />
+                  <Property name="Value" value="4879531408618018103" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -20652,6 +21112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20727,7 +21188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4639109752057691337" />
+                  <Property name="Value" value="15273118513799978069" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -20755,6 +21216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20830,7 +21292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="15674638502479062568" />
+                  <Property name="Value" value="13168065459124775036" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -20858,6 +21320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -20933,7 +21396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14866891175545001658" />
+                  <Property name="Value" value="12951601625736514049" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -20961,6 +21424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21036,7 +21500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6578712723927120971" />
+                  <Property name="Value" value="6295807673358411547" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21064,6 +21528,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21139,7 +21604,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1056541472003605971" />
+                  <Property name="Value" value="10112676663322193269" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21167,6 +21632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21242,7 +21708,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13805197137562051667" />
+                  <Property name="Value" value="703323163004887642" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21270,6 +21736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21345,7 +21812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="227266087349343200" />
+                  <Property name="Value" value="16370253888242427396" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21373,6 +21840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21448,7 +21916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="5573255916997864619" />
+                  <Property name="Value" value="14811905193840392432" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21476,6 +21944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21551,7 +22020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="8216221135877738858" />
+                  <Property name="Value" value="1155797349183991426" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21579,6 +22048,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21654,7 +22124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4549671159604537378" />
+                  <Property name="Value" value="13811499794751339996" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21682,6 +22152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21757,7 +22228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14563934685797299975" />
+                  <Property name="Value" value="17855467974910217195" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21785,6 +22256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21860,7 +22332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1075728700259490336" />
+                  <Property name="Value" value="1748585158847510364" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21888,6 +22360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -21963,7 +22436,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7564837750407448851" />
+                  <Property name="Value" value="9181105449320967628" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -21991,6 +22464,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22066,7 +22540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7493092279576063150" />
+                  <Property name="Value" value="1691283013666234992" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22094,6 +22568,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22169,7 +22644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6898861856461152230" />
+                  <Property name="Value" value="17006259554417613361" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22197,6 +22672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22272,7 +22748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4020356003777911898" />
+                  <Property name="Value" value="6249996593492566683" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22300,6 +22776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22375,7 +22852,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="12423059678265823099" />
+                  <Property name="Value" value="1010233078884088591" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22403,6 +22880,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22478,7 +22956,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16280432831486370583" />
+                  <Property name="Value" value="1594392484560106011" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22506,6 +22984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22581,7 +23060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="10139281034660552894" />
+                  <Property name="Value" value="16546153736201691338" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22609,6 +23088,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22684,7 +23164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4168905123399570452" />
+                  <Property name="Value" value="17855522329323773768" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22712,6 +23192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22787,7 +23268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1715055666719833785" />
+                  <Property name="Value" value="14057220120957651818" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22815,6 +23296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22890,7 +23372,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="955879112965235449" />
+                  <Property name="Value" value="2089596356697278084" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -22918,6 +23400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -22993,7 +23476,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="9815955502377583984" />
+                  <Property name="Value" value="2311822868295542281" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23021,6 +23504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23096,7 +23580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13399265394000279800" />
+                  <Property name="Value" value="13124417129028628700" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23124,6 +23608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23199,7 +23684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="9368636956524538722" />
+                  <Property name="Value" value="15295872980077049427" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23227,6 +23712,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23302,7 +23788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="18124642819120533148" />
+                  <Property name="Value" value="12989532418985663417" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23330,6 +23816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23405,7 +23892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1247494072039135118" />
+                  <Property name="Value" value="8569021862699474263" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23433,6 +23920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23508,7 +23996,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13524195500603672742" />
+                  <Property name="Value" value="234427582959154687" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23536,6 +24024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23611,7 +24100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6893471824086445858" />
+                  <Property name="Value" value="15244933398937473166" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23639,6 +24128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23714,7 +24204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="9211290298749244152" />
+                  <Property name="Value" value="11630603642443308168" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23742,6 +24232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23817,7 +24308,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6972846950673541056" />
+                  <Property name="Value" value="8281841136985916596" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23845,6 +24336,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -23920,7 +24412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16049330900064642389" />
+                  <Property name="Value" value="9794133967369638600" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -23948,6 +24440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24023,7 +24516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16205943006063562255" />
+                  <Property name="Value" value="3911776281196815556" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24051,6 +24544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24126,7 +24620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6417293326488864547" />
+                  <Property name="Value" value="17362463514043014409" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24154,6 +24648,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24229,7 +24724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="9621670315037845526" />
+                  <Property name="Value" value="16698810124331755568" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24257,6 +24752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24332,7 +24828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14170538596926586963" />
+                  <Property name="Value" value="11543974428896207168" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24360,6 +24856,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24435,7 +24932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16423622215078808788" />
+                  <Property name="Value" value="4919168420787847174" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24463,6 +24960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24538,7 +25036,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="17063083395655765396" />
+                  <Property name="Value" value="17919356937781227807" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24566,6 +25064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24641,7 +25140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="12272000128429641070" />
+                  <Property name="Value" value="17105170905664254732" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24669,6 +25168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24744,7 +25244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1742337825470013678" />
+                  <Property name="Value" value="7005105597058371266" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24772,6 +25272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24847,7 +25348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="11090741729736624846" />
+                  <Property name="Value" value="3218185862623979499" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24875,6 +25376,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -24950,7 +25452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="5679929723416944640" />
+                  <Property name="Value" value="2359598384581820916" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -24978,6 +25480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25053,7 +25556,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="15918717046887889645" />
+                  <Property name="Value" value="9097691918642468719" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25081,6 +25584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25156,7 +25660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14893372945469126274" />
+                  <Property name="Value" value="1176629457144175994" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25184,6 +25688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25259,7 +25764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="3362115008988051226" />
+                  <Property name="Value" value="6497127721418857310" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25287,6 +25792,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="6.923929" />
                 <Property name="ScaleZ" value="6.923929" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25362,7 +25868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="3385476456983524450" />
+                  <Property name="Value" value="9085550387467241785" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25390,6 +25896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="3.246625" />
                 <Property name="ScaleZ" value="3.246625" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25465,7 +25972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="11633660374087479221" />
+                  <Property name="Value" value="15083920157075196789" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25493,6 +26000,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="4.775609" />
                 <Property name="ScaleZ" value="4.775609" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25568,7 +26076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13664478512671389509" />
+                  <Property name="Value" value="16530477276574523851" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25596,6 +26104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.504954" />
                 <Property name="ScaleZ" value="1.504954" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25671,7 +26180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="13561694188673694075" />
+                  <Property name="Value" value="3589090295421292571" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25699,6 +26208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.504954" />
                 <Property name="ScaleZ" value="1.504954" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25774,7 +26284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="8978851552011723352" />
+                  <Property name="Value" value="15655934679364938635" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25802,6 +26312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.504954" />
                 <Property name="ScaleZ" value="1.504954" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25877,7 +26388,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="14730121935121811143" />
+                  <Property name="Value" value="9151039525344763600" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -25905,6 +26416,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.504954" />
                 <Property name="ScaleZ" value="1.504954" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -25980,7 +26492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7591924229209988546" />
+                  <Property name="Value" value="5556413022119381628" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26008,6 +26520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.504954" />
                 <Property name="ScaleZ" value="1.504954" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26083,7 +26596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4990315721707783769" />
+                  <Property name="Value" value="770397703585133394" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26111,6 +26624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="2.096756" />
                 <Property name="ScaleZ" value="2.096756" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26186,7 +26700,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1738186974761657565" />
+                  <Property name="Value" value="9218231601125904707" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26214,6 +26728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.779206" />
                 <Property name="ScaleZ" value="1.779206" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26289,7 +26804,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="4267310265860719598" />
+                  <Property name="Value" value="8319073765928768140" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26317,6 +26832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.779206" />
                 <Property name="ScaleZ" value="1.779206" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26392,7 +26908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="16182492141342313945" />
+                  <Property name="Value" value="17880644149751397301" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26420,6 +26936,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.779206" />
                 <Property name="ScaleZ" value="1.779206" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26495,7 +27012,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="8101605146590795210" />
+                  <Property name="Value" value="15871111288708932414" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26523,6 +27040,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1.779206" />
                 <Property name="ScaleZ" value="1.779206" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26598,7 +27116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="1599347915119390006" />
+                  <Property name="Value" value="1953045205193888311" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -26626,6 +27144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -26643,6 +27162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26718,7 +27238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="3484836765315297129" />
+                      <Property name="Value" value="13142147296690585333" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -26745,6 +27265,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -26820,7 +27341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="16599775286994044130" />
+                          <Property name="Value" value="7959791671371141090" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -26856,6 +27377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -26874,6 +27396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -26882,8 +27405,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE" />
-          <Property name="NameHash" value="2265305322" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE|collision" />
+          <Property name="NameHash" value="1115840575" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -26896,6 +27419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -26953,6 +27477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -26961,8 +27486,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE" />
-          <Property name="NameHash" value="2265305322" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE|collisionSphere1" />
+          <Property name="NameHash" value="3173123958" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -26975,6 +27500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -27004,6 +27530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -27012,8 +27539,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE" />
-          <Property name="NameHash" value="2265305322" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE|collisionSphere" />
+          <Property name="NameHash" value="2744569905" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -27026,6 +27553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -27055,6 +27583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -27063,8 +27592,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE" />
-          <Property name="NameHash" value="2265305322" />
+          <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE|collisionSphere_2" />
+          <Property name="NameHash" value="2256751881" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -27077,6 +27606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -27106,6 +27636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -27124,6 +27655,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -27183,6 +27715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -27242,6 +27775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -27301,6 +27835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -27360,6 +27895,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -27404,29 +27940,6 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="REFBridgeFloorMistVFX" />
-      <Property name="NameHash" value="1116614557" />
-      <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
-        <Property name="TransX" value="0" />
-        <Property name="TransY" value="0.408789" />
-        <Property name="TransZ" value="0" />
-        <Property name="RotX" value="0" />
-        <Property name="RotY" value="0" />
-        <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="1" />
-        <Property name="ScaleY" value="1" />
-        <Property name="ScaleZ" value="1" />
-      </Property>
-      <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
-          <Property name="Name" value="SCENEGRAPH" />
-          <Property name="Value" value="ODELS\EFFECTS\SPACECRAFT\BRIDGEFLOORMIST.SCENE.MBIN" />
-        </Property>
-      </Property>
-      <Property name="Children" />
-    </Property>
   </Property>
 </Data>
 ]]
@@ -27452,6 +27965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -27490,6 +28004,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="JOINTINDEX" />
@@ -27512,6 +28027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -27535,6 +28051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -27558,6 +28075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -27580,6 +28098,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="2.612198" />
                 <Property name="ScaleZ" value="3.244933" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -27655,7 +28174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="8905695516784637851" />
+                  <Property name="Value" value="3301116392587624630" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -27685,6 +28204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -27707,6 +28227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="JOINTINDEX" />
@@ -27729,6 +28250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="0.01" />
                     <Property name="ScaleZ" value="0.01" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="JOINTINDEX" />
@@ -27751,6 +28273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -27826,7 +28349,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="14046721618371138012" />
+                          <Property name="Value" value="376425932644650533" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -27858,6 +28381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
@@ -27878,6 +28402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -27900,6 +28425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="JOINTINDEX" />
@@ -27922,6 +28448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="0.01" />
                     <Property name="ScaleZ" value="0.01" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="JOINTINDEX" />
@@ -27944,6 +28471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="ScaleY" value="1" />
                         <Property name="ScaleZ" value="1" />
                       </Property>
+                      <Property name="PlatformExclusion" value="0" />
                       <Property name="Attributes">
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28019,7 +28547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="HASH" />
-                          <Property name="Value" value="6142044702505011287" />
+                          <Property name="Value" value="10807431611081517736" />
                         </Property>
                         <Property value="TkSceneNodeAttributeData.xml">
                           <Property name="Name" value="MATERIAL" />
@@ -28051,6 +28579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
@@ -28071,6 +28600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="JOINTINDEX" />
@@ -28093,6 +28623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -28110,6 +28641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28185,7 +28717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="9861470458928305033" />
+                      <Property name="Value" value="17185006331122806420" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -28215,6 +28747,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -28232,6 +28765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28307,7 +28841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="4874377179032339024" />
+                      <Property name="Value" value="3952011681413599775" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -28337,6 +28871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes" />
               <Property name="Children">
                 <Property value="TkSceneNodeData.xml">
@@ -28354,6 +28889,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
+                  <Property name="PlatformExclusion" value="0" />
                   <Property name="Attributes">
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28429,7 +28965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="HASH" />
-                      <Property name="Value" value="17107117333954992069" />
+                      <Property name="Value" value="3209048984863176636" />
                     </Property>
                     <Property value="TkSceneNodeAttributeData.xml">
                       <Property name="Name" value="MATERIAL" />
@@ -28461,6 +28997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -28479,6 +29016,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28554,7 +29092,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11377053014854754553" />
+              <Property name="Value" value="14946388651151566959" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -28582,6 +29120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28657,7 +29196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1366350138171204275" />
+              <Property name="Value" value="16728801972686073731" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -28685,6 +29224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
@@ -28702,6 +29242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28777,7 +29318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="17742562461924007927" />
+                  <Property name="Value" value="1412982645602629124" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -28805,6 +29346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -28864,6 +29406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -28923,6 +29466,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="0.494482" />
                 <Property name="ScaleZ" value="0.494482" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -28998,7 +29542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="8682733395285252396" />
+                  <Property name="Value" value="8618453185110592099" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -29026,6 +29570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -29101,7 +29646,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="6722804628683799626" />
+                  <Property name="Value" value="15080723781737240345" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -29129,6 +29674,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="10" />
                 <Property name="ScaleZ" value="10" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29190,6 +29736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.463132" />
             <Property name="ScaleZ" value="0.463132" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -29265,7 +29812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1011861869711173367" />
+              <Property name="Value" value="18196780867710041049" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -29278,8 +29825,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
-              <Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE" />
-              <Property name="NameHash" value="2634926283" />
+              <Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE|collisionSphere2" />
+              <Property name="NameHash" value="3637594209" />
               <Property name="Type" value="COLLISION" />
               <Property name="Transform" value="TkTransformData.xml">
                 <Property name="TransX" value="0" />
@@ -29292,6 +29839,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="TYPE" />
@@ -29321,6 +29869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
@@ -29338,6 +29887,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -29413,7 +29963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="378196321920817302" />
+                  <Property name="Value" value="10408564852411033246" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -29441,6 +29991,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29500,6 +30051,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29559,6 +30111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="0.494482" />
                 <Property name="ScaleZ" value="0.494482" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -29634,7 +30187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="7913871996435253433" />
+                  <Property name="Value" value="13943506340645731030" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -29662,6 +30215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="10" />
                 <Property name="ScaleZ" value="10" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29723,6 +30277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
@@ -29740,6 +30295,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -29815,7 +30371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="217757157778689600" />
+                  <Property name="Value" value="14375532528712821653" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -29843,6 +30399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29902,6 +30459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -29961,6 +30519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="0.494482" />
                 <Property name="ScaleZ" value="0.494482" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30036,7 +30595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="HASH" />
-                  <Property name="Value" value="11023791483928481728" />
+                  <Property name="Value" value="7597451101549517197" />
                 </Property>
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="MATERIAL" />
@@ -30064,6 +30623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="10" />
                 <Property name="ScaleZ" value="10" />
               </Property>
+              <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
                 <Property value="TkSceneNodeAttributeData.xml">
                   <Property name="Name" value="FOV" />
@@ -30127,6 +30687,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30202,7 +30763,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="9756757681327725348" />
+          <Property name="Value" value="13748077795160834308" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -30229,6 +30790,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30304,7 +30866,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7805050664141193165" />
+              <Property name="Value" value="10246313833354536883" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -30334,6 +30896,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30409,7 +30972,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="4580479015467094885" />
+          <Property name="Value" value="579672127463583598" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -30436,6 +30999,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30511,7 +31075,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="505552367667031683" />
+              <Property name="Value" value="17914655969263122521" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -30541,6 +31105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30616,7 +31181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="12039694907713275448" />
+          <Property name="Value" value="168218286638953982" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -30643,6 +31208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30718,7 +31284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1605716681716761286" />
+              <Property name="Value" value="12097890668924507764" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -30748,6 +31314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30823,7 +31390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="10756785005827578372" />
+          <Property name="Value" value="7087085282960531579" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -30850,6 +31417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -30925,7 +31493,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16838489450761780710" />
+              <Property name="Value" value="6583343045201324290" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -30955,6 +31523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31030,7 +31599,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="17136274493887134945" />
+          <Property name="Value" value="7350367545574588388" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31058,6 +31627,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31133,7 +31703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="12180986913262648357" />
+          <Property name="Value" value="18234095656715917476" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31161,6 +31731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31236,7 +31807,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="15308947294541526854" />
+          <Property name="Value" value="1931140279820355772" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31264,6 +31835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31339,7 +31911,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="5152717400144766193" />
+          <Property name="Value" value="10201793660756695929" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31367,6 +31939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31442,7 +32015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="4702832459860299885" />
+          <Property name="Value" value="1411148292108168487" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31469,6 +32042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31544,7 +32118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="17026698560700211730" />
+              <Property name="Value" value="12847273000388842981" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -31574,6 +32148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31649,7 +32224,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="8863926772256712402" />
+          <Property name="Value" value="10304400621208884928" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31676,6 +32251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31751,7 +32327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15217800511724840978" />
+              <Property name="Value" value="981524332070495508" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -31781,6 +32357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31856,7 +32433,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="4384261946393599900" />
+          <Property name="Value" value="8199156578854538859" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -31883,6 +32460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -31958,7 +32536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="3429389109915331667" />
+              <Property name="Value" value="15934552270133647357" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -31988,6 +32566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32063,7 +32642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="1669640223539635087" />
+          <Property name="Value" value="3010867357404428619" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -32090,6 +32669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32165,7 +32745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="12321846517805966380" />
+              <Property name="Value" value="13084206521804172127" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32195,6 +32775,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -32203,8 +32784,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE" />
-          <Property name="NameHash" value="2634926283" />
+          <Property name="Name" value="MODELS\COMMON\ROBOTS\CORRUPTEDDRONE|collisionSphere" />
+          <Property name="NameHash" value="319599525" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="-0.005861" />
@@ -32217,6 +32798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -32244,6 +32826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32319,7 +32902,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="4079350527151646383" />
+              <Property name="Value" value="6026825680273404134" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32349,6 +32932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children" />
     </Property>
@@ -32367,10 +32951,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\EFFECTS\COMMON\CORRUPTEDDRONEENERGY.SCENE.MBIN" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -32390,10 +32979,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\EFFECTS\COMMON\CORRUPTEDDRONEEYE.SCENE.MBIN" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />
@@ -32410,7 +33004,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINALPIRATE" />
-  <Property name="NameHash" value="2437321258" />
+  <Property name="NameHash" value="2265305322" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
     <Property name="TransX" value="0" />
@@ -32423,6 +33017,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -32461,6 +33056,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -32483,6 +33079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32558,7 +33155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="406296954309364564" />
+              <Property name="Value" value="9704939017818138008" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32590,6 +33187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32665,7 +33263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="14940773656413665560" />
+              <Property name="Value" value="3872053516668784531" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32693,6 +33291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32768,7 +33367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1886275259468841389" />
+              <Property name="Value" value="16698407189740503912" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32796,6 +33395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.632525" />
             <Property name="ScaleZ" value="0.632525" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32871,7 +33471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="11376176500686571889" />
+              <Property name="Value" value="14692487609442524788" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -32899,6 +33499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -32974,7 +33575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16514596494992946251" />
+              <Property name="Value" value="314586332057389538" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33006,6 +33607,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33081,7 +33683,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="543405891031587275" />
+              <Property name="Value" value="12355483007626660775" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33109,6 +33711,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33184,7 +33787,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7339454781886412357" />
+              <Property name="Value" value="18432982114317369707" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33212,6 +33815,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.12402" />
             <Property name="ScaleZ" value="1.12402" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33287,7 +33891,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="17850704136780316121" />
+              <Property name="Value" value="15377771747689932226" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33315,6 +33919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33390,7 +33995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="1115398951929567185" />
+              <Property name="Value" value="11073740794062688181" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33422,6 +34027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33497,7 +34103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16258547893229200002" />
+              <Property name="Value" value="10284452980091885467" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33525,6 +34131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33600,7 +34207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="16871868893024211167" />
+              <Property name="Value" value="12107600642737267265" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33628,6 +34235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.105181" />
             <Property name="ScaleZ" value="1.105181" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33703,7 +34311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15633269005639427749" />
+              <Property name="Value" value="304353363964779926" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33731,6 +34339,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33806,7 +34415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="7527153341040201742" />
+              <Property name="Value" value="9281952354127877027" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33834,6 +34443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -33909,7 +34519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="15618141677206430755" />
+              <Property name="Value" value="10255290954561585012" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -33937,6 +34547,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34012,7 +34623,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="10961423363084954269" />
+              <Property name="Value" value="17031463194948192531" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -34040,6 +34651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34115,7 +34727,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="5971163659584820029" />
+              <Property name="Value" value="11494617276338273084" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -34143,6 +34755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -34182,6 +34795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -34208,6 +34822,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="JOINTINDEX" />
@@ -34234,6 +34849,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.3" />
             <Property name="ScaleZ" value="0.3" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
@@ -34318,6 +34934,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -34356,6 +34973,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34431,7 +35049,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="10475276153946966341" />
+          <Property name="Value" value="15132692521109166110" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -34444,8 +35062,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
-          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK" />
-          <Property name="NameHash" value="3141807465" />
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\WALLDESK|collisionBox" />
+          <Property name="NameHash" value="2536566020" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -34458,6 +35076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -34495,6 +35114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34570,7 +35190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="16469427282898582001" />
+          <Property name="Value" value="1471665626890299346" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -34598,6 +35218,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34673,7 +35294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="8136526914888804430" />
+          <Property name="Value" value="7110514494052543158" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -34701,6 +35322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34776,7 +35398,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="HASH" />
-          <Property name="Value" value="12033571055209465945" />
+          <Property name="Value" value="4252316991032216112" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
@@ -34804,6 +35426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes" />
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -34821,6 +35444,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHSTARTPHYSI" />
@@ -34896,7 +35520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HASH" />
-              <Property name="Value" value="13804872638352760568" />
+              <Property name="Value" value="3084206916197175251" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="MATERIAL" />
@@ -34985,6 +35609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35011,6 +35636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -35033,6 +35659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="2" />
             <Property name="ScaleZ" value="2" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -35051,6 +35678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="FOV" />
@@ -35122,6 +35750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35148,6 +35777,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="2" />
         <Property name="ScaleZ" value="2" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -35171,6 +35801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35230,6 +35861,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35299,6 +35931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35325,6 +35958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35384,6 +36018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35443,6 +36078,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35502,6 +36138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35561,6 +36198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35620,6 +36258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35679,6 +36318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35738,6 +36378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />
@@ -35807,6 +36448,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35833,6 +36475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -35855,6 +36498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -35885,6 +36529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35911,6 +36556,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -35933,6 +36579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -35963,6 +36610,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -35989,6 +36637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -36011,6 +36660,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.7" />
             <Property name="ScaleZ" value="1.7" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36029,6 +36679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.7" />
             <Property name="ScaleZ" value="1.7" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36047,6 +36698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.7" />
             <Property name="ScaleZ" value="1.7" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36065,6 +36717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.7" />
             <Property name="ScaleZ" value="1.7" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36083,6 +36736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1.7" />
             <Property name="ScaleZ" value="1.7" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36101,6 +36755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36119,6 +36774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -36150,6 +36806,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36168,6 +36825,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -36199,6 +36857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36217,6 +36876,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -36248,6 +36908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36266,6 +36927,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -36297,6 +36959,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36315,6 +36978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="TYPE" />
@@ -36346,6 +37010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
+          <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
@@ -36376,6 +37041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -36402,6 +37068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36429,6 +37096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="1.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36452,6 +37120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="1.5" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36485,6 +37154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -36511,6 +37181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36534,6 +37205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36557,6 +37229,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36580,6 +37253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36603,6 +37277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36626,6 +37301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36659,6 +37335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -36685,6 +37362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36708,6 +37386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36731,6 +37410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36754,6 +37434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36777,6 +37458,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36800,6 +37482,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.772868" />
         <Property name="ScaleZ" value="0.772868" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36833,6 +37516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -36859,6 +37543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.15" />
         <Property name="ScaleZ" value="0.15" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36892,6 +37577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -36922,6 +37608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="0.01" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36945,6 +37632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.01" />
         <Property name="ScaleZ" value="0.01" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -36978,6 +37666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37004,6 +37693,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.0075" />
         <Property name="ScaleZ" value="0.0075" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37027,6 +37717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.0075" />
         <Property name="ScaleZ" value="0.0075" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37060,6 +37751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37086,6 +37778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37123,6 +37816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37153,6 +37847,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.008" />
         <Property name="ScaleZ" value="0.008" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37176,6 +37871,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.008" />
         <Property name="ScaleZ" value="0.008" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37209,6 +37905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37235,6 +37932,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.007" />
         <Property name="ScaleZ" value="0.007" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37268,6 +37966,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37294,6 +37993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37331,6 +38031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37361,6 +38062,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.007" />
         <Property name="ScaleZ" value="0.007" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37384,6 +38086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.007" />
         <Property name="ScaleZ" value="0.007" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37417,6 +38120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37443,6 +38147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.009" />
         <Property name="ScaleZ" value="0.009" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37466,6 +38171,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.009" />
         <Property name="ScaleZ" value="0.009" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37499,6 +38205,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37525,6 +38232,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37562,6 +38270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37588,6 +38297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37611,6 +38321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37644,6 +38355,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property name="ScaleY" value="1" />
     <Property name="ScaleZ" value="1" />
   </Property>
+  <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
@@ -37670,6 +38382,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37693,6 +38406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1.5" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
@@ -37716,6 +38430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="FOV" />

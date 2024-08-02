@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightFullNoReverse"
+local modfilename = "AlmostPerfectFlightLiteNoReverse"
 local lua_author  = "Silent"
-local lua_version = "3.4"
+local lua_version = "3.5"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -16,11 +16,11 @@ With optional settings to make flight much easier (a bit cheaty, hence optional)
 
 --|=======================================================================================--
 
-local _cheatySettings = true
-local _launchFuelCost = true
-local _controlBonuses = true
+local _cheatySettings = false
+local _launchFuelCost = false
+local _controlBonuses = false
 local _shipHoverSpeed = true
-local _shipStatsBonus = true
+local _shipStatsBonus = false
 local _warpSpeedMulti = true
 
 --|=======================================================================================--
@@ -30,11 +30,11 @@ local _cheatMult = 50
 local _cheatTime = 0.1
 
 --Boosts
-local _boostMult = 2
-local _boostMxSp = 5
-local _max_speed = 2.5
-local _thrstMult = 2.5
-local _warpSMult = 4.2
+local _boostMult = 1.25
+local _boostMxSp = 2
+local _max_speed = 1.75
+local _thrstMult = 1.25
+local _warpSMult = 2.2
 
 --Handling
 local _brakeMult = 0.8
@@ -121,7 +121,7 @@ if _warpSpeedMulti then
     })
 end
 
---| Flight Control, 3rd Person Data
+--| Flight Control & 3rd Person Data
 --|=======================================================================================--
 
 local function insert3rdPersonData()
@@ -146,7 +146,7 @@ local function insert3rdPersonData()
             {"_3rdPersonLowHeightMax",                 _3rdPerson},
             {"_3rdPersonLowHeightOffsetVertRotationY", _3rdPerson},
             {"_3rdPersonLowHeightOffsetY",             _3rdPerson},
-            {"_3rdPersonLowHeightSpringTime",          _3rdPerson},
+            {"_3rdPersonLowHeightSpringTime",          _3rdPerson}
         }
     }
     table.insert(TableData, entry)
@@ -176,7 +176,7 @@ local function insertEngineData(engineType, controlType)
             {"TurnBrakeMax",       _turnBMult},
             {"RollAmount",         _rolAmount},
             {"RollForce",          _rollForce},
-            {"RollAutoTime",       _rollATime},
+            {"RollAutoTime",       _rollATime}
         }
     }
     table.insert(TableData, entry)
@@ -336,7 +336,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-
                                 {"AutoLevelMinAngle",                             "0"}, --Original "5"
                                 {"GroundHeightSoft",                              "7"}, --Original "20"
                                 {"GroundHeightSoftForce",                        "10"}, --Original "35"

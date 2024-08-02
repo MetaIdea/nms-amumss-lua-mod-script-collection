@@ -1,8 +1,8 @@
 local modfilename = "NativeSentinelShips"
 local lua_author  = "Silent"
-local lua_version = "1.8"
+local lua_version = "1.9"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 

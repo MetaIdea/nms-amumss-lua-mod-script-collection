@@ -5,6 +5,7 @@ MODEL_LIST = {-- All entries must have all three keys ("ID","PATH,"SCALE"). "ID"
 	{
 		["PATH"] = "MODELS/SPACE/SPACESTATION/SPACESTATION.SCENE.MBIN",
 		["SCALE"] = 1,
+		["WEIGHT"] = 1,
 	},
 	{
 		["PATH"] = "MODELS/SPACE/SPACESTATION/SPACESTATIONTYPEB.SCENE.MBIN",
@@ -101,7 +102,7 @@ function generate_descriptor_file(FINAL_MODEL_NAME,MODEL_LIST)
           <Property name="Id" value="]]..TYPE_ID..i..[[" />
           <Property name="Name" value="]]..TYPE_ID..i..[[" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="]]..option["PATH"]..[[" />
             </Property>
           </Property>

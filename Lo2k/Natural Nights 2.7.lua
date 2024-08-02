@@ -1,32 +1,15 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Natural Nights 2.6.pak", 
+["MOD_FILENAME"] 			= "Natural Nights 2.7.pak", 
 ["MOD_AUTHOR"]				= "Degraaaff",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.02",
+["NMS_VERSION"]				= "5.03",
 ["MOD_DESCRIPTION"]			= "This mods changes night lighting",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "GCWATERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"]  = {"FoamColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"R",	"0.17"},
-								{"G",	"0.19"},
-								{"B",	"0.28"},
-								{"A",	"0.7"},
-							}
-						},					
-					}
-				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\NIGHTSKYCOLOURS.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 

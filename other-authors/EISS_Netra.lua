@@ -1012,7 +1012,7 @@ Products =
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="WORMSCROLL5" />
         </Property>
-         <Property value="NMSString0x10.xml">
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="FIGHT_COCKAA" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -1827,6 +1827,21 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SAIL_WINGDE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAIL_WINGEA" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAIL_WINGEB" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAIL_WINGEC" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAIL_WINGED" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="SAIL_WINGEE" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SAIL_WINGFA" />
@@ -2703,7 +2718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] = "NotAnotherTradeMod.pak",
   ["MOD_AUTHOR"] = "MasterNetra & musty123",
   ["LUA_AUTHOR"] = "Babscoole & MasterNetra",
-  ["NMS_VERSION"] = "5.01.1",
+  ["NMS_VERSION"] = "5.03",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(Less Food Version)",
   ["MODIFICATIONS"] =
   {

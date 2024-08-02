@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "3.3"
+local lua_version = "3.4"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -22,8 +22,8 @@ and to minimise the damage to Crashed Ships when discovered to save resources on
 
 --|=======================================================================================--
 
-local _NoPirateAttacks = true
-local _CrashShipDamage = true
+local _NoPirateAttacks = false
+local _CrashShipDamage = false
 local _FillUp_Outposts = true
 
 --|=======================================================================================--

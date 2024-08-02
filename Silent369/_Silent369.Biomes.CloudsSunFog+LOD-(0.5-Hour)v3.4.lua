@@ -1,8 +1,8 @@
-local modfilename = "Biomes.CloudsSunAndFog-(24.0-Hour)"
+local modfilename = "Biomes.CloudsSunFog+LOD-(0.5-Hour)"
 local lua_author  = "Silent"
-local lua_version = "3.3"
+local lua_version = "3.4"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -31,10 +31,10 @@ Bloom effects but leaves lensing effects intact.
 --96 Hr = 345600
 --192Hr = 691200
 
-_Day_Length              = 86400 --Original "1800"
+_Day_Length              = 1800 --Original "1800"
 
 --CLOUD ANIM SPEED
-_Anim_Scale              = 25   --Original "50" wtf!
+_Anim_Scale              = 30    --Original "50" wtf!
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
@@ -179,14 +179,11 @@ _PSF_FogHeight           = 2    --Original "4"
 _SunClmHMin              = 300  --Original "300"
 _SunClmHMax              = 390  --Original "390"
 _SunClampAngle           = 55   --Original "55"
-_SunFactorMin            = 0.4 --Original "0.4"
+_SunFactorMin            = 0.4  --Original "0.4"
 
 --STAR CHANCE
 _BinaryStarChance        = 0.2  --Original "0.2"
 _TernaryStarChance       = 0.05 --Original "0.05"
-
---WATER REFLECTIONS
-_MinWaterReflections     = 0.1  --Original "0.2"
 
 --Original
 --  <Property name="SpacePlanetFogStrength">
@@ -239,10 +236,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                                 {"ShadowLength",                      "800"}, --Original "400"
                                 {"ShadowLengthStation",              "2000"}, --Original "1300"
-
-                                {"HBAOBias",                          "0.2"}, --Original "0.1"
-                                {"HBAORadius",                          "5"}, --Original "2"
-                                {"HBAOIntensity",                     "1.0"}, --Original "5"
 
                                 ----------------------------------------------------------------------------
                                 --Lens Dirt Options
@@ -380,12 +373,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"InteractionRadius",                    "0.30"}, --Original "0.15"
 
                                 ----------------------------------------------------------------------------
-                                --Water Reflections
-                                ----------------------------------------------------------------------------
-
-                                {"MinWaterReflections",    _MinWaterReflections}, --Original "0.2"
-
-                                ----------------------------------------------------------------------------
                                 --No Asteroids while pulsing
                                 ----------------------------------------------------------------------------
 
@@ -481,7 +468,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"]              = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MinWaterReflections", _MinWaterReflections},
+                            ["SPECIAL_KEY_WORDS"] = {"MinWaterReflections", "0.2"},
                             ["LINE_OFFSET"]       = "+0",
                             ["ADD"]               = _SpacePlanetFogStrength,
                         },
@@ -601,49 +588,47 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetSky"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_MATCH"]         = "",
+                            ["REPLACE_TYPE"]        = "ALLINSECTION",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"AtmosphereThickness","0.1595575"}, --Original "0.319115"
-                                {"SunSize",              "0.00001"}, --Original "0.25"
-                                {"SunSurroundSize",         "0.02"}, --Original "10"
-                                {"SunSurroundStrength",     "0.02"}, --Original "12"
+                                {"SunSize",                  "0.1"}, --Original "0.25"
+                                {"SunSurroundSize",         "0.01"}, --Original "10"
+                                {"SunSurroundStrength",     "0.01"}, --Original "12"
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetSky"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_MATCH"]         = "",
+                            ["REPLACE_TYPE"]        = "ALLINSECTION",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"AtmosphereThickness","0.1595575"}, --Original "0.319115"
-                                {"SunSize",              "0.00001"}, --Original "0.25"
-                                {"SunSurroundSize",         "0.02"}, --Original "10"
-                                {"SunSurroundStrength",     "0.02"}, --Original "12"
+                                {"SunSize",                  "0.1"}, --Original "0.25"
+                                {"SunSurroundSize",         "0.01"}, --Original "10"
+                                {"SunSurroundStrength",     "0.01"}, --Original "12"
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
-                            ["VALUE_MATCH"]         = "",
+                            ["SPECIAL_KEY_WORDS"]   = {"SpaceSkyMin", "GcSpaceSkyProperties.xml"},
+                            ["REPLACE_TYPE"]        = "ALLINSECTION",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
-                                {"SunSize",              "0.00001"}, --Original "0.005"
-                                {"StarVisibility",          "0.50"}, --Original "0.82"
-                                {"CenterPower",                "2"}, --Original "2.5"
-                                {"AtmosphereThickness",     "0.26"}, --Original "0.28"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
-                            ["VALUE_MATCH"]         = "",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
                                 {"SunSize",               "0.0001"}, --Original "0.005"
                                 {"StarVisibility",          "0.50"}, --Original "0.82"
                                 {"CenterPower",                "2"}, --Original "2.5"
-                                {"AtmosphereThickness",     "0.26"}, --Original "0.28"
+                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"SpaceSkyMax", "GcSpaceSkyProperties.xml"},
+                            ["REPLACE_TYPE"]        = "ALLINSECTION",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"SunSize",               "0.0001"}, --Original "0.005"
+                                {"StarVisibility",          "0.50"}, --Original "0.82"
+                                {"CenterPower",                "2"}, --Original "2.5"
+                                {"AtmosphereThickness",     "0.14"}, --Original "0.28"
                             }
                         },
 
@@ -652,7 +637,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         ----------------------------------------------------------------------------
 
                         {
-                            ["PRECEDING_KEY_WORDS"] = "",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -662,7 +646,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 --SKY PROPERTIES--
                                 {"SunClampAngle",                    _SunClampAngle}, --Original "55"
                                 {"RainbowWidth",                             "0.15"}, --Original "0.13"
-                                {"RainbowAlpha",                             "0.01"}, --Original "0.1"
+                                {"RainbowAlpha",                             "0.05"}, --Original "0.1"
                                 {"RainbowStormAlpha",                        "0.01"}, --Original ""
 
                                 --STORM SETTINGS
@@ -728,7 +712,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --FOG PROPERTIES
                         ----------------------------------------------------------------------------
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFog",},
+                            ["FOREACH_SKW_GROUP"]   =
+                            {
+                                {"PlanetProperties",      "GcPlanetSkyProperties.xml", "PlanetFog", "GcFogProperties.xml"},
+                                {"PlanetPrimeProperties", "GcPlanetSkyProperties.xml", "PlanetFog", "GcFogProperties.xml"},
+                            },
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -743,22 +731,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFlightFog",},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_CHANGE_TABLE"]  =
+                            ["FOREACH_SKW_GROUP"]   =
                             {
-                                {"FogStrength",              _PFF_FogStrength},
-                                {"FogMax",                   _PFF_FogMax},
-                                {"FogColourStrength",        _PFF_FogColourStrength},
-                                {"HeightFogStrength",        _PFF_HeightFogStrength},
-                                {"HeightFogFadeOutStrength", _PFF_HeightFogFOStrength},
-                                {"HeightFogMax",             _PFF_HeightFogMax},
-                                {"FogHeight",                _PFF_FogHeight},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetExtremeFog",},
+                                {"PlanetProperties",      "GcPlanetSkyProperties.xml", "PlanetExtremeFog", "GcFogProperties.xml"},
+                                {"PlanetPrimeProperties", "GcPlanetSkyProperties.xml", "PlanetExtremeFog", "GcFogProperties.xml"},
+                            },
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -773,7 +750,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetStormFog",},
+                            ["FOREACH_SKW_GROUP"]   =
+                            {
+                                {"PlanetProperties",      "GcPlanetSkyProperties.xml", "PlanetStormFog", "GcFogProperties.xml"},
+                                {"PlanetPrimeProperties", "GcPlanetSkyProperties.xml", "PlanetStormFog", "GcFogProperties.xml"},
+                            },
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -787,6 +768,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FogHeight",                _PSF_FogHeight},
                             }
                         },
+                        {
+                            ["FOREACH_SKW_GROUP"]   =
+                            {
+                                {"PlanetProperties",      "GcPlanetSkyProperties.xml", "PlanetFlightFog", "GcFogProperties.xml"},
+                                {"PlanetPrimeProperties", "GcPlanetSkyProperties.xml", "PlanetFlightFog", "GcFogProperties.xml"},
+                            },
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              _PFF_FogStrength},
+                                {"FogMax",                   _PFF_FogMax},
+                                {"FogColourStrength",        _PFF_FogColourStrength},
+                                {"HeightFogStrength",        _PFF_HeightFogStrength},
+                                {"HeightFogFadeOutStrength", _PFF_HeightFogFOStrength},
+                                {"HeightFogMax",             _PFF_HeightFogMax},
+                                {"FogHeight",                _PFF_FogHeight},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"AbandonedFreighterFog", "GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              _PFF_FogStrength},
+                                {"FogMax",                   _PFF_FogMax},
+                                {"FogColourStrength",        _PFF_FogColourStrength},
+                                {"HeightFogStrength",        _PFF_HeightFogStrength},
+                                {"HeightFogFadeOutStrength", _PFF_HeightFogFOStrength},
+                                {"HeightFogMax",             _PFF_HeightFogMax},
+                                {"FogHeight",                _PFF_FogHeight},
+                            }
+                        },
+
                         ----------------------------------------------------------------------------
                         --CLOUD ADJUST CURVE
                         ----------------------------------------------------------------------------
@@ -804,7 +820,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "PlanetProperties",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"CloudRatio",      _CloudRatio}, --Original "0.5-0.6"
@@ -814,7 +829,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "PlanetPrimeProperties",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"CloudRatio",      _CloudRatioPrime}, --Original "0.5-0.6"
@@ -827,7 +841,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "PlanetCloudsMin",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Coverage1",                   "1"}, --Original "0.5"
@@ -845,7 +858,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = "PlanetCloudsMax",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
-                            ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Coverage1",                   "6"}, --Original "3"
@@ -865,4 +877,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
-

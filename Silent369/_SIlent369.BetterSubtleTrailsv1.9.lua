@@ -1,8 +1,8 @@
 local modfilename = "BetterSubtleTrails"
 local lua_author  = "Silent"
-local lua_version = "1.8"
+local lua_version = "1.9"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -11,7 +11,7 @@ Makes trail effects thinner and more subtle.
 ]]
 
 ----------------------------------------------------------------------------------------
-local GlowValue = 2
+local GlowValue = 0.25
 ----------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -51,6 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name", "gMinPixelSize_Glow", "Values", "Vector4f.xml"},
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", GlowValue},

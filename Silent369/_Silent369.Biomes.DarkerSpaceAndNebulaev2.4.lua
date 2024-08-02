@@ -1,8 +1,8 @@
 local modfilename = "Biomes.DarkerSpaceAndNebulae"
-local lua_author = "Silent"
-local lua_version = "2.3"
-local mod_author = "Silent369"
-local nms_version = "5.01.1"
+local lua_author  = "Silent"
+local lua_version = "2.4"
+local mod_author  = "Silent369"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
@@ -67,8 +67,7 @@ local function createColorChangeTable(keys, value)
         ["MATH_OPERATION"]      = "*",
         ["REPLACE_TYPE"]        = "ALL",
         ["INTEGER_TO_FLOAT"]    = "PRESERVE",
-        ["VALUE_CHANGE_TABLE"]  =
-        {
+        ["VALUE_CHANGE_TABLE"]  = {
             {"R", value},
             {"G", value},
             {"B", value},

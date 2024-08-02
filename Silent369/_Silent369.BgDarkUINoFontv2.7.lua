@@ -1,8 +1,8 @@
-local modfilename = "BgDarkerUIFonts"
+local modfilename = "BgDarkUINoFont"
 local lua_author  = "Silent"
-local lua_version = "2.6"
+local lua_version = "2.7"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 

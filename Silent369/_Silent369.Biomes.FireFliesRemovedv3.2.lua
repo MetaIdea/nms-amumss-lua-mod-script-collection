@@ -1,22 +1,22 @@
-local modfilename = "Biomes.FireFliesReduced"
+local modfilename = "Biomes.FireFliesRemoved"
 local lua_author  = "Silent"
-local lua_version = "3.1"
+local lua_version = "3.2"
 local mod_author  = "Silent369"
-local nms_version = "5.01.1"
+local nms_version = "5.03"
 local maintenance = mod_author
 local description = [[
 
-Resized/Reduced 'heavyair' firefly particles in all biomes.
+Remove 'heavyair' firefly particles in all biomes.
 
 ]]
 
 ------------------------------------------------------------------------------
-local divider = 0.1    -- Modifies the number of heavyair particles.
-local speed_v = 0.1    -- Modifies the visible speed of particles.
-local multply = 1.5    -- Modifies the particles radius / radiusY.
-local fades_m = 0.5    -- Modifies fade speed of rendered particles.
-local scale_m = 1.0    -- Modifies the x,y,z particles scale ranges.
-local rotat_r = 0.5    -- Modifies the rotational range of particles.
+local divider = 0      -- Modifies the number of heavyair particles.
+local speed_v = 0      -- Modifies the visible speed of particles.
+local multply = 0      -- Modifies the particles radius / radiusY.
+local fades_m = 0      -- Modifies fade speed of rendered particles.
+local scale_m = 0      -- Modifies the x,y,z particles scale ranges.
+local rotat_r = 0      -- Modifies the rotational range of particles.
 ------------------------------------------------------------------------------
 
 -- Define particle paths
