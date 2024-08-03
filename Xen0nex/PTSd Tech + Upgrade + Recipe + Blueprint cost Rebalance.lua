@@ -245,13 +245,13 @@ TechRarityChanges =
 		"SHIPSCAN_ECON",		"Rare",						--Economy Scanner		"Normal"
 	},
 	{
-		"SHIPSCAN_COMBAT",		"Rare",						--Conflict Scanner		"Normal"
+		"SHIPSCAN_COMBAT",		"VeryRare",					--Conflict Scanner		"Normal"
 	},
 	{
-		"F_HDRIVEBOOST1",		"Impossible",				--Warp Core Resonator	"Rare"
+		"SHIP_TELEPORT",		"VeryRare",					--Teleport Receiver		"VeryRare"
 	},
 	{
-		"F_HDRIVEBOOST2",		"Impossible",				--Plasmatic Warp Injector	"VeryRare"
+		"WATER_LANDER",			"Impossible",				--Aqua-Jets	"VeryRare"
 	},
 	{
 		"T_SHIPJUMP",			"Normal",					--Procedural Pulse Engine Upgrades	"Rare"
@@ -268,8 +268,15 @@ TechRarityChanges =
 	{
 		"T_SHIPGUN",			"Normal",					--Procedural Photon Cannon Upgrades	"Normal"
 	},
+--Freighter techs
 	{
-		"WATER_LANDER",			"Impossible",				--Aqua-Jets	"VeryRare"
+		"F_HDRIVEBOOST1",		"VeryRare",					--Warp Core Resonator	"Rare"
+	},
+	{
+		"F_HDRIVEBOOST2",		"Impossible",				--Plasmatic Warp Injector	"VeryRare"
+	},
+	{
+		"F_SCANNER",			"VeryRare",					--Interstellar Scanner	"VeryRare"
 	},
 --Multi-Tool techs
 	{
@@ -505,22 +512,22 @@ ReplaceItems =
 		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",
 	},
 	{	--Procedural Starship Pulse Engine Upgrades (Used for repairing / dismantling them)
-		"T_SHIPJUMP",			"Stellar2",			150,	"Substance",	"RED2",
+		"T_SHIPJUMP",			"STELLAR2",			150,	"Substance",	"RED2",
 	},
 	{	--Procedural Starship Photon Cannon Upgrades (Used for repairing / dismantling them)
-		"T_SHIPGUN",			"Stellar2",			250,	"Substance",	"RED2",
+		"T_SHIPGUN",			"STELLAR2",			250,	"Substance",	"RED2",
 	},
 	{	--Procedural Starship Phase Beam Upgrades (Used for repairing / dismantling them)
-		"T_SHIPLAS",			"Stellar2",			250,	"Substance",	"RED2",
+		"T_SHIPLAS",			"STELLAR2",			250,	"Substance",	"RED2",
 	},
 	{	--Procedural Starship Positron Ejector Upgrades (Used for repairing / dismantling them)
-		"T_SHIPSHOT",			"Stellar2",			250,	"Substance",	"RED2",
+		"T_SHIPSHOT",			"STELLAR2",			250,	"Substance",	"RED2",
 	},
 	{	--Procedural Starship Infraknife Accelerator Upgrades (Used for repairing / dismantling them)
-		"T_SHIPMINI",			"Stellar2",			250,	"Substance",	"RED2",
+		"T_SHIPMINI",			"STELLAR2",			250,	"Substance",	"RED2",
 	},
 	{	--Procedural Starship Cyclotron Ballista Upgrades (Used for repairing / dismantling them)
-		"T_SHIPBLOB",			"Stellar2",			250,	"Substance",	"RED2",
+		"T_SHIPBLOB",			"STELLAR2",			250,	"Substance",	"RED2",
 	},
 	--The following "techs" are actually damaged slots in crashed starships / broken Multi-Tools, repairing them costs half the component cost
 	{	--Containment Failure

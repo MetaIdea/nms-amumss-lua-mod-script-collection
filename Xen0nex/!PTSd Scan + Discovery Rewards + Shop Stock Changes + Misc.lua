@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan + Discovery Rewards + Shop Stock Changes + Misc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "5_01"
+GameVersion = "5_03"
 
 --UnderwaterProtectionMultiplier = 2				--Default Range 0 - 310
 
@@ -53,13 +53,11 @@ AnglerfishSpawnChance = 0.45						--0.5		Chance to spawn Anglerfish when collect
 	}
   }
 
-ItemReplacement =			"CAVECUBE"				--Removed shop stock items are replaced with Vortex Cubes
-
 --Removes items from shops
 ShopStockRemoved =
 {
 	{
-		{"NAV_DATA_DROP"},							--Item to be removed/replaced
+		{"NAV_DATA_DROP"},							--Item to be removed
 		{"Shop",}									--Shops to remove it from
 	},
 	{
@@ -565,7 +563,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
 ["EXML_CHANGE_TABLE"] = {
 	--[[{
-		["REPLACE_TYPE"] 		= "",
 		["MATH_OPERATION"] 		= "*",
 		["SPECIAL_KEY_WORDS"] = {"StatsType", "Suit_Underwater"},
 		["SECTION_UP"] = 1, 
@@ -575,8 +572,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},]]
 	{
-		["REPLACE_TYPE"] 		= "",
-		["MATH_OPERATION"] 		= "",
 		["SPECIAL_KEY_WORDS"] = {"FiendCrime", "UnderwaterPropDamaged"},
 		["SECTION_UP"] = 1, 
 		["VALUE_CHANGE_TABLE"] 	=
@@ -585,8 +580,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		["REPLACE_TYPE"] 		= "",
-		["MATH_OPERATION"] 		= "",
 		["SPECIAL_KEY_WORDS"] = {"FiendCrime", "UnderwaterPropCollected"},
 		["SECTION_UP"] = 1, 
 		["VALUE_CHANGE_TABLE"] 	=
@@ -643,20 +636,22 @@ for i = 1, #ShopStockRemoved do
 		ShopID = ShopIDs[j]
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {ShopID, "GcTradeData.xml"},
 				["PRECEDING_KEY_WORDS"] = {"OptionalProducts"},
-				--["SECTION_UP"] = 1,
 				["VALUE_MATCH"] 	= ItemID,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Value", ItemReplacement}
-				}
+					{"Value", "TempItemToDelete"}
+				},
 			}
 	end
 end
+ChangesToDefaultReality[#ChangesToDefaultReality+1] =
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"Value", "TempItemToDelete"},
+				["REMOVE"] = "SECTION",
+			}
 for i = 1, #ShopAddedProducts do
 	local ItemID = ShopAddedProducts[i][1][1]
 	local ShopIDs = ShopAddedProducts[i][2]
@@ -665,9 +660,6 @@ for i = 1, #ShopAddedProducts do
 		ShopID = ShopIDs[j]
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {ShopID, "GcTradeData.xml"},
 				["PRECEDING_KEY_WORDS"] = {"AlwaysPresentProducts",	"NMSString0x10.xml"},
 				["ADD"] = AddProduct(ItemID),
@@ -690,7 +682,6 @@ for i = 1, #FiendCrimeChanges do
 		
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				--["SPECIAL_KEY_WORDS"] = {"CreatureType", CreatureType},
 				["PRECEDING_KEY_WORDS"] = {"MinNum"},
 				["SECTION_ACTIVE"] = ActiveSection,
@@ -710,7 +701,6 @@ for i = 1, #FiendCrimeChanges do
 		
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				--["SPECIAL_KEY_WORDS"] = {"CreatureType", CreatureType},
 				["PRECEDING_KEY_WORDS"] = {"MaxNum"},
 				["SECTION_ACTIVE"] = ActiveSection,

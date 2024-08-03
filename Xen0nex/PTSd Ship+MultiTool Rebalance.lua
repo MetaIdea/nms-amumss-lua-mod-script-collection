@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "4_63"
+GameVersion = "5_03"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 RevertWeaponGripChanges = false		--false			Setting this to true will revert Rifle, Atlantid, Staff, and Sentinel(rifle-style) Multi-Tools back to using "WeaponLarge" tool sizing. This will re-enable the "rifle-style" grip animation instead of "pistol-style" when using them like in Vanilla, but also increase their maximum possible tech slots from 24 to 30
@@ -618,8 +618,8 @@ ToolStatChanges	=
 			"Royal"			--"Exotic"	(15% chance to be offered from defeated Sentinel Pillars. Always found at C Class?)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.3,	1.3,	1.3,	1.3},		--			+		0-5,		5-10,		10-15,		15-25	%
-			{"WEAPON_MINING",			1.3,	1.3,	1.3,	1.3},		--			+		5-10,		10-20,		20-25,		25-30	%
+			{"WEAPON_DAMAGE",			1.2,	1.2,	1.2,	1.2},		--			+		0-5,		5-10,		10-15,		15-25	%
+			{"WEAPON_MINING",			1.33,	1.33,	1.33,	1.33},		--			+		5-10,		10-20,		20-25,		25-30	%
 			{"WEAPON_SCAN",				0.9,	0.9,	0.9,	0.9}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
 		}
 	},
@@ -679,7 +679,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
-			{"WEAPON_MINING",			1.1,	1.1,	2.2,	2.2},		--			+		0-5,		5-10,		5-10,		10-15	%
+			{"WEAPON_MINING",			1.175,	1.175,	2.35,	2.35},		--			+		0-5,		5-10,		5-10,		10-15	%
 			{"WEAPON_SCAN",				1.5,	1.5,	1.5,	1.5}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},

@@ -1,9 +1,10 @@
 ModName = "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc"
-GameVersion = "4_63"
+GameVersion = "4_62"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
---Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
-ReactorSalvage = 		true				--false
+--WIP TEST:
+--allow salvaging C Class Reactor Cores from starships
+ReactorSalvageTest = false					--false		Enables this test
 
 --This is the price paid in Nanites to buy a random chart/map or to trade to Travelers for a small gift
 SmallNaniteCost =		20					--15
@@ -257,9 +258,9 @@ NewTravellerCost=
       </Property>
     </Property>]]
 	
-SalvageExoticCost =
+SalvageReactorCost =
 [[<Property value="GcCostTableEntry.xml">
-      <Property name="Id" value="C_SALVAGE_ROY" />
+      <Property name="Id" value="C_SALVAGE_COR" />
       <Property name="DisplayCost" value="True" />
       <Property name="DontCharge" value="False" />
       <Property name="HideOptionAndDisplayCostOnly" value="True" />
@@ -273,75 +274,22 @@ SalvageExoticCost =
       <Property name="CannotAffordOSDMsg" value="" />
       <Property name="MissionMessageWhenCharged" value="" />
       <Property name="Cost" value="GcCostSalvageShip.xml">
-        <Property name="WillGiveShipParts" value="False" />
+        <Property name="WillGiveShipParts" value="True" />
         <Property name="ShipClassStringOverride">
           <Property name="Freighter" value="NMSString0x20.xml">
             <Property name="Value" value="" />
           </Property>
           <Property name="Dropship" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
+            <Property name="Value" value="Salvage C-Class Reactor" />
           </Property>
           <Property name="Fighter" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
+            <Property name="Value" value="Salvage C-Class Reactor" />
           </Property>
           <Property name="Scientific" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
+            <Property name="Value" value="Salvage C-Class Reactor" />
           </Property>
           <Property name="Shuttle" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="PlayerFreighter" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Royal" value="NMSString0x20.xml">
-            <Property name="Value" value="Salvage some Scrap + Reactor" />
-          </Property>
-          <Property name="Alien" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Sail" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Robot" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-        </Property>
-        <Property name="CannotAffordIfStringOverrideIsNull" value="True" />
-      </Property>
-    </Property>]]
-
-SalvageShuttleCost =
-[[<Property value="GcCostTableEntry.xml">
-      <Property name="Id" value="C_SALVAGE_SHT" />
-      <Property name="DisplayCost" value="True" />
-      <Property name="DontCharge" value="False" />
-      <Property name="HideOptionAndDisplayCostOnly" value="True" />
-      <Property name="DisplayOnlyCostIfCantAfford" value="False" />
-      <Property name="HideCostStringIfCanAfford" value="False" />
-      <Property name="RemoveOptionIfCantAfford" value="True" />
-      <Property name="InvertCanAffordOutcome" value="False" />
-      <Property name="MustAffordInCreative" value="False" />
-      <Property name="CommunityContributionValue" value="0" />
-      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
-      <Property name="CannotAffordOSDMsg" value="" />
-      <Property name="MissionMessageWhenCharged" value="" />
-      <Property name="Cost" value="GcCostSalvageShip.xml">
-        <Property name="WillGiveShipParts" value="False" />
-        <Property name="ShipClassStringOverride">
-          <Property name="Freighter" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Dropship" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Fighter" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Scientific" value="NMSString0x20.xml">
-            <Property name="Value" value="" />
-          </Property>
-          <Property name="Shuttle" value="NMSString0x20.xml">
-            <Property name="Value" value="Salvage some Scrap + Reactor" />
+            <Property name="Value" value="Salvage C-Class Reactor" />
           </Property>
           <Property name="PlayerFreighter" value="NMSString0x20.xml">
             <Property name="Value" value="" />
@@ -576,59 +524,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 local ChangesToCostTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
-if ReactorSalvage then
+if ReactorSalvageTest then
 			ChangesToCostTable[#ChangesToCostTable+1] =
 			{
 				["PRECEDING_KEY_WORDS"] = {"GcCostTableEntry.xml"},
-				["ADD"] = SalvageExoticCost,
+				["ADD"] = SalvageReactorCost,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-			}
-			
-			ChangesToCostTable[#ChangesToCostTable+1] =
-			{
-				["PRECEDING_KEY_WORDS"] = {"GcCostTableEntry.xml"},
-				["ADD"] = SalvageShuttleCost,
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
-			}
-			
-			ChangesToCostTable[#ChangesToCostTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","C_SALVAGEPROD"},
-				["VALUE_CHANGE_TABLE"] 	= 
-				{
-					{"DontCharge", "False"},			--False
-					{"WillGiveShipParts", "True"},		--True		Try making false???
-					
-					--{"CannotAffordOSDMsg", "Extract Reactor Core"},
-					{"InvertCanAffordOutcome", "True"},			--False		Try making both of these true, and then only put in override strings for ones I don't want to salvage ie Alien
-					{"CannotAffordIfStringOverrideIsNull", "True"},	--False		Setting these both to true works!
-				}
-			}
-			
-			ChangesToCostTable[#ChangesToCostTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","C_SALVAGEPROD",		"Freighter", "NMSString0x20.xml"},
-				["VALUE_CHANGE_TABLE"] 	= 
-				{
-					{"Value", "No"},			--""
-				}
-			}
-			
-			ChangesToCostTable[#ChangesToCostTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","C_SALVAGEPROD",		"PlayerFreighter", "NMSString0x20.xml"},
-				["VALUE_CHANGE_TABLE"] 	= 
-				{
-					{"Value", "No"},			--""
-				}
-			}
-			
-			ChangesToCostTable[#ChangesToCostTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","C_SALVAGEPROD",		"Alien", "NMSString0x20.xml"},
-				["VALUE_CHANGE_TABLE"] 	= 
-				{
-					{"Value", "No"},			--""
-				}
 			}
 end

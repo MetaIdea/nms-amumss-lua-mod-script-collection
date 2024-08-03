@@ -15,64 +15,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = 
-                            {
-                                {"Name", "TREE46"},
-                                {"Name", "FERN"},
-                                {"Name", "MEDIUMBUSH"},
-                                {"Name", "LILY"},
-                            },
-                            ["REMOVE"] = "SECTION"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "NEWCROSSGRASS"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LILY"},
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="GcSelectableObjectList.xml">
-      <Property name="Name" value="TREE46" />
-      <Property name="Race" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/TREE46.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcSelectableObjectList.xml">
-      <Property name="Name" value="FERN" />
-      <Property name="Race" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcSelectableObjectList.xml">
-      <Property name="Name" value="MEDIUMBUSH" />
-      <Property name="Race" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/MEDIUMBUSH.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcSelectableObjectList.xml">
-      <Property name="Name" value="LILY" />
-      <Property name="Race" value="GcAlienRace.xml">
-        <Property name="AlienRace" value="None" />
-      </Property>
-      <Property name="Options">
-        <Property value="GcSelectableObjectData.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/ROCKY/GROUNDFLOWER.SCENE.MBIN" />
-        </Property>
-      </Property>
-    </Property>
     <Property value="GcSelectableObjectList.xml">
       <Property name="Name" value="GLOBES" />
       <Property name="Race" value="GcAlienRace.xml">

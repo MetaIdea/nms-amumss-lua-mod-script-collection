@@ -837,6 +837,17 @@ MedStandingReward =					4							--2		Reward for certain Space Station / Planetar
 HighStandingReward =				6							--3		Reward for certain Space Station / Planetary missions for either the local race or a Guild
 GuildStandingReward =				10							--5		May be just for missions posted by Guilds in Space Stations?
 
+--Alters the daily "items for nanites" trades offered by Iteration Ares at the Anomaly
+AresTradeChanges =
+{--Item amount	Trade Item Id			Min /	Max nanites per INDIVIDUAL item traded (final reward will be multiplied by item amount traded)
+	{"5",		"STORM_CRYSTAL",		"57",	"77"},		--"1",		"STORM_CRYSTAL",		"5",	"10"
+	{"10",		"CLAMPEARL",			"20",	"30"},		--"1",		"CLAMPEARL",			"5",	"15"
+	{"3",		"GEODE_ASTEROID",		"13",	"17"},		--"1",		"GEODE_ASTEROID",		"3",	"3"
+	{"5",		"GEODE_RARE",			"16",	"24"},		--"1",		"GRAVBALL",				"5",	"10"
+	{"10",		"CAVECUBE",				"11",	"15"},		--"1",		"CAVECUBE",				"5",	"10"
+	{"3",		"PIRATE_PROD",			"40",	"65"},		--"1",		"BP_SALVAGE",			"5",	"10"
+} 
+
 --Replaces certain gifts from Guild Envoys in Space Stations (may be obsolete in NMS v4.6+)
 GuildGiftChanges =
 {
@@ -2444,6 +2455,16 @@ CrashsiteTechRewards =
 	"FOURTH_CRA_OPT_A_6", 
 }
 
+function AresCostId (Number)
+    return
+[[C_NEXMILE_]]..Number..[[B]]
+end
+
+function AresRewardId (Number)
+    return
+[[R_DM_NEXMILES_]]..Number..[[]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -3635,6 +3656,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = AddUpgrade("UI_MECH_ENGINE_NAME_L", "0", math.floor(ExoClassCChance+ExoClassBChance), ExoClassAChance, ExoClassSChance),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Name","NPC_NEXUSMILES_OPT_B"},
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"KeepOpen",	"True"},			--Allows the player to continually trade items with Ares, like in Reikokuu & Babscoole's "Keep Gifting"
+				}
+			},
 		}
 	},
 	
@@ -4540,5 +4569,34 @@ for i = 1, #RemoveContainerRewards do
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "NPC_BUILD_GOTO",	"Value",	ContainerID},
 				["REMOVE"] = "SECTION"
+			}
+end
+
+local ChangesToRecurringMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["EXML_CHANGE_TABLE"]
+
+for i = 1, #AresTradeChanges do
+	local ItemAmount = AresTradeChanges[i][1]
+	local ItemID = AresTradeChanges[i][2]
+	local MinNanites = AresTradeChanges[i][3]
+	local MaxNanites = AresTradeChanges[i][4]
+
+			ChangesToRecurringMissions[#ChangesToRecurringMissions+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", AresRewardId (i)},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", math.floor(ItemAmount*MinNanites)},
+					{"AmountMax", math.floor(ItemAmount*MaxNanites)}
+				}
+			}
+			
+			ChangesToRecurringMissions[#ChangesToRecurringMissions+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", AresCostId (i),		"Cost", "GcCostProduct.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id", ItemID},
+					{"Amount", ItemAmount}
+				}
 			}
 end

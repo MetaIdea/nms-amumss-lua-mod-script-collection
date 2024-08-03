@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "5_00"
+GameVersion = "5_03"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 VesperSailDesc =
@@ -50,6 +50,15 @@ SalvageCockpit =
 SalvageSails =
 [[Salvage Sails + Reactor]]
 
+AresTradeItem4 = "Glowing Minerals"
+
+AresTradeItem6 = "Pirate Transponders"
+
+function AresTradeOffer (ItemName)
+    return
+[[Traveller hopes to make progress. Traveller tests themselves. I will help. An exchange. Progress for progress.&#xA;Or wealth, perhaps. Experience or materials. Both valid. Today... &lt;STELLAR&gt;]]..ItemName..[[&lt;&gt;.]]
+end
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -77,6 +86,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", NipNipTime}
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_LOC5_ENGLISH.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_NEXUSMILES_LANG_3"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AresTradeOffer (AresTradeItem4)}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_NEXUSMILES_LANG_6"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AresTradeOffer (AresTradeItem6)}
 							}
 						},
 					}
