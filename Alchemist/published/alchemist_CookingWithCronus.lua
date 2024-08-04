@@ -6,7 +6,7 @@ whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
 GameVersion = "5-03"
-ModVersion = "1-4-1"
+ModVersion = "1-4-2"
 
 --
 
@@ -33270,8 +33270,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="210" />
+                  <Property name="AmountMax" value="263" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33293,8 +33293,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="1050" />
+                  <Property name="AmountMax" value="1313" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33316,8 +33316,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="2100" />
+                  <Property name="AmountMax" value="2625" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33339,8 +33339,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="180" />
+                  <Property name="AmountMax" value="225" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33362,8 +33362,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="900" />
+                  <Property name="AmountMax" value="1125" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33385,8 +33385,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="1800" />
+                  <Property name="AmountMax" value="2250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33408,8 +33408,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1093" />
-                  <Property name="AmountMax" value="1093" />
+                  <Property name="AmountMin" value="190" />
+                  <Property name="AmountMax" value="238" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33431,8 +33431,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1093" />
-                  <Property name="AmountMax" value="1093" />
+                  <Property name="AmountMin" value="950" />
+                  <Property name="AmountMax" value="1188" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33454,8 +33454,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1093" />
-                  <Property name="AmountMax" value="1093" />
+                  <Property name="AmountMin" value="1900" />
+                  <Property name="AmountMax" value="2375" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33477,8 +33477,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1150" />
-                  <Property name="AmountMax" value="1150" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33500,8 +33500,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1150" />
-                  <Property name="AmountMax" value="1150" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33523,8 +33523,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1150" />
-                  <Property name="AmountMax" value="1150" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33546,8 +33546,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="210" />
+                  <Property name="AmountMax" value="263" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33569,8 +33569,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="1050" />
+                  <Property name="AmountMax" value="1313" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33592,8 +33592,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1208" />
-                  <Property name="AmountMax" value="1208" />
+                  <Property name="AmountMin" value="2100" />
+                  <Property name="AmountMax" value="2625" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33615,8 +33615,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="180" />
+                  <Property name="AmountMax" value="225" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33638,8 +33638,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="900" />
+                  <Property name="AmountMax" value="1125" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33661,8 +33661,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="1035" />
-                  <Property name="AmountMax" value="1035" />
+                  <Property name="AmountMin" value="1800" />
+                  <Property name="AmountMax" value="2250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33684,8 +33684,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33719,8 +33719,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33754,8 +33754,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33789,8 +33789,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33824,8 +33824,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33859,8 +33859,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33894,8 +33894,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33929,8 +33929,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33964,8 +33964,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -33999,8 +33999,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34034,8 +34034,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34069,8 +34069,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34104,8 +34104,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34139,8 +34139,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34174,8 +34174,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34209,8 +34209,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34244,8 +34244,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34279,8 +34279,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34314,8 +34314,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34349,8 +34349,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34384,8 +34384,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34419,8 +34419,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34454,8 +34454,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
@@ -34489,8 +34489,8 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2300" />
-                  <Property name="AmountMax" value="2300" />
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />

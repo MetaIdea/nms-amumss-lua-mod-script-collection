@@ -7,7 +7,7 @@ whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
 GameVersion = "5-03"
-ModVersion = "1-4-1"
+ModVersion = "1-4-2"
 
 -- =========
 -- CONSTANTS
