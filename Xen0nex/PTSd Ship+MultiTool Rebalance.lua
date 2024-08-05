@@ -2,8 +2,6 @@ ModName = "PTSd Ship+MultiTool Rebalance"
 GameVersion = "5_03"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
-RevertWeaponGripChanges = false		--false			Setting this to true will revert Rifle, Atlantid, Staff, and Sentinel(rifle-style) Multi-Tools back to using "WeaponLarge" tool sizing. This will re-enable the "rifle-style" grip animation instead of "pistol-style" when using them like in Vanilla, but also increase their maximum possible tech slots from 24 to 30
-
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
 --LandingCost = 	50									--0		(TakeOffCost is 100)	[18]		Unknown function
 
@@ -508,16 +506,16 @@ CostChanges	=
 		},
 		{													--MinSlots & MaxSlots here don't actually control slots, just lets the game know how many slots to expect on spawned tools in order to extrapolate the price at different toolsizes (in vanilla many of these slot values are inaccurate)
 		--Base value in millions 	MinValue	MaxValue	MinSlots	MaxSlots																	Price at Class C with lowest inventory and at Class S with highest inventory as seen in game v3.99 by players and catalogued to the wiki	(And max S rank cost after undoing the S rank cost bonus)
-			{"Pistol",				0.08,		0.4*2.5,	6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
-			{"Rifle",				0.635,		3*1.25,		10,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	30		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
-			{"Pristine",			0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Royal",				1.5*0.33,	7.5*0.4125,	10,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
-			{"Alien",				0.5,		5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
-			{"Robot",				1,			5*1.25,		6,			20},		--Vanilla values are 0.5 mil,		6 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
-			{"Atlas",				2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
-			{"AtlasYellow",			2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
-			{"AtlasBlue",			2.5,		5,			6,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
-			{"Staff",				1,			4*1.25,		6,			20}			--Vanilla values are 0.5 mil,		4 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
+			{"Pistol",				0.08*1.8,	1,			6,			20},		--Vanilla values are 0.08 mil,		0.28 mil,		10,	30		Catalogued at 0.0455 mil	~	1.165 mil	(0.388 mil)		5	~	10	tech slots initially
+			{"Rifle",				0.635*2,	3.75,		13,			20},		--Vanilla values are 1.5 mil,		4 mil,			17,	30		Catalogued at 0.635 mil		~	3.7 mil		(2.96 mil)		11	~	24	tech slots initially
+			{"Pristine",			0.5,		6.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
+			{"Royal",				0.5,		3,			9,			20},		--Vanilla values are 1 mil,			7 mil,			13,	30		Catalogued at 5.15 mil		~	??? mil		(??? mil)		11	~	???	tech slots initially	(Only offered as C Class from Pillars?)
+			{"Alien",				0.5,		6.25,		6,			20},		--Vanilla values are 0.5 mil,		5 mil,			11,	30		Catalogued at 0.5 mil		~	7.5 mil		(5 mil)			5	~	24	tech slots initially
+			{"Robot",				1*1.8,		6.25,		9,			20},		--Vanilla values are 0.5 mil,		6 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially	Has CoolMultiplier of 20
+			{"Atlas",				2.5*1.36,	5,			9,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		The price in nanites at monoliths will be the units value divided by 1,250
+			{"AtlasYellow",			2.5*1.36,	5,			9,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		The price in nanites at monoliths will be the units value divided by 1,250
+			{"AtlasBlue",			2.5*1.36,	5,			9,			20},		--Vanilla values are 0.5 mil,		5 mil,			17,	30		The price in nanites at monoliths will be the units value divided by 1,250
+			{"Staff",				1*3.5,		5,			13,			20}			--Vanilla values are 0.5 mil,		4 mil,			17,	30		Catalogued at ??? mil		~	??? mil		(??? mil)		???	~	???	tech slots initially
 		}
 	},
 }
@@ -575,7 +573,7 @@ CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
 --Extra multiplier for Pistol's WEAPON_MINING Min value at S Class to make it equivalent to being +25-35% instead of +20-35%
 PistolMiningSMinMult =			1.25					--1
 --Extra multiplier for Sentinel & Staff Multi-Tool's WEAPON_DAMAGE Min value at S Class to make it equivalent to being +35-50% instead of +32-50%
-SentinelDamageSMinMult =		1.09375						--1
+SentinelDamageSMinMult =		1.09375					--1
 --Extra multipliers for the "Min" Scanning value of S Class Experimental & Royal Multi-tools, so they have an effective "base" range of bonuses of 90-100 instead of always exactly 100 at S Class, before apply the modifiers in ToolStatChanges below
 ExperimentalScanSMinMult =		0.9						--1		(Base is 100)
 RoyalScanSMinMult =				0.9						--1		(Base is 100)
@@ -685,78 +683,48 @@ ToolStatChanges	=
 	},
 }
 
---If the game tries to spawn a Multi-Tool in a Space Station with a number of slots which can't fit in the TechBounds below, the game crashes when warping to that system
+--If the game tries to spawn a Multi-Tool in a Space Station with a number of slots which can't fit in the X Y bounds below, the game crashes when warping to that system
 ToolBounds = 
 {	--Maximum Width(X) and Height(Y) for the boundaries where slots can appear in inventories for different size classes of multi-tools
 	{
-		{"WeaponSmall"},	--Pistols,	by default, supercharged slots within X=5, Y=3	(upper left slot is X=0, Y=0)
-		{
-			{
-				{"Bounds"},		--Cargo	X	Y			Cargo	X	Y		Unclear if Cargo slots have any effect
-				{						5,	3},				--	6,	3		Small
-				{						7,	3},				--	7,	3		Standard
-				{						8,	3},				--	10,	6		Large
-			},
-			{
-				{"TechBounds"},--Tech	X	Y			Tech	X	Y
-				{						5,	3},				--	6,	3		Small
-				{						7,	3},				--	7,	3		Standard
-				{						8,	3},				--	10,	6		Large
-			},
-		},
+		{"WeaponSmall"},	--Pistols,(Sometimes Alien/Experimental ?) default supercharged slots within X=5, Y=3	(upper left slot is X=0, Y=0)
+	--	X	Y					X	Y
+		{4,	3},				--	6,	3		Small
+		{5,	3},				--	7,	3		Standard
+		{8,	3},				--	10,	6		Large
 	},
 	{
-		{"WeaponMedium"},	--???,	supercharged slots within X=6, Y=3	(upper left slot is 0,0)
-		{
-			{
-				{"Bounds"},		--Cargo	X	Y			Cargo	X	Y		Unclear if Cargo slots have any effect
-				{						6,	3},				--	6,	3		Small
-				{						7,	3},				--	8,	3		Standard
-				{						8,	3},				--	10,	6		Large
-			},
-			{
-				{"TechBounds"},--Tech	X	Y			Tech	X	Y
-				{						6,	3},				--	6,	3		Small
-				{						7,	3},				--	8,	3		Standard
-				{						8,	3},				--	10,	6		Large
-			},
-		},
+		{"WeaponMedium"},	--Royal/Alien/Experimental & the smaller Sentinel Multi-Tools,(Sometimes Atlantid ?) default supercharged slots within X=6, Y=3	(upper left slot is 0,0)
+	--	X	Y					X	Y
+		{5,	3},				--	6,	3		Small
+		{6,	3},				--	8,	3		Standard
+		{8,	3},				--	10,	6		Large
 	},
 	{
-		{"WeaponLarge"},	--???,	supercharged slots within X=6, Y=4	(upper left slot is 0,0)
-		{
-			{
-				{"Bounds"},		--Cargo	X	Y			Cargo	X	Y		Unclear if Cargo slots have any effect
-				{						7,	3},				--	8,	3		Small
-				{						10,	3},				--	10,	3		Standard	("WeaponLarge" is unused by default in PTSd, but needs to have at least 30 slots on Standard & Large sizes to avoid a crash if it is enabled)
-				{						10,	3},				--	10,	6		Large
-			},
-			{
-				{"TechBounds"},--Tech	X	Y			Tech	X	Y
-				{						7,	3},				--	8,	3		Small
-				{						10,	3},				--	10,	3		Standard
-				{						10,	3},				--	10,	6		Large
-			},
-		},
+		{"WeaponLarge"},	--Rifles/Atlantid/Staff & the larger Sentinel Multi-Tools, default supercharged slots within X=6, Y=4	(upper left slot is 0,0)
+	--	X	Y					X	Y
+		{6,	3},				--	8,	3		Small
+		{7,	3},				--	10,	3		Standard
+		{8,	3},				--	10,	6		Large
 	},
 }
 
---Initial slots found on different size Multi-Tools (Pistols only come in Small), and the X & Y bounds for where supercharged slots can appear (upper left slot is 0, 0)
-	--For some reason, the game does not always abide by the Min & Max values set here, and uses the vanilla values anyway. If the game tries to spawn a Multi-Tool in a Space Station with a number of slots which can't fit in the TechBounds above, the game crashes when warping to that system
+--Initial slots found on different size Multi-Tools and the X & Y bounds for where supercharged slots can appear (upper left slot is 0, 0)
+	--NOTE: If the game tries to spawn a Multi-Tool in a Space Station with a number of slots set below larger than can fit in the X Y bounds set above, the game crashes when warping to that system
 ToolSizeChanges =
 {						--	Min		Max		Charged slot bounds X	Y				Min		Max		Charged slot bounds X	Y
-	{"WeaponSmall",			6,		9,							5,	2},			--	9,		18,							5,	3
-	{"WeaponMedium",		10,		16,							6,	2},			--	13,		20,							6,	3
-	{"WeaponLarge",			12,		16,							7,	2}			--	17,		30,							6,	4
+	{"WeaponSmall",			6,		8,							4,	2},			--	9,		18,							5,	3
+	{"WeaponMedium",		9,		12,							6,	2},			--	13,		20,							6,	3
+	{"WeaponLarge",			13,		16,							7,	2}			--	17,		30,							6,	4
 }
 
---Changes the "SizeType" of Rifles and Sentinel Multi-Tools. Normally Pistols are WeaponSmall, Rifles are WeaponLarge, and all others are WeaponMedium
+--Changes the "SizeType" of Rifles and Sentinel Multi-Tools. Normally Pistols are WeaponSmall, Rifles/Atlantid/Staff & the larger Sentinel Multi-Tools are WeaponLarge, and Royal/Alien/Experimental & the smaller Sentinel Multi-Tools are WeaponMedium
 	--Changing this value appears to also change what type of grip animation the game uses when holding the multi-tool, from pistol style grip for WeaponSmall & WeaponMedium, to a rifle style grip for WeaponLarge
-RifleSize =				"WeaponMedium"				--"WeaponLarge"			Changed away from WeaponLarge so the game won't try to spawn multi-tools with more than 24 slots which crashes the game with PTSd's smaller Multi-Tool TechBounds size
-AtlasSize =				"WeaponMedium"				--"WeaponLarge"
-StaffSize =				"WeaponMedium"				--"WeaponLarge"
-SentinelRifleSize =		"WeaponMedium"				--"WeaponLarge"
-SentinelPistolSize =	"WeaponSmall"				--"WeaponMedium"
+RifleSize =				"WeaponLarge"				--"WeaponLarge"
+AtlasSize =				"WeaponLarge"				--"WeaponLarge"
+StaffSize =				"WeaponLarge"				--"WeaponLarge"
+SentinelRifleSize =		"WeaponLarge"				--"WeaponLarge"
+SentinelPistolSize =	"WeaponMedium"				--"WeaponMedium"
 
 --Replacers for maximum UPGRADEABLE Inventory size for all Multi-Tools. NOT initial sizes for spawned Multi-Tools.
 ToolUpgradeSizeChanges	=
@@ -1095,58 +1063,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
-if RevertWeaponGripChanges then
-	ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_Y"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_B"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOTBIG"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-						ChangesToInventoryTable[#ChangesToInventoryTable+1] =
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_STAFF"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SizeType",	"WeaponLarge"},
-							}
-						}
-end
 if FixAgilityStat then
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
@@ -1366,22 +1282,18 @@ for i = 1, #ToolStatChanges do
 end
 for i = 1, #ToolBounds do
 	local ToolSize = ToolBounds[i][1][1]
-	local BoundTypes = ToolBounds[i][2]
-	
-	for j = 1, #BoundTypes do
-		local BoundType = BoundTypes[j][1][1]
-		local MaxWidthSmall = BoundTypes[j][2][1]
-		local MaxHeightSmall = BoundTypes[j][2][2]
-		local MaxWidthStandard = BoundTypes[j][3][1]
-		local MaxHeightStandard = BoundTypes[j][3][2]
-		local MaxWidthLarge = BoundTypes[j][4][1]
-		local MaxHeightLarge = BoundTypes[j][4][2]
+	local MaxWidthSmall = ToolBounds[i][2][1]
+	local MaxHeightSmall = ToolBounds[i][2][2]
+	local MaxWidthStandard = ToolBounds[i][3][1]
+	local MaxHeightStandard = ToolBounds[i][3][2]
+	local MaxWidthLarge = ToolBounds[i][4][1]
+	local MaxHeightLarge = ToolBounds[i][4][2]
 
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
 				["MATH_OPERATION"] 		= "",
 				--["REPLACE_TYPE"] 		= "ALL",
-				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry.xml",	BoundType, "GcInventoryLayoutGenerationBounds.xml"},
+				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"MaxWidthSmall", MaxWidthSmall},
@@ -1392,7 +1304,22 @@ for i = 1, #ToolBounds do
 					{"MaxHeightLarge", MaxHeightLarge},
 				}
 			}
-	end
+			
+			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+			{
+				["MATH_OPERATION"] 		= "",
+				--["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {ToolSize, "GcInventoryLayoutGenerationDataEntry.xml",	"TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"MaxWidthSmall", MaxWidthSmall},
+					{"MaxHeightSmall", MaxHeightSmall},
+					{"MaxWidthStandard", MaxWidthStandard},
+					{"MaxHeightStandard", MaxHeightStandard},
+					{"MaxWidthLarge", MaxWidthLarge},
+					{"MaxHeightLarge", MaxHeightLarge},
+				}
+			}
 end
 for i = 1, #ToolSizeChanges do
 	local ToolSize = ToolSizeChanges[i][1]
@@ -1411,6 +1338,8 @@ for i = 1, #ToolSizeChanges do
 							{
 								{"MinSlots",	MinSlots},
 								{"MaxSlots",	MaxSlots},
+								{"MinTechSlots",	MinSlots},
+								{"MaxTechSlots",	MaxSlots},
 								{"X",	X},
 								{"Y",	Y},
 							}

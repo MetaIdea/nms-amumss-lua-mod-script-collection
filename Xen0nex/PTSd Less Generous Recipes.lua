@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "5_01"
+GameVersion = "5_03"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -565,6 +565,31 @@ RecipeChanges =
 			{"CATALYST2",		1}										--Requires Sodium Nitrate		x1
 		}
 	},
+	--Speeds up the recipe chain for Residual Goop --> ... --> Runaway Mould --> Nanites so it doesn't take prohibitively long to do.
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_51",		1,					30},				--Makes Viscous Fluids ( Jn )	x1		in	150 time
+		{
+			{"SPACEGUNK1",		1}										--Requires Residual Goop ( Jn )	x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_52",		1,					100},				--Makes Nanites					x1		in	150 time
+		{
+			{"SPACEGUNK2",		5}										--Requires Runaway Mould ( Jn )	x5
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_54",		1,					30},				--Makes Runaway Mould ( Jn )	x1		in	150 time
+		{
+			{"SPACEGUNK4",		1}										--Requires Living Slime ( Jn )	x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_55",		1,					30},				--Makes Living Slime ( Jn )		x1		in	150 time
+		{
+			{"SPACEGUNK5",		1}										--Requires Viscous Fluids ( Jn )x1
+		}
+	},
 }
 
 --Nerfs simple recipes that were too generous (These recipes all have the same ID so need to be searched by RecipeType instead)
@@ -607,10 +632,18 @@ RecipeIngredientChanges =
 RecipeOutputChanges =
 {
 	--Switches the output so the recipe isn't a total loss
-	{												--Amount per batch	--Time per batch
-		{"REFINERECIPE_3",		"SPACEGUNK2",		666,				60},	--Makes "SPACEGUNK4" Living Slime   ( Jn )		x50		in	60 time
+	{							--PTSd output		--Amount per batch	--Time per batch
+		{"REFINERECIPE_3",		"SPACEGUNK2",		666,				60},	--Makes "SPACEGUNK4" Living Slime ( Jn )		x50		in	60 time
 		{--Vanilla ingredient	PTSd ingredient
 			{"EYEBALL",			"EYEBALL",			1},							--Requires Hypnotic Eye		x1
+		}
+	},
+	--This recipe takes an incredibly long time and is over ~10x less efficient than the alternative in vanilla
+	{							--PTSd output		--Amount per batch	--Time per batch
+		{"REFINERECIPE_330",	"SPACEGUNK1",		5,					150},	--Makes "SPACEGUNK4" Living Slime ( Jn )		x1		in	3600 time
+		{--Vanilla ingredient	PTSd ingredient
+			{"ROBOT2",			"ROBOT2",			1},							--Requires Atlantideum   ( ∞ )	x5
+			{"CREATURE1",		"CREATURE1",		2}							--Requires Mordite   ( Mo )		x5
 		}
 	},
 }

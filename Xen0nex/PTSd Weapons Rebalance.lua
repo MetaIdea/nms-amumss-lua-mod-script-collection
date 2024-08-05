@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "5_01"
+GameVersion = "5_03"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -646,28 +646,28 @@ WeaponStatChanges =
 				"Ship_Weapons_Guns_Damage",	PhotonCannonDMG*GSD/USCMult,	"FORCE"	--320		(2,400 theoretical burst DPS)
 			},
 			{
-				"Ship_Weapons_Guns_Rate",	0.6/USCMult,	"FORCE"					--7.5
+				"Ship_Weapons_Guns_Rate",	0.6/USCMult,	"FORCE"					--7.5		controls how rapidly the weapon fires
 			},
 			{
-				"Ship_Weapons_Guns_Range",	1/USCMult,	"PRESERVE"					--1500
+				"Ship_Weapons_Guns_Range",	1/USCMult,	"PRESERVE"					--1500		controls how far away targets can be and still get hit / take full damage
 			},
 			{
-				"Ship_Weapons_Guns_Dispersion",	1/USCMult,	"FORCE"				--0
+				"Ship_Weapons_Guns_Dispersion",	1/USCMult,	"FORCE"				--0		controls how spread out projectiles are from your crosshairs, ie making this value larger makes the weapon less accurate / have more bullet spread
 			},
 			{
-				"Ship_Weapons_Guns_BulletsPerShot",	1,	"PRESERVE"				--1
+				"Ship_Weapons_Guns_BulletsPerShot",	1,	"PRESERVE"				--1		control the number of projectiles
 			},
 			{
-				"Ship_Weapons_Guns_HeatTime",	0.8/USCMult,	"FORCE"				--7.5
+				"Ship_Weapons_Guns_HeatTime",	0.8/USCMult,	"FORCE"				--7.5		controls how quickly it builds up heat
 			},
 			{
-				"Ship_Weapons_Guns_CoolTime",	1,	"FORCE"				--1
+				"Ship_Weapons_Guns_CoolTime",	1,	"FORCE"				--1		controls how quickly the weapon loses heat when not firing
 			},
 			{
-				"Ship_Weapons_Guns_Scale",	1/USCMult,	"FORCE"				--6
+				"Ship_Weapons_Guns_Scale",	1/USCMult,	"FORCE"				--6		controls the size of the projectiles
 			},
 			{
-				"Ship_Weapons_Guns_Damage_Radius",	1/USCMult,	"FORCE"				--2
+				"Ship_Weapons_Guns_Damage_Radius",	1/USCMult,	"FORCE"				--2		 I believe this controls the size of the AOE damage on projectile impact?
 			}
 		}
 	},
@@ -1055,6 +1055,9 @@ WeaponProjChanges =
 		{
 			{
 				"DroneImpulse",	0.15				--5		How far it knocks back sentinel drones on hit
+			},
+			{
+				"CriticalHitModifier",	0.73		--1.5
 			},
 		}
 	},

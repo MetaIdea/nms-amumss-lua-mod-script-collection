@@ -20,11 +20,14 @@ VenomTime =
 NipNipTime =
 [[This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic planting indoors. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours 20 mins&lt;&gt;]]
 
+GroundCombatDesc =
+[[While exploring on foot, explorers may be confronted by hostile forces such as &lt;SPECIAL&gt;Sentinels&lt;&gt; and &lt;SPECIAL&gt;alien monstrosities&lt;&gt;.&#xA;&#xA;This setting adjusts the frequency of such hostile encounters.&#xA;&#xA;Note that as in vanilla, the &lt;FUEL&gt;Hostile&lt;&gt; setting will also increase the chances of some planets having &lt;FUEL&gt;Aggressive Sentinels&lt;&gt;, particularly &lt;GREEN&gt;Lush&lt;&gt; planets.]]
+
 SettlementRate =
 [[%NUM% every 6 hours]]
 
 SalvageConfirm =
-[[&lt;FUEL&gt;WARNING:&lt;&gt; starship '&lt;STELLAR&gt;%SHIPNAME%&lt;&gt;' will be destroyed along with all cargo.&lt;NEWLINE&gt;Select desired &lt;TECHNOLOGY&gt;customisation module&lt;&gt; to confirm salvage operation...&lt;NEWLINE&gt;Does not work on &lt;FUEL&gt;Living,&lt;&gt; or &lt;FUEL&gt;Interceptor&lt;&gt; starships]]
+[[&lt;FUEL&gt;WARNING:&lt;&gt; starship '&lt;STELLAR&gt;%SHIPNAME%&lt;&gt;' will be destroyed along with all cargo.&lt;NEWLINE&gt;Select desired &lt;TECHNOLOGY&gt;customisation module&lt;&gt; to confirm salvage operation...&lt;NEWLINE&gt;Does not work on &lt;FUEL&gt;Living&lt;&gt; or &lt;FUEL&gt;Interceptor&lt;&gt; starships]]
 
 SalvageAttempt =
 [[Attempt to extract Reactor]]
@@ -49,6 +52,30 @@ SalvageCockpit =
 
 SalvageSails =
 [[Salvage Sails + Reactor]]
+
+UI_DIFFICULTY_DIFFICULTY_DESC =
+[[Most difficulty settings can be changed at any time, as often as you wish.&#xA;&#xA;Some settings can only be changed before starting a new game. Select &quot;Custom&quot; when choosing a new game to fully customise these settings.&#xA;&#xA;Note that difficulty cannot be changed while a multiplayer mission is active.&#xA;&#xA;&lt;FUEL&gt;Survival&lt;&gt;: the default PTSd experience&#xA;&#xA;&lt;FUEL&gt;Normal&lt;&gt;: PTSd Lite, with key things such as damage and hazards reduced&#xA;&#xA;&lt;FUEL&gt;Relaxed&lt;&gt;: closer to the vanilla level of challenge but still with the PTSd rebalancing of rewards, etc.&#xA;&#xA;&lt;FUEL&gt;Permadeath&lt;&gt;: Periodic backups recommended in case of unexpected deaths from mod-glitches]]
+
+GAMEMODE_SURVIVAL_SUBTITLE =
+[[A survival challenge: the default PTSd experience intended to be challenging but generally fair]]
+
+GAMEMODE_SURVIVAL_SUB_SHORT =
+[[A survival challenge: the default PTSd experience]]
+
+GAMEMODE_NORMAL_SUBTITLE =
+[[An infinite journey: PTSd Lite, with key things such as damage and hazard reduced. Explore and survive in a boundless universe]]
+
+GAMEMODE_NORMAL_SUB_SHORT =
+[[An infinite journey: PTSd Lite]]
+
+GAMEMODE_RELAXED_SUBTITLE =
+[[A streamlined experience: fewer systems to manage, lower costs, closer to the vanilla level of challenge but still with the PTSd rebalancing of rewards, etc.]]
+
+GAMEMODE_PERMADEATH_SUBTITLE =
+[[Extreme survival challenge: save is wiped upon death. Recommended to make periodic backups in case of deaths due to unexpected or glitched modded behavior]]
+
+GAMEMODE_PERMADEATH_SUB_SHORT =
+[[Extreme survival challenge: Periodic backups recommended]]
 
 AresTradeItem4 = "Glowing Minerals"
 
@@ -86,6 +113,48 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", NipNipTime}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_SURVIVAL_SUBTITLE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_SURVIVAL_SUBTITLE}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_SURVIVAL_SUB_SHORT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_SURVIVAL_SUB_SHORT}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_NORMAL_SUBTITLE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_NORMAL_SUBTITLE}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_NORMAL_SUB_SHORT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_NORMAL_SUB_SHORT}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_PERMADEATH_SUBTITLE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_PERMADEATH_SUBTITLE}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_PERMADEATH_SUB_SHORT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_PERMADEATH_SUB_SHORT}
 							}
 						},
 					}
@@ -139,6 +208,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", VesperSailDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GROUND_COMBAT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GroundCombatDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_DIFFICULTY_DIFFICULTY_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", UI_DIFFICULTY_DIFFICULTY_DESC}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "GAMEMODE_RELAXED_SUBTITLE"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GAMEMODE_RELAXED_SUBTITLE}
 							}
 						},
 					}

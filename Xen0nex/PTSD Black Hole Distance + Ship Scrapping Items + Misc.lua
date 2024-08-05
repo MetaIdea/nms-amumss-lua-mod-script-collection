@@ -9,7 +9,7 @@ SpecialTechSlotBonus =					1.2									--1.25
 StormBonusMiningAmountMod =				1.9									--2.55
 
 --Trade Rocket fuel use?	(Uses Tritium as fuel by default, has ChargeAmount of 50 by default) (charging amount altered in PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua)
-RocketFuelUse =		10									--10
+RocketFuelUse =							10									--10
 
 --Affects distance that a black hole will warp you towards the galaxy center
 BlackHoleJumpVoxelDist =				45									--15
