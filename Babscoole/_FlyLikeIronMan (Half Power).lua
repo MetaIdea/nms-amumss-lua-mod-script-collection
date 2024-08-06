@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_FlyLikeIronMan V1.1 (Half Power).pak",
+["MOD_FILENAME"]  = "_FlyLikeIronMan V1.2 (Half Power).pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "5.03",
@@ -61,6 +61,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Curve", "SmoothInOut"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCCAMERAGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterAirborneCam", "GcCameraFollowSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"BackMaxDistance", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"CharacterFallingCam", "GcCameraFollowSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SpeedRange",                    "10"},
+                                {"OffsetX",                       "0"},
+                                {"BackMaxDistance",               "2"},
+                                {"UpMaxDistance",                 "0"},
+                                {"PanNear",                       "0"},
+                                {"PanFar",                        "10"},
+                                {"HorizRotationAngleMaxPerFrame", "10"},
+                                {"DistSpeedOutsideMainRange",     "5"},
+                                {"SpringSpeed",                   "0.065"},
+                                {"CenterStartTime",               "0"},
+                                {"CenterBlendTime",               "0"},
+                                {"CenterMaxSpring",               "0"},
+                                {"CenterMaxSpeed",                "0"},
+                                {"VelocityAnticipate",            "0"},
+                                {"VelocityAnticipateSpringSpeed", "0"},
+                                {"UseSpeedBasedSpring",           "False"},
                             }
                         },
                     }

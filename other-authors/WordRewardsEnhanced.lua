@@ -4,18 +4,18 @@ luaAuthor = "Umaroth"
 modName = "WordRewardsEnhanced"
 description = "Increases the number of words learned from nearly all sources. Fully configurable. Also optionally adds word rewards to all Atlas Orbs as well as increasing Salvaged Data rewards."
 gameVersion = "5.3"
-modVersion = "1.3"
+modVersion = "1.4"
 
 -- ======== SETTINGS ========
 -- Edit to your preference. Have not tested Maximums. Always edits 'METADATA\REALITY\TABLES\REWARDTABLE.MBIN'.
 STONE_WORDS        = 2       -- Word Stones.
-ENCYCLO_WORDS      = 4       -- Encylopedias, set to 0 for same as Word Stones and to avoid editing 'MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN'
+ENCYCLO_WORDS      = 4       -- Encylopedias. Set to 0 or same as Word Stones to avoid editing 'MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN'
 CHAT_WORDS         = 3       -- NPC Dialogue Options. Applies to all races except for Altas. (Including Autophage/Builder)
 WORD_WORDS         = 5       -- Not 100% certain where these are given but I've had it happen in the main quest from an NPC just after installing Artemis' translator. Only Traders, Explorers and Warriors have these so I believe these are Non-Autophage(Builder) quest rewards.
 TEACHWORD_WORDS    = 5       -- This applies to NPCs in Buildings, Ancient Ruins and Ancient Plaques. (I think it also applies to Autophage quests but haven't been able to test that yet.)
 ATLAS_WORDS        = 3       -- Atlas glowing orbs are linked to TEACHWORD_ATLAS but I made Atlas a separate option from the other races.
 ALL_ATLAS_ORBS     = "Y"     -- Add words to all Atlas Orbs? Y/N - Setting to N avoids editing 'MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB_DUMMY\ENTITIES\ORBSTONE_DUMMY.ENTITY.MBIN'
-KEEP_CATEGORY      = "N"     -- Keep category selected during dialogue with NPC? Y/N | Note: Even if set to "Y" there will always be one random-category word. (so if you only get one word it's because you're out of words in that category and got only the random one)
+KEEP_CATEGORY      = "N"     -- Keep category selected during dialogue with NPC? Y/N | Note: Will always give random word if set to "N" and always give categoried word if set to "Y". If set to "Y" and you receive 0 words it's because that category is done.
 INCLUDE_SALV_DATA  = "Y"     -- Also Boost Salvaged Data? Y/N
 SALV_DATA_MIN      = 8
 SALV_DATA_MAX      = 16
@@ -37,15 +37,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 MBIN_CT = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CT"]
 REWARDTABLE_EXML_CT = MBIN_CT[1]["EXML_CT"]
 
---This code block will be repeated once for each additional word
+--This code block will be repeated once for each additional word with edits to race and category as needed
 REWARDTABLEITEM = [[<Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="LabelID" value="" /><Property name="Reward" value="GcRewardTeachWord.xml"><Property name="Race" value="GcAlienRace.xml"><Property name="AlienRace" value="None" /></Property><Property name="UseCategory" value="False" /><Property name="Category" value="GcWordCategoryTableEnum.xml"><Property name="wordcategorytableEnum" value="MISC" /></Property><Property name="AmountMin" value="1" /><Property name="AmountMax" value="1" /></Property></Property>]]
 
 --STONE SECTION
-if STONE_WORDS >= 2 then                                                                   --Don't need to add code if only 1 word.
+if STONE_WORDS > 1 then                                                                   --Don't need to add code if only 1 word.
 	local STONE_CODE = string.rep(REWARDTABLEITEM, STONE_WORDS - 1)                        --Just have to repeat REWARDTABLEITEM the chosen number of times, -1 because there's one of these reward code blocks already there.
 	local temp_table =                                                                     --Create temporary table to add to above ["EXML_CT"].
 		{
-			["SKW"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
+			["SKW"] = {"Id", "WORD"},
+			["PKW"] = "GcRewardTableItem.xml",
 			["ADD_OPTION"]  = "ADDafterSECTION",
 
 			["ADD"] = STONE_CODE,
@@ -84,12 +85,13 @@ if ENCYCLO_WORDS > 0 and ENCYCLO_WORDS ~= STONE_WORDS then                      
 	local ENYCLO_CODE = string.rep(REWARDTABLEITEM, ENCYCLO_WORDS - 1)
 	temp_table = 
 		{
-			["SKW"] = {"Id", "WORD_ENCYCLO", "PercentageChance", "IGNORE"},
+			["SKW"] = {"Id", "WORD_ENCYCLO"},
+			["PKW"] = "GcRewardTableItem.xml",
 			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = ENYCLO_CODE,
 		}
-	if ENCYCLO_WORDS >= 2 then                                                               --Don't need to add this code if only 1 word
+	if ENCYCLO_WORDS > 1 then                                                               --Don't need to add this code if only 1 word
 		REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
 	end
 end
@@ -98,19 +100,19 @@ end
 WORD_TABLE = {{"TRA_WORD","Traders"},{"EXP_WORD","Explorers"},{"WAR_WORD","Warriors"}}       --Table of WORD ID's and their matching values to replace "None" inside REWARDTABLEITEM to target correct race
 
 for i=1,#WORD_TABLE do                                                                       --Loop through WORD ID's to target each.
-	local ID = WORD_TABLE[i][1]
 	local WORD_CODE = string.gsub(REWARDTABLEITEM, "None", WORD_TABLE[i][2])                 --Replace "None" with correct race.
 	WORD_CODE = string.rep(WORD_CODE, WORD_WORDS - 1)
 	
 	local temp_table = 
 		{
-			["SKW"] = {"Id", ID, "PercentageChance", "IGNORE"},
+			["SKW"] = {"Id", WORD_TABLE[i][1]},
+			["PKW"] = "GcRewardTableItem.xml",
 			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = WORD_CODE,                                                             --Add code formatted above to targeted ID.
 		}
 	
-	if WORD_WORDS >= 2 then
+	if WORD_WORDS > 1 then
 		REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
 	end
 end
@@ -130,22 +132,18 @@ for i=1,#TEACHWORD_TABLE do                                                     
 	
 	local temp_table =
 		{
-			["SKW"] = {"Id", ID, "PercentageChance", "IGNORE"},
+			["SKW"] = {"Id", ID},
+			["PKW"] = "GcRewardTableItem.xml",
 			["ADD_OPTION"]  = "ADDafterSECTION",
 			
 			["ADD"] = TEACHWORD_CODE,
 		}
 	
-	if TEACHWORD_WORDS >= 2 and ATLAS_WORDS >= 2 then                                    --Need a few checks for whether we should be adding code based on settings since Atlas is separated.
+	if ID == "TEACHWORD_ATLAS" and ATLAS_WORDS > 1 then                     --Need 2 checks for whether we should be adding code based on settings since Atlas is separated.
 		REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
-	elseif TEACHWORD_WORDS < 2 and ATLAS_WORDS >= 2 then
-		if ID == "TEACHWORD_ATLAS" then
-			REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
-		end
-	elseif TEACHWORD_WORDS >= 2 and ATLAS_WORDS < 2 then
-		if ID ~= "TEACHWORD_ATLAS" then
-			REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
-		end
+	end
+	if ID ~= "TEACHWORD_ATLAS" and TEACHWORD_WORDS > 1 then
+		REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
 	end
 end
 
@@ -176,18 +174,42 @@ for i=1,#CHAT_TABLE[1] do
 					{"RewardChoice", "GiveAll"}
 				},
 			}
-		local temp_table2 = 
+		local temp_table2 =                                                  --Change random reward to categoried.
 			{
-				["SKW"] = {"Id", ID, "PercentageChance", "IGNORE"},
+				["SKW"] = {"Id", ID, "wordcategorytableEnum", "MISC"},
+				["REPLACE_TYPE"] = "ALL",
+				
+				["VCT"] = {
+					{"wordcategorytableEnum", CHAT_TABLE[2][e][2]}
+				},
+			}
+		local temp_table3 =                                                  --Change categoried reward to random.
+			{
+				["SKW"] = {"Id", ID, "wordcategorytableEnum", CHAT_TABLE[2][e][2]},
+				["REPLACE_TYPE"] = "ALL",
+				
+				["VCT"] = {
+					{"wordcategorytableEnum", "MISC"}
+				},
+			}
+		local temp_table4 =                                                  --Add extra rewards. (already categoried or not above)
+			{
+				["SKW"] = {"Id", ID},
+				["PKW"] = "GcRewardTableItem.xml",
 				["ADD_OPTION"]  = "ADDafterSECTION",
 				
 				["ADD"] = CHAT_CODE,
 			}
 		
-		if CHAT_WORDS >= 2 then
-			REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table1       --Don't need to "GiveAll" if only 1 word
-			if CHAT_WORDS >= 3 then
-				REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table2   --Don't need to add code if only 2 words because of "GiveAll"
+		if CHAT_WORDS > 1 then                                                --Don't need to "GiveAll" or update categories if only 1 word
+			REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table1
+			if string.upper(KEEP_CATEGORY) == "Y" then
+				REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table2
+			else
+				REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table3
+			end
+			if CHAT_WORDS > 2 then                                            --Don't need to add code if only 2 words because of "GiveAll"
+				REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table4
 			end
 		end
 	end
@@ -202,7 +224,7 @@ if string.upper(ALL_ATLAS_ORBS) == "Y" then
 			{
 				{
 					["SKW"] = {"StateID","GIVEWORD"},
-					["PKW"] = {"Sound"},
+					["PKW"] = "Sound",
 					["ADD_OPTION"]  = "ADDafterSECTION",
 
 					["ADD"] = [[<Property value="GcRewardAction.xml"><Property name="Reward" value="TEACHWORD_ATLAS" /></Property>]],
@@ -214,19 +236,15 @@ end
 
 --SALVAGED DATA SECTION
 if string.upper(INCLUDE_SALV_DATA) == "Y" then
-	local SALV_DATA_ID = {"BP_SALVAGE","S3_SALVAGE","BP_SALVAGE_ONLY"}
-	
-	for i=1,#SALV_DATA_ID do --UNDERGROUNDPROP.ENTITY.MBIN can give several different rewards depending on which quests the player has active so we have to loop through the ones with Salvaged Data.
-		local temp_table = 
-			{
-				["SKW"] = {"Id", SALV_DATA_ID[i], "ID", "BP_SALVAGE"},
-				["REPLACE_TYPE"] = "ALL",
-				
-				["VCT"] = {
-					{"AmountMin", SALV_DATA_MIN},
-					{"AmountMax", SALV_DATA_MAX}
-				},
-			}
-		REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
-	end
+	local temp_table = 
+		{ --UNDERGROUNDPROP.ENTITY.MBIN can give several different rewards depending on which quests the player has active so we have to edit each of the ones with Salvaged Data.
+			["SKW"] = {{"Id","BP_SALVAGE","ID","BP_SALVAGE"},{"Id","S3_SALVAGE","ID","BP_SALVAGE"},{"Id","BP_SALVAGE_ONLY","ID","BP_SALVAGE"}},
+			["REPLACE_TYPE"] = "ALL",
+			
+			["VCT"] = {
+				{"AmountMin", SALV_DATA_MIN},
+				{"AmountMax", SALV_DATA_MAX}
+			},
+		}
+	REWARDTABLE_EXML_CT[#REWARDTABLE_EXML_CT + 1] = temp_table
 end
