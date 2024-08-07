@@ -178,7 +178,7 @@ return [[
           <Property name="Id" value="]] .. string.upper(NAME) .. [[" />
           <Property name="Name" value="]] .. NAME .. [[" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="]] .. SCENE .. [[" />
             </Property>
           </Property>

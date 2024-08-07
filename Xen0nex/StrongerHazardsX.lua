@@ -325,7 +325,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"Weird", "NMSString0x80.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Weird", "VariableSizeString.xml"},
 				--["PRECEDING_KEY_WORDS"] = {"Weird"},
 				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=

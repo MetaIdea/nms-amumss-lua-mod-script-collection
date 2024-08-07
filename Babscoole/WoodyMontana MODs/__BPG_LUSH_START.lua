@@ -594,232 +594,232 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEEGGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEEGGSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEEGGSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEFULLGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGLOWBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGLOWBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGRASSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGRASSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGRASSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGRASSBUSHESFULLGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEGRASSBUSHESGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEMUTANT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEMUTANTBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEMUTANTBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEPLANTSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEPLANTSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMEPLANTSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESHROOMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESHROOMSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESHROOMSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESHROOMSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSEEGGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSEGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSEMUTANT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSEPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSESHROOMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSESPORES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSETOXIC.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPARSETOXICGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPORES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPORESBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMESPORESBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMETOXIC.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMETOXICBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/MAIN/CAVEBIOMETOXICBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEEGGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEEGGSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEEGGSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEFULLGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGLOWBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGLOWBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGRASSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGRASSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGRASSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGRASSBUSHESFULLGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEGRASSBUSHESGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEMUTANT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEMUTANTBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEMUTANTBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEPLANTSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEPLANTSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMEPLANTSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESHROOMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESHROOMSBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESHROOMSBUSHESALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESHROOMSBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSEEGGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSEGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSEMUTANT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSEPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSESHROOMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSESPORES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSETOXIC.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPARSETOXICGLOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPORES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPORESBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMESPORESBUSHESFULL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMETOXIC.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMETOXICBUSHES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/CAVE/FULL/CAVEBIOMETOXICBUSHESFULL.MBIN" />
         </Property>
       </Property>
@@ -844,544 +844,544 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/FULL/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/HIGH/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/MID/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/LOW/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE/DEAD/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/FULL/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/HIGH/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/MID/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/LOW/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE2/DEAD/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/FULL/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/HIGH/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/MID/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/LOW/WATERTUBES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATER.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERALT.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERCORAL.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERCRYSTALS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERCUCUMBERLIGHTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERGASBAGS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERMONOLITHS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERPLATFORMS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERROCKS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERSPIKES.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/CORE3/DEAD/WATERTUBES.MBIN" />
         </Property>
       </Property>
@@ -1398,13 +1398,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/GROUND/UNDERWATERPLANTS.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/GROUND/UNDERWATERMIXED.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/GROUND/UNDERWATERCORAL.MBIN" />
         </Property>
       </Property>
@@ -1435,10 +1435,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/ROCK.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/ROCKALT.MBIN" />
         </Property>
       </Property>
@@ -1463,7 +1463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/CRYSTALS/CAVEFULL.MBIN" />
         </Property>
       </Property>
@@ -1480,16 +1480,16 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RESOURCES/DEAD.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RESOURCES/LOW.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RESOURCES/MID.MBIN" />
         </Property>
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RESOURCES/FULL.MBIN" />
         </Property>
       </Property>
@@ -1506,7 +1506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/TEST/TEST.MBIN" />
         </Property>
       </Property>

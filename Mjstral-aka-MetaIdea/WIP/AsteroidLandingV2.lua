@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		  <Property name="Id" value="LandingPad" />
 		  <Property name="Name" value="LandingPad" />
 		  <Property name="ReferencePaths">
-			<Property value="NMSString0x80.xml">
+			<Property value="VariableSizeString.xml">
 			  <Property name="Value" value="]] .. LANDING_PAD .. [[" />
 			</Property>
 		  </Property>
@@ -194,7 +194,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		  <Property name="Id" value="LandingPad" />
 		  <Property name="Name" value="LandingPad" />
 		  <Property name="ReferencePaths">
-			<Property value="NMSString0x80.xml">
+			<Property value="VariableSizeString.xml">
 			  <Property name="Value" value="]] .. LANDING_PAD .. [[" />
 			</Property>
 		  </Property>

@@ -190,7 +190,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		  <Property name="Id" value="_SUN" />
 		  <Property name="Name" value="_SUN" />
 		  <Property name="ReferencePaths">
-			<Property value="NMSString0x80.xml">
+			<Property value="VariableSizeString.xml">
 			  <Property name="Value" value="]] .. SUN_OBJECT .. [[" />
 			</Property>
 		  </Property>

@@ -158,7 +158,7 @@ for i = 1,#ShipInfo do
           <Property name="Id" value="_SHIP_]]..ShipInfo[j]["NAME"]:upper()..[[" />
           <Property name="Name" value="_Ship_]]..ShipInfo[j]["NAME"]:sub(1,1):upper()..ShipInfo[j]["NAME"]:sub(2):lower()..[[" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="CUSTOMMODELS/]]..ShipInfo[j]["NAME"]..[[/]]..ShipInfo[j]["SCENE"]..[[.SCENE.MBIN" />
             </Property>
           </Property>

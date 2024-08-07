@@ -15,7 +15,7 @@ Hovercraft_Descriptor_Data  =
           <Property name="Id" value="_WINGS_A" />
           <Property name="Name" value="_Wings_A" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
             </Property>
           </Property>

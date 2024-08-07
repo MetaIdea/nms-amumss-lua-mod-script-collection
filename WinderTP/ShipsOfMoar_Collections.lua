@@ -910,19 +910,19 @@ return [[
           <Property name="Id" value="]] .. string.upper(NAME) .. [[" />
           <Property name="Name" value="]] .. NAME .. [[" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="]] .. SCENE .. [[" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST_NEW.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\ENGINE\ENGINE_BOOST_NEW.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
             </Property>
           </Property>

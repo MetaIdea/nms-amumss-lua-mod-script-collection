@@ -42,7 +42,7 @@ local Wing_K_Tail_Desc = [[
 							<Property name="Id" value="_ACC_A7" />
 							<Property name="Name" value="_Acc_A7" />
 							<Property name="ReferencePaths">
-								<Property value="NMSString0x80.xml">
+								<Property value="VariableSizeString.xml">
 									<Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ACCESSORIES/ACCA.SCENE.MBIN" />
 								</Property>
 							</Property>

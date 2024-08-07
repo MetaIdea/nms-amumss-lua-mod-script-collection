@@ -454,7 +454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_BUILDING_KOR" />
                       <Property name="Name" value="_Building_Kor" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/KORVAX/LARGEBUILDING_KORVAX.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -470,7 +470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_LAYOUT_KOR" />
                       <Property name="Name" value="_Layout_Kor" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/KORVAX/LAYOUT.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -515,7 +515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_BUILDING_VYK" />
                       <Property name="Name" value="_Building_Vyk" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/VYKEEN/LARGEBUILDING_VYKEEN.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -531,7 +531,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_LAYOUT_VYK" />
                       <Property name="Name" value="_Layout_Vyk" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/VYKEEN/PARTS/LAYOUT.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_BUILDING_VYK" />
                       <Property name="Name" value="_Building_Vyk" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/VYKEEN/LARGEBUILDING_VYKEEN.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -592,7 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_LAYOUT_VYK" />
                       <Property name="Name" value="_Layout_Vyk" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LARGEBUILDINGS/VYKEEN/PARTS/LAYOUT.SCENE.MBIN" />
                         </Property>
                       </Property>

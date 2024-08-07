@@ -28872,7 +28872,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_SCLASSSHIP_ROY" />
           <Property name="Name" value="_SClassShip_Royal" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
             </Property>
           </Property>
@@ -28887,7 +28887,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_A" />
                       <Property name="Name" value="_Engine_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/ENGINE/ENGINE_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28898,7 +28898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_B" />
                       <Property name="Name" value="_Engine_B" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/ENGINE/ENGINE_B.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28909,7 +28909,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_C" />
                       <Property name="Name" value="_Engine_C" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/ENGINE/ENGINE_C.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28920,7 +28920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_D" />
                       <Property name="Name" value="_Engine_D" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28931,7 +28931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_E" />
                       <Property name="Name" value="_Engine_E" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\ENGINES\FIGHTERENGINEC_PATH.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28942,7 +28942,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_F" />
                       <Property name="Name" value="_Engine_F" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\ENGINES\FIGHTERENGINED_PATH.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28953,7 +28953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_G" />
                       <Property name="Name" value="_Engine_G" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\ENGINES\LTHRUSTERA_PATH.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28964,7 +28964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_H" />
                       <Property name="Name" value="_Engine_H" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\ENGINES\TURBINEAA_PATH.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28975,7 +28975,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_I" />
                       <Property name="Name" value="_Engine_I" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\ENGINES\TURBINEBB_PATH.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28986,7 +28986,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_J" />
                       <Property name="Name" value="_Engine_J" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESA.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -28997,7 +28997,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_K" />
                       <Property name="Name" value="_Engine_K" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESB.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29008,7 +29008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_ENGINE_L" />
                       <Property name="Name" value="_Engine_L" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\ENGINES\ENGINESC.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29024,7 +29024,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_A" />
                       <Property name="Name" value="_Wings_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29035,7 +29035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_B" />
                       <Property name="Name" value="_Wings_B" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_B.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29046,7 +29046,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_C" />
                       <Property name="Name" value="_Wings_C" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_C.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29057,7 +29057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_D" />
                       <Property name="Name" value="_Wings_D" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_D.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29068,7 +29068,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_E" />
                       <Property name="Name" value="_Wings_E" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_E.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29079,7 +29079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_F" />
                       <Property name="Name" value="_Wings_F" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_F.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29090,7 +29090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_G" />
                       <Property name="Name" value="_Wings_G" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\WINGS_G.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29101,7 +29101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_H" />
                       <Property name="Name" value="_Wings_H" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\THRUSTERS\WINGS_H.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29112,7 +29112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_I" />
                       <Property name="Name" value="_Wings_I" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\THRUSTERS\WINGS_I.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29123,7 +29123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_J" />
                       <Property name="Name" value="_Wings_J" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\THRUSTERS\WINGS_J.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29134,7 +29134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_K" />
                       <Property name="Name" value="_Wings_K" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS\THRUSTERS\WINGS_K.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29145,7 +29145,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2A" />
                       <Property name="Name" value="_Wings_2A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29156,7 +29156,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2B" />
                       <Property name="Name" value="_Wings_2B" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_B.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29167,7 +29167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2C" />
                       <Property name="Name" value="_Wings_2C" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_C.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29178,7 +29178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2D" />
                       <Property name="Name" value="_Wings_2D" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_D.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29189,7 +29189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2E" />
                       <Property name="Name" value="_Wings_2E" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_E.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29200,7 +29200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2F" />
                       <Property name="Name" value="_Wings_2F" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_F.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29211,7 +29211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2G" />
                       <Property name="Name" value="_Wings_2G" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_G.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29222,7 +29222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2H" />
                       <Property name="Name" value="_Wings_2H" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_H.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29233,7 +29233,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2I" />
                       <Property name="Name" value="_Wings_2I" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_I.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29244,7 +29244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2J" />
                       <Property name="Name" value="_Wings_2J" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_J.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29255,7 +29255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2K" />
                       <Property name="Name" value="_Wings_2K" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_K.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29266,7 +29266,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2L" />
                       <Property name="Name" value="_Wings_2L" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_L.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29277,7 +29277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_WINGS_2M" />
                       <Property name="Name" value="_Wings_2M" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\WINGS_2\SUBWINGS_M.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29293,7 +29293,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_COCKPIT_A" />
                       <Property name="Name" value="_CockPit_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/COCKPIT/COCKPIT_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29309,7 +29309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_LANDINGGEAR_A" />
                       <Property name="Name" value="_LandingGear_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/LANDINGGEAR/LANDINGGEAR_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29325,7 +29325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_JJCOCKPIT_A" />
                       <Property name="Name" value="_JJCockPit_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COCKPIT_A/COCKPIT.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29341,7 +29341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_LIGHT_A" />
                       <Property name="Name" value="_Light_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\SMALLLIGHT.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29357,7 +29357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_CANOPY_A1" />
                       <Property name="Name" value="_Canopy_A1" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\CANOPY\CANOPY_A\CANOPY_A1.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29368,7 +29368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_CANOPY_A2" />
                       <Property name="Name" value="_Canopy_A2" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\CANOPY\CANOPY_A\CANOPY_A2.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29379,7 +29379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_CANOPY_B1" />
                       <Property name="Name" value="_Canopy_B1" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\CANOPY\CANOPY_B\CANOPY_B1.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29390,7 +29390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_CANOPY_B2" />
                       <Property name="Name" value="_Canopy_B2" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\CANOPY\CANOPY_B\CANOPY_B2.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29406,7 +29406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_A" />
                       <Property name="Name" value="_TopWing_A" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_A.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29417,7 +29417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_B" />
                       <Property name="Name" value="_TopWing_B" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_B.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29428,7 +29428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_C" />
                       <Property name="Name" value="_TopWing_C" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_C.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29439,7 +29439,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_D" />
                       <Property name="Name" value="_TopWing_D" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_D.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29450,7 +29450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_E" />
                       <Property name="Name" value="_TopWing_E" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_E.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29461,7 +29461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_F" />
                       <Property name="Name" value="_TopWing_F" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_F.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29472,7 +29472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_G" />
                       <Property name="Name" value="_TopWing_G" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_G.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29483,7 +29483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_H" />
                       <Property name="Name" value="_TopWing_H" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_H.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29494,7 +29494,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_I" />
                       <Property name="Name" value="_TopWing_I" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\JJSCIENTIFIC\SUBWINGS\SUBWINGSA\SUBWINGSA_LEFT.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29505,7 +29505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_TOPWING_J" />
                       <Property name="Name" value="_TopWing_J" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/TOPWINGS/TOPWING_NONE.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -29522,19 +29522,19 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_SCLASSSHIP_SQU" />
           <Property name="Name" value="_SClassShip_SquidxRARE" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/SQUIDPARTS/ENGINE/ENGINE_A.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/SQUIDPARTS/COCKPIT/COCKPIT_A.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/SQUIDPARTS/LANDINGGEAR/LANDINGGEAR_A.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
             </Property>
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/SQUIDPARTS/NOSESECTION/NOSESECTION_A.SCENE.MBIN" />
             </Property>
           </Property>

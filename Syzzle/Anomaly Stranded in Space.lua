@@ -638,7 +638,7 @@ METROIDMODELSWAPDESCRIPTOR  = [[
       <Property name="Id" value="_SHIP_METROID" />
       <Property name="Name" value="_Ship_Metroid" />
       <Property name="ReferencePaths">
-        <Property value="NMSString0x80.xml">
+        <Property value="VariableSizeString.xml">
         <Property name="Value" value="CUSTOMMODELS/METROID/METROID.SCENE.MBIN" />
         </Property>
       </Property>

@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/DROPSHIPS/HEADLIGHTS/DROPHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/HEADLIGHTS/FIGHTHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -203,7 +203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/HEADLIGHTS/FIGHTCGOLDHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -732,7 +732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/HEADLIGHTS/SAILHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -797,7 +797,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/HEADLIGHTS/SCIHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -935,7 +935,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_HEADLIGHTS" />
                       <Property name="Name" value="_Headlights" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/HEADLIGHTS/ROYALHEADLIGHTS.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -965,7 +965,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Id" value="_HEADLIGHTS" />
                       <Property name="Name" value="_Headlights" />
                       <Property name="ReferencePaths">
-                        <Property value="NMSString0x80.xml">
+                        <Property value="VariableSizeString.xml">
                           <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/HEADLIGHTS/SQUIDHEADLIGHTS.SCENE.MBIN" />
                         </Property>
                       </Property>
@@ -1063,7 +1063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/S-CLASS/HEADLIGHTS/BIOHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -1152,7 +1152,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/HEADLIGHTS/SENTINELSHIPHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>
@@ -1217,7 +1217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Id" value="_HEADLIGHTS" />
           <Property name="Name" value="_Headlights" />
           <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
+            <Property value="VariableSizeString.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHUTTLE/HEADLIGHTS/SHUTHEADLIGHTS.SCENE.MBIN" />
             </Property>
           </Property>

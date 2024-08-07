@@ -35,7 +35,7 @@ MODIFICATIONS   = {{
             },
             EXML_CHANGE_TABLE = {
                 {
-                    PRECEDING_KEY_WORDS = {"HeavyAir", "NMSString0x80.xml"},
+                    PRECEDING_KEY_WORDS = {"HeavyAir", "VariableSizeString.xml"},
                     ["SECTION_ACTIVE"]      = {1,},
                     VALUE_CHANGE_TABLE  = {
                         {"Value",           ""},

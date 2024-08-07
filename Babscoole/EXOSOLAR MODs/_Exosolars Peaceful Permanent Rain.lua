@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Humid", "NMSString0x80.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Humid", "VariableSizeString.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "METADATA/SIMULATION/SOLARSYSTEM/WEATHER/RAINWEATHER.MXML"}
