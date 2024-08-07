@@ -41,6 +41,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HorizRotationAngleMaxPerFrame", "20"},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam", "GcCameraFollowSettings.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"HorizRotationAngleMaxPerFrame", "15"},
+                            }
+                        },
                     }
                 }
             }
