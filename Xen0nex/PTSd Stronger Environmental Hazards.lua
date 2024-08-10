@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "4_41"
+GameVersion = "4_51"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -12,17 +12,17 @@ EventMult = 1												--Global Multiplier to apply to the chances for all the
 FreighterAbandonedHazardTimeMultiplier = 0.15				--0.15			(Seems to stack in some way with HardModeHazardTimeMultiplier ?)
 AbandonedFreighterRechargeMod = 0.33						--0.33			I assume this applies a multiplier to the normal HazardRechargeUnderground rate, i.e. Cold protection recharges at 1/3 of the normal rate next to a heater on a derelict freighter
 
-NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, make changes in GCGAMEPLAYGLOBALS.MBIN instead
+NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, make changes in DIFFICULTYCONFIG.MBIN instead
 NormalModeHazardDamageRateMultiplier = 0.1					--0.8	(0.3)	How often your shield takes damage after hazard protection runs out
 NormalModeHazardDamageWoundRateMultiplier = 0.3				--0.8	(0.6)	How often your health takes damage after both hazard protection & your shield runs out
 NormalModeHazardRechargeUnderground = 3.5					--1.5	(1.5)	Lower value recharges faster when underground / indoors
 
-HardModeHazardTimeMultiplier = 0.15							--0.3			This appears deprecated as of NMS v4.0, make changes in GCGAMEPLAYGLOBALS.MBIN instead
+HardModeHazardTimeMultiplier = 0.15							--0.3			This appears deprecated as of NMS v4.0, make changes in DIFFICULTYCONFIG.MBIN instead
 HardModeHazardDamageRateMultiplier = 0.1					--0.3
 HardModeHazardDamageWoundRateMultiplier = 0.3				--0.5
 HardModeHazardRechargeUnderground = 3.5						--3.5			Lower value recharges faster when underground / indoors
 
---Some settings related to Hazard times, untested
+--Some settings related to Hazard times
 StartHazardTimeMultiplier =		3							--10			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier at the start of a new game (as long as you have no scanner tech installed on any multi-tool)
 EarlyHazardTimeMultiplier =		1.5							--1.6			Applies a temporary bonus multiplier to NormalModeHazardTimeMultiplier from the time you have a scanner installed in a multi-tool, until you first reach your starship.
 
@@ -42,7 +42,7 @@ JetpackFillRate = 0.2										--0.5			Was 0.2 in the Deprecated "HardMode" vers
 
 --Gravity storms seem to be possible on True Exotic Planets based on videos, but for some reason never randomly occur, only the scripted storms as part of certain missions...
 	--Also seems like the lowered gravity may just be the normal effect of the storm, not a special event like tornados
-	--As of NMS v4.x, garvity storms now occur on Dissonant planets
+	--As of NMS v4.x, gravity storms now occur on Dissonant planets
 
  --"weird" weathertype points to GRAVITYSTORMWEATHER.MBIN, so all these changes to WEIRDWEATHER.MBIN may be pointless as no weather seems to point to it...
 
@@ -85,7 +85,7 @@ SpecialWeatherHazards =
 		}
 	},
 	{
-		{"LIGHTNING"},			--NOTE, as of NMS v3.89, there seems to be a bug that can causes crashes whenever a damaging lightning strike occurs
+		{"LIGHTNING"},			--NOTE, as of NMS v3.89, there seems to be a vanilla bug that can causes crashes whenever a damaging lightning strike occurs
 		{
 			{"SpawnConditions",					"DuringStorm"},						--"DuringStorm"
 			{"MaxHazardsOfThisTypeActive",		1},									--1
@@ -349,7 +349,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["SPECIAL_KEY_WORDS"] = {"Weird", "VariableSizeString.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Weird", "NMSString0x80.xml"},
 				--["PRECEDING_KEY_WORDS"] = {"Weird"},
 				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=

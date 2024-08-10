@@ -1,4 +1,5 @@
 StorageMultiplier = 1 
+StorageMultiplierBaseBuilding = 100 
 
 SubstanceStackSizeExosuit = 9999999 
 ProductStackSizeExosuit = 9999999 
@@ -35,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "MaxHyperStack.pak",
 ["MOD_AUTHOR"]    = "Onykron",
 ["LUA_AUTHOR"]    = "Onykron",
-["NMS_VERSION"]   = "5",
+["NMS_VERSION"]   = "5.3.1",
 ["MODIFICATIONS"] =
     {
         {
@@ -123,11 +124,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ID", "U_SILO_S"},
                                 {"ID", "U_BIOGENERATOR"},
                                 {"ID", "U_BATTERY_S"},
+								{"ID", "BUILD_REFINER1"},
+								{"ID", "BUILD_REFINER2"},
+								{"ID", "BUILD_REFINER3"},
+								{"ID", "FRE_ROOM_REFINE"},
                             },
                             ["MATH_OPERATION"]  = "*",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Storage", StorageMultiplier},
+                                {"Storage", StorageMultiplierBaseBuilding},
                             }
                         },
                     }

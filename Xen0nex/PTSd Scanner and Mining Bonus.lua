@@ -1,5 +1,5 @@
 ModName = "PTSd Scanner and Mining Bonus"
-GameVersion = "4_41"
+GameVersion = "5_03"
 Description = "Makes a Multitool's Mining stat also increase the yield of mined resources, and it's Scan stat also increase the value of scanned flora/fauna"
 
 --This makes Multi-Tool's Scanning stat bonus also apply to the value of scanned fauna & flora.
@@ -39,6 +39,15 @@ MiningAmountBonus =
           <Property name="LessIsBetter" value="False" />
         </Property>]]
 
+--This makes a Multi-Tool's Damage stat bonus also SLOW DOWN it's mining speed more the higher the Damage stat bonus is, to offset the higher mining laser damage caused by the Damage stat bonus
+MiningSpeedMalus =
+[[<Property value="GcInventoryBaseStatBonus.xml">
+          <Property name="StatType" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
+          </Property>
+          <Property name="LessIsBetter" value="False" />
+        </Property>]]
+
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
 
@@ -70,7 +79,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["PRECEDING_KEY_WORDS"] = {"StatBonus","GcInventoryBaseStatBonus.xml"},
 			["ADD"] = ScannerUnitsBonus,
 			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		}
+		},
+		{
+			["MATH_OPERATION"] 		= "",
+			--["REPLACE_TYPE"] 		= "",
+			--["PRECEDING_FIRST"] = "True",
+			["SPECIAL_KEY_WORDS"] = {"LocID","STAT_WEAP_DMG"},
+			["PRECEDING_KEY_WORDS"] = {"StatBonus","GcInventoryBaseStatBonus.xml"},
+			["ADD"] = MiningSpeedMalus,
+			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		},
 	}
 },
 }}}}

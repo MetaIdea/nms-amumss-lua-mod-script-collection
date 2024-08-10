@@ -1048,6 +1048,158 @@ BreakPlantsChangesProduct =
 	},
 }
 
+--Controls the chances & amounts of rewards from the unsalvageable small destroyed shipwrecks added in NMS 5.0
+LittleWreckRewards =
+{		--Old Reward			New Reward			AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+	{
+		"SCRAP_GOODS",			"SCRAP_GOODS",		1,			1,			100,				--Suspicious Packet (Goods),		1,			1,			100
+	},
+	{
+		"SCRAP_TECH",			"SCRAP_TECH",		1,			1,			50,					--Suspicious Packet (Tech),			1,			1,			100
+	},
+	{
+		"POI_LOCATOR",			"POI_LOCATOR",		1,			1,			40,					--Anomaly Detector,					1,			1,			50
+	},
+}
+LittleWreckBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
+
+--Changes the amounts & chances of rewards from opening various types of Suspicious Packets 
+SusPacketChanges =
+{
+	{	--Suspicious Packet (Goods)
+		{"R_SCRAP_GOODS"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			--Products
+			{"HYPERFUEL2",			"HYPERFUEL2",			1,			1,			100},				--Warp Hypercore,		1,			1,			100
+			{"WALKER_PROD",			"WALKER_PROD",			1,			1,			50},				--Walker Brain,			1,			1,			100
+			{"QUAD_PROD",			"QUAD_PROD",			1,			2,			100},				--Quad Servos,			1,			1,			100
+			{"REPAIRKIT",			"REPAIRKIT",			1,			3,			250},				--Repair Kit,			1,			3,			500
+			{"SHIP_INV_TOKEN",		"SHIP_INV_TOKEN",		1,			1,			10},				--Storage Augmentation,	1,			1,			10
+			{"WEAP_INV_TOKEN",		"WEAP_INV_TOKEN",		1,			1,			10},				--Multi-Tool Expansion Slot,	1,			1,			10
+			{"GEODE_RARE",			"GEODE_RARE",			2,			3,			50},				--Glowing Mineral,		1,			1,			50
+			{"GEODE_LAND",			"GEODE_LAND",			2,			3,			50},				--Geode (Ferrite),		1,			1,			50
+			{"GEODE_CAVE",			"GEODE_CAVE",			2,			3,			50},				--Geode (Cobalt),		1,			1,			50
+			{"GEODE_CRYSTAL",		"GEODE_CRYSTAL",		2,			3,			50},				--Crystal Fragment,		1,			1,			50
+			{"GEODE_SPACE",			"GEODE_SPACE",			2,			3,			50},				--Tritium Hypercluster,	1,			1,			50
+			{"GEODE_ASTEROID",		"GEODE_ASTEROID",		2,			3,			50},				--Gold Nugget,			1,			1,			50
+			{"FIENDCORE",			"FIENDCORE",			1,			2,			100},				--Larval Core,			1,			1,			100
+			{"GRAVBALL",			"GRAVBALL",				2,			4,			100},				--Gravitino Ball,		1,			1,			100
+			{"STORM_CRYSTAL",		"STORM_CRYSTAL",		1,			1,			100},				--Storm Crystal,		1,			1,			100
+			{"CLAMPEARL",			"CLAMPEARL",			1,			3,			100},				--Living Pearl,			1,			1,			100
+			{"VENTGEM",				"VENTGEM",				2,			4,			100},				--Crystal Sulphide,		1,			1,			100
+			{"FISHCORE",			"FISHCORE",				1,			1,			100},				--Hadal Core,			1,			1,			100
+			{"EYEBALL",				"EYEBALL",				1,			1,			100},				--Hypnotic Eye,			1,			1,			100
+			{"NAV_DATA_DROP",		"NAV_DATA_DROP",		1,			1,			100},				--Exosuit Upgrade Chart,1,			1,			100
+			{"POLICE_TOKEN",		"ALBUMENPEARL",			4,			8,			100},				--Defence Chit,			1,			1,			100
+			{"POLICE_TOKEN",		"POLICE_TOKEN",			1,			2,			135},				--Defence Chit,			1,			1,			100		(Not sure why this item gets 2 separate entries in vanilla)
+			{"HEXCORE",				"HEXCORE",				2,			4,			100},				--Hex Core,				1,			1,			100
+			{"NIPNIPBUDS",			"NIPNIPBUDS",			1,			1,			100},				--NipNip Buds,			1,			1,			100
+			{"TRA_ALLOY5",			"TRA_ALLOY5",			1,			3,			17},				--Superconducting Fibre,1,			1,			100
+			{"TRA_COMMODITY5",		"TRA_COMMODITY5",		1,			3,			17},				--Teleport Coordinators,1,			1,			100
+			{"TRA_COMPONENT5",		"TRA_COMPONENT5",		1,			3,			17},				--Vector Compressors,	1,			1,			100
+			{"TRA_ENERGY5",			"TRA_ENERGY5",			1,			3,			17},				--Fusion Core,			1,			1,			100
+			{"TRA_MINERALS5",		"TRA_MINERALS5",		1,			3,			17},				--Re-latticed Arc Crystal,	1,			1,			100
+			{"TRA_TECH5",			"TRA_TECH5",			1,			3,			17},				--Quantum Accelerator,	1,			1,			100
+			{"CHART_HIVE",			"CHART_HIVE",			1,			1,			100},				--Sentinel Boundary Map,1,			1,			100
+		}
+	},
+	{	--Suspicious Packet (Tech)
+		{"R_SCRAP_TECH"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			--Procedural Tech
+			{"U_LASERX",			"U_LASERX",				1,			1,			100},				--X-Class Mining Laser upgrade,		1,			1,			100
+			{"U_SCANNERX",			"U_SCANNERX",			1,			1,			100},				--X-Class Scanner upgrade,			1,			1,			100
+			{"U_ENERGYX",			"U_ENERGYX",			1,			1,			100},				--X-Class Life Support upgrade,		1,			1,			100
+			{"U_HAZARDX",			"U_HAZARDX",			1,			1,			100},				--X-Class Hazard Protection upgrade,1,			1,			100
+			{"U_JETBOOSTX",			"U_JETBOOSTX",			1,			1,			100},				--X-Class Movement upgrade,			1,			1,			100
+			{"U_SHIELDBOOSTX",		"U_SHIELDBOOSTX",		1,			1,			100},				--X-Class Shield upgrade,			1,			1,			100
+			{"U_HYPERX",			"U_HYPERX",				1,			1,			100},				--X-Class Hyperdrive upgrade,		1,			1,			100
+			{"U_SHIPSHIELDX",		"U_SHIPSHIELDX",		1,			1,			100},				--X-Class Starship Shield upgrade,	1,			1,			100
+				--Added by PTSd
+			{"U_PULSEX",			"U_PULSEX",				1,			1,			100},				--X-Class Pulse Engine upgrade,		1,			1,			100
+			{"U_LAUNCHX",			"U_LAUNCHX",			1,			1,			100},				--X-Class Launcher upgrade,			1,			1,			100
+			{"U_EXO_ENG1",			"U_EXO_ENG1",			1,			1,			40},				--C-Class Exocraft Engine upgrade,	1,			1,			100
+			{"U_EXO_ENG2",			"U_EXO_ENG2",			1,			1,			30},				--B-Class Exocraft Engine upgrade,	1,			1,			100
+			{"U_EXO_ENG3",			"U_EXO_ENG3",			1,			1,			20},				--A-Class Exocraft Engine upgrade,	1,			1,			100
+			{"U_EXO_ENG4",			"U_EXO_ENG4",			1,			1,			10},				--S-Class Exocraft Engine upgrade,	1,			1,			100
+			{"U_EXOBOOST1",			"U_EXOBOOST1",			1,			1,			40},				--C-Class Exocraft Boost upgrade,	1,			1,			100
+			{"U_EXOBOOST2",			"U_EXOBOOST2",			1,			1,			30},				--B-Class Exocraft Boost upgrade,	1,			1,			100
+			{"U_EXOBOOST3",			"U_EXOBOOST3",			1,			1,			20},				--A-Class Exocraft Boost upgrade,	1,			1,			100
+			{"U_EXOBOOST4",			"U_EXOBOOST4",			1,			1,			10},				--S-Class Exocraft Boost upgrade,	1,			1,			100
+			{"U_EXO_SUB1",			"U_EXO_SUB1",			1,			1,			20},				--C-Class Humboldt Drive upgrade,	1,			1,			100
+			{"U_EXO_SUB2",			"U_EXO_SUB2",			1,			1,			15},				--B-Class Humboldt Drive upgrade,	1,			1,			100
+			{"U_EXO_SUB3",			"U_EXO_SUB3",			1,			1,			10},				--A-Class Humboldt Drive upgrade,	1,			1,			100
+			{"U_EXO_SUB4",			"U_EXO_SUB4",			1,			1,			5},					--S-Class Humboldt Drive upgrade,	1,			1,			100
+			{"U_EXOLAS1",			"U_EXOLAS1",			1,			1,			40},				--C-Class Exocraft Laser upgrade,	1,			1,			100
+			{"U_EXOLAS2",			"U_EXOLAS2",			1,			1,			30},				--B-Class Exocraft Laser upgrade,	1,			1,			100
+			{"U_EXOLAS3",			"U_EXOLAS3",			1,			1,			20},				--A-Class Exocraft Laser upgrade,	1,			1,			100
+			{"U_EXOLAS4",			"U_EXOLAS4",			1,			1,			10},				--S-Class Exocraft Laser upgrade,	1,			1,			100
+			{"U_MECH_ENG2",			"U_MECH_ENG2",			1,			1,			70},				--B-Class Minotaur Engine upgrade,	1,			1,			100
+			{"U_MECH_ENG3",			"U_MECH_ENG3",			1,			1,			20},				--A-Class Minotaur Engine upgrade,	1,			1,			100
+			{"U_MECH_ENG4",			"U_MECH_ENG4",			1,			1,			10},				--S-Class Minotaur Engine upgrade,	1,			1,			100
+			{"U_MECHLAS2",			"U_MECHLAS2",			1,			1,			70},				--B-Class Minotaur Laser upgrade,	1,			1,			100
+			{"U_MECHLAS3",			"U_MECHLAS3",			1,			1,			20},				--A-Class Minotaur Laser upgrade,	1,			1,			100
+			{"U_MECHLAS4",			"U_MECHLAS4",			1,			1,			10},				--S-Class Minotaur Laser upgrade,	1,			1,			100
+		}
+	},
+	{	--Suspicious Packet (Arms)
+		{"R_SCRAP_WEAP"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			--Procedural Tech
+			{"U_SHIPBLOBX",			"U_SHIPBLOBX",			1,			1,			100},				--X-Class Cyclotron Ballista upgrade,	1,			1,			100
+			{"U_SHIPMINIX",			"U_SHIPMINIX",			1,			1,			100},				--X-Class Infra-Knife Accelerator upgrade,	1,			1,			100
+			{"U_SHIPSHOTX",			"U_SHIPSHOTX",			1,			1,			100},				--X-Class Positron Ejector upgrade,		1,			1,			100
+			{"U_SHIPLASX",			"U_SHIPLASX",			1,			1,			100},				--X-Class Phase Beam upgrade,		1,			1,			100
+			{"U_SHIPGUNX",			"U_SHIPGUNX",			1,			1,			100},				--X-Class Photon Cannon upgrade,	1,			1,			100
+			{"U_SMGX",				"U_SMGX",				1,			1,			100},				--X-Class Pulse Spitter upgrade,	1,			1,			100
+			{"U_SHOTGUNX",			"U_SHOTGUNX",			1,			1,			100},				--X-Class Scatter Blaster upgrade,	1,			1,			100
+			{"U_RAILX",				"U_RAILX",				1,			1,			100},				--X-Class Blaze Javelin upgrade,	1,			1,			100
+			{"U_TGRENADEX",			"U_TGRENADEX",			1,			1,			100},				--X-Class Geology Cannon upgrade,	1,			1,			100
+			{"U_GRENADEX",			"U_GRENADEX",			1,			1,			100},				--X-Class Plasma Launcher upgrade,	1,			1,			100
+			{"U_BOLTX",				"U_BOLTX",				1,			1,			100},				--X-Class Boltcaster upgrade,		1,			1,			100
+			{"U_CANNONX",			"U_CANNONX",			1,			1,			100},				--X-Class Neutron Cannon upgrade,	1,			1,			100
+				--Added by PTSd
+			{"U_EXOGUN1",			"U_EXOGUN1",			1,			1,			20},				--C-Class Exocraft Cannon upgrade,	1,			1,			100
+			{"U_EXOGUN2",			"U_EXOGUN2",			1,			1,			15},				--B-Class Exocraft Cannon upgrade,	1,			1,			100
+			{"U_EXOGUN3",			"U_EXOGUN3",			1,			1,			10},				--A-Class Exocraft Cannon upgrade,	1,			1,			100
+			{"U_EXOGUN4",			"U_EXOGUN4",			1,			1,			5},					--S-Class Exocraft Cannon upgrade,	1,			1,			100
+			{"U_EXO_SUBGUN1",		"U_EXO_SUBGUN1",		1,			1,			20},				--C-Class Nautilon Cannon upgrade,	1,			1,			100
+			{"U_EXO_SUBGUN2",		"U_EXO_SUBGUN2",		1,			1,			15},				--B-Class Nautilon Cannon upgrade,	1,			1,			100
+			{"U_EXO_SUBGUN3",		"U_EXO_SUBGUN3",		1,			1,			10},				--A-Class Nautilon Cannon upgrade,	1,			1,			100
+			{"U_EXO_SUBGUN4",		"U_EXO_SUBGUN4",		1,			1,			5},					--S-Class Nautilon Cannon upgrade,	1,			1,			100
+			{"U_MECHFLAME2",		"U_MECHFLAME2",			1,			1,			35},				--B-Class Minotaur Flamethrower upgrade,	1,			1,			100
+			{"U_MECHFLAME3",		"U_MECHFLAME3",			1,			1,			10},				--A-Class Minotaur Flamethrower upgrade,	1,			1,			100
+			{"U_MECHFLAME4",		"U_MECHFLAME4",			1,			1,			5},					--S-Class Minotaur Flamethrower upgrade,	1,			1,			100
+			{"U_MECHGUN2",			"U_MECHGUN2",			1,			1,			70},				--B-Class Minotaur Cannon upgrade,	1,			1,			100
+			{"U_MECHGUN3",			"U_MECHGUN3",			1,			1,			20},				--A-Class Minotaur Cannon upgrade,	1,			1,			100
+			{"U_MECHGUN4",			"U_MECHGUN4",			1,			1,			10},				--S-Class Minotaur Cannon upgrade,	1,			1,			100
+		}
+	}
+}
+SusPacketGoodsBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
+SusPacketTechBrokTechChance =		100					--100		(This is the "broken tech" consumable normally found in Buried Caches above)
+SusPacketTechDataRecordChance =		100					--100		(This is the "species/mineral record" consumable normally found from killing Walking Buildings, awards ~75 nanites on average, with rare chance for a Sentinel Boundary Map)
+SusPacketArmsProcToolChance =		50					--50		(This is a procedural "Tool" type artifact/treasure sometimes found in treasure chests, worth ~450,000 units on average)
+
+--Changes the amounts & chances of rewards from killing anomalous creatures on Weird / Exotic / Anomalous planets. All creatures on the same planet will drop the same loot
+WeirdCreatureLootChanges =
+{
+	{
+		{"CRT_WEIRD"},
+		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
+			--Substances
+			{"SPACEGUNK1",			"SPACEGUNK1",			15,			25,			100},				--Residual Goop,		15,			25,			100
+			{"SPACEGUNK4",			"SPACEGUNK4",			15,			25,			100},				--Living Slime,			15,			25,			100
+			{"SPACEGUNK5",			"SPACEGUNK5",			15,			25,			100},				--Viscous Fluids,		15,			25,			100
+			{"CREATURE1",			"CREATURE1",			6,			9,			100},				--Mordite,				20,			30,			100
+			{"ROBOT1",				"ROBOT1",				20,			30,			100},				--Pugneum,				20,			30,			100
+			{"OXYGEN",				"OXYGEN",				20,			30,			100},				--Oxygen,				20,			30,			100
+			--Products
+			{"HEXCORE",				"HEXCORE",				1,			1,			100},				--Hex Core,				1,			3,			100
+		}
+	}
+}
+
 --Adds new rewards for defeating Vile Queens
 QueenProductID			=				"EYEBALL"			-- N/A		(Hypnotic Eye)	This product loot is awarded every time you defeat a Vile Queen
 QueenProductAmount		=				1					-- N/A
@@ -1216,7 +1368,7 @@ HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestro
 
 --Changes the amount of items harvested from various underwater objects
 CrystalSulphide = 2						--1		Changes the yield of Crystal Sulphide from underwater Thermal Vents
-CrystalSulphideOther = 1				--1		Changes the yield of Crystal Sulphide from both Glowing Mineral and Suspicious Packet (Goods)
+CrystalSulphideOther = 1				--1		Changes the yield of Crystal Sulphide from Glowing Mineral (Suspicious Packet (Goods) is controlled in SusPacketChanges above)
 AlluringSpecHadalCore = 1				--1		Changes the yield of Hadal Core from underwater Alluring Specimens
 
 --Adds additional rewards to harvesting Aluuring Specimens
@@ -1360,6 +1512,70 @@ BuriedTechSalvageMax =					4						--4
 
 --Set which recipes for Storage Containers to remove from most rewards where the game normally awards all 10 recipes
 RemoveContainerRewards = {"CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9", }		
+
+--Remove various tech from the random tech reward loot pools
+RemoveTechFromPool =
+{
+	{	--Loot pool
+		{"PROC_TECH_ALL"},
+		{--Removed tech
+			"HDRIVEBOOST1", "HDRIVEBOOST2", "HDRIVEBOOST3", "SHIPSCAN_COMBAT", "TERRAIN_GREN", "RAILGUN", "SHOTGUN", "SHIPSHOTGUN", "SHIPMINIGUN", "SHIPPLASMA", 
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SHIP"},
+		{--Removed tech
+			"HDRIVEBOOST1", "HDRIVEBOOST2", "HDRIVEBOOST3", "SHIPSCAN_COMBAT", "SHIPSHOTGUN", "SHIPMINIGUN", "SHIPPLASMA", 
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_WEAP"},
+		{--Removed tech
+			"TERRAIN_GREN", "RAILGUN", "SHOTGUN", 
+		}
+	},
+}
+
+--Adds various tech to the random tech reward loot pools
+AddTechToPool =
+{
+	{	--Loot pool
+		{"PROC_TECH_ALL"},
+		{--Added tech				--Spot in TechList to place		Placed before or after that spot
+			{"UT_TRANSLATE1",		"POWERGLOVE",					"ADDbeforeSECTION"},
+			{"UT_PROTECT",			"GROUND_SHIELD",				"ADDafterSECTION"}, 
+			{"UT_JET",				"SHIP_TELEPORT",				"ADDafterSECTION"}, 
+			{"SUIT_REFINER",		"SHIPSCAN_ECON",				"ADDafterSECTION"},	
+			{"UT_QUICKWARP",		"UT_PROTECT",					"ADDafterSECTION"},
+			{"UT_SHIPSHIELD",		"UT_QUICKWARP",					"ADDafterSECTION"},
+			{"UT_PULSEFUEL",		"SMG",							"ADDafterSECTION"},
+			{"UT_SCAN",				"STRONGLASER",					"ADDafterSECTION"},
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SUIT"},
+		{--Added tech				--Spot in TechList to place		Placed before or after that spot
+			{"UT_TRANSLATE1",		"POWERGLOVE",					"ADDbeforeSECTION"},
+			{"UT_PROTECT",			"POWERGLOVE",					"ADDafterSECTION"}, 
+			{"UT_JET",				"UT_PROTECT",					"ADDafterSECTION"}, 
+			{"SUIT_REFINER",		"UT_JET",						"ADDafterSECTION"},	
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_SHIP"},
+		{--Added tech				--Spot in TechList to place		Placed before or after that spot
+			{"UT_QUICKWARP",		"SHIP_TELEPORT",				"ADDafterSECTION"},
+			{"UT_SHIPSHIELD",		"UT_QUICKWARP",					"ADDafterSECTION"},
+			{"UT_PULSEFUEL",		"UT_SHIPSHIELD",				"ADDafterSECTION"},
+		}
+	},
+	{	--Loot pool
+		{"PROC_TECH_WEAP"},
+		{--Added tech				--Spot in TechList to place		Placed before or after that spot
+			{"UT_SCAN",				"STRONGLASER",					"ADDafterSECTION"},
+		}
+	},
+}
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -2128,6 +2344,13 @@ AddedExocraftNPCMoneyID =
                     <Property name="Value" value="R_D_EXOTUT_MONEY" />
                   </Property>]]
 
+function AddTechListItem (TechID)
+    return
+    [[<Property value="NMSString0x10.xml">
+                  <Property name="Value" value="]]..TechID..[[" />
+                </Property>]]
+end
+
 NewTravReward =
 [[<Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="TRAV_PACKAGE" />
@@ -2453,6 +2676,16 @@ CrashsiteTechRewards =
 {
 	"FOURTH_CRA_OPT_B_17", "FOURTH_CRA_OPT_B_15", "FOURTH_CRA_OPT_B_11", "FOURTH_CRA_OPT_A_9", "FOURTH_CRA_OPT_A_5", "FOURTH_CRA_OPT_A_4", "FOURTH_CRA_OPT_B_2", "WAR_CRA_OPT_A_20", "WAR_CRA_OPT_A_15", "WAR_CRA_OPT_A_12", "WAR_CRA_OPT_B_11", "WAR_CRA_OPT_A_11", "WAR_CRA_OPT_B_10", "WAR_CRA_OPT_A_10", "WAR_CRA_OPT_B_9", "WAR_CRA_OPT_A_9", "WAR_CRA_OPT_B_8", "WAR_CRA_OPT_B_7", "WAR_CRA_OPT_A_7", "WAR_CRA_OPT_A_6", "WAR_CRA_OPT_B_5", "WAR_CRA_OPT_A_5", "WAR_CRA_OPT_A_4", "WAR_CRA_OPT_B_3", "WAR_CRA_OPT_B_2", "WAR_CRA_OPT_B_1", "WAR_CRA_OPT_A_1", "EXP_CRA_OPT_A_20", "EXP_CRA_OPT_A_16", "EXP_CRA_OPT_A_15", "EXP_CRA_OPT_B_10", "EXP_CRA_OPT_B_9", "EXP_CRA_OPT_A_8", "EXP_CRA_OPT_B_7", "EXP_CRA_OPT_A_7", "EXP_CRA_OPT_A_6", "EXP_CRA_OPT_B_5", "EXP_CRA_OPT_A_5", "EXP_CRA_OPT_B_4", "EXP_CRA_OPT_B_3", "EXP_CRA_OPT_A_3", "EXP_CRA_OPT_B_2", "EXP_CRA_OPT_A_2", "EXP_CRA_OPT_B_1", "EXP_CRA_OPT_A_1", "TRA_CRA_OPT_A_20", "TRA_CRA_OPT_B_16", "TRA_CRA_OPT_A_15", "TRA_CRA_OPT_B_14", "TRA_CRA_OPT_A_12", "TRA_CRA_OPT_A_10", "TRA_CRA_OPT_A_8", "TRA_CRA_OPT_A_7", "TRA_CRA_OPT_A_6", "TRA_CRA_OPT_B_5", "TRA_CRA_OPT_A_5", "TRA_CRA_OPT_B_4", "TRA_CRA_OPT_A_4", "TRA_CRA_OPT_B_3", "TRA_CRA_OPT_A_3", "TRA_CRA_OPT_B_2", "TRA_CRA_OPT_A_2", "TRA_CRA_OPT_B_1", "TRA_CRA_OPT_A_1", 
 	"FOURTH_CRA_OPT_A_6", 
+}
+
+AddedSuspiciousPacketTechs =
+{
+	"U_PULSEX", "U_LAUNCHX", "U_EXO_ENG1", "U_EXO_ENG2", "U_EXO_ENG3", "U_EXO_ENG4", "U_EXOBOOST1", "U_EXOBOOST2", "U_EXOBOOST3", "U_EXOBOOST4", "U_EXO_SUB1", "U_EXO_SUB2", "U_EXO_SUB3", "U_EXO_SUB4", "U_EXOLAS1", "U_EXOLAS2", "U_EXOLAS3", "U_EXOLAS4", "U_MECH_ENG2", "U_MECH_ENG3", "U_MECH_ENG4", "U_MECHLAS2", "U_MECHLAS3", "U_MECHLAS4", 
+}
+
+AddedSuspiciousPacketWeaps =
+{
+	"U_EXOGUN1", "U_EXOGUN2", "U_EXOGUN3", "U_EXOGUN4", "U_EXO_SUBGUN1", "U_EXO_SUBGUN2", "U_EXO_SUBGUN3", "U_EXO_SUBGUN4", "U_MECHFLAME2", "U_MECHFLAME3", "U_MECHFLAME4", "U_MECHGUN2", "U_MECHGUN3", "U_MECHGUN4", 
 }
 
 function AresCostId (Number)
@@ -3156,36 +3389,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
 			},
-			{	--Removes Cadmium, Emeril, Indium Drives from random tech reward pool
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST1"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST2"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_ALL",	"Value","HDRIVEBOOST3"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST1"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST2"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","PROC_TECH_SHIP",	"Value","HDRIVEBOOST3"},
-				--["SECTION_UP"] = 2,
-				["REMOVE"] = "SECTION"
-			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","WORD"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
@@ -3207,14 +3410,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin",	CrystalSulphide},
 					{"AmountMax",	CrystalSulphide}
-				}
-			},
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "ID", "VENTGEM"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"AmountMin",	CrystalSulphideOther},
-					{"AmountMax",	CrystalSulphideOther}
 				}
 			},
 			{
@@ -3296,6 +3491,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID",	BreakTechBlue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_LITTLEWRECK", "Reward", "GcRewardProceduralProduct.xml"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	LittleWreckBrokTechChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_GOODS", "Reward", "GcRewardProceduralProduct.xml"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SusPacketGoodsBrokTechChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_TECH", "ProceduralProductCategory", "DismantleTech"},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SusPacketTechBrokTechChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_TECH", "ProceduralProductCategory", "DismantleData"},
+				["SECTION_UP"] = 2,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SusPacketTechDataRecordChance}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_SCRAP_WEAP", "Reward", "GcRewardProceduralProduct.xml"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance",	SusPacketArmsProcToolChance}
 				}
 			},
 			{
@@ -4027,10 +4262,6 @@ for i = 1, #GuildGiftChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-
-
-
-
 				["SPECIAL_KEY_WORDS"] = {"Id", GiftPool, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -4056,11 +4287,99 @@ for i = 1, #DerelictSuppliesChanges do
 	
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-
-
-
-
 				["SPECIAL_KEY_WORDS"] = {"Id", SupplyId, "ID", OldItemID},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+	end
+end
+for i = 1, #LittleWreckRewards do
+	OldItemID = LittleWreckRewards[i][1]
+	NewItemID = LittleWreckRewards[i][2]
+	AmountMin = LittleWreckRewards[i][3]
+	AmountMax = LittleWreckRewards[i][4]
+	Chance = LittleWreckRewards[i][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DE_LITTLEWRECK", "ID", OldItemID},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+end
+for i = 1, #AddedSuspiciousPacketTechs do
+	local TechID = AddedSuspiciousPacketTechs[i]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_TECH"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = ProductReward (TechID, "1", "1", "100"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+for i = 1, #AddedSuspiciousPacketWeaps do
+	local TechID = AddedSuspiciousPacketWeaps[i]
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "R_SCRAP_WEAP"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD"] = ProductReward (TechID, "1", "1", "100"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+for i = 1, #SusPacketChanges do
+	local PacketID = SusPacketChanges[i][1][1]
+	local Items = SusPacketChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", PacketID, "ID", OldItemID},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"PercentageChance", Chance},
+					{"ID", NewItemID},
+					{"AmountMin", AmountMin},
+					{"AmountMax", AmountMax}
+				}
+			}
+	end
+end
+for i = 1, #WeirdCreatureLootChanges do
+	local CreatureID = WeirdCreatureLootChanges[i][1][1]
+	local Items = WeirdCreatureLootChanges[i][2]
+	
+	for j=1, #Items do
+		OldItemID = Items[j][1]
+		NewItemID = Items[j][2]
+		AmountMin = Items[j][3]
+		AmountMax = Items[j][4]
+		Chance = Items[j][5]
+	
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", CreatureID, "ID", OldItemID},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -4570,6 +4889,38 @@ for i = 1, #RemoveContainerRewards do
 				["SPECIAL_KEY_WORDS"] = {"Id", "NPC_BUILD_GOTO",	"Value",	ContainerID},
 				["REMOVE"] = "SECTION"
 			}
+end
+for i = 1, #RemoveTechFromPool do
+	local TechPool = RemoveTechFromPool[i][1][1]
+	local Techs = RemoveTechFromPool[i][2]
+		
+		for j=1, #Techs do
+			TechID = Techs[j]
+			
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"Value",	TechID},
+				["REMOVE"] = "SECTION"
+			}
+		end
+end
+for i = 1, #AddTechToPool do
+	local TechPool = AddTechToPool[i][1][1]
+	local Techs = AddTechToPool[i][2]
+		
+		for j=1, #Techs do
+			AddedTechID = Techs[j][1]
+			TechlistSpotID = Techs[j][2]
+			BeforeOrAfter = Techs[j][3]
+			
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", TechPool,	"Value",	TechlistSpotID},
+				--["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = BeforeOrAfter, 
+				["ADD"] = AddTechListItem (AddedTechID)
+			}
+		end
 end
 
 local ChangesToRecurringMissions = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][9]["EXML_CHANGE_TABLE"]

@@ -2,7 +2,7 @@ Author = "Gumsk"		--Edited by Xenonex
 ModName = "gCreatures Predators"
 ModNameSub = "Danger DangerousX"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "5_01"
+GameVersion = "5_03"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "MODELS\PLANETS\CREATURES\SANDWORMMINI\SANDWORMMINI\ENTITIES\DATA.ENTITY.MBIN"
@@ -15,7 +15,7 @@ WormHealthMult = 3							--Multiplier to the Default 2600	(The big "Hungering Te
 GroundWormSpawnMin = 3						--Default 3		(The same "Hungering Tendrils" as above)
 GroundWormSpawnMax = 5						--Default 3
 
-BugQueenHealth = 48000						--Default 32000		(The Vile Queen boss bug)
+BugQueenHealth = 64000						--Default 32000		(The Vile Queen boss bug)
 QueenHealthLevelMul = 2						--Default 1.5
 BugQueenSpitCount = 36						--Default 12		How many shots of spit are fired with each attack
 BugQueenSpitRadius = 18						--Default 15		This seems be how closely the shots of spit are grouped together

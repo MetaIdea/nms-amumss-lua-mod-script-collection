@@ -586,6 +586,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{"ResponseRate", AnglerfishSpawnChance}
 		}
+	},
+	{
+		["REPLACE_TYPE"] 		= "ALL",
+		["SPECIAL_KEY_WORDS"] = {"Value", "SHIP_TELEPORT"},
+		["ADD_OPTION"]  = "ADDafterSECTION", 
+		["ADD"] = AddProduct ("UT_QUICKWARP")
 	}
 }},
 {

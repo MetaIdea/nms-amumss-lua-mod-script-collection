@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_01"
+GameVersion = "5_03"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -75,6 +75,7 @@ ProductSaleChanges =
 	{"NEWPROD13_NAME",	0.40379/2},					--42,130		Gravitino Ball		(2 hr grow time)		(In game price is 40024? some kind of global multiplier of 0.95 on item sell / value prices?)
 	{"UI_CLAMPEARL_NAME",	9.0},					--5,050			Living Pearl		(Refines to 100 Gold = 35,300u vanilla)
 	{"UI_VENTGEM_NAME",	2.5},						--7,800			Crystal Sulphide
+	{"UI_HEX_CORE_NAME",	1010.0625},				--16			Hex Core
 	
 	{"UI_EYEBALL_NAME",	2.5},						--60,000		Hypnotic Eye
 	{"FOOD_R_EYEBALLS_NAME",	1.796},				--90,000		Horrifying Mush

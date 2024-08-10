@@ -103,7 +103,7 @@ TechAdjustments =
 		"UT_JUMP",	0.8					--Rocket Boots							200 Nanites
 	},
 	{
-		"UT_PULSEFUEL",	0.2				--Instability Drive
+		"UT_PULSEFUEL",	0.2				--Instability Drive						460 Nanites
 	},
 	{
 		"UT_PULSESPEED",	0.3			--Sub-light amplifier					460 Nanites
@@ -496,14 +496,35 @@ ReplaceItems =
 	{	--Polyphonic Core
 		"UT_BUI_SCAN2",			"RED2",				160,	"Substance",	"COMPUTER",
 	},
+	{	--Mech Liquidator Stun Cannon
+		"MECH_ARMY_L_ARM",		"ILLEGAL_PROD7",	4,		"Product",		"POWERCELL",
+	},
+	{	--Mech Liquidator Stun Cannon
+		"MECH_ARMY_L_ARM",		"SALVAGE_TECH7",	2,		"Product",		"CASING",
+	},
 	{	--Mech Liquidator Flamethrower
 		"MECH_ARMY_R_ARM",		"MECH_PROD",		1,		"Product",		"FUEL2",
+	},
+	{	--Mech Liquidator Flamethrower
+		"MECH_ARMY_R_ARM",		"FARMPROD7",		4,		"Product",		"GRENFUEL1",
+	},
+	{	--Mech Liquidator Flamethrower
+		"MECH_ARMY_R_ARM",		"SALVAGE_TECH7",	2,		"Product",		"TECH_COMP",
 	},
 	{	--Mech Liquidator Legs
 		"MECH_ARMY_LEGS",		"QUAD_PROD",		2,		"Product",		"QUAD_PROD",
 	},
+	{	--Mech Liquidator Legs
+		"MECH_ARMY_LEGS",		"SALVAGE_TECH7",	2,		"Product",		"HYDRALIC",
+	},
 	{	--Mech Liquidator Head
 		"MECH_ARMY_HEAD",		"MECH_PROD",		1,		"Product",		"COMPUTER",
+	},
+	{	--Mech Liquidator Head
+		"MECH_ARMY_HEAD",		"WALKER_PROD",		2,		"Product",		"WALKER_PROD",
+	},
+	{	--Mech Liquidator Head
+		"MECH_ARMY_HEAD",		"SALVAGE_TECH7",	4,		"Product",		"TECH_COMP",
 	},
 	{	--Aqua-Jets
 		"WATER_LANDER",			"ATLAS_SEED_6",		1,		"Product",		"ANTIMATTER",

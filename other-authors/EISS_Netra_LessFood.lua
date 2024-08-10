@@ -5,16 +5,6 @@ MaxProductQuantity=99999
 MinSubstanceQuantity=99999
 MaxSubstanceQuantity=99999
 
---DO NOT EDIT THIS SECTION
-
-ProductSection = [[
-<Property name="AlwaysPresentProducts">
-</Property>
-]]
-SubstanceSection = [[
-<Property name="AlwaysPresentSubstances">
-</Property>
-]]
 
 --YOU CAN EDIT THIS SECTION, IF YOU WANT TO UPGRADE PRODUCT & SUBSTANCE LIST
 Products = 

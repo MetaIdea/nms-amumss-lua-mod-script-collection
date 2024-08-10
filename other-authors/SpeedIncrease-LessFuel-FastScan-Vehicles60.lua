@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "SpeedIncrease-LessFuel-FastScan-Vehicles60.pak",
 ["MOD_AUTHOR"]				= "MikePixelPusher",
-["NMS_VERSION"]				= "5.1.1",
+["NMS_VERSION"]				= "5.2.0.2",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {},
+							["SPECIAL_KEY_WORDS"] = {},
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -23,8 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackDrainRate",	".05"}, 	-- Original ".5"
 								{"MechJetpackFillRate",		"4"}, 	-- Original ".5"
 								{"MechJetpackTurnSpeed",		"6"}, 	-- Original "3"
-								{"VehicleJumpAirControlForce",			"220"	},
-								{"VehicleJumpForce",					"1650"	},
+								
 							}
 						},
 						{
