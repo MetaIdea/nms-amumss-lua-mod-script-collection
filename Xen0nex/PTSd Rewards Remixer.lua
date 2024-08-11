@@ -387,7 +387,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		4,	6,		0.1},	--1,	1,		0.2		Food worth 54000
 			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		4,	6,		0.1},	--1,	1,		0.2		Food worth 40000
 			{"FOOD_DNUT_MEAT",			"FOOD_DNUT_MEAT",		4,	6,		0.1},	--1,	1,		0.2		Food worth 65000
-			{"FOOD_DNUT_AJAM",			"FOOD_DNUT_AJAM",		4,	6,		0.1},	--1,	1,		0.2		Food worth 70000
+			{"FOOD_DNUT_AJAM",			"POLICE_TOKEN",			1,	1,		9},		--1,	1,		0.2		Food worth 70000		(Defence Chit)
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		1},		--1,	1,		1		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		6},		--1,	1,		30		Multi-Tool Expansion Slot
 		}
@@ -397,7 +397,7 @@ SpaceStationMissionLootChanges =
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		2},		--1,	2,		2		Warp Hypercore
 			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	2,		2},		--4,	4,		1		Launch Fuel
-			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		2},		--1,	1,		2		Defence Chit
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		7},		--1,	1,		2		Defence Chit
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0},		--1,	1,		1		Mind Control Device
 			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	1,		0},		--1,	1,		1		Holographic Analyser
@@ -449,7 +449,7 @@ SpaceStationMissionLootChanges =
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
 			{"HYPERFUEL2",				"HYPERFUEL2",			2,	3,		1},		--1,	2,		1		Warp Hypercore
 			{"LAUNCHFUEL",				"LAUNCHFUEL",			3,	3,		0.5},	--4,	4,		1		Launch Fuel
-			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	2,		2},		--1,	1,		1		Defence Chit
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	2,		5},		--1,	1,		1		Defence Chit
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		0},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	1,		0.5},	--1,	1,		1		Mind Control Device
 			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	1,		0.5},	--1,	1,		1		Holographic Analyser
@@ -488,7 +488,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_DNUT_MEAT",			"REACTION2",			5,	5,		2},		--1,	1,		0.2		Food worth 65000		(Enriched Carbon)
 			{"FOOD_DNUT_AJAM",			"REACTION3",			5,	5,		2},		--1,	1,		0.2		Food worth 70000		(Nitrogen Salt)
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		4},		--1,	1,		6		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	1,		5},		--1,	1,		6		Multi-Tool Expansion Slot
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				6,	8,		4},		--2,	4,		4		Navigation Data
 			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		5},		--1,	1,		6		Exosuit Upgrade Chart
@@ -503,7 +503,7 @@ SpaceStationMissionLootChanges =
 			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		5		C-Class Reactor
 			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		3		C-Class Reactor
 			{"HYPERFUEL2",				"HYPERFUEL2",			3,	4,		1},		--1,	2,		2		Warp Hypercore
-			{"LAUNCHFUEL",				"POLICE_TOKEN",			4,	4,		1},		--4,	4,		1		Launch Fuel					(Defence Chit)
+			{"LAUNCHFUEL",				"POLICE_TOKEN",			2,	3,		2},		--4,	4,		1		Launch Fuel					(Defence Chit)
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		2,	3,		1},		--1,	3,		1		Frigate Fuel (200 tonnes)
 			{"FRIG_BOOST_TRA",			"FRIG_BOOST_TRA",		1,	2,		1},		--1,	1,		1		Mind Control Device
 			{"FRIG_BOOST_EXP",			"FRIG_BOOST_EXP",		1,	2,		1},		--1,	1,		1		Holographic Analyser
@@ -550,9 +550,9 @@ SpaceStationMissionLootChanges =
 			{"COMPOUND4",				"COMPOUND4",			2,	3,		1},		--5,	5,		3		Fusion Accelerant
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	2,		6},		--1,	1,		5		Salvaged Frigate Module
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	1,		6},		--1,	1,		6		Storage Augmentation
-			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		4},		--1,	1,		6		Multi-Tool Expansion Slot
-			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		5},		--1,	1,		7		Exosuit Upgrade Chart
-			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		4},		--3,	3,		5		Repair Kit
+			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		1,	2,		3},		--1,	1,		6		Multi-Tool Expansion Slot
+			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	2,		3},		--1,	1,		7		Exosuit Upgrade Chart
+			{"REPAIRKIT",				"REPAIRKIT",			3,	4,		4},		--3,	3,		5		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			8,	12,		5},		--3,	5,		6		Salvaged Data
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		1},		--1,	1,		6		Exosuit Expansion Slot
 			{"NAV_DATA",				"NAV_DATA",				9,	12,		2},		--3,	5,		4		Navigation Data
@@ -586,7 +586,7 @@ SpaceStationMissionLootChanges =
 			{"TRA_COMMODITY5",			"TRA_COMMODITY5",		20,	28,		0.2},	--3,	5,		1		Trade item worth 50000
 			{"SPACEGUNK2",				"SPACEGUNK2",			100,100,	0},		--100,	100,	1		Runaway Mould
 			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		10,	15,		0.3},	--1,	1,		0.2		Food worth 102000
-			{"FOOD_CK_CACTUS",			"FOOD_CK_CACTUS",		1,	1,		0.0},	--1,	1,		0.2		Food worth 57800
+			{"FOOD_CK_CACTUS",			"POLICE_TOKEN",			3,	4,		1},		--1,	1,		0.2		Food worth 57800		(Defence Chit)
 			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		1,	1,		0.0},	--1,	1,		0.2		Food worth 90000
 			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 44000
 			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.0},	--1,	1,		0.2		Food worth 80800
@@ -609,9 +609,9 @@ SpaceStationMissionLootChanges =
 			{"SUIT_INV_TOKEN",			"SUIT_INV_TOKEN",		1,	1,		3},		--1,	1,		4		Exosuit Expansion Slot
 			{"SHIP_INV_TOKEN",			"SHIP_INV_TOKEN",		1,	2,		7},		--1,	1,		7		Storage Augmentation
 			{"WEAP_INV_TOKEN",			"WEAP_INV_TOKEN",		2,	2,		2},		--1,	1,		7		Multi-Tool Expansion Slot
-			{"FRIG_TOKEN",				"FRIG_TOKEN",			2,	2,		6},		--1,	1,		6		Salvaged Frigate Module
+			{"FRIG_TOKEN",				"FRIG_TOKEN",			2,	2,		7},		--1,	1,		6		Salvaged Frigate Module
 			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		2,	2,		0},		--1,	1,		6		Exosuit Upgrade Chart
-			{"REPAIRKIT",				"REPAIRKIT",			6,	8,		2},		--3,	3,		6		Repair Kit
+			{"REPAIRKIT",				"REPAIRKIT",			4,	5,		2},		--3,	3,		6		Repair Kit
 			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		5},		--3,	5,		5		Salvaged Data
 			{"NAV_DATA",				"NAV_DATA",				16,	16,		2},		--5,	5,		4		Navigation Data
 		}
@@ -678,14 +678,14 @@ SpaceStationMissionLootChanges =
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
 			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},		--1,	1,		3		C-Class Reactor
 			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},		--1,	1,		3		B-Class Reactor
-			{"SENTFREI_PROD",			"SENTFREI_PROD",		1,	1,		3},		--1,	1,		3		Carrier AI Fragment
+			{"SENTFREI_PROD",			"SENTFREI_PROD",		1,	1,		1},		--1,	1,		3		Carrier AI Fragment
 			{"HYPERFUEL2",				"HYPERFUEL2",			1,	2,		5},		--1,	2,		10		Warp Hypercore
-			{"REPAIRKIT",				"REPAIRKIT",			3,	5,		4},		--3,	3,		3		Repair Kit
+			{"REPAIRKIT",				"REPAIRKIT",			3,	4,		4},		--3,	3,		3		Repair Kit
 			{"LAUNCHFUEL",				"LAUNCHFUEL",			2,	4,		1},		--4,	4,		1		Launch Fuel
 			{"GRENFUEL1",				"GRENFUEL1",			4,	4,		3},		--4,	4,		3		Unstable Plasma
 			{"FACT_TOKEN",				"FACT_TOKEN",			math.floor(1*FactoryOverrideTokenMult),	math.floor(1*FactoryOverrideTokenMult),		5},		--1,	1,		5		Salvaged Frigate Module
 			{"FRIG_TOKEN",				"FRIG_TOKEN",			1,	1,		5},		--1,	1,		5		Salvaged Frigate Module
-			{"POLICE_TOKEN",			"POLICE_TOKEN",			1,	1,		2},		--1,	1,		2		Defence Chit
+			{"POLICE_TOKEN",			"POLICE_TOKEN",			2,	2,		2},		--1,	1,		2		Defence Chit
 			{"BP_SALVAGE",				"BP_SALVAGE",			4,	6,		10},	--3,	5,		10		Salvaged Data
 			{"FRIGATE_FUEL_3",			"FRIGATE_FUEL_3",		1,	3,		1},		--1,	3,		5		Frigate Fuel (200 tonnes)
 			{"NAV_DATA_DROP",			"NAV_DATA_DROP",		1,	1,		3},		--1,	1,		3		Exosuit Upgrade Chart
@@ -724,21 +724,21 @@ SpaceStationMissionLootChanges =
 			{"MEGAPROD3",				"MEGAPROD3",			2,	3,		5},		--1,	1,		5		Cryogenic Chamber
 			{"ULTRAPROD1",				"ULTRAPROD1",			1,	2,		1},		--1,	1,		1		Fusion Ignitor
 			{"ULTRAPROD2",				"ULTRAPROD2",			1,	2,		1},		--1,	1,		1		Stasis Device
-			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		25,	25,		20},	--25,	25,		25		Storm Crystal
-			{"FIENDCORE",				"FIENDCORE",			25,	25,		20},	--25,	25,		25		Larval Core
-			{"FISHCORE",				"FISHCORE",				25,	25,		20},	--25,	25,		25		Hadal Core
-			{"TRA_MINERALS5",			"TRA_MINERALS5",		20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"TRA_TECH5",				"TRA_TECH5",			20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"TRA_COMPONENT5",			"TRA_COMPONENT5",		20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"TRA_ENERGY5",				"TRA_ENERGY5",			20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"TRA_EXOTICS5",			"TRA_EXOTICS5",			20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"TRA_COMMODITY5",			"TRA_COMMODITY5",		20,	28,		10},	--3,	5,		15		Trade item worth 50000
-			{"SPECIAL_POOP",			"SPECIAL_POOP",			50,	50,		2},		--50,	50,		10		Hexite
+			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		25,	25,		5},		--25,	25,		25		Storm Crystal
+			{"FIENDCORE",				"FIENDCORE",			25,	25,		5},		--25,	25,		25		Larval Core
+			{"FISHCORE",				"FISHCORE",				25,	25,		5},		--25,	25,		25		Hadal Core
+			{"TRA_MINERALS5",			"TRA_MINERALS5",		20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"TRA_TECH5",				"TRA_TECH5",			20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"TRA_COMPONENT5",			"TRA_COMPONENT5",		20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"TRA_ENERGY5",				"TRA_ENERGY5",			20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"TRA_EXOTICS5",			"TRA_EXOTICS5",			20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"TRA_COMMODITY5",			"TRA_COMMODITY5",		20,	28,		2},		--3,	5,		15		Trade item worth 50000
+			{"SPECIAL_POOP",			"SPECIAL_POOP",			50,	50,		0},		--50,	50,		10		Hexite
 			{"SPACEGUNK2",				"SPACEGUNK2",			100,100,	0},		--100,	100,	10		Runaway Mould
 			{"WALKER_PROD",				"WALKER_PROD",			2,	3,		5},		--1,	1,		5		Walker Brain
 			{"BP_SALVAGE",				"BP_SALVAGE",			10,	14,		20},	--1,	1,		25		Salvaged Data
 			{"FOOD_EGGPIE_GM",			"FOOD_EGGPIE_GM",		10,	15,		2},		--1,	1,		2		Food worth 102000
-			{"FOOD_CK_CACTUS",			"FOOD_CK_CACTUS",		1,	1,		0.0},	--1,	1,		2		Food worth 57800
+			{"FOOD_CK_CACTUS",			"HEXCORE",				64,	64,		2},		--1,	1,		2		Food worth 57800		(Hex Core)
 			{"FOOD_R_EYESTEW",			"FOOD_R_EYESTEW",		1,	1,		0.0},	--1,	1,		2		Food worth 90000
 			{"FOOD_ICE_GRAH",			"FOOD_ICE_GRAH",		1,	1,		0.0},	--1,	1,		2		Food worth 44000
 			{"FOOD_CG_JGLITCH",			"FOOD_CG_JGLITCH",		1,	1,		0.0},	--1,	1,		2		Food worth 80800
@@ -751,7 +751,7 @@ SpaceStationMissionLootChanges =
 			{"FOOD_PIE_CRABJ",			"FOOD_PIE_CRABJ",		1,	1,		0.0},	--1,	1,		2		Food worth 54000
 			{"FOOD_PIE_CRAB",			"FOOD_PIE_CRAB",		1,	1,		0},		--1,	1,		2		Food worth 40000
 			{"FOOD_DNUT_MEAT",			"MECH_PROD",			2,	3,		2},		--1,	1,		2		Food worth 65000		(Hardframe Engine)
-			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	2,		10},	--1,	1,		2		Food worth 70000		(Freighter Bulkhead)
+			{"FOOD_DNUT_AJAM",			"FREI_INV_TOKEN",		1,	2,		8},		--1,	1,		2		Food worth 70000		(Freighter Bulkhead)
 			{"SPEC_FIREWORK01",			"SPEC_FIREWORK01",		20,	20,		5},		--20,	20,		5		Blue Firework
 			{"SPEC_FIREWORK02",			"SPEC_FIREWORK02",		20,	20,		5},		--20,	20,		5		Red Firework
 			{"SPEC_FIREWORK03",			"SPEC_FIREWORK03",		20,	20,		5},		--20,	20,		5		Green Firework
@@ -1090,8 +1090,8 @@ SusPacketChanges =
 			{"FISHCORE",			"FISHCORE",				1,			1,			100},				--Hadal Core,			1,			1,			100
 			{"EYEBALL",				"EYEBALL",				1,			1,			100},				--Hypnotic Eye,			1,			1,			100
 			{"NAV_DATA_DROP",		"NAV_DATA_DROP",		1,			1,			100},				--Exosuit Upgrade Chart,1,			1,			100
-			{"POLICE_TOKEN",		"ALBUMENPEARL",			4,			8,			100},				--Defence Chit,			1,			1,			100
-			{"POLICE_TOKEN",		"POLICE_TOKEN",			1,			2,			135},				--Defence Chit,			1,			1,			100		(Not sure why this item gets 2 separate entries in vanilla)
+			{"POLICE_TOKEN",		"ALBUMENPEARL",			4,			8,			100},				--Defence Chit,			1,			1,			100		(Albumen Pearl)
+			{"POLICE_TOKEN",		"POLICE_TOKEN",			1,			2,			150},				--Defence Chit,			1,			1,			100		(Not sure why this item gets 2 separate entries in vanilla)
 			{"HEXCORE",				"HEXCORE",				2,			4,			100},				--Hex Core,				1,			1,			100
 			{"NIPNIPBUDS",			"NIPNIPBUDS",			1,			1,			100},				--NipNip Buds,			1,			1,			100
 			{"TRA_ALLOY5",			"TRA_ALLOY5",			1,			3,			17},				--Superconducting Fibre,1,			1,			100

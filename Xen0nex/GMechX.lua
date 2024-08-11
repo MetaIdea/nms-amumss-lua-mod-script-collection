@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
 ModName = "GMechX"
 --ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "441"
+GameVersion = "5_03"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -11,6 +11,9 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	FastWalkSpeed								= 1.1		--1			(1.2)
 	WalkSpeed									= 1.1		--0.8		(1.4)
 
+	MaxFootAngle								= 70		--45
+	MovementDamp								= 0.7		--0.2
+	
 --GCVEHICLEGLOBALS Mech
 	MechContrailAlpha							= 0.6		--0.6
 	MechPlayerGroundTurnSpeed					= 0.5		--0.5
@@ -63,6 +66,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["INTEGER_TO_FLOAT"] = "FORCE",
 			["VALUE_CHANGE_TABLE"] = {
 				{"Speed", WalkSpeed}
+		}},
+		{["SPECIAL_KEY_WORDS"] = {"Template", "GcCreatureFullBodyIKComponentData.xml"},
+			["VALUE_CHANGE_TABLE"] = {
+				{"MaxFootAngle", MaxFootAngle},
+				{"MovementDamp", MovementDamp}
 		}},
 	}},
 

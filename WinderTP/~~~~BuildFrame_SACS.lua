@@ -809,7 +809,7 @@ LINE_BREAK = [[
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="7" />
-              <Property name="Height" value="12" />
+              <Property name="Height" value="4" />
               <Property name="ConstrainAspect" value="1" />
               <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">

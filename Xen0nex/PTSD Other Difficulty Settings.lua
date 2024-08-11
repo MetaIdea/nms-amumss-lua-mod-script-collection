@@ -1,5 +1,5 @@
-ModName = "PTSD Other Difficulty Settings"
-GameVersion = "452"
+ModName = "PTSd Other Difficulty Settings"
+GameVersion = "5_03"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
@@ -147,15 +147,15 @@ SOFree =						0										--0
 SOLow =							0.4										--0.4
 SOFull =						1										--1
 
---Multipliers for the "Breaking Tech" difficulty settings
+--Multipliers for the "Breaking Tech" difficulty settings. These appear to somehow determine the "base chance" for tech breakage / tech damage when taking a hit
 BTNone =						0										--0
 BTLow =							0.2										--0.33
 BTHigh =						1.3										--2.5
 
---Base chances to be used for Breaking Tech when taking damage (unclear exactly how these are used)
-TechDamageChanceShieldedMax =		0.5									--0.5			(Maybe an additional multiplier to tech breakage chance when at full shields?)
-TechDamageChanceShieldLevelMin =	0.01								--0.01			(Maybe the base chance for tech to break when shields are almost full?)
-TechDamageChanceShieldLevelMax =	0.75								--0.75			(Maybe the base chance for tech to break when shields are almost empty?)
+--These appear to be further multipliers applied to the "base chance" of tech breakage set above
+TechDamageChanceShieldedMax =		0.33								--0.5			This appears to be a flat multiplier applied to tech breakage chances that remains in effect as long as your shield is still active. Appears to stack multiplicatively with the "sliding scale" multiplier below
+TechDamageChanceShieldLevelMin =	0.001								--0.01			This appears to set the lower bound for a "sliding scale" multiplier applied to tech breakage chances depending on how full your shield is (This presumably sets the value of the multiplier when you shield is full)
+TechDamageChanceShieldLevelMax =	0.75								--0.75			This appears to set the upper bound for a "sliding scale" multiplier applied to tech breakage chances depending on how full your shield is (This presumably sets the value of the multiplier when you shield is at the lowest possible value before breaking)
 TechDamageChanceToSelectPrimary =	0.1									--0.1			(Maybe the chance that a primary tech is chosen instead of a secondary tech or upgrade whenever tech breaks?)
 
 --Alters some base values for Multi-Tool mining and Scan Pulses, mainly to be equal to their survival mode level for pre-4.0 NMS

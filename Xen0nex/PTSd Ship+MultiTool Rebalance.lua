@@ -613,7 +613,7 @@ ToolStatChanges	=
 	},
 	{
 		{
-			"Royal"			--"Exotic"	(15% chance to be offered from defeated Sentinel Pillars. Always found at C Class?)
+			"Royal"			--"Exotic"	(15% chance to be offered from defeated Sentinel Pillars. No longer always found at C Class?)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1.2,	1.2,	1.2,	1.2},		--			+		0-5,		5-10,		10-15,		15-25	%
@@ -626,7 +626,7 @@ ToolStatChanges	=
 			"Alien"			--"Exotic"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.43,	1.43,	1.43,	1.43},		--			+		10-15,		15-20,		20-25,		25-35	%
+			{"WEAPON_DAMAGE",			1.57,	1.57,	1.57,	1.57},		--			+		10-15,		15-20,		20-25,		25-35	%
 			{"WEAPON_MINING",			1,		1,		1,		1},			--			+		0-5,		5-10,		10-15,		15-20	%
 			{"WEAPON_SCAN",				0.8,	0.8,	0.8,	0.8}		--			+		20-25,		30-35,		40-45,		50-60	%
 		}
@@ -648,7 +648,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -658,7 +658,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -668,7 +668,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -678,7 +678,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
 			{"WEAPON_MINING",			1.175,	1.175,	2.35,	2.35},		--			+		0-5,		5-10,		5-10,		10-15	%
-			{"WEAPON_SCAN",				1.5,	1.5,	1.5,	1.5}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 }

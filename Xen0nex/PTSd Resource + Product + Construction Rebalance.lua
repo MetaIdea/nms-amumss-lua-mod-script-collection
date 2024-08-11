@@ -683,14 +683,14 @@ AnomalyDetectorBaseMarkup =			19				--0.2		(BaseValeu 3200)
 SalvagedTechSpaceStationMarkup =	0.05			--0
 SalvagedTechBaseMarkup =			0.1				--0.1
 	--The increased BaseMarkup for these items balanced out with increased amounts of Tainted Metal rewarded in Rewards Remixer.lua
-SusGoodsSpaceStationMarkup =		300				--300		(BaseValue 150)
+SusGoodsSpaceStationMarkup =		300				--300		(BaseValue 150)		Suspicious Packet (Goods)
 SusGoodsBaseMarkup =				2.6				--0.2
-SusTechSpaceStationMarkup =			715				--300		(BaseValue 200)
-SusTechBaseMarkup =					3.32			--0.2
-SusWeapSpaceStationMarkup =			715				--300		(BaseValue 350)
-SusWeapBaseMarkup =					3.32			--0.2
-RepairKitSpaceStationMarkup =		150				--154		(BaseValue 450)
-RepairKitBaseMarkup =				1.4				--0.2
+SusTechSpaceStationMarkup =			715				--300		(BaseValue 200)		Suspicious Packet (Tech)
+SusTechBaseMarkup =					4.4				--0.2
+SusWeapSpaceStationMarkup =			715				--300		(BaseValue 350)		Suspicious Packet (Arms)
+SusWeapBaseMarkup =					2.46			--0.2
+RepairKitSpaceStationMarkup =		377				--154		(BaseValue 450)		Repair Kit
+RepairKitBaseMarkup =				0.92			--0.2
 ScrapDealerDecorativeBaseMarkup =	2				--0 for all price modifiers		Decorative items sold by scrap dealer
 
 SubstanceStackChanges =

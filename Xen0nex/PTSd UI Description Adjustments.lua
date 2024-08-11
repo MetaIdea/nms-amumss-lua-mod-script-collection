@@ -5,6 +5,9 @@ Description = "Changes the UI display for things like Settlement Production rate
 VesperSailDesc =
 [[A high-performance &lt;STELLAR&gt;solar sail&lt;&gt;, deployed automatically during flight. This advanced &lt;TECHNOLOGY&gt;propulsion device&lt;&gt; generates an electric field within the sails themselves, allowing the starship to build momentum from the solar wind.&#xA;&#xA;Offers substantial gains in &lt;STELLAR&gt;fuel efficiency&lt;&gt; and &lt;STELLAR&gt;Pulse Jump speed&lt;&gt; performance over conventional engine systems, as well as the photovoltaic cells enabling more &lt;STELLAR&gt;efficient&lt;&gt; use of the starship's &lt;TECHNOLOGY&gt;launch systems&lt;&gt;.]]
 
+LargeRocketTubesDesc =
+[[Expands the loading chamber of the starship &lt;TECHNOLOGY&gt;Rocket Launcher&lt;&gt;, improving payload size and allowing for significantly higher &lt;STELLAR&gt;damage&lt;&gt;.]]
+
 ConsciousnessBridgeMissionHint =
 [[The Void Egg requires a &lt;TECHNOLOGY&gt;Consciousness Bridge&lt;&gt;&#xA;Gather %ITEM% to craft Consciousness Bridge: %CURRENT%/%AMOUNT%&#xA;%ITEM% can be mined on planets in &lt;TRADEABLE&gt;green star systems&lt;&gt;]]
 
@@ -155,6 +158,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", GAMEMODE_PERMADEATH_SUB_SHORT}
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_LOC4_ENGLISH.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UT_ROCKETS_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", LargeRocketTubesDesc}
 							}
 						},
 					}

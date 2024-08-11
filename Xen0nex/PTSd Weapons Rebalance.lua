@@ -89,6 +89,8 @@ PositronUpgradesDMGMult =					1.25*3				--				Multiplier to apply to the bonus d
 InfraKnifeUpgradesDMGMult =					0.7					--				Multiplier to apply to the bonus damage for Infra-Knife upgrades (2 ~ 14 for Class C ~ X)
 CyclotronUpgradesDMGMult =					1.1*10				--				Multiplier to apply to the bonus damage for Cyclotron upgrades (2 ~ 14 for Class C ~ X)
 
+RocketsUpgradeDMG =							2.0					--				Multiplier to apply to the bonus damage for the "Large Rocket Tubes" tech (3,250, half of the base Rocket damage of 6,500)
+
 --Multipliers for certain bonuses from Multi-Tool weapon procedural upgrade modules
 MTUAddMult =								0.5					--				Multiplier to apply to the strength of all additive bonuses (like damage) from all procedural Multi-Tool weapon upgrades. (This is to compensate for going from 3x upgrades to 5x upgrades)
 MTUMultMult =								0.5					--				Multiplier to apply to the strength of all multiplicative bonuses (like fire rate) from all procedural Multi-Tool weapon upgrades. (This is to compensate for going from 3x upgrades to 5x upgrades)
@@ -149,7 +151,7 @@ LivingShipBeamDMG =							1.1					--280
 PhotonCannonDMG =							0.9*1.667			--320			(2,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
 LivingShipCannonDMG =						0.9*1.667			--340			(3,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
 SentinelCannonDMG =							0.75*1.667			--220			(2,420 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added. 	Uses a lower mult than Photon Cannon since it gains more relative benefit from the set damage of photon cannon upgrade modules with its higher fire rate
-RocketsDMG =								1.5					--6500
+RocketsDMG =								1.25				--6500
 PositronEjectorDMG =						1.05*0.667			--280 x 14		(7,840 theoretical burst DPS)	Multiplied by 0.667 to balance out the 50% more projectiles I added
 InfraKnifeDMG =								1.0*0.75			--160 x 1		(1,845 theoretical burst DPS)	Multiplied by 0.75 to balance out the 33% faster fire rate I added
 CyclotronDMG =								0.9*5				--600 x 2		(3,600 theoretical burst DPS)	Multiplied by 5 to balance out the 80% slower fire rate I added
@@ -168,7 +170,7 @@ ShipWeaponEffectiveness =
 --Multipliers to apply to the base damage for various player mining lasers. Note that higher damage means objects get mined faster
 MiningLaserDMG =							1.0					--20
 HijackedLaserDMG =							6.0					--20
-RunicLensDMG =								0.7					--20
+RunicLensDMG =								0.73				--20
 AnimusBeamDMG =								1.0					--40
 ExocraftLaserDMG =							1.0					--80
 NautilonLaserDMG =							1.0					--240
@@ -527,7 +529,7 @@ WeaponStatChanges =
 				"Weapon_Laser_Drain",	0.333,	"FORCE"				--1.2				Controls how quickly the laser consumes fuel while active
 			},
 			{
-				"Weapon_Laser_MiningBonus",	0.2,	"FORCE"			--1
+				"Weapon_Laser_MiningBonus",	0.32,	"FORCE"			--1
 			}
 		}
 	},
@@ -552,7 +554,7 @@ WeaponStatChanges =
 				"Weapon_Laser_Drain",	1,	"FORCE"					--1.2				Controls how quickly the laser consumes fuel while active
 			},
 			{
-				"Weapon_Laser_MiningBonus",	1.14,	"FORCE"				--1.1
+				"Weapon_Laser_MiningBonus",	1.2727,	"FORCE"				--1.1
 			},
 			{
 				"Weapon_Stealth",	1,	"FORCE"						--1					Related to cloaking ability, unsure the effect
@@ -954,7 +956,7 @@ WeaponSecondaryTechChanges =
 				"Ship_Weapons_Guns_CoolTime",	1,	"FORCE"				--0.8
 			},
 			{
-				"Ship_Weapons_Guns_Damage",	RocketsDMG*GSD,	"FORCE"		--3250
+				"Ship_Weapons_Guns_Damage",	RocketsDMG*RocketsUpgradeDMG*GSD,	"FORCE"		--3250		(Added by PTSd, 0 in vanilla)
 			},
 		}
 	},
@@ -992,7 +994,7 @@ WeaponCoolAim =
 		"SHIPPLASMAGUN",			4,			15,				3,			0.3		--5,	15,			1.5,	0.4			[1.5,	0.2]
 	},
 	{--Rockets
-		"SHIPROCKET",				5,			15,				12,			0.2		--5,	15,			5,		0.2			[5,	0.2]
+		"SHIPROCKET",				5,			15,				16,			0.2		--5,	15,			5,		0.2			[5,	0.2]
 	},
 }
 
