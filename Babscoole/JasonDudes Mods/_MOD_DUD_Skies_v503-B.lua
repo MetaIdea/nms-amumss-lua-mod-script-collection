@@ -279,7 +279,7 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v503-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v503-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "5.03",
@@ -2149,16 +2149,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"StormScreenFilterFadeTime",           "2"},
-                                {"MinTimeBetweenStormsLow",             "130"},
-                                {"MaxTimeBetweenStormsLow",             "130"},
-                                {"MinTimeBetweenStormsHigh",            "130"},
-                                {"MaxTimeBetweenStormsHigh",            "130"},
-                                {"MinTimeBetweenStormsExtremeFallback", "120"},
-                                {"MaxTimeBetweenStormsExtremeFallback", "120"},
-                                {"MinStormLengthLow",                   "90"},
-                                {"MaxStormLengthLow",                   "90"},
-                                {"MinStormLengthHigh",                  "90"},
-                                {"MaxStormLengthHigh",                  "90"},
                                 {"StormWarningTime",                    "20"},
                                 {"MaxCloudCover",                       "0.6"},
                                 {"MaxStormCloudCover",                  "0.7"},
@@ -2323,8 +2313,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength",              "0.8"},
-                                {"SpaceFogMax",              "0.8"},
-                                {"SpaceFogPlanetMax",        "0.9"},
+                                {"SpaceFogPlanetMax",        "0.8"},
                                 {"NebulaSeed",               "200"},
                                 {"NebulaDistortionStrength", "0.25"},
                             }
@@ -3146,8 +3135,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="FadeTime" value="0.5" />
   <Property name="SpeedFadeInTime" value="0" />
   <Property name="MinVisibleSpeed" value="0" />
-  <Property name="SpeedFadeOutTime" value="0" />
-  <Property name="MaxVisibleSpeed" value="15000" />
+  <Property name="SpeedFadeOutTime" value="1.5" />
+  <Property name="MaxVisibleSpeed" value="1.5" />
   <Property name="SoftFadeStrength" value="5" />
   <Property name="SpawnRotationRange" value="360" />
   <Property name="MajorDirection" value="Vector3f.xml">
