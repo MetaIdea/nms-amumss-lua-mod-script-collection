@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "LIVELIER_FREIGHTER_BASES_ByTOC_X3.pak",
 ["MOD_AUTHOR"]              = "ThatOneCarpenter",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.08",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes"},
+                            ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FrigateCaptain", "12"},
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"NPCNavNodeConnectivity", "GcNPCNavSubgraphNodeTypeConnectivity.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"NPCNavNodeConnectivity","GcNPCNavSubgraphNodeTypeConnectivity.xml",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"InternalConnection", "2"},
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_BIO"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_BIO",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0.6"},
@@ -51,35 +51,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_PLANT0"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_PLANT0",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerBio", "0.9"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_PLANT1"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_PLANT1",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerBio", "0.9"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_NPCFAR"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_NPCFAR",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerBio", "3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_COOK"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_COOK",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerBio", "3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_TECH"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_TECH",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0.6"},
@@ -88,42 +88,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_SCAN"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_SCAN",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_TELEPO"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_TELEPO",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_NPCSCI"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_NPCSCI",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_NPCBUI"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_NPCBUI",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "3"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_DRESS"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_DRESS",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerTech", "1.5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_FLEET"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_FLEET",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "3"},
@@ -131,7 +131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_SHOP"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_SHOP",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "2"},
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_IND"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_IND",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SquadronPilot",  "0.6"},
@@ -149,12 +149,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_REFINE"},
-                                {"RoomID", "FRE_ROOM_NPCWEA"},
-                                {"RoomID", "FRE_ROOM_NPCVEH"},
-                                {"RoomID", "FRE_ROOM_VEHICL"},
+                                {"RoomID", "FRE_ROOM_REFINE",},
+                                {"RoomID", "FRE_ROOM_NPCWEA",},
+                                {"RoomID", "FRE_ROOM_NPCVEH",},
+                                {"RoomID", "FRE_ROOM_VEHICL",},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -162,21 +162,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_EXTR"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_EXTR",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerIndustry", "2"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FSKWG"] =
                             {
-                                {"RoomID", "FRE_ROOM_STORE0"},
-                                {"RoomID", "FRE_ROOM_STORE1"},
-                                {"RoomID", "FRE_ROOM_STORE2"},
-                                {"RoomID", "FRE_ROOM_STORE3"},
-                                {"RoomID", "FRE_ROOM_STORE4"},
-                                {"RoomID", "FRE_ROOM_STORE5"},
+                                {"RoomID", "FRE_ROOM_STORE0",},
+                                {"RoomID", "FRE_ROOM_STORE1",},
+                                {"RoomID", "FRE_ROOM_STORE2",},
+                                {"RoomID", "FRE_ROOM_STORE3",},
+                                {"RoomID", "FRE_ROOM_STORE4",},
+                                {"RoomID", "FRE_ROOM_STORE5",},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"RoomID", "FRE_ROOM_STORE6"},
+                            ["SPECIAL_KEY_WORDS"] = {"RoomID","FRE_ROOM_STORE6",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WorkerIndustry", "0.6"},

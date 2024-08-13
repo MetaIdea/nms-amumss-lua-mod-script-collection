@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_TheAstralNut'sMod.pak",
 ["MOD_AUTHOR"]              = "AstralNut",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.01.1",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -31,8 +31,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"CharacterTurnSpeed",    "2.8"},
-                                {"CharacterRunTurnSpeed", "8.4"},
+                                {"CharacterTurnSpeed",    "2.4"},
+                                {"CharacterRunTurnSpeed", "6.9"},
                             }
                         },
                     }
@@ -63,7 +63,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ThirdPersonIsDefaultCameraForPlayer", "False"},
                                 {"RenderCreatureDetails",               "True"},
                                 {"CreatureChatter",                     "True"},
-                                {"CreatureErrors",                      "True"},
                                 {"DrawCreaturesInRoutines",             "True"},
                                 {"ShaderCaching",                       "True"},
                                 {"DrawCreaturesInRoutines",             "False"},
@@ -88,10 +87,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"CloudProperties", "GcCloudProperties.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"AnimationScale",  "14"},
-                                {"DetailScale",     "10"},
+                                {"AnimationScale",  "18"},
+                                {"DetailScale",     "12"},
                                 {"CloudDistortion", "42"},
-                                {"MaxIterations",   "256"},
+                                {"MaxIterations",   "384"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"EnvironmentProperties", "GcEnvironmentProperties.xml"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CloudHeightMin",            "525"},
+                                {"CloudHeightMax",            "1000"},
+                                {"PlanetObjectSwitch",        "800"},
+                                {"PlanetLodSwitch0",          "400"},
+                                {"PlanetLodSwitch0Elevation", "800"},
+                                {"PlanetLodSwitch1",          "3000"},
+                                {"PlanetLodSwitch2",          "20000"},
+                                {"PlanetLodSwitch3",          "30000"},
+                                {"AtmosphereStartHeight",     "525"},
+                                {"StratosphereHeight",        "4200"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"EnvironmentProperties", "GcEnvironmentProperties.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"SkyHeight"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Large",  "200"},
+                                {"Medium", "900"},
+                                {"Small",  "800"},
+                                {"Moon",   "600"},
                             }
                         },
                     }
@@ -136,7 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"GroundWalkSpeed",                "2.8"},
+                                {"GroundWalkSpeed",                "3"},
                                 {"GroundRunSpeed",                 "7.18"},
                                 {"DoPlayerAppearInVehicleEffect",  "True"},
                                 {"EnableLeaning",                  "True"},
@@ -153,6 +179,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"DayLength",           "5400"},
                                 {"StormTransitionTime", "42"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"PlanetRingProbability", "0.42"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremePlanetChance"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Yellow", "0.4"},
+                                {"Green",  "0.7"},
+                                {"Blue",   "0.12"},
                             }
                         },
                     }
@@ -236,16 +283,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",       "720"},
+                                {"MaxSpeed",       "420"},
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
-                                {"BoostMaxSpeed",  "3200"},
+                                {"BoostMaxSpeed",  "840"},
                                 {"BoostFalloff",   "0"},
                                 {"OverspeedBrake", "0"},
-                                {"ReverseBrake",   "0.18"},
-                                {"OverspeedBrake", "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "0.2"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "1.8"},
                             }
                         },
                         {
@@ -256,11 +304,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
                                 {"BoostMaxSpeed",  "300"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2"},
                             }
                         },
                         {
@@ -270,12 +319,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed",       "300"},
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
-                                {"BoostMaxSpeed",  "2600"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostMaxSpeed",  "800"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2.4"},
                             }
                         },
                         {
@@ -286,11 +336,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
                                 {"BoostMaxSpeed",  "250"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2"},
                             }
                         },
                         {
@@ -476,7 +527,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <RenderTarget id="CLOUDS_MASK"        depthBuf="false"        numColBufs="1" format="RG8"       scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_MASK"        depthBuf="false"        numColBufs="1" format="RG8"       scale="2" applyDrs="true" allowDcc="NEXT" />]]},
                                 {[[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="2" applyDrs="true" allowDcc="NEXT" />]]},
                                 {[[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="2" applyDrs="true" allowDcc="NEXT" />]]},
-                               -- {[[   <RenderTarget id="RINGS_BUFF"         depthBuf="false"        numColBufs="1"  format="RGBA16F"  scale="1.0" applyDrs="true" pointSampleColBuf0="false" />]], [[    <RenderTarget id="RINGS_BUFF"         depthBuf="false"        numColBufs="1"  format="RGBA16F"  scale="0.5" applyDrs="true" pointSampleColBuf0="false" />]]},
+                                {[[    <RenderTarget id="WATER_REFL"         platforms="PC|NEXT|XB1X"  depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" shareTarget0="RED32UI_BUF_1" />]], [[    <RenderTarget id="WATER_REFL"         platforms="PC|NEXT|XB1X"  depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" shareTarget0="RED32UI_BUF_1" />]]},
+                                {[[    <RenderTarget id="WATER_REFL_FRONT"   platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" shareTarget0="RED32UI_BUF_2" esramPageColBuf0="76" />]], [[    <RenderTarget id="WATER_REFL_FRONT"   platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" shareTarget0="RED32UI_BUF_2" esramPageColBuf0="76" />]]},
+                                {[[    <RenderTarget id="WATER_REFL_BACK"    platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" />]], [[    <RenderTarget id="WATER_REFL_BACK"    platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" />]]},
                             }
                         },
                     }

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "LIVELIER_FREIGHTER_BASES_ByTOC_XENTERPRISE.pak",
 ["MOD_AUTHOR"]              = "ThatOneCarpenter",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.64",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {

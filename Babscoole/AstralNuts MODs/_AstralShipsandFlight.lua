@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_AstralShipsandFlight.pak",
 ["MOD_AUTHOR"]              = "AstralNut",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.01.1",
+["NMS_VERSION"]             = "5.03",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -103,16 +103,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxSpeed",       "720"},
+                                {"MaxSpeed",       "420"},
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
-                                {"BoostMaxSpeed",  "3200"},
+                                {"BoostMaxSpeed",  "840"},
                                 {"BoostFalloff",   "0"},
                                 {"OverspeedBrake", "0"},
-                                {"ReverseBrake",   "0.18"},
-                                {"OverspeedBrake", "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "0.2"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "1.8"},
                             }
                         },
                         {
@@ -123,11 +124,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
                                 {"BoostMaxSpeed",  "300"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2"},
                             }
                         },
                         {
@@ -137,12 +139,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSpeed",       "300"},
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
-                                {"BoostMaxSpeed",  "2600"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostMaxSpeed",  "800"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2.4"},
                             }
                         },
                         {
@@ -153,11 +156,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MinSpeed",       "0"},
                                 {"Falloff",        "0"},
                                 {"BoostMaxSpeed",  "250"},
-                                {"BoostFalloff",   "0"},
-                                {"ReverseBrake",   "0.24"},
-                                {"OverspeedBrake", "0.24"},
+                                {"BoostFalloff",   "0.18"},
+                                {"ReverseBrake",   "0.42"},
+                                {"OverspeedBrake", "1.8"},
                                 {"TurnBrakeMin",   "0"},
                                 {"TurnBrakeMax",   "0"},
+                                {"TurnStrength",   "2"},
                             }
                         },
                         {

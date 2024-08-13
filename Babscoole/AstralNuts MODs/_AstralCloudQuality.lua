@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_AstralCloudQuality.pak",
 ["MOD_AUTHOR"]    = "AstralNut",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "5.03",
 ["MODIFICATIONS"] =
     {
         {
@@ -28,7 +28,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <RenderTarget id="CLOUDS_MASK"        depthBuf="false"        numColBufs="1" format="RG8"       scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_MASK"        depthBuf="false"        numColBufs="1" format="RG8"       scale="2" applyDrs="true" allowDcc="NEXT" />]]},
                                 {[[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_HISTORY"     depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="2" applyDrs="true" allowDcc="NEXT" />]]},
                                 {[[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="0.5" applyDrs="true" allowDcc="NEXT" />]], [[    <RenderTarget id="CLOUDS_FINAL"       depthBuf="false"        numColBufs="1" format="RGBA16F"   scale="2" applyDrs="true" allowDcc="NEXT" />]]},
-                               {[[   <RenderTarget id="RINGS_BUFF"         depthBuf="false"        numColBufs="1"  format="RGBA16F"  scale="1.0" applyDrs="true" pointSampleColBuf0="false" />]], [[    <RenderTarget id="RINGS_BUFF"         depthBuf="false"        numColBufs="1"  format="RGBA16F"  scale="0.5" applyDrs="true" pointSampleColBuf0="false" />]]},
+                                {[[    <RenderTarget id="WATER_REFL"         platforms="PC|NEXT|XB1X"  depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" shareTarget0="RED32UI_BUF_1" />]], [[    <RenderTarget id="WATER_REFL"         platforms="PC|NEXT|XB1X"  depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" shareTarget0="RED32UI_BUF_1" />]]},
+                                {[[    <RenderTarget id="WATER_REFL_FRONT"   platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" shareTarget0="RED32UI_BUF_2" esramPageColBuf0="76" />]], [[    <RenderTarget id="WATER_REFL_FRONT"   platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" shareTarget0="RED32UI_BUF_2" esramPageColBuf0="76" />]]},
+                                {[[    <RenderTarget id="WATER_REFL_BACK"    platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="false" />]], [[    <RenderTarget id="WATER_REFL_BACK"    platforms="PC|NEXT"       depthBuf="false"  numColBufs="1" format="RED32UI"                 scale="1.0" applyDrs="true" allowDcc="true" />]]},
                             }
                         },
                     }

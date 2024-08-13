@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_AstralGameplayandGraphics.pak",
 ["MOD_AUTHOR"]    = "AstralNut",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "5.03",
 ["MODIFICATIONS"] =
     {
         {
@@ -19,7 +19,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ThirdPersonIsDefaultCameraForPlayer", "False"},
                                 {"RenderCreatureDetails",               "True"},
                                 {"CreatureChatter",                     "True"},
-                                {"CreatureErrors",                      "True"},
                                 {"DrawCreaturesInRoutines",             "True"},
                                 {"ShaderCaching",                       "True"},
                                 {"DrawCreaturesInRoutines",             "False"},
