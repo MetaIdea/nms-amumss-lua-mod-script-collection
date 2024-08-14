@@ -2994,6 +2994,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "RefThruster1"},
+							["SECTION_ACTIVE"] = {0},
+							["MATH_OPERATION"] = "-",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TransY", Freighters_lowering_value},
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "RefThruster2"},
 							["SECTION_ACTIVE"] = {0},
 							["MATH_OPERATION"] = "-",

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Daplokarus.V.1.8.pak",
+["MOD_FILENAME"]  = "_Daplokarus.V.1.9.pak",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.01.1",
+["NMS_VERSION"]   = "5.03",
 ["MODIFICATIONS"] =
     {
         {
