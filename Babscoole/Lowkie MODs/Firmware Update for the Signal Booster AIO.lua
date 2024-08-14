@@ -359,7 +359,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
                             ["PRECEDING_KEY_WORDS"] = {"Stages"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
@@ -405,13 +404,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
                             ["PRECEDING_KEY_WORDS"] = {"Stages"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
                             ["SEC_EDIT"] = "GetGenericMissionStage",
                             ["PRECEDING_KEY_WORDS"] = {"Conditions"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
@@ -487,7 +484,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SEC_EDIT"] = "GetMission",
                             ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {

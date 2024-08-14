@@ -508,7 +508,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0", "Name", "HASH"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4700670644113984656"},
@@ -523,7 +522,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WingsK_ALOD0"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash", "108830653"},
@@ -609,7 +607,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0", "Name", "HASH"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "12658428626844270041"},
@@ -624,7 +621,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD0"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash", "1043619206"},
@@ -640,7 +636,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB1WingsK_ALOD1", "Name", "HASH"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "12294403936512063753"},
@@ -739,7 +734,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0", "Name", "HASH"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "11193870210701611168"},
@@ -754,7 +748,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD0"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash", "2832696420"},
@@ -770,7 +763,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUB3WingsK_ALOD1", "Name", "HASH"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "15637988984117460967"},

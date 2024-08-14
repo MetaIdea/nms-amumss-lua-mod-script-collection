@@ -52,7 +52,7 @@ RewardChanges =
 OptionChanges =
 {
   { -- ID
-    {"?TRA_NPC_SECONDARY"},
+    {"%?TRA_NPC_SECONDARY"},
     { -- OldCost,       NewCost,           Reward,      KeepOpen
       {"GEKGIFT1",    "GEKGIFT_C",    "SEC_CUSTOM_TRA", Keep_Open},
     }

@@ -30,7 +30,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NameHash",  "422545419"},

@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_FlyLikeIronMan V1.2 (Half Power).pak",
+["MOD_FILENAME"]  = "_FlyLikeIronManV1.3Half Power.pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "5.03",
@@ -32,6 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FreeJetpackRangePrime",               "999"},
                                 {"FreeJetpackRangeNonTerrain",          "999"},
                                 {"JetpackDrainHorizontalFactor",        "-99"},
+                                {"RocketBootsImpulse",                  "25"},
                                 {"RocketBootsMinDesiredHeight",         "10"},
                                 {"RocketBootsMaxDesiredHeight",         "10"},
                                 {"RocketBootsHeightAdjustUpStrength",   "20"},

@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IncreaseFiendWanted",       "True"},
@@ -29,7 +28,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IncreaseFiendWanted",       "True"},
@@ -43,7 +41,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IncreaseFiendWanted",       "True"},
@@ -57,7 +54,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IncreaseFiendWanted",       "True"},

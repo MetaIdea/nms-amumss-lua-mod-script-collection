@@ -286,6 +286,10 @@ FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOM
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
+-- Exceptions to {"CanScale", "False"}
+FINAL_CANSCALE_OVERRIDE_TABLE = {"BUILDLADDER", "FRE_ROOM_LADDER", "WALLFLOORLADDER"}
+-- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
+
 EXTRACTORS_ID_TABLE = {"U_EXTRACTOR_S", "U_GASEXTRACTOR"}
 
 -- If CAN_SCALE_EXTRACTORS = false, adds gas/mineral extractors to the list of not-scaleable parts.
@@ -974,6 +978,19 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
         },
     }
 end
+
+-- Final Override to True
+for i = 1,#FINAL_CANSCALE_OVERRIDE_TABLE do
+
+    Change_Table_Array[#Change_Table_Array + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", FINAL_CANSCALE_OVERRIDE_TABLE[i]},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"CanScale", "True"},
+        },
+    }
+end
 ------------ CanScale rules end -------------
 ---------------------------------------------
 
@@ -1022,7 +1039,6 @@ else
             ["SPECIAL_KEY_WORDS"] = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = 0,
             -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
-            ["NOTICE_OFF"] = "True",
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"PlanetLimit",        0},

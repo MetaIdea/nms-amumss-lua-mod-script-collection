@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"BuildingOutdoorsCam", "GcCameraFollowSettings.xml"},
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SpeedRange",      "50"},
@@ -25,7 +24,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PhotoModeMaxDistance",      "15000000"},

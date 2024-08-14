@@ -303,7 +303,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Scorched", "GcWeatherColourSettingList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"Settings"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["NOTICE_OFF"] = "TRUE",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Frozen", "GcWeatherColourSettingList.xml"},
@@ -311,12 +310,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["REMOVE"] = "SECTION",
                         },
-                        -- {
-                            -- ["SPECIAL_KEY_WORDS"] = {"Frozen", "GcWeatherColourSettingList.xml"},
-                            -- ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                            -- ["CREATE_HOS"] = "TRUE",
-                            -- ["NOTICE_OFF"] = "TRUE",
-                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Swamp", "GcWeatherColourSettingList.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"GcPlanetWeatherColourData.xml"},
