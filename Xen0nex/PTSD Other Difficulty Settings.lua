@@ -2,12 +2,14 @@ ModName = "PTSd Other Difficulty Settings"
 GameVersion = "5_03"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
+DisablePlanetaryPirateRaids				=false								--false		Set true to disable any planetary pirate raids
+
 --Controls whether you can both increase and decrease the Stack Size limit from the options menu after starting a game
 StackLimitSettings =			"FullyEditable"							--"DecreaseOnly"		(Options are "FullyEditable", "DecreaseOnly", "LockedHidden")
 
 --NOTE: Many of the features controlled by the settings below have changes to them made by other parts of PTSd, e.g. Enemy health, Damage received, and hazard strength, among other things, are already substantially increased compared to vanilla.
 
---Multipliers for the "Damage Received" difficulty settings 		(Set by the "Damage Levels" setting)
+--Multipliers for the "Damage Levels" difficulty settings 		(Set by the "Damage Levels" setting)
 	--These multipliers are presumably applied to the base damage values set in DAMAGETABLE.MBIN, modified by "gDamageX.lua"
 DRNone =						0										--0
 DRLow =							0.5										--0.2
@@ -19,13 +21,13 @@ DRMLow =						48										--32
 DRMNormal =						24										--16
 DRMHigh =						12										--8
 
---Multipliers for the "Damage Given" difficulty settings
+--Multipliers for the "Enemy Strength" difficulty settings
 	--These presumably apply to the base health values for enemies set in GCROBOTGLOBALS.MBIN and AISPACESHIPATTACKDATATABLE.MBIN, modified by "_Extra Savage Sentinels by ExosolarX.lua" and "Space Combat+Larger Space BattlesX.lua"
 DGHigh =						2										--2.5
 DGNormal =						1										--1
 DGLow =							0.5										--0.66
 
---Multipliers for the "Hazard Drain" difficulty 				(Set by the "Survival Difficulty" setting)
+--Multipliers for the "Survival Difficulty" difficulty 				(Set by the "Survival Difficulty" setting)
 	--These are applied to the base Hazard timers set in GCPLAYERGLOBALS.GLOBAL, modified by "PTSd Stronger Environmental Hazards.lua"
 HDSlow =						2.2										--0.35
 HDNormal =						6.6										--1.1
@@ -130,6 +132,7 @@ SCMFastDiff =					0.2										--1.2
 --Multipliers for the "Ground Combat" difficulty					(Set by the "On-Foot Combat" setting)
 	--Selecting the "Hostile" setting also makes more planets have Aggressive Sentinels regardless of values here, particularly Lush/Paradise planets
 	--These multiplers apply to the "SentinelTimers" below, which affect how soon after loading the game that Sentinels spawn nearby, not sure what else.
+	--Also seems to apply to the "PlanetPirateTimers" below, which affect how long between Planetary Pirate Raids
 GCMOff =						0										--0			
 GCMSlow =						1.66									--1.66
 GCMNormal =						1										--1
@@ -187,10 +190,9 @@ InterestLevelChanges =
 	},
 }
 
---These timers are modified by the "SCMSlow", "SCMNormal", & "SCMFast" multipliers above
 PirateTimersChanges =
 {
-	{
+	{--These timers seem to be modified by the "GCMSlow", "GCMNormal", & "GCMFast" multipliers above
 		{"PlanetPirateTimers"},		--Probably how long until the next "planetary Pirate raid" begins
 		{	--Type			X		Y		(I believe X & Y set the "range" of possible times to use, probably in seconds)
 			{"High",		500,	700},							--800,	1000	Conflict level 3 systems
@@ -199,7 +201,7 @@ PirateTimersChanges =
 
 		}
 	},
-	{
+	{--These timers are modified by the "SCMSlow", "SCMNormal", & "SCMFast" multipliers above
 		{"SpacePirateTimers"},		--How long until the next "countdown to space encounter" begins (doesn't change how long the ~20 second countdown lasts)
 		{	--Type			X		Y		(I believe X & Y set the "range" of possible times to use, probably in seconds)
 			{"High",		120,	180},							--300,	300		Conflict level 3 systems
@@ -983,6 +985,18 @@ for i = 1, #PirateTimersChanges do
 				}
 			}
 	end
+end
+if DisablePlanetaryPirateRaids then
+			ChangesToGameplayGlobals[#ChangesToGameplayGlobals+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"PlanetPirateTimers", "GcExperienceTimers.xml"},
+				["REPLACE_TYPE"] = "ALL",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"x",	"0"},
+					{"y",	"0"}
+				}
+			}
 end
 
 local ChangesToDifficulty = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Exo's Industrial FPS Booster.pak",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "5.03",
+["NMS_VERSION"]  = "5.05",
 ["ADD_FILES"]    =
     {
         {
@@ -4305,6 +4305,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION.SCENE.MBIN" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="EMBEDGEOMETRY" />
+          <Property name="Value" value="TRUE" />
         </Property>
       </Property>
       <Property name="Children" />

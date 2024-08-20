@@ -67,7 +67,7 @@ ExtremelySmallUnitsMax =				5						--Applies to all Max rewards under 1000 units
 
 --Multipliers for Bounties for the random space encounter with pirates having a bounty on them.
 	--TODO:	Check if the vanilla bug of often getting no bounty still persists in 3.87
-PirateBounty1 = 						2						--100,000	~	180,000
+PirateBounty1 = 						3						--100,000	~	180,000
 PirateBounty2 = 						4						--200,000	~	350,000
 PirateBounty3 = 						8						--300,000	~	500,000
 
@@ -87,8 +87,7 @@ PirateMissionMediumStanding =			"MB_STAND_MED"			--"MB_STAND_LOW"
 PirateMissionHardStanding =				"MB_STAND_HIGH"			--"MB_STAND_LOW"
 
 --Changes the direct rewards received from destroying pirate ships and collecting the floating canisters in space (Vanilla Mag. Ferrite or Chromatic Metal are removed and replaced with Nanites)
-	--NOTE: These rewards appear to be on a "per container picked up" not a "per destroyed Pirate ship" basis, as each destroyed ship drops several (2 to 4) containers
-	--TODO: find out how shield-restoring drops are handled now in 3.85+	Maybe instead you just use the starshield batteries that are now dropped?
+	--NOTE: These rewards appear to be on a "per container picked up" not a "per destroyed Pirate ship" basis, as each destroyed ship can potentially drop several containers depending on the "RewardCount" set in "Space Combat+Larger Space BattlesX.lua"
 ShipLootChanges =
 {
 	{	--Pirates:	per destroyed ship containers
@@ -286,52 +285,97 @@ PoliceFrigComChance = 				60
 
 --New additional rewards for rescuing a Freighter from Pirates in starships
 FreighterRescueUnitsMin = 			400000
-FreighterRescueUnitsMax = 			1000000
+FreighterRescueUnitsMax = 			800000
 FreighterRescueUnitsChance = 		100
 
 FreighterRescueFrigModMin = 		1			--Salvaged Frigate Module
 FreighterRescueFrigModMax = 		1
 FreighterRescueFrigModChance = 		100
 
---Presumably rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4) and for making a pirate freighter surrender (added in NMS v4.5)
-CivilianFreighterRewardChanges =
+--Rewards for rescuing Civilian Freighters from Pirate Freighters (added in NMS v4.4) and for making a pirate freighter surrender (added in NMS v4.5)
+DreadnoughtBattleRewardChanges =
 {
 	{
-		{"R_CIV_SAVED_SM"},		--Presumably the reward for saving "small" civilian freighters?
-		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	800000,		1200000,	100}		--400000,		600000,		100
+		{"R_CIV_SAVED_SM"},		--Appears to be the reward for saving the civilian freighter if the Dreadnought warps away
+		{	--Currency	Min			Max			%Chance	(Gives All)
+			{"Units",	4000000,	6000000,	100},		--400000,		600000,		100
+			{"Nanites",	300,		400,		100}		--200,			250,		100		Added by PTSd
 		}
 	},
 	{
-		{"R_CIV_SAVED_LG"},		--Presumably the reward for saving "large" civilian freighters?
-		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	1200000,	1800000,	100},		--600000,		900000,		100
-			{"Nanites",	800,		1000,		100}		--400,			500,		100		
+		{"R_CIV_SAVED_LG"},		--Appears to be the reward for saving the civilian freighter if the Dreadnought is destroyed or surrenders
+		{	--Currency	Min			Max			%Chance	(Gives All)
+			{"Units",	6000000,	9000000,	100},		--600000,		900000,		100
+			{"Nanites",	600,		800,		100}		--400,			500,		100
 		}
 	},
 	{
-		{"R_PIR_TRIBUTE"},		--Presumably the "reward" / tribute for defeating a pirate freighter / dreadnought and forcing it to surrender
-		{	--Currency	Min			Max			%Chance (relative weight, roughly but not necessarily out of 100)
-			{"Units",	4000000,	8000000,	100}		--5000000,		10000000,	100
+		{"R_PIR_TRIBUTE"},		--The "reward" / tribute for defeating a pirate freighter / dreadnought and forcing it to surrender but not claim the Dreadnought for yourself. Awards both units & nanites. Note that R_CIV_SAVED above will also be received beforehand if the civilian freighter survived. May also receive R_PIR_FREI sometimes too, perhaps when civilian freighter is destroyed or waiting long enough before landing for negotiating terms?
+		{	--Currency	Min			Max			%Chance	(Gives All)
+			{"Units",	9000000,	12000000,	100},		--5000000,		10000000,	100
+			{"Nanites",	1000,		1600,		100}		--400,			500,		100		Added by PTSd
 		}
 	}
 }
+--Adds new additional rewards for the "R_CIV_SAVED_SM" and "R_CIV_SAVED_LG" rewards for saving the civilian freighter from the Dreadnought
+CivSavedSmallItemID =				"FRIG_TOKEN"	--N/A		(Salvaged Frigate Module)
+CivSavedSmallItemCount =			1				--0
+CivSavedLargeItemID1 =				"FRIG_TOKEN"	--N/A		(Salvaged Frigate Module)
+CivSavedLargeItemCount1 =			1				--0
+CivSavedLargeItemID2 =				"FREI_INV_TOKEN"--N/A		(Cargo Bulkhead)
+CivSavedLargeItemCount2 =			1				--0
+--Adds new additional rewards for demanding tribute from surrendered Dreadnoughts "R_PIR_TRIBUTE"
+DreadTributeFrigModMin = 			1				--Salvaged Frigate Module
+DreadTributeFrigModMax = 			1
+DreadTributeBulkheadMin = 			1				--Cargo Bulkhead
+DreadTributeBulkheadMax = 			1
 
---Seems to be rewards for destroying Freighters (added in NMS v4.4)
-PirateFreighterLootChanges =
+DreadnoughtClaimCost =		"C_DREAD_FLAT"			--""		Adds a cost to claiming a Pirate Dreadnought, defined in PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc.lua, or set to "" to keep it free like in vanilla
+
+NewBossFreighterPartsLoot =			--Defines new Rewards for destroying various freighter parts during "boss" encounters as set in "Space Combat+Larger Space BattlesX.lua"
+{
+	--Anti-Freighter Cannons during Pirate Dreadnought battles
+	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
+		"CANNONLOOT",		"100",		"TECHFRAG",			"Nanites",	"80",	"120"			--N/A, no loot in vanilla
+	},
+	--Freighter Warp Drives during Pirate Dreadnought battles
+	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
+		"WARPLOOT",			"75",		"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
+	},
+	--Anti-Ship Turrets during Pirate Dreadnought battles
+	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
+		"TURRETLOOT",		"100",		"TECHFRAG",			"Nanites",	"12",	"20"			--N/A, no loot in vanilla
+	},
+	--Exposed Fuel Rods during Pirate Dreadnought battles
+	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
+		"FUELRODLOOT",		"20",		"FRIGATE_FUEL_1",	"Product",	"1",	"1"				--N/A, no loot in vanilla
+	},
+	--Freighter Shield Generators during Pirate Dreadnought battles
+	{	--RewardId			% Chance	ItemId				Item type	(Min  ,	Max) Amount
+		"SHIELDGENLOOT",	"50",		"SHIPCHARGE",		"Product",	"1",	"1"				--N/A, no loot in vanilla
+	},
+}
+
+--Seems to be rewards for destroying both civilian Freighters or Pirate Dreadnoughts (added in NMS v4.4)
+	--Is possible to sometimes also be awarded when a Dreadnought surrenders, if waiting long enough before landed to negotiate terms, or perhaps when civilian freighter is destroyed?
+FreighterLootChanges =
 {
 	{
 		{"R_PIR_FREI"},
 		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"SHIP_CORE_A",				"FRIG_TOKEN",			1,	1,		200},	--1,	1,		5		A-Class Reactor
+			{"SHIP_CORE_A",				"FRIG_TOKEN",			1,	1,		0},		--1,	1,		5		A-Class Reactor
 			{"SHIP_CORE_S",				"FREI_INV_TOKEN",		1,	1,		300},	--1,	1,		2		S-Class Reactor
 			--{"FREI_INV_TOKEN",			"FREI_INV_TOKEN",		3,	6,		300},	--3,	3,		300		Cargo Bulkhead
-			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
+			--Also has all 7 of the Freighter/Frigate procedural upgrade modules set to S Class as possible rewards, each at 100 relative Chance %
 		}
 	},
 }
-
-PirateFreighterTechQualityOverride = 1				--3		Affects the class of procedural Freighter Upgrade Modules founds from destroying freighters. 3 = S Class, -1 = based on System seed
+FreighterLootTechQualityOverride = 1					--3		Sets the class of procedural Freighter Upgrade Modules founds from destroying civilian freighters or Pirate Dreadnoughts. 3 = S Class, -1 = based on System seed
+--Adds 2 items as guaranteed loot from destroying freighters, in addition to the random loot defined above "R_PIR_FREI"
+GuaranteedFreighterLoot1 =			"FRIG_TOKEN"		--N/A		Salvaged Frigate Module
+GuaranteedFreighterLoot1Amount =	"1"					--N/A
+GuaranteedFreighterLoot2 =			"FRIGATE_FUEL_1"	--N/A		Frigate Fuel (50 Tonnes)
+GuaranteedFreighterLoot2Amount =	"1"					--N/A
 
 --Rewards for choosing a tech upgrade at the end of a Derelict Freighter
 FreighterTechLootChanges =
@@ -342,7 +386,7 @@ FreighterTechLootChanges =
 			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},	--1,	1,		20		C-Class Reactor
 			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},	--1,	1,		25		B-Class Reactor
 			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},	--1,	1,		15		A-Class Reactor
-			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},		--1,	1,		5		S-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},	--1,	1,		5		S-Class Reactor
 			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
 		}
 	},
@@ -1231,6 +1275,9 @@ SentSuitChance			=	10			--20
 
 --% Chance to receive Sentinel Boundary Map from various sources
 SalvageSentMapChance	=	5			--10		Chance from destroying Salvageable Scrap
+--Changes substance & amount yielded from destroying the components surrounding Salvageable Scrap
+SalvageScrapSubstance	=	"SPACEGUNK3"	--"LAND1"	
+SalvageScrapSubAmountMult	=	0.33	--Applies multiplier to vanilla amount of 15-30
 
 --% Chance to receive Echo Locators from various sources
 SpiderMapChance			=	11			--7			Chance to drop from the large Arachnid Sentinels
@@ -1363,8 +1410,8 @@ FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" (Same reward 
 	--C_SENTINELS_OFF in COSTTABLE.MBIN
 	--"defeat guards" and/or "destroy the locks" in COREMISSIONTABLE.MBIN
 		--Conditions "GcMissionConditionAreDroneHivePartsDestroyed.xml"
-HiveConditionTest = "AnyFalse"														--"AnyFalse"		("AnyTrue")
-HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestroyed.xml")
+--HiveConditionTest = "AnyFalse"														--"AnyFalse"		("AnyTrue")
+--HiveEnablingConditionId = ""		--""			("GcMissionConditionAreDroneHivePartsDestroyed.xml")
 
 --Changes the amount of items harvested from various underwater objects
 CrystalSulphide = 2						--1		Changes the yield of Crystal Sulphide from underwater Thermal Vents
@@ -1604,30 +1651,6 @@ PirateMissionChanges	=
 	},
 }
 
-NewNaniteReward = [[<Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="TECHFRAG_XXX" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-		<Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-			<Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="]]..FactoryMin..[[" />
-              <Property name="AmountMax" value="]]..FactoryMax..[[" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Nanites" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>]]
-
 function CurrencyReward (Currency, Min, Max, Chance)
     return
 [[<Property value="GcRewardTableItem.xml">
@@ -1663,6 +1686,66 @@ function ProductReward (Product, Min, Max, Chance)
               <Property name="RequiresTech" value="" />
             </Property>
           </Property>]]
+end
+
+function AddWholeNewItemReward (RewardId, RewardChoice, Chance, ItemType, ItemID, AmountMin, AmountMax)
+	return
+[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="]]..RewardId..[[" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="]]..RewardChoice..[[" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="]]..Chance..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardSpecific]]..ItemType..[[.xml">
+              <Property name="Default" value="GcDefaultMission]]..ItemType..[[Enum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="ID" value="]]..ItemID..[[" />
+              <Property name="AmountMin" value="]]..AmountMin..[[" />
+              <Property name="AmountMax" value="]]..AmountMax..[[" />
+              <Property name="HideAmountInMessage" value="False" />
+              <Property name="ForceSpecialMessage" value="False" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="Silent" value="False" />
+              <Property name="SeasonRewardListFormat" value="" />
+              <Property name="RequiresTech" value="" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+end
+
+function AddWholeNewCurrencyReward (RewardId, RewardChoice, Chance, Currency, AmountMin, AmountMax)
+	return
+[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="]]..RewardId..[[" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="]]..RewardChoice..[[" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="]]..Chance..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="]]..AmountMin..[[" />
+              <Property name="AmountMax" value="]]..AmountMax..[[" />
+              <Property name="RoundNumber" value="False" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="]]..Currency..[[" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
 end
 
 function CropNanites (NanitesChance, NanitesAmount)
@@ -2634,6 +2717,59 @@ ShuttleSalvageReward =
       </Property>
     </Property>]]
 
+function Add2ItemMultiReward (Chance, Item1Type, Item1ID, Item1Amount, Item2Type, Item2ID, Item2Amount)
+	return
+	[[<Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="]]..Chance..[[" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMultiSpecificItems.xml">
+              <Property name="Silent" value="False" />
+              <Property name="Items">
+                <Property value="GcMultiSpecificItemEntry.xml">
+                  <Property name="MultiItemRewardType" value="]]..Item1Type..[[" />
+                  <Property name="Id" value="]]..Item1ID..[[" />
+                  <Property name="Amount" value="]]..Item1Amount..[[" />
+                  <Property name="ProcTechGroup" value="" />
+                  <Property name="ProcTechQuality" value="0" />
+                  <Property name="IllegalProcTech" value="False" />
+                  <Property name="SentinelProcTech" value="False" />
+                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
+                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
+                    <Property name="ProceduralProductCategory" value="Loot" />
+                  </Property>
+                  <Property name="ProcProdRarity" value="GcRarity.xml">
+                    <Property name="Rarity" value="Common" />
+                  </Property>
+                  <Property name="CommunityTierProductList" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="CustomRewardLocID" value="" />
+                </Property>
+                <Property value="GcMultiSpecificItemEntry.xml">
+                  <Property name="MultiItemRewardType" value="]]..Item2Type..[[" />
+                  <Property name="Id" value="]]..Item2ID..[[" />
+                  <Property name="Amount" value="]]..Item2Amount..[[" />
+                  <Property name="ProcTechGroup" value="" />
+                  <Property name="ProcTechQuality" value="0" />
+                  <Property name="IllegalProcTech" value="False" />
+                  <Property name="SentinelProcTech" value="False" />
+                  <Property name="AlsoTeachTechBoxRecipe" value="False" />
+                  <Property name="ProcProdType" value="GcProceduralProductCategory.xml">
+                    <Property name="ProceduralProductCategory" value="Loot" />
+                  </Property>
+                  <Property name="ProcProdRarity" value="GcRarity.xml">
+                    <Property name="Rarity" value="Common" />
+                  </Property>
+                  <Property name="CommunityTierProductList" />
+                  <Property name="HideInSeasonRewards" value="False" />
+                  <Property name="SeasonRewardListFormat" value="" />
+                  <Property name="CustomRewardLocID" value="" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>]]
+end
+
 function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendChance)
     return
 	[[<Property value="GcRewardTableItem.xml">
@@ -2668,7 +2804,7 @@ MemFragOutlierTechs =
 
 MinableObjects =
 {
-	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", 		
+	"DE_PLANT_SMALL", "DE_PLANT_MED", "DE_PLANT_LARGE", "DE_WATERPLANT_S", "DE_WATERPLANT_M", "DE_WATERPLANT_L", "DE_ROCK_SMALL", "DE_ROCK_MED", "DE_ROCK_LARGE", "DE_GEM_R_SMALL", "DE_GEM_R_MED", "DE_GEM_R_LARGE", "DE_GEM_B_SMALL", "DE_GEM_B_MED", "DE_GEM_B_LARGE", "DE_GEM_Y_SMALL", "DE_GEM_Y_MED", "DE_GEM_Y_LARGE", "DE_GEM_S_SMALL", "DE_GEM_S_LARGE", "DE_CAVE_MED", "DE_CAVE_LARGE", "DE_WATER_MED", "DE_WATER_LARGE", "DE_RARE_HOT", "DE_RARE_RADIO", "DE_RARE_COLD", "DE_RARE_GOLD", "DE_RARE_ROLLER", "DE_SCRAP_PART", 
 	"DE_TENTACLE", "DE_SPOREVENT", "DE_FLYTRAP", 
 }
 
@@ -3029,6 +3165,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",	"ID","LAND1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ID",	SalvageScrapSubstance}, 
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","DE_SCRAP_PART",	"ID",SalvageScrapSubstance},
+				["MATH_OPERATION"] 		= "*",
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	SalvageScrapSubAmountMult}, 
+					{"AmountMax",	SalvageScrapSubAmountMult}, 
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","SPIDER_LOOT","ID","CHART_ROBOT"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
@@ -3089,8 +3242,57 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"FreighterTechQualityOverride",	PirateFreighterTechQualityOverride}
+					{"RewardChoice",	"GiveFirst_ThenAlsoSelectAlwaysFromRest"},
+					{"FreighterTechQualityOverride",	FreighterLootTechQualityOverride}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_FREI"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION", 
+				["ADD"] = Add2ItemMultiReward ("0", "Product", GuaranteedFreighterLoot1, GuaranteedFreighterLoot1Amount, "Product", GuaranteedFreighterLoot2, GuaranteedFreighterLoot2Amount),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Nanites", "200", "250", "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_SM"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward(CivSavedSmallItemID, CivSavedSmallItemCount, CivSavedSmallItemCount, "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward(CivSavedLargeItemID1, CivSavedLargeItemCount1, CivSavedLargeItemCount1, "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_CIV_SAVED_LG"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward(CivSavedLargeItemID2, CivSavedLargeItemCount2, CivSavedLargeItemCount2, "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION", 
+				["ADD"] = CurrencyReward ("Nanites", "400", "500", "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward("FRIG_TOKEN", DreadTributeFrigModMin, DreadTributeFrigModMax, "100"),
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_PIR_TRIBUTE"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",
+				["ADD"] = ProductReward("FREI_INV_TOKEN", DreadTributeBulkheadMin, DreadTributeBulkheadMax, "100"),
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","NAVDATA_RARE",	"ID","NAV_DATA_DROP"},
@@ -3568,6 +3770,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Name", "UI_PIR_SURRENDER_OPT_A"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Cost",	DreadnoughtClaimCost},
+					{"MarkInteractionComplete",	"True"}		--"True"
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "ALL_OFFER_NANITES"},
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -3584,8 +3794,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"Value",	"TECHFRAG_XXX"}
 				}
 			},
+			--[[
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?DRONE_HIVE_COMBAT_SHUTDOWN"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "?DRONE_HIVE_COMBAT_SHUTDOWN"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				--["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3593,6 +3804,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"EnablingConditionId",	HiveEnablingConditionId}
 				}
 			},
+			]]
 			{
 				["SPECIAL_KEY_WORDS"] = {"Name", "WAR_CRA_OPT_B_3",		"Value", "PROC_TECH_WEAP"},
 				["REMOVE"] = "SECTION"
@@ -3948,7 +4160,7 @@ end
 if ReactorSalvage then
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageExoticPuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -3956,7 +4168,7 @@ if ReactorSalvage then
 			
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageShuttlePuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -4238,7 +4450,7 @@ end
 			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
 				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
-				["ADD"] = NewNaniteReward,
+				["ADD"] = AddWholeNewCurrencyReward ("TECHFRAG_XXX", "GiveAll", "100", "Nanites", FactoryMin, FactoryMax),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			}
 			
@@ -4656,9 +4868,9 @@ for i = 1, #CrashedFreighterCurrencyChances do
 			}
 	end
 end
-for i = 1, #CivilianFreighterRewardChanges do
-	local RewardType = CivilianFreighterRewardChanges[i][1][1]
-	local Items = CivilianFreighterRewardChanges[i][2]
+for i = 1, #DreadnoughtBattleRewardChanges do
+	local RewardType = DreadnoughtBattleRewardChanges[i][1][1]
+	local Items = DreadnoughtBattleRewardChanges[i][2]
 	
 	for j=1, #Items do
 		Currency = Items[j][1]
@@ -4679,9 +4891,33 @@ for i = 1, #CivilianFreighterRewardChanges do
 			}
 	end
 end
-for i = 1, #PirateFreighterLootChanges do
-	local RewardType = PirateFreighterLootChanges[i][1][1]
-	local Items = PirateFreighterLootChanges[i][2]
+for i = 1, #NewBossFreighterPartsLoot do
+	local RewardId = NewBossFreighterPartsLoot[i][1]
+	local Chance = NewBossFreighterPartsLoot[i][2]
+	local ItemId = NewBossFreighterPartsLoot[i][3]
+	local ItemType = NewBossFreighterPartsLoot[i][4]
+	local AmountMin = NewBossFreighterPartsLoot[i][5]
+	local AmountMax = NewBossFreighterPartsLoot[i][6]
+	
+		if ItemType == "Product" or ItemType == "Substance" then
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION", 
+				["ADD"] = AddWholeNewItemReward (RewardId, "GiveAll", Chance, ItemType, ItemId, AmountMin, AmountMax),
+			}
+		elseif ItemType == "Units" or ItemType == "Nanites" then
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION", 
+				["ADD"] = AddWholeNewCurrencyReward (RewardId, "GiveAll", Chance, ItemType, AmountMin, AmountMax),
+			}
+		end
+end
+for i = 1, #FreighterLootChanges do
+	local RewardType = FreighterLootChanges[i][1][1]
+	local Items = FreighterLootChanges[i][2]
 	
 	for j=1, #Items do
 		OldItemID = Items[j][1]

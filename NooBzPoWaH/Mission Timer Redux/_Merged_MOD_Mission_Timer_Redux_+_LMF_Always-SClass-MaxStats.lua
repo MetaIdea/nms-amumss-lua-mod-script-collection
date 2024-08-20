@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 		= "_Merged_MOD_Mission_Timer_Redux_+_LMF_Always-SClass-MaxStats.pak",
-["MOD_DESCRIPTION"] 	= "Reduce Mission Timer for Base Computer, Living Ship, Settlement and Fleet plus Frigates spawn with best initial stats and always as S class",
+["MOD_DESCRIPTION"] 		= "Reduced Mission Timer for Base Computer, Living Ship, Scientist, Settlement and Fleet plus Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"] 			= "NooBzPoWaH & ll62518475TheSecond",
 ["LUA_AUTHOR"] 			= "Babscoole",
 ["NMS_VERSION"] 		= "5.+",
@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-                {
+                {    -- This section is for Base Computer Timers
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\BASECOMPUTERMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                {
+                {    -- This section is for Living Ship Timers
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -39,6 +39,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "0"},
+                            }
+                        },
+                    }
+                },
+                {    -- This section is for the Scientist Timers
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\MISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWaitRealTime.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_MATCH"] = "60",
+                            ["VALUE_MATCH_OPTIONS"] = ">=",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Time", "0"}
                             }
                         },
                     }
@@ -69,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                {
+                {    -- This section is for Fleet Timers and Stats
                     ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -81,8 +97,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PercentChanceOfFrigateAdditionalSpawnedTrait", "600"}, -- Original 55
                                 {"LowDamageNumberOfExpeditions",                 "1"},   -- Original 3
                                 {"RampDamageNumberOfExpeditions",                "5"},   -- Original 10
-                                {"TimeTakenForExpeditionEvent_Easy",             "180"}, -- Original 900
-                                {"TimeTakenForExpeditionEvent",                  "900"}, -- Original 5400
+                                {"TimeTakenForExpeditionEvent_Easy",             "120"}, -- Original 900
+                                {"TimeTakenForExpeditionEvent",                  "600"}, -- Original 5400
                             },
                         },
                         {

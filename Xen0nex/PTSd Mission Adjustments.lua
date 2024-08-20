@@ -123,8 +123,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Amount", StartingHazDamage},
@@ -362,7 +360,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Product", "DRONE_SHARD"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Amount", RadiantShards},
@@ -373,7 +370,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Product", "DRONE_SALVAGE"},
 				["REPLACE_TYPE"] 		= "ALL",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Amount", InvertedMirrors},
@@ -437,9 +433,6 @@ local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATION
 if StarNewGameWithIonBatt then
 ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",

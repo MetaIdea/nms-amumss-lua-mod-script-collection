@@ -30,8 +30,8 @@ ProducedItemChanges =
 		{	--Vanilla item			Replacement item
 			{"PLANT_POOP",			"LAUNCHSUB"},			--Faecium		20 x 10,		Di-Hydrogen		34 x 10
 			{"PLANT_WATER",			"ROCKETSUB"},			--Kelp Sac		41 x 10,		Tritium			6 x 10		(36 x 10)
-			{"PLANT_CAVE",			"FOOD_R_PASTRY"},		--Marrow Bulb	41 x 10,		Pastry			24000
-			{"PLANT_LUSH",			"ALLOY5"},				--Star Bulb		32 x 10,		Magno-Gold		25000
+			{"PLANT_CAVE",			"FOOD_R_CAKEMIX"},		--Marrow Bulb	41 x 10,		Cake Batter		38000		(48260)
+			{"PLANT_LUSH",			"REACTION2"},			--Star Bulb		32 x 10,		Enriched Carbon	50000
 			{"TRA_CURIO2",			"ASTEROID3"}			--Geknip		20625,			Platinum		505 x 10
 		}
 	},

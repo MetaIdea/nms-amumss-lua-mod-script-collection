@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "5_03"
+GameVersion = "5_05"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -8,6 +8,12 @@ RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the
 	--This includes the stats which are made worse when larger (ie, when supercharged), such as Reload time (except on Boltcaster), Recoil, Weapon charge time, Dispersion
 	--Blaze Javelin exempted since it barely benefits from supercharging, Cyclotron Ballista & Neutron Cannon only partially "un-supercharged" since they benefit more from supercharging upgrades rather than the core tech.
 USCMult =					1.2							-- Use "1" to instead have weapon techs start at full strength, and then get huge, uneven bonuses when supercharged
+
+--Adjusts the damage that Pirate Frigate Torpedos and Dreadnought Anti-Freighter Cannons deal to the lead civilian freighter (default shields & hull both are ~5,000,000) during Dreadnought battles
+DreadCannonDamage =			1920						--2150
+TorpedoDamage =				500000						--650000
+DreadCannonShieldMult =		1							--1		Damage Multiplier for Dreadnought Anti-Freighter Cannons vs. Freighter Shields
+TorpedoShieldMult =			1							--1		Damage Multiplier for Pirate Frigate Torpedos vs. Freighter Shields
 
 --Global Damage multipliers for convenience to apply to all player weapons of that category (stacks multiplicatively with the individual weapons adjustments below)
 GMD = 						1							--1		For all player Multi-Tool weapon damage	(Except for Mining Laser, as changing those values will affect mining speed)
@@ -23,11 +29,15 @@ ExplosionObjectMult = 0									--1
 LaserCritMult = 2										--4		How much the damage of the mining laser is multiplied on a critical hit (typically on the head / eye)
 LaserCreatureMult = 1									--1		Lowering this value appears to disable the critical weak points on creatures with the mining laser
 VehicleLaserCreatureMult = 0.2							--1
-LaserSentinelMult = 0.75									--0.6
+LaserSentinelMult = 0.75								--0.6
 VehicleLaserSentinelMult = 0.2							--0.2
+ShipWeaponSentinelMult = 0.02							--0.2
+ShipWeaponSentinelShieldMult = 0.01						--0.1
+ShipWeaponFiendMult = 0.01								--0.1	Vs. Biological Horrors
 
---Default damage multiplier against Walking Buildings (new custom type added by PTSd used in gCreatures Predators Danger DangerousX.lua)
+--Default and starship damage multiplier against Walking Buildings (new custom type added by PTSd used in gCreatures Predators Danger DangerousX.lua)
 WalkingBuildingMult = 0.15								--In vanilla is a CREATURE type
+ShipWeaponWalkingBuildingMult = 0.02					--0.1
 
 --Damage multipliers against DOORs and DEPOTs
 ShipWeaponDoorMult = 0.02								--1
@@ -64,9 +74,9 @@ MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
 MechFlameUpgradesDMGMult =					0.185				--				Multiplier to apply to the bonus damage for Flamethrower upgrades (1 ~ 2 for Class B ~ S, increased to 1 ~ 6 for Class B ~ S by !PTSd Procedural Upgrade Adjustment.lua)
 
-PhaseBeamLeechAmountMult =					0.5					--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
-LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
-LivingShipBeamLeechUpgradeMult = 			0.1					--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
+PhaseBeamLeechAmountMult =					0.5*0.75			--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
+LivingShipBeamLeechMult = 					0.5*0.75			--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
+LivingShipBeamLeechUpgradeMult = 			0.1*0.75			--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
 
 --Multipliers for certain bonuses from Starship weapon procedural upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
@@ -158,13 +168,13 @@ CyclotronDMG =								0.9*5				--600 x 2		(3,600 theoretical burst DPS)	Multipli
 
 --Damage multipliers for starship weapons against shields, hulls, etc.
 ShipWeaponEffectiveness =
-{	--Weapontype		vs. ship Hull	vs. Shield	vs. Torpedo	vs. Freighter Hull
-	{"ShipGun",				1,			1,			1,			1},			--1,			1,			1,			1
-	{"ShipLaser",			0.8,		1.2,		0.8,		0.8},		--1,			1,			1,			1
-	{"ShipShotgun",			1,			0.33,		1,			0.6},		--1,			0.33,		1,			0.4
-	{"ShipMinigun",			1.2,		0.4,		1.2,		1.2},		--1.5,			1,			1.5,		1
-	{"ShipRockets",			1.2,		0.6,		1.2,		1.2},		--1.5,			0.2,		1.5,		1.5
-	{"ShipPlasma",			0.6,		1.4,		0.6,		0.6},		--0.2,			1.6,		0.2,		1
+{	--Weapontype	vs. ship Hull	Shield	Torpedo	Freighter Hull 	Boss Freighter Hull(Dreadnoughts & Sentinel Freighters)
+	{"ShipGun",			1,			1,		1,		1,				1},		--1,		1,		1,		1,			1
+	{"ShipLaser",		0.8,		1.2,	0.8,	0.9,			0.9},	--1,		1,		1,		1,			1
+	{"ShipShotgun",		1,			0.33,	1,		0.6,			0.6},	--1,		0.33,	1,		0.4,		0.4
+	{"ShipMinigun",		1.2,		0.4,	1.2,	1.1,			1.1},	--1.5,		1,		1.5,	1,			1
+	{"ShipRockets",		1.2,		0.6,	1.2,	1.2,			1.2},	--1.5,		0.2,	1.5,	1.5,		1.5
+	{"ShipPlasma",		0.6,		1.4,	0.6,	0.8,			0.8},	--0.2,		1.6,	0.2,	1,			1
 }
 
 --Multipliers to apply to the base damage for various player mining lasers. Note that higher damage means objects get mined faster
@@ -529,7 +539,7 @@ WeaponStatChanges =
 				"Weapon_Laser_Drain",	0.333,	"FORCE"				--1.2				Controls how quickly the laser consumes fuel while active
 			},
 			{
-				"Weapon_Laser_MiningBonus",	0.32,	"FORCE"			--1
+				"Weapon_Laser_MiningBonus",	0.46,	"FORCE"			--1
 			}
 		}
 	},
@@ -1963,12 +1973,19 @@ function ShipCargoDamageMult (Mult)
 	</Property>]]
 end
 
-function AddNewTargetType (Name, Mult)
+function AddNewTargetType (Name, DefMult, FirstDam)
     return
 [[<Property value="GcDamageMultiplierLookup.xml">
       <Property name="Id" value="]]..Name..[[" />
-      <Property name="Default" value="]]..Mult..[[" />
-      <Property name="Multipliers" />
+      <Property name="Default" value="]]..DefMult..[[" />
+      <Property name="Multipliers">
+        <Property value="GcDamageMultiplier.xml">
+          <Property name="Type" value="GcDamageType.xml">
+            <Property name="DamageType" value="]]..FirstDam..[[" />
+          </Property>
+          <Property name="Multiplier" value="]]..DefMult..[[" />
+        </Property>
+      </Property>
     </Property>]]
 end
 
@@ -2026,34 +2043,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["PRECEDING_KEY_WORDS"] = {"GcLaserBeamData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "TORPEDO"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"DefaultDamage",	TorpedoDamage}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "PI_FRE_LARG"},
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"DefaultDamage",	DreadCannonDamage}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "PLAYER"},
-				--["SECTION_UP"] = 1,
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"CriticalHitModifier",	LaserCritMult}
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLESTUNGUN"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Radius", MechStunWeaponRadius}
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLESTUNGUN",	"CombatEffectType", "Stun"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2061,11 +2079,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLESTUNGUN",	"CombatEffectType", "Fire"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2080,12 +2094,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["PRECEDING_KEY_WORDS"] = {"GcShootableComponentData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_SHIELD",	"DamageType", "FreighterLaser"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	DreadCannonShieldMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_SHIELD",	"DamageType", "FreighterTorpedo"},
+				["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	TorpedoShieldMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "OBJECT",	"DamageType", "Explosion"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	ExplosionObjectMult}
@@ -2099,8 +2125,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DOOR"},
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -2110,8 +2134,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DOOR",	"DamageType", "Laser"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	LaserDoorMult}
@@ -2119,8 +2141,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DEPOT"},
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -2177,7 +2197,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplierLookup.xml"},
 				["ADD_OPTION"]  = "ADDbeforeSECTION",  
-				["ADD"] = AddNewTargetType ("WALKINGBUILDING", WalkingBuildingMult)
+				["ADD"] = AddNewTargetType ("WALKINGBUILDING", WalkingBuildingMult, "Melee")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "WALKINGBUILDING"},
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ShipDamageMult(ShipWeaponWalkingBuildingMult)
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplierLookup.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION",  
+				["ADD"] = AddNewTargetType ("BOSSFREI_HULL", "1", "FreighterLaser")
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "BOSSFREI_HULL"},
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ShipDamageMult("1")
 			},
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
@@ -2210,6 +2247,54 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"Multiplier",	VehicleLaserSentinelMult}
 				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT",	"DamageType", "ShipWeapons"},
+				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	ShipWeaponSentinelMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT"},
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ShipDamageMult(ShipWeaponSentinelMult)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT_SHIELD",	"DamageType", "ShipWeapons"},
+				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	ShipWeaponSentinelShieldMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT_SHIELD"},
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ShipDamageMult(ShipWeaponSentinelShieldMult)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "FIEND",	"DamageType", "ShipWeapons"},
+				["SECTION_UP"] = 1,
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Multiplier",	ShipWeaponSentinelShieldMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "FIEND"},
+				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = ShipDamageMult(ShipWeaponFiendMult)
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "SHIP_HULL"},
@@ -2661,6 +2746,7 @@ for i = 1, #ShipWeaponEffectiveness do
 	local ShieldMult = ShipWeaponEffectiveness[i][3]
 	local TorpMult = ShipWeaponEffectiveness[i][4]
 	local FrHullMult = ShipWeaponEffectiveness[i][5]
+	local BossFrHullMult = ShipWeaponEffectiveness[i][6]
 
 			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
 			{
@@ -2719,6 +2805,21 @@ for i = 1, #ShipWeaponEffectiveness do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Multiplier", FrHullMult}
+				}
+			}
+			
+			ChangesToDefaultReality[#ChangesToDefaultReality+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", "BOSSFREI_HULL", "DamageType", DamageType},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Multiplier", BossFrHullMult}
 				}
 			}
 end

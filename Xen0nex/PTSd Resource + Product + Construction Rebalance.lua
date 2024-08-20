@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_03"
+GameVersion = "5_05"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -258,15 +258,15 @@ CookedFoodGroupSaleChanges =
 			2.1					--	Foods cooked with Extra Fluffy Batter
 		},
 		{--List of IDs
-			"FOOD_MC_APPLE", "FOOD_MC_BLOB", "FOOD_MC_CACTUS", "FOOD_MC_CARM", "FOOD_MC_CHOC", "FOOD_MC_CREAM", "FOOD_MC_CUST", "FOOD_MC_HONEY", "FOOD_MC_JAM", "FOOD_MC_JGLITCH", "FOOD_MC_JHOT", "FOOD_MC_PCAT", "FOOD_MC_BUGJAM",
+			"FOOD_R_MERMIX", "FOOD_MC_APPLE", "FOOD_MC_BLOB", "FOOD_MC_CACTUS", "FOOD_MC_CARM", "FOOD_MC_CHOC", "FOOD_MC_CREAM", "FOOD_MC_CUST", "FOOD_MC_HONEY", "FOOD_MC_JAM", "FOOD_MC_JGLITCH", "FOOD_MC_JHOT", "FOOD_MC_PCAT", "FOOD_MC_BUGJAM",
 		}
 	},
 	{
 		{
-			1.25				--	Foods cooked with Cake Batter
+			1.27				--	Foods cooked with Cake Batter
 		},
 		{
-			"FOOD_CK_APPLE", "FOOD_CK_BLOBBUT", "FOOD_CK_CACTUS", "FOOD_CK_CARM", "FOOD_CK_CHOC", "FOOD_CK_CREAM", "FOOD_CK_CUST", "FOOD_CK_FCUST", "FOOD_CK_HONEY", "FOOD_CK_JAM", "FOOD_CK_JGLITCH", "FOOD_CK_JHOT", "FOOD_CK_MCUST", "FOOD_CK_SCUST", "FOOD_CK_BUGJAM", 
+			"FOOD_R_CAKEMIX", "FOOD_CK_APPLE", "FOOD_CK_BLOBBUT", "FOOD_CK_CACTUS", "FOOD_CK_CARM", "FOOD_CK_CHOC", "FOOD_CK_CREAM", "FOOD_CK_CUST", "FOOD_CK_FCUST", "FOOD_CK_HONEY", "FOOD_CK_JAM", "FOOD_CK_JGLITCH", "FOOD_CK_JHOT", "FOOD_CK_MCUST", "FOOD_CK_SCUST", "FOOD_CK_BUGJAM", 
 		}
 	},
 	{
@@ -274,7 +274,7 @@ CookedFoodGroupSaleChanges =
 			1.25					--	Foods cooked with Thick, Sweet Batter
 		},
 		{
-			"FOOD_CB_APPLE", "FOOD_CB_CACTUS", "FOOD_CB_CARM", "FOOD_CB_CREAM", "FOOD_CB_CUST", "FOOD_CB_FCUST", "FOOD_CB_HONEY", "FOOD_CB_JAM", "FOOD_CB_JGLITCH", "FOOD_CB_JHOT", "FOOD_CB_SCUST", "FOOD_CB_BUGJAM",
+			"FOOD_R_BCAKEMIX", "FOOD_CB_APPLE", "FOOD_CB_CACTUS", "FOOD_CB_CARM", "FOOD_CB_CREAM", "FOOD_CB_CUST", "FOOD_CB_FCUST", "FOOD_CB_HONEY", "FOOD_CB_JAM", "FOOD_CB_JGLITCH", "FOOD_CB_JHOT", "FOOD_CB_SCUST", "FOOD_CB_BUGJAM",
 		}
 	},
 	{
@@ -282,7 +282,7 @@ CookedFoodGroupSaleChanges =
 			1.25					--	Foods cooked with Syrupy Batter
 		},
 		{
-			"FOOD_CP_APPLE", "FOOD_CP_BUGJAM", "FOOD_CP_CACTUS", "FOOD_CP_CARM", "FOOD_CP_CHOC", "FOOD_CP_CREAM", "FOOD_CP_CUST", "FOOD_CP_FCUST", "FOOD_CP_HONEY", "FOOD_CP_JAM", "FOOD_CP_JGLITCH", "FOOD_CP_JHOT", "FOOD_CP_SCUST", "FOOD_CK_PCATBUT",
+			"FOOD_R_PCAKEMIX", "FOOD_CP_APPLE", "FOOD_CP_BUGJAM", "FOOD_CP_CACTUS", "FOOD_CP_CARM", "FOOD_CP_CHOC", "FOOD_CP_CREAM", "FOOD_CP_CUST", "FOOD_CP_FCUST", "FOOD_CP_HONEY", "FOOD_CP_JAM", "FOOD_CP_JGLITCH", "FOOD_CP_JHOT", "FOOD_CP_SCUST", "FOOD_CK_PCATBUT",
 		}
 	},
 	{
@@ -290,7 +290,7 @@ CookedFoodGroupSaleChanges =
 			1.15				--	Foods cooked with Proto Batter
 		},
 		{
-			"FOOD_CG_APPLE", "FOOD_CG_CACTUS", "FOOD_CG_CARM", "FOOD_CG_CHOC", "FOOD_CG_CREAM", "FOOD_CG_CUST", "FOOD_CG_JAM", "FOOD_CG_SCUST", "FOOD_CG_BUGJAM", "FOOD_CG_PCAT",
+			"FOOD_R_GCAKEMIX", "FOOD_CG_APPLE", "FOOD_CG_CACTUS", "FOOD_CG_CARM", "FOOD_CG_CHOC", "FOOD_CG_CREAM", "FOOD_CG_CUST", "FOOD_CG_JAM", "FOOD_CG_SCUST", "FOOD_CG_BUGJAM", "FOOD_CG_PCAT",
 		}
 	},
 	{
@@ -330,7 +330,7 @@ CookedFoodGroupSaleChanges =
 			0.9				--	Foods cooked with Wailing Batter (Larval Cores)
 		},
 		{
-			"FOOD_CM_APPLE", "FOOD_CM_BLOBBUT", "FOOD_CM_CACTUS", "FOOD_CM_CARM", "FOOD_CM_CHOC", "FOOD_CM_CREAM", "FOOD_CM_HONEY", "FOOD_CM_JAM", "FOOD_CM_JGLITCH", "FOOD_CM_JHOT", "FOOD_CM_BUGJAM", "FOOD_CM_PCATBUT",
+			"FOOD_R_MCAKEMIX", "FOOD_CM_APPLE", "FOOD_CM_BLOBBUT", "FOOD_CM_CACTUS", "FOOD_CM_CARM", "FOOD_CM_CHOC", "FOOD_CM_CREAM", "FOOD_CM_HONEY", "FOOD_CM_JAM", "FOOD_CM_JGLITCH", "FOOD_CM_JHOT", "FOOD_CM_BUGJAM", "FOOD_CM_PCATBUT",
 		}
 	},
 	{
@@ -338,7 +338,7 @@ CookedFoodGroupSaleChanges =
 			0.92			--	Foods cooked with Writhing, Roiling Batter (Larval Cores)
 		},
 		{
-			"FOOD_MM_APPLE", "FOOD_MM_BLOB", "FOOD_MM_CACTUS", "FOOD_MM_CARM", "FOOD_MM_CHOC", "FOOD_MM_CREAM", "FOOD_MM_CUST", "FOOD_MM_HONEY", "FOOD_MM_JAM", "FOOD_MM_JGLITCH", "FOOD_MM_JHOT", "FOOD_MM_PCAT", "FOOD_MM_BUGJAM",
+			"FOOD_R_MMERMIX", "FOOD_MM_APPLE", "FOOD_MM_BLOB", "FOOD_MM_CACTUS", "FOOD_MM_CARM", "FOOD_MM_CHOC", "FOOD_MM_CREAM", "FOOD_MM_CUST", "FOOD_MM_HONEY", "FOOD_MM_JAM", "FOOD_MM_JGLITCH", "FOOD_MM_JHOT", "FOOD_MM_PCAT", "FOOD_MM_BUGJAM",
 		}
 	},
 }
@@ -499,7 +499,7 @@ ReplaceItems =
 		"SUMMON_GARAGE",		"GREEN2",			60,		"Substance",	"ROCKETSUB",
 	},
 	{	--Scanner Room 
-		"FRE_ROOM_SCAN",		"ATLAS_SEED_7",		1,		"Product",		"ASTEROID2",
+		"FRE_ROOM_SCAN",		"ATLAS_SEED_6",		1,		"Product",		"ASTEROID2",
 	},
 	{	--Orbital Exocraft Materialiser 
 		"FRE_ROOM_VEHICL",		"BLUE2",			50,		"Substance",	"CAVE2",

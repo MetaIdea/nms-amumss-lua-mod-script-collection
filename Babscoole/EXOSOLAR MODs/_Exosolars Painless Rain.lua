@@ -3,7 +3,7 @@ LuaAuthor = "Gumsk"
 ModName = "_Exosolars Painless Rain"
 --ModNameSub = ""
 BaseDescription = "Makes lush storms harmless"
-GameVersion = "5.03"
+GameVersion = "5.05"
 --ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN"
 

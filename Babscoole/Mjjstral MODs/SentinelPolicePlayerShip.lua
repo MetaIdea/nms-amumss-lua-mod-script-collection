@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShip.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["DESCRIPTION"]             = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -463,6 +463,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children">

@@ -52,7 +52,7 @@ RewardChanges =
 OptionChanges =
 {
   { -- ID
-    {"%?TRA_NPC_SECONDARY"},
+    {"?TRA_NPC_SECONDARY"},
     { -- OldCost,       NewCost,           Reward,      KeepOpen
       {"GEKGIFT1",    "GEKGIFT_C",    "SEC_CUSTOM_TRA", Keep_Open},
     }
@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Keep Gifting.pak",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Makes the npcs gifting dialogue stay open when gifting items to increase faction rep and also adds a gifting option for 5x",
-["NMS_VERSION"]     = "5.03",
+["NMS_VERSION"]     = "5.05",
 ["MODIFICATIONS"]   =
     {
         {

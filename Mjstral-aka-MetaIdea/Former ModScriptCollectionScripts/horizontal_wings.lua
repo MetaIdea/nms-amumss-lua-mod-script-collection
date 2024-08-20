@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "horizontal_S_Wings.pak",
 ["MOD_AUTHOR"]				= "by Seekker, credit to Mjjstral",
-["NMS_VERSION"]				= "1.77",
+["NMS_VERSION"]				= "5.03",
 ["MODIFICATIONS"] 			= 
 	{
 		{

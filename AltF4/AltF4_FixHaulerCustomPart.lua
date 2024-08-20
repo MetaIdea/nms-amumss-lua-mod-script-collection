@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4, FriendlyFirePL",
-    ["NMS_VERSION"] = "4.72",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Fix Hauler Custom Part.",
     ["MODIFICATIONS"] = {
         {
@@ -105,18 +105,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UI_DROPSHIP_WING_BAB_NAME"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"ID","DROPS_WINGBAB"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","UI_DROPSHIP_WING_BAC_NAME"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"ID","DROPS_WINGBAC"},
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","DROPS_ENGIAB"},
                             ["VALUE_CHANGE_TABLE"] = {

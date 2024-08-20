@@ -1,4 +1,4 @@
-ShrinkCreature = {"FLYINGSNAKE", "FLYINGLIZARD", "FLYINGBEETLE", "TRICERATOPS", "STRIDER", "TREX", "GRUNT", "BLOB", "SPIDER", "FLOATSPIDER", "SANDWORM"}
+ShrinkCreature = {"FLYINGSNAKE", "FLYINGLIZARD", "FLYINGBEETLE", "TRICERATOPS", "STRIDER", "TREX", "GRUNT", "BLOB", "SPIDER", "FLOATSPIDER", "SANDWORM", "WALKINGBUILDING"}
 
 DIVISOR = "4"
 
@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-BigOnly.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["MOD_DESCRIPTION"]         = "Reduces size for largest creature types by ~75%",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =

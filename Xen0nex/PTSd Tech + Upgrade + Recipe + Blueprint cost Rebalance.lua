@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "5_03"
+GameVersion = "5_05"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -1727,25 +1727,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG1"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddedSentToolRepairCost
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG2"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddedSentToolRepairCost
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG3"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddedSentToolRepairCost
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "WEAPSENT_DMG4"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = AddedSentToolRepairCost
 						},
 						{
@@ -1795,37 +1795,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = AddedItemCost ("CARBON_SEAL", ORHermSeal, "Product"),
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UT_ENERGY"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = AddedItemCost ("POWERCELL", ORIonBatt, "Product"),
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_R_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_LEGS"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = QuadParts,
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_HEAD"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_ENGINE",	"StatsType","Vehicle_EngineFuelUse"},
@@ -1836,9 +1836,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1846,9 +1843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_MINER"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1857,9 +1852,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MAINT_BURNER"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1868,9 +1861,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1878,9 +1868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "SUIT_ROCKET"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1890,7 +1878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcTechnology.xml"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = NewInterceptorRepairTech
 						},
 					}
@@ -1900,11 +1888,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"]     = 
                     {
                         {
-                            ["PRECEDING_KEY_WORDS"] = "",
 							["SPECIAL_KEY_WORDS"] = {"ID","FACT_TOKEN"}, 
                             ["MATH_OPERATION"]         = "*",  
                             ["REPLACE_TYPE"]         = "ALL",  
-                            ["VALUE_MATCH"]         = "", 
 							["INTEGER_TO_FLOAT"] = "PRESERVE",
                             ["VALUE_CHANGE_TABLE"]     = 
                             {
@@ -1974,7 +1960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddRefinerRoom
                         },
 						{
@@ -1984,7 +1970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDANTIMATTER"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddRefinerRoom
                         },
 						{
@@ -2009,7 +1995,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASEPARTS_TREE",		"Unlockable", "BUILDLANDINGPAD"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddTradeRoom
                         },
 						{
@@ -2018,22 +2004,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_S9_BASEPARTS_TREE",		"Unlockable", "DRESSING_TABLE"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddTradeRoom
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "PLANTERMEGA"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddCultRoom
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICTECH_TREE",		"Unlockable", "BUILDBEACON"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddSavePoint
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_PURCHASABLE_BASICPARTS_TREE",		"Unlockable", "BUILDBEACON"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddSavePoint
                         },
 						--These 4 edits move the recipe for Geodesite to be below Herox instead of Grantine
@@ -2043,7 +2029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY2"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddNewHerox
                         },
 						{
@@ -2052,7 +2038,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable", "ALLOY5"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
                             ["ADD"] = AddNewGrantine
                         },
                     }
@@ -2064,7 +2050,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
 							["ADD"] = NewInterceptorTechRepairSlot,
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 						},
 						{
 							["REPLACE_TYPE"] = "",
@@ -2146,7 +2132,7 @@ for i = 1, #AddItems do
 				["SPECIAL_KEY_WORDS"] = {"ID",TechIDNum},
 				["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 				["ADD"] = AddedItemCost (AddItemID, AddItemAmount, AddItemType),
-				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD_OPTION"]  = "ADDafterSECTION",
 			}
 end
 for i = 1, #ReplaceItems do

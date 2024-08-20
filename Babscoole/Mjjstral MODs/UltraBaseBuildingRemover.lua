@@ -1446,6 +1446,10 @@ PLACEMENT_SCENE =
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CUBEROOM_SNAPPOINT.SCENE.MBIN" />
             </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
+            </Property>
           </Property>
           <Property name="Children" />
         </Property>
@@ -1549,7 +1553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "zzz-UltraBaseBuildingRemover.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.05",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {

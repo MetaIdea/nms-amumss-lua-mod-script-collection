@@ -117,8 +117,8 @@ local ShipPartID = {
     "DROPS_WINGACI",
     "DROPS_WINGBA",
     "DROPS_WINGBAA",
-    "DROPS_WINGBAA",
-    "DROPS_WINGBAA",
+    "DROPS_WINGBAB",
+    "DROPS_WINGBAC",
     "DROPS_WINGBAD",
     "DROPS_WINGBAE",
     "DROPS_WINGBAF",
@@ -301,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_AddShipPartsToShop_PricePlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.1.1",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Custom ship parts price in the space station shop.",
     ["MODIFICATIONS"] = {
         {

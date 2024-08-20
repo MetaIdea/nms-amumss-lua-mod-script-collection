@@ -533,6 +533,7 @@ QUICK_ACTION_MENU =
       <Property name="PlanetLabelText" value="" />
       <Property name="SurveyDistance" value="0" />
       <Property name="SurveyDiscoveryOSDMessage" value="" />
+      <Property name="SurveyHUDName" value="" />
       <Property name="EventStartType" value="None" />
       <Property name="EventEndType" value="None" />
       <Property name="EventPriority" value="Regular" />
@@ -595,12 +596,12 @@ QUICK_ACTION_MENU =
           <Property name="Biome" value="Lush" />
         </Property>
         <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="None" />
+          <Property name="BiomeSubType" value="HydroGarden" />
         </Property>
         <Property name="NeedsEmptySystem" value="False" />
         <Property name="NeedsAbandonedSystem" value="False" />
         <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="False" />
+        <Property name="SuitableForCreatureDiscovery" value="True" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SuitableForRobotCreatureDiscovery" value="False" />
         <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
@@ -651,12 +652,12 @@ QUICK_ACTION_MENU =
           <Property name="Biome" value="Lush" />
         </Property>
         <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="None" />
+          <Property name="BiomeSubType" value="HydroGarden" />
         </Property>
         <Property name="NeedsEmptySystem" value="False" />
         <Property name="NeedsAbandonedSystem" value="False" />
         <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="False" />
+        <Property name="SuitableForCreatureDiscovery" value="True" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SuitableForRobotCreatureDiscovery" value="False" />
         <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
@@ -1452,7 +1453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "5.03",
+["NMS_VERSION"]     = "5.05",
 ["MODIFICATIONS"]   =
     {
         {
@@ -1690,6 +1691,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="SCENEGRAPH" />
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/POLICE.SCENE.MBIN" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="EMBEDGEOMETRY" />
+              <Property name="Value" value="TRUE" />
             </Property>
           </Property>
           <Property name="Children">

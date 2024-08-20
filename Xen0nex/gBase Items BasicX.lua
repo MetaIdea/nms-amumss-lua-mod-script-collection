@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "446"
+GameVersion = "5_03"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -30,7 +30,7 @@ ParagonDistance = 100000	--1000
 
 --Additions by Xen0nex below
 --(PlayerBase Limits)
-EMClassBStrength = 200		--250		Strength for Class B Electromagnetic Power hotspots (Vanilla is C=150, B=220, A=250, S=300)
+EMClassBStrength = 200		--250		Base Strength for Class B Electromagnetic Power hotspots (Vanilla is C=150, B=220, A=250, S=300)
 EMBaseLimit = 0				--0
 MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
@@ -62,9 +62,18 @@ SubstanceYeildAll = 250/2		--250		Increasing this increases the final effective 
 	--Thus, you should generally set SubstanceYeild to match the in-game storage size of the smallest extractor network object (Supply Depot, Mineral/Gas Extractor), or if using a smaller number make sure it divides cleanly into all your storage sizes
 	--ALSO NOTE: The ratio of SubstanceYeild to AmountCost appears to control the smallest "step" or "increment" of extraction rate for Mineral / Gas Extractors. E.G. In vanilla Extractors round their extraction rate to the nearest multiple of "1 units/hr". Multiplying SubstanceYeild by 10 OR dividing AmountCost by 10 will make Extractors round their extraction rate to the nearest multiple of "25 units/hr".
 
+--Sets the ClassStrengths multipliers for the relative substance yield amounts of different Gas/Mineral hotspot classes
+CSpotYield =	0.145			--1
+BSpotYield =	0.2				--1.5
+ASpotYield =	0.57			--2
+SSpotYield =	2.5				--2.5
+
 --Increasing these values crashes the game
 --BaseExtractMinAll = 190		--190		Minimum range of the base extraction rate, before applying extractor or hotspot class modifiers
 --BaseExtractMaxAll = 225		--225		Maximum range of the base extraction rate, before applying extractor or hotspot class modifiers
+
+SubstanceHotSpots =
+{"Mineral1", "Mineral2", "Mineral3", "Gas1", "Gas2", }
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -398,7 +407,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				["SPECIAL_KEY_WORDS"] = {"Power", "GcRegionHotspotData.xml"},
 				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
-				["REPLACE_TYPE"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"B", EMClassBStrength},
@@ -421,6 +429,26 @@ for i = 1, #PossibleFreighterRooms do
 				{
 					{"BuildableOnPlanet", FreighterRoomsPlanetside},
 					{"BuildableOnPlanetBase", FreighterRoomsPlanetside},
+				}
+			}
+end
+
+local ChangesToHotSpots = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+for i = 1, #SubstanceHotSpots do
+	local HotSpotName = SubstanceHotSpots[i]
+		
+			ChangesToHotSpots[#ChangesToHotSpots+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {HotSpotName, "GcRegionHotspotData.xml"},
+				["PRECEDING_KEY_WORDS"] = "ClassStrengths",
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"C", CSpotYield},
+					{"B", BSpotYield},
+					{"A", ASpotYield},
+					{"S", SSpotYield},
 				}
 			}
 end

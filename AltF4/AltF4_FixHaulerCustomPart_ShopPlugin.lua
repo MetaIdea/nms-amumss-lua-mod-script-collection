@@ -2,8 +2,6 @@
 -- If you also want other all custom parts, you can merge "Add Ship Custom Parts To Space Station Shop"(https://www.nexusmods.com/nomanssky/mods/3009)
 
 local ShipPartID = {
-    "DROPS_WINGBAB",
-    "DROPS_WINGBAC",
     "DROPS_WINGCDD"
 }
 
@@ -26,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart_ShopPlugin.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.72",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Add fixed Hauler custom parts to space station shop.",
     ["MODIFICATIONS"] = {
         {

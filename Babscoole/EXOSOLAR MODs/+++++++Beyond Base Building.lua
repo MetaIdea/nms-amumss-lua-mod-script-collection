@@ -223,28 +223,22 @@ end
 -- Exceptions if ALL_PARTS_ABOVE_WATER is true
 NOT_ABOVE_WATER_BUILDPART_ID_TABLE = {"GARAGE_SUB"}
 
-
 -- Exceptions if ALL_PARTS_ON_FREIGHTER is true
 NOT_FREIGHTER_BUILDPART_ID_TABLE = {"BASE_FLAG", "BASECAPSULE", "MESSAGE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BUILDSIGNAL", "BUILDBEACON", "U_EXTRACTOR_S", "U_GASEXTRACTOR", "U_SILO_S", "U_GENERATOR_S", "U_PIPELINE", "CREATURE_FEED", "CREATURE_FARM", "BUILDHARVESTER", "BUILDGASHARVEST", "TELEPORTER", "O2_HARVESTER"}
 -- Notes : BASECAPSULE (Base Salvage Capsule) originally buildable but bugged on freighters.
 -- Vehicles parts are excluded in the dedicated part at the bottom of the script (Geobays, Race Initiator...)
 
-
 -- Exceptions if ALL_PARTS_ON_PLANETBASE is true
 NOT_PLANETBASE_BUILDPART_ID_TABLE = {"TELEPORTER_F"}
-
 
 -- Keywords to match prefab parts if CAN_SCALE_PREFAB_PARTS is false
 PREFAB_KEYWORDS_TABLE = {"ROOMS", "FREIGHTER"}
 
-
 -- Freighter's storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
 FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
 
-
 -- Base storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
 BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
-
 
 -- Metal parts buildable outside of bases if METAL_PARTS_OUTSIDE_BASE is true
 METAL_OUTSIDE_BASE_ID_TABLE = {"M_WALL", "M_DOOR", "M_FLOOR", "M_RAMP", "M_ROOF", "M_ARCH"}
@@ -383,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "5.03",
+    ["NMS_VERSION"]   = "5.05",
     ["MODIFICATIONS"] =
     {
         {
@@ -791,7 +785,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", S9_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
                 {
                     {"BuildableOnFreighter", "True"},
@@ -803,7 +797,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", S9_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =

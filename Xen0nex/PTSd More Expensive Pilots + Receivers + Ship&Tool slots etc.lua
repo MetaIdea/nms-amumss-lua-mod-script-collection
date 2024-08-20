@@ -1,5 +1,5 @@
 ModName = "PTSd More Expensive Pilots + Receivers + Ship&Tool slots etc"
-GameVersion = "4_63"
+GameVersion = "5_05"
 Description = "Changes costs for Starship or Multi-Tool inventory slots, Broadcast Receivers, Pilot Slots, etc."
 
 --Allows salvaging Reactor Cores from Shuttle & Exotic starships (Also requires changes in "PTSd Rewards Remixer.lua")
@@ -23,8 +23,15 @@ MedTradeExpCost =		150000				--75000
 HighTradeExpCost =		300000				--150000
 
 --Adds a cost to opening the containers at crashed freighters
-CrashedContSubstance =	"STELLAR2"			--""			STELLAR2 is Chromatic Metal
+CrashedContSubstance =	"STELLAR2"			--""			Chromatic Metal
 CrashedContAmount =		10					--0
+
+--Adds a cost to using the Scanner Room on freighters
+ScannerRoomSubstance =	"NAV_DATA"			--""			Navigation Data
+ScannerRoomAmount =		3					--0
+
+--Adds a cost to claim a Pirate Dreadnought (cost is paid each time you begin the freighter exchange menu, not when you complete it like with other freighters)
+DreadnoughtFlatCost =	350000000			--0
 
 --WIP
 --Adds a cost to opening the sentinel weapon cabinets at Abandoned Camps
@@ -363,6 +370,29 @@ SalvageShuttleCost =
       </Property>
     </Property>]]
 
+AddDreadnoughtFlatCost =
+[[<Property value="GcCostTableEntry.xml">
+      <Property name="Id" value="C_DREAD_FLAT" />
+      <Property name="DisplayCost" value="True" />
+      <Property name="DontCharge" value="False" />
+      <Property name="HideOptionAndDisplayCostOnly" value="False" />
+      <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+      <Property name="HideCostStringIfCanAfford" value="False" />
+      <Property name="RemoveOptionIfCantAfford" value="False" />
+      <Property name="InvertCanAffordOutcome" value="False" />
+      <Property name="MustAffordInCreative" value="True" />
+      <Property name="CommunityContributionValue" value="0" />
+      <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+      <Property name="CannotAffordOSDMsg" value="" />
+      <Property name="MissionMessageWhenCharged" value="" />
+      <Property name="Cost" value="GcCostMoney.xml">
+        <Property name="Cost" value="]]..DreadnoughtFlatCost..[[" />
+        <Property name="CostCurrency" value="GcCurrency.xml">
+          <Property name="Currency" value="Units" />
+        </Property>
+      </Property>
+    </Property>]]
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
 ["MOD_DESCRIPTION"]		= Description,
@@ -537,6 +567,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["REPLACE_TYPE"] 		= "",
 				["REMOVE"] = "SECTION",
 			},
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcCostTableEntry.xml"},
+				["ADD"] = AddDreadnoughtFlatCost,
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
 		}
 	},
 	{
@@ -550,6 +585,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"SubstanceId", CrashedContSubstance},
 					{"Cost", CrashedContAmount},
+				}
+			},
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FREIGHTERBASE/ROOMS/SCANROOM/PARTS/FLOOR0/ENTITIES/SCANROOMINTERACTION.ENTITY.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"ActivationCost","GcInteractionActivationCost.xml"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"SubstanceId", ScannerRoomSubstance},
+					{"Cost", ScannerRoomAmount},
 				}
 			},
 		}

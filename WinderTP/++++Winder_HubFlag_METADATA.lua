@@ -21024,6 +21024,94 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"PF_B_RN_WALL1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Timber",
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_WALL.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"D:\NMS_MODS\Projects\_MOD_Winder_HubFlag_ATest\CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\BASIC\RUIN_NEW\WALL_FULL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_BASIC_RUIN" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Stone Wall",
+						["Subtitle"] = 					"BLD_CONCRETE_SUB",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_C_WALL_DESC",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_B_RN_WALL2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Timber",
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_WALL.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"D:\NMS_MODS\Projects\_MOD_Winder_HubFlag_ATest\CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\BASIC\RUIN_NEW\WALL_PARTIAL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_BASIC_RUIN" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Stone Wall",
+						["Subtitle"] = 					"BLD_CONCRETE_SUB",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_C_WALL_DESC",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -49157,6 +49245,198 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"PF_RUINN_MONU",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Timber",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\PLANETS\BIOMES\RUINS\MONUMENT.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Stone Statue",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"OXYGEN",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_RUINN_ARCH",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Timber",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\BASIC\RUIN_NEW\COLLAPSEDARCH.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Stone Arch",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"OXYGEN",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_RUINN_ROUND",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Timber",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\PLANETS\BIOMES\RUINS\ROUND.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Stone Tower",
+						["Subtitle"] = 					"BLD_TOWER_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_TOWER_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+											{ ["ID"] = 				"OXYGEN",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"45"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"W_IRONGIANT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\WRECKS\IRONGIANT.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Glaviis",
+						["Subtitle"] = 					"Statue",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A large statue, named Iron Giant.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"400"
+											},
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -54939,7 +55219,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_A.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_A.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -54983,7 +55263,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_B.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_B.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55027,7 +55307,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_C.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_C.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55071,7 +55351,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_D.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_D.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55115,7 +55395,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_E.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_E.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55159,7 +55439,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_F.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_F.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55203,7 +55483,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_G.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_G.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55247,7 +55527,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_H.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_H.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55291,7 +55571,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_I.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_I.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55335,7 +55615,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_J.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_J.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55379,7 +55659,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_K.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_K.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55423,7 +55703,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_L.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_L.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55467,7 +55747,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_M.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_M.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55511,7 +55791,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_N.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_N.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55555,7 +55835,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_O.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_O.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55599,7 +55879,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_P.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_P.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55643,7 +55923,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_Q.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_Q.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55687,7 +55967,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_R.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_R.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55731,7 +56011,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_S.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_S.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55775,7 +56055,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_T.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_T.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55819,7 +56099,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_U.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_U.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55863,7 +56143,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_V.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_V.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55907,7 +56187,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_W.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_W.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55951,7 +56231,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_X.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_X.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -55995,7 +56275,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_Y.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_Y.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56039,7 +56319,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Letter.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\LETTERS\\LARGENEON\\ICON\\NEONLETTER_Z.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\LETTERS\LARGENEON\ICON\NEONLETTER_Z.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56052,7 +56332,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.COLD.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.COLD.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56083,7 +56363,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.COLD\\HAZARDS.COLD_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.COLD\HAZARDS.COLD_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56096,7 +56376,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.HEAT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.HEAT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56127,7 +56407,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.HEAT\\HAZARDS.HEAT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.HEAT\HAZARDS.HEAT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56140,7 +56420,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.RADIOACTIVE.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.RADIOACTIVE.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56171,7 +56451,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.RADIOACTIVE\\HAZARDS.RADIOACTIVE_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.RADIOACTIVE\HAZARDS.RADIOACTIVE_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56184,7 +56464,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.TOXIC.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.TOXIC.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56215,7 +56495,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.TOXIC\\HAZARDS.TOXIC_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.TOXIC\HAZARDS.TOXIC_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56228,7 +56508,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.WATER.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.WATER.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56259,7 +56539,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\HAZARDS.WATER\\HAZARDS.WATER_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\HAZARDS.WATER\HAZARDS.WATER_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56272,7 +56552,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\LIFESUPPORT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\LIFESUPPORT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56303,7 +56583,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\HAZARDS\\LIFESUPPORT\\LIFESUPPORT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\HAZARDS\LIFESUPPORT\LIFESUPPORT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56316,7 +56596,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.ASTRONAUT.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.ASTRONAUT.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56347,7 +56627,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.ASTRONAUT.OFF\\FACTIONS.ASTRONAUT.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.ASTRONAUT.OFF\FACTIONS.ASTRONAUT.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56360,7 +56640,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.EXPLORERGUILD.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.EXPLORERGUILD.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56391,7 +56671,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.EXPLORERGUILD.OFF\\FACTIONS.EXPLORERGUILD.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.EXPLORERGUILD.OFF\FACTIONS.EXPLORERGUILD.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56404,7 +56684,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.FOURTH.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.FOURTH.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56435,7 +56715,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.FOURTH.OFF\\FACTIONS.FOURTH.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.FOURTH.OFF\FACTIONS.FOURTH.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56448,7 +56728,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.GEK.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.GEK.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56479,7 +56759,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.GEK.OFF\\FACTIONS.GEK.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.GEK.OFF\FACTIONS.GEK.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56492,7 +56772,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.KORVAX.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.KORVAX.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56523,7 +56803,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.KORVAX.OFF\\FACTIONS.KORVAX.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.KORVAX.OFF\FACTIONS.KORVAX.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56536,7 +56816,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.TRADEGUILD.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.TRADEGUILD.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56567,7 +56847,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.TRADEGUILD.OFF\\FACTIONS.TRADEGUILD.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.TRADEGUILD.OFF\FACTIONS.TRADEGUILD.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56580,7 +56860,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.VYKEEN.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.VYKEEN.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56611,7 +56891,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.VYKEEN.OFF\\FACTIONS.VYKEEN.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.VYKEEN.OFF\FACTIONS.VYKEEN.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56624,7 +56904,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.WARRIORGUILD.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.WARRIORGUILD.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56655,7 +56935,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\RANK\\FACTIONS.WARRIORGUILD.OFF\\FACTIONS.WARRIORGUILD.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\RANK\FACTIONS.WARRIORGUILD.OFF\FACTIONS.WARRIORGUILD.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56668,7 +56948,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.COMBAT.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.COMBAT.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56699,7 +56979,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.COMBAT.OFF\\WIKI.COMBAT.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.COMBAT.OFF\WIKI.COMBAT.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56712,7 +56992,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.CRAFTEDPROD.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.CRAFTEDPROD.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56743,7 +57023,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.CRAFTEDPROD.OFF\\WIKI.CRAFTEDPROD.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.CRAFTEDPROD.OFF\WIKI.CRAFTEDPROD.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56756,7 +57036,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.EXPLORATION.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.EXPLORATION.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56787,7 +57067,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.EXPLORATION.OFF\\WIKI.EXPLORATION.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.EXPLORATION.OFF\WIKI.EXPLORATION.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56800,7 +57080,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.PORTAL.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.PORTAL.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56831,7 +57111,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.PORTAL.OFF\\WIKI.PORTAL.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.PORTAL.OFF\WIKI.PORTAL.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56844,7 +57124,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.RAWMAT.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.RAWMAT.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56875,7 +57155,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.RAWMAT.OFF\\WIKI.RAWMAT.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.RAWMAT.OFF\WIKI.RAWMAT.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56888,7 +57168,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.SURVIVAL.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.SURVIVAL.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56919,7 +57199,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.SURVIVAL.OFF\\WIKI.SURVIVAL.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.SURVIVAL.OFF\WIKI.SURVIVAL.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56932,7 +57212,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.TECHNOLOGY.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.TECHNOLOGY.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -56963,7 +57243,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.TECHNOLOGY.OFF\\WIKI.TECHNOLOGY.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.TECHNOLOGY.OFF\WIKI.TECHNOLOGY.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -56976,7 +57256,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.TRADESTAND.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.TRADESTAND.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57007,7 +57287,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\WIKI\\WIKI.TRADESTAND.OFF\\WIKI.TRADESTAND.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\WIKI\WIKI.TRADESTAND.OFF\WIKI.TRADESTAND.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57020,7 +57300,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.0.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.0.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57051,7 +57331,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.0\\PORTALSYMBOL.0_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.0\PORTALSYMBOL.0_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57064,7 +57344,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.1.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.1.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57095,7 +57375,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.1\\PORTALSYMBOL.1_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.1\PORTALSYMBOL.1_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57108,7 +57388,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.2.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.2.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57139,7 +57419,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.2\\PORTALSYMBOL.2_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.2\PORTALSYMBOL.2_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57152,7 +57432,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.3.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.3.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57183,7 +57463,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.3\\PORTALSYMBOL.3_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.3\PORTALSYMBOL.3_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57196,7 +57476,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.4.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.4.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57227,7 +57507,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.4\\PORTALSYMBOL.4_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.4\PORTALSYMBOL.4_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57240,7 +57520,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.5.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.5.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57271,7 +57551,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.5\\PORTALSYMBOL.5_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.5\PORTALSYMBOL.5_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57284,7 +57564,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.6.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.6.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57315,7 +57595,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.6\\PORTALSYMBOL.6_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.6\PORTALSYMBOL.6_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57328,7 +57608,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.7.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.7.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57359,7 +57639,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.7\\PORTALSYMBOL.7_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.7\PORTALSYMBOL.7_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57372,7 +57652,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.8.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.8.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57403,7 +57683,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.8\\PORTALSYMBOL.8_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.8\PORTALSYMBOL.8_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57416,7 +57696,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.9.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.9.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57447,7 +57727,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.9\\PORTALSYMBOL.9_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.9\PORTALSYMBOL.9_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57460,7 +57740,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.A.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.A.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57491,7 +57771,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.A\\PORTALSYMBOL.A_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.A\PORTALSYMBOL.A_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57504,7 +57784,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.B.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.B.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57535,7 +57815,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.B\\PORTALSYMBOL.B_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.B\PORTALSYMBOL.B_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57548,7 +57828,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.C.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.C.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57579,7 +57859,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.C\\PORTALSYMBOL.C_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.C\PORTALSYMBOL.C_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57592,7 +57872,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.D.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.D.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57623,7 +57903,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.D\\PORTALSYMBOL.D_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.D\PORTALSYMBOL.D_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57636,7 +57916,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.E.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.E.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57667,7 +57947,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.E\\PORTALSYMBOL.E_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.E\PORTALSYMBOL.E_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57680,7 +57960,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.F.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.F.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57711,7 +57991,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE3\\PORTALSYMBOL.F\\PORTALSYMBOL.F_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE3\PORTALSYMBOL.F\PORTALSYMBOL.F_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57724,7 +58004,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.BARRENPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.BARRENPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57755,7 +58035,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.BARRENPLANT\\PRODUCT.BARRENPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.BARRENPLANT\PRODUCT.BARRENPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57768,7 +58048,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.CREATUREPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.CREATUREPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57799,7 +58079,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.CREATUREPLANT\\PRODUCT.CREATUREPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.CREATUREPLANT\PRODUCT.CREATUREPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57812,7 +58092,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.GRAVPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.GRAVPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57843,7 +58123,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.GRAVPLANT\\PRODUCT.GRAVPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.GRAVPLANT\PRODUCT.GRAVPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57856,7 +58136,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.LUSHPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.LUSHPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57887,7 +58167,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.LUSHPLANT\\PRODUCT.LUSHPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.LUSHPLANT\PRODUCT.LUSHPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57900,7 +58180,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.NIPPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.NIPPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57931,7 +58211,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.NIPPLANT\\PRODUCT.NIPPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.NIPPLANT\PRODUCT.NIPPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57944,7 +58224,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.PEARLPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.PEARLPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -57975,7 +58255,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.PEARLPLANT\\PRODUCT.PEARLPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.PEARLPLANT\PRODUCT.PEARLPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -57988,7 +58268,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.POOPPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.POOPPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58019,7 +58299,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.POOPPLANT\\PRODUCT.POOPPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.POOPPLANT\PRODUCT.POOPPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58032,7 +58312,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.RADIOPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.RADIOPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58063,7 +58343,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.RADIOPLANT\\PRODUCT.RADIOPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.RADIOPLANT\PRODUCT.RADIOPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58076,7 +58356,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SACVENOMPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SACVENOMPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58107,7 +58387,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SACVENOMPLANT\\PRODUCT.SACVENOMPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SACVENOMPLANT\PRODUCT.SACVENOMPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58120,7 +58400,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SCORCHPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SCORCHPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58151,7 +58431,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SCORCHPLANT\\PRODUCT.SCORCHPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SCORCHPLANT\PRODUCT.SCORCHPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58164,7 +58444,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SNOWPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SNOWPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58195,7 +58475,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.SNOWPLANT\\PRODUCT.SNOWPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.SNOWPLANT\PRODUCT.SNOWPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58208,7 +58488,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.TOXICPLANT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.TOXICPLANT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58239,7 +58519,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\UPDATE1\\PRODUCT.TOXICPLANT\\PRODUCT.TOXICPLANT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\UPDATE1\PRODUCT.TOXICPLANT\PRODUCT.TOXICPLANT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58252,7 +58532,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.HYDERDRIVE.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.HYDERDRIVE.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58283,7 +58563,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.HYDERDRIVE\\STATS.SHIP.HYDERDRIVE_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.HYDERDRIVE\STATS.SHIP.HYDERDRIVE_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58296,7 +58576,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVCARGO.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVCARGO.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58327,7 +58607,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVCARGO.OFF\\STATS.SHIP.INVCARGO.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVCARGO.OFF\STATS.SHIP.INVCARGO.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58340,7 +58620,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVGENERAL.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVGENERAL.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58371,7 +58651,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVGENERAL.OFF\\STATS.SHIP.INVGENERAL.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVGENERAL.OFF\STATS.SHIP.INVGENERAL.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58384,7 +58664,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVTECH.OFF.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVTECH.OFF.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58415,7 +58695,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.INVTECH.OFF\\STATS.SHIP.INVTECH.OFF_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.INVTECH.OFF\STATS.SHIP.INVTECH.OFF_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58428,7 +58708,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.SCAN.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.SCAN.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58459,7 +58739,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.SCAN\\STATS.SHIP.SCAN_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.SCAN\STATS.SHIP.SCAN_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58472,7 +58752,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.WEAPONS.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.WEAPONS.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58503,7 +58783,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SHIP.WEAPONS\\STATS.SHIP.WEAPONS_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SHIP.WEAPONS\STATS.SHIP.WEAPONS_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58516,7 +58796,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.ARMOUR.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.ARMOUR.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58547,7 +58827,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.ARMOUR\\STATS.SUIT.ARMOUR_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.ARMOUR\STATS.SUIT.ARMOUR_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58560,7 +58840,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.PROTECTION.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.PROTECTION.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58591,7 +58871,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.PROTECTION\\STATS.SUIT.PROTECTION_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.PROTECTION\STATS.SUIT.PROTECTION_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58604,7 +58884,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.STAMINA.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.STAMINA.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58635,7 +58915,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.STAMINA\\STATS.SUIT.STAMINA_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.STAMINA\STATS.SUIT.STAMINA_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58648,7 +58928,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.UTILITIES.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.UTILITIES.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58679,7 +58959,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.SUIT.UTILITIES\\STATS.SUIT.UTILITIES_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.SUIT.UTILITIES\STATS.SUIT.UTILITIES_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58692,7 +58972,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.GRENADE.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.GRENADE.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58723,7 +59003,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.GRENADE\\STATS.WEAPON.GRENADE_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.GRENADE\STATS.WEAPON.GRENADE_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58736,7 +59016,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.JETPACK.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.JETPACK.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58767,7 +59047,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.JETPACK\\STATS.WEAPON.JETPACK_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.JETPACK\STATS.WEAPON.JETPACK_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58780,7 +59060,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.LASER.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.LASER.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58811,7 +59091,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\STATS\\STATS.WEAPON.LASER\\STATS.WEAPON.LASER_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\STATS\STATS.WEAPON.LASER\STATS.WEAPON.LASER_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58824,7 +59104,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\ARROW_POINT\\ARROW_POINT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\ARROW_POINT\ARROW_POINT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58855,7 +59135,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\ARROW_POINT\\ARROW_POINT\\ARROW_POINT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\ARROW_POINT\ARROW_POINT\ARROW_POINT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58868,7 +59148,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.ALL.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.ALL.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58899,7 +59179,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.ALL\\BUILDCATAGORY.ALL_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.ALL\BUILDCATAGORY.ALL_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58912,7 +59192,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.BUILDINGPART.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.BUILDINGPART.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58943,7 +59223,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.BUILDINGPART\\BUILDCATAGORY.BUILDINGPART_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.BUILDINGPART\BUILDCATAGORY.BUILDINGPART_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -58956,7 +59236,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.COMPONENT.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.COMPONENT.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -58987,7 +59267,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.COMPONENT\\BUILDCATAGORY.COMPONENT_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.COMPONENT\BUILDCATAGORY.COMPONENT_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -59000,7 +59280,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.CONSUMABLE.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.CONSUMABLE.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -59031,7 +59311,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.CONSUMABLE\\BUILDCATAGORY.CONSUMABLE_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.CONSUMABLE\BUILDCATAGORY.CONSUMABLE_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -59044,7 +59324,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.CURIOSITY.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.CURIOSITY.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -59075,7 +59355,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.CURIOSITY\\BUILDCATAGORY.CURIOSITY_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.CURIOSITY\BUILDCATAGORY.CURIOSITY_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -59088,7 +59368,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.DEVICE.SCENE.MBIN",
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.DEVICE.SCENE.MBIN",
 						["DecorationType"] = 			"SurfaceNormal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -59119,7 +59399,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Subtitle"] = 					"BLD_DECAL_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"CUSTOMMODELS\\SC_HUBFLAG\\DECALS\\CATEGORIES\\BUILDCATAGORY.DEVICE\\BUILDCATAGORY.DEVICE_ICON.DDS",
+						["Icon"] = 						"CUSTOMMODELS\SC_HUBFLAG\DECALS\CATEGORIES\BUILDCATAGORY.DEVICE\BUILDCATAGORY.DEVICE_ICON.DDS",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -69448,6 +69728,1178 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 											{ ["ID"] = 				"ROBOT2",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBARPLANT5",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BARREN\HQ\PEACOCKPLANT.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Peacock Fern",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"60"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBARTREE1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BARREN\HQ\PEACOCKTREE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Peacock Tree",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURPLANTM_F",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\MEDIUMPLANT_F.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURPLANTM_N",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\MEDIUMPLANT_N.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURPLANTXL_A",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\HUGETREE_A.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURPLANTXL_E",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\HUGETREE_E.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURPLANTXL_G",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\HUGETREE_G.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURRAREL_H",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\RARELARGE_H.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURRAREL_A",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\RARELARGE_A.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Rock",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WBURRAREL_B",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\BURNT\RARELARGE_B.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Burnt Rock",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	--[[{	["OBJECT"] = {	["ID"] =						"WDESTREEXL_A",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\DESOLATE\HUGETREE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Desolate Tree",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},]]
+	{	["OBJECT"] = {	["ID"] =						"WDESROCKL_C",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\DESOLATE\LARGEROCK_C.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Desolate Rock",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDESROCKL_D",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\DESOLATE\LARGEROCK_D.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Desolate Rock",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WNOXTREEL_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\NOXIOUS\LARGETREE_E.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Noxious Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WSUBTREEXL_A",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\SUBZERO\HUGETREE_A.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Frozen Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WSUBTREEXL_B",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\SUBZERO\HUGETREE_B.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Frozen Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WSUBTREEXL_H",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\SUBZERO\HUGETREE_H.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Frozen Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WUWPLANTL_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\UNDERWATER\LARGEKELP_FLOWY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Underwater Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"WATER1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WUWPLANTL_2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\UNDERWATER\LARGESTEMPLANT_SPIKY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_TS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Underwater Plant",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"WATER1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WUWCORAL_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\UNDERWATER\LARGECORALTWIST_TOWER.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Coral",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"WATER2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"WATER1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WUWCORAL_2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\UNDERWATER\LARGECREEPYPROP_1.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Coral",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"WATER2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"WATER1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WUWCORAL_3",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\UNDERWATER\LARGECREEPYPROP_2.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Coral",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"WATER2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"WATER1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WFLOPLANTM_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\FLORAL\FOXGLOVE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"False",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Shrub",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WFLOPLANTM_2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\FLORAL\FLORALPLANT01.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"False",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_SS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Shrub",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WFLOATFALL_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\PLANETS\BIOMES\ROCKY\SWATERFALLSPIKEY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Floating Island",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+											{ ["ID"] = 				"FARMPROD2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WFLOATFALL_2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\ROCKY\ISLANDSPIKEHUGE_DIS.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Floating Island",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Gardening material.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"400"
+											},
+											{ ["ID"] = 				"FARMPROD2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
 											},
 										}
 					}

@@ -12,12 +12,12 @@ EventMult = 1												--Global Multiplier to apply to the chances for all the
 FreighterAbandonedHazardTimeMultiplier = 0.15				--0.15			(Seems to stack in some way with HardModeHazardTimeMultiplier ?)
 AbandonedFreighterRechargeMod = 0.33						--0.33			I assume this applies a multiplier to the normal HazardRechargeUnderground rate, i.e. Cold protection recharges at 1/3 of the normal rate next to a heater on a derelict freighter
 
-NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, make changes in DIFFICULTYCONFIG.MBIN instead
+NormalModeHazardTimeMultiplier = 0.15						--0.9	(0.30)	This appears deprecated as of NMS v4.0, changes made in "PTSd Other Difficulty Settings.lua" instead
 NormalModeHazardDamageRateMultiplier = 0.1					--0.8	(0.3)	How often your shield takes damage after hazard protection runs out
 NormalModeHazardDamageWoundRateMultiplier = 0.3				--0.8	(0.6)	How often your health takes damage after both hazard protection & your shield runs out
 NormalModeHazardRechargeUnderground = 3.5					--1.5	(1.5)	Lower value recharges faster when underground / indoors
 
-HardModeHazardTimeMultiplier = 0.15							--0.3			This appears deprecated as of NMS v4.0, make changes in DIFFICULTYCONFIG.MBIN instead
+HardModeHazardTimeMultiplier = 0.15							--0.3			This appears deprecated as of NMS v4.0, changes made in "PTSd Other Difficulty Settings.lua" instead
 HardModeHazardDamageRateMultiplier = 0.1					--0.3
 HardModeHazardDamageWoundRateMultiplier = 0.3				--0.5
 HardModeHazardRechargeUnderground = 3.5						--3.5			Lower value recharges faster when underground / indoors

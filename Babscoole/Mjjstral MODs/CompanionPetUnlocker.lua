@@ -41,6 +41,7 @@ CREATURE_JOINT_DATA_TABLE =
         {"MINIDRONE",      "RootJNT"},
         {"FIENDFISHBIG",   "joint1"},
         {"ROCKCREATURE",   "RootJNT"},
+        {"SANDWORM",       "RootJNT"},
     }
 
 ROBOT_JOINT_DATA_TABLE =
@@ -53,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["CONTRIBUTORS"]            = "Silent369 and Corvus",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["DESCRIPTION"]             = "Enables more creatures to become companion pets",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
