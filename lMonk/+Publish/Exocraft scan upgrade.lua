@@ -6,7 +6,7 @@ local mod_desc = [[
   Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-local mod_version = '2.02'
+local mod_version = '2.03'
 
 local scan_event = {
 	termimal =	{-- trade termimal
@@ -499,7 +499,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.00.1',
+	NMS_VERSION			= '5.05',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{

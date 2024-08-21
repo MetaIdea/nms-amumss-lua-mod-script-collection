@@ -3,9 +3,7 @@ local mod_desc = [[
   Adds in-game customizing for the hardframe and Liquidator mech!
   (Customizing is done through the mech's geobay menu)
 
-  * If you want to pack the texture files with the script,
-   you'll need to set a relevant file path for them.
-   If you use ModExtraFilesToInclude, just comment/delete 'source'
+  * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]-------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
@@ -28,7 +26,7 @@ function ToExml(class)
 	function len2(t)
 		i=0; for _ in pairs(t) do i=i+1 end; return i
 	end
-	
+
 	local function exml_r(tlua)
 		local exml = {}
 		function exml:add(t)
@@ -166,7 +164,6 @@ local proc_texture_files = {
 			{
 				name	= 'BASE',
 				diff	= true,
-				noname	= true, -- omit name from mask & normal path
 				normal	= true,
 				masks	= true
 			}
@@ -271,7 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						FILE_CONTENT	 = BuildProcTexListMbin(ptf),
 						FILE_DESTINATION = ptf.nmspath..ptf.label..'.TEXTURE.EXML'
 					}
-					if ptf.source then
+					if ptf.source and lfs.attributes(ptf.source) then
 						T[#T+1] = {
 							EXTERNAL_FILE_SOURCE = ptf.source..ptf.label..'*.DDS',
 							FILE_DESTINATION	 = ptf.nmspath..'*.DDS'
