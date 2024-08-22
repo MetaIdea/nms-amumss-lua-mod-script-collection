@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         }
                     }
-                } ,
+                },
                 {
                     ["MBIN_FILE_SOURCE"]    = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"]   =
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 }
             }
-        } ,
+        },
         {
             ["MBIN_CHANGE_TABLE"]   =
             {
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
                             ["PRECEDING_KEY_WORDS"] = "Ship_Hyperdrive_JumpDistance",
-              ["SECTION_UP"] = 1,
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Bonus",   "9999999"}  -- Original "100"
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","JET1",},
                             ["PRECEDING_KEY_WORDS"] = "Suit_Jetpack_Tank",
-              ["SECTION_UP"] = 1,
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Bonus",   "9999999"}      -- Original "2.75"
@@ -90,7 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID","LAUNCHER",},
                             ["PRECEDING_KEY_WORDS"] = "Ship_Launcher_TakeOffCost",
-              ["SECTION_UP"] = 1,
+                            ["SECTION_UP"] = 1,
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"Bonus",       "0"}        -- Original "50"
