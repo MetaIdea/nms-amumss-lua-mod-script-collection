@@ -7,7 +7,8 @@ RECIPE_PYRITE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_324" />
-      <Property name="Name" value="RECIPE_PYRITE_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_PYRITE_SYN" />
       <Property name="TimeToMake" value="45" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -40,7 +41,8 @@ RECIPE_AMMONIA_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_325" />
-      <Property name="Name" value="RECIPE_AMMONIA_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_AMMONIA_SYN" />
       <Property name="TimeToMake" value="45" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -73,7 +75,8 @@ RECIPE_DRYICE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_326" />
-      <Property name="Name" value="RECIPE_DRYICE_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_DRYICE_SYN" />
       <Property name="TimeToMake" value="45" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -106,7 +109,8 @@ RECIPE_MAGNETITE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_327" />
-      <Property name="Name" value="RECIPE_MAGNETITE_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_MAGNETITE_SYN" />
       <Property name="TimeToMake" value="50" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -139,7 +143,8 @@ RECIPE_SODIUM_NITRATE_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_328" />
-      <Property name="Name" value="RECIPE_SODIUM_NITRATE_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_SODIUM_NITRATE_SYN" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -179,7 +184,8 @@ RECIPE_SALT_SYN =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_329" />
-      <Property name="Name" value="RECIPE_SALT_SYN" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_SALT_SYN" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -213,7 +219,8 @@ RECIPE_PYRITE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_330" />
-      <Property name="Name" value="RECIPE_PYRITE_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_PYRITE_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -239,7 +246,8 @@ RECIPE_AMMONIA_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_331" />
-      <Property name="Name" value="RECIPE_AMMONIA_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_AMMONIA_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -265,7 +273,8 @@ RECIPE_MAGNETITE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_332" />
-      <Property name="Name" value="RECIPE_MAGNETITE_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_MAGNETITE_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -291,7 +300,8 @@ RECIPE_SALT_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_333" />
-      <Property name="Name" value="RECIPE_SALT_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_SALT_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -317,7 +327,8 @@ RECIPE_DRYICE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_334" />
-      <Property name="Name" value="RECIPE_DRYICE_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_DRYICE_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -343,7 +354,8 @@ RECIPE_SODIUM_NITRATE_DECOMP =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_335" />
-      <Property name="Name" value="RECIPE_DRYICE_DECOMP" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_DRYICE_DECOMP" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -370,7 +382,8 @@ RECIPE_FROST_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_336" />
-      <Property name="Name" value="RECIPE_FROST_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_FROST_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -403,7 +416,8 @@ RECIPE_FROST_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_337" />
-      <Property name="Name" value="RECIPE_FROST_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_FROST_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -436,7 +450,8 @@ RECIPE_GAMMA_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_338" />
-      <Property name="Name" value="RECIPE_GAMMA_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_GAMMA_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -469,7 +484,8 @@ RECIPE_GAMMA_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_339" />
-      <Property name="Name" value="RECIPE_GAMMA_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_GAMMA_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -502,7 +518,8 @@ RECIPE_POOP_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_340" />
-      <Property name="Name" value="RECIPE_POOP_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_POOP_EXTRACT1" />
       <Property name="TimeToMake" value="15" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -528,7 +545,8 @@ RECIPE_POOP_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_341" />
-      <Property name="Name" value="RECIPE_POOP_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_POOP_EXTRACT2" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -561,7 +579,8 @@ RECIPE_POOP_EXTRACT3 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_342" />
-      <Property name="Name" value="RECIPE_POOP_EXTRACT3" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_POOP_EXTRACT3" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -594,7 +613,8 @@ RECIPE_DUST_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_343" />
-      <Property name="Name" value="RECIPE_DUST_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_DUST_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -627,7 +647,8 @@ RECIPE_DUST_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_344" />
-      <Property name="Name" value="RECIPE_DUST_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_DUST_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -660,7 +681,8 @@ RECIPE_HOT_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_345" />
-      <Property name="Name" value="RECIPE_HOT_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_HOT_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -693,7 +715,8 @@ RECIPE_HOT_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_346" />
-      <Property name="Name" value="RECIPE_HOT_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_HOT_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -726,7 +749,8 @@ RECIPE_TOXIC_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_347" />
-      <Property name="Name" value="RECIPE_TOXIC_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_TOXIC_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -759,7 +783,8 @@ RECIPE_TOXIC_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_348" />
-      <Property name="Name" value="RECIPE_TOXIC_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_TOXIC_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -792,7 +817,8 @@ RECIPE_LUSH_EXTRACT1 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_349" />
-      <Property name="Name" value="RECIPE_LUSH_EXTRACT1" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_LUSH_EXTRACT1" />
       <Property name="TimeToMake" value="30" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -825,7 +851,8 @@ RECIPE_LUSH_EXTRACT2 =
 [[
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_350" />
-      <Property name="Name" value="RECIPE_LUSH_EXTRACT2" />
+      <Property name="RecipeType" value="" />
+      <Property name="RecipeName" value="RECIPE_LUSH_EXTRACT2" />
       <Property name="TimeToMake" value="60" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
@@ -954,7 +981,7 @@ for i=1,#DelRecipe1 do
   -- local word = "Table"
   local temp_table =
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name",value},
+              ["SPECIAL_KEY_WORDS"] = {"RecipeName",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
               ["REPLACE_TYPE"]  = "ALL",
               ["REMOVE"]                = "SECTION",
@@ -967,7 +994,7 @@ for i=1,#DelRecipe2 do
   -- local word = "Table"
   local temp_table =
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name",value},
+              ["SPECIAL_KEY_WORDS"] = {"RecipeName",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
               ["REPLACE_TYPE"]  = "ALL",
               ["REMOVE"]                = "SECTION",
@@ -980,7 +1007,7 @@ for i=1,#DelRecipe3 do
   -- local word = "Table"
   local temp_table =
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name",value},
+              ["SPECIAL_KEY_WORDS"] = {"RecipeName",value},
               -- ["PRECEDING_KEY_WORDS"] = {word},
               --["REPLACE_TYPE"]    = "ALL",
               ["REMOVE"]                = "SECTION",
