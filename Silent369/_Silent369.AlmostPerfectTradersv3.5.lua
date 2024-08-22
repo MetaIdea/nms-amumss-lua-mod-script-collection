@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectTradersPlus"
+local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "3.4"
+local lua_version = "3.5"
 local mod_author  = "Silent369"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 
@@ -22,8 +22,8 @@ and to minimise the damage to Crashed Ships when discovered to save resources on
 
 --|=======================================================================================--
 
-local _NoPirateAttacks = true
-local _CrashShipDamage = true
+local _NoPirateAttacks = false
+local _CrashShipDamage = false
 local _FillUp_Outposts = true
 
 --|=======================================================================================--
@@ -151,11 +151,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",               _sApproachSpeed}, --Original "150"
                                 {"PlayerAutoLandRange",         _sAutoLandRange}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
-                                {"TakeOffHeight",                           "3"}, --Original "3"
-                                {"TakeOffFwdDist",                          "2"}, --Original "5"
-                                {"TakeOffAlignTime",                      "0.5"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "150"}, --Original "60"
+                                {"TakeOffHeight",                           "2"}, --Original "3"
+                                {"TakeOffFwdDist",                          "3"}, --Original "5"
+                                {"TakeOffAlignTime",                      "1.5"}, --Original "1"
+                                {"TakeOffExtraAIHeight",                    "2"}, --Original "7"
+                                {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
                             }
                         },
                     }
@@ -177,11 +177,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",               _dApproachSpeed}, --Original "100"
                                 {"PlayerAutoLandRange",         _dAutoLandRange}, --Original "300"
                                 {"CircleRadius",                          "150"}, --Original "200"
-                                {"TakeOffHeight",                           "3"}, --Original "10"
-                                {"TakeOffFwdDist",                          "2"}, --Original "5"
-                                {"TakeOffAlignTime",                      "0.5"}, --Original "1"
-                                {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "150"}, --Original "60"
+                                {"TakeOffHeight",                           "5"}, --Original "10"
+                                {"TakeOffFwdDist",                          "3"}, --Original "5"
+                                {"TakeOffAlignTime",                      "1.5"}, --Original "1"
+                                {"TakeOffExtraAIHeight",                    "3"}, --Original "7"
+                                {"PostTakeOffExtraPlayerSpeed",            "30"}, --Original "60"
                             }
                         },
                     }
@@ -233,10 +233,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinSpeed",                              "100"}, --Original "80"
-                                {"MaxSpeed",                              "100"}, --Original "80"
-                                {"BoostSpeed",                           "2000"}, --Original "1000"
-                                {"Force",                                 "400"}, --Original "300"
+                                {"MinSpeed",                               "50"}, --Original "80"
+                                {"MaxSpeed",                               "70"}, --Original "80"
+                                {"BoostSpeed",                            "800"}, --Original "1000"
+                                {"Force",                                 "200"}, --Original "300"
                                 {"TurnMin",                                 "2"}, --Original "1"
                                 {"TurnMax",                                 "2"}, --Original "1"
                                 {"MaxSpeed",                              "100"}, --Original "80"
@@ -250,10 +250,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinSpeed",                              "100"}, --Original "15"
-                                {"MaxSpeed",                              "100"}, --Original "20"
-                                {"BoostSpeed",                           "2000"}, --Original "1000"
-                                {"Force",                                 "300"}, --Original "200"
+                                {"MinSpeed",                               "50"}, --Original "15"
+                                {"MaxSpeed",                               "50"}, --Original "20"
+                                {"BoostSpeed",                            "800"}, --Original "1000"
+                                {"Force",                                 "100"}, --Original "200"
                                 {"TurnMin",                                 "3"}, --Original "2"
                                 {"TurnMax",                                 "3"}, --Original "2"
                                 {"MinHeight",                            "14.6"}, --Original "15"

@@ -997,9 +997,39 @@ NewSentinelNaniteRecipes =
       </Property>
     </Property>]]
 
---Adds Recipes for refining Tainted Metal, Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Radiant Shard, Inverted Mirror, Hyaline Brain, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Salvaged Data by refining with Microprocessor
+--Adds Recipes for refining Runaway Mould, Tainted Metal, Larval Core, Hadal Core, Vile Spawn, Flesh Rope, Radiant Shard, Inverted Mirror, Hyaline Brain, Quad Servo, Hardframe Engine, Crystallised Heart, and Walker Brain into Salvaged Data by refining with Microprocessor
 NewSalvagedDataRecipes = 
 [[<Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="DATA_MOULD" />
+      <Property name="RecipeType" value="Requested Operation: Data Purge" />
+      <Property name="RecipeName" value="PTSd: Mouldering Data Extraction" />
+      <Property name="TimeToMake" value="3" />
+      <Property name="Cooking" value="False" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="BP_SALVAGE" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="SPACEGUNK2" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="250" />
+        </Property>
+		<Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="MICROCHIP" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+	<Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="DATA_TAINT" />
       <Property name="RecipeType" value="Requested Operation: Data Purge" />
       <Property name="RecipeName" value="PTSd: Tainted Data Extraction" />

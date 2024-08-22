@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectFlightLite"
 local lua_author  = "Silent"
-local lua_version = "3.5"
+local lua_version = "3.6"
 local mod_author  = "Silent369"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 

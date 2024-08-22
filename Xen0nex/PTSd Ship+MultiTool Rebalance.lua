@@ -44,14 +44,132 @@ ShuttleStatChanges =
 	},
 }
 
---Replacers for Scientific (Explorer) Class C base shield bonuses (before applying any other multipliers), since they are 0 by default.
+--Replacers for various specific bonuses (before applying any other multipliers), either to replace bonuses of 0, or to fix "overlapping" stat bonuses where a lower Class could potentially have a higher bonus than a higher Class.
 	--Note these base bonus values will then be affected by the multipliers in the sections below
-ExplorerCShieldChanges =
+SpecificShipStatChanges =
 {
 	{
-		{"C"},	--Shield only
-		{"Min",		2},		-- Default "0"
-		{"Max",		4},		-- Default "0"
+		{"Fighter"},	--Fighter
+		{
+			{
+				{"A",	"SHIP_DAMAGE"},	--Class,	Stat
+				{
+					{"Max",		70},		--75
+				},
+			},
+			{
+				{"A",	"SHIP_SHIELD"},	--Class,	Stat
+				{
+					{"Min",		15},		--24
+					{"Max",		24},		--30
+				},
+			},
+		},
+	},
+	{
+		{"Dropship"},	--Hauler
+		{
+			{
+				{"B",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		10},		--8
+					{"Max",		20},		--15
+				},
+			},
+		},
+	},
+	{
+		{"Scientific"},	--Explorer
+		{
+			{
+				{"C",	"SHIP_SHIELD"},	--Class,	Stat
+				{
+					{"Min",		2},		--0
+					{"Max",		4},		--0
+				},
+			},
+		},
+	},
+	{
+		{"Sail"},	--Solar
+		{
+			{
+				{"B",	"SHIP_SHIELD"},	--Class,	Stat
+				{
+					{"Min",		15},		--8
+					{"Max",		23},		--30
+				},
+			},
+			{
+				{"S",	"SHIP_SHIELD"},	--Class,	Stat
+				{
+					{"Min",		38},		--23
+				},
+			},
+			{
+				{"B",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Max",		24},		--30
+				},
+			},
+			{
+				{"A",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		24},		--30
+					{"Max",		38},		--45
+				},
+			},
+		},
+	},
+	{
+		{"Robot"},	--Sentinel Interceptor
+		{
+			{
+				{"A",	"SHIP_DAMAGE"},	--Class,	Stat
+				{
+					{"Min",		45},		--50
+					{"Max",		60},		--75
+				},
+			},
+			{
+				{"B",	"SHIP_SHIELD"},	--Class,	Stat
+				{
+					{"Max",		12},		--15
+				},
+			},
+			{
+				{"B",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		2},		--3
+					{"Max",		4},		--8
+				},
+			},
+			{
+				{"A",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		4},		--3
+					{"Max",		7},		--10
+				},
+			},
+			{
+				{"S",	"SHIP_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Min",		7},		--5
+					{"Max",		10},		--10
+				},
+			},
+		},
+	},
+	{
+		{"Freighter"},	--Freighter
+		{
+			{
+				{"C",	"FREI_HYPERDRIVE"},	--Class,	Stat
+				{
+					{"Max",		13},		--15
+				},
+			},
+		},
 	},
 }
 
@@ -83,8 +201,8 @@ ShipStatChanges	=
 			"Fighter"					--	Maneuverability: High (350-445)				Speed: High
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.25,	1.25,	1.25,	1.25},		--			+		8-15,		24-45,		50-75,		70-90	%
-			{"SHIP_SHIELD",				1.33,	1.33,	1.33,	1.33},		--			+		0,			8-15,		24-30,		24-38	%
+			{"SHIP_DAMAGE",				1.25,	1.25,	1.25,	1.25},		--			+		8-15,		24-45,		50-75[50-70], 70-90	%
+			{"SHIP_SHIELD",				1.33,	1.33,	1.33,	1.33},		--			+		0,			8-15,		24-30[15-24], 24-38	%
 			{"SHIP_HYPERDRIVE",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		5-15,		15-20,		20-30,		35-45,	%
 		}
@@ -96,7 +214,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				0.9,	0.9,	0.9,	0.9},		--			+		0,			3-8,		8-15,		15-30	%
 			{"SHIP_SHIELD",				2.9,	2.9,	2.9,	2.9},		--			+		18-30,		40-55,		60-75,		95-125	%
-			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2},		--			+		5-10,		8-15,		23-37,		45-58	%
+			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2},		--			+		5-10,		8-15[10-20], 23-37,		45-58	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		0,			0-5,		5-10,		10-15,	%
 		}
 	},
@@ -128,8 +246,8 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				0.94,	0.94,	0.94,	0.94},		--			+		8-15,		23-45,		45-60,		60-75	%
-			{"SHIP_SHIELD",				1.5,	1.5,	1.5,	1.5},		--			+		8-15,		8-30,		23-38,		23-50	%
-			{"SHIP_HYPERDRIVE",			0.75,	0.75,	0.75,	0.9},		--			+		8-15,		15-30,		30-45,		38-50	%
+			{"SHIP_SHIELD",				1.5,	1.5,	1.5,	1.5},		--			+		8-15,		8-30[15-23], 23-38,		23-50[38-50]%
+			{"SHIP_HYPERDRIVE",			0.75,	0.75,	0.75,	0.9},		--			+		8-15,		15-30[15-24], 30-45[24-38], 38-50	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		5-10,		10-20,		20-30,		35-40,	%
 		}
 	},
@@ -138,9 +256,9 @@ ShipStatChanges	=
 			"Robot"	--Sentinel Interceptor	Maneuverability: Low (But 1.5 boost manuv mult on engine)	Speed: Low			(Changed in "PTSd Starship Speed Rebalance.lua" to be a buffed Shuttle with boost manuv mult)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		24-45,		50-75,		60-80	%
-			{"SHIP_SHIELD",				1.9,	1.9,	1.9,	1.9},		--			+		3-8,		8-15,		12-20,		20-35	%
-			{"SHIP_HYPERDRIVE",			1.6,	1.6,	1.6,	1.6},		--			+		0,			3-8,		3-10,		5-10	%
+			{"SHIP_DAMAGE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		24-45,		50-75[45-60], 60-80	%
+			{"SHIP_SHIELD",				1.9,	1.9,	1.9,	1.9},		--			+		3-8,		8-15[8-12],	12-20,		20-35	%
+			{"SHIP_HYPERDRIVE",			1.6,	1.6,	1.6,	1.6},		--			+		0,			3-8[2-4],	3-10[4-7],	5-10[7-10]	%
 			--{"SHIP_AGILE",				1.0,	1.0,	1.0,	1.0},		--			+		8-15,		20-30,		20-30,		40-50,	%
 		}
 	},
@@ -149,7 +267,7 @@ ShipStatChanges	=
 			"Freighter"					
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"FREI_HYPERDRIVE",			3.3,	4.4,	2.2,	2.2},		--			+		7-15,		10-19,		40-60,		60-80	%		"Default" Hyperdrive range is 100ly		(up to ~6,500 ly maxed out in 3.99?)
+			{"FREI_HYPERDRIVE",			3.3,	4.4,	2.2,	2.2},		--			+		7-15[7-13],	10-19,		40-60,		60-80	%		"Default" Hyperdrive range is 100ly		(up to ~6,500 ly maxed out in 3.99?)
 			{"FREI_FLEET",				0.75,	0.75,	0.75,	0.75}		--			+		1-10,		10-20,		20-40,		40-60	%		Fleet Coordination base amount maybe is 25??? 15??? Final stat on fresh freighters seems to range from ~20- ~31, but with the yellow "bonus" gauge about as long as the white part...
 		}
 	},
@@ -800,17 +918,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Min",GlobalShipShieldMult},
-								{"Max",GlobalShipShieldMult}
-							}
-						},
-						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -1116,24 +1223,48 @@ for i = 1, #ShuttleStatChanges do
 			}
 	end
 end
-for i = 1, #ExplorerCShieldChanges do
-	local ExplorerClass = ExplorerCShieldChanges[i][1][1]
-	local ExplorerMin = ExplorerCShieldChanges[i][2][2]
-	local ExplorerMax = ExplorerCShieldChanges[i][3][2]
+for i = 1, #SpecificShipStatChanges do
+	local ShipType = SpecificShipStatChanges[i][1][1]
+	local StatGroups = SpecificShipStatChanges[i][2]
 
+	for j = 1, #StatGroups do
+		local Class = StatGroups[j][1][1]
+		local Stat = StatGroups[j][1][2]
+		local MinMaxes = StatGroups[j][2]
+		
+		for k = 1, #MinMaxes do
+		
+			local MinMax = MinMaxes[k][1]
+			local NewValue = MinMaxes[k][2]
+		
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
 				["PRECEDING_FIRST"] = "TRUE",
 				["INTEGER_TO_FLOAT"] = "FORCE",
-				["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Scientific","BaseStatsPerClass", ExplorerClass},
-				["SPECIAL_KEY_WORDS"] = {"BaseStatID", "SHIP_SHIELD"},
+				["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData", ShipType, "BaseStatsPerClass", Class},
+				["SPECIAL_KEY_WORDS"] = {"BaseStatID", Stat},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"Min", ExplorerMin},
-					{"Max", ExplorerMax}
+					{MinMax, NewValue},
 				}
 			}
+		end
+	end
 end
+
+ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+	{
+		["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+		["MATH_OPERATION"] = "*",
+		["INTEGER_TO_FLOAT"] = "FORCE",
+		["REPLACE_TYPE"] 		= "ALL",
+		["VALUE_CHANGE_TABLE"] 	=
+		{
+			{"Min",GlobalShipShieldMult},
+			{"Max",GlobalShipShieldMult}
+		}
+	}
+	
 for i = 1, #RoyalClassAddAgile do
 	local RoyalClass = RoyalClassAddAgile[i]
 

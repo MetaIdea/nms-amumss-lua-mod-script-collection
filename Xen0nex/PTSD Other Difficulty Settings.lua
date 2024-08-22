@@ -1,5 +1,5 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "5_03"
+GameVersion = "5_05"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 DisablePlanetaryPirateRaids				=false								--false		Set true to disable any planetary pirate raids
@@ -17,9 +17,9 @@ DRNormal =						1										--1
 DRHigh =						1.33									--1.5
 	--These are presumably how many hits before the Minotaur takes damage to installed tech when under AI autopilot (possibly overwrites the similar parameter in GCVEHICLEGLOBALS.GLOBAL.MBIN )
 DRMNone =						0										--0
-DRMLow =						48										--32
-DRMNormal =						24										--16
-DRMHigh =						12										--8
+DRMLow =						56										--32
+DRMNormal =						28										--16
+DRMHigh =						14										--8
 
 --Multipliers for the "Enemy Strength" difficulty settings
 	--These presumably apply to the base health values for enemies set in GCROBOTGLOBALS.MBIN and AISPACESHIPATTACKDATATABLE.MBIN, modified by "_Extra Savage Sentinels by ExosolarX.lua" and "Space Combat+Larger Space BattlesX.lua"

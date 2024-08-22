@@ -27,10 +27,10 @@ LargeRocketTubesDesc =
 [[Expands the loading chamber of the starship &lt;TECHNOLOGY&gt;Rocket Launcher&lt;&gt;, improving payload size and allowing for significantly higher &lt;STELLAR&gt;damage&lt;&gt;.]]
 
 PhaseBeamDesc =
-[[A &lt;TECHNOLOGY&gt;high-energy beam weapon&lt;&gt; for ship-to-ship combat. &#xA;&#xA;Though vulnerable to &lt;FUEL&gt;overheating&lt;&gt;, these highly accurate laser weapons can &lt;STELLAR&gt;recharge the users's shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively stronger the higher the user's maximum shield capacity is.&#xA;&#xA;Use &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to change weapon mode. Press &lt;IMG&gt;SHIPFIRE&lt;&gt; to fire.]]
+[[A &lt;TECHNOLOGY&gt;high-energy beam weapon&lt;&gt; for ship-to-ship combat. &#xA;&#xA;Though vulnerable to &lt;FUEL&gt;overheating&lt;&gt;, these highly accurate laser weapons can &lt;STELLAR&gt;recharge the users's shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively &lt;STELLAR&gt;stronger&lt;&gt; the higher the user's &lt;STELLAR&gt;maximum shield capacity&lt;&gt; is.&#xA;&#xA;Use &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to change weapon mode. Press &lt;IMG&gt;SHIPFIRE&lt;&gt; to fire.]]
 
 GazingEyesDesc =
-[[A complex arrangement of membranes and lens, fused atop a high-energy laser array. Incineration awaits those that meet their stare.&#xA;Press &lt;IMG&gt;SHIPFIRE&lt;&gt; request the eyes gaze upon nearby targets and &lt;STELLAR&gt;recharge its own shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively stronger the higher the user's maximum shield capacity is.]]
+[[A complex arrangement of membranes and lens, fused atop a high-energy laser array. Incineration awaits those that meet their stare.&#xA;Press &lt;IMG&gt;SHIPFIRE&lt;&gt; request the eyes gaze upon nearby targets and &lt;STELLAR&gt;recharge its own shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively &lt;STELLAR&gt;stronger&lt;&gt; the higher the user's &lt;STELLAR&gt;maximum shield capacity&lt;&gt; is.]]
 
 PhotonCannonDesc =
 [[A destructive &lt;TECHNOLOGY&gt;starship projectile launcher&lt;&gt; with a high &lt;STELLAR&gt;critical hit&lt;&gt; damage multiplier, the weapons system of choice for the interstellar trader and pirate alike.&#xA;&#xA;Use &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to change weapon mode. Press &lt;IMG&gt;SHIPFIRE&lt;&gt; to fire.]]
@@ -52,6 +52,15 @@ ScannerRoomDesc =
 
 ConsciousnessBridgeMissionHint =
 [[The Void Egg requires a &lt;TECHNOLOGY&gt;Consciousness Bridge&lt;&gt;&#xA;Gather %ITEM% to craft Consciousness Bridge: %CURRENT%/%AMOUNT%&#xA;%ITEM% can be mined on planets in &lt;TRADEABLE&gt;green star systems&lt;&gt;]]
+
+DerelictLootTip =
+[[The &lt;STELLAR&gt;Space Station&lt;&gt; offers several opportunities to profit from salvage.&#xA;Both &lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; and &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; may be interested in acquiring data from the derelict freighter.&#xA;&#xA;&lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; offer &lt;SPECIAL&gt;Tainted Metal&lt;&gt; while &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; offer &lt;TRADE&gt;Units&lt;&gt; and &lt;STELLAR&gt;Standing&lt;&gt;]]
+
+DerelictCrewPopup =
+[[Offload the &lt;STELLAR&gt;Crew Manifest&lt;&gt;&#xA;&lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; offer &lt;SPECIAL&gt;Tainted Metal&lt;&gt; while &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; offer &lt;TRADE&gt;Units&lt;&gt; and &lt;STELLAR&gt;Standing&lt;&gt;]]
+
+DerelictLogPopup =
+[[Offload the &lt;STELLAR&gt;Captain's Log&lt;&gt;&#xA;&lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; offer &lt;SPECIAL&gt;Tainted Metal&lt;&gt; while &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; offer &lt;TRADE&gt;Units&lt;&gt; and &lt;STELLAR&gt;Standing&lt;&gt;]]
 
 ReinforcedDoor =
 [[Reinforced Door (Destroy nearby &lt;SPECIAL&gt;sentinels&lt;&gt;)]]
@@ -98,17 +107,29 @@ AntiFreightCannon =
 FreightWarpDrives =
 [[Freighter Warp Drives - &lt;STELLAR&gt;Medium Armour&lt;&gt;]]
 
+BasaltDesc =
+[[Local mineral extract, typically found in large deposits or extracted from common minerals after inspection with an &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt;.&#xA;&#xA;Typically found on planets with a &lt;FUEL&gt;volcanic environment&lt;&gt;.&#xA;&#xA;Can be processed into &lt;STELLAR&gt;Silicate Powder&lt;&gt; in a refiner.]]
+
+PearlDesc =
+[[Gemstone formed over the course of centuries within the egg of a super-incubatory species. Highly ornamental, these gems are themselves living seeds, lucent grains of potential life.&#xA;&#xA;Can be sold at a &lt;TECHNOLOGY&gt;Galactic Trade Terminal&lt;&gt;, or &lt;FUEL&gt;refined together&lt;&gt; with &lt;STELLAR&gt;Gravitino Balls&lt;&gt; to extract the &lt;TECHNOLOGY&gt;Di-Hydrogen&lt;&gt; within them.]]
+
+GravDesc =
+[[A supersymmetric particle cluster created by divergent super-gravitational forces. A &lt;STELLAR&gt;micro-rift&lt;&gt; is created as they form, and extraction of the orb prompts a localised reality weakening. &lt;FUEL&gt;Sentinel forces&lt;&gt; will respond to stablise any such anomaly.&#xA;&#xA;Can be sold at a &lt;TECHNOLOGY&gt;Galactic Trade Terminal&lt;&gt;, or &lt;FUEL&gt;refined together&lt;&gt; with &lt;STELLAR&gt;Albumen Pearls&lt;&gt; or &lt;STELLAR&gt;Sac Venom&lt;&gt; to extract useful substances from them.]]
+
+VenomDesc =
+[[A stabilised poison gland extracted from a terrestrial urchin. The host-urchin is actually a colony of smaller proto-creatures, a formation built on years of slow growth and cooperation.&#xA;&#xA;Of use both medicinally and as a delicacy in some riskier cuisines.&#xA;&#xA;Can be sold at a &lt;TECHNOLOGY&gt;Galactic Trade Terminal&lt;&gt;, or &lt;FUEL&gt;refined together&lt;&gt; with &lt;STELLAR&gt;Gravitino Balls&lt;&gt; to extract the &lt;TECHNOLOGY&gt;Tritium&lt;&gt; within them.]]
+
 PearlTime =
-[[A medium-sized, farmable Crystal Orb that yields an occasional harvest of valuable Albumen Pearls.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;1 hour&lt;&gt;]]
+[[A medium-sized, farmable Crystal Orb that yields an occasional harvest of valuable Albumen Pearls, as well as &lt;STELLAR&gt;nanites&lt;&gt;.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;1 hour&lt;&gt;&#xA;&#xA;Very high &lt;TECHNOLOGY&gt;units/hour&lt;&gt; but low &lt;TECHNOLOGY&gt;units/harvest&lt;&gt; and low &lt;STELLAR&gt;nanites/hour&lt;&gt;]]
 
 GravTime =
-[[A strange, potentially parasitic plant that yields an occasional harvest of the highly tradable commodity, Gravitino Balls.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours&lt;&gt;]]
+[[A strange, potentially parasitic plant that yields an occasional harvest of the highly tradable commodity, Gravitino Balls, as well as &lt;STELLAR&gt;nanites&lt;&gt;.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours&lt;&gt;&#xA;&#xA;Low &lt;TECHNOLOGY&gt;units/hour&lt;&gt; and low &lt;TECHNOLOGY&gt;units/harvest&lt;&gt; but high &lt;STELLAR&gt;nanites/hour&lt;&gt;]]
 
 VenomTime =
-[[A small, innocuous looking plant whose leaves periodically secrete a small amount of potent Sac Venom, a valuable trading commodity.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;12 hours&lt;&gt;]]
+[[A small, innocuous looking plant whose leaves periodically secrete a small amount of potent Sac Venom, a valuable trading commodity, as well as &lt;STELLAR&gt;nanites&lt;&gt;.&#xA;&#xA;Suitable for hydroponic indoor planting. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;12 hours&lt;&gt;&#xA;&#xA;Low &lt;TECHNOLOGY&gt;units/hour&lt;&gt; and low &lt;STELLAR&gt;nanites/hour&lt;&gt;, but very high &lt;TECHNOLOGY&gt;units/harvest&lt;&gt;]]
 
 NipNipTime =
-[[This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic planting indoors. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours 20 mins&lt;&gt;]]
+[[This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic planting indoors. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours 20 mins&lt;&gt;&#xA;&#xA;High &lt;TECHNOLOGY&gt;units/hour&lt;&gt; and high &lt;TECHNOLOGY&gt;units/harvest&lt;&gt; but does not produce nanites]]
 
 SurvivalDiffDesc =
 [[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; protects explorers from environmental factors such as &lt;TECHNOLOGY&gt;extreme cold&lt;&gt; and &lt;TRADEABLE&gt;toxicity&lt;&gt;. Its &lt;FUEL&gt;Life Support&lt;&gt; unit provides breathable air and vital movement systems.&#xA;&#xA;This setting scales how quickly these systems are drained in challenging environments.&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 33% Hazard and 50% Life Support drain rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Hazard and Life Support drain rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 150% Hazard and 150% Life Support drain rate]]
@@ -218,6 +239,72 @@ function AresTradeOffer (ItemName)
 [[Traveller hopes to make progress. Traveller tests themselves. I will help. An exchange. Progress for progress.&#xA;Or wealth, perhaps. Experience or materials. Both valid. Today... &lt;STELLAR&gt;]]..ItemName..[[&lt;&gt;.]]
 end
 
+NaniteRefineItem = [[&#xA;&#xA;Can be processed into &lt;STELLAR&gt;nanites&lt;&gt; in a refiner]]
+
+SalDataRefineItem = [[, or refined together with Microprocessors to create &lt;TECHNOLOGY&gt;Salvaged Data&lt;&gt;.]]
+
+SpaceGunkRefineItem = [[&#xA;&#xA;Processing in a refiner could eventually result in something &lt;STELLAR&gt;more useful&lt;&gt;...]]
+
+NaniteRefineItemDescs =
+{
+	{
+		{1},		--"LANGUAGE\\NMS_LOC1_ENGLISH.MBIN",
+		{"SUB_DEADDRONE_DESC", }
+	},
+	{
+		{2},		--"LANGUAGE\\NMS_LOC4_ENGLISH.MBIN",
+		{"BP_SALVAGE_DESC", "UI_QUAD_PROD_DESC", "UI_WALKER_PROD_DESC", "UI_ASTEROID3_DESC", "UI_FIENDCORE_DESC", "UI_FISHCORE_DESC", }
+	},
+	{
+		{4},		--"LANGUAGE\\NMS_LOC6_ENGLISH.MBIN",
+		{"UI_AF_METAL_DESC", }
+	},
+	{
+		{5},		--"LANGUAGE\\NMS_LOC7_ENGLISH.MBIN",
+		{"UI_MECH_PROD_DESC", "UI_WORMCORE_DESC", "UI_WORMPROD_DESC", }
+	},
+	{
+		{6},		--"LANGUAGE\\NMS_LOC8_ENGLISH.MBIN",
+		{"UI_SPIDER_PROD_DESC", "UI_DRONE_SALVAGE_DESC", "UI_DRONE_SHARD_DESC", "UI_SHIP_BRAIN_DESC", }
+	},
+	{
+		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{"UI_NAV_DATA_DESC", "UI_NAV_DROPPOD_DESC", "UI_MAINTAIN_SUB2_DESC", }
+	},
+}
+
+SalDataRefineItemDescs =
+{
+	{
+		{2},		--"LANGUAGE\\NMS_LOC4_ENGLISH.MBIN",
+		{"UI_QUAD_PROD_DESC", "UI_WALKER_PROD_DESC", "UI_FIENDCORE_DESC", "UI_FISHCORE_DESC", }
+	},
+	{
+		{4},		--"LANGUAGE\\NMS_LOC6_ENGLISH.MBIN",
+		{"UI_AF_METAL_DESC", }
+	},
+	{
+		{5},		--"LANGUAGE\\NMS_LOC7_ENGLISH.MBIN",
+		{"UI_MECH_PROD_DESC", "UI_WORMCORE_DESC", "UI_WORMPROD_DESC", }
+	},
+	{
+		{6},		--"LANGUAGE\\NMS_LOC8_ENGLISH.MBIN",
+		{"UI_SPIDER_PROD_DESC", "UI_DRONE_SALVAGE_DESC", "UI_DRONE_SHARD_DESC", "UI_SHIP_BRAIN_DESC", }
+	},
+	{
+		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{"UI_NAV_DATA_DESC", "UI_NAV_DROPPOD_DESC", "UI_MAINTAIN_SUB2_DESC", }
+	},
+}
+
+SpaceGunkRefineItemDescs =
+{
+	{
+		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{"UI_MAINTAIN_SUB1_DESC", "UI_MAINTAIN_SUB4_DESC", "UI_MAINTAIN_SUB5_DESC", "UI_MAINTAIN_SUB3_DESC", }
+	},
+}
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -287,6 +374,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", FreeFreighterSelect}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NEWPROD14_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", PearlDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NEWPROD13_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GravDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NEWPROD12_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", VenomDesc}
 							}
 						},
 						{
@@ -372,7 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_NEXUSMILES_LANG_3"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_NEXUSMILES_LANG_4"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AresTradeOffer (AresTradeItem4)}
@@ -399,6 +507,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_FREIGHT_OBJ4_TIP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictLootTip}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_FREIGHT_MSG7"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictCrewPopup}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_FREIGHT_MSG9"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictLogPopup}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "SHIPLAS1_ALIEN_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -410,6 +539,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AnimusBeamDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_LAVA1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", BasaltDesc}
 							}
 						},
 					}
@@ -793,7 +929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"UI\BUYSCREEN.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{	--28549 - 28922
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "BUY_SLOT_SUB"},
 							["REPLACE_TYPE"] 		= "ALL",
 							["SECTION_UP"] = 1,
@@ -809,4 +945,69 @@ NMS_MOD_DEFINITION_CONTAINER =
             }
 		}
     }
-}	
+}
+
+--local ChangesToLOC1 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC4 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC5 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC6 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC7 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC8 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+--local ChangesToUPDATE3 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+
+for i = 1, #NaniteRefineItemDescs do
+	local ChangeTableNum = NaniteRefineItemDescs[i][1][1]
+	local Descs = NaniteRefineItemDescs[i][2]
+			
+		for j = 1, #Descs do
+			DescId = Descs[j]
+			Text = [[{:}]]..NaniteRefineItem..[[]]
+		
+			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"]+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", DescId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"English", Text}
+				}
+			}
+		end
+end
+
+for i = 1, #SalDataRefineItemDescs do
+	local ChangeTableNum = SalDataRefineItemDescs[i][1][1]
+	local Descs = SalDataRefineItemDescs[i][2]
+			
+		for j = 1, #Descs do
+			DescId = Descs[j]
+			Text = [[{:}]]..SalDataRefineItem..[[]]
+		
+			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"]+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", DescId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"English", Text}
+				}
+			}
+		end
+end
+
+for i = 1, #SpaceGunkRefineItemDescs do
+	local ChangeTableNum = SpaceGunkRefineItemDescs[i][1][1]
+	local Descs = SpaceGunkRefineItemDescs[i][2]
+			
+		for j = 1, #Descs do
+			DescId = Descs[j]
+			Text = [[{:}]]..SpaceGunkRefineItem..[[]]
+		
+			NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"][#NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][ChangeTableNum]["EXML_CHANGE_TABLE"]+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", DescId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"English", Text}
+				}
+			}
+		end
+end

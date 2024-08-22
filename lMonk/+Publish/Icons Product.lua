@@ -1,11 +1,10 @@
-----------------------------------------------------------------------
+---------------------------------------------------------------
 local mod_desc = [[
   edit/replace/update/improve product icons
 
-  * The ADD_FILES section can be safely disabled/ignored if you prefer
-   to add the texture files in a different method.
-]]--------------------------------------------------------------------
-local mod_version = '1.52'
+  * ADD_FILES will skipped SILENTLY if new files are not found!
+]]-------------------------------------------------------------
+local mod_version = '1.54'
 
 local prod_icons = {
 	CARBON_SEAL		= 'PRODUCTS/PRODUCT.MSEAL.DDS',
@@ -21,28 +20,32 @@ local prod_icons = {
 	FOOD_M_DRILL	= 'COOKINGPRODUCTS/PRODUCT.MEAT.SINEW.DDS',
 	FOOD_M_FISH		= 'COOKINGPRODUCTS/PRODUCT.MEAT.FISH.DDS',
 	FOOD_M_FLYER	= 'COOKINGPRODUCTS/PRODUCT.MEAT.WING.DDS',
+	FOOD_M_HORROR	= 'COOKINGPRODUCTS/PRODUCT.MEAT.HORROR.DDS',
 	FOOD_M_MEAT		= 'COOKINGPRODUCTS/PRODUCT.MEAT.CHUNKY.DDS',
 	FOOD_M_MOLE		= 'COOKINGPRODUCTS/PRODUCT.MEAT.MOLE.DDS',
 	FOOD_M_REX		= 'COOKINGPRODUCTS/PRODUCT.MEAT.SCALE.DDS',
 	FOOD_M_STRIDER	= 'COOKINGPRODUCTS/PRODUCT.MEAT.SAUSAGE1.DDS',
+	FOOD_V_BUG		= 'COOKINGPRODUCTS/PRODUCT.R.BUG.DDS',
 	FOOD_V_GEK		= 'COOKINGPRODUCTS/PRODUCT.MILK.PROTO.DDS',
 	FOOD_V_FLYER	= 'COOKINGPRODUCTS/PRODUCT.MILK.CRAW.DDS',
 	FOOD_V_MILK		= 'COOKINGPRODUCTS/PRODUCT.MILK.WILD.DDS',
 	FOOD_R_BONEMILK	= 'COOKINGPRODUCTS/PRODUCT.MILK.BONE.DDS',
+	FOOD_R_HORROR	= 'COOKINGPRODUCTS/PRODUCT.R.HORROR.DDS',
 	FOOD_V_BONE		= 'COOKINGPRODUCTS/PRODUCT.BONE.PIECE.DDS',
 	FOOD_V_CAT		= 'COOKINGPRODUCTS/PRODUCT.MEAT.KIDNEY.DDS',
 	FOOD_V_CRAB		= 'COOKINGPRODUCTS/PRODUCT.BONE.CRAB.DDS',
 	FOOD_V_DIPLO	= 'COOKINGPRODUCTS/PRODUCT.EGG.GIANT.DDS',
 	FOOD_V_ROBOT	= 'COOKINGPRODUCTS/PRODUCT.ROBOT.WIRE.DDS',
 	FOOD_V_STRIDER	= 'COOKINGPRODUCTS/PRODUCT.EGG.TALL.DDS',
+	FOOD_W_CASE		= 'COOKINGPRODUCTS/PRODUCT.MEAT.DDS',
 	GEODE_CAVE		= 'U4PRODUCTS/PRODUCT.GEODECAVE.DDS',
-	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'
+	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS',
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Product Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.00.1',
+	NMS_VERSION			= '5.05',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -58,31 +61,55 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon} }
 					}
 				end
+				T[#T+1] = {
+					SPECIAL_KEY_WORDS	= {
+						{'ID', 'FOOD_M_HORROR'},
+						{'ID', 'FOOD_R_HORROR'},
+						{'ID', 'FOOD_M_GRUB'},
+						{'ID', 'FOOD_V_BUG'},
+						{'ID', 'FOOD_STEW_EVIL'}
+					},
+					PRECEDING_KEY_WORDS = 'Colour',
+					INTEGER_TO_FLOAT	= 'Force',
+					VALUE_CHANGE_TABLE 	= {
+						{'R',	0.73333335},
+						{'G',	0.21960784},
+						{'B',	0.1882353}
+					}
+				}
 				return T
 			end
 		)()
 	}
 }}},
-	ADD_FILES	= {
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Products/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/*.DDS',
-		},
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/CookingProducts/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/*.DDS',
-		},
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/ShipIcons/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/SHIPICONS/*.DDS',
-		},
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/u4Products/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/*.DDS',
-		},
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Update3/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/UPDATE3/*.DDS',
-		}
-	}
+	ADD_FILES	= (
+		function()
+			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/'
+			if lfs.attributes(tex_path) then
+				return {
+					{
+						EXTERNAL_FILE_SOURCE = tex_path..'Products/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/*.DDS',
+					},
+					{
+						EXTERNAL_FILE_SOURCE = tex_path..'CookingProducts/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/*.DDS',
+					},
+					{
+						EXTERNAL_FILE_SOURCE = tex_path..'ShipIcons/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/SHIPICONS/*.DDS',
+					},
+					{
+						EXTERNAL_FILE_SOURCE = tex_path..'u4Products/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/*.DDS',
+					},
+					{
+						EXTERNAL_FILE_SOURCE = tex_path..'Update3/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/UPDATE3/*.DDS',
+					}
+				}
+			end
+			return nil
+		end
+	)()
 }

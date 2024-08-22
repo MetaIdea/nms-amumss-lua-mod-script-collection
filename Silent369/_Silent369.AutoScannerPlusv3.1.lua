@@ -1,9 +1,9 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "3.0"
+local lua_version = "3.1"
 local mod_author  = "Silent369"
 local contributor = "Spectrus1702"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 
@@ -90,20 +90,15 @@ AddTerminal    = CreateScannableComponentData(_ScanRange, "SIGNAL_TERMINAL",    
 
 --FLORA TEST                                               SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddRunawayMold = CreateScannableComponentData(_ScanRange, "UI_WEIRD_BALL_NAME_L",        _ScanTime, _RangeMult, _ShowRange, "Rare3",             "True")
-
 --ROBOTS TEST                                              SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddSentinCrash = CreateScannableComponentData(_ScanRange, "UI_SENTINEL_CRASH_MARKER",    _ScanTime, _RangeMult, _ShowRange, "Drone",              "True") --Changed to correct tip (SIGNAL/SCAN TYPE)
-
 --STORY GLITCH TEST                                        SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddStoryGlitch = CreateScannableComponentData(_ScanRange, "Alien Anomaly Detected",      _ScanTime, _RangeMult, _ShowRange, "Artifact",          "False")
-
---DROP POD TEST - Spectrus1702
+--DROP POD TEST - Spectrus1702                             SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddDropPod     = CreateScannableComponentData(_ScanRange, "BUILDING_DAMAGEDMACHINE_L",   _ScanTime, _RangeMult, _ShowRange, "Tech",              "False")
-
---CORRUPTED PILLAR TEST - Spectrus1702
+--CORRUPTED PILLAR TEST - Spectrus1702                     SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddPillar      = CreateScannableComponentData(_ScanRange, "UI_MINIHIVE_CORRUPT_NAME",    _ScanTime, _RangeMult, _ShowRange, "CorruptedMachine",  "False")
-
---ROBOT CAMP TEST - Spectrus1702
+--ROBOT CAMP TEST - Spectrus1702                           SIGNAL/SCAN TYPE               SCANTIME   RANGEMULT   SHOWRANGE   ICON            ALLOW MERGE
 AddCamp        = CreateScannableComponentData(_ScanRange, "UI_ROBOT_CAMP_TERMINAL_NAME", _ScanTime, _RangeMult, _ShowRange, "RobotHead",         "False")
 
 DistressSound =

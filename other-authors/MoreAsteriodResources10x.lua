@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "MoreAsteriodResources.pak10x", 
+["MOD_FILENAME"] 			= "MoreAsteriodResources10x.pak", 
 ["MOD_AUTHOR"]				= "Weasel",
 ["LUA_AUTHOR"]				= "Weasel",
-["NMS_VERSION"]				= "5.2.0.2",
+["NMS_VERSION"]				= "5.4.0.2",
 ["MOD_DESCRIPTION"]			= "Modifies asteroids to provide more resources. ",
 ["MODIFICATIONS"] 			= 
 	{

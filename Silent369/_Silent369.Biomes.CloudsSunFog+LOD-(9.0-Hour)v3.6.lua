@@ -1,8 +1,8 @@
-local modfilename = "Biomes.CloudsSunFog+LOD-(0.5-Hour)"
+local modfilename = "Biomes.CloudsSunFog+LOD-(9.0-Hour)"
 local lua_author  = "Silent"
-local lua_version = "3.5"
+local lua_version = "3.6"
 local mod_author  = "Silent369"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 
@@ -31,7 +31,7 @@ Bloom effects but leaves lensing effects intact.
 --96 Hr = 345600
 --192Hr = 691200
 
-_Day_Length              = 1800 --Original "1800"
+_Day_Length              = 32400 --Original "1800"
 
 --CLOUD ANIM SPEED
 _Anim_Scale              = 30    --Original "50" wtf!
@@ -869,6 +869,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RateOfChange",             "0.01"}, --Original "0.1"
                                 {"SecondaryRateOfChange",   "0.045"}, --Original "0.15"
                                 {"Cloudiness",              "CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+                            }
+                        },
+                        ----------------------------------------------------------------------------
+                        --HEAVEY AIR SETINGS
+                        ----------------------------------------------------------------------------
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"HeavyAir", "GcHeavyAirSetting.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings", "GcHeavyAirSettingValues.xml"},
+                            ["SECTION_UP"]          = 1,
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Thickness",                 "0.1"}, --Original "1"
+                                {"Alpha1",                    "0.1"}, --Original "1"
+                                {"Alpha2",                    "0.1"}, --Original "1"
                             }
                         },
                     }

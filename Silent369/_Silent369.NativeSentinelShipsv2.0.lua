@@ -1,8 +1,8 @@
 local modfilename = "NativeSentinelShips"
 local lua_author  = "Silent"
-local lua_version = "1.9"
+local lua_version = "2.0"
 local mod_author  = "Silent369"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 
@@ -25,7 +25,7 @@ increase their spawn chance. (Max: 100).
 --METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN
 
 ------------------------------------------------------------------------------------------------------
-local _RobotSpawnWeighting = 1 --Original "0"
+local _ClassSpawnWeighting = 1 --Original "0"
 ------------------------------------------------------------------------------------------------------
 local _SpawnFrequencyMulti = 1 --Spawn Frequencies within T1-T3 and Pirate economies. Resumed Default!
 ------------------------------------------------------------------------------------------------------
@@ -58,11 +58,11 @@ local function GcAISpaceshipModelDataArray()
 
     for _, source in ipairs(sources) do
         local change_entry          = {
-            ["SPECIAL_KEY_WORDS"]   = {source, "GcAISpaceshipModelDataArray.xml"},
-            ["PRECEDING_KEY_WORDS"] = {"Spaceships"},
-            ["LINE_OFFSET"]         = "-1",
-            ["ADD_OPTION"]          = "ADDafterSECTION",
-            ["ADD"]                 = addAISpaceshipModelData()
+            SPECIAL_KEY_WORDS   = {source, "GcAISpaceshipModelDataArray.xml"},
+            PRECEDING_KEY_WORDS = {"Spaceships"},
+            LINE_OFFSET         = "-1",
+            ADD_OPTION          = "ADDafterSECTION",
+            ADD                 = addAISpaceshipModelData()
         }
         table.insert(change_table, change_entry)
     end
@@ -76,11 +76,11 @@ local function SpaceshipSpawnFreqMultipliers()
             ["MBIN_FILE_SOURCE"]  = {_mbin_file_source},
             ["EXML_CHANGE_TABLE"] = {
                 {
-                    ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
-                    ["MATH_OPERATION"]      = "*",
-                    ["INTEGER_TO_FLOAT"]    = "PRESERVE",
-                    ["REPLACE_TYPE"]        = "ALLINSECTION",
-                    ["VALUE_CHANGE_TABLE"]  = {{"IGNORE", _SpawnFrequencyMulti}}
+                    PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
+                    MATH_OPERATION      = "*",
+                    INTEGER_TO_FLOAT    = "PRESERVE",
+                    REPLACE_TYPE        = "ALLINSECTION",
+                    VALUE_CHANGE_TABLE  = {{"IGNORE", _SpawnFrequencyMulti}}
                 },
             }
         },
@@ -93,12 +93,12 @@ local function CivilianClassWeightings()
             ["MBIN_FILE_SOURCE"]  = {_mbin_file_source},
             ["EXML_CHANGE_TABLE"] = {
                 {
-                    ["PRECEDING_KEY_WORDS"] = {"CivilianClassWeightings"},
-                    ["INTEGER_TO_FLOAT"]    = "PRESERVE",
-                    ["REPLACE_TYPE"]        = "ALL",
-                    ["VALUE_CHANGE_TABLE"]  =
+                    PRECEDING_KEY_WORDS = {"CivilianClassWeightings"},
+                    INTEGER_TO_FLOAT    = "PRESERVE",
+                    REPLACE_TYPE        = "ALL",
+                    VALUE_CHANGE_TABLE  =
                     {
-                        {"Robot",   _RobotSpawnWeighting},
+                        {"Robot",   _ClassSpawnWeighting},
                     }
                 },
             }

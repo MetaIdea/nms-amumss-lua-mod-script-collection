@@ -74,9 +74,9 @@ MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
 MechFlameUpgradesDMGMult =					0.185				--				Multiplier to apply to the bonus damage for Flamethrower upgrades (1 ~ 2 for Class B ~ S, increased to 1 ~ 6 for Class B ~ S by !PTSd Procedural Upgrade Adjustment.lua)
 
-PhaseBeamLeechAmountMult =					0.5*0.75			--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
-LivingShipBeamLeechMult = 					0.5*0.75			--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
-LivingShipBeamLeechUpgradeMult = 			0.1*0.75			--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
+PhaseBeamLeechAmountMult =					0.5*0.8				--0.2 & 0.1		Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
+LivingShipBeamLeechMult = 					0.5*0.8				--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
+LivingShipBeamLeechUpgradeMult = 			0.1*0.8				--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
 
 --Multipliers for certain bonuses from Starship weapon procedural upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)

@@ -1,5 +1,5 @@
 ModName = "PTSd Stronger Environmental Hazards"
-GameVersion = "4_51"
+GameVersion = "5_03"
 Description = "Makes hazards (toxic, cold, hot, radiation) harsher. Also increases chances for special weather events (Tornadoes) and adjusts their properties."
 
 --TODO:
@@ -68,8 +68,8 @@ SpecialWeatherHazards =
 			{"SpawnChancePerSecondExtreme",		-1},								--	-1		(-1 to disable on extreme planets???) Or maybe to use a different value set elsewhere in game memory instead of the value here?
 			{"MinSpawnDistance",				0},									--0			Distance from the player the hazard spawns at
 			{"MaxSpawnDistance",				0},									--0
-			{"MinLifetime",						15},								--15
-			{"MaxLifetime",						15},								--15
+			{"MinLifetime",						23},								--15
+			{"MaxLifetime",						23},								--15
 			{"ClusterSpawnChance",				"5E-05"},							--"5E-05"	???
 			{"ClusterMinLifetime",				30},								--30		???
 			{"ClusterMaxLifetime",				52},								--52		???
@@ -79,9 +79,13 @@ SpecialWeatherHazards =
 			{"PatchMaxSpawns",					10},								--10		???
 			{"MinRadius",						18},								--18
 			{"MaxRadius",						28},								--28
-			{"StormDuration",					14},								--14		???
-			{"MinMeteors",						4},									--4
-			{"MaxMeteors",						8},									--8
+			{"StormDuration",					22},								--14		???
+			{"MinMeteors",						6},									--4
+			{"MaxMeteors",						9},									--6
+			{"ImpactGiftChance",				0.05},								--0.05
+			{"DamageRadius",					3},									--3
+			{"FullDamageRadius",				3},									--3
+			
 		}
 	},
 	{
@@ -97,7 +101,7 @@ SpecialWeatherHazards =
 			{"MaxSpawnDistance",				0},									--0
 			{"MinLifetime",						11},								--11
 			{"MaxLifetime",						11},								--11
-			{"ClusterSpawnChance",				0.0003},							--0.0003	???
+			{"ClusterSpawnChance",				0.0006},							--0.0006	???
 			{"ClusterMinLifetime",				30},								--30		???
 			{"ClusterMaxLifetime",				60},								--60		???
 			{"PatchMinRadius",					10},								--10		???
@@ -109,6 +113,9 @@ SpecialWeatherHazards =
 			{"StormDuration",					10},								--10		???
 			{"MinStrikes",						4},									--4
 			{"MaxStrikes",						8},									--8
+			{"ImpactGiftChance",				0.1},								--0.1
+			{"DamageRadius",					2.5},								--2.5
+			{"FullDamageRadius",				2.5},								--2.5
 		}
 	},
 	{
@@ -117,16 +124,16 @@ SpecialWeatherHazards =
 			{"SpawnConditions",					"DuringStorm"},						--"DuringStorm"
 			{"MaxHazardsOfThisTypeActive",		5},									--5
 			{"SpawnAttemptsPerRegion",			1},									--1
-			{"SpawnChancePerSecondPerAttempt",	0.0006*EventMult},					--0.0001	The game appears to use this value on both "regular" and "Extreme" weather planets, at least in some cases?
+			{"SpawnChancePerSecondPerAttempt",	0.0006*EventMult},					--0.0003	The game appears to use this value on both "regular" and "Extreme" weather planets, at least in some cases?
 			{"ChanceOfPlanetBeingExtreme",		0.15},								--0.15		???
-			{"SpawnChancePerSecondExtreme",		0.18*EventMult},					--0.1		The game doesn't appear to actually use this value, at least in some cases? 
+			{"SpawnChancePerSecondExtreme",		0.2*EventMult},						--0.2		The game doesn't appear to actually use this value, at least in some cases? 
 			{"MinSpawnDistance",				50},								--50		Distance from the player the hazard spawns at
 			{"MaxSpawnDistance",				250},								--250
 			{"MinLifetime",						50},								--50
 			{"MaxLifetime",						100},								--100
-			{"ClusterSpawnChance",				0.0003},							--0.0003	???
-			{"ClusterMinLifetime",				30},								--30		???
-			{"ClusterMaxLifetime",				60},								--60		???
+			{"ClusterSpawnChance",				0.1},								--0.5	???
+			{"ClusterMinLifetime",				15},								--10		???
+			{"ClusterMaxLifetime",				15},								--10		???
 			{"PatchMinRadius",					10},								--10		???
 			{"PatchMaxRadius",					10},								--10		???
 			{"PatchMinSpawns",					1},									--1			???
@@ -140,7 +147,7 @@ SpecialWeatherHazards =
 		}
 	},
 	{
-		{"GRAV_HAZ"},		--Doesn't seem to be implemented into any vanilla weather, but activating this causes the purple gravity storm orbs to appear constantly
+		{"GRAV_HAZ"},		--May only function properly on Dissonant planets? In earlier versions activating this on pre-dissonant planets would cause the purple gravity storm orbs to appear constantly
 		{
 			{"SpawnConditions",					"Anytime"},							--"Anytime"
 			{"MaxHazardsOfThisTypeActive",		5},									--5
@@ -150,8 +157,8 @@ SpecialWeatherHazards =
 			{"SpawnChancePerSecondExtreme",		-1},								--	-1		(-1 to disable on extreme planets???) Or maybe to use a different value set elsewhere in game memory instead of the value here?
 			{"MinSpawnDistance",				25},								--25		Distance from the player the hazard spawns at
 			{"MaxSpawnDistance",				200},								--200
-			{"MinLifetime",						20},								--20
-			{"MaxLifetime",						20},								--20
+			{"MinLifetime",						25},								--25
+			{"MaxLifetime",						25},								--25
 			{"ClusterSpawnChance",				0.5},								--0.5		???
 			{"ClusterMinLifetime",				10},								--10		???
 			{"ClusterMaxLifetime",				10},								--10		???
@@ -167,7 +174,7 @@ SpecialWeatherHazards =
 			{"SpawnConditions",					"Anytime"},							--"Anytime"
 			{"MaxHazardsOfThisTypeActive",		400},								--400
 			{"SpawnAttemptsPerRegion",			1},									--1
-			{"SpawnChancePerSecondPerAttempt",	0.01*EventMult},					--0.01
+			{"SpawnChancePerSecondPerAttempt",	0.015*EventMult},					--0.015
 			{"ChanceOfPlanetBeingExtreme",		0.2},								--0.2		???
 			{"SpawnChancePerSecondExtreme",		-1},								--	-1		(-1 to disable on extreme planets???) Or maybe to use a different value set elsewhere in game memory instead of the value here?
 			{"MinSpawnDistance",				10},								--10		Distance from the player the hazard spawns at
@@ -189,11 +196,11 @@ SpecialWeatherHazards =
 			{"SpawnConditions",					"DuringStorm"},						--"DuringStorm"
 			{"MaxHazardsOfThisTypeActive",		400},								--400
 			{"SpawnAttemptsPerRegion",			1},									--1
-			{"SpawnChancePerSecondPerAttempt",	1*EventMult},						--1
+			{"SpawnChancePerSecondPerAttempt",	0.5*EventMult},						--0.5
 			{"ChanceOfPlanetBeingExtreme",		0.2},								--0.2		???
 			{"SpawnChancePerSecondExtreme",		-1},								--	-1		(-1 to disable on extreme planets???) Or maybe to use a different value set elsewhere in game memory instead of the value here?
 			{"MinSpawnDistance",				10},								--10		Distance from the player the hazard spawns at
-			{"MaxSpawnDistance",				200},								--200
+			{"MaxSpawnDistance",				100},								--100
 			{"MinLifetime",						50},								--50
 			{"MaxLifetime",						150},								--150
 			{"ClusterSpawnChance",				0.5},								--0.5		???

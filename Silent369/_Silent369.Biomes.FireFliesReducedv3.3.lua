@@ -1,22 +1,24 @@
-local modfilename = "Biomes.FireFliesRemoved"
+local modfilename = "Biomes.FireFliesReduced"
 local lua_author  = "Silent"
-local lua_version = "3.2"
+local lua_version = "3.3"
 local mod_author  = "Silent369"
-local nms_version = "5.03"
+local nms_version = "5.05"
 local maintenance = mod_author
 local description = [[
 
-Remove 'heavyair' firefly particles in all biomes.
+Resized/Reduced 'heavyair' firefly particles in all biomes.
 
 ]]
 
 ------------------------------------------------------------------------------
-local divider = 0      -- Modifies the number of heavyair particles.
-local speed_v = 0      -- Modifies the visible speed of particles.
-local multply = 0      -- Modifies the particles radius / radiusY.
-local fades_m = 0      -- Modifies fade speed of rendered particles.
-local scale_m = 0      -- Modifies the x,y,z particles scale ranges.
-local rotat_r = 0      -- Modifies the rotational range of particles.
+local divider = 0.1    -- Modifies the number of heavyair particles.
+local speed_v = 0.1    -- Modifies the visible speed of particles.
+local multply = 1.5    -- Modifies the particles radius / radiusY.
+local fades_m = 0.5    -- Modifies fade speed of rendered particles.
+local scale_m = 1.0    -- Modifies the x,y,z particles scale ranges.
+local rotat_r = 0.5    -- Modifies the rotational range of particles.
+------------------------------------------------------------------------------
+local heavy_a = 0.1    -- Modifies all heavyair for all weather types.
 ------------------------------------------------------------------------------
 
 -- Define particle paths
@@ -86,6 +88,27 @@ local particle_paths = {
   "MODELS\\EFFECTS\\HEAVYAIR\\WATER\\WATER.HEAVYAIR.MBIN"
 }
 
+local weather_paths = {
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\BLUEWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\BUBBLEWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\CLEARCOLD.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\CLEARWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\DUSTWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\FIRESTORMWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\GRAVITYSTORMWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\GREENWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\HUMIDWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\LAVAWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\RADIOACTIVE.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\RAINWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\REDWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SCORCHED.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SNOWWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SWAMPWEATHER.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\TOXIC.MBIN",
+  "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\WEIRDWEATHER.MBIN"
+}
+
 local function round(value, precision)
     local sign = value >= 0 and 1 or -1
     local absValue = math.abs(value)
@@ -139,10 +162,42 @@ local function optimizeParticlesForPath(path)
     })
 end
 
+-- Optimize weather heavyair for a given path
+local function optimizeWeatherForPath(path)
+    table.insert(NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE, {
+        MBIN_FILE_SOURCE = path,
+        EXML_CHANGE_TABLE = {
+            {
+                SPECIAL_KEY_WORDS   = {"HeavyAir", "GcHeavyAirSetting.xml"},
+                PRECEDING_KEY_WORDS = {"Settings", "GcHeavyAirSettingValues.xml"},
+                SECTION_UP          = 1,
+                INTEGER_TO_FLOAT    = "FORCE",
+                REPLACE_TYPE        = "ALL",
+                VALUE_MATCH         = "0",
+                VALUE_MATCH_OPTIONS = "~=",
+                VALUE_CHANGE_TABLE  =
+                {
+                    {"Thickness",   heavy_a},
+                    {"Speed",       heavy_a},
+                    {"Alpha1",      heavy_a},
+                    {"Alpha2",      heavy_a}
+                }
+            },
+        }
+    })
+end
+
 -- Optimize particles for all paths
 local function optimizeAllParticles(mod_table)
     for _, path in ipairs(mod_table) do
         optimizeParticlesForPath(path)
+    end
+end
+
+-- Optimize weather heavyair for all paths
+local function optimizeAllWeather(mod_table)
+    for _, path in ipairs(mod_table) do
+        optimizeWeatherForPath(path)
     end
 end
 
@@ -166,4 +221,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 ------------------------------------------------------------------------------
 optimizeAllParticles(particle_paths)
+optimizeAllWeather(weather_paths)
 ------------------------------------------------------------------------------
