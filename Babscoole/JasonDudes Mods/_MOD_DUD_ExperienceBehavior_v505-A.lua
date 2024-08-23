@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v503-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v505-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -133,13 +133,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinRange", "400"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FlybySpawns", "Scale"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x", "0.5"},
                             }
                         },
                         {

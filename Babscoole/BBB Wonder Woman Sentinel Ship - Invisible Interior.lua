@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Wonder Woman Sentinel Ship - Invisible Interior.pak",
+["MOD_FILENAME"]    = "BBB Wonder Woman Sentinel Ship - Invisible Interior.pak",
 ["MOD_AUTHOR"]      = "BigBuffaloBill & Babscoole",
 ["NMS_VERSION"]     = "5.1.1",
 ["MOD_DESCRIPTION"] = "Removes many of the front interior parts of a Sentinel Starship for the purposes of useful exploration while in 1st person mode or in VR",
@@ -47,7 +47,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "FrontDashDet"},
 								{"Name", "FloorFront"},
 								{"Name", "SUB1FrontDash"},
-								{"Name", "FrontDash"}								
+								{"Name", "SentinelSpinDetail"},
+								{"Name", "FrontDash"}	
+																
 								
 								--[[ Please use Sentinel Cockpit No Red Circuitry View by Babscoole for:
 								{"Name", "Red1"},
@@ -55,15 +57,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--]]								
 								
 								--[[ Please use Cleaner Sentinel Cockpit by Phoenixdive for:
-								{"Name", "SUB1Cards5"}, --this one generated a warning for me as not being in the MBIN, but he's got it spec'd over in his
-								{"Name", "SUB2SentinelCableR"}, --this one generated a warning for me as not being in the MBIN, but he's got it spec'd over in his
-								{"Name", "SUB2SentinelCableL"}, --this one generated a warning for me as not being in the MBIN, but he's got it spec'd over in his								
-								{"Name", "SentinelCableL"}, --this one generated a warning for me as not being in the MBIN, but he's got it spec'd over in his								
-								{"Name", "SentinelCableR"}, --this one generated a warning for me as not being in the MBIN, but he's got it spec'd over in his								
+								{"Name", "SUB1Cards5"}, --This one generates a warning in his because FrontTopDash already takes it out, but FrontTopDash is the parent and we want it out so it must stay this way.
+								{"Name", "SUB2SentinelCableR"}, 
+								{"Name", "SUB2SentinelCableL"}, 						
 								{"Name", "MonFrontCables"},
 								{"Name", "CableSpinnerL"},
 								{"Name", "CableSpinnerR"},
 								{"Name", "HijackCables"},
+								{"Name", "SentinelCableL"},
+								{"Name", "SentinelCableR"},
 								{"Name", "FloorCablesL"},
 								{"Name", "FloorCablesR"},
 								{"Name", "FloorCables"},
@@ -73,34 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--]]
 																
 								
-								--[[ these were not found in the XML even though they showed up in the Blender model.
-								{"Name", "SUB1FloorFront"},
-								{"Name", "deetsEnds46"},
-								{"Name", "deetsEnds47"},
-								{"Name", "SUB1SentinelCableL"},
-								{"Name", "SUB1FloatingGeo25"},
-								{"Name", "InsertL"},
-								{"Name", "InsertR"},
-								{"Name", "IndetL"},
-								{"Name", "IndetR"},					
-								{"Name", "FloatingGeo24"},
-								{"Name", "FloatingGeo25"},
-								{"Name", "DashDet"},
-								{"Name", "CasLightL1"},
-								{"Name", "Cards5"},
-								{"Name", "bolts"},
-								{"Name", "SUB1Cards5"},
-								{"Name", "SUB3SentinelCableL"},
-								{"Name", "SUB3SentinelCableR"},
-								{"Name", "SUB1BaseWallL"},
-								{"Name", "SUB1BaseWallR"},
-								{"Name", "deetsEndsL"},
-								{"Name", "deetsEndsR"},
-								{"Name", "CasLightL"},
-								{"Name", "CasLightR"},
-								{"Name", "SUB1BaseFrontL"},
-								{"Name", "SUB1BaseFrontR"}
-								]]--
+						
                             },
                             ["REMOVE"] = "SECTION"
                         },

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_TerraFirma2_v503-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_TerraFirma2_v505-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -3640,7 +3640,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RegionScale", "3"},
+                                {"HeightOffset", "-10"},
+                                {"RegionScale",  "3"},
                             }
                         },
                         {
@@ -3656,7 +3657,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Min", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RegionScale", "3"},
+                                {"HeightOffset", "-10"},
+                                {"OffsetType",   "Zero"},
+                                {"RegionScale",  "3"},
                             }
                         },
                         {
@@ -3853,9 +3856,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinWidth",    "128"},
-                                {"MaxWidth",    "192"},
-                                {"RegionScale", "8"},
+                                {"MinWidth",     "128"},
+                                {"MaxWidth",     "192"},
+                                {"HeightOffset", "-10"},
+                                {"RegionScale",  "8"},
                             }
                         },
                         {
@@ -3871,9 +3875,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Desert", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinWidth",    "128"},
-                                {"MaxWidth",    "192"},
-                                {"RegionScale", "8"},
+                                {"MinWidth",     "128"},
+                                {"MaxWidth",     "192"},
+                                {"HeightOffset", "-10"},
+                                {"OffsetType",   "Zero"},
+                                {"RegionScale",  "8"},
                             }
                         },
                         {
@@ -8280,7 +8286,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RegionScale", "3"},
+                                {"HeightOffset", "-10"},
+                                {"RegionScale",  "3"},
                             }
                         },
                         {
@@ -8296,7 +8303,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Min", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RegionScale", "3"},
+                                {"HeightOffset", "-10"},
+                                {"OffsetType",   "Zero"},
+                                {"RegionScale",  "3"},
                             }
                         },
                         {
@@ -8493,9 +8502,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Small"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinWidth",    "128"},
-                                {"MaxWidth",    "192"},
-                                {"RegionScale", "8"},
+                                {"MinWidth",     "128"},
+                                {"MaxWidth",     "192"},
+                                {"HeightOffset", "-10"},
+                                {"RegionScale",  "8"},
                             }
                         },
                         {
@@ -8511,9 +8521,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"DesertPrime", "Max", "Large"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinWidth",    "128"},
-                                {"MaxWidth",    "192"},
-                                {"RegionScale", "8"},
+                                {"MinWidth",     "128"},
+                                {"MaxWidth",     "192"},
+                                {"HeightOffset", "-10"},
+                                {"OffsetType",   "Zero"},
+                                {"RegionScale",  "8"},
                             }
                         },
                         {
