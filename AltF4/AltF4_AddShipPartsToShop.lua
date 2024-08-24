@@ -282,6 +282,26 @@ local ShipPartID = {
     "SAIL_SAILC"
 }
 
+local Price = false
+
+inputPrompts = {
+    ChangeScriptSettings = {false,
+[[  Would you like to change the script's settings?
+    The default setting will not change the price of those ship parts. 
+    You can enable this modification through this selection.
+    Press ENTER for default value.
+    Default: N
+]]},
+    ChangePrice = {Price,
+[[  Do you want to change the price of ship parts?
+    Default: N | Current: >> ]] .. (Price and "Y" or "N") .. [[ <<
+]]},
+}
+
+if GUIF(inputPrompts.ChangeScriptSettings,10) then
+    Price = GUIF(inputPrompts.ChangePrice,10)
+end
+
 local function CreateShopID(NewID)
     return [[
         <Property value="NMSString0x10.xml">
@@ -319,3 +339,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
     }
 }
+
+if Price then
+    local PartPrice = 1000000
+
+    local ChangeTable = {}
+    for i = 1, #ShipPartID do
+        local ProductId = ShipPartID[i]
+        ChangeTable[#ChangeTable + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", ProductId},
+                ["REPLACE_TYPE"] = "ALL",
+                ["VALUE_CHANGE_TABLE"] = {
+                    {"BaseValue", PartPrice}
+                }
+            }
+    end
+
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = ChangeTable,
+                }
+end

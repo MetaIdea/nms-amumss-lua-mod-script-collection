@@ -1,511 +1,180 @@
-MinInventorySlotsShip = 120
-MaxInventorySlotsShip = 120
-MinTechSlotsShip = 60
-MaxTechSlotsShip = 60
+local Stats = true
+local Traits = true
 
-MinTechSlotsMultiTool = 60
-MaxTechSlotsMultiTool = 60
+inputPrompts = {
+    ChangeScriptSettings = {false,
+[[  Would you like to change the script's settings?
+    The script will also modify the stats and traits of frigates.
+    You can disable those modifications to frigates through this selection.
+    Press ENTER for default value.
+    Default: N
+]]},
+    ChangeBestStats = {Stats,
+[[  Do you want the frigate to have the best stats?
+    Default: Y | Current: >> ]] .. (Stats and "Y" or "N") .. [[ <<
+]]},
+    ChangePositiveTraits = {Traits,
+[[  Do you want the frigate to have five positive traits?
+    Default: Y | Current: >> ]] .. (Traits and "Y" or "N") .. [[ <<
+]]},
+}
 
-MinInventorySlotsFreighter = 120
-MaxInventorySlotsFreighter = 120
-MinTechSlotsFreighter = 60
-MaxTechSlotsFreighter = 60
-
---Ship spawn probabilities
---The sum of values below shouldn't exceed 100% chance
-SClassChancePercent	=	100
-AClassChancePercent	=	0
-BClassChancePercent	=	0
-CClassChancePercent	=	0
-
--- Max inventory capacity for different ship classes
-SClassMaxInventorySize = 120
-AClassMaxInventorySize = 120
-BClassMaxInventorySize = 120
-CClassMaxInventorySize = 120
+if GUIF(inputPrompts.ChangeScriptSettings,10) then
+    Stats = GUIF(inputPrompts.ChangeBestStats,10)
+    Traits = GUIF(inputPrompts.ChangePositiveTraits,10)
+end
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_OnlyS_MaxSlots.pak",
     ["MOD_AUTHOR"] = "AltF4",
 	["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.65",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class with max slots. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = { 
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
+                    ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"SciSmall"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SciMedium"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SciLarge"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RobotSmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RobotMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RobotLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FgtSmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FgtMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FgtLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ShuSmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ShtMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ShtLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DrpSmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DrpMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"DrpLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RoySmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RoyMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"RoyLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SailSmall"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SailMedium"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SailLarge"},
-                            ["VALUE_CHANGE_TABLE"] 	=
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AlienSmall"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AlienMedium"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"AlienLarge"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsShip},
-                                {"MaxSlots", MaxInventorySlotsShip},
-                                {"MinTechSlots", MinTechSlotsShip},
-                                {"MaxTechSlots", MaxTechSlotsShip},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"WeaponSmall"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinTechSlots", MinTechSlotsMultiTool},
-                                {"MaxTechSlots", MaxTechSlotsMultiTool},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"WeaponMedium"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinTechSlots", MinTechSlotsMultiTool},
-                                {"MaxTechSlots", MaxTechSlotsMultiTool},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"WeaponLarge"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinTechSlots", MinTechSlotsMultiTool},
-                                {"MaxTechSlots", MaxTechSlotsMultiTool},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FreighterSmall"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsFreighter},
-                                {"MaxSlots", MaxInventorySlotsFreighter},
-                                {"MinTechSlots", MinTechSlotsFreighter},
-                                {"MaxTechSlots", MaxTechSlotsFreighter},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FreighterMedium"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsFreighter},
-                                {"MaxSlots", MaxInventorySlotsFreighter},
-                                {"MinTechSlots", MinTechSlotsFreighter},
-                                {"MaxTechSlots", MaxTechSlotsFreighter},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"FreighterLarge"},
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"MinSlots", MinInventorySlotsFreighter},
-                                {"MaxSlots", MaxInventorySlotsFreighter},
-                                {"MinTechSlots", MinTechSlotsFreighter},
-                                {"MaxTechSlots", MaxTechSlotsFreighter},
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                { "C", CClassChancePercent },
-                                { "B", BClassChancePercent },
-                                { "A", AClassChancePercent },
-                                { "S", SClassChancePercent },
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Average", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                { "C", CClassChancePercent },
-                                { "B", BClassChancePercent },
-                                { "A", AClassChancePercent },
-                                { "S", SClassChancePercent },
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Wealthy", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                { "C", CClassChancePercent },
-                                { "B", BClassChancePercent },
-                                { "A", AClassChancePercent },
-                                { "S", SClassChancePercent },
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Pirate", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                { "C", CClassChancePercent },
-                                { "B", BClassChancePercent },
-                                { "A", AClassChancePercent },
-                                { "S", SClassChancePercent },
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilities"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "C", "0"},
+                                { "B", "0"},
+                                { "A", "0"},
+                                { "S", "100"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_MATCH"] = "",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                { "C", CClassMaxInventorySize },
-                                { "B", BClassMaxInventorySize },
-                                { "A", AClassMaxInventorySize },
-                                { "S", SClassMaxInventorySize },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "C", "120"},
+                                { "B", "120"},
+                                { "A", "120"},
+                                { "S", "120"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {
+                                {"SciSmall"},
+                                {"SciMedium"},
+                                {"SciLarge"},
+                                {"FgtSmall"},
+                                {"FgtMedium"},
+                                {"FgtLarge"},
+                                {"ShuSmall"},
+                                {"ShtMedium"},
+                                {"ShtLarge"},
+                                {"DrpSmall"},
+                                {"DrpMedium"},
+                                {"DrpLarge"},
+                                {"RoySmall"},
+                                {"RoyMedium"},
+                                {"RoyLarge"},
+                                {"AlienSmall"},
+                                {"AlienMedium"},
+                                {"AlienLarge"},
+                                {"SailSmall"},
+                                {"SailMedium"},
+                                {"SailLarge"},
+                                {"RobotSmall"},
+                                {"RobotMedium"},
+                                {"RobotLarge"},
+                                {"FreighterSmall"},
+                                {"FreighterMedium"},
+                                {"FreighterLarge"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", "120"},
+                                {"MaxSlots", "120"},
+                                {"MinTechSlots", "60"},
+                                {"MaxTechSlots", "60"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {
+                                {"WeaponSmall"},
+                                {"WeaponMedium"},
+                                {"WeaponLarge"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinTechSlots", "60"},
+                                {"MaxTechSlots", "60"},
                             }
                         },
                     }
                 },
-                {
+            },
+        },
+    },
+}
+
+if Stats then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
                     ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"PercentChangeOfFrigateBeingPurchasable",100},         --60
-                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},   --55
+                                {"PercentChangeOfFrigateBeingPurchasable", "100"},         --60
+                                {"PercentChanceOfFrigateAdditionalSpawnedTrait", "100"},   --55
                             },
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"Combat","GcFrigateStatRange.xml"},
+                                {"Exploration","GcFrigateStatRange.xml"},
+                                {"Mining","GcFrigateStatRange.xml"},
+                                {"Diplomatic","GcFrigateStatRange.xml"},
+                                {"FuelCapacity","GcFrigateStatRange.xml"},
+                                {"Speed","GcFrigateStatRange.xml"},
                             },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStatRange.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomatic","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
+                                {"Minimum", "50"},
+                                {"Maximum", "50"},
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"FuelBurnRate","GcFrigateStatRange.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",0},
-                                {"Maximum",0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FuelCapacity","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Speed","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeSmall"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeMedium"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeLarge"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
+                                {"Minimum", "0"},
+                                {"Maximum", "0"},
                             },
                         },
                     }
-                },
-            },
-        },
-    }	
-}
+                }
+end
+
+if Traits then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"FrigateTraitStrength", "NegativeSmall"},
+                                {"FrigateTraitStrength", "NegativeMedium"},
+                                {"FrigateTraitStrength", "NegativeLarge"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Combat", "0"},
+                                {"Exploration", "0"},
+                                {"Mining", "0"},
+                                {"Diplomacy", "0"},
+                                {"Support", "0"},
+                                {"Normandy", "0"},
+                                {"DeepSpace", "0"},
+                                {"DeepSpaceCommon", "0"},
+                                {"Pirate", "0"},
+                                {"GhostShip", "0"},
+                            },
+                        },
+                    }
+                }
+end

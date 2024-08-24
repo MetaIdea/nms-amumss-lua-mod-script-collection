@@ -29,10 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Id", "ROGUE_WORMS"},
-                            },
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "ROGUE_WORMS"},
                             ["REMOVE"] = "SECTION"
                         },
                         {

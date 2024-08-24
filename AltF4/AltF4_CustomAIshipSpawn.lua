@@ -9,14 +9,20 @@ local Royal = true
 local Scientific = true
 local Alien = true
 local Sail = true
+local Special01 = true
+local Special02 = true
+local Special03 = true
+local Special04 = true
 local maxSclass = false
+local maxSlots = false
+local squareSCSlots = false
 
-local ShipType = {Robot, Dropship, Shuttle, Fighter, Royal, Scientific, Alien, Sail}
+local ShipType = {Robot, Dropship, Shuttle, Fighter, Royal, Scientific, Alien, Sail, Special01, Special02, Special03, Special04}
 
 inputPrompts = {
     ChangeScriptSettings = {false,
 [[  Would you like to change the script's settings?
-    Pressing ENTER without a response to any question will use CURRENT settings from the Lua script.
+    Press ENTER for default value.
 ]]},
     generateRobot = {Robot,
 [[  Do you want to enable the generation of Interceptors?
@@ -50,9 +56,33 @@ inputPrompts = {
 [[  Do you want to enable the generation of Solars?
     Default: Y | Current: >> ]] .. (Sail and "Y" or "N") .. [[ <<
 ]]},
+    generateGoldenVector = {Special01,
+[[  Do you want to enable the generation of Switch Ship?
+    Default: Y | Current: >> ]] .. (Special01 and "Y" or "N") .. [[ <<
+]]},
+    generateUtopiaSpeeder = {Special02,
+[[  Do you want to enable the generation of Utopia Speeder?
+    Default: Y | Current: >> ]] .. (Special02 and "Y" or "N") .. [[ <<
+]]},
+    generateStarbornRunner = {Special03,
+[[  Do you want to enable the generation of Starborn Runner?
+    Default: Y | Current: >> ]] .. (Special03 and "Y" or "N") .. [[ <<
+]]},
+    generateSwitchShip = {Special04,
+[[  Do you want to enable the generation of Golden Vector?
+    Default: Y | Current: >> ]] .. (Special04 and "Y" or "N") .. [[ <<
+]]},
     ChangeSProbability = {maxSclass,
 [[  Do you want to change all the generated ships to S-class?
     Default: N | Current: >> ]] .. (maxSclass and "Y" or "N") .. [[ <<
+]]},
+    ChangeSlots = {maxSlots,
+[[  Do you want to change all the generated ships have max slots?
+    Default: N | Current: >> ]] .. (maxSlots and "Y" or "N") .. [[ <<
+]]},
+    ChangeSCSlots = {squareSCSlots,
+[[  Do you want to change all the generated ships have square supercharged slots?
+    Default: N | Current: >> ]] .. (squareSCSlots and "Y" or "N") .. [[ <<
 ]]},
 }
 
@@ -65,7 +95,13 @@ if GUIF(inputPrompts.ChangeScriptSettings,10) then
     Scientific = GUIF(inputPrompts.generateScientific,10)
     Alien = GUIF(inputPrompts.generateAlien,10)
     Sail = GUIF(inputPrompts.generateSail,10)
-    maxSclass = GUIF(inputPrompts.ChangeSProbability,10)
+    Special01 = GUIF(inputPrompts.generateGoldenVector,10)
+    Special02 = GUIF(inputPrompts.generateUtopiaSpeeder,10)
+    Special03 = GUIF(inputPrompts.generateStarbornRunner,10)
+    Special04 = GUIF(inputPrompts.generateSwitchShip,10)
+    --maxSclass = GUIF(inputPrompts.ChangeSProbability,10)
+    --maxSlots = GUIF(inputPrompts.ChangeSlots,10)
+    --squareSCSlots = GUIF(inputPrompts.ChangeSCSlots,10)
 end
 
 for i=1,#ShipType do
@@ -86,7 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_CustomAIshipSpawn.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.65",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Custom AI ship spawn.",
     ["MODIFICATIONS"] = {
         {
@@ -186,10 +222,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["PRECEDING_KEY_WORDS"] = {"GcAISpaceshipWeightingData.xml"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"Dropship", Dropship and 100 or 0},
-                                {"Fighter", Fighter and 100 or 0},
-                                {"Scientific", Scientific and 100 or 0},
-                                {"Shuttle", Shuttle and 100 or 0},
+                                {"Dropship", Dropship and 100 or Special01 and 100 or 0},
+                                {"Fighter", Fighter and 100 or Special02 and 100 or 0},
+                                {"Scientific", Scientific and 100 or Special03 and 100 or 0},
+                                {"Shuttle", Shuttle and 100 or Special04 and 100 or 0},
                                 {"Royal", Royal and 100 or 0},
                                 {"Alien", Alien and 100 or 0},
                                 {"Sail", Sail and 100 or 0},
@@ -307,21 +343,178 @@ if not Sail then
                         }
 end
 
+if Special01 then
+    local addEXMLChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+    addEXMLChangeTable[#addEXMLChangeTable + 1] = {
+                            ["PRECEDING_KEY_WORDS"] = {"Civilian", "Spaceships"},
+                            ["ADD"] = [[
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERSPECIALSWITCH.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Dropship" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
+]]
+                        }
+end
+
+
+if Special02 then
+    local addEXMLChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+    addEXMLChangeTable[#addEXMLChangeTable + 1] = {
+                            ["PRECEDING_KEY_WORDS"] = {"Civilian", "Spaceships"},
+                            ["ADD"] = [[
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/VRSPEEDER.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Fighter" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
+]]
+                        }
+end
+
+
+if Special03 then
+    local addEXMLChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+    addEXMLChangeTable[#addEXMLChangeTable + 1] = {
+                            ["PRECEDING_KEY_WORDS"] = {"Civilian", "Spaceships"},
+                            ["ADD"] = [[
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/WRACER.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Scientific" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
+]]
+                        }
+end
+
+if Special04 then
+    local addEXMLChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+    addEXMLChangeTable[#addEXMLChangeTable + 1] = {
+                            ["PRECEDING_KEY_WORDS"] = {"Civilian", "Spaceships"},
+                            ["ADD"] = [[
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Shuttle" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
+]]
+                        }
+end
+
 if maxSclass then
     local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
     addMBINChangeTable[#addMBINChangeTable + 1] = {
-            ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
-            ["EXML_CHANGE_TABLE"] = {
-                {
-                    ["PRECEDING_KEY_WORDS"] = {"ClassProbabilities"},
-                    ["REPLACE_TYPE"] = "ALL",
-                    ["VALUE_CHANGE_TABLE"] = {
-                        {"C", "0"},
-                        {"B", "0"},
-                        {"A", "0"},
-                        {"S", "100"},
-                    },
-                },
-            }
-        }
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilities"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"C", 0},
+                                {"B", 0},
+                                {"A", 0},
+                                {"S", 100},
+                            },
+                        },
+                    }
+                }
+end
+
+if maxSlots then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {
+                                {"SciSmall"},
+                                {"SciMedium"},
+                                {"SciLarge"},
+                                {"FgtSmall"},
+                                {"FgtMedium"},
+                                {"FgtLarge"},
+                                {"ShuSmall"},
+                                {"ShtMedium"},
+                                {"ShtLarge"},
+                                {"DrpSmall"},
+                                {"DrpMedium"},
+                                {"DrpLarge"},
+                                {"RoySmall"},
+                                {"RoyMedium"},
+                                {"RoyLarge"},
+                                {"AlienSmall"},
+                                {"AlienMedium"},
+                                {"AlienLarge"},
+                                {"SailSmall"},
+                                {"SailMedium"},
+                                {"SailLarge"},
+                                {"RobotSmall"},
+                                {"RobotMedium"},
+                                {"RobotLarge"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"MinSlots", 120},
+                                {"MaxSlots", 120},
+                                {"MinTechSlots", 60},
+                                {"MaxTechSlots", 60},
+                            },
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"MaxInventoryCapacity"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "C", 120},
+                                { "B", 120},
+                                { "A", 120},
+                                { "S", 120},
+                            }
+                        },
+                    }
+                }
+end
+
+if squareSCSlots then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] ={
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"SpecialTechSlotMaxIndex"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_MATCH"] = "",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"X", "1"},
+                                {"Y", "1"},
+                            }
+                        },
+                    }
+                }
 end

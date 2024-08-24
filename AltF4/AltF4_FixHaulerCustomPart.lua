@@ -92,10 +92,30 @@ local AddHaulerWingProduct = [[
       </Property>
 ]]
 
+local AddPart = false
+
+inputPrompts = {
+    ChangeScriptSettings = {false,
+[[  Would you like to change the script's setting?
+    The default setting will not add this ship part to space station shop. 
+    You can enable this modification through this selection.
+    Press ENTER for default value.
+    Default: N
+]]},
+    AddShipCustomPart = {AddPart,
+[[  Do you want to add this ship part to space station shop?
+    Default: N | Current: >> ]] .. (AddPart and "Y" or "N") .. [[ <<
+]]},
+}
+
+if GUIF(inputPrompts.ChangeScriptSettings,10) then
+    AddPart = GUIF(inputPrompts.AddShipCustomPart,10)
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_FixHaulerCustomPart.pak",
     ["MOD_AUTHOR"] = "AltF4",
-    ["LUA_AUTHOR"] = "AltF4, FriendlyFirePL",
+    ["LUA_AUTHOR"] = "AltF4",
     ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Fix Hauler Custom Part.",
     ["MODIFICATIONS"] = {
@@ -121,3 +141,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
     }
 }
+
+if AddPart then
+    local ShipPartID = {
+        "DROPS_WINGCDD"
+    }
+
+    local function CreateShopID(NewID)
+        return [[
+            <Property value="NMSString0x10.xml">
+                <Property name="Value" value="]] .. NewID .. [[" />
+            </Property>
+        ]]
+    end
+
+    local ADDShipPartID = {}
+    for i=1,#ShipPartID do
+        ADDShipPartID[#ADDShipPartID + 1] = CreateShopID(ShipPartID[i])
+    end
+
+    local ADDShipPartID = table.concat(ADDShipPartID,"\n")
+
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SpaceStation", "AlwaysPresentProducts"},
+                            ["ADD"] = ADDShipPartID
+                        },
+                    }
+                }
+end

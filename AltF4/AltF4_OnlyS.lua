@@ -1,8 +1,34 @@
+local Stats = true
+local Traits = true
+
+inputPrompts = {
+    ChangeScriptSettings = {false,
+[[  Would you like to change the script's settings?
+    The script will also modify the stats and traits of frigates.
+    You can disable those modifications to frigates through this selection.
+    Press ENTER for default value.
+    Default: N
+]]},
+    ChangeBestStats = {Stats,
+[[  Do you want the frigate to have the best stats?
+    Default: Y | Current: >> ]] .. (Stats and "Y" or "N") .. [[ <<
+]]},
+    ChangePositiveTraits = {Traits,
+[[  Do you want the frigate to have five positive traits?
+    Default: Y | Current: >> ]] .. (Traits and "Y" or "N") .. [[ <<
+]]},
+}
+
+if GUIF(inputPrompts.ChangeScriptSettings,10) then
+    Stats = GUIF(inputPrompts.ChangeBestStats,10)
+    Traits = GUIF(inputPrompts.ChangePositiveTraits,10)
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_OnlyS.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "4.65",
+    ["NMS_VERSION"] = "5.05",
     ["MOD_DESCRIPTION"] = "Make the generated ships, multitools, freighters and frigates only have S class. Make frigates have max stats.",
     ["MODIFICATIONS"] = {
         {
@@ -11,159 +37,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Poor", "ClassProbabilities"},
+                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilities"},
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"C", "0"},
                                 {"B", "0"},
                                 {"A", "0"},
                                 {"S", "100"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Average", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"C", "0"},
-                                {"B", "0"},
-                                {"A", "0"},
-                                {"S", "100"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Wealthy", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"C", "0"},
-                                {"B", "0"},
-                                {"A", "0"},
-                                {"S", "100"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"ClassProbabilityData", "Pirate", "ClassProbabilities"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"C", "0"},
-                                {"B", "0"},
-                                {"A", "0"},
-                                {"S", "100"},
-                            },
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"PercentChangeOfFrigateBeingPurchasable",100},         --60
-                                {"PercentChanceOfFrigateAdditionalSpawnedTrait",100},   --55
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Diplomatic","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FuelBurnRate","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",0},
-                                {"Maximum",0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FuelCapacity","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Speed","GcFrigateStatRange.xml"},
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Minimum",50},
-                                {"Maximum",50},
-                            },
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeSmall"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeMedium"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"FrigateTraitStrength", "NegativeLarge"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Combat", 0},
-                                {"Exploration", 0},
-                                {"Mining", 0},
-                                {"Diplomacy", 0},
-                                {"Support", 0},
-                                {"Normandy", 0},
-                                {"DeepSpace", 0},
-                                {"DeepSpaceCommon", 0},
-                                {"Pirate", 0},
                             },
                         },
                     },
@@ -172,3 +52,71 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
     },
 }
+
+if Stats then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"PercentChangeOfFrigateBeingPurchasable", "100"},         --60
+                                {"PercentChanceOfFrigateAdditionalSpawnedTrait", "100"},   --55
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"Combat","GcFrigateStatRange.xml"},
+                                {"Exploration","GcFrigateStatRange.xml"},
+                                {"Mining","GcFrigateStatRange.xml"},
+                                {"Diplomatic","GcFrigateStatRange.xml"},
+                                {"FuelCapacity","GcFrigateStatRange.xml"},
+                                {"Speed","GcFrigateStatRange.xml"},
+                            },
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Minimum", "50"},
+                                {"Maximum", "50"},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FuelBurnRate","GcFrigateStatRange.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Minimum", "0"},
+                                {"Maximum", "0"},
+                            },
+                        },
+                    }
+                }
+end
+
+if Traits then
+    local addMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+    addMBINChangeTable[#addMBINChangeTable + 1] = {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"FrigateTraitStrength", "NegativeSmall"},
+                                {"FrigateTraitStrength", "NegativeMedium"},
+                                {"FrigateTraitStrength", "NegativeLarge"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Combat", "0"},
+                                {"Exploration", "0"},
+                                {"Mining", "0"},
+                                {"Diplomacy", "0"},
+                                {"Support", "0"},
+                                {"Normandy", "0"},
+                                {"DeepSpace", "0"},
+                                {"DeepSpaceCommon", "0"},
+                                {"Pirate", "0"},
+                                {"GhostShip", "0"},
+                            },
+                        },
+                    }
+                }
+end
