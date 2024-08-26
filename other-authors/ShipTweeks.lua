@@ -12,6 +12,7 @@ Mini_Warp_ChargeTime = "0"		-- original 2
 Ground_Height_SmoothTime = "10000000"  -- original 0
 Collision_Speed_DamageAmount = "1"		-- original 1	
 Collision_Distance_Ground = "10"		-- original 10
+take_off_time= "0.6" --original 1.2
 
 
 --Space engine
@@ -33,7 +34,7 @@ Turn_Brake_Max = "1"		-- original 2
 Planet_MaxSpeed = "400"		--original 125
 Planet_ThrustForce = "40"		--original 20
 Planet_BoostThrustForce = "200"		--original 100
-Planet_BoostMaxSpeed = "800"		--original 155
+Planet_BoostMaxSpeed = "400"		--original 155
 Planet_TurnStrength = "10"		--original 1
 Planet_MinSpeed = "-5"		-- original 20																
 Planet_LowSpeedTurnDamper = "1"		-- original 0.25		
@@ -118,6 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_CHANGE_TABLE"] = 
 							{							
                                 {"LandingMaxSpeed", landing_max_speed},
+								{"LandGroundTakeOffTime", take_off_time},
 								{"LandingMaxAngle", Landing_Max_Angle},
 								{"LandingHelperTurnTime", Landing_Helper_Turn_Time},
 								{"LandingHelperRollTime", Landing_Helper_Roll_Time},
