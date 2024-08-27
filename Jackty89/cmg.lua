@@ -126,6 +126,14 @@ local Manual_Item_Tree_Additions =
     {
         Technology_Id = 'UT_WATER4',
         Unlockable_root = 'UT_WATER3'
+    },
+    {
+        Technology_Id = 'UT_EXOFLAME',
+        Unlockable_root = 'VEHICLE_LASER1'
+    },
+    {
+        Technology_Id = 'UT_EXOSTUN',
+        Unlockable_root = 'VEHICLE_GUN'
     }
 }
 
@@ -425,6 +433,18 @@ local Language_Data =
             NAME = 'Rocket Launcher Module',
             DESCRIPTION = [[A &lt;COMMODITY&gt;supremely powerful&lt;&gt; upgrade for the &lt;TECHNOLOGY&gt;Starship Rocket Launcher&lt;&gt;. Use &lt;VAL_ON&gt;&lt;IMG&gt;FE_ALT1&lt;&gt;&lt;&gt; to begin upgrade &lt;VAL_ON&gt;installation process&lt;&gt;.&#xA;&#xA;The module is flexible, and exact upgrade statistics are &lt;SPECIAL&gt;unknown&lt;&gt; until installation is complete.&#xA;&#xA;Potential improvements include: &lt;STELLAR&gt;damage&lt;&gt;, &lt;STELLAR&gt;fire rate&lt;&gt; and &lt;STELLAR&gt;overheat times&lt;&gt;.]],
             SUBTITLE = ''
+        },
+        EXOFLAME =
+        {
+            NAME = 'H.G. Corp. Exocraft Flamer',
+            DESCRIPTION = 'This new technology upgrade engineered by the engineers at H.G. Corp. now extend your exocraft arsenal with the Liquidator Flamer.',
+            SUBTITLE = 'H.G. Corp. Exocraft Flamer'
+        },
+        EXOSTUN =
+        {
+            NAME = 'H.G. Corp. Exocraft Stun Cannon',
+            DESCRIPTION = 'This new technology upgrade engineered by the engineers at H.G. Corp. now extend your exocraft arsenal with the Liquidator Stun Cannon.',
+            SUBTITLE = 'H.G. Corp. Exocraft Stun Cannon'
         }
     },
     [Languages.US] =
@@ -663,6 +683,18 @@ local Language_Data =
             NAME = 'Rocket Launcher Module',
             DESCRIPTION = [[A &lt;COMMODITY&gt;supremely powerful&lt;&gt; upgrade for the &lt;TECHNOLOGY&gt;Starship Rocket Launcher&lt;&gt;. Use &lt;VAL_ON&gt;&lt;IMG&gt;FE_ALT1&lt;&gt;&lt;&gt; to begin upgrade &lt;VAL_ON&gt;installation process&lt;&gt;.&#xA;&#xA;The module is flexible, and exact upgrade statistics are &lt;SPECIAL&gt;unknown&lt;&gt; until installation is complete.&#xA;&#xA;Potential improvements include: &lt;STELLAR&gt;damage&lt;&gt;, &lt;STELLAR&gt;fire rate&lt;&gt; and &lt;STELLAR&gt;overheat times&lt;&gt;.]],
             SUBTITLE = ''
+        },
+        EXOFLAME =
+        {
+            NAME = 'H.G. Corp. Exocraft Flamer',
+            DESCRIPTION = 'This new technology upgrade engineered by the engineers at H.G. Corp. now extend your exocraft arsenal with the Liquidator Flamer.',
+            SUBTITLE = 'H.G. Corp. Exocraft Flamer'
+        },
+        EXOSTUN =
+        {
+            NAME = 'H.G. Corp. Exocraft Stun Cannon',
+            DESCRIPTION = 'This new technology upgrade engineered by the engineers at H.G. Corp. now extend your exocraft arsenal with the Liquidator Stun Cannon.',
+            SUBTITLE = 'H.G. Corp. Exocraft Stun Cannon'
         }
     }
 }
@@ -712,6 +744,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.ROCKET.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_BulletsPerShot', Bonus = 3, Level = 2},
@@ -733,6 +766,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.ROCKET.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_HeatTime', Bonus = 1.5, Level = 3},
@@ -755,6 +789,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.ROCKET.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_Damage_Radius', Bonus = 5, Level = 4}
@@ -775,6 +810,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PHOTONACCELMOD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_Damage_Radius', Bonus = 10, Level = 3}
@@ -795,6 +831,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.HYPERDRIVEMOD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Hyperdrive_JumpDistance', Bonus = 100000, Level = 4}
@@ -815,6 +852,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.SHIPPROJECTILE1MOD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_Scale', Bonus = 2.5, Level = 4},
@@ -836,6 +874,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.SHIPBLOB.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_HeatTime', Bonus = 0.8, Level = 4}
@@ -856,6 +895,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.SOULLASER.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Lasers_HeatTime', Bonus = 0.8, Level = 4}
@@ -876,6 +916,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PHOTONBLASTMOD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_HeatTime', Bonus = 0.8, Level = 3},
@@ -897,6 +938,7 @@ local Custom_Upgrade_Technology =
         Technology_Rarity = 'VeryRare',
         Technology_Category = 'AllShipsExceptAlien',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PHOTONBLASTMOD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Ship_Weapons_Guns_BulletsPerShot', Bonus = 50, Level = 4},
@@ -917,8 +959,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'COLDR',
         Fragment_Cost = 500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTCOLD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ColdDrain', Bonus = 1.5, Level = 2},
@@ -937,8 +980,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'COLDR',
         Fragment_Cost = 1000,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTCOLD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ColdDrain', Bonus = 2, Level = 3},
@@ -957,8 +1001,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'COLDR',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTCOLD.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ColdDrain', Bonus = 2.5, Level = 4},
@@ -977,8 +1022,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'HEATR',
         Fragment_Cost = 500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTHEAT.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_HeatDrain', Bonus = 1.5, Level = 2},
@@ -997,8 +1043,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'HEATR',
         Fragment_Cost = 1000,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTHEAT.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_HeatDrain', Bonus = 2, Level = 3},
@@ -1017,8 +1064,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'HEATR',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTHEAT.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_HeatDrain', Bonus = 2.5, Level = 4},
@@ -1037,8 +1085,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'TOXICR',
         Fragment_Cost = 500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTTOXIC.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ToxDrain', Bonus = 1.5, Level = 2},
@@ -1057,8 +1106,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'TOXICR',
         Fragment_Cost = 1000,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTTOXIC.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ToxDrain', Bonus = 2, Level = 3},
@@ -1077,8 +1127,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'TOXICR',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTTOXIC.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ToxDrain', Bonus = 2.5, Level = 4},
@@ -1097,8 +1148,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'RADR',
         Fragment_Cost = 500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTRADS.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_ToxDrain', Bonus = 1.5, Level = 2},
@@ -1117,8 +1169,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'RADR',
         Fragment_Cost = 1000,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTRADS.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_RadDrain', Bonus = 2, Level = 3},
@@ -1137,8 +1190,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'RADR',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROTECTRADS.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_RadDrain', Bonus = 2.5, Level = 4},
@@ -1157,8 +1211,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'WATERR',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.HELMET.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_WaterDrain', Bonus = 2, Level = 3},
@@ -1177,8 +1232,9 @@ local Custom_Upgrade_Technology =
         Langauge_Base = 'WATERG',
         Fragment_Cost = 2500,
         Technology_Rarity = 'VeryRare',
-        Technology_Category = 'Suit_Protection',
+        Technology_Category = 'Suit',
         File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.HELMET.DDS',
+        Focus_Locator = '',
         Stat_Bonuses =
         {
             {Stats_Type = 'Suit_Protection_WaterDrain', Bonus = 5, Level = 4},
@@ -1189,7 +1245,56 @@ local Custom_Upgrade_Technology =
             VENTGEM = {Type = 'Product ', Amount = 100},
             PRODFUEL2 = {Type = 'Product', Amount = 100}
         }
+    },
+    UT_EXOFLAME =
+    {
+        Technology_Copy_ID = 'MECH_ARMY_R_ARM',
+        Required_Tech = '',
+        Langauge_Base = 'EXOFLAME',
+        Fragment_Cost = 2500,
+        Technology_Rarity = 'VeryRare',
+        Technology_Category = 'Exocraft',
+        File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/RENDER.MECH.ARMY.RARM.DDS',
+        Focus_Locator = '',
+        Stat_Bonuses =
+        {
+            {Stats_Type = 'Vehicle_GunDamage', Bonus = 3, Level = 3},
+            {Stats_Type = 'Vehicle_GunHeatTime', Bonus = 0.75, Level = 1},
+            {Stats_Type = 'Vehicle_GunRate', Bonus = 0.08, Level = 1},
+            {Stats_Type = 'Weapon_FireDOT', Bonus = 1, Level = 4},
+            {Stats_Type = 'Weapon_FireDOT_Duration', Bonus = 3, Level = 4},
+            {Stats_Type = 'Weapon_FireDOT_DPS', Bonus = 25, Level = 1}
+        },
+        Requirements =
+        {
+            GRENFUEL1 = {Type = 'Product', Amount = 3},
+            FUEL2 = {Type = 'Product', Amount = 60},
+            TECH_COMP = {Type = 'Product', Amount = 2}
+        }
+    },
+    UT_EXOSTUN =
+    {
+        Technology_Copy_ID = 'MECH_ARMY_L_ARM',
+        Required_Tech = '',
+        Langauge_Base = 'EXOSTUN',
+        Fragment_Cost = 2500,
+        Technology_Rarity = 'VeryRare',
+        Technology_Category = 'Exocraft',
+        File_Name = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.STUNDAMAGEMOD.DDS',
+        Focus_Locator = '',
+        Stat_Bonuses =
+        {
+            {Stats_Type = 'Vehicle_GunDamage', Bonus = 20, Level = 2},
+            {Stats_Type = 'Vehicle_GunHeatTime', Bonus = 0.5, Level = 1},
+            {Stats_Type = 'Vehicle_GunRate', Bonus = 0.5, Level = 1}
+        },
+        Requirements =
+        {
+            POWERCELL = {Type = 'Product', Amount = 2},
+            CASING = {Type = 'Product', Amount = 5}
+        }
     }
+
 }
 
 ----------------------------------------------------------------------------------------------
@@ -1942,6 +2047,17 @@ function Create_New_Technology()
                 {'Subtitle', technology_data.Langauge_Base..'_SUB'},
                 {'Filename', technology_data.File_Name},
                 {'RequiredTech', technology_data.Required_Tech},
+                {'FocusLocator', technology_data.Focus_Locator},
+                {'TechnologyCategory', technology_data.Technology_Category}
+            }
+        }
+        Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =
+        {
+            SEC_EDIT = new_technology_id..'_TECHSEC',
+            PRECEDING_KEY_WORDS = {'Rarity'},
+            VALUE_CHANGE_TABLE =
+            {
+                {'TechnologyRarity', technology_data.Technology_Rarity}
             }
         }
         Changes_To_Technology_Table[#Changes_To_Technology_Table + 1] =

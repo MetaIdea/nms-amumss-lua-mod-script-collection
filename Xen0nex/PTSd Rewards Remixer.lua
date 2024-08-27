@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_03"
+GameVersion = "5_05"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -154,21 +154,21 @@ ShipLootChanges =
 			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"SMUGGLELOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_3",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
-			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			80},				--"FRIG_TOKEN",			1,			1,			20
-			{"LAND3",				"LAND3",				200*5,		250*5,		80},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				200*5,		250*5,		80},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				200*5,		250*5,		80},				--"CAVE2",				200,		250,		100
-			{"ASTEROID2",			"ASTEROID2",			200*5,		250*5,		80},				--"ASTEROID2",			200,		250,		100
-			{"ASTEROID3",			"ASTEROID3",			100*5,		250*5,		100},				--"ASTEROID3",			100,		250,		100
-			{"RADIO1",				"RADIO1",				200*5,		250*5,		80},				--"RADIO1",				200,		250,		100
-			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			4,			40},				--"ILLEGAL_PROD8",		1,			2,			100
-			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		10,			20,			100},				--"ILLEGAL_PROD2",		5,			10,			100
-			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		8,			20,			100},				--"ILLEGAL_PROD3",		4,			10,			100
-			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		6,			16,			70},				--"ILLEGAL_PROD4",		3,			8,			100
-			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			100},				--"ILLEGAL_PROD5",		3,			6,			100
-			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		4,			8,			60},				--"ILLEGAL_PROD6",		2,			4,			100
-			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		2,			5,			50},				--"ILLEGAL_PROD7",		1,			2,			100
+			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_2",		1,			2,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
+			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			50},				--"FRIG_TOKEN",			1,			1,			20
+			{"LAND3",				"LAND3",				100*5,		150*5,		80},				--"LAND3",				200,		250,		100
+			{"STELLAR2",			"STELLAR2",				100*5,		150*5,		100},				--"STELLAR2",			200,		250,		100
+			{"CAVE2",				"CAVE2",				100*5,		150*5,		100},				--"CAVE2",				200,		250,		100
+			{"ASTEROID2",			"ASTEROID2",			100*5,		150*5,		80},				--"ASTEROID2",			200,		250,		100
+			{"ASTEROID3",			"ASTEROID3",			100*5,		150*5,		100},				--"ASTEROID3",			100,		250,		100
+			{"RADIO1",				"RADIO1",				100*5,		150*5,		80},				--"RADIO1",				200,		250,		100
+			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			2,			20},				--"ILLEGAL_PROD8",		1,			2,			100		(588,000 units sale value in PTSd)
+			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		4,			8,			120},				--"ILLEGAL_PROD2",		5,			10,			100		(54,000 units sale value in PTSd)
+			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		2,			4,			100},				--"ILLEGAL_PROD3",		4,			10,			100		(108,000 units sale value in PTSd)
+			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		2,			5,			50},				--"ILLEGAL_PROD4",		3,			8,			100		(192,000 units sale value in PTSd)
+			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80},				--"ILLEGAL_PROD5",		3,			6,			100		(348,000 units sale value in PTSd)
+			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			4,			40},				--"ILLEGAL_PROD6",		2,			4,			100		(408,000 units sale value in PTSd)
+			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			3,			30},				--"ILLEGAL_PROD7",		1,			2,			100		(498,000 units sale value in PTSd)
 		}
 	},
 	{	--Freighter Cargo Pods
@@ -880,6 +880,7 @@ LowStandingReward =					2							--1		Reward for certain Space Station / Planetar
 MedStandingReward =					4							--2		Reward for certain Space Station / Planetary missions for either the local race or a Guild
 HighStandingReward =				6							--3		Reward for certain Space Station / Planetary missions for either the local race or a Guild
 GuildStandingReward =				10							--5		May be just for missions posted by Guilds in Space Stations?
+OutlawMissStandReward =				9							--2		Reward for certain Outlaw station missions
 
 --Alters the daily "items for nanites" trades offered by Iteration Ares at the Anomaly
 AresTradeChanges =
@@ -1159,8 +1160,8 @@ SusPacketChanges =
 			{"U_SHIELDBOOSTX",		"U_SHIELDBOOSTX",		1,			1,			100},				--X-Class Shield upgrade,			1,			1,			100
 			{"U_HYPERX",			"U_HYPERX",				1,			1,			100},				--X-Class Hyperdrive upgrade,		1,			1,			100
 			{"U_SHIPSHIELDX",		"U_SHIPSHIELDX",		1,			1,			100},				--X-Class Starship Shield upgrade,	1,			1,			100
-				--Added by PTSd
 			{"U_PULSEX",			"U_PULSEX",				1,			1,			100},				--X-Class Pulse Engine upgrade,		1,			1,			100
+			--Added by PTSd
 			{"U_LAUNCHX",			"U_LAUNCHX",			1,			1,			100},				--X-Class Launcher upgrade,			1,			1,			100
 			{"U_EXO_ENG1",			"U_EXO_ENG1",			1,			1,			40},				--C-Class Exocraft Engine upgrade,	1,			1,			100
 			{"U_EXO_ENG2",			"U_EXO_ENG2",			1,			1,			30},				--B-Class Exocraft Engine upgrade,	1,			1,			100
@@ -2787,6 +2788,41 @@ function AddUpgrade(UpgradeGroup, NormalChance, RareChance, EpicChance, LegendCh
               </Property>]]
 end
 
+function AddTechForShip (TechId, Amount)
+	return
+	[[<Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="]]..TechId..[[" />
+                    <Property name="Amount" value="]]..Amount..[[" />
+                    <Property name="MaxAmount" value="]]..Amount..[[" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>]]
+end
+
+ExpShipCoreTechs =
+{"SHIPSHIELD", "HYPERDRIVE", "LAUNCHER", "SHIPJUMP1", }
+
+ExpShipRewardIds =
+{	--RewardId		Hauler or Other
+	{"RS_S9_SHIP", "Other"},
+	{"RS_S9_COMPLETE", "Other"},
+	{"RS_S1_COMPLETE", "Other"},
+	{"RS_S12_SHIP", "Other"},
+	{"RS_S12_COMPLETE", "Other"},
+	{"RS_S13_SHIP", "Hauler"},
+	{"RS_S13_COMPLETE", "Hauler"},
+}
+
+ExpStaffRewardIds =
+{"RS_S12_PHASE3", "RS_S12_STAFF"}
+
 TeachPellets =
 [[<Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -2816,7 +2852,7 @@ CrashsiteTechRewards =
 
 AddedSuspiciousPacketTechs =
 {
-	"U_PULSEX", "U_LAUNCHX", "U_EXO_ENG1", "U_EXO_ENG2", "U_EXO_ENG3", "U_EXO_ENG4", "U_EXOBOOST1", "U_EXOBOOST2", "U_EXOBOOST3", "U_EXOBOOST4", "U_EXO_SUB1", "U_EXO_SUB2", "U_EXO_SUB3", "U_EXO_SUB4", "U_EXOLAS1", "U_EXOLAS2", "U_EXOLAS3", "U_EXOLAS4", "U_MECH_ENG2", "U_MECH_ENG3", "U_MECH_ENG4", "U_MECHLAS2", "U_MECHLAS3", "U_MECHLAS4", 
+	"U_LAUNCHX", "U_EXO_ENG1", "U_EXO_ENG2", "U_EXO_ENG3", "U_EXO_ENG4", "U_EXOBOOST1", "U_EXOBOOST2", "U_EXOBOOST3", "U_EXOBOOST4", "U_EXO_SUB1", "U_EXO_SUB2", "U_EXO_SUB3", "U_EXO_SUB4", "U_EXOLAS1", "U_EXOLAS2", "U_EXOLAS3", "U_EXOLAS4", "U_MECH_ENG2", "U_MECH_ENG3", "U_MECH_ENG4", "U_MECHLAS2", "U_MECHLAS3", "U_MECHLAS4", 
 }
 
 AddedSuspiciousPacketWeaps =
@@ -3044,6 +3080,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{"AmountMin",	GuildStandingReward},
 					{"AmountMax",	GuildStandingReward}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_PIRATE"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	OutlawMissStandReward},
+					{"AmountMax",	OutlawMissStandReward}
 				}
 			},
 			{
@@ -3796,7 +3840,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			--[[
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "%?DRONE_HIVE_COMBAT_SHUTDOWN"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?DRONE_HIVE_COMBAT_SHUTDOWN"},
 				--["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -4160,7 +4204,7 @@ end
 if ReactorSalvage then
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageExoticPuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -4168,7 +4212,7 @@ if ReactorSalvage then
 			
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageShuttlePuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -4306,114 +4350,69 @@ ChangesToRewardTable[#ChangesToRewardTable+1] =
 			}
 end
 
-ChangesToRewardTable[#ChangesToRewardTable+1] =
+for i = 1, #ExpShipRewardIds do
+	local ShipRewardId = ExpShipRewardIds[i][1]
+	local Shiptype = ExpShipRewardIds[i][2]
+	local Class = ExpShipClass
+	local Slots = 8
+	local Size = "FgtSmall"
+	if Shiptype == "Hauler" then
+		 Slots = ExpShipHaulerCargoSlots
+		 Size = ExpShipHaulerSize
+	elseif Shiptype == "Other" then
+		 Slots = ExpShipCargoSlots
+		 Size = ExpShipSize
+	end
+
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_SHIP"},
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Slots",	Slots},
+					{"InventoryClass",	Class},
+					{"UseOverrideSizeType",	"True"},
+					{"SizeType",	Size}
+				}
+			}
+
+	for j = 1, #ExpShipCoreTechs do
+		local TechId = ExpShipCoreTechs[j]
+		local Amount = 200
+		if TechId == "HYPERDRIVE" then
+			Amount = 120
+		else
+			Amount = 200
+		end
+		
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer.xml",	"Id", TechId},
+				["REMOVE"] = "SECTION",
+			}
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", ShipRewardId,	"ShipInventory", "GcInventoryContainer.xml"},
+				["PRECEDING_KEY_WORDS"] = {"GcInventoryElement.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION",  
+				["ADD"] = AddTechForShip (TechId, Amount),
+			}
+	end
+end
+
+for i = 1, #ExpStaffRewardIds do
+	local StaffRewardId = ExpStaffRewardIds[i]
+
+			ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", StaffRewardId},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Slots",	ExpShipCargoSlots},
 					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
 				}
 			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S9_COMPLETE"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_SHIP"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S1_COMPLETE"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_SHIP"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_COMPLETE"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_PHASE3"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					--{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S12_STAFF"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					--{"SizeType",	ExpShipSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_SHIP"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipHaulerCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipHaulerSize}
-				}
-			}
-ChangesToRewardTable[#ChangesToRewardTable+1] =
-			{
-				["SPECIAL_KEY_WORDS"] = {"Id","RS_S13_COMPLETE"},
-				["VALUE_CHANGE_TABLE"] 	=
-				{
-					{"Slots",	ExpShipHaulerCargoSlots},
-					{"InventoryClass",	ExpShipClass},
-					{"UseOverrideSizeType",	"True"},
-					{"SizeType",	ExpShipHaulerSize}
-				}
-			}
+end
 
 if TeachCreaturePelletsEarly then
 
