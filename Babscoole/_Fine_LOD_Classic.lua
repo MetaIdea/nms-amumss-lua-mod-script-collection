@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "_Fine_LOD.pak",
+["MOD_FILENAME"] = "_Fine_LOD_Classic.pak",
 ["MOD_AUTHOR"] = "Prof Horatio Hafnaugels",
 ["LUA_AUTHOR"] = "Babscoole",
-["NMS_VERSION"] = "5.03",
+["NMS_VERSION"] = "5.05",
 ["MODIFICATIONS"] =
     {
         {
@@ -95,18 +95,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                -- {
-                    -- ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
-                    -- ["EXML_CHANGE_TABLE"] =
-                    -- {
-                        -- {
-                            -- ["VALUE_CHANGE_TABLE"] =
-                            -- {
-                                -- {"WaveHeight", "-0.2"} -- Original "1.5"
-                            -- }
-                        -- }
-                    -- }
-                -- }
             }
         }
     }
