@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_SAVE_TO"] = "GetNearScan",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "?FREIGHTER", "Name", "ALL_REQUEST_DECLINE"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?FREIGHTER", "Name", "ALL_REQUEST_DECLINE"},
                             ["SEC_SAVE_TO"] = "GetOption",
                         },
                         {
@@ -472,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "?MIND_ARC"},
+                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "%?MIND_ARC"},
                             ["SEC_SAVE_TO"] = "GetMission",
                         },
                         {
@@ -532,7 +532,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "?MIND_ARC"},
+                            ["SPECIAL_KEY_WORDS"] = {"MissionID", "%?MIND_ARC"},
                             ["SEC_SAVE_TO"] = "GetProxyMission",
                         },
                         {

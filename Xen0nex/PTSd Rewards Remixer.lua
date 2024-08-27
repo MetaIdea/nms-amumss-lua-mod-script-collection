@@ -3796,7 +3796,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			--[[
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?DRONE_HIVE_COMBAT_SHUTDOWN"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?DRONE_HIVE_COMBAT_SHUTDOWN"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				--["VALUE_MATCH"] 		= "TECHFRAG_M",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -4160,7 +4160,7 @@ end
 if ReactorSalvage then
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageExoticPuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -4168,7 +4168,7 @@ if ReactorSalvage then
 			
 			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_PROD_CHOICE"},		--May need to escape the ? as %? in next AMUMSS version after v4.5.5.0W
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageShuttlePuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",

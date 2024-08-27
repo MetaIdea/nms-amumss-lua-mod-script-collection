@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","?SHIP_SALVAGE_UPGRADE"},
+							["SPECIAL_KEY_WORDS"] = {"Id","%?SHIP_SALVAGE_UPGRADE"},
 							["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml","GcAlienPuzzleOption.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","?SHIP_SALVAGE_UPGRADE"},
+							["SPECIAL_KEY_WORDS"] = {"Id","%?SHIP_SALVAGE_UPGRADE"},
 							["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml","GcAlienPuzzleOption.xml","GcAlienPuzzleOption.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

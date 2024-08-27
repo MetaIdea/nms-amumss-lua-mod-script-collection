@@ -34,14 +34,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         -- Hesperus dialogue: exchanging temporal memory
-                        {   ["SKW"] = {"Id","?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_MEMORY",                                                      },
+                        {   ["SKW"] = {"Id","%?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_MEMORY",                                                      },
                         {   ["SEC_EDIT"] = "SEC_PUZZLE_MEMORY",   ["VCT"] = {{"Name","TEXT_DIALOGUE_MEMORY",},{"Text","TEXT_REACTION_MEMORY",},{"IsAlien","True",},
                                                                   {"Cost","C_MEMORY",},{"Value","R_MEMORY",},{"ReseedInteractionOnUse","True",},{"SelectedOnBackOut","False",},},   },
                         {   ["SEC_EDIT"] = "SEC_PUZZLE_MEMORY",   ["SKW"] = {"Mood","GcAlienMood.xml",},     ["LINE_OFFSET"] = 1,    ["VCT"] = {{"Mood","Positive",},},             },
                         {   ["SKW"] = {"Id","EXOTIC5_WAIT",},     ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_MEMORY",                                                  },
                           
                         -- Hesperus dialogue: open research tree
-                        {   ["SKW"] = {"Id","?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_TREE",                                                }, 
+                        {   ["SKW"] = {"Id","%?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_TREE",                                                }, 
                         {   ["SEC_EDIT"] = "SEC_PUZZLE_TREE",   ["VCT"] = { {"Name","TEXT_DIALOGUE_RESEARCH",},{"Value","R_SHIPTREE",},{"SelectedOnBackOut","False",},},    },    
                         {   ["SKW"] = {"Id","EXOTIC5_WAIT",},   ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_TREE",                                              },
 

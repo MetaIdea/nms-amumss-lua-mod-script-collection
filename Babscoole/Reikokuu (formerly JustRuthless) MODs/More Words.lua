@@ -1,11 +1,20 @@
--- More Words Settings --
-NPC            = "2" -- NPC request to learn a word option
-KnowledgeStone = "3" -- words learn from knowledge stones
-WordStation    = "4" -- words learn from word stations/encyclopedias
-Monolith       = "5" -- Monolith seek help with language option
-Monolith_Atlas = "3" -- Monolith atlas word reward from multiple choice questions
-Atlas_Orb      = "2" -- Glowing orbs on the atlas stations
+-- More Words Settings
+NPC            = 2 -- NPC request to learn a word option
+KnowledgeStone = 3 -- words learn from knowledge stones
+WordStation    = 4 -- words learn from word stations/encyclopedias
+Monolith       = 5 -- Monolith seek help with language option
+Monolith_Atlas = 3 -- Monolith atlas word reward from multiple choice questions
+Atlas_Orb      = 2 -- Glowing orbs on the atlas stations
 -------------------------
+
+print("           NPC = "..NPC)
+print("KnowledgeStone = "..KnowledgeStone)
+print("   WordStation = "..WordStation)
+print("      Monolith = "..Monolith)
+print("Monolith_Atlas = "..Monolith_Atlas)
+print("     Atlas_Orb = "..Atlas_Orb)
+print("")
+
 WordChanges =
 {
   { -- WordID
@@ -204,20 +213,20 @@ PlaqueChanges =
 {
   { -- OptionName
     {"TRA_1_PLAQUE_OPT_1"},
-    { -- WordID, Amount
-      {"TEACHWORD_TRA", Monolith},
+    { -- NOTUSED, WordID, Amount
+      {"NIL", "TEACHWORD_TRA", Monolith},
     }
   },
   {
     {"EXP_1_PLAQUE_OPT_1"},
     {
-      {"TEACHWORD_EXP", Monolith},
+      {"NIL", "TEACHWORD_EXP", Monolith},
     }
   },
   {
     {"WAR_1_PLAQUE_OPT_1"},
     {
-      {"TEACHWORD_WAR", Monolith},
+      {"NIL", "TEACHWORD_WAR", Monolith},
     }
   },
 }
@@ -697,19 +706,24 @@ MonolithChanges =
   },
 }
 --------------------------------------------------
-NMS_MOD_DEFINITION_CONTAINER =
+local AlienPuzzle = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
+local RewardTable = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
+
+NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "More Words.pak",
-["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["MOD_DESCRIPTION"] = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]     = "5.05",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]        = "More Words.pak",
+["MOD_AUTHOR"]          = "Reikokuu & Babscoole",
+["LUA_AUTHOR"]          = "Wbertro (speedup)",
+["MOD_DESCRIPTION"]     = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
+["NMS_VERSION"]         = "5.05",
+["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
+["MODIFICATIONS"]       =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = RewardTable,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -721,70 +735,104 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
                             ["SEC_SAVE_TO"] = "ADD_AddWord",
                         },
-                    }-- RewardTable
+                    },
                 },
+                
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = AlienPuzzle,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Value", "GIVE_HYPERDRIVE"},
                             ["SEC_SAVE_TO"] = "ADD_AddReward",
                         },
-                    }-- AlienPuzzleTable
+                    },
+
+                    EXT_FUNC =
+                    { 
+                      "ProcessAlienPuzzleTable",
+                    },
+                  
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        { -- replaces the reward for Knowledge Stones to a newly added reward
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Reward", "WORD_STONE_R"},
                             },
-                        }, -- to separate Knowledge Stone reward so it can be changed without affecting others that used WORD reward
-                    }
+                        },
+                    },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\WORDSTATION\ENTITIES\WORDSTATION.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        { -- replaces the reward for Word Stations / Encyclopedias to a newly added reward
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Reward", "WORD_STATION_R"},
                             },
-                        }, -- to separate Encyclopedia rewards so it can be changed without affecting others that used WORD reward
-                    }
+                        },
+                    },
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\ATLASSTATION\MODULARPARTS\INTERIOR\PATHORB\PATHORB\ENTITIES\ORBSTONE_1.ENTITY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        { -- replaces the reward for Atlas Orbs to a newly added reward
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Reward", "WORD_ATLAS_ORB"},
                             },
-                        }, -- to separate Atlas Orbs reward so it can be changed without affecting others that used TEACHWORD_ATLAS reward
-                    }
+                        },
+                    },
                 },
             }
         },
     }
 }
 
-local RewardTable      = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+-- Helper Functions
+local function tableUnion(t1,t2)
+  local t = t1
+  if #t1 > 0 and #t2 > 0 then
+
+    for i=1,#t2 do
+      t[#t+1] = t2[i]
+    end
+  elseif #t1 > 0 then
+
+    for _,v in pairs(t2) do
+
+      t[#t+1] = v
+    end
+  else
+
+    for k,v in pairs(t2) do
+
+      t[k] = v
+    end
+  end
+  return t
+end
+-- END: Helper Functions
 
 -- Reward Table Changes --
+local changeCount = 0
 for i = 1, #WordChanges do
   local WordID = WordChanges[i][1][1]
   local Change = WordChanges[i][2]
 
+  changeCount = changeCount + #Change
+  
   RewardTable[#RewardTable+1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Id", WordID},
@@ -802,10 +850,10 @@ for i = 1, #WordChanges do
   }
 
   for j = 1, #Change do
-    Race        = Change[j][1]
-    Category    = Change[j][2]
-    UseCategory = Change[j][3]
-    Amount      = Change[j][4]
+    local Race        = Change[j][1]
+    local Category    = Change[j][2]
+    local UseCategory = Change[j][3]
+    local Amount      = Change[j][4]
 
     RewardTable[#RewardTable+1] =
     {
@@ -818,7 +866,7 @@ for i = 1, #WordChanges do
       }
     }
 
-    for _k = 1, Amount - 1 do
+    for _ = 1, Amount - 1 do
       RewardTable[#RewardTable+1] =
       {
         ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "PercentageChance", "IGNORE"},
@@ -828,16 +876,21 @@ for i = 1, #WordChanges do
     end
   end
 end
+print("    #WordChanges = "..#WordChanges..", changeCount = "..changeCount)
 
+
+local changeCount = 0
 for i = 1, #NewWordChanges do
   local NewWordID = NewWordChanges[i][1][1]
   local Change    = NewWordChanges[i][2]
 
+  changeCount = changeCount + #Change
+  
   for j = 1, #Change do
-    Race        = Change[j][1]
-    Category    = Change[j][2]
-    UseCategory = Change[j][3]
-    Amount      = Change[j][4]
+    local Race        = Change[j][1]
+    local Category    = Change[j][2]
+    local UseCategory = Change[j][3]
+    local Amount      = Change[j][4]
 
     RewardTable[#RewardTable+1] =
     {
@@ -867,7 +920,7 @@ for i = 1, #NewWordChanges do
       }
     }
 
-    for _k = 1, Amount - 1 do
+    for _ = 1, Amount - 1 do
       RewardTable[#RewardTable+1] =
       {
         ["SPECIAL_KEY_WORDS"] = {"Id", NewWordID, "PercentageChance", "IGNORE"},
@@ -877,64 +930,310 @@ for i = 1, #NewWordChanges do
     end
   end
 end
+print("    #NewWordChanges = "..#NewWordChanges..", changeCount = "..changeCount)
+
 -------------------------------------------------------------------------------
 -- Alien Puzzle Table Changes --
-for i = 1, #PlaqueChanges do
-  local OptionName = PlaqueChanges[i][1][1]
-  local Change     = PlaqueChanges[i][2]
 
-  for j = 1, #Change do
-    WordID = Change[j][1]
-    Amount = Change[j][2]
-
-    AlienPuzzleTable[#AlienPuzzleTable+1] =
-    {
-      ["SEC_EDIT"] = "ADD_AddReward",
-      ["VALUE_CHANGE_TABLE"] =
-      {
-         {"Value", WordID},
-      }
-    }
-
-    for _k = 1, Amount - 1 do
-      AlienPuzzleTable[#AlienPuzzleTable+1] =
-      {
-        ["SPECIAL_KEY_WORDS"] = {"Name", OptionName},
-        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-        ["REPLACE_TYPE"] = "ALL",
-        ["ADD_OPTION"] = "ADDafterLINE",
-        ["SEC_ADD_NAMED"] = "ADD_AddReward"
-      }
-    end
+ProcessAlienPuzzleTable = nil
+function ProcessAlienPuzzleTable(TheData)  
+  local start = os.clock()
+  print([[    ***  Processing ]]..AlienPuzzle.."  ***")
+  
+  local DEBUG = false
+  local Dprint = print
+  local Dprintf = printf
+  if not DEBUG then
+    Dprint = function(...) end
+    Dprintf = function(...) end
   end
-end
-
-for i = 1, #MonolithChanges do
-  local MonolithID = MonolithChanges[i][1][1]
-  local Change     = MonolithChanges[i][2]
-
-  for j = 1, #Change do
-    OptionName = Change[j][1]
-    WordID     = Change[j][2]
-    Amount     = Change[j][3]
-
-    AlienPuzzleTable[#AlienPuzzleTable+1] =
-    {
-      ["SEC_EDIT"] = "ADD_AddReward",
-      ["VALUE_CHANGE_TABLE"] =
-      {
-         {"Value", WordID},
-      }
-    }
-
-    for _k = 1, Amount - 1 do
-      AlienPuzzleTable[#AlienPuzzleTable+1] =
-      {
-        ["SPECIAL_KEY_WORDS"] = {"Id", MonolithID, "Name", OptionName},
-        ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-        ["ADD_OPTION"] = "ADDafterLINE",
-        ["SEC_ADD_NAMED"] = "ADD_AddReward"
-      }
+  
+  -- NOTE: the code below is relative to the 'supplied' structure of MonolithChanges
+  --       It could be simplified
+  
+  -- *********************************************************************************
+  local function CreateFastAccessKey1Table(t)
+    local fastId = {}
+    local count = 0
+    for i = 1, #t do
+      for _ = 1, #t[i][1] do
+        fastId[ t[i][1][1] ] = true
+        count = count + 1
+      end
     end
+    Dprintf("#fastId = %d",count)
+    return fastId, count
   end
+  -- *********************************************************************************
+
+  -- *********************************************************************************
+  local function CreateFastAccessChangeInfoTable(t)
+    local fastOptionName = {}
+    local count = 0
+    for i = 1, #t do
+      for j = 1, #t[i][2] do
+        if t[i][2][j][1] ~= "NIL" then
+
+          fastOptionName[ t[i][1][1].."+"..t[i][2][j][1] ] = t[i][2][j]
+        else
+
+          fastOptionName[ t[i][1][1] ] = t[i][2][j]
+        end
+        count = count + 1
+      end
+    end
+    Dprintf("#fastOptionName = %d",count)
+    return fastOptionName, count
+  end
+  -- *********************************************************************************
+
+
+  local AlienPuzzle_table = TheData["ModdedEXMLs"][NormalizePath(AlienPuzzle, true)]
+  
+  local processMonolithChanges = true
+  if processMonolithChanges then
+    print([[    ***  Processing MonolithChanges  ***]])
+    
+
+    local AddReward_table = TheData["Sections"]["ADD_AddReward"]
+    
+    local currentWordID = "__currentWordID__"
+    local currentWordIDLine = 0
+    for i=1,#AddReward_table do
+      if string.find(AddReward_table[i],[["Value"]]) then
+
+        currentWordID = string.match(AddReward_table[i],[[^.+ue="(.-)".+]])
+        currentWordIDLine = i
+        break
+      end
+    end
+
+    local fastKey1Table,count = CreateFastAccessKey1Table(MonolithChanges)
+    
+    local fastOptionName,count = CreateFastAccessChangeInfoTable(MonolithChanges)
+    
+    local RewardLinesIndex = {}
+    local RewardLinesSorted = {}
+    
+    local IsKeysFound = false
+    local mOptionName = "__OptionName__"
+    local mId = nil
+    
+    Dprint(" Scanning AlienPuzzle_table")
+    local count = 0
+    for i=1,#AlienPuzzle_table do
+      local line = string.upper(AlienPuzzle_table[i])
+      if IsKeysFound and string.find(line,[[^.+"REWARDS"]]) then
+
+        RewardLinesIndex[i + 1] = mId.."+"..mOptionName
+        RewardLinesSorted[#RewardLinesSorted + 1] = i + 1
+        
+        Dprintf("       > Rewards at line %d",i)
+        IsKeysFound = false
+      end
+
+      if string.find(line,[[^.+ME="ID"]]) then
+
+        mId = string.match(line,[[^.+UE="(.+)"]])
+        if mId and fastKey1Table[mId] then
+          count = count + 1
+          Dprintf([[  %d: Id "%s" at line %d]],count,mId,i)
+          IsKeysFound = false
+        end
+      end
+      
+      if mId and not IsKeysFound and string.find(line,[[^.+ME="NAME"]]) then
+
+        mOptionName = string.match(line,[[^.+UE="(.+)"]])
+        if mOptionName and fastOptionName[mId.."+"..mOptionName] then
+
+          Dprintf("      OptionName at line %d: %s",i,AlienPuzzle_table[i])
+          IsKeysFound = true
+        end
+      end
+    end
+    Dprintf(" DONE: Scanning AlienPuzzle_table, found %d Rewards lines",count)
+    Dprint("")
+    
+    local changeCount = 0
+    local previousWordID = currentWordID
+    
+ 
+    if DEBUG then
+      printf("#RewardLinesSorted = %d",#RewardLinesSorted)
+      for i=1,#RewardLinesSorted do
+        printf(" - %d = %d (%s)",i,RewardLinesSorted[i],RewardLinesIndex[RewardLinesSorted[i]])
+      end
+      print("")
+    end
+    
+    for i=#RewardLinesSorted,1,-1 do
+      local addLineInExml = RewardLinesSorted[i]
+      local optionNameToProcess = RewardLinesIndex[addLineInExml]
+      Dprintf("%d: = = = = = =",i)
+
+      Dprintf("  optionNameToProcess = %s",optionNameToProcess)
+      
+
+      local changeInfo = fastOptionName[optionNameToProcess]
+      
+          
+      local OptionName = changeInfo[1]
+      local WordID     = changeInfo[2]
+      local Amount     = changeInfo[3]
+
+      Dprintf([[  line %d:       {"%s", "%s", %d},]],addLineInExml,OptionName,WordID,Amount - 1)
+
+      if WordID ~= previousWordID then
+
+        AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
+
+        previousWordID = WordID
+      end
+      
+      local addTable = {}
+      for _ = 1, Amount - 1 do
+
+        addTable = tableUnion(addTable,AddReward_table)
+
+        changeCount = changeCount + 1
+      end
+      
+      if #addTable > 0 then
+
+        Dprintf("   #AlienPuzzle_table = %d",#AlienPuzzle_table)
+        
+
+        table.move(AlienPuzzle_table, addLineInExml, #AlienPuzzle_table + #addTable, addLineInExml + #addTable)
+        Dprint("         ==> grows to = "..#AlienPuzzle_table.." by "..#addTable.." lines")
+        
+
+        table.move(addTable, 1, #addTable, addLineInExml, AlienPuzzle_table)
+      end
+    end
+    Dprint("")
+    Dprint("#MonolithChanges = "..#MonolithChanges..", changeCount = "..changeCount)
+  end
+
+  local DEBUG = false
+  local Dprint = print
+  local Dprintf = printf
+  if not DEBUG then
+    Dprint = function(...) end
+    Dprintf = function(...) end
+  end
+  
+  local processPlaqueChanges = true
+  if processPlaqueChanges then
+    print([[    ***  Processing PlaqueChanges  ***]])
+
+    local AddReward_table = TheData["Sections"]["ADD_AddReward"]
+    
+    local currentWordID = "__currentWordID__"
+    local currentWordIDLine = 0
+    for i=1,#AddReward_table do
+      if string.find(AddReward_table[i],[["Value"]]) then
+
+        currentWordID = string.match(AddReward_table[i],[[^.+ue="(.-)".+]])
+        currentWordIDLine = i
+        break
+      end
+    end
+
+    local fastOptionName,count = CreateFastAccessChangeInfoTable(PlaqueChanges)
+    
+    local RewardLinesIndex = {}
+    local RewardLinesSorted = {}
+    
+    local IsKeysFound = false
+    local mOptionName = "__OptionName__"
+    
+    Dprint(" Scanning AlienPuzzle_table")
+    local count = 0
+    for i=1,#AlienPuzzle_table do
+      local line = string.upper(AlienPuzzle_table[i])
+      if IsKeysFound and string.find(line,[[^.+"REWARDS"]]) then
+
+        RewardLinesIndex[i + 1] = mOptionName
+        RewardLinesSorted[#RewardLinesSorted + 1] = i + 1
+        
+        Dprintf("       > Rewards at line %d",i)
+        IsKeysFound = false
+        count = count + 1
+      end
+
+      if not IsKeysFound and string.find(line,[[^.+ME="NAME"]]) then
+
+        mOptionName = string.match(line,[[^.+UE="(.+)"]])
+        if mOptionName and fastOptionName[mOptionName] then
+
+          Dprintf("      OptionName at line %d: %s",i,AlienPuzzle_table[i])
+          IsKeysFound = true
+        end
+      end
+    end
+    Dprintf(" DONE: Scanning AlienPuzzle_table, found %d Rewards lines",count)
+    Dprint("")
+    
+
+    local changeCount = 0
+    local previousWordID = currentWordID
+    
+
+    if DEBUG then
+      printf("#RewardLinesSorted = %d",#RewardLinesSorted)
+      for i=1,#RewardLinesSorted do
+        printf(" - %d = %d (%s)",i,RewardLinesSorted[i],RewardLinesIndex[RewardLinesSorted[i]])
+      end
+      print("")
+    end
+    
+    for i=#RewardLinesSorted,1,-1 do
+      local addLineInExml = RewardLinesSorted[i]
+      local optionNameToProcess = RewardLinesIndex[addLineInExml]
+      Dprintf("%d: = = = = = =",i)
+
+      Dprintf("  optionNameToProcess = %s",optionNameToProcess)
+      
+
+      local changeInfo = fastOptionName[optionNameToProcess]
+      
+      local OptionName = tostring(changeInfo[1])
+      local WordID     = changeInfo[2]
+      local Amount     = changeInfo[3]
+
+      Dprintf([[  line %d:       {"%s", "%s", %d},]],addLineInExml,OptionName,WordID,Amount - 1)
+
+      if WordID ~= previousWordID then
+
+        AddReward_table[currentWordIDLine] = AddReward_table[currentWordIDLine]:gsub(previousWordID,WordID)
+
+        previousWordID = WordID
+      end
+      
+      local addTable = {}
+      for _ = 1, Amount - 1 do
+
+        addTable = tableUnion(addTable,AddReward_table)
+
+        changeCount = changeCount + 1
+      end
+      
+      if #addTable > 0 then
+
+        Dprintf("   #AlienPuzzle_table = %d",#AlienPuzzle_table)
+        
+        table.move(AlienPuzzle_table, addLineInExml, #AlienPuzzle_table + #addTable, addLineInExml + #addTable)
+        Dprint("         ==> grows to = "..#AlienPuzzle_table.." by "..#addTable.." lines")
+        
+
+        table.move(addTable, 1, #addTable, addLineInExml, AlienPuzzle_table)
+      end
+    end
+    Dprint("")
+    Dprint("#PlaqueChanges = "..#PlaqueChanges..", changeCount = "..changeCount)
+  end
+  
+  printf("        ==> Done in %3.3f sec",os.clock() - start)
+  return { [AlienPuzzle] = AlienPuzzle_table }
 end

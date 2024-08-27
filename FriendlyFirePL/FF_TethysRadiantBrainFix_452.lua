@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             -- get template for new dialogue option
-                            ["SKW"] = {"Id","?D_EXPED_SAVE_FREIGHT_END","Name","UI_EXPED_SAVE_FREIGHT_OPT_C",},
+                            ["SKW"] = {"Id","%?D_EXPED_SAVE_FREIGHT_END","Name","UI_EXPED_SAVE_FREIGHT_OPT_C",},
                             ["SEC_SAVE_TO"] = "SEC_BRAIN",
                         },
                             

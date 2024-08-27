@@ -1917,7 +1917,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["SPECIAL_KEY_WORDS"] = {"Id", "?DRONE_HIVE_COMBAT_SHUTDOWN"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "%?DRONE_HIVE_COMBAT_SHUTDOWN"},
 				["MATH_OPERATION"] 		= "",
 				["REPLACE_TYPE"] 		= "",
 				--["VALUE_MATCH"] 		= "TECHFRAG_M",

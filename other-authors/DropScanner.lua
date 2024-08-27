@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "?SIGNALSCANNER_MP_DIS"},
+							["SPECIAL_KEY_WORDS"] = {"Id", "%?SIGNALSCANNER_MP_DIS"},
 							["PRECEDING_KEY_WORDS"] = {"",},							
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"}},

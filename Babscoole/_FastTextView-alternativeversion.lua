@@ -26,17 +26,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Punctuation", "."},
-                                {"Punctuation", "!?"},
+                                {"Punctuation", "%."},
+                                {"Punctuation", "!%?"},
                                 {"Punctuation", ","},
                                 {"Punctuation", ":;"},
-                                {"Punctuation", "-"},
+                                {"Punctuation", "%-"},
                                 {"Punctuation", "azyxv"},
-                                {"Punctuation", "."},
                                 {"Punctuation", "'"},
                                 {"Punctuation", "ktgr"},
                                 {"Punctuation", "!"},
-                                {"Punctuation", "?"},
+                                {"Punctuation", "%?"},
                                 {"Punctuation", ":"},
                                 {"Punctuation", "fo"},
                             },

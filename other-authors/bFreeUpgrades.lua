@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_UPGRADE"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_UPGRADE"},
               ["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml", "GcAlienPuzzleOption.xml"},
               ["VALUE_CHANGE_TABLE"] = {
                 {"Name", "Upgrade Slots"}, -- Original "UI_SALVAGE_INV_OPTA"
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               }
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "?SHIP_SALVAGE_UPGRADE"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "%?SHIP_SALVAGE_UPGRADE"},
               ["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml", "GcAlienPuzzleOption.xml", "GcAlienPuzzleOption.xml"},
               ["VALUE_CHANGE_TABLE"] = {
                 {"Name", "Upgrade Class"}, -- Original "UI_SALVAGE_CLASS_OPT"
