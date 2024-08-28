@@ -413,7 +413,7 @@ local systemWideTelepads = function()
 				mbinPaths = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\TELEPORTER_STATION\ENTITIES\TELEPORTERSTATIONINTERACTION.ENTITY.MBIN]],
 				discardMbin = true,
 				{
-                    specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+                    specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
                     selectLevel = 1,
 					copySection = true
 				}
@@ -425,7 +425,7 @@ local systemWideTelepads = function()
 					pasteSection = true
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					fields = {
 						UseInteractCamera = false,
 						BlendToCameraTime = 0.1
@@ -488,7 +488,7 @@ local systemWideTelepads = function()
 					telepads.stationRight.entity,
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Station",
@@ -501,7 +501,7 @@ local systemWideTelepads = function()
 					telepads.hangarRight.entity,
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Base",
@@ -902,7 +902,7 @@ local hangarDockingSpeedMult = function()
 	local tweak = {
 		["MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARA/ENTITIES/HANGARA.ENTITY.MBIN"] = {
 			{
-				precedingKeyWords = "GcOutpostComponentData.xml",
+				specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				fields = {
 					ApproachSpeed = lyr.tweakStates.hangarDockingSpeedMult,
 					TakeOffSpeed = lyr.tweakStates.hangarDockingSpeedMult,
@@ -939,7 +939,7 @@ local hangarDockingOptimizations = function()
 		},
 		["MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARA/ENTITIES/HANGARA.ENTITY.MBIN"] = {
 			{
-				precedingKeyWords = "GcOutpostComponentData.xml",
+				specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				fields = {
 					ApproachRange = {default = 45, altered = lyr:useProxyMult("hangarDockingSpeedMult", 15)},
 					ApproachAngle = {default = 45, altered = 40},
@@ -965,7 +965,6 @@ local noHangarPadRotation = function()
 			mbinPaths = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],
 			{
                 specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
-				precedingKeyWords = "GcOutpostComponentData.xml",
 				fields = {
 					RotateToDock = false
 				}

@@ -16,7 +16,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {                                
-								{"Name", "Hatch"},								
+								--[[Hatch components; can't take all of Hatch since we need the WORLDUI for the menu]]--
+								{"Name", "AnimGlassLOD0"},
+								{"Name", "AnimGlassLOD1"},
+								{"Name", "BlueLights"},								
+								{"Name", "BottomHatch"},
+								{"Name", "HatchSpin2JNT"},
+								{"Name", "HatchSpinJNT"},
+								{"Name", "LeftHatch"},
+								{"Name", "MaskMeshLid"},
+								{"Name", "MirrorMerged_X16"},
+								{"Name", "MirrorMerged_X17"},
+								{"Name", "RightHatch"},
+								{"Name", "TopHatch"},
+															
 								{"Name", "TopBars"},
 								{"Name", "MaskMesh"},
 								{"Name", "GlassRightLOD0"},								
@@ -48,13 +61,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "Sub3Dash4"},
 								{"Name", "Sub5Dash4"},
 								{"Name", "Sub6Dash4"},
-
 								{"Name", "Holograms"},
-								{"Name", "HologramDisplay"},
-								{"Name", "FrontScreenHolograms"},
 								{"Name", "Screws"},
 								{"Name", "InsideBack"},
-								{"Name", "Screens1"},
+								{"Name", "SUB3Screens1"},
 								{"Name", "GearboxGlass"},
 								{"Name", "TkRotate"},
 								{"Name", "GearBoxInners"},

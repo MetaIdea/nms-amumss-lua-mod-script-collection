@@ -195,7 +195,8 @@ local lessMaintenance = function()
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN"] = {
 			{
-				precedingKeyWords = {"GcMaintenanceComponentData.xml"},
+				specialKeyWords = {"Template", "GcMaintenanceComponentData.xml"},
+                selectLevel = 1,
 				removeSection = true
 			},
 			{
@@ -222,7 +223,8 @@ local noPortalCharging = function()
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN"] = {
 			{
-				precedingKeyWords = {"GcMaintenanceComponentData.xml"},
+                specialKeyWords = {"Template", "GcMaintenanceComponentData.xml"},
+                selectLevel = 1,
 				removeSection = true
 			}
 		}
@@ -582,7 +584,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }
