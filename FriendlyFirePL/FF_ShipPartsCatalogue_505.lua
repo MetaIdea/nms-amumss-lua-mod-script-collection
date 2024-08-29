@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ShipPartsCatalogue"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "470"
+METADATA_NMS_VERSION    = "505"
 METADATA_MOD_DESC       = "This mod adds new sections to Recipes section of Catalogue and Guide showcasing all the available parts for ship assembly. Modifies the METADATA\\REALITY\\CATALOGUERECIPES.MBIN file."
 
 
@@ -28,6 +28,11 @@ LIST_PARTS_FIGHTERS =
   "FIGHT_COCKD",
   "FIGHT_COCKE",
   "FIGHT_COCKF",
+
+  "FIGHT_ENGIB",
+  "FIGHT_ENGIC",
+  "FIGHT_ENGID",
+
   "FIGHT_WINGA",
   "FIGHT_WINGA_FI",
   "FIGHT_WINGB",
@@ -81,9 +86,6 @@ LIST_PARTS_FIGHTERS =
   "FIGHT_WINGKBA",
   "FIGHT_WINGKBB",
   "FIGHT_WINGKBC",
-  "FIGHT_ENGIB",
-  "FIGHT_ENGIC",
-  "FIGHT_ENGID",
 }
 
 --------------------------------------------------
@@ -102,6 +104,7 @@ LIST_PARTS_EXPLORER =
     "SCIEN_COCKACB",
     "SCIEN_COCKDA",
     "SCIEN_COCKDB",
+
     "SCIEN_WINGEMP",
     "SCIEN_WINGA",
     "SCIEN_WINGBA",
@@ -149,6 +152,7 @@ LIST_PARTS_HAULER =
   "DROPS_COCKF",
   "DROPS_COCKG",
   "DROPS_COCKH",
+
   "DROPS_ENGIA",
   "DROPS_ENGIAA",
   "DROPS_ENGIAB",
@@ -156,6 +160,7 @@ LIST_PARTS_HAULER =
   "DROPS_ENGIBA",
   "DROPS_ENGIBB",
   "DROPS_ENGIC",
+
   "DROPS_WINGEMP",
   "DROPS_WINGAA",
   "DROPS_WINGAAA",
@@ -279,6 +284,55 @@ LIST_PARTS_HAULER =
   "DROPS_WINGS13",
 }
 
+--------------------------------------------------
+-- solar parts
+--------------------------------------------------
+
+LIST_PARTS_SOLAR =
+{
+    "SAIL_BODYA",
+    "SAIL_BODYB",
+    "SAIL_BODYC",
+    "SAIL_BODYD",
+    "SAIL_BODYE",
+    "SAIL_BODYF",
+
+    "SAIL_SAILA",
+    "SAIL_SAILB",
+    "SAIL_SAILC",
+
+    "SAIL_WINGAA",
+    "SAIL_WINGAB",
+    "SAIL_WINGAC",
+    "SAIL_WINGAD",
+    "SAIL_WINGAE",
+    "SAIL_WINGBA",
+    "SAIL_WINGBB",
+    "SAIL_WINGBC",
+    "SAIL_WINGBD",
+    "SAIL_WINGBE",
+    "SAIL_WINGCA",
+    "SAIL_WINGCB",
+    "SAIL_WINGCC",
+    "SAIL_WINGCD",
+    "SAIL_WINGCE",
+    "SAIL_WINGDA",
+    "SAIL_WINGDB",
+    "SAIL_WINGDC",
+    "SAIL_WINGDD",
+    "SAIL_WINGDE",
+    "SAIL_WINGEA",
+    "SAIL_WINGEB",
+    "SAIL_WINGEC",
+    "SAIL_WINGED",
+    "SAIL_WINGEE",
+    "SAIL_WINGFA",
+    "SAIL_WINGFB",
+    "SAIL_WINGFC",
+    "SAIL_WINGFD",
+    "SAIL_WINGFE",
+}
+
 
 
 --------------------------------------------------
@@ -351,8 +405,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 ----------------------------------------------------------------------------------------------------
                 -- catalogue and guide - recipes
-                -- add 3 new pages for ship assembly parts using the template from items page
+                -- add 4 new pages for ship assembly parts using the template from items page
                 ----------------------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"] = FILE_REALITY_CATALOGUE_RECIPIES,
+                    ["EXML_CHANGE_TABLE"] = BuildWikiPage("UI_SAIL_PART_SUB","UI_SHIP_TAB_SAILSHIP",LIST_PARTS_SOLAR),
+                },
+
                 {
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_CATALOGUE_RECIPIES,
                     ["EXML_CHANGE_TABLE"] = BuildWikiPage("UI_DROPSHIP_PART_SUB","UI_SHIP_TAB_DROPSHIP",LIST_PARTS_HAULER),

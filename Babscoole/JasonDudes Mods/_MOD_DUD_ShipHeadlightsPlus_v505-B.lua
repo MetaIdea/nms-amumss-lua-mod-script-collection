@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v503-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v505-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.05",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -5633,7 +5633,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Action">
                   <Property value="GcNodeActivationAction.xml">
                     <Property name="NodeActiveState" value="Deactivate" />
-                    <Property name="Name" value="SentinelSpotlight1" />
+                    <Property name="Name" value="SentinelshipSpotlight1" />
                     <Property name="SceneToAdd" value="" />
                     <Property name="IncludePhysics" value="False" />
                     <Property name="IncludeChildPhysics" value="False" />
@@ -5659,7 +5659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Action">
                   <Property value="GcNodeActivationAction.xml">
                     <Property name="NodeActiveState" value="Activate" />
-                    <Property name="Name" value="SentinelSpotlight1" />
+                    <Property name="Name" value="SentinelshipSpotlight1" />
                     <Property name="SceneToAdd" value="" />
                     <Property name="IncludePhysics" value="False" />
                     <Property name="IncludeChildPhysics" value="False" />

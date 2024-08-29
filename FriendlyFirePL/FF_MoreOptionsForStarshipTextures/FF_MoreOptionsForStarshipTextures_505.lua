@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MoreOptionsForStarshipTextures"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "4721"
+METADATA_NMS_VERSION    = "505"
 METADATA_MOD_DESC       = "This mod adds a bunch of new texture options for assembling custom fighter and hauler ships in starship fabricators."
 
 
@@ -100,7 +100,6 @@ OPTION_FF_SEAN =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -149,7 +148,6 @@ OPTION_FF_RUST =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BROKENHQTRIM_SECONDARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BROKENHQTRIM_SECONDARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -198,7 +196,6 @@ OPTION_FF_GOLD =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/SPECIALHQTRIM_SECONDARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/SPECIALHQTRIM_SECONDARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -247,7 +244,6 @@ OPTION_FF_DIRTY =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -296,7 +292,6 @@ OPTION_FF_METAL =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -345,7 +340,6 @@ OPTION_FF_STEEL =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -394,7 +388,6 @@ OPTION_FF_ROCK =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -443,7 +436,6 @@ OPTION_FF_AETHER =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -492,7 +484,6 @@ OPTION_FF_BLACK =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/BLACKHQTRIM_SECONDARY.MASKS.DDS",
 },
-
 }
 
 --------------------------------------------------
@@ -541,7 +532,102 @@ OPTION_FF_HEX =
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
 },
+}
 
+--------------------------------------------------
+-- circuit board
+--------------------------------------------------
+
+OPTION_FF_CIRCUIT =
+{
+["id"] = "FF_CIRCUIT",
+["template"] = "STEALTH",
+["palette"] = "SHIP_METALLIC",
+["multitex"] = "SHIP_FIGHT",
+["tooltip"] = "UI_FARMPROD_9_NAME_L",
+
+["main1"] =
+{
+["diffuse"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.PARALLAX.DDS",
+["normal"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.NORMAL.DDS",
+["mask"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.MASKS.DDS",
+},
+
+["main2"] =
+{
+["diffuse"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.PARALLAX.DDS",
+["normal"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.NORMAL.DDS",
+["mask"] = "TEXTURES/SPACE/NEXUS/FLOOR_1.MASKS.DDS",
+},
+
+["main3"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.MASKS.DDS",
+},
+
+["trim1"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
+},
+
+["trim2"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
+},
+}
+
+--------------------------------------------------
+-- stripes
+--------------------------------------------------
+
+OPTION_FF_STRIPES =
+{
+["id"] = "FF_STRIPES",
+["template"] = "COATING",
+["palette"] = "SHIP",
+["multitex"] = "SHIP_FIGHT",
+["tooltip"] = "UI_TIP_HEAD_SPECIAL2_TEX2",
+
+["main1"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.STRIPES.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.MASKS.DDS",
+},
+
+["main2"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.STRIPES.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.MASKS.DDS",
+},
+
+["main3"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.STRIPES.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.MASKS.DDS",
+},
+
+["trim1"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
+},
+
+["trim2"] =
+{
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.DDS",
+["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.NORMAL.DDS",
+["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.MASKS.DDS",
+},
 }
 
 
@@ -647,6 +733,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Layer_GetTemplate(OPTION_FF_AETHER),Layer_Edit("main1",OPTION_FF_AETHER),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_BLACK),Layer_Edit("main1",OPTION_FF_BLACK),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_HEX),Layer_Edit("main1",OPTION_FF_HEX),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_CIRCUIT),Layer_Edit("main1",OPTION_FF_CIRCUIT),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_STRIPES),Layer_Edit("main1",OPTION_FF_STRIPES),Layer_Add(),
                     },
                 },
 
@@ -667,6 +755,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Layer_GetTemplate(OPTION_FF_AETHER),Layer_Edit("main2",OPTION_FF_AETHER),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_BLACK),Layer_Edit("main2",OPTION_FF_BLACK),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_HEX),Layer_Edit("main2",OPTION_FF_HEX),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_CIRCUIT),Layer_Edit("main2",OPTION_FF_CIRCUIT),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_STRIPES),Layer_Edit("main2",OPTION_FF_STRIPES),Layer_Add(),
                     },
                 },
 
@@ -687,6 +777,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Layer_GetTemplate(OPTION_FF_AETHER),Layer_Edit("main3",OPTION_FF_AETHER),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_BLACK),Layer_Edit("main3",OPTION_FF_BLACK),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_HEX),Layer_Edit("main3",OPTION_FF_HEX),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_CIRCUIT),Layer_Edit("main3",OPTION_FF_CIRCUIT),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_STRIPES),Layer_Edit("main3",OPTION_FF_STRIPES),Layer_Add(),
                     },
                 },
 
@@ -707,6 +799,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Layer_GetTemplate(OPTION_FF_AETHER),Layer_Edit("trim1",OPTION_FF_AETHER),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_BLACK),Layer_Edit("trim1",OPTION_FF_BLACK),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_HEX),Layer_Edit("trim1",OPTION_FF_HEX),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_CIRCUIT),Layer_Edit("trim1",OPTION_FF_CIRCUIT),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_STRIPES),Layer_Edit("trim1",OPTION_FF_STRIPES),Layer_Add(),
                     },
                 },
 
@@ -727,6 +821,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Layer_GetTemplate(OPTION_FF_AETHER),Layer_Edit("trim2",OPTION_FF_AETHER),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_BLACK),Layer_Edit("trim2",OPTION_FF_BLACK),Layer_Add(),
                         Layer_GetTemplate(OPTION_FF_HEX),Layer_Edit("trim2",OPTION_FF_HEX),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_CIRCUIT),Layer_Edit("trim2",OPTION_FF_CIRCUIT),Layer_Add(),
+                        Layer_GetTemplate(OPTION_FF_STRIPES),Layer_Edit("trim2",OPTION_FF_STRIPES),Layer_Add(),
                     },
                 },
 
@@ -739,7 +835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             -- move cockpit input slots for fighters and haulers up a bit
-                            ["SKW"] = {{"SlotID","FIGHTER_COCKPIT",},{"SlotID","DROPSHIP_COCKPI",},},
+                            ["SKW"] = {{"SlotID","FIGHTER_COCKPIT",},{"SlotID","DROPSHIP_COCKPI",},{"SlotID","SAIL_BODY",},},
                             ["VCT"] = {{"y",40},},
                         },
 
@@ -754,6 +850,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Colour_GetTemplate("Fighter",OPTION_FF_AETHER),Colour_EditTemplate(OPTION_FF_AETHER),Colour_Add("Fighter"),
                         Colour_GetTemplate("Fighter",OPTION_FF_BLACK),Colour_EditTemplate(OPTION_FF_BLACK),Colour_Add("Fighter"),
                         Colour_GetTemplate("Fighter",OPTION_FF_HEX),Colour_EditTemplate(OPTION_FF_HEX),Colour_Add("Fighter"),
+                        Colour_GetTemplate("Fighter",OPTION_FF_CIRCUIT),Colour_EditTemplate(OPTION_FF_CIRCUIT),Colour_Add("Fighter"),
+                        Colour_GetTemplate("Fighter",OPTION_FF_STRIPES),Colour_EditTemplate(OPTION_FF_STRIPES),Colour_Add("Fighter"),
 
                         -- add new options to haulers
                         Colour_GetTemplate("Dropship",OPTION_FF_SEAN),Colour_EditTemplate(OPTION_FF_SEAN),Colour_Add("Dropship"),
@@ -766,6 +864,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         Colour_GetTemplate("Dropship",OPTION_FF_AETHER),Colour_EditTemplate(OPTION_FF_AETHER),Colour_Add("Dropship"),
                         Colour_GetTemplate("Dropship",OPTION_FF_BLACK),Colour_EditTemplate(OPTION_FF_BLACK),Colour_Add("Dropship"),
                         Colour_GetTemplate("Dropship",OPTION_FF_HEX),Colour_EditTemplate(OPTION_FF_HEX),Colour_Add("Dropship"),
+                        Colour_GetTemplate("Dropship",OPTION_FF_CIRCUIT),Colour_EditTemplate(OPTION_FF_CIRCUIT),Colour_Add("Dropship"),
+                        Colour_GetTemplate("Dropship",OPTION_FF_STRIPES),Colour_EditTemplate(OPTION_FF_STRIPES),Colour_Add("Dropship"),
+
+                        -- add new options to solars
+                        Colour_GetTemplate("Sail",OPTION_FF_SEAN),Colour_EditTemplate(OPTION_FF_SEAN),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_RUST),Colour_EditTemplate(OPTION_FF_RUST),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_GOLD),Colour_EditTemplate(OPTION_FF_GOLD),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_DIRTY),Colour_EditTemplate(OPTION_FF_DIRTY),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_METAL),Colour_EditTemplate(OPTION_FF_METAL),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_STEEL),Colour_EditTemplate(OPTION_FF_STEEL),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_ROCK),Colour_EditTemplate(OPTION_FF_ROCK),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_AETHER),Colour_EditTemplate(OPTION_FF_AETHER),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_BLACK),Colour_EditTemplate(OPTION_FF_BLACK),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_HEX),Colour_EditTemplate(OPTION_FF_HEX),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_CIRCUIT),Colour_EditTemplate(OPTION_FF_CIRCUIT),Colour_Add("Sail"),
+                        Colour_GetTemplate("Sail",OPTION_FF_STRIPES),Colour_EditTemplate(OPTION_FF_STRIPES),Colour_Add("Sail"),
                     },
                 },
 
@@ -780,12 +894,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         TextureMode_GetTemplate(OPTION_FF_DIRTY),TextureMode_EditTemplate(OPTION_FF_DIRTY),TextureMode_Add(OPTION_FF_DIRTY),TextureMode_SetTooltip(OPTION_FF_DIRTY),
                         TextureMode_GetTemplate(OPTION_FF_METAL),TextureMode_EditTemplate(OPTION_FF_METAL),TextureMode_Add(OPTION_FF_METAL),TextureMode_SetTooltip(OPTION_FF_METAL),
                         TextureMode_GetTemplate(OPTION_FF_ROCK),TextureMode_EditTemplate(OPTION_FF_ROCK),TextureMode_Add(OPTION_FF_ROCK),TextureMode_SetTooltip(OPTION_FF_ROCK),
+                        TextureMode_GetTemplate(OPTION_FF_STRIPES),TextureMode_EditTemplate(OPTION_FF_STRIPES),TextureMode_Add(OPTION_FF_STRIPES),TextureMode_SetTooltip(OPTION_FF_STRIPES),
 
                         -- add textures with metallic ship palette
                         TextureMode_GetTemplate(OPTION_FF_RUST),TextureMode_EditTemplate(OPTION_FF_RUST),TextureMode_Add(OPTION_FF_RUST),TextureMode_SetTooltip(OPTION_FF_RUST),
                         TextureMode_GetTemplate(OPTION_FF_HEX),TextureMode_EditTemplate(OPTION_FF_HEX),TextureMode_Add(OPTION_FF_HEX),TextureMode_SetTooltip(OPTION_FF_HEX),
+                        TextureMode_GetTemplate(OPTION_FF_CIRCUIT),TextureMode_EditTemplate(OPTION_FF_CIRCUIT),TextureMode_Add(OPTION_FF_CIRCUIT),TextureMode_SetTooltip(OPTION_FF_CIRCUIT),
                         TextureMode_GetTemplate(OPTION_FF_SEAN),TextureMode_EditTemplate(OPTION_FF_SEAN),TextureMode_Add(OPTION_FF_SEAN),TextureMode_SetTooltip(OPTION_FF_SEAN),
-                        
+
                         -- add textures with no palette assigned
                         TextureMode_GetTemplate(OPTION_FF_BLACK),TextureMode_EditTemplate(OPTION_FF_BLACK),TextureMode_Add(OPTION_FF_BLACK),TextureMode_SetTooltip(OPTION_FF_BLACK),
                         TextureMode_GetTemplate(OPTION_FF_STEEL),TextureMode_EditTemplate(OPTION_FF_STEEL),TextureMode_Add(OPTION_FF_STEEL),TextureMode_SetTooltip(OPTION_FF_STEEL),

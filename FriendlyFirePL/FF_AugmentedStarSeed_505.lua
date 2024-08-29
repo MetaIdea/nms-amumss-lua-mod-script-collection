@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "AugmentedStarSeed"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "471"
+METADATA_NMS_VERSION    = "505"
 METADATA_MOD_DESC       = "This mod adds the discovery mechanic from Mark of the Denier to Star Seed suit technology and allows players to collect some rewards from it. Modifies NMS_LOC1_ENGLISH language file and files in METADATA\\REALITY\\TABLES."
 
 
@@ -127,9 +127,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 -- no initial charge after crafting
                                 {"BuildFullyCharged","False",},
                                 {"PrimaryItem","True",},
-
-                                -- set the flag to prevent installing both techs
-                                {"ExclusivePrimaryStat","True",},
                             },
                         },
 
@@ -145,9 +142,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 
                                 -- set charging icon to purple
                                 {"SubstanceCategory","Exotic",},
-
-                                -- set the flag to prevent installing both techs
-                                {"ExclusivePrimaryStat","True",},
                             },
                         },
                     },
