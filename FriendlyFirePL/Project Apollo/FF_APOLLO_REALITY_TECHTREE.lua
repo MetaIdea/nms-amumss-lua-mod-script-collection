@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "REALITY_TECHTREE"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom technology research tree. Modifies METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN."
 
 

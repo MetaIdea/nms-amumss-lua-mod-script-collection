@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANGUAGE"
-METADATA_NMS_VERSION    = "472"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom localization file. Modifies GCDEBUGOPTIONS.GLOBAL.MBIN."
 
 
@@ -14,8 +14,8 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom local
 -- languange entries: missions
 ----------------------------------------------------------------------------------------------------
 
-GAME_VERSION = "4.72"
-GAME_UPDATE = "Adrift"
+GAME_VERSION = "5.05"
+GAME_UPDATE = "Worlds Part 1"
 
 --------------------------------------------------
 -- main mission misc + tooltips
@@ -184,7 +184,7 @@ TEXT_MAIN_STAGE2_OBJ = "Find info about the Traveller"
 
 TEXT_MAIN_STAGE2_DESC = 
 [[
-Scanner needs to be tuned to Traveller's &lt;VISOR&gt;unique energy signature&lt;&gt;.&#xA;
+Scanner needs to be tuned to Traveller's &lt;SPECIAL&gt;unique energy signature&lt;&gt;.&#xA;
 Launch into space and activate the &lt;TECHNOLOGY&gt;starship scanner&lt;&gt;.
 ]]
 
@@ -194,14 +194,20 @@ TEXT_MAIN_SCAN2_TARGET = "[ Temporal signature located ]"
 TEXT_MAIN_SCAN2_MARKER = "Temporal Signature"
 TEXT_MAIN_SCAN2_SYSTEM = "TEMPORAL RESONANCE IN ANOTHER SYSTEM &lt;IMG&gt;SLASH&lt;&gt; CONSULT GALAXY MAP"
 
+TEXT_MAIN_STAGE2_TIP0 = 
+[[
+The Impossible Fabricator requires a powerful energy source&#xA;
+Charge up the bespoke scanner with a &lt;VISOR&gt;Storm Crystal&lt;&gt;&#xA;
+Collect crystals from &lt;STELLAR&gt;extreme weather planets&lt;&gt; during storms
+]]
 TEXT_MAIN_STAGE2_TIP1 = 
 [[
-Scanner needs to be tuned to Traveller's &lt;VISOR&gt;unique energy signature&lt;&gt;&#xA;
+Scanner needs to be tuned to Traveller's &lt;SPECIAL&gt;unique energy signature&lt;&gt;&#xA;
 Launch into space and activate the &lt;TECHNOLOGY&gt;starship scanner&lt;&gt; (&lt;IMG&gt;SCAN&lt;&gt;)
 ]]
 TEXT_MAIN_STAGE2_TIP2 = 
 [[
-Scanner needs to be tuned to Traveller's &lt;VISOR&gt;unique energy signature&lt;&gt;&#xA;
+Scanner needs to be tuned to Traveller's &lt;SPECIAL&gt;unique energy signature&lt;&gt;&#xA;
 Chart a path to the target system using Galaxy Map (&lt;IMG&gt;QUICK_MENU&lt;&gt;)
 ]]
 TEXT_MAIN_STAGE2_TIP3 = 
@@ -1759,7 +1765,7 @@ https://www.nexusmods.com/nomanssky/mods/2864
 
 &lt;VAL_ON&gt;Debugging / Restoring items:&lt;&gt;&#xA;
 If you have issues collecting the 3 crafting components for Impossible Fabricator Multi-tool technology from their dedicated missions or you managed to remove them from your inventories after completing said missions, you can use the new options in &lt;TRADE&gt;Quick Menu - Gestures&lt;&gt; to add these items to your inventory.&#xA;
-Warning: those special emotes were added as a debugging tool only and should not be used for regular quest progression!
+&lt;FUEL&gt;Warning:&lt;&gt; those special emotes were added as a debugging tool only and should not be used for regular quest progression!
 ]]
 
 --------------------------------------------------
@@ -2149,6 +2155,7 @@ LIST =
     TEXT_MAIN_STAGE2_OBJ                = TEXT_MAIN_STAGE2_OBJ,
     TEXT_MAIN_STAGE2_OSD                = TEXT_MAIN_STAGE2_OSD,
     TEXT_MAIN_STAGE2_DESC               = TEXT_MAIN_STAGE2_DESC,
+    TEXT_MAIN_STAGE2_TIP0               = TEXT_MAIN_STAGE2_TIP0,
     TEXT_MAIN_STAGE2_TIP1               = TEXT_MAIN_STAGE2_TIP1,
     TEXT_MAIN_STAGE2_TIP2               = TEXT_MAIN_STAGE2_TIP2,
     TEXT_MAIN_STAGE2_TIP3               = TEXT_MAIN_STAGE2_TIP3,
@@ -2636,6 +2643,9 @@ LIST =
     TEXT_TREE_WARNING                   = TEXT_TREE_WARNING,
     TEXT_DIALOGUE_MEMORY                = TEXT_DIALOGUE_MEMORY,
     TEXT_REACTION_MEMORY                = TEXT_REACTION_MEMORY,
+    TEXT_EMOTE_PLATING                  = TEXT_EMOTE_PLATING,
+    TEXT_EMOTE_FRAGMENT                 = TEXT_EMOTE_FRAGMENT,
+    TEXT_EMOTE_CIRCUIT                  = TEXT_EMOTE_CIRCUIT,
 
     -- player titles
     TEXT_TITLE_UNLOCK                   = TEXT_TITLE_UNLOCK,
@@ -2649,11 +2659,6 @@ LIST =
     TEXT_TITLE_OWNED_3                  = TEXT_TITLE_OWNED_3,
     TEXT_TITLE_OWNED_4                  = TEXT_TITLE_OWNED_4,
     TEXT_TITLE_OWNED_5                  = TEXT_TITLE_OWNED_5,
-
-    -- debug emotes
-    TEXT_EMOTE_PLATING                  = TEXT_EMOTE_PLATING,
-    TEXT_EMOTE_FRAGMENT                 = TEXT_EMOTE_FRAGMENT,
-    TEXT_EMOTE_CIRCUIT                  = TEXT_EMOTE_CIRCUIT,
 
     -- wiki - navigation and credits
     TEXT_WIKI_BUTTON_MAIN               = TEXT_WIKI_BUTTON_MAIN,

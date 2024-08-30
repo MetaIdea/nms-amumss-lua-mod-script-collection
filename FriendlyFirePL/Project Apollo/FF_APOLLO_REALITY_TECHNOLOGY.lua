@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "REALITY_TECHNOLOGY"
-METADATA_NMS_VERSION    = "472"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for technology modules changes. Modifies METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN."
 
 
@@ -156,7 +156,6 @@ function Technology_BuildChangeTable(exml)
     {"B","0.2",},
     {"ChargeAmount","1",},
     {"ChargeMultiplier","1",},
-    {"BuildFullyCharged","True",},
   }
 
   local INSTRUCTIONS = 

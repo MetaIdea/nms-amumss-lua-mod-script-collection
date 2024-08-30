@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "METADATA_SCANS"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom scan objects. Modifies various files in METADATA directory."
 
 
@@ -14,8 +14,9 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom scan 
 -- mod definition
 ----------------------------------------------------------------------------------------------------
 
-FILE_SCANNING_PLANET = "METADATA\\SIMULATION\\SCANNING\\SCANEVENTTABLEPLANET.MBIN"
-FILE_SIMULATION_SPAWNTABLE = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
+
+FILE_SCANNING_PLANET =          "METADATA\\SIMULATION\\SCANNING\\SCANEVENTTABLEPLANET.MBIN"
+FILE_SIMULATION_SPAWNTABLE =    "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -32,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             {
                 {
                     --------------------------------------------------
-                    -- scan event table
+                    -- planet scan events MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_SCANNING_PLANET,
                     ["EXML_CHANGE_TABLE"] =
@@ -43,23 +44,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_LIBRARY",                                   },
 
                         -- scan event: portal
-                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_PORTAL",                                                                                                      },
-                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["VCT"] = {{"Name","SE_PORTAL",},{"EventStartType","Special",},{"OSDMessage","SIGNAL_PORTAL",}, {"TooltipMessage","TIP_PORTAL",},},     },
-                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["LINE_OFFSET"] = 1,    ["VCT"] = {{"BuildingClass","Portal",},},       },
-                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_PORTAL",                                                                                                    },
+                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_PORTAL",                                                                                                              },
+                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["VCT"] = {{"Name","SE_PORTAL",},{"EventStartType","Special",},{"OSDMessage","SIGNAL_PORTAL",},{"TooltipMessage","TIP_PORTAL",},},              },
+                        {   ["SEC_EDIT"] = "SEC_SE_PORTAL",         ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["REPLACE_TYPE"] = "ONCEINSIDE",    ["VCT"] = {{"BuildingClass","Portal",},},   },
+                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_PORTAL",                                                                                                            },
                             
                         -- scan event: dissonant planet
-                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_DISSONANT",                                                                                                           },
+                        {   ["SKW"] = {"Name","LIBRARY",},          ["SEC_SAVE_TO"] = "SEC_SE_DISSONANT",                                                                                                                       },
                         {   ["SEC_EDIT"] = "SEC_SE_DISSONANT",      ["VCT"] = {{"Name","SE_DISSONANT",},{"EventStartType","Special",},{"OSDMessage","UI_MP_CORRUPT_PLANET_OSD",},{"InterstellarOSDMessage","",},
-                                                                    {"MarkerLabel","UI_MP_CORRUPT_PLANET_MARKER",},{"Filename","TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS",},{"TooltipMessage","",},},      },
-                        {   ["SEC_EDIT"] = "SEC_SE_DISSONANT",      ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["LINE_OFFSET"] = 1,    ["VCT"] = {{"BuildingClass","AbandonedRobotCamp",},},   },
-                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_DISSONANT",                                                                                                         },
+                                                                    {"MarkerLabel","UI_MP_CORRUPT_PLANET_MARKER",},{"Filename","TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS",},{"TooltipMessage","",},},                  },
+                        {   ["SEC_EDIT"] = "SEC_SE_DISSONANT",      ["SKW"] = {"BuildingClass","GcBuildingClassification.xml",},    ["REPLACE_TYPE"] = "ONCEINSIDE",    ["VCT"] = {{"BuildingClass","AbandonedRobotCamp",},},   },
+                        {   ["PKW"] = "Events",                     ["SEC_ADD_NAMED"] = "SEC_SE_DISSONANT",                                                                                                                     },
                     },
                 },
 
                 {
                     --------------------------------------------------
-                    -- encounter spawn table
+                    -- encounter spawn table MBIN
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_SIMULATION_SPAWNTABLE,
                     ["EXML_CHANGE_TABLE"] =

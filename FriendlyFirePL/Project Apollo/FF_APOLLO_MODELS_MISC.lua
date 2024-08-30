@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "MODELS_MISC"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for changes related to certain models. Modifies various files in MODELS directory."
 
 
@@ -27,32 +27,35 @@ FILE_MODELS_DERELICT_TERMINAL =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\
 
 function BuildEmoteTriggerProperty(name) return
 [[
-<Property value="GcTriggerActionComponentData.xml">
-  <Property name="HideModel" value="False" />
-  <Property name="StartInactive" value="False" />
-  <Property name="States">
-    <Property value="GcActionTriggerState.xml">
-      <Property name="StateID" value="BOOT" />
-      <Property name="Triggers">
-        <Property value="GcActionTrigger.xml">
-          <Property name="Event" value="GcAnimFrameEvent.xml">
-            <Property name="Anim" value="ANIM_]]..name..[[" />
-            <Property name="FrameStart" value="0" />
-            <Property name="StartFromEnd" value="False" />
-          </Property>
-          <Property name="Action">
-            <Property value="GcRewardAction.xml">
-              <Property name="Reward" value="RD_]]..name..[[" />
+<Property value="LinkableNMSTemplate.xml">
+  <Property name="Template" value="GcTriggerActionComponentData.xml">
+    <Property name="HideModel" value="False" />
+    <Property name="StartInactive" value="False" />
+    <Property name="States">
+      <Property value="GcActionTriggerState.xml">
+        <Property name="StateID" value="BOOT" />
+        <Property name="Triggers">
+          <Property value="GcActionTrigger.xml">
+            <Property name="Event" value="GcAnimFrameEvent.xml">
+              <Property name="Anim" value="ANIM_]]..name..[[" />
+              <Property name="FrameStart" value="0" />
+              <Property name="StartFromEnd" value="False" />
+            </Property>
+            <Property name="Action">
+              <Property value="GcRewardAction.xml">
+                <Property name="Reward" value="RD_]]..name..[[" />
+              </Property>
             </Property>
           </Property>
         </Property>
       </Property>
     </Property>
+    <Property name="Persistent" value="False" />
+    <Property name="PersistentState" value="" />
+    <Property name="ResetShotTimeOnStateChange" value="False" />
+    <Property name="LinkStateToBaseGrid" value="False" />
   </Property>
-  <Property name="Persistent" value="False" />
-  <Property name="PersistentState" value="" />
-  <Property name="ResetShotTimeOnStateChange" value="False" />
-  <Property name="LinkStateToBaseGrid" value="False" />
+  <Property name="Linked" value="" />
 </Property>
 ]]
 end
@@ -118,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {   ["SKW"] = {"Anim","0H_GREET_MOB_04",},    ["SECTION_ACTIVE"] = 2,   ["ADD_OPTION"] = "ADDafterSECTION",    ["SEC_ADD_NAMED"] = "SEC_EMOTE_ANIM",                                },
 
                         -- add triggers for debug emotes
-                        {   ["PKW"] = "GcPlayerEffectsComponentData.xml",       ["ADD_OPTION"] = "ADDafterSECTION",     ["ADD"] = LIST_EMOTE_TRIGGERS,                                                      },
+                        {   ["SKW"] = {"Template","GcPlayerEffectsComponentData.xml",},     ["SECTION_UP_SPECIAL"] = 1,   ["ADD_OPTION"] = "ADDafterSECTION",    ["ADD"] = LIST_EMOTE_TRIGGERS,             },
                     },
                 },
             }

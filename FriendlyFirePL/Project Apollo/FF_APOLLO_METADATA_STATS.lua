@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "ProjectApollo"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "METADATA_STATS"
-METADATA_NMS_VERSION    = "465"
+METADATA_NMS_VERSION    = "DEV8"
 METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom player stat and titles. Modifies files in METADATA directory."
 
 
@@ -50,11 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_GAMESTATE_PLAYERRTITLES,
                     ["EXML_CHANGE_TABLE"] =
-                    {
-                        -- fix 2 abandoned lore titles (part of Misc Text Fixes mod)
-                        {   ["SKW"] = {"ID","T_ABANDLORE3"},        ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},    },
-                        {   ["SKW"] = {"ID","T_ABANDLORE4"},        ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},    },
-    
+                    {   
                         -- add the new player titles
                         {   ["SKW"] = {"ID","T_DEFAULT"},   ["SEC_SAVE_TO"] = "SEC_TITLE",                                                                                              },
                         {   ["SEC_EDIT"] = "SEC_TITLE",     ["VCT"] = {{"ID","T_TIME5",},{"Title","TEXT_TITLE_FORMAT_5",},{"UnlockDescription","TEXT_TITLE_UNLOCK",},
