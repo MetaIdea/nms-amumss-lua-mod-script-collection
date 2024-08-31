@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								},
 						},
 						{
-                            ["SPECIAL_KEY_WORDS"] = {"Civilian", "GcAISpaceshipModelDataArray.xml", "Filename","MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Civilian", "GcAISpaceshipModelDataArray.xml", "Filename","MODELS/COMMON/SPACECRAFT/S%-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},
 							["VALUE_CHANGE_TABLE"] = 
 								{
 									{"Filename", ""}

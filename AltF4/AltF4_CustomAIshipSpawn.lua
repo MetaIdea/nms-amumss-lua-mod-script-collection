@@ -296,7 +296,7 @@ if not Royal then
     addEXMLChangeTable[#addEXMLChangeTable + 1] = {
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Civilian"},
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S%-CLASS/S%-CLASS_PROC.SCENE.MBIN"},
                             ["REPLACE_TYPE"] = "ONCE",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Filename", ""},
@@ -322,7 +322,7 @@ if not Alien then
     addEXMLChangeTable[#addEXMLChangeTable + 1] = {
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"Civilian"},
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S%-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},
                             ["REPLACE_TYPE"] = "ONCE",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Filename", ""},

@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_A_TAKEOFF.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_A_TAKEOFF.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_A_LANDING.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_A_LANDING.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_B_TAKEOFF.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_B_TAKEOFF.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_B_LANDING.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_B_LANDING.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_C_TAKEOFF.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_C_TAKEOFF.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_C_LANDING.ANIM.MBIN"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING", "Filename", "MODELS/COMMON/SPACECRAFT/S%-CLASS/ROYALPARTS/WINGS/ANIMS/WINGS_C_LANDING.ANIM.MBIN"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {

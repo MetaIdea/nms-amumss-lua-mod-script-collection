@@ -2430,7 +2430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.2", "FlatDensity", "0.0015", "MaxHeight", "-12"},
+							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.2", "FlatDensity", "0.0015", "MaxHeight", "%-12"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Coverage", "0.4"}
@@ -2467,7 +2467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.2", "FlatDensity", "0.0015", "MaxHeight", "-12"},
+							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.2", "FlatDensity", "0.0015", "MaxHeight", "%-12"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Coverage", "0.3"},
@@ -2483,7 +2483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.3", "FlatDensity", "0.05", "MaxHeight", "-5"},
+							["SPECIAL_KEY_WORDS"]	= {"Placement", "BLANKETCLUMP", "Coverage", "0.3", "FlatDensity", "0.05", "MaxHeight", "%-5"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Coverage", "0.4"},
@@ -2568,21 +2568,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Min", "-50", "Max", "-92"},
+							["SPECIAL_KEY_WORDS"]	= {"Min", "%-50", "Max", "%-92"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Max", "-100"}							
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Min", "-60", "Max", "-93"},
+							["SPECIAL_KEY_WORDS"]	= {"Min", "%-60", "Max", "%-93"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Max", "-120"}							
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Min", "-92", "Max", "-120"},
+							["SPECIAL_KEY_WORDS"]	= {"Min", "%-92", "Max", "%-120"},
 							["VALUE_CHANGE_TABLE"] =
 							{
                                 {"Max", "-140"}							

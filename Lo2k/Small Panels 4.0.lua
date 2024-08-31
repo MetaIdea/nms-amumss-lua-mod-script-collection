@@ -761,7 +761,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PositionX",	"-7"},
+							["SPECIAL_KEY_WORDS"] = {"PositionX",	"%-7"},
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
