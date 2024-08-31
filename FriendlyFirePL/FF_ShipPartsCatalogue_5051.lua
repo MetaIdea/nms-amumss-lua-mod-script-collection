@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ShipPartsCatalogue"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "505"
+METADATA_NMS_VERSION    = "5051"
 METADATA_MOD_DESC       = "This mod adds new sections to Recipes section of Catalogue and Guide showcasing all the available parts for ship assembly. Modifies the METADATA\\REALITY\\CATALOGUERECIPES.MBIN file."
 
 
@@ -55,7 +55,7 @@ LIST_PARTS_FIGHTERS =
   "FIGHT_WINGED",
   "FIGHT_WINGED_FI",
   "FIGHT_WINGEE",
-  "FIGHT_WINGEE_FI ",
+  "FIGHT_WINGEE_FI",
   "FIGHT_WINGEF",
   "FIGHT_WINGEF_FI",
   "FIGHT_WINGFC",
@@ -194,8 +194,8 @@ LIST_PARTS_HAULER =
   "DROPS_WINGACI",
   "DROPS_WINGBA",
   "DROPS_WINGBAA",
-  "DROPS_WINGBAA",
-  "DROPS_WINGBAA",
+  "DROPS_WINGBAB",
+  "DROPS_WINGBAC",
   "DROPS_WINGBAD",
   "DROPS_WINGBAE",
   "DROPS_WINGBAF",

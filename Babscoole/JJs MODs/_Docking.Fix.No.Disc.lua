@@ -144,7 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC"},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\S%-CLASS\S%-CLASS_PROC"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] = TEXT_TO_ADD,
