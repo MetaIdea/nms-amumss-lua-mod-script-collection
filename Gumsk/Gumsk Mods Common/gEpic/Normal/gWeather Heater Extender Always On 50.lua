@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters and makes them always on"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 --Files Modified
@@ -91,25 +91,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"TransY","0.730225"},
 							["SECTION_UP"] = 1,
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\STANDINGLIGHT_SMALL.ENTITY.MBIN"},
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Name","INTERACT"},
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Name","OFF"},
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Name","StandingLight"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = Collision_Add
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = Collision_Add
 						},
 					},
 				},

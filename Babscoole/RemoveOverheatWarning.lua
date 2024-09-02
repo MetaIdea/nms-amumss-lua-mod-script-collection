@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "RemoveOverheatWarning.pak",
 ["MOD_AUTHOR"]    = "Nero2258",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.05",
 ["MODIFICATIONS"] =
     {
         {

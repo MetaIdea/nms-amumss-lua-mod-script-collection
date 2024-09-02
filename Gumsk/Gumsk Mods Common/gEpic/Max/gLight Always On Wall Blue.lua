@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 ModNameSub = "Wall Blue"
 BaseDescription = "Makes Wall Light Blue work without power and improves lighting."
@@ -20,44 +20,47 @@ NMS_VERSION		= GameVersion,
 ADD_FILES = {
 	{
 		FILE_DESTINATION 		= "GUMSK/GLIGHTALWAYSON.ENTITY.EXML",
-		FILE_CONTENT 	= [[<?xml version="1.0" encoding="utf-8"?>
+    FILE_CONTENT   = [[<?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAttachmentData">
   <Property name="Components">
-    <Property value="GcTriggerActionComponentData.xml">
-      <Property name="HideModel" value="False" />
-      <Property name="StartInactive" value="False" />
-      <Property name="States">
-	  	 <Property value="GcActionTriggerState.xml">
-          <Property name="StateID" value="BOOT" />
-          <Property name="Triggers">
-            <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="0" />
-                <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
-              </Property>
-              <Property name="Action">
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Activate" />
-                  <Property name="Name" value="ConOn1_" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="False" />
-                  <Property name="IncludeChildPhysics" value="False" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="False" />
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
+        <Property name="HideModel" value="False" />
+        <Property name="StartInactive" value="False" />
+        <Property name="States">
+         <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcStateTimeEvent.xml">
+                  <Property name="Seconds" value="0" />
+                  <Property name="RandomSeconds" value="0" />
+                  <Property name="UseMissionClock" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcNodeActivationAction.xml">
+                    <Property name="NodeActiveState" value="Activate" />
+                    <Property name="Name" value="ConOn1_" />
+                    <Property name="SceneToAdd" value="" />
+                    <Property name="IncludePhysics" value="False" />
+                    <Property name="IncludeChildPhysics" value="False" />
+                    <Property name="NotifyNPC" value="False" />
+                    <Property name="UseMasterModel" value="True" />
+                    <Property name="UseLocalNode" value="False" />
+                    <Property name="RestartEmitters" value="False" />
+                    <Property name="AffectModels" value="False" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
           </Property>
         </Property>
+        <Property name="Persistent" value="False" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="False" />
+        <Property name="LinkStateToBaseGrid" value="False" />
       </Property>
-      <Property name="Persistent" value="False" />
-      <Property name="PersistentState" value="" />
-      <Property name="ResetShotTimeOnStateChange" value="False" />
-      <Property name="LinkStateToBaseGrid" value="False" />
+      <Property name="Linked" value="" />
     </Property>
   </Property>
   <Property name="LodDistances">
@@ -78,7 +81,7 @@ MBIN_CHANGE_TABLE = {
 	
 	{SPECIAL_KEY_WORDS = {"Name","LightMesh"},
 		LINE_OFFSET = "-4",
-		["ADD"] = EntityText,
+		ADD = EntityText,
 	},
 	{SPECIAL_KEY_WORDS = {"Name","FALLOFF"},
 		VALUE_CHANGE_TABLE = {

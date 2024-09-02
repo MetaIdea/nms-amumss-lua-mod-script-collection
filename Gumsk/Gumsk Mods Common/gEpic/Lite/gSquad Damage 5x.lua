@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSquad Damage"
 ModNameSub = "5"
 BaseDescription = ""
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN"
 
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Id","SQUADGUN"},
-							MATH_OPERATION = "*",
+							["MATH_OPERATION"] = "*",
 							VALUE_CHANGE_TABLE = {
 								{"DefaultDamage",ModNameSub},		--40
 							},

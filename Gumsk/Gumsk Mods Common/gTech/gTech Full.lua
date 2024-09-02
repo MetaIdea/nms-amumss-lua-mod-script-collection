@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Full"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "5001"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -114,187 +114,187 @@ FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 		
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource,
-					["EXML_CHANGE_TABLE"]	= {
+					MBIN_FILE_SOURCE = FileSource,
+					EXML_CHANGE_TABLE	= {
 
 					--Life Support
 						{ --Life Support general
-							["SPECIAL_KEY_WORDS"] = {"ID", "PROTECT"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "PROTECT"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", ProtectChargeAmount},
 								{"ChargeMultiplier", ProtectChargeMultiplier},
 							},
 						},
 						{ --Life Support damage reduction
-							["SPECIAL_KEY_WORDS"] = {"ID", "PROTECT","StatsType","Suit_Protection"},
+							SPECIAL_KEY_WORDS = {"ID", "PROTECT","StatsType","Suit_Protection"},
 							["SECTION_UP"] = 1,
-							["SECTION_ACTIVE"] = {1,},							
-							["VALUE_CHANGE_TABLE"] = {
+							SECTION_ACTIVE = {1,},							
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ProtectSuitAmount},
 							},
 						},
 						{ --Life Support upgrade damage reduction
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_PROTECT","StatsType","Suit_Protection"},
-							["SECTION_ACTIVE"] = {1,},							
+							SPECIAL_KEY_WORDS = {"ID", "UT_PROTECT","StatsType","Suit_Protection"},
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_ProtectSuitAmount},
 							},
 						},
 
 					--Suit shields
 						{ --Suit shields general
-							["SPECIAL_KEY_WORDS"] = {"ID", "ENERGY"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "ENERGY"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", ShieldChargeAmount},
 								{"ChargeMultiplier", ShieldChargeMultiplier},
 							},
 						},
 						{ --Suit shields strength
-							["SPECIAL_KEY_WORDS"] = {"ID", "ENERGY","StatsType","Suit_Energy"},
-							["SECTION_ACTIVE"] = {1,},							
+							SPECIAL_KEY_WORDS = {"ID", "ENERGY","StatsType","Suit_Energy"},
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShieldStrength},
 							},
 						},
 						{ --Suit shields Regen
-							["SPECIAL_KEY_WORDS"] = {"ID", "ENERGY","StatsType","Suit_Energy_Regen"},
+							SPECIAL_KEY_WORDS = {"ID", "ENERGY","StatsType","Suit_Energy_Regen"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShieldRegen},
 							},
 						},
 						{ --Suit shields upgrade strength
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY","StatsType","Suit_Energy"},
-							["SECTION_ACTIVE"] = {1,},							
+							SPECIAL_KEY_WORDS = {"ID", "UT_ENERGY","StatsType","Suit_Energy"},
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_ShieldStrength},
 							},
 						},
 
 					--Jetpack
 						{ --JetpackTank
-							["SPECIAL_KEY_WORDS"] = {"ID", "JET1","StatsType","Suit_Jetpack_Tank"},
+							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Tank"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackTank},
 							},
 						},
 						{ --JetpackDrain
-							["SPECIAL_KEY_WORDS"] = {"ID", "JET1","StatsType","Suit_Jetpack_Drain"},
+							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Drain"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackDrain},
 							},
 						},
 						{ --JetpackRegen
-							["SPECIAL_KEY_WORDS"] = {"ID", "JET1","StatsType","Suit_Jetpack_Refill"},
+							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Refill"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackRegen},
 							},
 						},
 						{ --JetpackTank
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET","StatsType","Suit_Jetpack_Tank"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Jetpack_Tank"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackTank},
 							},
 						},
 						{ --JetpackRegen
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET","StatsType","Suit_Jetpack_Refill"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Jetpack_Refill"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackRegen},
 							},
 						},
 						{ --Stamina bonus
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET","StatsType","Suit_Stamina_Strength"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Stamina_Strength"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackStamina},
 							},
 						},
 						{ --Stamina regen bonus
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_JET","StatsType","Suit_Stamina_Recovery"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Stamina_Recovery"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackStaminaRegen},
 							},
 						},
 
 					--Translator
 						{ --Tranlsator Simple
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_TRANSLATE1"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "UT_TRANSLATE1"},
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", SimpleTranslatorWords},
 							},
 						},	
 						{ --Tranlsator Superior
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_TRANSLATE2"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "UT_TRANSLATE2"},
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", SuperiorTranslatorWords},
 							},
 						},
 						{ --Tranlsator Advanced
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_TRANSLATE3"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "UT_TRANSLATE3"},
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", AdvancedTranslatorWords},
 							},
 						},
 						{ --Tranlsator Artemis
-							["SPECIAL_KEY_WORDS"] = {"ID", "STORY_TRANSLATE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "STORY_TRANSLATE"},
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ArtemisTranslatorWords},
 							},
 						},
 
 					--Starship
 						{ --Starship Launcher
-							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER","StatsType","Ship_Launcher_TakeOffCost"},
+							SPECIAL_KEY_WORDS = {"ID", "LAUNCHER","StatsType","Ship_Launcher_TakeOffCost"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShipLaunchCost},
 							},
 						},
 						{ --Starship Efficient Thrusters
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_LAUNCHER","StatsType","Ship_Launcher_TakeOffCost"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_LAUNCHER","StatsType","Ship_Launcher_TakeOffCost"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShipEfficientLaunch},
 							},
 						},
 						{ --Starship Transfer Range
-							["SPECIAL_KEY_WORDS"] = {"ID", "SHIP_TELEPORT","StatsType","Ship_Teleport"},
-							["SECTION_ACTIVE"] = {1,},							
+							SPECIAL_KEY_WORDS = {"ID", "SHIP_TELEPORT","StatsType","Ship_Teleport"},
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShipTransferRange},
 							},
 						},
 
 					--Mining
 						{--Advanced Mining Laser (STRONGLASER)
-							["SPECIAL_KEY_WORDS"] = {"ID", "STRONGLASER","StatsType","Weapon_Laser_Mining_Speed"},
+							SPECIAL_KEY_WORDS = {"ID", "STRONGLASER","StatsType","Weapon_Laser_Mining_Speed"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", AdvancedLaserSpeed},
 							},
 						},
 						{--Optical Drill (UT_MINER))
-							["SPECIAL_KEY_WORDS"] = {"ID", "UT_MINER","StatsType","Weapon_Laser_MiningBonus"},
+							SPECIAL_KEY_WORDS = {"ID", "UT_MINER","StatsType","Weapon_Laser_MiningBonus"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_MinerBonus},
 							},
 						},
@@ -302,253 +302,253 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 					--LandExo
 						{ --LandExo Engine
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_ENGINE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_ENGINE"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", LandExoEngineChargeAmount},
 								{"ChargeMultiplier", LandExoEngineChargeMultiplier},
 							},
 						},
 						{ --LandExo Engine Drain
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_EngineFuelUse"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_EngineFuelUse"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoFuelUse},
 							},
 						},
 						{ --LandExo Grip
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_Grip"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_Grip"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoGrip},
 							},
 						},
 						{ --LandExo Skid Grip
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_SkidGrip"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_ENGINE","StatsType","Vehicle_SkidGrip"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoSkidGrip},
 							},
 						},
 						{ --LandExo Mining Laser
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_LASER"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_LASER"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", LandExoLaserChargeAmount},
 								{"ChargeMultiplier", LandExoLaserChargeMultiplier},
 							},
 						},	
 						{ --LandExo Mining Laser Damage
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_LASER","StatsType","Vehicle_LaserDamage"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_LASER","StatsType","Vehicle_LaserDamage"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoLaserDamage},
 							},
 						},
 						{ --LandExo Mining Laser Heat Time
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_LASER","StatsType","Vehicle_LaserHeatTime"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_LASER","StatsType","Vehicle_LaserHeatTime"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoLaserHeatTime},
 							},
 						},
 						{ --LandExo Cannon
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GUN"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_GUN"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", LandExoCannonChargeAmount},
 								{"ChargeMultiplier", LandExoCannonChargeMultiplier},
 							},
 						},
 						{ --LandExo Cannon Damage
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunDamage"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunDamage"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoCannonDamage},
 							},
 						},
 						{ --LandExo Cannon Heat Time
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunHeatTime"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunHeatTime"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoCannonHeatTime},
 							},
 						},
 						{ --LandExo Cannon Fire Rate
-							["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunRate"},
+							SPECIAL_KEY_WORDS = {"ID", "VEHICLE_GUN","StatsType","Vehicle_GunRate"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", LandExoCannonFireRate},
 							},
 						},
 
 					--Nautilon
 						{ --Nautilon Engine
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_ENGINE"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "SUB_ENGINE"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", NautilonEngineChargeAmount},
 								{"ChargeMultiplier", NautilonEngineChargeMultiplier},
 							},
 						},
 						{ --Nautilon Engine Drain
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_ENGINE","StatsType","Vehicle_EngineFuelUse"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_ENGINE","StatsType","Vehicle_EngineFuelUse"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonFuelUse},
 							},
 						},
 
 						{ --Nautilon Cannon
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_GUN"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "SUB_GUN"},
+							VALUE_CHANGE_TABLE = {
 								{"ChargeAmount", NautilonCannonChargeAmount},
 								{"ChargeMultiplier", NautilonCannonChargeMultiplier},
 							},
 						},
 						{ --Nautilon Cannon Damage
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_GUN","StatsType","Vehicle_GunDamage"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_GUN","StatsType","Vehicle_GunDamage"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonCannonDamage},
 							},
 						},
 						{ --Nautilon Cannon Heat Time
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_GUN","StatsType","Vehicle_GunHeatTime"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_GUN","StatsType","Vehicle_GunHeatTime"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonCannonHeatTime},
 							},
 						},
 						{ --Nautilon Cannon Fire Rate
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_GUN","StatsType","Vehicle_GunRate"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_GUN","StatsType","Vehicle_GunRate"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonCannonFireRate},
 							},
 						},
 						{ --Nautilon Mining Laser Damage
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_LASER","StatsType","Vehicle_LaserDamage"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_LASER","StatsType","Vehicle_LaserDamage"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonLaserDamage},
 							},
 						},
 						{ --Nautilon Laser Heat Time
-							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_LASER","StatsType","Vehicle_LaserHeatTime"},
+							SPECIAL_KEY_WORDS = {"ID", "SUB_LASER","StatsType","Vehicle_LaserHeatTime"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", NautilonLaserHeatTime},
 							},
 						},
 						{ --Exocraft advanced laser on Nautilon
-							["SPECIAL_KEY_WORDS"] = {"ID","VEHICLE_LASER","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","VEHICLE_LASER","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllVehicles"},
 							},
 						},
 
 					--Minotaur
 						{ --Mech Boost Tanks
-							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_BOOST","StatsType","Vehicle_BoostTanks"},
+							SPECIAL_KEY_WORDS = {"ID", "MECH_BOOST","StatsType","Vehicle_BoostTanks"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"Bonus", MechVehicle_BoostTanks},
 							},
 						},
 						{ --Exocraft combined hazard protection
-							["SPECIAL_KEY_WORDS"] = {"ID","MECH_PROT","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","MECH_PROT","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllVehicles"},
 							},
 						},
 
 					--Alien Installs
 						{ --Emergency Warp
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_QUICKWARP","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","UT_QUICKWARP","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Teleport Receiver
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIP_TELEPORT","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","SHIP_TELEPORT","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Rocket Launcher
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","SHIPROCKETS","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Rockets Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_ROCKETS","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","UT_ROCKETS","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Photonix Core
-							["SPECIAL_KEY_WORDS"] = {"ID","PHOTONIX_CORE","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","PHOTONIX_CORE","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Shotgun
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPSHOTGUN","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","SHIPSHOTGUN","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Shotgun Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPSHOT","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_SHIPSHOT","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Shotgun Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPSHOT","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","UT_SHIPSHOT","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Minigun
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPMINIGUN","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","SHIPMINIGUN","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Minigun Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPMINI","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_SHIPMINI","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Minigun Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPMINI","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","UT_SHIPMINI","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Infra-Knife
-							["SPECIAL_KEY_WORDS"] = {"ID","SHIPPLASMA","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","SHIPPLASMA","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Infra-Knife Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPBLOB","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","T_SHIPBLOB","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 						{ --Ship Infra-Knife Upgrade
-							["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPBLOB","Category","GcTechnologyCategory.xml"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID","UT_SHIPBLOB","Category","GcTechnologyCategory.xml"},
+							VALUE_CHANGE_TABLE = {
 								{"TechnologyCategory","AllShips"}
 							}
 						},
 
 					--Core Tech
 						{ --Multitool Mining Laser Deletable
-							["SPECIAL_KEY_WORDS"] = {"ID", "LASER"},
-							["VALUE_CHANGE_TABLE"] = {
+							SPECIAL_KEY_WORDS = {"ID", "LASER"},
+							VALUE_CHANGE_TABLE = {
 								{"Core", "False"},
 							},
 						},

@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "largerderelicts.pak",
 ["MOD_AUTHOR"]    = "Luminance",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.64",
+["NMS_VERSION"]   = "5.05",
 ["MODIFICATIONS"] =
 	{
 		{
@@ -47,6 +47,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Min", Multiplier},
                                 {"Max", Multiplier},
 							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = 
+                            {
+                                {"Value", "STANDINGLIGHT1"},
+                                {"Value", "STANDINGLIGHT2"},
+                                {"Value", "STANDINGLIGHT3"},
+                            },
+                            ["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] = "SECTION"
 						},
 					}
 				},

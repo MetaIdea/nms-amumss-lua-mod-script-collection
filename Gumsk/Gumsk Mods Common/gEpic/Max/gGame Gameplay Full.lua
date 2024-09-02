@@ -1,6 +1,6 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Full"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 --[[ Files Modified:

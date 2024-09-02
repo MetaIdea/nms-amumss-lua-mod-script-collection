@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gStack"
 ModNameSub = Multiplier.."x"
 BaseDescription = "Multiplies stack sizes"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"
 
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							REPLACE_TYPE = "ALL",
-							MATH_OPERATION = "*",
+							["MATH_OPERATION"] = "*",
 							VALUE_CHANGE_TABLE = {
 								{"SubstanceStackLimit",Multiplier},
 								{"ProductStackLimit",Multiplier},

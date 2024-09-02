@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter Legal SFMs"
 ModNameSub = "Normal"
 BaseDescription = "Makes legal salvaged frigate modules more common"
-GameVersion = "5001"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
@@ -34,69 +34,69 @@ AddTextB = [[" />
           </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE = {
 					--Change DerelictAbandCrateChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CRATE","Id","FRIG_TOKEN"},
+							SPECIAL_KEY_WORDS = {"Id","R_ABAND_CRATE","Id","FRIG_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", DerelictAbandCrateChance},
 							}
 						},
 					--Change CrashedSmallChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","CRASHCONT_S","Id","FRIG_TOKEN"},
+							SPECIAL_KEY_WORDS = {"Id","CRASHCONT_S","Id","FRIG_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", CrashedSmallChance},
 							}
 						},
 					--Change CrashedMedChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","CRASHCONT_M","Id","FRIG_TOKEN"},
+							SPECIAL_KEY_WORDS = {"Id","CRASHCONT_M","Id","FRIG_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", CrashedMedChance},
 							}
 						},
 					--Change PiracyChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLOOT","Id","FRIG_TOKEN"},
+							SPECIAL_KEY_WORDS = {"Id","FREIGHTERLOOT","Id","FRIG_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", PiracyChance},
 							}
 						},
 					--Change OutlawPiracyChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SMUGGLELOOT","Id","FRIG_TOKEN"},
+							SPECIAL_KEY_WORDS = {"Id","SMUGGLELOOT","Id","FRIG_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = {
+							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", OutlawPiracyChance},
 							}
 						},
 					--Add freighter rescue reward
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED","Id","ASTEROID2"},
+							SPECIAL_KEY_WORDS = {"Id","FREIGHTER_SAVED","Id","ASTEROID2"},
 							["SECTION_UP"] = 1,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = AddTextA.."100"..AddTextB,
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = AddTextA.."100"..AddTextB,
 						},
 					--Add PirateChance
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","PIRATELOOT","Id","SCRAP_GOODS"},
+							SPECIAL_KEY_WORDS = {"Id","PIRATELOOT","Id","SCRAP_GOODS"},
 							["SECTION_UP"] = 1,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = AddTextA..PirateChance..AddTextB,
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = AddTextA..PirateChance..AddTextB,
 						},
 					}
 				},

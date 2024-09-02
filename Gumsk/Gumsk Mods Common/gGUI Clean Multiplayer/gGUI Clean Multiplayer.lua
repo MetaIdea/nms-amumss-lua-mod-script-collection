@@ -2,7 +2,7 @@ Author = "Gumsk,lMonk"
 ModName = "gGUI"
 ModNameSub = "Clean Multiplayer"
 BaseDescription = ""
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\MESSENGER\MESSENGER.SCENE.MBIN"
 FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\MESSENGER\ENTITIES\MESSENGER.ENTITY.MBIN"
@@ -49,27 +49,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\MESSAGEBEACON.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\BUILDINGS\HEXOUTLINE.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\PLAYER\BASEOTHER.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\PLAYER\BASEOTHERSMALL.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\PLAYER\BEACON.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES\UI\HUD\ICONS\PLAYER\GENERICSMALL.DDS",
-			EXTERNAL_FILE_SOURCE 	= "BLANK.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
 		},
 	},
 	MODIFICATIONS	= {
@@ -84,12 +84,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Type","MESH"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 							REPLACE_TYPE = "ALL",
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Type","COLLISION"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 							REPLACE_TYPE = "ALL",
 						},
 					},
@@ -100,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 					
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE 	= {
 								{"AttractDistanceSq",1},
 								{"InteractDistance",0.01},
@@ -115,16 +115,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
-							["REMOVE"] = "SECTION",
+							SPECIAL_KEY_WORDS = {"Template","TkAnimationComponentData.xml"},
+							REMOVE = "SECTION",
 						},
 						{
-							PRECEDING_KEY_WORDS = {"TkAudioComponentData.xml"},
-							["REMOVE"] = "SECTION",
+							SPECIAL_KEY_WORDS = {"Template","TkAudioComponentData.xml"},
+							REMOVE = "SECTION",
 						},
 						{
-							PRECEDING_KEY_WORDS = {"TkPhysicsComponentData.xml"},
-							["REMOVE"] = "SECTION",
+							SPECIAL_KEY_WORDS = {"Template","TkPhysicsComponentData.xml"},
+							REMOVE = "SECTION",
 						},
 					},
 				},

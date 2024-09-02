@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter Legal SFMs"
 ModNameSub = "Normal"
 BaseDescription = "Makes legal salvaged frigate modules more common"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
@@ -88,15 +88,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Id","FREIGHTER_SAVED","Id","ASTEROID2"},
 							["SECTION_UP"] = 1,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = AddTextA.."100"..AddTextB,
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = AddTextA.."100"..AddTextB,
 						},
 					--Add PirateChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","PIRATELOOT","Id","SCRAP_GOODS"},
 							["SECTION_UP"] = 1,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = AddTextA..PirateChance..AddTextB,
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = AddTextA..PirateChance..AddTextB,
 						},
 					}
 				},

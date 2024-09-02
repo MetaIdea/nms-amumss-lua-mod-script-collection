@@ -3,7 +3,7 @@ LuaAuthor = "lyravega"
 ModName = "gBlack Market"
 ModNameSub = "Better X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 NewWeightingCurve = "MinIsUncommon"				--MaxIsRare; X-class curves where higher is better
@@ -31,11 +31,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
 								"Quality","Illegal",
 							},
-							["VALUE_MATCH_OPTIONS"] = "=",
+							VALUE_MATCH_OPTIONS = "=",
 							VALUE_CHANGE_TABLE = {
 								{"WeightingCurve","Temp"},
 							},
-							["VALUE_MATCH"] = {
+							VALUE_MATCH = {
 								"MinIsRare",
 								"MinIsUncommon",
 							},
@@ -46,11 +46,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
 								"Quality","Illegal",
 							},
-							["VALUE_MATCH_OPTIONS"] = "=",
+							VALUE_MATCH_OPTIONS = "=",
 							VALUE_CHANGE_TABLE = {
 								{"WeightingCurve",NewWeightingCurve},
 							},
-							["VALUE_MATCH"] = {
+							VALUE_MATCH = {
 								"MaxIsRare",
 								"MaxIsUncommon",
 							},
@@ -61,11 +61,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
 								"Quality","Illegal",
 							},
-							["VALUE_MATCH_OPTIONS"] = "=",
+							VALUE_MATCH_OPTIONS = "=",
 							VALUE_CHANGE_TABLE = {
 								{"WeightingCurve",NewWeightingCurveReverse},
 							},
-							["VALUE_MATCH"] = {
+							VALUE_MATCH = {
 								"Temp",
 							},
 						},

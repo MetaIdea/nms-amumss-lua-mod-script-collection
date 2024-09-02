@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Sandworms"
 ModNameSub = "More"
 BaseDescription = "More Sandworms"
-GameVersion = "5001"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
@@ -26,21 +26,21 @@ MaxDist = 600			--600
 --Scale = 80				--80
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
+MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+MOD_DESCRIPTION	= BaseDescription,
+MOD_AUTHOR		= Author,
+NMS_VERSION		= GameVersion,
+MODIFICATIONS	= {
 {
-	["MBIN_CHANGE_TABLE"] = {
+	MBIN_CHANGE_TABLE = {
 
 		{
-			["MBIN_FILE_SOURCE"] = FileSource1,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource1,
+			EXML_CHANGE_TABLE = {
 				{
-					["PRECEDING_KEY_WORDS"] = {"SandwormPresenceChance"},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
+					PRECEDING_KEY_WORDS = {"SandwormPresenceChance"},
+					INTEGER_TO_FLOAT = "FORCE",
+					VALUE_CHANGE_TABLE = {
 						{"Lush", SandwormPresenceChance},			--0.1
 						{"Toxic", SandwormPresenceChance},			--0.25
 						{"Scorched", SandwormPresenceChance},		--0.25
@@ -63,11 +63,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 
 		{
-			["MBIN_FILE_SOURCE"] = FileSource2,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource2,
+			EXML_CHANGE_TABLE = {
 				{
-					["PRECEDING_KEY_WORDS"] = {""},
-					["VALUE_CHANGE_TABLE"] = {
+					PRECEDING_KEY_WORDS = {""},
+					VALUE_CHANGE_TABLE = {
 						{"SandWormJumpHeight", SandWormJumpHeight},
 						{"SandWormJumpTime", SandWormJumpTime},
 						{"SandWormMaxJumps", SandWormMaxJumps},
@@ -80,10 +80,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 
 		{
-			["MBIN_FILE_SOURCE"] = FileSource3,
-			["EXML_CHANGE_TABLE"] = {
+			MBIN_FILE_SOURCE = FileSource3,
+			EXML_CHANGE_TABLE = {
 				{
-					["VALUE_CHANGE_TABLE"] = {
+					VALUE_CHANGE_TABLE = {
 						{"PerSpawnDelay", SpawnDelay},
 						{"FaceDir", FaceDir},
 						{"MinDist", MinDist},
@@ -91,9 +91,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					}
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Event","SANDWORM"},
-					["PRECEDING_KEY_WORDS"] = {"MinNum"},
-					["VALUE_CHANGE_TABLE"] = {
+					SPECIAL_KEY_WORDS = {"Event","SANDWORM"},
+					PRECEDING_KEY_WORDS = {"MinNum"},
+					VALUE_CHANGE_TABLE = {
 						{"Off",MinWorms},
 						{"Slow",MinWorms},
 						{"Normal",MinWorms},
@@ -101,9 +101,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					},
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Event","SANDWORM"},
-					["PRECEDING_KEY_WORDS"] = {"MaxNum"},
-					["VALUE_CHANGE_TABLE"] = {
+					SPECIAL_KEY_WORDS = {"Event","SANDWORM"},
+					PRECEDING_KEY_WORDS = {"MaxNum"},
+					VALUE_CHANGE_TABLE = {
 						{"Off",MaxWorms},
 						{"Slow",MaxWorms},
 						{"Normal",MaxWorms},

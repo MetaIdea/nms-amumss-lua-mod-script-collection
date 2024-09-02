@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Predators Danger"
 ModNameSub = "Dangerous"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "5001"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 
@@ -76,20 +76,20 @@ FishFiendBigScale = 4						--Default 3
 PredatorSpeedMultiplier = 1.3				--Default 1.1
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	["MOD_DESCRIPTION"]	= BaseDescription,
-	["MOD_AUTHOR"]		= Author,
-	["NMS_VERSION"]		= GameVersion,
-	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-	["MODIFICATIONS"]	= {
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_DESCRIPTION	= BaseDescription,
+	MOD_AUTHOR		= Author,
+	NMS_VERSION		= GameVersion,
+	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = {
+					MBIN_FILE_SOURCE = FileSource1,
+					EXML_CHANGE_TABLE = {
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["VALUE_CHANGE_TABLE"] = {
+							PRECEDING_KEY_WORDS = {""},
+							VALUE_CHANGE_TABLE = {
 								{"SharkAttackSpeed", SharkAttackSpeed},
 								{"SharkAttackAccel", SharkAttackAccel},
 								{"AggressiveSharks", AggressiveSharks},

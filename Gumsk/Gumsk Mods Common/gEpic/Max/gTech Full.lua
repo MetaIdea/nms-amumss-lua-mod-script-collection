@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Full"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -136,14 +136,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{ --Life Support damage reduction
 							SPECIAL_KEY_WORDS = {"ID", "PROTECT","StatsType","Suit_Protection"},
 							["SECTION_UP"] = 1,
-							["SECTION_ACTIVE"] = {1,},							
+							SECTION_ACTIVE = {1,},							
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", ProtectSuitAmount},
 							},
 						},
 						{ --Life Support upgrade damage reduction
 							SPECIAL_KEY_WORDS = {"ID", "UT_PROTECT","StatsType","Suit_Protection"},
-							["SECTION_ACTIVE"] = {1,},							
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_ProtectSuitAmount},
@@ -160,7 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{ --Suit shields strength
 							SPECIAL_KEY_WORDS = {"ID", "ENERGY","StatsType","Suit_Energy"},
-							["SECTION_ACTIVE"] = {1,},							
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShieldStrength},
@@ -175,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{ --Suit shields upgrade strength
 							SPECIAL_KEY_WORDS = {"ID", "UT_ENERGY","StatsType","Suit_Energy"},
-							["SECTION_ACTIVE"] = {1,},							
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_ShieldStrength},
@@ -276,7 +276,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{ --Starship Transfer Range
 							SPECIAL_KEY_WORDS = {"ID", "SHIP_TELEPORT","StatsType","Ship_Teleport"},
-							["SECTION_ACTIVE"] = {1,},							
+							SECTION_ACTIVE = {1,},							
 							["SECTION_UP"] = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", ShipTransferRange},

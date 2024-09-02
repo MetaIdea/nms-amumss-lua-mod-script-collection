@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Pirate"
 BaseDescription = ""
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 --[[ Files Modified:

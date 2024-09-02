@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "Red Orange Yellow Gold"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 TrailInfo = {
@@ -1125,7 +1125,7 @@ for i = 1,#TrailInfo do
 					{"Name","UI_GJPT_"..TrailInfo[i]["ID"].."_NAME"},
 					{"NameLower","UI_GJPT_"..TrailInfo[i]["ID"].."_NAME_L"},
 					{"BaseValue",TrailInfo[i]["COST"]},
-					{"Description","UI_GJPT_"..TrailInfo[i]["ID"].."_DESC"}
+          {"Description","UI_GJPT_"..TrailInfo[i]["ID"].."_DESC"},
 				}
 			},
 			{
@@ -1156,7 +1156,7 @@ for i = 1,#TrailInfo do
 				SEC_EDIT = "SecLangTip",
 				VALUE_CHANGE_TABLE = {
 					{"Id","UI_TIP_GJPT_"..TrailInfo[i]["ID"]},
-					{"English",TrailInfo[i]["NAME_L"].." Trail"},
+          {"English",TrailInfo[i]["NAME_L"].." Trail"},
 				}
 			},
 			{
@@ -1167,7 +1167,7 @@ for i = 1,#TrailInfo do
 				SEC_EDIT = "SecLangName",
 				VALUE_CHANGE_TABLE = {
 					{"Id","UI_GJPT_"..TrailInfo[i]["ID"].."_NAME"},
-					{"English",TrailInfo[i]["NAME_U"].." JETPACK TRAIL"},
+          {"English",TrailInfo[i]["NAME_U"].." JETPACK TRAIL"},
 				}
 			},
 			{
@@ -1178,7 +1178,7 @@ for i = 1,#TrailInfo do
 				SEC_EDIT = "SecLangNameL",
 				VALUE_CHANGE_TABLE = {
 					{"Id","UI_GJPT_"..TrailInfo[i]["ID"].."_NAME_L"},
-					{"English",TrailInfo[i]["NAME_L"].." Jetpack Trail"}
+          {"English",TrailInfo[i]["NAME_L"].." Jetpack Trail"},
 				}
 			},
 			{
@@ -1189,7 +1189,7 @@ for i = 1,#TrailInfo do
 				SEC_EDIT = "SecLangDesc",
 				VALUE_CHANGE_TABLE = {
 					{"Id","UI_GJPT_"..TrailInfo[i]["ID"].."_DESC"},
-					{"English","This custom &lt;STELLAR&gt;Jetpack Trail Customisation&lt;&gt; has been surreptitiously inserted into the quicksilver merchant's database by the enigmatic iteration, &lt;VISOR&gt;Gumsk&lt;&gt;. The trail is &lt;RARE&gt;"..TrailInfo[i]["DESC"].."&lt;&gt;.&#xA;&#xA;You can customise your jetpack trail at an &lt;TECHNOLOGY&gt;Appearance Modifier&lt;&gt; after purchasing the trail from the quicksilver merchant in the Nexus Anomaly."}
+          {"English","This custom &lt;STELLAR&gt;Jetpack Trail Customisation&lt;&gt; has been surreptitiously inserted into the quicksilver merchant's database by the enigmatic iteration, &lt;VISOR&gt;Gumsk&lt;&gt;. The trail is &lt;RARE&gt;"..TrailInfo[i]["DESC"].."&lt;&gt;.&#xA;&#xA;You can customise your jetpack trail at an &lt;TECHNOLOGY&gt;Appearance Modifier&lt;&gt; after purchasing the trail from the quicksilver merchant in the Nexus Anomaly."},
 				}
 			},
 			{

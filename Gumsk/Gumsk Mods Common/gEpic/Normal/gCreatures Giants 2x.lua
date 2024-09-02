@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gCreatures Giants"
 ModNameSub = Multiplier.."x"
 BaseDescription = "Increases creature sizes"
-GameVersion = "470"
+GameVersion = "5.05.0"
 ModVersion = "a"
 
 --[[
@@ -24,8 +24,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
-							MATH_OPERATION = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							INTEGER_TO_FLOAT = "FORCE",
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"MaxScale", Multiplier},
@@ -37,8 +37,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = "GCCREATUREGLOBALS.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
-							MATH_OPERATION = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["MATH_OPERATION"] = "*",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"MaxCreatureSize", Multiplier},
 							},
