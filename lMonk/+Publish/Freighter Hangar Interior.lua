@@ -7,10 +7,13 @@ local mod_desc = [[
   - Loitering NPCs repositioned.
   - Starship outfitting consoles added near the teleport entrances.
 
-  * The ADD_FILES section can be safely disabled/ignored if you prefer
-   to add the texture files in a different method.
+  * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------
+---	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+---	A tool for converting exml to an equivalent lua table and back again.
+-------------------------------------------------------------------------------
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
 function ToExml(class)
@@ -31,10 +34,10 @@ function ToExml(class)
 			for _,v in ipairs(t) do self[#self+1] = v end
 		end
 		for key, cls in pairs(tlua) do
-			if key ~= 'META' then
+			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
-				if type(cls) == 'table' and cls.META then
-					local att, val = cls['META'][1], cls['META'][2]
+				if type(cls) == 'table' and cls.meta then
+					local att, val = cls['meta'][1], cls['meta'][2]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
 						exml:add({att, '="', val, '">'})
@@ -61,21 +64,21 @@ function ToExml(class)
 	-- check the table level structure and meta placement
 	-- add the needed layer for the recursion and handle multiple tables
 	local klen = len2(class)
-	if klen == 1 and class[1].META then
+	if klen == 1 and class[1].meta then
 		return exml_r(class)
-	elseif class.META and klen > 1 then
+	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
 	-- concatenate unrelated exml sections, instead of nested inside each other
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
-			T[#T+1] = exml_r((tb.META and klen > 1) and {tb} or tb)
+			T[#T+1] = exml_r((tb.meta and klen > 1) and {tb} or tb)
 		end
 		return table.concat(T)
 	end
 end
 
---	Build a TkSceneNodeData class
+--	Build a single -or list of scene nodes
 --	@param props: a keyed table for scene class properties.
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
@@ -85,12 +88,12 @@ end
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
-function ScNode(props)
+function ScNode(nodes)
 	--	Builds a TkTransformData class
 	local function scTransform(T)
 		T = T or {}
 		return {
-			META	= {'Transform', 'TkTransformData.xml'},
+			meta	= {'Transform', 'TkTransformData.xml'},
 			TransX	= (T.tx or T[1]) or 0,
 			TransY	= (T.ty or T[2]) or 0,
 			TransZ	= (T.tz or T[3]) or 0,
@@ -104,10 +107,10 @@ function ScNode(props)
 	end
 	--	Builds a scene node attributes array
 	local function scAttributes(T)
-		local atr = {META = {'name', 'Attributes'}}
+		local atr = {meta = {'name', 'Attributes'}}
 		for _,at in ipairs(T) do
 			atr[#atr+1] = {
-				META	= {'value', 'TkSceneNodeAttributeData.xml'},
+				meta	= {'value', 'TkSceneNodeAttributeData.xml'},
 				Name	= at[1],
 				Value	= at[2]
 			}
@@ -129,23 +132,36 @@ function ScNode(props)
 		hash = (hash + (hash << 15)) & 0xffffffff
 		return tostring(hash)
 	end
+	--	Build a TkSceneNodeData class
+	local function sceneNode(props)
+		local T	= {
+			meta	= {'value', 'TkSceneNodeData.xml'},
+			Name 		= props.name,
+			NameHash	= jenkinsHash(props.name),
+			Type		= props.stype
+		}
+		T[#T+1]		= scTransform(props.form or {})
+		if props.attr then
+			T[#T+1] = scAttributes(props.attr)
+		end
+		if props.child then
+			local tc = { meta = {'name', 'Children'} }
+			for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
+			T[#T+1]	= tc
+		end
+		return T
+	end
 	-----------------------------------------------------------------
-	local T	= {
-		META	= {'value', 'TkSceneNodeData.xml'},
-		Name 		= props.name,
-		NameHash	= jenkinsHash(props.name),
-		Type		= props.stype
-	}
-	T[#T+1]		= scTransform(props.form or {})
-	if props.attr then
-		T[#T+1] = scAttributes(props.attr)
+	local k,_ = next(nodes)
+	if k == 1 then
+		-- k=1 means the first of a list of tables
+		local T = {}
+		for _,nd in pairs(nodes) do
+				T[#T+1] = sceneNode(nd)
+		end
+		return T
 	end
-	if props.child then
-		local tc = { META = {'name', 'Children'} }
-		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
-		T[#T+1]	= tc
-	end
-	return T
+	return sceneNode(nodes)
 end
 
 local ECT = {}
@@ -161,6 +177,10 @@ for node, form in pairs({
 	RefHangarCrane1	= {tx=-41.96,				tz=60.9},
 	MonitorDesk		= {tx=-55.5,	ty=-7.35,	tz=63.2,	ry=305},
 	RefFuelTank2	= {tx=35.53,	ty=-7.34,	tz=72.55,	ry=180},
+	RefLargeCrate103= {tx=-22.65,	ty=-4.31,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt R
+	RefLargeCrate113= {tx=22.65,	ty=-4.315,	tz=17.17,	rx=180,		sx=4.1},		-- teleoprt L
+	RefLargeCrate10	= {tx=7,		ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- cross gap M
+	RefLargeCrate6	= {tx=-52.35,	ty=-7.35,	tz=66.8,	rx=180,		sx=4.3,	sz=4.3},-- cross gap R
 	RefPallet30		= {tx=7.79,		ty=-5.72,	tz=66.7,	rz=-58.5,	sx=2.6,	sy=2.4,	sz=2.8},
 	MidCeiling201	= {							tz=33.2,								sz=1.25},
 }) do
@@ -181,184 +201,152 @@ for node, form in pairs({
 end
 ECT[#ECT+1] = {
 	PRECEDING_KEY_WORDS = 'Children',
-	ADD					= ToExml({
-		ScNode({
+	ADD					= ToExml( ScNode({
+		{
 			name	= '1RefBarrelBaz1',
 			stype	= 'REFERENCE',
 			form	= {tx=8.18, ty=-7.02, tz=66.4, rx=270, sx=0.9, sy=1.4, sz=0.9},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/BARREL1.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrossingB1',
 			stype	= 'REFERENCE',
 			form	= {tx=-45.35, ty=-7.341775, tz=66.73, ry=180},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrossingB2',
 			stype	= 'REFERENCE',
 			form	= {tx=0, ty=-7.341775, tz=66.73},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrossingB3',
 			stype	= 'REFERENCE',
 			form	= {tx=45.35, ty=-7.341775, tz=66.73, ry=180},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONB.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
-			name	= '1RefBoxTeleport_R',
-			stype	= 'REFERENCE',
-			form	= {tx=-22.65, ty=-4.48, tz=17.22, sx=0.85, sy=1, sz=0.175},
-			attr	= {
-				{'SCENEGRAPH', 'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN'}
-			}
-		}),
-		ScNode({
-			name	= '1RefBoxTeleport_L',
-			stype	= 'REFERENCE',
-			form	= {tx=22.65, ty=-4.48, tz=17.22, sx=0.85, sy=1, sz=0.175},
-			attr	= {
-				{'SCENEGRAPH', 'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN'}
-			}
-		}),
-		ScNode({
-			name	= '1RefBoxPanel_R',
-			stype	= 'REFERENCE',
-			form	= {tx=-52.35, ty=-7.51, tz=66.72, sx=0.75, sy=1, sz=0.75},
-			attr	= {
-				{'SCENEGRAPH', 'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN'}
-			}
-		}),
-		ScNode({
-			name	= '1RefBoxPanel_M',
-			stype	= 'REFERENCE',
-			form	= {tx=7, ty=-7.52, tz=66.72, sx=0.75, sy=1, sz=0.75},
-			attr	= {
-				{'SCENEGRAPH', 'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN'}
-			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateMilk01',
 			stype	= 'REFERENCE',
 			form	= {tx=5.06, ty=-7.33, tz=65.54, ry=86, sx=2.7, sy=1.8, sz=2.7},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateHazBig1',
 			stype	= 'REFERENCE',
 			form	= {tx=6.74, ty=-7.34, tz=66.5, ry=90, sx=1.7, sy=1.4, sz=1.6},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateTypeb1',
 			stype	= 'REFERENCE',
 			form	= {tx=5.06, ty=-7.33, tz=67.1, ry=3, sx=0.9, sy=0.9, sz=0.9},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateTypeb2',
 			stype	= 'REFERENCE',
 			form	= {tx=5.2, ty=-7.33, tz=68.2, ry=87, sx=0.9, sy=0.9, sz=0.9},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateHazBig2',
 			stype	= 'REFERENCE',
 			form	= {tx=-53.3, ty=-6.67, tz=64.1, ry=13, rz=90, sx=0.57, sy=0.9, sz=0.9},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefScreenSilo',
 			stype	= 'REFERENCE',
 			form	= {tx=-55.32, ty=-5.82, tz=63.46, ry=35.1, sx=0.36, sy=0.6, sz=0.4},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/WALLMONITORS/WALLMONITORA.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCoveredSilos',
 			stype	= 'REFERENCE',
 			form	= {tx=-54, ty=-7.33, tz=66.8, ry=-90, sx=0.75, sy=0.75, sz=0.75},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/COVEREDSILOS.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateMould01',
 			stype	= 'REFERENCE',
 			form	= {tx=-52.8, ty=-3.65, tz=65.65, rx=10, ry=-85, rz=180, sx=1.4},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefCrateMould02',
 			stype	= 'REFERENCE',
 			form	= {tx=-52.7, ty=-3.6, tz=67.7, rx=-10, ry=85, rz=175, sx=1.4},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefBuilderHand',
 			stype	= 'REFERENCE',
 			form	= {tx=-39.85, ty=-7.64, tz=-22.3, rx=-2, ry=-65, rz=180, sx=1.4, sy=1.4, sz=1.4},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/COMMON/ROBOTS/ROBOTHAND.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefBuilderHead',
 			stype	= 'REFERENCE',
 			form	= {tx=-39.8, ty=-7.64, tz=-21.6, rx=50, ry=160, rz=0, sx=1.1, sy=1.1, sz=1.1},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BUILDERHEAD.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefGeometPlant01',
 			stype	= 'REFERENCE',
 			form	= {tx=37, ty=-7.72, tz=68.3, ry=-20, rz=20, sx=0.24, sy=0.24, sz=0.24},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefMetalStruct01',
 			stype	= 'REFERENCE',
 			form	= {tx=11.8, ty=9.5, tz=22.7, sx=0.3, sy=0.3, sz=0.3},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT.SCENE.MBIN'}
 			}
-		}),
-		ScNode({
+		},
+		{
 			name	= '1RefWirecell01',
 			stype	= 'REFERENCE',
 			form	= {tx=-67, ty=14, tz=-18.2, sx=0.6, sy=0.6, sz=0.6},
 			attr	= {
 				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN'}
 			}
-		})
-	})
+		}
+	}) )
 }
 
 local function AddPrx(prx, T)
@@ -369,7 +357,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.65',
+	NMS_VERSION				= '5.11',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
@@ -502,64 +490,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			}
 		}
-	},
-	{--	plain box
-		MBIN_FILE_SOURCE	= {
-			{
-				'MODELS/TESTS/BUILDINGS/1X1X1_0.SCENE.MBIN',
-				'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN',
-				'REMOVE'
-			}
-		}
-	},
-	{--	plain box details
-		MBIN_FILE_SOURCE	= 'MODELS/TESTS/BUILDINGS/BOX.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= AddPrx('Name', {
-					'Floor3',
-					'pCube10',
-					'pCube9',
-					'pCube11',
-					'w'
-				}),
-				REMOVE 				= 'Section'
-			},
-			{
-				PRECEDING_KEY_WORDS	= 'Children',
-				ADD 				= ToExml(
-					ScNode({
-						name	= 'Floor4_col',
-						stype	= 'COLLISION',
-						attr	= {
-							{'TYPE',	'Box'},
-							{'WIDTH',	5.31},
-							{'HEIGHT',	0.33},
-							{'DEPTH',	5.31}
-						}
-					})
-				)
-			}
-		}
-	},
-	{--	plain box color
-		MBIN_FILE_SOURCE	= 'MODELS/TESTS/BUILDINGS/1X1X1_0/LAMBERT1.MATERIAL.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS 	= {'Name', 'gMaterialColourVec4'},
-				VALUE_CHANGE_TABLE	= {
-					{'x',	0.12},
-					{'y',	0.12},
-					{'z',	0.12}
-				}
-			}
-		}
 	}
 }}},
-	ADD_FILES	= {
-		{
-			EXTERNAL_FILE_SOURCE = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Building/PirateStation/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/SPACE/SPACESTATION/PIRATES/*.DDS',
-		}
-	}
+	ADD_FILES	= {(
+		function()
+			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Building/PirateStation/'
+			if lfs.attributes(tex_path) then
+				return {
+					EXTERNAL_FILE_SOURCE = tex_path..'*.DDS',
+					FILE_DESTINATION	 = 'TEXTURES/SPACE/SPACESTATION/PIRATES/*.DDS'
+				}
+			end
+			return nil
+		end
+	)()}
 }

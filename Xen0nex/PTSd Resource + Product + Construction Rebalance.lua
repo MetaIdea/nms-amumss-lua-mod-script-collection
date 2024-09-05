@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_05"
+GameVersion = "5_10"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -68,7 +68,7 @@ ProductSaleChanges =
 	{"UI_SHIPCHARGE_NAME",	18.0},					--500			Starshield Battery
 	{"HYPERFUEL2_NAME",	3.0},						--46,750		Warp Hypercore	(Same value as Warp Cell)
 	
-	{"PROD_NIP_NAME",	0.841},						--17,776		Nip Nip Buds		(4hr grow time)
+	{"PROD_NIP_NAME",	1.2615},					--17,776		Nip Nip Buds		(4hr grow time)
 	{"NEWPROD12_NAME",	2.0/2},						--64,000		Sac Venom			(3hr 20 min grow time)
 	{"NEWPROD14_NAME",	2.7/2},						--11,200		Albumen Pearl		(2 hr grow time)
 	{"NEWPROD11_NAME",	4.0},						--5,800			Vortex Cube
@@ -179,14 +179,14 @@ ProductSaleChanges =
 	{"UI_DRONE_SHARD_NAME",	0.842},					--1,900			Radiant Shard
 	{"UI_SENTFREI_PROD_NAME",	10},				--35,000		Carrier AI Fragment
 	
-	{"UI_ILLEGAL_PROD1_NAME",	2.0},				--2,000			Illegal Trade item
-	{"UI_ILLEGAL_PROD2_NAME",	2.0},				--9,000			Illegal Trade item
-	{"UI_ILLEGAL_PROD3_NAME",	2.0},				--18,000		Illegal Trade item
-	{"UI_ILLEGAL_PROD4_NAME",	2.0},				--32,000		Illegal Trade item
-	{"UI_ILLEGAL_PROD5_NAME",	2.0},				--58,000		Illegal Trade item
-	{"UI_ILLEGAL_PROD6_NAME",	2.0},				--68,000		Illegal Trade item
-	{"UI_ILLEGAL_PROD7_NAME",	2.0},				--83,000		Illegal Trade item
-	{"UI_ILLEGAL_PROD8_NAME",	2.0},				--98,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD1_NAME",	3.0},				--2,000			Illegal Trade item
+	{"UI_ILLEGAL_PROD2_NAME",	3.0},				--9,000			Illegal Trade item
+	{"UI_ILLEGAL_PROD3_NAME",	3.0},				--18,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD4_NAME",	3.0},				--32,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD5_NAME",	3.0},				--58,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD6_NAME",	3.0},				--68,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD7_NAME",	3.0},				--83,000		Illegal Trade item
+	{"UI_ILLEGAL_PROD8_NAME",	3.0},				--98,000		Illegal Trade item
 	
 	{"UI_SALVAGE_TECH_5_NAME",	1.0},				--10,000		Salvaged Trade item		(Price seems oddly low based on the other items in this series, but some vanilla rewards account for this price so leaving as-is) 
 	{"UI_SALVAGE_TECH_6_NAME",	1.0},				--12,000		Salvaged Trade item		(Price seems oddly low based on the other items in this series, but some vanilla rewards account for this price so leaving as-is) 
@@ -439,6 +439,9 @@ AdjustItems =
 	{	--Starship Launch Fuel 	Metal Plating
 		"LAUNCHFUEL",			"CASING",			2,			--1
 	},
+	{	--Automated Trap 	Metal Plating
+		"BUILDSEAHARVEST",		"CASING",			6,			--3
+	},
 }
 --Adds various items as new components for certain objects
 AddItems =
@@ -460,6 +463,9 @@ AddItems =
 	},
 	{	--Concentric Transducer	Recycled Circuitry
 		"STAFF_PART_C",			"SALVAGE_TECH7",	3,		"Product",
+	},
+	{	--Mealworms		(Makes 20 items per craft)
+		"FISHBAIT_1",			"ANY_FISH",			4,		"Product",
 	},
 }
 --Replaces an existing component for certain objects with various items instead
@@ -515,6 +521,60 @@ ReplaceItems =
 	},
 	{	--Atlantideum Chamber
 		"STAFF_PART_B",			"SALVAGE_TECH7",	3,		"Product",		"MICROCHIP",
+	},
+	{	--Automated Trap
+		"BUILDSEAHARVEST",		"GREEN2",			100,	"Substance",	"POWERCELL",
+	},
+	{	--Automated Trap
+		"BUILDSEAHARVEST",		"CLAMPEARL",		8,		"Product",		"WATER1",
+	},
+	{	--Mealworms		(Makes 20 items per craft)
+		"FISHBAIT_1",			"BAIT_BASIC",		20,		"Product",		"FUEL2",
+	},
+	{	--Spicy Chum	(Makes 20 items per craft)
+		"FISHBAIT_2",			"CREATURE1",		200,	"Substance",	"CREATURE1",
+	},
+	{	--Spicy Chum	(Makes 20 items per craft)
+		"FISHBAIT_2",			"FOOD_J_HOT",		4,		"Product",		"HOT1",
+	},
+	{	--Spicy Chum	(Makes 20 items per craft)
+		"FISHBAIT_2",			"FOOD_F_EGGS",		5,		"Product",		"LAUNCHSUB",
+	},
+	{	--Bionic Lure	(Makes 20 items per craft)
+		"FISHBAIT_3",			"BIO",				4,		"Product",		"BIO",
+	},
+	{	--Bionic Lure	(Makes 20 items per craft)
+		"FISHBAIT_3",			"FOOD_F_MIX",		7,		"Product",		"POWERCELL",
+	},
+	{	--Bionic Lure	(Makes 20 items per craft)
+		"FISHBAIT_3",			"FARMPROD8",		2,		"Product",		"FARMPROD2",
+	},
+	{	--Dangling Orb	(Makes 20 items per craft)
+		"FISHBAIT_DAY",			"MIRROR",			2,		"Product",		"MIRROR",
+	},
+	{	--Dangling Orb	(Makes 20 items per craft)
+		"FISHBAIT_DAY",			"CASING",			4,		"Product",		"CASING",
+	},
+	{	--Dangling Orb	(Makes 20 items per craft)
+		"FISHBAIT_DAY",			"FOOD_F_EGGS",		5,		"Product",		"CATALYST2",
+	},
+	{	--Shadow Lure	(Makes 20 items per craft)
+		"FISHBAIT_NIGHT",		"ANTIMATTER",		2,		"Product",		"ANTIMATTER",
+	},
+	{	--Shadow Lure	(Makes 20 items per craft)
+		"FISHBAIT_NIGHT",		"CASING",			4,		"Product",		"CASING",
+	},
+	{	--Shadow Lure	(Makes 20 items per craft)
+		"FISHBAIT_NIGHT",		"FOOD_F_EGGS",		5,		"Product",		"WATERPLANT",
+	},
+	{	--Magpulse Lure	(Makes 20 items per craft)
+		"FISHBAIT_STORM",		"MAGNET",			2,		"Product",		"MAGNET",
+	},
+	{	--Magpulse Lure	(Makes 20 items per craft)
+		"FISHBAIT_STORM",		"CASING",			4,		"Product",		"CASING",
+	},
+	{	--Magpulse Lure	(Makes 20 items per craft)
+		"FISHBAIT_STORM",		"FOOD_F_EGGS",		5,		"Product",		"ROCKETSUB",
 	},
 }
 

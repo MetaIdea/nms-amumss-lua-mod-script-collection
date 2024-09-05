@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_05"
+GameVersion = "5_10"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -2878,7 +2878,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\NPCMISSIONTABLE.MBIN"},
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\NPCMISSIONTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			--This entry intentionally left blank, to be filled in by the PirateMissionChanges at the bottom of this script
@@ -4085,7 +4085,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\MISSIONTABLE.MBIN"},
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
@@ -4105,7 +4105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN"},
+		["MBIN_FILE_SOURCE"] 	= {"METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{

@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux.pak",
-["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer, Living Ship and Fleet",
+["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Base Computer, Fleet, Living Ship, Scientist and Settlement",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"] 				= "Babscoole",
 ["NMS_VERSION"]				= "5.+",
@@ -10,8 +10,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\BASECOMPUTERMISSIONTABLE.MBIN",
+				{        -- This section is for Base Computer Timers
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\TABLES\\BASECOMPUTERMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -24,8 +24,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\SPACEPOIMISSIONTABLE.MBIN",
+				{        -- This section is for Living Ship Timers
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\MISSIONS\\TABLES\\SPACEPOIMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -58,20 +58,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				{
+				{        -- This section is for Fleet Timers
 					["MBIN_FILE_SOURCE"] 	= "GCFLEETGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TimeTakenForExpeditionEvent_Easy", "180"},		-- Original 900
-								{"TimeTakenForExpeditionEvent",		 "900"},		-- Original 5400
+								{"TimeTakenForExpeditionEvent_Easy", "120"},		-- Original 900
+								{"TimeTakenForExpeditionEvent",		 "600"},		-- Original 5400
 							}
 						},
 					}
 				},
-				{	-- This section is for the Settlement Timers
+				{        -- This section is for the Scientist Timers
+					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+				            ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWaitRealTime.xml"},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] = "60",
+							["VALUE_MATCH_OPTIONS"] = ">=",
+							["VALUE_CHANGE_TABLE"] =
+							{
+                				                {"Time", "0"}
+							}
+						},
+					}
+				},
+				{	     -- This section is for the Settlement Timers
 					["MBIN_FILE_SOURCE"]     = "GCSETTLEMENTGLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"]     =
 					{

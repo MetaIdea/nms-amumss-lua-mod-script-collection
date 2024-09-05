@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '5.03'
+Version = '5.10'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -311,7 +311,7 @@ ShipTrailTechs =
 {"T_SHIP_DARK", "T_SHIP_GOLD", "T_SHIP_GREEN", "T_SHIP_PIRATE", "T_SHIP_RAINBOW", "T_SHIP_RED", "T_SHIP_ROGUE"}
 
 ShipPulseMods =
-{"UP_PULSE1", "UP_PULSE2", "UP_PULSE3", "UP_PULSE4", "UP_PULSEX"}
+{"UP_PULSE0", "UP_PULSE1", "UP_PULSE2", "UP_PULSE3", "UP_PULSE4", "UP_PULSEX"}
 
 LivingShipPulseMods =
 {"UA_PULSE1", "UA_PULSE2", "UA_PULSE3", "UA_PULSE4"}
@@ -620,6 +620,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN0", "StatsType", "Ship_Boost"},
+				MATH_OPERATION 		= '',
+				SECTION_UP = 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'ValueMin', BonusMult (1.003, LnchModSpdMult)},	--1.01
+					{'ValueMax', BonusMult (1.009, LnchModSpdMult)}		--1.05
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN1", "StatsType", "Ship_Boost"},
 				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
@@ -701,6 +710,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE0", "StatsType", "Ship_Boost"},
+				MATH_OPERATION 		= '',
+				SECTION_UP = 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'ValueMin', BonusMult (1.01, EngModSpdMult)},
+					{'ValueMax', BonusMult (1.05, EngModSpdMult)}
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE1", "StatsType", "Ship_Boost"},
 				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
@@ -779,6 +797,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModLSSpdMult)},
 					{'ValueMax', BonusMult (1.25, EngModLSSpdMult)}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL0", "StatsType", "Ship_Armour_Shield_Strength"},
+				MATH_OPERATION 		= '',
+				SECTION_UP = 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'ValueMin', 0.01*ShieldModMult},
+					{'ValueMax', 0.05*ShieldModMult}
 				}
 			},
 			{
@@ -948,7 +975,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},]]
 	{
-		MBIN_FILE_SOURCE	= 'METADATA/\SIMULATION/\MISSIONS/SPACEPOIMISSIONTABLE.MBIN',
+		MBIN_FILE_SOURCE	= 'METADATA/\SIMULATION/\MISSIONS/TABLES\SPACEPOIMISSIONTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '',

@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "5_05"
+GameVersion = "5_10"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -51,8 +51,8 @@ VehicleGunDepotMult = 0.05								--1
 VehicleLaserDepotMult = 0								--1		To match regular Laser damage = 0
 DefaultDepotMult = 	0.33								--1		Multiplier for most other damage against DEPOTs
 
---Damage multiplier against CARGO (cargo pods on space freighters???)
-ShipWeaponsCargoMult = 0.2								--1		(0.2)
+--Default damage multiplier against CARGO. Applies to the Cargo Pods attached to freighters (standalone Cargo Pods unaffected for some reason), in vanilla also applies to Freighter Shield Generators & Dreadnought Warp Drives.
+CargoDamageMult = 0.2									--1		(0.2)
 
 --How many shots you get before needing to recharge with Unstable Plasma
 PlasmaLauncherCharge =						16					--20
@@ -170,11 +170,11 @@ CyclotronDMG =								0.9*5				--600 x 2		(3,600 theoretical burst DPS)	Multipli
 ShipWeaponEffectiveness =
 {	--Weapontype	vs. ship Hull	Shield	Torpedo	Freighter Hull 	Boss Freighter Hull(Dreadnoughts & Sentinel Freighters)
 	{"ShipGun",			1,			1,		1,		1,				1},		--1,		1,		1,		1,			1
-	{"ShipLaser",		0.8,		1.2,	0.8,	0.9,			0.9},	--1,		1,		1,		1,			1
-	{"ShipShotgun",		1,			0.33,	1,		0.6,			0.6},	--1,		0.33,	1,		0.4,		0.4
-	{"ShipMinigun",		1.2,		0.4,	1.2,	1.1,			1.1},	--1.5,		1,		1.5,	1,			1
+	{"ShipLaser",		0.8,		1.2,	0.8,	0.8,			0.9},	--1,		1,		1,		1,			1
+	{"ShipShotgun",		1,			0.33,	1,		0.7,			0.7},	--1,		0.33,	1,		0.4,		0.4
+	{"ShipMinigun",		1.2,		0.4,	1.2,	1.2,			1.1},	--1.5,		1,		1.5,	1,			1
 	{"ShipRockets",		1.2,		0.6,	1.2,	1.2,			1.2},	--1.5,		0.2,	1.5,	1.5,		1.5
-	{"ShipPlasma",		0.6,		1.4,	0.6,	0.8,			0.8},	--0.2,		1.6,	0.2,	1,			1
+	{"ShipPlasma",		0.6,		1.4,	0.6,	0.6,			0.8},	--0.2,		1.6,	0.2,	1,			1
 }
 
 --Multipliers to apply to the base damage for various player mining lasers. Note that higher damage means objects get mined faster
@@ -1202,7 +1202,7 @@ UpgradeDamageChanges =
 	},
 	{
 		{"Weapon_Projectile_Damage",	BoltcasterUpgradesDMGMult*BoltcasterDMG*MTUAddMult*GMD},				--Boltcaster		
-		{"UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
+		{"UP_BOLT0", "UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
 	},
 	{
 		{"Weapon_Projectile_Damage",	SentWpnDMGMult*MTUAddMult*GMD},				--Sentinel Weapon Upgrade (only works for Boltcaster?)		
@@ -1246,7 +1246,7 @@ UpgradeDamageChanges =
 	},
 	{
 		{"Ship_Weapons_Guns_Damage",	PhotonCannonDMG*PhotonUpgradesDMGMult*GSD},			--Photon Cannon		
-		{"UP_SGUN1", "UP_SGUN2", "UP_SGUN3", "UP_SGUN4", "UP_SGUNX"}
+		{"UP_SGUN0", "UP_SGUN1", "UP_SGUN2", "UP_SGUN3", "UP_SGUN4", "UP_SGUNX"}
 	},
 	{
 		{"Ship_Weapons_Guns_Damage",	LivingShipCannonDMG*LSPhotonUpgradesDMGMult*GSD},	--Spewing Vents
@@ -1271,7 +1271,7 @@ UpgradeDamageChanges =
 	},
 	{
 		{"Weapon_Projectile_BurstCap",	BoltUpgradeBurstCapMult*MTUAddMult},				--Boltcaster
-		{"UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
+		{"UP_BOLT0", "UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
 	},
 	{
 		{"Weapon_Projectile_BurstCap",	ScatterUpgradeBurstCapMult*MTUAddMult},				--Scatter Blaster
@@ -1293,6 +1293,9 @@ UpgradeOtherChanges =
 		{"Ship_Weapons_Guns_Rate",	PhotonUpgradesFireRateMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade			Min		Max
+				"UP_SGUN0",	1.001,	1.003								--1.001,	1.003
+			},
+			{
 				"UP_SGUN1",	1.001,	1.011								--1.001,	1.011
 			},
 			{
@@ -1503,6 +1506,9 @@ UpgradeOtherChanges =
 		{"Weapon_Projectile_ReloadTime",	BoltUpgradeReloadMult*MTUMultMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade			Min		Max
+				"UP_BOLT0",		0.96,	0.99							--0.96,	0.99
+			},
+			{--	Upgrade			Min		Max
 				"UP_BOLT1",		0.9,	0.95							--0.9,	0.95
 			},
 			{--	Upgrade			Min		Max
@@ -1523,6 +1529,9 @@ UpgradeOtherChanges =
 		{"Weapon_Projectile_Rate",	BoltUpgradeFireRateMult*MTUMultMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade			Min		Max
+				"UP_BOLT0",		1.01,	1.02							--1.01,	1.02
+			},
+			{--	Upgrade			Min		Max
 				"UP_BOLT1",		1.01,	1.1								--1.01,	1.1
 			},
 			{--	Upgrade			Min		Max
@@ -1542,6 +1551,9 @@ UpgradeOtherChanges =
 	{	--Boltcaster
 		{"Weapon_Projectile_BurstCooldown",	BoltUpgradeBurstCoolMult*MTUMultMult},		--Applies multiplier to all upgrades for this weapon
 		{
+			{--	Upgrade			Min		Max
+				"UP_BOLT0",		0.99,	0.98							--0.99,	0.98
+			},
 			{--	Upgrade			Min		Max
 				"UP_BOLT1",		0.99,	0.95							--0.99,	0.95
 			},
@@ -1739,6 +1751,9 @@ UpgradeOtherChangesInt =
 		{"Weapon_Projectile_ClipSize",	BoltUpgradeClipMult*MTUAddMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade			Min		Max
+				"UP_BOLT0",		1,		1								--1,	1
+			},
+			{--	Upgrade			Min		Max
 				"UP_BOLT1",		2,		2								--2,	2
 			},
 			{--	Upgrade			Min		Max
@@ -1928,49 +1943,6 @@ function ShipDamageMult (Mult)
           </Property>
           <Property name="Multiplier" value="]]..Mult..[[" />
         </Property>]]
-end
-
-function ShipCargoDamageMult (Mult)
-    return
-[[
-	<Property name="Multipliers">
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipGun" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipLaser" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipShotgun" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipMinigun" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipRockets" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-		<Property value="GcDamageMultiplier.xml">
-          <Property name="Type" value="GcDamageType.xml">
-            <Property name="DamageType" value="ShipPlasma" />
-          </Property>
-          <Property name="Multiplier" value="]]..Mult..[[" />
-        </Property>
-	</Property>]]
 end
 
 function AddNewTargetType (Name, DefMult, FirstDam)
@@ -2190,9 +2162,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "CARGO"},
-				["LINE_OFFSET"] = "1",
-				["REPLACE_TYPE"] = "",
-				["ADD"] = ShipCargoDamageMult (ShipWeaponsCargoMult)
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Default",	CargoDamageMult}
+				}
 			},
 			{
 				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplierLookup.xml"},
@@ -2221,8 +2195,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				--["PRECEDING_KEY_WORDS"] = {"GcShootableComponentData.xml"},
 				["SPECIAL_KEY_WORDS"] = {"Id", "CREATURE",	"DamageType", "Laser"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	LaserCreatureMult}

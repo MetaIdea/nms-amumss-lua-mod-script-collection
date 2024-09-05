@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "5_03"
+GameVersion = "5_10"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 AnalysisVisorDesc =
@@ -65,6 +65,9 @@ DerelictLogPopup =
 ReinforcedDoor =
 [[Reinforced Door (Destroy nearby &lt;SPECIAL&gt;sentinels&lt;&gt;)]]
 
+CargoPod =
+[[Cargo Pod - Contents &lt;SPECIAL&gt;Unknown&lt;&gt;]]
+
 SentPillarLeftPane =
 [[WARNING: [ &lt;SPECIAL&gt;BOUNDARY NODE EXPOSED&lt;&gt; ]&#xA;BOUNDARY ARCHIVE STATUS: [ &lt;SPECIAL&gt;VULNERABLE&lt;&gt; ]&#xA;&#xA;Destroy nearby &lt;FUEL&gt;Sentinel Mech&lt;&gt; to earn the right to use this terminal &lt;STELLAR&gt;honourably&lt;&gt;]]
 
@@ -106,6 +109,9 @@ AntiFreightCannon =
 
 FreightWarpDrives =
 [[Freighter Warp Drives - &lt;STELLAR&gt;Medium Armour&lt;&gt;]]
+
+FreighterShieldGen =
+[[&lt;CATALYST&gt;Freighter Shield Generator - Shielded&lt;&gt;]]
 
 BasaltDesc =
 [[Local mineral extract, typically found in large deposits or extracted from common minerals after inspection with an &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt;.&#xA;&#xA;Typically found on planets with a &lt;FUEL&gt;volcanic environment&lt;&gt;.&#xA;&#xA;Can be processed into &lt;STELLAR&gt;Silicate Powder&lt;&gt; in a refiner.]]
@@ -238,6 +244,13 @@ function AresTradeOffer (ItemName)
     return
 [[Traveller hopes to make progress. Traveller tests themselves. I will help. An exchange. Progress for progress.&#xA;Or wealth, perhaps. Experience or materials. Both valid. Today... &lt;STELLAR&gt;]]..ItemName..[[&lt;&gt;.]]
 end
+
+function AppendText (Text)
+    return
+[[{:}]]..Text..[[]]
+end
+
+SettleExpedNote = [[ &lt;HIGHLIGHT&gt;NOTE&lt;&gt;: Expeditions usually &lt;TRADE&gt;increase&lt;&gt; settlement &lt;STELLAR&gt;population&lt;&gt; on average.]]
 
 NaniteRefineItem = [[&#xA;&#xA;Can be processed into &lt;STELLAR&gt;nanites&lt;&gt; in a refiner]]
 
@@ -464,6 +477,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", ReinforcedDoor}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CARGO_POD_NAME"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", CargoPod}
 							}
 						},
 						{
@@ -722,6 +742,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", GAMEMODE_RELAXED_SUBTITLE}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_JUDGEMENT_MISSION_DETAIL%d*"},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AppendText (SettleExpedNote)}
+							}
+						},
 					}
 				},
 				{
@@ -803,6 +831,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", FreightWarpDrives}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SHIELD_GENERATOR_NAME"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", FreighterShieldGen}
 							}
 						},
 						{
@@ -1011,3 +1046,4 @@ for i = 1, #SpaceGunkRefineItemDescs do
 			}
 		end
 end
+

@@ -1,5 +1,5 @@
 ModName = "PTSd Rebalanced Hazard Tech"
-GameVersion = "4_41"
+GameVersion = "5_10"
 Description = "Nerfs the procedural Hazard techs & Buffs the Hazard techs / upgrades which grant a % resistance to hazards to hopefully make them worth considering. Note that the different sources of +% hazard protection (multiple X Class upgrades all count as the same source) appear to stack multiplicatively with each other, and that X Class Hazard Upgrades receive significant adjacency bonuses. E.G. two fully surrounded X Class upgrades with +25% each will typically double your protection time against all hazards."
 
 HazardRechargeMult =			1.5					--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Hazard Protection			54 / 22 to fully charge
@@ -33,6 +33,10 @@ HazardTechChanges =
 --Suspicious Hazard Protection module	(Gains huge bonuses when adjacent to any hazard tech / upgrades, often doubling in power)
 SusHazModMin =				1.1						--1.01		(+1% hazard protection for all 4 specific hazards)
 SusHazModMax =				1.24					--1.1		(+10% hazard protection for all 4 specific hazards)
+
+--Rusted Hazard Protection module from fishing	(Gains huge bonuses when adjacent to any hazard tech / upgrades, often doubling in power)
+FishHazModMin =				1.02					--1.01		(+1% hazard protection for all 4 specific hazards)
+FishHazModMax =				1.08					--1.03		(+10% hazard protection for all 4 specific hazards)
 
 --Multiplier to apply to the duration of the "procedural" Hazard protection upgrade modules which act as a temporary "shield" against one type of hazard.
 	--These are lowered to fit with the "Stronger Hazards" mod, since they act a set duration and aren't affected by the strength of hazards
@@ -120,16 +124,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "ALL",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "UP_HAZX"},
 				["PRECEDING_KEY_WORDS"] = {"StatLevels"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ValueMin", SusHazModMin},
 					{"ValueMax", SusHazModMax},
+				}
+			},
+			{
+				["REPLACE_TYPE"] 		= "ALL",
+				["SPECIAL_KEY_WORDS"] = {"ID", "UP_HAZ0"},
+				["PRECEDING_KEY_WORDS"] = {"StatLevels"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ValueMin", FishHazModMin},
+					{"ValueMax", FishHazModMax},
 				}
 			}
 		}
@@ -158,7 +169,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY",		"StatsType", "Suit_Energy"},
-				["MATH_OPERATION"] 		= "",
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"]	= "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -238,12 +248,8 @@ for i = 1, #HazardTechChanges do
 
 			ChangesToHazardTechs[#ChangesToHazardTechs+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", HazID},
 				["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Bonus", Bonus}
@@ -262,7 +268,6 @@ for i = 1, #HazardProcTechChanges do
 
 			ChangesToHazardProcTechs[#ChangesToHazardProcTechs+1] =
 			{
-				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "*",
 				["SPECIAL_KEY_WORDS"] = {"ID", HazID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",

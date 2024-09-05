@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = 
                     {
-                        "METADATA\SIMULATION\MISSIONS\MISSIONTABLE.MBIN",
+                        "METADATA\SIMULATION\MISSIONS\TABLES\MISSIONTABLE.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {

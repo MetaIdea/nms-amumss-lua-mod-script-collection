@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Procedural Upgrade Adjustment"
 Description = "Adjusts Exocraft & Multi-tool Upgrade Module strength to account for using 5x upgrades instead of 3x. Differentiates the Sentinel & Autophage Exosuit upgrades"
-GameVersion = "5_00"
+GameVersion = "5_10"
 
 OpticalDrillBonus =				1.33							--1.5		Bonus resource yields that the Optical Drill tech confers in a multi-tool	(Reduced since it stacks with both supercharged tech slots & PTSd's Multitool mining stat)
 
@@ -36,15 +36,15 @@ AdditiveUpgradeChanges =
 {
 	{
 		{"Weapon_Scan_Discovery_Creature",	ScanningUpgradeMult},	--Multi-Tool Scanning		
-		{"UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
+		{"UP_SCAN0", "UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
 	},
 	{
 		{"Weapon_Scan_Discovery_Flora",	ScanningUpgradeMult},		--Multi-Tool Scanning
-		{"UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
+		{"UP_SCAN0", "UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
 	},
 	{
 		{"Weapon_Scan_Discovery_Mineral",	ScanningUpgradeMult},	--Multi-Tool Scanning
-		{"UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
+		{"UP_SCAN0", "UP_SCAN1", "UP_SCAN2", "UP_SCAN3", "UP_SCAN4", "UP_SCANX"}
 	},
 	
 	{
@@ -103,6 +103,9 @@ MultiplicativeUpgradeChanges =
 		{"Weapon_Scan_Radius",	ScanningUpgradeRadiusMult},
 		{
 			{--	Upgrade			Min		Max
+				"UP_SCAN0",		1.01,	1.04							--1.01,	1.04
+			},
+			{--	Upgrade			Min		Max
 				"UP_SCAN1",		1.05,	1.1								--1.05,	1.1
 			},
 			{--	Upgrade			Min		Max
@@ -122,6 +125,9 @@ MultiplicativeUpgradeChanges =
 	{
 		{"Weapon_Laser_Mining_Speed",	MiningUpgradeSpeedMult},
 		{
+			{--	Upgrade			Min		Max
+				"UP_LASER0",	0.95,	0.99							--0.95,	0.99
+			},
 			{--	Upgrade			Min		Max
 				"UP_LASER1",	0.9,	0.95							--0.9,	0.95
 			},
@@ -143,6 +149,9 @@ MultiplicativeUpgradeChanges =
 		{"Weapon_Laser_HeatTime",	MiningUpgradeMult},
 		{
 			{--	Upgrade			Min		Max
+				"UP_LASER0",	1.01,	1.02							--1.01,	1.02
+			},
+			{--	Upgrade			Min		Max
 				"UP_LASER1",	1.05,	1.15							--1.05,	1.15
 			},
 			{--	Upgrade			Min		Max
@@ -163,6 +172,9 @@ MultiplicativeUpgradeChanges =
 		{"Weapon_Laser_Drain",	MiningUpgradeMult},
 		{
 			{--	Upgrade			Min		Max
+				"UP_LASER0",	1.01,	1.02							--1.01,	1.02
+			},
+			{--	Upgrade			Min		Max
 				"UP_LASER1",	1.01,	1.1								--1.01,	1.1
 			},
 			{--	Upgrade			Min		Max
@@ -182,6 +194,9 @@ MultiplicativeUpgradeChanges =
 	{
 		{"Weapon_Laser_ReloadTime",	MiningUpgradeMult},
 		{
+			{--	Upgrade			Min		Max
+				"UP_LASER0",	0.95,	0.99							--0.95,	0.99
+			},
 			{--	Upgrade			Min		Max
 				"UP_LASER1",	0.9,	0.95							--0.9,	0.95
 			},

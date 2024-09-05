@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "SubtlerPulseDriveEffects.pak",
+  ["MOD_FILENAME"] 			= "SubtlerPulseDriveEffects-LessSubtle.pak",
   ["MOD_DESCRIPTION"]		= "Speed and pulse lines now spawn further away, making the effect less intense and more integrated. The white streaks on the edges of the screen when flying have been removed.",
   ["MOD_AUTHOR"]				= "CodenameAwesome",
   ["MODIFICATIONS"] =
@@ -27,9 +27,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"RemoveCylinderRadius", 5},
-								{"Radius", 5},
-								{"NumberOfParticles", 5},
-								{"Lifetime", 5},
+								{"Radius", 2},
+								{"NumberOfParticles", 2},
+								{"Lifetime", 2},
 								{"Alpha", 0.5},
 							}
 						}

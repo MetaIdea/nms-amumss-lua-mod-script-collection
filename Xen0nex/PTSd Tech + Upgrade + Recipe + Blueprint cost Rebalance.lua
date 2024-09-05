@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "5_05"
+GameVersion = "5_10"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -32,7 +32,7 @@ ValuableCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites
 
 --Blueprint cost multipliers
 ExoCraftBuildingsMult	=			7.5			--Multiplier applied to default cost of 4, 8, or 10 Salvaged Data
-ColossusBuildingsMult	=			3.75		--Multiplier applied to default cost of 8
+ColossusBuildingsMult	=			3.75		--Multiplier applied to default cost of 8 Salvaged Data
 ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 Salvaged Data
 FarmingBlueprintsMult	=			8			--Multiplier applied to default cost of 3 Salvaged Data 
 LargePlanterBlueprintMult	=		0.5			--Multiplier applied to default cost of 10 Salvaged Data 
@@ -48,6 +48,7 @@ StorageContainers678Mult	=		3			--Multiplier applied to default cost of 5 Salvag
 StorageContainer9Mult	=			4			--Multiplier applied to default cost of 5 Salvaged Data for Container 9
 FabricatorsMult	=					10			--Multiplier applied to default cost of 1 Salvaged Data (These are the Barrel/Crate Fabricators that spawn items)
 WonderProjectorMult	=				0.5			--Multiplier applied to default cost of 12 Salvaged Data
+AutoFishTrapMult	=				12			--Multiplier applied to default cost of 1 Salvaged Data
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvaged Frigate Data
@@ -209,6 +210,12 @@ TechAdjustments =
 	},
 	{
 		"WATER_LANDER",	0.75			--Aqua-Jets								240 Nanites
+	},
+	{
+		"FISH_SKIFF",	1				--Exo-Skiff								90 Nanites
+	},
+	{
+		"FISHLASER",	25				--Fishing Rig							1 Nanite
 	},
 }
 
@@ -532,6 +539,15 @@ ReplaceItems =
 	{	--Aqua-Jets
 		"WATER_LANDER",			"VENTGEM",			16,		"Product",		"VENTGEM",
 	},
+	{	--Exo-Skiff
+		"FISH_SKIFF",			"RED2",				100,	"Substance",	"LAND3",
+	},
+	{	--Exo-Skiff
+		"FISH_SKIFF",			"WATER1",			90,		"Substance",	"WATER1",
+	},
+	{	--Exo-Skiff
+		"FISH_SKIFF",			"VENTGEM",			16,		"Product",		"VENTGEM",
+	},
 	{	--Procedural Starship Pulse Engine Upgrades (Used for repairing / dismantling them)
 		"T_SHIPJUMP",			"STELLAR2",			150,	"Substance",	"RED2",
 	},
@@ -649,6 +665,10 @@ BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Car
 --Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
 RocketChargeAmount = 50						--50	The "tank size" of how much "charge"/"fuel" it can hold
 RocketChargeCost = 8						--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
+
+--WIP changes for Exo-Skiff or Fishing Rig consuming Fuel
+FishRigChargeable =		"False"				--"False"
+ExoSkiffChargeable =	"False"				--"False"
 
 --Everything below this point doesn't need to be changed, all the values can be edited in the sections above
 
@@ -902,6 +922,14 @@ RecipeChanges	=
 	},
 	{
 		"HOLO_DISCO_0"					--12	Wonder Projector
+	}
+},
+{
+	{
+		AutoFishTrapMult
+	},
+	{
+		"BUILDSEAHARVEST"				--1	Automated Trap
 	}
 },
 {
@@ -1599,6 +1627,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "FISHLASER"},
+							["INTEGER_TO_FLOAT"] = "PRESERVE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FragmentCost",	TechCostMult},						--Special case for Fishing Rig since it's Nanite cost is not greater than or equal to 50 (1)
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "", 
 							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY",	"ID", "OXYGEN"},
@@ -1874,6 +1913,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"ChargeMultiplier",	Invert (RocketChargeCost)},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "FISHLASER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Chargeable",	FishRigChargeable},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "FISH_SKIFF"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Chargeable",	ExoSkiffChargeable},
 							}
 						},
 						{
