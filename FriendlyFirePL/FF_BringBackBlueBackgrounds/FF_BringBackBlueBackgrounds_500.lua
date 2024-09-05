@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BringBackBlueBackgrounds"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "505"
+METADATA_NMS_VERSION    = "510"
 METADATA_MOD_DESC       = "This mod restores some blue backgrounds from the pre-Waypoint releases of the game."
 
 
@@ -60,17 +60,15 @@ FILE_ONELINE = "UI\\BOOT\\ONELINEBUTTON.MBIN"
 
 CHANGE_COLOUR = 
 {
-    ["PKW"] = "Children",
-    ["PKW_1"] = "TRUE",
     ["SKW"] = {"Highlight","TkNGuiGraphicStyleData.xml","Colour","Colour.xml",},
+    ["SECTION_ACTIVE"] = 2,
     ["VCT"] = COLOUR_GREY,
 }
 
 CHANGE_GRADIENT =
 {
-    ["PKW"] = "Children",
-    ["PKW_1"] = "TRUE",
     ["SKW"] = {"Highlight","TkNGuiGraphicStyleData.xml","GradientColour","Colour.xml",},
+    ["SECTION_ACTIVE"] = 2,
     ["VCT"] = COLOUR_GREY,
 }
 

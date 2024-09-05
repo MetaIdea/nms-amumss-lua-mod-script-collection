@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "NewExplorationGuideIcon"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "440"
+METADATA_NMS_VERSION    = "510"
 METADATA_MOD_DESC       = "This mod changes the icon for Exploration Guide in mission log and tooltips"
 
 
@@ -13,21 +13,26 @@ METADATA_MOD_DESC       = "This mod changes the icon for Exploration Guide in mi
 -- mod data
 ----------------------------------------------------------------------------------------------------
 
--- selected icon name, see the directory: TEXTURES/UI/FRONTEND/ICONS/MISSIONS
--- icon needs to have the .ON and .OFF variants available !!
-ICON_NAME = "PORTAL"
+--------------------------------------------------
+-- new icon used for Exploration Guide
+--------------------------------------------------
 
+ICON_NAME   = "PORTAL"
 ICON_ON     = "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION."..ICON_NAME..".ON.DDS"
 ICON_OFF    = "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION."..ICON_NAME..".OFF.DDS"
+
+--------------------------------------------------
+-- files affected by the mod
+--------------------------------------------------
+
+FILE_MISSIONS_COREMISSIONTABLE =        "METADATA\\SIMULATION\\MISSIONS\\TABLES\\COREMISSIONTABLE.MBIN"
+FILE_METADATA_DEFAULTREALITY =         "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
 
 
 
 ----------------------------------------------------------------------------------------------------
 -- mod container
 ----------------------------------------------------------------------------------------------------
-
-FILE_MISSIONTABLE = "METADATA\\SIMULATION\\MISSIONS\\COREMISSIONTABLE.MBIN"
-FILE_DEFAULTREALITY = "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -43,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_MISSIONTABLE,
+                    ["MBIN_FILE_SOURCE"] = FILE_MISSIONS_COREMISSIONTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -59,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_DEFAULTREALITY,
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_DEFAULTREALITY,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

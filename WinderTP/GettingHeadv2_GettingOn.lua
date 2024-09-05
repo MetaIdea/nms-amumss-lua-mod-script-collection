@@ -45,7 +45,7 @@ CAPE_JELLY
 CAPE_SEED
 ]]
 
-DEFAULT_BACKPACK = "BACKPACK_ATLAS"
+DEFAULT_BACKPACK = "BACKPACK_DIVING"
 -- Choose the backpack
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you want the default backpack
@@ -56,6 +56,7 @@ BACKPACK_ROYAL
 BACKPACK_SENT
 BACKPACK_ATLAS
 BACKPACK_CAPE
+BACKPACK_DIVING
 ]]
 
 -- Default value to set all presets to the Gek body type
@@ -231,7 +232,7 @@ RACES =	{ 	["ASTRO"] = 	{ 	["Name"] = "ASTRO",
 								["Head"] = "BUILDER_HEAD"
 							}
 		}
-RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD"}
+RACES_ARMOUR ={ "ARMOUR_VANILLA", "ARMOUR_ASTRO", "ARMOUR_GEK", "ARMOUR_VYK", "ARMOUR_FOURTH", "ARMOUR_BUI1", "ARMOUR_BUI2", "ARMOUR_BUI3", "ARMOUR_BUI4", "ARMOUR_APOD", "ARMOUR_DIVING"}
 RACES_TORSO ={ "TORSO_ASTRO", "TORSO_VANILLA", "TORSO_GEK", "TORSO_VYK", "TORSO_FOURTH", "TORSO_BUILDERS"}
 
 -- heads to apply per race to exclude
@@ -261,6 +262,7 @@ HEADS =
 										"HEAD_APODWASP",
 										"HEAD_APODCRY",
 										"HEAD_APODTOXIC",
+										"HEAD_DIVING",
 									  },
 					  },
 		["BUI"] 	= {	["EXCLUDE"] = "BUI",
@@ -415,7 +417,7 @@ end
 
 
 -- asking for backpack
-BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE"}
+BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_SENT", "BACKPACK_ATLAS", "BACKPACK_CAPE", "BACKPACK_DIVING"}
 
 LIST_DISPLAY = ""
 for i,j in pairs(BACKPACK_LIST) do

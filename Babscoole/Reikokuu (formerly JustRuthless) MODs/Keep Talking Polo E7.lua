@@ -3,14 +3,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Keep Talking Polo E7.pak",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"] = "Keep Talking Polo E7 makes Polo's Expedition 7 Leviathan dialogue stay open when turning in Liquid Sun, Ancestral Memories and Somnal Dust.",
-["NMS_VERSION"]     = "5.05",
+["NMS_VERSION"]     = "5.10",
 ["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\SEASONALBESPOKEMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\SEASONALBESPOKEMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

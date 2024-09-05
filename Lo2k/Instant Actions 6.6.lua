@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Instant Actions 6.5.pak", 
+["MOD_FILENAME"] 			= "Instant Actions 6.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.03",
+["NMS_VERSION"]				= "5.10",
 ["MOD_DESCRIPTION"]			= "This mods makes clicks and keys press instant",
 ["MODIFICATIONS"] 			= 
 	{

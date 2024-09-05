@@ -601,6 +601,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="BIOSHIP_PROC",   ["P_NAME"]="BIOSHIP_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/",                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="SAILSHIP_PROC",  ["P_NAME"]="SAILSHIP_PROC",            ["PATH"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="VRSPEEDER",      ["P_NAME"]="VRSPEEDER",                ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="WRACER",         ["P_NAME"]="WRACER",                   ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="MECH_SUIT",      ["P_NAME"]="MECH_SUIT",                ["PATH"]="MODELS/COMMON/VEHICLES/MECH_SUIT/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BIKE",           ["P_NAME"]="BIKE",                     ["PATH"]="MODELS/COMMON/VEHICLES/BIKE/",                                               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BUGGY",          ["P_NAME"]="BUGGY",                    ["PATH"]="MODELS/COMMON/VEHICLES/BUGGY/",                                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
@@ -701,6 +702,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="DMGMACHINE_POD", ["P_NAME"]="DAMAGEDMACHINERY_POD",     ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DAMAGEDMACHINERY/",                   ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="HEXMONOLITH",    ["P_NAME"]="HEXMONOLITH",              ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="SMALLMONOLITH",  ["P_NAME"]="SMALLMONOLITH",            ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/",                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
+    { ["ID_NAME"]="WAYPOINT",       ["P_NAME"]="WAYPOINT",                 ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/",               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="BUILDINGS",   ["ICON"]=BLDGICON },
     { ["ID_NAME"]="ANOMALY",        ["P_NAME"]="ANOMALY",                  ["PATH"]="MODELS/SPACE/ANOMALY/",                                                      ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="ATLASSTATION",   ["P_NAME"]="ATLASSTATION",             ["PATH"]="MODELS/SPACE/ATLASSTATION/",                                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
     { ["ID_NAME"]="NEXUS",          ["P_NAME"]="NEXUS",                    ["PATH"]="MODELS/SPACE/NEXUS/",                                                        ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="SPACE",       ["ICON"]=SPACEICON },
@@ -1525,7 +1527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "5.05",
+["NMS_VERSION"]   = "5.10",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {
@@ -1828,8 +1830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "MESH"},
-                            ["VALUE_MATCH"] = "{._imposter}",
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_MATCH"] = "{.*_imposter}",
                             ["REMOVE"] = "SECTION",
                         }
                     },

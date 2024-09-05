@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "NoPlanetaryRings.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.05",
+["NMS_VERSION"]     = "5.10",
 ["MOD_DESCRIPTION"] = "Removes planetary rings",
 ["MODIFICATIONS"]   =
     {

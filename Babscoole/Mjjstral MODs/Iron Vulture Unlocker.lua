@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "5.05",
+["NMS_VERSION"]     = "5.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -287,19 +287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\TESTS\EFFECTTEST.ANIM.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"FrameCount", "10"},
-                                {"NodeCount",  "0"},
-                            }
-                        },
-                    }
-                },
             }
         }
     },
@@ -328,6 +315,71 @@ NMS_MOD_DEFINITION_CONTAINER =
  </Property>
 </Data>
 ]]
-        }
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
+            ["FILE_CONTENT"] =
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkAnimMetadata">
+  <Property name="NodeData">
+    <Property value="TkAnimNodeData.xml">
+      <Property name="Node" value="AnimatedTrans" />
+      <Property name="RotIndex" value="0" />
+      <Property name="TransIndex" value="0" />
+      <Property name="ScaleIndex" value="0" />
+    </Property>
+  </Property>
+  <Property name="AnimFrameData">
+    <Property value="TkAnimNodeFrameData.xml">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property value="TkAnimNodeFrameData.xml">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+    <Property value="TkAnimNodeFrameData.xml">
+      <Property name="Rotations" />
+      <Property name="Translations" />
+      <Property name="Scales" />
+    </Property>
+  </Property>
+  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+    <Property name="Rotations">
+      <Property value="Quaternion.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+        <Property name="w" value="1" />
+        <Property name="dropComponent" value="3" />
+      </Property>
+    </Property>
+    <Property name="Translations">
+      <Property value="Vector4f.xml">
+        <Property name="x" value="-0.73121876" />
+        <Property name="y" value="0.08333181" />
+        <Property name="z" value="-0.02858855" />
+        <Property name="t" value="1" />
+      </Property>
+    </Property>
+    <Property name="Scales">
+      <Property value="Vector4f.xml">
+        <Property name="x" value="1" />
+        <Property name="y" value="1" />
+        <Property name="z" value="1" />
+        <Property name="t" value="1" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="FrameCount" value="10" />
+  <Property name="NodeCount" value="0" />
+  <Property name="Has30HzFrames" value="False" />
+</Data>
+]]
+        },
     }
 }

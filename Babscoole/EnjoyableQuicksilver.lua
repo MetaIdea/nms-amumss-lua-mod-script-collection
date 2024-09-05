@@ -252,7 +252,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
     ["MOD_AUTHOR"] = "ArtisticMisfit",
     ["LUA_AUTHOR"] = "Leonard, TheLich, Babscoole, ArtisticMisfit",
-    ["NMS_VERSION"] = "5.05",
+    ["NMS_VERSION"] = "5.10",
     ["MODIFICATIONS"] = {{
         ["MBIN_CHANGE_TABLE"] = {{
             ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = REWARD_ENTRIES
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/NPCMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/PIRATEMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_PIRATE_MSG"},
                 ["SECTION_UP"] = 2,
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/MULTIPLAYERMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/MULTIPLAYERMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MPMISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,

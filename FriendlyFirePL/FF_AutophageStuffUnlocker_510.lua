@@ -4,13 +4,13 @@
 METADATA_MOD_NAME       = "AutophageStuffUnlocker"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "471"
+METADATA_NMS_VERSION    = "510"
 METADATA_MOD_DESC       = "This mod allows players to access Autophage content without completing main story line quests and unlocking a Harmonic Camp (other conditions still apply)"
 
 
 
 -- files affected by this mod
-FILE_MISSIONS_AUTOPHAGE = "METADATA\\SIMULATION\\MISSIONS\\NPCBUILDERSMISSIONTABLE.MBIN"
+FILE_MISSIONS_AUTOPHAGE = "METADATA\\SIMULATION\\MISSIONS\\TABLES\\NPCBUILDERSMISSIONTABLE.MBIN"
 FILE_METADATA_CUSTOMISATION = "METADATA\\GAMESTATE\\PLAYERDATA\\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN"
 
 ----------------------------------------------------------------------------------------------------

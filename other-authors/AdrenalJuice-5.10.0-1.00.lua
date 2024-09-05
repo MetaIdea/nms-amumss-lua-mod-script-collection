@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "AdrenalJuice-5.00.1-1.00.pak",
+["MOD_FILENAME"] 			= "AdrenalJuice-5.10.0-1.00.pak",
 ["MOD_AUTHOR"]				= "Tinz",
-["NMS_VERSION"]				= "5.00.1",
+["NMS_VERSION"]				= "5.10.0",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -106,9 +106,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["PRECEDING_KEY_WORDS"] = "",
 						["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "HoverSpeedFactor", 					"0" }, 		--Original "20"
+								{ "HoverSpeedFactor", 					"-1" }, 		--Original "20"
 								{ "CruiseHeight", 						"0" }, 		--Original "250"
 								{ "HoverMaxSpeed", 						"1200" }, 	--Original "150"
+								{ "HoverMinSpeed",      				"-1"},      -- Original 1
 								{ "MiniWarpSpeed",						"150000"}	--Original "30000" (5x)
 							}
 						},
@@ -137,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "MaxSpeed", 							"1200" }, 	--Original "125"
-								{ "MinSpeed", 							"0" }, 		--Original "20"
+								{ "MinSpeed", 							"-1" }, 		--Original "20"
 								{ "Falloff", 							"0.0" }, 		--Original "0.5"
 								{ "BoostMaxSpeed", 						"1200" }, 	--Original "155"
 								{ "BoostFalloff", 						"0.0" }, 		--Original "0.7"
@@ -169,7 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "MaxSpeed", 							"1200" }, 	--Original "125"
-								{ "MinSpeed", 							"0" }, 		--Original "20"
+								{ "MinSpeed", 							"-1" }, 		--Original "20"
 								{ "Falloff", 							"0.0" }, 	--Original "0.5"
 								{ "BoostMaxSpeed", 						"1200" }, 	--Original "150"
 								{ "BoostFalloff", 						"0.0" }, 	--Original "0.7"
@@ -201,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "MaxSpeed", 							"1200" }, 	--Original "130"
-								{ "MinSpeed", 							"0" }, 		--Original "20"
+								{ "MinSpeed", 							"-1" }, 		--Original "20"
 								{ "Falloff", 							"0.0" }, 	--Original "0.5"
 								{ "BoostMaxSpeed", 						"1200" }, 	--Original "185"
 								{ "BoostFalloff", 						"0" }, 		--Original "0.7"

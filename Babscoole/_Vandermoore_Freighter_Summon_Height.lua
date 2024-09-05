@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Vandermoore_Freighter_Summon_Height.pak",
 ["MOD_AUTHOR"]    = "Vandermoore",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.05",
+["NMS_VERSION"]   = "5.10",
 ["MODIFICATIONS"] =
     {
         {

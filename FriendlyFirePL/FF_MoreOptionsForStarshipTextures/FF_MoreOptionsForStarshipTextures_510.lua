@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "MoreOptionsForStarshipTextures"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "505"
+METADATA_NMS_VERSION    = "510"
 METADATA_MOD_DESC       = "This mod adds a bunch of new texture options for assembling custom fighter and hauler ships in starship fabricators."
 
 
@@ -610,7 +610,7 @@ OPTION_FF_STRIPES =
 
 ["main3"] =
 {
-["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.STRIPES.DDS",
+["diffuse"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.DDS",
 ["normal"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.NORMAL.DDS",
 ["mask"] = "TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.MASKS.DDS",
 },

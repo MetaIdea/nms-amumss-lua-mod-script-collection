@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "ExoticStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "505"
+METADATA_NMS_VERSION    = "5051"
 METADATA_MOD_DESC       = "This mod enables synthesis of exotic starships based on the Guppy / Ball cockpit in starship fabricators. Modifies files in METADATA\\GAMESTATE\\PLAYERDATA and TEXTURES\\COMMON\\SPACECRAFT\\S-CLASS."
 
 
@@ -24,7 +24,7 @@ FILE_METADATA_CUSTOM_TEXTURES =             "METADATA\\GAMESTATE\\PLAYERDATA\\CH
 FILE_TEXTURES_ROYAL_TRIM =                  "TEXTURES\\COMMON\\SPACECRAFT\\S-CLASS\\ROYALSCLASS_TRIM.TEXTURE.MBIN"
 FILE_TEXTURES_ROYAL_DETAILS =               "TEXTURES\\COMMON\\SPACECRAFT\\S-CLASS\\DETAILS.TEXTURE.MBIN"
 
-
+FILE_UI_SHIP_BUILDER =                      "UI\\SHIP_BUILDER_PAGE.MBIN"
 
 --------------------------------------------------
 -- items used in assembly process
@@ -110,9 +110,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --------------------------------------------------
 
                         {
-                            -- change default preview to cockpit C
+                            -- change default preview to cockpit C, point line to locator node
                             ["SKW"] = {"SlotID","SHUTTLE_COCKPIT",},
-                            ["VCT"] = {{"ActivatedDescriptorGroupID","EXOTIC_ROYALC",},},
+                            ["VCT"] = {{"ActivatedDescriptorGroupID","EXOTIC_ROYALC",},{"UILocatorName","CockpitPos",},},
+                        },
+
+                        {
+                            -- add shared cockpit node for preview with no parts
+                            ["SKW"] = {"SlotID","SHUTTLE_COCKPIT",},
+                            ["PKW"] = "AssociatedNonProcNodes",
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] = [[<Property value="NMSString0x20.xml"><Property name="Value" value="_SClassShip_Royal" /></Property>]],
                         },
 
                         {
@@ -140,9 +148,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --------------------------------------------------
 
                         {
-                            -- change default preview to wings B
+                            -- change default preview to wings B, point line to locator node
                             ["SKW"] = {"SlotID","SHUTTLE_WING",},
-                            ["VCT"] = {{"ActivatedDescriptorGroupID","EXOTIC_WINGSB",},},
+                            ["VCT"] = {{"ActivatedDescriptorGroupID","EXOTIC_WINGSB",},{"UILocatorName","Inventory",},},
                         },
 
                         {
@@ -174,13 +182,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --------------------------------------------------
 
                         {
-                            -- change default preview to engine A, change label and icon for engine slot
+                            -- change default preview to engine A, change label and icon for engine slot, point line to locator node
                             ["SKW"] = {"SlotID","SHUTTLE_HULL",},
                             ["VCT"] =
                             {
                                 {"LabelLocID","UI_SHIP_BUILDER_INPUT_ENGINE",},
                                 {"UISlotGraphicLayer","THRUSTER",},
                                 {"ActivatedDescriptorGroupID","EXOTIC_ENGINEA",},
+                                {"UILocatorName","MaintenanceSlot1",},
                             },
                         },
 
@@ -213,6 +222,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --------------------------------------------------
                         -- reactor core
                         --------------------------------------------------
+
+                        {
+                            -- point line to locator node
+                            ["SKW"] = {"SlotID","SHUTTLE_CORE",},
+                            ["VCT"] = {{"UILocatorName","MaintenanceSlot0",},},
+                        },
 
                         {
                             -- remove options for C-B-A class reactor cores
@@ -687,6 +702,46 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- edit new layer to force a colour palette
                             ["SKW"] = {"Name","PAINTED",},
                             ["VCT"] = {{"ColourAlt","Alternative2",},},
+                        },
+                    }
+                },
+
+                {
+                    ----------------------------------------------------------------------------------------------------
+                    -- ship fabricator UI MBIN
+                    ----------------------------------------------------------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_UI_SHIP_BUILDER,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            --  get data template for indicator dot
+                            ["SKW"] = {"ID","DOT04",},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["SEC_SAVE_TO"] = "SEC_UI_DOT",
+                        },
+
+                        {
+                            -- edit template: change ID and position
+                            ["SEC_EDIT"] = "SEC_UI_DOT",
+                            ["VCT"] = 
+                            {
+                                {"ID","DOT05",},
+                                {"PositionX","@+10",},
+                            },
+                        },
+
+                        {
+                            -- add the new indicator
+                            ["SKW"] = {"ID","DOT04",},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_UI_DOT",
+                        },
+
+                        {
+                            -- move all the dots 5px to the left
+                            ["SKW"] = {{"ID","DOT01",},{"ID","DOT02",},{"ID","DOT03",}, {"ID","DOT04",}, {"ID","DOT05",},},
+                            ["VCT"] = {{"PositionX","@-5",},}
                         },
                     }
                 },

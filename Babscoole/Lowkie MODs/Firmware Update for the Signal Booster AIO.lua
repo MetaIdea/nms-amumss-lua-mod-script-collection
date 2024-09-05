@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.05",
+  ["NMS_VERSION"]     = "5.10",
   ["MODIFICATIONS"]   =
     {
         {
@@ -299,7 +299,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -311,7 +311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\ATLASPATHTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ATLASPATHTABLE.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -369,6 +369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
               <Property value="GcMissionConditionMissionMessage.xml">
                 <Property name="Message" value="M_GLP_END" />
+                <Property name="MessageToFormatSeasonalIDInto" value="" />
               </Property>
 ]]
                         },
@@ -468,7 +469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\ENABLINGCONDITIONSTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ENABLINGCONDITIONSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

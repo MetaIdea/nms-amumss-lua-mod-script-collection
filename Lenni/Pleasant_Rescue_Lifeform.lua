@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Pleasant_Rescue_Lifeform.pak",
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.52",
+["NMS_VERSION"]				= "5.10",
 ["MOD_DESCRIPTION"]			= "Increases the chance of the authenticator scan to work in the Rescue Stranded Lifeform nexus mission",
 ["MODIFICATIONS"] 			= 
 	{
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/COMMUNITYMISSIONTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TABLES/COMMUNITYMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{

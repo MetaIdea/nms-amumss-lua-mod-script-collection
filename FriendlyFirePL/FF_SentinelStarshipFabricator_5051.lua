@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "SentinelStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "470"
-METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process"
+METADATA_NMS_VERSION    = "5051"
+METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process. Modifies files in METADATA\\GAMESTATE\\PLAYERDATA\\ and UI directories."
 
 
 
@@ -27,43 +27,20 @@ FILE_UI_SHIP_SLOT =                         "UI\\SLOTS\\SLOT_SHIPITEM.MBIN"
 -- slot positions on the fabricator screen
 --------------------------------------------------
 
-UI_COCKPIT_X = 28
-UI_COCKPIT_Y = 30
+UI_COCKPIT = {28,30}
+UI_LIGHTS = {28,40}
+UI_GRILL = {28,60}
+UI_SKIRT = {33,60}
 
-UI_LIGHTS_X = 28
-UI_LIGHTS_Y = 40
+UI_WINGSO = {33,30}
+UI_WINGSU = {33,40}
+UI_WINGSH = {38,30}
+UI_WINGSB = {48,30}
 
-UI_WINGSO_X = 33
-UI_WINGSO_Y = 30
-
-UI_WINGSU_X = 33
-UI_WINGSU_Y = 40
-
-UI_WINGSH_X = 38
-UI_WINGSH_Y = 30
-
-UI_FLAPS_X = 43
-UI_FLAPS_Y = 30
-
-UI_WINGSB_X = 48
-UI_WINGSB_Y = 30
-
-UI_REACTOR_X = 53
-UI_REACTOR_Y = 35
-
-UI_GRILL_X = 28
-UI_GRILL_Y = 60
-
-UI_SKIRT_X = 33
-UI_SKIRT_Y = 60
-
-UI_ADDON_X = 65
-UI_ADDON_Y = 60
-
-UI_FLAME_X = 70
-UI_FLAME_Y = 60
-
-
+UI_FLAPS = {43,30}
+UI_ADDON = {65,60}
+UI_FLAME = {70,60}
+UI_REACTOR = {53,35}
 
 ----------------------------------------------------------------------------------------------------
 -- items used in assembly process
@@ -371,12 +348,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOM_MODULES,
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        --------------------------------------------------
-                        -- enable Sentinel ships in fabricator
-                        -- change label in bottom bar
-                        -- change proc gen scene to Sentinel ships
-                        --------------------------------------------------
                         {
+                            -- enable Sentinel ships in fabricator
+                            -- change label in bottom bar and point to proc gen scene
                             ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
                             ["VCT"] = 
                             {
@@ -386,18 +360,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
 
-                        --------------------------------------------------
-                        -- reactor cores
-                        --------------------------------------------------
-
                         {
-                             -- change slot name, move the input slot
+                             -- change reactor slot name, move the input slot
                             ["SKW"] = {"SlotID","SHUTTLE_CORE",},
                             ["VCT"] = 
                             {
                                 {"SlotID","SENT_CORE",},
-                                {"x",UI_REACTOR_X,},
-                                {"y",UI_REACTOR_Y,},
+                                {"x",UI_REACTOR[1],},
+                                {"y",UI_REACTOR[2],},
                                 {"LabelLocID","NUCLEUS",},
                             },
                         },
@@ -407,10 +377,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         ReplaceReactorCore("B"),
                         ReplaceReactorCore("A"),
                         ReplaceReactorCore("S"),
-
-                        --------------------------------------------------
-                        -- colour customisation                  
-                        --------------------------------------------------
 
                         {
                             -- remove secondary and tertiary colour pickers
@@ -458,6 +424,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         GetSlotTemplate(),RenameSlotGroup("SLOT10GRP"),RemoveLabelText(),AddSlotAfter("SLOT09GRP"),
                         GetSlotTemplate(),RenameSlotGroup("SLOT11GRP"),RemoveLabelText(),AddSlotAfter("SLOT10GRP"),
                         GetSlotTemplate(),RenameSlotGroup("SLOT12GRP"),RemoveLabelText(),AddSlotAfter("SLOT11GRP"),
+
+                        -- add 5th indicator dot to the bottom bar, move all dots to center them out
+                        {   ["SKW"] = {"ID","DOT04",},      ["SECTION_UP_SPECIAL"] = 1,     ["SEC_SAVE_TO"] = "SEC_UI_DOT",                                             },
+                        {   ["SEC_EDIT"] = "SEC_UI_DOT",    ["VCT"] = {{"ID","DOT05",},{"PositionX","@+10",},},                                                         },
+                        {   ["SKW"] = {"ID","DOT04",},      ["SECTION_UP_SPECIAL"] = 1,     ["ADD_OPTION"] = "ADDafterSECTION",     ["SEC_ADD_NAMED"] = "SEC_UI_DOT",   },
+                        {   ["SKW"] ={{"ID","DOT01",},{"ID","DOT02",},{"ID","DOT03",}, {"ID","DOT04",},{"ID","DOT05",},},   ["VCT"] = {{"PositionX","@-5",},},          },
                     }
                 },
 
@@ -515,6 +487,11 @@ function Modules_RemoveItems(list)
 
     return {["SEC_EDIT"] = FUNCTION_SECTION,    ["SKW"] = SKW,      ["REMOVE"] = "SECTION",}
 
+end
+
+function Modules_AddNonProcNode(id) return
+{   ["SEC_EDIT"] = FUNCTION_SECTION,    ["PKW"] = "AssociatedNonProcNodes",     ["CREATE_HOS"] = "TRUE",
+    ["ADD"] = [[<Property value="NMSString0x20.xml"><Property name="Value" value="]]..id..[[" /></Property>]],      }
 end
 
 --------------------------------------------------
@@ -598,8 +575,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_COCKPIT",},
         {"LabelLocID","COCKPIT",},
         {"UILocatorName","SLOT_COCKPIT",},
-        {"x",UI_COCKPIT_X,},
-        {"y",UI_COCKPIT_Y,},
+        {"x",UI_COCKPIT[1],},
+        {"y",UI_COCKPIT[2],},
         {"UISlotGraphicLayer","FUSELAGE",},
         {"ActivatedDescriptorGroupID","SENT_PIT_A",},
     }
@@ -630,8 +607,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_LIGHTS",},
         {"LabelLocID","DECAL",},
         {"UILocatorName","SLOT_COCKPIT",},
-        {"x",UI_LIGHTS_X,},
-        {"y",UI_LIGHTS_Y,},
+        {"x",UI_LIGHTS[1],},
+        {"y",UI_LIGHTS[2],},
         {"UISlotGraphicLayer","REACTOR",},
         {"ActivatedDescriptorGroupID","",},
     }
@@ -690,8 +667,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_FLAPS",},
         {"LabelLocID","AILERON",},
         {"UILocatorName","SLOT_ENGINES",},
-        {"x",UI_FLAPS_X,},
-        {"y",UI_FLAPS_Y,},
+        {"x",UI_FLAPS[1],},
+        {"y",UI_FLAPS[2],},
         {"UISlotGraphicLayer","FUSELAGE",},
         {"ActivatedDescriptorGroupID","SENT_FLAPS_A",},
     }
@@ -721,8 +698,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_SKIRTB",},
         {"LabelLocID","CHASSIS",},
         {"UILocatorName","SLOT_HULL",},
-        {"x",UI_SKIRT_X,},
-        {"y",UI_SKIRT_Y,},
+        {"x",UI_SKIRT[1],},
+        {"y",UI_SKIRT[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_SB_A1S6",},
     }
@@ -736,6 +713,7 @@ function Modules_BuildChangeTable(exml)
     local INSTRUCTIONS = 
     {
         Modules_GetSlotTemplate("SCI_L_WING"),
+        Modules_AddNonProcNode("CockpitData"),
         Modules_ApplyVCT(VCT),
         Modules_RemoveItems(ITEMS),
 
@@ -778,8 +756,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_WINGV_T",},
         {"LabelLocID","UPPER WINGS",},
         {"UILocatorName","SLOT_WINGS",},
-        {"x",UI_WINGSO_X,},
-        {"y",UI_WINGSO_Y,},
+        {"x",UI_WINGSO[1],},
+        {"y",UI_WINGSO[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_WO_NONE",},
     }
@@ -835,8 +813,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_WINGV_B",},
         {"LabelLocID","LOWER WINGS",},
         {"UILocatorName","SLOT_WINGS",},
-        {"x",UI_WINGSU_X,},
-        {"y",UI_WINGSU_Y,},
+        {"x",UI_WINGSU[1],},
+        {"y",UI_WINGSU[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_WU_NONE",},
     }
@@ -875,8 +853,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_WINGH",},
         {"LabelLocID","SIDE WINGS",},
         {"UILocatorName","SLOT_WINGS",},
-        {"x",UI_WINGSH_X,},
-        {"y",UI_WINGSH_Y,},
+        {"x",UI_WINGSH[1],},
+        {"y",UI_WINGSH[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_WH_NONE",},
     }
@@ -940,8 +918,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_WINGH",},
         {"LabelLocID","BACK WINGS",},
         {"UILocatorName","SLOT_WINGS",},
-        {"x",UI_WINGSB_X,},
-        {"y",UI_WINGSB_Y,},
+        {"x",UI_WINGSB[1],},
+        {"y",UI_WINGSB[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_WB_NONE",},
     }
@@ -1004,8 +982,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_GRILL",},
         {"LabelLocID","MAXILLA",},
         {"UILocatorName","SLOT_COCKPIT",},
-        {"x",UI_GRILL_X,},
-        {"y",UI_GRILL_Y,},
+        {"x",UI_GRILL[1],},
+        {"y",UI_GRILL[2],},
         {"UISlotGraphicLayer","FUSELAGE",},
         {"ActivatedDescriptorGroupID","SENT_GRILL_NULL",},
     }
@@ -1043,8 +1021,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_FLAME",},
         {"LabelLocID","FLAME",},
         {"UILocatorName","SLOT_ENGINES",},
-        {"x",UI_FLAME_X,},
-        {"y",UI_FLAME_Y,},
+        {"x",UI_FLAME[1],},
+        {"y",UI_FLAME[2],},
         {"UISlotGraphicLayer","THRUSTER",},
         {"ActivatedDescriptorGroupID","SENT_FLAME_1",},
     }
@@ -1081,8 +1059,8 @@ function Modules_BuildChangeTable(exml)
         {"SlotID","SENT_ADDON",},
         {"LabelLocID","ACCEESSORY",},
         {"UILocatorName","SLOT_WINGS",},
-        {"x",UI_ADDON_X,},
-        {"y",UI_ADDON_Y,},
+        {"x",UI_ADDON[1],},
+        {"y",UI_ADDON[2],},
         {"UISlotGraphicLayer","WINGS",},
         {"ActivatedDescriptorGroupID","SENT_ADDON_NONE",},
     }

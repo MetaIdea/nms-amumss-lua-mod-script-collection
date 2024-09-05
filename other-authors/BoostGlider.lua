@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "UnderwaterMaxSpeed", 				"12" }, 	--Orbital "4"
 								{ "WeaponChangeModeTime", 				"0.5" }, 	--Orbital "0.75"
 								{ "WeaponShotgunSlowdown", 				"0.9" }, 	--Orbital "0.7"
-								{ "AutoAim", 							"True" }, 	--Orbital "False"
+								{ "AutoAim",							"True" }, 	--Orbital "False"
 							}
 						}
 					}
