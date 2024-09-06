@@ -4,7 +4,7 @@ local mod_desc = [[
 
   * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]-------------------------------------------------------------
-local mod_version = '1.54'
+local mod_version = '1.55'
 
 local prod_icons = {
 	CARBON_SEAL		= 'PRODUCTS/PRODUCT.MSEAL.DDS',
@@ -45,7 +45,7 @@ local prod_icons = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Product Icons.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.05',
+	NMS_VERSION			= '5.11',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "5-01-1"
-ModVersion = "2-6-0"
+GameVersion = "5-10"
+ModVersion = "2-6-1"
 
 -- =========
 -- CONSTANTS

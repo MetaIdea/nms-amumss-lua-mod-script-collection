@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Technology"
 BaseDescription = [[Balance adjustments for technology added by the Interceptor update.]]
-GameVersion = "5-01-1"
-ModVersion = "2"
+GameVersion = "5-10"
+ModVersion = "3"
 
 local Config = {
   ModifyProductCharge = {
@@ -60,10 +60,6 @@ local function NMSString0x10(value)
 </Property>]]
 end
 
-local function addSpaces(block, x)
-  return block:gsub("<", string.rep(" ", x) .. "<")
-end
-
 local function tableMap(t, fn)
   local res = {}
   for _, v in ipairs(t) do
@@ -116,11 +112,9 @@ local function createChargeList(chargeByList)
     return NMSString0x10(v)
   end)
 
-  local chargeByXml = [[<Property name="ChargeBy">
-]] .. addSpaces(table.concat(chargeList, "\n"), 2) .. [[
+  return [[<Property name="ChargeBy">
+]] .. table.concat(chargeList, "\n") .. [[
 </Property>]]
-
-  return addSpaces(chargeByXml, 6)
 end
 
 local function rewriteChargeBy(techId, chargeByList)

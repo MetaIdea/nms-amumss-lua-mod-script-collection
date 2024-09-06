@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "InterceptorAdjustments_Refiner"
 BaseDescription = [[Balance adjustments for refinement recipes added by the Interceptor update.]]
-GameVersion = "5-01-1"
-ModVersion = "2"
+GameVersion = "5-10"
+ModVersion = "3"
 
 local Config = {
   ModRefinerRecipes = {
@@ -98,10 +98,6 @@ MODIFICATIONS	= {{
 local Ref = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 local refinerChangeTable = {}
 
-local function addSpaces(block, x)
-  return block:gsub("<", string.rep(" ", x) .. "<")
-end
-
 local function tableMap(t, fn)
   local res = {}
   for _, v in ipairs(t) do
@@ -139,7 +135,7 @@ local function GcRefinerRecipe(recipe)
     <Property name="Amount" value="]]..recipe.Result.Amount..[[" />
   </Property>
   <Property name="Ingredients">
-]]..addSpaces(table.concat(ingredients, "\n"), 4)..[[
+]]..table.concat(ingredients, "\n")..[[
   </Property>
 </Property>]]
 end
@@ -183,7 +179,7 @@ if Config.AddRefinerRecipes.Enabled and #Config.AddRefinerRecipes.Recipes > 0 th
     PRECEDING_KEY_WORDS = {"Table"},
     REPLACE_TYPE = "ADDafterSECTION",
     LINE_OFFSET = -1,
-    ADD = addSpaces(table.concat(recipeTableAdditions, "\n"), 4)
+    ADD = table.concat(recipeTableAdditions, "\n")
   }
 end
 

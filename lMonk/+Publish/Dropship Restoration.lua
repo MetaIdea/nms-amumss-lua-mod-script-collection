@@ -8,6 +8,8 @@ local mod_desc = [[
 
 local dropship = {
 	ship =		{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN',								skip=true},
+	inter_a = 	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR.SCENE.MBIN',					skip=true},
+	inter_b = 	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB_INTERIOR.SCENE.MBIN',					skip=true},
 	cockpit_a =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA.SCENE.MBIN'},
 	cockpit_b =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB.SCENE.MBIN'},
 	cockpit_c =	{src='MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITC.SCENE.MBIN'},
@@ -60,11 +62,40 @@ local dropship = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship Restoration.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.71',
+	NMS_VERSION				= '5.11',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 		MBIN_CHANGE_TABLE		= {
+		{-- |dropship interior lights|
+			MBIN_FILE_SOURCE	= {
+				dropship.inter_a.src,
+				dropship.inter_b.src,
+			},
+			EXML_CHANGE_TABLE	= {
+				{
+					REPLACE_TYPE 		= 'All',
+					SPECIAL_KEY_WORDS	= {'Name', 'INTENSITY'},
+					VALUE_CHANGE_TABLE	= {
+						{'Value',		'@ * 0.6'}
+					}
+				},
+				{
+					REPLACE_TYPE 		= 'All',
+					SPECIAL_KEY_WORDS	= {'Name', 'COL_R'},
+					VALUE_CHANGE_TABLE	= {
+						{'Value',		0.8}
+					}
+				},
+				{
+					REPLACE_TYPE 		= 'All',
+					SPECIAL_KEY_WORDS	= {'Name', 'COL_B'},
+					VALUE_CHANGE_TABLE	= {
+						{'Value',		0.2}
+					}
+				},
+			}
+		},
 		{-- |dropship subwing_F dim lights|
 			MBIN_FILE_SOURCE	= {
 				dropship.s_wing_fl.src,

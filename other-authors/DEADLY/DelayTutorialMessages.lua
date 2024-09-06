@@ -1,18 +1,18 @@
-DELAY_SECONDS = 1800
+DELAY_SECONDS = 7200
 
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"]    = "DelayTutorialMessages.pak",
     ["MOD_AUTHOR"]      = "gh0stwizard",
     ["MOD_DESCRIPTION"] = "Delays Planetary Chart, Exosuit Upgrade Chart and others notifications.",
-    ["NMS_VERSION"]     = "5.0",
+    ["NMS_VERSION"]     = "5.10",
     ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 --
-                -- METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN
+                -- METADATA/SIMULATION/MISSIONS/TABLES/TUTORIALMISSIONTABLE.MBIN
                 --
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/TUTORIALMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         { -- Exosuit Upgrade Chart "Upgrade the Exosuit at a Drop Pod to add inventory slots..."
                             ["SPECIAL_KEY_WORDS"]  = { "MissionID", "INV_HINT_MAP", "Stage", "GcMissionSequenceShowHintMessage.xml" },
@@ -41,10 +41,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 --
-                -- METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN
+                -- METADATA/SIMULATION/MISSIONS/TABLES/PIRATEMISSIONTABLE.MBIN
                 --
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/PIRATEMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         -- Reputation Management "Forged Passport acquired..."
                         {
@@ -85,10 +85,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 --
-                -- METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN
+                -- METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN
                 --
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         { -- Exploration Opportunity Detected "Emergency Signal Scanner acquired To use it, locate the Receiver in the Inventory..."
                             ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ABAND_FIND_HINT", "Stage", "GcMissionSequenceShowHintMessage.xml" },

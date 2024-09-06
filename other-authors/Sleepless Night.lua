@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Sleepless Night 2.8.pak", 
+["MOD_FILENAME"] 			= "Sleepless Night.pak", 
 ["MOD_AUTHOR"]				= "Degraaaff, KuroPeach",
 ["LUA_AUTHOR"]				= "Lo2k, KuroPeach",
 ["NMS_VERSION"]				= "5.03",

@@ -24,7 +24,7 @@ local mod_desc = [[
    name to object_spawn_prop with a unique key, then adding tag modifiers for it.
 ]]-------------------------------------------------------------------------------------
 
-local mod_version = '2.23'
+local mod_version = '2.24'
 
 --	Properties of [GcObjectSpawnData.xml] being modified
 local spawn_data = {
@@ -658,7 +658,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.large flora.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.05',
+	NMS_VERSION			= '5.11',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..FILENAME..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie & Babscoole",
-  ["NMS_VERSION"]     = "5.10",
+  ["NMS_VERSION"]     = "5.11",
   ["MODIFICATIONS"]   =
     {
         {
@@ -240,6 +240,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["SEC_ADD_NAMED"] = "GetMissionMessageReward",
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "PIRATES_DELAY"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+                            ["SEC_SAVE_TO"] = "GetRewardMissionSeeded",
+                        },
                     },
                 },
                 {
@@ -299,18 +304,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN",
-                    ["MBIN_FS_DISCARD"] = "TRUE",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_DM_EXOTUT"},
-                            ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-                            ["SEC_SAVE_TO"] = "GetRewardMissionSeeded",
-                        },
-                    },
-                },
-                {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\ATLASPATHTABLE.MBIN",
                     ["MBIN_FS_DISCARD"] = "TRUE",
                     ["EXML_CHANGE_TABLE"] =
@@ -362,16 +355,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Message", "GALAXY_WARP"},
+                            ["SEC_SAVE_TO"] = "GetMissionCondition",
+                        },
+                        {
+                            ["SEC_EDIT"] = "GetMissionCondition",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Message", "M_GLP_END"},
+                            }
+                        },
+                        {
                             ["SEC_EDIT"] = "GetMissionSequenceGroup",
                             ["PRECEDING_KEY_WORDS"] = {"Conditions"},
                             ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
-[[
-              <Property value="GcMissionConditionMissionMessage.xml">
-                <Property name="Message" value="M_GLP_END" />
-                <Property name="MessageToFormatSeasonalIDInto" value="" />
-              </Property>
-]]
+                            ["SEC_ADD_NAMED"] = "GetMissionCondition",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Stage", "GcMissionSequenceWait.xml"},
@@ -656,7 +654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 local RewardTable             = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local ScanEventTablePlanet    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
-local EnablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][8]["EXML_CHANGE_TABLE"]
+local EnablingConditionsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
 
 --Add ScanEventTablePlanet entries
 for i=1, #ScanDataTable, 1 do

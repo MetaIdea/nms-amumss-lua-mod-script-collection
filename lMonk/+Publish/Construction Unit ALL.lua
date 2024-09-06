@@ -4,7 +4,7 @@ local mod_desc = [[
   * Does not include expedition rewards and quicksilver shop items.
 ]]----------------------------------------------------------------------
 
-local version = 1.37
+local version = 1.38
 
 local base_tree = {
 	{--	BaseParts
@@ -125,7 +125,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.00.1',
+	NMS_VERSION			= '5.11',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

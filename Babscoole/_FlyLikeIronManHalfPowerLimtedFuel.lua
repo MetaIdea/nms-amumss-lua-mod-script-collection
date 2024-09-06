@@ -2,10 +2,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_FlyLikeIronManV1.3HalfPowerLimtedFuel.pak",
+["MOD_FILENAME"]  = "_FlyLikeIronManV1.5HalfPowerLimtedFuel.pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.03",
+["NMS_VERSION"]   = "5.10",
 ["MODIFICATIONS"] =
     {
         {
@@ -19,27 +19,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TeleportRecentre",                    "True"},
+                                {"TeleportRecentre",                    "False"},
                                 {"JetpackUnderwaterDrainRate",          "0"},
                                 {"JetpackUnderwaterFillRate",           "99999"},
                                 {"UnderwaterMaxJetpackSpeed",           "20"},
                                 {"UnderwaterJetpackForce",              "15"},
                                 {"UnderwaterMaxJetpackEscapeSpeed",     "40"},
-                                {"ShowLowAmmoWarning",                  "False"},
+                                {"ShowLowAmmoWarning",                  "True"},
                                 {"JetpackJetAnimateOutTime",            "-2"},
                                 {"JetpackJetAnimateInTime",             "-2"},
-                                {"FreeJetpackRange",                    "3"},
-                                {"FreeJetpackRangePrime",               "3"},
-                                {"FreeJetpackRangeNonTerrain",          "3"},
+                                {"FreeJetpackRange",                    "999"},
+                                {"FreeJetpackRangePrime",               "999"},
+                                {"FreeJetpackRangeNonTerrain",          "999"},
                                 {"JetpackDrainHorizontalFactor",        "0.25"},
-                                {"RocketBootsImpulse",                  "25"},
-                                {"RocketBootsMinDesiredHeight",         "10"},
-                                {"RocketBootsMaxDesiredHeight",         "10"},
-                                {"RocketBootsHeightAdjustUpStrength",   "20"},
-                                {"RocketBootsHeightAdjustDownStrength", "-20"},
+                                {"RocketBootsImpulse",                  "3"},
+                                {"RocketBootsMinDesiredHeight",         "2"},
+                                {"RocketBootsMaxDesiredHeight",         "6"},
+                                {"RocketBootsHeightAdjustUpStrength",   "0.57"},
+                                {"RocketBootsHeightAdjustDownStrength", "0.3"},
                                 {"RocketBootsBoostTankDrainSpeed",      "0"},
                                 {"RocketBootsDriftTankDrainSpeed",      "0"},
-                                {"RocketBootsDriftDownwardForce",       "20"},
+                                {"RocketBootsDriftDownwardForce",       "0.5"},
                                 {"JetpackForce",                        "21"},
                                 {"JetpackBrake",                        "8"},
                                 {"JetpackMaxSpeed",                     "25"},
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SpaceJetpackForce",                   "9999"},
                                 {"SpaceJetpackMaxSpeed",                "99"},
                                 {"SpaceJetpackDrainRate",               "0"},
-                                {"UpgradeExosuitWithProduct",           "False"},
+                                {"UpgradeExosuitWithProduct",           "True"},
                             }
                         },
                         {
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Curve", "SmoothInOut"},
+                                {"Curve", "Squared"},
                             }
                         },
                     }
@@ -89,15 +89,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PanNear",                       "0"},
                                 {"PanFar",                        "10"},
                                 {"HorizRotationAngleMaxPerFrame", "10"},
-                                {"DistSpeedOutsideMainRange",     "5"},
-                                {"SpringSpeed",                   "0.065"},
-                                {"CenterStartTime",               "0"},
-                                {"CenterBlendTime",               "0"},
-                                {"CenterMaxSpring",               "0"},
-                                {"CenterMaxSpeed",                "0"},
-                                {"VelocityAnticipate",            "0"},
-                                {"VelocityAnticipateSpringSpeed", "0"},
-                                {"UseSpeedBasedSpring",           "False"},
+                                {"DistSpeedOutsideMainRange",     "15"},
+                                {"SpringSpeed",                   "0.07"},
+                                {"CenterStartTime",               "2"},
+                                {"CenterBlendTime",               "2"},
+                                {"CenterMaxSpring",               "2.2"},
+                                {"CenterMaxSpeed",                "2.8"},
+                                {"VelocityAnticipate",            "0.17"},
+                                {"VelocityAnticipateSpringSpeed", "0.4"},
+                                {"UseSpeedBasedSpring",           "True"},
                             }
                         },
                     }
