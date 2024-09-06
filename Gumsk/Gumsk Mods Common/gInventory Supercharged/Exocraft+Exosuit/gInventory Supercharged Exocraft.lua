@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gInventory Supercharged"
 ModNameSub = "Exocraft"
 BaseDescription = "Makes alll exocraft slots supercharged"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
 
@@ -40,13 +40,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml"},
 							PRECEDING_KEY_WORDS = {"SpecialSlots"},
-							["SECTION_ACTIVE"] = {2,3,4,5,6,7,8},
+							SECTION_ACTIVE = {2,3,4,5,6,7,8},
 							REMOVE = "SECTION",
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Inventory_TechOnly","GcInventoryContainer.xml","StackSizeGroup","GcInventoryStackSizeGroup.xml"},
 							LINE_OFFSET = "+3",
-							["SECTION_ACTIVE"] = {2,3,4,5,6,7,8},
+							SECTION_ACTIVE = {2,3,4,5,6,7,8},
 							ADD = AddSpecialSlots
 						},
 					},

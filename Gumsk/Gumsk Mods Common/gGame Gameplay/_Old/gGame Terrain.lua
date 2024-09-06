@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Terrain"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = FileSource1,
 					EXML_CHANGE_TABLE = {
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 
 							--Terrain Resources

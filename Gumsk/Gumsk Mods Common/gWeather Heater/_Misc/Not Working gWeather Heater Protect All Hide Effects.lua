@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Protect All"
 ModNameSub = "Hide Effects"
 BaseDescription = "Extends the range on the heaters"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\HEATER.ENTITY.MBIN"
 

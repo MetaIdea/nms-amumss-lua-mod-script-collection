@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = ""
 BaseDescription = "Proximity base doors"
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR\ENTITIES\MAINDOOR.ENTITY.MBIN"
 FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR.SCENE.MBIN"
@@ -229,3 +229,4 @@ MODIFICATIONS	= {
 	}
 }
 }}
+

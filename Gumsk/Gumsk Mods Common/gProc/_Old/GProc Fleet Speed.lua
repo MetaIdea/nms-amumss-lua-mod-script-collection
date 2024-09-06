@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GProc"
 ModNameSub = "Fleet Speed 0.05"
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 

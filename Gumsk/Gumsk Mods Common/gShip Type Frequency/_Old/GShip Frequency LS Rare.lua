@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GShip Frequency"
 ModNameSub = "LS Rare"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

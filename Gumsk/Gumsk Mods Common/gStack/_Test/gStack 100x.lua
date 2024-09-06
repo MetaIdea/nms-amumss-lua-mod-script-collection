@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gStack"
 ModNameSub = "x"..Multiplier
 BaseDescription = "Multiplies stack sizes"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN"
 FileSource2 = "METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = {FileSource1,FileSource2},
 					EXML_CHANGE_TABLE = {
 						{
-							MATH_OPERATION = "*",
+							["MATH_OPERATION"] = "*",
 							VALUE_CHANGE_TABLE = {
 								{"DefaultSubstanceMaxAmount",Multiplier},
 								{"DefaultProductMaxAmount",Multiplier},

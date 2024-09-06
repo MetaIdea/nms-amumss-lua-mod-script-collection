@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = "Exocraft Fire Rate"
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 

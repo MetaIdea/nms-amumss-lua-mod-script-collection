@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCam Live Action Photo Mode"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:

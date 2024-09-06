@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Offset"
 BaseDescription = "Camera modifications"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -203,7 +203,7 @@ EXML_CHANGE_TABLE = {
 		
 				{
 					PRECEDING_KEY_WORDS = "CharacterMiningCam",
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						-- {"OffsetX", "0"},
 						-- {"OffsetY", "-0.3"},

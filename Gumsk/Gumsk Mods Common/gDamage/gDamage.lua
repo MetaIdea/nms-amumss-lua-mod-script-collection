@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDamage"
 ModNameSub = ""
 BaseDescription = "Damage adjustments"
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"

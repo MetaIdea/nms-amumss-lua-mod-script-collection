@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Only No Damage"
 BaseDescription = "Removes AI Combat Damage"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE	= FileSource2,
 					EXML_CHANGE_TABLE	= {
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
 							},

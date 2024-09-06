@@ -1,7 +1,7 @@
 Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = ""
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[Files Modified:

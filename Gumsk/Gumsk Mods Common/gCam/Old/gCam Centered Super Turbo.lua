@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Centered Super Turbo"
 BaseDescription = "Camera modifications"
-GameVersion = "470"
+GameVersion = "472"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 

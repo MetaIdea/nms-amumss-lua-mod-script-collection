@@ -2,7 +2,7 @@ Author = "N8Crafter Gumsk"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER =

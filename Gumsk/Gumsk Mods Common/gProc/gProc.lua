@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -188,7 +188,7 @@ for i = 1,#Water_Name_Array do
         <Property name="B" value="0.784313738" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="Quality" value="]]..Quality_Array[j]..[[" />
+      <Property name="Quality" value="]]..Quality_Array[j+1]..[[" />
       <Property name="Category" value="GcProceduralTechnologyCategory.xml">
         <Property name="ProceduralTechnologyCategory" value="Protection" />
       </Property>
@@ -210,7 +210,6 @@ for i = 1,#Water_Name_Array do
       --============================================
       for k = 1,#Water_Bonus_Array do
          if Water_Bonus_Array[k][2] ~= "" then
-            --temp_name = Water_Name_Array[i][2]
             temp_name2 = Water_Name_Array[i][Water_Bonus_Array[k][2]]
          else
             temp_name2 = ""

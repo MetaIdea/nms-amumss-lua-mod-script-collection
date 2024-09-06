@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -139,7 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
    }
 }
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINERMODIFICATIONS[1]MBIN_CHANGE_TABLE[1]EXML_CHANGE_TABLE
 local temp_name = ""
 local temp_name2 = ""
 
@@ -382,7 +382,7 @@ for i = 1,#Element_Name_Array do
       temp_table =
       {
          SPECIAL_KEY_WORDS = {"ID", "UP_"..Element_Name_Array[i][1]..j},
-         ["REMOVE"] = "SECTION"
+         REMOVE = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
    end
@@ -393,7 +393,7 @@ for i = 1,#Water_Name_Array do
       temp_table =
       {
          SPECIAL_KEY_WORDS = {"ID", "UP_"..Water_Name_Array[i][1]..j},
-         ["REMOVE"] = "SECTION"
+         REMOVE = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
    end
@@ -404,7 +404,7 @@ for i = 1,#Mining_Name_Array do
       temp_table =
       {
          SPECIAL_KEY_WORDS = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
-         ["REMOVE"] = "SECTION"
+         REMOVE = "SECTION"
       }
       Change_Table_Array[#Change_Table_Array + 1] = temp_table
    end
@@ -414,6 +414,6 @@ end
 
 temp_table = {
    SPECIAL_KEY_WORDS = {"ID","UP_SHLD4"},
-   ["ADD"] = Upgrade_Text,
+   ADD = Upgrade_Text,
    REPLACE_TYPE = "ADDAFTERSECTION"}
    Change_Table_Array[#Change_Table_Array + 1] = temp_table

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GGame"
 ModNameSub = "MrGloopy"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

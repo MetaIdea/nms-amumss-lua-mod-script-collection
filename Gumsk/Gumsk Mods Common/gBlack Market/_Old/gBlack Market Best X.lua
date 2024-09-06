@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBlack Market"
 ModNameSub = "Best X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 

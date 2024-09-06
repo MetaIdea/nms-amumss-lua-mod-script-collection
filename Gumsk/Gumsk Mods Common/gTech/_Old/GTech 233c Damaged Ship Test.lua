@@ -12,9 +12,9 @@ EXML_CHANGE_TABLE = {
 --Hull Fracture
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG1","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG1","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Armour_Shield_Strength" />
@@ -28,9 +28,9 @@ EXML_CHANGE_TABLE = {
 --Rusted Circuits
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG2","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG2","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Armour_Shield_Strength" />
@@ -44,9 +44,9 @@ EXML_CHANGE_TABLE = {
 --Shattered Bulwark
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG3","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG3","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Armour_Shield_Strength" />
@@ -60,9 +60,9 @@ EXML_CHANGE_TABLE = {
 --Radiation Leak
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG4","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG4","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Maneuverability" />
@@ -76,9 +76,9 @@ EXML_CHANGE_TABLE = {
 --Containment Failure
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG5","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG5","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Maneuverability" />
@@ -92,9 +92,9 @@ EXML_CHANGE_TABLE = {
 --Damaged Gears
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG6","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG6","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Maneuverability" />
@@ -108,9 +108,9 @@ EXML_CHANGE_TABLE = {
 --Hydraulics Damage
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG7","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG7","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
 		  <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpSpeed" />
@@ -124,9 +124,9 @@ EXML_CHANGE_TABLE = {
 --Exploded Panel
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG8","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG8","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
 		<Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpSpeed" />
@@ -140,9 +140,9 @@ EXML_CHANGE_TABLE = {
 --Corroded Tanks
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG9","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG9","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpSpeed" />
@@ -156,9 +156,9 @@ EXML_CHANGE_TABLE = {
 --Burnt-Out Compressor
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG10","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG10","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpFuelSpending" />
@@ -172,9 +172,9 @@ EXML_CHANGE_TABLE = {
 --Scorched Plating
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG11","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG11","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpFuelSpending" />
@@ -188,9 +188,9 @@ EXML_CHANGE_TABLE = {
 --Melted Fuel Cell
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG12","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","SHIPSLOT_DMG12","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_PulseDrive_MiniJumpFuelSpending" />
@@ -209,9 +209,9 @@ EXML_CHANGE_TABLE = {
 --Multitool Damaged Slot Penalties
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG1","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG1","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -245,9 +245,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG2","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG2","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -281,9 +281,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG3","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG3","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -317,9 +317,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG4","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG4","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -353,9 +353,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG5","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG5","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -389,9 +389,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG6","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG6","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -425,9 +425,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG7","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG7","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -461,9 +461,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG8","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG8","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -497,9 +497,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG9","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG9","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -533,9 +533,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG10","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG10","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -569,9 +569,9 @@ EXML_CHANGE_TABLE = {
 
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG11","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG11","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />
@@ -605,9 +605,9 @@ EXML_CHANGE_TABLE = {
 	
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG12","StatsType","Unspecified"},
 	LINE_OFFSET = "+2",
-	["REMOVE"] = "LINE"},
+	REMOVE = "LINE"},
 	{SPECIAL_KEY_WORDS = {"ID","WEAPSLOT_DMG12","StatsType","Unspecified"},
-	["ADD"] = [[		<Property name="StatBonuses">
+	ADD = [[		<Property name="StatBonuses">
         <Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Mining_Speed" />

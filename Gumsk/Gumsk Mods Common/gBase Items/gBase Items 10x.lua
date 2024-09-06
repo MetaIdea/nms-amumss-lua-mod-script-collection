@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items 10x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -268,7 +268,7 @@ for i = 1,#FreighterGroupBioList do
 	local TempTable = {
 		SPECIAL_KEY_WORDS = {"ID",FreighterGroupBioList[i]},
 		PRECEDING_KEY_WORDS = {"Groups"},
-		["ADD"] = 
+		ADD = 
 			[[
 			<Property value="GcBaseBuildingEntryGroup.xml">
 			  <Property name="Group" value="FREIGHTER_BIO" />
@@ -286,7 +286,7 @@ for i = 1,#FreighterGroupTechOtherList do
 	local TempTable = {
 		SPECIAL_KEY_WORDS = {"ID",FreighterGroupTechOtherList[i]},
 		PRECEDING_KEY_WORDS = {"Groups"},
-		["ADD"] = 
+		ADD = 
 			[[
 			<Property value="GcBaseBuildingEntryGroup.xml">
 			  <Property name="Group" value="FREIGHTER_TECH" />

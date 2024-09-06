@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Type Frequency"
 ModNameSub = "Hauler All"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "5.05.0"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

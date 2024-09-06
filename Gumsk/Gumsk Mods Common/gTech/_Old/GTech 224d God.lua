@@ -289,7 +289,7 @@ EXML_CHANGE_TABLE =
 	-- PRECEDING_KEY_WORDS = {""},
 	-- LINE_OFFSET = "+64",
 	-- VALUE_CHANGE_TABLE 	= {{"IGNORE",	"IGNORE"}},
-	-- ["ADD"] = 
+	-- ADD = 
 		-- [[        <Property value="GcStatsBonus.xml">
 			  -- <Property name="StatsTypes" value="GcStatsTypes.xml">
 				-- <Property name="StatsType" value="Suit_Stamina_Strength" />
@@ -505,7 +505,7 @@ EXML_CHANGE_TABLE =
 	-- -- PRECEDING_KEY_WORDS = {""},
 	-- -- LINE_OFFSET = "+92",
 	-- -- VALUE_CHANGE_TABLE 	= {{"IGNORE",	"IGNORE"}},
-	-- -- ["ADD"] = 
+	-- -- ADD = 
         -- -- [[	     <Property value="GcStatsBonus.xml">
           -- -- <Property name="StatsTypes" value="GcStatsTypes.xml">
             -- -- <Property name="StatsType" value="Weapon_Laser_StrongLaser" />
@@ -541,7 +541,7 @@ EXML_CHANGE_TABLE =
 	PRECEDING_KEY_WORDS = {""},
 	LINE_OFFSET = "+71",
 	VALUE_CHANGE_TABLE 	= {{"IGNORE",	"IGNORE"}},
-	["ADD"] = 
+	ADD = 
         [[		<Property value="GcStatsBonus.xml">
           <Property name="StatsTypes" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Ship_Launcher_AutoCharge" />

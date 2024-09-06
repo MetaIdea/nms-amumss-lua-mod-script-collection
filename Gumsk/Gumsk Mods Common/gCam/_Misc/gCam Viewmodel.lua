@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = "Viewmodel"
 BaseDescription = ""
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --Files Changed

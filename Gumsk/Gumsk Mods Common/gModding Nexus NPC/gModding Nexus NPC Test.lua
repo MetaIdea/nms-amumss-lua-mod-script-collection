@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gModding Nexus NPC"
 ModNameSub = "Test"
 BaseDescription = "Adds a modding NPC vendor to the Nexus."
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 local MbinChangeTables = {}

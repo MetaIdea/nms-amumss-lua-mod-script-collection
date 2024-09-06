@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSettlement"
 ModNameSub = "Free"
 BaseDescription = "Makes all settlement buildings cost 1 unit"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCSETTLEMENTGLOBALS.MBIN"
 
@@ -82,216 +82,216 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							PRECEDING_KEY_WORDS = {"StageCosts"},
 							REPLACE_TYPE = "ALL",
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 					--Replace StageCosts with 1 Unit cost
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","None"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","TerrainResource"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Shelter"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Abandoned"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Terminal"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Shop"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Outpost"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Waypoint"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Beacon"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","RadioTower"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Observatory"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Depot"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Factory"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Harvester"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Plaque"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Monolith"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Portal"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Ruin"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Debris"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","DamagedMachine"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","DistressSignal"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","LandingPad"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Base"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","MissionTower"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","CrashedFreighter"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","GraveInCave"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","StoryGlitch"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","TreasureRuins"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","GameStartSpawn"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","WaterCrashedFreighter"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","WaterTreasureRuins"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","WaterAbandoned"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","WaterDistressSignal"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","NPCDistressSignal"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","NPCDebris"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","LargeBuilding"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Hub"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_LandingZone"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Bar"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Tower"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Market"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Small"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_SmallIndustrial"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Medium"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Large"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Monument"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_SheriffsOffice"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Double"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Farm"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Factory"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","Settlement_Clump"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 						{
 							PRECEDING_KEY_WORDS = {"SettlementBuildingCosts","DroneHive"},
-							["ADD"] = AddText,
+							ADD = AddText,
 						},
 					},
 				},

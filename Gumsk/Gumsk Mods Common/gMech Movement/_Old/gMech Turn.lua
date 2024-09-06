@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Turn"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters and makes them always on"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --Files Modified
@@ -76,8 +76,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","OFF"},
 							PRECEDING_KEY_WORDS = {"Children"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = HeaterAdd
+							ADD_OPTION = "ADDafterLINE",
+							ADD = HeaterAdd
 						
 						},
 						{

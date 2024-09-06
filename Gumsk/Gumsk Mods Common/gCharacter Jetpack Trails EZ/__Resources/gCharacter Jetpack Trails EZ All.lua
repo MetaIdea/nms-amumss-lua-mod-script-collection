@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "All"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 TrailInfo = {

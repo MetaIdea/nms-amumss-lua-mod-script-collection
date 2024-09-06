@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGUI Parallax"
 ModNameSub = "Lo2k Fast Action and Small Cursor"
 BaseDescription = "Removes mouse-based parallax movement in menus"
-GameVersion = "470"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "GCUIGLOBALS.GLOBAL.MBIN"
 
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = FileSource1,
 					EXML_CHANGE_TABLE = {	
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"TargetParallaxMouseMultiplier",0},
 								{"TargetParallaxMaintenancePageMultiplier",0},

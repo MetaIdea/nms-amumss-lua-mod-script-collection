@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "S Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -415,12 +415,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							SPECIAL_KEY_WORDS   = {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"}, 
 							REPLACE_TYPE        = "ADDAFTERSECTION",
-							["ADD"] 				= FinalPCAnimEntries
+							ADD 				= FinalPCAnimEntries
 						},
 						{
 							PRECEDING_KEY_WORDS = {"LodDistances"}, 
 							LINE_OFFSET 		= "-2",
-							["ADD"] 				= FinalPCTriggerEntries
+							ADD 				= FinalPCTriggerEntries
 						}
 					}
 				},
@@ -430,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							PRECEDING_KEY_WORDS = {"Emotes"}, 
 								
-							["ADD"] 				= FinalEmoteEntries
+							ADD 				= FinalEmoteEntries
 						}
 					}
 				},
@@ -441,7 +441,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							PRECEDING_KEY_WORDS = {"GenericTable"}, 
 								
-							["ADD"] 				= FinalRewardEntries
+							ADD 				= FinalRewardEntries
 						}
 					}
 				}
