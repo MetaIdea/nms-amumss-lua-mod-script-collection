@@ -100,10 +100,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Black 1.9.pak", 
+["MOD_FILENAME"] 			= "True Black 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & FriendlyDirePL",
-["NMS_VERSION"]				= "5.00.1",
+["NMS_VERSION"]				= "5.11",
 ["MOD_DESCRIPTION"]			= "This mod changes darkest paint color into pure black",
 ["MODIFICATIONS"] 			= 
 	{

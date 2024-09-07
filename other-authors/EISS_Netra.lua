@@ -5,6 +5,17 @@ MaxProductQuantity=99999
 MinSubstanceQuantity=99999
 MaxSubstanceQuantity=99999
 
+--DO NOT EDIT THIS SECTION
+
+ProductSection = [[
+<Property name="AlwaysPresentProducts">
+</Property>
+]]
+SubstanceSection = [[
+<Property name="AlwaysPresentSubstances">
+</Property>
+]]
+
 --YOU CAN EDIT THIS SECTION, IF YOU WANT TO UPGRADE PRODUCT & SUBSTANCE LIST
 Products = 
 [[
@@ -291,6 +302,33 @@ Products =
           <Property name="Value" value="MIND_ARC" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART1B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART1C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART2B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART2C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART3B" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="MP_REP_PART3C" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="SOUL_ENGINE" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -531,6 +569,15 @@ Products =
           <Property name="Value" value="POLICE_TOKEN" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ANY_FISH" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ANY_FISH_COOKED" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ANY_FISH_RAW" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="FOOD_P_LUSHWILD" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -685,6 +732,24 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="FOOD_V_STRIDER" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_DAY" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_NIGHT" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="FISHBAIT_STORM" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="ARTIFACT_KEY" />
@@ -858,6 +923,33 @@ Products =
           <Property name="Value" value="CHART_HIVE" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_MAP1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_MAP2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_MAP3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_MAP4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_MYSTERY_ITEM" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_PACK1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_PACK2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_PACK3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S9_PACK4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="SPIDER_PROD" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -898,6 +990,24 @@ Products =
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="S12_POI_SEED4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S15_MESSAGE0" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S15_MESSAGE1" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S15_MESSAGE2" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S15_MESSAGE3" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="S15_MESSAGE4" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="F_BOTTLE" />
         </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SHIPBRAIN_CLEAN" />
@@ -1001,7 +1111,7 @@ Products =
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="WORMSCROLL5" />
         </Property>
-        <Property value="NMSString0x10.xml">
+         <Property value="NMSString0x10.xml">
           <Property name="Value" value="FIGHT_COCKAA" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -2280,6 +2390,9 @@ SuitTechSpecialist =
           <Property name="Value" value="U_HAZARDX" />
         </Property>
         <Property value="NMSString0x10.xml">
+          <Property name="Value" value="U_ROBOSUIT" />
+        </Property>
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="U_SENTSUIT" />
         </Property>
 ]]
@@ -2707,7 +2820,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] = "NotAnotherTradeMod.pak",
   ["MOD_AUTHOR"] = "MasterNetra & musty123",
   ["LUA_AUTHOR"] = "Babscoole & MasterNetra",
-  ["NMS_VERSION"] = "5.03",
+  ["NMS_VERSION"] = "5.11.0.1",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(Less Food Version)",
   ["MODIFICATIONS"] =
   {

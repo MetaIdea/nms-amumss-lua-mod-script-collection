@@ -255,14 +255,14 @@ for _,src in ipairs({
 			T[#T+1] = {
 				SEC_EDIT 			= 'procedural_texture',
 				VALUE_CHANGE_TABLE 	= {
-					{'Name',		snk.name}
+					{'Name',		snk.name},
+					{'Probability',	0.005},
 				}
 			}
 			if not src:find('TERTIARY') then
 				T[#T+1] = {
 					SEC_EDIT 			= 'procedural_texture',
 					VALUE_CHANGE_TABLE 	= {
-						{'Probability',	0.001},
 						{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.DDS'},
 						{'Normal',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.NORMAL.DDS'},
 						{'Mask',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.MASKS.DDS'}
@@ -307,7 +307,7 @@ for _,snk in ipairs(new_ship_texture) do
 			SEC_EDIT 			= 'procedural_texture_paint',
 			VALUE_CHANGE_TABLE 	= {
 				{'Name',		snk.name},
-				{'Probability',	0.001},
+				{'Probability',	0.005},
 				{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.PAINT1.SHINY.DDS'},
 				{'Normal',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/PAINT1.'..snk.name..'.NORMAL.DDS'},
 				{'Mask',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
@@ -323,7 +323,7 @@ for _,snk in ipairs(new_ship_texture) do
 			SEC_EDIT 			= 'procedural_texture_base',
 			VALUE_CHANGE_TABLE 	= {
 				{'Name',		snk.name},
-				{'Probability',	0.001},
+				{'Probability',	0.005},
 				{'Normal',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/PAINT1.'..snk.name..'.NORMAL.DDS'},
 				{'Mask',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
 			}
@@ -340,7 +340,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.05',
+	NMS_VERSION				= '5.11',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {

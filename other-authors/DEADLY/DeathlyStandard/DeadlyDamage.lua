@@ -80,11 +80,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
-                                { "Id", "AISHIPGUN" },
-                                { "Id", "POLICEGUN" },
+                                { "Id", "AISHIPGUN" }, -- 40
+                                { "Id", "POLICEGUN" }, -- 15
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", AISHIPGUN_DAMAGE }, -- 15
+                                { "DefaultDamage", AISHIPGUN_DAMAGE },
                             },
                         },
                         {

@@ -20,18 +20,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Alien", "100"},
                                 {"Robot", "100"},
+								{"Royal", "100"},
+								{"Sail", "100"},
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN"},
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER.SCENE.MBIN",},
                             ["SECTION_ACTIVE"] = {2,3},
-                            ["ADD_OPTION"] = "ADDafterSECTION", 
+                            ["ADD_OPTION"]  = "ADDafterSECTION", 
                             ["ADD"] =
 [[
         <Property value="GcAISpaceshipModelData.xml">

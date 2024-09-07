@@ -6266,9 +6266,11 @@ PROPERTY_STAGES_PLATING =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_FACT_TALK" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_FACT_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="AllowedToFormatObjectives" value="True" />
@@ -6354,6 +6356,7 @@ PROPERTY_STAGES_PLATING =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_FACT_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="Consequences" />
@@ -6472,6 +6475,7 @@ PROPERTY_STAGES_PLATING =
                         <Property name="Conditions">
                           <Property value="GcMissionConditionMissionMessage.xml">
                             <Property name="Message" value="MSG_FACT_DONE" />
+                            <Property name="MessageToFormatSeasonalIDInto" value="" />
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="True" />
@@ -7610,9 +7614,11 @@ PROPERTY_STAGES_FRAGMENT =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_MONO_TALK" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_MONO_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="AllowedToFormatObjectives" value="True" />
@@ -7698,6 +7704,7 @@ PROPERTY_STAGES_FRAGMENT =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_MONO_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="Consequences" />
@@ -7836,6 +7843,7 @@ PROPERTY_STAGES_FRAGMENT =
                         <Property name="Conditions">
                           <Property value="GcMissionConditionMissionMessage.xml">
                             <Property name="Message" value="MSG_MONO_DONE" />
+                            <Property name="MessageToFormatSeasonalIDInto" value="" />
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="True" />
@@ -9120,9 +9128,11 @@ PROPERTY_STAGES_CIRCUIT =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_CAMP_TALK" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_CAMP_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="AllowedToFormatObjectives" value="True" />
@@ -9208,6 +9218,7 @@ PROPERTY_STAGES_CIRCUIT =
                   <Property name="Conditions">
                     <Property value="GcMissionConditionMissionMessage.xml">
                       <Property name="Message" value="MSG_CAMP_DONE" />
+                      <Property name="MessageToFormatSeasonalIDInto" value="" />
                     </Property>
                   </Property>
                   <Property name="Consequences" />
@@ -9346,6 +9357,7 @@ PROPERTY_STAGES_CIRCUIT =
                         <Property name="Conditions">
                           <Property value="GcMissionConditionMissionMessage.xml">
                             <Property name="Message" value="MSG_CAMP_DONE" />
+                            <Property name="MessageToFormatSeasonalIDInto" value="" />
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="True" />

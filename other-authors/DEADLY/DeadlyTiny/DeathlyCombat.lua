@@ -1,99 +1,50 @@
-PLAYER_WEAPON_RANGE_MULTI = 2
+ATTACK_WEAPON_RANGE_MULTI = 3
+ATTACK_TARGET_MAX_RANGE_MULTI = 5
 
-AI_ATTACK_WEAPON_RANGE_MULTI = 3
-AI_ATTACK_TARGET_MAX_RANGE_MULTI = 5
+ATTACK_APPROACH_MIN_RANGE = 100
+ATTACK_APPROACH_MAX_RANGE = 2000
 
-AI_ATTACK_APPROACH_MIN_RANGE = 100
-AI_ATTACK_APPROACH_MAX_RANGE = 1500
+FLEE_MIN_TIME = 6
+FLEE_MAX_TIME = 12
 
-AI_FLEE_MIN_TIME = 6
-AI_FLEE_MAX_TIME = 12
+ATTACK_SHOOT_TIME_MIN_MULTI = 5
+ATTACK_SHOOT_TIME_MAX_MULTI = 5
+ATTACK_MAX_TIME_MULTI = 12
 
-AI_ATTACK_SHOOT_TIME_MIN_MULTI = 5
-AI_ATTACK_SHOOT_TIME_MAX_MULTI = 5
-AI_ATTACK_MAX_TIME_MULTI = 12
+LASER_HEALTH_POINT_MULTI = 20
+FLEE_RANGE_MULTI = 8
 
-AI_LASER_HEALTH_POINT_MULTI = 20
-AI_FLEE_RANGE_MULTI = 8
+SPACE_EASY_THRUST_FORCE = 165 -- 100
+SPACE_HARD_THRUST_FORCE = 180 -- 100
+SQUADRON_SLOW_THRUST_FORCE = 165 -- 100
+SQUADRON_FAST_THRUST_FORCE = 180 -- 120
 
-AI_SPACE_THRUST_FORCE_MULTI = 4
-AI_SPACE_MAX_SPEED_MULTI = 4
+SPACE_EASY_MAX_SPEED = 265    -- 60
+SPACE_HARD_MAX_SPEED = 330    -- 90
+SQUADRON_SLOW_MAX_SPEED = 265 -- 200
+SQUADRON_FAST_MAX_SPEED = 330 -- 300
 
-AI_SPACE_FLEE_BOOST = 180
-AI_SPACE_FLEE_URGENT_BOOST = 280
+SPACE_FLEE_BOOST = 200
+SPACE_FLEE_URGENT_BOOST = 220
 
-AI_PLANET_THRUST_FORCE_MULTI = 5
-AI_PLANET_MAX_SPEED_MULTI = 2
-AI_PLANET_FLEE_BOOST = 130
-AI_PLANET_FLEE_URGENT_BOOST = 180
+PLANET_THRUST_FORCE = 125    -- 50
+PLANET_EASY_MAX_SPEED = 130  -- 80
+PLANET_HARD_MAX_SPEED = 155  -- 130
+--RAID_BUILDING_MAX_SPEED = 80 -- 60
+PLANET_FLEE_BOOST = 100
+PLANET_FLEE_URGENT_BOOST = 150
 
 SQUADRON_WEAK_LASER_HEALTH_POINT = 0
 SQUADRON_STRONG_LASER_HEALTH_POINT = 1000
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]  = "_DeadlyCombat.pak",
+    ["MOD_FILENAME"]  = "_DeathlyCombat.pak",
     ["MOD_AUTHOR"]    = "gh0stwizard",
     ["NMS_VERSION"]   = "4.46",
     ["MODIFICATIONS"] = {
         {
             ["MBIN_CHANGE_TABLE"] = {
-                --
-                -- METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        -- boost player's weapon range
-                        {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "ID", "SHIPROCKETS",   "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPGUN1",      "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPSHOTGUN",   "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPMINIGUN",   "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPPLASMA",    "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPGUN_ALIEN", "StatsType", "Ship_Weapons_Guns_Range" },
-                                { "ID", "SHIPGUN_ROBO",  "StatsType", "Ship_Weapons_Guns_Range" },
-                            },
-                            ["SECTION_UP"]         = 1,
-                            ["MATH_OPERATION"]     = "*",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "Bonus", PLAYER_WEAPON_RANGE_MULTI },
-                            }
-                        },
-                    }
-                },
-                --
-                -- GCGAMEPLAYGLOBALS.GLOBAL.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "SpaceBattleRadius",                50000 }, -- 13500
-                                { "SpaceCombatRadius",                50000 }, -- 5000
-                                { "FreighterBattleRadius",            50000 }, -- 5000
-                                { "SpaceBattleAnyHostileShipsRadius", 50000 }, -- 10000
-                            }
-                        },
-                    }
-                },
-                --
-                -- GCPLAYERGLOBALS.GLOBAL.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        -- boost player's laser range
-                        {
-                            ["MATH_OPERATION"]     = "*",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "LaserShipRange", PLAYER_WEAPON_RANGE_MULTI },
-                            }
-                        },
-                    }
-                },
                 --
                 -- GCAISPACESHIPGLOBALS.GLOBAL.MBIN
                 --
@@ -121,21 +72,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
                 },
                 --
-                -- GCSPACESHIPGLOBALS.GLOBAL.MBIN
-                --
-                {
-                    ["MBIN_FILE_SOURCE"]  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "WingmanAttackRange", 2000 },  -- 1400
-                                { "WarpOutRange",       10000 }, -- 1000
-                                { "WarpOutTime",        10 },    -- 2
-                            }
-                        },
-                    }
-                },
-                --
                 -- METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN
                 --
                 {
@@ -151,10 +87,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "AttackTargetSwitchTargetTime", 1 }, -- 10
-                                { "FleeMinTime",                  AI_FLEE_MIN_TIME },
-                                { "FleeMaxTime",                  AI_FLEE_MAX_TIME },
-                                { "AttackApproachMinRange",       AI_ATTACK_APPROACH_MIN_RANGE },
-                                { "AttackApproachMaxRange",       AI_ATTACK_APPROACH_MAX_RANGE },
+                                { "FleeMinTime",                  FLEE_MIN_TIME },
+                                { "FleeMaxTime",                  FLEE_MAX_TIME },
+                                { "AttackApproachMinRange",       ATTACK_APPROACH_MIN_RANGE },
+                                { "AttackApproachMaxRange",       ATTACK_APPROACH_MAX_RANGE },
                             },
                         },
                         {
@@ -167,13 +103,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "AttackShootTimeMin",   AI_ATTACK_SHOOT_TIME_MIN_MULTI },
-                                { "AttackShootTimeMax",   AI_ATTACK_SHOOT_TIME_MAX_MULTI },
-                                { "AttackMaxTime",        AI_ATTACK_MAX_TIME_MULTI },
-                                { "FleeRange",            AI_FLEE_RANGE_MULTI },
-                                { "FleeUrgentRange",      AI_FLEE_RANGE_MULTI },
-                                { "AttackWeaponRange",    AI_ATTACK_WEAPON_RANGE_MULTI },
-                                { "AttackTargetMaxRange", AI_ATTACK_TARGET_MAX_RANGE_MULTI },
+                                { "AttackShootTimeMin",   ATTACK_SHOOT_TIME_MIN_MULTI },
+                                { "AttackShootTimeMax",   ATTACK_SHOOT_TIME_MAX_MULTI },
+                                { "AttackMaxTime",        ATTACK_MAX_TIME_MULTI },
+                                { "FleeRange",            FLEE_RANGE_MULTI },
+                                { "FleeUrgentRange",      FLEE_RANGE_MULTI },
+                                { "AttackWeaponRange",    ATTACK_WEAPON_RANGE_MULTI },
+                                { "AttackTargetMaxRange", ATTACK_TARGET_MAX_RANGE_MULTI },
                             },
                         },
                         {
@@ -182,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "LaserHealthPoint", AI_LASER_HEALTH_POINT_MULTI }, -- 50
+                                { "LaserHealthPoint", LASER_HEALTH_POINT_MULTI }, -- 50
                             },
                         },
                         -- space flying
@@ -200,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "GunDispersionAngle",           2.5 },  -- 5.5
                                 { "GunFireRate",                  0.1 },  -- 0.15
                                 { "AttackTargetMinRange",         100 },  -- 250
-                                { "AttackTargetOffsetMax",        1000 }, -- 500
+                                { "AttackTargetOffsetMax",        2000 }, -- 500
                             },
                         },
                         {
@@ -210,21 +146,56 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "FleeBoost",       AI_SPACE_FLEE_BOOST },
-                                { "FleeUrgentBoost", AI_SPACE_FLEE_URGENT_BOOST },
+                                { "FleeBoost",       SPACE_FLEE_BOOST },
+                                { "FleeUrgentBoost", SPACE_FLEE_URGENT_BOOST },
                             },
                         },
                         {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "EngineTable", "IGNORE", "Id", "SPACE_EASY" },
-                                { "EngineTable", "IGNORE", "Id", "SPACE_HARD" },
-                                { "EngineTable", "IGNORE", "Id", "SQUADRON_SLOW" },
-                                { "EngineTable", "IGNORE", "Id", "SQUADRON_FAST" },
-                            },
-                            ["MATH_OPERATION"]     = "*",
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SPACE_EASY" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Force",    AI_SPACE_THRUST_FORCE_MULTI }, -- 100
-                                { "MaxSpeed", AI_SPACE_MAX_SPEED_MULTI },
+                                { "Force", SPACE_EASY_THRUST_FORCE }, -- 100
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SPACE_HARD" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "Force", SPACE_HARD_THRUST_FORCE }, -- 100
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SQUADRON_SLOW" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "Force", SQUADRON_SLOW_THRUST_FORCE }, -- 100
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SQUADRON_FAST" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "Force", SQUADRON_FAST_THRUST_FORCE }, -- 120
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SPACE_EASY" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", SPACE_EASY_MAX_SPEED }, -- 60
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SPACE_HARD" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", SPACE_HARD_MAX_SPEED }, -- 90
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SQUADRON_SLOW" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", SQUADRON_SLOW_MAX_SPEED }, -- 200
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "SQUADRON_FAST" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", SQUADRON_FAST_MAX_SPEED }, -- 300
                             },
                         },
                         -- planetary flying
@@ -239,7 +210,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "GunDispersionAngle",       1 },    -- 5/3
                                 { "GunFireRate",              0.1 },  -- 0.15
                                 { "AttackTargetMinRange",     50 },   -- 200
-                                { "AttackTargetOffsetMax",    3000 }, -- 500
+                                { "AttackTargetOffsetMax",    1000 }, -- 500
+                                { "AttackBoostRange",         1100 }, -- 550
                             },
                         },
                         {
@@ -248,8 +220,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "FleeBoost",       AI_PLANET_FLEE_BOOST },
-                                { "FleeUrgentBoost", AI_PLANET_FLEE_URGENT_BOOST },
+                                { "FleeBoost",       PLANET_FLEE_BOOST },
+                                { "FleeUrgentBoost", PLANET_FLEE_URGENT_BOOST },
                             },
                         },
                         {
@@ -258,12 +230,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
                                 --{ "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
-                            ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "Force",    AI_PLANET_THRUST_FORCE_MULTI }, -- 50
-                                { "MaxSpeed", AI_PLANET_MAX_SPEED_MULTI },
+                                { "Force", PLANET_THRUST_FORCE }, -- 50
                             },
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "PLANET_EASY" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", PLANET_EASY_MAX_SPEED },
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MaxSpeed", PLANET_HARD_MAX_SPEED },
+                            },
+                        },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "MaxSpeed", RAID_BUILDING_MAX_SPEED },
+                        --     },
+                        -- },
                         -- squadron combat
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },

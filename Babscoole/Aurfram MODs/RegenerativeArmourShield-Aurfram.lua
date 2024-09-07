@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_RegenerativeArmourShield-Aurfram.pak",
+["MOD_FILENAME"]  = "RegenerativeArmourShield-Aurfram.pak",
 ["MOD_AUTHOR"]    = "Aurfram",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.52",
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDHEALTH.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\\HUD\\HUDHEALTH.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

@@ -1,7 +1,7 @@
 ModName = "gFish Speed"
 ModNameSub = "Lightning"
 GameVersion = "5.1.1.0"
-ModVersion = "a"
+ModVersion = "b"
 
 --[[ Files Modified:
 GCFISHINGGLOBALS.GLOBAL.MBIN
@@ -22,17 +22,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
-								{"Small",0.1},						--0.75; 
-								{"Medium",0.5},	 		  		--3.75;
+                {"FishCatchAfterBiteTime",30},           --2; Time to catch after success. Don't go higher than 30! Allows multiple catches in one success animation.
+                {"LandTimeBegin",0.05},                   --0.1; Time after catch before catch is registered
+                {"LandTimeEnd",0.25},                   --0.4; Time after catch line stays in the water
+                {"LineNibbleSag",1},                   --0.4;
+								{"MinWaitTime",0.001},		    	  	      --6.5; 
+								{"MaxWaitTime",0.01},	 	  	  	        --13.5;
 							},
 						},
 						{
 							PRECEDING_KEY_WORDS = "ChaseTimes",
 							VALUE_CHANGE_TABLE = {
-								{"Small",0.5},						--1.66;
-								{"Medium",0.5},			  		--3;
-								{"Large",0.5},				  	--5;
-								{"ExtraLarge",0.5}				--6.5;
+								{"Small",0.1},						--1.66;
+								{"Medium",0.1},			  		--3;
+								{"Large",0.1},				  	--5;
+								{"ExtraLarge",0.1}				--6.5;
+							},
+						},
+						{
+							SPECIAL_KEY_WORDS = {"LineColourNibble","Colour.xml"},
+							VALUE_CHANGE_TABLE = {
+								{"R",0.48},						--0.983;
+								{"G",0.78},			  		--0.761;
+								{"B",0.98},				  	--0.059;
 							},
 						},
 					}

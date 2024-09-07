@@ -1,7 +1,7 @@
 ModName = "gFish Speed"
 ModNameSub = "Slower"
 GameVersion = "5.1.1.0"
-ModVersion = "a"
+ModVersion = "b"
 
 --[[ Files Modified:
 GCFISHINGGLOBALS.GLOBAL.MBIN
@@ -22,17 +22,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
-								{"Small",1.1},						--0.75; 
-								{"Medium",6.0},			  		--3.75;
+								{"MinWaitTime",6.0},			  		--6.5; 
+								{"MaxWaitTime",21.0},	 		  		--13.5;
 							},
 						},
 						{
 							PRECEDING_KEY_WORDS = "ChaseTimes",
 							VALUE_CHANGE_TABLE = {
 								{"Small",2.3},						--1.66;
-								{"Medium",4.5},			  		--3;
-								{"Large",7},					  	--5;
-								{"ExtraLarge",9}					--6.5;
+								{"Medium",5},			     		--3;
+								{"Large",8},					  	--5;
+								{"ExtraLarge",11}					--6.5;
 							},
 						},
 					}

@@ -1,12 +1,11 @@
--------------------------------------------------------------------
+---------------------------------------------------------------------------------
 local mod_desc = [[
   Generate TkProceduralTextureList files for the procedural decals
   diff/normal/masks	= true >> include dds in the layer
 
-  * source is used for importing the dds files (needs path to the files' folder)
-  * The script STILL WORKS if the source path is incorrect or no dds
-   files are found - except no textures will be packed with the mbin files.
-]]-----------------------------------------------------------------
+  * source is used for importing the files and must be updated to a local path
+  * ADD_FILES will skipped SILENTLY if new files are not found!
+]]-------------------------------------------------------------------------------
 
 local proc_texture_files = {
 	{
@@ -119,16 +118,18 @@ local function AddProcTexFiles()
 			FILE_CONTENT		= BuildProcTexListMbin(ptf),
 			FILE_DESTINATION	= ptf.nmspath..ptf.label..'.TEXTURE.EXML'
 		})
-		table.insert(T, {
-			EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
-			FILE_DESTINATION	= ptf.nmspath..'*.DDS'
-		})
+		if lfs.attributes(ptf.source) then
+			table.insert(T, {
+				EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
+				FILE_DESTINATION	= ptf.nmspath..'*.DDS'
+			})
+		end
 	end
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Alt Space Staion Decals.1.51.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Alt Space Staion Decals.pak',
 	MOD_AUTHOR			= 'lMonk',
 	NMS_VERSION			= '4.65+',
 	MOD_DESCRIPTION		= mod_desc,

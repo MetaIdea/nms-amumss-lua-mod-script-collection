@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Shorter Arrival Messages 4.5.pak", 
+["MOD_FILENAME"] 			= "Shorter Arrival Messages 4.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.03",
+["NMS_VERSION"]				= "5.11",
 ["MOD_DESCRIPTION"]			= "This mods reduces hang time when arriving at a new location",
 ["MODIFICATIONS"] 			= 
 	{
