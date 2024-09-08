@@ -1956,8 +1956,8 @@ function Create_Stat_Level(stat_level, multiplier_per_rank, base_for_multiplier)
         SEC_SAVE_TO = 'SINGLE_STATLEVEL'
     }
 
-    local valueMin = stat_level.Value_Max * (base_for_multiplier * multiplier_per_rank)
-    local valueMax = stat_level.Value_Min * (base_for_multiplier * multiplier_per_rank)
+    local valueMin = stat_level.Value_Max * (1 + (base_for_multiplier * multiplier_per_rank))
+    local valueMax = stat_level.Value_Min * (1 + (base_for_multiplier * multiplier_per_rank))
     Changes_To_Procedural_Technology_Table[#Changes_To_Procedural_Technology_Table + 1] =
     {
         SEC_EDIT = 'SINGLE_STATLEVEL',
