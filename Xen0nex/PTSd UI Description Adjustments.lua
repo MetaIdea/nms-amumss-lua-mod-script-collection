@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "5_10"
+GameVersion = "5_11"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 AnalysisVisorDesc =
@@ -67,6 +67,12 @@ ReinforcedDoor =
 
 CargoPod =
 [[Cargo Pod - Contents &lt;SPECIAL&gt;Unknown&lt;&gt;]]
+
+ReleaseFish =
+[[RELEASE FISH FOR &lt;STELLAR&gt;NANITES&lt;&gt;]]
+
+ReleaseFishDesc =
+[[Return your catch to the water for &lt;STELLAR&gt;nanites&lt;&gt; based on its &lt;HIGHLIGHT&gt;quality&lt;&gt;]]
 
 SentPillarLeftPane =
 [[WARNING: [ &lt;SPECIAL&gt;BOUNDARY NODE EXPOSED&lt;&gt; ]&#xA;BOUNDARY ARCHIVE STATUS: [ &lt;SPECIAL&gt;VULNERABLE&lt;&gt; ]&#xA;&#xA;Destroy nearby &lt;FUEL&gt;Sentinel Mech&lt;&gt; to earn the right to use this terminal &lt;STELLAR&gt;honourably&lt;&gt;]]
@@ -281,7 +287,7 @@ NaniteRefineItemDescs =
 		{"UI_SPIDER_PROD_DESC", "UI_DRONE_SALVAGE_DESC", "UI_DRONE_SHARD_DESC", "UI_SHIP_BRAIN_DESC", }
 	},
 	{
-		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{8},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
 		{"UI_NAV_DATA_DESC", "UI_NAV_DROPPOD_DESC", "UI_MAINTAIN_SUB2_DESC", }
 	},
 }
@@ -305,7 +311,7 @@ SalDataRefineItemDescs =
 		{"UI_SPIDER_PROD_DESC", "UI_DRONE_SALVAGE_DESC", "UI_DRONE_SHARD_DESC", "UI_SHIP_BRAIN_DESC", }
 	},
 	{
-		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{8},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
 		{"UI_NAV_DATA_DESC", "UI_NAV_DROPPOD_DESC", "UI_MAINTAIN_SUB2_DESC", }
 	},
 }
@@ -313,7 +319,7 @@ SalDataRefineItemDescs =
 SpaceGunkRefineItemDescs =
 {
 	{
-		{7},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
+		{8},		--"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN",
 		{"UI_MAINTAIN_SUB1_DESC", "UI_MAINTAIN_SUB4_DESC", "UI_MAINTAIN_SUB5_DESC", "UI_MAINTAIN_SUB3_DESC", }
 	},
 }
@@ -927,6 +933,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
+					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_LOC9_ENGLISH.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_RELEASE_FISH_LABEL"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ReleaseFish}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_RELEASE_FISH_LABEL_SUB"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ReleaseFishDesc}
+							}
+						},
+					}
+				},
+				{
 					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -988,7 +1014,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 --local ChangesToLOC6 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
 --local ChangesToLOC7 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
 --local ChangesToLOC8 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
---local ChangesToUPDATE3 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+--local ChangesToLOC9 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
+--local ChangesToUPDATE3 = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][8]["EXML_CHANGE_TABLE"]
 
 for i = 1, #NaniteRefineItemDescs do
 	local ChangeTableNum = NaniteRefineItemDescs[i][1][1]

@@ -1,9 +1,6 @@
 -- Please be aware if you set any of the values below to 0 or NOT integer, you
 -- might break the math used and the .lua won't produce a useable .pak file!
 
-------------------------------------------------------------------------------
-------------------- YOU SHOULD ONLY EDIT THE VALUES BELOW --------------------
-------------------------------------------------------------------------------
 
 UNITS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of units you get
 LOW_UNITS_MULTI			= 10	-- Default value is 1 | Terminals and other unit sources that have really low unit rewards (90 - 2000 units)
@@ -24,29 +21,62 @@ NEXUS_NANITES_MULTI		= 5		-- Default value is 1 | Multiplys the amount of nanite
 BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
+FRIGATE_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Frigate (Freighter) missions with your fleet
+FRIGATE_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Frigate (Freighter) missions with your fleet
+
 ------------------------------------------------------------------------------
 -------------------- DO NOT EDIT ANYTHING PAST THIS POINT --------------------
 ------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 	= "BetterRewards.pak",
+["MOD_FILENAME"] 	= "BetterRewardsNoWR.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "4.62",
+["NMS_VERSION"]		= "5.11",
+["MOD_DESCRIPTION"]	= "Simple multipliers to unit, nanite and quicksilver reward values without extra word learning",
 ["MODIFICATIONS"] 	=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},
+							["SECTION_UP"]			= 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"]			= "0",
+							["VALUE_MATCH_OPTIONS"]	= ">",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"AmountMin",	FRIGATE_UNITS_MULTI},
+								{"AmountMax",	FRIGATE_UNITS_MULTI}
+							}
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Currency", "Nanites"},
+							["SECTION_UP"]			= 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"]			= "0",
+							["VALUE_MATCH_OPTIONS"]	= ">",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"AmountMin",	FRIGATE_NANITES_MULTI},
+								{"AmountMax",	FRIGATE_NANITES_MULTI}
+							}
+						}
+					}
+				},
+				
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-
------------------------------------------------------------------------------------------------------
------------------------------------------- CURRENCY: UNITS ------------------------------------------
------------------------------------------------------------------------------------------------------
-
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},
 							["SECTION_UP"]			= 1,
@@ -73,10 +103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						
------------------------------------------------------------------------------------------------------
------------------------------------------ CURRENCY: NANITES -----------------------------------------
------------------------------------------------------------------------------------------------------
-
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Nanites"},
 							["SECTION_UP"]			= 1,
@@ -89,11 +115,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 
-
------------------------------------------------------------------------------------------------------
---------------------------------------- CURRENCY: QUICKSILVER ---------------------------------------
------------------------------------------------------------------------------------------------------
-
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Currency", "Specials"},
 							["SECTION_UP"]			= 1,
@@ -105,10 +126,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax",	QS_MULTI}
 							}
 						},
-
------------------------------------------------------------------------------------------------------
---------------------------------------- CURRENCY CORRECTIONS ----------------------------------------
------------------------------------------------------------------------------------------------------
 						
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "Currency", "Units"},
@@ -314,10 +331,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 
------------------------------------------------------------------------------------------------------
----------------------------------------- CURRENCY: MISSIONS -----------------------------------------
------------------------------------------------------------------------------------------------------
-
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_LOW", "Currency", "Units"},
 							["SECTION_UP"]			= 1,
@@ -485,10 +498,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax",	BOUNTY_NANITES_MULTI}
 							}
 						},
-						
------------------------------------------------------------------------------------------------------
------------------------------------------------- MISC -----------------------------------------------
------------------------------------------------------------------------------------------------------
 
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NADA_JM"},
@@ -505,6 +514,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}
 	}
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PAST THIS POINT HERE

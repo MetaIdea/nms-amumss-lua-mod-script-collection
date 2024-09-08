@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_10"
+GameVersion = "5_11"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -1243,6 +1243,24 @@ WeirdCreatureLootChanges =
 			{"HEXCORE",				"HEXCORE",				1,			1,			100},				--Hex Core,				1,			3,			100
 		}
 	}
+}
+
+--Changes nanite rewards for releasing fish 
+ReplaceVanillaFishNanites = true							--false		Set true to replace the vanilla nanite reward when releasing fish with the custom PTSd version defined below
+FishReleaseChanges =
+{
+	{	--Fish Quality			Min		Max Nanites on release
+		"R_FISH_COMMON",		20,		30,					--Unclear, seems to be roughly ~15 - 30
+	},
+	{
+		"R_FISH_RARE",			40,		60,					--Unclear, seems to be roughly ~50 - 100
+	},
+	{
+		"R_FISH_EPIC",			80,		120,				--Unclear, seems to be roughly ~100 - 120
+	},
+	{
+		"R_FISH_LEGEND",		120,	180,				--Unclear, seems to be roughly ~150 - 200
+	},
 }
 
 --Adds new rewards for defeating Vile Queens
@@ -4602,6 +4620,29 @@ for i = 1, #WeirdCreatureLootChanges do
 			}
 	end
 end
+
+if ReplaceVanillaFishNanites then
+	for i = 1, #FishReleaseChanges do
+		local FishQuality = FishReleaseChanges[i][1]
+		local MinNanites = FishReleaseChanges[i][2]
+		local MaxNanites = FishReleaseChanges[i][3]
+		
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality},
+					["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+					["ADD"] = CurrencyReward ("Nanites", MinNanites, MaxNanites, "100"),
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				}
+				
+				ChangesToRewardTable[#ChangesToRewardTable+1] =
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", FishQuality,		"Reward", "GcRewardFishRelease.xml"},
+					["REMOVE"] = "SECTION",
+				}
+	end
+end
+
 for i = 1, #ShipLootChanges do
 	local ShipId = ShipLootChanges[i][1][1]
 	--local PirateNanitesMin = ShipLootChanges[i][1][2]

@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "5_03"
+GameVersion = "5_11"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"		--Added by Xen0nex
@@ -35,6 +35,11 @@ EMBaseLimit = 0				--0
 MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
 SiloBaseLimit = 16			--0
+FishTrapPlanetLimit = 9		--3
+FishTrapRegionLimit = 3		--0
+FishTrapBaseLimit = 3		--0
+MedRefinerRegionLimit = 4	--3
+LargeRefinerRegionLimit = 4	--2
 
 PlanterPowerDraw = -6		--	-5 kPs		(Remember to make the value negative)
 LargePlanterPowerDraw = -16	--	-20 kPs		(Remember to make the value negative)
@@ -203,6 +208,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"RegionLimit", SiloLimit},
 		{"PlanetBaseLimit", SiloBaseLimit},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILDSEAHARVEST"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"PlanetLimit", FishTrapPlanetLimit},
+		{"RegionLimit", FishTrapRegionLimit},
+		{"PlanetBaseLimit", FishTrapBaseLimit},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER2"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"RegionLimit", MedRefinerRegionLimit},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","BUILD_REFINER3"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"RegionLimit", LargeRefinerRegionLimit},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","CARBONPLANTER"},
 	["VALUE_CHANGE_TABLE"] = {

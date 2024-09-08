@@ -1,7 +1,7 @@
 ModName = "gFish Speed"
-ModNameSub = "Lightning"
+ModNameSub = "Lightning 7"
 GameVersion = "5.1.1.0"
-ModVersion = "b"
+ModVersion = "c"
 
 --[[ Files Modified:
 GCFISHINGGLOBALS.GLOBAL.MBIN
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
-                {"FishCatchAfterBiteTime",30},           --2; Time to catch after success. Don't go higher than 30! Allows multiple catches in one success animation.
+                {"FishCatchAfterBiteTime",7},           --2; Time to catch after success. Don't go higher than 25! Allows multiple catches in one success animation.
                 {"LandTimeBegin",0.05},                   --0.1; Time after catch before catch is registered
                 {"LandTimeEnd",0.25},                   --0.4; Time after catch line stays in the water
                 {"LineNibbleSag",1},                   --0.4;

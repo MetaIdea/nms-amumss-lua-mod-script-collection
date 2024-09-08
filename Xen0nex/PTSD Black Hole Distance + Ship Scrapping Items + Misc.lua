@@ -22,6 +22,7 @@ EvolveToS =								1800								--430		Cost to Evolve from S to A
 EvolveFive =							1800								--430		Unknown Function
 EvolveSix =								1800								--430		Unknown Function
 EvolveSeven =							1800								--430		Unknown Function
+--EvolveEight =							100									--100		Unknown Function
 
 MissionSurveyMaxGuidanceDistance =		5000								--1500		How far away from the target location your "Target Sweep" visor function will be auto-selected when activating your visor and display the estimated distance
 --Note that the actual distance to the target location is controlled in FartherTargetSweepX.lua
@@ -29,7 +30,7 @@ MissionSurveyMaxGuidanceDistance =		5000								--1500		How far away from the ta
 DeathMoneyPenalty =						50000								--5000		Money lost on death in Normal mode (all modes as of NMS v400?)
 --DeathMoneyPenaltyHardMode =			50000								--5000		Money lost on death in Survival mode (Deprecated as of 4.08)
 
-SmugglerSellingMarkup = 				2.0									--1.66		Multiplier (markup) that the value of "illegal" goods receive in non-Outlaw systems
+SmugglerSellingMarkup = 				1.0									--1.66		Multiplier (markup) of ADDITIONAL value for "illegal" goods in non-Outlaw systems. E.G. 1.66 means the total value will be 1 + 1.66 = 2.66x BaseValue in non-Outlaw Systems
 IllegalTechProductTradingMod = 			0.2									--0.2		Multiplier (price drop) that the value of "illegal" upgrade modules receive in non-Outlaw systems
 CargoShieldStrength =					0.3									--0.5		Sets the chance that using the Cargo Scan Deflector / Neural Shielding will work each attempt (can be attempted multiple times per scan)
 

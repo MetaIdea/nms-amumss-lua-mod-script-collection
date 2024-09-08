@@ -59,11 +59,6 @@ StorageSlots =		30									--50
 StorageWidth =		6									--10
 StorageHeight =		5									--6
 
---Exoskiff storage slots and width / height of inventory
-SkiffStorageSlots =	1									--1
-SkiffStorageWidth =	1									--1
-SkiffStorageHeight =1									--1
-
 --Cargo Rocket slots and width / height of inventory
 RocketSlots =		7									--21		Doesn't seem to actually have any effect
 RocketWidth =		2									--7			Doesn't seem to actually have any effect
@@ -223,27 +218,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxHeightStandard",		StorageHeight},
 								{"MaxWidthLarge",			StorageWidth},
 								{"MaxHeightLarge",			StorageHeight},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FishBaitBox","GcInventoryLayoutGenerationDataEntry.xml"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MinSlots",			SkiffStorageSlots},
-								{"MaxSlots",			SkiffStorageSlots},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FishBaitBox","GcInventoryLayoutGenerationDataEntry.xml"},
-							["PRECEDING_KEY_WORDS"] = "Bounds",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxWidthSmall",			SkiffStorageWidth},
-								{"MaxHeightSmall",			SkiffStorageHeight},
-								{"MaxWidthStandard",		SkiffStorageWidth},
-								{"MaxHeightStandard",		SkiffStorageHeight},
-								{"MaxWidthLarge",			SkiffStorageWidth},
-								{"MaxHeightLarge",			SkiffStorageHeight},
 							}
 						},
 						{

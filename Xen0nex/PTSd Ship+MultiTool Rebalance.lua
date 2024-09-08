@@ -1,15 +1,15 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "5_03"
+GameVersion = "5_10"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
 --LandingCost = 	50									--0		(TakeOffCost is 100)	[18]		Unknown function
-
 --ShieldLeechMul = 0.07								--0.07	Unknown Function, doesn't seem to affect how much shield you leech with lasers
-
 --SailTakeOffMod = 0.66								--1		Multiplier for launch fuel consumption for takeoff for Solar ships		(Oddly this was never included in GCSPACESHIPGLOBALS.GLOBAL.MBIN like the other ship types?)
 
 TradeRocketSlots =	8								--21	Doesn't seem to have any effect
+
+ExoSkiffSlots =		10								--10		Slots for fish/bait storage in Exo-Skiff
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
@@ -735,7 +735,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1.2,	1.2,	1.2,	1.2},		--			+		0-5,		5-10,		10-15,		15-25	%
-			{"WEAPON_MINING",			1.33,	1.33,	1.33,	1.33},		--			+		5-10,		10-20,		20-25,		25-30	%
+			{"WEAPON_MINING",			1.65,	1.65,	1.65,	1.65},		--			+		5-10,		10-20,		20-25,		25-30	%
 			{"WEAPON_SCAN",				0.9,	0.9,	0.9,	0.9}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
 		}
 	},
@@ -764,7 +764,7 @@ ToolStatChanges	=
 			"Atlas"			--"Atlantid"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -774,7 +774,7 @@ ToolStatChanges	=
 			"AtlasYellow"	--"Atlantid" Yellow version?
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -784,7 +784,7 @@ ToolStatChanges	=
 			"AtlasBlue"		--"Atlantid" Blue version?
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.5,	1.0,	1.0,	1.0},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -795,7 +795,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
-			{"WEAPON_MINING",			1.175,	1.175,	2.35,	2.35},		--			+		0-5,		5-10,		5-10,		10-15	%
+			{"WEAPON_MINING",			1.5,	1.5,	3.0,	3.0},		--			+		0-5,		5-10,		5-10,		10-15	%
 			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
@@ -1111,11 +1111,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout.xml"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", TradeRocketSlots}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"FishBaitBoxLayout","GcInventoryLayout.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", ExoSkiffSlots}
 							}
 						},
 						--[[

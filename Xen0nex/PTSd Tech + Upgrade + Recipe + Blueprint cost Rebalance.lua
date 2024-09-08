@@ -215,7 +215,7 @@ TechAdjustments =
 		"FISH_SKIFF",	1				--Exo-Skiff								90 Nanites
 	},
 	{
-		"FISHLASER",	25				--Fishing Rig							1 Nanite
+		"FISHLASER",	50				--Fishing Rig							1 Nanite
 	},
 }
 
@@ -665,10 +665,6 @@ BiofuelRefillCostMult = 2					--1			In vanilla it takes 50 Carbon / 17 Cond. Car
 --Changes the cost of using & recharging the Trade Rocket (fuel usage altered in PTSD Black Hole Distance + Ship Scrapping Items + Misc.lua)
 RocketChargeAmount = 50						--50	The "tank size" of how much "charge"/"fuel" it can hold
 RocketChargeCost = 8						--Multiplier to apply to the cost of recharging the Trade Rocket. E.G. a value of 2 means it costs twice as much to recharge the same size "tank" as vanilla
-
---WIP changes for Exo-Skiff or Fishing Rig consuming Fuel
-FishRigChargeable =		"False"				--"False"
-ExoSkiffChargeable =	"False"				--"False"
 
 --Everything below this point doesn't need to be changed, all the values can be edited in the sections above
 
@@ -1570,6 +1566,12 @@ AddNewGrantine =
                         <Property name="Children" />
                       </Property>]]
 
+AddFishTree =
+[[<Property value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="FISHLASER" />
+                    <Property name="Children" />
+                  </Property>]]
+
 
 function Invert (value)
     return
@@ -1916,20 +1918,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FISHLASER"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Chargeable",	FishRigChargeable},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID", "FISH_SKIFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Chargeable",	ExoSkiffChargeable},
-							}
-						},
-						{
 							["PRECEDING_KEY_WORDS"] = {"GcTechnology.xml"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = NewInterceptorRepairTech
@@ -1964,6 +1952,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title","UI_EXOCRAFT_TREE",		"Unlockable","SUMMON_GARAGE"},
                             ["ADD"] = TextA
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"}, 
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "UT_MINER"}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_WEAP_TECH_TREE",		"Unlockable","STRONGLASER"},
+                            ["ADD_OPTION"]  = "ADDbeforeSECTION",
+							["ADD"] = AddFishTree
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_SCANNER"}, 		--Swaps position of Matter Beam and Interstellar Scanner in freighter unlock tree

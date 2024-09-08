@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_10"
+GameVersion = "5_11"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -164,6 +164,41 @@ ProductSaleChanges =
 	{"FOOD_HORROR_MEAT_NAME",	0.8},				--6,200			Rancid Flesh
 	{"FOOD_R_HORROR_NAME",	0.9},					--9,200			Purged Ribs
 	
+	{"UI_FISH_FOOD_EGGS_NAME",	0.8},				--39,000		Assorted Roe
+	{"UI_FISH_FOOD_MIX_NAME",	0.9},				--52,500		Salty Platter
+	{"UI_FISH_FOOD_STEW_NAME",	0.75},				--52,500		Seafood Stew
+	{"UI_FISH_FOOD_STEW_ALT_NAME",	0.75},			--71,450		Sea's Bounty
+	{"UI_FISH_FOOD_RICE_NAME",	0.45},				--52,500		Fish and Rice
+	{"UI_FISH_FOOD_CHIPS_NAME",	0.35},				--71,450		Starched Fish
+	{"FOOD_B_FISH_NAME",	0.9},					--60,000		Fish Biscuit
+	{"UI_FISH_FOOD_PIE_NAME",	1.2},				--52,500		Marine Pie
+	
+	{"UI_FISH_FOOD_CLAM_NAME",	0.5},				--33,100		Mollusc Flesh
+	{"UI_FISH_FOOD_CRAB_NAME",	0.5},				--33,100		Peeled Claws
+	{"UI_FISH_FOOD_EEL_NAME",	0.8},				--33,100		Fleshy Cylinder
+	{"UI_FISH_FOOD_JELLYEELS_NAME",	0.9},			--52,500		Jellied Eel
+	{"UI_FISH_FOOD_JELLY_NAME",	0.5},				--33,100		Jellymeat
+	{"UI_FISH_FOOD_OCTOPUS_NAME",	1.2},			--33,100		Grilled Tentacle
+	{"UI_FISH_FOOD_PRAWN_NAME",	0.8},				--33,100		Shell Puree
+	{"UI_FISH_FOOD_S15_NAME",	10},				--39,000		Haunted Fillet
+	{"UI_FISH_FOOD_SNAIL_NAME",	0.5},				--33,100		Snail Fillet
+	{"UI_FISH_FOOD_SQUID_NAME",	20},				--33,100		Steamed Rubber
+	{"UI_FISH_FOOD_STARFISH_NAME",	1.1},			--33,100		Delicate Legs
+	{"UI_FISH_FOOD_TURTLE_NAME",	8},				--33,100		Boiled Flipper
+	{"UI_FISH_FOOD_WORM_NAME",	0.5},				--33,100		Poached Worms
+	{"UI_FISH_FOOD_SMALL_1_NAME",	0.6},			--28,000		Fish Fry
+	{"UI_FISH_FOOD_SMALL_2_NAME",	0.6},			--28,000		Whitebait
+	{"UI_FISH_FOOD_SMALL_3_NAME",	0.6},			--28,000		Pickled Fish
+	{"UI_FISH_FOOD_MED_1_NAME",	0.8},				--33,100		Edible Chum
+	{"UI_FISH_FOOD_MED_2_NAME",	0.8},				--33,100		Grilled Fillet
+	{"UI_FISH_FOOD_MED_3_NAME",	0.8},				--33,100		Smoked Fish
+	{"UI_FISH_FOOD_LARGE_1_NAME",	1.1},			--35,400		Marine Steak
+	{"UI_FISH_FOOD_LARGE_2_NAME",	1.1},			--35,400		Brined Flesh
+	{"UI_FISH_FOOD_LARGE_3_NAME",	1.1},			--35,400		Seared Fillet
+	{"UI_FISH_FOOD_XL_1_NAME",	1.5},				--39,000		Fishy Slab
+	{"UI_FISH_FOOD_XL_2_NAME",	1.5},				--39,000		Whole Roast Fish
+	{"UI_FISH_FOOD_XL_3_NAME",	1.5},				--39,000		Seafood 'Feast'
+	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
 	{"DELICACY1_NAME",	10.0},						--20,625		GEKNIP
@@ -314,7 +349,7 @@ CookedFoodGroupSaleChanges =
 			0.8					--	Foods cooked with Pie Case
 		},
 		{
-			"FOOD_R_PIECASE", "FOOD_PIE_BALL", "FOOD_PIE_BEET", "FOOD_PIE_BERRY", "FOOD_PIE_BONE", "FOOD_PIE_CACTUS", "FOOD_PIE_CARM", "FOOD_PIE_CAT", "FOOD_PIE_CHEESE", "FOOD_PIE_CHOC", "FOOD_PIE_CRAB", "FOOD_PIE_CRABJ", "FOOD_PIE_CREAM", "FOOD_PIE_CUST", "FOOD_PIE_DIG", "FOOD_PIE_DRILL", "FOOD_PIE_FIEND", "FOOD_PIE_FISH", "FOOD_PIE_GEK", "FOOD_PIE_GLOW", "FOOD_PIE_GREASE", "FOOD_PIE_HONEY", "FOOD_PIE_JAM", "FOOD_PIE_MCUST", "FOOD_PIE_MEAT", "FOOD_PIE_MOLE", "FOOD_PIE_MUSH", "FOOD_PIE_ORGAN", "FOOD_PIE_ROOTS", "FOOD_PIE_SCUST", "FOOD_PIE_SMEAT", "FOOD_PIE_VCHEE", "FOOD_PIE_VEG", "FOOD_PIE_WEIRD", "FOOD_PIE_BMEAT", "FOOD_PIE_BUGJAM",
+			"FOOD_R_PIECASE", "FOOD_PIE_BALL", "FOOD_PIE_BEET", "FOOD_PIE_BERRY", "FOOD_PIE_BONE", "FOOD_PIE_CACTUS", "FOOD_PIE_CARM", "FOOD_PIE_CAT", "FOOD_PIE_CHEESE", "FOOD_PIE_CHOC", "FOOD_PIE_CRAB", "FOOD_PIE_CRABJ", "FOOD_PIE_CREAM", "FOOD_PIE_CUST", "FOOD_PIE_DIG", "FOOD_PIE_DRILL", "FOOD_PIE_FIEND", "FOOD_PIE_FISH", "FOOD_PIE_GEK", "FOOD_PIE_GLOW", "FOOD_PIE_GREASE", "FOOD_PIE_HONEY", "FOOD_PIE_JAM", "FOOD_PIE_MCUST", "FOOD_PIE_MEAT", "FOOD_PIE_MOLE", "FOOD_PIE_MUSH", "FOOD_PIE_ORGAN", "FOOD_PIE_ROOTS", "FOOD_PIE_SCUST", "FOOD_PIE_SMEAT", "FOOD_PIE_VCHEE", "FOOD_PIE_VEG", "FOOD_PIE_WEIRD", "FOOD_PIE_BMEAT", "FOOD_PIE_BUGJAM", "FOOD_F_PIE", 
 		}
 	},
 	{
@@ -322,7 +357,7 @@ CookedFoodGroupSaleChanges =
 			0.55				--	Foods cooked with Sugar Dough (Biscuits)
 		},
 		{
-			"FOOD_B_APPLE", "FOOD_B_BURN", "FOOD_B_CACTUS", "FOOD_B_CARAMEL", "FOOD_B_CAT", "FOOD_B_CHEESE", "FOOD_B_CHOCO", "FOOD_B_CREAM", "FOOD_B_FIEND", "FOOD_B_FISH", "FOOD_B_FLOWER", "FOOD_B_HERB", "FOOD_B_HONEY", "FOOD_B_HOT", "FOOD_B_JAM", "FOOD_B_MEAT", "FOOD_B_MILK", "FOOD_B_MUSHROOM", "FOOD_B_PLAIN", "FOOD_B_SALT", "FOOD_B_VEG", "FOOD_B_WEIRD", "FOOD_B_WORM", "FOOD_B_BUG",
+			"FOOD_B_APPLE", "FOOD_B_BURN", "FOOD_B_CACTUS", "FOOD_B_CARAMEL", "FOOD_B_CAT", "FOOD_B_CHEESE", "FOOD_B_CHOCO", "FOOD_B_CREAM", "FOOD_B_FIEND", "FOOD_B_FISH", "FOOD_B_FLOWER", "FOOD_B_HERB", "FOOD_B_HONEY", "FOOD_B_HOT", "FOOD_B_JAM", "FOOD_B_MEAT", "FOOD_B_MILK", "FOOD_B_MUSHROOM", "FOOD_B_PLAIN", "FOOD_B_SALT", "FOOD_B_VEG", "FOOD_B_WEIRD", "FOOD_B_WORM", "FOOD_B_BUG", "FOOD_B_FISH", 
 		}
 	},
 	{
@@ -343,18 +378,25 @@ CookedFoodGroupSaleChanges =
 	},
 }
 
---[[
-CookedFoodGroupSaleChanges =
-{
-	{"FOOD_MC_",				2.1},				--	Foods cooked with Extra Fluffy Batter
-	{"FOOD_CK_",				1.25},				--	Foods cooked with Cake Batter
-	{"FOOD_CB_",				1.25},				--	Foods cooked with Thick, Sweet Batter
-	{"FOOD_CG_",				1.15},				--	Foods cooked with Proto Batter
-	{"FOOD_DNUT_",				1.0},				--	Foods cooked with Lumpen Doughnut
-	{"FOOD_PIE_",				0.8},				--	Foods cooked with Pie Case
-	{"FOOD_B_",					0.55},				--	Foods cooked with Sugar Dough (Biscuits)
+RawFishSaleChanges =
+{	--Base Values by Rarity
+	{--Common (C)	Rare (B)	Epic (A)	Legendary (S)
+		10000,		30000,		120000,		400000				--1000,		3000,		10000,		50000
+	},--Size Multipliers
+	{--Small		Medium		Large		Extra Large (Colossal)
+		1,			2,			3,			5					--Multipliers to apply to the value based on size. Vanilla varies by rarity, but is roughly similar to these multipliers
+	}
 }
-]]
+
+FishRarities =
+{
+	"COM", "RARE", "EPIC", "LEG", 
+}
+
+FishSizes =
+{
+	"S", "M", "L", "XL"
+}
 
 TradeMult = 					0.4					--These Trade items have a default StackMultiplier of 5, resulting in a total default stacksize of 25
 IllTradeMult = 					0.2					--These Illegal Trade items also have a default StackMultiplier of 5, but as of NMS v3.88 are only sold in batches of 2~8 or so at Outlaw stations
@@ -547,7 +589,7 @@ ReplaceItems =
 		"FISHBAIT_3",			"FOOD_F_MIX",		7,		"Product",		"POWERCELL",
 	},
 	{	--Bionic Lure	(Makes 20 items per craft)
-		"FISHBAIT_3",			"FARMPROD8",		2,		"Product",		"FARMPROD2",
+		"FISHBAIT_3",			"FARMPROD9",		2,		"Product",		"FARMPROD2",
 	},
 	{	--Dangling Orb	(Makes 20 items per craft)
 		"FISHBAIT_DAY",			"MIRROR",			2,		"Product",		"MIRROR",
@@ -1620,12 +1662,7 @@ for i = 1, #SubstanceCostChanges do
 
 			ChangesToSubstance[#ChangesToSubstance+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", ItemID},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1642,7 +1679,6 @@ for i = 1, #SubstanceStackChanges do
 
 	ChangesToSubstance[#ChangesToSubstance+1] =
 					{
-						["PRECEDING_KEY_WORDS"] = "",
 						["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
 						["MATH_OPERATION"]         = "*",  
 						["REPLACE_TYPE"]         = "ALL",  
@@ -1660,7 +1696,6 @@ for i = 1, #SubstanceSaleChanges do
 
 			ChangesToSubstance[#ChangesToSubstance+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", NameID},
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	=
@@ -1680,12 +1715,7 @@ for i = 1, #ProductCostChanges do
 
 			ChangesToProduct[#ChangesToProduct+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Name", NameID},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1701,11 +1731,7 @@ for i = 1, #ChartCostChanges do
 
 			ChangesToProduct[#ChangesToProduct+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", ChartId},
-				--["PRECEDING_KEY_WORDS"] = {""},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RecipeCost", NewChartCost}
@@ -1718,12 +1744,7 @@ for i = 1, #ProductBuyMarkupModChanges do
 
 			ChangesToProduct[#ChangesToProduct+1] =
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Name", NameID},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1799,35 +1820,52 @@ for i = 1, #GeodeSaleChanges do
 				}
 			}
 end
-	for i = 1, #ProductStackChanges do
-		local NameID = ProductStackChanges[i][1]
-		local StackMult = ProductStackChanges[i][2]
-		local BuyMarkMult = ProductStackChanges[i][3]
+for i = 1, #FishRarities do
+	local Rarity = FishRarities[i]
+	local BaseValueRarity = RawFishSaleChanges[1][i]
 	
-		ChangesToProduct[#ChangesToProduct+1] =
-						{
-                            ["PRECEDING_KEY_WORDS"] = "",
-							["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
-                            ["MATH_OPERATION"]         = "*",  
-                            ["REPLACE_TYPE"]         = "ALL",  
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]     = 
-                            {
-                                {"StackMultiplier",    StackMult},
-								{"BuyBaseMarkup",    BuyMarkMult},
-                            }
-                        }
+	for j = 1, #FishSizes do
+		local FishSize = FishSizes[j]
+		local SizeMult = RawFishSaleChanges[2][j]
+		local FishIDPattern = [[F_]]..[[%u%u%u%u*]]..[[_]]..Rarity..[[_]]..FishSize..[[%d*]]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", FishIDPattern},
+				["REPLACE_TYPE"]         = "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValue", math.floor(BaseValueRarity*SizeMult)},
+					{"SpaceStationMarkup", "0"}			--0.5
+				}
+			}
 	end
+end
+for i = 1, #ProductStackChanges do
+	local NameID = ProductStackChanges[i][1]
+	local StackMult = ProductStackChanges[i][2]
+	local BuyMarkMult = ProductStackChanges[i][3]
+
+	ChangesToProduct[#ChangesToProduct+1] =
+					{
+						["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
+						["MATH_OPERATION"]         = "*",  
+						["REPLACE_TYPE"]         = "ALL",
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"]     = 
+						{
+							{"StackMultiplier",    StackMult},
+							{"BuyBaseMarkup",    BuyMarkMult},
+						}
+					}
+end
 for i = 1, #AdjustItems do
 	local TechIDNum = AdjustItems[i][1]
 	local AdjItemID = AdjustItems[i][2]
 	local AdjItemAmount = AdjustItems[i][3]
 		
 			ChangesToProduct[#ChangesToProduct+1] =
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", TechIDNum,	"ID", AdjItemID},
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -1857,10 +1895,7 @@ for i = 1, #ReplaceItems do
 	local OldCompID = ReplaceItems[i][5]
 		
 			ChangesToProduct[#ChangesToProduct+1] =
-			{
-				["PRECEDING_KEY_WORDS"] = "",
-				["MATH_OPERATION"] 		= "", 
-				["REPLACE_TYPE"] 		= "",	 
+			{ 
 				["SPECIAL_KEY_WORDS"] = {"ID", TechIDNum,	"ID", OldCompID},
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
