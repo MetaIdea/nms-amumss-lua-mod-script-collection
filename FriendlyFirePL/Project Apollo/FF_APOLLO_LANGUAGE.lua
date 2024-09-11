@@ -14,8 +14,8 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom local
 -- languange entries: missions
 ----------------------------------------------------------------------------------------------------
 
-GAME_VERSION = "5.05"
-GAME_UPDATE = "Worlds Part 1"
+GAME_VERSION = "5.11"
+GAME_UPDATE = "Aquarius"
 
 --------------------------------------------------
 -- main mission misc + tooltips

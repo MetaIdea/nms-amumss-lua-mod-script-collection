@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "5-10"
-ModVersion = "2-6-1"
+GameVersion = "5-11"
+ModVersion = "2-6-2"
 
 -- =========
 -- CONSTANTS
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 270
+-- Total keys: 274
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -256,6 +256,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_QL_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Dead Biome", --
   ["ALCH_SCAN_PQ_QL_MENU"] = "Dead", --
   ["ALCH_SCAN_PQ_QL_TITLE"] = "Planet Query ~ Dead", --
+  ["ALCH_SCAN_PQ_QM_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Glitched Biome", --
+  ["ALCH_SCAN_PQ_QM_MENU"] = "Glitched", --
+  ["ALCH_SCAN_PQ_QM_TITLE"] = "Planet Query ~ Glitched", --
   ["ALCH_SCAN_PQ_RA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Ancient Bones", --
   ["ALCH_SCAN_PQ_RA_MENU"] = "Ancient Bones", --
   ["ALCH_SCAN_PQ_RA_TITLE"] = "Planet Query ~ Ancient Bones", --
@@ -302,6 +305,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_QJ_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_QK_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_QL_SUB_1"] = "Active Deep Space Scan", --
+  ["ALCH_SCAN_QM_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_RA_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_RB_SUB_1"] = "Active Deep Space Scan", --
   ["ALCH_SCAN_RC_SUB_1"] = "Active Deep Space Scan", --

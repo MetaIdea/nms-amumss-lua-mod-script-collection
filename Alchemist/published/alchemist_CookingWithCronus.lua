@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "5-10"
-ModVersion = "1-5-0"
+GameVersion = "5-11"
+ModVersion = "1-5-1"
 
 --
 
@@ -4349,7 +4349,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4362,7 +4362,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4401,33 +4401,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4466,111 +4440,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_A" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4622,6 +4492,123 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -4648,7 +4635,20 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_A" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_A" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4672,46 +4672,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_F" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4750,72 +4711,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_F" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4829,32 +4725,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_API_F" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4906,6 +4776,162 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_F" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_F" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -4946,32 +4972,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_API_F" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_F" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -4995,7 +4995,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5008,7 +5008,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5022,45 +5022,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5099,20 +5060,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5138,7 +5086,46 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5190,45 +5177,6 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_API_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5242,7 +5190,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5255,7 +5203,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5294,7 +5242,59 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_API_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_API_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5318,45 +5318,6 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -5370,7 +5331,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="15" />
+                  <Property name="Amount" value="14" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5383,46 +5344,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="13" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="9" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5461,7 +5383,20 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5475,110 +5410,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="13" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="11" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5604,7 +5435,33 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5618,6 +5475,149 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_IMC_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="9" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5641,137 +5641,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="13" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="11" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="14" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5797,7 +5667,85 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="12" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="11" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5823,7 +5771,98 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
+                  <Property name="Amount" value="9" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="13" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="12" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMC_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5862,7 +5901,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5875,7 +5914,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5902,45 +5941,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_IMC_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="11" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="15" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMC_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -5977,136 +5977,6 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="16" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="19" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="17" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -6133,85 +6003,33 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="20" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="18" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="20" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6237,7 +6055,176 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="9" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="14" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="16" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="8" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="18" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="18" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="10" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="19" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="20" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6263,7 +6250,20 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="10" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6287,59 +6287,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="20" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="17" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="14" />
+                  <Property name="Amount" value="9" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6378,7 +6326,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
+                  <Property name="Amount" value="19" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6391,7 +6339,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6404,33 +6352,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="20" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="8" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="18" />
+                  <Property name="Amount" value="14" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6456,6 +6378,45 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="10" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -6469,33 +6430,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="7" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6521,7 +6456,111 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="16" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="18" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="20" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="7" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="15" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMM_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="17" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6547,46 +6586,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMM_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="19" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="9" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMM_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="8" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6610,228 +6610,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6870,7 +6649,20 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6909,7 +6701,215 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -6933,111 +6933,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7076,7 +6972,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7089,7 +6985,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="5" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7103,6 +6999,58 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7141,7 +7089,20 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7155,6 +7116,45 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7180,6 +7180,45 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="6" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="4" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_IMP_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="5" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -7193,46 +7232,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_IMP_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="6" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_IMP_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="4" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7256,71 +7256,6 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -7335,6 +7270,19 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7399,20 +7347,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7451,7 +7386,124 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_B" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7503,59 +7555,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_B" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_B" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7579,6 +7579,19 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="1" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
@@ -7592,7 +7605,46 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7619,84 +7671,6 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="1" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="3" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7787,46 +7761,7 @@ MODIFICATIONS = {{
                 <Property name="Reward" value="GcRewardModifyStat.xml">
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="2" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
-                  <Property name="UseOtherStat" value="False" />
-                  <Property name="ModifyType" value="GcStatModifyType.xml">
-                    <Property name="ModifyType" value="Set" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="CHEF_ECO_S" />
-                  <Property name="OtherStat" value="" />
-                  <Property name="Amount" value="0" />
+                  <Property name="Amount" value="1" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -7879,6 +7814,71 @@ MODIFICATIONS = {{
                   <Property name="Stat" value="CHEF_ECO_S" />
                   <Property name="OtherStat" value="" />
                   <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="2" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="0" />
+                  <Property name="UseOtherStat" value="False" />
+                  <Property name="ModifyType" value="GcStatModifyType.xml">
+                    <Property name="ModifyType" value="Set" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="CHEF_ECO_S" />
+                  <Property name="OtherStat" value="" />
+                  <Property name="Amount" value="3" />
                   <Property name="UseOtherStat" value="False" />
                   <Property name="ModifyType" value="GcStatModifyType.xml">
                     <Property name="ModifyType" value="Set" />
@@ -9956,6 +9956,54 @@ MODIFICATIONS = {{
                     <Property name="Stat" value="CHEF_API_F" />
                     <Property name="StatGroup" value="GLOBAL_STATS" />
                     <Property name="Level" value="5" />
+                    <Property name="LevelledStatRank" value="-1" />
+                    <Property name="TakeLevelFromSeasonData" value="False" />
+                    <Property name="ForceIgnoreLevelledStat" value="False" />
+                    <Property name="MulAmountBySeasonTier" value="False" />
+                    <Property name="CompareStat" value="" />
+                    <Property name="DisplayMilestoneNumber" value="1" />
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="CHEF_MENU_00_DS_F6_OPT_S" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_DV_F6" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_DV_F6" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="CHEF_API_F" />
+                    <Property name="StatGroup" value="GLOBAL_STATS" />
+                    <Property name="Level" value="6" />
                     <Property name="LevelledStatRank" value="-1" />
                     <Property name="TakeLevelFromSeasonData" value="False" />
                     <Property name="ForceIgnoreLevelledStat" value="False" />
@@ -12562,6 +12610,191 @@ MODIFICATIONS = {{
                 <Property name="TruncateCost" value="False" />
                 <Property name="MarkInteractionComplete" value="False" />
                 <Property name="NextInteraction" value="D_ALCF_DV_F5" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_CHEF_MENU_BACK_OPT" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="" />
+                <Property name="Rewards" />
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_HOME" />
+                <Property name="SelectedOnBackOut" value="True" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText" />
+            <Property name="AdditionalTextAlien" />
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral" />
+            </Property>
+            <Property name="Prop" value="GcNPCPropType.xml">
+              <Property name="NPCProp" value="DontCare" />
+            </Property>
+            <Property name="AdvancedInteractionFlow" />
+            <Property name="PersistancyBufferOverride" value="None" />
+            <Property name="CustomFreighterTextIndex" value="-1" />
+            <Property name="RadialInteraction" value="False" />
+            <Property name="UseTitleOverrideInLabel" value="False" />
+            <Property name="AllowNoOptions" value="False" />
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT" />
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1" />
+            <Property name="MinProgressionForSelection" value="0" />
+            <Property name="Id" value="D_ALCF_DV_F6" />
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None" />
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None" />
+            </Property>
+            <Property name="Category" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default" />
+            </Property>
+            <Property name="AdditionalOptions" value="None" />
+            <Property name="Title" value="" />
+            <Property name="Text" value="" />
+            <Property name="TextAlien" value="CHEF_MENU_00_DS_F6_DESC" />
+            <Property name="TranslateAlienText" value="False" />
+            <Property name="TranslationBrackets" value="False" />
+            <Property name="ProgressiveDialogue" value="False" />
+            <Property name="RequiresScanEvent" value="" />
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALL_REQUEST_LEAVE" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_DV_F6A" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_DV_F6A" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_DV_F6" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALL_REQUEST_LEAVE" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_DV_F6B" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_DV_F6B" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_DV_F6" />
+                <Property name="SelectedOnBackOut" value="False" />
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT" />
+                </Property>
+                <Property name="TitleOverride" value="" />
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse" />
+                </Property>
+                <Property name="EnablingConditions" />
+                <Property name="EnablingConditionId" value="" />
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="wordcategorytableEnum" value="MISC" />
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALL_REQUEST_LEAVE" />
+                <Property name="Text" value="" />
+                <Property name="IsAlien" value="False" />
+                <Property name="Cost" value="C_ALCF_DV_F6C" />
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALCF_DV_F6C" />
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral" />
+                </Property>
+                <Property name="Prop" value="GcNPCPropType.xml">
+                  <Property name="NPCProp" value="DontCare" />
+                </Property>
+                <Property name="OverrideWithAlienWord" value="False" />
+                <Property name="ReseedInteractionOnUse" value="False" />
+                <Property name="KeepOpen" value="True" />
+                <Property name="DisplayCost" value="True" />
+                <Property name="TruncateCost" value="False" />
+                <Property name="MarkInteractionComplete" value="False" />
+                <Property name="NextInteraction" value="D_ALCF_DV_F6" />
                 <Property name="SelectedOnBackOut" value="False" />
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT" />
@@ -36047,6 +36280,111 @@ MODIFICATIONS = {{
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_DV_F6A" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="400" />
+                  <Property name="AmountMax" value="500" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Nanites" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="25" />
+                  <Property name="AmountMax" value="25" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Specials" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_DV_F6B" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Nanites" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="125" />
+                  <Property name="AmountMax" value="125" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Specials" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALCF_DV_F6C" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="IncrementStat" value="" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="4000" />
+                  <Property name="AmountMax" value="5000" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Nanites" />
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="LabelID" value="" />
+                <Property name="Reward" value="GcRewardMoney.xml">
+                  <Property name="AmountMin" value="250" />
+                  <Property name="AmountMax" value="250" />
+                  <Property name="RoundNumber" value="False" />
+                  <Property name="Currency" value="GcCurrency.xml">
+                    <Property name="Currency" value="Specials" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALCF_DV_B0A" />
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
@@ -39966,7 +40304,7 @@ MODIFICATIONS = {{
             <Property name="Default" value="GcDefaultMissionProductEnum.xml">
               <Property name="DefaultProductType" value="None" />
             </Property>
-            <Property name="Id" value="FOOD_F_JEELS" />
+            <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>
@@ -40036,6 +40374,29 @@ MODIFICATIONS = {{
               <Property name="DefaultProductType" value="None" />
             </Property>
             <Property name="Id" value="FOOD_F_XL3" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_F6" />
+          <Property name="DisplayCost" value="False" />
+          <Property name="DontCharge" value="True" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="True" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>
@@ -40794,7 +41155,7 @@ MODIFICATIONS = {{
             <Property name="Default" value="GcDefaultMissionProductEnum.xml">
               <Property name="DefaultProductType" value="None" />
             </Property>
-            <Property name="Id" value="FOOD_F_JEELS" />
+            <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>
@@ -40817,7 +41178,7 @@ MODIFICATIONS = {{
             <Property name="Default" value="GcDefaultMissionProductEnum.xml">
               <Property name="DefaultProductType" value="None" />
             </Property>
-            <Property name="Id" value="FOOD_F_JEELS" />
+            <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>
@@ -40840,7 +41201,7 @@ MODIFICATIONS = {{
             <Property name="Default" value="GcDefaultMissionProductEnum.xml">
               <Property name="DefaultProductType" value="None" />
             </Property>
-            <Property name="Id" value="FOOD_F_JEELS" />
+            <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>
@@ -41048,6 +41409,75 @@ MODIFICATIONS = {{
               <Property name="DefaultProductType" value="None" />
             </Property>
             <Property name="Id" value="FOOD_F_XL3" />
+            <Property name="Amount" value="10" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_F6A" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_B_FISH" />
+            <Property name="Amount" value="1" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_F6B" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_B_FISH" />
+            <Property name="Amount" value="5" />
+            <Property name="UseDefaultAmount" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_DV_F6C" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="True" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostProduct.xml">
+            <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+              <Property name="DefaultProductType" value="None" />
+            </Property>
+            <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
           </Property>

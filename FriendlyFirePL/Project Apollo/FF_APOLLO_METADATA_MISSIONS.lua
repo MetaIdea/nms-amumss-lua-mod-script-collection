@@ -14792,7 +14792,7 @@ PROPERTY_MISSION_BOXB = BuildMissionSmallProperty(
 ----------------------------------------------------------------------------------------------------
 
 -- path to mission files
-FILE_MISSIONS = "METADATA\\SIMULATION\\MISSIONS\\BASECOMPUTERMISSIONTABLE.MBIN"
+FILE_MISSIONS = "METADATA\\SIMULATION\\MISSIONS\\TABLES\\BASECOMPUTERMISSIONTABLE.MBIN"
 
 -- list of missions
 LIST_MISSIONS =
