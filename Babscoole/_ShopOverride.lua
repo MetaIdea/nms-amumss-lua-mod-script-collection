@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_ShopOverride.pak",
 ["MOD_AUTHOR"]              = "InvalidCode",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.01.1",
+["NMS_VERSION"]             = "5.11",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -221,7 +221,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ProductID", "HYPERFUEL2"},
-                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AmountForSale",    "5"},

@@ -48,9 +48,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					     ["REPLACE_TYPE"] = "ALL",
 					     ["INTEGER_TO_FLOAT"] = "FORCE",
 					     ["VALUE_CHANGE_TABLE"] =
-					 {
-						{"x", 9999999},
-					 }
+					        {
+						       {"x", 9999999},
+							   {"y", 9999999},
+					        }
                         },
                     }
                 },
