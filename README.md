@@ -17,7 +17,7 @@ Mod script authors:
 - [TheLich](https://www.nexusmods.com/nomanssky/users/943197?tab=user+files)
 - [Jackty89/GameMaster-BE](https://www.nexusmods.com/nomanssky/users/1932252?tab=user+files)
 - [Xen0nex](https://www.nexusmods.com/nomanssky/users/8462873?tab=user+files)
-- [Lasagna](https://www.nexusmods.com/nomanssky/users/126633893?tab=user+files)
+- [Lasagna](https://github.com/SunnySummit/LasagnaBiomeGeneration2)
 - [Silent369](https://www.nexusmods.com/nomanssky/users/122177308?tab=user+files)
 - [PyronoxOmega](https://www.nexusmods.com/nomanssky/users/26756114?tab=user+files)
 - [Lowkie](https://www.nexusmods.com/nomanssky/users/1972404?tab=user+files)
