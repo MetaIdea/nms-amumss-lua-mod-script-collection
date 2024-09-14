@@ -169,6 +169,12 @@ ScannerRange =					150										--200	(was 150 for survival mode)		Radius of Mul
 ScannerRecharge =				90										--30	(was 90 for survival mode)		Cooldown in seconds for Multitool scanner pulse
 ShipScanRecharge =				16										--10		Cooldown in seconds for starship scanner pulse
 
+--Multipliers for the "Fishing Timing" settings, which appear to multiply the base FishCatchAfterBiteTime window in GCFISHINGGLOBALS.GLOBAL.MBIN
+AutoCatch =						3										--2
+LongCatchWindow =				3										--2
+NormalCatchWindow =				1										--1
+ShortCatchWindow =				0.67									--0.67
+
 --Changes to Interest levels and sentinel timers to set their values closer to the old Survival mode values
 InterestLevelChanges =
 {
@@ -339,6 +345,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Full"},					--Full				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"Low"},						--Low				(options are None, Low, High)
+			{"FishingDifficulty",				"NormalCatchWindow"},		--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Normal			(options are Off, Slow, Normal, Fast)
@@ -374,6 +381,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Full"},					--Full				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"Low"},						--Low				(options are None, Low, High)
+			{"FishingDifficulty",				"NormalCatchWindow"},		--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Normal			(options are Off, Slow, Normal, Fast)
@@ -409,6 +417,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"NeverAttack"},				--NeverAttack		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Free"},					--Free				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"None"},					--None				(options are None, Low, High)
+			{"FishingDifficulty",				"NormalCatchWindow"},		--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Off"},--Space				--Off				(options are Off, Slow, Normal, Fast)
@@ -444,6 +453,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"AttackIfProvoked"},		--AttackIfProvoked	(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Low"},						--Low				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"None"},					--None				(options are None, Low, High)
+			{"FishingDifficulty",				"LongCatchWindow"},			--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Slow"},--Space				--Slow				(options are Off, Slow, Normal, Fast)
@@ -479,6 +489,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Full"},					--Full				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"High"},					--High				(options are None, Low, High)
+			{"FishingDifficulty",				"NormalCatchWindow"},		--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Fast				(options are Off, Slow, Normal, Fast)
@@ -514,6 +525,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Full"},					--Full				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"High"},					--High				(options are None, Low, High)
+			{"FishingDifficulty",				"NormalCatchWindow"},		--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Normal"},--Space			--Fast				(options are Off, Slow, Normal, Fast)
@@ -549,6 +561,7 @@ Presets =
 			{"CreatureHostilityDifficulty",		"FullEcosystem"},			--FullEcosystem		(options are NeverAttack, AttackIfProvoked, FullEcosystem)
 			{"SprintingCostDifficulty",			"Low"},						--Low				(options are Free, Low, Full)
 			{"BreakTechOnDamageProbability",	"Low"},						--Low				(options are None, Low, High)
+			{"FishingDifficulty",				"LongCatchWindow"},			--NormalCatchWindow	(options are AutoCatch, LongCatchWindow, NormalCatchWindow, ShortCatchWindow)
 		},
 		{
 			{"CombatTimerDifficultyOption",		"Off"},--Space				--Off				(options are Off, Slow, Normal, Fast)
@@ -885,6 +898,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"None", BTNone},
 					{"Low", BTLow},
 					{"High", BTHigh},
+				}
+			},
+			{
+				["PRECEDING_KEY_WORDS"] = "FishingCatchWindowMultipliers",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AutoCatch", AutoCatch},
+					{"LongCatchWindow", LongCatchWindow},
+					{"NormalCatchWindow", NormalCatchWindow},
+					{"ShortCatchWindow", ShortCatchWindow}
 				}
 			},
 			{

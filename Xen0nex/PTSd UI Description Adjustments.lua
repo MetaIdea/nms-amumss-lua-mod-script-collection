@@ -29,7 +29,7 @@ LargeRocketTubesDesc =
 PhaseBeamDesc =
 [[A &lt;TECHNOLOGY&gt;high-energy beam weapon&lt;&gt; for ship-to-ship combat. &#xA;&#xA;Though vulnerable to &lt;FUEL&gt;overheating&lt;&gt;, these highly accurate laser weapons can &lt;STELLAR&gt;recharge the users's shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively &lt;STELLAR&gt;stronger&lt;&gt; the higher the user's &lt;STELLAR&gt;maximum shield capacity&lt;&gt; is.&#xA;&#xA;Use &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to change weapon mode. Press &lt;IMG&gt;SHIPFIRE&lt;&gt; to fire.]]
 
-GazingEyesDesc =
+GraftedEyesDesc =
 [[A complex arrangement of membranes and lens, fused atop a high-energy laser array. Incineration awaits those that meet their stare.&#xA;Press &lt;IMG&gt;SHIPFIRE&lt;&gt; request the eyes gaze upon nearby targets and &lt;STELLAR&gt;recharge its own shields&lt;&gt; by leeching energy from target shield systems. Shield leech effect is relatively &lt;STELLAR&gt;stronger&lt;&gt; the higher the user's &lt;STELLAR&gt;maximum shield capacity&lt;&gt; is.]]
 
 PhotonCannonDesc =
@@ -42,10 +42,10 @@ BoltcasterDesc =
 [[Generalist weapon attachment for the &lt;TECHNOLOGY&gt;Multi-Tool&lt;&gt; with a high &lt;STELLAR&gt;critical hit&lt;&gt; damage multiplier. Access fire mode by pressing &lt;IMG&gt;CYCLEWEAPON&lt;&gt; and fire weapon with &lt;IMG&gt;ATTACK&lt;&gt;.&#xA;&#xA;The &lt;TECHNOLOLY&gt;Boltcaster&lt;&gt; reconfigures the Multi-Tool to supercharge &lt;EARTH&gt;Metallic Elements&lt;&gt;, firing them as &lt;STELLAR&gt;high-velocity projectiles&lt;&gt; capable of causing extreme damage.]]
 
 CargoScanDefDesc =
-[[A specially tuned resonance jammer, designed to interfere with the remote &lt;STELLAR&gt;cargo scans&lt;&gt; deployed by system authorities in the search for &lt;SPECIAL&gt;smuggled goods&lt;&gt;, or by pirates searching for valuable cargo.&#xA;&#xA;Deploy from the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt; (&lt;IMG&gt;QUICK_MENU&lt;&gt;) while a scan is in progress to deflect the probe. Note: jamming is not 100% effective.&#xA;&#xA;Can be useful to bind to a hotkey to activate quickly, multiple times per scan attempt.]]
+[[A specially tuned resonance jammer, designed to interfere with the remote &lt;STELLAR&gt;cargo scans&lt;&gt; deployed by system authorities in the search for &lt;SPECIAL&gt;smuggled goods&lt;&gt;, or by &lt;FUEL&gt;pirates&lt;&gt; searching for valuable cargo.&#xA;&#xA;Deploy from the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt; (&lt;IMG&gt;QUICK_MENU&lt;&gt;) while a scan is in progress to deflect the probe. Note: jamming is not 100% effective.&#xA;&#xA;Can be useful to bind to a hotkey to activate quickly, multiple times per scan attempt.]]
 
 NeuralShieldDesc =
-[[A beautiful living weave of nanotubes, laced through the vessel's neural assembly. This structure can be energised as the ship deems fit, creating a field that &lt;STELLER&gt;blocks&lt;&gt; hostile &lt;STELLAR&gt;cargo probes&lt;&gt; by either system authorities or pirates.&#xA;&#xA;Use the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt; (&lt;IMG&gt;QUICK_MENU&lt;&gt;) while a scan is in progress to ask that the ship might block the scan.&#xA;&#xA;Can be useful to bind to a hotkey to activate quickly, multiple times per scan attempt.]]
+[[A beautiful living weave of nanotubes, laced through the vessel's neural assembly. This structure can be energised as the ship deems fit, creating a field that &lt;STELLER&gt;blocks&lt;&gt; hostile &lt;STELLAR&gt;cargo probes&lt;&gt; by either system authorities or &lt;FUEL&gt;pirates&lt;&gt;.&#xA;&#xA;Use the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt; (&lt;IMG&gt;QUICK_MENU&lt;&gt;) while a scan is in progress to ask that the ship might block the scan.&#xA;&#xA;Can be useful to bind to a hotkey to activate quickly, multiple times per scan attempt.]]
 
 ScannerRoomDesc =
 [[Advanced integrated freighter equipment. By consuming some &lt;STELLAR&gt;Navigation Data&lt;&gt; to orient itself, this &lt;TECHNOLOGY&gt;planetary scanner&lt;&gt; probes all celestial bodies in the local solar system. This module is placed as an &lt;STELLAR&gt;entire room&lt;&gt; and comes with its functional units pre-installed.&#xA;&#xA;Scanned moons and planets are &lt;STELLAR&gt;Discovered&lt;&gt;, and sensors collect high-level data such as weather conditions and prominent resources.]]
@@ -72,7 +72,7 @@ ReleaseFish =
 [[RELEASE FISH FOR &lt;STELLAR&gt;NANITES&lt;&gt;]]
 
 ReleaseFishDesc =
-[[Return your catch to the water for &lt;STELLAR&gt;nanites&lt;&gt; based on its &lt;HIGHLIGHT&gt;quality&lt;&gt;]]
+[[Return your catch to the water for &lt;STELLAR&gt;nanites&lt;&gt; based on its &lt;HIGHLIGHT&gt;rarity&lt;&gt;]]
 
 SentPillarLeftPane =
 [[WARNING: [ &lt;SPECIAL&gt;BOUNDARY NODE EXPOSED&lt;&gt; ]&#xA;BOUNDARY ARCHIVE STATUS: [ &lt;SPECIAL&gt;VULNERABLE&lt;&gt; ]&#xA;&#xA;Destroy nearby &lt;FUEL&gt;Sentinel Mech&lt;&gt; to earn the right to use this terminal &lt;STELLAR&gt;honourably&lt;&gt;]]
@@ -143,6 +143,24 @@ VenomTime =
 NipNipTime =
 [[This medicinal herb is known for its pungent buds, which are harvested to produce Gek Nip. NipNip thrives in dank environments, and often grows as a weed.&#xA;&#xA;Suitable for hydroponic planting indoors. Cannot be planted outdoors.&#xA;&#xA;Approximate growing time: &lt;TECHNOLOGY&gt;4 hours 20 mins&lt;&gt;&#xA;&#xA;High &lt;TECHNOLOGY&gt;units/hour&lt;&gt; and high &lt;TECHNOLOGY&gt;units/harvest&lt;&gt; but does not produce nanites]]
 
+Mealworms =
+[[A piece of specialist &lt;STELLAR&gt;bait&lt;&gt;, designed to improve the &lt;HIGHLIGHT&gt;rarity&lt;&gt; of your catch, with a slight improvement to &lt;STELLAR&gt;size&lt;&gt;.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+SpicyChum =
+[[A piece of specialist &lt;STELLAR&gt;bait&lt;&gt;, designed to greatly improve the &lt;HIGHLIGHT&gt;rarity&lt;&gt; of your catch, with a little improvement to &lt;STELLAR&gt;size&lt;&gt;.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+BionicLure =
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to vastly improve the &lt;HIGHLIGHT&gt;rarity&lt;&gt; of your catch, with a decent improvement to &lt;STELLAR&gt;size&lt;&gt;. Of particular interest to anglers seeking &lt;COMMODITY&gt;legendary fish&lt;&gt;.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+DanglingOrb =
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;COMMODITY&gt;diurnal&lt;&gt; fish during the day. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+ShadowLure =
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;SPECIAL&gt;nocturnal&lt;&gt; fish at night. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+MagpulseLure =
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract fish that are only active during &lt;TECHNOLOGY&gt;storms&lt;&gt; while a storm is occuring. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
 SurvivalDiffDesc =
 [[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; protects explorers from environmental factors such as &lt;TECHNOLOGY&gt;extreme cold&lt;&gt; and &lt;TRADEABLE&gt;toxicity&lt;&gt;. Its &lt;FUEL&gt;Life Support&lt;&gt; unit provides breathable air and vital movement systems.&#xA;&#xA;This setting scales how quickly these systems are drained in challenging environments.&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 33% Hazard and 50% Life Support drain rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Hazard and Life Support drain rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 150% Hazard and 150% Life Support drain rate]]
 
@@ -187,6 +205,9 @@ InvStackLimitEasy =
 
 RepAndStandingDesc =
 [[&lt;SPECIAL&gt;Standing&lt;&gt; is a measure of your reputation with the aliens factions that populate the galaxy. Higher standing will offer greater opportunities, such as available missions.&#xA;&#xA;This setting scales how quickly standing is gained by impressing a faction. It does not impact how quickly standing is lost.&#xA;&#xA;&lt;HIGHLIGHT&gt;Very Fast&lt;&gt;: 400% Standing and Reputation Gains&#xA;&lt;TRADE&gt;Fast&lt;&gt;: 200% Standing and Reputation Gains&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Standing and Reputation Gains&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 50% Standing and Reputation Gains]]
+
+FishTimingDesc =
+[[This setting increases or decreases the length of time in which to react to a &lt;STELLAR&gt;fish biting on your line&lt;&gt;.&#xA;&#xA;&lt;HIGHLIGHT&gt;Auto-Catch&lt;&gt;: Will automatically snare any fish that bites without requiring any additional button presses or timing.&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 3 second window.&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 1 second window.&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 0.67 second window.]]
 
 SettlementRate =
 [[%NUM% every 6 hours]]
@@ -557,7 +578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "SHIPLAS1_ALIEN_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"English", GazingEyesDesc}
+								{"English", GraftedEyesDesc}
 							}
 						},
 						{
@@ -948,6 +969,55 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", ReleaseFishDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "FISHING_CATCH_WINDOW_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", FishTimingDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_1_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", Mealworms}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_2_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", SpicyChum}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_3_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", BionicLure}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_DAY_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DanglingOrb}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_NIGHT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ShadowLure}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_FISH_BAIT_STORM_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", MagpulseLure}
 							}
 						},
 					}

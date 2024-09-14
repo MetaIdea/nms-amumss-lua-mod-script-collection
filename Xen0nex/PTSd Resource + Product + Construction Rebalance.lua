@@ -507,7 +507,7 @@ AddItems =
 		"STAFF_PART_C",			"SALVAGE_TECH7",	3,		"Product",
 	},
 	{	--Mealworms		(Makes 20 items per craft)
-		"FISHBAIT_1",			"ANY_FISH",			4,		"Product",
+		"FISHBAIT_1",			"CLAMPEARL",		1,		"Product",
 	},
 }
 --Replaces an existing component for certain objects with various items instead
@@ -577,10 +577,10 @@ ReplaceItems =
 		"FISHBAIT_2",			"CREATURE1",		200,	"Substance",	"CREATURE1",
 	},
 	{	--Spicy Chum	(Makes 20 items per craft)
-		"FISHBAIT_2",			"FOOD_J_HOT",		4,		"Product",		"HOT1",
+		"FISHBAIT_2",			"FOOD_J_HOT",		12,		"Product",		"HOT1",
 	},
 	{	--Spicy Chum	(Makes 20 items per craft)
-		"FISHBAIT_2",			"FOOD_F_EGGS",		5,		"Product",		"LAUNCHSUB",
+		"FISHBAIT_2",			"FOOD_F_EGGS",		4,		"Product",		"LAUNCHSUB",
 	},
 	{	--Bionic Lure	(Makes 20 items per craft)
 		"FISHBAIT_3",			"BIO",				4,		"Product",		"BIO",
@@ -598,7 +598,7 @@ ReplaceItems =
 		"FISHBAIT_DAY",			"CASING",			4,		"Product",		"CASING",
 	},
 	{	--Dangling Orb	(Makes 20 items per craft)
-		"FISHBAIT_DAY",			"FOOD_F_EGGS",		5,		"Product",		"CATALYST2",
+		"FISHBAIT_DAY",			"FOOD_F_EGGS",		4,		"Product",		"CATALYST2",
 	},
 	{	--Shadow Lure	(Makes 20 items per craft)
 		"FISHBAIT_NIGHT",		"ANTIMATTER",		2,		"Product",		"ANTIMATTER",
@@ -607,7 +607,7 @@ ReplaceItems =
 		"FISHBAIT_NIGHT",		"CASING",			4,		"Product",		"CASING",
 	},
 	{	--Shadow Lure	(Makes 20 items per craft)
-		"FISHBAIT_NIGHT",		"FOOD_F_EGGS",		5,		"Product",		"WATERPLANT",
+		"FISHBAIT_NIGHT",		"FOOD_F_EGGS",		4,		"Product",		"WATERPLANT",
 	},
 	{	--Magpulse Lure	(Makes 20 items per craft)
 		"FISHBAIT_STORM",		"MAGNET",			2,		"Product",		"MAGNET",
@@ -616,7 +616,7 @@ ReplaceItems =
 		"FISHBAIT_STORM",		"CASING",			4,		"Product",		"CASING",
 	},
 	{	--Magpulse Lure	(Makes 20 items per craft)
-		"FISHBAIT_STORM",		"FOOD_F_EGGS",		5,		"Product",		"ROCKETSUB",
+		"FISHBAIT_STORM",		"FOOD_F_EGGS",		4,		"Product",		"ROCKETSUB",
 	},
 }
 

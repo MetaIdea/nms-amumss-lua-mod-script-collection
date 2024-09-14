@@ -60,10 +60,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v505-B.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v511-A.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.05",
+["NMS_VERSION"]     = "5.11",
 ["MODIFICATIONS"]   =
     {
         {
@@ -539,7 +539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\RECURRINGMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -585,7 +585,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="5" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
@@ -597,7 +597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="5" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
@@ -609,7 +609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="5" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">

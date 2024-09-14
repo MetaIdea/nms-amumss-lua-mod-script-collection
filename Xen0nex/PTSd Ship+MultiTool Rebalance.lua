@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "5_10"
+GameVersion = "5_11"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -7,9 +7,9 @@ Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, 
 --ShieldLeechMul = 0.07								--0.07	Unknown Function, doesn't seem to affect how much shield you leech with lasers
 --SailTakeOffMod = 0.66								--1		Multiplier for launch fuel consumption for takeoff for Solar ships		(Oddly this was never included in GCSPACESHIPGLOBALS.GLOBAL.MBIN like the other ship types?)
 
-TradeRocketSlots =	8								--21	Doesn't seem to have any effect
+TradeRocketSlots =	8								--21	Slots for Trade Rocket. May only have an effect for new saves?
 
-ExoSkiffSlots =		10								--10		Slots for fish/bait storage in Exo-Skiff
+ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May only have an effect for new saves?
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
@@ -1117,7 +1117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"FishBaitBoxLayout","GcInventoryLayout.xml"},
+							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout.xml"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Slots", ExoSkiffSlots}
@@ -1167,6 +1167,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 						]]
 					}
 				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\BACKUPSAVEDATA.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"RocketLockerLayout","GcInventoryLayout.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", TradeRocketSlots}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"FishPlatformLayout","GcInventoryLayout.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Slots", ExoSkiffSlots}
+							}
+						},
+					}
+				}
             }
 		}
     }

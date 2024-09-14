@@ -11,7 +11,7 @@ StormBonusMiningAmountMod =				1.9									--2.55
 --Trade Rocket fuel use?	(Uses Tritium as fuel by default, has ChargeAmount of 50 by default) (charging amount altered in PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua)
 RocketFuelUse =							10									--10
 
---Affects distance that a black hole will warp you towards the galaxy center
+--Affects distance that a black hole will warp you towards the galaxy center. Appears to roughly drop you (VoxelDist +/- VoxelVariation) x 500ly closer to the the galaxy core.
 BlackHoleJumpVoxelDist =				45									--15
 BlackHoleJumpVoxelVariation =			12									--2
 --Costs to evolve Living Ship upgrade modules to higher Classes

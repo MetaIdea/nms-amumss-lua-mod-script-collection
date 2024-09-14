@@ -13,7 +13,7 @@ Path2 = "METADATA\REALITY\TABLES\BAITDATATABLE.MBIN"
 
 MinWaitTime =	2.5										--6.5	Presumably the minimum time in seconds until a fish first nibbles on the line
 MaxWaitTime =	9.5										--13.5	Presumably the minimum time in seconds until a fish first nibbles on the line
-FishCatchAfterBiteTime=	1								--2		Seems to be how long in seconds the window of time you have to catch the fish after it bites (IE this is the duration that the line is colored green)
+FishCatchAfterBiteTime=	1								--2		Seems to be how long in seconds the window of time you have to catch the fish after it bites, which is adjusted by the in-game Fishing Timing setting (IE this is the duration that the line is colored green)
 
 --Chase Times, presumably how long it takes to reel it in after it bites
 CTSmall =		1										--1.66
@@ -68,17 +68,22 @@ SpecBaitChanges =
 	},
 	{--Dangling Orb
 		"FISHBAIT_DAY",	0.8,	1.4,	1.3,	1.2,	--1,	1,		1,		1,
-				0,		0.4,	1.5,	3,		1.5		--0,	1,		1.3,	2,		1.5
+				0,		0.4,	2,		4.5,	2.25	--0,	1,		1.3,	2,		1.5
 	},
 	{--Shadow Lure
 		"FISHBAIT_NIGHT",0.8,	1.4,	1.3,	1.2,	--1,	1,		1,		1,
-				0,		0.4,	1.5,	3,		1.5		--0,	1,		1.3,	2,		1.5
+				0,		0.4,	2,		4.5,	2.25	--0,	1,		1.3,	2,		1.5
 	},
 	{--Magpulse Lure
 		"FISHBAIT_STORM",0.8,	1.4,	1.3,	1.2,	--1,	1,		1,		1,
-				0,		0.4,	1.5,	3,		1.5		--0,	1,		1.3,	2,		1.5
+				0,		0.4,	2,		4.5,	2.25	--0,	1,		1.3,	2,		1.5
 	},
 }
+
+--Changes the special weather/time boosts for certain specialized lures
+DanglingOrbDayBoost =			12						--8
+ShadowLureNightBoost =			12						--8
+MagpulseLureStormBoost =		12						--5.2
 
 --Changes to how depth affects fish size chances (Automated Traps appear to ignore depth and can randomly catch any size fish)
 	--Final size weighting is the BaseWeight + DepthModifier, however based on the depth of the water where you cast / place a trap, DepthModifier is at 0% strength above MinDepth and 100% strength below MaxDepth, and scales between 0% and 100% strength when between the two
@@ -208,7 +213,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {Path2},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						--This entry intentionally left blank, to be filled in by the ChangesToBaitData at the bottom of this script
+						{
+							["SPECIAL_KEY_WORDS"] = {"ProductID", "FISHBAIT_DAY"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"DayTimeBoost", DanglingOrbDayBoost}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ProductID", "FISHBAIT_NIGHT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"NightTimeBoost", ShadowLureNightBoost}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ProductID", "FISHBAIT_STORM"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"StormBoost", MagpulseLureStormBoost}
+							}
+						},
 					}
 				},
 				--[[

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v505-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v511-A.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.05",
+["NMS_VERSION"]             = "5.11",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -184,6 +184,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Time", "300"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Id", "SETTLE"},
+                                {"Id", "MP_PQ"},
+                                {"Id", "MP_REPAIR"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"GameIcons", "GarageMarkerWheeledBike"},
                             }
                         },
                     },
