@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSound"
+ModName = "gSound"
 ModNameSub = "Shield Station"
 BaseDescription = "Mutes the shield station"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -18,9 +18,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELDSTATION\ENTITIES\SHIELDSTATION.ENTITY.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
-							VALUE_CHANGE_TABLE = {
-								{"Ambient", ""}
-							}
+							SPECIAL_KEY_WORDS = {
+                "Sound","Obj_Shield_Repairer_On",
+              },
+              SECTION_UP = 1,
+              REMOVE_TYPE = "ALL",
+              REMOVE = "SECTION",
 						}
 					}
 				},

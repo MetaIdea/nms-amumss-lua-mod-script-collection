@@ -1,5 +1,5 @@
 -- SHIPS_COLLECTION = {"TEST"}
-SHIPS_COLLECTION = {"ALL", "GSHIP"}
+SHIPS_COLLECTION = {"ALL"}
 -- USES LISTS IN COLLECTIONS_LIST
 -- "ALL", "SCI-FI", "REAL-LIFE", "WACKY"
 -- CAN BE ONE OR MORE COLLECTIONS
@@ -335,7 +335,7 @@ COLLECTIONS_LIST =
 						"Avem de Paradiso",
 						"Unitron",
 					},
-	["TEST"] =		{
+	["TEST"] =		{	"ENTERPRISE-D",
 						-- "Droid Tri-Fighter",
 						-- "Enterprise-D",
 						-- "E Wing",
@@ -378,7 +378,7 @@ COLLECTIONS_LIST =
 						-- "Luminaris",
 						-- "SNCF 141.R",
 						-- "Sinonatrix",
-						"Coronatrix",
+						-- "Coronatrix",
 					},
 					
 }

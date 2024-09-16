@@ -2,12 +2,12 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = ""
 BaseDescription = "Proximity base doors"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR\ENTITIES\MAINDOOR.ENTITY.MBIN"
 FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR.SCENE.MBIN"
 
-States = [[    <Property value="GcTriggerActionComponentData.xml">
+States = [[    <Property name="Template" value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
@@ -178,26 +178,26 @@ MODIFICATIONS	= {
 			EXML_CHANGE_TABLE = {
 				{
 					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_OPEN.ANIM.MBIN",},
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						{"Speed", 3}
 					}
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/ANIMS/DOOR/DOOR_CLOSE.ANIM.MBIN",},
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						{"Speed", 0.5}
 					}
 				},
 				{
-					PRECEDING_KEY_WORDS = {"GcTriggerActionComponentData.xml"},
-					["REMOVE"] = "SECTION"
+					SPECIAL_KEY_WORDS = {"Template","GcTriggerActionComponentData.xml"},
+					REMOVE = "SECTION"
 				},
 				{
-					PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
-					["ADD"] = States,
-					REPLACE_TYPE = "ADDAFTERSECTION"
+					PRECEDING_KEY_WORDS = {"LinkableNMSTemplate.xml"},
+					SECTION_ACTIVE = 2,
+					ADD = States,
 				}
 			}
 		},
@@ -207,22 +207,22 @@ MODIFICATIONS	= {
 				{
 					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene4"},
 					LINE_OFFSET = "-1",
-					["REMOVE"] = "SECTION"
+					REMOVE = "SECTION"
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene5"},
 					LINE_OFFSET = "-1",
-					["REMOVE"] = "SECTION"
+					REMOVE = "SECTION"
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene6"},
 					LINE_OFFSET = "-1",
-					["REMOVE"] = "SECTION"
+					REMOVE = "SECTION"
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Name", "RefSnapScene7"},
 					LINE_OFFSET = "-1",
-					["REMOVE"] = "SECTION"
+					REMOVE = "SECTION"
 				}
 			}
 		},

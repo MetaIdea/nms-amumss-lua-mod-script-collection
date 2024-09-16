@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSound"
+ModName = "gSound"
 ModNameSub = "Battery"
 BaseDescription = "Mutes the battery"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -18,9 +18,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_BATTERYS\ENTITIES\BATTERY.ENTITY.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
-							VALUE_CHANGE_TABLE = {
-								{"Ambient", ""}
-							}
+							SPECIAL_KEY_WORDS = {
+                "Sound","Base_Battery_Charging",
+              },
+              SECTION_UP = 2,
+              REMOVE_TYPE = "ALL",
+              REMOVE = "SECTION",
 						}
 					}
 				},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = "All S"
 BaseDescription = "Hotspot balancing"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --Files Changed

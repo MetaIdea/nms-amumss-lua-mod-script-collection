@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gMultitool No Resource Gathering Effects"
 ModNameSub = ""
 BaseDescription = "Removes resource gathering effects"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --Files Modified
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Type","MESH"},
 							REPLACE_TYPE = "ALL",
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 					},
 				},
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Type","MESH"},
 							REPLACE_TYPE = "ALL",
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 					},
 				},
@@ -55,12 +55,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Type","MESH"},
 							REPLACE_TYPE = "ALL",
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Type","LIGHT"},
 							REPLACE_TYPE = "ALL",
-							["REMOVE"] = "SECTION"
+							REMOVE = "SECTION"
 						},
 					},
 				},
@@ -128,19 +128,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					-- EXML_CHANGE_TABLE = {
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","FlashEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","SmokeEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","GlowSparkEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","RockEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 					-- },
 				-- },
@@ -149,27 +149,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					-- EXML_CHANGE_TABLE = {
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","SparkEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","FlashEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","SmokeEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","GlowSparkEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","RockEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","HeatHazeEmitter"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 					-- },
 				-- },
@@ -178,19 +178,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					-- EXML_CHANGE_TABLE = {
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","Flash"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","Sparks"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","Energy"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Name","Smoke"},
-							-- ["REMOVE"] = "SECTION",
+							-- REMOVE = "SECTION",
 						-- },
 					-- },
 				-- },

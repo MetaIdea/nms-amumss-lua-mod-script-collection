@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSound"
+ModName = "gSound"
 ModNameSub = "NPC Station Science"
 BaseDescription = "Mutes the NPC science station"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

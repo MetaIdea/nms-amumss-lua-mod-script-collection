@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Station All"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:

@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Pirate"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","FOV"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value","120"},
+								{"Value",120.0},
 							}
 						},
 						{
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","LandingPadLight",
 							},
 							VALUE_CHANGE_TABLE = {
-								{"TransY",12},
+								{"TransY",12.0},
 							}
 						},
 					}

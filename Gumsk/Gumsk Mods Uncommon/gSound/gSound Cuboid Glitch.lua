@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSound"
+ModName = "gSound"
 ModNameSub = "Cuboid Glitch"
 BaseDescription = "Mutes the Cuboid glitch"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

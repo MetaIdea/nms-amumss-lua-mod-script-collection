@@ -1,12 +1,12 @@
 Author = "Gumsk"
 ModName = "gShip Pulse Increase"
-ModNameSub = "10x"
+ModNameSub = "10"
 BaseDescription = "Increases pulse speed by a multiplier"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.."x "..GameVersion..ModVersion..".pak",
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
-								{"MiniWarpSpeed","10"},
+								{"MiniWarpSpeed",ModNameSub},
 							},
 						},
 					},

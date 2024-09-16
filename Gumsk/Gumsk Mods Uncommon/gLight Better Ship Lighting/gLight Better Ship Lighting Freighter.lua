@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Freighter"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -62,11 +62,75 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"Name","INTENSITY"
 							},
 							VALUE_CHANGE_TABLE = {
-								{"Value",35000},
+								{"Value",35000.0},
 							}
 						},
 					}
-				}
+				},
+				{
+					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
+					EXML_CHANGE_TABLE = {
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_R"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_G"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_B"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+					}
+				},
+				{
+					MBIN_FILE_SOURCE = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
+					EXML_CHANGE_TABLE = {
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_R"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_G"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+						{
+							SPECIAL_KEY_WORDS = {
+								"Name","COL_B"
+							},
+							REPLACE_TYPE = "ALL",
+							VALUE_CHANGE_TABLE = {
+								{"Value",1.0},
+							}
+						},
+					}
+				},
 			}
 		}
 	}

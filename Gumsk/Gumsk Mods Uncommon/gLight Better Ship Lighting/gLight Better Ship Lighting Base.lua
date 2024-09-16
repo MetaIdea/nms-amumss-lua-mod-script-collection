@@ -1,7 +1,7 @@
 ModName = "gLight Better Ship Lighting"
 ModNameSub = "Base"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -84,8 +84,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
 								"Name","MeshLOD1"
 							},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = AddLight
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = AddLight
 						},
 					}
 				}

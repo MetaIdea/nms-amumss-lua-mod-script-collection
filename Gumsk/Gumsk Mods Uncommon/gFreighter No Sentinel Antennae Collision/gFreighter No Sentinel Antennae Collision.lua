@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter No Sentinel Antennae Collision"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 
 --[[ Files Modified:
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
 								"Type","COLLISION"
 							},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 					},
 				},

@@ -2,12 +2,12 @@ Author = "Gumsk"
 ModName = "gExtract"
 ModNameSub = "No Shake"
 BaseDescription = "Gets rid of the screen shake near mineral extractors"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_PUMPS\ENTITIES\MINERALEXTRACTOR.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,

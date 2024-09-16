@@ -4,7 +4,7 @@ BaseDescription = "Eliminates all Creature and Predator Kill missions from space
 GameVersion = "3.89"
 ModVersion = "1_4"
 
-FileSource1 = "METADATA\SIMULATION\MISSIONS\NPCMISSIONTABLE.MBIN"
+FileSource1 = "METADATA\SIMULATION\MISSIONS\TABLES\NPCMISSIONTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,6 +30,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"MissionID","KILL_PREDATORS"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Weighting","0"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"MissionID","KILL_ROBOTS"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Weighting","0"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"MissionID","KILL_FIENDS"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Weighting","0"},

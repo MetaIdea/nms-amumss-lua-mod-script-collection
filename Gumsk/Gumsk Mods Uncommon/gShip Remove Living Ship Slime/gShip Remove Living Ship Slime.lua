@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip"
 ModNameSub = "Remove Living Ship Slime"
 BaseDescription = "Removes instances of slime from living ships"
-GameVersion = "4711"
+GameVersion = "5.1.1.0"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\BIOSHIP_PROC.SCENE.MBIN"
 FileSource2 = "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\NOSTRILBURSTS.SCENE.MBIN"
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","Slime5"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 					}
 				},
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","Slime13"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 					}
 				},
