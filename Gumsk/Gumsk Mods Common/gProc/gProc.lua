@@ -2,9 +2,12 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
-FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+
+--[[ Files Modified:
+METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN
+--]]
 
 Quality_Array = {
    "Normal",
@@ -56,31 +59,49 @@ Upgrade_Text = ""
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-   MOD_FILENAME	    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-   MOD_DESCRIPTION	= BaseDescription,
-   MOD_AUTHOR		= Author,
-   NMS_VERSION		= GameVersion,
-   MODIFICATIONS	=
-   {
-      {
-         MBIN_CHANGE_TABLE =
-         {
+  MOD_FILENAME	    = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+  MOD_DESCRIPTION	= BaseDescription,
+  MOD_AUTHOR		= Author,
+  NMS_VERSION		= GameVersion,
+  MODIFICATIONS	=
+  {
+    {
+      MBIN_CHANGE_TABLE = {
+        {
+          MBIN_FILE_SOURCE = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN",
+          EXML_CHANGE_TABLE = {
             {
-               MBIN_FILE_SOURCE = FileSource,
-               EXML_CHANGE_TABLE =
-               {
-
-
-               },
-            }
-         },
-      }
-   }
+              SPECIAL_KEY_WORDS = {"ID","UP_CANNX","StatsType","Weapon_Projectile_Damage"},
+              SECTION_UP = 1,
+              VALUE_CHANGE_TABLE = {
+                {"ValueMax",22},
+              },
+            },
+            {
+              SPECIAL_KEY_WORDS = {"ID","UP_CANNX","StatsType","Weapon_ChargedProjectile_ExtraSpeed"},
+              SECTION_UP = 1,
+              VALUE_CHANGE_TABLE = {
+                {"ValueMax",28},
+              },
+            },
+            {
+              SPECIAL_KEY_WORDS = {"ID","UP_CANNX","StatsType","Weapon_ChargedProjectile_ChargeTime"},
+              SECTION_UP = 1,
+              VALUE_CHANGE_TABLE = {
+                {"ValueMin",0.4},
+              },
+            },
+          },
+        }
+      },
+    }
+  }
 }
 
 local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 local temp_name = ""
 local temp_name2 = ""
+
 
 --===========================================
 --Loop through each subtype for the upgrade
@@ -101,16 +122,16 @@ for i = 1,#Element_Name_Array do
       Upgrade_Text = Upgrade_Text..
       [[	<Property value="GcProceduralTechnologyData.xml">
       <Property name="ID" value="UP_]]..Element_Name_Array[i][1]..j..[[" />
-      <Property name="Template" value="T_HAZ" />
+      <Property name="Template" value="T_]]..temp_name..[[" />
       <Property name="Group" value="UI_]]..Element_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Name" value="UP_]]..temp_name..[[" />
       <Property name="NameLower" value="UI_]]..Element_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Subtitle" value="UPGRADE_SUB_]]..((4-#Element_Bonus_Array[1][5])+j)..[[" />
       <Property name="Description" value="UP_]]..temp_name..j..[[_DESC" />
       <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.129411772" />
-        <Property name="G" value="0.466666669" />
-        <Property name="B" value="0.784313738" />
+        <Property name="R" value="0.12941177" />
+        <Property name="G" value="0.46666667" />
+        <Property name="B" value="0.78431374" />
         <Property name="A" value="1" />
       </Property>
       <Property name="Quality" value="]]..Quality_Array[((4-#Element_Bonus_Array[1][5])+j)]..[[" />
@@ -176,16 +197,16 @@ for i = 1,#Water_Name_Array do
       Upgrade_Text = Upgrade_Text..
       [[	<Property value="GcProceduralTechnologyData.xml">
       <Property name="ID" value="UP_]]..Water_Name_Array[i][1]..j..[[" />
-      <Property name="Template" value="UT_WATER" />
+      <Property name="Template" value="UT_UNW" />
       <Property name="Group" value="UI_]]..Water_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Name" value="UP_]]..temp_name..[[" />
       <Property name="NameLower" value="UI_]]..Water_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Subtitle" value="UP_]]..temp_name..((3-#Water_Bonus_Array[1][5])+j)..[[_SUB" />
       <Property name="Description" value="UP_]]..temp_name..((3-#Water_Bonus_Array[1][5])+j)..[[_DESC" />
       <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.129411772" />
-        <Property name="G" value="0.466666669" />
-        <Property name="B" value="0.784313738" />
+        <Property name="R" value="0.12941177" />
+        <Property name="G" value="0.46666667" />
+        <Property name="B" value="0.78431374" />
         <Property name="A" value="1" />
       </Property>
       <Property name="Quality" value="]]..Quality_Array[j+1]..[[" />
@@ -236,7 +257,6 @@ for i = 1,#Water_Name_Array do
       ]]
    end
 end
-
 
 
 --===========================================
@@ -314,7 +334,6 @@ for i = 1,#Mining_Name_Array do
 end
 
 
-
 for i = 1,#Element_Name_Array do
    for j = 1,#Element_Bonus_Array[1][4] do
       temp_table =
@@ -349,9 +368,8 @@ for i = 1,#Mining_Name_Array do
 end
 
 
-
 temp_table = {
-   SPECIAL_KEY_WORDS = {"ID","UP_SHLD4"},
+   SPECIAL_KEY_WORDS = {"ID","UP_SHLD0"},
    ADD = Upgrade_Text,
    REPLACE_TYPE = "ADDAFTERSECTION"}
    Change_Table_Array[#Change_Table_Array + 1] = temp_table

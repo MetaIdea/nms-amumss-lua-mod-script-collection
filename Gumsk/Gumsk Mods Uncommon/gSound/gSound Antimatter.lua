@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Antimatter"
 BaseDescription = "Mutes the antimatter harvester"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

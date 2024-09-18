@@ -1,6 +1,6 @@
 ModName = "Multiplies Plant Harvest"
-Author = "Jackty89 & KuroPeach"
-HarvestMultiple = 10;
+Author = "KuroPeach"
+HarvestMultiple = 10
 
 PlantRewardIds =
 {
@@ -19,6 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"] = ModName.."-"..HarvestMultiple.."X.pak",
     ["MOD_DESCRIPTION"] = ModName.."-"..HarvestMultiple.."X.pak",
     ["MOD_AUTHOR"] = Author,
+    ["NMS_VERSION"] = "5.12",
     ["MODIFICATIONS"] =
     {
         {

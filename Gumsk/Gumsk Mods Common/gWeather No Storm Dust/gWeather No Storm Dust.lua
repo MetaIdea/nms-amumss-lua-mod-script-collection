@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather"
 ModNameSub = "No Storm Dust"
 BaseDescription = "Removes storm dust"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

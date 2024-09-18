@@ -7,7 +7,7 @@ local _PercentageChanceMult = 2     --Amount to multiply the chance of receiving
 
 local _SpecialMult          = 1.5   --Special reward amount multiplier
 local _MissionMult          = 2     --Mission board reward amount multiplier
-local _FrigExpMult          = 2.5   --Frigate expedition reward amount multiplier
+local _FrigExpMult          = 2     --Frigate expedition reward amount multiplier
 
 local _AddToEveryFrigExp    = true  --Add SFM rewards to every frigate expedition reward pool
 local _EveryExpChanceMult   = 0.35  --Reduce the chance to receive these SFM rewards or else they're too common and supplant other rewards
@@ -34,9 +34,9 @@ luaAuthor = [[
 		-gFreighter Legal Salvaged Frigate Modules by Gumsk
 ]]
 modName = "SalvagedFrigateModuleRewardsEnhanced"
-description = "Improves Savaged Frigate Module rewards percentages, amounts, and sources. Fully configurable."
-gameVersion = 5.5
-modVersion = 1.0
+description = "Improves Savaged Frigate Module rewards percentages, amounts, and sources. Fully configurable!"
+gameVersion = "5.10.0"
+modVersion = "1.1"
 maintenance = author
 
 --|=======================================================================================--
@@ -153,13 +153,13 @@ end
 local FrigToken_RewardTableItem = string.format('<Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="Reward" value="GcRewardSpecificProduct.xml"><Property name="Default" value="GcDefaultMissionProductEnum.xml"><Property name="DefaultProductType" value="None" /></Property><Property name="ID" value="FRIG_TOKEN" /><Property name="AmountMin" value="%s" /><Property name="AmountMax" value="%s" /><Property name="HideAmountInMessage" value="False" /><Property name="ForceSpecialMessage" value="False" /><Property name="HideInSeasonRewards" value="False" /><Property name="Silent" value="False" /><Property name="SeasonRewardListFormat" value="" /><Property name="RequiresTech" value="" /></Property><Property name="LabelID" value="" /></Property>', SpecialMin, SpecialMax)
 
 if _AddToEveryFrigExp then
-	--Not awarded every time, one in a pool of possible rewards. Chance not multiplied or they would be too common, most of the expedition rewards are just one thing so now most will be 50% chance of frigate tokens
+	--Not awarded every time, one in a pool of possible rewards. Uses a different multiplier from the other additions because these rewards would be too common since most of these reward pools only have one other item.
 	table.insert(ExpRewardTable_EXML_CT,{
 		["SKW"] = {"RewardChoice","SelectAlways"},
 		["PKW"] = "List",
 		["REPLACE_TYPE"] = "ALL",
 		["ADD_OPTION"] = "ADDafterLINE",
-		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', 'Chance" value="'..round(100 * _EveryExpChanceMult)..'"'), --The extra text is to ensure that AmountMin/Max don't get overwritten if they happen to equal 100
+		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', string.format('Chance" value="%s"',round(100*_EveryExpChanceMult))), --The extra text is to ensure that AmountMin/Max don't get overwritten if they happen to equal 100
 	})
 end
 
@@ -176,7 +176,7 @@ if _AddFreighterRewards then
 		["SKW"] = {"Id","R_PIR_FREI","ID","SHIP_CORE_S"},
 		["SECTION_UP"] = 1,
 		["ADD_OPTION"] = "ADDafterSECTION",
-		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', 'Chance" value="'..round(100 * _PercentageChanceMult)..'"')
+		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', string.format('Chance" value="%s"',round(100*_PercentageChanceMult)))
 	})
 end
 
@@ -186,6 +186,6 @@ if _AddPirateRewards then
 		["SKW"] = {"Id","PIRATELOOT","ID","PIRATE_PROD"},
 		["SECTION_UP"] = 1,
 		["ADD_OPTION"] = "ADDafterSECTION",
-		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', 'Chance" value="'..round(100 * _PercentageChanceMult)..'"')
+		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', string.format('Chance" value="%s"',round(100*_PercentageChanceMult)))
 	})
 end

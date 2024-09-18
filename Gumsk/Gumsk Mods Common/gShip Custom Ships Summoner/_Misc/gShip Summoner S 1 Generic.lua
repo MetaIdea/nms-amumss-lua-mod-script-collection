@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Summoner"
 ModNameSub = "1 Generic"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 ShipInfo = 	{

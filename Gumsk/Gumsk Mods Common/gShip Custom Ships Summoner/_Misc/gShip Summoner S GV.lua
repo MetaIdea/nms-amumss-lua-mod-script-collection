@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Summoner"
 ModNameSub = "GV"
 BaseDescription = "Summons Golden Vector"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 ShipInfo = 	{

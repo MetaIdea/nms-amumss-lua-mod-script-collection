@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = "FOV"
 BaseDescription = ""
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 --Files Changed

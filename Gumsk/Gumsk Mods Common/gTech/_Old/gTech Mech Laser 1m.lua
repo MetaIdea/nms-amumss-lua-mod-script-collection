@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech Mech Laser"
 ModNameSub = "1m"
 BaseDescription = ""
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 

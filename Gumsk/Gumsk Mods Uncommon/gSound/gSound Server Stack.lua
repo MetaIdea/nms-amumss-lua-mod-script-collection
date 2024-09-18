@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Server Stack"
 BaseDescription = "Mutes the Server Stack"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

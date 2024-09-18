@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Summoner"
 ModNameSub = "Seed Tracker"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 
 --[[Files Used:

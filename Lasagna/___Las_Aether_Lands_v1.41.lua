@@ -1,9 +1,20 @@
 --[[
+for the latest mod updates, visit: https://github.com/SunnySummit/LasagnaBiomeGeneration2
 
-LUA script created using PLUMGEN
-Script may include unused identifiers
-Import EXML back into PLUMGEN for swift and easy editing
+feel free to make your own changes. in order to distribute (paks or lua scripts) you must:
+    1. provide full credits in a readme file included with the archive.
+    2. use open (GPLv3) licensing and/or open nexus mods permissions (include these 5 points in the readme/description page).
+    3. you cannot sell or profit from this mod.
+    4. you cannot distribute this mod for other games or media besides No Man's Sky.
+    5. don't re-upload these lua scripts verbatim, instead, link to this repo (or create a fork).
+	
+thank.
+--]]
 
+--[[
+LUA script created using PLUMGEN: https://github.com/SunnySummit/PLUMGEN
+script may include unused identifiers.
+import EXML back into PLUMGEN for swift and easy editing.
 --]]
 
 --## 1a_header_reg_draw
@@ -1059,7 +1070,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1.SCENE.MBIN", "BLANKETCLUMP", -1, 128, 0, 180, 4.5, 7.5, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.1, 0.066, 0.066, 3), }, --## 3b_biome_dist
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 0.9, 70, 1, 1, 0.75, 3, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.33, 0, 3), }, --## 3c_biome_landm
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 0.9, 70, 1, 1, 0.75, 3, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.132, 0.07, 0, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 
 					{ ["MBIN_FILE_SOURCE"] 	=  { {"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_175_WEIRD_SUBZERO.MBIN","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/AETHER_LANDS/BIOME_176_HUGE_IRRADIATED_FROZEN.MBIN"}, }, --## 3a1_biome
@@ -1536,7 +1547,7 @@ NMS_MOD_DEFINITION_CONTAINER = --## 2_body
 					["EXML_CHANGE_TABLE"] 	= {
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["ADD"] = replaceObjects, ["ADD_OPTION"]  = "ADDafterSECTION", },
 						{ ["PRECEDING_KEY_WORDS"] = {"Objects",}, ["REMOVE"] = "SECTION" },
-						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 0.9, 5, 1, 1, 0, 3, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.625, 0, 3), }, --## 3b_biome_dist
+						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddDistantProp("MODELS/PLANETS/BIOMES/FROZENPILLARS/LARGEPILLAR.SCENE.MBIN", "SPARSECLUMP", -1, 128, 0, 60, 0.9, 5, 1, 1, 0, 3, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.2, 0.07, 0, 3), }, --## 3b_biome_dist
 						{ ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",}, ["ADD_OPTION"] 	= "ADDafterLINE", ["ADD"] = AddLandmarkProp("MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/GASBAGS.SCENE.MBIN", "FLORACLUMP", -1, 128, 0, 80, 4, 72, 1, 1, 0, 0, 180, 55, -2, "TRUE", "TRUE", "TRUE", "FALSE", 0.104, 0.00208, 0.00208, 3), }, --## 3c_biome_landm
 					}, }, --## 3f_biome_end
 

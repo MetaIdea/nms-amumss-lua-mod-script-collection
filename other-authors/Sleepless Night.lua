@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "Sleepless Night.pak", 
 ["MOD_AUTHOR"]				= "Degraaaff, KuroPeach",
 ["LUA_AUTHOR"]				= "Lo2k, KuroPeach",
-["NMS_VERSION"]				= "5.03",
+["NMS_VERSION"]				= "5.12",
 ["MOD_DESCRIPTION"]			= "This mods changes night lighting like dusk",
 ["MODIFICATIONS"] 			= 
 	{

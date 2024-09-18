@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "More Useful Bait "..Multiple.."X.pak",
 ["MOD_AUTHOR"]      = "KuroPeach",
 ["LUA_AUTHOR"]      = "KuroPeach",
-["NMS_VERSION"]     = "5.0.5",
+["NMS_VERSION"]     = "5.12",
 ["MOD_DESCRIPTION"] = "加强各种鱼饵的效果",
 ["MODIFICATIONS"]   =
     {

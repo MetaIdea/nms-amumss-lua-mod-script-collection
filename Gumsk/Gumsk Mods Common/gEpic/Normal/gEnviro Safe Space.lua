@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gEnviro"
 ModNameSub = "Safe Space"
 BaseDescription = "Environment globals"
-GameVersion = "5.1.1.0"
+GameVersion = "5.1.2.0"
 ModVersion = "a"
 FileSource = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 
