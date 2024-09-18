@@ -11,15 +11,15 @@ Path2 = "METADATA\REALITY\TABLES\BAITDATATABLE.MBIN"
 --Nanite rewards for releasing fish handled under FishReleaseChanges in "PTSd Rewards Remixer.lua"
 --Units value for selling raw & cooked fish handled in "PTSd Resource + Product + Construction Rebalance.lua"
 
-MinWaitTime =	2.5										--6.5	Presumably the minimum time in seconds until a fish first nibbles on the line
+MinWaitTime =	2										--6.5	Presumably the minimum time in seconds until a fish first nibbles on the line
 MaxWaitTime =	9.5										--13.5	Presumably the minimum time in seconds until a fish first nibbles on the line
 FishCatchAfterBiteTime=	1								--2		Seems to be how long in seconds the window of time you have to catch the fish after it bites, which is adjusted by the in-game Fishing Timing setting (IE this is the duration that the line is colored green)
 
 --Chase Times, presumably how long it takes to reel it in after it bites
-CTSmall =		1										--1.66
-CTMedium =		1.5										--3
-CTLarge =		2.5										--5
-CTExtraLarge =	3										--6.5
+CTSmall =		0.5										--1.66
+CTMedium =		1										--3
+CTLarge =		1.5										--5
+CTExtraLarge =	2										--6.5
 
 SeaHarvesterAverageCatchTimeSeconds =	7200			--3600	The average time in seconds until an Automated Trap catches another fish
 
@@ -56,7 +56,7 @@ SpecBaitChanges =
 	{--Mealworms		SizeBoosts for Small, Medium, Large, ExtraLarge
 		"FISHBAIT_1",	0.9,	1.3,	1.2,	1.1,	--1,	1,		1,		1,
 --RarityBoosts for Junk, Common, Rare, Epic, Legendary
-				0,		0.9,	2,		2.2,	1.5		--0,	0.9,	2,		1.5,	1.2
+				0,		1.2,	2,		2.2,	1.5		--0,	0.9,	2,		1.5,	1.2
 	},
 	{--Spicy Chum
 		"FISHBAIT_2",	0.8,	1.4,	1.3,	1.2,	--1,	1,		1,		1,

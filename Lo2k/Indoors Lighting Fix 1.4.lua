@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Indoors Lighting Fix 1.2.pak", 
+["MOD_FILENAME"] 			= "Indoors Lighting Fix 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.65",
+["NMS_VERSION"]				= "5.12",
 ["MOD_DESCRIPTION"]			= "This mods greatly improves indoor lighting",
 ["MODIFICATIONS"] 			= 
 	{
@@ -19,7 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"IndoorsLightingPlanetMax",	"1"},  --original 0.42
-								{"IndoorsLightingFreighterMax",	"10"}, --original 1
+								--{"IndoorsLightingFreighterMax",	"10"}, --original 1
+								--added in 5.0
+								--{"IndoorsLightingSpaceStationMax", "1"}, --original 1
+								--{"IndoorsLightingAbandonedFreighterMax", "1"},  --original 1
+
 							}		
 						},
 						{

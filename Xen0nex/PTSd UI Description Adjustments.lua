@@ -47,6 +47,21 @@ CargoScanDefDesc =
 NeuralShieldDesc =
 [[A beautiful living weave of nanotubes, laced through the vessel's neural assembly. This structure can be energised as the ship deems fit, creating a field that &lt;STELLER&gt;blocks&lt;&gt; hostile &lt;STELLAR&gt;cargo probes&lt;&gt; by either system authorities or &lt;FUEL&gt;pirates&lt;&gt;.&#xA;&#xA;Use the &lt;TECHNOLOGY&gt;Quick Menu&lt;&gt; (&lt;IMG&gt;QUICK_MENU&lt;&gt;) while a scan is in progress to ask that the ship might block the scan.&#xA;&#xA;Can be useful to bind to a hotkey to activate quickly, multiple times per scan attempt.]]
 
+TeleportReceiver =
+[[A device that modulates standard starship communication signals to &lt;TECHNOLOGY&gt;enable the transport of matter&lt;&gt; as well as data.&#xA;&#xA;Starships fitted with such a device can send and receive products and substances to a user's exosuit over a &lt;VAL_ON&gt;long distance&lt;&gt;, up to &lt;STELLAR&gt;800u&lt;&gt; away.]]
+
+AMUDesc =
+[[An &lt;TECHNOLOGY&gt;automated harvester&lt;&gt; for the mining of resources. Once activated, the AMU extracts minerals for up to &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
+
+OxygenHarvesterDesc =
+[[An &lt;TECHNOLOGY&gt;autonomous atmosphere extractor&lt;&gt;, this device can be left to collect and purify &lt;STELLAR&gt;oxygen&lt;&gt; from the air for up to &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;The resulting gas is compressed and processed, ready for use in all standard &lt;FUEL&gt;life support systems&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
+
+AtmosphereHarvesterDesc =
+[[An &lt;TECHNOLOGY&gt;automated siphon unit&lt;&gt; for the collection of valuable gases. Once activated, the harvester condenses and compresses substances from the air for up to &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;. Compressed gas is then stored safely until collected.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
+
+AntimatterReactorDesc =
+[[An &lt;TECHNOLOGY&gt;autonomous baryogenesis reactor&lt;&gt;, this device can be left to harvest reality paradoxes and convert them into usable &lt;FUEL&gt;antimatter&lt;&gt; for up to &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;The resulting antimatter is safely contained, ready for use in all standard &lt;FUEL&gt;hyperspace power units&lt;&gt;.]]
+
 ScannerRoomDesc =
 [[Advanced integrated freighter equipment. By consuming some &lt;STELLAR&gt;Navigation Data&lt;&gt; to orient itself, this &lt;TECHNOLOGY&gt;planetary scanner&lt;&gt; probes all celestial bodies in the local solar system. This module is placed as an &lt;STELLAR&gt;entire room&lt;&gt; and comes with its functional units pre-installed.&#xA;&#xA;Scanned moons and planets are &lt;STELLAR&gt;Discovered&lt;&gt;, and sensors collect high-level data such as weather conditions and prominent resources.]]
 
@@ -160,6 +175,12 @@ ShadowLure =
 
 MagpulseLure =
 [[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract fish that are only active during &lt;TECHNOLOGY&gt;storms&lt;&gt; while a storm is occuring. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+
+AutoTrapDesc =
+[[An autonomous fishing device, designed for long-term deployment in a wide-range of water conditions.&#xA;&#xA;Once activated, the system will lure and trap aquatic creatures from various depths &lt;STELLAR&gt;regardless of trap placement&lt;&gt; and store them for later retrieval.]]
+
+AutoTrapAltDesc =
+[[An autonomous fishing device, designed for long-term deployment in a wide-range of water conditions. Return later to collect trapped fish lured from various depths &lt;STELLAR&gt;regardless of trap placement&lt;&gt;.&#xA;&#xA;Trap cycle: &lt;TRADEABLE&gt;IN PROGRESS&lt;&gt;]]
 
 SurvivalDiffDesc =
 [[The Exosuit's &lt;CATALYST&gt;Hazard Protection&lt;&gt; protects explorers from environmental factors such as &lt;TECHNOLOGY&gt;extreme cold&lt;&gt; and &lt;TRADEABLE&gt;toxicity&lt;&gt;. Its &lt;FUEL&gt;Life Support&lt;&gt; unit provides breathable air and vital movement systems.&#xA;&#xA;This setting scales how quickly these systems are drained in challenging environments.&#xA;&#xA;&lt;TRADE&gt;Relaxed&lt;&gt;: 33% Hazard and 50% Life Support drain rate&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Hazard and Life Support drain rate&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 150% Hazard and 150% Life Support drain rate]]
@@ -417,6 +438,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_HARVESTER_DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AMUDesc}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "NEWPROD14_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -500,6 +528,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "O2_HARVESTER_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", OxygenHarvesterDesc}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DOOR_ARMOUR"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -526,6 +561,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_LOC5_ENGLISH.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_ANTIMATTER_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AntimatterReactorDesc}
+							}
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_NEXUSMILES_LANG_4"},
 							["VALUE_CHANGE_TABLE"] 	=
@@ -1020,12 +1062,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"English", MagpulseLure}
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_SEAHARVESTER_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AutoTrapDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_SEAHARVESTER_DESC_ALT"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AutoTrapAltDesc}
+							}
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= {"LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_GASHARVESTER_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AtmosphereHarvesterDesc}
+							}
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_PLANTPROD_NIP_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
@@ -1052,6 +1115,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", GravTime}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "SHIP_TELEPORT_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", TeleportReceiver}
 							}
 						},
 					}

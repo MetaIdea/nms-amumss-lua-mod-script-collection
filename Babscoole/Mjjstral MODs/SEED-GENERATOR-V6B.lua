@@ -434,9 +434,6 @@ local GENERIC_REWARD_MAIN_ENTRY =
 return GENERIC_REWARD_MAIN_ENTRY
 end
 
---------------------------------------------------------------------------
-
-
 function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
@@ -755,7 +752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "5.10",
+["NMS_VERSION"]     = "5.12",
 ["MODIFICATIONS"]   =
     {
         {

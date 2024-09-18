@@ -1,5 +1,5 @@
 ModName = "PTSd Crops and Harvester Speed Changes"
-GameVersion = "4_45"
+GameVersion = "5_11"
 Description = "Changes the growth time for a few farmable plants to make Albumen Pearls, Sac Venom, etc. more worthwhile. Also the carbon-powered mining & gas harvesters Note that the build menu UI does not accurately show the correct growth times."
 
 --These specifically change the buildable crops in your base, not wild ones
@@ -243,4 +243,11 @@ for i = 1, #GrowthChanges do
 					}
 				}
 		end
+				ChangesToGrowths[#ChangesToGrowths+1] =
+				{
+					["VALUE_CHANGE_TABLE"] 	=
+					{
+						{"HideContents", "False"}			--Allows you to view remaining growth time for the crop by viewing with the Analysis Visor (this ability was removed for Venom Urchins around NMS v5.11 or so, presumably as a mistake)
+					}
+				}
 	end

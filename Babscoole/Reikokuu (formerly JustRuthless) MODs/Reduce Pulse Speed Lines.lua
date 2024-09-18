@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "Reduce Pulse Speed Lines.pak",
 ["MOD_AUTHOR"]              = "Reikokuu & Babscoole",
 ["MOD_DESCRIPTION"]         = "Reduce Speed Lines",
-["NMS_VERSION"]             = "5.10",
+["NMS_VERSION"]             = "5.12",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

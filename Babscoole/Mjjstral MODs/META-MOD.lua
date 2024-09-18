@@ -1240,6 +1240,9 @@ return [[
                 <Property name="Name" value="" />
                 <Property name="Version" value="0" />
               </Property>
+              <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                <Property name="ShipClass" value="Fighter" />
+              </Property>
               <Property name="NameOverride" value="" />
               <Property name="IsGift" value="True" />
               <Property name="IsRewardShip" value="True" />
@@ -1427,14 +1430,20 @@ if #USER_SEED_LIST > 0 then
             REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. MULTITOOLCOUNTER
             MULTITOOLCOUNTER = MULTITOOLCOUNTER + 1
             REWARDTABLE      = REWARDTABLE .. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "True")
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "False")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS", "True")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS", "False")
+        elseif USER_SEED_LIST[i][1] == "POLICESHIP" then
+            REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
+            SHIPCOUNTER      = SHIPCOUNTER + 1
+            REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS", "True")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\HUD\POLICEMESSAGEICON.DDS", "False")
         else
             REWARD_ID        = USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
             SHIPCOUNTER      = SHIPCOUNTER + 1
             REWARDTABLE      = REWARDTABLE .. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "True")
-            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "False")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS", "True")
+            EMOTEMENU        = EMOTEMENU   .. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS", "False")
         end
         ACTIONCOMPONENTS       = ACTIONCOMPONENTS .. GetRewardAction(REWARD_ID, REWARD_ID)
         ANIMS                  = ANIMS            .. GetTriggerAnim(REWARD_ID)
@@ -1453,7 +1462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "5.10",
+["NMS_VERSION"]     = "5.12",
 ["MODIFICATIONS"]   =
     {
         {

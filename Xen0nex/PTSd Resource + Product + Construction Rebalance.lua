@@ -164,40 +164,40 @@ ProductSaleChanges =
 	{"FOOD_HORROR_MEAT_NAME",	0.8},				--6,200			Rancid Flesh
 	{"FOOD_R_HORROR_NAME",	0.9},					--9,200			Purged Ribs
 	
-	{"UI_FISH_FOOD_EGGS_NAME",	0.8},				--39,000		Assorted Roe
-	{"UI_FISH_FOOD_MIX_NAME",	0.9},				--52,500		Salty Platter
-	{"UI_FISH_FOOD_STEW_NAME",	0.75},				--52,500		Seafood Stew
-	{"UI_FISH_FOOD_STEW_ALT_NAME",	0.75},			--71,450		Sea's Bounty
-	{"UI_FISH_FOOD_RICE_NAME",	0.45},				--52,500		Fish and Rice
-	{"UI_FISH_FOOD_CHIPS_NAME",	0.35},				--71,450		Starched Fish
-	{"FOOD_B_FISH_NAME",	0.9},					--60,000		Fish Biscuit
-	{"UI_FISH_FOOD_PIE_NAME",	1.2},				--52,500		Marine Pie
+	{"UI_FISH_FOOD_EGGS_NAME",	0.46},				--39,000		Assorted Roe
+	{"UI_FISH_FOOD_MIX_NAME",	0.51},				--52,500		Salty Platter
+	{"UI_FISH_FOOD_STEW_NAME",	0.39},				--52,500		Seafood Stew
+	{"UI_FISH_FOOD_STEW_ALT_NAME",	0.43},			--71,450		Sea's Bounty
+	{"UI_FISH_FOOD_RICE_NAME",	0.31},				--52,500		Fish and Rice
+	{"UI_FISH_FOOD_CHIPS_NAME",	0.27},				--71,450		Starched Fish
+	{"FOOD_B_FISH_NAME",	0.8},					--60,000		Fish Biscuit
+	{"UI_FISH_FOOD_PIE_NAME",	1.0},				--52,500		Marine Pie
 	
-	{"UI_FISH_FOOD_CLAM_NAME",	0.5},				--33,100		Mollusc Flesh
-	{"UI_FISH_FOOD_CRAB_NAME",	0.5},				--33,100		Peeled Claws
-	{"UI_FISH_FOOD_EEL_NAME",	0.8},				--33,100		Fleshy Cylinder
-	{"UI_FISH_FOOD_JELLYEELS_NAME",	0.9},			--52,500		Jellied Eel
-	{"UI_FISH_FOOD_JELLY_NAME",	0.5},				--33,100		Jellymeat
-	{"UI_FISH_FOOD_OCTOPUS_NAME",	1.2},			--33,100		Grilled Tentacle
-	{"UI_FISH_FOOD_PRAWN_NAME",	0.8},				--33,100		Shell Puree
-	{"UI_FISH_FOOD_S15_NAME",	10},				--39,000		Haunted Fillet
-	{"UI_FISH_FOOD_SNAIL_NAME",	0.5},				--33,100		Snail Fillet
-	{"UI_FISH_FOOD_SQUID_NAME",	20},				--33,100		Steamed Rubber
-	{"UI_FISH_FOOD_STARFISH_NAME",	1.1},			--33,100		Delicate Legs
-	{"UI_FISH_FOOD_TURTLE_NAME",	8},				--33,100		Boiled Flipper
-	{"UI_FISH_FOOD_WORM_NAME",	0.5},				--33,100		Poached Worms
-	{"UI_FISH_FOOD_SMALL_1_NAME",	0.6},			--28,000		Fish Fry
-	{"UI_FISH_FOOD_SMALL_2_NAME",	0.6},			--28,000		Whitebait
-	{"UI_FISH_FOOD_SMALL_3_NAME",	0.6},			--28,000		Pickled Fish
-	{"UI_FISH_FOOD_MED_1_NAME",	0.8},				--33,100		Edible Chum
-	{"UI_FISH_FOOD_MED_2_NAME",	0.8},				--33,100		Grilled Fillet
-	{"UI_FISH_FOOD_MED_3_NAME",	0.8},				--33,100		Smoked Fish
-	{"UI_FISH_FOOD_LARGE_1_NAME",	1.1},			--35,400		Marine Steak
-	{"UI_FISH_FOOD_LARGE_2_NAME",	1.1},			--35,400		Brined Flesh
-	{"UI_FISH_FOOD_LARGE_3_NAME",	1.1},			--35,400		Seared Fillet
-	{"UI_FISH_FOOD_XL_1_NAME",	1.5},				--39,000		Fishy Slab
-	{"UI_FISH_FOOD_XL_2_NAME",	1.5},				--39,000		Whole Roast Fish
-	{"UI_FISH_FOOD_XL_3_NAME",	1.5},				--39,000		Seafood 'Feast'
+	{"UI_FISH_FOOD_CLAM_NAME",	0.27},				--33,100		Mollusc Flesh
+	{"UI_FISH_FOOD_CRAB_NAME",	0.27},				--33,100		Peeled Claws
+	{"UI_FISH_FOOD_EEL_NAME",	0.51},				--33,100		Fleshy Cylinder
+	{"UI_FISH_FOOD_JELLYEELS_NAME",	0.57},			--52,500		Jellied Eel
+	{"UI_FISH_FOOD_JELLY_NAME",	0.27},				--33,100		Jellymeat
+	{"UI_FISH_FOOD_OCTOPUS_NAME",	0.73},			--33,100		Grilled Tentacle
+	{"UI_FISH_FOOD_PRAWN_NAME",	0.51},				--33,100		Shell Puree
+	{"UI_FISH_FOOD_S15_NAME",	41.44},				--39,000		Haunted Fillet
+	{"UI_FISH_FOOD_SNAIL_NAME",	0.27},				--33,100		Snail Fillet
+	{"UI_FISH_FOOD_SQUID_NAME",	18.07},				--33,100		Steamed Rubber
+	{"UI_FISH_FOOD_STARFISH_NAME",	1.13},			--33,100		Delicate Legs
+	{"UI_FISH_FOOD_TURTLE_NAME",	9.82},			--33,100		Boiled Flipper
+	{"UI_FISH_FOOD_WORM_NAME",	0.27},				--33,100		Poached Worms
+	{"UI_FISH_FOOD_SMALL_1_NAME",	0.32},			--28,000		Fish Fry
+	{"UI_FISH_FOOD_SMALL_2_NAME",	0.32},			--28,000		Whitebait
+	{"UI_FISH_FOOD_SMALL_3_NAME",	0.32},			--28,000		Pickled Fish
+	{"UI_FISH_FOOD_MED_1_NAME",	0.51},				--33,100		Edible Chum
+	{"UI_FISH_FOOD_MED_2_NAME",	0.51},				--33,100		Grilled Fillet
+	{"UI_FISH_FOOD_MED_3_NAME",	0.51},				--33,100		Smoked Fish
+	{"UI_FISH_FOOD_LARGE_1_NAME",	0.68},			--35,400		Marine Steak
+	{"UI_FISH_FOOD_LARGE_2_NAME",	0.68},			--35,400		Brined Flesh
+	{"UI_FISH_FOOD_LARGE_3_NAME",	0.68},			--35,400		Seared Fillet
+	{"UI_FISH_FOOD_XL_1_NAME",	0.77},				--39,000		Fishy Slab
+	{"UI_FISH_FOOD_XL_2_NAME",	0.77},				--39,000		Whole Roast Fish
+	{"UI_FISH_FOOD_XL_3_NAME",	3.08},				--39,000		Seafood 'Feast'
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
 	{"NEWPROD2_NAME",	10.0},						--11,688		VYKEENDAGGER
@@ -381,10 +381,10 @@ CookedFoodGroupSaleChanges =
 RawFishSaleChanges =
 {	--Base Values by Rarity
 	{--Common (C)	Rare (B)	Epic (A)	Legendary (S)
-		10000,		30000,		120000,		400000				--1000,		3000,		10000,		50000
+		5000,		25000,		130000,		600000				--1000,		3000,		10000,		50000
 	},--Size Multipliers
 	{--Small		Medium		Large		Extra Large (Colossal)
-		1,			2,			3,			5					--Multipliers to apply to the value based on size. Vanilla varies by rarity, but is roughly similar to these multipliers
+		1,			2,			3,			4					--Multipliers to apply to the value based on size. Vanilla varies by rarity, but is roughly: 1,	2,	3,	4/5
 	}
 }
 
@@ -396,6 +396,29 @@ FishRarities =
 FishSizes =
 {
 	"S", "M", "L", "XL"
+}
+
+--Gives bonus multipliers to the unit value of fish based on being diurnal, nocturnal, or storm-only instead of the 138 normal "active 24 hours in all weather" fish (There are 182 fish total)
+WeatherFishMults =
+{
+	{
+		{1.15},		--Diurnal fish bonus multiplier			(There are 13 diurnal fish)
+		{	--4 common, 6 rare, 3 epic, 0 legendary
+			"F_TOX_RARE_S1", "F_TOX_EPIC_S1", "F_RAD_RARE_S2", "F_RAD_RARE_L1", "F_HOT_COM_S2", "F_HOT_RARE_M2", "F_COLD_COM_M2", "F_LUSH_COM_S2", "F_LUSH_COM_M2", "F_LUSH_RARE_XL", "F_LUSH_EPIC_L1", "F_DUST_EPIC_S1", "F_ODD_RARE_XL", 
+		}
+	},
+	{
+		{1.15},		--Nocturnal fish bonus multiplier		(There are 19 nocturnal fish)
+		{	--9 common, 3 rare, 3 epic, 4 legendary
+			"F_ALL_RARE_L1", "F_ALL_EPIC_M1", "F_TOX_COM_M2", "F_TOX_LEG_M1", "F_RAD_COM_M2", "F_RAD_COM_L1", "F_RAD_LEG_M1", "F_HOT_COM_S1", "F_HOT_RARE_S1", "F_HOT_LEG_L1", "F_COLD_COM_M1", "F_COLD_LEG_M1", "F_LUSH_COM_S1", "F_LUSH_COM_M1", "F_DUST_COM_L1", "F_DUST_EPIC_M1", "F_ODD_COM_S3", "F_ODD_RARE_M2", "F_ODD_EPIC_XL", 
+		}
+	},
+	{
+		{1.3},		--Storm-only fish bonus multiplier		(There are 12 storm-only fish)
+		{	--5 common, 5 rare, 2 epic, 0 legendary
+			"F_ALL_EPIC_XL", "F_TOX_RARE_M1", "F_RAD_COM_M1", "F_RAD_RARE_XL", "F_HOT_COM_L1", "F_HOT_RARE_M1", "F_COLD_RARE_M2", "F_COLD_EPIC_M1", "F_LUSH_RARE_M1", "F_DUST_COM_S3", "F_ODD_COM_M2", "F_ODD_COM_XL", 
+		}
+	},
 }
 
 TradeMult = 					0.4					--These Trade items have a default StackMultiplier of 5, resulting in a total default stacksize of 25
@@ -1837,6 +1860,25 @@ for i = 1, #FishRarities do
 				{
 					{"BaseValue", math.floor(BaseValueRarity*SizeMult)},
 					{"SpaceStationMarkup", "0"}			--0.5
+				}
+			}
+	end
+end
+for i = 1, #WeatherFishMults do
+	local BonusMult = WeatherFishMults[i][1][1]
+	local Fishlist = WeatherFishMults[i][2]
+	
+	for j = 1, #Fishlist do
+		local FishID = Fishlist[j]
+
+			ChangesToProduct[#ChangesToProduct+1] =
+			{
+				["MATH_OPERATION"] 		= "*",
+				["SPECIAL_KEY_WORDS"] = {"ID", FishID},
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValue", BonusMult}
 				}
 			}
 	end

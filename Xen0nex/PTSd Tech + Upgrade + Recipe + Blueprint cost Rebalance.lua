@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "5_10"
+GameVersion = "5_11"
 --Currently balancing around Survival Mode
 
 --Procedural Upgrade Module multipliers to the "BaseValue" cost
@@ -33,6 +33,7 @@ ValuableCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites
 --Blueprint cost multipliers
 ExoCraftBuildingsMult	=			7.5			--Multiplier applied to default cost of 4, 8, or 10 Salvaged Data
 ColossusBuildingsMult	=			3.75		--Multiplier applied to default cost of 8 Salvaged Data
+NautilonBuildingsMult	=			4			--Multiplier applied to default cost of 10 Salvaged Data
 ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 Salvaged Data
 FarmingBlueprintsMult	=			8			--Multiplier applied to default cost of 3 Salvaged Data 
 LargePlanterBlueprintMult	=		0.5			--Multiplier applied to default cost of 10 Salvaged Data 
@@ -756,7 +757,6 @@ RecipeChanges	=
 		"GARAGE_S",				--8			(Nomad)
 		"GARAGE_M",				--4			(Roamer)
 		"GARAGE_B",				--10		(Pilgrim)
-		"GARAGE_SUB",			--10		(Nautilon)
 		"GARAGE_MECH"			--10		(Minotaur)
 	}
 },
@@ -766,6 +766,14 @@ RecipeChanges	=
 	},
 	{
 		"GARAGE_L",				--8			(Colossus)
+	}
+},
+{
+	{
+		NautilonBuildingsMult				-- Keep in mind the roamer (base cost 4 Salvage) needs to be unlocked first to unlock others...
+	},
+	{
+		"GARAGE_SUB",			--10		(Nautilon)
 	}
 },
 {
@@ -1605,7 +1613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",				-- what key words must occur in lines prior your desired value you want to change
+						
 							["MATH_OPERATION"] 		= "*", 				-- "*", "+", "-", "/" or leave empty for normal replacement
 							["REPLACE_TYPE"] 		= "ALL",			  -- "ALL" to change every matching values or leave empty for single replacement
 							["VALUE_MATCH"] 		= "49", 			  -- only change value(s) that match this value
@@ -1617,9 +1625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "SUB_BINOCS"},
 							["INTEGER_TO_FLOAT"] = "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1628,9 +1634,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "FISHLASER"},
 							["INTEGER_TO_FLOAT"] = "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1639,9 +1643,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "UT_ENERGY",	"ID", "OXYGEN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1649,10 +1650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						--[[
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_TELEPORT",	"ID", "ANTIMATTER"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1661,10 +1659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						]]
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_TELEPORT",	"ID", "MAGNET"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1672,10 +1667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID",	"FREI_INV_TOKEN"},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_TELEPORT",	"ID", "TECH_COMP"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1683,10 +1675,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID",	"SHIP_INV_TOKEN"},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "STELLAR2"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1695,8 +1684,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"] 		= "",
-							["MATH_OPERATION"] 		= "",
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",		"ID", "WALKER_PROD"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -1705,9 +1692,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "LAND3"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1716,8 +1700,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"] 		= "",
-							["MATH_OPERATION"] 		= "",
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",		"ID", "MECH_PROD"},
 							["VALUE_MATCH"] 	= "Substance",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -1725,40 +1707,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"InventoryType", "Product"}
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "TECH_COMP"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Amount",	IntScannerWireLoom},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "DRONE_SHARD"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Amount",	InterceptShards},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "DRONE_SALVAGE"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Amount",	InterceptMirror},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "LIFESUP_ROBO",	"ID", "SHIPBRAIN_CLEAN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1790,9 +1760,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = AddedSentToolRepairCost
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "COMPUTER"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1800,9 +1767,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "ANTIMATTER"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1810,10 +1774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ID",	"TRA_TECH4"},
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "", 
-							["REPLACE_TYPE"] 		= "",	 
+						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "TECH_COMP"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1955,10 +1916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"}, 
-                            ["VALUE_CHANGE_TABLE"]     = 
-                            {
-                                {"Unlockable",    "UT_MINER"}
-                            }
+                            ["REMOVE"] = "SECTION"
                         },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title","UI_WEAP_TECH_TREE",		"Unlockable","STRONGLASER"},

@@ -10,6 +10,8 @@ Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, 
 TradeRocketSlots =	8								--21	Slots for Trade Rocket. May only have an effect for new saves?
 
 ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May only have an effect for new saves?
+ExoSkiffSlotsWidth = 5								--10	How many columns of slots are available for the Exo-Skiff
+ExoSkiffSlotsHeight =6								--6		How many rows of slots are available for the Exo-Skiff
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition
@@ -706,7 +708,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
 			{"WEAPON_MINING",			2.0,	2.2,	2.5,	2.0},		--			+		5-10,		10-15,		15-20,		20-35[25-35]%
-			{"WEAPON_SCAN",				0.8,	0.8,	0.8,	0.8}		--			+		10-20,		25-30,		35-40,		45-50	%
+			{"WEAPON_SCAN",				0.7,	0.7,	0.7,	0.7}		--			+		10-20,		25-30,		35-40,		45-50	%
 		}
 	},
 	{
@@ -716,7 +718,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1.25,	1.25,	1.25,	1.25},		--			+		0-5,		5-10,		10-15,		15-20	%
 			{"WEAPON_MINING",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
-			{"WEAPON_SCAN",				1,		1,		1,		1}			--			+		0-5,		5-10,		10-15,		15-20	%
+			{"WEAPON_SCAN",				0.75,	0.75,	0.75,	0.75}		--			+		0-5,		5-10,		10-15,		15-20	%
 		}
 	},
 	{
@@ -756,7 +758,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.57,	0.76,	0.9,	0.8},		--			+		10-20,		15-25,		20-30,		32-50[35-50]%
 			{"WEAPON_MINING",			1,		1,		2,		2},			--			+		0-5,		5-10,		5-10,		10-15	%
-			{"WEAPON_SCAN",				1.1,	1.1,	1.1,	1}			--			+		20-25,		30-35,		35-45,		45-55	%
+			{"WEAPON_SCAN",				1.2,	1.2,	1.2,	1.091}		--			+		20-25,		30-35,		35-45,		45-55	%
 		}
 	},
 	{
@@ -766,7 +768,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -776,7 +778,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -786,7 +788,7 @@ ToolStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
-			{"WEAPON_SCAN",				1.4,	1.4,	1.4,	1.4}		--			+		20-25,		30-35,		35-45,		40-50	%
+			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},
 	{
@@ -975,8 +977,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"InventoryCostData"},
-							["SPECIAL_KEY_WORDS"] = "",
-							["MATH_OPERATION"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -987,8 +987,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"InventoryCostData"},
 							["SPECIAL_KEY_WORDS"] = {"Freighter","GcInventoryCostDataEntry.xml"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TradeInMultiplier",FreighterTradeInMultiplier}
@@ -998,8 +996,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"InventoryCostData"},
 							["SPECIAL_KEY_WORDS"] = {"PlayerFreighter","GcInventoryCostDataEntry.xml"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TradeInMultiplier",FreighterTradeInMultiplier}
@@ -1008,8 +1004,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"WeaponCostData"},
-							["SPECIAL_KEY_WORDS"] = "",
-							["MATH_OPERATION"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -1028,8 +1022,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}]]
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_STAFF"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
@@ -1039,8 +1031,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOT"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--2		Unclear what this does
@@ -1050,8 +1040,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_LARGE"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
@@ -1061,8 +1049,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
@@ -1072,8 +1058,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_Y"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
@@ -1083,8 +1067,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ATLAS_B"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
@@ -1094,13 +1076,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WEAPON_ROBOTBIG"},
-							["MATH_OPERATION"] = "",
-							["REPLACE_TYPE"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								--{"MinSize",	2},			--4		Unclear what this does
 								--{"MaxSize",	3},			--4		Unclear what this does
 								{"SizeType",	SentinelRifleSize},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"FishingPlatform","GcInventoryLayoutGenerationDataEntry.xml"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"MinSlots",	ExoSkiffSlots},
+								{"MaxSlots",	ExoSkiffSlots},
+								{"MaxWidthSmall",	ExoSkiffSlotsWidth},
+								{"MaxHeightSmall",	ExoSkiffSlotsHeight},
+								{"MaxWidthStandard",	ExoSkiffSlotsWidth},
+								{"MaxHeightStandard",	ExoSkiffSlotsHeight},
+								{"MaxWidthLarge",	ExoSkiffSlotsWidth},
+								{"MaxHeightLarge",	ExoSkiffSlotsHeight},
 							}
 						},
 					}

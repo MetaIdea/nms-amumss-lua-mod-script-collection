@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "5_03"
+GameVersion = "5_11"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -466,6 +466,12 @@ RecipeChanges =
 		{"RECIPE_28",			1,					5},					--Makes Marrow Flesh			x1		in	5 time
 		{
 			{"PLANT_CAVE",		5}										--Requires Marrow Bulb			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"RECIPE_29",			1,					5},					--Makes Kelp Rice				x1		in	5 time
+		{
+			{"PLANT_WATER",		5}										--Requires Kelp Sac				x1
 		}
 	},
 --The amount of Creature Pellets made in this recipe will be multiplied by PelletsPerRecipe below

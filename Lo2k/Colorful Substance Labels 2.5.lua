@@ -1,10 +1,10 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Colorful Substance Labels 2.4.pak", 
+["MOD_FILENAME"] 			= "Colorful Substance Labels 2.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.11",
+["NMS_VERSION"]				= "5.12",
 ["MOD_DESCRIPTION"]			= "This mod improves world substance label colors",
 ["MODIFICATIONS"] 			= 
 	{

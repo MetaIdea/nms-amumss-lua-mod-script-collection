@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "TinyCreatures-BigOnly.pak",
 ["MOD_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.10",
+["NMS_VERSION"]             = "5.12",
 ["MOD_DESCRIPTION"]         = "Reduces size for largest creature types by ~75%",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =

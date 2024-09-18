@@ -28,7 +28,7 @@ ALL_PARTS_ON_PLANETBASE = true                  --Vanilla false // Mod default t
 NO_BUILDCOUNT_LIMIT = false                     --Vanilla false // Mod Default false // true to remove build-count limits on almost all parts. If false, all parts NOT related to resources farming will be unlimited
 
 -- Specific placements/limits :
-MARINESHELTER_ABOVE_WATER = true               --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
+MARINESHELTER_ABOVE_WATER = true                --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
 EXOMATERIALISER_ON_PLANETBASE = false           --Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
 FREIGHTERROOMS_ON_PLANETBASE = false            --Vanilla false // Mod default false // true to enable freighter tech and bio rooms on planet bases
 FARM_IN_ANY_BIOME = false                       --Vanilla false // Mod default false // true to enable planting in any biome
@@ -235,10 +235,10 @@ NOT_PLANETBASE_BUILDPART_ID_TABLE = {"TELEPORTER_F"}
 PREFAB_KEYWORDS_TABLE = {"ROOMS", "FREIGHTER"}
 
 -- Freighter's storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
-FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
+-- FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
 
 -- Base storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
-BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
+-- BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
 
 -- Metal parts buildable outside of bases if METAL_PARTS_OUTSIDE_BASE is true
 METAL_OUTSIDE_BASE_ID_TABLE = {"M_WALL", "M_DOOR", "M_FLOOR", "M_RAMP", "M_ROOF", "M_ARCH"}
@@ -296,7 +296,6 @@ end
 ---------------------------------------------
 
 
-
 -------- NOT settings related tables --------
 ---------------------------------------------
 
@@ -305,7 +304,7 @@ SCALEABLE_VEHICLESPART_ID_TABLE = {"RACE_RAMP", "RACE_BOOSTER"}
 
 -- Parts which are unlimited by the mod even if NO_BUILDCOUNT_LIMIT is false.
 -- Removed "GARAGE_FREIGHT" due to warning for 3.97 Endurance
-UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHERE", "BASE_TOYCORE", "DRESSING_TABLE", "SPAWNER_BALL", "U_SWITCHBUTTON", "BYTEBEAT", "MESSAGEMODULE", "BUILDTERMINAL", "RACE_RAMP", "RACE_BOOSTER", "BASE_ROBOTOY", "BASE_TOYCUBE", "BUILDLANDINGPAD", "S_LANDINGZONE", "TELEPORTER", "TELEPORTER_F", "RACE_START", "CHECKPOINT", "WATERBUBBLE", "BUILD_REFINER2", "BUILD_REFINER3", "BASE_TOYJELLY", "BLD_PLANET_HOLO"}
+UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHERE", "BASE_TOYCORE", "DRESSING_TABLE", "SPAWNER_BALL", "U_SWITCHBUTTON", "BYTEBEAT", "MESSAGEMODULE", "BUILDTERMINAL", "RACE_RAMP", "RACE_BOOSTER", "BASE_ROBOTOY", "BASE_TOYCUBE", "BUILDLANDINGPAD", "S_LANDINGZONE", "TELEPORTER", "TELEPORTER_F", "RACE_START", "CHECKPOINT", "WATERBUBBLE", "BUILD_REFINER2", "BUILD_REFINER3", "BASE_TOYJELLY", "BLD_PLANET_HOLO", "BUILDSEAHARVEST", "BLD_DATASIGN"}
 -- Decals are included in the "general modifications". Storage containers are included in the dedicated part at the bottom of the script.
 
 -- Custom build-count limits
@@ -332,17 +331,13 @@ CUSTOM_BUILDCOUNT_LIMITS =
         {"BUILDSAVE",         0,                6,                0,                    0},        -- Save Point
         {"MESSAGE",           0,                2,                0,                    0},        -- Communications Station
         {"MESSAGEMODULE",     0,                1,                0,                    0},        -- Message Module
-        {"BLD_DATASIGN",      0,                0,                0,                    0},        -- Data Display Unit
         {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
-        {"SPAWNER_BALL",      0,                0,                0,                    0},        -- Sphere Creator
         --{"DECALPATH",        0,                0,                0,                    0}        -- ?
 
 }
 
 ------ NOT settings related tables end ------
 ---------------------------------------------
-
-
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -372,12 +367,12 @@ NMS_MOD_DEFINITION_CONTAINER =
     monkeyman192 for the MBINCompiler and his continued efforts to keep it up-to-date
     Mjjstral & Wbertro for the AMUMSS script-based auto modbuilder/updater,
     Tub0Crisco for the No Man's Sky Mod Station A.K.A. NMSMS
-    And, of course, thanks to all of the other modders who make mods too, as we often inspect the work of other modders to learn how things are done: RangerDulann, Redmas, WoodyMontana, jasondude, Gumsk, Mjjstral, moddinaccount, Devilin Pixy, saa044, and others
+    And, of course, thanks to all of the other modders who make mods too, as we often inspect the work of other modders to learn how things are done: RangerDulann, Babscoole, WoodyMontana, jasondude, Gumsk, Mjjstral, moddinaccount, Devilin Pixy, saa044, and others
 
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "5.10",
+    ["NMS_VERSION"]   = "5.12",
     ["MODIFICATIONS"] =
     {
         {
@@ -561,6 +556,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"IsPlaceable", "False"},
                             }
                         },
+						{
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "HEATER"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"CanPickUp", "True"},
+							}
+						},
                     },
                 },
             },
@@ -815,12 +817,11 @@ if ALL_PARTS_ON_FREIGHTER then
     -- Sets Group assignment for Base Storage Containers if BASESTORAGE_ON_FREIGHTER is true
     if BASESTORAGE_ON_FREIGHTER then
 
-        for i = 1,#BASE_CONTAINERID_TABLE do
-
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", BASE_CONTAINERID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", "CONTAINER%d+"},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                ["REPLACE_TYPE"] = "ALL",
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
@@ -831,7 +832,6 @@ if ALL_PARTS_ON_FREIGHTER then
         </Property>
 ]]
             }
-        end
     end
 
     -- Specific exceptions list for parts not buildable on freighters
@@ -919,19 +919,16 @@ if CAN_SCALE_PREFAB_PARTS == false then
     end
 
     -- Reverts "CanScale" to "False" for freighter storage containers
-    for i = 1,#FREIGHTER_CONTAINERS_ID_TABLE do
 
         Change_Table_Array[#Change_Table_Array + 1] =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", FREIGHTER_CONTAINERS_ID_TABLE[i]},
-            -- ["VALUE_MATCH"] = "True",
+            ["SPECIAL_KEY_WORDS"] = {"ID", "S_CONTAINER%d+"},
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"CanScale", "False"},
             },
         }
-    end
 end
 
 -- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)

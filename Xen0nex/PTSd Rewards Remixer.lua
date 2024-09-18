@@ -1250,16 +1250,16 @@ ReplaceVanillaFishNanites = true							--false		Set true to replace the vanilla 
 FishReleaseChanges =
 {
 	{	--Fish Quality			Min		Max Nanites on release
-		"R_FISH_COMMON",		20,		30,					--Unclear, seems to be roughly ~15 - 30
+		"R_FISH_COMMON",		6,		10,					--Unclear, seems to be roughly ~15 - 30
 	},
 	{
-		"R_FISH_RARE",			40,		60,					--Unclear, seems to be roughly ~50 - 100
+		"R_FISH_RARE",			21,		31,					--Unclear, seems to be roughly ~50 - 100
 	},
 	{
-		"R_FISH_EPIC",			80,		120,				--Unclear, seems to be roughly ~100 - 120
+		"R_FISH_EPIC",			88,		132,				--Unclear, seems to be roughly ~100 - 120
 	},
 	{
-		"R_FISH_LEGEND",		120,	180,				--Unclear, seems to be roughly ~150 - 200
+		"R_FISH_LEGEND",		280,	420,				--Unclear, seems to be roughly ~150 - 200
 	},
 }
 

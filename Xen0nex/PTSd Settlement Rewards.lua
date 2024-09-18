@@ -1,10 +1,10 @@
 ModName = "PTSd Settlement Rewards"
-GameVersion = "5_10"
+GameVersion = "5_11"
 Description = "Rebalances settlement produced items by race & wealth, Increases cap on stored settlement rewards, and can optionally change settlement timers"
 
 --Multiplier to apply to the Max Production cap and Production StatProductivityContributionModifier
 --MaxProductionCapMult = 					1						--Multiplier to apply to the vanilla cap for Production of 1,000,000 units per day		(Changing this has side effects, avoid for now)
-ExtraDebtMult =							1						--Extra Multiplier to apply to the DailyDebtPaymentModifier, which if left at 1 will result in a DailyDebtPaymentModifier that is 2x whatever the max Production Cap is. Increasing this speeds up how quickly debt is lowered
+DebtMult =								1/0.3					--Multiplier to apply to the DailyDebtPaymentModifier, increasing this speeds up how quickly debt is lowered. Multiplied by the inverse of the multiplier applied to ProductionCycleDurationInSeconds to keep the debt repayment rate roughly at vanilla speed.
 
 ProductionCycleMult =					0.3						--Multiplier to apply to the vanilla ProductionCycleDurationInSeconds of 72000 (20 hours), determines how often the settlement outputs its products
 ProductMult = 							1*0.3					--Multiplier to apply to the vanilla "default" amount of Products made per day of 50.		In practice this seems to vary from around 9 ~ 29 based on Settlement Pop, Happiness, Production.
@@ -147,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "PRESERVE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"DailyDebtPaymentModifier",	ExtraDebtMult},					--Sometimes this seems like it should be doubled again, to be 4x Production cap in order to closely match expected time?
+								{"DailyDebtPaymentModifier",	DebtMult},					--Sometimes this seems like it should be doubled again, to be 4x Production cap in order to closely match expected time?
 								{"ProductionCycleDurationInSeconds",	ProductionCycleMult},
 								{"ProductUnitsPerCycleRateModifier",	ProductMult},
 								{"SubstanceUnitsPerCycleRateModifier",	SubstanceMult},

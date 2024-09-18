@@ -9,7 +9,6 @@ local mod_desc = [[
   - A new tree is inserted as 1st in its ItemTrees by default. Inesrting [after] work
    only on existing trees, not newly-added, and needs the 'after' Title.
 ]]------------------------------------------------------------------------------
-local version = 1.38
 
 local unlockable_items = {
 	{--	construction unit: alloy base parts
@@ -469,9 +468,9 @@ local function AddAllTrees()
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.11',
+	NMS_VERSION			= '5.12',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
