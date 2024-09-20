@@ -3,7 +3,7 @@ ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
 GameVersion = "5.1.2.0"
-ModVersion = "a"
+ModVersion = "d"
 
 --[[ Files Modified:
 METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN
@@ -122,7 +122,7 @@ for i = 1,#Element_Name_Array do
       Upgrade_Text = Upgrade_Text..
       [[	<Property value="GcProceduralTechnologyData.xml">
       <Property name="ID" value="UP_]]..Element_Name_Array[i][1]..j..[[" />
-      <Property name="Template" value="T_]]..temp_name..[[" />
+      <Property name="Template" value="T_HAZ" />
       <Property name="Group" value="UI_]]..Element_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Name" value="UP_]]..temp_name..[[" />
       <Property name="NameLower" value="UI_]]..Element_Name_Array[i][1]..[[_NAME_CORE_L" />
@@ -197,7 +197,7 @@ for i = 1,#Water_Name_Array do
       Upgrade_Text = Upgrade_Text..
       [[	<Property value="GcProceduralTechnologyData.xml">
       <Property name="ID" value="UP_]]..Water_Name_Array[i][1]..j..[[" />
-      <Property name="Template" value="UT_UNW" />
+      <Property name="Template" value="UT_WATER" />
       <Property name="Group" value="UI_]]..Water_Name_Array[i][1]..[[_NAME_CORE_L" />
       <Property name="Name" value="UP_]]..temp_name..[[" />
       <Property name="NameLower" value="UI_]]..Water_Name_Array[i][1]..[[_NAME_CORE_L" />

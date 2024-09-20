@@ -14,7 +14,7 @@ Min_Amount = GUIF(Input_Min, 10)
 
 local Input_Max = {Max_Amount,
 [[
-    What is the minimal amount of salavage data you want to dig up?
+    What is the maximum amount of salavage data you want to dig up?
     Default = >> ]] .. (Max_Amount) .. [[ <<
 ]]}
 Max_Amount = GUIF(Input_Max, 10)

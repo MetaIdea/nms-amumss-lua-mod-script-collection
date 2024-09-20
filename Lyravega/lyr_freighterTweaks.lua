@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Freighter Tweaks 1.7 + improvement of default enabled functions]]
-local gameVersion = "4.65"
+local modDescription = [[Lyravega's Freighter Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -9,7 +9,7 @@ local gameVersion = "4.65"
 	Below in the 'tweakStates' table are modification names and what they do is commented next to them
 	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
 
-	Ways to disable a modification:
+	Ways to disable a modification: 
 		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
 		• Set the value of the modification to false / ex: 'modification = false,'
 		• Use the 'lyr_tweakOverrides.txt' file and disable modifications from there
@@ -39,7 +39,7 @@ local tweakStates = {
 	harvestDrone = true,					-- adds 'harvest all' interaction to the 'Robotic Companion' decoration, and removes 'harvest all' sound
 	harvestDroneRadius = 25,				-- sets the added 'harvest all' interaction radius to the given value (render limitations will impose restrictions)
 	ownedShipsInHangar = 3,					-- sets the limit for owned ships in freighter hangar to the given value (minimum 1, game default is 6)
-	hangarDockingSpeedMult = 3,				-- dock and take off speed limits for freighters are adjusted by the given multiplier (above 3 not recommended)
+	hangarDockingSpeedMult = 2,				-- dock and take off speed limits for freighters are adjusted by the given multiplier (above 3 not recommended)
 	hangarDockingOptimizations = true,		-- speeds up hangar door animation and removes its sound, removes pitch correction, reduces approach angle and adjusts range 
 --	noHangarPadRotation = true,				-- hangar pad rotation is disabled; may eject as soon as pad is touched
 --	noExteriorPlatformLight = true,			-- removes the light spot in the middle of the exterior platforms (might look better if you are using a lot of these)
@@ -136,35 +136,16 @@ local freighterBridgeScanner = function()
 		{
 			mbinPaths = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]],
 			{
-                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
-                selectLevel = 1,
+				skw = {lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])},
+				selectLevel = 1,
 				removeSection = true
 			}
 		},
-		["MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINAL.SCENE.MBIN"] = {
-			{
-				precedingKeyWords = "Children",
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="Base" />]])},
-				pasteSection = lyr.nodeTemplate.section
+		{
+			mbinPaths = {
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINAL.SCENE.MBIN]],
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINALPIRATE.SCENE.MBIN]],
 			},
-			{
-				specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
-				fields = {
-					Name = "lyr_bridgeScanner",
-					Type = "LOCATOR",
-					TransY = 0.5,
-				}
-			},
-			{
-				specialKeyWords = {"Name", "lyr_bridgeScanner"},
-				precedingKeyWords = "TkSceneNodeAttributeData.xml",
-				fields = {
-					Name = "ATTACHMENT",
-					Value = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]
-				}
-			},
-		},
-		["MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINALPIRATE.SCENE.MBIN"] = {
 			{
 				precedingKeyWords = "Children",
 				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="Base" />]])},
@@ -198,10 +179,9 @@ local hangarSalvageTerminal = function()
 	local tweak = {
 		lyr:createNodeTemplate(),
 		{
-			-- mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"},
 			mbinPaths = {
-				"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN",
-				"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN]],
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN]],
 			},
 			{
 				precedingKeyWords = {"Children"},
@@ -388,7 +368,7 @@ local systemWideTelepads = function()
 						-- Delay = 1,
 						InteractDistance = 3,
 						SizeIndicator = "Small",
-						MustBeVisibleToInteract = true
+						MustBeVisibleToInteract = false
 					}
 				}
 			}, --#endregion
@@ -413,8 +393,8 @@ local systemWideTelepads = function()
 				mbinPaths = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\TELEPORTER_STATION\ENTITIES\TELEPORTERSTATIONINTERACTION.ENTITY.MBIN]],
 				discardMbin = true,
 				{
-                    specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
-                    selectLevel = 1,
+					skw = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
+					selectLevel = 1,
 					copySection = true
 				}
 			},
@@ -425,7 +405,7 @@ local systemWideTelepads = function()
 					pasteSection = true
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
+					skw = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					fields = {
 						UseInteractCamera = false,
 						BlendToCameraTime = 0.1
@@ -446,7 +426,7 @@ local systemWideTelepads = function()
 					fields = {
 						GroupID = "LYR_STATION_L",
 						DestinationGroupID = "LYR_HANGAR_L",
-						SnapFacingAngle = -30,
+						SnapFacingAngle = -5,
 					}
 				}
 			},
@@ -456,7 +436,7 @@ local systemWideTelepads = function()
 					fields = {
 						GroupID = "LYR_STATION_R",
 						DestinationGroupID = "LYR_HANGAR_R",
-						SnapFacingAngle = 30,
+						SnapFacingAngle = 5,
 					}
 				}
 			},
@@ -488,7 +468,7 @@ local systemWideTelepads = function()
 					telepads.stationRight.entity,
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
+					skw = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Station",
@@ -501,7 +481,7 @@ local systemWideTelepads = function()
 					telepads.hangarRight.entity,
 				},
 				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
+					skw = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					match = {value = "GcInteractionType.xml", option = "~="},
 					fields = {
 						InteractionType = lyr:checkTweak("interstellarTerminus") and "Teleporter_Nexus" or "Teleporter_Base",
@@ -509,7 +489,60 @@ local systemWideTelepads = function()
 				}
 			}, --#endregion
 			-- END OF TELEPAD ENTITY TWEAKS
-			--#region STATION TELEPAD PLACEMENT
+			--#region NEW STATION TELEPAD PLACEMENT
+			{
+				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.EXML]],
+				{
+					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="BackSecACTIVE" />]])},
+					precedingKeyWords = "Children",
+					pasteSection = lyr.nodeTemplate.section
+				},
+				{
+					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+					fields = {
+						Name = "lyr_stationTelepad_left",
+						Type = "REFERENCE",
+						TransX = -41,
+						TransY = 0,
+						TransZ = -59.75,
+						RotY = 90
+					}
+				},
+				{
+					specialKeyWords = {"Name", "lyr_stationTelepad_left"},
+					precedingKeyWords = "Attributes",
+					fields = {
+						Name = "SCENEGRAPH",
+						Value = telepads.stationLeft.scene
+					}
+				},
+				{
+					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="BackSecACTIVE" />]])},
+					precedingKeyWords = "Children",
+					pasteSection = lyr.nodeTemplate.section
+				},
+				{
+					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+					fields = {
+						Name = "lyr_stationTelepad_right",
+						Type = "REFERENCE",
+						TransX = 41,
+						TransY = 0,
+						TransZ = -59.75,
+						RotY = -90
+					}
+				},
+				{
+					specialKeyWords = {"Name", "lyr_stationTelepad_right"},
+					precedingKeyWords = "Attributes",
+					fields = {
+						Name = "SCENEGRAPH",
+						Value = telepads.stationRight.scene
+					}
+				}
+			}, --#endregion
+			-- END OF NEW STATION TELEPAD PLACEMENT
+			--#region OLD STATION TELEPAD PLACEMENT
 			{
 				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN]],
 				{
@@ -559,58 +592,7 @@ local systemWideTelepads = function()
 					}
 				}
 			}, --#endregion
-			-- END OF STATION TELEPAD PLACEMENT
-			--#region NEW STATION TELEPAD PLACEMENT
-			{
-				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\BACK_SECTION.SCENE.MBIN]],
-				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="_SpaceStation_" />]])},
-					precedingKeyWords = "Children",
-					pasteSection = lyr.nodeTemplate.section
-				},
-				{
-					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
-					fields = {
-						Name = "lyr_stationTelepad_left",
-						Type = "REFERENCE",
-						TransX = 7.5,
-						TransZ = -73,
-						RotY = -120
-					}
-				},
-				{
-					specialKeyWords = {"Name", "lyr_stationTelepad_left"},
-					precedingKeyWords = "Attributes",
-					fields = {
-						Name = "SCENEGRAPH",
-						Value = telepads.stationLeft.scene
-					}
-				},
-				{
-					specialKeyWords = {lyr:parsePair([[<Property name="Name" value="_SpaceStation_" />]])},
-					precedingKeyWords = "Children",
-					pasteSection = lyr.nodeTemplate.section
-				},
-				{
-					specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
-					fields = {
-						Name = "lyr_stationTelepad_right",
-						Type = "REFERENCE",
-						TransX = -7.5,
-						TransZ = -73,
-						RotY = 120
-					}
-				},
-				{
-					specialKeyWords = {"Name", "lyr_stationTelepad_right"},
-					precedingKeyWords = "Attributes",
-					fields = {
-						Name = "SCENEGRAPH",
-						Value = telepads.stationRight.scene
-					}
-				}
-			}, --#endregion
-			-- END OF NEW STATION TELEPAD PLACEMENT
+			-- END OF OLD STATION TELEPAD PLACEMENT
 			--#region PIRATE STATION TELEPAD PLACEMENT
 			{
 				mbinPaths = [[MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_PIRATE.SCENE.MBIN]],
@@ -665,8 +647,8 @@ local systemWideTelepads = function()
 			--#region HANGAR TELEPAD PLACEMENT
 			{
 				mbinPaths = {
-					"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN",
-					"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN"
+					[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIOR.SCENE.MBIN]],
+					[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARINTERIORPIRATE.SCENE.MBIN]],
 				},
 				{
 					precedingKeyWords = "Children",
@@ -734,6 +716,11 @@ local useSolidRunwayTexture = function()
 					[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA_EXTERIOR\ENTRANCEGLOW_MAT.MATERIAL.MBIN]],
 					[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\HANGERRUNWAY_ENTRANCERUNWAYMAT.MATERIAL.MBIN]],
 					lyr.remove
+				},
+				{
+					[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA_EXTERIOR\ENTRANCEGLOW_MAT.MATERIAL.MBIN]],
+					[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE\HANGERRUNWAY_ENTRANCERUNWAYMAT.MATERIAL.MBIN]],
+					lyr.remove
 				}
 			}
 		}
@@ -746,7 +733,8 @@ local megaRunway = function()
 	if not lyr:checkTweak("megaRunway") then return false end
 
 	local tweak = {
-		["MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"] = {
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
 			{
 				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
 				copySection = true
@@ -768,6 +756,30 @@ local megaRunway = function()
 				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
 				pasteAfterSection = true
 			}
+		},
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
+				copySection = true
+			},
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
+				fields = {
+					-- Name = "lyr_megaRunway",
+					-- NameHash = "2511746515",
+					TransX = 294.5,
+					ScaleX = 6.6,
+					TransY = -9,
+					ScaleY = 2.8,
+					TransZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(35, 35 + (lyr.tweakStates.megaRunwayLengthMult-1)*80.5) or nil,	-- 80.5 seems to be the magic number
+					ScaleZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(1, lyr.tweakStates.megaRunwayLengthMult) or nil
+				},
+			},
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
+				pasteAfterSection = true
+			}
 		}
 	}
 
@@ -778,12 +790,30 @@ local noMiniRunways = function()
 	if not lyr:checkTweak("noMiniRunways") then return false end
 
 	local tweak = {
-		["MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"] = {
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
 			{
 				specialKeyWords = {
 					{"Name", "EntranceRunway"},
 					{"Name", "EntranceRunway1"},
 					{"Name", "EntranceRunway2"},
+				},
+				findSections = lyr:checkTweak("megaRunway") and {
+					{"TransX", "-1.963381"},
+					{"ScaleX", "0.97213"},
+					{"TransY", "2.069477"},
+					{"ScaleY", "0.97213"},
+				} or nil,
+				removeSection = true
+			}
+		},
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
+			{
+				specialKeyWords = {
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW25" />]])},
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW26" />]])},
 				},
 				findSections = lyr:checkTweak("megaRunway") and {
 					{"TransX", "-1.963381"},
@@ -822,6 +852,26 @@ local miniRunwaysLengthMult = function()
 					ScaleZ = math.max(1, lyr.tweakStates.miniRunwaysLengthMult)
 				}
 			}
+		},
+		{
+			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
+			{
+				specialKeyWords = {
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW25" />]])},
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW26" />]])},
+				},
+				findSections = lyr:checkTweak("megaRunway") and {
+					{"TransX", "-1.963381"},
+					{"ScaleX", "0.97213"},
+					{"TransY", "2.069477"},
+					{"ScaleY", "0.97213"},
+				} or nil,
+				fields = {
+					TransZ = math.max(35, 35 + (lyr.tweakStates.miniRunwaysLengthMult-1)*80.5),	-- 80.5 seems to be the magic number
+					ScaleZ = math.max(1, lyr.tweakStates.miniRunwaysLengthMult)
+				}
+			}
 		}
 	}
 
@@ -840,8 +890,8 @@ local harvestDrone = function()
 		{
 			mbinPaths = [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]],
 			{
-                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="TkAnimationComponentData.xml">]])},
-                selectLevel = 1,
+				skw = {lyr:parsePair([[<Property name="Template" value="TkAnimationComponentData.xml">]])},
+				selectLevel = 1,
 				removeSection = true
 			},
 			{
@@ -902,7 +952,7 @@ local hangarDockingSpeedMult = function()
 	local tweak = {
 		["MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARA/ENTITIES/HANGARA.ENTITY.MBIN"] = {
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
+				skw = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				fields = {
 					ApproachSpeed = lyr.tweakStates.hangarDockingSpeedMult,
 					TakeOffSpeed = lyr.tweakStates.hangarDockingSpeedMult,
@@ -939,7 +989,7 @@ local hangarDockingOptimizations = function()
 		},
 		["MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARA/ENTITIES/HANGARA.ENTITY.MBIN"] = {
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
+				skw = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				fields = {
 					ApproachRange = {default = 45, altered = lyr:useProxyMult("hangarDockingSpeedMult", 15)},
 					ApproachAngle = {default = 45, altered = 40},
@@ -964,7 +1014,7 @@ local noHangarPadRotation = function()
 		{
 			mbinPaths = [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],
 			{
-                specialKeyWords = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
+				skw = {lyr:parsePair([[<Property name="Template" value="GcOutpostComponentData.xml">]])},
 				fields = {
 					RotateToDock = false
 				}
@@ -1016,8 +1066,8 @@ local extendedFreighterBase = function()
 	local tweak = {
 		{
 			mbinPaths = {
-				"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN",
-				"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN"
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
 			},
 			{
 				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="BaseBuildingArea" />]])},
@@ -1075,7 +1125,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_freighterTweaks.pak",
 	MOD_BATCHNAME = batchPakName or nil,
 	MOD_AUTHOR = "lyravega",
-	LUA_AUTHOR = "lyravega, Babscoole, AltF4",
+	LUA_AUTHOR = "lyravega",
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",

@@ -1,25 +1,29 @@
 --|=======================================================================================--
 --| USER SETTINGS ("SFM" means "Salvaged Frigate Module")
 --|=======================================================================================--
-local _AmountMin            = 2     --Generic reward amount minimum
-local _AmountMax            = 5     --Generic reward amount maximum
-local _PercentageChanceMult = 2     --Amount to multiply the chance of receiving SFM rewards relative to other possible rewards. Set to 1 for no change.
+_AmountMin            = 2     --Generic reward amount minimum
+_AmountMax            = 5     --Generic reward amount maximum
+_PercentageChanceMult = 2     --Amount to multiply the chance of receiving SFM rewards relative to other possible rewards. Set to 1 for no change.
 
-local _SpecialMult          = 1.5   --Special reward amount multiplier
-local _MissionMult          = 2     --Mission board reward amount multiplier
-local _FrigExpMult          = 2     --Frigate expedition reward amount multiplier
+_SpecialMult          = 1.5   --Special reward amount multiplier
+_MissionMult          = 2     --Mission board reward amount multiplier
+_FrigExpMult          = 2     --Frigate expedition reward amount multiplier
 
-local _AddToEveryFrigExp    = true  --Add SFM rewards to every frigate expedition reward pool
-local _EveryExpChanceMult   = 0.35  --Reduce the chance to receive these SFM rewards or else they're too common and supplant other rewards
+_AddToEveryFrigExp    = true  --Add SFM rewards to every frigate expedition reward pool
+_EveryExpChanceMult   = 0.35  --Reduce the chance to receive these SFM rewards or else they're too common and supplant other rewards
 
-local _AddFreighterRewards  = true  --Add SFM rewards to freighter rescue and freighter descruction (using the "Special" amounts)
-local _AddPirateRewards     = true  --Add SFM rewards to pirate ship kills  (using the "Special" amounts)
+_AddFreighterRewards  = true  --Add SFM rewards to freighter rescue and freighter descruction (using the default amounts)
+_AddPirateRewards     = true  --Add SFM rewards to pirate ship kills (using the default amounts)
+_SFMsOnAllFrtrKills   = true  --Makes Freighter Descruction give SFM's every time + original reward
+_PirateSysFrtrLootFix = true  --Fixes Freighter Destruction inside Pirate systems to give the same loot as outside systems.
 
 modNameSub = "Custom" --Subname in produced .pak
 
 --[[ Files Modified:
 METADATA\REALITY\TABLES\REWARDTABLE.MBIN
 METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN
+MODELS/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/ENTITIES/FREIGHTER.ENTITY.MBIN
+MODELS/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/ENTITIES/CAPITALFREIGHTER.ENTITY.MBIN
 --]]
 
 --|=======================================================================================--
@@ -35,8 +39,8 @@ luaAuthor = [[
 ]]
 modName = "SalvagedFrigateModuleRewardsEnhanced"
 description = "Improves Savaged Frigate Module rewards percentages, amounts, and sources. Fully configurable!"
-gameVersion = "5.10.0"
-modVersion = "1.1"
+gameVersion = "5.12"
+modVersion = "1.2"
 maintenance = author
 
 --|=======================================================================================--
@@ -58,18 +62,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["LUA_AUTHOR"]      = luaAuthor,
 	["MAINTENANCE"]     = maintenance,
 	["NMS_VERSION"]     = gameVersion,
-	["MODIFICATIONS"] = 
-	{{
-		["MBIN_CT"]=
-		{
+	["MODIFICATIONS"] = {{
+		["MBIN_CT"]= {
 			{["MBIN_FS"]="METADATA\REALITY\TABLES\REWARDTABLE.MBIN",["EXML_CT"]={}},
 			{["MBIN_FS"]="METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",["EXML_CT"]={}}
 		}
 	}}
 }
 
-local RewardTable_EXML_CT = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CT"][1]["EXML_CT"]
-local ExpRewardTable_EXML_CT = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CT"][2]["EXML_CT"]
+local MBIN_CT = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CT"]
+local RewardTable_EXML_CT = MBIN_CT[1]["EXML_CT"]
+local ExpRewardTable_EXML_CT = MBIN_CT[2]["EXML_CT"]
 
 --| GenericTable Rewards
 --|=======================================================================================--
@@ -150,11 +153,10 @@ end
 
 --| Add New Rewards
 --|=======================================================================================--
-local FrigToken_RewardTableItem = string.format('<Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="Reward" value="GcRewardSpecificProduct.xml"><Property name="Default" value="GcDefaultMissionProductEnum.xml"><Property name="DefaultProductType" value="None" /></Property><Property name="ID" value="FRIG_TOKEN" /><Property name="AmountMin" value="%s" /><Property name="AmountMax" value="%s" /><Property name="HideAmountInMessage" value="False" /><Property name="ForceSpecialMessage" value="False" /><Property name="HideInSeasonRewards" value="False" /><Property name="Silent" value="False" /><Property name="SeasonRewardListFormat" value="" /><Property name="RequiresTech" value="" /></Property><Property name="LabelID" value="" /></Property>', SpecialMin, SpecialMax)
+local FrigToken_RewardTableItem = string.format('<Property value="GcRewardTableItem.xml"><Property name="PercentageChance" value="100" /><Property name="Reward" value="GcRewardSpecificProduct.xml"><Property name="Default" value="GcDefaultMissionProductEnum.xml"><Property name="DefaultProductType" value="None" /></Property><Property name="ID" value="FRIG_TOKEN" /><Property name="AmountMin" value="%s" /><Property name="AmountMax" value="%s" /><Property name="HideAmountInMessage" value="False" /><Property name="ForceSpecialMessage" value="False" /><Property name="HideInSeasonRewards" value="False" /><Property name="Silent" value="False" /><Property name="SeasonRewardListFormat" value="" /><Property name="RequiresTech" value="" /></Property><Property name="LabelID" value="" /></Property>', _AmountMin, _AmountMax)
 
 if _AddToEveryFrigExp then
-	--Not awarded every time, one in a pool of possible rewards. Uses a different multiplier from the other additions because these rewards would be too common since most of these reward pools only have one other item.
-	table.insert(ExpRewardTable_EXML_CT,{
+	table.insert(ExpRewardTable_EXML_CT,{ --All Frigate Expeditions. Not awarded every time, one in a pool of possible rewards. Uses a different multiplier from the other additions because these rewards would be too common since most of these reward pools only have one other item.
 		["SKW"] = {"RewardChoice","SelectAlways"},
 		["PKW"] = "List",
 		["REPLACE_TYPE"] = "ALL",
@@ -163,29 +165,39 @@ if _AddToEveryFrigExp then
 	})
 end
 
-if _AddFreighterRewards then	
-	--Freighter rescue. Awarded every time.
-	table.insert(RewardTable_EXML_CT,{
-		["SKW"] = {"Id","FREIGHTER_SAVED","ID","FREI_INV_TOKEN"},
-		["SECTION_UP"] = 1,
-		["ADD_OPTION"] = "ADDafterSECTION",
+if _AddFreighterRewards then
+	table.insert(RewardTable_EXML_CT,{ --Freighter Rescue. Awarded every time.
+		["SKW"] = {"Id","FREIGHTER_SAVED","List","GcRewardTableItemList.xml"},
+		["PKW"] = "List",
 		["ADD"] = FrigToken_RewardTableItem
 	})
-	--Freighter destruction. Not awarded every time, one in a pool of possible rewards.
-	table.insert(RewardTable_EXML_CT,{
-		["SKW"] = {"Id","R_PIR_FREI","ID","SHIP_CORE_S"},
-		["SECTION_UP"] = 1,
-		["ADD_OPTION"] = "ADDafterSECTION",
+	table.insert(RewardTable_EXML_CT,{ --Freighter Destruction.  Not awarded every time, one in a pool of possible rewards.
+		["SKW"] = {"Id","R_PIR_FREI","List","GcRewardTableItemList.xml"},
+		["PKW"] = "List",
 		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', string.format('Chance" value="%s"',round(100*_PercentageChanceMult)))
 	})
 end
 
 if _AddPirateRewards then
-	--Pirate ship kills. Not awarded every time, one in a pool of possible rewards.
-	table.insert(RewardTable_EXML_CT,{
-		["SKW"] = {"Id","PIRATELOOT","ID","PIRATE_PROD"},
-		["SECTION_UP"] = 1,
-		["ADD_OPTION"] = "ADDafterSECTION",
+	table.insert(RewardTable_EXML_CT,{ --Pirate Ship kills. Not awarded every time, one in a pool of possible rewards.
+		["SKW"] = {"Id","PIRATELOOT","List","GcRewardTableItemList.xml"},
+		["PKW"] = "List",
 		["ADD"] = string.gsub(FrigToken_RewardTableItem, 'Chance" value="100"', string.format('Chance" value="%s"',round(100*_PercentageChanceMult)))
+	})
+end
+
+--| Added Rewards Changes
+--|=======================================================================================--
+if _SFMsOnAllFrtrKills then
+	table.insert(RewardTable_EXML_CT,{ --Make Freighter Descruction give SFM's every time + original reward
+		["SKW"] = {"Id","R_PIR_FREI"},
+		["VCT"] = {{"RewardChoice","GiveFirst_ThenAlsoSelectAlwaysFromRest"}}
+	})
+end
+
+if _PirateSysFrtrLootFix then
+	table.insert(MBIN_CT,{  --Make Freighter Descruction inside Pirate systems give the same reward as other systems
+		["MBIN_FS"] = {"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/ENTITIES/FREIGHTER.ENTITY.MBIN","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/ENTITIES/CAPITALFREIGHTER.ENTITY.MBIN"},
+		["EXML_CT"] = {{["VCT"] = {{"PirateSystemAltReward",""}}}}
 	})
 end
