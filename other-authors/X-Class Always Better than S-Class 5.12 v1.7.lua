@@ -2,8 +2,8 @@ ModAuthor = "Pekerson"
 LuaAuthor = "Pekerson"
 ModName = "X-Class Always Better than S-Class"
 BaseDescription = "Changes the weight of X-Class Upgrade Modules"
-GameVersion = "5.1"
-ModVersion = "v1.6"
+GameVersion = "5.12"
+ModVersion = "v1.7"
 --[[Files Modified:METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {

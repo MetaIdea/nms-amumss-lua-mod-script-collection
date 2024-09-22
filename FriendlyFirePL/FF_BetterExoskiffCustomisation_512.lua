@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BetterExoskiffCustomisation"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "511"
+METADATA_NMS_VERSION    = "512"
 METADATA_MOD_DESC       = "This mod allows players to further customise the Exo-skiff fishing platform by allowing them to pick colors for center screen and sail."
 
 
@@ -17,8 +17,8 @@ METADATA_MOD_DESC       = "This mod allows players to further customise the Exo-
 -- files affected by the mod
 --------------------------------------------------
 
-FILE_MODELS_EXOSKIFF_ENTITY =       "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\TECH\\FISHINGPLATFORM\\ENTITIES\\FISHINGPLATFORM.ENTITY.MBIN"
-FILE_METADATA_CUSTOM_UIDATA =       "METADATA\\UI\\CHARACTERCUSTOMISATIONUIDATA.MBIN"
+FILE_MODELS_EXOSKIFF_CUSTOMISATION =    "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\TECH\\PARTS\\SKIFFCUSTOMISATIONINTERACTION\\ENTITIES\\CUSTOMISATION.ENTITY.MBIN"
+FILE_METADATA_CUSTOM_UIDATA =           "METADATA\\UI\\CHARACTERCUSTOMISATIONUIDATA.MBIN"
 
 --------------------------------------------------
 -- files for the proc coloured screen
@@ -123,25 +123,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                 {
                     --------------------------------------------------
-                    -- exoskiff entity MBIN
+                    -- exoskiff customisation MBIN
                     --------------------------------------------------
-                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_EXOSKIFF_ENTITY,
+                    ["MBIN_FILE_SOURCE"] = FILE_MODELS_EXOSKIFF_CUSTOMISATION,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             -- change the position and orientation of camera on interaction
+                            -- disable depth of field blur to better see the sail
                             ["SKW"] = {"Template","GcInteractionComponentData.xml",},
                             ["VCT"] =
                             {
                                 {"Distance",20,},
                                 {"x",5,},
-                                {"y",3,},
+                                {"y",1.5,},
                                 {"z",0,},
                                 {"Roll",0,},
                                 {"Pitch",10,},
-                                {"Rotate",120,},
+                                {"Rotate",150,},
                                 {"LightPitch",10,},
-                                {"LightRotate",120,},
+                                {"LightRotate",150,},
+                                {"IsEnabled","False",},
                             },
                         },
                     },

@@ -21,6 +21,9 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for changes rela
 FILE_MODELS_PLAYERENTITY =          "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\PLAYERCHARACTER\\ENTITIES\\PLAYERCHARACTER.ENTITY.MBIN"
 FILE_MODELS_DERELICT_TERMINAL =     "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\NPCROOMS\\NPC_ABANDFRIGATECAPTAIN\\ENTITIES\\ABANFRIGATETERMINALFINAL.ENTITY.MBIN"
 
+-- animation used for debug emotes (not affected)
+FILE_MODELS_ANIM_TEST =             "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/MULTITOOL/2H_MULTITOOLCOCKANIM_3P.ANIM.MBIN"
+
 --------------------------------------------------
 -- debug emote triggers
 --------------------------------------------------
@@ -44,7 +47,7 @@ PROPERTY_EMOTE_TRIGGERS =
             </Property>
             <Property name="Action">
               <Property value="GcRewardAction.xml">
-                <Property name="Reward" value="R_ATLASPLINTH" />
+                <Property name="Reward" value="RD_PLATING" />
               </Property>
             </Property>
           </Property>
@@ -57,7 +60,7 @@ PROPERTY_EMOTE_TRIGGERS =
             </Property>
             <Property name="Action">
               <Property value="GcRewardAction.xml">
-                <Property name="Reward" value="R_SPACE_WANTED5" />
+                <Property name="Reward" value="RD_FRAGMENT" />
               </Property>
             </Property>
           </Property>
@@ -70,7 +73,7 @@ PROPERTY_EMOTE_TRIGGERS =
             </Property>
             <Property name="Action">
               <Property value="GcRewardAction.xml">
-                <Property name="Reward" value="PLANT_GRAV" />
+                <Property name="Reward" value="RD_CIRCUIT" />
               </Property>
             </Property>
           </Property>
@@ -129,7 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- add animation for debug emote 1
                         {   ["SKW"] = {"Anim","0H_TURN_L",},          ["SEC_SAVE_TO"] = "SEC_EMOTE_ANIM",                                                                           },
-                        {   ["SEC_EDIT"] = "SEC_EMOTE_ANIM",          ["VCT"] = {{"Anim","ANIM_PLATING",},{"Filename","MODELS/TESTS/EFFECTTEST.ANIM.MBIN",},{"FrameEnd","0",},},    },
+                        {   ["SEC_EDIT"] = "SEC_EMOTE_ANIM",          ["VCT"] = {{"Anim","ANIM_PLATING",},{"Filename",FILE_MODELS_ANIM_TEST,},{"FrameEnd","0",},},                  },
                         {   ["SKW"] = {"Anim","0H_GREET_MOB_04",},    ["SECTION_ACTIVE"] = 2,   ["ADD_OPTION"] = "ADDafterSECTION",    ["SEC_ADD_NAMED"] = "SEC_EMOTE_ANIM",        },
 
                         -- add animation for debug emote 2

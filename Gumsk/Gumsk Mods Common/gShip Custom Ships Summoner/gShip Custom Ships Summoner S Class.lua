@@ -14,74 +14,82 @@ METADATA/REALITY/TABLES/REWARDTABLE.MBIN
 ShipInfo = 	{
 	{"GOLDENVECTOR",		"Golden Vector",			"1"},
 	{"SERENITY",			"Serenity",					"3"},
-	{"RAZORCREST",			"Razor Crest",				"6"},
-	{"XWINGDARK",			"X-Wing Dark",				"51"},
-	{"XWINGWHITE",			"X-Wing White",				"99"},
-	{"JEDIINTERCEPTOR",		"Jedi Interceptor Yellow",	"59"},
-	{"JEDIINTY",			"Jedi Interceptor Green",	"40"},
-	{"JEDIINTYRED",			"Jedi Interceptor Red",		"105"},
-	{"TIES",				"TIE Silencer",				"2"},
-	{"TIEP",				"TIE Phantom",				"21"},
-	{"TIED",				"TIE Defender",				"78"},
-	{"TIEA",				"TIE Advanced",				"25"},
-	{"TIEI",				"TIE Interceptor",			"30"},
+	{"SERENITYGOLD",			"Serenity Gold",					"45"},
+  {"SERENITYTWOTONE",			"Serenity Two-Tone",					"62"},
+  {"NIMANDO",		"N-1 Fighter",			"31"},
+	{"RAZORCREST",			"Razor Crest",				"105"},
+	{"XWINGDARK",			"X-Wing Dark",				"34"},
+	{"XWINGWHITE",			"X-Wing White",				"11"},
+	{"JEDIINTERCEPTOR",		"Jedi Interceptor Yellow",	"5"},
+	{"JEDIINTY",			"Jedi Interceptor Green",	"6"},
+	{"JEDIINTYRED",			"Jedi Interceptor Red",		"71"},
+	{"JEDIINTYBLUE",			"Jedi Interceptor Blue",		"48"},
+  {"JEDIINTYORANGE",			"Jedi Interceptor Orange",		"82"},
+  -- {"JEDIINTYPURPLE",			"Jedi Interceptor Purple",		"48"},
+	{"TIES",				"TIE Silencer",				"98"},
+	{"TIEP",				"TIE Phantom",				"52"},
+	{"TIED",				"TIE Defender",				"75"},
+	{"TIEA",				"TIE Advanced",				"87"},
+	{"TIEI",				"TIE Interceptor",			"27"},
 	{"TIEIRED",				"TIE Interceptor Red",		"37"},
-	{"TIEHU",				"TIE Hunter",				"92"},
-	{"DROIDTRIFIGHTER",		"Droid Tri-Fighter",		"13"},
-	{"IMPERIALSHUTTLE",		"Imperial Shuttle",			"48"},
-	{"SWFURY",				"Sith Fury Interceptor",	"80"},
-	{"SLAVE",				"Slave I Firespray",		"72"},
-	{"SLAVEUA",				"Slave I Firespray UA",		"95"},
-	{"YWINGB",				"Y-Wing BTL-B",				"100"},
-	{"X70B",				"X-70B Phantom",			"110"},
-	{"EWING",				"E-Wing",					"86"},
-	{"VWING",				"V-Wing",					"104"},
-	{"AWING",				"A-Wing",					"22"},
-	{"ENTD",				"Enterprise NCC1701-D",		"14"},
-	{"DEFIANT",				"USS Defiant",				"19"},
-	{"STDANUBE",			"Danube Runabout",			"8"},
-	{"FEDERATIONATTACK",	"Federation Attack Fighter","41"},
-	{"BIRDOFPREY",			"Klingon Bird of Prey",		"76"},
-	{"BATWING",				"Batwing",					"4"},
-	{"MILANO",				"Milano",					"64"},
-	{"MILANOMARVEL",		"Captain Marvel Milano",	"61"},
-	{"VIPERIIB",			"Viper Mk II",				"113"},
-	{"CYLON",				"Cylon Raider",				"79"},
-	{"B5STARFURY",			"Star Fury",				"109"},
-	{"B5SHADOW",			"Shadow",					"60"},
-	{"WHITESTAR",			"White Star",				"82"},
-	{"SWORDFISH",			"Swordfish II",				"16"},
-	{"GUNDAMSAZABI",		"Gundam Sazabi",			"74"},
+	{"TIEHU",				"TIE Hunter",				"89"},
+	{"DROIDTRIFIGHTER",		"Droid Tri-Fighter",		"10"},
+	{"IMPERIALSHUTTLE",		"Imperial Shuttle",			"93"},
+	{"SWFURY",				"Sith Fury Interceptor",	"29"},
+	{"SLAVE",				"Slave I Firespray",		"103"},
+	{"SLAVEUA",				"Slave I Firespray UA",		"109"},
+	{"YWINGB",				"Y-Wing BTL-B",				"15"},
+	{"X70B",				"X-70B Phantom",			"39"},
+  {"X70B25",				"X-70B Phantom",			"96"},
+	{"EWING",				"E-Wing",					"32"},
+	{"VWING",				"V-Wing",					"51"},
+	{"AWING",				"A-Wing",					"101"},
+	{"ENTD",				"Enterprise NCC1701-D",		"59"},
+	{"DEFIANT",				"USS Defiant",				"132"},
+	{"STDANUBE",			"Danube Runabout",			"54"},
+	{"FEDERATIONATTACK",	"Federation Attack Fighter","70"},
+	{"BIRDOFPREY",			"Klingon Bird of Prey",		"55"},
+	{"BATWING",				"Batwing",					"18"},
+	{"MILANO",				"Milano",					"61"},
+	{"MILANOMARVEL",		"Captain Marvel Milano",	"41"},
+	{"VIPERIIB",			"Viper Mk II",				"25"},
+	{"CYLON",				"Cylon Raider",				"8"},
+	{"B5STARFURY",			"Star Fury",				"7"},
+	{"B5SHADOW",			"Shadow",					"9"},
+	{"WHITESTAR",			"White Star",				"110"},
+	{"SWORDFISH",			"Swordfish II",				"112"},
+	{"GUNDAMSAZABI",		"Gundam Sazabi",			"40"},
 	{"GUNDAMSAZABIBLUE",	"Gundam Sazabi Blue",		"102"},
-	{"GUNDAMSAZABIPINK",	"Gundam Sazabi Pink",		"85"},
-	{"LEGOSPACEDARTI",		"LEGO Space Dart I",		"43"},
-	{"LEGOSPACESCOOTER",	"LEGO Space Scooter",		"70"},
-	{"PHANTOM",				"Phantom",					"50"},
-	{"PELICAN",				"Pelican D77-TC",			"84"},
-	{"PELICANWHITE",		"Pelican D77-TC White",		"63"},
-	{"TARDIS",				"T.A.R.D.I.S.",				"69"},
-	{"HOCOTATE",			"Hocotate Rocket",			"115"},
-	{"COSMOZERO",			"Yamato Cosmo Zero",		"45"},
-	{"COSMOTIGERII",		"Yamato Cosmo Tiger II",	"90"},
-	{"TRIMAX",				"Max",						"35"},
-	{"METROID",				"Metroid Gunship",			"114"},
-	{"ARWING",				"Star Fox Arwing",			"94"},
-	{"STARVIPER",			"Star Viper",				"73"},
-	{"BLADE",				"Blade Starship",			"106"},
-	{"SR71",				"SR71 Blackbird",			"71"},
-	{"MALOVSKY",			"Malovsky Gunship",			"91"},
-	{"MOLNIA",				"Molnia Racer",				"29"},
-	{"PARADISO",			"Avem de Paradiso",			"38"},
-	{"UNITRON",				"Unitron",					"101"},
-	{"POLICE",				"Police",					"5"},
-	{"GASEOUSSENTIENCE",	"Gaseous Sentience",		"7"}, --WEIRDOBJECT5
-	{"DRONE",				"Drone",					"9"},
-	{"ATLASCORE",			"Atlas Core",				"10"},
-	{"LIVINGMETALLOID",		"Living Metalloid",			"11"}, --WEIRDOBJECT2
-	{"CORRUPTEDDRONE",		"Corrupted Drone",			"12"},
+	{"GUNDAMSAZABIPINK",	"Gundam Sazabi Pink",		"68"},
+	{"LEGOSPACEDARTI",		"LEGO Space Dart I",		"125"},
+	{"LEGOSPACESCOOTER",	"LEGO Space Scooter",		"16"},
+	{"PHANTOM",				"Phantom",					"13"},
+	{"PELICAN",				"Pelican D77-TC",			"47"},
+	{"PELICANWHITE",		"Pelican D77-TC White",		"12"},
+	{"TARDIS",				"T.A.R.D.I.S.",				"100"},
+	{"HOCOTATE",			"Hocotate Rocket",			"78"},
+	{"COSMOZERO",			"Yamato Cosmo Zero",		"107"},
+	{"COSMOTIGERII",		"Yamato Cosmo Tiger II",	"36"},
+	{"TRIMAX",				"Max",						"66"},
+	{"METROID",				"Metroid Gunship",			"63"},
+	{"ARWING",				"Star Fox Arwing",			"42"},
+	{"STARVIPER",			"Star Viper",				"2"},
+	{"BLADE",				"Blade Starship",			"4"},
+	{"SR71",				"SR71 Blackbird",			"54"},
+	{"MALOVSKY",			"Malovsky Gunship",			"57"},
+	{"MOLNIA",				"Molnia Racer",				"94"},
+	{"PARADISO",			"Avem de Paradiso",			"86"},
+	{"UNITRON",				"Unitron",					"64"},
+  {"UNITRONBB",				"Unitron",					"14"},
+	{"ATLASCORE",			"Atlas Core",				"24"},
+	{"POLICE",				"Police",					"84"},
+	{"GASEOUSSENTIENCE",	"Gaseous Sentience",		"38"}, --WEIRDOBJECT5
+	{"DRONE",				"Drone",					"91"},
+	{"LIVINGMETALLOID",		"Living Metalloid",			"73"}, --WEIRDOBJECT2
+	{"CORRUPTEDDRONE",		"Corrupted Drone",			"77"},
 	{"DYSONLENS",			"Dyson Lens",				"17"},
-	{"STELLARINT",			"Stellar Intelligence",		"15"}, --WEIRDOBJECT3
-	{"IRONBOUNDRELIC",		"Ironbound Relic",			"66"}, --SPACEGYROSCOPE
+	{"STELLARINT",			"Stellar Intelligence",		"80"}, --WEIRDOBJECT3
+	{"IRONBOUNDRELIC",		"Ironbound Relic",			"114"}, --SPACEGYROSCOPE
 }
 
 NewRewardEntry = ""
@@ -334,65 +342,72 @@ for i = 1,#ShipInfo do
 	FinalEmoteEntries = FinalEmoteEntries..NewEmoteEntry
 
 	NewPCAnimEntry = [[
-        <Property value="TkAnimationData.xml">
-          <Property name="Anim" value="]]..ShipInfo[i][1]..[[" />
-          <Property name="AdditiveBaseAnim" value="" />
-		  <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="StartNode" value="" />
-		  <Property name="ExtraStartNodes" />
-		  <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
-          <Property name="Priority" value="0" />
-          <Property name="OffsetMin" value="0" />
-          <Property name="OffsetMax" value="0" />
-          <Property name="Delay" value="0" />
-          <Property name="Speed" value="1" />
-          <Property name="ActionStartFrame" value="0" />
-          <Property name="ActionFrame" value="-1" />
-		  <Property name="AdditiveBaseFrame" value="0" />
-		  <Property name="AnimType" value="OneShot" />
-          <Property name="CreatureSize" value="AllSizes" />
-          <Property name="Additive" value="False" />
-          <Property name="Mirrored" value="False" />
-          <Property name="Active" value="True" />
-		  <Property name="Has30HzFrames" value="False" />
-        </Property>
+    <Property value="TkAnimationData.xml">
+      <Property name="Anim" value="]]..ShipInfo[i][1]..[[" />
+      <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+      <Property name="AnimType" value="OneShot" />
+      <Property name="AnimGroupOverride" value="False" />
+      <Property name="Priority" value="0" />
+      <Property name="FrameStart" value="0" />
+      <Property name="FrameEnd" value="0" />
+      <Property name="FrameEndGame" value="0" />
+      <Property name="StartNode" value="" />
+      <Property name="ExtraStartNodes" />
+      <Property name="AdditiveBaseAnim" value="" />
+      <Property name="AdditiveBaseFrame" value="0" />
+      <Property name="Mask" value="" />
+      <Property name="OffsetMin" value="0" />
+      <Property name="OffsetMax" value="0" />
+      <Property name="Delay" value="0" />
+      <Property name="Speed" value="1" />
+      <Property name="ActionStartFrame" value="0" />
+      <Property name="ActionFrame" value="-1" />
+      <Property name="Actions" />
+      <Property name="CreatureSize" value="AllSizes" />
+      <Property name="Additive" value="False" />
+      <Property name="Mirrored" value="False" />
+      <Property name="Active" value="True" />
+      <Property name="Has30HzFrames" value="False" />
+      <Property name="GameData" value="TkAnimationGameData.xml">
+        <Property name="RootMotion" value="None" />
+        <Property name="BlockPlayerMovement" value="False" />
+        <Property name="BlockPlayerWeapon" value="Unblocked" />
+      </Property>
+    </Property>
 	  ]]
 	FinalPCAnimEntries = FinalPCAnimEntries..NewPCAnimEntry
 
 	NewPCTriggerEntry = [[
-		<Property value="GcTriggerActionComponentData.xml">
-		  <Property name="HideModel" value="False" />
-		  <Property name="StartInactive" value="False" />
-		  <Property name="States">
-			<Property value="GcActionTriggerState.xml">
-			  <Property name="StateID" value="BOOT" />
-			  <Property name="Triggers">
-				<Property value="GcActionTrigger.xml">
-				  <Property name="Event" value="GcAnimFrameEvent.xml">
-					<Property name="Anim" value="]]..ShipInfo[i][1]..[[" />
-					<Property name="FrameStart" value="0" />
-					<Property name="StartFromEnd" value="False" />
-				  </Property>
-				  <Property name="Action">
-					<Property value="GcRewardAction.xml">
-					  <Property name="Reward" value="]]..ShipInfo[i][1]..[[" />
-					</Property>
-				  </Property>
-				</Property>
-			  </Property>
-			</Property>
-		  </Property>
-		  <Property name="Persistent" value="False" />
-		  <Property name="PersistentState" value="" />
-		  <Property name="ResetShotTimeOnStateChange" value="False" />
-		  <Property name="LinkStateToBaseGrid" value="False" />
-		</Property>
+    <Property value="LinkableNMSTemplate.xml">
+      <Property name="Template" value="GcTriggerActionComponentData.xml">
+        <Property name="HideModel" value="False" />
+        <Property name="StartInactive" value="False" />
+        <Property name="States">
+          <Property value="GcActionTriggerState.xml">
+            <Property name="StateID" value="BOOT" />
+            <Property name="Triggers">
+              <Property value="GcActionTrigger.xml">
+                <Property name="Event" value="GcAnimFrameEvent.xml">
+                  <Property name="Anim" value="]]..ShipInfo[i][1]..[[" />
+                  <Property name="FrameStart" value="0" />
+                  <Property name="StartFromEnd" value="False" />
+                </Property>
+                <Property name="Action">
+                  <Property value="GcRewardAction.xml">
+                    <Property name="Reward" value="]]..ShipInfo[i][1]..[[" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="Persistent" value="False" />
+        <Property name="PersistentState" value="" />
+        <Property name="ResetShotTimeOnStateChange" value="False" />
+        <Property name="LinkStateToBaseGrid" value="False" />
+      </Property>
+      <Property name="Linked" value="" />
+    </Property>
 	  ]]
 	FinalPCTriggerEntries = FinalPCTriggerEntries..NewPCTriggerEntry
 
@@ -413,9 +428,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					EXML_CHANGE_TABLE 	= 
 					{
 						{
-							SPECIAL_KEY_WORDS   = {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"}, 
-							REPLACE_TYPE        = "ADDAFTERSECTION",
-							ADD 				= FinalPCAnimEntries
+							SPECIAL_KEY_WORDS = {"Anim","1H_FISH_LEAN"}, 
+							REPLACE_TYPE = "ADDAFTERSECTION",
+							ADD = FinalPCAnimEntries
 						},
 						{
 							PRECEDING_KEY_WORDS = {"LodDistances"}, 
@@ -428,9 +443,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					MBIN_FILE_SOURCE 	= "METADATA/UI/EMOTEMENU.MBIN",
 					EXML_CHANGE_TABLE 	= {
 						{
-							PRECEDING_KEY_WORDS = {"Emotes"}, 
-								
-							ADD 				= FinalEmoteEntries
+							PRECEDING_KEY_WORDS = {"Emotes"},
+							ADD = FinalEmoteEntries
 						}
 					}
 				},
@@ -440,8 +454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							PRECEDING_KEY_WORDS = {"GenericTable"}, 
-								
-							ADD 				= FinalRewardEntries
+							ADD = FinalRewardEntries
 						}
 					}
 				}

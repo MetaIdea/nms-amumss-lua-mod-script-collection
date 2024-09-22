@@ -7,14 +7,14 @@ MaxSubstanceQuantity=99999
 
 --DO NOT EDIT THIS SECTION
 
-ProductSection = [[
-<Property name="AlwaysPresentProducts">
-</Property>
-]]
-SubstanceSection = [[
-<Property name="AlwaysPresentSubstances">
-</Property>
-]]
+-- ProductSection = [[
+-- <Property name="AlwaysPresentProducts">
+-- </Property>
+-- ]]
+-- SubstanceSection = [[
+-- <Property name="AlwaysPresentSubstances">
+-- </Property>
+-- ]]
 
 --YOU CAN EDIT THIS SECTION, IF YOU WANT TO UPGRADE PRODUCT & SUBSTANCE LIST
 Products = 
@@ -1111,7 +1111,7 @@ Products =
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="WORMSCROLL5" />
         </Property>
-         <Property value="NMSString0x10.xml">
+        <Property value="NMSString0x10.xml">
           <Property name="Value" value="FIGHT_COCKAA" />
         </Property>
         <Property value="NMSString0x10.xml">
@@ -2817,12 +2817,12 @@ VehicleTechSpecialist =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] = "NotAnotherTradeMod.pak",
-  ["MOD_AUTHOR"] = "MasterNetra & musty123",
-  ["LUA_AUTHOR"] = "Babscoole & MasterNetra",
-  ["NMS_VERSION"] = "5.11.0.1",
+  ["MOD_FILENAME"]    = "NotAnotherTradeMod.pak",
+  ["MOD_AUTHOR"]      = "MasterNetra & musty123",
+  ["LUA_AUTHOR"]      = "Babscoole & MasterNetra",
+  ["NMS_VERSION"]     = "5.11.0.1",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station vendors.(Less Food Version)",
-  ["MODIFICATIONS"] =
+  ["MODIFICATIONS"]   =
   {
     {
       ["MBIN_CHANGE_TABLE"] =
