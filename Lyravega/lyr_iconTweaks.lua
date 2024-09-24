@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Icon Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Icon Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -25,14 +25,15 @@ local gameVersion = "4.21"
 
 local tweakStates = {
 	smallerIcons = true,					-- reduces the sizes of all icons except the compass ones (recommended with 'biggerColourizedHexagonIcons')
-	colourizedHexagonIcons = true,			-- adds colourized textures for the hexagonal building icons (ignored when bigger version is active)
-	biggerColourizedHexagonIcons = true,	-- adds bigger colourized textures for the hexagonal building icons instead (not recommended without 'smallerIcons')
+	colourizedHexagonIcons = "large",		-- adds colourized ("normal" or "large") binocs icons for buildings (hexagons), with colours matching the scanner icons
+	colourizedDiamondIcons = true,			-- adds colourized binocs/scanner icons for non-buildings (diamonds), with colours matching the scanner/binocs icons
 	miscIconAdjustments = true,				-- minor changes to a few icons; green dot for known creatures, different icon for unknown buildings
 	noFocusedIconResize = true,				-- focused icons no longer grow in size
 	shorterIconFadeDistance = true,			-- icons start fading out at a shorter distance but at less steep intervals
 	moreClumpyIcons = true,					-- allows icons of the same type/group to clump up in a greater angle/radius
 	retainBuildingIconSizes = true,			-- building markers on the same planet will not get scaled down
 	buldingDetectionRange = 2500,			-- building detection and marker visibility ranges are set to the given value (1000-2500 is ideal)
+	maxMessageBeaconIcons = 0,				-- sets the maximum number of message beacon icons (game default 10)
 }
 
 --#region METHODS
@@ -170,27 +171,97 @@ local buldingDetectionRange = function()
 	return tweak
 end; lyr.tweakTables.buldingDetectionRange = buldingDetectionRange
 
+local maxMessageBeaconIcons = function()
+	if not lyr:checkTweak("maxMessageBeaconIcons") then return false end
+
+	local tweak = {
+		["GCUIGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MaxNumMessageBeaconIcons = {default = 10, altered = lyr.tweakStates.maxMessageBeaconIcons},
+				}
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.maxMessageBeaconIcons = maxMessageBeaconIcons
+
 local colourizedHexagonIcons = function()
-	if not lyr:checkTweak("colourizedHexagonIcons") or lyr:checkTweak("biggerColourizedHexagonIcons") then return false end
+	local option = lyr:checkTweak("colourizedHexagonIcons"); if not option then return false end
+	local options = {
+		LARGE = [[\lyr_files\colourizedHexagonIcons\large\*.DDS]],
+		NORMAL = [[\lyr_files\colourizedHexagonIcons\normal\*.DDS]],
+	}; if not options[option:upper()] then return false end
+
+	local path = options[option:upper()]
 
 	local files = {
-		comment = "Adding files from 'colourizedHexagonIcons'",
-		{[[\lyr_files\colourizedHexagonIcons\*.DDS]], [[\TEXTURES\UI\HUD\ICONS\SCANNING\]]}
+		comment = "Adding files from 'colourizedHexagonIcons', '"..lyr.tweakStates.colourizedHexagonIcons.."' option selected",
+		{path, [[\TEXTURES\UI\HUD\ICONS\SCANNING\]]}
 	}
 
 	return files
 end; lyr.tweakFiles.colourizedHexagonIcons = colourizedHexagonIcons
 
-local biggerColourizedHexagonIcons = function()
-	if not lyr:checkTweak("biggerColourizedHexagonIcons") then return false end
+local colourizedDiamondIcons = {
+	files = function()
+		if not lyr:checkTweak("colourizedDiamondIcons") then return false end
 
-	local files = {
-		comment = "Adding files from 'biggerColourizedHexagonIcons'",
-		{[[\lyr_files\biggerColourizedHexagonIcons\*.DDS]], [[\TEXTURES\UI\HUD\ICONS\SCANNING\]]}
-	}
+		local files = {
+			comment = "Adding files from 'colourizedDiamondIcons'",
+			{[[\lyr_files\colourizedDiamondIcons\SCANNING\*.DDS]], [[\TEXTURES\UI\HUD\ICONS\SCANNING\]]},
+			{[[\lyr_files\colourizedDiamondIcons\PICKUPS\*.DDS]], [[\TEXTURES\UI\HUD\ICONS\PICKUPS\]]},
+		}
 
-	return files
-end; lyr.tweakFiles.biggerColourizedHexagonIcons = biggerColourizedHexagonIcons
+		return files
+	end,
+	tweaks = function()
+		if not lyr:checkTweak("colourizedDiamondIcons") then return false end
+
+		local tweaks = {
+			{
+				mbinPaths = [[METADATA\UI\HUD\SCANNERICONS.EXML]],
+				{
+					pkw1st = "ScannableIcons",
+					skw = {"Mineral", lyr.ignore, "Main", lyr.ignore},
+					fields = {
+						Filename = [[TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.MINERAL.DDS]]
+					}
+				},
+				{
+					pkw1st = "ScannableIconsBinocs",
+					skw = {"BluePlant", lyr.ignore, "Main", lyr.ignore},
+					fields = {
+						Filename = [[TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.PLANTBLUE.DDS]]
+					}
+				},
+				{
+					pkw1st = "ScannableIconsBinocs",
+					skw = {"Plant", lyr.ignore, "Main", lyr.ignore},
+					fields = {
+						Filename = [[TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.PLANTGREEN.DDS]]
+					}
+				}
+			},
+			{
+				mbinPaths = [[METADATA\REALITY\DEFAULTREALITY.EXML]],
+				{
+					skw = {lyr:parsePair([[<Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.TERRAIN.DDS" />]])},
+					selectLevel = 1,
+					findSubSections = {{lyr:parsePair([[<Property name="IconBinocs" value="TkTextureResource.xml">]])}},
+					fields = {
+						Filename = [[TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.TERRAIN.DDS]]
+					}
+				}
+			}
+		}
+
+		return tweaks
+	end
+}
+lyr.tweakFiles.colourizedDiamondIcons = colourizedDiamondIcons.files
+lyr.tweakTables.colourizedDiamondIcons = colourizedDiamondIcons.tweaks
 
 local miscIconAdjustments = function()
 	if not lyr:checkTweak("miscIconAdjustments") then return false end
@@ -215,7 +286,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

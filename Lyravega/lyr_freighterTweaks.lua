@@ -27,17 +27,15 @@ local tweakStates = {
 --	plantGrowthRateMult = 2,				-- multiplies the plant growth rate by the given amount (setting to 2 will make every plant grow twice as fast)
 --	unifiedPlantGrowthTime = 4,				-- unifies the plant growth times, value is in hours (setting to 4 will make every plant grow in 4 hours)
 	freighterBridgeScanner = true,			-- adds the freighter planetary scan interaction to the bridge terminal
+	bridgeMissionTerminal = true,			-- adds nexus mission interaction to the terminal beside the navigator
 	hangarSalvageTerminal = true,			-- adds salvage terminals to the freighter hangar, below stairs
 	nexusSalvageTerminal = true,			-- adds a salvage terminal to the nexus, at the middle section between the benches
 	systemWideTelepads = true,				-- adds two way freighter <-> station telepads which also work as regular transporters and can be used to call ship
 --	interstellarTerminus = true,			-- changes the regular transporter function of the added telepads to nexus one
 --	useSolidRunwayTexture = true,			-- changes the runway texture(s) to the old one (WARNING: very bright but also very noticable)
-	megaRunway = true,						-- adds a mega runway to the freighter hangar entrance (not recommended with 'useSolidRunwayTexture')
-	megaRunwayLengthMult = 10,				-- separate multiplier value for the added mega runway's length
---	noMiniRunways = true,					-- removes the mini (vanilla) runways from freighters (if having both the mini and mega runways is undesired) 
-	miniRunwaysLengthMult = 10,				-- multiplier for the mini (vanilla) runway lengths (ideally, equal to mega's 'megaRunwayLengthMult' multiplier)
-	harvestDrone = true,					-- adds 'harvest all' interaction to the 'Robotic Companion' decoration, and removes 'harvest all' sound
-	harvestDroneRadius = 25,				-- sets the added 'harvest all' interaction radius to the given value (render limitations will impose restrictions)
+	megaRunway = 10,						-- adds a mega runway to the freighter hangar entrance, value acts as a length multiplier
+	miniRunways = 10,						-- value acts as a length multiplier for the mini runways, 0 removes them completely
+	harvestDrone = 25,						-- adds 'harvest all' interaction with the value as its radius to the 'Robotic Companion', removes 'harvest all' sound
 	ownedShipsInHangar = 3,					-- sets the limit for owned ships in freighter hangar to the given value (minimum 1, game default is 6)
 	hangarDockingSpeedMult = 2,				-- dock and take off speed limits for freighters are adjusted by the given multiplier (above 3 not recommended)
 	hangarDockingOptimizations = true,		-- speeds up hangar door animation and removes its sound, removes pitch correction, reduces approach angle and adjusts range 
@@ -130,8 +128,7 @@ local freighterBridgeScanner = function()
 	local tweak = {
 		lyr:createNodeTemplate(),
 		{
-			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]}},
-			discardMbin = true
+			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]}}
 		},
 		{
 			mbinPaths = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]],
@@ -141,37 +138,67 @@ local freighterBridgeScanner = function()
 				removeSection = true
 			}
 		},
-		{
-			mbinPaths = {
+		lyr:attachEntityLocatorAttachment(
+			{
 				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINAL.SCENE.MBIN]],
 				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINALPIRATE.SCENE.MBIN]],
 			},
-			{
-				precedingKeyWords = "Children",
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="Base" />]])},
-				pasteSection = lyr.nodeTemplate.section
-			},
-			{
-				specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
-				fields = {
-					Name = "lyr_bridgeScanner",
-					Type = "LOCATOR",
-					TransY = 0.5,
-				}
-			},
-			{
-				specialKeyWords = {"Name", "lyr_bridgeScanner"},
-				precedingKeyWords = "TkSceneNodeAttributeData.xml",
-				fields = {
-					Name = "ATTACHMENT",
-					Value = [[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]]
-				}
-			},
-		}
+			"Base",
+			[[LYR\ENTITIES\BRIDGESCAN.ENTITY.MBIN]],
+			"lyr_bridgeScanner",
+			{y = 1.5}
+		)
 	}
 
 	return tweak
 end; lyr.tweakTables.freighterBridgeScanner = freighterBridgeScanner
+
+local bridgeMissionTerminal = function()
+	if not lyr:checkTweak("bridgeMissionTerminal") then return false end
+
+	local tweak = {
+		lyr:createNodeTemplate(),
+		{
+			mbinPaths = {
+				{[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\ENTITIES\MPMISSIONTERMINAL.ENTITY.EXML]], [[LYR\ENTITIES\MISSIONTERMINAL.ENTITY.MBIN]]}
+				-- {[[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\MPTERMINAL.ENTITY.MBIN]], [[LYR\ENTITIES\MISSIONTERMINAL.ENTITY.MBIN]]}
+			}
+		},
+		-- {
+		-- 	mbinPaths = [[LYR\ENTITIES\MISSIONTERMINAL.ENTITY.MBIN]],
+		-- 	{
+		-- 		skw = {"Template", lyr.ignore},
+		-- 		findSectionsWhereNoneMatch = {{"Template", "GcInteractionComponentData.xml"}},
+		-- 		selectLevel = 1,
+		-- 		removeSection = true
+		-- 	}
+		-- },
+		{
+			mbinPaths = [[LYR\ENTITIES\MISSIONTERMINAL.ENTITY.MBIN]],
+			{
+				skw = {lyr:parsePair([[<Property name="UseInteractCamera" value="True" />]])},
+				fields = {
+					UseInteractCamera = false,
+					BlendToCameraTime = 0.1,
+					BlendFromCameraTime = -1
+				},
+				replaceAll = true
+			}
+		},
+		lyr:attachEntityLocatorAttachment(
+			{
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINAL.SCENE.MBIN]],
+				[[MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/BRIDGETERMINALPIRATE.SCENE.MBIN]],
+			},
+			"Base",
+			[[LYR\ENTITIES\MISSIONTERMINAL.ENTITY.MBIN]],
+			"lyr_missionTerminal",
+			{x = -2, y = 0.5}
+		)
+	}
+
+	return tweak
+end; lyr.tweakTables.bridgeMissionTerminal = bridgeMissionTerminal
 
 local hangarSalvageTerminal = function()
 	if not lyr:checkTweak("hangarSalvageTerminal") then return false end
@@ -278,21 +305,21 @@ local systemWideTelepads = function()
 			:destinationScene("LYR_DUMMYTELEPAD")
 			:extraEntities("telepadTrigger", "MINIPORTALTRIGGER", "LYR_DUMMYTRIGGER"):finalize(),
 		stationLeft = lyr:dupeScene()
-			:sourceScene("LYR_DUMMYTELEPAD")
+			:sourceScene("LYR_DUMMYTELEPAD", nil, true)
 			:destinationScene("STATION_TELEPAD_L")
-			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "STATION_TELEPAD_L_TRIGGER"):finalize(),
+			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "STATION_TELEPAD_L_TRIGGER", true):finalize(),
 		stationRight = lyr:dupeScene()
-			:sourceScene("LYR_DUMMYTELEPAD")
+			:sourceScene("LYR_DUMMYTELEPAD", nil, true)
 			:destinationScene("STATION_TELEPAD_R")
-			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "STATION_TELEPAD_R_TRIGGER"):finalize(),
+			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "STATION_TELEPAD_R_TRIGGER", true):finalize(),
 		hangarLeft = lyr:dupeScene()
-			:sourceScene("LYR_DUMMYTELEPAD")
+			:sourceScene("LYR_DUMMYTELEPAD", nil, true)
 			:destinationScene("HANGAR_TELEPAD_L")
-			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "HANGAR_TELEPAD_L_TRIGGER"):finalize(),
+			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "HANGAR_TELEPAD_L_TRIGGER", true):finalize(),
 		hangarRight = lyr:dupeScene()
-			:sourceScene("LYR_DUMMYTELEPAD")
+			:sourceScene("LYR_DUMMYTELEPAD", nil, true)
 			:destinationScene("HANGAR_TELEPAD_R")
-			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "HANGAR_TELEPAD_R_TRIGGER"):finalize(),
+			:extraEntities("telepadTrigger", "LYR_DUMMYTRIGGER", "HANGAR_TELEPAD_R_TRIGGER", true):finalize(),
 	}
 
 	bigTweak = {
@@ -333,8 +360,7 @@ local systemWideTelepads = function()
 			-- END OF DUMMY TELEPAD SCENE TWEAKS
 			--#region DUMMY TELEPAD CALLSHIP ATTACHMENT
 			{
-				mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\SUMMONSHIP.ENTITY.MBIN]], [[LYR\ENTITIES\HELPME.ENTITY.MBIN]]}},
-				discardMbin = true
+				mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\SUMMONSHIP.ENTITY.MBIN]], [[LYR\ENTITIES\HELPME.ENTITY.MBIN]]}}
 			},
 			{
 				mbinPaths = telepads.dummy.scene,
@@ -391,7 +417,6 @@ local systemWideTelepads = function()
 			--#region DUMMY TELEPAD ENTITY TWEAKS
 			{
 				mbinPaths = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\TELEPORTER_STATION\ENTITIES\TELEPORTERSTATIONINTERACTION.ENTITY.MBIN]],
-				discardMbin = true,
 				{
 					skw = {lyr:parsePair([[<Property name="Template" value="GcInteractionComponentData.xml">]])},
 					selectLevel = 1,
@@ -696,7 +721,7 @@ local systemWideTelepads = function()
 						Value = telepads.hangarRight.scene
 					}
 				}
-			} --#endregion
+			}, --#endregion
 			-- END OF HANGAR TELEPAD PLACEMENT
 		},
 		lyr:dupeScene():cleanUp()
@@ -715,12 +740,10 @@ local useSolidRunwayTexture = function()
 					-- [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\DOORSFRONT\ENTRANCEGLOW_MAT.MATERIAL.MBIN]],
 					[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA_EXTERIOR\ENTRANCEGLOW_MAT.MATERIAL.MBIN]],
 					[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\HANGERRUNWAY_ENTRANCERUNWAYMAT.MATERIAL.MBIN]],
-					lyr.remove
 				},
 				{
 					[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA_EXTERIOR\ENTRANCEGLOW_MAT.MATERIAL.MBIN]],
 					[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE\HANGERRUNWAY_ENTRANCERUNWAYMAT.MATERIAL.MBIN]],
-					lyr.remove
 				}
 			}
 		}
@@ -734,13 +757,53 @@ local megaRunway = function()
 
 	local tweak = {
 		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
-			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
-				copySection = true
+			mbinPaths = {
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]]
 			},
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
+				skw = {"NameHash", lyr.ignore},
+				findSubSections = {
+					{lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
+					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])}
+				},
+				copySection = true
+			},
+			lyr:checkTweak("miniRunways") and {
+				skw = {"NameHash", lyr.ignore},
+				findSubSections = {
+					{"Name", "EntranceRunway1"},
+					{"Name", "EntranceRunway2"},
+					{"Name", "EntranceRunway"},
+					{"Name", "ENTRANCEGLOW23"},
+					{"Name", "ENTRANCEGLOW25"},
+					{"Name", "ENTRANCEGLOW26"},
+				},
+				removeAllSections = lyr.tweakStates.miniRunways == 0 and true or nil,
+				fields = lyr.tweakStates.miniRunways > 0 and {
+					TransZ = math.max(35, 35 + (lyr.tweakStates.miniRunways-1)*80.5),	-- 80.5 seems to be the magic number
+					ScaleZ = math.max(1, lyr.tweakStates.miniRunways)
+				} or nil
+			} or false,
+			{
+				editSection = true,
+				pkw = "TkSceneNodeAttributeData.xml",
+				copySection = "attribute"
+			},
+			{
+				editSection = "attribute",
+				fields = {
+					Name = "LYR_EXTRA",
+					Value = "LYR_MEGARUNWAY"
+				}
+			},
+			{
+				editSection = true,
+				pkw = "Attributes",
+				pasteSection = "attribute"
+			},
+			{
+				editSection = true,
 				fields = {
 					-- Name = "lyr_megaRunway",
 					-- NameHash = "2511746515",
@@ -748,37 +811,14 @@ local megaRunway = function()
 					ScaleX = 6.6,
 					TransY = -9,
 					ScaleY = 2.8,
-					TransZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(35, 35 + (lyr.tweakStates.megaRunwayLengthMult-1)*80.5) or nil,	-- 80.5 seems to be the magic number
-					ScaleZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(1, lyr.tweakStates.megaRunwayLengthMult) or nil
+					TransZ = math.max(35, 35 + (lyr.tweakStates.megaRunway-1)*80.5) or nil,	-- 80.5 seems to be the magic number
+					ScaleZ = math.max(1, lyr.tweakStates.megaRunway) or nil
 				},
 			},
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="EntranceRunway" />]])},
-				pasteAfterSection = true
-			}
-		},
-		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
-			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
-				copySection = true
-			},
-			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
-				fields = {
-					-- Name = "lyr_megaRunway",
-					-- NameHash = "2511746515",
-					TransX = 294.5,
-					ScaleX = 6.6,
-					TransY = -9,
-					ScaleY = 2.8,
-					TransZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(35, 35 + (lyr.tweakStates.megaRunwayLengthMult-1)*80.5) or nil,	-- 80.5 seems to be the magic number
-					ScaleZ = lyr:checkTweak("megaRunwayLengthMult") and math.max(1, lyr.tweakStates.megaRunwayLengthMult) or nil
-				},
-			},
-			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
-				pasteAfterSection = true
+				skw = {"Name", "ENTRANCEEFFECT"},
+				pkw = "Children",
+				pasteSection = true
 			}
 		}
 	}
@@ -786,97 +826,36 @@ local megaRunway = function()
 	return tweak
 end; lyr.tweakTables.megaRunway = megaRunway
 
-local noMiniRunways = function()
-	if not lyr:checkTweak("noMiniRunways") then return false end
+local miniRunways = function()
+	if not lyr:checkTweak("miniRunways") or lyr:checkTweak("megaRunway") then return false end
 
 	local tweak = {
 		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
+			mbinPaths = {
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]]
+			},
 			{
-				specialKeyWords = {
-					{"Name", "EntranceRunway"},
+				skw = {"NameHash", lyr.ignore},
+				findSubSections = {
 					{"Name", "EntranceRunway1"},
 					{"Name", "EntranceRunway2"},
+					{"Name", "EntranceRunway"},
+					{"Name", "ENTRANCEGLOW23"},
+					{"Name", "ENTRANCEGLOW25"},
+					{"Name", "ENTRANCEGLOW26"},
 				},
-				findSections = lyr:checkTweak("megaRunway") and {
-					{"TransX", "-1.963381"},
-					{"ScaleX", "0.97213"},
-					{"TransY", "2.069477"},
-					{"ScaleY", "0.97213"},
-				} or nil,
-				removeSection = true
-			}
-		},
-		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
-			{
-				specialKeyWords = {
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW25" />]])},
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW26" />]])},
-				},
-				findSections = lyr:checkTweak("megaRunway") and {
-					{"TransX", "-1.963381"},
-					{"ScaleX", "0.97213"},
-					{"TransY", "2.069477"},
-					{"ScaleY", "0.97213"},
-				} or nil,
-				removeSection = true
+				removeAllSections = lyr.tweakStates.miniRunways == 0 and true or nil,
+				fields = lyr.tweakStates.miniRunways > 0 and {
+					TransZ = math.max(35, 35 + (lyr.tweakStates.miniRunways-1)*80.5),	-- 80.5 seems to be the magic number
+					ScaleZ = math.max(1, lyr.tweakStates.miniRunways)
+				} or nil
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.noMiniRunways = noMiniRunways
-
-local miniRunwaysLengthMult = function()
-	if not lyr:checkTweak("miniRunwaysLengthMult") or lyr:checkTweak("noMiniRunways") then return false end
-
-	local tweak = {
-		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR.SCENE.MBIN]],
-			{
-				specialKeyWords = {
-					{"Name", "EntranceRunway"},
-					{"Name", "EntranceRunway1"},
-					{"Name", "EntranceRunway2"},
-				},
-				findSections = lyr:checkTweak("megaRunway") and {
-					{"TransX", "-1.963381"},
-					{"ScaleX", "0.97213"},
-					{"TransY", "2.069477"},
-					{"ScaleY", "0.97213"},
-				} or nil,
-				fields = {
-					TransZ = math.max(35, 35 + (lyr.tweakStates.miniRunwaysLengthMult-1)*80.5),	-- 80.5 seems to be the magic number
-					ScaleZ = math.max(1, lyr.tweakStates.miniRunwaysLengthMult)
-				}
-			}
-		},
-		{
-			mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARPIRATE.SCENE.MBIN]],
-			{
-				specialKeyWords = {
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW23" />]])},
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW25" />]])},
-					{lyr:parsePair([[<Property name="Name" value="ENTRANCEGLOW26" />]])},
-				},
-				findSections = lyr:checkTweak("megaRunway") and {
-					{"TransX", "-1.963381"},
-					{"ScaleX", "0.97213"},
-					{"TransY", "2.069477"},
-					{"ScaleY", "0.97213"},
-				} or nil,
-				fields = {
-					TransZ = math.max(35, 35 + (lyr.tweakStates.miniRunwaysLengthMult-1)*80.5),	-- 80.5 seems to be the magic number
-					ScaleZ = math.max(1, lyr.tweakStates.miniRunwaysLengthMult)
-				}
-			}
-		}
-	}
-
-	return tweak
-end; lyr.tweakTables.miniRunwaysLengthMult = miniRunwaysLengthMult
+end; lyr.tweakTables.miniRunways = miniRunways
 
 local harvestDrone = function()
 	if not lyr:checkTweak("harvestDrone") then return false end
@@ -884,8 +863,7 @@ local harvestDrone = function()
 	local tweak = {
 		lyr:createNodeTemplate(),
 		{
-			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM\ENTITIES\INTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]]}},
-			discardMbin = true
+			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM\ENTITIES\INTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]]}}
 		},
 		{
 			mbinPaths = [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]],
@@ -897,34 +875,16 @@ local harvestDrone = function()
 			{
 				precedingKeyWords = "GcHarvestPlantAction.xml",
 				fields = {
-					Radius = lyr:checkTweak("harvestDroneRadius") and math.max(25, lyr.tweakStates.harvestDroneRadius) or 25
+					Radius = math.max(25, lyr.tweakStates.harvestDrone)
 				}
 			}
 		},
-		{
-			mbinPaths = [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOYDRONE.SCENE.MBIN]],
-			{
-				specialKeyWords = {"Name", "Drone"},
-				precedingKeyWords = {"Children"},
-				pasteSection = lyr.nodeTemplate.section
-			},
-			{
-				specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
-				fields = {
-					Name = "lyr_harvestInteraction",
-					Type = "LOCATOR",
-				}
-			},
-			{
-				specialKeyWords = {"Name", "lyr_harvestInteraction"},
-				precedingKeyWords = "Attributes",
-				fields = {
-					Name = "ATTACHMENT",
-					Value = [[LYR\ENTITIES\HARVEST.ENTITY.MBIN]]
-				},
-				replaceAll = true
-			}
-		}
+		lyr:attachEntityLocatorAttachment(
+			[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOYDRONE.SCENE.MBIN]],
+			"Drone",
+			[[LYR\ENTITIES\HARVEST.ENTITY.MBIN]],
+			"lyr_harvestInteraction"
+		)
 	}
 
 	return tweak
@@ -1129,7 +1089,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

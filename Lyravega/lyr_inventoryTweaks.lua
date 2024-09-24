@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Inventory Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Inventory Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -29,9 +29,7 @@ local tweakStates = {
 	restoreItemBars = true,					-- pre-4.0 item bars are restored for items with X/X display wherever possible
 	smallerLabeledIcons = true,				-- makes the icons for the picked items / items in transfer pop-ups smaller
 	smallerItemAmountFonts = true,			-- slightly decreases the size of fonts for the item amounts
-	noInventoryDamage = true,				-- disables the damage that the installed techs suffer (does not affect vehicles)
-	sturdyVehicleTechs = true,				-- techs installed on vehicles withstand much more damage (duplicate option from 'lyr_vehicleTweaks.lua')
-	passiveProtectionTechs = true,			-- changes active hazard protection tech upgrades to passive ones (S:4-7%, A:2-4%, B:1-2%)
+	passiveProtectionTechs = true,			-- changes active hazard protection tech upgrades to passive ones (S:6-10%, A:3-5%, B:1-2%)
 --	maximizedTechs = true,					-- procedurally generated tech upgrades provide all possible improvements with maximum values (UI can display 4 at most)
 --	sameGroupTechLimit = 4,					-- sets the limit of same type of techs (game default is 3; setting to 4 will allow you to add 1 more)
 --	installTechInCargo = true,				-- allows tech to be installed in cargo slots (like in pre-4.0)
@@ -241,41 +239,16 @@ local smallerItemAmountFonts = function()
 	return tweak
 end; lyr.tweakTables.smallerItemAmountFonts = smallerItemAmountFonts
 
-local noInventoryDamage = function()
-	if not lyr:checkTweak("noInventoryDamage") then return false end
-
-	local tweak = {
-		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					InventoryDamage = {default = true, altered = false}
-				}
-			}
-		}
-	}
-
-	return tweak
-end; lyr.tweakTables.noInventoryDamage = noInventoryDamage
-
-local sturdyVehicleTechs = function()
-	if not lyr:checkTweak("sturdyVehicleTechs") then return false end
-
-	local tweak = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					DamageTechNumHitsRequired = {default = 20, altered = 600},
-					DamageTechMinHitIntervalSeconds = {default = 1, altered = 1}
-				}
-			}
-		}
-	}
-
-	return tweak
-end; lyr.tweakTables.sturdyVehicleTechs = sturdyVehicleTechs
-
 local passiveProtectionTechs = function()
 	if not lyr:checkTweak("passiveProtectionTechs") then return false end
+
+	local targetSections = {
+		{"StatsType", "Suit_Protection_Cold"},
+		{"StatsType", "Suit_Protection_Heat"},
+		{"StatsType", "Suit_Protection_Toxic"},
+		{"StatsType", "Suit_Protection_Radiation"},
+		{"StatsType", "Suit_Underwater"},
+	}
 
 	local tweak = {
 		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
@@ -309,9 +282,56 @@ local passiveProtectionTechs = function()
 			{
 				specialKeyWords = {
 					{"ID", "UP_COLD1"},
+					{"ID", "UP_HOT1"},
+					{"ID", "UP_TOX1"},
+					{"ID", "UP_RAD1"},
+					{"ID", "UP_UNW1"},
+				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
+				fields = {
+					ValueMin = {default = 200, altered = 1.01},
+					ValueMax = {default = 300, altered = 1.02}
+				}
+			},
+			{
+				specialKeyWords = {
+					{"ID", "UP_COLD2"},
+					{"ID", "UP_HOT2"},
+					{"ID", "UP_TOX2"},
+					{"ID", "UP_RAD2"},
+					{"ID", "UP_UNW2"},
+				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
+				fields = {
+					ValueMin = {default = 240, altered = 1.03},
+					ValueMax = {default = 320, altered = 1.05}
+				}
+			},
+			{
+				specialKeyWords = {
+					{"ID", "UP_COLD3"},
+					{"ID", "UP_HOT3"},
+					{"ID", "UP_TOX3"},
+					{"ID", "UP_RAD3"},
+					{"ID", "UP_UNW3"},
+				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
+				fields = {
+					ValueMin = {default = 280, altered = 1.06},
+					ValueMax = {default = 360, altered = 1.10}
+				}
+			},
+			{
+				specialKeyWords = {
+					{"ID", "UP_COLD1"},
 					{"ID", "UP_COLD2"},
 					{"ID", "UP_COLD3"},
 				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
 				fields = {
 					StatsType = {default = "Suit_Protection_Cold", altered = "Suit_Protection_ColdDrain"},
 				}
@@ -322,6 +342,8 @@ local passiveProtectionTechs = function()
 					{"ID", "UP_HOT2"},
 					{"ID", "UP_HOT3"},
 				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
 				fields = {
 					StatsType = {default = "Suit_Protection_Heat", altered = "Suit_Protection_HeatDrain"},
 				}
@@ -332,6 +354,8 @@ local passiveProtectionTechs = function()
 					{"ID", "UP_TOX2"},
 					{"ID", "UP_TOX3"},
 				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
 				fields = {
 					StatsType = {default = "Suit_Protection_Toxic", altered = "Suit_Protection_ToxDrain"},
 				}
@@ -342,6 +366,8 @@ local passiveProtectionTechs = function()
 					{"ID", "UP_RAD2"},
 					{"ID", "UP_RAD3"},
 				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
 				fields = {
 					StatsType = {default = "Suit_Protection_Radiation", altered = "Suit_Protection_RadDrain"},
 				}
@@ -352,50 +378,13 @@ local passiveProtectionTechs = function()
 					{"ID", "UP_UNW2"},
 					{"ID", "UP_UNW3"},
 				},
+				pkw = "GcProceduralTechnologyStatLevel.xml",
+				findSections = targetSections,
 				fields = {
 					StatsType = {default = "Suit_Underwater", altered = "Suit_Protection_WaterDrain"},
 				}
-			},
-			{
-				specialKeyWords = {
-					{"ID", "UP_COLD1"},
-					{"ID", "UP_HOT1"},
-					{"ID", "UP_TOX1"},
-					{"ID", "UP_RAD1"},
-					{"ID", "UP_UNW1"},
-				},
-				fields = {
-					ValueMin = {default = 180, altered = 1.01},
-					ValueMax = {default = 265, altered = 1.02}
-				}
-			},
-			{
-				specialKeyWords = {
-					{"ID", "UP_COLD2"},
-					{"ID", "UP_HOT2"},
-					{"ID", "UP_TOX2"},
-					{"ID", "UP_RAD2"},
-					{"ID", "UP_UNW2"},
-				},
-				fields = {
-					ValueMin = {default = 200, altered = 1.02},
-					ValueMax = {default = 265, altered = 1.04}
-				}
-			},
-			{
-				specialKeyWords = {
-					{"ID", "UP_COLD3"},
-					{"ID", "UP_HOT3"},
-					{"ID", "UP_TOX3"},
-					{"ID", "UP_RAD3"},
-					{"ID", "UP_UNW3"},
-				},
-				fields = {
-					ValueMin = {default = 220, altered = 1.04},
-					ValueMax = {default = 265, altered = 1.07}
-				}
-			},
-		},
+			}
+		}
 	}
 
 	return tweak
@@ -469,11 +458,11 @@ local refineryOutputCapacityMult = function()
 	if not lyr:checkTweak("refineryOutputCapacityMult") then return false end
 
 	local tweak = {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+		["METADATA\\GAMESTATE\\DIFFICULTYCONFIG.MBIN"] = {
 			{
 				precedingKeyWords = "MaxProductStackSizes",
 				fields = {
-					MaintenanceObject = math.max(1, math.floor(lyr.tweakStates.refineryOutputCapacityMult))
+					UIPopup = math.max(1, math.floor(lyr.tweakStates.refineryOutputCapacityMult))
 				},
 				multiply = true,
 				replaceAll = true
@@ -524,7 +513,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

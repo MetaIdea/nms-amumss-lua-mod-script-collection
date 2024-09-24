@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Binoculars Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Binoculars Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -164,7 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

@@ -122,9 +122,12 @@ function lyr:createNodeTemplate()
 
 	local directive = {
 		mbinPaths = [[MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARLAYOUT_ABAND.SCENE.MBIN]],	-- a random scene that won't be used
-		discardMbin = true,
 		{
-			specialKeyWords = {"Name", "RefLargeCrate"}, -- a random reference node without children
+			skw = {"Name", "RefLargeCrate"}, -- a random reference node without children
+			copySection = true,
+		},
+		{
+			editSection = true,
 			fields = {
 				Name = nodeName,
 				NameHash = 0,
@@ -132,8 +135,8 @@ function lyr:createNodeTemplate()
 			}
 		},
 		{
-			specialKeyWords = {"Name", nodeName},
-			precedingKeyWords = "Transform",
+			editSection = true,
+			pkw = "Transform",
 			fields = {
 				TransX = 0,
 				TransY = 0,
@@ -147,16 +150,22 @@ function lyr:createNodeTemplate()
 			}
 		},
 		{
-			specialKeyWords = {"Name", nodeName},
-			precedingKeyWords = "Attributes",
+			editSection = true,
+			pkw1st = "Attributes",
+			skw = {"Name", "SCENEGRAPH"},
 			fields = {
 				Name = attName,	-- "SCENEGRAPH" / "ATTACHMENT"
 				Value = attVal
 			}
 		},
+		-- {
+		-- 	editSection = true,
+		-- 	pkw = "Children",
+		-- 	removeSection = true
+		-- },
 		{
-			specialKeyWords = {"Name", nodeName},
-			copySection = section
+			editSection = true,
+			saveSection = section
 		}
 	}
 
@@ -166,6 +175,51 @@ function lyr:createNodeTemplate()
 		nodeType = nodeType,
 		attName = attName,
 		attVal = attVal,
+	}
+
+	return directive
+end
+
+---@param sceneMbin string|table
+---@param parentNodeName string
+---@param entityMbin string
+---@param entityNodeName string
+---@param transXYZ {x:number|nil, y:number|nil, z:number|nil}|nil
+---@param rotXYZ {x:number|nil, y:number|nil, z:number|nil}|nil
+---@param scaleXYZ {x:number|nil, y:number|nil, z:number|nil}|nil
+function lyr:attachEntityLocatorAttachment(sceneMbin, parentNodeName, entityMbin, entityNodeName, transXYZ, rotXYZ, scaleXYZ)
+	local directive = {
+		mbinPaths = sceneMbin,
+		{
+			precedingKeyWords = "Children",
+			specialKeyWords = parentNodeName and {"Name", parentNodeName} or nil,
+			pasteSection = lyr.nodeTemplate.section
+		},
+		{
+			specialKeyWords = {"Name", lyr.nodeTemplate.nodeName},
+			fields = {
+				Name = entityNodeName,
+				-- NameHash = lyr:generateJenkinsHash(entityNodeName),
+				Type = "LOCATOR",
+				TransX = transXYZ and transXYZ.x or nil,
+				TransY = transXYZ and transXYZ.y or nil,
+				transZ = transXYZ and transXYZ.z or nil,
+				RotX = rotXYZ and rotXYZ.x or nil,
+				RotY = rotXYZ and rotXYZ.y or nil,
+				RotZ = rotXYZ and rotXYZ.z or nil,
+				ScaleX = scaleXYZ and scaleXYZ.x or nil,
+				ScaleY = scaleXYZ and scaleXYZ.y or nil,
+				ScaleZ = scaleXYZ and scaleXYZ.z or nil,
+			}
+		},
+		{
+			specialKeyWords = {"Name", entityNodeName},
+			precedingKeyWords = "TkSceneNodeAttributeData.xml",
+			fields = {
+				Name = "ATTACHMENT",
+				Value = entityMbin
+			}
+		}
 	}
 
 	return directive
@@ -192,7 +246,7 @@ function lyr:dupeScene()
 
 	-- `name`: The name of the scene file to be duped along with its entity, both can be accessed through keys in the return table<br>
 	-- `folder`: The folder path to where the scene file resides in, defaults to 'LYR\SCENES\' if nil<br>
-	function commands:sourceScene(name, folder)
+	function commands:sourceScene(name, folder, discardSource)
 		folder = folder or [[LYR\SCENES\]]
 		name = name:gsub([[.SCENE.MBIN]], "")
 
@@ -201,7 +255,7 @@ function lyr:dupeScene()
 		data.source.scenePath = folder..name..".SCENE.MBIN"
 		data.source.entityPath = folder..name..[[\ENTITIES\]]..name..[[.ENTITY.MBIN]]
 
-		lyr.cleanUp[name] = {data.source.scenePath, data.source.entityPath}
+		if discardSource then lyr.cleanUp[name] = {data.source.scenePath, data.source.entityPath} end
 
 		return self
 	end
@@ -224,30 +278,18 @@ function lyr:dupeScene()
 	-- `sourceName`: Points to any additional entities with this name in the same entity folder to copy<br>
 	-- `destinationName`: A custom name or leave it nil, defaults to `sourceName` if nil<br>
 	-- `remove`: Set to `true` to remove the source entity file after use<br>
-	function commands:extraEntities(alias, sourceName, destinationName, remove)
+	function commands:extraEntities(alias, sourceName, destinationName, discardSource)
 		sourceName = sourceName:gsub([[.ENTITY.MBIN]], "")
 		destinationName = destinationName and destinationName:gsub([[.ENTITY.MBIN]], "") or sourceName
 
 		data.extra[alias] = {}
 		data.extra[alias].entitySource = data.source.entityFolder..sourceName..[[.ENTITY.MBIN]]
 		data.extra[alias].entityDestination = data.destination.entityFolder..destinationName..[[.ENTITY.MBIN]]
-		data.extra[alias].remove = remove and lyr.remove or nil
 		data.extra.alias[alias] = data.extra[alias].entityDestination
 
-		lyr.cleanUp[sourceName] = {data.extra[alias].entitySource}
+		if discardSource then lyr.cleanUp[sourceName] = {data.extra[alias].entitySource} end
 
 		return self
-	end
-
-	-- Returns options that allows choosing whether to keep or discard source scene and/or its entity after usage<br>
-	function commands:remove()
-		local this, options = self, {}
-
-		function options:scene() data.source.removeScene = lyr.remove; return this end
-		function options:entity() data.source.removeEntity = lyr.remove; return this end
-		function options:both() self:scene(); self:entity(); return this end
-
-		return options
 	end
 
 	-- `...` is the scene and entity names to clean up in one directive, cleans every source file up if `nil`<br>
@@ -286,8 +328,8 @@ function lyr:dupeScene()
 	function commands:finalize()
 		data.directives[#data.directives+1] = {
 			mbinPaths = {
-				{data.source.scenePath, data.destination.scenePath, data.source.removeScene},
-				{data.source.entityPath, data.destination.entityPath, data.source.removeEntity},
+				{data.source.scenePath, data.destination.scenePath},
+				{data.source.entityPath, data.destination.entityPath},
 			}
 		}
 
@@ -304,7 +346,7 @@ function lyr:dupeScene()
 
 		for extraEntityAlias, extraEntityPaths in next, data.extra do if extraEntityAlias ~= "alias" then
 			data.directives[#data.directives+1] = {
-				mbinPaths = {{extraEntityPaths.entitySource, extraEntityPaths.entityDestination, extraEntityPaths.remove}}
+				mbinPaths = {{extraEntityPaths.entitySource, extraEntityPaths.entityDestination}}
 			}
 
 			data.directives[#data.directives+1] = {
@@ -634,6 +676,10 @@ function lyramumss_ect:fields(fields, ect)
 		self._addToTable = true
 		self.VCT = valueChangeTable
 	end
+end
+
+function lyramumss_ect:order(order)
+	self.CUSTOM_ORDER = order
 end
 
 --#endregion

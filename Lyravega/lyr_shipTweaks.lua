@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Ship Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Ship Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -44,14 +44,14 @@ local tweakStates = {
 --	actualSpeedReadouts = true,				-- shows actual speeds in space and/or in combat (game multiplies the value on the speed readouts by 2 and 1.5)
 	flightRestrictionMult = 0.25,			-- some flight restrictions are eased by the given multiplier value for a more pleasant joyride
 	stoppingMarginMult = 0.75,				-- pulse drive stopping margins are multiplied by the given value (very low multipliers are not recommended)
-	pulseDriveSpeedMult = 2.5,				-- pulse drive top speed is multiplied by the given value, it shakes the ship more and cools down faster
+	pulseDriveSpeedMult = 2.5,				-- pulse drive top speed is multiplied by the given value, it shakes the ship less and cools down faster
 	reducePulseDriveFlash = true,			-- the initial screen flash caused by the activation of pulse drive is toned down
-	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles and ignores other player stuff
+	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles
 	noPulseDriveExitDelay = true,			-- pulse drive exit delay is removed and in turn the camera zoom effect is also disabled
 	fastPulseDriveExit = true,				-- exit from pulse drive at faster speeds
 --	noLandingPadRotation = true,			-- landing pads (except the freighter and nexus hangar ones) no longer rotate; may eject as soon as pad is touched
 	landingPadRotateSpeedMult = 3,			-- makes all pads rotate faster and sooner (affects the excluded ones from 'noLandingPadRotation' too)
-	dockingSpeedMult = 3,					-- dock and take off speed limits for space stations are adjusted by the given multiplier (above 3 not recommended)
+	dockingSpeedMult = 2,					-- dock and take off speed limits for space stations are adjusted by the given multiplier (above 3 not recommended)
 	dockingSpeedLimitOverride = 1000,		-- overrides the speed limit of 400 (doubled in space) for the docking approach (above 1000 not recommended)
 --	autoEjectOnLanding = true,				-- automatically eject from the ship on docking or landing
 	looterExplorer = true,					-- ship loot collection distance is massively increased
@@ -201,7 +201,6 @@ local clearRadar = function()
 	local tweak = {
 		{
 			mbinPaths = [[MODELS\HUD\SPACEMAPBLACKHOLE\HORZ_MAT.MATERIAL.MBIN]],
-			discardMbin = true,
 			{
 				precedingKeyWords = "Flags",
 				copySection = true
@@ -211,8 +210,7 @@ local clearRadar = function()
 			mbinPaths = {
 				{[[MODELS\HUD\SPACEMAPHORIZON\HORZ_MAT.MATERIAL.MBIN]], [[LYR\MATERIALS\SPHESSMAP_TRANSLUCENT.MATERIAL.MBIN]]},
 				{[[MODELS\HUD\SPACEMAPHORIZON\HORZ_MAT.MATERIAL.MBIN]], [[LYR\MATERIALS\SPHESSMAP_ADDITIVE.MATERIAL.MBIN]]},
-			},
-			discardMbin = true,
+			}
 		},
 		{
 			mbinPaths = [[LYR\MATERIALS\SPHESSMAP_TRANSLUCENT.MATERIAL.MBIN]],
@@ -501,7 +499,7 @@ local improvedShipScannerPulse = function()
 				}
 			},
 			{
-				skw = {lyr:parsePair([[<Property name="ID" value="SHIP" />]])},
+				skw = {"ID", "SHIP"},
 				fields = {
 					PulseRange = {default = 10000, altered = 25000},
 					PulseTime = {default = 3, altered = 2},
@@ -649,7 +647,7 @@ local pulseDriveSpeedMult = function()
 					MiniWarpSpeed = {default = 30000, multiplier = lyr.tweakStates.pulseDriveSpeedMult},
 					MiniWarpChargeTime = {default = 2, altered = 2},
 					MiniWarpCooldownTime = {default = 2, altered = 1},
-					MiniWarpShakeStrength = {default = 2, altered = 5}
+					MiniWarpShakeStrength = {default = 2, altered = 0.2}
 				}
 			}
 		}
@@ -685,7 +683,7 @@ local preciseNavigation = function()
 				fields = {
 					MiniWarpHUDArrowAttractAngle = {default = 10, altered = 8},
 					MiniWarpHUDArrowAttractAngleStation = {default = 5, altered = 4},
-					MiniWarpHUDArrowAttractAngleOtherPlayerStuff = {default = 2, altered = 0},
+					MiniWarpHUDArrowAttractAngleOtherPlayerStuff = {default = 2, altered = 1},
 					MiniWarpHUDArrowAttractAngleSaveBeacon = {default = 2.5, altered = 2},
 					MiniWarpHUDArrowAttractAngleDense = {default = 4, altered = 1},
 					MiniWarpHUDArrowNumMarkersToBeDense = {default = 6, altered = 10},
@@ -752,34 +750,38 @@ local noLandingPadRotation = function()
 	local tweak = {
 		{
 			mbinPaths = {
-				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\ABANDONEDPARTS\DUNGEONENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN]],		-- unsure
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATE\ENTITIES\COMBATDATA.ENTITY.MBIN]],
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\ENTITIES\FRIGATEDATA.ENTITY.MBIN]],		-- might be master for all frigates
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATE\ENTITIES\DIPLOMATICDATA.ENTITY.MBIN]],
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATE\ENTITIES\INDUSTRIALDATA.ENTITY.MBIN]],
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATE\ENTITIES\SCIENCEDATA.ENTITY.MBIN]],
-				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATE\ENTITIES\SUPPORTDATA.ENTITY.MBIN]],
-				-- [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],		-- freighter
-				[[MODELS\COMMON\UTILS\SPAWNERS\FAKEOUTPOST\ENTITIES\FAKEOUTPOSTDATA.ENTITY.MBIN]],		-- unsure
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\LANDINGPADTRADER.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGBEACON\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGPAD\ENTITIES\LANDINGDATA.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGZONE\ENTITIES\LANDINGZONEDATA.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN]],
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN]],
-				[[MODELS\SPACE\ANOMALY\ANOMALY\ENTITIES\ANOMALY.ENTITY.MBIN]],		-- hello old friend
-				[[MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN]],		-- hello not a friend
-				-- [[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.MBIN]],		-- nexus interior, handles after transition
-				-- [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.MBIN]],		-- nexus exterior, handles before transition
-				[[MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN]],		-- unsure
-				[[MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN]],		-- unsure
-				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN]],		-- unsure
-				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN]],		-- stations
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\ABANDONEDPARTS\DUNGEONENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATE\ENTITIES\COMBATDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\ENTITIES\FRIGATEDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATE\ENTITIES\DIPLOMATICDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATE\ENTITIES\INDUSTRIALDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATE\ENTITIES\SCIENCEDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATE\ENTITIES\SUPPORTDATA.ENTITY.EXML]],
+				-- [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\PIRATECRUISER\ENTITIES\PIRATEDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\PIRATECRUISERLOD0\ENTITIES\PIRATEDATA.ENTITY.EXML]],
+				[[MODELS\COMMON\UTILS\SPAWNERS\FAKEOUTPOST\ENTITIES\FAKEOUTPOSTDATA.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\LANDINGPADTRADER.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGBEACON\ENTITIES\LANDINGZONE.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGPAD\ENTITIES\LANDINGDATA.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGZONE\ENTITIES\LANDINGZONEDATA.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.EXML]],
+				[[MODELS\PLANETS\BIOMES\ROCKY\ISLANDSPIKEHUGE\ENTITIES\LANDPAD.ENTITY.EXML]],
+				[[MODELS\SPACE\ANOMALY\ANOMALY\ENTITIES\ANOMALY.ENTITY.EXML]],
+				[[MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.EXML]],
+				-- [[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.EXML]],
+				-- [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.EXML]],
+				[[MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.EXML]],
+				[[MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.EXML]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.EXML]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.EXML]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.EXML]],
 			},
 			{
-				precedingKeyWords = "GcOutpostComponentData.xml",
+				skw = {"Template", "GcOutpostComponentData.xml"},
 				fields = {
 					RotateToDock = false
 				}
@@ -828,9 +830,10 @@ local dockingSpeedMult = function()
 				[[MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN]],
 				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN]],
 				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATIONTYPEB\ENTITIES\STATIONTYPEB.ENTITY.EXML]],
 			},
 			{
-				precedingKeyWords = "GcOutpostComponentData.xml",
+				skw = {"Template", "GcOutpostComponentData.xml"},
 				fields = {
 					ApproachRange = (1+multiplier)*0.5,	-- seems to be a switch point for landing parameters, adjustment required for stations otherwise ships overshoot
 					ApproachSpeed = multiplier,	-- max is limited by "OutpostDockMaxApproachSpeed" on "GCAISPACESHIPGLOBALS.GLOBAL.MBIN". in addition, displayed speed is doubled in space
@@ -936,7 +939,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

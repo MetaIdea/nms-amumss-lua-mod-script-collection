@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Vehicle Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Vehicle Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -25,12 +25,13 @@ local gameVersion = "4.21"
 
 local tweakStates = {
 	improvedVehicleScannerPulse = true,		-- reduces vehicle scanner pulse charge times
-	sturdyVehicleTechs = true,				-- techs installed on vehicles withstand much more damage (duplicate option on 'lyr_inventoryTweaks.lua')
-	mechSpeedMult = 1.25,					-- multiplier for mech movement and turn speeds
-	mechAnimSpeedMult = 1.25,				-- multiplier for all animation speeds, 1/value multiplier for times and delays (ideally, equal to 'mechSpeedMult')
+	mechSpeedMult = 1.5,					-- multiplier for mech movement and turn speeds (above 2 is not recommended)
+	mechAnimSpeedMult = 1.5,				-- multiplier for all animation speeds, 1/value multiplier for times and delays (ideally, equal to 'mechSpeedMult')
 	betterMechJetPack = true,				-- turning is now much easier while flying, max speed is increased and fuel drain is decreased slightly
 	reworkedMechCamera = true,				-- all mech cameras are unified; wide angle with mech on the side, camera no longer jumps when fire location changes
-	generalMechTweaks = true,				-- some janky mech animations are fixed, foot and arm pitch angle limits are increased, fire location changes more often
+	generalMechTweaks = true,				-- less janky animations, increased foot and arm angle limits, snappier fire location, shorter camera shake distance
+--	experimentalMechTweaks = true,			-- increases mass to increase downhill traction, adjusts jetpack and brake parameters to compensate (experimental because janky)
+	mechTechDurabilityFactor = 0,			-- tech damage difficulty setting doesn't include AI mech tech, this multiplier makes it more durable (0 disables it completely)
 	enhancedAIMechCombat = true,			-- the AI mech uses both of its weapons more; changes the angle, range, cooldown and interval parameters of weapons
 	longerAIMechLeash = true,				-- resummon distance for the AI controlled mech is increased
 	heavierTitanfall = true,				-- titanfall (mech summon) takes a bit longer and is more impactful / TITANFALL 3 WHEN
@@ -59,7 +60,7 @@ local improvedVehicleScannerPulse = function()
 				}
 			},
 			{
-				skw = {lyr:parsePair([[<Property name="ID" value="VEHICLE_LOCAL" />]])},
+				skw = {"ID", "VEHICLE"},
 				fields = {
 					PulseRange = {default = 1500, altered = 2500},
 					PulseTime = {default = 1, altered = 2},
@@ -75,7 +76,7 @@ local improvedVehicleScannerPulse = function()
 				}
 			},
 			{
-				skw = {lyr:parsePair([[<Property name="ID" value="VEHICLE_LOCAL" />]])},
+				skw = {"ID", "VEHICLE_LOCAL"},
 				fields = {
 					PulseRange = {default = 600, altered = 1250},
 					PulseTime = {default = 1, altered = 2},
@@ -89,22 +90,26 @@ local improvedVehicleScannerPulse = function()
 	return tweak
 end; lyr.tweakTables.improvedVehicleScannerPulse = improvedVehicleScannerPulse
 
-local sturdyVehicleTechs = function()
-	if not lyr:checkTweak("sturdyVehicleTechs") then return false end
+local mechTechDurabilityFactor = function()
+	if not lyr:checkTweak("mechTechDurabilityFactor") then return false end
 
 	local tweak = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
+		{
+			mbinPaths = [[METADATA\GAMESTATE\DIFFICULTYCONFIG.EXML]],
 			{
+				pkw = "DamageReceivedAIMechTechDamageHits",
 				fields = {
-					DamageTechNumHitsRequired = {default = 20, altered = 600},
-					DamageTechMinHitIntervalSeconds = {default = 1, altered = 1}
-				}
+					Low = {default = 32, multiplier = math.max(0, math.floor(lyr.tweakStates.mechTechDurabilityFactor))},
+					Normal = {default = 16, multiplier = math.max(0, math.floor(lyr.tweakStates.mechTechDurabilityFactor))},
+					High = {default = 8, multiplier = math.max(0, math.floor(lyr.tweakStates.mechTechDurabilityFactor))}
+				},
+				multiply = true
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.sturdyVehicleTechs = sturdyVehicleTechs
+end; lyr.tweakTables.mechTechDurabilityFactor = mechTechDurabilityFactor
 
 local mechSpeedMult = function()
 	if not lyr:checkTweak("mechSpeedMult") then return false end
@@ -187,12 +192,10 @@ local betterMechJetPack = function()
 		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MechLandBrake = {default = 4, altered = 10},
 					MechJetpackMaxSpeed = {default = 20, altered = 30},
 					MechJetpackMaxUpSpeed = {default = 20, altered = 30},
 					MechJetpackDrainRate = {default = 0.5, altered = 0.375},
 					MechJetpackFillRate = {default = 0.5, altered = 0.5},
-					MechJetpackAvoidGroundProbeLength = {default = 6, altered = 12},
 					MechJetpackTurnSpeed = {default = 3, altered = 0.5}
 				}
 			}
@@ -269,17 +272,25 @@ local generalMechTweaks = function()
 			{
 				fields = {
 					MechArmPitchAngleMin = {default = -30, altered = -45},
-					MechArmPitchAngleMax = {default = 60, altered = 75}
+					MechArmPitchAngleMax = {default = 60, altered = 75},
+					MechLandCameraShakeDist = {default = 40, altered = 0.1},
+					MechFootprintFadeTime = {default = 1, altered = 15},
+					MechFootprintFadeDist = {default = 20, altered = 50}
 				}
 			}
 		},
-		["MODELS/COMMON/VEHICLES/MECH_SUIT/MECH_SUIT/ENTITIES/MECH.ENTITY.MBIN"] = {
+		{
+			mbinPaths = {
+				[[MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN]],
+				[[MODELS\COMMON\ROBOTS\MECH\ENTITIES\SENTINELMECH.ENTITY.EXML]],
+			},
 			{
-				precedingKeyWords = "GcCreatureFullBodyIKComponentData.xml",
+				skw = {"Template", "GcCreatureFullBodyIKComponentData.xml"},
 				fields = {
 					MaxHeadYaw = {default = 125, altered = 115},
 					MaxFootAngle = {default = 45, altered = 70},
-					MovementDamp = {default = 0.2, altered = 0.65}
+					FootAngleSpeed = {default = 10, altered = 35},
+					MovementDamp = {default = 0.2, altered = 0.60}
 				}
 			},
 		}
@@ -288,6 +299,36 @@ local generalMechTweaks = function()
 	return tweak
 end; lyr.tweakTables.generalMechTweaks = generalMechTweaks
 
+local experimentalMechTweaks = function()
+	if not lyr:checkTweak("experimentalMechTweaks") then return false end
+
+	local tweak = {
+		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="MECH" />]])},
+				fields = {
+					VehicleGravity = {default = 70, altered = 700},
+					VehicleGravityWater = {default = 13.5, altered = 350}
+				},
+			},
+			{
+				fields = {
+ 					MechJetpackForce = {default = 70, altered = 70},
+ 					MechJetpackUpForce = {default = 100, altered = 1000},
+ 					MechJetpackAvoidGroundForce = {default = 120, altered = 1200},
+ 					MechJetpackAvoidGroundProbeLength = {default = 6, altered = 6},
+ 					MechJetpackFallForce = {default = 80, altered = 0},
+ 					MechJetpackIgnitionForce = {default = 120, altered = 0},
+ 					MechJetpackIgnitionTime = {default = 0.4, altered = 0.4},	-- this feels like mislabeled; AvoidGround stuff is active during this time
+					MechLandBrake = {default = 4, altered = 100},
+				}
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.experimentalMechTweaks = experimentalMechTweaks
+
 local enhancedAIMechCombat = function()
 	if not lyr:checkTweak("enhancedAIMechCombat") then return false end
 
@@ -295,28 +336,46 @@ local enhancedAIMechCombat = function()
 		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					AIMechLaserFireDurationMin = {default = 3, altered = 3},
+					AIMechFlamethrowerFireInterval = {default = 0.025, altered = 0.025},
+					AIMechFlamethrowerNumShotsMin = {default = 40, altered = 40},
+					AIMechFlamethrowerNumShotsMax = {default = 50, altered = 120},
+					AIMechLaserFireDurationMin = {default = 3, altered = 1},
 					AIMechLaserFireDurationMax = {default = 5, altered = 3},
-					AIMechGunFireInterval = {default = 0.5, altered = 0},
-					AIMechGunNumShotsMin = {default = 3, altered = 1},
-					AIMechGunNumShotsMax = {default = 5, altered = 1},
-					-- AIMechGunProjectile = {default = "VEHICLEGUN", altered = "VEHICLESTUNGUN"},
-					AIMechStunGunFireInterval = {default = 1065353216, altered = 0},	-- the heck is 1065353216
+					AIMechGunFireInterval = {default = 0.5, altered = 0.5},
+					AIMechGunNumShotsMin = {default = 3, altered = 2},
+					AIMechGunNumShotsMax = {default = 5, altered = 6},
+					AIMechStunGunFireInterval = {default = 1, altered = 1},
 					AIMechStunGunNumShotsMin = {default = 1, altered = 1},
 					AIMechStunGunNumShotsMax = {default = 1, altered = 1},
+					-- AIMechGunProjectile = {default = "VEHICLEGUN", altered = "VEHICLESTUNGUN"},
+					AIMechGunExplosionRadius = {default = 0, altered = 0},
+					AIMechGunInheritVelocity = {default = 1, altered = 1},
+				}
+			},
+			{
+				precedingKeyWords = "MechWeaponData",
+				findSubSections = {{"Flamethrower", "GcExoMechWeaponData.xml"}},
+				fields = {
+					AngleToleranceForArmAiming = {default = 60, altered = 60},
+					AttackAngle = {default = 50, altered = 45},
+					MinRange = {default = 6, altered = 1},
+					MaxRange = {default = 60, altered = 20},
+					CooldownTimeMin = {default = 3, altered = 0.95},
+					CooldownTimeMax = {default = 5, altered = 0.95},
+					SelectionWeight = {default = 1.5, altered = 2}
 				}
 			},
 			{
 				precedingKeyWords = "MechWeaponData",
 				findSubSections = {{"Laser", "GcExoMechWeaponData.xml"}},
 				fields = {
-					AngleToleranceForArmAiming = {default = 30, altered = 45},
-					AttackAngle = {default = 30, altered = 30},
-					MinRange = {default = 3, altered = 10},
-					MaxRange = {default = 30, altered = 30},
-					CooldownTimeMin = {default = 2, altered = 1},
-					CooldownTimeMax = {default = 4, altered = 1},
-					SelectionWeight = {default = 1, altered = 1}
+					AngleToleranceForArmAiming = {default = 30, altered = 60},
+					AttackAngle = {default = 30, altered = 45},
+					MinRange = {default = 3, altered = 20},
+					MaxRange = {default = 30, altered = 60},
+					CooldownTimeMin = {default = 2, altered = 0.95},
+					CooldownTimeMax = {default = 4, altered = 0.95},
+					SelectionWeight = {default = 1, altered = 0.5}
 				}
 			},
 			{
@@ -324,11 +383,11 @@ local enhancedAIMechCombat = function()
 				findSubSections = {{"Gun", "GcExoMechWeaponData.xml"}},
 				fields = {
 					AngleToleranceForArmAiming = {default = 60, altered = 60},
-					AttackAngle = {default = 50, altered = 50},
-					MinRange = {default = 6, altered = 5},
-					MaxRange = {default = 60, altered = 50},
-					CooldownTimeMin = {default = 3, altered = 1},
-					CooldownTimeMax = {default = 5, altered = 1},
+					AttackAngle = {default = 50, altered = 45},
+					MinRange = {default = 6, altered = 1},
+					MaxRange = {default = 60, altered = 60},
+					CooldownTimeMin = {default = 3, altered = 0.95},
+					CooldownTimeMax = {default = 5, altered = 0.95},
 					SelectionWeight = {default = 1.5, altered = 1.5}
 				}
 			},
@@ -337,12 +396,12 @@ local enhancedAIMechCombat = function()
 				findSubSections = {{"StunGun", "GcExoMechWeaponData.xml"}},
 				fields = {
 					AngleToleranceForArmAiming = {default = 60, altered = 60},
-					AttackAngle = {default = 50, altered = 60},
+					AttackAngle = {default = 50, altered = 45},
 					MinRange = {default = 6, altered = 1},
 					MaxRange = {default = 60, altered = 60},
-					CooldownTimeMin = {default = 5, altered = 1},
-					CooldownTimeMax = {default = 8, altered = 1},
-					SelectionWeight = {default = 0.5, altered = 0.5}
+					CooldownTimeMin = {default = 5, altered = 0.95},
+					CooldownTimeMax = {default = 8, altered = 0.95},
+					SelectionWeight = {default = 0.5, altered = 1}
 				}
 			},
 		}
@@ -365,7 +424,7 @@ local longerAIMechLeash = function()
 		["GCROBOTGLOBALS.MBIN"] = {
 			{
 				fields = {
-					ExoMechJumpCooldownTimeInCombat = {default = 8, altered = 8},
+					ExoMechJumpCooldownTimeInCombat = {default = 8, altered = 16},
 					ExoMechJumpCooldownTimeOutOfCombat = {default = 4, altered = 2}
 				}
 			}
@@ -385,10 +444,7 @@ local heavierTitanfall = function()
 					MechTitanFallHeight = {default = 30, altered = 150},
 					MechTitanFallTerrainEditSize = {default = 2, altered = 10},
 					MechTitanFallTerrainEditOffset = {default = 0.45, altered = 0.15},
-					MechTitanFallCameraShakeDist = {default = 80, altered = 100},
-					MechLandCameraShakeDist = {default = 40, altered = 50},
-					MechFootprintFadeTime = {default = 1, altered = 15},
-					MechFootprintFadeDist = {default = 20, altered = 25}
+					MechTitanFallCameraShakeDist = {default = 80, altered = 100}
 				}
 			}
 		}
@@ -425,7 +481,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

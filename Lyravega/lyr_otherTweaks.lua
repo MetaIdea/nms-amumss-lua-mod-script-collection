@@ -1,6 +1,6 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Other Tweaks 1.7]]
-local gameVersion = "4.21"
+local modDescription = [[Lyravega's Other Tweaks 5.12]]
+local gameVersion = "129192"
 
 --[=============================================================================================================================[
 	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
@@ -30,7 +30,7 @@ local tweakStates = {
 	holsterLater = true,					-- lower and holster your weapon later (you can manually hold reload to holster)
 	noAutoClimb = true,						-- disables ladder auto-climb feature, interact to climb instead
 	noHazardOverlays = true,				-- removes all of the hazard screen overlays
-	lessMaintenance = true,					-- some damaged objects; crates and tech debris no longer require maintenance
+	lessMaintenance = true,					-- some damaged objects; crates, tech debris and crashed freighter containers no longer require maintenance
 	noPortalCharging = true,				-- removes portal charging steps
 	shorterToastMessages = true,			-- shortens the toast message duration of expedition stages, milestones and planet discoveries
 	fasterInteractions = true,				-- hold interactions require less... holding
@@ -48,6 +48,11 @@ local tweakStates = {
 	noTerrainFlatten = true,				-- disables planet terrain flattening/deflattening effect
 --	cyclingQuickMenu = true,				-- quick menu cycles through the first and last items instead of stopping at them
 --	hideQuickMenuControls = true,			-- hides quick menu controls
+	unifiedCalmWarps = true,				-- changes all warp scenes to a calm, purple/black version
+	noSpinningChairs = true,				-- removes the spinning interaction from chairs
+	stabilizedJetpack = true,				-- fixes the springy behaviour of player jetpacks, slightly boosts jetpack upward thrust
+--	noAerialScans = true,					-- nukes most of the aerial scans from the game
+	stationSystemScanner = true				-- adds the freighter planetary scan interaction to the station map shop hologram across the NPC
 }
 
 --#region METHODS
@@ -121,7 +126,9 @@ local noToolRecoil = function()
   					RailRecoilSpring = {default = 0.1, altered = 0},
   					PulseRecoilSpring = {default = 0.19, altered = 0},
   					CannonRecoilSpring = {default = 0.3, altered = 0},
-  					GunRecoilSettleSpring = {default = 0.4, altered = 0}
+  					GunRecoilSettleSpring = {default = 0.4, altered = 0},
+  					WeaponZoomRecoilMultiplier = {default = 1.5, altered = 0},
+  					ThirdPersonRecoilMultiplier = {default = 2, altered = 0}
 				}
 			}
 		}
@@ -195,13 +202,25 @@ local lessMaintenance = function()
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN"] = {
 			{
-				specialKeyWords = {"Template", "GcMaintenanceComponentData.xml"},
-                selectLevel = 1,
+				skw = {"Template", "GcMaintenanceComponentData.xml"},
+				selectLevel = 1,
 				removeSection = true
 			},
 			{
 				fields = {
 					TriggerAction = "MAINTDONE"
+				}
+			}
+		},
+		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CONTAINERTERMINAL/ENTITIES/TERMINALCHAR.ENTITY.MBIN"] = {
+			{
+				skw = {"Template", "GcMaintenanceComponentData.xml"},
+				selectLevel = 1,
+				removeSection = true
+			},
+			{
+				fields = {
+					TriggerAction = "RADIATE"
 				}
 			}
 		},
@@ -223,8 +242,8 @@ local noPortalCharging = function()
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN"] = {
 			{
-                specialKeyWords = {"Template", "GcMaintenanceComponentData.xml"},
-                selectLevel = 1,
+				skw = {"Template", "GcMaintenanceComponentData.xml"},
+				selectLevel = 1,
 				removeSection = true
 			}
 		}
@@ -510,6 +529,7 @@ local replaceDoubleSlashes = function()
 				[[LANGUAGE\NMS_LOC6_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC7_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC8_]]..language..[[.MBIN]],
+				[[LANGUAGE\NMS_LOC9_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_UPDATE3_]]..language..[[.MBIN]],
 			},
 			regexBefore = {
@@ -573,6 +593,209 @@ local hideQuickMenuControls = function()
 	return tweak
 end; lyr.tweakTables.hideQuickMenuControls = hideQuickMenuControls
 
+local unifiedCalmWarps = function()
+	if not lyr:checkTweak("unifiedCalmWarps") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = {
+				{[[MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN]], [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]]},
+				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]]},
+				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALTMAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]]},
+				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]]},
+				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVESMAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]]},
+			}
+		},
+		{
+			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]],
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
+				fields = {
+					y = 0.02
+				}
+			}
+		},
+		{
+			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]],
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
+				fields = {
+					y = 0.03
+				}
+			}
+		},
+		{
+			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]],
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
+				fields = {
+					y = 0.05
+				}
+			}
+		},
+		{
+			mbinPaths = [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]],
+			{
+				skw = {lyr:parsePair([[<Property name="Name" value="gMaterialColourVec4" />]])},
+				fields = {
+					x = 0,
+					y = 0,
+					z = 0
+				}
+			}
+		},
+		{
+			mbinPaths = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+			{
+				skw = {
+					{lyr:parsePair([[<Property name="Name" value="LightLargeStreaks" />]])},
+					{lyr:parsePair([[<Property name="Name" value="LightStreaksSmall1" />]])},
+					{lyr:parsePair([[<Property name="Name" value="LightStreaks1" />]])},
+					{lyr:parsePair([[<Property name="Name" value="LightStreaksSmall" />]])},
+					{lyr:parsePair([[<Property name="Name" value="LightStreaks" />]])},
+					{lyr:parsePair([[<Property name="Name" value="LightArms" />]])},
+					{lyr:parsePair([[<Property name="Name" value="gradientCloud" />]])},
+					{lyr:parsePair([[<Property name="Name" value="gradientCloudAlt" />]])}
+				},
+				removeSection = true
+			},
+			{
+				skw = {"Name", "stars", "Name", "MATERIAL"},
+				fields = {
+					Value = [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]]
+				}
+			},
+			{
+				skw = {"Name", "stars1", "Name", "MATERIAL"},
+				fields = {
+					Value = [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]]
+				}
+			},
+			{
+				skw = {"Name", "stars2", "Name", "MATERIAL"},
+				fields = {
+					Value = [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]]
+				}
+			},
+			{
+				skw = {
+					{"Name", "scrollingwave", "Name", "MATERIAL"},
+					{"Name", "scrollingwave9", "Name", "MATERIAL"},
+					{"Name", "scrollingwaveALT", "Name", "MATERIAL"},
+					{"Name", "scrollingwaveALT1", "Name", "MATERIAL"}
+				},
+				fields = {
+					Value = [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]]
+				}
+			}
+		},
+		{
+			mbinPaths = [[GCSIMULATIONGLOBALS.GLOBAL.EXML]],
+			{
+				fields = {
+					WarpTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+					BlackHoleTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+					TeleportTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+					PortalTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+					PortalStoryTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
+				}
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.unifiedCalmWarps = unifiedCalmWarps
+
+local noSpinningChairs = function()
+	if not lyr:checkTweak("noSpinningChairs") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = {
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\TABLECHAIR\ENTITIES\TABLECHAIR1.ENTITY.EXML]],
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="Template" value="GcSimpleInteractionComponentData.xml">]])},
+				selectLevel = 1,
+				removeSection = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.noSpinningChairs = noSpinningChairs
+
+local stabilizedJetpack = function()
+	if not lyr:checkTweak("stabilizedJetpack") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = {
+				[[GCPLAYERGLOBALS.GLOBAL.EXML]],
+			},
+			{
+				fields = {
+					JetpackUpForce = {default = 30, altered = 33},
+					-- JetpackIgnitionForce = {default = 60, altered = 0},
+					JetpackIgnitionTime = {default = 0.4, altered = 0},	-- it seems this is the time it takes for ignition thrust to be taken over by normal force
+					JetpackMinIgnitionTime = {default = 0.2, altered = 0.2}
+				}
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.stabilizedJetpack = stabilizedJetpack
+
+local noAerialScans = function()
+	if not lyr:checkTweak("noAerialScans") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = {
+				[[METADATA\REALITY\TABLES\REWARDTABLE.EXML]],
+			},
+			{
+				skw = {lyr:parsePair([[<Property name="DoAerialScan" value="True" />]])},
+				fields = {
+					DoAerialScan = false
+				},
+				replaceAll = true
+			}
+		}
+	}
+
+	return tweak
+end; lyr.tweakTables.noAerialScans = noAerialScans
+
+local stationSystemScanner = function()
+	if not lyr:checkTweak("stationSystemScanner") then return false end
+
+	local tweak = {
+		lyr:createNodeTemplate(),
+		{
+			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]]}}
+		},
+		{
+			mbinPaths = [[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]],
+			{
+				pkw = "LinkableNMSTemplate.xml",
+				findSections = {{lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])}},
+				removeSection = true
+			}
+		},
+		lyr:attachEntityLocatorAttachment(
+			[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\MAPSHOPAREA.SCENE.EXML]],
+			"_MapScreen_C",
+			[[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]],
+			"lyr_stationScanner",
+			{x = 3.790752, y = 1.487879, z = 0}
+		)
+	}
+
+	return tweak
+end; lyr.tweakTables.stationSystemScanner = stationSystemScanner
+
 --#endregion
 -- END OF TWEAKS
 
@@ -584,7 +807,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE, MIXED_TABLE, NUMBERtoSTRING",
 	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }
