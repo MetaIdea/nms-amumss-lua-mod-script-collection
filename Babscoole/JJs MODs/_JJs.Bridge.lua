@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_JJs.Bridge.V.2.6.pak",
+["MOD_FILENAME"]    = "_JJs.Bridge.V.2.7.pak",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.03",
+["NMS_VERSION"]     = "5.12",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
     {
@@ -115,6 +115,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="GcSelectableObjectData.xml">
           <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\NULBOBBLEHEAD.SCENE.MBIN" />
+        </Property>
+        <Property value="GcSelectableObjectData.xml">
+          <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\OCTOBOBBLEHEAD.SCENE.MBIN" />
         </Property>
         <Property value="GcSelectableObjectData.xml">
           <Property name="Filename" value="MODELS\JJSBRIDGE\BREAKABLES\BOBBLEHEADS\POLOBOBBLEHEAD.SCENE.MBIN" />
