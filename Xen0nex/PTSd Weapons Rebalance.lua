@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "5_10"
+GameVersion = "5_12"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 RevertMiningLaserOverheatChanges = false				--false		If set to true, reverts the cooldown timer after overheating for Mining/Hijacked/Runic Laser etc. back to vanilla values, and will match up with the UI overheat overlay again.
@@ -54,18 +54,22 @@ DefaultDepotMult = 	0.33								--1		Multiplier for most other damage against DE
 --Default damage multiplier against CARGO. Applies to the Cargo Pods attached to freighters (standalone Cargo Pods unaffected for some reason), in vanilla also applies to Freighter Shield Generators & Dreadnought Warp Drives.
 CargoDamageMult = 0.2									--1		(0.2)
 
---How many shots you get before needing to recharge with Unstable Plasma
+--How many shots you get before needing to recharge/refuel (e.g. with Unstable Plasma, Carbon, etc.)
 PlasmaLauncherCharge =						16					--20
 GeologyCannonCharge =						10					--20
 ParalysisMortarCharge =						8					--20
+NeutronCannonCharge =						250					--500			(Amount of charge for the recharge bar of the Neutron Cannon)
+NeutronCannonChargeMultiplier =				0.5					--1				How effective substances are at recharging the charge bar
+
 MechStunWeaponCharge =						30					--400			(Amount of charge for the recharge bar of the Mech Sentinel Right Arm or Liquidator Left Arm which stuns)
 MechStunWeaponChargeMultiplier =			0.1					--1				How effective substances are at recharging the charge bar
 MechFlameCharge =							400					--400			(Amount of charge for the recharge bar of the Mech Liquidator Flamethrower)
 MechFlameChargeMultiplier =					1					--1				How effective substances are at recharging the charge bar
 
---How many shots you get before needing to recharge with Carbon/Condensed Carbon/Oxygen
-NeutronCannonCharge =						250					--500			(Amount of charge for the recharge bar of the Neutron Cannon)
-NeutronCannonChargeMultiplier =				0.5					--1				How effective substances are at recharging the charge bar
+ExocraftCannonCharge =						400					--200			(Amount of charge for the recharge bar of the Exocraft Cannon)
+ExocraftCannonChargeMultiplier =			2					--1				How effective substances are at recharging the charge bar
+NautilonCannonCharge =						400					--200			(Amount of charge for the recharge bar of the Nautilon Cannon)
+NautilonCannonChargeMultiplier =			2					--1				How effective substances are at recharging the charge bar
 
 --Misc Weapon adjustments
 MechStunWeaponRadius =						4					--5				AOE Radius of minotaur stun weapon shots
@@ -2360,48 +2364,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "GRENADE"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ChargeAmount", PlasmaLauncherCharge}
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "TERRAIN_GREN"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ChargeAmount", GeologyCannonCharge}
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "STUN_GREN"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ChargeAmount", ParalysisMortarCharge}
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "MECH_SENT_R_ARM"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2410,12 +2394,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ARMY_L_ARM"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2424,12 +2403,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "MECH_ARMY_R_ARM"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2438,12 +2412,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "CANNON"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -2452,16 +2421,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "SENT_LASER"},
-				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
-				--["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ChargeMultiplier", HijackChargeMultiplier}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "VEHICLE_GUN"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeAmount", ExocraftCannonCharge},
+					{"ChargeMultiplier", ExocraftCannonChargeMultiplier}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SUB_GUN"},
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeAmount", NautilonCannonCharge},
+					{"ChargeMultiplier", NautilonCannonChargeMultiplier}
 				}
 			},
 			

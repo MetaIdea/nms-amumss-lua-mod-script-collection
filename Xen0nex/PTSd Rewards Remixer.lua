@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "5_11"
+GameVersion = "5_12"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Note: When using this file to replace an item with a different item, try keep the new item of the same type (Product vs. Substance) as the replaced item, unless the section also lets you define it explicitly as "Product" or "Substance"
@@ -154,21 +154,21 @@ ShipLootChanges =
 			--NOTE: For some reason in-game the substance amounts are roughly ~1/5 of the values set here
 		{"SMUGGLELOOT"},
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_2",		1,			2,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
-			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			50},				--"FRIG_TOKEN",			1,			1,			20
+			{"FRIGATE_FUEL_3",		"FRIGATE_FUEL_1",		1,			3,			100},				--"FRIGATE_FUEL_3",		1,			3,			100
+			{"FRIG_TOKEN",			"FRIG_TOKEN",			1,			1,			30},				--"FRIG_TOKEN",			1,			1,			20
 			{"LAND3",				"LAND3",				100*5,		150*5,		80},				--"LAND3",				200,		250,		100
-			{"STELLAR2",			"STELLAR2",				100*5,		150*5,		100},				--"STELLAR2",			200,		250,		100
-			{"CAVE2",				"CAVE2",				100*5,		150*5,		100},				--"CAVE2",				200,		250,		100
+			{"STELLAR2",			"STELLAR2",				100*5,		150*5,		120},				--"STELLAR2",			200,		250,		100
+			{"CAVE2",				"CAVE2",				100*5,		150*5,		120},				--"CAVE2",				200,		250,		100
 			{"ASTEROID2",			"ASTEROID2",			100*5,		150*5,		80},				--"ASTEROID2",			200,		250,		100
-			{"ASTEROID3",			"ASTEROID3",			100*5,		150*5,		100},				--"ASTEROID3",			100,		250,		100
+			{"ASTEROID3",			"ASTEROID3",			100*5,		150*5,		120},				--"ASTEROID3",			100,		250,		100
 			{"RADIO1",				"RADIO1",				100*5,		150*5,		80},				--"RADIO1",				200,		250,		100
 			{"ILLEGAL_PROD8",		"ILLEGAL_PROD8",		1,			2,			20},				--"ILLEGAL_PROD8",		1,			2,			100		(588,000 units sale value in PTSd)
-			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		4,			8,			120},				--"ILLEGAL_PROD2",		5,			10,			100		(54,000 units sale value in PTSd)
-			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		2,			4,			100},				--"ILLEGAL_PROD3",		4,			10,			100		(108,000 units sale value in PTSd)
-			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		2,			5,			50},				--"ILLEGAL_PROD4",		3,			8,			100		(192,000 units sale value in PTSd)
+			{"ILLEGAL_PROD2",		"ILLEGAL_PROD2",		3,			5,			120},				--"ILLEGAL_PROD2",		5,			10,			100		(54,000 units sale value in PTSd)
+			{"ILLEGAL_PROD3",		"ILLEGAL_PROD3",		2,			3,			100},				--"ILLEGAL_PROD3",		4,			10,			100		(108,000 units sale value in PTSd)
+			{"ILLEGAL_PROD4",		"ILLEGAL_PROD4",		1,			4,			50},				--"ILLEGAL_PROD4",		3,			8,			100		(192,000 units sale value in PTSd)
 			{"ILLEGAL_PROD5",		"FRIG_BOOST_SPD",		1,			1,			80},				--"ILLEGAL_PROD5",		3,			6,			100		(348,000 units sale value in PTSd)
-			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			4,			40},				--"ILLEGAL_PROD6",		2,			4,			100		(408,000 units sale value in PTSd)
-			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			3,			30},				--"ILLEGAL_PROD7",		1,			2,			100		(498,000 units sale value in PTSd)
+			{"ILLEGAL_PROD6",		"ILLEGAL_PROD6",		1,			3,			40},				--"ILLEGAL_PROD6",		2,			4,			100		(408,000 units sale value in PTSd)
+			{"ILLEGAL_PROD7",		"ILLEGAL_PROD7",		1,			2,			30},				--"ILLEGAL_PROD7",		1,			2,			100		(498,000 units sale value in PTSd)
 		}
 	},
 	{	--Freighter Cargo Pods
@@ -185,8 +185,8 @@ ShipLootChanges =
 			{"RADIO1",				"RADIO1",				200*5,		250*5,		100},				--"RADIO1",				200,		250,		100
 			{"TRA_COMMODITY3",		"TRA_COMMODITY3",		16,			20,			100},				--"TRA_COMMODITY3",		8,			10,			100
 			{"TRA_COMPONENT1",		"TRA_COMPONENT1",		35,			50,			100},				--"TRA_COMPONENT1",		25,			25,			100
-			{"TRA_ENERGY4",			"TRA_ENERGY4",			16,			20,			100},				--"TRA_ENERGY4",		8,			10,			100
-			{"TRA_EXOTICS5",		"TRA_EXOTICS5",			2,			6,			100},				--"TRA_EXOTICS5",		1,			3,			100
+			{"TRA_ENERGY4",			"TRA_ENERGY4",			12,			16,			100},				--"TRA_ENERGY4",		8,			10,			100
+			{"TRA_EXOTICS5",		"TRA_EXOTICS5",			8,			12,			100},				--"TRA_EXOTICS5",		1,			3,			100
 			{"TRA_MINERALS3",		"TRA_MINERALS3",		16,			20,			100},				--"TRA_MINERALS3",		8,			10,			100
 			{"TRA_MINERALS2",		"FRIG_BOOST_SPD",		1,			1,			80},				--"TRA_MINERALS2",		15,			25,			100
 			{"TRA_TECH3",			"TRA_TECH3",			16,			20,			100},				--"TRA_TECH3",			8,			10,			100
@@ -370,27 +370,12 @@ FreighterLootChanges =
 		}
 	},
 }
-FreighterLootTechQualityOverride = 1					--3		Sets the class of procedural Freighter Upgrade Modules founds from destroying civilian freighters or Pirate Dreadnoughts. 3 = S Class, -1 = based on System seed
---Adds 2 items as guaranteed loot from destroying freighters, in addition to the random loot defined above "R_PIR_FREI"
+FreighterLootTechQualityOverride = 0					--3		Sets the class of procedural Freighter Upgrade Modules founds from destroying civilian freighters or Pirate Dreadnoughts under "R_PIR_FREI". 3 = S Class, 2 = A Class, etc. -1 = based on System seed
+--Adds 2 items as guaranteed loot from destroying freighters, in addition to the random loot defined above under "R_PIR_FREI"
 GuaranteedFreighterLoot1 =			"FRIG_TOKEN"		--N/A		Salvaged Frigate Module
 GuaranteedFreighterLoot1Amount =	"1"					--N/A
 GuaranteedFreighterLoot2 =			"FRIGATE_FUEL_1"	--N/A		Frigate Fuel (50 Tonnes)
 GuaranteedFreighterLoot2Amount =	"1"					--N/A
-
---Rewards for choosing a tech upgrade at the end of a Derelict Freighter
-FreighterTechLootChanges =
-{
-	{
-		{"R_FREI_TECH"},
-		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
-			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},	--1,	1,		20		C-Class Reactor
-			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},	--1,	1,		25		B-Class Reactor
-			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},	--1,	1,		15		A-Class Reactor
-			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},	--1,	1,		5		S-Class Reactor
-			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
-		}
-	},
-}
 
 --Changes % Chance and amounts for different reward lootpools for Missions, typically from Space Stations but sometimes from NPCs at POIs on planets or a few other mission sources
 SpaceStationMissionLootChanges =
@@ -1002,8 +987,40 @@ DerelictSuppliesChanges =
 	}
 }
 
---Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
-TaintedMetalMult =						3						--1
+--Changes the amount of nanites found in various containers / datapads on Derelict Freighters (weight is the relative % chance weight to receive this reward from the container)
+DerelictNaniteChanges =
+{--Container			New /	Old weight %	Min	/	Max	Nanites
+	{"R_ABAND_LOCK",	"20",	"20",			"100",	"200"},		--"20",	"50" Nanites	(Locker)	Total weight of rewards is 240 in vanilla
+	{"R_ABAND_CASE",	"40",	"40",			"80",	"160"},		--"20",	"50" Nanites	(Case)		Total weight of rewards is 141 in vanilla
+	{"R_ABAND_CASE",	"10",	"10",			"400",	"600"},		--"50",	"200" Nanites	(Case)		Total weight of rewards is 141 in vanilla
+	{"R_ABAND_NAN",		"60",	"60",			"80",	"160"},		--"15",	"30" Nanites	(Datapad)	Total weight of rewards is 100 in vanilla (but the only other option is a one-time password which gets passed over after you get it once)
+}
+
+--Rewards for choosing a tech upgrade at the end of a Derelict Freighter
+FreighterTechLootChanges =
+{
+	{
+		{"R_FREI_TECH"},
+		{	--Old Item					New Item				Min	Max		%Chance (relative weight, roughly but not necessarily out of 100)
+			{"SHIP_CORE_C",				"SHIP_CORE_C",			1,	1,		0},	--1,	1,		20		C-Class Reactor
+			{"SHIP_CORE_B",				"SHIP_CORE_B",			1,	1,		0},	--1,	1,		25		B-Class Reactor
+			{"SHIP_CORE_A",				"SHIP_CORE_A",			1,	1,		0},	--1,	1,		15		A-Class Reactor
+			{"SHIP_CORE_S",				"SHIP_CORE_S",			1,	1,		0},	--1,	1,		5		S-Class Reactor
+			--Also has all 7 of the Freighter/Frigate procedural upgrade modules as possible rewards, each at 100 relative Chance %
+		}
+	},
+}
+
+UsePTSdFreiUpgradeClassChances = true					--false			Set to true to replace the vanilla method of choosing Derelict Freighter reward Upgrade Class (set by the system) with PTSd's method (random each time using the weights below)
+PTSdFreiUpgrClassChances =			--Only has an effect if UsePTSdFreiUpgradeClassChances above is set to true
+{--Sets the relative % weight chances for Freighter Upgrade Modules awarded at the end of Derelict Freighters to be a particular Class
+	--C		B		A		S	Class 
+	10,		40,		30,		20
+}
+
+TaintedMetalMult =						3						--1		Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
+ScrapTaintIgnoreNatResSetting =			"True"					--"False"	Set to "True" to make the Tainted Metal reward from Scrap Dealers for turning in Crew Manifests / Captain's Logs be a set amount that ignores the in-game "Natural Resources" Difficulty Setting (e.g. if set to "False" on the Standard setting it will multiply the reward  amounts by 0.8x)
+DerelictNaniteRewardMult =				3						--1		Multiplier applied to the 400-600 nanites awarded if choosing the nanite reward at the end of a Derelict Freighter
 
 --Replacers for how much Standing is awarded for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildStand =						4						--2
@@ -1642,6 +1659,8 @@ AddTechToPool =
 		}
 	},
 }
+
+ReplaceTECH =	true				--false		Set to true to replace any TECH_ALL, TECH_SUIT, TECH_WEAPON, or TECH_SHIP rewards with their PROC_TECH versions instead
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -2736,6 +2755,32 @@ ShuttleSalvageReward =
       </Property>
     </Property>]]
 
+function AddActivateMission (RewardId, MissionID)
+	return
+	[[<Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="]]..RewardId..[[" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAllSilent" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMission.xml">
+              <Property name="Mission" value="]]..MissionID..[[" />
+              <Property name="SetAsSelected" value="False" />
+              <Property name="Restart" value="False" />
+              <Property name="FailRewardIfMissionActive" value="True" />
+              <Property name="AlreadyActiveFailureMessage" value="" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>]]
+end
+
 function Add2ItemMultiReward (Chance, Item1Type, Item1ID, Item1Amount, Item2Type, Item2ID, Item2Amount)
 	return
 	[[<Property value="GcRewardTableItem.xml">
@@ -2878,6 +2923,16 @@ AddedSuspiciousPacketWeaps =
 	"U_EXOGUN1", "U_EXOGUN2", "U_EXOGUN3", "U_EXOGUN4", "U_EXO_SUBGUN1", "U_EXO_SUBGUN2", "U_EXO_SUBGUN3", "U_EXO_SUBGUN4", "U_MECHFLAME2", "U_MECHFLAME3", "U_MECHFLAME4", "U_MECHGUN2", "U_MECHGUN3", "U_MECHGUN4", 
 }
 
+OldFreighterUpgradeCategories =
+{
+	"FreighterTechHyp", "FreighterTechSpeed", "FreighterTechFuel", "FreighterTechTrade", "FreighterTechCombat", "FreighterTechMine", "FreighterTechExp", 
+}
+
+FreighterUpgradeGroups =
+{
+	"UT_FR_HYP_NAME", "UT_FR_SPEED_NAME", "UT_FR_FUEL_NAME", "UT_FR_COM_NAME", "UT_FR_TRADE_NAME", "UT_FR_EXP_NAME", "UT_FR_MINE_NAME", 
+}
+
 function AresCostId (Number)
     return
 [[C_NEXMILE_]]..Number..[[B]]
@@ -2905,6 +2960,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= 
 		{
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcGenericRewardTableEntry.xml"},
+				["ADD_OPTION"]  = "ADDafterSECTION",  
+				["ADD"] = AddActivateMission ("R_RESTART_LIS", "ABAND_HANDIN"),		--Adds a reward which can be used in "PTSd Resource + Product + Construction Rebalance.lua" for restarting the "Lost in Space" mission if it fails to spawn / disappears due to a vanilla bug, which otherwise would prevent you from turning in Crew Manifests / Captain's logs for rewards.
+			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","FTH_USEFUL_PROD",	"ID","TECHBOX"},
 				["SECTION_UP"] = 1,
@@ -3109,6 +3169,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_END_NAN"},
+				["MATH_OPERATION"] 		= "*", 
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	DerelictNaniteRewardMult},
+					{"AmountMax",	DerelictNaniteRewardMult}
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"ID","AF_METAL"},
 				["MATH_OPERATION"] 		= "*", 
 				["REPLACE_TYPE"] 		= "ALL",
@@ -3125,6 +3195,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"Amount",	TaintedMetalMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {
+					{"Id","R_CREW_SHADY"}, {"Id","R_CAPT_SHADY"}
+				},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"DisableMultiplier",	ScrapTaintIgnoreNatResSetting}
 				}
 			},
 			{
@@ -3913,7 +3992,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"]			= 1,
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3926,7 +4004,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"]			= 1,
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3939,7 +4016,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["SECTION_UP"]			= 1,
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
-				["VALUE_MATCH"] 		= "",
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
@@ -3948,7 +4024,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["PRECEDING_KEY_WORDS"] = "",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "0",
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -3958,7 +4033,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["PRECEDING_KEY_WORDS"] = "",	
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "100", 
@@ -3969,7 +4043,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["PRECEDING_KEY_WORDS"] = "",	
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "100", 
@@ -3980,7 +4053,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				["PRECEDING_KEY_WORDS"] = "",	
 				["MATH_OPERATION"] 		= "*",
 				["REPLACE_TYPE"] 		= "ALL",
 				["VALUE_MATCH"] 		= "0", 
@@ -4234,6 +4306,44 @@ if ReactorSalvage then
 				["PRECEDING_KEY_WORDS"] = {"GcAlienPuzzleOption.xml"},
 				["ADD"] = SalvageShuttlePuzzle,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+end
+if ReplaceTECH then
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["VALUE_MATCH"] 		= "TECH_ALL",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "PROC_TECH_ALL"}
+				}
+			}
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["VALUE_MATCH"] 		= "TECH_SHIP",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "PROC_TECH_SHIP"}
+				}
+			}
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["VALUE_MATCH"] 		= "TECH_SUIT",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "PROC_TECH_SUIT"}
+				}
+			}
+			ChangesToDialogPuzzle[#ChangesToDialogPuzzle+1] =
+			{
+				["VALUE_MATCH"] 		= "TECH_WEAPON",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Value", "PROC_TECH_WEAP"}
+				}
 			}
 end
 
@@ -4981,6 +5091,26 @@ for i = 1, #FreighterLootChanges do
 			}
 	end
 end
+for i = 1, #DerelictNaniteChanges do
+	local RewardID = DerelictNaniteChanges[i][1]
+	local NewWeight = DerelictNaniteChanges[i][2]
+	local OldWeight = DerelictNaniteChanges[i][3]
+	local MinNanites = DerelictNaniteChanges[i][4]
+	local MaxNanites = DerelictNaniteChanges[i][5]
+		
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+		{
+			["SPECIAL_KEY_WORDS"] = {"Id", RewardID,	"PercentageChance", OldWeight,		"Currency", "Nanites"},
+			["REPLACE_TYPE"] = "ALL",
+			["SECTION_UP"] = 2,
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"PercentageChance",	NewWeight},
+				{"AmountMin",	MinNanites},
+				{"AmountMax",	MaxNanites}
+			}
+		}
+end
 for i = 1, #FreighterTechLootChanges do
 	local RewardType = FreighterTechLootChanges[i][1][1]
 	local Items = FreighterTechLootChanges[i][2]
@@ -5004,6 +5134,36 @@ for i = 1, #FreighterTechLootChanges do
 					{"AmountMin",	AmountMin},
 					{"AmountMax",	AmountMax}
 				}
+			}
+	end
+end
+if UsePTSdFreiUpgradeClassChances then
+	for i = 1, #FreighterUpgradeGroups do
+		local Group = FreighterUpgradeGroups[i]
+		
+		local Normal = PTSdFreiUpgrClassChances[1]
+		local Rare = PTSdFreiUpgrClassChances[2]
+		local Epic = PTSdFreiUpgrClassChances[3]
+		local Legendary = PTSdFreiUpgrClassChances[4]
+		
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_FREI_TECH"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["ADD_OPTION"]  = "ADDbeforeSECTION",
+				["ADD"] = AddUpgrade(Group, Normal, Rare, Epic, Legendary),
+			}
+	end
+end
+if UsePTSdFreiUpgradeClassChances then
+	for i = 1, #OldFreighterUpgradeCategories do
+		local Category = OldFreighterUpgradeCategories[i]
+		
+		ChangesToRewardTable[#ChangesToRewardTable+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_FREI_TECH",	"ProceduralProductCategory", Category},
+				["SECTION_UP"] = 2,
+				["REMOVE"] = "SECTION",
 			}
 	end
 end

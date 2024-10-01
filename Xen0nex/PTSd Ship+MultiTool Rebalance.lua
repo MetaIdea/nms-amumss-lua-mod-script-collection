@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "5_11"
+GameVersion = "5_12"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 --FuelLessIsBetter =				"TRUE"				--"FALSE", (Deprecated, fixed as of NMS v4.08) Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -10,8 +10,8 @@ Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, 
 TradeRocketSlots =	8								--21	Slots for Trade Rocket. May only have an effect for new saves?
 
 ExoSkiffSlots =		30								--60	Slots for fish/bait storage in Exo-Skiff. May only have an effect for new saves?
-ExoSkiffSlotsWidth = 5								--10	How many columns of slots are available for the Exo-Skiff
-ExoSkiffSlotsHeight =6								--6		How many rows of slots are available for the Exo-Skiff
+ExoSkiffSlotsWidth = 6								--10	How many columns of slots are available for the Exo-Skiff
+ExoSkiffSlotsHeight =5								--6		How many rows of slots are available for the Exo-Skiff
 
 --As of NMS v4.08, the definition for what ship attributes the "SHIP_AGILE" stat affects appears to mistakenly list Ship_BoostManeuverability twice, instead of Ship_Maneuverability and Ship_BoostManeuverability together.
 FixAgilityStat = true			--false			If true, this will try to ensure there is an entry for both Ship_BoostManeuverability and Ship_Maneuverability under the SHIP_AGILE definition

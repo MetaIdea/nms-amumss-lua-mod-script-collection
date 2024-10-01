@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_11"
+GameVersion = "5_12"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -161,8 +161,8 @@ ProductSaleChanges =
 	{"FOOD_EVIL_STEW_NAME",	1.125},					--96,000		The Worst Stew
 	{"UI_GRUB_POD_NAME",	6.0},					--11,000		Juicy Grub
 	{"FOOD_PCAT_VEG_NAME",	2.0},					--1,600			Syrupy Nectar
-	{"FOOD_HORROR_MEAT_NAME",	0.8},				--6,200			Rancid Flesh
-	{"FOOD_R_HORROR_NAME",	0.9},					--9,200			Purged Ribs
+	{"FOOD_HORROR_MEAT_NAME",	0.65},				--6,200			Rancid Flesh
+	{"FOOD_R_HORROR_NAME",	0.66},					--9,200			Purged Ribs
 	
 	{"UI_FISH_FOOD_EGGS_NAME",	0.46},				--39,000		Assorted Roe
 	{"UI_FISH_FOOD_MIX_NAME",	0.51},				--52,500		Salty Platter
@@ -281,8 +281,19 @@ ProceduralProductSaleChanges =
 	--Salvageable Scrap
 	{"ITEMGEN_SALVAGE_COMMON",		1.5},			--100,000 ~ 300,000,		Dropweight 4		(57%)
 	{"ITEMGEN_SALVAGE_UNCOMMON",	1.2},			--400,000 ~ 850,000,		Dropweight 2		(29%)
-	{"ITEMGEN_SALVAGE_RARE",		0.8}			--1,100,000 ~ 2,400,000,	Dropweight 1		(14%)
+	{"ITEMGEN_SALVAGE_RARE",		0.8},			--1,100,000 ~ 2,400,000,	Dropweight 1		(14%)
 }
+
+--Boosts sale value for Derelict Freighter reward items in case you are unable to trade them to a Guild Representative for some reason, such as the vanilla bug causing the quest for turning them in to disappear
+DerelictFreighterRedeemables =
+{
+	--Crew Manifest					Min Value	Max Value
+	{"ITEMGEN_FREI_CREW_SUB",		480000,		540000},			--500,	1000	
+	--Captain's Log
+	{"ITEMGEN_FREI_CAPT_SUB",		720000,		810000},			--500,	1000	
+}
+
+UsableDerelictRedeemables = true					--false		Set to true to be able to use Crew Manifests / Captain's Logs to restart the mission required for handing them in to Guild Reps / Scrap Dealers (does not consume the item to use it)
 
 --These multipliers are applied to the value of all cooked foods of a certain type.
 	--Note, these multipliers are applied multiplicatively on top of any multipliers in the ProductSaleChanges section above
@@ -504,7 +515,13 @@ AdjustItems =
 	{	--Starship Launch Fuel 	Metal Plating
 		"LAUNCHFUEL",			"CASING",			2,			--1
 	},
-	{	--Automated Trap 	Metal Plating
+	{	--Warp Hypercore		Antimatter
+		"HYPERFUEL2",			"ANTIMATTER",		2,			--1
+	},
+	{	--Warp Hypercore		Storm Crystal
+		"HYPERFUEL2",			"STORM_CRYSTAL",	2,			--1
+	},
+	{	--Automated Trap 		Metal Plating
 		"BUILDSEAHARVEST",		"CASING",			6,			--3
 	},
 }
@@ -1045,6 +1062,27 @@ function AddedItemCost (ItemCostID, ItemCostAmount, ItemCostType)
           </Property>
           <Property name="Amount" value="]]..ItemCostAmount..[[" />
         </Property>]]
+end
+
+function AddConsumableDerelictItem (ItemID)
+    return
+[[<Property value="GcConsumableItem.xml">
+      <Property name="ID" value="]]..ItemID..[[" />
+      <Property name="RewardID" value="R_RESTART_LIS" />
+      <Property name="TutorialRewardID" value="" />
+      <Property name="ButtonLocID" value="&lt;HIGHLIGHT&gt;BROADCAST&lt;&gt;" />
+      <Property name="ButtonSubLocID" value="Use in &lt;STELLAR&gt;Space Stations&lt;&gt; to search for &lt;TRADE&gt;buyers&lt;&gt;" />
+      <Property name="CloseInventoryWhenUsed" value="True" />
+      <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="RewardFailedLocID" value="Exit and re-enter Space Station to refresh buyers list" />
+      <Property name="DestroyItemWhenConsumed" value="False" />
+      <Property name="AddCommunityTierClassIcon" value="False" />
+      <Property name="SuppressResourceMessage" value="False" />
+      <Property name="CustomOSD" value="" />
+      <Property name="RequiresMissionActive" value="" />
+    </Property>]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -1669,6 +1707,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\CONSUMABLEITEMTABLE.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--This entry intentionally left blank, to be filled in by the function at the bottom of this script
+					}
 				}
 			}
 		}
@@ -1960,12 +2005,57 @@ for i = 1, #ProceduralProductSaleChanges do
 				["SPECIAL_KEY_WORDS"] = {"Word", NameID},
 				["SECTION_UP"] = 1,
 				["INTEGER_TO_FLOAT"] = "PRESERVE",
-				--["PRECEDING_KEY_WORDS"] = {Rarity},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"BaseValueMin", ValueMult},
 					{"BaseValueMax", ValueMult}
 				}
+			}
+end
+
+ for i = 1, #DerelictFreighterRedeemables do
+	local NameID = DerelictFreighterRedeemables[i][1]
+	local MinValue = DerelictFreighterRedeemables[i][2]
+	local MaxValue = DerelictFreighterRedeemables[i][3]
+	
+			ChangesToProceduralProductSales[#ChangesToProceduralProductSales+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"Word", NameID},
+				["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "PRESERVE",
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BaseValueMin", MinValue},
+					{"BaseValueMax", MaxValue}
+				}
+			}
+	if UsableDerelictRedeemables then
+			ChangesToProceduralProductSales[#ChangesToProceduralProductSales+1] = 
+			{
+				["SPECIAL_KEY_WORDS"] = {"Subtitle", NameID},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Consumable", "True"}
+				}
+			}
+	end
+end
+
+local ChangesToConsumableItems = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+
+if UsableDerelictRedeemables then
+			ChangesToConsumableItems[#ChangesToConsumableItems+1] = 
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcConsumableItem.xml"},
+				["ADD"] = AddConsumableDerelictItem ("PROC_CREW"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			}
+			ChangesToConsumableItems[#ChangesToConsumableItems+1] = 
+			{
+				["PRECEDING_KEY_WORDS"] = {"GcConsumableItem.xml"},
+				["ADD"] = AddConsumableDerelictItem ("PROC_CAPT"),
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			}
 end
 

@@ -2,7 +2,7 @@ Author = "Jaggid Edje"
 ModName = "FrigateFuel"
 ModNameSub = "JE"
 BaseDescription = "Adjusts frigate fuel useage maximums to be the same as minimum for all frigate types"
-GameVersion = "4.72"
+GameVersion = "5.12"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

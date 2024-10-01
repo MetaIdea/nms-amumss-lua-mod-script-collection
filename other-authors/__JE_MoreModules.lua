@@ -2,7 +2,7 @@ Author = "Jaggid Edje"
 ModName = "MoreModules"
 ModNameSub = "__JE"
 BaseDescription = "Purchase more of an available Upgrade module from vendors Based on System Economy"
-GameVersion = "4.72"
+GameVersion = "5.12"
 
 -- Original game settings in comments
 minPoor = 3            -- 1

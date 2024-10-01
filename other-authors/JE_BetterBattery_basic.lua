@@ -2,7 +2,7 @@ Author = "Jaggid Edje"
 ModName = "BetterBattery"
 ModNameSub = "JE"
 BaseDescription = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties."
-GameVersion = "4.72"
+GameVersion = "5.12"
 
 -- Original game settings in comments
 ChargeAmount = 160     -- Default is 80 for battery, 100 for gel and Starshield battery

@@ -1,5 +1,5 @@
 ModName = "PTSd UI Description Adjustments"
-GameVersion = "5_11"
+GameVersion = "5_12"
 Description = "Changes the UI display for things like Settlement Production rate, Crop Growth time (in the construction menu), Tech descriptions, etc. to match the adjusted PTSd rates"
 
 AnalysisVisorDesc =
@@ -50,6 +50,30 @@ NeuralShieldDesc =
 TeleportReceiver =
 [[A device that modulates standard starship communication signals to &lt;TECHNOLOGY&gt;enable the transport of matter&lt;&gt; as well as data.&#xA;&#xA;Starships fitted with such a device can send and receive products and substances to a user's exosuit over a &lt;VAL_ON&gt;long distance&lt;&gt;, up to &lt;STELLAR&gt;800u&lt;&gt; away.]]
 
+EmerilDriveDesc =
+[[Upgrades the hyperdrive's shield integrity, preventing reality glitches when attempting to reach rare-class &lt;TRADEABLE&gt;green&lt;&gt; or &lt;FUEL&gt;red&lt;&gt; &lt;TRADEABLE&gt;stellar bodies&lt;&gt;.&#xA;&#xA;User is advised to access Hyperdrive systems via the &lt;VAL_ON&gt;Galactic Map&lt;&gt;.]]
+
+IndiumDriveDesc =
+[[Upgrades the hyperdrive's computational matrix,  preventing temporal anomalies when attempting to reach rare-class &lt;TECHNOLOGY&gt;blue&lt;&gt;, &lt;TRADEABLE&gt;green&lt;&gt;, or &lt;FUEL&gt;red&lt;&gt; &lt;TECHNOLOGY&gt;stellar bodies&lt;&gt;.&#xA;&#xA;User is advised to access Hyperdrive systems via the &lt;VAL_ON&gt;Galactic Map&lt;&gt;.]]
+
+DreamsDeep3Msg4 =
+[[Purchase the &lt;TECHNOLOGY&gt;High-Power Sonar&lt;&gt; blueprints from aboard the &lt;SPECIAL&gt;Space Anomaly&lt;&gt;, then install it in the Nautilon.&#xA;Access the Nautilon's inventory and craft in an empty slot with &lt;IMG&gt;TECHMENU&lt;&gt;&#xA;Pin the blueprint recipe for detailed instructions with &lt;IMG&gt;PIN&lt;&gt;]]
+
+DreamsDeep3Obj3Tip =
+[[The abandoned radio structure only contained blueprints for a &lt;TECHNOLOGY&gt;Basic Sonar&lt;&gt;.&#xA;Purchase the &lt;TECHNOLOGY&gt;High-Power Sonar&lt;&gt; blueprints from aboard the &lt;SPECIAL&gt;Space Anomaly&lt;&gt;, then install it in the Nautilon.&#xA;Access the Nautilon's inventory and craft in an empty slot with &lt;IMG&gt;TECHMENU&lt;&gt;.&#xA;Pin the blueprint recipe for detailed instructions with &lt;IMG&gt;PIN&lt;&gt;.]]
+
+SonarQuickMenu =
+[[Use Sonar]]
+
+SonarQuickMenuFail =
+[[No Sonar Installed]]
+
+Sonar =
+[[Sonar]]
+
+BasicSonarDesc =
+[[A high-detail sonar device, capable of upgrading the scanner technology aboard a Nautilon-class submarine to Analysis Visor levels.&#xA;Press &lt;IMG&gt;SCAN&lt;&gt; to activate the Basic Sonar.]]
+
 AMUDesc =
 [[An &lt;TECHNOLOGY&gt;automated harvester&lt;&gt; for the mining of resources. Once activated, the AMU extracts minerals for up to &lt;TECHNOLOGY&gt;10 minutes&lt;&gt; before collecting and &lt;FUEL&gt;refueling&lt;&gt;.&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: It is recommended to remain in the &lt;TECHNOLOGY&gt;same system&lt;&gt; during operation and to &lt;STELLAR&gt;delete and rebuild&lt;&gt; this unit before refueling it to reduce the chances of a &lt;HIGHLIGHT&gt;vanilla glitch&lt;&gt; clearing its contents.]]
 
@@ -67,6 +91,9 @@ ScannerRoomDesc =
 
 ConsciousnessBridgeMissionHint =
 [[The Void Egg requires a &lt;TECHNOLOGY&gt;Consciousness Bridge&lt;&gt;&#xA;Gather %ITEM% to craft Consciousness Bridge: %CURRENT%/%AMOUNT%&#xA;%ITEM% can be mined on planets in &lt;TRADEABLE&gt;green star systems&lt;&gt;]]
+
+ESSDesc =
+[[A &lt;STELLAR&gt;single-use&lt;&gt; receiver that scans for distress signals on &lt;TECHNOLOGY&gt;freighter frequencies&lt;&gt;. Derelict or abandoned freighters often contain &lt;STELLAR&gt;high-value salvage&lt;&gt; and &lt;HIGHLIGHT&gt;large amounts of nanites&lt;&gt;.&#xA;&#xA;Select the Receiver and use Tune Signal (&lt;IMG&gt;FE_ALT1&lt;&gt;) to begin the location process.]]
 
 DerelictLootTip =
 [[The &lt;STELLAR&gt;Space Station&lt;&gt; offers several opportunities to profit from salvage.&#xA;Both &lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; and &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; may be interested in acquiring data from the derelict freighter.&#xA;&#xA;&lt;TECHNOLOGY&gt;Scrap Dealers&lt;&gt; offer &lt;SPECIAL&gt;Tainted Metal&lt;&gt; while &lt;TRADEABLE&gt;Guild Envoys&lt;&gt; offer &lt;TRADE&gt;Units&lt;&gt; and &lt;STELLAR&gt;Standing&lt;&gt;]]
@@ -134,8 +161,32 @@ FreightWarpDrives =
 FreighterShieldGen =
 [[&lt;CATALYST&gt;Freighter Shield Generator - Shielded&lt;&gt;]]
 
+DerelictEndDesc =
+[[Engineering Control Panel Accessed...&#xA;Generator failure detected. Fabricators on &lt;AUDIO&gt;TXT_RadioNoise&lt;&gt;&lt;FUEL&gt;emergency power&lt;&gt;.&#xA;The &lt;HIGHLIGHT&gt;Class&lt;&gt; of &lt;STELLAR&gt;Fabricated Tech Upgrades&lt;&gt; will be truly &lt;SPECIAL&gt;randomized&lt;&gt; each time. Construct component?]]
+
+DerelictTech =
+[[Fabricate &lt;SPECIAL&gt;Random&lt;&gt; Tech Upgrade]]
+
+DerelictNanites =
+[[Extract approx. &lt;STELLAR&gt;1,500&lt;&gt; Nanites]]
+
+ManufacturingFacNanites =
+[[Extract approx. &lt;STELLAR&gt;400&lt;&gt; Nanites]]
+
+LeapDark3rdMonolith =
+[[The Atlas told the Traveller they were the first of their kind. That a multitude would follow. Each would be endowed with the same noble soul, each able to travel from planet to planet in eternal solitude.&#xA;&#xA;The First Traveller rejected the gift of the Atlas. This was not what they hoped for. What was the purpose of infinity if you could not see it all? If you were alone? If you would one day die?&#xA;&#xA;The First Traveller cursed the Atlas, and claimed that they would find a way to survive no matter the cost.&#xA;&#xA;All of these worlds, all of time itself, it will be for the Travellers to witness.&#xA;&#xA;After inspecting so many Monoliths, I now have the ability to access &lt;SPECIAL&gt;secret terminals&lt;&gt; at Monoliths in &lt;TECHNOLOGY&gt;Korvax systems&lt;&gt;.]]
+
+LeapDarkAfter3rdMonolithTip =
+[[The ancient monuments have supplied a series of glyphs. Perhaps they hold the key to opening a portal...&#xA;&#xA;Also, after inspecting so many Monoliths, I now have the ability to access &lt;SPECIAL&gt;secret terminals&lt;&gt; at Monoliths in &lt;TECHNOLOGY&gt;Korvax systems&lt;&gt;.]]
+
 BasaltDesc =
 [[Local mineral extract, typically found in large deposits or extracted from common minerals after inspection with an &lt;TECHNOLOGY&gt;Analysis Visor&lt;&gt;.&#xA;&#xA;Typically found on planets with a &lt;FUEL&gt;volcanic environment&lt;&gt;.&#xA;&#xA;Can be processed into &lt;STELLAR&gt;Silicate Powder&lt;&gt; in a refiner.]]
+
+AtlasPass2Desc =
+[[Security and permissions pass granted to specific travellers by many primary galactic species.&#xA; &#xA;Provides access to mid-tier or lower restricted areas and outpost systems.]]
+
+AtlasPass3Desc =
+[[Security and permissions pass granted to specific travellers by many primary galactic species.&#xA; &#xA;Provides access to high level or lower restricted areas and outpost systems.]]
 
 PearlDesc =
 [[Gemstone formed over the course of centuries within the egg of a super-incubatory species. Highly ornamental, these gems are themselves living seeds, lucent grains of potential life.&#xA;&#xA;Can be sold at a &lt;TECHNOLOGY&gt;Galactic Trade Terminal&lt;&gt;, or &lt;FUEL&gt;refined together&lt;&gt; with &lt;STELLAR&gt;Gravitino Balls&lt;&gt; to extract the &lt;TECHNOLOGY&gt;Di-Hydrogen&lt;&gt; within them.]]
@@ -168,13 +219,13 @@ BionicLure =
 [[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to vastly improve the &lt;HIGHLIGHT&gt;rarity&lt;&gt; of your catch, with a decent improvement to &lt;STELLAR&gt;size&lt;&gt;. Of particular interest to anglers seeking &lt;COMMODITY&gt;legendary fish&lt;&gt;.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
 
 DanglingOrb =
-[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;COMMODITY&gt;diurnal&lt;&gt; fish during the day. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;COMMODITY&gt;diurnal&lt;&gt; fish during the day, which are &lt;STELLAR&gt;slightly more valuable&lt;&gt; than normal fish.&#xA;Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
 
 ShadowLure =
-[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;SPECIAL&gt;nocturnal&lt;&gt; fish at night. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract &lt;SPECIAL&gt;nocturnal&lt;&gt; fish at night, which are &lt;STELLAR&gt;slightly more valuable&lt;&gt; than normal fish.&#xA;Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
 
 MagpulseLure =
-[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract fish that are only active during &lt;TECHNOLOGY&gt;storms&lt;&gt; while a storm is occuring. Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
+[[A specialist &lt;STELLAR&gt;lure&lt;&gt;, designed to greatly attract fish that are only active during &lt;TECHNOLOGY&gt;storms&lt;&gt; while a storm is occuring, which are &lt;STELLAR&gt;more valuable&lt;&gt; than normal fish.&#xA;Also improves the &lt;HIGHLIGHT&gt;rarity&lt;&gt; and &lt;STELLAR&gt;size&lt;&gt; of your catch only slightly less than Spicy Chum.&#xA;&#xA;Locate your &lt;TECHNOLOGY&gt;Fishing Rig&lt;&gt; and begin bait application with &lt;IMG&gt;FE_ALT1&lt;&gt;.]]
 
 AutoTrapDesc =
 [[An autonomous fishing device, designed for long-term deployment in a wide-range of water conditions.&#xA;&#xA;Once activated, the system will lure and trap aquatic creatures from various depths &lt;STELLAR&gt;regardless of trap placement&lt;&gt; and store them for later retrieval.]]
@@ -207,7 +258,7 @@ EnemyStrengthDesc =
 [[While exploring planets or deep space, you may occasionally encounter hostile creatures, planetary &lt;SPECIAL&gt;Sentinels&lt;&gt;, or armed &lt;FUEL&gt;pirates&lt;&gt;.&#xA;&#xA;This setting scales the difficulty of such combat encounters.&#xA;&#xA;&lt;TRADE&gt;Weak&lt;&gt;: 50% Enemy health&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Enemy health&#xA;&lt;FUEL&gt;Challenging&lt;&gt;: 200% Enemy health]]
 
 GroundCombatDesc =
-[[While exploring on foot, explorers may be confronted by hostile forces such as &lt;SPECIAL&gt;Sentinels&lt;&gt; and &lt;SPECIAL&gt;alien monstrosities&lt;&gt;.&#xA;&#xA;This setting adjusts the frequency of such hostile encounters, particularly how soon Sentinel Drones spawn when loading onto a planet and the time between Planetary Pirate Raids in 2 or 3 star conflict systems.&#xA;&#xA;&lt;TRADE&gt;Minimal&lt;&gt;: 166% time for hostile spawn&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% time for hostile spawn&#xA;&lt;FUEL&gt;Hostile&lt;&gt;: 33% time for hostile spawn, and like in vanilla selecting this option will also increase the chances of some planets having &lt;FUEL&gt;Aggressive Sentinels&lt;&gt;, particularly &lt;GREEN&gt;Lush&lt;&gt; planets.]]
+[[While exploring on foot, explorers may be confronted by hostile forces such as &lt;SPECIAL&gt;Sentinels&lt;&gt; and &lt;SPECIAL&gt;alien monstrosities&lt;&gt;.&#xA;&#xA;This setting adjusts the frequency of such hostile encounters, particularly how soon &lt;SPECIAL&gt;Sentinel Drones&lt;&gt; spawn when loading onto a planet and the time between &lt;FUEL&gt;Planetary Pirate Raids&lt;&gt; in 2 or 3 star conflict systems.&#xA;&#xA;&lt;TRADE&gt;Minimal&lt;&gt;: 167% time for hostile spawn&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% time for hostile spawn&#xA;&lt;FUEL&gt;Hostile&lt;&gt;: 50% time for hostile spawn, and like in vanilla selecting this option will also increase the chances of some planets having &lt;FUEL&gt;Aggressive Sentinels&lt;&gt;, particularly &lt;GREEN&gt;Lush&lt;&gt; planets.]]
 
 SpaceCombatDesc =
 [[In space, explorers may be confronted by hostile forces such as &lt;FUEL&gt;pirates&lt;&gt; and vengeful &lt;FUEL&gt;system authorities&lt;&gt;.&#xA;&#xA;This setting adjusts the frequency of combat encounters in space, as well as their health.&#xA;&#xA;&lt;TRADE&gt;Minimal&lt;&gt;: 33% Random hostile encounter frequency and 80% Enemy health in space&#xA;&lt;TECHNOLOGY&gt;Standard&lt;&gt;: 100% Random hostile encounter frequency and Enemy health in space&#xA;&lt;FUEL&gt;Hostile&lt;&gt;: 150% Random hostile encounter frequency and 120% Enemy health in space]]
@@ -217,6 +268,9 @@ TechDamageDesc =
 
 DeathConsequencesDesc =
 [[&lt;STELLAR&gt;No Item Loss&lt;&gt; will display the death screen, then resume play with no further consequences.&#xA;&#xA;&lt;STELLAR&gt;Standard&lt;&gt; will drop all carried inventory items (from your exosuit when on foot, or from your exocraft or starship if riding one) into a grave at the location of death. If the grave is reached before dying again or quitting, the items can be recovered.&#xA;&#xA;&lt;STELLAR&gt;Items Destroyed&lt;&gt; will permanently lose all carried inventory items (from your exosuit when on foot, or from your exocraft or starship if riding one).&#xA;&#xA;&lt;STELLAR&gt;Save Deleted&lt;&gt; is &lt;FUEL&gt;permadeath&lt;&gt; mode, where death will mean the end of your current journey. This option can only be selected when starting a new game, and cannot be changed later.&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: Periodic backups recommended for PTSd in &lt;FUEL&gt;permadeath&lt;&gt; mode in case of unexpected deaths from mod-glitches]]
+
+GoodsAvailableDesc =
+[[&lt;TECHNOLOGY&gt;Trade Terminals&lt;&gt; in different star systems will stock a wide range and quantity of items.&#xA;&#xA;This setting scales the amount on offer, as well as restricting the purchase of some critical survival elements.&#xA;&#xA;In PTSd the purchase price of all these goods are &lt;STELLAR&gt;greatly increased&lt;&gt; on any setting, so even on the &lt;TRADE&gt;Abundant&lt;&gt; setting attempting to get most of your basic Substances or Consumables by purchasing them will cost a &lt;STELLAR&gt;significant&lt;&gt; amount of units.]]
 
 InvStackLimitDesc =
 [[Gathered resources are stored in your &lt;STELLAR&gt;Inventory&lt;&gt;, which has a limited number of slots. Multiple items of the same type can be stored in one slot.&#xA;&#xA;This setting scales the &lt;TECHNOLOGY&gt;capacity of individual inventory slots&lt;&gt;, allowing more items to be carried. For any setting, the stacksize of slots in various inventories will be as follows:&#xA;&#xA;&lt;HIGHLIGHT&gt;1x&lt;&gt;: Exosuit&#xA;~&lt;HIGHLIGHT&gt;1.5x&lt;&gt;: Exocraft&#xA;&lt;HIGHLIGHT&gt;2x&lt;&gt;: Refiners, Starships&#xA;&lt;HIGHLIGHT&gt;4x&lt;&gt;: Freighter, Storage Containers&#xA;&#xA;&lt;TRADE&gt;Spacious&lt;&gt;: Default stack of 1,000 Substances or 8 Products&#xA;&lt;TECHNOLOGY&gt;Restricted&lt;&gt;: Default stack of 500 Substances or 5 Products&#xA;&lt;FUEL&gt;Harsh&lt;&gt;: Default stack of 300 Substances or 3 Products&#xA;&#xA;&lt;FUEL&gt;NOTE&lt;&gt;: When changing from a larger to a smaller stacksize, you will lose some items in any stacks which are currently larger than the new stack limit]]
@@ -438,10 +492,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "ALL_FAC_REWARD_OPT_A"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ManufacturingFacNanites}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_HARVESTER_DESCRIPTION"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", AMUDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "ACCESS2_DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AtlasPass2Desc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "ACCESS3_DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", AtlasPass3Desc}
 							}
 						},
 						{
@@ -528,6 +603,48 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_SUB_BINOCS_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", BasicSonarDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "VEHICLE_SUBSCAN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", Sonar}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "QUICK_MENU_SUB_RADAR"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", SonarQuickMenu}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "QUICK_MENU_SUB_RADAR_MISSING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", SonarQuickMenuFail}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_WATERMISSION3_MSG4"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DreamsDeep3Msg4}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_WATERMISSION3_OBJ3_TIP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DreamsDeep3Obj3Tip}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "O2_HARVESTER_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -596,6 +713,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_LOCATOR_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", ESSDesc}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_FREIGHT_OBJ4_TIP"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -635,6 +759,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", BasaltDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_END_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictEndDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_END_OPTA"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictTech}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_ABAND_END_OPTC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", DerelictNanites}
 							}
 						},
 					}
@@ -774,6 +919,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", DeathConsequencesDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "ITEM_SHOP_AVAILABILTY_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", GoodsAvailableDesc}
 							}
 						},
 						{
@@ -1083,6 +1235,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "RGB_WARP_2_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", EmerilDriveDesc}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "RGB_WARP_3_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", IndiumDriveDesc}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BLD_GASHARVESTER_DESC"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -1122,6 +1288,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"English", TeleportReceiver}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "NPC_CORE_ACT1_15_DESC"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", LeapDark3rdMonolith}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "UI_CORE_ACT1_STEP13_OBJ4_TIP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"English", LeapDarkAfter3rdMonolithTip}
 							}
 						},
 					}

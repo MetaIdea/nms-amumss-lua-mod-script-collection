@@ -2,7 +2,7 @@ Author = "Jaggid Edje"
 ModName = "MechMiner"
 ModNameSub = "JE"
 BaseDescription = "Adjusts the fuel maximum and charge of the Minotaur Bore"
-GameVersion = "4.72"
+GameVersion = "5.12"
 
 MB_Charge = 1000 -- default is 200
 MB_Multipler = 5  -- Default is 1

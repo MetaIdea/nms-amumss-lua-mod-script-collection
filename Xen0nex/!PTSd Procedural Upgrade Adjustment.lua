@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Procedural Upgrade Adjustment"
 Description = "Adjusts Exocraft & Multi-tool Upgrade Module strength to account for using 5x upgrades instead of 3x. Differentiates the Sentinel & Autophage Exosuit upgrades"
-GameVersion = "5_10"
+GameVersion = "5_12"
 
 OpticalDrillBonus =				1.33							--1.5		Bonus resource yields that the Optical Drill tech confers in a multi-tool	(Reduced since it stacks with both supercharged tech slots & PTSd's Multitool mining stat)
 
@@ -30,6 +30,35 @@ MechFlameUpSDmgMult =			3								--Multiplier to apply to the strength of damage
 AllExoCannonUpMult =			0.5								--Multiplier to apply to the strength of firerate, heat time, and Fire DOT duration from all procedural Exocraft Cannon or Mech Flamethrower upgrades.
 AllExoLaserUpMult =				0.5								--Multiplier to apply to the strength of heat time from all procedural Exocraft Mining Laser upgrades.
 AllExoEngineUpMult =			0.5								--Multiplier to apply to the strength of Top Speed and Fuel Usage bonuses from all procedural Exocraft Engine upgrades.
+
+--Changes to the Min & Max number of bonuses that certain upgrade modules can spawn with, and the weighting % chance to spawn with the Max number of bonuses
+NumStatsChanges =
+{
+	{--Upgrade ID		New Weighting		Old Weighting		Min		Max	number of bonuses
+		"UP_LASERX",	"MaxIsRare",		"MaxIsRare",		"2",	"4"			--"1",	"4"
+	},
+	{
+		"UP_LASER0",	"MaxIsRare",		"MaxIsRare",		"2",	"3"			--"1",	"4"
+	},
+	{
+		"UP_SCAN3",		"MaxIsRare",		"MaxIsRare",		"3",	"4"			--"2",	"4"
+	},
+	{
+		"UP_SCAN4",		"NoWeighting",		"MaxIsUncommon",	"4",	"4"			--"3",	"4"
+	},
+	{
+		"UP_SCAN0",		"MaxIsUncommon",	"MaxIsRare",		"2",	"3"			--"2",	"4"
+	},
+	{
+		"UP_BOLT0",		"MaxIsUncommon",	"MaxIsRare",		"2",	"3"			--"2",	"4"
+	},
+	{
+		"UP_HAZ0",		"MaxIsUncommon",	"NoWeighting",		"2",	"3"			--"4",	"4"
+	},
+	{
+		"UP_JET0",		"MaxIsUncommon",	"MaxIsRare",		"2",	"3"			--"2",	"4"
+	},
+}
 
 --Applying the above multipliers to the relevant stats on the various upgrade modules
 AdditiveUpgradeChanges =
@@ -518,9 +547,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}}}
 
 
-
 local ChangesToProcTech = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
+for i = 1, #NumStatsChanges do
+	local UpgradeID = NumStatsChanges[i][1]
+	local NewWeighting = NumStatsChanges[i][2]
+	local OldWeighting = NumStatsChanges[i][3]
+	local NumStatsMin = NumStatsChanges[i][4]
+	local NumStatsMax = NumStatsChanges[i][5]
+
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", UpgradeID},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"NumStatsMin", NumStatsMin},
+					{"NumStatsMax", NumStatsMax},
+				}
+			}
+			ChangesToProcTech[#ChangesToProcTech+1] =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", UpgradeID},
+				["REPLACE_TYPE"] 		= "ONCE",
+				["VALUE_MATCH"] = OldWeighting,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"WeightingCurve", NewWeighting}
+				}
+			}
+end
 for i = 1, #AdditiveUpgradeChanges do
 	local StatID = AdditiveUpgradeChanges[i][1][1]
 	local UpgradeMult = AdditiveUpgradeChanges[i][1][2]

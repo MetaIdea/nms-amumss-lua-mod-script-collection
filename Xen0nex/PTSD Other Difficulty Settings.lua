@@ -1,5 +1,5 @@
 ModName = "PTSd Other Difficulty Settings"
-GameVersion = "5_05"
+GameVersion = "5_12"
 Description = "Affects most of the Difficulty Setting menu options, except for Stack Sizes"
 
 DisablePlanetaryPirateRaids				=false								--false		Set true to disable any planetary pirate raids
@@ -116,7 +116,7 @@ RGNormal =						1										--1
 RGSlow =						0.5										--1
 
 --Multipliers for the "Space Combat" difficulty						(Set by the "Space Combat" setting)
-	--These multipliers applied to the "SpacePirateTimers" (& likely PlanetPirateTimers or other similar timers) below which control how long until the next "countdown to space encounter" begins (doesn't change how long the ~20 second countdown lasts)
+	--These multipliers applied to the "SpacePirateTimers" below which control how long until the next "countdown to space encounter" begins (doesn't change how long the ~20 second countdown lasts)
 SCMOff =						0										--0
 SCMSlow =						3										--5
 SCMNormal =						1										--1
@@ -134,9 +134,9 @@ SCMFastDiff =					0.2										--1.2
 	--These multiplers apply to the "SentinelTimers" below, which affect how soon after loading the game that Sentinels spawn nearby, not sure what else.
 	--Also seems to apply to the "PlanetPirateTimers" below, which affect how long between Planetary Pirate Raids
 GCMOff =						0										--0			
-GCMSlow =						1.66									--1.66
+GCMSlow =						1.67									--1.66
 GCMNormal =						1										--1
-GCMFast =						0.33									--0.33
+GCMFast =						0.5										--0.33
 --Multipliers for the "Ground Combat Sentinel Timers" difficulty	(Set by the "On-Foot Combat" setting)
 	--These multipliers are intended to affect how long sentinels will continue to search for you once out of sight, based on the time set in GCPLAYERGLOBALS.GLOBAL.MBIN
 	--However in practice they are purely cosmetic as they only affect the displayed timer on the UI, not the actual time that Sentinels will search for you
@@ -201,8 +201,8 @@ PirateTimersChanges =
 	{--These timers seem to be modified by the "GCMSlow", "GCMNormal", & "GCMFast" multipliers above
 		{"PlanetPirateTimers"},		--Probably how long until the next "planetary Pirate raid" begins
 		{	--Type			X		Y		(I believe X & Y set the "range" of possible times to use, probably in seconds)
-			{"High",		500,	700},							--800,	1000	Conflict level 3 systems
-			{"Normal",		800,	1000},							--1000,	1400	Conflict level 2 systems
+			{"High",		620,	820},							--800,	1000	Conflict level 3 systems
+			{"Normal",		1240,	1640},							--1000,	1400	Conflict level 2 systems
 			{"Low",			0,		0},								--0,	0		Conflict level 1 systems	(No planetary pirate raids)
 
 		}

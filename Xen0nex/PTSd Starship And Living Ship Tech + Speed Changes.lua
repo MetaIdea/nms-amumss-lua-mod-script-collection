@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '5.10'
+Version = '5_12'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -38,6 +38,8 @@ EngModLSBstManMult = 0.25								--	Multiplier to apply to the bonus boost maneu
 ShieldModMult = 1										--	Multiplier to apply to the bonus shield from regular ship Shield upgrade modules	NOTE, the game increases this by 50%
 ShieldLSModMult = 1										--	Multiplier to apply to the bonus shield from Living ship Shield upgrade modules	NOTE, the game increases this by 50%
 
+AblativeArmourMult = 2.668								--	Multiplier to apply to the bonus shield from the crafted Ablative Armour tech (vanilla 0.05)	NOTE, the game increases this by 50%
+
 --Changes the bonus Pulse Jump speed for Sub-Light Amplifier, since it is greatly increased when supercharged.
 SublightBonus = 1.2										--1.3
 
@@ -55,17 +57,29 @@ RemoveVesperAutoCharge = true							--false
 RemoveLivingAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
-ShipLaunchRechargeMult = 3								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
-LivingShipLaunchRechargeMult = 0.75						--	Multiplier to apply to the cost of Mordite / Oxygen / Cond. Carbon on recharging Living ship launchers		200 / 200 / ? to fully charge
-ShipPulseRechargeMult = 1.25							--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine							100 / 40 to fully charge
-LivingShipPulseRechargeMult = 1							--	Multiplier to apply to the cost of Silver / Carbon / Viscous Fluids on recharging Living ship Pulse engine	200 / ? to fully charge
-LivingShipWarpRechargeMult = 1.5						--	Multiplier to apply to the cost of Chromatic Metal / Processed Meat / Living Slime on recharging Living ship Hyperdive		60 / ? / ? to fully charge
-
+ShipLaunchRechargeMult = 5								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
+LivingShipLaunchRechargeMult = 1.5						--	Multiplier to apply to the cost of Mordite / Oxygen / Cond. Carbon on recharging Living ship launchers		200 / 100 / 67 to fully charge
+ShipPulseRechargeMult = 2.5								--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine							200 / 40 to fully charge
+LivingShipPulseRechargeMult = 2							--	Multiplier to apply to the cost of Silver / Carbon / Viscous Fluids on recharging Living ship Pulse engine	200 / 200 / 200 to fully charge
+InterceptorPulseRechargeMult = 2.5						--	Multiplier to apply to the cost of Tritium on recharging Interceptor Pulse engine							200 to fully charge
+LivingShipWarpRechargeMult = 2							--	Multiplier to apply to the cost of Chromatic Metal / Processed Meat / Living Slime on recharging Living ship Hyperdive		60 / ??? / 120 to fully charge
 ShipShieldRechargeMult = 1.5							--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging ship shields						100 / 40 to fully charge
-LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of Pugneum / Mordite / Di-Hydrogen recharging Living ship shields			200 / ? / ? to fully charge
+LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of Pugneum / Mordite / Di-Hydrogen recharging Living ship shields			200 / 200 / 200 to fully charge
+InterceptorShieldRechargeMult = 1.5						--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging Interceptor shields				100 / 40 to fully charge
+
+TritiumChargeValue =2									--1		Replacer for much "charge" each unit of Tritium restores for starship Pulse engine							(vanilla needs 200 to fully recharge)
+PyriteChargeValue =	1									--5		Replacer for much "charge" each unit of Pyrite restores for starship Pulse engine							(vanilla needs 40 to fully recharge)
+MorditeChargeValue =2									--1		Replacer for much "charge" each unit of Mordite restores for Living Ship launchers and shields				(vanilla needs 200 to fully recharge either)
+PugneumChargeValue =2									--1		Replacer for much "charge" each unit of Pugneum restores for Living Ship shields and Interceptor launchers	(vanilla needs 200 to fully recharge either)
+DiHydrogenChargeValue =	2								--1		Replacer for much "charge" each unit of Di-Hydrogen restores for Living Ship shields and Animus Beam		(vanilla needs 200 to fully recharge either)
+ChromaticMetalChargeValue =	2							--2		Replacer for much "charge" each unit of Chromatic Metal restores for Living Ship hyperdrive					(vanilla needs 60 to fully recharge)
+SilverChargeValue =			2							--1		Replacer for much "charge" each unit of Silver restores for Living Ship pulse drive							(vanilla needs 200 to fully recharge)
+ViscousFluidsChargeValue =	2							--1		Replacer for much "charge" each unit of Viscous Fluids restores for Living Ship pulse drive					(vanilla needs 200 to fully recharge)
+ProcessedMeatChargeValue =	3							--0		Replacer for much "charge" each unit of Processed Meat restores for Living Ship hyperdrive					(vanilla needs ??? to fully recharge)
 
 StarshieldBattMult = 2									--	Multiplier to apply to the effectiveness of Starshield Battery. In vanilla it only refills half of your starship's shield
-LivingShipUseBatt = true								--false		Allows Living Ships to use Starshield Batteries to recharge shields in addition to Pugneum
+RadiantShardMult = 1.5									--	Multiplier to apply to the effectiveness of Radiant Shard on all Interceptor techs. In vanilla it restores 200 charge.
+LivingShipUseBatt = true								--false		Allows Living Ships to use Starshield Batteries to recharge shields in addition to Pugneum / Mordite / Di-Hydrogen
 RoboUseBattNotSodium = true								--false		Allows Sentinel Interceptors to use Starshield Batteries to recharge shields INSTEAD OF Sodium
 
 --Price to buy an additional Living Ship aftering completing the Starbirth missionline
@@ -140,7 +154,7 @@ ShipTechChanges =
 	},
 	{
 		{
-			"SHIPJUMP_SPEC"			--Special Pulse Engine, perhaps an expedition reward?
+			"SHIPJUMP_SPEC"			--Waveform Engine
 		},
 		{
 			{
@@ -395,6 +409,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {"ID", "LAUNCHER_SPEC"},
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeMultiplier', Invert (ShipLaunchRechargeMult)}
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {"ID", "LAUNCHER_ALIEN"},
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
@@ -411,11 +433,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {"ID", "SHIPJUMP_SPEC"},
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeMultiplier', Invert (ShipPulseRechargeMult)}
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {"ID", "SHIPJUMP_ALIEN"},
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				VALUE_CHANGE_TABLE 	= {
 					{'ChargeMultiplier', Invert (LivingShipPulseRechargeMult)}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "SHIPJUMP_ROBO"},
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeMultiplier', Invert (InterceptorPulseRechargeMult)}
 				}
 			},
 			{
@@ -443,8 +481,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {"ID", "SHIPSHIELD_ROBO"},
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeMultiplier', Invert (InterceptorShieldRechargeMult)}
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {"ID", "PHOTONIX_CORE", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.15, EngModSpdMult)},
@@ -452,7 +497,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_BOBBLE_ART", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.05, EngModSpdMult)},
@@ -460,22 +504,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "HYPERDRIVE_ROBO"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'ChargeAmount', RoboWarpTankSize}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "SHIPJUMP_ROBO"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'ChargeAmount', RoboPulseTankSize}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "UT_SHIPSHIELD", "StatsType", "Ship_Armour_Shield_Strength"},
+				MATH_OPERATION 		= '*',
+				SECTION_UP = 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'Bonus', AblativeArmourMult}		--0.05
 				}
 			},
 			--[[
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_RAINBOW", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -483,7 +532,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_DARK", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -491,7 +539,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_RED", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -499,7 +546,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_GREEN", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -507,7 +553,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_GOLD", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -515,7 +560,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "T_SHIP_PIRATE", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'Bonus', BonusMult (1.01, EngModSpdMult)},
@@ -542,6 +586,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'PRESERVE',
 				VALUE_CHANGE_TABLE 	= {
 					{'ChargeValue', StarshieldBattMult*ShipShieldRechargeMult}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "DRONE_SHARD"},
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'PRESERVE',
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeValue', RadiantShardMult}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {"ID", "FOOD_R_MEAT"},
+				VALUE_CHANGE_TABLE 	= {
+					{'ChargeValue', ProcessedMeatChargeValue}
 				}
 			},
 		}
@@ -589,7 +647,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_LAUN4"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'NumStatsMin', 3},
 					{'NumStatsMax', 3}
@@ -597,7 +654,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_SLASR2"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'NumStatsMin', 2},		--1
 					{'NumStatsMax', 2}		--2
@@ -605,7 +661,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_SLASR3"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'NumStatsMin', 2},		--2
 					{'NumStatsMax', 3}		--2
@@ -613,7 +668,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_SLASR4"},
-				MATH_OPERATION 		= '',
 				VALUE_CHANGE_TABLE 	= {
 					{'NumStatsMin', 3},		--2
 					{'NumStatsMax', 3}		--2
@@ -621,7 +675,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN0", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.003, LnchModSpdMult)},	--1.01
@@ -630,7 +683,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN1", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, LnchModSpdMult)},
@@ -639,7 +691,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN2", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.02, LnchModSpdMult)},
@@ -648,7 +699,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN3", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.05, LnchModSpdMult)},
@@ -657,7 +707,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUN4", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.08, LnchModSpdMult)},
@@ -666,7 +715,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_LAUNX", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, LnchModSpdMult)},
@@ -675,7 +723,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_LAUN1", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, LnchModLSSpdMult)},
@@ -684,7 +731,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_LAUN2", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.02, LnchModLSSpdMult)},
@@ -693,7 +739,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_LAUN3", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.05, LnchModLSSpdMult)},
@@ -702,7 +747,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_LAUN4", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.08, LnchModLSSpdMult)},
@@ -711,7 +755,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE0", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, EngModSpdMult)},
@@ -720,7 +763,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE1", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, EngModSpdMult)},
@@ -729,7 +771,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE2", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModSpdMult)},
@@ -738,7 +779,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE3", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModSpdMult)},
@@ -747,7 +787,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSE4", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModSpdMult)},
@@ -756,7 +795,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_PULSEX", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, EngModSpdMult)},
@@ -765,7 +803,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_PULSE1", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.01, EngModLSSpdMult)},
@@ -774,7 +811,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_PULSE2", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModLSSpdMult)},
@@ -783,7 +819,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_PULSE3", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModLSSpdMult)},
@@ -792,7 +827,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_PULSE4", "StatsType", "Ship_Boost"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', BonusMult (1.1, EngModLSSpdMult)},
@@ -801,7 +835,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL0", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.01*ShieldModMult},
@@ -810,7 +843,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL1", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.05*ShieldModMult},
@@ -819,7 +851,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL2", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.05*ShieldModMult},
@@ -828,7 +859,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL3", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.1*ShieldModMult},
@@ -837,7 +867,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL4", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.2*ShieldModMult},
@@ -846,7 +875,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHLX", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.05*ShieldModMult},
@@ -855,7 +883,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_S_SHL1", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.05*ShieldLSModMult},
@@ -864,7 +891,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_S_SHL2", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.05*ShieldLSModMult},
@@ -873,7 +899,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UA_S_SHL3", "StatsType", "Ship_Armour_Shield_Strength"},
-				MATH_OPERATION 		= '',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'ValueMin', 0.1*ShieldLSModMult},
@@ -892,7 +917,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {"StatsType", "Ship_Hyperdrive_JumpsPerCell"},
 				REPLACE_TYPE 		= 'ALL',
-				MATH_OPERATION 		= '',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -903,7 +927,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {"StatsType", "Freighter_Hyperdrive_JumpsPerCell"},
 				REPLACE_TYPE 		= 'ALL',
-				MATH_OPERATION 		= '',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SECTION_UP = 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -978,7 +1001,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA/\SIMULATION/\MISSIONS/TABLES\SPACEPOIMISSIONTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				MATH_OPERATION 		= '',
 				VALUE_MATCH 		= 'ROBOT1',
 				VALUE_MATCH_OPTIONS = '=',
 				REPLACE_TYPE 		= 'ALL',	
@@ -987,16 +1009,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				MATH_OPERATION 		= '',
 				VALUE_MATCH 		= '10000',
 				VALUE_MATCH_OPTIONS = '=',
-				REPLACE_TYPE 		= '',	
 				VALUE_CHANGE_TABLE 	= {
 					{'Cost',		LivingNanitePrice}
 				}
 			},
 			{
-				MATH_OPERATION 		= '',
 				VALUE_MATCH 		= '79200',
 				VALUE_MATCH_OPTIONS = '=',
 				REPLACE_TYPE 		= 'ALL',	
@@ -1030,12 +1049,71 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "BIOSHIP_COMP1",		"ID", "ROBOT1"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"ID", ConBridgeSubstance}
+				}
+			},
+		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "ROCKETSUB"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", TritiumChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "DUSTY1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", PyriteChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "CREATURE1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", MorditeChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "ROBOT1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", PugneumChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHSUB"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", DiHydrogenChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "STELLAR2"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", ChromaticMetalChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "ASTEROID1"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", SilverChargeValue}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", "SPACEGUNK5"},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"ChargeValue", ViscousFluidsChargeValue}
 				}
 			},
 		}
@@ -1055,8 +1133,6 @@ for i = 1, #ShipTechChanges do
 			ChangesToShipTech[#ChangesToShipTech+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", TechID, "StatsType", StatID},
 				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 				["SECTION_UP"] = 1,
@@ -1072,8 +1148,6 @@ if LivingShipUseBatt then
 ChangesToShipTech[#ChangesToShipTech+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "SHIELD_ALIEN"},
 				["PRECEDING_KEY_WORDS"] = {"ChargeBy",		"NMSString0x10.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -1089,8 +1163,6 @@ ChangesToShipTech[#ChangesToShipTech+1] =
 ChangesToShipTech[#ChangesToShipTech+1] =
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
-				--["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "SHIPSHIELD_ROBO"},
 				["PRECEDING_KEY_WORDS"] = {"ChargeBy",		"NMSString0x10.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -1103,7 +1175,6 @@ for i = 1, #ShipTrailTechs do
 
 			ChangesToShipTech[#ChangesToShipTech+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", TrailID},
 				["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 				["VALUE_CHANGE_TABLE"] 	=

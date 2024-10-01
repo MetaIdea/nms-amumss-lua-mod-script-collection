@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 --ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "5_03"
+GameVersion = "5_12"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships & some freighters (individual ships have additonal multipliers applied)
@@ -13,8 +13,9 @@ ShipHull =				2.5*1.15						--Starting AI Hull health for all starships & freigh
 ShipHullPerLevel =		2.5*1.15						--Additional AI Hull health added per level for all starships & freighters (except for CIV_LEADER or Dreadnoughts)
 ShipShield =			2.5*1.15						--Starting AI Shield health for all starships & freighters (except for CIV_LEADER or Sentinel / Pirate Dreadnoughts)
 ShipShieldPerLevel =	2.5*1.15						--Additional AI Shield health added per level for all starships & freighters (except for CIV_LEADER or Sentinel / Pirate Dreadnoughts)
-BossFreighterParts =	2.5*1.15						--Starting AI health for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles (Sentinel or Pirate Dreadnought) during Sentinel 5 star / Pirate Dreadnought encounters
-BossFreighterPartsPerLevel =2.5*1.15					--Additional AI health added per level for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles
+BossFreighterParts =	2.1*1.15						--Starting AI health for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles (Sentinel or Pirate Dreadnought) during Sentinel 5 star / Pirate Dreadnought encounters
+BossFreighterPartsPerLevel =2.1*1.15					--Additional AI health added per level for enemy freighter parts (and the Dreadnought hull itself) & Pirate Frigates in "boss" freighter battles
+CargoPods =				1								--Both Starting & Additional health for all types of Cargo Pods, both atteched or standalone near freighters
 
 --Adds additional Squadrons to appear at each Wanted Level, for all multiplayer group sizes
 AddedSquadrons =
@@ -42,33 +43,84 @@ BossFreighterPartsChanges =
 {
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/DESTRUCTIBLEPARTS/LARGECANNONTURRET/ENTITIES/LARGECANNONTURRET.ENTITY.MBIN",	--Anti-Freighter Cannons during Pirate Dreadnought battles
-		math.floor(BossFreighterParts*17000*12),	math.floor(BossFreighterPartsPerLevel*56000*12),	"FREIGHT_HULL",				--17000 Health,		56000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
+		math.floor(BossFreighterParts*17000*12),	math.floor(BossFreighterPartsPerLevel*56000*12),	"BOSSFREI_HULL",	--17000 Health,		56000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
 		"CANNONLOOT" }				--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
 	},
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/DESTRUCTIBLEPARTS/PIRATEFREIGHTERTHRUSTER0/ENTITIES/DATA.ENTITY.MBIN",		--Freighter Warp Drives during Pirate Dreadnought battles
-		math.floor(BossFreighterParts*4100*18),	math.floor(BossFreighterPartsPerLevel*32000*18),	"FREIGHT_HULL",			--4100 Health,		32000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		math.floor(BossFreighterParts*4100*18),	math.floor(BossFreighterPartsPerLevel*32000*18),	"BOSSFREI_HULL",		--4100 Health,		32000 LevelledExtraHealth,		"CARGO" DamageMultiplier
 		"WARPLOOT" }				--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
 	},
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/DESTRUCTIBLEPARTS/ANTISHIPTURRET/ENTITIES/ANTISHIPTURRET.ENTITY.MBIN",		--Anti-Ship Turrets during Pirate Dreadnought battles
-		math.floor(BossFreighterParts*4100*2.5),	math.floor(BossFreighterPartsPerLevel*28000*2.5),	"FREIGHT_HULL",				--4100 Health,		28000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
-		"TURRETLOOT" }						--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
+		math.floor(BossFreighterParts*4100*2.5),	math.floor(BossFreighterPartsPerLevel*28000*2.5),	"BOSSFREI_HULL",	--4100 Health,		28000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
+		"TURRETLOOT" }				--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
 	},
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/DESTRUCTIBLEPARTS/SHIELDGENERATOR0/ENTITIES/SHIELDGENERATOR.ENTITY.MBIN",	--Freighter Shield Generators during Pirate Dreadnought battles
-		math.floor(BossFreighterParts*1500*4),	math.floor(BossFreighterPartsPerLevel*8000*4),	"FREIGHT_HULL",				--1500 Health,		8000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
+		math.floor(BossFreighterParts*1500*4),	math.floor(BossFreighterPartsPerLevel*8000*4),	"SHIP_SHIELD",				--1500 Health,		8000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
 		"SHIELDGENLOOT" }			--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
 	},
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/DESTRUCTIBLEPARTS/FUELROD/ENTITIES/ROD.ENTITY.MBIN",							--Exposed Fuel Rods during Pirate Dreadnought battles
-		math.floor(BossFreighterParts*2000*8),	math.floor(BossFreighterPartsPerLevel*8000*8),	"FREIGHT_HULL",				--2000 Health,		8000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
+		math.floor(BossFreighterParts*2000*8),	math.floor(BossFreighterPartsPerLevel*8000*8),	"BOSSFREI_HULL",			--2000 Health,		8000 LevelledExtraHealth,		"FREIGHT_HULL" DamageMultiplier
 		"FUELRODLOOT" }				--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
 	},
 	{
 		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/PIRATECRUISER/ENTITIES/PIRATECRUISERDATA.ENTITY.MBIN",						--Pirate Frigates during Pirate Dreadnought battles
-		"10",									"0",									"FREIGHT_HULL",						--10 Health,	0 LevelledExtraHealth,		"SHIP_HULL" DamageMultiplier		This is a placeholder, actual health contrilled by PIRATE_FRIG Definition below
+		"10",									"0",									"BOSSFREI_HULL",					--10 Health,	0 LevelledExtraHealth,		"SHIP_HULL" DamageMultiplier		This is a placeholder, actual health contrilled by PIRATE_FRIG Definition below
 		"PIRATLTEASY" }				--""	Replace with a reward from REWARDTABLE.EXML or leave as "" for no reward
+	},
+}
+
+--Adjusts health, damage multipliers, and possible loot for various attached and standalone "Cargo Pods" on or near freighters
+CargoPodChanges =
+{
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERA/ENTITIES/CONTAINER_A.ENTITY.MBIN",	--Attached Freighter Cargo Pod type A
+		math.floor(CargoPods*4000*1),	math.floor(CargoPods*16000*1),	"CARGO",						--4000 Health,		16000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERB/ENTITIES/CONTAINER_B.ENTITY.MBIN",	--Attached Freighter Cargo Pod type B
+		math.floor(CargoPods*4000*1),	math.floor(CargoPods*16000*1),	"CARGO",						--4000 Health,		16000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERC/ENTITIES/CONTAINER_C.ENTITY.MBIN",	--Attached Freighter Cargo Pod type C
+		math.floor(CargoPods*2000*2),	math.floor(CargoPods*9000*1.33),"CARGO",						--2000 Health,		9000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERE/ENTITIES/CONTAINER_E.ENTITY.MBIN",	--Attached Freighter Cargo Pod type E
+		math.floor(CargoPods*4000*1),	math.floor(CargoPods*14000*1),	"CARGO",						--4000 Health,		14000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERF/ENTITIES/CONTAINER_F.ENTITY.MBIN",	--Attached Freighter Cargo Pod type F
+		math.floor(CargoPods*4000*1),	math.floor(CargoPods*14000*1),	"CARGO",						--4000 Health,		14000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERG/ENTITIES/CONTAINER_G.ENTITY.MBIN",	--Attached Freighter Cargo Pod type G
+		math.floor(CargoPods*2000*2),	math.floor(CargoPods*9000*1.33),"CARGO",						--2000 Health,		9000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERH/ENTITIES/CONTAINER_H.ENTITY.MBIN",	--Attached Freighter Cargo Pod type H
+		math.floor(CargoPods*2000*2),	math.floor(CargoPods*9000*1.33),"CARGO",						--2000 Health,		9000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	--The health values for the two standalone Cargo Pods below don't seem to actually be changed by the values set here, nor does adjusting the "CARGO" multiplier in "PTSd Weapons Rebalance.lua" affect them
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC/ENTITIES/SMALLFREIGHTER.ENTITY.MBIN",--Small standalone Cargo Pod near freighters
+		math.floor(CargoPods*4000*1.25),	math.floor(CargoPods*14000*1),	"CARGO",					--4000 Health,		0 LevelledExtraHealth,			"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
+	},
+	{
+		{ "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC/ENTITIES/_TINY_FREIGHTER.ENTITY.MBIN",--Tiny standalone Cargo Pod near freighters
+		math.floor(CargoPods*2000*2.5),		math.floor(CargoPods*14000*1),	"CARGO",					--2000 Health,		14000 LevelledExtraHealth,		"CARGO" DamageMultiplier
+		"FREIGHTERLOOT",		"SMUGGLELOOT"}				--"FREIGHTERLOOT",		"SMUGGLELOOT"		Rewards in Regular, Outlaw systems
 	},
 }
 
@@ -1493,8 +1545,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},			--default ""
-		{"Health", math.floor(BossFreighterParts*13125*0.5)},					--default 13125
-		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*124375*0.5)},	--default 124375
+		{"Health", math.floor(BossFreighterParts*13125*0.25)},					--default 13125
+		{"LevelledExtraHealth", math.floor(BossFreighterPartsPerLevel*124375*0.25)},	--default 124375
 		{"Shield", ""},				--default ""
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -2248,54 +2300,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 --WIP
 --[[
 {	
-	["MBIN_FILE_SOURCE"] 	= {"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC/ENTITIES/SMALLFREIGHTER.ENTITY.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
-	{
-		{--Applies health increases to the free-floating Cargo Pods near Freighters
-			["MATH_OPERATION"] 		= "*",
-			["REPLACE_TYPE"] 		= "",
-			["INTEGER_TO_FLOAT"] = "PRESERVE",
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Health", 10 * ShipHull}						--4000
-			}
-		},
-		{--Applies health increases to the free-floating Cargo Pods near Freighters
-			["MATH_OPERATION"] 		= "",
-			["REPLACE_TYPE"] 		= "",
-			["INTEGER_TO_FLOAT"] = "PRESERVE",
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"LevelledExtraHealth", math.floor(10 * ShipHullPerLevel * 14000)}				--0
-			}
-		},
-	}
-},
-{	
-	["MBIN_FILE_SOURCE"] 	= {"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC/ENTITIES/_TINY_FREIGHTER.ENTITY.MBIN"},
-	["EXML_CHANGE_TABLE"] 	= 
-	{
-		{--Applies health increases to the free-floating Cargo Pods near Freighters
-			["MATH_OPERATION"] 		= "*",
-			["REPLACE_TYPE"] 		= "",
-			["INTEGER_TO_FLOAT"] = "PRESERVE",
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Health", 10 * ShipHull}						--2000
-			}
-		},
-		{--Applies health increases to the free-floating Cargo Pods near Freighters
-			["MATH_OPERATION"] 		= "",
-			["REPLACE_TYPE"] 		= "",
-			["INTEGER_TO_FLOAT"] = "PRESERVE",
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"LevelledExtraHealth", math.floor(10 * ShipHullPerLevel * 14000)}				--14000
-			}
-		},
-	}
-},
-{	
 	["MBIN_FILE_SOURCE"] 	= {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/MODULE_TURRET_L/ENTITIES/TURRET_L.ENTITY.MBIN"},
 	["EXML_CHANGE_TABLE"] 	= 
 	{
@@ -2435,7 +2439,7 @@ for i = 1, #LargerBattleChanges do
 	end
 end
 
-local ChangesToBossFreighterParts = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+local ChangesToMBINChangeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 
 for i = 1, #BossFreighterPartsChanges do
 	local FilePath = BossFreighterPartsChanges[i][1][1]
@@ -2444,7 +2448,7 @@ for i = 1, #BossFreighterPartsChanges do
 	local DamageMultiplier = BossFreighterPartsChanges[i][1][4]
 	local GivesReward = BossFreighterPartsChanges[i][1][5]
 			
-			ChangesToBossFreighterParts[#ChangesToBossFreighterParts+1] =
+			ChangesToMBINChangeTable[#ChangesToMBINChangeTable+1] =
 			{
 				["MBIN_FILE_SOURCE"] 	= {FilePath},
 				["EXML_CHANGE_TABLE"] 	= 
@@ -2457,6 +2461,35 @@ for i = 1, #BossFreighterPartsChanges do
 							{"LevelledExtraHealth", 	LevelledExtraHealth},
 							{"DamageMultiplier", 	DamageMultiplier},
 							{"GivesReward", 	GivesReward},
+							{"HideReward", 	"True"},	--"False"
+						}
+					}
+				}
+			}
+end
+
+for i = 1, #CargoPodChanges do
+	local FilePath = CargoPodChanges[i][1][1]
+	local Health = CargoPodChanges[i][1][2]
+	local LevelledExtraHealth = CargoPodChanges[i][1][3]
+	local DamageMultiplier = CargoPodChanges[i][1][4]
+	local GivesReward = CargoPodChanges[i][1][5]
+	local OutLawReward = CargoPodChanges[i][1][6]
+			
+			ChangesToMBINChangeTable[#ChangesToMBINChangeTable+1] =
+			{
+				["MBIN_FILE_SOURCE"] 	= {FilePath},
+				["EXML_CHANGE_TABLE"] 	= 
+				{
+					{
+						["INTEGER_TO_FLOAT"] = "PRESERVE",
+						["VALUE_CHANGE_TABLE"] 	=
+						{
+							{"Health", 	Health},
+							{"LevelledExtraHealth", 	LevelledExtraHealth},
+							{"DamageMultiplier", 	DamageMultiplier},
+							{"GivesReward", 	GivesReward},
+							{"PirateSystemAltReward", 	OutLawReward},
 							{"HideReward", 	"True"},	--"False"
 						}
 					}

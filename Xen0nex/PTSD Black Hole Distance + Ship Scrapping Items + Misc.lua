@@ -1,14 +1,17 @@
 ModName = "PTSd Black Hole Distance + Ship Scrapping Items + Misc"
-GameVersion = "5_05"
+GameVersion = "5_12"
 Description = "Black Holes send you farther, Adjusts Living Ship Module Evolution costs, Changes Illegal goods price markup, Adjust Death Penalty units cost, Replaces some of the substances you can receive from scrapping ships"
 
 --Controls how much of a bonus Supercharged Tech Slots give
 SpecialTechSlotBonus =					1.2									--1.25
 
---Controls how much of a bonus to mining yield you get during Radiation Storms
-StormBonusMiningAmountMod =				1.9									--2.55
+--Controls the various bonuses you get during storms on Hot/Toxic/Cold/Radioactive planets
+StormBonusJetpackMod =					0.25								--0.25	Controls how much slower your Jetpack tanks deplete during Storms on Hot planets
+StormBonusSprintMod =					0.05								--0.25	Controls how much slower your Stamina bar depletes during Storms on Toxic planets
+StormBonusMiningHeatMod =				9									--3		Controls how much better your Mining Beam stays cool during Storms on Cold planets
+StormBonusMiningAmountMod =				1.9									--2.55	Controls how much of a bonus to mining resource yield you get during Storms on Radioactive planets
 
---Trade Rocket fuel use?	(Uses Tritium as fuel by default, has ChargeAmount of 50 by default) (charging amount altered in PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua)
+--Trade Rocket fuel use?	(Uses Tritium as fuel by default, has ChargeAmount of 50 by default) (charging amount altered in "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance.lua", Tritium ChargeValue altered in "PTSd Starship And Living Ship Tech + Speed Changes.lua")
 RocketFuelUse =							10									--10
 
 --Affects distance that a black hole will warp you towards the galaxy center. Appears to roughly drop you (VoxelDist +/- VoxelVariation) x 500ly closer to the the galaxy core.
@@ -103,8 +106,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["EXML_CHANGE_TABLE"] 	= 
 		{
 			{
-				["REPLACE_TYPE"] 		= "",
-				["MATH_OPERATION"] 		= "",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RocketLockerFuelUse",	RocketFuelUse},	
@@ -119,6 +120,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--{"DeathMoneyPenaltyHardMode", DeathMoneyPenaltyHardMode},
 					{"MissionSurveyMaxGuidanceDistance", MissionSurveyMaxGuidanceDistance},
 					{"SpecialTechSlotBonus", SpecialTechSlotBonus},
+					{"StormBonusJetpackMod", StormBonusJetpackMod},
+					{"StormBonusSprintMod", StormBonusSprintMod},
+					{"StormBonusMiningHeatMod", StormBonusMiningHeatMod},
 					{"StormBonusMiningAmountMod", StormBonusMiningAmountMod},
 					{"RewardInventoryClassItemFromShipSalvage", ClassItemFromShipSalvage},
 					{"MaxStandingTechDiscount", MaxStandingTechDiscount},

@@ -2,12 +2,7 @@ Author = "Jaggid Edje"
 ModName = "SettlementPop"
 ModNameSub = "JE"
 BaseDescription = "Increases population gain from Settlement events"
-GameVersion = "4.22"
-ModVersion = "v4.22"
-FileSource1 = "GCSETTLEMENTGLOBALS.MBIN"
-
-
-
+GameVersion = "5.12"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -20,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "GCSETTLEMENTGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PerkStatStrengthValues","Population","PerkStatStrengthValues","PositiveWide"}, 

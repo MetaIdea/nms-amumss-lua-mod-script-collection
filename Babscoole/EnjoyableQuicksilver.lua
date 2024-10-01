@@ -6,13 +6,15 @@ QUICKSILV_S = [[
             </Property>
 ]]
 
-REWARD_T = [[
+function  REWARD_ALL (AMOUNT)
+    return
+[[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="10" />
-              <Property name="AmountMax" value="10" />
+              <Property name="AmountMin" value="]]..AMOUNT..[[" />
+              <Property name="AmountMax" value="]]..AMOUNT..[[" />
               <Property name="RoundNumber" value="False" />
               <Property name="Currency" value="GcCurrency.xml">
                 <Property name="Currency" value="Specials" />
@@ -20,85 +22,13 @@ REWARD_T = [[
             </Property>
           </Property>
 ]]
+end
 
-REWARD_S = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="25" />
-              <Property name="AmountMax" value="25" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-]]
-
-REWARD_M = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="50" />
-              <Property name="AmountMax" value="50" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-]]
-
-REWARD_MM = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="75" />
-              <Property name="AmountMax" value="75" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-]]
-
-REWARD_L = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="100" />
-              <Property name="AmountMax" value="100" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-]]
-
-REWARD_XL = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="250" />
-              <Property name="AmountMax" value="250" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-]]
-
-REWARD_ENTRIES = [[
+function  REWARD_ENTRIES (NAME, AMOUNT)
+    return
+[[
     <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_XSS" />
+      <Property name="Id" value="]]..NAME..[[" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
@@ -109,100 +39,8 @@ REWARD_ENTRIES = [[
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="5" />
-              <Property name="AmountMax" value="5" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_XXS" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="10" />
-              <Property name="AmountMax" value="10" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_XS" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="25" />
-              <Property name="AmountMax" value="25" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_ML" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="125" />
-              <Property name="AmountMax" value="125" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_XL" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="250" />
-              <Property name="AmountMax" value="250" />
+              <Property name="AmountMin" value="]]..AMOUNT..[[" />
+              <Property name="AmountMax" value="]]..AMOUNT..[[" />
               <Property name="RoundNumber" value="False" />
               <Property name="Currency" value="GcCurrency.xml">
                 <Property name="Currency" value="Specials" />
@@ -213,6 +51,7 @@ REWARD_ENTRIES = [[
       </Property>
     </Property>
 ]]
+end
 
 MISSIONS_QS = [[
               <Property value="GcGenericMissionStage.xml">
@@ -228,22 +67,22 @@ MISSIONS_QS = [[
 ]]
 
 Rewards = {{
-    ["REWARD"] = REWARD_T,
+    ["REWARD"] = REWARD_ALL (10),
     ["IDS"] = {"DRONE_LOOT"}
 }, {
-    ["REWARD"] = REWARD_S,
+    ["REWARD"] = REWARD_ALL (25),
     ["IDS"] = {"QUAD_LOOT", "CORRUPT_LOOT", "DE_HIVESUB", "PIRATE_BOUNTY1", "PROC_PROD_BONES", "PROC_PROD_SCRAP"}
 }, {
-    ["REWARD"] = REWARD_M,
+    ["REWARD"] = REWARD_ALL (50),
     ["IDS"] = {"PIRATE_BOUNTY2", "BEGIN_SALVAGE", "PIRATE_REJECT", "MECH_LOOT", "POLICELOOT", "R_SENTINELS_OFF"}
 }, {
-    ["REWARD"] = REWARD_MM,
+    ["REWARD"] = REWARD_ALL (75),
     ["IDS"] = {"WALKER_LOOT"}
 }, {
-    ["REWARD"] = REWARD_L,
+    ["REWARD"] = REWARD_ALL (100),
     ["IDS"] = {"PIRATE_BOUNTY3", "PROC_PROD_CHEST", "R_SEACHEST", "R_SALVAGE", "R_CRASHSITE_FLY"}
 }, {
-    ["REWARD"] = REWARD_XL,
+    ["REWARD"] = REWARD_ALL (250),
     ["IDS"] = {"R_ABAND_END", "R_NEXUS_MEGA_C", "FREIGHTER_SAVED"}
 }}
 
@@ -270,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
                 ["ADD_OPTION"] = "ADDafterSECTION",
-                ["ADD"] = REWARD_ENTRIES
+                ["ADD"] = REWARD_ENTRIES("RS_QUICKSILV_XSS",5)..REWARD_ENTRIES("RS_QUICKSILV_XXS",10)..REWARD_ENTRIES("RS_QUICKSILV_XS",25)..REWARD_ENTRIES("RS_QUICKSILV_ML",125)..REWARD_ENTRIES("RS_QUICKSILV_XL",250)
             }}
         }, {
             ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/NPCMISSIONTABLE.MBIN",
@@ -304,18 +143,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }
 
 -- Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
-local Change_Table_Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 for i = 1, #Rewards do
     local reward = Rewards[i]
     for j = 1, #reward["IDS"] do
         local value = reward["IDS"][j]
-        local temp_table = {
+        Change_Table_Array[#Change_Table_Array + 1] = {
             ["SPECIAL_KEY_WORDS"] = {"Id", value},
             ["PRECEDING_KEY_WORDS"] = {"List", "List"},
             ["ADD_OPTION"] = "ADDafterLINE",
             ["ADD"] = reward["REWARD"]
         }
-        Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
     end
 end

@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "5_01"
+GameVersion = "5_12"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -118,13 +118,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 160*Fauna}}}, --default 40, HardModeMultiplier 2
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","FIEND_DMG"},
+	{["SPECIAL_KEY_WORDS"] = {"Id","FIEND_DMG"},					--Biological Horrors
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG"},				--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 20*Fauna}}}, --default 1, HardModeMultiplier 1.5
+		{"Damage", 40*Fauna}}}, --default 1, HardModeMultiplier 1.5
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BUG_DMG"},						--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	

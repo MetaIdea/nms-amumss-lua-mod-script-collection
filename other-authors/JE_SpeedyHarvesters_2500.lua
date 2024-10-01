@@ -8,7 +8,7 @@ Author = "Jaggid Edje"
 ModName = "SpeedyHarvesters_2500"
 ModNameSub = "JE"
 BaseDescription = "Increases speed and storage of AMUs and Oxygen and Gas Harvesters"
-GameVersion = "4.72"
+GameVersion = "5.12"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

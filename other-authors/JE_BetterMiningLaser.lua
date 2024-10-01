@@ -2,9 +2,7 @@ Author = "Jaggid Edje"
 ModName = "Better_MiningLaser"
 ModNameSub = "JE"
 BaseDescription = "Adjusts mining beam damage so it isn't as impacted by having Enemy Strength set at higher difficulty"
-GameVersion = "4.64"
--- ModVersion = "v4.64"
-FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+GameVersion = "5.12"
 
 -- Original game settings in comments
 L_Bonus = 40     -- Default is 20
@@ -13,16 +11,16 @@ S_Bonus = 75	-- Default is 40
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = ModNameSub.."_"..ModName..".pak",
-    ["MOD_DESCRIPTION"]    = BaseDescription,
-    ["MOD_AUTHOR"]        = Author,
-    ["NMS_VERSION"]        = GameVersion,
+    ["MOD_FILENAME"] = ModNameSub.."_"..ModName..".pak",
+    ["MOD_DESCRIPTION"] = BaseDescription,
+    ["MOD_AUTHOR"] = Author,
+    ["NMS_VERSION"] = GameVersion,
     ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
-                    ["MBIN_FILE_SOURCE"] = FileSource1,
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ID", "LASER","StatsType","Weapon_Laser_Damage"}, -- Mining Laser
