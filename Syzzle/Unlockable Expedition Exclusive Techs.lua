@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Techs"
-GameVersion = "5.10"
+GameVersion = "5.12"
 --ModVersion = "v1.4"
 Description = "Add the Expedition exclusive Ship Techs, Exosuit Techs, Freighter Tech and unavailable Multitool Tech to the Anomaly list to be unlocked."
 
@@ -66,23 +66,15 @@ UNLOCKABLEITEMTREES_RESONATOR = [[
   </Property>
 ]]
 -- TEMP FIX FOR MISSING OPTICAL DRILL
-UNLOCKABLEITEMTREES_FISHLASER = [[
-    <Property name="Children">
-    <Property value="GcUnlockableItemTreeNode.xml">
-      <Property name="Unlockable" value="FISHLASER" />
-      <Property name="Children" />
-    </Property>
-  </Property>
-]]
--- UNLOCKABLEITEMTREES_DRILL = [[
+-- UNLOCKABLEITEMTREES_FISHLASER = [[
 --     <Property name="Children">
 --     <Property value="GcUnlockableItemTreeNode.xml">
---       <Property name="Unlockable" value="UT_MINER" />
+--       <Property name="Unlockable" value="FISHLASER" />
 --       <Property name="Children" />
 --     </Property>
 --   </Property>
 -- ]]
-
+  
 -- EXOSUIT BLUEPRINTS
 UNLOCKABLEITEMTREES_VISCERAL  = [[
     <Property name="Children">
@@ -203,32 +195,13 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD"]	=	UNLOCKABLEITEMTREES_BOLTSM,
             },
             -- TEMP FIX FOR MISSING OPTICAL DRILL
-            {
-              ["SPECIAL_KEY_WORDS"]  = {"Unlockable","FISHLASER",},
-              ["VALUE_CHANGE_TABLE"]  =
-              {
-                {"Unlockable","UT_MINER"},
-              }
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
-              ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["REMOVE"]	=	"LINE",
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
-              ["ADD"]	=	UNLOCKABLEITEMTREES_FISHLASER,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"},
-              ["PRECEDING_KEY_WORDS"] = {"Children"},
-              ["REMOVE"]	=	"LINE",
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"},
-              ["ADD"]	=	UNLOCKABLEITEMTREES_RESONATOR,
-            },
-            -- -------------------------------
+            -- {
+            --   ["SPECIAL_KEY_WORDS"]  = {"Unlockable","FISHLASER",},
+            --   ["VALUE_CHANGE_TABLE"]  =
+            --   {
+            --     {"Unlockable","UT_MINER"},
+            --   }
+            -- },
             -- {
             --   ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
             --   ["PRECEDING_KEY_WORDS"] = {"Children"},
@@ -236,8 +209,27 @@ NMS_MOD_DEFINITION_CONTAINER =
             -- },
             -- {
             --   ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
+            --   ["ADD"]	=	UNLOCKABLEITEMTREES_FISHLASER,
+            -- },
+            -- {
+            --   ["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"},
+            --   ["PRECEDING_KEY_WORDS"] = {"Children"},
+            --   ["REMOVE"]	=	"LINE",
+            -- },
+            -- {
+            --   ["SPECIAL_KEY_WORDS"] = {"Unlockable","FISHLASER"},
             --   ["ADD"]	=	UNLOCKABLEITEMTREES_RESONATOR,
             -- },
+            -- -------------------------------
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
+              ["PRECEDING_KEY_WORDS"] = {"Children"},
+              ["REMOVE"]	=	"LINE",
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_MINER"},
+              ["ADD"]	=	UNLOCKABLEITEMTREES_RESONATOR,
+            },
             -- ADD NEW EXOSUIT BLUEPRINTS
             {
               ["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_PROTECT"},
