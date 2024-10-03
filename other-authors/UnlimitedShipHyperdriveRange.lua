@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
+                        {
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE",},
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["SECTION_UP"] = 1,
