@@ -117,6 +117,13 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_142",	3,					90},				--Makes Faecium					x3		in	90 time
+		{
+			{"PLANT_POOP",		1},										--Requires Faecium				x1
+			{"OXYGEN",			2}										--Requires Oxygen				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_124",	3,					90},				--Makes Chlorine				x5		in	90 time
 		{
 			{"WATER1",			2},										--Requires Salt					x2
@@ -696,19 +703,19 @@ NewNaniteRecipes =
 	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
 		"NANITE_NAVDATA",	"PTSd: Data Condensation",			"NAV_DATA",			"8",		"60"
 	},
-	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
+	{
 		"NANITE_NAVDROP",	"PTSd: Large Data Condensation",	"NAV_DATA_DROP",	"50",		"180"
 	},
-	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
+	{
 		"NANITE_QUAD",		"PTSd: Small Nanite Extraction",	"QUAD_PROD",		"100",		"360"
 	},
-	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
+	{
 		"NANITE_MECH",		"PTSd: Medium Nanite Extraction",	"MECH_PROD",		"200",		"720"
 	},
-	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
+	{
 		"NANITE_SPIDER",	"PTSd: Corrupt Nanite Extraction",	"SPIDER_PROD",		"200",		"720"
 	},
-	{--NewRecipeID			RecipeName							ProductID			Nanites		Time	
+	{
 		"NANITE_WALKER",	"PTSd: Large Nanite Extraction",	"WALKER_PROD",		"400",		"1440"
 	},
 }
@@ -719,40 +726,40 @@ NewSalvagedDataRecipes =
 	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
 		"DATA_MOULD",	"PTSd: Mouldering Data Extraction",	"SPACEGUNK2",	"Substance",	"250",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_TAINT",	"PTSd: Tainted Data Extraction",	"AF_METAL",		"Substance",	"75",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_FIEND",	"PTSd: Fiendish Data Extraction",	"FIENDCORE",	"Product",		"1",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_FISH",	"PTSd: Abyssal Data Extraction",	"FISHCORE",		"Product",		"2",		"9",	"3"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_VILE",	"PTSd: Vile Data Extraction",		"WORMPROD",		"Product",		"1",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_FLESH",	"PTSd: Fleshy Data Extraction",		"WORMCORE",		"Product",		"1",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_SHARD",	"PTSd: Radiant Data Extraction",	"DRONE_SHARD",	"Product",		"3",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_MIRROR",	"PTSd: Inverted Data Extraction",	"DRONE_SALVAGE","Product",		"1",		"3",	"1"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_HYALINE",	"PTSd: Sentient Data Extraction",	"SHIPBRAIN",	"Product",		"1",		"6",	"2"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_QUAD",	"PTSd: Small Data Extraction",		"QUAD_PROD",	"Product",		"1",		"6",	"2"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_MECH",	"PTSd: Medium Data Extraction",		"MECH_PROD",	"Product",		"1",		"12",	"4"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_SPIDER",	"PTSd: Corrupt Data Extraction",	"SPIDER_PROD",	"Product",		"1",		"12",	"4"
 	},
-	{--NewRecipeID		RecipeName							ItemID			ItemType		ItemAmount	Time	Salvaged Data & Microprocessors	
+	{
 		"DATA_WALKER",	"PTSd: Large Data Extraction",		"WALKER_PROD",	"Product",		"1",		"24",	"8"
 	},
 }

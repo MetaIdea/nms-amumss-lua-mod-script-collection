@@ -2,8 +2,8 @@ ModName         =   "MPD"
 ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
-GameVersion     =   "5.01.1"
-ModVersion      =   "_WorldsPart1"
+GameVersion     =   "5.12"
+ModVersion      =   "_Aquarius"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -2688,6 +2688,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number", "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKBLD_EXP"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Number", "3"},
+                                {"Life",   "60"},
                             }
                         },
                     }

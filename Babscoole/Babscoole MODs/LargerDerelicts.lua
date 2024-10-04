@@ -1,12 +1,10 @@
-Multiplier = 2
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "largerderelicts.pak",
-["MOD_AUTHOR"]    = "Luminance",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.05",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "LargerDerelicts.pak",
+["MOD_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "5.12",
+["MOD_DESCRIPTION"] = "Spawns larger derelict freighter with more and bigger rooms.",
+["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
@@ -32,10 +30,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*", 
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"SizeX", Multiplier},
-                                {"SizeY", Multiplier},
-                                {"SizeZ", Multiplier},
-                                {"Rooms", Multiplier},
+								{"SizeX", "@*2"},
+                                {"SizeY", "@*2"},
+                                {"SizeZ", "@*2"},
+                                {"Rooms", "@*2"},
 							}
 						},
 						{
@@ -44,8 +42,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["MATH_OPERATION"] = "*", 
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Min", Multiplier},
-                                {"Max", Multiplier},
+								{"Min", "@*2"},
+                                {"Max", "@*2"},
 							}
 						},
 						{

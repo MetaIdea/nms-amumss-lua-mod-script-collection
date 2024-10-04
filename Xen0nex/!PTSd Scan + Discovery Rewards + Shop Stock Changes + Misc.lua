@@ -454,17 +454,17 @@ RaceRankingLevels =
 
 PirateRankingLevels =
 {	--Ranks (0-10)		Standing required
-	{"PIRATE_PLAYER_RANK_BAD",			-5},		--	-5		Rank 0
-	{"PIRATE_PLAYER_RANK_LOW",			-2},		--	-2
+	{"PIRATE_PLAYER_RANK_BAD",			-10},		--	-5		Rank 0
+	{"PIRATE_PLAYER_RANK_LOW",			-3},		--	-2
 	{"PIRATE_PLAYER_RANK_NORMAL",		0},			--	0
-	{"PIRATE_PLAYER_RANK_IMPROVED",		5},			--	5
-	{"PIRATE_PLAYER_RANK_MEDIUM",		12},		--	12
-	{"PIRATE_PLAYER_RANK_GOOD",			20},		--	20
-	{"PIRATE_PLAYER_RANK_HIGH",			32},		--	32
-	{"PIRATE_PLAYER_RANK_HIGHEST",		50},		--	50
-	{"PIRATE_PLAYER_RANK_HIGHEST1",		75},		--	75
-	{"PIRATE_PLAYER_RANK_HIGHEST2",		100},		--	100
-	{"PIRATE_PLAYER_RANK_HIGHEST3",		150},		--	150		Rank 10
+	{"PIRATE_PLAYER_RANK_IMPROVED",		15},		--	5
+	{"PIRATE_PLAYER_RANK_MEDIUM",		36},		--	12
+	{"PIRATE_PLAYER_RANK_GOOD",			60},		--	20
+	{"PIRATE_PLAYER_RANK_HIGH",			96},		--	32
+	{"PIRATE_PLAYER_RANK_HIGHEST",		150},		--	50
+	{"PIRATE_PLAYER_RANK_HIGHEST1",		225},		--	75
+	{"PIRATE_PLAYER_RANK_HIGHEST2",		300},		--	100
+	{"PIRATE_PLAYER_RANK_HIGHEST3",		450},		--	150		Rank 10
 }
 
 --Changes various enemy spawn amounts so that the "Normal" amount is closer to the old pre-4.0 "Survival" amounts.

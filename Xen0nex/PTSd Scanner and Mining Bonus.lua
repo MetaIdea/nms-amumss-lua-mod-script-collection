@@ -40,6 +40,7 @@ MiningAmountBonus =
         </Property>]]
 
 --This makes a Multi-Tool's Damage stat bonus also SLOW DOWN it's mining speed more the higher the Damage stat bonus is, to offset the higher mining laser damage caused by the Damage stat bonus
+	--Weapon_Laser_Mining_Speed only appears to apply to mining objects/resources, not when dealing damage to Sentinels, etc.
 MiningSpeedMalus =
 [[<Property value="GcInventoryBaseStatBonus.xml">
           <Property name="StatType" value="GcStatsTypes.xml">

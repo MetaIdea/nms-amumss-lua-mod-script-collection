@@ -29,7 +29,7 @@ ExplosionObjectMult = 0									--1
 LaserCritMult = 2										--4		How much the damage of the mining laser is multiplied on a critical hit (typically on the head / eye)
 LaserCreatureMult = 1									--1		Lowering this value appears to disable the critical weak points on creatures with the mining laser
 VehicleLaserCreatureMult = 0.2							--1
-LaserSentinelMult = 0.75								--0.6
+LaserSentinelMult = 0.8									--0.6
 VehicleLaserSentinelMult = 0.2							--0.2
 ShipWeaponSentinelMult = 0.02							--0.2
 ShipWeaponSentinelShieldMult = 0.01						--0.1
@@ -183,7 +183,7 @@ ShipWeaponEffectiveness =
 
 --Multipliers to apply to the base damage for various player mining lasers. Note that higher damage means objects get mined faster
 MiningLaserDMG =							1.0					--20
-HijackedLaserDMG =							6.0					--20
+HijackedLaserDMG =							9.33				--20
 RunicLensDMG =								0.73				--20
 AnimusBeamDMG =								1.0					--40
 ExocraftLaserDMG =							1.0					--80
@@ -191,10 +191,12 @@ NautilonLaserDMG =							1.0					--240
 MinotaurLaserDMG =							1.0					--100
 
 --Some properties of various types of multi-tool mining lasers
-MiningOverheatMult =						10					--		Multiplier to apply to the time the Mining Laser & Anumius Beam is disabled after starting the "overheat" animation
-RunicLensOverheatMult =						10					--		Multiplier to apply to the time the RunicLens is disabled after starting the "overheat" animation
-HijackMiningOverheatMult =					5					--		Multiplier to apply to the time the Hijacked Laser is disabled after starting the "overheat" animation
-HijackChargeMultiplier =					1					--2		Replacer for how effective substances are at recharging the Hijacked Laser
+MiningOverheatMult =						10					--0.6	Multiplier to apply to the time the Mining Laser & Anumius Beam is disabled after starting the "overheat" animation
+RunicLensOverheatMult =						10					--0.6	Multiplier to apply to the time the RunicLens is disabled after starting the "overheat" animation
+HijackMiningOverheatMult =					5					--0.6	Multiplier to apply to the time the Hijacked Laser is disabled after starting the "overheat" animation
+HijackYieldMult =							0.3					--1		Multiplier to apply to the Hijacked Laser's substance yield
+HijackFuelRateMult =						3					--		Multiplier to apply to how quickly the Hijacked Laser consumes fuel while operating
+HijackChargeMultiplier =					2					--		Multipleir to apply to the cost to fully recharge the Hijacked Laser
 
 --Multipliers to apply to other stats for various weapons
 	--"PRESERVE" is for values which must remain as integers (whole numbers like 5), "FORCE" for all others to allow them to become floats (decimal numbers like 5.2)
@@ -266,7 +268,7 @@ WeaponStatChanges =
 				"Weapon_Laser_HeatTime",	1,	"FORCE"				--0.2
 			},
 			{
-				"Weapon_Laser_Drain",	1,	"FORCE"					--2
+				"Weapon_Laser_Drain",	1,	"FORCE"					--2				Controls how quickly the laser consumes fuel while active (lower value consumes fuel faster)
 			},
 			{
 				"Weapon_Laser_Recoil",	1,	"PRESERVE"					--20
@@ -509,7 +511,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage, lower values ticks faster. Set less than 1 so that supercharging it makes it faster instead of slower
+				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage when mining Objects (not when damaging creatures/robots), lower values ticks faster. Set less than 1 so that supercharging it makes it faster instead of slower
 			},
 			{
 				"Weapon_Laser_HeatTime",	1/USCMult,	"FORCE"				--8
@@ -519,6 +521,9 @@ WeaponStatChanges =
 			},
 			{
 				"Weapon_Laser_ReloadTime",	MiningOverheatMult,	"FORCE"				--0.6
+			},
+			{
+				"Weapon_Laser_Drain",	1.01/USCMult,	"FORCE"					--1.2				Controls how quickly the laser consumes fuel while active (lower value consumes fuel faster)
 			}
 		}
 	},
@@ -528,7 +533,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage, lower values ticks faster
+				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage when mining Objects (not when damaging creatures/robots), lower values ticks faster
 			},
 			{
 				"Weapon_Laser_HeatTime",	0.5/USCMult,	"FORCE"				--8
@@ -540,10 +545,10 @@ WeaponStatChanges =
 				"Weapon_Laser_ReloadTime",	HijackMiningOverheatMult,	"FORCE"				--0.6
 			},
 			{
-				"Weapon_Laser_Drain",	0.333,	"FORCE"				--1.2				Controls how quickly the laser consumes fuel while active
+				"Weapon_Laser_Drain",	(1/HijackFuelRateMult)*USCMult,	"FORCE"				--1.2				Controls how quickly the laser consumes fuel while active (lower value consumes fuel faster)
 			},
 			{
-				"Weapon_Laser_MiningBonus",	0.46,	"FORCE"			--1
+				"Weapon_Laser_MiningBonus",	HijackYieldMult,	"FORCE"			--1
 			}
 		}
 	},
@@ -553,7 +558,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage, lower values ticks faster
+				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage when mining Objects (not when damaging creatures/robots), lower values ticks faster
 			},
 			{
 				"Weapon_Laser_HeatTime",	1/USCMult,	"FORCE"				--12
@@ -565,10 +570,10 @@ WeaponStatChanges =
 				"Weapon_Laser_ReloadTime",	RunicLensOverheatMult,	"FORCE"				--0.6
 			},
 			{
-				"Weapon_Laser_Drain",	1,	"FORCE"					--1.2				Controls how quickly the laser consumes fuel while active
+				"Weapon_Laser_Drain",	1.01/USCMult,	"FORCE"					--1.2				Controls how quickly the laser consumes fuel while active (lower value consumes fuel faster)
 			},
 			{
-				"Weapon_Laser_MiningBonus",	1.2727,	"FORCE"				--1.1
+				"Weapon_Laser_MiningBonus",	1.41,	"FORCE"				--1.1
 			},
 			{
 				"Weapon_Stealth",	1,	"FORCE"						--1					Related to cloaking ability, unsure the effect
@@ -584,11 +589,17 @@ WeaponStatChanges =
 				"Weapon_Laser_Damage",	AnimusBeamDMG*GMD/(USCMult*USCMult),	"FORCE"				--40				Controls how much damage the laser does per tick
 			},
 			{
-				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage, lower values ticks faster. Set less than 1 so that supercharging it makes it faster instead of slower
+				"Weapon_Laser_Mining_Speed",	0.999,	"FORCE"				--1			Controls how often the laser ticks for damage when mining Objects (not when damaging creatures/robots), lower values ticks faster. Set less than 1 so that supercharging it makes it faster instead of slower
 			},
 			{
 				"Weapon_Laser_ReloadTime",	MiningOverheatMult,	"FORCE"				--0.6
-			}
+			},
+			{
+				"Weapon_Laser_Drain",	1.01/USCMult,	"FORCE"					--1.2				Controls how quickly the laser consumes fuel while active (lower value consumes fuel faster)
+			},
+			{
+				"Weapon_Laser_MiningBonus",	USCMult,	"FORCE"				--0.1
+			},
 		}
 	},
 	{
@@ -2195,8 +2206,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = ShipDamageMult("1")
 			},
 			{
-				--["PRECEDING_FIRST"] = "TRUE",
-				--["PRECEDING_KEY_WORDS"] = {"GcShootableComponentData.xml"},
 				["SPECIAL_KEY_WORDS"] = {"Id", "CREATURE",	"DamageType", "Laser"},
 				["SECTION_UP"] = 1,
 				["VALUE_CHANGE_TABLE"] 	= 
@@ -2207,8 +2216,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT",	"DamageType", "Laser"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	LaserSentinelMult}
@@ -2217,8 +2224,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT",	"DamageType", "VehicleLaser"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	VehicleLaserSentinelMult}
@@ -2227,8 +2232,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT",	"DamageType", "ShipWeapons"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	ShipWeaponSentinelMult}
@@ -2243,8 +2246,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "ROBOT_SHIELD",	"DamageType", "ShipWeapons"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	ShipWeaponSentinelShieldMult}
@@ -2259,8 +2260,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "FIEND",	"DamageType", "ShipWeapons"},
 				["SECTION_UP"] = 1,
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] = "",
 				["VALUE_CHANGE_TABLE"] 	= 
 				{
 					{"Multiplier",	ShipWeaponSentinelShieldMult}
@@ -2422,10 +2421,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", "SENT_LASER"},
+				["MATH_OPERATION"] 		= "/",
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"ChargeMultiplier", HijackChargeMultiplier}
+					{"ChargeMultiplier", HijackChargeMultiplier}		--2
 				}
 			},
 			{

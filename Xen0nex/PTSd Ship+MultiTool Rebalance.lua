@@ -707,7 +707,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
-			{"WEAPON_MINING",			2.0,	2.2,	2.5,	2.0},		--			+		5-10,		10-15,		15-20,		20-35[25-35]%
+			{"WEAPON_MINING",			1.29,	1.42,	1.61,	1.29},		--			+		5-10,		10-15,		15-20,		20-35[25-35]%
 			{"WEAPON_SCAN",				0.7,	0.7,	0.7,	0.7}		--			+		10-20,		25-30,		35-40,		45-50	%
 		}
 	},
@@ -727,8 +727,8 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.8,	0.8,	0.8,	0.8},		--			+		0-5,		5-10,		10-15,		15-25	%
-			{"WEAPON_MINING",			1,		1,		1,		1},			--			+		5-10,		10-20,		20-25,		25-30	%
-			{"WEAPON_SCAN",				1.25,	1.25,	1.25,	1.25}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
+			{"WEAPON_MINING",			1.33,	1.33,	1.33,	1.33},		--			+		5-10,		10-20,		20-25,		25-30	%
+			{"WEAPON_SCAN",				1.3,	1.3,	1.3,	1.3}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
 		}
 	},
 	{
@@ -736,8 +736,8 @@ ToolStatChanges	=
 			"Royal"			--"Exotic"	(15% chance to be offered from defeated Sentinel Pillars. No longer always found at C Class?)
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.2,	1.2,	1.2,	1.2},		--			+		0-5,		5-10,		10-15,		15-25	%
-			{"WEAPON_MINING",			1.65,	1.65,	1.65,	1.65},		--			+		5-10,		10-20,		20-25,		25-30	%
+			{"WEAPON_DAMAGE",			1.4,	1.4,	1.4,	1.4},		--			+		0-5,		5-10,		10-15,		15-25	%
+			{"WEAPON_MINING",			1.93,	1.93,	1.93,	1.93},		--			+		5-10,		10-20,		20-25,		25-30	%
 			{"WEAPON_SCAN",				0.9,	0.9,	0.9,	0.9}		--			+		40-50,		60-70,		80-90,		100[90-100]	%
 		}
 	},
@@ -746,7 +746,7 @@ ToolStatChanges	=
 			"Alien"			--"Exotic"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			1.57,	1.57,	1.57,	1.57},		--			+		10-15,		15-20,		20-25,		25-35	%
+			{"WEAPON_DAMAGE",			1.71,	1.71,	1.71,	1.71},		--			+		10-15,		15-20,		20-25,		25-35	%
 			{"WEAPON_MINING",			1,		1,		1,		1},			--			+		0-5,		5-10,		10-15,		15-20	%
 			{"WEAPON_SCAN",				0.8,	0.8,	0.8,	0.8}		--			+		20-25,		30-35,		40-45,		50-60	%
 		}
@@ -757,7 +757,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			0.57,	0.76,	0.9,	0.8},		--			+		10-20,		15-25,		20-30,		32-50[35-50]%
-			{"WEAPON_MINING",			1,		1,		2,		2},			--			+		0-5,		5-10,		5-10,		10-15	%
+			{"WEAPON_MINING",			0.83,	0.83,	1.67,	1.67},		--			+		0-5,		5-10,		5-10,		10-15	%
 			{"WEAPON_SCAN",				1.2,	1.2,	1.2,	1.091}		--			+		20-25,		30-35,		35-45,		45-55	%
 		}
 	},
@@ -766,7 +766,7 @@ ToolStatChanges	=
 			"Atlas"			--"Atlantid"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.5,	1,		1,		1},			--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -776,7 +776,7 @@ ToolStatChanges	=
 			"AtlasYellow"	--"Atlantid" Yellow version?
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.5,	1,		1,		1},			--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -786,7 +786,7 @@ ToolStatChanges	=
 			"AtlasBlue"		--"Atlantid" Blue version?
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.625,	1.25,	1.25,	1.25},		--			+		5-10,		5-10,		10-15,		10-20	%
+			{"WEAPON_DAMAGE",			0.5,	1,		1,		1},			--			+		5-10,		5-10,		10-15,		10-20	%
 			{"WEAPON_MINING",			1.2,	1.2,	1.2,	1.2},		--			+		0-15,		15-25,		20-30,		35-50	%
 			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
@@ -796,8 +796,8 @@ ToolStatChanges	=
 			"Staff"			--"Voltaic Staff"
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"WEAPON_DAMAGE",			0.5,	0.667,	0.8,	0.7},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
-			{"WEAPON_MINING",			1.5,	1.5,	3.0,	3.0},		--			+		0-5,		5-10,		5-10,		10-15	%
+			{"WEAPON_DAMAGE",			0.64,	0.86,	1.03,	0.9},		--			+		10-20,		15-25,		20-30,		25-50[35-50]%
+			{"WEAPON_MINING",			1.67,	1.67,	3.33,	3.33},		--			+		0-5,		5-10,		5-10,		10-15	%
 			{"WEAPON_SCAN",				1.6,	1.6,	1.6,	1.6}		--			+		20-25,		30-35,		35-45,		40-50	%
 		}
 	},

@@ -13,29 +13,29 @@ StackLimits =
 	{
 		{"MaxSubstanceStackSizes",	SubstanceStackMult},
 		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
-			{"Default",				1000,		500,		300},			--	9999,		500,		150
-			{"Personal",			1000,		500,		300},			--	9999,		500,		300
-			{"Ship",				2000,		1000,		600},			--	9999,		1000,		300
-			{"Freighter",			4000,		2000,		1200},			--	9999,		2000,		750
-			{"Vehicle",				1500,		750,		450},			--	9999,		1000,		300
-			{"Chest",				4000,		2000,		1200},			--	9999,		1000,		750
-			{"BaseCapsule",			6000,		3000,		1800},			--	9999,		2000,		1250
-			{"MaintenanceObject",	2000,		1000,		600},			--	9999,		250,		150		Affects the Input & Outputs for Refiners
-			{"UIPopup",				1000,		500,		300},			--	9999,		250,		150
+			{"Default",				1000,		500,		300},			--	9999,		500,		150		Unclear, possibly a fallback to be used for inventories which don’t have use of the defined categories below? But setting this equal to Personal seems to result in things behaving “as expected”
+			{"Personal",			1000,		500,		300},			--	9999,		500,		300		Exosuit
+			{"Ship",				2000,		1000,		600},			--	9999,		1000,		300		Starships
+			{"Freighter",			4000,		2000,		1200},			--	9999,		2000,		750		Freighter
+			{"Vehicle",				1500,		750,		450},			--	9999,		1000,		300		All Exocraft / Minotaur / Nautilon
+			{"Chest",				4000,		2000,		1200},			--	9999,		1000,		750		Storage Containers (The kind you build in your base / freighter)
+			{"BaseCapsule",			6000,		3000,		1800},			--	9999,		2000,		1250	The buildable object used to access and recover resources from bases you have deleted
+			{"MaintenanceObject",	2000,		1000,		600},			--	9999,		250,		150		Affects the Input & Outputs for Refiners, possibly other machines / debris
+			{"UIPopup",				1000,		500,		300},			--	9999,		250,		150		Unclear, possibly certain rewards from dialogue / quests?
 		}
 	},
 	{
 		{"MaxProductStackSizes",	ProductStackMult},
 		{						--	Standard	Restrictive	Harsh				Standard	Restrictive	Harsh
-			{"Default",				8,			5,			3},				--	5,			5,			3
-			{"Personal",			8,			5,			3},				--	10,			10,			3
-			{"Ship",				16,			10,			6},				--	10,			10,			3
-			{"Freighter",			32,			20,			12},			--	20,			10,			5
-			{"Vehicle",				12,			8,			4},				--	10,			10,			3
-			{"Chest",				32,			20,			12},			--	20,			20,			10
-			{"BaseCapsule",			160,		100,		60},			--	100,		100,		50
-			{"MaintenanceObject",	16,			10,			6},				--	10,			10,			5		Affects the Input & Outputs for Refiners
-			{"UIPopup",				1,			1,			1},				--	1,			1,			1
+			{"Default",				8,			5,			3},				--	5,			5,			3		Unclear, possibly a fallback to be used for inventories which don’t have use of the defined categories below? But setting this equal to Personal seems to result in things behaving “as expected”
+			{"Personal",			8,			5,			3},				--	10,			10,			3		Exosuit
+			{"Ship",				16,			10,			6},				--	10,			10,			3		Starships
+			{"Freighter",			32,			20,			12},			--	20,			10,			5		Freighter
+			{"Vehicle",				12,			8,			4},				--	10,			10,			3		All Exocraft / Minotaur / Nautilon
+			{"Chest",				32,			20,			12},			--	20,			20,			10		Storage Containers (The kind you build in your base / freighter)
+			{"BaseCapsule",			160,		100,		60},			--	100,		100,		50		The buildable object used to access and recover resources from bases you have deleted
+			{"MaintenanceObject",	16,			10,			6},				--	10,			10,			5		Affects the Input & Outputs for Refiners, possibly other machines / debris
+			{"UIPopup",				1,			1,			1},				--	1,			1,			1		Unclear, possibly certain rewards from dialogue / quests?
 		}
 	},
 }
@@ -60,9 +60,9 @@ StorageWidth =		6									--10
 StorageHeight =		5									--6
 
 --Cargo Rocket slots and width / height of inventory
-RocketSlots =		7									--21		Doesn't seem to actually have any effect
-RocketWidth =		2									--7			Doesn't seem to actually have any effect
-RocketHeight =		4									--3			Doesn't seem to actually have any effect
+RocketSlots =		7									--21		Doesn't seem to actually have any effect, may require a new save to take effect?
+RocketWidth =		2									--7			Doesn't seem to actually have any effect, may require a new save to take effect?
+RocketHeight =		4									--3			Doesn't seem to actually have any effect, may require a new save to take effect?
 
 --Unclear what these do, or whether they have any effect at all
 PersonalInventoryMinWidthMax =			5				--5

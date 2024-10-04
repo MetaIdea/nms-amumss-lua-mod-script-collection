@@ -57,7 +57,7 @@ RemoveVesperAutoCharge = true							--false
 RemoveLivingAutoCharge = true							--false
 
 --Changes to using items to recharge starship tech
-ShipLaunchRechargeMult = 5								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
+ShipLaunchRechargeMult = 6								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
 LivingShipLaunchRechargeMult = 1.5						--	Multiplier to apply to the cost of Mordite / Oxygen / Cond. Carbon on recharging Living ship launchers		200 / 100 / 67 to fully charge
 ShipPulseRechargeMult = 2.5								--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine							200 / 40 to fully charge
 LivingShipPulseRechargeMult = 2							--	Multiplier to apply to the cost of Silver / Carbon / Viscous Fluids on recharging Living ship Pulse engine	200 / 200 / 200 to fully charge
