@@ -27,7 +27,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "CARGO_SLIME"},
                                 {"Name", "CARGO_MAZE"},
                             },
-                            ["MATH_OPERATION"] = "*", 
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SizeX", "@*2"},
@@ -39,7 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] =  {"GcRoomCountRule.xml"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["MATH_OPERATION"] = "*", 
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Min", "@*2"},

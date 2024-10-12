@@ -12,7 +12,7 @@ local new_ship_texture = {
 		name	= 'SHINY',
 		sci		= true,		-- shared with scientific
 		org		= true,		-- existing original
-		palette	= {
+		palette	= {			-- shared with -and changed by the following
 			PRIMARY		= {'Metal', 'Primary'},
 			SECONDARY	= {'Paint', 'Alternative1'},
 			TERTIARY	= {'Paint', 'Primary'},
@@ -263,7 +263,7 @@ for _,src in ipairs({
 				T[#T+1] = {
 					SEC_EDIT 			= 'procedural_texture',
 					VALUE_CHANGE_TABLE 	= {
-						{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.DDS'},
+						{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.X2.DDS'},
 						{'Normal',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.NORMAL.DDS'},
 						{'Mask',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.MASKS.DDS'}
 					}
@@ -340,7 +340,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.11',
+	NMS_VERSION				= '5.12',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {
@@ -384,7 +384,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			if lfs.attributes(tex_path) then
 				return {
 					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Ship/*.DDS',
+						EXTERNAL_FILE_SOURCE = tex_path..'Ship_2048/*.DDS',
 						FILE_DESTINATION	 = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/*.DDS'
 					},
 					{

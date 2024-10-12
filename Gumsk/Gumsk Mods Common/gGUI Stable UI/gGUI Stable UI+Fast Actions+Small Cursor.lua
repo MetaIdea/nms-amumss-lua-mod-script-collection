@@ -3,7 +3,7 @@ ModName = "gGUI Stable UI"
 ModNameSub = "+Fast Actions+Small Cursor"
 BaseDescription = "Removes mouse-based parallax movement in menus"
 GameVersion = "5.1.2.0"
-ModVersion = "a"
+ModVersion = "b"
 
 --[[ Files Modified:
 GCUIGLOBALS.GLOBAL.MBIN
@@ -165,6 +165,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
+							PRECEDING_KEY_WORDS = {"InteractionWorldParallax"},
+							VALUE_CHANGE_TABLE = {
+								{"x", 0},
+								{"y", 0},
+							},
+						},
+            {
+							PRECEDING_KEY_WORDS = {"NGuiMin2DParallax"},
+							VALUE_CHANGE_TABLE = {
+								{"x", 0},
+								{"y", 0},
+							},
+						},
+						{
+							PRECEDING_KEY_WORDS = {"NGuiMax2DParallax"},
+							VALUE_CHANGE_TABLE = {
+								{"x", 0},
+								{"y", 0},
+							},
+						},
+						{
 							PRECEDING_KEY_WORDS = {"NGuiModelParallax"},
 							VALUE_CHANGE_TABLE = {
 								{"x", 0},
@@ -173,13 +194,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"NGuiShipInteractParallax"},
-							VALUE_CHANGE_TABLE = {
-								{"x", 0},
-								{"y", 0},
-							},
-						},
-						{
-							PRECEDING_KEY_WORDS = {"InteractionWorldParallax"},
 							VALUE_CHANGE_TABLE = {
 								{"x", 0},
 								{"y", 0},

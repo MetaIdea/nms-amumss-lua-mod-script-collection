@@ -91,7 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TradeSettings", "SuitTechSpecialist",    "AlwaysPresentProducts"},
                                 {"TradeSettings", "WeapTechSpecialist",    "AlwaysPresentProducts"},
                             },
-                            ["CREATE_HOES"] = "TRUE", 
+                            ["CREATE_HOES"] = "TRUE",
                         },
                         {--Clear never sellable\offered item table(s).
                             ["PRECEDING_KEY_WORDS"] =

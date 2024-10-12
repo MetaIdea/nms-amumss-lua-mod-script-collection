@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\SENTINELSHIP\SENTINELCOCKPIT.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
+						{
                             ["SPECIAL_KEY_WORDS"] =
                             {
                                 {"Name", "SUB1HatchFrameL"},
@@ -24,16 +24,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "BaseFrontL"},
 								{"Name", "BaseWallL"},
 								{"Name", "BaseWallR"},
-								{"Name", "WireLightsL"},
-								{"Name", "WireLightsR"},
+								
 								{"Name", "SteelWiresL"},
 								{"Name", "SteelWiresR"},
 								{"Name", "DashR"},
 								{"Name", "DashL"},
-								{"Name", "Metal1"},
+								
 								{"Name", "GlassFrameL"},
 								{"Name", "GlassFrameR"},
+								{"Name", "GlassFrontL"},
+								{"Name", "GlassFrontR"},
+								{"Name", "GlassBackL"},
+								{"Name", "GlassBackR"},
+								{"Name", "DepthMask"},								
+								
+								{"Name", "Metal1"},
+								{"Name", "Metal2"},
 								{"Name", "Shield1"},
+								{"Name", "Shield2"},
+								
+								
 								{"Name", "polySurface8398"},
 								{"Name", "FloorR"},
 								{"Name", "FloorL"},
@@ -44,12 +54,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "BackFrameL"},
 								{"Name", "BackFrameR"},
 								{"Name", "FrontTopDash"},
-								{"Name", "FrontDashDet"},
-								{"Name", "FloorFront"},
-								{"Name", "SUB1FrontDash"},
+
+								{"Name", "FloorFront"},								
 								{"Name", "SentinelSpinDetail"},
-								{"Name", "FrontDash"}	
-																
+								{"Name", "FrontDash"},
+								{"Name", "MonitorL"},
+								{"Name", "MonitorR"},
+								{"Name", "MonitorL1"},
+								{"Name", "MonitorL2"},
+								{"Name", "screenframe"},
+								{"Name", "Screens1"},
+								{"Name", "Projector"},
 								
 								--[[ Please use Sentinel Cockpit No Red Circuitry View by Babscoole for:
 								{"Name", "Red1"},
@@ -73,9 +88,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "SkinnedCablesL"},
 								{"Name", "SkinnedCablesR"},								
 								--]]
-																
-								
-						
                             },
                             ["REMOVE"] = "SECTION"
                         },
