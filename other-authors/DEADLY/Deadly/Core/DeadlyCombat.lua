@@ -92,12 +92,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "LaserShipRange", PLAYER_WEAPON_RANGE_MULTI },
                             }
                         },
-                        {
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "PirateRaidMinTime", 180 }, -- 90
-                                { "PirateRaidMaxTime", 360 }, -- 180
-                            }
-                        },
                     }
                 },
                 --
@@ -111,11 +105,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "FreighterAttackDisengageDistance",        30000 }, -- 3000
                                 { "PiratePlayerAttackRange",                 3000 },  -- 1500
                                 { "MissileRange",                            8000 },  -- 2000
-                                { "CollisionRayLengthMax",                   5000 },  -- 2000
                                 { "PlanetaryPirateRaidTradersEngageTime",    300 },   -- 30
                                 { "PlanetaryPirateRaidMaxTradersJoinCombat", 8 },     -- 4
+                                { "PirateStartSpeed",                        1000 },  -- 100
                                 -- ???
                                 { "VisibleDistance",                         10000 }, -- 3500
+                                { "CollisionRayLengthMax",                   5000 },  -- 2000
                                 -- ???
                                 -- { "ShipEscapeTimeBeforeWarpOut",             10 },    -- 10
                                 -- for tests
@@ -150,7 +145,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -166,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
                                 { "BehaviourTable", "IGNORE", "Id", "SPACE" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                                 { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             },
@@ -236,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "LaserHealthPoint",         0 },    -- disables laser usage
@@ -244,13 +239,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "GunDispersionAngle",       1 },    -- 5/3
                                 { "GunFireRate",              0.1 },  -- 0.15
                                 { "AttackTargetMinRange",     50 },   -- 200
-                                { "AttackTargetOffsetMax",    1000 }, -- 500
+                                { "AttackTargetOffsetMax",    3000 }, -- 500
                             },
                         },
                         {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "BehaviourTable", "IGNORE", "Id", "PLANET" },
-                                { "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "BehaviourTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "FleeBoost",       AI_PLANET_FLEE_BOOST },
@@ -261,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["FOREACH_SKW_GROUP"]  = {
                                 { "EngineTable", "IGNORE", "Id", "PLANET_EASY" },
                                 { "EngineTable", "IGNORE", "Id", "PLANET_HARD" },
-                                { "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
+                                --{ "EngineTable", "IGNORE", "Id", "RAID_BUILDING" },
                             },
                             ["MATH_OPERATION"]     = "*",
                             ["VALUE_CHANGE_TABLE"] = {
@@ -273,31 +268,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "GunDispersionAngle", 3 },    -- 6
-                                { "GunFireRate",        0.15 }, -- 0.3
+                                { "GunDispersionAngle", 3 },                                -- 6
+                                { "GunFireRate",        0.15 },                             -- 0.3
+                                { "LaserHealthPoint",   SQUADRON_WEAK_LASER_HEALTH_POINT }, -- 0
                             },
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "GunDispersionAngle", 1 },   -- 2
-                                { "GunFireRate",        0.1 }, -- 0.1
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_WEAK" },
-                            },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "LaserHealthPoint", SQUADRON_WEAK_LASER_HEALTH_POINT }, -- 0
-                            },
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "BehaviourTable", "IGNORE", "Id", "SQUADRON_STRONG" },
-                            },
-                            ["VALUE_CHANGE_TABLE"] = {
-                                { "LaserHealthPoint", SQUADRON_STRONG_LASER_HEALTH_POINT }, -- 0
+                                { "GunDispersionAngle", 1 },                                  -- 2
+                                { "GunFireRate",        0.1 },                                -- 0.1
+                                { "LaserHealthPoint",   SQUADRON_STRONG_LASER_HEALTH_POINT }, -- 0
                             },
                         },
                     }

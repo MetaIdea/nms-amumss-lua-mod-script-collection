@@ -1,11 +1,16 @@
 -- Ground test information on Permadeath.
--- AISHIPGUN_DAMAGE: 500. Oneshot.
--- AISHIPGUN_DAMAGE: 300. Maxed shield: destroyed. Maxed HP: -5 (or -4 ?) points.
--- AISHIPGUN_DAMAGE: 250. Maxed shield: destroyed. Maxed HP: -2 points.
+-- PIRATERAIDGUN_DAMAGE: 500. Oneshot.
+-- PIRATERAIDGUN_DAMAGE: 300. Maxed shield: destroyed. Maxed HP: -5 (or -4 ?) points.
+-- PIRATERAIDGUN_DAMAGE: 250. Maxed shield: destroyed. Maxed HP: -2 points.
+-- The damage can be multiplied by getting burst of 3-5 shots...
+-- PIRATERAIDGUN_DAMAGE = 15 -- 15
+
 AISHIPGUN_DAMAGE = 300
-TRADERGUN_DAMAGE = 250
+TRADERGUN_DAMAGE = 200
+-- laser
 AISHIP_DAMAGE = 250
-SQUADGUN_DAMAGE = 1000
+-- squadron damage
+SQUADGUN_DAMAGE = 1250
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -74,13 +79,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     ["MBIN_FILE_SOURCE"]  = "METADATA/PROJECTILES/PROJECTILETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
                         {
-                            ["FOREACH_SKW_GROUP"]  = {
-                                { "Id", "AISHIPGUN" },
-                                { "Id", "POLICEGUN" },
-                                { "Id", "PIRATERAIDGUN" },
+                            ["SPECIAL_KEY_WORDS"]  = {
+                                { "Id", "AISHIPGUN" }, -- 40
+                                { "Id", "POLICEGUN" }, -- 15
                             },
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "DefaultDamage", AISHIPGUN_DAMAGE }, -- 15
+                                { "DefaultDamage", AISHIPGUN_DAMAGE },
                             },
                         },
                         {
@@ -101,6 +105,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "DefaultDamage", SQUADGUN_DAMAGE }, -- 40
                             },
                         },
+                        -- {
+                        --     ["SPECIAL_KEY_WORDS"]  = { "Id", "PIRATERAIDGUN" },
+                        --     ["VALUE_CHANGE_TABLE"] = {
+                        --         { "DefaultDamage", PIRATERAIDGUN_DAMAGE }, -- 15
+                        --     },
+                        -- },
                     },
                 },
             }

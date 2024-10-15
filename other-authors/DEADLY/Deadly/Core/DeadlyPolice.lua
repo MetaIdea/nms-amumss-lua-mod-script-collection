@@ -14,24 +14,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "MaxNumActivePoliceRadius",                     40000 },   -- 10000
-                                { "PoliceStationEngageRange",                     50000 },   -- 10000
+                                { "MaxNumActivePoliceRadius",                     50000 },   -- 10000
                                 { "PoliceLaunchSpeed",                            2000 },    -- 500
-                                { "PoliceAbortRange",                             30000 },   -- 3000
+                                { "PoliceAbortRange",                             20000 },   -- 3000
                                 { "PoliceNumPerTarget",                           5 },       -- 3
                                 { "PoliceFreighterLaserRange",                    100000 },  -- 2000
                                 { "PoliceFreighterProjectileRange",               10000 },   -- 6000
                                 { "PoliceFreighterWarpOutRange",                  100000 },  -- 10000
-                                { "PoliceFreighterLaserRange",                    1000000 }, -- 2000
-                                { "PoliceFreighterLaserShootTime",                1 },       -- 1.2
                                 { "PoliceFreighterLaserRandomExtraPauseMax",      1.5 },     -- 3.5
                                 { "PoliceFreighterProjectileRandomExtraPauseMax", 2 },       -- 4
                                 -- for test cop freighter
                                 --{ "PoliceStationNumToLaunch",                     1 },       -- 9
                                 --{ "MaxNumActivePolice",                           15 },      -- 15
-                                -- ???
-                                { "PolicePauseTime",                              0 },       -- 3
-                                { "PolicePauseTimeSpaceBattle",                   0 },       -- 30
                             }
                         },
                     }
@@ -45,10 +39,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                { "ExperienceDefeatLevel5SpaceSentinelsMessageDelay", 0 },     -- 4
-                                { "ExperienceDefeatLevel5SpaceSentinelsRewardDelay",  0 },     -- 9
-                                { "WantedLevelPlayerRangeSpace",                      50000 }, -- 10000
-                                { "WantedMinSpaceTime",                               40 },    -- 20
+                                { "WantedLevelPlayerRangeSpace",                      30000 }, -- 10000
+                                { "WantedMinSpaceTime",                               60 },    -- 20
                             }
                         },
                     }

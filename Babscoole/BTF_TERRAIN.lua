@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"FloatingIslands", "Min"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"NoSeaBaseLevel",            "0"},
+                                {"NoSeaBaseLevel",          "0"},
                                 {"BuildingSmoothingRadius", "25"},
                                 {"BuildingSmoothingHeight", "25"},
                                 {"WaterFadeInDistance",     "1"},
