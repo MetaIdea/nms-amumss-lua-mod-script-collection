@@ -1,7 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "Life Sized Planets.pak",
-["MOD_DESCRIPTION"]         = "Big Planets",
 ["MOD_AUTHOR"]              = "",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.45",

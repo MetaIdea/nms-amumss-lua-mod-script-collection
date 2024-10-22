@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Punctuation", "{}"},
+                            ["SPECIAL_KEY_WORDS"] = {"Punctuation", "{%}%"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {

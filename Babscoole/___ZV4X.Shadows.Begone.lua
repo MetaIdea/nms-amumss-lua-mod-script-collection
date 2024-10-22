@@ -29,8 +29,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
-									[[    <RenderTarget id="SHADOWBUF_DS"       depthBuf="true"         numColBufs="0"  format="RED16F" depthFormat="DEPTH16" scale="1.0" width="2880" height="960"  shadow="true" hasMips="false" numUniformBuffers="1" esramPageDepthBuf="134" />]], 
-									[[    <RenderTarget id="SHADOWBUF_DS"       depthBuf="true"         numColBufs="0"  format="RED16F" depthFormat="DEPTH16" scale="0.01" width="2880" height="960"  shadow="true" hasMips="false" numUniformBuffers="1" esramPageDepthBuf="134" />]]
+									[[    <RenderTarget id="SHADOWBUF_DS"       depthBuf="true"         numColBufs="0"  format="RED16F" depthFormat="DEPTH16" scale="1.0" width="2880" height="960"  shadow="true" hasMips="false" numUniformBuffers="1" esramPageDepthBuf="424" />]], 
+									[[    <RenderTarget id="SHADOWBUF_DS"       depthBuf="true"         numColBufs="0"  format="RED16F" depthFormat="DEPTH16" scale="0.01" width="2880" height="960"  shadow="true" hasMips="false" numUniformBuffers="1" esramPageDepthBuf="424" />]]
 								},
 							}
 						},

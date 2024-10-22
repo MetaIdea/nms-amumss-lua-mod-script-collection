@@ -3738,11 +3738,11 @@ PROPERTY_DEBUG_LOCFILE =
 ]]
 
 -- path to custom localization file
-FILE_LANG_PETTALK = "LANGUAGE\\" .. PREFIX .. "_" .. SUFFIX .. ".EXML"
+FILE_LANG_PETTALK = [["LANGUAGE\\"]] .. PREFIX .. "_" .. SUFFIX .. ".EXML"
 
 -- fix for typo in LAS localization file name
 if SUFFIX == "LatinAmericanSpanish" then
-FILE_LANG_PETTALK = "LANGUAGE\\" .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
+FILE_LANG_PETTALK = [["LANGUAGE\\"]] .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
 end
 
 --------------------------------------------------

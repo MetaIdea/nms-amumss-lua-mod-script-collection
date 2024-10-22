@@ -182,7 +182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\FLEETMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\TABLES\FLEETMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

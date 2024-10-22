@@ -20,9 +20,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"DroneInvestigateMinWitnessRange",      "0"},     -- Original  22
                                 {"DroneCrimeWitnessInvestigateDistance", "0"},     -- Original  30
-                                {"DroneCrimeWitnessLimit",               "30000"}, -- Original  3
-                                {"DroneCrimeWitnessInvestigateDistance", "0"},     -- Original  30
-                                {"DroneCrimeProximityMultiplier",        "0"},     -- Original  3
                             }
                         },
                     }

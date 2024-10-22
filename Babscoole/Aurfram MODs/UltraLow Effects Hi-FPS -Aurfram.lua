@@ -351,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {[[    <Stage id="Shadow_2_Clear" enabled="false">]], [[    <Stage id="Shadow_2_Clear" enabled="true">]]},
                                 {[[    <Stage id="SkyClear" enabled="false">]], [[    <Stage id="SkyClear" enabled="true">]]},
                                 {[[    <Stage id="SpotlightsTiled" enabled="false">]], [[    <Stage id="SpotlightsTiled" enabled="True">]]},
-                                {[[    <Stage id="RefractionsCleanup" enabled="false">]], [[    <Stage id="RefractionsCleanup" enabled="true">]]},
+                                -- {[[    <Stage id="RefractionsCleanup" enabled="false">]], [[    <Stage id="RefractionsCleanup" enabled="true">]]},
                                 {[[    <Stage id="NewBloomBright" enabled="true">]], [[    <Stage id="NewBloomBright" enabled="false">]]},
                                 {[[    <Stage id="Effects" enabled="true">]], [[    <Stage id="Effects" enabled="false">]]},
                                 {[[    <Stage id="SpotlightsVolumetric" enabled="true">]], [[    <Stage id="SpotlightsVolumetric" enabled="false">]]},

@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -105,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -186,26 +186,20 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT"},
-                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT|collisionCylinder","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90"},
+                                {"Value", "0.802999"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT|collisionCylinder1","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.802999"},
@@ -237,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -255,26 +249,20 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT|collisionCylinder","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RotX", "90"},
+                                {"Value", "0.802999"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.802999"},
@@ -306,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -324,7 +312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -355,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -373,7 +361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -404,47 +392,20 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {1},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L|collisionCylinder","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "-90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children", "Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L|collisionCylinder1","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.991504"},
@@ -506,47 +467,20 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {1},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R|collisionCylinder","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {2},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"RotY", "-90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R", "Name", "HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2},
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R|collisionCylinder1","Name","HEIGHT"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.991504"},
@@ -601,7 +535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -619,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -657,7 +591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -675,7 +609,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -727,7 +661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -745,7 +679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -790,7 +724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -808,7 +742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -849,7 +783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -867,7 +801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -885,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -903,7 +837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -934,7 +868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -952,7 +886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -970,7 +904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -988,7 +922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1019,7 +953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1037,7 +971,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1076,7 +1010,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1094,7 +1028,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -1142,7 +1076,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1160,7 +1094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1191,7 +1125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1209,7 +1143,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1240,7 +1174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1258,7 +1192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -1336,7 +1270,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1354,7 +1288,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -1425,7 +1359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1451,7 +1385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1477,7 +1411,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1503,7 +1437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1529,7 +1463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1547,7 +1481,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1565,7 +1499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1591,7 +1525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1609,7 +1543,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1627,7 +1561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1653,7 +1587,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1679,7 +1613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1710,7 +1644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1790,7 +1724,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1808,7 +1742,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1826,7 +1760,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -1935,7 +1869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -1974,7 +1908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2013,7 +1947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2045,7 +1979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2077,7 +2011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2095,7 +2029,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2157,7 +2091,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2175,7 +2109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2236,7 +2170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2254,7 +2188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2272,7 +2206,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2308,7 +2242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2326,7 +2260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2344,7 +2278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2362,7 +2296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2393,7 +2327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2411,7 +2345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2429,7 +2363,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2465,7 +2399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2483,7 +2417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2501,7 +2435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2519,7 +2453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2550,7 +2484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2568,7 +2502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2631,7 +2565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2649,7 +2583,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2704,7 +2638,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2722,7 +2656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2767,7 +2701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2785,7 +2719,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2830,7 +2764,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2848,7 +2782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2866,7 +2800,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2884,7 +2818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2934,7 +2868,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2952,7 +2886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2970,7 +2904,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2988,7 +2922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3044,7 +2978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3102,7 +3036,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3153,7 +3087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3171,7 +3105,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3221,7 +3155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3239,7 +3173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3289,7 +3223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3350,7 +3284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3412,7 +3346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3444,7 +3378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3509,7 +3443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3652,7 +3586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -3670,7 +3604,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3702,7 +3636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3735,7 +3669,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3767,7 +3701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3800,7 +3734,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3832,7 +3766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3865,7 +3799,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3896,7 +3830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3914,7 +3848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3945,7 +3879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3963,7 +3897,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3994,7 +3928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -4012,7 +3946,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -4044,7 +3978,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4077,7 +4011,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4109,7 +4043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4127,7 +4061,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4145,7 +4079,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4185,7 +4119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4203,7 +4137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4221,7 +4155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4268,7 +4202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4286,7 +4220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4326,7 +4260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4344,7 +4278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4391,7 +4325,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4431,7 +4365,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4478,7 +4412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4496,7 +4430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4536,7 +4470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4554,7 +4488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4601,7 +4535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4619,7 +4553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4659,7 +4593,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4677,7 +4611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4724,7 +4658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4764,7 +4698,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4811,7 +4745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4851,7 +4785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4906,7 +4840,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
                           </Property>
-                          <Property name="Attributes" />
+                      <Property name="PlatformExclusion" value="0" />
                           <Property name="Children" />
                         </Property>
 ]]
@@ -4932,7 +4866,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
                           </Property>
-                          <Property name="Attributes" />
+                      <Property name="PlatformExclusion" value="0" />
                           <Property name="Children" />
                         </Property>
 ]]
@@ -4989,7 +4923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -5007,7 +4941,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5097,7 +5031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -5136,7 +5070,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5180,7 +5114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5223,7 +5157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -5241,7 +5175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5281,7 +5215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5320,7 +5254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5367,7 +5301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5414,7 +5348,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]

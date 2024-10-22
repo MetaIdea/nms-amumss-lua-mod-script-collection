@@ -1,8 +1,8 @@
 --Probability variables by star type/color
-YELLOW = 0.25 --original 0.25
-GREEN  = 0.15 --original 0.15
-BLUE   = 0.15 --original 0.15
-RED    = 0.5  --original 0.5
+YELLOW = 0.30 --original 0.25
+GREEN  = 0.2 --original 0.15
+BLUE   = 0.2 --original 0.15
+RED    = 0.6  --original 0.5
 PURPLE = 0    --original 0
 
 NMS_MOD_DEFINITION_CONTAINER =

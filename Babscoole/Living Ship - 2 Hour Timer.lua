@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CT"] =
             {
                 {
-                    ["MBIN_FS"] = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
+                    ["MBIN_FS"] = "METADATA\SIMULATION\MISSIONS\TABLES\SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CT"] =
                     {
                         {

@@ -6,7 +6,7 @@ InputNOLINESCHOICE = {NOLINES,
     Default = false | Current = >> ]] .. (NOLINES and "Y" or "N") .. [[ <<
 ]]}
 
-NOLINES = GUIF(InputNOLINESCHOICE)
+NOLINES = GUIF(InputNOLINESCHOICE,10)
 
 --Select Color Variation from BLUE, CYAN, GREEN, PINK, PURPLE, RED, WHITE, or YELLOW, or NOLINES
 COLORCHOICE = "CYAN"
@@ -21,7 +21,7 @@ InputCOLORCHOICE = {COLORCHOICE,
     Default = BLUE | Current = >> ]] .. (COLORCHOICE) .. [[ <<
 ]]}
 
-COLORCHOICE = GUIF(InputCOLORCHOICE)
+COLORCHOICE = GUIF(InputCOLORCHOICE,10)
 COLORCHOICE = string.upper(COLORCHOICE)
 end
 

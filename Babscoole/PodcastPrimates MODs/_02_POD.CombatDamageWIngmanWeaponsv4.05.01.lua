@@ -368,8 +368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "BOUNTYLASER3"},
-                            ["SECTION_ACTIVE"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "BOUNTYLASER2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "40"}
@@ -377,7 +376,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BOUNTYLASER3"},
-                            ["SECTION_ACTIVE"] = 2,
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "60"}
@@ -647,7 +645,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "GcAIShipSpawnData.xml", "Spread", "Spread"},
+                            ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "ChildSpawns", "GcAIShipSpawnData.xml", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "750"},

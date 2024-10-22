@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = "More MAX Upgradeable Slots",
+    ["MOD_FILENAME"]  = "More MAX Upgradeable Slots.pak",
     ["MOD_AUTHOR"]    = "Dunzz",
     ["LUA_AUTHOR"]    = "Babscoole",
     ["NMS_VERSION"]   = "5.03",

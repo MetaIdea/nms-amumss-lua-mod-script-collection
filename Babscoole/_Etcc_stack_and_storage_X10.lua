@@ -20,7 +20,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SubstanceStackLimit", "99999"},
@@ -34,7 +33,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -59,7 +57,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
                                 {"Low",    "GcDifficultyInventoryStackSizeOptionData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
                             ["VALUE_CHANGE_TABLE"] =
                             {

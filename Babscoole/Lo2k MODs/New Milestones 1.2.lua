@@ -23,70 +23,70 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_01_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "10000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_02"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_02_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "20000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "50000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_04_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "100000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "150000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "200000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "250000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "300000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "350000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "400000"},
@@ -101,56 +101,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_04_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "200"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "250"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "300"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "350"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ALIENS_MET_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "400"},
@@ -165,70 +165,70 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_01_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"IntValue",     "10"},
+                                {"IntValue", "10"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_02"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_02_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "20"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_04_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "200"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "250"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "300"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "350"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "WORDS_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "400"},
@@ -243,70 +243,70 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_01_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_02"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_02_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "200000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "500000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_04_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "1000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "2000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "5000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "10000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "20000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "50000000"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "MONEY_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100000000"},
@@ -321,7 +321,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_01_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_02"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_02_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -337,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_04_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -345,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_05_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -353,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_06_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -361,7 +361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_07_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -369,7 +369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_08_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -377,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_09_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -385,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "ENEMIES_STAT_10_L"},
                             ["SECTION_ACTIVE"] = {1},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -401,63 +401,63 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_01_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_04"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_04_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "60"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "100"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "150"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "200"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "250"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "300"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "SENTINEL_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "350"},
@@ -472,42 +472,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "9900"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "12600"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "16200"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "19800"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "23400"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "LONGEST_LIFE_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FloatValue", "27000"},
@@ -522,63 +522,63 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_01"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_01_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "1"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_02"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_02_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "5"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_03"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_03_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "10"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_05"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_05_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "30"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_06"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_06_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "40"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_07"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_07_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "50"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_08"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_08_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "60"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_09"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_09_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "70"},
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_10"},
+                            ["SPECIAL_KEY_WORDS"] = {"LevelName", "DIST_WARP_STAT_10_L"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IntValue", "80"},

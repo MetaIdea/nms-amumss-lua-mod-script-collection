@@ -212,14 +212,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 -- START of processing
-NOLINES = GUIF(InputNOLINESCHOICE)
+NOLINES = GUIF(InputNOLINESCHOICE,10)
 -- print("NOLINES = "..tostring(NOLINES))
 
 while not NOLINES do
   -- Select Color Variation from BLUE, CYAN, GREEN, PINK, PURPLE, RED, WHITE or YELLOW -- choice is already made for NOLINES
   -- COLORCHOICE = "BLUE"
 
-  COLORCHOICE = GUIF(InputCOLORCHOICE):upper()
+  COLORCHOICE = GUIF(InputCOLORCHOICE,20):upper()
 -- print("COLORCHOICE = "..tostring(COLORCHOICE))
 
   if ColorTables[COLORCHOICE] == nil then  -- when COLORCHOICE is NOT in the table

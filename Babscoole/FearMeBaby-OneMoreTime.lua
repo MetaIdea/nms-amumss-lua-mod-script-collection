@@ -14,43 +14,43 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = {"GCAISPACESHIPGLOBALS.GLOBAL.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Attack", "GcShipAIAttackData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumHitsBeforeBail",       "5000"},
-                                {"NumHitsBeforeReposition", "2000"},
-                            },
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Attack", "GcShipAIAttackData.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"NumHitsBeforeBail",       "5000"},
+                                -- {"NumHitsBeforeReposition", "2000"},
+                            -- },
+                        -- },
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PirateExtraDamage", "3"},
                             },
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BountyAttack", "GcShipAIAttackData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumHitsBeforeReposition", "2000"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"AttackPlanet", "GcShipAIAttackData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumHitsBeforeBail",       "4000"},
-                                {"NumHitsBeforeReposition", "1000"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"TraderAttack", "GcShipAIAttackData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"NumHitsBeforeBail",       "1000"},
-                                {"NumHitsBeforeReposition", "600"},
-                            },
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"BountyAttack", "GcShipAIAttackData.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"NumHitsBeforeReposition", "2000"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"AttackPlanet", "GcShipAIAttackData.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"NumHitsBeforeBail",       "4000"},
+                                -- {"NumHitsBeforeReposition", "1000"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"TraderAttack", "GcShipAIAttackData.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"NumHitsBeforeBail",       "1000"},
+                                -- {"NumHitsBeforeReposition", "600"},
+                            -- },
+                        -- },
                     },
                 },
                 {
@@ -83,20 +83,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxNumPatrolDrones",   "3"},
-                                {"DroneHealth",          "5600"},
-                                {"CorruptedDroneHealth", "9000"},
-                                {"QuadHealth",           "14000"},
-                                {"WalkerHealth",         "60000"},
+                                -- {"DroneHealth",          "5600"},
+                                -- {"CorruptedDroneHealth", "9000"},
+                                -- {"QuadHealth",           "14000"},
+                                -- {"WalkerHealth",         "60000"},
                             },
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"DroneControl", "GcDroneData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"AttackFireTimeMin", "1"},
-                                {"AttackFireTimeMax", "2"},
-                            },
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"DroneControl", "GcDroneData.xml"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"AttackFireTimeMin", "1"},
+                                -- {"AttackFireTimeMax", "2"},
+                            -- },
+                        -- },
                     },
                 },
                 {
@@ -355,79 +355,79 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"y", "24"},
                             },
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "Spread"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "120"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "Count"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "2"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "100"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "3"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "120"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x", "3"},
-                                {"y", "4"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "120"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x", "3"},
-                                {"y", "6"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x", "200"},
-                                {"y", "600"},
-                            },
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"y", "2"},
-                            },
-                        },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "Spread"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "120"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "Count"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "2"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "100"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "3"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "120"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"x", "3"},
+                                -- {"y", "4"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "120"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"x", "3"},
+                                -- {"y", "6"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Spread"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"x", "200"},
+                                -- {"y", "600"},
+                            -- },
+                        -- },
+                        -- {
+                            -- ["PRECEDING_KEY_WORDS"] = {"PoliceSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"y", "2"},
+                            -- },
+                        -- },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AmbientSpawns", "Spread"},
                             ["VALUE_CHANGE_TABLE"] =

@@ -49,13 +49,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CenterStartTime", "600"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MECHSHOOT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"CenterStartTime", "600"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "MECHSHOOT"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"CenterStartTime", "600"},
+                            -- }
+                        -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MECHJETPACK"},
                             ["VALUE_CHANGE_TABLE"] =

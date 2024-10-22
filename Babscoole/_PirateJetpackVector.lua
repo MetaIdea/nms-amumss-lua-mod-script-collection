@@ -14,7 +14,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Message","UI_BIO_SHIP_MISSION1_MSG3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GroundWalkSpeed",       "6.4"},

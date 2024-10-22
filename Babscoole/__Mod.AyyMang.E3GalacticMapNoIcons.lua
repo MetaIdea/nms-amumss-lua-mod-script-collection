@@ -612,7 +612,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SECTION_ACTIVE"] = {2},                            
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PresetID",             ""},
                                 {"IsHidden",             "True"},
                                 {"PositionX",            "9"},
                                 {"PositionY",            "1"},

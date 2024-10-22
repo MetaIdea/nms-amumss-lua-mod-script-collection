@@ -17,18 +17,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "RAW",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {
-                                    [[    <RenderTarget id="CLOUDS_HIGH"        platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" width="442" height="496"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />]],
-                                    [[    <RenderTarget id="CLOUDS_HIGH"        platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" width="1768" height="1984"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />]]
-                                },
-                                {
-                                    [[    <RenderTarget id="CLOUD_BLURBUF1"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />]],
-                                    [[    <RenderTarget id="CLOUD_BLURBUF1"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="1768" height="1984" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />]]
-                                },
-                                {
-                                    [[    <RenderTarget id="CLOUD_BLURBUF2"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />]],
-                                    [[    <RenderTarget id="CLOUD_BLURBUF2"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="1768" height="1984" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />]]
-                                },
+                                -- {
+                                    -- [[    <RenderTarget id="CLOUDS_HIGH"        platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" width="442" height="496"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />]],
+                                    -- [[    <RenderTarget id="CLOUDS_HIGH"        platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" width="1768" height="1984"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />]]
+                                -- },
+                                -- {
+                                    -- [[    <RenderTarget id="CLOUD_BLURBUF1"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />]],
+                                    -- [[    <RenderTarget id="CLOUD_BLURBUF1"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="1768" height="1984" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />]]
+                                -- },
+                                -- {
+                                    -- [[    <RenderTarget id="CLOUD_BLURBUF2"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />]],
+                                    -- [[    <RenderTarget id="CLOUD_BLURBUF2"     platforms="!PS5,PC,PS4"  depthBuf="false"  numColBufs="1" format="RGBA8"  width="1768" height="1984" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />]]
+                                -- },
                                 {
                                     [[      <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />]],
                                     [[      <!DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />]]
@@ -53,7 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                     [[    <Stage id="NoBloom" enabled="false">]],
                                     [[    <Stage id="NoBloom" enabled="true">]]
                                 },
-                                
                             }
                         },
                     }

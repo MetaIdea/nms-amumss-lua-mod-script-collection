@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LandingMaxSpeed",                          "1000"},
                                 {"MaximumDistanceFromShipWhenExiting",       "2"},
-                                {"DockingAttractAlignRange",                 "2000"},
+                                -- {"DockingAttractAlignRange",                 "2000"},
                                 {"OutpostDockSpeedAlignRange",               "1000"},
                                 {"WarpInTime",                               "0.01"},
                                 {"WarpInFlashTime",                          "0.01"},

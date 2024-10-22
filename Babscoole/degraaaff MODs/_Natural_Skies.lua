@@ -167,8 +167,14 @@ for i = 1, #DataTable do
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
-        ["PRECEDING_KEY_WORDS"] = {"Settings"},
-        ["ADD"] = CreateColoursProperty(PaletteColours)
+        ["MBIN_FILE_SOURCE"] = FileSource,
+        ["EXML_CHANGE_TABLE"] =
+        {
+            {
+                ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
+                ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                ["ADD"] = CreateColoursProperty(PaletteColours)
+            }
+        }
     }
 end

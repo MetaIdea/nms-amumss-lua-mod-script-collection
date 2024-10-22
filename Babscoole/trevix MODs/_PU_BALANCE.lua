@@ -36,17 +36,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"ModelRenderData",       "TkModelRendererData.xml"},
-                                {"InteractionCameraData", "TkModelRendererData.xml"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"LightIntensityMultiplier", "0"},
-                            }
-                        },
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] =
+                            -- {
+                                -- {"ModelRenderData",       "TkModelRendererData.xml"},
+                                -- {"InteractionCameraData", "TkModelRendererData.xml"},
+                            -- },
+                            -- ["VALUE_CHANGE_TABLE"] =
+                            -- {
+                                -- {"LightIntensityMultiplier", "0"},
+                            -- }
+                        -- },
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {

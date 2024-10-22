@@ -22,7 +22,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WeapTechSpecialist",  "GcTradeData.xml"},
                                 {"NexusTechSpecialist", "GcTradeData.xml"},
                             },
-                            ["SPECIAL_KEY_WORDS"] = {"ShipTechSpecialist", "GcTradeData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinItemsForSale", "40"},

@@ -15,16 +15,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StatsType", "Weapon_Laser_Mining_Speed"},
-                            ["SECTION_ACTIVE"] = {"2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LASER", "StatsType", "Weapon_Laser_Mining_Speed"},
+                            ["SECTION_UP"] = 1,
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Bonus", "0.25"}
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"StatsType", "Weapon_Laser_MiningBonus"},
-                            ["SECTION_ACTIVE"] = {"2"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "LASER", "StatsType", "Weapon_Laser_MiningBonus"},
+                            ["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {

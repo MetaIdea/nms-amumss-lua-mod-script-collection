@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"WaterGroupsGroupsPerKm"},
+                            ["PRECEDING_KEY_WORDS"] = {"WaterGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Sparse",    "3"},
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["PRECEDING_KEY_WORDS"] = {"AirGroupsGroupsPerKm"},
+                            ["PRECEDING_KEY_WORDS"] = {"AirGroupsPerKm"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Sparse",    "1"},
