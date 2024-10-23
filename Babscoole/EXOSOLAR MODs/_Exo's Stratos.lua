@@ -3858,7 +3858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "_Exo's Stratos.pak",
 ["MOD_AUTHOR"]              = "Exosolar & Babscoole",
-["NMS_VERSION"]             = "5.12",
+["NMS_VERSION"]             = "5.20",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -4080,7 +4080,7 @@ for i = 1, #DataTable do
             {
                 ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                ["ADD_OPTION"] = "ADDendSECTION", 
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = CreateColoursProperty(PaletteColours)
             }
         }

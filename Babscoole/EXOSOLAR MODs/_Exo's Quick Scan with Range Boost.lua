@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exo's Quick Scan with Range Boost.pak",
 ["MOD_AUTHOR"]              = "Exosolar",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.12",
+["NMS_VERSION"]             = "5.20",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

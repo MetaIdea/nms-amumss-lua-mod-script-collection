@@ -4,7 +4,6 @@ local mod_desc = [[
 
   * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]--------------------------------------------------------------------
-local mod_version = '1.32'
 
 local tech_icons = {
 ---	ship
@@ -82,9 +81,9 @@ local tech_icons = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.'..mod_version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.11',
+	NMS_VERSION			= '5.20',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

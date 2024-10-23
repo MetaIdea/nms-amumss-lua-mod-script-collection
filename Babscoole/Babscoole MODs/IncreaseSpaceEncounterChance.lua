@@ -4,7 +4,7 @@ Author          = "Babscoole & Gumsk"
 ModName         = "IncreaseSpaceEncounterChance"
 ModNameSub      = ChanceMultiplier.."x"
 BaseDescription = "Makes space pulse encounters more likely"
-GameVersion     = "5.12"
+GameVersion     = "5.20"
 --ModVersion      = "a"
 
 --[[ Files Modified:

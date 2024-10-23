@@ -1387,7 +1387,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "SnappyIndustry.pak",
 ["MOD_AUTHOR"]    = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
 ["LUA_AUTHOR"]    = "Babscoole, EMPTY.d, KuroPeach",
-["NMS_VERSION"]   = "5.12",
+["NMS_VERSION"]   = "5.20",
 ["DESCRIPTION"]   = "Add more snapping points to certain building modules in game",
 ["MODIFICATIONS"] =
     {

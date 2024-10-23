@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BinocScanTime",						"0.0"}, 	-- WayPoint "2.2"
 								{"BinocCreatureScanTime",				"0"},		-- WayPoint "1.9"
 								{"BinocularScanTargetInitialFadeTime",	"0.0"}, 	-- WayPoint "0.5"
-								-- {"BinocularScanTargetScale",			"0.5"},		-- WayPoint "0.8"
+								{"CargoShieldStrength",					"1"},		-- Worlds "0.5" -- Testing 100% Cargo Scan Deflector
 								{"BinocularScanTargetLineWidth",		"2"},		-- WayPoint "1"
 								{"BinocularScanTargetFadeTime",			"0.0"}		-- WayPoint "0.5"								
 							}

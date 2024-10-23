@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Exo's Expanse Black Edition.pak",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "5.12",
+["NMS_VERSION"]   = "5.20",
 ["MODIFICATIONS"] =
     {
         {

@@ -10,7 +10,7 @@ local mod_desc = [[
    ROCKS/MEDIUM/MEDIUMROCK.SCENE.MBIN >> MEDIUM & ROCK
    FOLIAGE/MEDIUMPLANT.SCENE.MBIN     >> FOLIAGE & MEDIUM & PLANT
 
-  - The correct tag can match anything from any scene file across all
+  - A well-chosen tag can match anything from any scene file across all
    biomes (MODEL), to a single instance of one scene (VOLCANO).
   - solar_modifiers.biomes are modifiers for specific source files.
    They can match more than one source: LUSH will be applied to ALL lush biomes,
@@ -23,8 +23,6 @@ local mod_desc = [[
   - Other properties of GcObjectSpawnData.xml can be modded by adding a property's
    name to object_spawn_prop with a unique key, then adding tag modifiers for it.
 ]]-------------------------------------------------------------------------------------
-
-local mod_version = '2.24'
 
 --	Properties of [GcObjectSpawnData.xml] being modified
 local spawn_data = {
@@ -329,7 +327,7 @@ end
 --	When parsing a full file, the header is stripped and a mock template is added
 --	@param exml: requires complete EXML sections in the nomral format
 --	* Does not handle commented lines!
-function ToLua(exml)
+local function ToLua(exml)
 	local function eval(val)
 		if val == 'True' then
 			return true
@@ -388,7 +386,7 @@ end
 -- A Union All function for an ordered array of tables
 -- Returns a copy by-value. Repeating keys's values are overwritten.
 --	@param arr: A table of tables.
-function UnionTables(arr)
+local function UnionTables(arr)
 	local merged = {}
 	for _, tbl in ipairs(arr) do
 		for k, val in pairs(tbl) do
@@ -404,7 +402,7 @@ function UnionTables(arr)
 end
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
-function ToExml(class)
+local function ToExml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	function bool(b)
@@ -469,7 +467,7 @@ end
 --	Uses the contained template meta if found (instead of the received variable)
 --	@param data: a lua2exml formatted table
 --	@param template: an nms file template string
-function FileWrapping(data, template)
+local function FileWrapping(data, template)
 	local wrapper = '<Data template="%s">%s</Data>'
 	if type(data) == 'string' then
 		return string.format(wrapper, template, data)
@@ -656,9 +654,9 @@ function ProcessRawExml(the_index) -- called by AMUMSS
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.large flora.'..mod_version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.11',
+	NMS_VERSION			= '5.20',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

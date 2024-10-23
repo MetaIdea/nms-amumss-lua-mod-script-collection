@@ -585,7 +585,7 @@ QUICK_ACTION_MENU =
         <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
-        <Property name="NeverAllowExtremeSentinelPlanet" value="True" />
+        <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
         <Property name="NeedsExtremeHazardPlanet" value="False" />
         <Property name="AnyBiomeNotWeirdOrDead" value="False" />
@@ -596,12 +596,12 @@ QUICK_ACTION_MENU =
           <Property name="Biome" value="Lush" />
         </Property>
         <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="HydroGarden" />
+          <Property name="BiomeSubType" value="None" />
         </Property>
         <Property name="NeedsEmptySystem" value="False" />
         <Property name="NeedsAbandonedSystem" value="False" />
         <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="True" />
+        <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SuitableForRobotCreatureDiscovery" value="False" />
         <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
@@ -641,7 +641,7 @@ QUICK_ACTION_MENU =
         <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsCorruptSentinelPlanet" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
-        <Property name="NeverAllowExtremeSentinelPlanet" value="True" />
+        <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
         <Property name="NeedsExtremeHazardPlanet" value="False" />
         <Property name="AnyBiomeNotWeirdOrDead" value="False" />
@@ -652,12 +652,12 @@ QUICK_ACTION_MENU =
           <Property name="Biome" value="Lush" />
         </Property>
         <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-          <Property name="BiomeSubType" value="HydroGarden" />
+          <Property name="BiomeSubType" value="None" />
         </Property>
         <Property name="NeedsEmptySystem" value="False" />
         <Property name="NeedsAbandonedSystem" value="False" />
         <Property name="NeedsResourceHint" value="" />
-        <Property name="SuitableForCreatureDiscovery" value="True" />
+        <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SuitableForRobotCreatureDiscovery" value="False" />
         <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
@@ -1462,7 +1462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "5.12",
+["NMS_VERSION"]     = "5.20",
 ["MODIFICATIONS"]   =
     {
         {

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-Org.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "5.12",
+["NMS_VERSION"]     = "5.20",
 ["MODIFICATIONS"]   =
     {
         {
