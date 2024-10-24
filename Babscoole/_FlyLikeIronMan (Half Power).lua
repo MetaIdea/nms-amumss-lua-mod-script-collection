@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_FlyLikeIronManV1.5Half Power.pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.10",
+["NMS_VERSION"]   = "5.20",
 ["MODIFICATIONS"] =
     {
         {
@@ -46,10 +46,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"JetpackMaxUpSpeed",                   "25"},
                                 {"JetpackUpForce",                      "27"},
                                 {"JetpackFillRate",                     "9999"},
-                                {"JetpackFillRateMidair",               "99999"},
+                                {"JetpackFillRateMidair",               "9999"},
                                 {"SpaceJetpackForce",                   "9999"},
                                 {"SpaceJetpackMaxSpeed",                "99"},
-                                {"SpaceJetpackDrainRate",               "0"},
+                                {"SpaceJetpackDrainRate",               "0.3"},
                                 {"UpgradeExosuitWithProduct",           "True"},
                             }
                         },

@@ -5,7 +5,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_FlyLikeIronManV1.5FullPowerLimtedFuel.pak",
 ["MOD_AUTHOR"]    = "DooDooDevan",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.10",
+["NMS_VERSION"]   = "5.20",
 ["MODIFICATIONS"] =
     {
         {
@@ -37,11 +37,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"RocketBootsMaxDesiredHeight",         "6"},
                                 {"RocketBootsHeightAdjustUpStrength",   "0.57"},
                                 {"RocketBootsHeightAdjustDownStrength", "0.3"},
-                                {"RocketBootsBoostTankDrainSpeed",      "0"},
-                                {"RocketBootsDriftTankDrainSpeed",      "0"},
+                                {"RocketBootsBoostTankDrainSpeed",      "6"},
+                                {"RocketBootsDriftTankDrainSpeed",      "1"},
                                 {"RocketBootsDriftDownwardForce",       "0.5"},
                                 {"JetpackForce",                        "21"},
-                                {"JetpackBrake",                        "8"},
+                                {"JetpackBrake",                        "9"},
                                 {"JetpackMaxSpeed",                     "99"},
                                 {"JetpackMaxUpSpeed",                   "99"},
                                 {"JetpackUpForce",                      "27"},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"JetpackFillRateMidair",               "0.3"},
                                 {"SpaceJetpackForce",                   "9999"},
                                 {"SpaceJetpackMaxSpeed",                "99"},
-                                {"SpaceJetpackDrainRate",               "0"},
+                                {"SpaceJetpackDrainRate",               "0.3"},
                                 {"UpgradeExosuitWithProduct",           "True"},
                             }
                         },
