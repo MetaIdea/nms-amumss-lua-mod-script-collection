@@ -385,7 +385,7 @@ Test_CODE1 = [[
       <Property name="Id" value="REFINERECIPE_334" />
       <Property name="RecipeType" value="RECIPE_ULTRAPROD1" />
       <Property name="RecipeName" value="R_NAME_ULTRAPROD1" />
-      <Property name="TimeToMake" value="2" />
+      <Property name="TimeToMake" value="1" />
       <Property name="Cooking" value="False" />
       <Property name="Result" value="GcRefinerRecipeElement.xml">
         <Property name="Id" value="ULTRAPROD1" />
@@ -457,35 +457,72 @@ Test_CODE1 = [[
     </Property>
 ]]
 
+Test_CODE2 = [[
+    <Property value="GcRefinerRecipe.xml">
+      <Property name="Id" value="RECIPE_1304" />
+      <Property name="RecipeType" value="UI_TRA_CURIO2" />
+      <Property name="RecipeName" value="UI_TRA_CURIO2_R" />
+      <Property name="TimeToMake" value="1" />
+      <Property name="Cooking" value="True" />
+      <Property name="Result" value="GcRefinerRecipeElement.xml">
+        <Property name="Id" value="TRA_CURIO2" />
+        <Property name="Type" value="GcInventoryType.xml">
+          <Property name="InventoryType" value="Product" />
+        </Property>
+        <Property name="Amount" value="1" />
+      </Property>
+      <Property name="Ingredients">
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="NIPNIPBUDS" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+        <Property value="GcRefinerRecipeElement.xml">
+          <Property name="Id" value="FUEL1" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
+    </Property>
+]]
+
 NMS_MOD_DEFINITION_CONTAINER = {
 
-    ["MOD_FILENAME"]    = "FastCraft for Fusion Igniter and Stasis Device.pak",
-	["MOD_AUTHOR"]      = "KuroPeach",
-    ["LUA_AUTHOR"]      = "KuroPeach",
-    ["MOD_DESCRIPTION"] = "删除默认核融与休眠配方，聚合材料一键合成，原配方移到精炼机",
-    ["NMS_VERSION"]     = "5.12",
+  ["MOD_FILENAME"]    = "FastCraft for Fusion Igniter and Stasis Device.pak",
+  ["MOD_AUTHOR"]      = "KuroPeach",
+  ["LUA_AUTHOR"]      = "KuroPeach",
+  ["MOD_DESCRIPTION"] = "删除默认核融与休眠配方，聚合材料一键合成，原配方移到精炼机",
+  ["NMS_VERSION"]     = "5.20",
 
-    ["MODIFICATIONS"] = {{      
+  ["MODIFICATIONS"]   = { {
 
-        ["MBIN_CHANGE_TABLE"] = {{
-            ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"},   
-            ["EXML_CHANGE_TABLE"] = 
-			{{
-				["SPECIAL_KEY_WORDS"] = {{"ID","ULTRAPROD1"},{"ID","ULTRAPROD2"}},
-				["REMOVE"] = "SECTION"
-            },{
-                ["SPECIAL_KEY_WORDS"] = {"ID", "POWERCELL2"},
-                ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-                ["ADD"] = Test_CODE,            
-			}}
-        },{
-            ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN"},   
-            ["EXML_CHANGE_TABLE"] = 
-			{{
-                ["SPECIAL_KEY_WORDS"] = {"Id", "REFINERECIPE_333"},
-                ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-                ["ADD"] = Test_CODE1,            
-			}}
-        }}
-    }}
+    ["MBIN_CHANGE_TABLE"] = { {
+      ["MBIN_FILE_SOURCE"]  = { "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN" },
+      ["EXML_CHANGE_TABLE"] =
+      { {
+        ["SPECIAL_KEY_WORDS"] = { { "ID", "ULTRAPROD1" }, { "ID", "ULTRAPROD2" } },
+        ["REMOVE"] = "SECTION"
+      }, {
+        ["SPECIAL_KEY_WORDS"] = { "ID", "POWERCELL2" },
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["ADD"] = Test_CODE,
+      } }
+    }, {
+      ["MBIN_FILE_SOURCE"]  = { "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN" },
+      ["EXML_CHANGE_TABLE"] =
+      { {
+        ["SPECIAL_KEY_WORDS"] = { "Id", "REFINERECIPE_333" },
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["ADD"] = Test_CODE1,
+      }, {
+        ["SPECIAL_KEY_WORDS"] = { "Id", "RECIPE_1303" },
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["ADD"] = Test_CODE2,
+      } }
+    } }
+  } }
 }

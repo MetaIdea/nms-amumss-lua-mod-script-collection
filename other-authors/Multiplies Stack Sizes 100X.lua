@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_DESCRIPTION"] = "Multiplies Stack Sizes",
 	["MOD_AUTHOR"]      = "KuroPeach",
 	["LUA_AUTHOR"]      = "Gumsk & KuroPeach",
-	["NMS_VERSION"]     = "5.12",
+	["NMS_VERSION"]     = "5.20",
 	["MODIFICATIONS"]   = {
 		{
 			["MBIN_CHANGE_TABLE"] = {

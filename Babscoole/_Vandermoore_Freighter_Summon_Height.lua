@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FreighterSummonPlanetOffset", "1000"},
+                                {"FreighterSummonPlanetOffset", "800"},
                             }
                         },
                     }

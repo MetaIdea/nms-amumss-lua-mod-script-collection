@@ -49,8 +49,8 @@ MinTechSlots =		12									--12
 MaxTechSlots =		12									--12
 
 --Maximum Width(X) and Height(Y) for the boundaries where slots can appear in the Exosuit, can be used to limit the final size of the inventory once fully upgraded
-CargoMaxWidth=		7									--7			Doesn't seem to actually have any effect
-CargoMaxHeight=		5									--5			Doesn't seem to actually have any effect
+CargoMaxWidth=		8									--10		Doesn't seem to actually have any effect
+CargoMaxHeight=		5									--12		Doesn't seem to actually have any effect
 TechMaxWidth=		10									--10
 TechMaxHeight=		4									--6
 
@@ -146,6 +146,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxWidthSmall",			CargoMaxWidth},
 								{"MaxHeightSmall",			CargoMaxHeight},
+								{"MaxWidthStandard",		CargoMaxWidth},
+								{"MaxHeightStandard",		CargoMaxHeight},
+								{"MaxWidthLarge",			CargoMaxWidth},
+								{"MaxHeightLarge",			CargoMaxHeight},
 							}
 						},
 						{
@@ -155,6 +159,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxWidthSmall",			TechMaxWidth},
 								{"MaxHeightSmall",			TechMaxHeight},
+								{"MaxWidthStandard",		TechMaxWidth},
+								{"MaxHeightStandard",		TechMaxHeight},
+								{"MaxWidthLarge",			TechMaxWidth},
+								{"MaxHeightLarge",			TechMaxHeight},
 							}
 						},
 						{

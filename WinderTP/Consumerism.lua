@@ -1,6 +1,31 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "101",
+		["Table"] =  
+		{
+			-- { ["ID"] = "SPOOK_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "PORTAL_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "MESSAGE_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "BOSS_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "MESSAGE_JUICE1",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "MESSAGE_JUICE2",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "MESSAGE_JUICE3",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			-- { ["ID"] = "MESSAGE_JUICE4",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_SHIP16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "JETS_SQUID",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_S16_HAT",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER16A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER16B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER16C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "S16_HEATER",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "92",
 		["Table"] =  
 		{

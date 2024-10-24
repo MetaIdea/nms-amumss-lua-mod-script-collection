@@ -342,15 +342,21 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_4",		75	,				60},				--Makes Nanites					x50		in	60 time
+		{"REFINERECIPE_4",		75,					60},				--Makes Nanites					x50		in	60 time
 		{
 			{"FISHCORE",		1}										--Requires Hadal Core			x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		35	,				60},				--Makes Sodium Nitrate			x50		in	60 time
+		{"REFINERECIPE_5",		35,					60},				--Makes Sodium Nitrate			x50		in	60 time
 		{
 			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_9",		1,					30},				--Makes Glass					x1		in	60 time
+		{
+			{"PLANT_SNOW",		30}										--Requires Frosy Crystal		x40
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -500,6 +506,36 @@ RecipeChanges =
 		{"REFINERECIPE_328",	2,					30},				--Makes Pugneum					x2		in	30 time
 		{
 			{"ROBOT2",			3}										--Requires Atlantideum			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_58",		3,					45},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_TOXIC",		2}										--Requires Fungal Mould			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_60",		3,					45},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_RADIO",		2}										--Requires Gamma Root			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_61",		3,					45},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_DUST",		2}										--Requires Cactus Flesh			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_62",		3,					45},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_HOT",		2}										--Requires Solanium			x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_63",		3,					45},				--Makes Carbon					x2		in	30 time
+		{
+			{"PLANT_LUSH",		2}										--Requires Star Bulb			x1
 		}
 	},
 --Fixes the ratio for Cadmium > Chromatic Metal refining that oddly got changed NMS v4.4 made 

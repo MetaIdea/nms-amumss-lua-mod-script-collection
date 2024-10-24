@@ -96,6 +96,18 @@ TEXT_TO_ADD =
             <Property name="FrigateClass" value="Combat" />
           </Property>
         </Property>
+        <Property value="GcAISpaceshipModelData.xml">
+          <Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/SPOOKSHIP.SCENE.MBIN" />
+          <Property name="Class" value="GcSpaceshipClasses.xml">
+            <Property name="ShipClass" value="Sail" />
+          </Property>
+          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
+            <Property name="AIShipRole" value="Standard" />
+          </Property>
+          <Property name="FrigateClass" value="GcFrigateClass.xml">
+            <Property name="FrigateClass" value="Combat" />
+          </Property>
+        </Property>
 ]]
 
 

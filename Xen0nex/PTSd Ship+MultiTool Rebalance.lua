@@ -362,7 +362,7 @@ ShipBounds =
 
 --Replacers for INITIAL Inventory size found on spawned purchaseable / crashed ships. NOT maximum upgradeable size for ships.
 	--NOTE as of NMS 4.0, any reference in game files to "cargo" slots/inventory are actually referring to the deprecated 3rd inventory type, so no longer have any effect
-	--NOTE: # of supercharged slots can not be changed for starships or multi-tools, only for exocraft and the exosuit in DEFAULTSAVEDATA.MBIN
+	--NOTE: # of supercharged slots can not be changed here for starships or multi-tools, only for exocraft and the exosuit in DEFAULTSAVEDATA.MBIN
 		--However, the bounds where supercharged slots can be set for multi-tools. SX & SY set these bounds (top left slot is X=0, Y=0)  (Does not appear to wrk for starships?)
 ShipInitialSizeChanges	=
 {	--Ship type & size			MinCarg	MaxCarg		MinTech	MaxTech		SX	SY		Vanilla	MinCarg	MaxCarg		MinTech	MaxTech		SX	SY
@@ -1602,8 +1602,6 @@ for i = 1, #VehicleBounds do
 
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["SPECIAL_KEY_WORDS"] = {VehicleSize, "GcInventoryLayoutGenerationDataEntry.xml",	BoundType, "GcInventoryLayoutGenerationBounds.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1623,8 +1621,6 @@ for i = 1, #VehicleInitialSizeChanges do
 
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
-				--["REPLACE_TYPE"] 		= "ALL",
 				["SPECIAL_KEY_WORDS"] = {VehicleTypeSize, "GcInventoryLayoutGenerationDataEntry.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1650,8 +1646,6 @@ for i = 1, #CostChanges do
 			{
 				["PRECEDING_FIRST"] = "TRUE",
 				["INTEGER_TO_FLOAT"] = "FORCE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
 				["PRECEDING_KEY_WORDS"] = {ShipOrTool},
 				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
@@ -1678,8 +1672,6 @@ for i = 1, #CostClassModifierChanges do
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
 				["PRECEDING_FIRST"] = "TRUE",
-				["MATH_OPERATION"] 		= "",
-				["REPLACE_TYPE"] 		= "",
 				["PRECEDING_KEY_WORDS"] = {ShipOrTool},
 				["SPECIAL_KEY_WORDS"] = {ObjectID, "GcInventoryCostDataEntry.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
@@ -1696,7 +1688,6 @@ end
 --[[
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"DrpSmall", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1710,7 +1701,6 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			}
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"DrpMedium", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{
@@ -1724,7 +1714,6 @@ ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			}
 ChangesToInventoryTable[#ChangesToInventoryTable+1] =
 			{
-				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"DrpLarge", "GcInventoryLayoutGenerationDataEntry.xml",	"Bounds", "GcInventoryLayoutGenerationBounds.xml"},
 				["VALUE_CHANGE_TABLE"] 	=
 				{

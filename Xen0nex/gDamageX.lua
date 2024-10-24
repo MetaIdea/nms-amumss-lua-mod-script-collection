@@ -2,7 +2,7 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 --ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage & Tech Damage adjustments"
-GameVersion = "5_12"
+GameVersion = "5_20"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -142,6 +142,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 90*Fauna}}}, --default 30, HardModeMultiplier 2
 	
+	{["SPECIAL_KEY_WORDS"] = {"Id","LANDSQUID_DMG"},				--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 90*Fauna}, 	--default 30
+		{"HazardDrain", 10}}}, 	--default 10	(Special Cursed Expedition hazard)
+		
+	{["SPECIAL_KEY_WORDS"] = {"Id","LANDSQUID_SPIT"},				--Added Xen0nex
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 25*Fauna}, 	--default 5
+		{"HazardDrain", 10}}}, 	--default 10	(Special Cursed Expedition hazard)
+		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 150*Flora}}}, --default 20, HardModeMultiplier 1.5

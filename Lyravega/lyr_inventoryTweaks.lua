@@ -1,10 +1,10 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Inventory Tweaks 5.12]]
-local gameVersion = "129192"
+local modDescription = [[Lyravega's Inventory Tweaks 5.20]]
+local gameVersion = 131597
 
 --[=============================================================================================================================[
-	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
-	Otherwise none of them will work. Make sure that file is located there before using my scripts
+	Every Lua script of mine requires a few other files to be located in the 'ModScripts\ModHelperScripts\' folder
+	Extract the archive to 'ModScripts\' as is and remove/adjust scripts after. Avoid those in 'ModHelperScripts\'
 
 	Below in the 'tweakStates' table are modification names and what they do is commented next to them
 	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
@@ -12,43 +12,49 @@ local gameVersion = "129192"
 	Ways to disable a modification: 
 		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
 		• Set the value of the modification to false / ex: 'modification = false,'
-		• Use the 'lyr_tweakOverrides.txt' file and disable modifications from there
+		• Use the 'lyr_tweakOverrides.lua' file and disable modifications from there
 
 	Ways to (re)enable a modification:
-		• RECOMMENDED: Remove double dashes at the beginning of the line
+		• RECOMMENDED: Remove double dashes from the beginning of the line
 		• Set the value of the modification to its original value
-		• Use the 'lyr_tweakOverrides.txt' file and enable / change modifications from there
+		• Use the 'lyr_tweakOverrides.lua' file and enable / change modifications from there
 
 	Depending on their function and/or relevance, some modifications may have duplicates in my other scripts
-	The third option for enabling / disabling modifications through 'lyr_tweakOverrides.txt' file will affect all
+	The third option for enabling / disabling modifications through 'lyr_tweakOverrides.lua' file will affect all
+
+	If the mentioned file ('lyr_tweakOverrides.lua') is missing, you may get harmless warnings from AMUMSS
+	It's advised to keep the file around even if it will not be utilized, just to avoid unwanted warning messages
 --]=============================================================================================================================]
 
 local tweakStates = {
-	swapTechAndCargo = true,				-- swaps the position of tech and cargo inventories like in pre-4.0
-	hideInventoryHeaders = true,			-- hides the cargo and tech header labels and icons (they don't play nice with freighters)
-	restoreItemBars = true,					-- pre-4.0 item bars are restored for items with X/X display wherever possible
-	smallerLabeledIcons = true,				-- makes the icons for the picked items / items in transfer pop-ups smaller
-	smallerItemAmountFonts = true,			-- slightly decreases the size of fonts for the item amounts
-	passiveProtectionTechs = true,			-- changes active hazard protection tech upgrades to passive ones (S:6-10%, A:3-5%, B:1-2%)
---	maximizedTechs = true,					-- procedurally generated tech upgrades provide all possible improvements with maximum values (UI can display 4 at most)
---	sameGroupTechLimit = 4,					-- sets the limit of same type of techs (game default is 3; setting to 4 will allow you to add 1 more)
---	installTechInCargo = true,				-- allows tech to be installed in cargo slots (like in pre-4.0)
---	superchargedSlotBonus = 1.5,			-- sets the bonus of the supercharged slots (game default is 1.25)
-	refineryOutputCapacityMult = 5,			-- refinery product output capacity is multiplied by the given value (setting to 5 will increase max product output to 50/50/25)
+	swapTechAndCargo = true,					-- swaps the position of tech and cargo inventories like in pre-4.0
+	hideInventoryHeaders = true,				-- hides the cargo and tech header labels and icons (they don't play nice with freighters)
+	restoreItemBars = true,						-- pre-4.0 item bars are restored for items with X/X display wherever possible
+	smallerLabeledIcons = true,					-- makes the icons for the picked items / items in transfer pop-ups smaller
+	smallerItemAmountFonts = true,				-- slightly decreases the size of fonts for the item amounts
+--	inventoryBackground = "black",				-- options: "black"/"red"/"green"/"blue"/"purple"/"orange"/"yellow"; simple colour shift for the inventory background
+--	popupScale = 0.75,							-- needs 'Enlarged UI Text' in 'Accessibility' enabled; inventory pop-ups (and only the pop-ups!) are smaller
+	passiveProtectionTechs = true,				-- changes active hazard protection tech upgrades to passive ones (S:6-10%, A:3-5%, B:1-2%)
+--	maximizedTechs = true,						-- procedurally generated tech upgrades provide all possible improvements with maximum values (UI can display 4 at most)
+--	sameGroupTechLimit = 4,						-- sets the limit of same type of techs (game default is 3; setting to 4 will allow you to add 1 more)
+--	installTechInCargo = true,					-- allows tech to be installed in cargo slots (like in pre-4.0)
+--	superchargedSlotBonus = 1.5,				-- sets the bonus of the supercharged slots (game default is 1.25)
+	refineryOutputCapacityMult = 5,				-- refinery product output capacity is multiplied by the given value
+	silentPlayerRefinery = true,				-- removes the looping sound from personal refinery
+	advancedPersonalRefiner = true,				-- options: true/"mk3"; former adds another slot to refiner mk1&mk2, latter adds a new mk3 technology 
+	personalRefinerFuel = 10,					-- personal refiner fuel duration (value is in minutes; 10 means 10 minutes)
 }
 
 --#region METHODS
 
-dofile("lyr_methods.lua")
+dofile("lyr_amumss/lyr_amumss.lua")
 
 --#endregion
 -- END OF METHODS
 
 --#region TWEAKS
 
-local swapTechAndCargo = function()
-	if not lyr:checkTweak("swapTechAndCargo") then return false end
-
+local swapTechAndCargo = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = {
@@ -58,44 +64,44 @@ local swapTechAndCargo = function()
 			{
 				specialKeyWords = {"DataFilename", "UI/COMPONENTS/INVENTORY/SQU_INV_BOXTECH.MBIN"},
 				fields = {
-					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 735, altered = 1250},
-					Width = {default = 1012, altered = 1012},
-					Height = {default = 290, altered = 290},
-					WidthPercentage = {default = false, altered = false},
-					HeightPercentage = {default = false, altered = false},
-					ConstrainProportions = {default = false, altered = false},
-					ConstrainAspect = {default = 1, altered = 1},
+					PositionX = {default = 2106, 2106},
+					PositionY = {default = 735, 1250},
+					Width = {default = 1012, 1012},
+					Height = {default = 290, 290},
+					WidthPercentage = {default = false, false},
+					HeightPercentage = {default = false, false},
+					ConstrainProportions = {default = false, false},
+					ConstrainAspect = {default = 1, 1},
 				},
 				replaceAll = true
 			},
 			{
 				specialKeyWords = {"ID", "TECHHEADER"},
 				fields = {
-					PositionX = {default = 1095, altered = 1095},
-					PositionY = {default = 701, altered = 1220}
+					PositionX = {default = 1095, 1095},
+					PositionY = {default = 701, 1220}
 				},
 				replaceAll = true
 			},
 			{
 				specialKeyWords = {"DataFilename", "UI/COMPONENTS/INVENTORY/SQU_INV_BOXREGULAR.MBIN"},
 				fields = {
-					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 1060, altered = 735},
-					Width = {default = 1012, altered = 1012},
-					Height = {default = 480, altered = 480},
-					WidthPercentage = {default = false, altered = false},
-					HeightPercentage = {default = false, altered = false},
-					ConstrainProportions = {default = false, altered = false},
-					ConstrainAspect = {default = 1, altered = 1},
+					PositionX = {default = 2106, 2106},
+					PositionY = {default = 1060, 735},
+					Width = {default = 1012, 1012},
+					Height = {default = 480, 480},
+					WidthPercentage = {default = false, false},
+					HeightPercentage = {default = false, false},
+					ConstrainProportions = {default = false, false},
+					ConstrainAspect = {default = 1, 1},
 				},
 				replaceAll = true
 			},
 			{
 				specialKeyWords = {"ID", "CARGOHEADER"},
 				fields = {
-					PositionX = {default = 1095, altered = 1095},
-					PositionY = {default = 1030, altered = 705}
+					PositionX = {default = 1095, 1095},
+					PositionY = {default = 1030, 705}
 				},
 				replaceAll = true
 			}
@@ -104,14 +110,14 @@ local swapTechAndCargo = function()
 			{
 				specialKeyWords = {"ID", "SQU_INV_TECH"},
 				fields = {
-					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 735, altered = 1260},
-					Width = {default = 1012, altered = 1012},
-					Height = {default = 290, altered = 290},
-					WidthPercentage = {default = false, altered = false},
-					HeightPercentage = {default = false, altered = false},
-					ConstrainProportions = {default = false, altered = false},
-					ConstrainAspect = {default = 1, altered = 1},
+					PositionX = {default = 2106, 2106},
+					PositionY = {default = 735, 1260},
+					Width = {default = 1012, 1012},
+					Height = {default = 290, 290},
+					WidthPercentage = {default = false, false},
+					HeightPercentage = {default = false, false},
+					ConstrainProportions = {default = false, false},
+					ConstrainAspect = {default = 1, 1},
 				},
 				replaceAll = true
 			}
@@ -120,28 +126,28 @@ local swapTechAndCargo = function()
 			{
 				specialKeyWords = {"ID", "SQU_INV_REGULAR"},
 				fields = {
-					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 1070, altered = 735},
-					Width = {default = 1012, altered = 1012},
-					Height = {default = 480, altered = 480},
-					WidthPercentage = {default = false, altered = false},
-					HeightPercentage = {default = false, altered = false},
-					ConstrainProportions = {default = false, altered = false},
-					ConstrainAspect = {default = 1, altered = 1},
+					PositionX = {default = 2106, 2106},
+					PositionY = {default = 1070, 735},
+					Width = {default = 1012, 1012},
+					Height = {default = 480, 480},
+					WidthPercentage = {default = false, false},
+					HeightPercentage = {default = false, false},
+					ConstrainProportions = {default = false, false},
+					ConstrainAspect = {default = 1, 1},
 				},
 				replaceAll = true
 			},
 			{
 				specialKeyWords = {"ID", "INVENTORY"},
 				fields = {
-					PositionX = {default = 0, altered = 0},
-					PositionY = {default = 0, altered = 0},
-					Width = {default = 1010, altered = 1010},
-					Height = {default = 1000, altered = 1000},
-					WidthPercentage = {default = false, altered = false},
-					HeightPercentage = {default = false, altered = false},
-					ConstrainProportions = {default = false, altered = false},
-					ConstrainAspect = {default = 1.151079, altered = 1.151079},
+					PositionX = {default = 0, 0},
+					PositionY = {default = 0, 0},
+					Width = {default = 1010, 1010},
+					Height = {default = 1000, 1000},
+					WidthPercentage = {default = false, false},
+					HeightPercentage = {default = false, false},
+					ConstrainProportions = {default = false, false},
+					ConstrainAspect = {default = 1.151079, 1.151079},
 				},
 				replaceAll = true
 			}
@@ -149,11 +155,10 @@ local swapTechAndCargo = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.swapTechAndCargo = swapTechAndCargo
+end
+lyr.tweakTables.swapTechAndCargo = swapTechAndCargo
 
-local hideInventoryHeaders = function()
-	if not lyr:checkTweak("hideInventoryHeaders") then return false end
-
+local hideInventoryHeaders = function(tweakName, tweakState)
 	local tweak = {
 		["UI/INVENTORYPAGE.MBIN"] = {
 			{
@@ -165,7 +170,7 @@ local hideInventoryHeaders = function()
 				},
 				selectLevel = 1,
 				fields = {
-					IsHidden = {default = false, altered = true},
+					IsHidden = {default = false, true},
 					A = 0
 				},
 				replaceAll = true
@@ -174,44 +179,41 @@ local hideInventoryHeaders = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.hideInventoryHeaders = hideInventoryHeaders
+end
+lyr.tweakTables.hideInventoryHeaders = hideInventoryHeaders
 
-local restoreItemBars = function()
-	if not lyr:checkTweak("restoreItemBars") then return false end
-
+local restoreItemBars = function(tweakName, tweakState)
 	local tweak = {
 		["GCUIGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					BigPickingUsesNumbers = {default = true, altered = false},
-					ReplaceItemBarWithNumbers = {default = true, altered = false}
+					BigPickingUsesNumbers = {default = true, false},
+					ReplaceItemBarWithNumbers = {default = true, false}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.restoreItemBars = restoreItemBars
+end
+lyr.tweakTables.restoreItemBars = restoreItemBars
 
-local smallerLabeledIcons = function()
-	if not lyr:checkTweak("smallerLabeledIcons") then return false end
-
+local smallerLabeledIcons = function(tweakName, tweakState)
 	local tweak = {
 		["GCUIGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					BigPicking = {default = true, altered = false}
+					BigPicking = {default = true, false}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.smallerLabeledIcons = smallerLabeledIcons
+end
+lyr.tweakTables.smallerLabeledIcons = smallerLabeledIcons
 
-local smallerItemAmountFonts = function()
-	if not lyr:checkTweak("smallerItemAmountFonts") then return false end
-
+local smallerItemAmountFonts = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = {
@@ -227,21 +229,58 @@ local smallerItemAmountFonts = function()
 				},
 				selectLevel = 1,
 				fields = {
-					FontHeight = 0.8,
-					Height = 0.8
+					FontHeight = "@*"..0.8,
+					Height = "@*"..0.8
 				},
-				multiply = true,
 				replaceAll = true
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.smallerItemAmountFonts = smallerItemAmountFonts
+end
+lyr.tweakTables.smallerItemAmountFonts = smallerItemAmountFonts
 
-local passiveProtectionTechs = function()
-	if not lyr:checkTweak("passiveProtectionTechs") then return false end
+local inventoryBackground = function(tweakName, tweakState)
+	local option = lyr:checkTweak("inventoryBackground"); if not option then return false end; option = option:lower()
+	local options = {
+		black = true,
+		red = true,
+		green = true,
+		blue = true,
+		purple = true,
+		orange = true,
+		yellow = true,
+	}; if not options[option] then return false end
 
+	local files = {
+		{[[\lyr_files\inventoryBackground\]]..option..[[.DDS]], [[\TEXTURES\UI\FRONTEND\BACKGROUNDS\INVENTORYBG.DDS]]}
+	}
+
+	return files
+end
+lyr.tweakFiles.inventoryBackground = inventoryBackground
+
+local popupScale = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 0.75 or math.min(math.max(0.25, tweakState), 1)
+
+	local tweak = {
+		{
+			mbinPaths = [[GCUIGLOBALS.GLOBAL.EXML]],
+			{
+				fields = {
+					AccessibleUIPopupScale = tweakState,
+					AccessibleUIHUDPopupScale = tweakState
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+lyr.tweakTables.popupScale = popupScale
+
+local passiveProtectionTechs = function(tweakName, tweakState)
 	local targetSections = {
 		{"StatsType", "Suit_Protection_Cold"},
 		{"StatsType", "Suit_Protection_Heat"},
@@ -261,9 +300,9 @@ local passiveProtectionTechs = function()
 					{"ID", "T_UNW"}
 				},
 				fields = {
-					Upgrade = {default = false, altered = true},
-					Chargeable = {default = true, altered = false},
-					ChargeAmount = {default = 80, altered = 100}
+					Upgrade = {default = false, true},
+					Chargeable = {default = true, false},
+					ChargeAmount = {default = 80, 100}
 				}
 			},
 			{
@@ -290,8 +329,8 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					ValueMin = {default = 200, altered = 1.01},
-					ValueMax = {default = 300, altered = 1.02}
+					ValueMin = {default = 200, 1.01},
+					ValueMax = {default = 300, 1.02}
 				}
 			},
 			{
@@ -305,8 +344,8 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					ValueMin = {default = 240, altered = 1.03},
-					ValueMax = {default = 320, altered = 1.05}
+					ValueMin = {default = 240, 1.03},
+					ValueMax = {default = 320, 1.05}
 				}
 			},
 			{
@@ -320,8 +359,8 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					ValueMin = {default = 280, altered = 1.06},
-					ValueMax = {default = 360, altered = 1.10}
+					ValueMin = {default = 280, 1.06},
+					ValueMax = {default = 360, 1.10}
 				}
 			},
 			{
@@ -333,7 +372,7 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					StatsType = {default = "Suit_Protection_Cold", altered = "Suit_Protection_ColdDrain"},
+					StatsType = {default = "Suit_Protection_Cold", "Suit_Protection_ColdDrain"},
 				}
 			},
 			{
@@ -345,7 +384,7 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					StatsType = {default = "Suit_Protection_Heat", altered = "Suit_Protection_HeatDrain"},
+					StatsType = {default = "Suit_Protection_Heat", "Suit_Protection_HeatDrain"},
 				}
 			},
 			{
@@ -357,7 +396,7 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					StatsType = {default = "Suit_Protection_Toxic", altered = "Suit_Protection_ToxDrain"},
+					StatsType = {default = "Suit_Protection_Toxic", "Suit_Protection_ToxDrain"},
 				}
 			},
 			{
@@ -369,7 +408,7 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					StatsType = {default = "Suit_Protection_Radiation", altered = "Suit_Protection_RadDrain"},
+					StatsType = {default = "Suit_Protection_Radiation", "Suit_Protection_RadDrain"},
 				}
 			},
 			{
@@ -381,118 +420,117 @@ local passiveProtectionTechs = function()
 				pkw = "GcProceduralTechnologyStatLevel.xml",
 				findSections = targetSections,
 				fields = {
-					StatsType = {default = "Suit_Underwater", altered = "Suit_Protection_WaterDrain"},
+					StatsType = {default = "Suit_Underwater", "Suit_Protection_WaterDrain"},
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.passiveProtectionTechs = passiveProtectionTechs
+end
+lyr.tweakTables.passiveProtectionTechs = passiveProtectionTechs
 
-local maximizedTechs = function()
-	if not lyr:checkTweak("maximizedTechs") then return false end
-
+local maximizedTechs = function(tweakName, tweakState)
 	local tweak = {
 		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					LuckyWithTech = {default = false, altered = true}
+					LuckyWithTech = {default = false, true}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.maximizedTechs = maximizedTechs
+end
+lyr.tweakTables.maximizedTechs = maximizedTechs
 
-local sameGroupTechLimit = function()
-	if not lyr:checkTweak("sameGroupTechLimit") then return false end
+local sameGroupTechLimit = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 4 or math.max(1, math.floor(tweakState))
 
 	local tweak = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MaxNumSameGroupTech = {default = 3,	altered = math.max(1, math.floor(lyr.tweakStates.sameGroupTechLimit))}
+					MaxNumSameGroupTech = {default = 3,	tweakState}
 				}
 			}
 		},
 	}
 
 	return tweak
-end; lyr.tweakTables.sameGroupTechLimit = sameGroupTechLimit
+end
+lyr.tweakTables.sameGroupTechLimit = sameGroupTechLimit
 
-local installTechInCargo = function()
-	if not lyr:checkTweak("installTechInCargo") then return false end
-
+local installTechInCargo = function(tweakName, tweakState)
 	local tweak = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					TechMustBeInTechInventory = {default = true, altered = false}
+					TechMustBeInTechInventory = {default = true, false}
 				}
 			}
 		},
 	}
 
 	return tweak
-end; lyr.tweakTables.installTechInCargo = installTechInCargo
+end
+lyr.tweakTables.installTechInCargo = installTechInCargo
 
-local superchargedSlotBonus = function()
-	if not lyr:checkTweak("superchargedSlotBonus") then return false end
+local superchargedSlotBonus = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 1.25 or math.max(1.25, tweakState)
 
 	local tweak = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					SpecialTechSlotBonus = {default = 1.25, altered = math.max(0.5, lyr.tweakStates.superchargedSlotBonus)}
+					SpecialTechSlotBonus = {default = 1.25, tweakState}
 				}
 			}
 		},
 	}
 
 	return tweak
-end; lyr.tweakTables.superchargedSlotBonus = superchargedSlotBonus
+end
+lyr.tweakTables.superchargedSlotBonus = superchargedSlotBonus
 
-local refineryOutputCapacityMult = function()
-	if not lyr:checkTweak("refineryOutputCapacityMult") then return false end
+local refineryOutputCapacityMult = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 5 or math.floor(tweakState)
 
 	local tweak = {
 		["METADATA\\GAMESTATE\\DIFFICULTYCONFIG.MBIN"] = {
 			{
 				precedingKeyWords = "MaxProductStackSizes",
 				fields = {
-					UIPopup = math.max(1, math.floor(lyr.tweakStates.refineryOutputCapacityMult))
+					UIPopup = "@*"..math.max(1, math.min(9999, tweakState))
 				},
-				multiply = true,
 				replaceAll = true
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.refineryOutputCapacityMult = refineryOutputCapacityMult
+end
+lyr.tweakTables.refineryOutputCapacityMult = refineryOutputCapacityMult
 
-local smallerCargoIcons = function()	-- deprecated
-	if not lyr:checkTweak("smallerCargoIcons") then return false end
-
+local smallerCargoIcons = function(tweakName, tweakState)	-- deprecated
 	local tweak = {
 		["UI/COMPONENTS/INVENTORY/SQU_INV_BOXREGULAR.MBIN"] = {
 			{
 				specialKeyWords = {"DataFilename", "UI/COMPONENTS/INVENTORY/SQU_INV_SLOT_LARGE.MBIN"},
 				fields = {
-					DataFilename = {default = "UI/COMPONENTS/INVENTORY/SQU_INV_SLOT_LARGE.MBIN", altered = "UI/COMPONENTS/INVENTORY/SQU_INV_SLOT_SMALL.MBIN"},
-					Width = {default = 90, altered = 74},
-					Height = {default = 90, altered = 74}
+					DataFilename = {default = "UI/COMPONENTS/INVENTORY/SQU_INV_SLOT_LARGE.MBIN", "UI/COMPONENTS/INVENTORY/SQU_INV_SLOT_SMALL.MBIN"},
+					Width = {default = 90, 74},
+					Height = {default = 90, 74}
 				},
 				replaceAll = true
 			},
 			{
 				specialKeyWords = {"DataFilename", "UI/COMPONENTS/INVENTORY/SQU_SLOTFAKELARGE.MBIN"},
 				fields = {
-					DataFilename = {default = "UI/COMPONENTS/INVENTORY/SQU_SLOTFAKELARGE.MBIN", altered = "UI/COMPONENTS/INVENTORY/SQU_SLOTFAKESMALL.MBIN"},
-					Width = {default = 90, altered = 74},
-					Height = {default = 90, altered = 74}
+					DataFilename = {default = "UI/COMPONENTS/INVENTORY/SQU_SLOTFAKELARGE.MBIN", "UI/COMPONENTS/INVENTORY/SQU_SLOTFAKESMALL.MBIN"},
+					Width = {default = 90, 74},
+					Height = {default = 90, 74}
 				},
 				replaceAll = true
 			}
@@ -500,7 +538,131 @@ local smallerCargoIcons = function()	-- deprecated
 	}
 
 	return tweak
-end; lyr.tweakTables.smallerCargoIcons = smallerCargoIcons
+end
+lyr.tweakTables.smallerCargoIcons = smallerCargoIcons
+
+local silentPlayerRefinery = function()
+	local noSound, audioPath = [[\lyr_files\noSound.wem]], [[\AUDIO\WINDOWS\]]
+
+	-- Obj_PortableRefinery_Start
+	local files = {"939615957"}
+
+	---@diagnostic disable-next-line: assign-type-mismatch
+	for k, v in next, files do files[k] = {noSound, audioPath..v..".WEM"} end
+
+	return files
+end
+lyr.tweakFiles.silentPlayerRefinery = silentPlayerRefinery
+
+local advancedPersonalRefiner = {}
+advancedPersonalRefiner.files = function(tweakName, tweakState)
+	if tweakState ~= "mk3" then return false end
+
+	local files = {
+		{[[\lyr_files\advancedPersonalRefiner\LYR_PERSONALREFINER.DDS]], [[\LYR\TEXTURES\]]},
+	}
+
+	return files
+end
+advancedPersonalRefiner.tweaks = function(tweakName, tweakState)
+	local tweak = tweakState == "mk3" and {
+		{
+			mbinPaths = [[METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.EXML]],
+			{
+				skw = [[<Property name="ID" value="SUIT_REFINER2" />]],
+				copySection = true
+			},
+			{
+				editSection = true,
+				fields = {
+					ID = "SUIT_REFINER3",
+					Name = [[PERSONAL REFINER MK 3]],
+					NameLower = [[Personal Refiner Mk 3]],
+					Subtitle = [[Self-Mounted Advanced Refiner]],
+					Description = [[Ultimate portable refinery technology, bringing &lt;TECHNOLOGY&gt;Large Refiner&lt;&gt; capabilities directly to the user's Exosuit.&#xA;&#xA;Unit requires &lt;FUEL&gt;fuel&lt;&gt; and is able to refine more complex recipes than the standard personal refiner unit.]],
+					FileName = [[LYR/TEXTURES/LYR_PERSONALREFINER.DDS]],
+					FragmentCost = 800,
+				}
+			},
+			{
+				editSection = true,
+				pkw = "Requirements",
+				fields = {
+					Amount = "@*2"
+				},
+				replaceAll = true
+			},
+			{
+				editSection = true,
+				pkw = "StatBonuses",
+				fields = {
+					Bonus = 3,
+					Level = 5
+				}
+			},
+			{
+				skw = [[<Property name="ID" value="SUIT_REFINER2" />]],
+				pasteSectionAfter = true
+			}
+		},
+		{
+			mbinPaths = [[METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.EXML]],
+			{
+				skw = [[<Property name="Unlockable" value="SUIT_REFINER2" />]],
+				copySection = true,
+			},
+			{
+				editSection = true,
+				fields = {
+					Unlockable = "SUIT_REFINER3"
+				}
+			},
+			{
+				skw = [[<Property name="Unlockable" value="SUIT_REFINER2" />]],
+				pkw = "Children",
+				pasteSection = true
+			}
+		}
+	} or {
+		{
+			mbinPaths = [[METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.EXML]],
+			{
+				skw = {
+					[[<Property name="ID" value="SUIT_REFINER" />]],
+					[[<Property name="ID" value="SUIT_REFINER2" />]]
+				},
+				pkw = "StatBonuses",
+				fields = {
+					Bonus = "@+1",
+					Level = "@+1"
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+lyr.tweakTables.advancedPersonalRefiner = advancedPersonalRefiner.tweaks
+lyr.tweakFiles.advancedPersonalRefiner = advancedPersonalRefiner.files
+
+local personalRefinerFuel = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 600 or math.max(300, tweakState*60)
+
+	local tweak = {
+		{
+			mbinPaths = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.EXML]],
+			{
+				skw = [[<Property name="Id" value="MAINT_FUEL1" />]],
+				fields = {
+					AmountEmptyTimePeriod = tweakState
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+lyr.tweakTables.personalRefinerFuel = personalRefinerFuel
 
 --#endregion
 -- END OF TWEAKS

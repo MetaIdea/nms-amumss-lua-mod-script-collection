@@ -1,10 +1,10 @@
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Other Tweaks 5.12]]
-local gameVersion = "129192"
+local modDescription = [[Lyravega's Other Tweaks 5.20]]
+local gameVersion = 131597
 
 --[=============================================================================================================================[
-	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
-	Otherwise none of them will work. Make sure that file is located there before using my scripts
+	Every Lua script of mine requires a few other files to be located in the 'ModScripts\ModHelperScripts\' folder
+	Extract the archive to 'ModScripts\' as is and remove/adjust scripts after. Avoid those in 'ModHelperScripts\'
 
 	Below in the 'tweakStates' table are modification names and what they do is commented next to them
 	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
@@ -12,61 +12,62 @@ local gameVersion = "129192"
 	Ways to disable a modification: 
 		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
 		• Set the value of the modification to false / ex: 'modification = false,'
-		• Use the 'lyr_tweakOverrides.txt' file and disable modifications from there
+		• Use the 'lyr_tweakOverrides.lua' file and disable modifications from there
 
 	Ways to (re)enable a modification:
-		• RECOMMENDED: Remove double dashes at the beginning of the line
+		• RECOMMENDED: Remove double dashes from the beginning of the line
 		• Set the value of the modification to its original value
-		• Use the 'lyr_tweakOverrides.txt' file and enable / change modifications from there
+		• Use the 'lyr_tweakOverrides.lua' file and enable / change modifications from there
 
 	Depending on their function and/or relevance, some modifications may have duplicates in my other scripts
-	The third option for enabling / disabling modifications through 'lyr_tweakOverrides.txt' file will affect all
+	The third option for enabling / disabling modifications through 'lyr_tweakOverrides.lua' file will affect all
+
+	If the mentioned file ('lyr_tweakOverrides.lua') is missing, you may get harmless warnings from AMUMSS
+	It's advised to keep the file around even if it will not be utilized, just to avoid unwanted warning messages
 --]=============================================================================================================================]
 
 local tweakStates = {
-	noToolMuzzleFlashes = true,				-- removes muzzle flashes from tool weapons
-	noShipMuzzleFlashes = true,				-- removes muzzle flashes from ship weapons
-	noToolRecoil = true,					-- removes tool recoil
-	holsterLater = true,					-- lower and holster your weapon later (you can manually hold reload to holster)
-	noAutoClimb = true,						-- disables ladder auto-climb feature, interact to climb instead
-	noHazardOverlays = true,				-- removes all of the hazard screen overlays
-	lessMaintenance = true,					-- some damaged objects; crates, tech debris and crashed freighter containers no longer require maintenance
-	noPortalCharging = true,				-- removes portal charging steps
-	shorterToastMessages = true,			-- shortens the toast message duration of expedition stages, milestones and planet discoveries
-	fasterInteractions = true,				-- hold interactions require less... holding
-	lessScreenFlashes = true,				-- reduces the duration and intensity of some screen flashes (entering/exiting vehicles, miniportals)
-	blackScreenFlashes = true,				-- turns some screen flashes to black (entering/exiting vehicles, miniportals)
-	noHitEffectsOnZeroDamage = true,		-- disables hit effects if no damage was dealt
-	rapidToolScanner = true,				-- tool scanners recharge much faster and their range is bumped up a little
-	darkerScannerPulse = true,				-- tones ALL of the (tool, vehicle, ship) scanner pulse colours down and makes it black
-	noSentinelTerrainDamage = true,			-- sentinel projectiles damage the terrain no more
-	learnMoreWords = 3,						-- learn more words from actions, value is average (setting to 3 will let you learn 2-4)
-	noTextDelay = true,						-- no character or punctuation delays in dialogues (does not affect dialogue stopping "//"s or story diagloue delays)
-	removeDoubleSlashes = true,				-- removes the dialogue stopper "//" from EVERYWHERE (relies on 'noTextDelay', ignored if 'replaceDoubleSlashes' is active)
---	replaceDoubleSlashes = "ENGLISH",		-- alters "//" in language files to simple text instead (relies on 'noTextDelay') (search this file for languages and use your own)
---	removeStoryTextDelays = true,			-- 'replaceDoubleSlashes' also removes the extra story dialogue delays from language files
-	noTerrainFlatten = true,				-- disables planet terrain flattening/deflattening effect
---	cyclingQuickMenu = true,				-- quick menu cycles through the first and last items instead of stopping at them
---	hideQuickMenuControls = true,			-- hides quick menu controls
-	unifiedCalmWarps = true,				-- changes all warp scenes to a calm, purple/black version
-	noSpinningChairs = true,				-- removes the spinning interaction from chairs
-	stabilizedJetpack = true,				-- fixes the springy behaviour of player jetpacks, slightly boosts jetpack upward thrust
---	noAerialScans = true,					-- nukes most of the aerial scans from the game
-	stationSystemScanner = true				-- adds the freighter planetary scan interaction to the station map shop hologram across the NPC
+	noToolMuzzleFlashes = true,					-- removes muzzle flashes from tool weapons
+	noShipMuzzleFlashes = true,					-- removes muzzle flashes from ship weapons
+	noToolRecoil = true,						-- removes tool recoil
+	holsterLater = true,						-- lower and holster your weapon later (you can manually hold reload to holster)
+	noAutoClimb = true,							-- disables ladder auto-climb feature, interact to climb instead
+--	noHazardOverlays = true,					-- removes all of the hazard screen overlays (may be toned down from options but cannot be disabled from there)
+	lessMaintenance = true,						-- some damaged objects; crates, tech debris and crashed freighter containers no longer require maintenance
+	noPortalCharging = true,					-- removes portal charging steps
+	shorterToastMessages = true,				-- shortens the toast message duration of expedition stages, milestones and planet discoveries
+	fasterInteractions = true,					-- hold interactions require less... holding
+	lessScreenFlashes = true,					-- reduces the duration and intensity of some screen flashes (entering/exiting vehicles, miniportals)
+	blackScreenFlashes = true,					-- turns some screen flashes to black (entering/exiting vehicles, miniportals)
+	noHitEffectsOnZeroDamage = true,			-- disables hit effects if no damage was dealt
+	rapidToolScanner = true,					-- tool scanners recharge much faster and their range is bumped up a little
+	darkerScannerPulse = true,					-- tones ALL of the (tool, vehicle, ship) scanner pulse colours down and makes it black
+	noSentinelTerrainDamage = true,				-- sentinel projectiles damage the terrain no more
+	learnMoreWords = 3,							-- learn more words from actions, value is average (setting to 3 will let you learn 2-4)
+	noTextDelay = true,							-- no character or punctuation delays in dialogues (does not affect dialogue stopping "//"s or story diagloue delays)
+	removeDoubleSlashes = true,					-- removes the dialogue stopper "//" from EVERYWHERE (relies on 'noTextDelay', ignored if 'replaceDoubleSlashes' is active)
+--	replaceDoubleSlashes = "ENGLISH",			-- alters "//" in language files to simple text instead (relies on 'noTextDelay') (search this file for languages and use your own)
+--	removeStoryTextDelays = true,				-- 'replaceDoubleSlashes' also removes the extra story dialogue delays from language files
+	noTerrainFlatten = true,					-- options: true/"extended"; 'true' potentially disables terrain flattening, extended alters planet detail switches to do the same
+--	cyclingQuickMenu = true,					-- quick menu cycles through the first and last items instead of stopping at them
+--	hideQuickMenuControls = true,				-- hides quick menu controls
+	stabilizedJetpack = true,					-- fixes the springy behaviour of player jetpacks, slightly boosts jetpack upward thrust
+--	noAerialScans = true,						-- nukes most of the aerial scans from the game
+	strictPlayerInteraction = true,				-- options: true/"remove"; other player interaction requires close range and direct angle, "remove" completely removes interaction
+	widerRiderAngle = true,						-- reduces the head turn angle restriction while riding in first person camera, also allowing a wider angle to be scanned
+	noUnitsReceivedVoice = true,				-- units received, units received, units received, units...
 }
 
 --#region METHODS
 
-dofile("lyr_methods.lua")
+dofile("lyr_amumss/lyr_amumss.lua")
 
 --#endregion
 -- END OF METHODS
 
 --#region TWEAKS
 
-local noToolMuzzleFlashes = function()
-	if not lyr:checkTweak("noToolMuzzleFlashes") then return false end
-
+local noToolMuzzleFlashes = function(tweakName, tweakState)
 	local tweak = {
 		["METADATA/REALITY/TABLES/PLAYERWEAPONPROPERTIESTABLE.MBIN"] = {
 			{
@@ -88,11 +89,10 @@ local noToolMuzzleFlashes = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noToolMuzzleFlashes = noToolMuzzleFlashes
+end
+lyr.tweakTables.noToolMuzzleFlashes = noToolMuzzleFlashes
 
-local noShipMuzzleFlashes = function()
-	if not lyr:checkTweak("noShipMuzzleFlashes") then return false end
-
+local noShipMuzzleFlashes = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCSPACESHIPGLOBALS.GLOBAL.MBIN]],
@@ -105,41 +105,50 @@ local noShipMuzzleFlashes = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noShipMuzzleFlashes = noShipMuzzleFlashes
+end
+lyr.tweakTables.noShipMuzzleFlashes = noShipMuzzleFlashes
 
-local noToolRecoil = function()
-	if not lyr:checkTweak("noToolRecoil") then return false end
-
+local noToolRecoil = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCPLAYERGLOBALS.GLOBAL.MBIN]],
 			{
 				fields = {
-					GunRecoil = {default = 5, altered = 0},
-					LaserRecoil = {default = 2, altered = 0},
-					BeamRecoil = {default = 6, altered = 0},
-					GrenadeRecoil = {default = 10, altered = 0},
-					GunRecoilMin = {default = 0.15, altered = 0},
-					GunRecoilMax = {default = 1.6, altered = 0},
-  					GunRecoilSpring = {default = 0.33, altered = 0},
-  					BlastRecoilSpring = {default = 0.3, altered = 0},
-  					RailRecoilSpring = {default = 0.1, altered = 0},
-  					PulseRecoilSpring = {default = 0.19, altered = 0},
-  					CannonRecoilSpring = {default = 0.3, altered = 0},
-  					GunRecoilSettleSpring = {default = 0.4, altered = 0},
-  					WeaponZoomRecoilMultiplier = {default = 1.5, altered = 0},
-  					ThirdPersonRecoilMultiplier = {default = 2, altered = 0}
+					GunRecoil = {default = 5, 0},
+					LaserRecoil = {default = 2, 0},
+					BeamRecoil = {default = 6, 0},
+					GrenadeRecoil = {default = 10, 0},
+					GunRecoilMin = {default = 0.15, 0},
+					GunRecoilMax = {default = 1.6, 0},
+  					GunRecoilSpring = {default = 0.33, 0},
+  					BlastRecoilSpring = {default = 0.3, 0},
+  					RailRecoilSpring = {default = 0.1, 0},
+  					PulseRecoilSpring = {default = 0.19, 0},
+  					CannonRecoilSpring = {default = 0.3, 0},
+  					GunRecoilSettleSpring = {default = 0.4, 0},
+  					WeaponZoomRecoilMultiplier = {default = 1.5, 0},
+  					ThirdPersonRecoilMultiplier = {default = 2, 0}
 				}
+			}
+		},
+		{
+			mbinPaths = [[METADATA\REALITY\TABLES\PLAYERWEAPONPROPERTIESTABLE.EXML]],
+			{
+				skw = {lyr.ignore, "GcPlayerWeaponPropertiesData.xml"},
+				fs = [[<Property name="ShakeId" value="GUNSHAKE" />]],
+				fields = {
+					ShakeId = "NOSHAKE"
+				},
+				replaceAll = true
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.noToolRecoil = noToolRecoil
+end
+lyr.tweakTables.noToolRecoil = noToolRecoil
 
-local holsterLater = function()
-	if not lyr:checkTweak("holsterLater") then return false end
-
+local holsterLater = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCPLAYERGLOBALS.GLOBAL.MBIN]],
@@ -154,11 +163,10 @@ local holsterLater = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.holsterLater = holsterLater
+end
+lyr.tweakTables.holsterLater = holsterLater
 
-local noAutoClimb = function()
-	if not lyr:checkTweak("noAutoClimb") then return false end
-
+local noAutoClimb = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCCHARACTERGLOBALS.GLOBAL.MBIN]],
@@ -171,11 +179,10 @@ local noAutoClimb = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noAutoClimb = noAutoClimb
+end
+lyr.tweakTables.noAutoClimb = noAutoClimb
 
-local noHazardOverlays = function()
-	if not lyr:checkTweak("noHazardOverlays") then return false end
-
+local noHazardOverlays = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCUIGLOBALS.GLOBAL.MBIN]],
@@ -194,11 +201,10 @@ local noHazardOverlays = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noHazardOverlays = noHazardOverlays
+end
+lyr.tweakTables.noHazardOverlays = noHazardOverlays
 
-local lessMaintenance = function()
-	if not lyr:checkTweak("lessMaintenance") then return false end
-
+local lessMaintenance = function(tweakName, tweakState)
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN"] = {
 			{
@@ -234,11 +240,10 @@ local lessMaintenance = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.lessMaintenance = lessMaintenance
+end
+lyr.tweakTables.lessMaintenance = lessMaintenance
 
-local noPortalCharging = function()
-	if not lyr:checkTweak("noPortalCharging") then return false end
-
+local noPortalCharging = function(tweakName, tweakState)
 	local tweak = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN"] = {
 			{
@@ -250,111 +255,106 @@ local noPortalCharging = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noPortalCharging = noPortalCharging
+end
+lyr.tweakTables.noPortalCharging = noPortalCharging
 
-local shorterToastMessages = function()
-	if not lyr:checkTweak("shorterToastMessages") then return false end
-
+local shorterToastMessages = function(tweakName, tweakState)
 	local tweak = {
 		["GCUIGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"DiscoveryHelperTimings", "GcDiscoveryHelperTimings.xml"},
 				fields = {
-					DiscoverPlanetTotalTime = {default = 10, altered = 3},
-					DiscoverPlanetMessageWait = {default = 1, altered = 0},
-					DiscoverPlanetMessageTime = {default = 7, altered = 3},
+					DiscoverPlanetTotalTime = {default = 10, 3},
+					DiscoverPlanetMessageWait = {default = 1, 0},
+					DiscoverPlanetMessageTime = {default = 7, 3},
 				}
 			},
 			{
 				fields = {
-					MilestoneStingDisplayTime = {default = 6, altered = 3},
-					StageStingDisplayTime = {default = 6, altered = 3}
+					MilestoneStingDisplayTime = {default = 6, 3},
+					StageStingDisplayTime = {default = 6, 3}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.shorterToastMessages = shorterToastMessages
+end
+lyr.tweakTables.shorterToastMessages = shorterToastMessages
 
-local fasterInteractions = function()
-	if not lyr:checkTweak("fasterInteractions") then return false end
-
+local fasterInteractions = function(tweakName, tweakState)
 	local tweak = {
 		["GCUIGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					FrontendConfirmTimeMouseMultiplier = {default = 0.5, altered = 0.5},
-					FrontendConfirmTimeFast = {default = 0.35, altered = 0.175},
-					FrontendConfirmTime = {default = 0.7, altered = 0.35},
-					FrontendConfirmTimeSlow = {default = 1.6, altered = 0.8}
+					FrontendConfirmTimeMouseMultiplier = {default = 0.5, 0.5},
+					FrontendConfirmTimeFast = {default = 0.35, 0.175},
+					FrontendConfirmTime = {default = 0.7, 0.35},
+					FrontendConfirmTimeSlow = {default = 1.6, 0.8}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.fasterInteractions = fasterInteractions
+end
+lyr.tweakTables.fasterInteractions = fasterInteractions
 
-local lessScreenFlashes = function()
-	if not lyr:checkTweak("lessScreenFlashes") then return false end
-
+local lessScreenFlashes = function(tweakName, tweakState)
 	local tweak = {
 		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MiniportalFlashStrength = {default = 0.8, altered = 0.5},
-					MiniportalFlashTime = {default = 0.8, altered = 0.5},
-					VehicleExitFlashStrength = {default = 0.8, altered = 0.5},
-					VehicleExitFlashTime = {default = 0.8, altered = 0.5},
-					ModelViewFlashTime = {default = 0.8, altered = 0.1}
+					MiniportalFlashStrength = {default = 0.8, 0.5},
+					MiniportalFlashTime = {default = 0.8, 0.5},
+					VehicleExitFlashStrength = {default = 0.8, 0.5},
+					VehicleExitFlashTime = {default = 0.8, 0.5},
+					ModelViewFlashTime = {default = 0.8, 0.1}
 				}
 			}
 		},
 		["GCGRAPHICSGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					TeleportFlashTime = {default = 1.5, altered = 0.0}
+					TeleportFlashTime = {default = 1.5, 0.0}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.lessScreenFlashes = lessScreenFlashes
+end
+lyr.tweakTables.lessScreenFlashes = lessScreenFlashes
 
-local blackScreenFlashes = function()
-	if not lyr:checkTweak("blackScreenFlashes") then return false end
-
+local blackScreenFlashes = function(tweakName, tweakState)
 	local tweak = {
 		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"VehicleExitFlashColour","Colour.xml"},
 				fields = {
-					R = {default = 0, altered = 0},
-					G = {default = 0, altered = 0},
-					B = {default = 0, altered = 0},
-					A = {default = 1, altered = 1}
+					R = {default = 0, 0},
+					G = {default = 0, 0},
+					B = {default = 0, 0},
+					A = {default = 1, 1}
 				}
 			},
 			{
 				specialKeyWords = {"MiniportalFlashColour","Colour.xml"},
 				fields = {
-					R = {default = 1, altered = 0},
-					G = {default = 1, altered = 0},
-					B = {default = 1, altered = 0},
-					A = {default = 1, altered = 1}
+					R = {default = 1, 0},
+					G = {default = 1, 0},
+					B = {default = 1, 0},
+					A = {default = 1, 1}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.blackScreenFlashes = blackScreenFlashes
+end
+lyr.tweakTables.blackScreenFlashes = blackScreenFlashes
 
-local noHitEffectsOnZeroDamage = function()
-	if not lyr:checkTweak("noHitEffectsOnZeroDamage") then return false end
-
+local noHitEffectsOnZeroDamage = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCGAMEPLAYGLOBALS.GLOBAL.MBIN]],
@@ -367,67 +367,57 @@ local noHitEffectsOnZeroDamage = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noHitEffectsOnZeroDamage = noHitEffectsOnZeroDamage
+end
+lyr.tweakTables.noHitEffectsOnZeroDamage = noHitEffectsOnZeroDamage
 
-local rapidToolScanner = function()
-	if not lyr:checkTweak("rapidToolScanner") then return false end
-
+local rapidToolScanner = function(tweakName, tweakState)
 	local tweak = {
 		["METADATA/SIMULATION/SCANNING/SCANDATATABLE.MBIN"] = {
 			{
-				skw = {"ID", "SHIP", "ScanType", "Tool"},
-				thisLine = true,
+				skw = [[<Property name="ID" value="TOOL" />]],
 				fields = {
-					ScanType = {default = "Tool", altered = "Tool"},
-				}
-			},
-			{
-				skw = {lyr:parsePair([[<Property name="ID" value="TOOL" />]])},
-				fields = {
-					PulseRange = {default = 200, altered = 250},
-					PulseTime = {default = 1, altered = 2},
-					PlayAudioOnMarkers = {default = true, altered = true},
-					ChargeTime = {default = 30, altered = 15}
+					PulseRange = {default = 200, 250},
+					PulseTime = {default = 1, 2},
+					PlayAudioOnMarkers = {default = true, true},
+					ChargeTime = {default = 30, 15}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.rapidToolScanner = rapidToolScanner
+end
+lyr.tweakTables.rapidToolScanner = rapidToolScanner
 
-local darkerScannerPulse = function()
-	if not lyr:checkTweak("darkerScannerPulse") then return false end
-
+local darkerScannerPulse = function(tweakName, tweakState)
 	local tweak = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"ScannerColour1","Colour.xml"},
 				fields = {
-					R = {default = 0.3, altered = 0},
-					G = {default = 0.9, altered = 0},
-					B = {default = 1, altered = 0},
-					A = {default = 1, altered = 0.1}
+					R = {default = 0.3, 0},
+					G = {default = 0.9, 0},
+					B = {default = 1, 0},
+					A = {default = 1, 0.1}
 				}
 			},
 			{
 				specialKeyWords = {"ScannerColour2","Colour.xml"},
 				fields = {
-					R = {default = 1, altered = 0},
-					G = {default = 0.5, altered = 0},
-					B = {default = 0.2, altered = 0},
-					A = {default = 1, altered = 0.1}
+					R = {default = 1, 0},
+					G = {default = 0.5, 0},
+					B = {default = 0.2, 0},
+					A = {default = 1, 0.1}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.darkerScannerPulse = darkerScannerPulse
+end
+lyr.tweakTables.darkerScannerPulse = darkerScannerPulse
 
-local noSentinelTerrainDamage = function()
-	if not lyr:checkTweak("noSentinelTerrainDamage") then return false end
-
+local noSentinelTerrainDamage = function(tweakName, tweakState)
 	local tweak = {
 		["METADATA/PROJECTILES/PROJECTILETABLE.MBIN"] = {
 			{
@@ -444,30 +434,30 @@ local noSentinelTerrainDamage = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noSentinelTerrainDamage = noSentinelTerrainDamage
+end
+lyr.tweakTables.noSentinelTerrainDamage = noSentinelTerrainDamage
 
-local learnMoreWords = function()
-	if not lyr:checkTweak("learnMoreWords") then return false end
+local learnMoreWords = function(tweakName, tweakState)
+	tweakState = type(tweakState) ~= "number" and 3 or tweakState
 
 	local tweak = {
 		["METADATA/REALITY/TABLES/REWARDTABLE.MBIN"] = {
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Reward" value="GcRewardTeachWord.xml">]])},
+				specialKeyWords = [[<Property name="Reward" value="GcRewardTeachWord.xml">]],
 				findSections = {{"AmountMin", "1"}, {"AmountMax", "1"}},
 				fields = {
-					AmountMin = math.max(1, lyr.tweakStates.learnMoreWords-1),
-					AmountMax = math.max(3, lyr.tweakStates.learnMoreWords+1)
+					AmountMin = math.max(1, tweakState-1),
+					AmountMax = math.max(3, tweakState+1)
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.learnMoreWords = learnMoreWords
+end
+lyr.tweakTables.learnMoreWords = learnMoreWords
 
-local noTextDelay = function()
-	if not lyr:checkTweak("noTextDelay") then return false end
-
+local noTextDelay = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[METADATA\UI\SPECIALTEXTPUNCTUATIONDELAYDATA.MBIN]],
@@ -479,27 +469,29 @@ local noTextDelay = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noTextDelay = noTextDelay
+end
+lyr.tweakTables.noTextDelay = noTextDelay
 
-local removeDoubleSlashes = function()
-	if not lyr:checkTweak("noTextDelay") or not lyr:checkTweak("removeDoubleSlashes") or lyr:checkTweak("replaceDoubleSlashes") then return false end
+local removeDoubleSlashes = function(tweakName, tweakState)
+	if not lyr:checkTweak("noTextDelay") or lyr:checkTweak("replaceDoubleSlashes") then return false end
 
 	local tweak = {
 		{
 			mbinPaths = [[METADATA\UI\SPECIALSTYLESIMAGESDATA.MBIN]],
 			{
-				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="SLASH" />]])},
+				specialKeyWords = [[<Property name="Name" value="SLASH" />]],
 				removeSection = true,
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.removeDoubleSlashes = removeDoubleSlashes
+end
+lyr.tweakTables.removeDoubleSlashes = removeDoubleSlashes
 
-local replaceDoubleSlashes = function()
+local replaceDoubleSlashes = function(tweakName, tweakState)
 	if not lyr:checkTweak("noTextDelay") then return false end
-	local language = lyr:checkTweak("replaceDoubleSlashes"); if not language then return false end; language = language:upper()
+	local language = lyr:checkTweak(tweakName); if not language then return false end; language = language:upper()
 	local languages = {
 		BRAZILIANPORTUGUESE = true,
 		DUTCH = true,
@@ -529,22 +521,22 @@ local replaceDoubleSlashes = function()
 				[[LANGUAGE\NMS_LOC6_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC7_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_LOC8_]]..language..[[.MBIN]],
-				[[LANGUAGE\NMS_LOC9_]]..language..[[.MBIN]],
+				-- [[LANGUAGE\NMS_LOC9_]]..language..[[.MBIN]],
 				[[LANGUAGE\NMS_UPDATE3_]]..language..[[.MBIN]],
 			},
 			regexBefore = {
-				{"&lt;IMG&gt;SLASH&lt;&gt;", "\\/\\/", "g"},
-				lyr:checkTweak("removeStoryTextDelays") and {"&lt;DELAY&gt;[0-9.]*&lt;&gt;", "", "g"} or nil
-			}
+				{[[&lt;IMG&gt;SLASH&lt;&gt;]], [[//]], "g"},
+				-- {[[&lt;IMG&gt;SLASH&lt;&gt;]], [[\/\/]], "g"},
+				lyr:checkTweak("removeStoryTextDelays") and {[[&lt;DELAY&gt;[0-9.]*&lt;&gt;]], "", "g"} or nil
+			},
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.replaceDoubleSlashes = replaceDoubleSlashes
+end
+lyr.tweakTables.replaceDoubleSlashes = replaceDoubleSlashes
 
-local noTerrainFlatten = function()
-	if not lyr:checkTweak("noTerrainFlatten") then return false end
-
+local noTerrainFlatten = function(tweakName, tweakState)
 	local tweak = {
 		["GCENVIRONMENTGLOBALS.GLOBAL.MBIN"] = {
 			{
@@ -552,16 +544,27 @@ local noTerrainFlatten = function()
 					TerrainFlattenMin = 0,
 					TerrainFlattenMax = 0
 				}
-			}
+			},
+			tweakState == "extended" and {
+				skw = {lyr.ignore, "GcEnvironmentProperties.xml"},
+				fields = {
+					PlanetObjectSwitch = "@*2.5",	--2000
+					PlanetLodSwitch0 = "@*2.5",	--2000
+					PlanetLodSwitch0Elevation = "@*2.5",	--2000
+					PlanetLodSwitch1 = "@*5",	--2000
+					PlanetLodSwitch2 = "@*1.5",	--10000
+					-- PlanetLodSwitch3 = "@*2",	--20000
+				},
+				replaceAll = true
+			} or false
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.noTerrainFlatten = noTerrainFlatten
+end
+lyr.tweakTables.noTerrainFlatten = noTerrainFlatten
 
-local cyclingQuickMenu = function()
-	if not lyr:checkTweak("cyclingQuickMenu") then return false end
-
+local cyclingQuickMenu = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCUIGLOBALS.GLOBAL.MBIN]],
@@ -574,11 +577,10 @@ local cyclingQuickMenu = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.cyclingQuickMenu = cyclingQuickMenu
+end
+lyr.tweakTables.cyclingQuickMenu = cyclingQuickMenu
 
-local hideQuickMenuControls = function()
-	if not lyr:checkTweak("hideQuickMenuControls") then return false end
-
+local hideQuickMenuControls = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = [[GCUIGLOBALS.GLOBAL.MBIN]],
@@ -591,143 +593,10 @@ local hideQuickMenuControls = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.hideQuickMenuControls = hideQuickMenuControls
+end
+lyr.tweakTables.hideQuickMenuControls = hideQuickMenuControls
 
-local unifiedCalmWarps = function()
-	if not lyr:checkTweak("unifiedCalmWarps") then return false end
-
-	local tweak = {
-		{
-			mbinPaths = {
-				{[[MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN]], [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]]},
-				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]]},
-				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALTMAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]]},
-				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELALT2MAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]]},
-				{[[MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVESMAT.MATERIAL.MBIN]], [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]]},
-			}
-		},
-		{
-			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]],
-			{
-				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
-				fields = {
-					y = 0.02
-				}
-			}
-		},
-		{
-			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]],
-			{
-				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
-				fields = {
-					y = 0.03
-				}
-			}
-		},
-		{
-			mbinPaths = [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]],
-			{
-				skw = {lyr:parsePair([[<Property name="Name" value="gUVScrollStepVec4" />]])},
-				fields = {
-					y = 0.05
-				}
-			}
-		},
-		{
-			mbinPaths = [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]],
-			{
-				skw = {lyr:parsePair([[<Property name="Name" value="gMaterialColourVec4" />]])},
-				fields = {
-					x = 0,
-					y = 0,
-					z = 0
-				}
-			}
-		},
-		{
-			mbinPaths = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-			{
-				skw = {
-					{lyr:parsePair([[<Property name="Name" value="LightLargeStreaks" />]])},
-					{lyr:parsePair([[<Property name="Name" value="LightStreaksSmall1" />]])},
-					{lyr:parsePair([[<Property name="Name" value="LightStreaks1" />]])},
-					{lyr:parsePair([[<Property name="Name" value="LightStreaksSmall" />]])},
-					{lyr:parsePair([[<Property name="Name" value="LightStreaks" />]])},
-					{lyr:parsePair([[<Property name="Name" value="LightArms" />]])},
-					{lyr:parsePair([[<Property name="Name" value="gradientCloud" />]])},
-					{lyr:parsePair([[<Property name="Name" value="gradientCloudAlt" />]])}
-				},
-				removeSection = true
-			},
-			{
-				skw = {"Name", "stars", "Name", "MATERIAL"},
-				fields = {
-					Value = [[LYR/MATERIALS/TUNNEL_STARS_SLOW.MATERIAL.MBIN]]
-				}
-			},
-			{
-				skw = {"Name", "stars1", "Name", "MATERIAL"},
-				fields = {
-					Value = [[LYR/MATERIALS/TUNNEL_STARS_MEDIUM.MATERIAL.MBIN]]
-				}
-			},
-			{
-				skw = {"Name", "stars2", "Name", "MATERIAL"},
-				fields = {
-					Value = [[LYR/MATERIALS/TUNNEL_STARS_FAST.MATERIAL.MBIN]]
-				}
-			},
-			{
-				skw = {
-					{"Name", "scrollingwave", "Name", "MATERIAL"},
-					{"Name", "scrollingwave9", "Name", "MATERIAL"},
-					{"Name", "scrollingwaveALT", "Name", "MATERIAL"},
-					{"Name", "scrollingwaveALT1", "Name", "MATERIAL"}
-				},
-				fields = {
-					Value = [[LYR/MATERIALS/TUNNEL_WAVE.MATERIAL.MBIN]]
-				}
-			}
-		},
-		{
-			mbinPaths = [[GCSIMULATIONGLOBALS.GLOBAL.EXML]],
-			{
-				fields = {
-					WarpTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-					BlackHoleTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-					TeleportTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-					PortalTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-					PortalStoryTunnelFile = [[LYR/EFFECTS/WARPTUNNEL.SCENE.MBIN]],
-				}
-			}
-		}
-	}
-
-	return tweak
-end; lyr.tweakTables.unifiedCalmWarps = unifiedCalmWarps
-
-local noSpinningChairs = function()
-	if not lyr:checkTweak("noSpinningChairs") then return false end
-
-	local tweak = {
-		{
-			mbinPaths = {
-				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\TABLECHAIR\ENTITIES\TABLECHAIR1.ENTITY.EXML]],
-			},
-			{
-				skw = {lyr:parsePair([[<Property name="Template" value="GcSimpleInteractionComponentData.xml">]])},
-				selectLevel = 1,
-				removeSection = true
-			}
-		}
-	}
-
-	return tweak
-end; lyr.tweakTables.noSpinningChairs = noSpinningChairs
-
-local stabilizedJetpack = function()
-	if not lyr:checkTweak("stabilizedJetpack") then return false end
-
+local stabilizedJetpack = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = {
@@ -735,28 +604,31 @@ local stabilizedJetpack = function()
 			},
 			{
 				fields = {
-					JetpackUpForce = {default = 30, altered = 33},
-					-- JetpackIgnitionForce = {default = 60, altered = 0},
-					JetpackIgnitionTime = {default = 0.4, altered = 0},	-- it seems this is the time it takes for ignition thrust to be taken over by normal force
-					JetpackMinIgnitionTime = {default = 0.2, altered = 0.2}
+					JetpackUpForce = {default = 30, 33},
+					-- JetpackIgnitionForce = {default = 60, 0},
+					JetpackIgnitionTime = {default = 0.4, 0},	-- it seems this is the time it takes for ignition thrust to be taken over by normal force
+					JetpackMinIgnitionTime = {default = 0.2, 0.2}
 				}
 			}
 		}
 	}
 
 	return tweak
-end; lyr.tweakTables.stabilizedJetpack = stabilizedJetpack
+end
+lyr.tweakTables.stabilizedJetpack = stabilizedJetpack
 
-local noAerialScans = function()
-	if not lyr:checkTweak("noAerialScans") then return false end
-
+local noAerialScans = function(tweakName, tweakState)
 	local tweak = {
 		{
 			mbinPaths = {
 				[[METADATA\REALITY\TABLES\REWARDTABLE.EXML]],
+				-- [[METADATA\SIMULATION\MISSIONS\COREMISSIONTABLE.EXML]],
+				[[METADATA\SIMULATION\MISSIONS\TABLES\COREMISSIONTABLE.EXML]],
+				[[METADATA\SIMULATION\MISSIONS\TABLES\SEASONALBESPOKEMISSIONTABLE.EXML]],
+				[[METADATA\SIMULATION\MISSIONS\TABLES\STARTEDONUSEMISSIONTABLE.EXML]],
 			},
 			{
-				skw = {lyr:parsePair([[<Property name="DoAerialScan" value="True" />]])},
+				skw = [[<Property name="DoAerialScan" value="True" />]],
 				fields = {
 					DoAerialScan = false
 				},
@@ -766,35 +638,61 @@ local noAerialScans = function()
 	}
 
 	return tweak
-end; lyr.tweakTables.noAerialScans = noAerialScans
+end
+lyr.tweakTables.noAerialScans = noAerialScans
 
-local stationSystemScanner = function()
-	if not lyr:checkTweak("stationSystemScanner") then return false end
-
+local strictPlayerInteraction = function(tweakName, tweakState)
 	local tweak = {
-		lyr:createNodeTemplate(),
 		{
-			mbinPaths = {{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN]], [[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]]}}
-		},
-		{
-			mbinPaths = [[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]],
-			{
-				pkw = "LinkableNMSTemplate.xml",
-				findSections = {{lyr:parsePair([[<Property name="Template" value="GcMaintenanceComponentData.xml">]])}},
+			mbinPaths = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.EXML]],
+			tweakState == "remove" and {
+				skw = [[<Property name="Template" value="GcInteractionComponentData.xml">]],
+				selectLevel = 1,
 				removeSection = true
+			} or {
+				skw = [[<Property name="Template" value="GcInteractionComponentData.xml">]],
+				fields = {
+					AttractDistanceSq = 9,
+					InteractDistance = 3,
+					InteractInvertFace = true,
+					InteractAngle = 60
+				}
 			}
-		},
-		lyr:attachEntityLocatorAttachment(
-			[[MODELS\SPACE\SPACESTATION\MODULARPARTSTYPEB\DOCK\SHOPS\MAPSHOPAREA.SCENE.EXML]],
-			"_MapScreen_C",
-			[[LYR\ENTITIES\STATIONSCAN.ENTITY.MBIN]],
-			"lyr_stationScanner",
-			{x = 3.790752, y = 1.487879, z = 0}
-		)
+		}
 	}
 
 	return tweak
-end; lyr.tweakTables.stationSystemScanner = stationSystemScanner
+end
+lyr.tweakTables.strictPlayerInteraction = strictPlayerInteraction
+
+local widerRiderAngle = function(tweakName, tweakState)
+	local tweak = {
+		{
+			mbinPaths = [[GCCAMERAGLOBALS.GLOBAL.EXML]],
+			{
+				fields = {
+					MaxCreatureRidingYaw = 135
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+lyr.tweakTables.widerRiderAngle = widerRiderAngle
+
+local noUnitsReceivedVoice = function()
+	local noSound, audioPath = [[\lyr_files\noSound.wem]], [[\AUDIO\WINDOWS\]]
+
+	-- VO_Units_Received.wav
+	local files = {"635847312", "353583721", "578432176", "330331555", "913825638", "488211833", "607162938", "711379869", "488195662", "127071094", "425512159", "487233905", "896250406", "110021819"}
+
+	---@diagnostic disable-next-line: assign-type-mismatch
+	for k, v in next, files do files[k] = {noSound, audioPath..v..".WEM"} end
+
+	return files
+end
+lyr.tweakFiles.noUnitsReceivedVoice = noUnitsReceivedVoice
 
 --#endregion
 -- END OF TWEAKS

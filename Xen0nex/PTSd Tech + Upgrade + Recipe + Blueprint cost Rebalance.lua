@@ -81,6 +81,9 @@ TechAdjustments =
 		"MECH_LASER1",	0.7143			--Precision Minotaur Laser				210 Nanites
 	},
 	{
+		"VEHICLE_LASER1",	0.7143		--Advanced Exocraft Laser				210 Nanites
+	},
+	{
 		"MECH_GUN",	0.7143				--Minotaur Cannon						210 Nanites
 	},
 	{
