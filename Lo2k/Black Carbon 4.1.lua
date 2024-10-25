@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Black Carbon 4.0.pak", 
+["MOD_FILENAME"] 			= "Black Carbon 4.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lowkie (+ Lo2k)",
-["NMS_VERSION"]				= "5.12",
+["NMS_VERSION"]				= "5.21",
 ["MOD_DESCRIPTION"]			= "This mod makes carbon black",
 ["MODIFICATIONS"] 			= 
 	{

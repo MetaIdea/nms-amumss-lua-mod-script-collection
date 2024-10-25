@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Tiny Inventory Changes 6.1.pak", 
+["MOD_FILENAME"] 			= "Tiny Inventory Changes 6.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.11",
+["NMS_VERSION"]				= "5.21",
 ["MOD_DESCRIPTION"]			= "This mods changes orientation and lighting of inventory 3D models",
 ["MODIFICATIONS"] 			= 
 	{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","Suit"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","Suit"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LightPitch",	"60"},
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","Weapon"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","Weapon"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","Ship"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","Ship"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","Vehicle"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","Vehicle"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","TradeCompareShips"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","TradeCompareShips"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","ModelViews","Freighter"},
+							["PRECEDING_KEY_WORDS"] = {"ModelViews","Freighter"},
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

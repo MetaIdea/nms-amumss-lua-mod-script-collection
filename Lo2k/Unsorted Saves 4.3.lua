@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Stop The Clocks 3.4.pak", 
+["MOD_FILENAME"] 			= "Unsorted Saves 4.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.11",
-["MOD_DESCRIPTION"]			= "This mods makes sun still",
+["NMS_VERSION"]				= "5.21",
+["MOD_DESCRIPTION"]			= "This mods makes save game slots standing still",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,8 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"EnableDayNightCycle", "False"},   -- original : True
-								{"ForceSunAngle", "0"},   -- Changes sun angle / Time : the unit is 4 minutes, so 90 = +6 hours
+								{"DisableSaveSlotSorting", "True"}
 							}
 						}
 					}

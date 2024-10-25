@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Indoors Lighting Fix 1.4.pak", 
+["MOD_FILENAME"] 			= "Indoors Lighting Fix 1.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.12",
+["NMS_VERSION"]				= "5.21",
 ["MOD_DESCRIPTION"]			= "This mods greatly improves indoor lighting",
 ["MODIFICATIONS"] 			= 
 	{
