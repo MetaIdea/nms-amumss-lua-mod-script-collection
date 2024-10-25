@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "SentinelPolicePlayerShipOnStart.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
-["NMS_VERSION"]             = "5.20",
+["NMS_VERSION"]             = "5.21",
 ["DESCRIPTION"]             = "Makes the ship you get on a fresh game start the police ship by default",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =

@@ -715,7 +715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]          = "Reikokuu & Babscoole",
 ["LUA_AUTHOR"]          = "Wbertro (speedup)",
 ["MOD_DESCRIPTION"]     = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]         = "5.20",
+["NMS_VERSION"]         = "5.21",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]       =
     {

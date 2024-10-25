@@ -1,9 +1,9 @@
 ModAuthor = "Pekerson"
 LuaAuthor = "Pekerson"
-ModName = "Perfect X-Class Upgrade Modules"
+ModName = "X-Class Always Better than S-Class"
 BaseDescription = "Changes the weight of X-Class Upgrade Modules"
-GameVersion = "5.12"
-ModVersion = "v1.7"
+GameVersion = "5.20"
+ModVersion = "v1.8"
 --[[Files Modified:METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
+								{"ValueMax","0.82"},
 							},
 						},
 						{	
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.05",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.55"},
+								{"ValueMin","1.5"},
 							},
 						},
 						{	
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.25"},
+								{"ValueMin","1.2"},
 							},
 						},
 						{	
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.05",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.5"},
+								{"ValueMin","1.4"},
 							},
 						},
 						{	
@@ -96,7 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","10",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","110"},
+								{"ValueMin","100"},
 							},
 						},
 						{	
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","10",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","110"},
+								{"ValueMin","100"},
 							},
 						},
 						{	
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","10",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","110"},
+								{"ValueMin","100"},
 							},
 						},
 
@@ -138,7 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","5"},
+								{"ValueMin","4"},
 							},
 						},
 						{	
@@ -148,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 						{	
@@ -158,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","2",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","10"},
+								{"ValueMin","8"},
 							},
 						},
 						{	
@@ -168,7 +168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -180,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","2"},
 							},
-						},
+						}, 
 						{	
 							COMMENT = [[UP_BOLTX Weapon_Projectile_BurstCooldown]],
 							["SPECIAL_KEY_WORDS"] = {
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","0.99",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.8"},
+								{"ValueMin","0.85"},
 							},
 						},
 
@@ -210,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","100",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","450"},
+								{"ValueMin","400"},
 							},
 						},
 						{	
@@ -220,7 +220,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","4"},
+								{"ValueMin","3"},
 							},
 						},
 						{	
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -240,7 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","4"},
+								{"ValueMin","3"},
 							},
 						},
 
@@ -262,7 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","100",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","450"},
+								{"ValueMin","400"},
 							},
 						},
 						{	
@@ -272,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.6"},
+								{"ValueMin","1.5"},
 							},
 						},
 						{	
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","4"},
+								{"ValueMin","3"},
 							},
 						},
 
@@ -304,7 +304,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","30",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","85"},
+								{"ValueMin","75"},
 							},
 						},
 						{	
@@ -314,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 
@@ -336,7 +336,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","6"},
+								{"ValueMin","5"},
 							},
 						},
 						{	
@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.7"},
+								{"ValueMax","0.75"},
 							},
 						},
 						{	
@@ -366,7 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -386,7 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 
@@ -411,7 +411,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","4"},
+								{"ValueMin","3"},
 							},
 						},
 						{	
@@ -421,7 +421,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -431,7 +431,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.99",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.85"},
+								{"ValueMax","0.9"},
 							},
 						},
 						{	
@@ -465,7 +465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","18"},
-								{"ValueMax","18"},
+								{"ValueMax","24"},
 							},
 						},
 						{	
@@ -489,7 +489,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 							["VALUE_CHANGE_TABLE"] = {
 								{"ValueMin","25"},
-								{"ValueMax","25"},
+								{"ValueMax","30"},
 							},
 						},
 						{	
@@ -500,7 +500,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.5"},
+								{"ValueMin","0.4"},
 								{"ValueMax","0.5"},
 							},
 						},
@@ -565,7 +565,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","0.05",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.1"},
+								{"ValueMin","1"},
 							},
 						},
 						{	
@@ -575,7 +575,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.75"},
+								{"ValueMin","1.5"},
 							},
 						},
 
@@ -649,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","2.4"},
+								{"ValueMin","2.35"},
 							},
 						},
 						{	
@@ -659,7 +659,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","0.1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.6"},
+								{"ValueMin","0.5"},
 							},
 						},
 						{	
@@ -669,7 +669,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.6"},
+								{"ValueMin","1.5"},
 							},
 						},
 						{	
@@ -679,7 +679,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.9",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.7"},
+								{"ValueMax","0.75"},
 							},
 						},
 						{	
@@ -689,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -699,7 +699,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.05",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.4"},
+								{"ValueMin","1.35"},
 							},
 						},
 
@@ -1047,7 +1047,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 						{	
@@ -1057,7 +1057,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.3"},
+								{"ValueMin","1.25"},
 							},
 						},
 						{	
@@ -1067,7 +1067,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.18"},
 							},
 						},
 						{	
@@ -1099,7 +1099,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMax","0.95",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.75"},
+								{"ValueMax","0.8"},
 							},
 						},
 						{	
@@ -1131,7 +1131,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","50",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","320"},
+								{"ValueMin","265"},
 							},
 						},
 						{	
@@ -1163,7 +1163,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","0.05",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.25"},
+								{"ValueMin","0.2"},
 							},
 						},
 
@@ -1185,7 +1185,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","8",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","32"},
+								{"ValueMin","28"},
 							},
 						},
 						{	
@@ -1195,7 +1195,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.001",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.026"},
+								{"ValueMin","1.021"},
 							},
 						},
 						{	
@@ -1205,7 +1205,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.001",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.035"},
+								{"ValueMin","1.03"},
 							},
 						},
 
@@ -1227,7 +1227,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","2"},
+								{"ValueMin","1.95"},
 							},
 						},
 						{	
@@ -1237,7 +1237,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","30",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","80"},
+								{"ValueMin","70"},
 							},
 						},
 
@@ -1301,7 +1301,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","2",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","14"},
+								{"ValueMin","12"},
 							},
 						},
 						{	
@@ -1311,7 +1311,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
+								{"ValueMin","1.1"},
 							},
 						},
 						{	
@@ -1321,7 +1321,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.13"},
+								{"ValueMin","1.09"},
 							},
 						},
 
@@ -1343,7 +1343,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","2",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","14"},
+								{"ValueMin","12"},
 							},
 						},
 						{	
@@ -1353,7 +1353,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.01",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.2"},
+								{"ValueMin","1.15"},
 							},
 						},
 						{	
@@ -1363,713 +1363,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								"ValueMin","1.1",
 							},
 							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.4"},
+								{"ValueMin","1.35"},
 							},
 						},
 
 
-						
-						{	
-							COMMENT = [[UP_EXGUN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXGUN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","3"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXGUN4 Vehicle_GunDamage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXGUN4",
-								"ValueMin","30",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","40"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXGUN4 Vehicle_GunHeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXGUN4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXGUN4 Vehicle_GunRate]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXGUN4",
-								"ValueMax","0.93",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.9"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_EXLAS4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXLAS4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXLAS4 Vehicle_LaserDamage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXLAS4",
-								"ValueMin","30",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","40"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXLAS4 Vehicle_LaserHeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXLAS4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_BOOST4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_BOOST4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_BOOST4 Vehicle_BoostSpeed]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_BOOST4",
-								"ValueMin","0.55",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.7"},
-							},
-						},
-						{	
-							COMMENT = [[UP_BOOST4 Vehicle_BoostTanks]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_BOOST4",
-								"ValueMin","0.5",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.6"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_EXENG4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXENG4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXENG4 Vehicle_EngineFuelUse]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXENG4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXENG4 Vehicle_EngineTopSpeed]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXENG4",
-								"ValueMin","1.1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_EXSUB4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXSUB4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","3"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXSUB4 Vehicle_EngineFuelUse]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXSUB4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.7"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXSUB4 Vehicle_EngineTopSpeed]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXSUB4",
-								"ValueMin","1.1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_EXSUB4 Vehicle_SubBoostSpeed]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_EXSUB4",
-								"ValueMin","0.25",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.3"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_SUGUN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_SUGUN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_SUGUN4 Vehicle_GunDamage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_SUGUN4",
-								"ValueMin","30",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","40"},
-							},
-						},
-						{	
-							COMMENT = [[UP_SUGUN4 Vehicle_GunRate]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_SUGUN4",
-								"ValueMax","0.93",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.9"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_MCLAS4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCLAS4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCLAS4 Vehicle_LaserDamage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCLAS4",
-								"ValueMin","30",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","40"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCLAS4 Vehicle_LaserHeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCLAS4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_MCGUN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCGUN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","3"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCGUN4 Vehicle_GunDamage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCGUN4",
-								"ValueMin","30",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","40"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCGUN4 Vehicle_GunHeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCGUN4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCGUN4 Vehicle_GunRate]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCGUN4",
-								"ValueMax","0.93",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.9"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_MCENG4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCENG4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCENG4 Vehicle_EngineFuelUse]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCENG4",
-								"ValueMax","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UP_MCENG4 Vehicle_BoostTanks]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_MCENG4",
-								"ValueMin","0.25",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.3"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_PULSE4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_PULSE4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","3"},
-							},
-						},
-						{	
-							COMMENT = [[UA_PULSE4 Ship_PulseDrive_MiniJumpFuelSpending]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_PULSE4",
-								"ValueMax","0.8",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UA_PULSE4 Ship_Boost]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_PULSE4",
-								"ValueMin","1.1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.25"},
-							},
-						},
-						{	
-							COMMENT = [[UA_PULSE4 Ship_BoostManeuverability]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_PULSE4",
-								"ValueMin","1.05",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.18"},
-							},
-						},
-						{	
-							COMMENT = [[UA_PULSE4 Ship_Maneuverability]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_PULSE4",
-								"ValueMin","1.0065",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.0065"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_LAUN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_LAUN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UA_LAUN4 Ship_Launcher_TakeOffCost]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_LAUN4",
-								"ValueMax","0.8",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMax","0.8"},
-							},
-						},
-						{	
-							COMMENT = [[UA_LAUN4 Ship_Launcher_AutoCharge]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_LAUN4",
-								"ValueMin","1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_HYP4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_HYP4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UA_HYP4 Ship_Hyperdrive_JumpDistance]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_HYP4",
-								"ValueMin","220",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","265"},
-							},
-						},
-						{	
-							COMMENT = [[UA_HYP4 Ship_Hyperdrive_JumpsPerCell]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_HYP4",
-								"ValueMin","1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_S_SHL4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_S_SHL4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UA_S_SHL4 Ship_Armour_Shield_Strength]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_S_SHL4",
-								"ValueMin","0.2",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.2"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_SGUN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SGUN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","3"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SGUN4 Ship_Weapons_Guns_Damage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SGUN4",
-								"ValueMin","20",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","28"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SGUN4 Ship_Weapons_Guns_Rate]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SGUN4",
-								"ValueMin","1.021",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.021"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SGUN4 Ship_Weapons_Guns_HeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SGUN4",
-								"ValueMin","1.03",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.03"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UA_SLASR4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SLASR4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SLASR4 Ship_Weapons_Lasers_HeatTime]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SLASR4",
-								"ValueMin","1.75",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.95"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SLASR4 Ship_Weapons_Lasers_Damage]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SLASR4",
-								"ValueMin","60",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","70"},
-							},
-						},
-						{	
-							COMMENT = [[UA_SLASR4 Ship_Weapons_ShieldLeech]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UA_SLASR4",
-								"ValueMin","0.2",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.3"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRHYP4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRHYP4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","2"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRHYP4 Freighter_Hyperdrive_JumpDistance]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRHYP4",
-								"ValueMin","200",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","250"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRHYP4 Freighter_Hyperdrive_JumpsPerCell]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRHYP4",
-								"ValueMin","1",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRSPE4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRSPE4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRSPE4 Freighter_Fleet_Speed]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRSPE4",
-								"ValueMin","1.15",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRFUE4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRFUE4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRFUE4 Freighter_Fleet_Fuel]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRFUE4",
-								"ValueMin","0.85",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","0.8"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRCOM4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRCOM4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRCOM4 Freighter_Fleet_Combat]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRCOM4",
-								"ValueMin","1.15",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRTRA4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRTRA4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRTRA4 Freighter_Fleet_Trade]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRTRA4",
-								"ValueMin","1.15",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FREXP4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FREXP4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FREXP4 Freighter_Fleet_Trade]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FREXP4",
-								"ValueMin","1.15",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
-
-
-						
-						{	
-							COMMENT = [[UP_FRMIN4 NumStats]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRMIN4",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMin","1"},
-							},
-						},
-						{	
-							COMMENT = [[UP_FRMIN4 Freighter_Fleet_Trade]],
-							["SPECIAL_KEY_WORDS"] = {
-								"ID","UP_FRMIN4",
-								"ValueMin","1.15",
-							},
-							["VALUE_CHANGE_TABLE"] = {
-								{"ValueMin","1.15"},
-							},
-						},
+					
 
 
 

@@ -2,7 +2,7 @@ Author = "Mjstral,Gumsk"
 ModName = "gShip Custom Ships Summoner"
 ModNameSub = "C Class"
 BaseDescription = "Summons new ship models from gShip Custom Ships"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -42,7 +42,7 @@ ShipInfo = 	{
 	{"X70B",				"X-70B Phantom",			"39"},
   {"X70B25",				"X-70B Phantom",			"96"},
 	{"EWING",				"E-Wing",					"32"},
-	{"VWING",				"V-Wing",					"51"},
+	{"VWING",				"V-Wing",					"50"},
 	{"AWING",				"A-Wing",					"101"},
 	{"ENTD",				"Enterprise NCC1701-D",		"59"},
 	{"DEFIANT",				"USS Defiant",				"132"},

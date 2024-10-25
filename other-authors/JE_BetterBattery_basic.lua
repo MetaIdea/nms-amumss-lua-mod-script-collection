@@ -2,7 +2,7 @@ Author = "Jaggid Edje"
 ModName = "BetterBattery"
 ModNameSub = "JE"
 BaseDescription = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties."
-GameVersion = "5.12"
+GameVersion = "5.20"
 
 -- Original game settings in comments
 ChargeAmount = 160     -- Default is 80 for battery, 100 for gel and Starshield battery
@@ -12,6 +12,7 @@ WHCChargeAmount = 240 	-- Warph HyperCore Default is 240
 GFChargeAmount = 40		-- Grenade Fuel Default is 20
 SFChargeAmount = 600	-- Nautilon Subfuel default is 400
 DSChargeAmount = 300	-- Drone Shard (radiant shard)  default is 200
+SJChargeAmount = 300	-- Expedition 16 "Spook Juice"
 
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -81,6 +82,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ChargeValue", SFChargeAmount}
+                            }
+                        },
+						{
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SPOOK_JUICE",}, -- Expedition 16 SpookJuice
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ChargeValue", SJChargeAmount}
                             }
                         },
 						{

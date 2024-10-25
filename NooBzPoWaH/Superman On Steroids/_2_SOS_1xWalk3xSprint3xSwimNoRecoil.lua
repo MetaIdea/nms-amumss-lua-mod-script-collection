@@ -5,13 +5,9 @@
 	JetpackRegen = 9999											--1 ; 7x tank size = instant refill.
 	--RocketBootsSpeed = 4										--Boost to speed granted by Rocket Boots. My addition. Inactive
 
---Life support (PROTECT) 1h
-	ProtectChargeAmount = 3600										--80
-	ProtectChargeMultiplier = 45										--1
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_SOS_2xWalk3xSprint3xSwimNoRecoilWantedLevelQuickShieldHazard.pak",
+["MOD_FILENAME"] 			= "_2_SOS_1xWalk3xSprint3xSwimNoRecoil.pak",
 ["MOD_DESCRIPTION"]			= "This mod basically allows you to fly",
 ["MOD_AUTHOR"]				= "JimminyBillyBob888 AKA TheNexGDD and NooBzPoWaH",
 ["NMS_VERSION"]				= "5.+",
@@ -29,11 +25,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["PRECEDING_KEY_WORDS"] = {},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "GroundWalkSpeed", 				"8.8" }, 	--Original "4.4"
-								{ "GroundWalkSpeedTeleportHmd", 		"8.8" }, 	--Original "4.4"
 								{ "GroundRunSpeed", 				"24" }, 	--Original "8"
-								{ "GroundWalkSpeedLowG", 			"6.6" }, 	--Original "1.6"
-								{ "GroundRunSpeedLowG", 			"16" }, 	--Original "3.5"
+								{ "GroundRunSpeedLowG", 			"10.5" }, 	--Original "3.5"
 								{ "JetpackUnderwaterDrainRate",			"0.2" },	--Original "0.4"
 								{ "JetpackUnderwaterFillRate",			"2" },		--Original "1"
 								{ "UnderwaterMaxSpeed", 			"12" }, 	--Original "4"
@@ -44,6 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "EnergyDischargeRateMedium", 			"0.02" }, 	--Original "0.25"
 								{ "EnergyDischargeRateHigh", 			"0.02" }, 	--Original "0.9"
 								{ "FreeJetpackRange", 				"99" }, 	--Original "3"
+								{ "FreeJetpackRangePrime",			"99" }, 	--Original "5"
 								{ "FreeJetpackRangeNonTerrain", 		"99" }, 	--Original "1.1"
 								{ "JetpackDrainHorizontalFactor", 		"0" }, 		--Original "2.5"
 								{ "MeleeBoostAirForce",				"5" },		--Original "3"
@@ -69,8 +63,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackFillRate", 				"99" }, 	--Original "0.5"
 								{ "JetpackFillRateSpaceStationMultiplier",	"10" },		--Original "5"
 								{ "JetpackUpForceDeadPlanetExtra",		"15" },		--Original "10"
-								{ "JetpackForceDeadPlanetExtra",		"80" },		--Original "15
-								{ "JetpackIgnitionForceDeadPlanetExtra", 	"80" }, 	--Original "45"
+								{ "JetpackForceDeadPlanetExtra",		"80" },		--Original "15"
+								{ "JetpackIgnitionForceDeadPlanetExtra",	"80" }, 	--Original "45"
 								{ "MaxNumDestroyEffects", 			"0" }, 		--Original "8"
 								{ "MinNumDestroyEffects", 			"0" }, 		--Original "3"
 								{ "LaserMiningDamageMultiplier", 		"4" }, 		--Original "1"
@@ -102,10 +96,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "WeaponChangeModeTime", 			"0.75" }, 	--Original "0"
 								{ "HardLandMin", 				"98" }, 	--Original "5"
 								{ "HardLandMax", 				"99" }, 	--Original "18"
-								{ "AnimWalkSpeed", 				"2" }, 		--Original "1.5"
 								{ "AnimRunSpeed", 				"5" }, 		--Original "4"
-								{ "ShieldRestoreSpeed", 			"1" }, 		--Original "0.2"
-								{ "ShieldRestoreDelay", 			"0" }, 		--Original "10"					
 							}	
 						},						
 						{
@@ -113,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["LINE_OFFSET"] 	= "1",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "IGNORE", 					999 }, 		--Original "4"
+								{ "IGNORE", 					999 },	 	--Original "4"
 							}	
 						},						
 						{
@@ -121,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["LINE_OFFSET"] 	= "2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "IGNORE", 					999 }, 		--Original "6"
+								{ "IGNORE", 					999 },	 	--Original "6"
 							}	
 						},						
 						{
@@ -131,47 +122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{ "IGNORE", 					999 },	 	--Original "8"
 							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},
-              ["LINE_OFFSET"] 	= "1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					1 }, 		--Original "10"
-							}	
 						},						
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},
-              ["LINE_OFFSET"] 	= "2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					1 }, 		--Original "15"
-							}	
-						},						
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},
-              ["LINE_OFFSET"] 	= "3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					1 }, 		--Original "10"
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},
-              ["LINE_OFFSET"] 	= "4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					1 }, 		--Original "15"
-							}	
-						},						
-						{
-							["PRECEDING_KEY_WORDS"] = {"WantedTimeout"},
-              ["LINE_OFFSET"] 	= "5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					1 }, 		--Original "10"
-							}	
-						},																	
 					}
 				},
 				{
@@ -207,52 +158,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"Bonus", JetpackRegen},
               },
             },
-          --Life support
-            { --Cold Module
-              ["SPECIAL_KEY_WORDS"] = {"ID", "T_COLDPROT"},
-	      ["PRECEDING_KEY_WORDS"] = {""},
-	      ["VALUE_CHANGE_TABLE"] = 
-		{
-			{"ChargeAmount", ProtectChargeAmount},
-			{"ChargeMultiplier", ProtectChargeMultiplier},
-		},
-              },
-	      { --Hot Module
-	        ["SPECIAL_KEY_WORDS"] = {"ID", "T_HOTPROT"},
-        	["PRECEDING_KEY_WORDS"] = {""},
-        	["VALUE_CHANGE_TABLE"] = 
-		  {
-			{"ChargeAmount", ProtectChargeAmount},
-			{"ChargeMultiplier", ProtectChargeMultiplier},
-		},
-              },
-	      { --Tox Module
-               	["SPECIAL_KEY_WORDS"] = {"ID", "T_TOX"},
-        	["PRECEDING_KEY_WORDS"] = {""},
-        	["VALUE_CHANGE_TABLE"] = 
-		  {
-			{"ChargeAmount", ProtectChargeAmount},
-			{"ChargeMultiplier", ProtectChargeMultiplier},
-		},
-              },
-              { --Rad Module
-        	["SPECIAL_KEY_WORDS"] = {"ID", "T_RAD"},
-        	["PRECEDING_KEY_WORDS"] = {""},
-        	["VALUE_CHANGE_TABLE"] = 
-		  {
-			{"ChargeAmount", ProtectChargeAmount},
-			{"ChargeMultiplier", ProtectChargeMultiplier},
-		},
-              },
-              { --Water Module
-        	["SPECIAL_KEY_WORDS"] = {"ID", "T_UNW"},
-        	["PRECEDING_KEY_WORDS"] = {""},
-        	["VALUE_CHANGE_TABLE"] = 
-	          {
-			{"ChargeAmount", ProtectChargeAmount},
-			{"ChargeMultiplier", ProtectChargeMultiplier},
-                },
-              },												
 					}
 				},
 			}

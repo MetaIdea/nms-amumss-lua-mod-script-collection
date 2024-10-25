@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gMech No Damage"
 ModNameSub = ""
 BaseDescription = "Disables mech tech damage"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 
 --[[ Files Modified:

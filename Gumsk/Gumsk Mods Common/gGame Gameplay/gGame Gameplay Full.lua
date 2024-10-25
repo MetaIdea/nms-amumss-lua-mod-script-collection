@@ -1,7 +1,7 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Full"
-GameVersion = "5.1.2.0"
-ModVersion = "c"
+GameVersion = "5.2.0.0"
+ModVersion = "a"
 
 --[[ Files Modified:
 METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN

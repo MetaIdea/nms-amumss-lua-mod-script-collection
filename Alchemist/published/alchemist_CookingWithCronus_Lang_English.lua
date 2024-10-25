@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "5-11"
-ModVersion = "1-5-1"
+GameVersion = "5-20"
+ModVersion = "1-6-0"
 
 -- =========
 -- CONSTANTS
@@ -78,7 +78,7 @@ files.
 
 --]]
 
--- Total keys: 301
+-- Total keys: 305
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
@@ -90,7 +90,10 @@ LANGUAGE_TABLE = {
   ["ALCH_CHEF_JUDGE_CHAT_RDY"] = "<VISOR>Cronus<>: -{{ What have you prepared for me this time? }}-", --
   ["ALCH_CHEF_JUDGE_CHEF_LABEL"] = "Present food products", --
   ["ALCH_CHEF_MENU_BACK_OPT"] = "Return...", --
+  ["ALCH_CHEF_MENU_ING_BRIBE"] = "About today's offerings...", --
+  ["ALCH_CHEF_MENU_ING_BRIBE_EVT"] = "[ ! ] About today's offerings...", --
   ["ALCH_CHEF_MENU_ING_SHOP"] = "Ingredients Market...", --
+  ["ALCH_CHEF_MENU_ING_SHOP_EVT"] = "[ ! ] Ingredients Market...", --
   ["ALCH_CHEF_MENU_JUDGE_OPT"] = "Food Critique...", --
   ["ALCH_CHEF_MENU_JUDGE_RES"] = "Give me a moment to prepare...", --
   ["ALCH_CHEF_MENU_NEXT_OPT"] = "More Options...", --
@@ -149,8 +152,10 @@ LANGUAGE_TABLE = {
   ["ALCH_CHEF_WHALE_TITLE"] = "Harmonizing with Forgotten Song", --
   ["CHEF_MENU_00_BRIBE_CANCEL_RES"] = "Nothing of interest, that's alright. Just don't go telling Polo about my offer, okay?", --
   ["CHEF_MENU_00_BRIBE_DONE_RES"] = "Good choice! Give me a moment to make it official.", --
+  ["CHEF_MENU_00_BRIBE_INTRO_BF_RES"] = "Traveler, have you sensed the disturbances in the cosmic currents? These <SPECIAL>BOUNDARY FAILURES<> threaten to unravel its delicate balance.\nMy esteemed suppliers are facing unprecedented challenges. Their carefully orchestrated movements are disrupted by spatial and temporal distortions.\nIn times of such uncertainty, resourcefulness is paramount. I propose a mutually advantageous arrangement...", --
   ["CHEF_MENU_00_BRIBE_INTRO_RES"] = "What's that Traveler, is the Ingredient Market not in your favor today? Lucky for you, we are friends! I will do you a favor.\nWhat you can buy today is locked in because of market forces and previous arrangements, but...", --
   ["CHEF_MENU_00_BRIBE_LANG"] = "For a small processing fee, I will let you choose what you can sell at the market today.", --
+  ["CHEF_MENU_00_BRIBE_LANG_EVT"] = "For a nominal processing fee, a <FLORA>75%<> discount of my usual rate, I will let you choose what you can sell at the market today.", --
   ["CHEF_MENU_00_DAILY_CHANGE"] = "<TITLE>The Daily Favorite and Ingredient Market have changed<>\nVisit Cronus to learn today's specials", --
   ["CHEF_MENU_00_DS_A0_DESC"] = "Today I will pay 210 nanites per unit of The Stellarator. A doughnut made of starlight, sublime!", --
   ["CHEF_MENU_00_DS_A0_OPT"] = "Today's Favorite ~ The Stellarator", --
@@ -194,25 +199,25 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_DS_B7_DESC"] = "Today I will pay 200 nanites per unit of Slime Pop. It's cold and slimy, perfect for surviving on superheated planets!", --
   ["CHEF_MENU_00_DS_B7_OPT"] = "Bug Delicacies ~ Slime Pop", --
   ["CHEF_MENU_00_DS_B7_OPT_S"] = "(2x Bonus) Bug Delicacies ~ Slime Pop", --
-  ["CHEF_MENU_00_DS_F0_DESC"] = "Today I will pay 400 nanites per unit of Marine Pie. A symphony of the sea, encased in a flaky crust. Intriguing...", --
+  ["CHEF_MENU_00_DS_F0_DESC"] = "Today I will pay 200 nanites per unit of Marine Pie. A symphony of the sea, encased in a flaky crust. Intriguing...", --
   ["CHEF_MENU_00_DS_F0_OPT"] = "From The Sea ~ Marine Pie", --
   ["CHEF_MENU_00_DS_F0_OPT_S"] = "(2x Bonus) From The Sea ~ Marine Pie", --
-  ["CHEF_MENU_00_DS_F1_DESC"] = "Today I will pay 400 nanites per unit of Sea's Bounty. Only the most skilled angler could catch these ingredients.", --
+  ["CHEF_MENU_00_DS_F1_DESC"] = "Today I will pay 200 nanites per unit of Sea's Bounty. Only the most skilled angler could catch these ingredients.", --
   ["CHEF_MENU_00_DS_F1_OPT"] = "From The Sea ~ Sea's Bounty", --
   ["CHEF_MENU_00_DS_F1_OPT_S"] = "(2x Bonus) From The Sea ~ Sea's Bounty", --
-  ["CHEF_MENU_00_DS_F2_DESC"] = "Today I will pay 400 nanites per unit of Salty Platter. A selection of the sea's finest, prepared with care.", --
+  ["CHEF_MENU_00_DS_F2_DESC"] = "Today I will pay 200 nanites per unit of Salty Platter. A selection of the sea's finest, prepared with care.", --
   ["CHEF_MENU_00_DS_F2_OPT"] = "From The Sea ~ Salty Platter", --
   ["CHEF_MENU_00_DS_F2_OPT_S"] = "(2x Bonus) From The Sea ~ Salty Platter", --
-  ["CHEF_MENU_00_DS_F3_DESC"] = "Today I will pay 400 nanites per unit of Fishy Slab. Some of the rarest catches, sliced and presented in their purest form.", --
+  ["CHEF_MENU_00_DS_F3_DESC"] = "Today I will pay 200 nanites per unit of Fishy Slab. Some of the rarest catches, sliced and presented in their purest form.", --
   ["CHEF_MENU_00_DS_F3_OPT"] = "From The Sea ~ Fishy Slab", --
   ["CHEF_MENU_00_DS_F3_OPT_S"] = "(2x Bonus) From The Sea ~ Fishy Slab", --
-  ["CHEF_MENU_00_DS_F4_DESC"] = "Today I will pay 400 nanites per unit of Whole Roast Fish. Cooked to perfection, an elegant expression of an angler's skill.", --
+  ["CHEF_MENU_00_DS_F4_DESC"] = "Today I will pay 200 nanites per unit of Whole Roast Fish. Cooked to perfection, an elegant expression of an angler's skill.", --
   ["CHEF_MENU_00_DS_F4_OPT"] = "From The Sea ~ Whole Roast Fish", --
   ["CHEF_MENU_00_DS_F4_OPT_S"] = "(2x Bonus) From The Sea ~ Whole Roast Fish", --
-  ["CHEF_MENU_00_DS_F5_DESC"] = "Today I will pay 400 nanites per unit of Seafood 'Feast'. It has everything, fish, shellfish, squid. And it's all delicious! Bravo!", --
+  ["CHEF_MENU_00_DS_F5_DESC"] = "Today I will pay 200 nanites per unit of Seafood 'Feast'. It has everything, fish, shellfish, squid. And it's all delicious! Bravo!", --
   ["CHEF_MENU_00_DS_F5_OPT"] = "From The Sea ~ Seafood 'Feast'", --
   ["CHEF_MENU_00_DS_F5_OPT_S"] = "(2x Bonus) From The Sea ~ Seafood 'Feast'", --
-  ["CHEF_MENU_00_DS_F6_DESC"] = "Today I will pay 400 nanites per unit of Fish Biscuit. A sugary biscuit with a fishy surprise inside. A salty and sweet snack!", --
+  ["CHEF_MENU_00_DS_F6_DESC"] = "Today I will pay 200 nanites per unit of Fish Biscuit. A sugary biscuit with a fishy surprise inside. A salty and sweet snack!", --
   ["CHEF_MENU_00_DS_F6_OPT"] = "From The Sea ~ Fish Biscuit", --
   ["CHEF_MENU_00_DS_F6_OPT_S"] = "(2x Bonus) From The Sea ~ Fish Biscuit", --
   ["CHEF_MENU_00_EVENT_HOOK"] = "What culinary curiosities have you discovered during your travels? Has the excitement surrounding those new alien ingredients inspired a creative concoction? Or will you tempt my palate with a familiar favorite?", --
@@ -266,11 +271,10 @@ LANGUAGE_TABLE = {
   ["CHEF_MENU_00_WHALE_OPT"] = "Ask about whalesong...", --
   ["D_ALCF_BUY_LANG"] = "Each shipment contains <SPECIAL>50<> of the purchased item. Limited to <SPECIAL>5<> shipments of each category per day.", --
   ["D_ALCF_HOME_LANG"] = "Good day to you, Traveler. Interested in today's <SPECIAL>Events &amp; Specials<>, or would you like to trade on the <TRADE>Ingredients Market<>?", --
-  ["D_ALCF_HOME_OPT_A"] = "Events &amp; Specials", --
+  ["D_ALCF_HOME_OPT_A"] = "Events &amp; Specials...", --
   ["D_ALCF_IM_LANG"] = "Are you looking to buy or sell?", --
   ["D_ALCF_IM_OPT_A"] = "Buy...", --
   ["D_ALCF_IM_OPT_B"] = "Sell...", --
-  ["D_ALCF_IM_OPT_C"] = "About today's offerings...", --
   ["D_ALCF_P2_ALT_RES_B"] = "Persistent, very well. The <SPECIAL>alchemist<> gave me this recipe, said I would know the right time to pass it along.\nA word of warning, however. Only Travelers with a <TECHNOLOGY>FREIGHTER<> will be able to unlock it's true potential.", --
   ["D_ALCF_PAGE2_OPT_D"] = "Replace lost offering", --
   ["D_ALCF_PAGE2_OPT_E"] = "Forgotten Songs...", --
@@ -488,7 +492,7 @@ end
 local function addChangeTable(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    MBIN_FILE_SOURCE = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
+    MBIN_FILE_SOURCE = [[LANGUAGE\\]] .. LanguageFilePrefix .. langFilename .. ".MBIN",
     EXML_CHANGE_TABLE = {
       {
         PRECEDING_KEY_WORDS = {"Table"},
@@ -502,7 +506,7 @@ end
 local function createLanguageFile(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    FILE_DESTINATION = "LANGUAGE\\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
+    FILE_DESTINATION = [[LANGUAGE\\]] .. Author:upper() .. "_" ..ModName:upper() .. "_" .. langFilename .. ".EXML",
     FILE_CONTENT = [[<Data template="TkLocalisationTable">
   <Property name="Table">
 ]]..buildForLanguage(lang)..[[

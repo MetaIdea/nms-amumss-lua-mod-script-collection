@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gGUI Stable UI"
 ModNameSub = ""
 BaseDescription = "Removes mouse-based parallax movement in menus"
-GameVersion = "5.1.2.0"
-ModVersion = "b"
+GameVersion = "5.2.0.0"
+ModVersion = "a"
 
 --[[ Files Modified:
 GCUIGLOBALS.GLOBAL.MBIN

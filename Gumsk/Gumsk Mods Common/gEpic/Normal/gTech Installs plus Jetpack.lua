@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Installs+Jetpack"
 BaseDescription = "Infinite jetpack and enable restricted technology for alien ships and exocraft"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -36,49 +36,49 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Jetpack
 						{ --JetpackTank
 							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Tank"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackTank},
 							},
 						},
 						{ --JetpackDrain
 							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Drain"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackDrain},
 							},
 						},
 						{ --JetpackRegen
 							SPECIAL_KEY_WORDS = {"ID", "JET1","StatsType","Suit_Jetpack_Refill"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", JetpackRegen},
 							},
 						},
 						{ --JetpackTank
 							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Jetpack_Tank"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackTank},
 							},
 						},
 						{ --JetpackRegen
 							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Jetpack_Refill"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackRegen},
 							},
 						},
 						{ --Stamina bonus
 							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Stamina_Strength"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackStamina},
 							},
 						},
 						{ --Stamina regen bonus
 							SPECIAL_KEY_WORDS = {"ID", "UT_JET","StatsType","Suit_Stamina_Recovery"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", UT_JetpackStaminaRegen},
 							},
@@ -87,7 +87,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Minotaur
 						{ --Mech Boost Tanks
 							SPECIAL_KEY_WORDS = {"ID", "MECH_BOOST","StatsType","Vehicle_BoostTanks"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"Bonus", MechVehicle_BoostTanks},
 							},

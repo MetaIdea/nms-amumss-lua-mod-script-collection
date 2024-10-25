@@ -11,7 +11,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_SOS_2xWalk3xSprint3xSwimNoRecoilQuickShieldHazard.pak",
+["MOD_FILENAME"] 			= "_7_SOS_2xW3xSSNoRecoilQuickShieldHazardNoPredators.pak",
 ["MOD_DESCRIPTION"]			= "This mod basically allows you to fly",
 ["MOD_AUTHOR"]				= "JimminyBillyBob888 AKA TheNexGDD and NooBzPoWaH",
 ["NMS_VERSION"]				= "5.+",
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackIgnitionForceDeadPlanetExtra",	"80" }, 	--Original "45"
 								{ "MaxNumDestroyEffects", 			"0" }, 		--Original "8"
 								{ "MinNumDestroyEffects", 			"0" }, 		--Original "3"
-								{ "NeverPreyedOn", 				"False" }, 	--Original "False"
+								{ "NeverPreyedOn", 				"True" }, 	--Original "False"
 								{ "LaserMiningDamageMultiplier", 		"4" }, 		--Original "1"
 								{ "ShieldRechargeMinTimeSinceDamage", 		"0" }, 		--Original "30"
 								{ "ShieldRechargeRate", 			"20" }, 	--Original "10"
@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "GunRecoilSettleSpring", 			"0" }, 		--Original "0.4"
 								{ "GunRecoilMin", 				"0" }, 		--Original "0.15"
 								{ "GunRecoilMax", 				"0" }, 		--Original "1.6"
-								{ "AutoAim", 					"False" }, 	--Original "False"
+								{ "AutoAim", 					"True" }, 	--Original "False"
 								{ "AutoLandTime", 				"1" }, 		--Original "2"
 								{ "LaserBeamMineRate", 				"0.9" }, 	--Original "0.3"
 								{ "LaserBeamFlickerAmp", 			"0.5" }, 	--Original "1.5"

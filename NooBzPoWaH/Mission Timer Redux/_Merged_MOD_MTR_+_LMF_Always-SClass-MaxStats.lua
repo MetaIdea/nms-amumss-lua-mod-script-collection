@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 		= "_Merged_MOD_Mission_Timer_Redux_+_LMF_Always-SClass-MaxStats.pak",
+["MOD_FILENAME"] 		= "_Merged_MOD_MTR_+_LMF_Always-SClass-MaxStats.pak",
 ["MOD_DESCRIPTION"] 		= "Reduced Mission Timer for Base Computer, Living Ship, Scientist, Settlement and Fleet plus Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"] 			= "NooBzPoWaH & ll62518475TheSecond",
 ["LUA_AUTHOR"] 			= "Babscoole",

@@ -1,7 +1,7 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Scan"
-GameVersion = "5.1.2.0"
-ModVersion = "b"
+GameVersion = "5.2.0.0"
+ModVersion = "a"
 
 --[[ Files Modified:
 METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN
@@ -118,7 +118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {"MissionSurveyMaxGuidanceDistance",3000},  --1500
 								{"SurveyMaxDistance",2000},							--400; How far away the scanner can detect hotspots, in u. Maximum is about 1300, but over 1000 is unreliable.
 								{"SurveySonarMinPulseSpeed",-2.4},					--0.4; Frequency for sweeps or pings of the hotspot scanner. Lower is slower.
-                {"SurveyBeginScanPercentage",1.0},  --0.01
+                --{"SurveyBeginScanPercentage",1.0},  --0.01
 							},
 						},
 					},

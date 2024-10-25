@@ -3,7 +3,7 @@ ModName 		= "gShip Phase Beam Mining"
 ModNameSub		= ""
 BaseDescription = "Makes the phase beam able to mine"
 GameVersion 	= "430"
-ModVersion		= "a"
+ModVersion = "a"
 
 --[[Files Modified
 METADATA/PROJECTILES/PROJECTILETABLE.MBIN

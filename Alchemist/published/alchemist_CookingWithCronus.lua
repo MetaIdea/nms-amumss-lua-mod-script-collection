@@ -5,8 +5,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "5-11"
-ModVersion = "1-5-1"
+GameVersion = "5-20"
+ModVersion = "1-6-0"
 
 --
 
@@ -847,6 +847,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -866,6 +867,13 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -903,6 +911,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -922,8 +931,16 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
+          <Property name="ForceResetPortal" value="False" />
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
@@ -1408,6 +1425,7 @@ MODIFICATIONS = {{
                         <Property name="OSDUseMissionIcon" value="False" />
                         <Property name="DisableIcon" value="False" />
                         <Property name="DisableTitlePrefix" value="False" />
+                        <Property name="StatusMessageDefinition" value="" />
                         <Property name="UseConditionsForTextFormatting" />
                         <Property name="DebugText" value="" />
                       </Property>
@@ -2063,6 +2081,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -2082,6 +2101,13 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -2119,6 +2145,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -2138,8 +2165,16 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
+          <Property name="ForceResetPortal" value="False" />
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
@@ -3111,6 +3146,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -3130,6 +3166,13 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -3167,6 +3210,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -3186,8 +3230,16 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
+          <Property name="ForceResetPortal" value="False" />
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
@@ -8465,7 +8517,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_CHEF_MENU_ING_SHOP" />
+                <Property name="Name" value="ALCH_CHEF_MENU_ING_SHOP_EVT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="" />
@@ -9685,7 +9737,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F0_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F0_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F0" />
@@ -9733,7 +9785,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F1_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F1_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F1" />
@@ -9781,7 +9833,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F2_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F2_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F2" />
@@ -9829,7 +9881,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F3_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F3_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F3" />
@@ -9877,7 +9929,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F4_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F4_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F4" />
@@ -9925,7 +9977,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F5_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F5_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F5" />
@@ -9973,7 +10025,7 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="CHEF_MENU_00_DS_F6_OPT_S" />
+                <Property name="Name" value="CHEF_MENU_00_DS_F6_OPT" />
                 <Property name="Text" value="" />
                 <Property name="IsAlien" value="False" />
                 <Property name="Cost" value="C_ALCF_DV_F6" />
@@ -14430,8 +14482,8 @@ MODIFICATIONS = {{
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="D_ALCF_IM_OPT_C" />
-                <Property name="Text" value="CHEF_MENU_00_BRIBE_INTRO_RES" />
+                <Property name="Name" value="ALCH_CHEF_MENU_ING_BRIBE_EVT" />
+                <Property name="Text" value="CHEF_MENU_00_BRIBE_INTRO_BF_RES" />
                 <Property name="IsAlien" value="True" />
                 <Property name="Cost" value="" />
                 <Property name="Rewards" />
@@ -31046,7 +31098,7 @@ MODIFICATIONS = {{
             <Property name="AdditionalOptions" value="None" />
             <Property name="Title" value="" />
             <Property name="Text" value="" />
-            <Property name="TextAlien" value="CHEF_MENU_00_BRIBE_LANG" />
+            <Property name="TextAlien" value="CHEF_MENU_00_BRIBE_LANG_EVT" />
             <Property name="TranslateAlienText" value="False" />
             <Property name="TranslationBrackets" value="True" />
             <Property name="ProgressiveDialogue" value="False" />
@@ -31229,7 +31281,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BLOB_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31269,7 +31321,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_GEK_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31309,7 +31361,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_DIPLO_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31423,7 +31475,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_REX_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31463,7 +31515,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_CAT_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31503,7 +31555,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_STRIDER_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31617,7 +31669,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_COW_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31657,7 +31709,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_CRAB_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31697,7 +31749,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BONE_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31811,7 +31863,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_MOLE_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31851,7 +31903,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_ROBOT_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -31891,7 +31943,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_FLYER_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32005,7 +32057,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_GENERIC_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32045,7 +32097,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_GENERIC_MILK_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32085,7 +32137,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BUG_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32199,7 +32251,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PCAT_VEG_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMC_A" />
+                <Property name="Cost" value="C_ALCF_IMC_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32313,7 +32365,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_FISH_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32353,7 +32405,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_FLYER_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32393,7 +32445,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_FIEND_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32507,7 +32559,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_HORROR_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32547,7 +32599,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="UI_GRUB_POD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32587,7 +32639,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BLOB_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32701,7 +32753,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_GEK_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32741,7 +32793,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_DIPLO_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32781,7 +32833,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_REX_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32895,7 +32947,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_CAT_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32935,7 +32987,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_STRIDER_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -32975,7 +33027,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_COW_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33089,7 +33141,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_CRAB_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33129,7 +33181,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_MOLE_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33169,7 +33221,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BONE_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33283,7 +33335,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_DRILL_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33323,7 +33375,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BEETLE_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33363,7 +33415,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BALL_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33477,7 +33529,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_DIGGER_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33517,7 +33569,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_BUG_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33557,7 +33609,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_GENERIC_MEAT_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMM_A" />
+                <Property name="Cost" value="C_ALCF_IMM_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33671,7 +33723,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_LUSH_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33711,7 +33763,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_HOT_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33751,7 +33803,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_COLD_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33865,7 +33917,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_TOX_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33905,7 +33957,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_RAD_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -33945,7 +33997,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_DUST_WILD_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -34059,7 +34111,7 @@ MODIFICATIONS = {{
                 <Property name="Name" value="FOOD_PLANT_GLITCH_NAME_L" />
                 <Property name="Text" value="CHEF_MENU_00_BRIBE_DONE_RES" />
                 <Property name="IsAlien" value="True" />
-                <Property name="Cost" value="C_ALCF_IMP_A" />
+                <Property name="Cost" value="C_ALCF_IMP_R" />
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALCF_BRIBE" />
@@ -34817,6 +34869,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -34836,6 +34889,13 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -34873,6 +34933,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -34892,8 +34953,16 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
+          <Property name="ForceResetPortal" value="False" />
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
@@ -35029,6 +35098,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -35048,6 +35118,13 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -35085,6 +35162,7 @@ MODIFICATIONS = {{
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
+            <Property name="NeverAllowExtremeWeatherPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False" />
@@ -35104,8 +35182,16 @@ MODIFICATIONS = {{
             <Property name="SuitableForWeirdCreatureDiscovery" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
             <Property name="SamePlanetAsSeasonParty" value="0" />
+            <Property name="SystemNeedsResourceHint" value="" />
+            <Property name="SystemNeedsWater" value="False" />
+            <Property name="SystemNeedsWeirdPlanet" value="False" />
+            <Property name="SystemNeedsInfestedPlanet" value="False" />
+            <Property name="SystemNeedsCorruptSentinelPlanet" value="False" />
+            <Property name="SystemNeedsExtremeStormPlanet" value="False" />
+            <Property name="MinPlanets" value="-1" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
+          <Property name="ForceResetPortal" value="False" />
           <Property name="HasReward" value="" />
           <Property name="NextOption" value="" />
           <Property name="TriggerActions" value="GcScanEventTriggers.xml">
@@ -35661,23 +35747,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35696,23 +35770,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35731,23 +35793,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35766,23 +35816,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35801,23 +35839,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35836,23 +35862,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35871,23 +35885,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35906,23 +35908,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35941,23 +35931,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -35976,23 +35954,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36011,23 +35977,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36046,23 +36000,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36081,23 +36023,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36116,23 +36046,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36151,23 +36069,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36186,23 +36092,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36221,23 +36115,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36256,23 +36138,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36291,23 +36161,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="400" />
-                  <Property name="AmountMax" value="500" />
+                  <Property name="AmountMin" value="200" />
+                  <Property name="AmountMax" value="250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="25" />
-                  <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36326,23 +36184,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="2000" />
-                  <Property name="AmountMax" value="2500" />
+                  <Property name="AmountMin" value="1000" />
+                  <Property name="AmountMax" value="1250" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="125" />
-                  <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -36361,23 +36207,11 @@ MODIFICATIONS = {{
                 <Property name="PercentageChance" value="100" />
                 <Property name="LabelID" value="" />
                 <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="4000" />
-                  <Property name="AmountMax" value="5000" />
+                  <Property name="AmountMin" value="2000" />
+                  <Property name="AmountMax" value="2500" />
                   <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
-                  </Property>
-                </Property>
-              </Property>
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100" />
-                <Property name="LabelID" value="" />
-                <Property name="Reward" value="GcRewardMoney.xml">
-                  <Property name="AmountMin" value="250" />
-                  <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
-                  <Property name="Currency" value="GcCurrency.xml">
-                    <Property name="Currency" value="Specials" />
                   </Property>
                 </Property>
               </Property>
@@ -40123,6 +39957,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40146,6 +39981,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40169,6 +40005,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40192,6 +40029,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40215,6 +40053,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40238,6 +40077,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40261,6 +40101,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_PIE" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40284,6 +40125,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_STEW2" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40307,6 +40149,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40330,6 +40173,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL1" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40353,6 +40197,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL2" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40376,6 +40221,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL3" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40399,6 +40245,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40422,6 +40269,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MC_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40445,6 +40293,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CK_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40468,6 +40317,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40491,6 +40341,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CB_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40514,6 +40365,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40537,6 +40389,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CP_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40560,6 +40413,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MM_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40583,6 +40437,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_ICE_BUG" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40606,6 +40461,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40629,6 +40485,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40652,6 +40509,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_DNUT_SCUST" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40675,6 +40533,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40698,6 +40557,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40721,6 +40581,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_EGGPIE_MU" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40744,6 +40605,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40767,6 +40629,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40790,6 +40653,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_CHOC" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40813,6 +40677,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40836,6 +40701,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40859,6 +40725,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_PIE_MCUST" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40882,6 +40749,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40905,6 +40773,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40928,6 +40797,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_JHOT" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40951,6 +40821,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40974,6 +40845,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -40997,6 +40869,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_W_SWEETM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41020,6 +40893,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_PIE" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41043,6 +40917,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_PIE" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41066,6 +40941,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_PIE" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41089,6 +40965,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_STEW2" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41112,6 +40989,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_STEW2" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41135,6 +41013,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_STEW2" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41158,6 +41037,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41181,6 +41061,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41204,6 +41085,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_MIX" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41227,6 +41109,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL1" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41250,6 +41133,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL1" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41273,6 +41157,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL1" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41296,6 +41181,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL2" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41319,6 +41205,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL2" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41342,6 +41229,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL2" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41365,6 +41253,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL3" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41388,6 +41277,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL3" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41411,6 +41301,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_F_XL3" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41434,6 +41325,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41457,6 +41349,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41480,6 +41373,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_B_FISH" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41503,6 +41397,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MC_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41526,6 +41421,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MC_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41549,6 +41445,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MC_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41572,6 +41469,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CK_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41595,6 +41493,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CK_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41618,6 +41517,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CK_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41641,6 +41541,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41664,6 +41565,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41687,6 +41589,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CG_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41710,6 +41613,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CB_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41733,6 +41637,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CB_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41756,6 +41661,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CB_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41779,6 +41685,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41802,6 +41709,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41825,6 +41733,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CM_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41848,6 +41757,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CP_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41871,6 +41781,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CP_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41894,6 +41805,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_CP_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41917,6 +41829,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MM_BUGJAM" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41940,6 +41853,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MM_BUGJAM" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41963,6 +41877,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_MM_BUGJAM" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -41986,6 +41901,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_ICE_BUG" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42009,6 +41925,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_ICE_BUG" />
             <Property name="Amount" value="5" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42032,6 +41949,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_ICE_BUG" />
             <Property name="Amount" value="10" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42161,6 +42079,69 @@ MODIFICATIONS = {{
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMC_R" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostMoney.xml">
+            <Property name="Cost" value="190" />
+            <Property name="CostCurrency" value="GcCurrency.xml">
+              <Property name="Currency" value="Nanites" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMM_R" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostMoney.xml">
+            <Property name="Cost" value="125" />
+            <Property name="CostCurrency" value="GcCurrency.xml">
+              <Property name="Currency" value="Nanites" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALCF_IMP_R" />
+          <Property name="DisplayCost" value="True" />
+          <Property name="DontCharge" value="False" />
+          <Property name="HideOptionAndDisplayCostOnly" value="False" />
+          <Property name="DisplayOnlyCostIfCantAfford" value="False" />
+          <Property name="HideCostStringIfCanAfford" value="False" />
+          <Property name="RemoveOptionIfCantAfford" value="False" />
+          <Property name="InvertCanAffordOutcome" value="False" />
+          <Property name="MustAffordInCreative" value="False" />
+          <Property name="CommunityContributionValue" value="0" />
+          <Property name="CommunityContributionCapLocID" value="UI_COMMUNITY_CAP_REACHED" />
+          <Property name="CannotAffordOSDMsg" value="" />
+          <Property name="MissionMessageWhenCharged" value="" />
+          <Property name="Cost" value="GcCostMoney.xml">
+            <Property name="Cost" value="65" />
+            <Property name="CostCurrency" value="GcCurrency.xml">
+              <Property name="Currency" value="Nanites" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
           <Property name="Id" value="C_ALCF_IMC0_A" />
           <Property name="DisplayCost" value="True" />
           <Property name="DontCharge" value="False" />
@@ -42181,6 +42162,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BLOB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42204,6 +42186,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BLOB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42227,6 +42210,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_GEK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42250,6 +42234,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_GEK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42273,6 +42258,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_DIPLO" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42296,6 +42282,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_DIPLO" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42319,6 +42306,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_REX" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42342,6 +42330,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_REX" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42365,6 +42354,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_CAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42388,6 +42378,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_CAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42411,6 +42402,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_STRIDER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42434,6 +42426,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_STRIDER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42457,6 +42450,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_COW" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42480,6 +42474,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_COW" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42503,6 +42498,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_CRAB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42526,6 +42522,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_CRAB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42549,6 +42546,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BONE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42572,6 +42570,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BONE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42595,6 +42594,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_MOLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42618,6 +42618,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_MOLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42641,6 +42642,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_ROBOT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42664,6 +42666,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_ROBOT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42687,6 +42690,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_FLYER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42710,6 +42714,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_FLYER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42733,6 +42738,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_EGG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42756,6 +42762,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_EGG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42779,6 +42786,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_MILK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42802,6 +42810,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_MILK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42825,6 +42834,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BUG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42848,6 +42858,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_BUG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42871,6 +42882,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_PCAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42894,6 +42906,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_V_PCAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42917,6 +42930,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FISH" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42940,6 +42954,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FISH" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42963,6 +42978,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FLYER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -42986,6 +43002,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FLYER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43009,6 +43026,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FIEND" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43032,6 +43050,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_FIEND" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43055,6 +43074,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_HORROR" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43078,6 +43098,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_HORROR" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43101,6 +43122,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_GRUB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43124,6 +43146,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_GRUB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43147,6 +43170,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BLOB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43170,6 +43194,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BLOB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43193,6 +43218,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_GEK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43216,6 +43242,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_GEK" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43239,6 +43266,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DIPLO" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43262,6 +43290,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DIPLO" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43285,6 +43314,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_REX" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43308,6 +43338,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_REX" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43331,6 +43362,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_CAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43354,6 +43386,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_CAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43377,6 +43410,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_STRIDER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43400,6 +43434,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_STRIDER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43423,6 +43458,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_COW" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43446,6 +43482,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_COW" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43469,6 +43506,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_CRAB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43492,6 +43530,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_CRAB" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43515,6 +43554,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_MOLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43538,6 +43578,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_MOLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43561,6 +43602,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BONE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43584,6 +43626,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BONE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43607,6 +43650,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DRILL" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43630,6 +43674,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DRILL" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43653,6 +43698,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BEETLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43676,6 +43722,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BEETLE" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43699,6 +43746,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BALL" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43722,6 +43770,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BALL" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43745,6 +43794,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DIGGER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43768,6 +43818,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_DIGGER" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43791,6 +43842,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BUG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43814,6 +43866,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_BUG" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43837,6 +43890,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_MEAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43860,6 +43914,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_M_MEAT" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43883,6 +43938,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_LUSHWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43906,6 +43962,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_LUSHWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43929,6 +43986,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_HOTWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43952,6 +44010,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_HOTWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43975,6 +44034,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_COLDWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -43998,6 +44058,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_COLDWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44021,6 +44082,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_TOXWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44044,6 +44106,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_TOXWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44067,6 +44130,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_RADWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44090,6 +44154,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_RADWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44113,6 +44178,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_DUSTWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44136,6 +44202,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_DUSTWILD" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44159,6 +44226,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_GLITCH" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44182,6 +44250,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="FOOD_P_GLITCH" />
             <Property name="Amount" value="25" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
         <Property value="GcCostTableEntry.xml">
@@ -44610,6 +44679,7 @@ MODIFICATIONS = {{
                               <Property name="OSDUseMissionIcon" value="False" />
                               <Property name="DisableIcon" value="False" />
                               <Property name="DisableTitlePrefix" value="False" />
+                              <Property name="StatusMessageDefinition" value="" />
                               <Property name="UseConditionsForTextFormatting" />
                               <Property name="DebugText" value="" />
                             </Property>
@@ -46432,6 +46502,7 @@ MODIFICATIONS = {{
             <Property name="Id" value="P_CHEF_SONG_X" />
             <Property name="Amount" value="1" />
             <Property name="UseDefaultAmount" value="False" />
+            <Property name="TakeIDFromSeasonData" value="False" />
           </Property>
         </Property>
       </Property>
@@ -46869,6 +46940,7 @@ MODIFICATIONS = {{
                                     <Property name="OSDUseMissionIcon" value="True" />
                                     <Property name="DisableIcon" value="False" />
                                     <Property name="DisableTitlePrefix" value="False" />
+                                    <Property name="StatusMessageDefinition" value="" />
                                     <Property name="UseConditionsForTextFormatting" />
                                     <Property name="DebugText" value="" />
                                   </Property>
@@ -46963,6 +47035,7 @@ MODIFICATIONS = {{
                         <Property name="OSDUseMissionIcon" value="True" />
                         <Property name="DisableIcon" value="False" />
                         <Property name="DisableTitlePrefix" value="False" />
+                        <Property name="StatusMessageDefinition" value="" />
                         <Property name="UseConditionsForTextFormatting" />
                         <Property name="DebugText" value="" />
                       </Property>
@@ -48417,6 +48490,8 @@ MODIFICATIONS = {{
       <Property name="DestroyItemWhenConsumed" value="False" />
       <Property name="AddCommunityTierClassIcon" value="False" />
       <Property name="SuppressResourceMessage" value="False" />
+      <Property name="OverrideMissionMustBeSelected" value="False" />
+      <Property name="RewardOverrideTable" />
       <Property name="CustomOSD" value="" />
       <Property name="RequiresMissionActive" value="" />
     </Property>
@@ -49284,6 +49359,7 @@ MODIFICATIONS = {{
       <Property name="AddPlayerNamePrefix" value="False" />
       <Property name="AddPetNamePrefix" value="False" />
       <Property name="AddFriendlyDronePrefix" value="False" />
+      <Property name="CustomPrefixLocID" value="" />
       <Property name="IncludePlayerName" value="False" />
       <Property name="ReplicateTo" value="None" />
       <Property name="PostLocally" value="True" />
@@ -49301,6 +49377,7 @@ MODIFICATIONS = {{
       <Property name="AddPlayerNamePrefix" value="False" />
       <Property name="AddPetNamePrefix" value="False" />
       <Property name="AddFriendlyDronePrefix" value="False" />
+      <Property name="CustomPrefixLocID" value="" />
       <Property name="IncludePlayerName" value="False" />
       <Property name="ReplicateTo" value="None" />
       <Property name="PostLocally" value="True" />

@@ -9,11 +9,11 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "POWERPOWER", ["Name"] = "UI_BUILD_GRID_POWER", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "POWERINDUSTRY", ["Name"] = "UI_BUILD_GRID_INDUSTRY", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "POWERSWITCHES", ["Name"] = "UI_BUILD_GRID_SWITCHES", ["From"] = "POWER", ["To"] = "PLANET_TECH" },
-	{ ["SubGroup"] = "DECOLIGHTS", ["Name"] = "UI_BUILD_GRID_LIGHTS", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
+	{ ["SubGroup"] = "DECOLIGHTS", ["Name"] = "UI_BUILD_GRID_LIGHTS", ["From"] = "DECORATION", ["To"] = "EXOTICS" },
 	{ ["SubGroup"] = "DECOEXTERIOR", ["Name"] = "UI_BUILD_GRID_EXTERIOR", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
 	{ ["SubGroup"] = "DECOCONSTRUCT", ["Name"] = "UI_BUILD_GRID_CONSTRUCTION", ["From"] = "DECORATION", ["To"] = "FURNITURE" },
-	{ ["SubGroup"] = "WALLDECALS", ["Name"] = "UI_BUILD_GRID_DECALS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
-	{ ["SubGroup"] = "WALLPOSTERS", ["Name"] = "UI_BUILD_GRID_POSTERS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
+	-- { ["SubGroup"] = "WALLDECALS", ["Name"] = "UI_BUILD_GRID_DECALS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
+	-- { ["SubGroup"] = "WALLPOSTERS", ["Name"] = "UI_BUILD_GRID_POSTERS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
 	-- { ["SubGroup"] = "FREIGHTERROOMS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS", ["From"] = "FREIGHTER", ["To"] = "ROOMS" },
 	-- { ["SubGroup"] = "FREIGHTERTECH", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECH", ["From"] = "FREIGHTER", ["To"] = "PLANET_TECH" },
 	{ ["SubGroup"] = "FRE_TECH_OTHER", ["Name"] = "UI_BUILD_GRID_FREIGHTPORTABLE", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
@@ -116,6 +116,17 @@ return
 		["PRECEDING_KEY_WORDS"] = {"SubGroups"},
 		-- ["LINE_OFFSET"] 		= "+0",
 		["ADD"] 				= GetSubGroupData(SUBGROUP, NAME)
+	}
+end
+
+function GetSubGroupObliterate(SUBGROUP)
+return
+	{
+		["SPECIAL_KEY_WORDS"] = {"Id", SUBGROUP},
+		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingSubGroup.xml"},
+		["PRECEDING_FIRST"] = "TRUE", 
+		-- ["LINE_OFFSET"] 		= "+0",
+		["REMOVE"] = "SECTION"
 	}
 end
 
@@ -640,6 +651,7 @@ CHANGE_LEOPARDON = {}
 
 for i=#SUBGROUP_MOVE_TABLE,1,-1 do
 -- INSERTING DATA FROM BOTTOM-UP SO THAT SUBGROUP_MOVE_TABLE IS TREATED AS A STACK
+	table.insert(CHANGE_LEOPARDON, GetSubGroupObliterate(SUBGROUP_MOVE_TABLE[i]["SubGroup"]))
 	table.insert(CHANGE_LEOPARDON, GetBaseObjectMigrateAlt(SUBGROUP_MOVE_TABLE[i]["SubGroup"], SUBGROUP_MOVE_TABLE[i]["To"]))
 	table.insert(CHANGE_LEOPARDON, GetSubGroupMigrate(SUBGROUP_MOVE_TABLE[i]["SubGroup"], SUBGROUP_MOVE_TABLE[i]["Name"], SUBGROUP_MOVE_TABLE[i]["To"]))
 end
@@ -694,6 +706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
+							-- NEW SLOTS
 							-- ["PRECEDING_KEY_WORDS"] = {"GcNGuiLayerData.xml"},
 							-- ["PRECEDING_FIRST"] = "TRUE",
 							["SPECIAL_KEY_WORDS"] = {"ID", "ITEM" .. VANILLA_PARTS_COUNT - 1 }, -- MINUS 1 SINCE VANILLA ID STARTS WITH 0

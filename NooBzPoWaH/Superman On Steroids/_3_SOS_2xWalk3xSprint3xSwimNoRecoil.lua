@@ -7,7 +7,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_SOS_JetpackOnly.pak",
+["MOD_FILENAME"] 			= "_3_SOS_2xWalk3xSprint3xSwimNoRecoil.pak",
 ["MOD_DESCRIPTION"]			= "This mod basically allows you to fly",
 ["MOD_AUTHOR"]				= "JimminyBillyBob888 AKA TheNexGDD and NooBzPoWaH",
 ["NMS_VERSION"]				= "5.+",
@@ -25,12 +25,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- ["PRECEDING_KEY_WORDS"] = {},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{ "GroundWalkSpeed", 				"8.8" }, 	--Original "4.4"
+								{ "GroundWalkSpeedTeleportHmd", 		"8.8" }, 	--Original "4.4"
+								{ "GroundRunSpeed", 				"24" }, 	--Original "8"
+								{ "GroundWalkSpeedLowG", 			"6.6" }, 	--Original "1.6"
+								{ "GroundRunSpeedLowG", 			"16" }, 	--Original "3.5"
 								{ "JetpackUnderwaterDrainRate",			"0.2" },	--Original "0.4"
 								{ "JetpackUnderwaterFillRate",			"2" },		--Original "1"
+								{ "UnderwaterMaxSpeed", 			"12" }, 	--Original "4"
+								{ "UnderwaterForce", 				"20" }, 	--Original "15"
 								{ "UnderwaterMaxJetpackEscapeSpeed", 		"24" }, 	--Original "8"
+								{ "HealthRechargeMinTimeSinceDamage", 		"1" }, 		--Original "10"
 								{ "CockpitEjectTestSphereRadius", 		"2" }, 		--Original "0.4"
+								{ "EnergyDischargeRateMedium", 			"0.02" }, 	--Original "0.25"
+								{ "EnergyDischargeRateHigh", 			"0.02" }, 	--Original "0.9"
 								{ "FreeJetpackRange", 				"99" }, 	--Original "3"
-								{ "FreeJetpackRangePrime",			"99" }, 	--Original "5"
 								{ "FreeJetpackRangeNonTerrain", 		"99" }, 	--Original "1.1"
 								{ "JetpackDrainHorizontalFactor", 		"0" }, 		--Original "2.5"
 								{ "MeleeBoostAirForce",				"5" },		--Original "3"
@@ -56,16 +65,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackFillRate", 				"99" }, 	--Original "0.5"
 								{ "JetpackFillRateSpaceStationMultiplier",	"10" },		--Original "5"
 								{ "JetpackUpForceDeadPlanetExtra",		"15" },		--Original "10"
-								{ "JetpackForceDeadPlanetExtra",		"80" },		--Original "15"
+								{ "JetpackForceDeadPlanetExtra",		"80" },		--Original "15
 								{ "JetpackIgnitionForceDeadPlanetExtra",	"80" }, 	--Original "45"
+								{ "MaxNumDestroyEffects", 			"0" }, 		--Original "8"
+								{ "MinNumDestroyEffects", 			"0" }, 		--Original "3"
+								{ "LaserMiningDamageMultiplier", 		"4" }, 		--Original "1"
+								{ "ShieldRechargeMinTimeSinceDamage",	 	"0" }, 		--Original "30"
+								{ "ShieldRechargeRate", 			"20" }, 	--Original "10"
+								{ "SpeedLinesMinAlpha", 			"0" }, 		--Original "0.6"
+								{ "SpeedLinesMaxAlpha", 			"0" }, 		--Original "1"
+								{ "LaserShakeMin", 				"0" }, 		--Original "0.5"
+								{ "LaserShakeMax", 				"0" }, 		--Original "2"
+								{ "GunRecoil", 					"0" }, 		--Original "5"
+								{ "LaserRecoil", 				"0" }, 		--Original "2"
+								{ "BeamRecoil", 				"0" }, 		--Original "6"
+								{ "GrenadeRecoil", 				"0" }, 		--Original "10"
+								{ "GunRecoilSpring", 				"0" }, 		--Original "0.33"
+								{ "BlastRecoilSpring", 				"0" }, 		--Original "0.3"
+								{ "RailRecoilSpring", 				"0" }, 		--Original "0.1"
+								{ "PulseRecoilSpring", 				"0" }, 		--Original "0.19"
+								{ "GunRecoilSettleSpring", 			"0" }, 		--Original "0.4"
+								{ "GunRecoilMin", 				"0" }, 		--Original "0.15"
+								{ "GunRecoilMax", 				"0" }, 		--Original "1.6"
 								{ "AutoAim", 					"True" }, 	--Original "False"
+								{ "AutoLandTime", 				"1" }, 		--Original "2"
+								{ "LaserBeamMineRate", 				"0.9" }, 	--Original "0.3"
 								{ "LaserBeamFlickerAmp", 			"0.5" }, 	--Original "1.5"
 								{ "LaserBeamFlickerFreq", 			"10" }, 	--Original "1"
+								{ "LaserBeamTerrainDeformRadius", 		"1" }, 		--Original "2"
 								{ "LaserBeamAmmoUseTime", 			"1.2" }, 	--Original "0.5"
 								{ "ReloadButtonHoldTimeToHolster", 		"0.5" }, 	--Original "0.75"
 								{ "WeaponChangeModeTime", 			"0.75" }, 	--Original "0"
 								{ "HardLandMin", 				"98" }, 	--Original "5"
 								{ "HardLandMax", 				"99" }, 	--Original "18"
+								{ "AnimWalkSpeed", 				"2" }, 		--Original "1.5"
+								{ "AnimRunSpeed", 				"5" }, 		--Original "4"
 							}	
 						},						
 						{

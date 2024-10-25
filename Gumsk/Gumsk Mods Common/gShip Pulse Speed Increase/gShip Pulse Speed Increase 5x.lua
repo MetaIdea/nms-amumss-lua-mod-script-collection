@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Pulse Speed Increase"
 ModNameSub = "5"
 BaseDescription = "Increases pulse speed by a multiplier"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

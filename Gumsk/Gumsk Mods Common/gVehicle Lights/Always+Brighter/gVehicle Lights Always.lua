@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Lights"
 ModNameSub = "Always"
 BaseDescription = "Turns off exocraft day/night switching"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 FileSource = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

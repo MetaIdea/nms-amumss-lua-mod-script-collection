@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle"
 ModNameSub = "Max"
 BaseDescription = "Exocraft modifications"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

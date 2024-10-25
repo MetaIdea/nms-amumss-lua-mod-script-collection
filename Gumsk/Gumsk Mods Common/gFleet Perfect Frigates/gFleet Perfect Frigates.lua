@@ -2,7 +2,7 @@ Author = "unsick"
 ModName = "gFleet Perfect Frigates"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 FileSource2 = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN"
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"FrigateTraitStrength","NegativeSmall"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Combat",0},
@@ -105,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"FrigateTraitStrength","NegativeMedium"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Combat",0},
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"FrigateTraitStrength","NegativeLarge"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Combat",0},

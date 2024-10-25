@@ -7,8 +7,8 @@ Author			= "Gumsk"
 ModName			= "gShip Photon Colors"
 ModNameSub		= Color
 BaseDescription	= "Changes color of photon cannon to "..Color
-GameVersion = "5.1.2.0"
-ModVersion		= "a"
+GameVersion = "5.2.0.0"
+ModVersion = "a"
 
 --[[Files Modified
 GCSPACESHIPGLOBALS.GLOBAL.MBIN

@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "5-11"
-ModVersion = "2-6-2"
+GameVersion = "5-20"
+ModVersion = "2-6-3"
 
 -- =========
 -- CONSTANTS
@@ -214,7 +214,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_OE_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Infested Biome ~ Corrupted Sentinel Signals", --
   ["ALCH_SCAN_PQ_OE_MENU"] = "Corrupted Core", --
   ["ALCH_SCAN_PQ_OE_TITLE"] = "Planet Query ~ Corrupted Core", --
-  ["ALCH_SCAN_PQ_OF_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Lush Biome ~ Floating Islands ~ Passive Sentinels", --
+  ["ALCH_SCAN_PQ_OF_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Lush Biome ~ Floating Islands ~ Passive Sentinels ~ Abundant Fauna", --
   ["ALCH_SCAN_PQ_OF_MENU"] = "Floating Islands", --
   ["ALCH_SCAN_PQ_OF_TITLE"] = "Planet Query ~ Floating Islands", --
   ["ALCH_SCAN_PQ_PLANET_OBJ"] = "Travel to Planet", --
@@ -460,7 +460,7 @@ end
 local function addChangeTable(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    MBIN_FILE_SOURCE = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
+    MBIN_FILE_SOURCE = [[LANGUAGE\\]] .. LanguageFilePrefix .. langFilename .. ".MBIN",
     EXML_CHANGE_TABLE = {
       {
         PRECEDING_KEY_WORDS = {"Table"},
@@ -474,7 +474,7 @@ end
 local function createLanguageFile(lang)
   local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
-    FILE_DESTINATION = "LANGUAGE\\"..Author:upper().."_"..ModName:upper().."_"..langFilename..".EXML",
+    FILE_DESTINATION = [[LANGUAGE\\]] .. Author:upper() .. "_" ..ModName:upper() .. "_" .. langFilename .. ".EXML",
     FILE_CONTENT = [[<Data template="TkLocalisationTable">
   <Property name="Table">
 ]]..buildForLanguage(lang)..[[

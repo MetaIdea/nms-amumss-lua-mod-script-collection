@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter Legal SFMs"
 ModNameSub = "Normal"
 BaseDescription = "Makes legal salvaged frigate modules more common"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.0.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Change DerelictAbandCrateChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","R_ABAND_CRATE","Id","FRIG_TOKEN"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", DerelictAbandCrateChance},
 							}
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Change CrashedSmallChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","CRASHCONT_S","Id","FRIG_TOKEN"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", CrashedSmallChance},
 							}
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Change CrashedMedChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","CRASHCONT_M","Id","FRIG_TOKEN"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", CrashedMedChance},
 							}
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Change PiracyChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","FREIGHTERLOOT","Id","FRIG_TOKEN"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", PiracyChance},
 							}
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Change OutlawPiracyChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","SMUGGLELOOT","Id","FRIG_TOKEN"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							VALUE_CHANGE_TABLE = {
 								{"PercentageChance", OutlawPiracyChance},
 							}
@@ -87,14 +87,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--Add freighter rescue reward
 						{
 							SPECIAL_KEY_WORDS = {"Id","FREIGHTER_SAVED","Id","ASTEROID2"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							ADD_OPTION = "ADDafterSECTION",
 							ADD = AddTextA.."100"..AddTextB,
 						},
 					--Add PirateChance
 						{
 							SPECIAL_KEY_WORDS = {"Id","PIRATELOOT","Id","SCRAP_GOODS"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							ADD_OPTION = "ADDafterSECTION",
 							ADD = AddTextA..PirateChance..AddTextB,
 						},

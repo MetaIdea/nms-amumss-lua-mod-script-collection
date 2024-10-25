@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.2.0"
-ModVersion = "d"
+GameVersion = "5.2.0.0"
+ModVersion = "a"
 
 --[[ Files Modified:
 METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN
