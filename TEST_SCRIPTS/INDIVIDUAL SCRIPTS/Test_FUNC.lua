@@ -148,7 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		},  -- END: 1st MODIFICATIONS sub-table
     
-	}, --105 global replacement
+	}, --129 global replacement
 }
 
 function FUNC_TEST_3(property,currentValue,NamedValue)

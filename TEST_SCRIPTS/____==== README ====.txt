@@ -1,0 +1,1 @@
+To use this folder, copy/paste TEST_SCRIPTS folder into ModScript folder

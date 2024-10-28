@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       {
           COMMENT = [[NOTICE: SECTION_ACTIVE not used, OUT OF RANGE
           ]],
-          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "gcAIShipSpawnData.xml", "Count"},
+          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "GcBountySpawnInfo.xml", "Count"},
           ["SECTION_ACTIVE"] = {11,},
           ["REPLACE_TYPE"]         = "ALL",
           ["VALUE_CHANGE_TABLE"]     = 
@@ -47,12 +47,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
       {
           COMMENT = [[works
           ]],
-          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "gcAIShipSpawnData.xml", "Count"},
+          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "GcBountySpawnInfo.xml", "Count"},
           ["SECTION_ACTIVE"] = {1,},
           ["REPLACE_TYPE"]         = "ALL",
           ["VALUE_CHANGE_TABLE"]     = 
           {
-              {"x", "8", "{:}bounty3CountY"}, -- previously saved value of 'bounty3CountY' used
+              {"x", "8", "{:}bounty3CountY"}, -- previously saved value of 'bounty3CountY' (see above) used
               {"y", "40", "{:}{::}bounty3CountY"}, -- previously saved value of '{::}bounty3CountY' used
           },
       },
@@ -60,13 +60,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
       {
           COMMENT = [[works
           ]],
-          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "gcAIShipSpawnData.xml", "Count"},
+          ["PRECEDING_KEY_WORDS"] = {"PirateBountySpawns", "GcBountySpawnInfo.xml", "Count"},
           ["SECTION_ACTIVE"] = {1,},
           ["REPLACE_TYPE"]         = "ALL",
           ["VALUE_CHANGE_TABLE"]     = 
           {
               {"x", "8", "{:}ThisWasNotSaved"}, -- no previously saved value of 'ThisWasNotSaved'
-              {"y", "40", "{:},test"}, -- previously saved value of ',test' used
+              {"y", "40", "{:},test"}, -- previously saved value of ',test' (see two above tables) used
           },
       },
 

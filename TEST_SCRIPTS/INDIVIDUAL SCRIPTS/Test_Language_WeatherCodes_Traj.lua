@@ -369,7 +369,7 @@ for i=1,#codes do
 							-- ["REPLACE_TYPE"] = "ONCE", -- default value
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value", resultValue},
+								{"ENGLISH", resultValue},
 							}
 						}
 end

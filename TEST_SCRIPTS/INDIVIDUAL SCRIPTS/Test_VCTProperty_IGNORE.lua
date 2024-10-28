@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 
 						{ 
-              COMMENT = [[40 actions: with both SKW and PKW + MATH_OPERATION: 
+              COMMENT = [[Many actions: with both SKW and PKW + MATH_OPERATION: 
               -- will work and replace all inside found sections
               -- ALTERNATE USE is NOT invoked
               -- here SOME sections will be found]],
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 
 						{ 
-              COMMENT = [[1376 actions: with MATH_OPERATION, will work and replace all inside found sections
+              COMMENT = [[Many actions: with MATH_OPERATION, will work and replace all inside found sections
               -- here ALL sections are found inside the whole file
               -- ALTERNATE USE is NOT invoked]],
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
@@ -76,6 +76,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 			}
-		}, --1602 global replacements
+		}, --1830 global replacements
 	},
 }

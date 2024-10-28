@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         
         1 action: Finds 'Map' with the exact 'Property'
         
-        Processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
+        When processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
         SPECIAL_KEY_WORDS	= {'Name', 'gCloudMap'},
 				VALUE_CHANGE_TABLE 	= {
 					{'Map', 'TEXTURES/SPACE/ATMOSPHERE/NEWATMOSPHERE02.DDS'},
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         To replace all make REPLACE_TYPE = "ALL", like next section
         WILL not compile obviously due to bogus newvalue
         
-        Processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
+        When processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
 				VALUE_CHANGE_TABLE 	= {
 					{[[{^TextureAdd}]], 'MyTest'},
 				},
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				COMMENT = [[4 actions: Finds ALL 'Property' that starts with TextureAdd*
         Will not compile obviously due to bogus newvalue
         
-        Processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
+        When processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
 				REPLACE_TYPE = "ALL",
 				VALUE_CHANGE_TABLE 	= {
 					{[[{^TextureAdd}]], 'MyTest'},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         Adds 'BeforeTest ' to the start of the current value of ^TextureFil
         Will not compile obviously
         
-        Processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
+        When processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
 				REPLACE_TYPE = "ALL",
 				VALUE_CHANGE_TABLE 	= {
 					{[[{^TextureAdd}]], [[{:} AfterTest]]},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				COMMENT = [[4 actions: Finds ALL 'Property (name/value)=' *Add* ('Add' anywhere in 'Property')
         Will not compile obviously
         
-        Processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
+        When processing NMS_REALITY_GCPRODUCTTABLE.MBIN: NOTHING WILL BE DONE (WARNING/NOTICE issued)]],
 				REPLACE_TYPE = "ALL",
         VALUE_CHANGE_TABLE 	= {
 					{[[{Add}]], 'MyTest'},
