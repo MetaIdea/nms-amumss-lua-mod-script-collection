@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "Crop harvest doubled.pak",
     ["MOD_AUTHOR"] = "liuyueowo",
     ["LUA_AUTHOR"] = "liuyueowo",
-    ["NMS_VERSION"] = "5.12",
+    ["NMS_VERSION"] = "5.21",
     ["MOD_DESCRIPTION"] = "Here are the default values from the original version. If you wish to customize the values, please modify the numbers following AmountMin and AmountMax accordingly.",
     ["MODIFICATIONS"] = {
         {
