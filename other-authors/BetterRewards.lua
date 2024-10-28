@@ -32,11 +32,6 @@ NEXUS_PROD_MULTI		= 1		-- Default value is 1 | Multiplys the amount of products 
 BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
-FRIGATE_UNITS_MULTI		= 5			-- Default value is 1 | Multiplys the amount of units you get from Frigate (Freighter) missions with your fleet
-FRIGATE_NANITES_MULTI	= 5			-- Default value is 1 | Multiplys the amount of nanites you get from Frigate (Freighter) missions with your fleet
-FRIGATE_RESOURCES_MULTI	= 3			-- Default value is 1 | Multiplys the amount of resources you get from Frigate (Freighter) missions with your fleet
-FRIGATE_PRODUCT_MULTI	= 2			-- Default value is 1 | Multiplys the amount of products you get from Frigate (Freighter) missions with your fleet
-
 -- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 20%)
 -- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 45): <Property name="PercentageChance" value="20" />
 -- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="20" /> <---- edit this "20", the " " must stay!!
@@ -109,71 +104,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterRewards.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "5.11",
+["NMS_VERSION"]		= "5.21",
 ["MOD_DESCRIPTION"]	= "Simple multipliers to most reward values",
 ["MODIFICATIONS"] 	=
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	=
 			{
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Currency", "Units"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"]			= "0",
-							["VALUE_MATCH_OPTIONS"]	= ">",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	FRIGATE_UNITS_MULTI},
-								{"AmountMax",	FRIGATE_UNITS_MULTI}
-							}
-						},
-
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Currency", "Nanites"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"]			= "0",
-							["VALUE_MATCH_OPTIONS"]	= ">",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	FRIGATE_NANITES_MULTI},
-								{"AmountMax",	FRIGATE_NANITES_MULTI}
-							}
-						},
-
-						{
-							["SPECIAL_KEY_WORDS"]	= {"DefaultSubstanceType", "None"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	FRIGATE_RESOURCES_MULTI},
-								{"AmountMax",	FRIGATE_RESOURCES_MULTI}
-							}
-						},
-
-						{
-							["SPECIAL_KEY_WORDS"]	= {"DefaultProductType", "None"},
-							["SECTION_UP"]			= 2,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	FRIGATE_PRODUCT_MULTI},
-								{"AmountMax",	FRIGATE_PRODUCT_MULTI}
-							}
-						}
-					}
-				},
-				
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
