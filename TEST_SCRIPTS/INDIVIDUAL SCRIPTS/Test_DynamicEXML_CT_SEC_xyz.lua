@@ -111,13 +111,14 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 	MODIFICATIONS		= {
 		{
 			MBIN_CHANGE_TABLE = {
-				{
+				{ --#1
 					MBIN_FILE_SOURCE	= procTechTable,
 					EXML_CHANGE_TABLE	= {
 						-- This table will be filled in automatically via a loop
 					}
 				},
-				{
+        
+				{ --#2
 					MBIN_FILE_SOURCE	= prodTable,
 					MBIN_FS_DISCARD		= "TRUE",
 					EXML_CHANGE_TABLE	= {
@@ -126,7 +127,8 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 						-- Thus, there is no need to merge anything here
 					}
 				},
-				{
+        
+				{ --#3
 					MBIN_FILE_SOURCE	= techTable,
 					EXML_CHANGE_TABLE	= {
 						{
@@ -148,6 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 						},
 					}
 				},
+        
 			}
 		},
 	} --18 global replacements --20 on first pass
@@ -201,6 +204,11 @@ for i = 1, #processClasses do
 			-- of this loop access the loop counter, so use VCT's 4th argument
 			-- to pass it in 
 			VCT = {
+        -- Reminder: VCT arguments can be
+          -- 1st STRING: the "Property name=" OR "Property value=" we want to change the 'currentvalue' of  
+          -- 2nd STRING: a "newvalue" that will replace the original one in the EXML file OR a "anyFunctionName()" 
+          -- OPTIONAL 3rd STRING: see "NamedValue"
+          -- OPTIONAL 4th STRING: arguments to the 2nd STRING "anyFunctionName()"
 				{"ID", "saveTechID()", "", MyTable}, -- passing a table
 				{"Template", "saveTempName()"},
 			}
@@ -209,7 +217,7 @@ for i = 1, #processClasses do
 end
 
 --[[
-These are the functions necessary for saving information, and continuing to add
+Below, these are the functions necessary for saving information, and continuing to add
 EXML_CHANGE_TABLE entries for each match as they are found
 
 We cannot use a loop to do these because the loops will process BEFORE AMUMSS
@@ -229,6 +237,14 @@ been called yet, so we can define them here after the first loop instead
 
 -- This is the first function called from VCT after SKW finds a match
 -- All of these functions must be global, so that they can be called from AMUMSS
+
+-- Reminder: "anyFunctionName()" is called back by the VCT code with
+     -- 1) "Property name/value" name as STRING
+     -- 2) the current value of that "Property name/value" as STRING
+     -- 3) nil or the retrieved "NamedValue", if it exist / was used as the 3rd parameter
+     -- 4) nil, a STRING, a NUMBER, a BOOLEAN or a TableOfArguments
+     --    as an 'ExtraArgToFunc' argument to 'anyFunctionName()'
+     
 function saveTechID(propName, savedValue, unusedVal, classIndex)
 	-- printf("        >>>>   propName = [%s]",tostring(propName))
 	-- printf("        >>>> savedValue = [%s]",tostring(savedValue))

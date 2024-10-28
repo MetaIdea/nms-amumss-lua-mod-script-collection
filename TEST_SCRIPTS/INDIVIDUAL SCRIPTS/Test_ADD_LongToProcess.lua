@@ -351,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
         
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TABLES/TUTORIALMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -366,7 +366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         
 			},
 		},
-	}, --151 global replacements
+	}, --153 global replacements
 }
 
 --Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER

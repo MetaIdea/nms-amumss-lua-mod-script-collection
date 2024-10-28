@@ -9,32 +9,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
       --FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newContent.txt]], --missing destination
     },
     { 
-      COMMENT = "--2) FAIL: empty DESTINATION",
+      COMMENT = "--2) FAIL: missing DESTINATION",
       EXTERNAL_FILE_SOURCE = lfs.currentdir()..[[\TEST\AMBER.DDS]],
       FILE_DESTINATION   = [[]],
     },
     
     { 
-      COMMENT = "--3) FAIL: ambiguous source, OK: with filename",
+      COMMENT = "--3) FAIL: too many, OK: with filename",
       EXTERNAL_FILE_SOURCE = lfs.currentdir()..[[\TEST\AMBER.DDS]],
       FILE_CONTENT = [[This is a file content]],
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
     { 
-      COMMENT = "--4) FAIL: ambiguous source, OK: with filename",
+      COMMENT = "--4) FAIL: too many, OK: with filename",
       ["INTERNAL_FILE_SOURCE"] 	= "TEXTURES\\PLANETS\\CREATURES/FISH/CLAM_01.DDS",
       EXTERNAL_FILE_SOURCE = lfs.currentdir()..[[\TEST\AMBER.DDS]],
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
     { 
-      COMMENT = "--5) FAIL: ambiguous source, OK: with filename",
+      COMMENT = "--5) FAIL: too many, OK: with filename",
       ["INTERNAL_FILE_SOURCE"] 	= "TEXTURES\\PLANETS\\CREATURES/FISH/CLAM_01.DDS",
       FILE_CONTENT = [[This is a file content]],
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
     
     { 
-      COMMENT = "--6) FAIL: all possible sources missing, OK: with filename",
+      COMMENT = "--6) FAIL: all missing, OK: with filename",
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
 
@@ -49,18 +49,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
       FILE_DESTINATION   = [[TEST\AMBER.DDS]], --OK: with filename
     },
     { 
-      COMMENT = "--8) SUCCESS: no filename for FILE_DESTINATION",
+      COMMENT = "--8) SUCCESS: no filename",
       EXTERNAL_FILE_SOURCE = lfs.currentdir()..[[\MOD\TEST\AMBER.DDS]],
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS]],  --OK: no filename
     },
     { 
-      COMMENT = "--9) SUCCESS: with filename for FILE_DESTINATION",
+      COMMENT = "--9) SUCCESS: with filename",
       EXTERNAL_FILE_SOURCE = lfs.currentdir()..[[\MOD\TEST\AMBER.DDS]],
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
     { 
       COMMENT = "--10) SUCCESS: path relative to ModScript folder, OK: with filename",
-      EXTERNAL_FILE_SOURCE = [[.\TEST_SCRIPTS\AMBER.DDS]], --path relative to ModScript folder/sub-folder
+      EXTERNAL_FILE_SOURCE = [[..\..\..\MODBUILDER\MOD\TEST\AMBER.DDS]], --path relative to ModScript folder
       FILE_DESTINATION   = [[TEXTURES/COMMON/ROBOTS/newAMBER.DDS]], --OK: with filename
     },
 

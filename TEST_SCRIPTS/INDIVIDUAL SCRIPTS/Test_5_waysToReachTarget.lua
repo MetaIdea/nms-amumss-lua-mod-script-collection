@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             --alternate way
 						{
               ["SPECIAL_KEY_WORDS"] = {"None","GcSettlementBuildingCost.xml",}, -- unique
-							["PRECEDING_KEY_WORDS"] = {"StageCosts","Start","GroundStorey","Currency",},
+							["PRECEDING_KEY_WORDS"] = {"StageCosts","GroundStorey","Currency",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Currency",	"{:}"}, --Original "Units"

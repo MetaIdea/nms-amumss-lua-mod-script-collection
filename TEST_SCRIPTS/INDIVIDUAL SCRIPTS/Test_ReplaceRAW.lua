@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-              COMMENT = [[ 1 action:
+              COMMENT = [[ 2 actions:
                 modify the new file
                 replacing with same here, for test purposes only
                 ]],
@@ -40,5 +40,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		},
-	}	--1 global replacements
+	}	--3 global replacements
 }

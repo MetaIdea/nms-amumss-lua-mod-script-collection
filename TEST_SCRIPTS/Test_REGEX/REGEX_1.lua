@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = REWARD_ENTRIES
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES\NPCMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES\PIRATEMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_PIRATE_MSG"},
                 ["SECTION_UP"] = 2,
@@ -291,7 +291,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = MISSIONS_QS
             }}
         }, {
-            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/MULTIPLAYERMISSIONTABLE.MBIN",
+            ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES\MULTIPLAYERMISSIONTABLE.MBIN",
             ["EXML_CHANGE_TABLE"] = {{
                 ["SPECIAL_KEY_WORDS"] = {"Message", "UI_RETURN_MPMISSION_OBJ1_MSG"},
                 ["SECTION_UP"] = 2,
@@ -300,7 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["ADD"] = MISSIONS_QS
             }}
         }}
-    }} --204 global replacements
+    }} --207 global replacements
 }
 
 -- Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER

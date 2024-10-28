@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
----	Build reality tables entries (VERSION: 0.82.7) ... by lMonk
+---	Build reality tables entries (VERSION: 0.82.8) ... by lMonk
 ---	Add new items into technology, proc-tech, product & basebuilding
 ---	* Not ALL properties of the tables' classes are included, some which
 ---  can be safely left with their deafult value are omited.
@@ -74,7 +74,7 @@ function TechnologyEntry(tech)
 			META	= {'ChargeType', 'GcRealitySubstanceCategory.xml'},
 			SubstanceCategory = (tech.chargetype or 'Earth'),			--	E
 		},
-		ChargeBy		= StringArray(tech.chargeby, 'ChargeBy', 10),	--	Id
+		ChargeBy		= StringArray(tech.chargeby, 'ChargeBy'),		--	Id
 		ChargeMultiplier= tech.chargemultiply or 1,
 		BuildFullyCharged= true,
 		UsesAmmo		= tech.usesammo,								--	b
@@ -295,15 +295,15 @@ function BaseBuildObjectEntry(bpart)
 					}
 				end
 				return T
-			end			
+			end
 		)(),
 		StorageContainerIndex 		= -1,							--	i
 		CanChangeColour				= true,
 		CanChangeMaterial			= true,
 		CanPickUp					= bpart.canpickup,				--	b
 		ShowInBuildMenu				= true,
-		CompositePartObjectIDs		= StringArray(bpart.compositeparts, 'CompositePartObjectIDs', 10),
-		FamilyIDs					= StringArray(bpart.familyids, 'FamilyIDs', 10),
+		CompositePartObjectIDs		= StringArray(bpart.compositeparts, 'CompositePartObjectIDs'),
+		FamilyIDs					= StringArray(bpart.familyids, 'FamilyIDs'),
 		BuildEffectAccelerator		= 1,							--	i
 		RemovesAttachedDecoration	= true,
 		RemovesWhenUnsnapped		= false,

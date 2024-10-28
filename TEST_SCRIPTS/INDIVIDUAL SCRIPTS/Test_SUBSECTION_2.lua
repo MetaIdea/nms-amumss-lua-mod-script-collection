@@ -14,14 +14,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{ 
-              COMMENT = [[-- 1 action: will replace only in the section found by 2nd SKW pair, line 3917]],
-							["SPECIAL_KEY_WORDS"] = {"NameHash","3181130562","Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0",}, -- 3527-4115 then found section 3916-3954
-							["VALUE_CHANGE_TABLE"] 	= 
+              COMMENT= [[-- 12 actions
+              ]],
+              ["SPECIAL_KEY_WORDS"] = {"Type", "JOINT"},
+              REPLACE_TYPE = "ALL",
+              ["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Name",	"New_MODEL"}, -- just for test at line 3917
+								{"Name",	"New_MODEL"}, -- just for test in line 4 (the 1st "Name" encountered)
 							}	
 						},
-            
+
 						{ 
               COMMENT= [[-- 1 action:  no REPLACE_TYPE here implies REPLACE_TYPE = "ONCE"
               no keywords implies use full EXML, line 4 is 1st "Name" encountered
@@ -33,37 +35,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 
 						{ 
-              COMMENT = [[-- 5 action:  no REPLACE_TYPE here implies REPLACE_TYPE = "ONCE"
+              COMMENT = [[-- 12 actions:  no REPLACE_TYPE here implies REPLACE_TYPE = "ONCE"
               BUT WISS forces REPLACE_TYPE = "ALL" when user do not explicitely say "ONCE",
-              section found: 3916-3954]],
+              section found: see above]],
               WISS = {
-                    {"Name","New_MODEL",}, -- section encountered is 3916-3954
+                    {"Name","New_MODEL",}, -- sections encountered above
                   },
               ["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0"},
+								{"Name","XYZ_123"},
 							}	
 						},
 
 						{ 
               COMMENT = [[-- 1 action:  no REPLACE_TYPE here implies REPLACE_TYPE = "ONCE"
                BUT WISS forces REPLACE_TYPE = "ALL" but the user explicitely says "ONCE",
-               just for test, restored line 4 to original, 3-4348
+               just for test, restored line 4 to original
                ]],
               REPLACE_TYPE = "ONCE",
               WISS = {
-                    {"Name","Newer_MODEL",}, -- section encountered is 3-4348
+                    {"Name","Newer_MODEL",}, -- section encountered above
                   },
               ["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Name","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0"},
+								{"Name","XYZ_123"},
 							}	
 						},
 
 					},
 				},
 			},
-		}, --8 global replacements
+		}, --26 global replacements
 	},
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

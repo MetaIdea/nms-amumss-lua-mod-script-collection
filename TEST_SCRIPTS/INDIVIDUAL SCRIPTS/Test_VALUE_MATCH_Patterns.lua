@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             },
             {
               COMMENT = [[3- Curly brackets { } are used to mark VALUE_MATCH as a LUA regular expression
-              This will match any value ending in ICON.DDS (None will be found here, it does not exist in the EXML)
+              This will match any value ending in ICON.DDS
               Notice the %. to escape the dot and $ to anchor to the end]],
               -- like "TEXTURES/UI/HUD/PIRATEMESSAGEICON.DDS",
               ["VALUE_MATCH"] = "{ICON%.DDS$}",
@@ -53,6 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             {
               COMMENT = [[5- Curly brackets { } are used to mark VALUE_MATCH as a LUA regular expression
               How to target empty values like value=""
+              Better to use DEV mode with this, lots of lines are matched :)
               THIS WILL NOT COMPILE OBVIOUSLY]],
               -- ["VALUE_MATCH"] = "",
               ["VALUE_MATCH"] = "{^$}",
@@ -76,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               Multiple VALUE_MATCH strings can be specified, normal and regular expressions
               Use of regular expression { } triggers the use of REPLACE_TYPE = "ALL"
               All not matching strings in VALUE_MATCH are replaced
-              Better to use DEV mode with this :)]],
+              Better to use DEV mode with this, lots of lines are matched :)]],
               ["VALUE_MATCH"] = {"FOOTLOCKER","{ABAND_CRATE}","MEDTUBE",},
               ["VALUE_MATCH_OPTIONS"]     = "~=",
               ["VCT"] = {
@@ -87,8 +88,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
             {
               COMMENT = [[8- Curly brackets { } are used to mark VALUE_MATCH as a LUA regular expression
               Multiple VALUE_MATCH strings can be specified, normal and regular expressions
-              NO regular expression use the default REPLACE_TYPE = "ONCE", so we must specify we want "ALL", if required
-              All not matching strings in VALUE_MATCH are replaced
+              Use of regular expression { } triggers the use of REPLACE_TYPE = "ALL"
+              All matching strings in VALUE_MATCH are replaced
+              Better to use DEV mode with this, lots of lines are matched :)]],
+              ["VALUE_MATCH"] = {"{MyTest}","OtherTest_1",},
+              -- ["VALUE_MATCH_OPTIONS"]     = "=", -- default, no need to specify
+              ["VCT"] = {
+                  {"Value","MyTest_3"},
+                  {"ID","OtherTest_3"},
+              },
+            },
+            {
+              COMMENT = [[9- Curly brackets { } are used to mark VALUE_MATCH as a LUA regular expression
+              Multiple VALUE_MATCH strings can be specified, normal and regular expressions
+              NO regular expression in use: defaults to REPLACE_TYPE = "ONCE", so we must specify we want "ALL", if required
+              All lines matching the values in VALUE_MATCH are replaced
               Better to use DEV mode with this :)]],
               ["REPLACE_TYPE"] = "ALL",
               ["VALUE_MATCH"] = {30,0.33,11,},
@@ -101,5 +115,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
       },
     },
-  }, --12459 global replacements
+  }, --14796 global replacements
 }

@@ -937,6 +937,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
+                    COMMENT = [[#1]],
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -969,6 +970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    COMMENT = [[#2]],
                     ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\BARREN\PLANTS\SCRUBGRASS.TEXTURE.MBIN",
@@ -990,6 +992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    COMMENT = [[#3]],
                     ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS1.TEXTURE.MBIN",
@@ -1015,6 +1018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    COMMENT = [[#4]],
                     ["MBIN_FILE_SOURCE"] = 
                     {
                         "TEXTURES\PLANETS\BIOMES\COMMON\GRASS\TALLGRASS2.TEXTURE.MBIN",
@@ -1041,7 +1045,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
             }
         }
-    } --45 global replacements
+    } --45 global replacements  --67 when standalone
 }
 
 function GetColours(R,G,B,A)

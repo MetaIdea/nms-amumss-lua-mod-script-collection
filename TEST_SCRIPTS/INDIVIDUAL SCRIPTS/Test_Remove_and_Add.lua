@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Id", "MB_STAND_NEG"},
 							["ADD_OPTION"] 	= "ADDafterSECTION",
 							["ADD"] = ADD,
-							["REMOVE"] = "SECTION",
+							["REMOVE"] = "SECTION", -- this operation will NOT be done due to the ADD
 						},
 					}
 				},
