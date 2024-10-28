@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 1,
 				VALUE_CHANGE_TABLE 	= { --mutiple entry activates auto-increment of LINE_OFFSET
 					{'IGNORE',		2},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 1,
 				VALUE_CHANGE_TABLE 	= { --no auto-increment of LINE_OFFSET
 					{'IGNORE',		2},
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 2,
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		2.5},
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 3,
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		3},
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 4,
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		4},
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
-				SECTION_ACTIVE		= -4,
+				SECTION_ACTIVE		= -4, -- negative
 				LINE_OFFSET			= 5,
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		5},

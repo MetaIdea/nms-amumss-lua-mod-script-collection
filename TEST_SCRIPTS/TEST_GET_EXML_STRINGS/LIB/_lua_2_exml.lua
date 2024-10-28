@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.83.1) ... by lMonk
+---	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
 ---	Helper functions for color class, vector class and string arrays
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
@@ -152,13 +152,13 @@ end
 --	Returns a 'name' type array of strings
 --	@param t: an ordered (non-keyed) table of strings
 --	@param name: class name
---	@param size: string class size [10, 100, 20, 200, 40, 400, 80, 800]
+--	@param size: string class size [10:default, 100, 20, 200, 40, 400, 80, 800]
 function StringArray(t, name, size)
 	if not t then return nil end
 	local T = {META = {'name', name}}
 	for _,str in ipairs(t) do
 		T[#T+1] = {
-			META	= {'value', 'NMSString0x'..size..'.xml'},
+			META	= {'value', 'NMSString0x'..(size or 10)..'.xml'},
 			Value	= str
 		}
 	end

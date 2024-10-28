@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
   ADD_FILES  = {
     {
-      COMMENT = [[0 action: FAILURE if C:\broken_path is BAD path
-            1 action: SUCCESS if ]C:\broken_path is GOOD path]],
+      COMMENT = [[0 action: FAILURE if C:\broken_path is a BAD path
+            1 action: SUCCESS if C:\broken_path is a GOOD path]],
       EXTERNAL_FILE_SOURCE= 'C:/broken_path/Textures/Effects/Trails/*.DDS',
       FILE_DESTINATION  = 'TEXTURES/EFFECTS/TRAILS/HOT/'
     }

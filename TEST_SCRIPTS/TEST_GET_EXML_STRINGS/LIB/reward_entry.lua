@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
----	Construct reward table entries (VERSION: 0.82.6) ... by lMonk
+---	Construct reward table entries (VERSION: 0.82.7) ... by lMonk
 ---	* Requires _lua_2_exml.lua !
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
 -------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ function R_ProductSysList(item)
 	return R_TableItem(
 		item,
 		'GcRewardSystemSpecificProductFromList.xml',
-		{ ProductList = StringArray(item.id, 'ProductList', 10) }
+		{ ProductList = StringArray(item.id, 'ProductList') }
 	)
 end
 
@@ -165,7 +165,7 @@ function R_ProductAllList(item)
 	return R_TableItem(
 		item,
 		'GcRewardMultiSpecificProducts.xml',
-		{ ProductIds = StringArray(item.id, 'ProductIds', 10) }
+		{ ProductIds = StringArray(item.id, 'ProductIds') }
 	)
 end
 

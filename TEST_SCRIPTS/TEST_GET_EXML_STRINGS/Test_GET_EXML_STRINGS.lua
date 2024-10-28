@@ -42,12 +42,78 @@ local tech_catalog = {
 	}
 }
 
-local catalog_craft		= 'METADATA/REALITY/CATALOGUECRAFTING.MBIN' --<< preload_source_discard
+-- to make referencing TheDATA easy in the script
+local thedata
+
+-- HELPER FUNCTION
+function GetEXMLString(filenamePath)
+  return table.concat(thedata["ModdedEXMLs"][NormalizePath(filenamePath,true)])
+end
+
+local catalog_craft		= 'METADATA/REALITY/CATALOGUECRAFTING.MBIN'
 local product_table   = 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN'
 
+-----------------------------------------------------------------------------------------
 -- New Wrapper function, any name is good
-function ProcessEXMLs(EXMLstringsTable)
-  local mbin_craft		= ToLua(EXMLstringsTable[1])
+function ProcessEXMLs()
+  print(" = = = Entering ProcessEXMLs()")
+  
+  print(" = = = = = thedata_2")
+  for k,v in pairs(thedata) do
+    printf(" k = [%s], v = [%s]",k,v)
+  end
+  print(" = = = = =")
+
+  print("")
+  print("  >>> Testing adding a new MBIN_CT...")
+  -- to ADD a new MBIN_CT to the CONTAINER, after the current one
+  local MBIN_CT_offset = thedata["MBIN_CT_Index"]
+  printf("    *** *** Current MBIN_CT_Index = %d",MBIN_CT_offset)
+
+  printf([[    *** BEFORE insert: #thedata["MBIN_CT"] = %d]],#thedata["MBIN_CT"])
+  table.insert(thedata["MBIN_CT"],MBIN_CT_offset + 1,{
+            COMMENT = [[This is MBIN_CT #]]..(MBIN_CT_offset + 1)..[[ added by EXT_FUNC]],
+            MBIN_FS	= { -- ask AMUMSS to open these MBINs, just for test
+              catalog_craft,
+            },
+          } )
+  printf([[    ***  AFTER insert: #thedata["MBIN_CT"] = %d]],#thedata["MBIN_CT"])
+  print("  >>> END: Testing adding a new MBIN_CT...")
+
+  print("")
+  print("  >>> Showing list of available/opened/modded EXML files")
+  for k,v in pairs(thedata["ModdedEXMLs"]) do
+    printf("- [%s] = [%s]",k,v)
+  end
+  print("  >>> END: Showing list of available/opened/modded EXML files")
+
+  print("")
+  print("  >>> Showing result of NormalizePath(catalog_craft,true) = ["..NormalizePath(catalog_craft,true).."]")
+  
+  local mbin_craft		= ToLua(table.concat(thedata["ModdedEXMLs"][NormalizePath(catalog_craft,true)]))
+  print(" = = = = = mbin_craft_1")
+  local count = 0
+  for k,v in pairs(mbin_craft) do
+    printf(" k = [%s], v = [%s]",k,v)
+    count= count + 1
+    if count > 10 then
+      break
+    end
+  end
+  print(" = = = = =")
+  
+  -- alternative can do it
+  local mbin_craft		= ToLua(GetEXMLString(catalog_craft))
+  print(" = = = = = mbin_craft_2")
+  local count = 0
+  for k,v in pairs(mbin_craft) do
+    printf(" k = [%s], v = [%s]",k,v)
+    count= count + 1
+    if count > 10 then
+      break
+    end
+  end
+  print(" = = = = =")
   
   local craft_categories	= mbin_craft and mbin_craft.template.Categories or {}
 
@@ -70,10 +136,9 @@ function ProcessEXMLs(EXMLstringsTable)
       end
     end
   end
-
   -----------------------------------------------------------------------------------------
 
-  local gc_products			= ToLua(EXMLstringsTable[2])
+  local gc_products		  	= ToLua(table.concat(thedata["ModdedEXMLs"][NormalizePath(product_table,true)]))
 
   local new_category 			= UnionTables({craft_categories[1]})
 
@@ -91,7 +156,9 @@ function ProcessEXMLs(EXMLstringsTable)
     -- read prodcut list
     local parts = {}
     for _,prd in ipairs(gc_products.template.Table) do
-      if prd.Subtitle.Value:find(head.f) then
+printf("type(prd.Subtitle) = %s",type(prd.Subtitle))
+      -- if prd.Subtitle.Value:find(head.f) then
+      if prd.Subtitle:find(head.f) then
         parts[#parts+1] = prd.ID
       end
     end
@@ -99,15 +166,78 @@ function ProcessEXMLs(EXMLstringsTable)
     craft_categories[#craft_categories+1] = UnionTables({new_category})
   end
 
-  return FileWrapping(mbin_craft) -- ,FileWrapping(mbin_craft_ORG)
-end -- END:  New Wrapper function: ProcessEXMLs(EXMLstringsTable)
+  local result = FileWrapping(mbin_craft)
 
-UseEXMLstrings = nil -- to silence unused_variable
-function UseEXMLstrings(arg) -- called by AMUMSS, see below in NMS_MOD_DEFINITION_CONTAINER
+  -- print(" = = = = = result_1")
+  -- print(result)
+  -- print(" = = = = =")
+
+  print(" = = = Exiting ProcessEXMLs()")
+  return result -- ,FileWrapping(mbin_craft_ORG) -- returns a string
+end -- END:  New Wrapper function: ProcessEXMLs()
+
+-----------------------------------------------------------------------------------------
+UseEXMLstrings = nil -- to silence unused_variable, MUST be global
+function UseEXMLstrings(TheDATA) -- called by AMUMSS, see below in NMS_MOD_DEFINITION_CONTAINER
+  print(" = AMUMSS Calling UseEXMLstrings()")
+
+  print(" = = = = = TheDATA_1")
+  for k,v in pairs(TheDATA) do
+    printf(" k = [%s], v = [%s]",k,v)
+  end
+  print(" = = = = =")
+  
+  -- making THIS new 'TheDATA' a global 'local' in the script
+  thedata = TheDATA 
+  print(" = = = = = thedata_1")
+  for k,v in pairs(thedata) do
+    printf(" k = [%s], v = [%s]",k,v)
+  end
+  print(" = = = = =")
+  
+  local result = ProcessEXMLs()
+  
+  -- print(" = = = = = result_2")
+  -- print(result)
+  -- print(" = = = = =")
+
   return {
-    -- key = pathfilename,      value = string content of modded EXML
-    [catalog_craft] = ProcessEXMLs(arg),
+    -- key = pathfilename,  value = string content of modded EXML
+    [NormalizePath(catalog_craft,true)] = result,
+    ["data_1"] = "Test_STRING",
+    ["data_2"] = true,
+    ["data_3"] = 56,
+    ["data_4"] = {"A","B","C","D","E","F",},
+
+
+    -- { [NormalizePath(catalog_craft,true)] = result },
+    -- { ["data_1"] = "Test_STRING" },
+    -- { ["data_2"] = true },
+    -- { ["data_3"] = 56 },
+    -- { ["data_4"] = {"A","B","C","D","E","F",} },
   }
+end
+
+-----------------------------------------------------------------------------------------
+Test_2nd_function = nil -- to silence unused_variable, MUST be global
+function Test_2nd_function(TheDATA)
+  print(" = = = = = = AMUMSS Calling Test_2nd_function()")
+
+  -- making THIS new 'TheDATA' a global 'local' in the script
+  thedata = TheDATA 
+  
+  for k,v in pairs(thedata["ReturnedValues"]) do
+    if type(v) == "string" or type(v) == "number" or type(v) == "boolean" then
+      H.printf(" - Test_2nd_function: k = [%s], v = [%s] ",k,tostring(v))
+    else
+      H.printf(" - Test_2nd_function: k = [%s], v = [%s] ",k,v)
+      for k,v in pairs(v) do
+        H.printf("   - Test_2nd_function: k = [%s], v = [%s] ",k,v)
+      end
+    end
+  end
+  print(" = = = = = = Exiting Test_2nd_function()")
+  return "IGNORE"
 end
 
 -----------------------------------------------------------------------------------------
@@ -121,25 +251,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
       {
         MBIN_CHANGE_TABLE	= {	
           {
-            MBIN_FILE_SOURCE	= {
+            COMMENT = [[This is MBIN_CT #1: just to create a 1st MBIN_CT]],
+            MBIN_FS	= { -- ask AMUMSS to open this MBINs, for testing
+              product_table,
+            },
+          },
+          {
+            COMMENT = [[This is MBIN_CT #2 using EXT_FUNC]],
+            MBIN_FS	= { -- ask AMUMSS to open these MBINs
               catalog_craft,
               product_table,
             },
-            -- MBIN_FS_DISCARD		= true, -- no need to discard anymore
-             --                 function name to call, MBIN to process
-            GET_EXML_STRINGS = { "UseEXMLstrings",      {catalog_craft,product_table} },
+            
+            EXT_FUNC = {
+              -- function names to call
+              "UseEXMLstrings", "Test_2nd_function",
+            },
+
           },
         },
       },
     }, 
-    
-    -- NOT NEEDED
-    -- ADD_FILES	= {
-      -- {
-        -- FILE_CONTENT	   = CONTENT,
-        -- FILE_DESTINATION = catalog_craft:gsub('.MBIN$', '.EXML'),
-      -- },
-    -- },
     
   },  --1 global replacements
 }

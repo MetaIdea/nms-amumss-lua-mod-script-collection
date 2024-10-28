@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
----	Model scene tools (VERSION: 0.83.0) ... by lMonk
+---	Model scene tools (VERSION: 0.83.1) ... by lMonk
 ---	Helper function for adding new TkSceneNodeData nodes and properties
 ---	* Requires _lua_2_exml.lua !
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
@@ -71,9 +71,9 @@ function ScNode(props)
 		T[#T+1] = scAttributes(props.attr)
 	end
 	if props.child then
-		local c = { META = {'name', 'Children'} }
-		for _,p in ipairs(props.child) do c[#c+1] = p end
-		T[#T+1]	= c
+		local tc = { META = {'name', 'Children'} }
+		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
+		T[#T+1]	= tc
 	end
 	return T
 end

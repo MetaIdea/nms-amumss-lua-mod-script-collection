@@ -24,7 +24,8 @@ NMS_MOD_DEFINITION_CONTAINER =
               }
             },
             {
-              COMMENT = [[5 actions: replace values using REPLACE_TYPE = "OnceInside"]],
+              COMMENT = [[============  AREA TEST_OnceInside_AUTO Ignore  ==============
+              5 actions: replace values using REPLACE_TYPE = "OnceInside"]],
               REPLACE_TYPE        = 'OnceInside',
               PRECEDING_KEY_WORDS = {'Ultra', 'LODAdjust'},
               VALUE_CHANGE_TABLE  = {
@@ -36,7 +37,34 @@ NMS_MOD_DEFINITION_CONTAINER =
               },
             },
             {
-              COMMENT = [[5 actions: replace values using REPLACE_TYPE = "OnceInside"
+              COMMENT = [[============  AREA TEST_OnceInside_AUTO IGNORE ==============
+              5 actions: replace values using REPLACE_TYPE = "OnceInside"]],
+              REPLACE_TYPE        = 'OnceInside',
+              PRECEDING_KEY_WORDS = {'Ultra', 'LODAdjust'},
+              VALUE_CHANGE_TABLE  = {
+                {'IGNORE', 2},
+                {'IGNORE', 4},
+                {'IGNORE', 6},
+                {'IGNORE', 8},
+                {'IGNORE', 10}
+              },
+            },
+            {
+              COMMENT = [[============  AREA TEST_OnceInside_AUTO MIXED CASE ==============
+              5 actions: replace values using REPLACE_TYPE = "OnceInside"]],
+              REPLACE_TYPE        = 'OnceInside',
+              PRECEDING_KEY_WORDS = {'Ultra', 'LODAdjust'},
+              VALUE_CHANGE_TABLE  = {
+                {'Ignore', 2},
+                {'iGnOrE', 4},
+                {'IGNORE', 6},
+                {'Ignore', 8},
+                {'IGNORE', 10}
+              },
+            },
+            {
+              COMMENT = [[5 actions: replace values using REPLACE_TYPE = "ALLInsideSection"
+              NOT A GOOD WAY TO DO IT
               1st VCT replaces 1st section found with all '2'
               all other VCT fail with NO replacement done, there are no other sections meeting the keywords]],
               REPLACE_TYPE        = 'ALLInsideSection',
@@ -53,5 +81,5 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
       },
 		},
-	},	--15 global replacements
+	},	--25 global replacements
 }

@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
----	EXML 2 LUA (VERSION: 0.83.4) ... by lMonk
+---	EXML 2 LUA (VERSION: 0.83.6) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
 ---	Functions for converting an exml file, or sections of one, to
 ---	 a lua table during run-time, or printing the exml as a lua script.
@@ -36,35 +36,33 @@ function ToLua(exml)
 	local tag	= [[<[/]?Property[ ]?(.-[/]?)>]]
 	local tag1	= [[([%w_]+)="(.+)"[ ]?([/]?)]]
 	local tag2	= [[name="([%w_]+)" value="(.*)"[ ]?([/]?)]]
-	local tlua, st_node, st_array = {}, {}, {false}
+	local tlua, st_node, is_ord = {}, {}, {false}
 	local parent= tlua
 	local node	= nil
-	--	array=true when processing an ordered (name) section
-	local array	= false
 	for prop in UnWrap(exml):gmatch(tag) do
 		_,eql = prop:gsub('=', '')
 		if eql > 0 then
 			-- choose tag by the count of [=] in a property
 			local att, val, close = prop:match(eql > 1 and tag2 or tag1)
 			if close == '' then
-				array = att == 'name'
 				-- open new property table
 				table.insert(st_node, parent)
 				node = {META = {att , val}}
 
-				 -- look up if parent is an array
-				if st_array[#st_array] or att == 'value' then
+				-- is_ord[#is_ord] == true when parent is an ordered (name) section
+				if is_ord[#is_ord] == true or att == 'value' then
 					parent[#parent+1] = node
 				elseif att == 'name' then
 					parent[val] = node
 				else
 					parent[att] = node
 				end
-				table.insert(st_array, att == 'name')
 				parent = node
+				-- keep meta if classes are ordered
+				is_ord[#is_ord+1] = att == 'name'
 			else
 				-- add property to parent table
-				if att == 'value' or array then
+				if is_ord[#is_ord] == true or att == 'value' then
 					node[#node+1] = {[att] = eval(val)}
 				-- regular property (skips stubs)
 				elseif att ~= 'name' then
@@ -74,7 +72,7 @@ function ToLua(exml)
 		else
 			-- go back to parent node
 			parent = table.remove(st_node)
-			table.remove(st_array)
+			table.remove(is_ord)
 			node = parent
 		end
 	end
@@ -113,9 +111,7 @@ function PrintExmlAsLua(vars)
 	function tlua:add(t)
 		for _,v in ipairs(t) do self[#self+1] = v end
 	end
-	--	array=true when processing an ordered (name) section
-	local array	= false
-	local st_array = {false}
+	local is_ord = {false}
 	for prop in UnWrap(vars.exml):gmatch(tag) do
 		_,eql = prop:gsub('=', '')
 		if eql > 0 then
@@ -123,19 +119,19 @@ function PrintExmlAsLua(vars)
 			local att, val, closed = prop:match(eql > 1 and tag2 or tag1)
 			if closed == '' then
 				-- opening a new table
-				array = att == 'name'
-				-- look up if parent is an array
-				if st_array[#st_array] or att == 'value' then
+				-- is_ord[#is_ord] == true when parent is an ordered (name) section
+				if is_ord[#is_ord] == true or att == 'value' then
 					tlua:add({ind:rep(lvl), '{\n'})
 				else
 					tlua:add({ind:rep(lvl), (att == 'name' and val or att), ' = ', '{\n'})
 				end
-				table.insert(st_array, att == 'name')
+				-- keep meta if classes are ordered
+				is_ord[#is_ord+1] = att == 'name'
 				lvl = lvl + 1
 				tlua:add({ind:rep(lvl), 'META = {', com, att, com, ',', com, val, com, '},\n'})
 			else
-				-- value property or properties in an array
-				if att == 'value' or array then
+				-- value property or properties in an ordered array
+				if is_ord[#is_ord] == true or att == 'value' then
 					tlua:add({ind:rep(lvl), '{', att, ' = ', com, val, com, '},\n'})
 				-- regular property (skips stubs)
 				elseif att ~= 'name' then
@@ -148,7 +144,7 @@ function PrintExmlAsLua(vars)
 			-- trim the comma from the last object
 			tlua[#tlua] = tlua[#tlua]:gsub(',\n', '\n')
 			tlua:add({ind:rep(lvl), '},\n'})
-			table.remove(st_array)
+			table.remove(is_ord)
 		end
 	end
 	-- start & end trims
@@ -157,15 +153,15 @@ function PrintExmlAsLua(vars)
 	return table.concat(tlua)
 end
 
---	Returns a keyed table of TkSceneNodeData sections, with the Name property as keys,
---	* Use to enable direct access to nodes in a table generated with ToLua
+--	A direct access-index for a SCENE file.
+--	Returns a table with Name property as keys linking to their to TkSceneNodeData sections.
 function SceneNames(node, keys)
 	keys = keys or {}
 	if node.META[2] == 'TkSceneNodeData.xml' then
 		keys[node.Name] = node
 	end
-	for k, scn in pairs(node.Children or {}) do
-		if k ~= 'META' then SceneNames(scn, keys) end
+	for k, scn in ipairs(node.Children or {}) do
+		SceneNames(scn, keys)
 	end
 	return keys
 end
