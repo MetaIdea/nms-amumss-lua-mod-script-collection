@@ -3,23 +3,23 @@ Multiplier = 1
 InputMultiplier = {Multiplier,
 [[
     Choose a speed multiplier:
-    1 - 2x
-    2 - 5x
-    3 - 10x
-    4 - 25x
-    5 - 50x
-    6 - 100x
-    7 - 1000x
-    8 - 10000x
-    9 - 100000x
+    1  - 2x
+    2  - 5x
+    3  - 10x
+    4  - 25x
+    5  - 50x
+    6  - 100x
+    7  - 1000x
+    8  - 10000x
+    9  - 100000x
     10 - 1000000x
-    11- 10000000x
-    12- 100000000x
+    11 - 10000000x
+    12 - 100000000x
     Default = 1 | Current = >> ]] .. (Multiplier) .. [[ <<
 ]]}
 
 while Multiplier do
-  Multiplier = GUIF(InputMultiplier,10)
+  Multiplier = GUIF(InputMultiplier,20)
 
   local minChoice = 1
   local maxChoice = 12
