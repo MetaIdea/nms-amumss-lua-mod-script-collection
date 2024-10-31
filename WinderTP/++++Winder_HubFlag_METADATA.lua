@@ -76,6 +76,7 @@ HUBFLAG_GROUPS =	-- BASEBUILDINGTABLE GROUPS
 		{
 			{["ID"] = "WDECOR_F",		["Name"] = "WDECOR_F_NAME"},
 			{["ID"] = "WDECOR_T",		["Name"] = "WDECOR_T_NAME"},
+			{["ID"] = "WDECOR_EQ",		["Name"] = "WDECOR_EQ_NAME"},
 			{["ID"] = "WDECOR_IL",		["Name"] = "WDECOR_IL_NAME"},
 			{["ID"] = "WDECOR_W",		["Name"] = "WDECOR_W_NAME"},
 			{["ID"] = "WDECORA",		["Name"] = "WDECORA_NAME"},
@@ -906,6 +907,27 @@ ADD_LANGUAGE_LIST =
 					 ["SimplifiedChinese"]		= [[桌上物件]],	
 					 ["TraditionalChinese"]		= [[桌上物件]],	
 					 ["TencentChinese"]			= [[桌上物件]],	
+					 ["Korean"]					= [[]],	
+					 ["Japanese"]				= [[]],	
+					 ["USEnglish"]				= [[]],	
+					},
+	},
+	["WDECOR_EQ_NAME"] = {
+		["ID"] = "WDECOR_EQ_NAME",
+		["Value"] = {["English"]				= [[EQUIPMENT]],
+					 ["French"]					= [[]],	
+					 ["Italian"]				= [[]],	
+					 ["German"]					= [[]],	
+					 ["Spanish"]				= [[]],	
+					 ["Russian"]				= [[]],	
+					 ["Polish"]					= [[]],	
+					 ["Dutch"]					= [[]],	
+					 ["Portuguese"]				= [[]],	
+					 ["LatinAmericanSpanish"]	= [[]],	
+					 ["BrazilianPortuguese"]	= [[]],	
+					 ["SimplifiedChinese"]		= [[装备]],	
+					 ["TraditionalChinese"]		= [[裝備]],	
+					 ["TencentChinese"]			= [[装备]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -3740,6 +3762,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CR_W_ROOF2", "PF_CR_W_ROOF3", "PF_CR_W_ROOF4", "PF_CR_W_ROOF5",},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4316,6 +4339,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CR_M_ROOF2", "PF_CR_M_ROOF3", "PF_CR_M_ROOF4", "PF_CR_M_ROOF5"},
+						-- ["FamilyID"] =					"PF_CR_M_ROOF",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4360,6 +4385,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						-- ["FamilyID"] =					"PF_CR_M_ROOF",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4404,6 +4430,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						-- ["FamilyID"] =					"PF_CR_M_ROOF",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4448,6 +4475,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						-- ["FamilyID"] =					"PF_CR_M_ROOF",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4492,6 +4520,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						-- ["FamilyID"] =					"PF_CR_M_ROOF",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -4892,6 +4921,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CR_C_ROOF2", "PF_CR_C_ROOF3", "PF_CR_C_ROOF4", "PF_CR_C_ROOF5"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -5200,6 +5230,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
+						["CompositePartObjectIDs"] =	{"PF_O_OBS_TRA", "PF_O_FAC_TRA", "PF_O_HAR_TRA", "PF_O_RAD2_TRA"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -5560,6 +5591,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
+						["CompositePartObjectIDs"] =	{"PF_O_FAC_SCI", "PF_O_HAR_SCI", "PF_O_OBS_SCI", "PF_O_RAD_SCI"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -5824,6 +5856,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
+						["CompositePartObjectIDs"] =	{"PF_O_HAR_WAR", "PF_O_OBS_WAR", "PF_O_RAD_WAR"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -6019,50 +6052,6 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_COR_SCI",
-						["PlacementScene"] =			"",
-						["Style"] = 					"Metal",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\OUTPOST\CORRIDOR\SCIENTIFIC\CORRIDOR.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"False",
-						["IsDecoration"] = 				"False",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_COR" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"True",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"BLD_CORRIDOR_NAME_L",
-						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"100"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"PF_COR_TRA",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Wood",
@@ -6089,6 +6078,51 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
+						["CompositePartObjectIDs"] =	{"PF_COR_SCI", "PF_COR_WAR"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BLD_CORRIDOR_NAME_L",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_COR_SCI",
+						["PlacementScene"] =			"",
+						["Style"] = 					"Metal",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\OUTPOST\CORRIDOR\SCIENTIFIC\CORRIDOR.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"False",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_COR" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"True",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -6977,6 +7011,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_RUIN_ROOF1", "PF_RUIN_ROOF2", "PF_RUIN_ROOF3", "PF_RUIN_ROOF5"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -7413,6 +7448,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_SRU_WALLS2", "PF_SRU_WALLS3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -7557,6 +7593,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_SRU_WALLT2", "PF_SRU_WALLT3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -8685,6 +8722,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_B_R_POST_2", "PF_B_R_POST_3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -9009,6 +9047,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_RUIN_ROOF1_2", "PF_RUIN_ROOF2_2", "PF_RUIN_ROOF3_2", "PF_RUIN_ROOF5_2"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -10051,6 +10090,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBLASTDOOR_VX2", "WBLASTDOOR_VX3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -10097,6 +10137,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBLASTDOOR_V2X2", "WBLASTDOOR_V2X3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -11127,6 +11168,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
+						["CompositePartObjectIDs"] =	{"PF_O_LUNAR_2", "PF_O_LUNAR_3", "PF_O_LUNAR_4", "PF_O_LUNAR_5"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -12483,6 +12525,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBLASTDOORX2", "WBLASTDOORX3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -12528,6 +12571,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBLASTDOOR_2X2", "WBLASTDOOR_2X3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -12801,6 +12845,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SERVERSTACK2", "SERVERSTACK3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -12989,6 +13034,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"DISCOFLOOR2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -13663,6 +13709,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PIPEX6", "PIPEX8"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -13672,7 +13719,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["Subtitle"] = 					"BLD_PIPESHAPE_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_PIPESHAPE_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PIPE.DDS",
+						["Icon"] = 						"",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"LAND1",
 											  ["InventoryType"] = 	"Substance",
@@ -13716,7 +13763,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["Subtitle"] = 					"BLD_PIPESHAPE_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_PIPESHAPE_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PIPE.DDS",
+						["Icon"] = 						"",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"LAND1",
 											  ["InventoryType"] = 	"Substance",
@@ -13760,7 +13807,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["Subtitle"] = 					"BLD_PIPESHAPE_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_PIPESHAPE_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PIPE.DDS",
+						["Icon"] = 						"",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"LAND1",
 											  ["InventoryType"] = 	"Substance",
@@ -14262,6 +14309,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LB_ROOFB", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -14817,6 +14865,55 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"PF_LB_PLAT_B2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\LARGEBUILDINGS\LARGESUPPORTWALKWAY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"True",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_LB_PLAT_B1", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Planetary Archive Large Platform",
+						["Subtitle"] = 					"BLD_ROOMFLOOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_ROOMFLOOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+											{ ["ID"] = 				"ROCKETSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"PF_LB_PLAT_B1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -14857,54 +14954,6 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 											{ ["ID"] = 				"ASTEROID1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"100"
-											},
-											{ ["ID"] = 				"ROCKETSUB",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"25"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"PF_LB_PLAT_B2",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\LARGEBUILDINGS\LARGESUPPORTWALKWAY.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"False",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"True",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Planetary Archive Large Platform",
-						["Subtitle"] = 					"BLD_ROOMFLOOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"BLD_ROOMFLOOR_DESCRIPTION",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"ASTEROID1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"150"
 											},
 											{ ["ID"] = 				"ROCKETSUB",
 											  ["InventoryType"] = 	"Substance",
@@ -16311,6 +16360,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CAP_SCI2", "PF_CAP_SCI3", "PF_CAP_SCI4", "PF_CAP_SCI5", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -16531,6 +16581,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CAP_TRA2", "PF_CAP_TRA3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -16663,6 +16714,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_CAP_WAR2", "PF_CAP_WAR3", "PF_CAP_WAR4", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -17359,6 +17411,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
+						["CompositePartObjectIDs"] =	{"PF_ROAD_R_RAM", "PF_ROAD_R_L", "PF_ROAD_R_T", "PF_ROAD_R_X", "PF_ROAD_R_45", "PF_ROAD_R_90", "PF_ROAD_R_2X2", "PF_ROAD_R_2X2UP", "PF_ROAD_R_2X2UF", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -17879,6 +17932,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
+						["CompositePartObjectIDs"] =	{"PF_ROAD_L_L", "PF_ROAD_L_T", "PF_ROAD_L_X", "PF_ROAD_L_45", "PF_ROAD_L_90", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -18191,6 +18245,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
+						["CompositePartObjectIDs"] =	{"PF_ROAD_A_L", "PF_ROAD_A_T", "PF_ROAD_A_X", "PF_ROAD_A_45", "PF_ROAD_A_90", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -19156,6 +19211,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WINLOCK_1", "WINLOCK_2", "WINLOCK_3", "WINLOCK_4", "WINLOCK_5", "WINLOCK_6", "WINLOCK_7", "WINLOCK_8", "WINLOCK_9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -19906,6 +19962,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_MONO_PLAQ2", "PF_MONO_PLAQ3", "PF_MONO_PLAQ4", "PF_MONO_PLAQ4A", "PF_MONO_PLAQ5", "PF_MONO_PLAQ6", "PF_MONO_PLAQ7", "PF_MONO_PLAQ8", "PF_MONO_PLAQ9", "PF_MONO_PLAQ10", "PF_MONO_PLAQ12", "PF_MONO_PLAQ13", "PF_MONO_PLAQ14", "PF_MONO_PLAQ15" },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -21693,6 +21750,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"WAITCHAIR",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/WAITINGROOMCHAIR.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_F" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PROPCHAIR", "NPCCHAIRA", "NPCCHAIRB", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Geicoeng",
+						["Subtitle"] = 					"BLD_CHAIR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CHAIR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"PROPCHAIR",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -21725,50 +21827,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Sitaap",
-						["Subtitle"] = 					"BLD_CHAIR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"BLD_CHAIR_DESCRIPTION",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"30"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"WAITCHAIR",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/WAITINGROOMCHAIR.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "False",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Geicoeng",
 						["Subtitle"] = 					"BLD_CHAIR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"BLD_CHAIR_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -22621,6 +22679,55 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"SPROPB",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/SMALLPROPS/SMALLPROPB.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_T", "WDSPEC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SPROPA", "SPROPC"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Sailap",
+						["Subtitle"] = 					"Desk Gadget",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A desk gadget.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"TOXIC1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"SPROPA",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -22663,54 +22770,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											  ["Amount"] = 			"10"
 											},
 											{ ["ID"] = 				"DUSTY1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"10"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"SPROPB",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/SMALLPROPS/SMALLPROPB.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T", "WDSPEC" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Sailap",
-						["Subtitle"] = 					"Desk Gadget",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A desk gadget.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"10"
-											},
-											{ ["ID"] = 				"TOXIC1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"10"
 											},
@@ -23067,6 +23126,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"MARSFLAGB", "MARSFLAGC", "MARSFLAGD_1", "MARSFLAGD_2", "MARSFLAGD_3", "MARSFLAGD_4", "MARSFLAGD_5", "MARSFLAGD_6"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -23179,6 +23239,55 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											  ["Amount"] = 			"75"
 											},
 											{ ["ID"] = 				"CASING",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SSB_GUILDGLOBE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\MODULARPARTSTYPEB\DOCK\SHOPS\MAPSHOPAREA_GLOBE.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IL" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"BLGLOBEA", "BLGLOBEB", "BLGLOBED", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gungwui-Bo",
+						["Subtitle"] = 					"Holographic Cartograph",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_S_GLOWGLOBE_DESC",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+											{ ["ID"] = 				"GRAVBALL",
 											  ["InventoryType"] = 	"Product",
 											  ["Amount"] = 			"1"
 											},
@@ -23307,6 +23416,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"HOLOPEDA", "HOLOPEDB"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -23329,6 +23439,56 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"QUAD_PROD",
 											  ["InventoryType"] = 	"Product",
 											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SHACKB",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SHACKS\SHACK_TRA.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"True",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"True",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SHACKA", "SHACKC"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Loengjing",
+						["Subtitle"] = 					"Shack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A remote shack, buildable in the field.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
+											},
+											{ ["ID"] = 				"LAUNCHSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
 											},
 										}
 					}
@@ -23366,55 +23526,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Loujing",
-						["Subtitle"] = 					"Shack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A remote shack, buildable in the field.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"100"
-											},
-											{ ["ID"] = 				"LAUNCHSUB",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"25"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"SHACKB",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SHACKS\SHACK_TRA.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"False",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"True",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
-						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"True",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Loengjing",
 						["Subtitle"] = 					"Shack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A remote shack, buildable in the field.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -23898,6 +24009,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"MIS_TABLE1", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -24258,6 +24370,55 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},	
+	{	["OBJECT"] = {	["ID"] =						"GUNCRATE_NEW",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\CRATE\CRATE_WEAPON_NEW_DISPLAY.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"GUNCRATE", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"San-Unogun",
+						["Subtitle"] = 					"Multitool display case",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A display case with a multitool.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"CASING",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
+											},
+											{ ["ID"] = 				"FARMPROD7",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"GUNCRATE",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -24290,54 +24451,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Unogun",
-						["Subtitle"] = 					"Multitool display case",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A display case with a multitool.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"CASING",
-											  ["InventoryType"] = 	"Product",
-											  ["Amount"] = 			"2"
-											},
-											{ ["ID"] = 				"FARMPROD7",
-											  ["InventoryType"] = 	"Product",
-											  ["Amount"] = 			"1"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"GUNCRATE_NEW",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\CRATE\CRATE_WEAPON_NEW_DISPLAY.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"San-Unogun",
 						["Subtitle"] = 					"Multitool display case",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A display case with a multitool.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -24621,6 +24734,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PLANTPOTB", "PLANTPOTC", "PLANTPOTD"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -24814,6 +24928,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WNPCGTRA", "WNPCGWAR", "WNPCGCUR", "WNPCGDIP", "WNPCGFIF", "WNPCROBOG"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -25184,6 +25299,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"WNPCGSHOP",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\NPCS\NPC_SHOP_G.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WNPC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WNPCGMIS", "WNPCGUILD", "WNPCSHOP_SHIP", "WNPCSHOP_SUIT", "WNPCSHOP_WEAP", "WNPCSHOP_VEHI", "WNPCSHOP_CHEF", "WNPCSHOP_NANI", "WNPCSHOP_SCRA", "WNPCSHOP_MAP", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Soengjan",
+						["Subtitle"] = 					"Trading traveller",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A traveller who can trade with you.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											}
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"WNPCGMIS",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -25272,50 +25432,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"WNPCGSHOP",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\NPCS\NPC_SHOP_G.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WNPC" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "False",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Soengjan",
-						["Subtitle"] = 					"Trading traveller",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A traveller who can trade with you.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"ASTEROID1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"25"
-											}
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"WNPCSHOP_SHIP",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -25391,7 +25507,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Builong",
+						["NameLower"] = 				"Builong-maaigaa",
 						["Subtitle"] = 					"Suit Trader",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A suit tech trader.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -26162,6 +26278,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TECHCON2", "TECHCON3", "TECHCON4", "TECHCON5", "TECHCON6", "TECHCON7"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -26594,6 +26711,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TECHCARGOB", "TECHCARGOC", "TECHCARGOD"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -27074,6 +27192,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"COLOR_FILL2", "COLOR_FILL3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -27218,6 +27337,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"BEAMLIGHT2", "BEAMLIGHT3", "BEAMLIGHT4"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -27436,6 +27556,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"NASAP2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/POSTER/POSTER_2.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WPOSTER" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"NASAP1", "NASAP3", "NASAP4", "NASAP5", "NASAP6", "NASAP7", "NASAP8", "NASAP9", "NASAP10", "NASAP11", "NASAP12", "NASAP13", "NASAP14", "NASAP15", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Earth Poster",
+						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A poster designed by NASA Jet Propulsion Laboratory.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"NASAP1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -27468,50 +27633,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Ceres Poster",
-						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A poster designed by NASA Jet Propulsion Laboratory.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"30"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"NASAP2",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/POSTER/POSTER_2.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WPOSTER" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Earth Poster",
 						["Subtitle"] = 					"",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A poster designed by NASA Jet Propulsion Laboratory.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -28169,6 +28290,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
+						["CompositePartObjectIDs"] =	{"WWTOWER2", "WWTOWER3"},
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28639,6 +28761,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"SAFE_TALL1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\SAFE_TALL1.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECORA" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"True",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SAFE_CUBE1", "SAFE_CUBE2"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Bouhimsoeng",
+						["Subtitle"] = 					"Safe",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A safe.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"SAFE_CUBE1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -28727,50 +28894,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"SAFE_TALL1",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\SAFE_TALL1.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECORA" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"True",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Bouhimsoeng",
-						["Subtitle"] = 					"Safe",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A safe.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"50"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"ATM_DECOR1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -28811,6 +28934,59 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"LAND2",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"3"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"CRYS_BAR1_C",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\CRYSTAL_CART.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECORA" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"CRYS_BAR1", "CRYS_BAR1_G"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gamce",
+						["Subtitle"] = 					"Tychronite Crystal cart",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A cart full of Tychronite Crystals.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ALLOY8",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"6"
+											},
+											{ ["ID"] = 				"GAS2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"200"
+											},
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
 											},
 										}
 					}
@@ -28911,58 +29087,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"CRYS_BAR1_C",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\CRYSTAL_CART.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Gamce",
-						["Subtitle"] = 					"Tychronite Crystal cart",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A cart full of Tychronite Crystals.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"ALLOY8",
-											  ["InventoryType"] = 	"Product",
-											  ["Amount"] = 			"6"
-											},
-											{ ["ID"] = 				"GAS2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"200"
-											},
-											{ ["ID"] = 				"LAND1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"25"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"WBAR1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -29003,6 +29127,55 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"LAND2",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WCHIP1_STA2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\CHIP_STACK_CRATE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECORA" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCHIP1_SIN", "WCHIP1_STA1"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zyuzai",
+						["Subtitle"] = 					"Crate of Niteliosis Chips",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Stacks of Niteliosis Chips, in a crate.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"HYDRALIC",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"4"
+											},
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
 											},
 										}
 					}
@@ -29089,54 +29262,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["NameLower"] = 				"Cindoi",
 						["Subtitle"] = 					"Stacks of Niteliosis Chips",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Stacks of Niteliosis Chips.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"HYDRALIC",
-											  ["InventoryType"] = 	"Product",
-											  ["Amount"] = 			"4"
-											},
-											{ ["ID"] = 				"LAND3",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"100"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"WCHIP1_STA2",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\BANK\HEIST\CHIP_STACK_CRATE.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Zyuzai",
-						["Subtitle"] = 					"Crate of Niteliosis Chips",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"Stacks of Niteliosis Chips, in a crate.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						"",
 						["Requirements"] ={ 
@@ -30394,6 +30519,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TRASHTECH2", "TRASHTECH3", "TRASHTECH4", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -31256,6 +31382,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"SCI_FACTOROOF",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\OUTPOST\SCI\ROOF_FACTORY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SCI_UPIPE", "SCI_BPISTON", "SCI_BSILO", "SCI_SHOPROOF"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Ngauhung",
+						["Subtitle"] = 					"Cargo Depot",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A cargo depot.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"SCI_UPIPE",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -31388,50 +31559,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"SCI_FACTOROOF",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\OUTPOST\SCI\ROOF_FACTORY.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_IND" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Ngauhung",
-						["Subtitle"] = 					"Cargo Depot",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A cargo depot.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"75"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"SCI_SHOPROOF",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -31502,6 +31629,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TRA_OBSROOF", "TRA_RADTOWER", "TRA_2PIPES", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -31652,6 +31780,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"WAR_TURBINE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\OUTPOST\WAR\ROOF_HARVESTER.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WAR_SILO", "WAR_FACTOROOF", "WAR_SATE", "WAR_CAP1", "WAR_STURB1", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Causeoigei",
+						["Subtitle"] = 					"Large Turbine",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A large turbine.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"WAR_SILO",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -31730,50 +31903,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["NameLower"] = 				"Maa-Jintung",
 						["Subtitle"] = 					"Cargo Depot",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A cargo depot.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"50"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"WAR_TURBINE",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\OUTPOST\WAR\ROOF_HARVESTER.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_IND" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Causeoigei",
-						["Subtitle"] = 					"Large Turbine",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A large turbine.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						"",
 						["Requirements"] ={ 
@@ -32082,6 +32211,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"UG_SPROP2", "UG_SPROP3", "UG_SPROP4", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -32248,7 +32378,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -32276,50 +32406,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"EXPROP_PACK",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\EXPLORER_BACKPACK.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Builong",
-						["Subtitle"] = 					"Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A backpack.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"10"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"EXPROP_BINO",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -32336,7 +32422,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -32380,7 +32466,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -32522,6 +32608,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WLOCK_S_1", "WLOCK_S_2", "WLOCK_S_3", "WLOCK_S_4", "WLOCK_S_5", "WLOCK_S_6", "WLOCK_S_7", "WLOCK_S_8", "WLOCK_S_9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -33040,7 +33127,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33050,6 +33137,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PROP_ARMOR2", "PROP_ARMOR3", "CHEST_BUG1", "CHEST_DIVE"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -33084,7 +33172,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33128,7 +33216,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33172,7 +33260,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33216,7 +33304,97 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"BOOTS_DIVE", "BOOTS_BUG1"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Hoe",
+						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An armor piece.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BACKPACK_PROP",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"EXPROP_PACK", "BPACK_ATLAS", "BPACK_DIVE", "BPACK_BUG1", "BPACK_SENT"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Louying-Long",
+						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An exosuit backpack.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"EXPROP_PACK",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\EXPLORER_BACKPACK.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33231,9 +33409,9 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Hoe",
-						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"An armor piece.",
+						["NameLower"] = 				"Builong",
+						["Subtitle"] = 					"Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A backpack.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						"",
 						["Requirements"] ={ 
@@ -33358,6 +33536,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"JUNK_PIPE2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -33454,6 +33633,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"JUNK_CABLE2", "JUNK_CABLE3", "JUNK_CABLE4", "JUNK_CABLE5", "JUNK_CABLE6", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -34014,6 +34194,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"DPLATE_EYE", "DPLATE_LEFT", "DPLATE_RIGHT"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -34348,50 +34529,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"BACKPACK_PROP",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Louying-Long",
-						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"An exosuit backpack.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"20"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"FLATPANEL_SQ",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -34670,138 +34807,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"SCRAP_BALL",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREB_CORE.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_W" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Titkau",
-						["Subtitle"] = 					"Scrap Orb",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A scrap orb.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"SPACEGUNK3",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"25"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"SCRAPHEAP_1",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREA.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_W" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Deoitin",
-						["Subtitle"] = 					"Scrapheap",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A scrapheap.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"SPACEGUNK3",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"100"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"SCRAPHEAP_2",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREC.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_W" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Dinzi-Laapsaap",
-						["Subtitle"] = 					"Scrapheap",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A scrapheap.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"SPACEGUNK3",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"100"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"SCRAP_W_1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -34828,6 +34833,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SCRAP_W_2", "SCRAP_W_3", "SCRAP_W_4", "SCRAP_W_5", "SCRAP_W_6", "SCRAP_W_7", "SCRAP_BALL", "SCRAPHEAP_1", "SCRAPHEAP_2"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -35110,6 +35116,138 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"SCRAP_BALL",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREB_CORE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Titkau",
+						["Subtitle"] = 					"Scrap Orb",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A scrap orb.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SCRAPHEAP_1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREA.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Deoitin",
+						["Subtitle"] = 					"Scrapheap",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A scrapheap.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SCRAPHEAP_2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\GARDEN\RARERESOURCE\U175\SCRAPCOREC.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Dinzi-Laapsaap",
+						["Subtitle"] = 					"Scrapheap",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A scrapheap.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"SMALL_RADIO",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -35284,6 +35422,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TRADP_TOP_SCI", "TRADP_TOP_WAR"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -36020,6 +36159,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"IND_BEAM2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -36108,6 +36248,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"IND_PIPE2", "IND_PIPE3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -36240,6 +36381,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"HANGCLOTH2", "HANGCLOTH3", "HANGCLOTH4", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -37436,6 +37578,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"FLATLIGHT_2", "FLATLIGHT_3", "FLATLIGHT_4", "FLATLIGHT_5", "FLATLIGHT_6", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -37700,6 +37843,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SLIGHT_L2", "SLIGHT_L3", "SLIGHT_L4", "SLIGHT_L5", "SLIGHT_L6", "SLIGHT_L7", "SLIGHT_L8", "SLIGHT_L9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -38096,6 +38240,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"TINYLIGHT_2", "TINYLIGHT_3", "TINYLIGHT_4", "TINYLIGHT_5", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -38540,6 +38685,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBOBBLE_ARTE", "WBOBBLE_ATLA", "WBOBBLE_NADA", "WBOBBLE_POLO", "WBOBBLE_NUL", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -39638,6 +39784,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LB_TECHSHACK", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -40105,7 +40252,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -40115,6 +40262,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"HELMET_ATLAS", "HELMET_DIVE", "HELMET_BUG1", "HELMET_BUG2", "HELMET_BUG3", "HELMET_BUG4", "HELMET_BUG5", "HELMET_MF", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -40177,6 +40325,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"FARMPROD3",
 											  ["InventoryType"] = 	"Product",
 											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"DUN_SLIME_10",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DUNGEON\INFESTATION\LARGECORNERSLIME.SCENE.MBIN",
+						["DecorationType"] = 			"Ceiling",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"DUN_SLIME_1", "DUN_SLIME_2", "DUN_SLIME_3", "DUN_SLIME_4", "DUN_SLIME_5", "DUN_SLIME_6", "DUN_SLIME_8", "DUN_SLIME_9", "DUN_SLIME_S1", "DUN_SLIME_S2", "DUN_SLIME_S3"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Daaidiu-beisi",
+						["Subtitle"] = 					"Slime",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A ball of slime.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK4",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"65"
 											},
 										}
 					}
@@ -40709,50 +40902,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"DUN_SLIME_10",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DUNGEON\INFESTATION\LARGECORNERSLIME.SCENE.MBIN",
-						["DecorationType"] = 			"Ceiling",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_W" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Daaidiu-beisi",
-						["Subtitle"] = 					"Slime",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A ball of slime.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"SPACEGUNK4",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"65"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"LB_SIGN_V",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -40780,6 +40929,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LB_SIGN_M1", "LB_SIGN_M2", "LB_SIGN_M3", "LB_SIGN_K"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -41025,6 +41175,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LB_ANT_2", "LB_ANT_3", "LB_ANT_4", "LB_ANT_5", "LB_CRANE", "LB_SILO", "LB_ANT_6", "LB_ANT_7", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -41802,6 +41953,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"COOK_BAIT2", "COOK_BAIT3", "COOK_BAIT4", "COOK_BAIT5", "COOK_BAIT6", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -42056,6 +42208,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"NANOTUBES",
 											  ["InventoryType"] = 	"Product",
 											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HANDPROP9",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\ACCESSORIES/HOLODRONE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_T" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"HANDPROP4", "HANDPROP5", "HANDPROP6", "HANDPROP7", "HANDPROP8", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Souma-boulung",
+						["Subtitle"] = 					"Small Drone Projector",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A small hand gadget.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
 											},
 										}
 					}
@@ -42412,50 +42609,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"HANDPROP9",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\ACCESSORIES/HOLODRONE.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Souma-boulung",
-						["Subtitle"] = 					"Small Drone Projector",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A small hand gadget.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"10"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"ATLASLIGHT_FOG1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -42482,6 +42635,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"ATLASLIGHT_FOG2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -42616,7 +42770,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42626,6 +42780,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"T_GUNPROP_P2", "T_GUNPROP_P3", "T_GUNPROP_P5", "T_GUNPROP_P6", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -42660,7 +42815,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42675,7 +42830,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Ngaakbaa",
+						["NameLower"] = 				"Daanwui",
 						["Subtitle"] = 					"Multitool Part",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A disassembled multitool part.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -42704,7 +42859,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42719,7 +42874,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Ngaakbaa",
+						["NameLower"] = 				"Haa-geiwui",
 						["Subtitle"] = 					"Multitool Part",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A disassembled multitool part.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -42748,7 +42903,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42763,7 +42918,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Ngaakbaa",
+						["NameLower"] = 				"Soeng-geiwui",
 						["Subtitle"] = 					"Multitool Part",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A disassembled multitool part.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -42792,7 +42947,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42807,7 +42962,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Ngaakbaa",
+						["NameLower"] = 				"Saucoeng-baa",
 						["Subtitle"] = 					"Multitool Part",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"A disassembled multitool part.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -42836,7 +42991,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42846,6 +43001,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"T_GUNPROP_G2", "T_GUNPROP_G3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -42880,7 +43036,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42924,7 +43080,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -42948,6 +43104,51 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"LAND3",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"COOK_FOOD2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\COOKER/COOKER_FOOD2.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_T" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"COOK_FOOD1", "COOK_FOOD3"},
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Hungcoeng",
+						["Subtitle"] = 					"Food Item",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Cooked food.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"CREATURE1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
 											},
 										}
 					}
@@ -42984,50 +43185,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Linngau",
-						["Subtitle"] = 					"Food Item",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"Cooked food.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"CREATURE1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"15"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"COOK_FOOD2",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\COOKER/COOKER_FOOD2.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Hungcoeng",
 						["Subtitle"] = 					"Food Item",				-- Subtitle SET TO NameLower IF LEFT EMPTY
 						["Description"] = 				"Cooked food.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
@@ -43266,6 +43423,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"FAKE_FREI_2", "FAKE_FREI_3", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -43422,6 +43580,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"FAKE_FREI_5", "FAKE_FREI_6", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -43578,6 +43737,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"POL_DRONE_A", "POL_DRONE_M", "POL_DRONE_S"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -44378,6 +44538,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"W_DROPPOD_2", "W_DROPPOD_3", "W_DROPPOD_4", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -44570,6 +44731,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"CHAIR_TRASH_2", "CHAIR_TRASH_3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -44702,6 +44864,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LUNAR_PROP_2", "LUNAR_PROP_3", "LUNAR_PROP_4", "LUNAR_PROP_5"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -44922,6 +45085,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SETTLE_MONU_F", "SETTLE_MONU_T"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -46714,6 +46878,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WDEPOT_SCI", "WDEPOT_WAR"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -46846,6 +47011,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+
+						["CompositePartObjectIDs"] =	{"POL_COR_QUAD_C", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -47112,7 +47279,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -47122,6 +47289,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"POL_GUNPROP_G2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -47156,7 +47324,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -47438,6 +47606,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PIR_IND_GUN2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -47670,6 +47839,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PIR_IND_MAINT2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -48199,6 +48369,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SSB_AC_SMALL", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -48379,6 +48550,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SSB_HUGECAR_O", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -48687,6 +48859,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SSB_PANEL_L", "SSB_PANEL_XL"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -48921,54 +49094,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"LAND3",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"10"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"SSB_GUILDGLOBE",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\MODULARPARTSTYPEB\DOCK\SHOPS\MAPSHOPAREA_GLOBE.SCENE.MBIN",
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_IL" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Gungwui-Bo",
-						["Subtitle"] = 					"Holographic Cartograph",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"BLD_S_GLOWGLOBE_DESC",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"30"
-											},
-											{ ["ID"] = 				"GRAVBALL",
-											  ["InventoryType"] = 	"Product",
-											  ["Amount"] = 			"1"
 											},
 										}
 					}
@@ -49463,6 +49588,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"PF_RUINN_SCI02", "PF_RUINN_SCI03", "PF_RUINN_SCI04", "PF_RUINN_SCI05", "PF_RUINN_SCI06", "PF_RUINN_SCI07", "PF_RUINN_SCI08", "PF_RUINN_SCI09", "PF_RUINN_SCI10", "PF_RUINN_SCI11A", "PF_RUINN_SCI11B", "PF_RUINN_SCI12", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -50077,7 +50203,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -50087,6 +50213,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"T_FISHROD_2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -50121,7 +50248,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_T" },
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -50241,6 +50368,711 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_ATLAS",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADATLAS.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zim-Taukwai",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_DIVE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADDIVING.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cimseoi-Taukwai",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_BUG1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADAPODBASE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Moucung-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_BUG2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADAPODCRYSTAL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Seoizingcung-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_BUG3",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADAPODSPIKE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Ngaaucung-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_BUG4",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADAPODTOXIC.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Dukcung-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_BUG5",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADAPODWASP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Wongfung-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"HELMET_MF",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\HEAD\HEADOCTHULHU.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Baazaau-Tau",
+						["Subtitle"] = 					"Helmet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Helmet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"CHEST_BUG1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\CHEST\CHESTAPOD.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cung-Gaap",
+						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An armor piece.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"CHEST_DIVE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\CHEST\CHESTDIVING.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cimseoi-Gaap",
+						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An armor piece.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BPACK_ATLAS",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK\BACKPACKATLAS.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zim-syubaau",
+						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An exosuit backpack.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BPACK_DIVE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK\BACKPACKDIVING.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cimseoi-syubaau",
+						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An exosuit backpack.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BPACK_BUG1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK\BACKPACKAPOD.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cung-syubaau",
+						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An exosuit backpack.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BPACK_SENT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BACKPACK\BACKPACKSENTINEL.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Caailou-syubaau",
+						["Subtitle"] = 					"Exosuit Backpack",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An exosuit backpack.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BOOTS_DIVE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BOOTS\BOOTSDIVING.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Cimseoi-Hoe",
+						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An armor piece.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"BOOTS_BUG1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\TABLETOP\BOOTS\BOOTSAPOD.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_EQ" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gaapcung-Hoe",
+						["Subtitle"] = 					"Armor Piece",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An armor piece.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	
 }
 
 HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
@@ -50271,7 +51103,8 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 	"False",
+						["CompositePartObjectIDs"] =	{"FLAGHUB1", "FLAGHUB2", "FLAGHUB3", "FLAGHUB4", "FLAGHUB5", "FLAGHUB6", "FLAGHUB7", "FLAGHUB8", },
+						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FLAG",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
@@ -50929,6 +51762,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"FLAGHUB616", },
 						["IsSealed"] = 	"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FLAG",		-- BASIC / CUBEROOM / DECOR
@@ -51023,6 +51857,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"FLAGHUB901", "FLAGHUB902", "FLAGHUB903", },
 						["IsSealed"] = 	"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FLAG",		-- BASIC / CUBEROOM / DECOR
@@ -51211,6 +52046,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"DECALHUB0", "DECALHUB1", "DECALHUB2", "DECALHUB3", "DECALHUB4", "DECALHUB6", "DECALHUB7", },
 						["IsSealed"] = 	"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR
@@ -51537,6 +52373,51 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"DECALHUB23",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				[[]], 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					[[CUSTOMMODELS/SC_HUBFLAG/LOGO_HUB23.SCENE.MBIN]],
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"False",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDAGT" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"DECALHUB20", "DECALHUB22", "DECALHUB24", "DECALHUB25", "DECALHUB26", "DECALHUB21", "DECALHUB21_1", },
+						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR
+					},
+		["PRODUCT"] = {	["Name"] = 						"",
+						["NameLower"] = 				"AGT Emblem",
+						["Subtitle"] = 					"Alliance of Galactic Travelers Emblem",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECAL_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						[[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB23/DECAL.HUB23.DDS]],
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"DECALHUB20",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -51705,50 +52586,6 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["Description"] = 				"BLD_DECAL_DESCRIPTION",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						[[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB22/DECAL.HUB22.DDS]],
-						["Requirements"] ={ 
-											{ ["ID"] = 				"FUEL1",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"20"
-											},
-										}
-					}
-	},
-	{	["OBJECT"] = {	["ID"] =						"DECALHUB23",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				[[]], 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					[[CUSTOMMODELS/SC_HUBFLAG/LOGO_HUB23.SCENE.MBIN]],
-						["DecorationType"] = 			"SurfaceNormal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"False",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDAGT" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "False",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 	"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR
-					},
-		["PRODUCT"] = {	["Name"] = 						"",
-						["NameLower"] = 				"AGT Emblem",
-						["Subtitle"] = 					"Alliance of Galactic Travelers Emblem",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"BLD_DECAL_DESCRIPTION",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						[[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB23/DECAL.HUB23.DDS]],
 						["Requirements"] ={ 
 											{ ["ID"] = 				"FUEL1",
 											  ["InventoryType"] = 	"Substance",
@@ -53725,6 +54562,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LETTERLBU", "LETTERLCU", "LETTERLDU", "LETTERLEU", "LETTERLFU", "LETTERLGU", "LETTERLHU", "LETTERLIU", "LETTERLJU", "LETTERLKU", "LETTERLLU", "LETTERLMU", "LETTERLNU", "LETTERLOU", "LETTERLPU", "LETTERLQU", "LETTERLRU", "LETTERLSU", "LETTERLTU", "LETTERLUU", "LETTERLVU", "LETTERLWU", "LETTERLXU", "LETTERLYU", "LETTERLZU", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -54869,6 +55707,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"LETTERLBL", "LETTERLCL", "LETTERLDL", "LETTERLEL", "LETTERLFL", "LETTERLGL", "LETTERLHL", "LETTERLIL", "LETTERLJL", "LETTERLKL", "LETTERLLL", "LETTERLML", "LETTERLNL", "LETTERLOL", "LETTERLPL", "LETTERLQL", "LETTERLRL", "LETTERLSL", "LETTERLTL", "LETTERLUL", "LETTERLVL", "LETTERLWL", "LETTERLXL", "LETTERLYL", "LETTERLZL", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -56013,6 +56852,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"NEONLETTER_LB", "NEONLETTER_LC", "NEONLETTER_LD", "NEONLETTER_LE", "NEONLETTER_LF", "NEONLETTER_LG", "NEONLETTER_LH", "NEONLETTER_LI", "NEONLETTER_LJ", "NEONLETTER_LK", "NEONLETTER_LL", "NEONLETTER_LM", "NEONLETTER_LN", "NEONLETTER_LO", "NEONLETTER_LP", "NEONLETTER_LQ", "NEONLETTER_LR", "NEONLETTER_LS", "NEONLETTER_LT", "NEONLETTER_LU", "NEONLETTER_LV", "NEONLETTER_LW", "NEONLETTER_LX", "NEONLETTER_LY", "NEONLETTER_LZ", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -57157,6 +57997,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WDECAL_MISC8", "WDECAL_MISC9", "WDECAL_MISC10", "WDECAL_MISC11",},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -57421,6 +58262,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WDECAL_FAC2", "WDECAL_FAC3", "WDECAL_FAC4", "WDECAL_FAC5", "WDECAL_FAC6", "WDECAL_FAC7", "WDECAL_FAC8", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -58125,6 +58967,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WDECAL_POR1", "WDECAL_POR2", "WDECAL_POR3", "WDECAL_POR4", "WDECAL_POR5", "WDECAL_POR6", "WDECAL_POR7", "WDECAL_POR8", "WDECAL_POR9", "WDECAL_PORA", "WDECAL_PORB", "WDECAL_PORC", "WDECAL_PORD", "WDECAL_PORE", "WDECAL_PORF"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -58829,6 +59672,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WDECAL_OBJ2", "WDECAL_OBJ3", "WDECAL_OBJ4", "WDECAL_OBJ5", "WDECAL_OBJ6", "WDECAL_OBJ7", "WDECAL_OBJ8", "WDECAL_OBJ9", "WDECAL_OBJ10", "WDECAL_OBJ11", "WDECAL_OBJ12", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -60237,6 +61081,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						-- ["CompositePartObjectIDs"] =	{"LETTERFS", "LETTEREX", "LETTERQS", "LETTERDASH", "LETTERSLASH", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECAL",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -60589,6 +61434,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCSTREE2", "WCSTREE3", "WCSTREE4", "WCSTREE5", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -60809,6 +61655,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCSTREEB2", "WCSTREEB3", "WCSTREEB4", "WCSTREEB5", "WCSTREEB6", "WCSTREEB7", "WCSTREEB8", "WCSTREEB9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -61205,6 +62052,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCSHRUB2", "WCSHRUB3", "WCSHRUB4", "WCSHRUB6", "WCSHRUB7", "WCSHRUB8", "WCSHRUB9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -61644,6 +62492,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCLSHRUB2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -61776,6 +62625,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCMROCK2", "WCMROCK3", "WCMROCK4", "WCMROCK6", "WCMROCK7", "WCMROCK8", "WCMROCK9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -62214,6 +63064,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCLROCK2", "WCLROCK3", "WCLROCK4", "WCLROCK5", "WCLROCK6", "WCLROCK7", "WCLROCK8", "WCLROCK9", "WCLROCK10", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -62786,6 +63637,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WRFPLANT2", "WRFPLANT3", "WRFPLANT4"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -62962,6 +63814,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WRFTREE2", "WRFTREE3", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -63138,6 +63991,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WSCOPLANT2", "WSCOPLANT3", "WSCOPLANT4", "WSCOPLANT5", "WSCOPLANT6", "WSCOPLANT7", "WSCOPLANT8", "WSCOPLANT9", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -63622,6 +64476,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WFROPLANT2", "WFROPLANT3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -63841,6 +64696,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBARROCK2", "WBARROCK3", "WBARROCK4", "WBARROCK5", "WBARROCK6", "WBARROCK7", "WBARROCK8", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -64237,6 +65093,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WFROROCK3", "WFROROCK4", "WFROROCK5", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -64413,6 +65270,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WFROROCK7", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -65261,6 +66119,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"BONES_C2", "BONES_C3", "BONES_M1", "BONES_M2", "BONES_M3", "BONES_R1", "BONES_R2", "BONES_R3", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -66329,6 +67188,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"SEACRYS_2", "SEACRYS_3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -66699,6 +67559,55 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"OLDSTONEP",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/PLAQUEWARRIOR.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"OLDSTONEA", "OLDSTONEB", "OLDSTONEC", "OLDSTONED", },
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Geinim-bei",
+						["Subtitle"] = 					"Ancient Plaque",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An ancient plaque.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"RED2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"OLDSTONEA",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -66891,54 +67800,6 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"OLDSTONEP",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/PLAQUEWARRIOR.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"False",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Geinim-bei",
-						["Subtitle"] = 					"Ancient Plaque",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"An ancient plaque.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"SPACEGUNK3",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"50"
-											},
-											{ ["ID"] = 				"RED2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"40"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"WWOODPLANT1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -67053,6 +67914,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WCSHRUB11", "WCSHRUB12"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -67317,6 +68179,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WLUSHPLANT2", "WLUSHPLANT3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -67853,6 +68716,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBAR_HIVE2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -67993,6 +68857,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WTOX_SHROM2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -68089,6 +68954,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WSEA_WEED2", "WSEA_WEED3", "WSEA_WEED4", "WSEA_WEED5", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -68421,6 +69287,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WLUSH_LSHROM2", "WLUSH_LSHROM3", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -68705,6 +69572,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WLUSH_MSHROM3", "WLUSH_MSHROM4"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -69041,6 +69909,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WSCOR_TREE2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -69185,6 +70054,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WSWAMP_TREE2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -69377,6 +70247,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WLS_BONE2", "WLS_BONE3", "WLS_BONE4", "WLS_BONE5", "WLS_BONE6", "WLS_BONE7", "WLS_BONE8", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -70369,6 +71240,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"POL_COR_CRYS2", "POL_COR_CRYS3", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -70649,6 +71521,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBURPLANTM_N", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -70737,6 +71610,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBURPLANTXL_E", "WBURPLANTXL_G"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -70869,6 +71743,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WBURRAREL_A", "WBURRAREL_B"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -71177,6 +72052,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WSUBTREEXL_B", "WSUBTREEXL_H"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -71405,6 +72281,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WUWCORAL_2", "WUWCORAL_3"},
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -71549,6 +72426,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
+						["CompositePartObjectIDs"] =	{"WFLOPLANTM_2", },
 						["IsSealed"] = 					"False",
 						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
@@ -72776,7 +73654,7 @@ return [[
 ]]
 end
 
-function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, COLLSCALE, ENCOLL, STACK, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, T_BASE, T_TOP, T_SCALE, SEAL, POWER, SNAP_SHORT)
+function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, COLLSCALE, ENCOLL, STACK, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, T_BASE, T_TOP, T_SCALE, SEAL, POWER, SNAP_SHORT, COMP_ID, SHOW)
 GROUP_INJECT = ""
 POWER_INJECT = ""
 POWER_INJECT = HUBFLAG_LINKGRID[POWER]
@@ -72784,6 +73662,8 @@ SNAP_INJECT = ""
 TOUCH_INJECT = ""
 SNAPDIST_INJECT = ""
 SINGLEPART = ""
+-- FAMILY_ENTRY = ""
+COMP_ENTRY = ""
 
 if PLACEMENT == "" then SINGLEPART = "_" .. ID end
 if SNAP == "" then SNAP_INJECT = MODEL 
@@ -72835,6 +73715,23 @@ for _m,n in pairs(GROUPS) do
 	end
 end
 
+if COMP_ID[1] == "Null" then
+	COMP_ENTRY = [[<Property name="CompositePartObjectIDs" />]]
+else
+	COMP_ENTRY = [[
+<Property name="CompositePartObjectIDs">
+]]
+	for _m,n in pairs(COMP_ID) do
+	COMP_ENTRY = COMP_ENTRY ..[[
+<Property value="NMSString0x10.xml">
+<Property name="Value" value="]] .. n .. [[" />
+</Property>]]
+	end
+	COMP_ENTRY = COMP_ENTRY .. [[
+</Property>
+]]
+end
+
 return [[ 
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
@@ -72884,8 +73781,8 @@ return [[
       <Property name="CanChangeColour" value="]] .. COLOUR .. [[" />
       <Property name="CanChangeMaterial" value="]] .. MAT .. [[" />
       <Property name="CanPickUp" value="False" />
-      <Property name="ShowInBuildMenu" value="True" />
-      <Property name="CompositePartObjectIDs" />
+      <Property name="ShowInBuildMenu" value="]] .. SHOW .. [[" />
+]] .. COMP_ENTRY .. [[
       <Property name="FamilyIDs" />
       <Property name="BuildEffectAccelerator" value="1" />
       <Property name="RemovesAttachedDecoration" value="]] .. RAD .. [[" />
@@ -73727,6 +74624,26 @@ function MakePlacementScenePath(ID)
 return [[CUSTOMMODELS\SC_HUBFLAG\PLACEMENT\]] .. ID .. [[\]] .. ID .. [[_PLACEMENT.SCENE]]
 end
 
+-- function GetBaseBuildingFamily(ID, OBJECTS)
+	-- EXPORT_OBJECT_LIST = {}
+	-- for _i,j in pairs(OBJECTS)do
+		-- table.insert(EXPORT_OBJECT_LIST, [[
+        -- <Property value="NMSString0x10.xml">
+          -- <Property name="Value" value="]] .. j .. [[" />
+        -- </Property>
+-- ]])
+	-- end
+-- return [[
+	-- <Property value="GcBaseBuildingFamily.xml">
+      -- <Property name="ID" value="]] .. ID .. [[" />
+      -- <Property name="FamilyType" value="Replacements" />
+      -- <Property name="ObjectIDs">]] .. EXPORT_OBJECT_LIST ..
+-- [[
+      -- </Property>
+    -- </Property>
+-- ]]
+-- end
+
 -- BEGIN PUTTING DATA TOGETHER
 
 -- if RECTUM_USED then
@@ -73764,6 +74681,7 @@ EXPORT_PARTS_LIST = {""}
 EXPORT_AUTOPARTDATA_LIST = {""}
 EXPORT_COST_LIST = {""}
 EXPORT_SPECSHOP= ""
+EXPORT_FAMILIES_LIST = {""}
 NEWFILES_FINAL = {}
 
 for _i,j in pairs(HUBFLAG_OBJPROD) do
@@ -73784,6 +74702,11 @@ end
 
 print("HUBFLAG_DEBUG Total added objects: " .. #HUBFLAG_OBJPROD)
 
+-- FAMILIES_LIST =
+-- {
+-- }
+COMP_HIDE_LIST = {}
+
 -- BUILDING TABLE ENTRIES
 for i,j in pairs(HUBFLAG_OBJPROD) do
 	-- CAN_SCALE = ""
@@ -73793,7 +74716,7 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 	-- end
 	-- ENTITY_TEMP = {}
 	-- SCENE_TEMP = {}
-	PLACEMENT_PATH = ""
+	local PLACEMENT_PATH = ""
 	if j["OBJECT"]["PlacementScene"] == "OBJPROD" or j["OBJECT"]["SnapPoints"] ~= ""
 		then
 			if j["OBJECT"]["PlacementScene"] == "" or j["OBJECT"]["PlacementScene"] == "OBJPROD"
@@ -73806,12 +74729,44 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 				else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
 			end
 	end
-	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
+	-- OBJECT_ORPHAN = true
+	local CompositeParts = {}
+	local OBJECT_SHOW = "True"
+	if j["OBJECT"]["CompositePartObjectIDs"] ~= nil then
+		CompositeParts = j["OBJECT"]["CompositePartObjectIDs"]
+		for _k,l in pairs(CompositeParts) do
+			table.insert(COMP_HIDE_LIST, l)	
+		end
+	else
+		CompositeParts = {"Null"}
+		for _m,n in pairs(COMP_HIDE_LIST) do
+			if j["OBJECT"]["ID"] == n then
+				j["OBJECT"]["ShowInBuildMenu"] = "False"
+				break
+			end
+		end
+	end
+	--[[if j["OBJECT"]["CompositePartObjectIDs"] ~= nil then
+		CompositeParts = j["OBJECT"]["CompositePartObjectIDs"]
+		for _k,l in pairs(CompositeParts) do
+			for _m,n in pairs(HUBFLAG_OBJPROD) do
+				if n["OBJECT"]["ID"] == l then
+					n["OBJECT"]["ShowInBuildMenu"] = "False"
+					break
+				end
+			end			
+		end
+	else CompositeParts = {"Null"}
+	end]]
+	if j["OBJECT"]["ShowInBuildMenu"] == "False" then
+		OBJECT_SHOW = "False"
+	end
+	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"], CompositeParts, OBJECT_SHOW)
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
-	IS_SPEC = false
+	local IS_SPEC = false
 	for _m,n in pairs(j["OBJECT"]["SubGroupName"]) do
 		if n == "WDSPEC" then IS_SPEC = true end		
 	end
@@ -73830,6 +74785,24 @@ for _i,j in pairs(HUBFLAG_SNAPGROUPS) do
 		table.insert(EXPORT_AUTOPARTDATA_LIST, getAutoPartData(j["ID"], l["Style"], l["Connection"]))
 	end
 end
+
+-- for _i,j in pairs(FAMILIES_LIST) do
+	-- table.insert(EXPORT_FAMILIES_LIST, [[    <Property value="GcBaseBuildingFamily.xml">
+      -- <Property name="ID" value="]] .. j["ID"] .. [[" />
+      -- <Property name="FamilyType" value="Replacements" />
+      -- <Property name="ObjectIDs">
+-- ]])
+	-- for _k,l in pairs(j["ObjectIDs"]) do
+		-- table.insert(EXPORT_FAMILIES_LIST, [[
+		-- <Property value="NMSString0x10.xml">
+          -- <Property name="Value" value="]] .. l .. [[" />
+        -- </Property>
+-- ]])
+	-- end
+	-- table.insert(EXPORT_FAMILIES_LIST, [[
+		-- </Property>
+      -- </Property>]])
+-- end
 
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
 CUSTOM_NPCS_LIST[#CUSTOM_NPCS_LIST + 1] = ""
@@ -74542,13 +75515,26 @@ BASEBUILD_ENTRIES =
 						["ADD_OPTION"]  = "ADDendSECTION", 
 						["ADD"] 				= EXPORT_BASEOBJECTS
 					},
+					-- {
+						-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml",},
+						-- ["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
+						-- -- ["LINE_OFFSET"] 		= "-1",
+						-- ["ADD_OPTION"]  = "ADDbeforeSECTION", 
+						-- ["ADD"] 				= EXPORT_GROUPS
+					-- },
 					{
 						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml",},
+						["SECTION_UP"] = 1,
 						["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
-						-- ["LINE_OFFSET"] 		= "-1",
-						["ADD_OPTION"]  = "ADDbeforeSECTION", 
+						["ADD_OPTION"]  = "ADDendSECTION", 
 						["ADD"] 				= EXPORT_GROUPS
 					},
+					-- {
+						-- ["PRECEDING_KEY_WORDS"] = {"Families",},
+						-- ["ADD_OPTION"]  = "ADDendSECTION", 
+						-- ["ADD"] 				= table.concat(EXPORT_FAMILIES_LIST)
+					-- },
+					
 				}
 
 -- THE FINAL COUNTDOWN

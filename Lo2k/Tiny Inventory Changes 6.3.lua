@@ -1,31 +1,31 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Tiny Inventory Changes 6.2.pak", 
-["MOD_AUTHOR"]				= "Lo2k",
-["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "5.21",
-["MOD_DESCRIPTION"]			= "This mods changes orientation and lighting of inventory 3D models",
-["MODIFICATIONS"] 			= 
+MOD_FILENAME 			= "Tiny Inventory Changes 6.3.pak", 
+MOD_AUTHOR				= "Lo2k",
+LUA_AUTHOR				= "Lo2k",
+NMS_VERSION				= "5.22",
+MOD_DESCRIPTION			= "This mods changes orientation and lighting of inventory 3D models",
+MODIFICATIONS 			= 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			MBIN_CHANGE_TABLE 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCUIGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					MBIN_FILE_SOURCE 	= "GCUIGLOBALS.GLOBAL.MBIN",
+					EXML_CHANGE_TABLE 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","Suit"},
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","Suit"},
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"LightPitch",	"60"},
 								{"LightRotate",	"0"},
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","Weapon"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","Weapon"},
+							INTEGER_TO_FLOAT 	= "FORCE",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"Distance",	"2.8"},
 								{"x",	"-0.5"},
@@ -36,9 +36,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","Ship"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","Ship"},
+							INTEGER_TO_FLOAT 	= "FORCE",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"Distance",	"0.48"},
 								{"x",	"-0.24"},
@@ -51,9 +51,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","Vehicle"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","Vehicle"},
+							INTEGER_TO_FLOAT 	= "FORCE",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"Distance", "27.0"},    -- value="1.2"
 								{"x",	"-5.8"},  -- +move object on the left
@@ -68,9 +68,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","TradeCompareShips"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","TradeCompareShips"},
+							INTEGER_TO_FLOAT 	= "FORCE",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"y",	"-0.015"},
 								{"Pitch",	"15"},
@@ -79,9 +79,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}	
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"ModelViews","Freighter"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							PRECEDING_KEY_WORDS = {"ModelViews","Freighter"},
+							INTEGER_TO_FLOAT 	= "FORCE",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{"x",	"-0.05"},  -- original -0.1  	+ move right
 								{"y",	"0.0"},    -- original 0.06  	+ move camera up

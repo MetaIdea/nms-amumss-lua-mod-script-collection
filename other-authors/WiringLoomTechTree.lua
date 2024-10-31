@@ -76,10 +76,59 @@ function newUnlockableItemTreeNode(unlockableItem, childrenNodes)
     return tree
 end
 
+function newLocalization(locID, language, locString)
+    local localization = ""
+    localization = localization .. [[
+    <Property value="TkLocalisationEntry.xml">
+      <Property name="Id" value="]] .. locID ..[[" />]]
+    if language == "English" then
+        localization = localization .. [[
+      <Property name="English" value="]] .. locString .. [[" />
+]]
+    else
+        localization = localization .. [[
+      <Property name="English" value="" />
+]]
+    end
+    localization = localization .. [[
+      <Property name="French" value="" />
+      <Property name="Italian" value="" />
+      <Property name="German" value="" />
+      <Property name="Spanish" value="" />
+      <Property name="Russian" value="" />
+      <Property name="Polish" value="" />
+      <Property name="Dutch" value="" />
+      <Property name="Portuguese" value="" />
+      <Property name="LatinAmericanSpanish" value="" />
+      <Property name="BrazilianPortuguese" value="" />
+]]
+    if language == "SimplifiedChinese" then
+        localization = localization .. [[
+      <Property name="SimplifiedChinese" value="]] .. locString .. [[" />
+]]
+    else
+        localization = localization .. [[
+      <Property name="SimplifiedChinese" value="" />
+]]
+    end
+    localization = localization .. [[
+      <Property name="TraditionalChinese" value="" />
+      <Property name="TencentChinese" value="" />
+      <Property name="Korean" value="" />
+      <Property name="Japanese" value="" />
+      <Property name="USEnglish" value="" />
+    </Property>
+]]
+    return localization
+end
+
 
 local UNLOCKABLE_ITEM_TREES = ""
 local REQUIREMENTS = {}
 local RECIPECOST = {}
+local LOCALIZATIONS = {}
+LOCALIZATIONS["English"] = ""
+LOCALIZATIONS["SimplifiedChinese"] = ""
 
 -- 新科技树
 --[[
@@ -107,39 +156,39 @@ local RECIPECOST = {}
             - 焚化者
 ]]
 
-REQUIREMENTS["TECH_COMP"] = newRequirements("LAND1", "Substance", 1)                                -- 卷线器
+REQUIREMENTS["TECH_COMP"] = newRequirements("MICROCHIP", "Product", 1, "CASING", "Product", 2, "ASTEROID3", "Substance", 40)                            -- 卷线器
 RECIPECOST["TECH_COMP"] = 1
-REQUIREMENTS["REPAIRKIT"] = newRequirements("LAND1", "Substance", 1)                                -- 维修套件
+REQUIREMENTS["REPAIRKIT"] = newRequirements("CASING", "Product", 1, "CARBON_SEAL", "Product", 1)                                                        -- 维修套件
 RECIPECOST["REPAIRKIT"] = 1
-REQUIREMENTS["ILLEGAL_PROD6"] = newRequirements("LAND1", "Substance", 1)                            -- 伪造电路
+REQUIREMENTS["ILLEGAL_PROD6"] = newRequirements("TECH_COMP", "Product", 1, "MAGNET", "Product", 1)                                                      -- 伪造电路
 RECIPECOST["ILLEGAL_PROD6"] = 4
-REQUIREMENTS["SALVAGE_TECH10"] = newRequirements("LAND1", "Substance", 1)                           -- 飞船AI阀门
+REQUIREMENTS["SALVAGE_TECH10"] = newRequirements("ALLOY4", "Product", 4, "MEGAPROD2", "Product", 1, "COMPOUND6", "Product", 1)                          -- 飞船AI阀门
 RECIPECOST["SALVAGE_TECH10"] = 16
-REQUIREMENTS["SENTINEL_LOOT"] = newRequirements("LAND1", "Substance", 1)                            -- 回收玻璃
+REQUIREMENTS["SENTINEL_LOOT"] = newRequirements("ROBOT1", "Substance", 100, "FARMPROD3", "Product", 1)                                                  -- 回收玻璃
 RECIPECOST["SENTINEL_LOOT"] = 4
-REQUIREMENTS["SHIPBRAIN_CLEAN"] = newRequirements("LAND1", "Substance", 1)                          -- 谐波脑部
+REQUIREMENTS["SHIPBRAIN_CLEAN"] = newRequirements("SHIPBRAIN", "Product", 1, "ROBOT1", "Substance", 16, "MIND_ARC", "Product", 1)                       -- 谐波脑部
 RECIPECOST["SHIPBRAIN_CLEAN"] = 8
-REQUIREMENTS["NAV_DATA"] = newRequirements("LAND1", "Substance", 1)                                 -- 导航数据
+REQUIREMENTS["NAV_DATA"] = newRequirements("CASING", "Product", 4, "MIRROR", "Product", 1, "MICROCHIP", "Product", 1)                                   -- 导航数据
 RECIPECOST["NAV_DATA"] = 1
-REQUIREMENTS["BP_SALVAGE"] = newRequirements("LAND1", "Substance", 1)                               -- 已回收的数据
+REQUIREMENTS["BP_SALVAGE"] = newRequirements("TECH_COMP", "Product", 1, "NAV_DATA", "Product", 1, "CARBON_SEAL", "Product", 1)                          -- 已回收的数据
 RECIPECOST["BP_SALVAGE"] = 2
-REQUIREMENTS["FRIG_TOKEN"] = newRequirements("LAND1", "Substance", 1)                               -- 已回收的护卫舰模块
+REQUIREMENTS["FRIG_TOKEN"] = newRequirements("BP_SALVAGE", "Product", 1, "COMPUTER", "Product", 8, "ALLOY6", "Product", 4)                              -- 已回收的护卫舰模块
 RECIPECOST["FRIG_TOKEN"] = 2
-REQUIREMENTS["FACT_TOKEN"] = newRequirements("LAND1", "Substance", 1)                               -- 工厂超控单元
+REQUIREMENTS["FACT_TOKEN"] = newRequirements("BP_SALVAGE", "Product", 1, "BIO", "Product", 8, "ALLOY3", "Product", 4)                                   -- 工厂超控单元
 RECIPECOST["FACT_TOKEN"] = 2
-REQUIREMENTS["STATION_KEY"] = newRequirements("LAND1", "Substance", 1)                              -- 空间站超控
+REQUIREMENTS["STATION_KEY"] = newRequirements("FRIG_TOKEN", "Product", 1, "FACT_TOKEN", "Product", 1, "COMPUTER", "Product", 1)                         -- 空间站超控
 RECIPECOST["STATION_KEY"] = 8
-REQUIREMENTS["SUIT_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 套装扩展装置
+REQUIREMENTS["SUIT_INV_TOKEN"] = newRequirements("TECH_COMP", "Product", 1, "BP_SALVAGE", "Product", 4, "ALLOY1", "Product", 4)                         -- 套装扩展装置
 RECIPECOST["SUIT_INV_TOKEN"] = 4
-REQUIREMENTS["SHIP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 储备扩充
+REQUIREMENTS["SHIP_INV_TOKEN"] = newRequirements("SUIT_INV_TOKEN", "Product", 1, "ALLOY4", "Product", 1)                                                -- 储备扩充
 RECIPECOST["SHIP_INV_TOKEN"] = 8
-REQUIREMENTS["FREI_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 货物舱壁
+REQUIREMENTS["FREI_INV_TOKEN"] = newRequirements("SUIT_INV_TOKEN", "Product", 1, "ALLOY2", "Product", 1)                                                -- 货物舱壁
 RECIPECOST["FREI_INV_TOKEN"] = 8
-REQUIREMENTS["WEAP_INV_TOKEN"] = newRequirements("LAND1", "Substance", 1)                           -- 多用途工具扩展栏位
+REQUIREMENTS["WEAP_INV_TOKEN"] = newRequirements("SUIT_INV_TOKEN", "Product", 1, "ALLOY5", "Product", 1)                                                -- 多用途工具扩展栏位
 RECIPECOST["WEAP_INV_TOKEN"] = 4
 --                                                                                                  -- 焚化者（已有配方）
 RECIPECOST["FLAME"] = 8
-UNLOCKABLE_ITEM_TREES = newUnlockableItemTree("UI_ZNE_MODIFICATIONS_TREE_TEST", "SPECIALS", "TECH_COMP",
+UNLOCKABLE_ITEM_TREES = newUnlockableItemTree("UI_WLTree_Title", "SPECIALS", "TECH_COMP",
     newUnlockableItemTreeNode("REPAIRKIT",
         newUnlockableItemTreeNode("ILLEGAL_PROD6",
             newUnlockableItemTreeNode("SALVAGE_TECH10")
@@ -164,6 +213,16 @@ UNLOCKABLE_ITEM_TREES = newUnlockableItemTree("UI_ZNE_MODIFICATIONS_TREE_TEST", 
 )
 )
 
+LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WL_LABEL", "English", "Explore thoughts")
+LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WL_SUBLABEL", "English", "Research the Wiring Loom Tech")
+LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_ModTree_Title", "English", "Mod Tech Trees")
+LOCALIZATIONS["English"] = LOCALIZATIONS["English"] .. newLocalization("UI_WLTree_Title", "English", "Wiring Loom Tech")
+
+LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WL_LABEL", "SimplifiedChinese", "探入思绪")
+LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WL_SUBLABEL", "SimplifiedChinese", "研究卷线科技")
+LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_ModTree_Title", "SimplifiedChinese", "模组科技树")
+LOCALIZATIONS["SimplifiedChinese"] = LOCALIZATIONS["SimplifiedChinese"] .. newLocalization("UI_WLTree_Title", "SimplifiedChinese", "卷线科技")
+
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "ZNE_WiringLoomTechTree.pak",
     ["MOD_AUTHOR"] = "ZNECrode",
@@ -187,6 +246,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["PRECEDING_KEY_WORDS"] = {"Trees"},
                             ["SECTION_ACTIVE"] = 1,
                             ["ADD"] = UNLOCKABLE_ITEM_TREES
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Title","TEST"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Title", "UI_ModTree_Title"}
+                            }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcUnlockableTreeCostType.xml"},
@@ -225,29 +290,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
         </Property>
       </Property>
     </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="R_ZNEMOD_QS" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="IncrementStat" value="" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="LabelID" value="" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="500" />
-              <Property name="AmountMax" value="500" />
-              <Property name="RoundNumber" value="False" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Specials" />
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
 ]]
                         }
                     }
@@ -262,8 +304,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="ID" value="TECH_COMP" />
       <Property name="RewardID" value="R_ZNEMOD_TREE" />
       <Property name="TutorialRewardID" value="" />
-      <Property name="ButtonLocID" value="UI_OPEN_GEODE" />
-      <Property name="ButtonSubLocID" value="UI_OPEN_GEODE_GOLD_SUB" />
+      <Property name="ButtonLocID" value="UI_WL_LABEL" />
+      <Property name="ButtonSubLocID" value="UI_WL_SUBLABEL" />
       <Property name="CloseInventoryWhenUsed" value="True" />
       <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="UI_PICKUP_NITROGENPLANT" />
@@ -583,6 +625,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"IsCraftable",	"True"},
 							}
 						}
+                    }
+                },
+                { -- Localizations
+                    ["MBIN_FILE_SOURCE"] = "LANGUAGE\NMS_LOC7_ENGLISH.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Table"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] = LOCALIZATIONS["English"]
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "LANGUAGE\NMS_LOC7_SIMPLIFIEDCHINESE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Table"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] = LOCALIZATIONS["SimplifiedChinese"]
+                        }
                     }
                 }
             }

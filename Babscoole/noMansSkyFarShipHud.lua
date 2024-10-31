@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "noMansSkyFarShipHud.pak",
 ["MOD_AUTHOR"]    = "hhliow",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.12",
+["NMS_VERSION"]   = "5.21",
 ["MODIFICATIONS"] =
     {
         {

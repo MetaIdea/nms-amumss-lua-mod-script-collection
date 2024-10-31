@@ -1,22 +1,22 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "No Bloom Effect 3.3.pak", 
-["MOD_AUTHOR"]      = "Lo2k",
-["LUA_AUTHOR"]      = "Babscole",
-["NMS_VERSION"]     = "5.20",
-["MOD_DESCRIPTION"] = "Disables bloom effect",
-["MODIFICATIONS"]   = 
+MOD_FILENAME    = "No Bloom Effect 3.4.pak", 
+MOD_AUTHOR      = "Lo2k",
+LUA_AUTHOR      = "Babscole",
+NMS_VERSION     = "5.22",
+MOD_DESCRIPTION = "Disables bloom effect",
+MODIFICATIONS   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			MBIN_CHANGE_TABLE = 
 			{ 
 				{ 
-					["MBIN_FILE_SOURCE"]  = "PIPELINES\PIPELINEDEFERRED.BIN",
-					["EXML_CHANGE_TABLE"] = 
+					MBIN_FILE_SOURCE  = "PIPELINES\PIPELINEDEFERRED.BIN",
+					EXML_CHANGE_TABLE = 
 					{
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomBright" enabled="true">]], 
@@ -25,8 +25,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomPre" enabled="true">]], 
@@ -35,8 +35,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomPost" enabled="true">]], 
@@ -45,8 +45,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomResolve" enabled="true">]], 
@@ -55,8 +55,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomExposure" enabled="true">]], 
@@ -65,8 +65,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NoBloom" enabled="false">]], 
@@ -77,12 +77,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{ 
-					["MBIN_FILE_SOURCE"]  = "PIPELINES\PIPELINEDEFERREDVR.BIN",
-					["EXML_CHANGE_TABLE"] = 
+					MBIN_FILE_SOURCE  = "PIPELINES\PIPELINEDEFERREDVR.BIN",
+					EXML_CHANGE_TABLE = 
 					{
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomBright" enabled="true">]], 
@@ -91,8 +91,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloom" enabled="true">]], 
@@ -101,8 +101,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomResolve" enabled="true">]], 
@@ -111,8 +111,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NewBloomExposure" enabled="true">]], 
@@ -121,8 +121,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["REPLACE_TYPE"]		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							REPLACE_TYPE		= "RAW",
+							VALUE_CHANGE_TABLE 	= 
 							{
 								{
 									[[    <Stage id="NoBloom" enabled="false">]], 
