@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "MEMORY"
-METADATA_NMS_VERSION    = "511"
+METADATA_MOD_MODULE     = "CHAT"
+METADATA_NMS_VERSION    = "522"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,7 +14,7 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_METADATA_CONSUMABLE_TABLE = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN"
+FILE_METADATA_MESSAGES = "METADATA\\GAMESTATE\\MESSAGES\\STATUSMESSAGEDEFINITIONS.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,19 +30,16 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_CONSUMABLE_TABLE,
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_MESSAGES,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SKW"] = 
+                            ["SKW"] = {"Id","FEED_CREATURE"},
+                            ["VCT"] =
                             {
-                                {"ID","TECHBOX",},
-                                {"ID","INVBOX",},
-                            },
-                            ["VCT"] = 
-                            {
-                                {"ButtonLocID","UI_DISMANTLE_TECHBOX",},
-                                {"ButtonSubLocID","UI_DISMANTLE_TECHBOX_SUB",},
+                                {"Message",""},
+                                {"ReplicateTo","None"},
+                                {"PostLocally","False"},
                             },
                         },
                     },

@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "5_12"
+GameVersion = "5_22"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part replaces the actual value (buying and selling price) for certain substances or products
@@ -523,6 +523,12 @@ AdjustItems =
 	},
 	{	--Automated Trap 		Metal Plating
 		"BUILDSEAHARVEST",		"CASING",			6,			--3
+	},
+	{	--Elixir of Glass 		Shattered Qualia
+		"SPOOK_JUICE",			"SQUIDFRAG",		2,			--10
+	},
+	{	--Elixir of Blood #4	Shattered Qualia
+		"MESSAGE_JUICE4",		"SQUIDFRAG",		5,			--25
 	},
 }
 --Adds various items as new components for certain objects

@@ -14,8 +14,8 @@ METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for custom local
 -- languange entries: missions
 ----------------------------------------------------------------------------------------------------
 
-GAME_VERSION = "5.12"
-GAME_UPDATE = "Aquarius"
+GAME_VERSION = "5.22"
+GAME_UPDATE = "Cursed"
 
 --------------------------------------------------
 -- main mission misc + tooltips
@@ -1291,16 +1291,6 @@ Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to 
 -- bobblehead models
 --------------------------------------------------
 
-TEXT_BOBBLE_GLOBE_N = "PLANETARY GLOBE STATUE"
-TEXT_BOBBLE_GLOBE_L = "Planetary Globe Statue"
-TEXT_BOBBLE_GLOBE_S = "Dashboard Adornment"
-TEXT_BOBBLE_GLOBE_D = 
-[[
-An intricate dashboard gadget representing a globe found in &lt;STELLAR&gt;planetary settlements&lt;&gt;. The combination of mechanical workings and inner holographic display serves as a proof of the maker's craftsmanship.&#xA;&#xA;
-
-Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to decorate your ship's interior. Note that this element is purely decorative and it does not provide any stat bonuses.
-]]
-
 TEXT_BOBBLE_BLOB_N = "HOLOGRAPHIC BLOB FAUNA"
 TEXT_BOBBLE_BLOB_L = "Holographic Blob Fauna"
 TEXT_BOBBLE_BLOB_S = "Projected Dashboard Adornment"
@@ -1363,7 +1353,7 @@ Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to 
 
 TEXT_BOBBLE_STONE_N = "KNOWLEDGE STONE MODEL"
 TEXT_BOBBLE_STONE_L = "Knowledge Stone Model"
-TEXT_BOBBLE_STONE_S = "Planetary Marker Replica"
+TEXT_BOBBLE_STONE_S = "Planetary Feature Replica"
 TEXT_BOBBLE_STONE_D = 
 [[
 An intricate dashboard gadget featuring a scaled-down model of an &lt;RARE&gt;ancient Knowledge Stone&lt;&gt;. Highly prized among all types of interstellar travellers, this miniature landmark brings visions of home planet and fills the cockpit with a comfortable aura.&#xA;&#xA;
@@ -1373,7 +1363,7 @@ Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to 
 
 TEXT_BOBBLE_AQUATIC_N = "AQUATIC CRYSTAL MODEL"
 TEXT_BOBBLE_AQUATIC_L = "Aquatic Crystal Model"
-TEXT_BOBBLE_AQUATIC_S = "Planetary Marker Replica"
+TEXT_BOBBLE_AQUATIC_S = "Planetary Feature Replica"
 TEXT_BOBBLE_AQUATIC_D = 
 [[
 An intricate dashboard gadget featuring a scaled-down model of an &lt;VISOR&gt;underwater crystal formation&lt;&gt;. Its cold surface emanates a serene energy, invoking visions of endless waves travelling over oceanic depths. It invites you. It calls you home.&#xA;&#xA;
@@ -1383,7 +1373,7 @@ Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to 
 
 TEXT_BOBBLE_GRAVE_N = "TRAVELLER GRAVE MODEL"
 TEXT_BOBBLE_GRAVE_L = "Traveller Grave Model"
-TEXT_BOBBLE_GRAVE_S = "Planetary Marker Replica"
+TEXT_BOBBLE_GRAVE_S = "Planetary Feature Replica"
 TEXT_BOBBLE_GRAVE_D = 
 [[
 An intricate dashboard gadget featuring a scaled-down model of a &lt;VAL_ON&gt;Traveller grave&lt;&gt;. This memento serves as a reminder of the dangers lurking in the never-ending quest of discovery.&#xA;&#xA;
@@ -1447,6 +1437,16 @@ TEXT_BOBBLE_SHARD_S = "Decorative Reality Glitch"
 TEXT_BOBBLE_SHARD_D =
 [[
 A stabilized instance of a &lt;PET5&gt;separator glitch&lt;&gt;, found exclusively on columned planets. Those spawns of otherworldly glass-like substrate bend the light rays in anomalous ways, causing some interstellar travellers to experience visions of a world of glass.&#xA;&#xA;
+
+Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to decorate your ship's interior. Note that this element is purely decorative and it does not provide any stat bonuses.
+]]
+
+TEXT_BOBBLE_GLOBE_N = "PLANETARY GLOBE STATUE"
+TEXT_BOBBLE_GLOBE_L = "Planetary Globe Statue"
+TEXT_BOBBLE_GLOBE_S = "Dashboard Adornment"
+TEXT_BOBBLE_GLOBE_D = 
+[[
+An intricate dashboard gadget representing a globe found in &lt;STELLAR&gt;planetary settlements&lt;&gt;. The combination of mechanical workings and inner holographic display serves as a proof of the maker's craftsmanship.&#xA;&#xA;
 
 Install this module in a &lt;TECHNOLOGY&gt;technology inventory slot&lt;&gt; to decorate your ship's interior. Note that this element is purely decorative and it does not provide any stat bonuses.
 ]]
@@ -2732,11 +2732,11 @@ PROPERTY_DEBUG_LOCFILE =
 ]]
 
 -- path to custom localization file
-FILE_LANG_APOLLO = "LANGUAGE\\" .. PREFIX .. "_" .. SUFFIX .. ".EXML"
+FILE_LANG_APOLLO = [[LANGUAGE\]] .. PREFIX .. "_" .. SUFFIX .. ".EXML"
 
 -- fix for typo in LAS localization file name
 if SUFFIX == "LatinAmericanSpanish" then
-FILE_LANG_APOLLO = "LANGUAGE\\" .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
+FILE_LANG_APOLLO = [[LANGUAGE\]] .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
 end
 
 --------------------------------------------------

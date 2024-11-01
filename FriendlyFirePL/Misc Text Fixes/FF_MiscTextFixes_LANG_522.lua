@@ -5,7 +5,7 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "LANG"
-METADATA_NMS_VERSION    = "511"
+METADATA_NMS_VERSION    = "522"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -741,7 +741,7 @@ This eerie, glassy shard was extracted from &lt;SPECIAL&gt;Sentinel debris&lt;&g
 TEXT_SENTGUN_NAME = "Boltcaster"
 
 -- UI - new verbiage for "cannot change difficulty settings at this time"
-TEXT_DIFFICULTY_MULTIPLAYER = "- Not available during Nexus mission or Multiplayer -"
+TEXT_DIFFICULTY_MULTIPLAYER = "Unavailable in Nexus missions or Multiplayer"
 
 -- UI - fixed typo in word "Nitrogren" in names of refining recipies
 TEXT_NITROGEN_REFINING = "Harness Organic Nitrogen"
@@ -897,30 +897,12 @@ Will function as a semi-autonomous &lt;TECHNOLOGY&gt;artificial pilot plugin&lt;
 The AI pilot will always cede control to the primary operator when they enter the cockpit.
 ]]
 
--- UI - fixed a typo in message about redeeming rewards on end of expedition
-TEXT_EXPED_END_REWARDS =
-[[
-Expedition &lt;TRADEABLE&gt;Complete&lt;&gt;!&#xA;
-Return to the &lt;SPECIAL&gt;Space Anomaly&lt;&gt; to view earned rewards&#xA;
-Use the &lt;EXPED&gt;Expedition Terminus&lt;&gt; to send valuable items to your primary save
-]]
-
 -- ITEM - fixed a typo in Pirate Transponder description ("possesion")
 TEXT_PIRATE_POSSESSION =
 [[
 A unique ID &lt;TECHNOLOGY&gt;transponder&lt;&gt;, ripped from the internal signal array of an &lt;STELLAR&gt;outlaw starship&lt;&gt;.&#xA;&#xA;
 Possession of such a device implies the destruction of the vessel in question. Turn it over to an envoy of the &lt;TECHNOLOGY&gt;Mercenaries Guild&lt;&gt; to collect any associated bounties.
 ]]
-
-
-
-----------------------------------------------------------------------------------------------------
--- localization file 9
-----------------------------------------------------------------------------------------------------
-
--- UI - added new text element for expedition 15 patch description
--- (yes there is a dedicated text entry but this is the easy cheap solution)
-TEXT_EXPED15_PATCH = "Join the Aquarius Expedition to catch fish, gather stories, and think about the one that got away..."
 
 
 
@@ -1180,13 +1162,9 @@ LIST_FIXES =
     UI_EXPED_CRE_ROBOT_MSG1B        = TEXT_EXPED_MECHFAUNA_1B,
     UI_EXPED_CRE_ROBOT_MSG2         = TEXT_EXPED_MECHFAUNA_2,
     UI_MECH_ARMY_HEAD_DESC          = TEXT_EXOMECH_LIQUIDATORS,
-    UI_EXPED_REWARDS_SEASON_MSG1    = TEXT_EXPED_END_REWARDS,
     UI_PIRATE_PROD_DESC             = TEXT_PIRATE_POSSESSION,
 
     --------------------------------------------------
-
-    -- localization file 9
-    UI_EXPED15MAIN_DESC             = TEXT_EXPED15_PATCH,
 }
 
 
@@ -1214,11 +1192,11 @@ PROPERTY_DEBUG_LOCFILE =
 ]]
 
 -- path to new localization file
-FILE_LANG_MISCTEXTFIXES = "LANGUAGE\\" .. PREFIX .. "_" .. SUFFIX .. ".EXML"
+FILE_LANG_MISCTEXTFIXES = [[LANGUAGE\]] .. PREFIX .. "_" .. SUFFIX .. ".EXML"
 
 -- fix for typo in LAS localization file name
 if SUFFIX == "LatinAmericanSpanish" then
-FILE_LANG_MISCTEXTFIXES = "LANGUAGE\\" .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
+FILE_LANG_MISCTEXTFIXES = [[LANGUAGE\]] .. PREFIX .. "_LATINAMERAICANSPANISH.EXML"
 end
 
 --------------------------------------------------

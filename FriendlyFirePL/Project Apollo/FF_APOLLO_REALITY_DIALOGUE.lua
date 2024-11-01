@@ -40,10 +40,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {   ["SEC_EDIT"] = "SEC_PUZZLE_MEMORY",   ["SKW"] = {"Mood","GcAlienMood.xml",},     ["LINE_OFFSET"] = 1,    ["VCT"] = {{"Mood","Positive",},},             },
                         {   ["SKW"] = {"Id","EXOTIC5_WAIT",},     ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_MEMORY",                                                  },
                           
-                        -- Hesperus dialogue: open research tree
-                        {   ["SKW"] = {"Id","%?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_TREE",                                               }, 
-                        {   ["SEC_EDIT"] = "SEC_PUZZLE_TREE",   ["VCT"] = { {"Name","TEXT_DIALOGUE_RESEARCH",},{"Value","R_SHIPTREE",},{"SelectedOnBackOut","False",},},    },    
-                        {   ["SKW"] = {"Id","EXOTIC5_WAIT",},   ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_TREE",                                              },
+                        -- Hesperus dialogue: open research tree + debug reward scanner tech silent
+                        {   ["SKW"] = {"Id","%?EXOTIC5C","Name","ALL_REQUEST_LEAVE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_TREE",                                                                           }, 
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_TREE",   ["VCT"] = {{"Name","TEXT_DIALOGUE_RESEARCH",},{"Value","R_SHIPTREE",},{"SelectedOnBackOut","False",},},                                 },   
+                        {   ["SEC_EDIT"] = "SEC_PUZZLE_TREE",   ["PKW"] = "Rewards",    ["ADD"] = [[<Property value="NMSString0x10.xml"><Property name="Value" value="RD_BLUEPRINT" /></Property>]],    },
+                        {   ["SKW"] = {"Id","EXOTIC5_WAIT",},   ["PKW"] = "Options",    ["SEC_ADD_NAMED"] = "SEC_PUZZLE_TREE",                                                                          },
 
                         -- plaque dialogue: offering the lexicon item
                         {   ["SKW"] = {"Name","UI_RUINS_SEEK_TREASURE",},   ["SEC_SAVE_TO"] = "SEC_PUZZLE_PLAQUE",                                                                        },

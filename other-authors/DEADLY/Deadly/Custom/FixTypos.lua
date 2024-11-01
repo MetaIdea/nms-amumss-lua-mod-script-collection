@@ -44,13 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Text", "EXP_SETTLER" }, -- EXP_SETTLERS
                             },
                         },
-                    }
-                },
-
-                --#region New typos since 5.0, may be 4.6, idk
-                { -- METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN
-                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
+                        -- new typos since 5.0, may be 4.60, idk
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Text", "WAR_SETTLERS" },
                             ["VALUE_MATCH"]        = "WAR_SETTLERS",
@@ -58,11 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "Text", "WAR_SETTLER" }, -- WAR_SETTLERS
                             },
                         },
-                    }
-                },
-                { -- METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN
-                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENSPEECHTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
                         {
                             ["SPECIAL_KEY_WORDS"]  = { "Text", "TRA_SETTLERS" },
                             ["VALUE_MATCH"]        = "TRA_SETTLERS",
@@ -72,7 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                     }
                 },
-                --#endregion
 
                 --#region OSD issues
                 { -- METADATA/SIMULATION/SCANNING/SCANEVENTTABLETUTORIAL.MBIN
@@ -142,6 +130,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 { "ObjectiveID", "UI_COMM_RET_OBJ" }, -- UI_OVERSEER_RET_OSD
                             },
                         },
+                        -- regexp: name="OSDMessage" value="UI_.*_OBJ[0-9]+"
+                        { -- Hire a base Scientist -> COORDINATES RECEIVED
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "SCIENTIST1", "Name", "BRIEF_SE_SCIENTIST1" },
+                            ["VALUE_MATCH"]        = "UI_OVERSEER5_OBJ1",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "OSDMessage", "UI_COORDINATES_OSD" }, -- UI_OVERSEER5_OBJ1
+                            },
+                        },
+                        { -- Hire an Exocraft Technician -> COORDINATES RECEIVED
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "EXOTUT1", "Name", "BRIEF_SE_EXOTUT1" },
+                            ["VALUE_MATCH"]        = "UI_EXOTUT1_OBJ2",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "OSDMessage", "UI_COORDINATES_OSD" }, -- UI_EXOTUT1_OBJ2
+                            },
+                        },
+                        { -- Hire a base Farmer -> COORDINATES RECEIVED
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "FARMER1", "Name", "BRIEF_SE_FARMER1" },
+                            ["VALUE_MATCH"]        = "UI_FARMER1_OBJ2",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "OSDMessage", "UI_COORDINATES_OSD" }, -- UI_FARMER1_OBJ2
+                            },
+                        },
                     }
                 },
                 { -- METADATA/SIMULATION/MISSIONS/TABLES/RECURRINGMISSIONTABLE.MBIN
@@ -161,6 +171,81 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["VALUE_MATCH"]        = "UI_OVERSEER_RET_OSD",
                             ["VALUE_CHANGE_TABLE"] = {
                                 { "ObjectiveID", "UI_COMM_RET_OBJ" }, -- UI_OVERSEER_RET_OSD
+                            },
+                        },
+                    }
+                },
+                { -- METADATA/SIMULATION/MISSIONS/TABLES/MULTIPLAYERMISSIONTABLE.MBIN
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/MULTIPLAYERMISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        { -- regexp: Property name="OSDMessage" value=".*_MARKER"
+                            ["SPECIAL_KEY_WORDS"]  = {
+                                { "OSDMessage", "UI_MP_PIRATES_MARKER" },
+                                { "OSDMessage", "UI_WIKI_EX_YELLOW_MARKER" },
+                                { "OSDMessage", "UI_WIKI_EX_RED_MARKER" },
+                                { "OSDMessage", "UI_WIKI_EX_GREEN_MARKER" },
+                                { "OSDMessage", "UI_WIKI_EX_BLUE_MARKER" },
+                                { "OSDMessage", "UI_WIKI_PLANT_POOP_MARKER" },
+                            },
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "OSDMessage", "UI_COORDINATES_OSD" },
+                            },
+                        },
+                    }
+                },
+                { -- METADATA/SIMULATION/MISSIONS/TABLES/COREMISSIONTABLE.MBIN
+                    ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/MISSIONS/TABLES/COREMISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        --#region Invalid marker names
+                        -- regexp: Property name="MarkerLabel" value="UI_CORE_HOLOHUB_OSD2"
+                        { -- Signal Match Detected -> Speak to Artemis
+                            ["SPECIAL_KEY_WORDS"]  = {
+                                { "MissionID", "ACT1_STEP4", "Name", "SE_ACT1_STEP4_PRIMARY" },
+                                { "MissionID", "ACT1_STEP5", "Name", "SE_ACT1_STEP5_PRIMARY" },
+                            },
+                            ["VALUE_MATCH"]        = "UI_CORE_HOLOHUB_OSD2",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MarkerLabel", "UI_CORE_HOLOHUB_MSG3_ART" }, -- UI_CORE_HOLOHUB_OSD2
+                            },
+                        },
+                        { -- Signal Match Detected -> Speak to Apollo
+                            ["SPECIAL_KEY_WORDS"]  = { "MissionID", "ACT1_STEP8", "Name", "SE_ACT1_STEP8_PRIMARY" },
+                            ["VALUE_MATCH"]        = "UI_CORE_HOLOHUB_OSD2",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "MarkerLabel", "UI_CORE_ACT2_STEP13_MSG" }, -- UI_CORE_HOLOHUB_OSD2
+                            },
+                        },
+                        --#endregion
+
+                        -- regexp: name="OSDMessage" value="UI_.*_OBJ[0-9]+"
+                        { -- Locate Apollo's contact -> COORDINATES RECEIVED
+                            ["SPECIAL_KEY_WORDS"]  = {
+                                { "MissionID", "ACT1_STEP9", "Name", "SE_ACT1_STEP9_BASE_NPC" },
+                                { "MissionID", "ACT1_STEP9", "Name", "SE_ACT1_STEP9_BASE_NPC_ALT" },
+                            },
+                            ["VALUE_MATCH"]        = "UI_CORE_ACT1_STEP9_OBJ1",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "OSDMessage", "UI_COORDINATES_OSD" }, -- UI_CORE_ACT1_STEP9_OBJ1
+                            },
+                        },
+                    }
+                },
+                --#endregion
+
+                --#region Using a chart shows the message "Inventory Full"
+                { -- METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {
+                                { "ID", "CHART_HIVE" },
+                                { "ID", "NAV_DATA_DROP" },
+                                { "ID", "TUT_STARMAP" },
+                                { "ID", "A1S6_STARMAP" },
+                            },
+                            ["VALUE_MATCH"]        = "INTRCT_NOROOM_L",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                { "RewardFailedLocID", "" }, -- INTRCT_NOROOM_L
                             },
                         },
                     }

@@ -33,6 +33,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = FILE_REALITY_REWARDTABLE,
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        -- reward: multitool scanner blueprint silent
+                        {   ["SKW"] = {"Id","R_BOBBLE_APOLLO",},    ["SEC_SAVE_TO"] = "SEC_REWARD_BPS",                                 },
+                        {   ["SEC_EDIT"] = "SEC_REWARD_BPS",        ["VCT"] = {{"Id","RD_BLUEPRINT",},{"TechId","TECH_SCANNER",},},     },
+                        {   ["PKW"] = "GenericTable",               ["SEC_ADD_NAMED"] = "SEC_REWARD_BPS",                               },
+                        
                         -- reward: open new research tree
                         {   ["SKW"] = {"Id","TREE_BASICS",},        ["SEC_SAVE_TO"] = "SEC_REWARD_TREE",                                },
                         {   ["SEC_EDIT"] = "SEC_REWARD_TREE",       ["VCT"] = {{"Id","R_SHIPTREE",},{"UnlockableItemTree","Test",},},   },

@@ -4,8 +4,8 @@
 METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_MOD_MODULE     = "CRAFT"
-METADATA_NMS_VERSION    = "511"
+METADATA_MOD_MODULE     = "MEMORY"
+METADATA_NMS_VERSION    = "522"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
 
 
@@ -14,7 +14,7 @@ METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, mi
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_REALITY_PRODUCTTABLE = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
+FILE_METADATA_CONSUMABLE_TABLE = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -30,37 +30,20 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = FILE_REALITY_PRODUCTTABLE,
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_CONSUMABLE_TABLE,
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            -- Warp Hypercore - add new crafting tooltip
-                            ["SKW"] = {"ID","HYPERFUEL2"},
-                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_HYPERFUEL2_OBJ_TIP"},},
-                        },
-
-                        {
-                            -- Heart of the Sun - add new crafting tooltip
-                            ["SKW"] = {"ID","ATLAS_SEED_10"},
-                            ["VCT"] = {{"PinObjectiveTip","UI_PIN_ATLASSEED_OBJ_TIP"},},
-                        },
-
-                        {
-                            -- Supply Pipe, Mineral Extractor, Gas Extractor
-                            -- change blueprint subtitle to one used by the depot
                             ["SKW"] = 
                             {
-                                {"ID","U_PIPELINE"},
-                                {"ID","U_GASEXTRACTOR"},
-                                {"ID","U_EXTRACTOR_S"},
+                                {"ID","TECHBOX",},
+                                {"ID","INVBOX",},
                             },
-                            ["VCT"] = {{"Subtitle","BLD_SILO_SUB"},},
-                        },
-
-                        {
-                            -- hauler S-Wing Megalith Engine - restore proper lowercase name
-                            ["SKW"] = {"ID","DROPS_ENGIAB"},
-                            ["VCT"] = {{"NameLower","UI_DROPSHIP_ENGI_AB_NAME_L"},},
+                            ["VCT"] = 
+                            {
+                                {"ButtonLocID","UI_DISMANTLE_TECHBOX",},
+                                {"ButtonSubLocID","UI_DISMANTLE_TECHBOX_SUB",},
+                            },
                         },
                     },
                 }

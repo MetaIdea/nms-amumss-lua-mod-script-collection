@@ -6,7 +6,7 @@ METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_MOD_MODULE     = "METADATA_MISSIONS"
 METADATA_NMS_VERSION    = "DEV8"
-METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for all mission data. Modifies files in METADATA\\SIMULATION\\MISSIONS."
+METADATA_MOD_DESC       = "Project Apollo: Lost in Time. Module for all mission data. Modifies METADATA\\SIMULATION\\MISSIONS\\TABLES\\BASECOMPUTERMISSIONTABLE.MBIN."
 
 
 
@@ -1870,7 +1870,7 @@ PROPERTY_MISSION_ADVANCED =
             <Property name="Cost" value="" />
             <Property name="Rewards">
               <Property value="NMSString0x10.xml">
-                <Property name="Value" value="R_BLUEPRINT" />
+                <Property name="Value" value="R_HESP_TALK" />
               </Property>
             </Property>
             <Property name="Mood" value="GcAlienMood.xml">
@@ -2958,6 +2958,26 @@ PROPERTY_MISSION_ADVANCED =
   <Property name="Rewards">
 
     <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_HESP_TALK" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="IncrementStat" value="" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="LabelID" value="" />
+            <Property name="Reward" value="GcRewardMissionMessage.xml">
+              <Property name="MessageID" value="MSG_HESP_TALK" />
+              <Property name="BroadcastInMultiplayer" value="False" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+
+    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_BLUEPRINT" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
@@ -3462,19 +3482,30 @@ PROPERTY_MISSION_ADVANCED =
                       <Property name="ConditionTest" value="AnyTrue" />
                     </Property>
                     <Property name="Conditions">
-                      <Property value="GcMissionConditionTechnologyKnown.xml">
-                        <Property name="Technology" value="TECH_SCANNER" />
-                        <Property name="DependentOnSeasonMilestone" value="False" />
-                        <Property name="TakeTechFromSeasonData" value="False" />
+                      <Property value="GcMissionConditionMissionMessage.xml">
+                        <Property name="Message" value="MSG_HESP_TALK" />
+                        <Property name="MessageToFormatSeasonalIDInto" value="" />
                       </Property>
                     </Property>
                     <Property name="AllowedToFormatObjectives" value="True" />
-                    <Property name="ForceAllowMissionRestart" value="True" />
-                    <Property name="ForceAllowMissionRestartEvent" value="SE_HESPERUS_1" />
+                    <Property name="ForceAllowMissionRestart" value="False" />
+                    <Property name="ForceAllowMissionRestartEvent" value="" />
                     <Property name="DebugText" value="" />
                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                       <Property name="MissionMarkup" value="None" />
                     </Property>
+                  </Property>
+                </Property>
+
+                <Property value="GcGenericMissionStage.xml">
+                  <Property name="Versions" />
+                  <Property name="Stage" value="GcMissionSequenceReward.xml">
+                    <Property name="Message" value="" />
+                    <Property name="Reward" value="R_BLUEPRINT" />
+                    <Property name="DoMissionBoardOverride" value="False" />
+                    <Property name="Silent" value="False" />
+                    <Property name="RewardInventoryOverride" value="None" />
+                    <Property name="DebugText" value="" />
                   </Property>
                 </Property>
                
@@ -3953,7 +3984,7 @@ PROPERTY_MISSION_ADVANCED =
                 <Property value="GcGenericMissionStage.xml">
                   <Property name="Versions" />
                   <Property name="Stage" value="GcMissionSequenceGroup.xml">
-                    <Property name="Silent" value="False" />
+                    <Property name="Silent" value="True" />
                     <Property name="Icon" value="TkTextureResource.xml">
                       <Property name="Filename" value="" />
                       <Property name="ResHandle" value="GcResource.xml">
