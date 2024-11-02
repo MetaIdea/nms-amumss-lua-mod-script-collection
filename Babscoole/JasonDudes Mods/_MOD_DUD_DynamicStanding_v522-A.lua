@@ -60,10 +60,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v521-A.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v522-A.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.21",
+["NMS_VERSION"]     = "5.22",
 ["MODIFICATIONS"]   =
     {
         {
