@@ -3,18 +3,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "StartWithTardis.pak",
 ["MOD_AUTHOR"]    = "RemingtonRyder",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.62",
+["NMS_VERSION"]   = "5.22",
 ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
+                            ["FOREACH_SKW_GROUP"] =
                             {
                                 {"Invalid",    "GcDifficultySettingsData.xml"},
                                 {"Custom",     "GcDifficultySettingsData.xml"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -43,10 +43,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CurrentShip", "GcResourceElement.xml", "Seed", "GcSeed.xml"},
-                            ["REPLACE_TYPE"] = "ONCEINSIDE",
+                            ["LINE_OFFSET"] = "+1",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Seed", "69"},
+                                {"Seed", "100"},
                             }
                         },
                         {
