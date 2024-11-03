@@ -28,12 +28,12 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "T_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "S_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "F_WALLS", ["Name"] = "UI_BUILD_GRID_WALLS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
-	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "ROOMS" }, 
+	{ ["SubGroup"] = "T_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "S_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "F_ROOFS", ["Name"] = "UI_BUILD_GRID_ROOFS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
 	-- { ["SubGroup"] = "BASICWOOD", ["Name"] = "UI_BUILD_GRID_WOOD", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
     -- { ["SubGroup"] = "BASICCONCRETE", ["Name"] = "UI_BUILD_GRID_CONCRETE", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
-    -- { ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },	
+    -- { ["SubGroup"] = "BASICMETAL", ["Name"] = "UI_BUILD_GRID_METAL", ["From"] = "BASIC_LEGACY", ["To"] = "ROOMS" },
 
 }
 
@@ -65,7 +65,7 @@ return
 			{ "Group",			FROM },
 			{ "SubGroupName",	SUBGROUP },
 		},
-		["VALUE_CHANGE_TABLE"] 	= 
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO},
 		}
@@ -78,7 +78,7 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"SubGroupName", SUBGROUP},
 		["REPLACE_TYPE"] 	= "ALL",
-		["VALUE_CHANGE_TABLE"] 	= 
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO},
 		}
@@ -90,8 +90,8 @@ return
 	{
 		["PRECEDING_KEY_WORDS"] = 	{"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
 		["REPLACE_TYPE"] 	= 		"ALL",
-		["VALUE_MATCH"] = 			FROM, 
-		["VALUE_CHANGE_TABLE"] 	= 
+		["VALUE_MATCH"] = 			FROM,
+		["VALUE_CHANGE_TABLE"] 	=
 		{
 			{"Group",			TO },
 		}
@@ -124,7 +124,7 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"Id", SUBGROUP},
 		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingSubGroup.xml"},
-		["PRECEDING_FIRST"] = "TRUE", 
+		["PRECEDING_FIRST"] = "TRUE",
 		-- ["LINE_OFFSET"] 		= "+0",
 		["REMOVE"] = "SECTION"
 	}
@@ -673,35 +673,122 @@ if DEBUG_TEXT then
 	print(table.concat(PARTS_UI_ADD_TABLE))
 end
 
+MAKE_EXPAND_DONG_OBVIOUS =
+{
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", "TEXT"},
+		["SECTION_UP_SPECIAL"] = 1,
+		["SEC_COPY"] = "ADD_EXPAND_TEXT",
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["VALUE_CHANGE_TABLE"] ={
+									{"Text", "Press &lt;IMG&gt;FE_TRANSFER&lt;&gt; to expand"},
+									-- {"Special", "False"},
+								},
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["PKW"] = {"GcAccessibleOverride_Layout.xml"},
+		["REPLACE_TYPE"] = "ALL",
+		["REMOVE"] = "SECTION",
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"ID", "MAKE_OBV"},
+									{"PositionX", "10"},
+									{"PositionY", "0"},
+									{"Width", "80"},
+									-- {"Height", "16"},
+									{"Height", "10"},
+									{"WidthPercentage", "True"},
+								},
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml", "EditorVisible", "GcNGuiEditorVisibility.xml"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"EditorVisibility", "UseData"},
+								},
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml", "Colour", "Colour.xml"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"R", "0.933"},
+									{"G", "0.788"},
+									{"B", "0.141"},
+								},
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml", "OutlineColour", "Colour.xml"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"R", "0"},
+									{"G", "0"},
+									{"B", "0"},
+								},
+	},
+	{
+		["SEC_EDIT"] = "ADD_EXPAND_TEXT",
+		["SPECIAL_KEY_WORDS"] = {"Style", "TkNGuiTextStyle.xml", "Default", "TkNGuiTextStyleData.xml"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"FontHeight", "15"},
+									{"OutlineSize", "10"},
+									{"Vertical", "Top"},
+									{"Horizontal", "Left"},
+									{"HasOutline", "True"},
+								},
+	},
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", "EXPAND", "Layout", "GcNGuiLayoutData.xml"},
+		-- ["SECTION_UP_SPECIAL"] = 1,
+		-- ["PKW"] = {"Children"},
+		["VALUE_CHANGE_TABLE"] ={
+									{"Width", "100"},
+									{"WidthPercentage", "True"},
+								},
+	},
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", "EXPAND"},
+		["SECTION_UP_SPECIAL"] = 1,
+		["PKW"] = {"Children"},
+		["ADD_OPTION"] = "ADDendSECTION",
+		["SEC_PASTE"] = "ADD_EXPAND_TEXT",
+	},
+}
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "~~~RecTUM.pak",
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
 ["NMS_VERSION"]				= "",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV",
-["MODIFICATIONS"] 			= 
+["MODIFICATIONS"] 			=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= CHANGE_LEOPARDON
-				}, 
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "UI\BASEPARTSMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							-- UI CANVAS FOR THE PARTS MENU
 							["SPECIAL_KEY_WORDS"] = {"ID", "SCROLL", "Layout", "GcNGuiLayoutData.xml"},
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] = 
-							{ 
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"Height", PARTS_UI_MULTIPLIER},
 							},
 						},
@@ -716,7 +803,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\BASEPARTITEM.MBIN",
+					["EXML_CHANGE_TABLE"] 	= MAKE_EXPAND_DONG_OBVIOUS
+				},
 			}
-		}, 
-	}	
+		},
+	}
 }

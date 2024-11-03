@@ -257,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["PRECEDING_KEY_WORDS"] = {"GcUnlockableTreeCostType.xml"},
                             ["SECTION_ACTIVE"] = 3,
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"TypeOfCost","Product"},
+                                {"TypeOfCost","Substance"},
                                 {"TypeID", "LAND1"}
                             }
                         }

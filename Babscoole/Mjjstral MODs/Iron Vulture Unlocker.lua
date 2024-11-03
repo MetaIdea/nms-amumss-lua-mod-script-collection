@@ -293,30 +293,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-            ["FILE_CONTENT"]     =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" />
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
-    </Property>
-  </Property>
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />
-    <Property name="Translations" />
-    <Property name="Scales" />
- </Property>
-</Data>
-]]
-        },
-        {
             ["FILE_DESTINATION"] = "MODELS\TESTS\EFFECTTEST.ANIM.EXML",
             ["FILE_CONTENT"] =
 [[
