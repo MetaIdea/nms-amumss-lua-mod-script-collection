@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Flight PC"
 ModNameSub = "ThrottleJockey"
 BaseDescription = "Flight modifications"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = FileSource1,
 					EXML_CHANGE_TABLE = {
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"LandingMaxSpeed", 80},					--80
 								{"LandingMaxAngle", 45},					--45
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 						{
 							PRECEDING_KEY_WORDS = {"Control","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 360},							--180
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 20},						--20
 								{"MaxSpeed", 250},							--125
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80
@@ -100,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 80},						--80
 								{"MaxSpeed", 360},							--180
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 250},							--125
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 80},						--80
 								{"MaxSpeed", 160},							--80
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 80},						--80
 								{"MaxSpeed", 160},							--80
@@ -172,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 360},							--180
@@ -186,7 +186,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 20},						--20
 								{"MaxSpeed", 260},							--130
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80
@@ -229,7 +229,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 						{
 							PRECEDING_KEY_WORDS = {"ControlHover","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 360},							--180
@@ -243,7 +243,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHover","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 20},						--20
 								{"MaxSpeed", 260},							--130
@@ -257,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHover","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80
@@ -271,7 +271,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHover","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"ThrustForce", 40},						--40
 								{"MaxSpeed", 160},							--80

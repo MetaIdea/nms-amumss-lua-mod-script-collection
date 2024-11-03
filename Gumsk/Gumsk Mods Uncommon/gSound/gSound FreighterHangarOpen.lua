@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Freighter Hangar Door Open"
 BaseDescription = "Mutes the sound of freighter hangar doors opening to prevent loud bug"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

@@ -1,6 +1,6 @@
 ModName = "gFish Fishing Speed"
 ModNameSub = "Faster"
-GameVersion = "5.2.0.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 --[[ Files Modified:

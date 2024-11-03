@@ -8,7 +8,7 @@ Author = "Gumsk,lMonk"
 ModName = "GMech"
 ModNameSub = "Mechjets Reskin "..Color
 BaseDescription = "Reskin of all the lighting sources on the mech"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 CoreFile = "GUMSK."..Color..".MECHJETPACKRIM.DDS"
@@ -276,7 +276,7 @@ MODIFICATIONS	= {
 		{MBIN_FILE_SOURCE	= FileSource13,
 		EXML_CHANGE_TABLE 	= {
 			{SPECIAL_KEY_WORDS	= {"Name","GunLight"},
-				["ADD"] 				= SpotlightText,
+				ADD 				= SpotlightText,
 				REPLACE_TYPE		= "AddAfterSection"}}
 		},
 
@@ -293,12 +293,12 @@ MODIFICATIONS	= {
 		{MBIN_FILE_SOURCE = FileSource15,
 		EXML_CHANGE_TABLE = {
 			{SPECIAL_KEY_WORDS = {"Name","spotLight2"},
-				--["SECTION_UP"] = 1,
-				["REMOVE"] = "SECTION",
+				--SECTION_UP = 1,
+				REMOVE = "SECTION",
 			},
 			{SPECIAL_KEY_WORDS = {"Name","spotLight3"},
-				--["SECTION_UP"] = 1,
-				["REMOVE"] = "SECTION",
+				--SECTION_UP = 1,
+				REMOVE = "SECTION",
 			},
 		}},
 

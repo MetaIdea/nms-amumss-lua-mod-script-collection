@@ -2,7 +2,7 @@ Author = "Kronos"
 ModName = "BoostingTurnDamp"
 ModNameSub = ""
 BaseDescription = "Flight modifications"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 
@@ -19,28 +19,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							PRECEDING_KEY_WORDS = {"Control","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.25
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"Control","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
@@ -48,28 +48,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.3
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlLight","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
@@ -77,28 +77,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","SpaceEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","PlanetEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.15
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","CombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"ControlHeavy","AtmosCombatEngine"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							INTEGER_TO_FLOAT = "FORCE",
 							VALUE_CHANGE_TABLE = {
 								{"BoostingTurnDamp", 1.0},						--0.1
 							}

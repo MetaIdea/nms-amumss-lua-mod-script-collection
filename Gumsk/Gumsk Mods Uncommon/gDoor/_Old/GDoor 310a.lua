@@ -100,23 +100,23 @@ MODIFICATIONS	= {{
 		VALUE_CHANGE_TABLE =
 			{{"Speed", 0.5}}},
 		{PRECEDING_KEY_WORDS = {"GcTriggerActionComponentData.xml"},
-			["REMOVE"] = "SECTION"},
+			REMOVE = "SECTION"},
 		{PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
-			["ADD"] = States,
+			ADD = States,
 			REPLACE_TYPE = "ADDAFTERSECTION"}
 }},{
 	MBIN_FILE_SOURCE = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR.SCENE.MBIN",
 	EXML_CHANGE_TABLE = {{
 		SPECIAL_KEY_WORDS = {"Name", "RefSnapScene4"},
 			LINE_OFFSET = "-1",
-			["REMOVE"] = "SECTION"},
+			REMOVE = "SECTION"},
 		{SPECIAL_KEY_WORDS = {"Name", "RefSnapScene5"},
 			LINE_OFFSET = "-1",
-			["REMOVE"] = "SECTION"},
+			REMOVE = "SECTION"},
 		{SPECIAL_KEY_WORDS = {"Name", "RefSnapScene6"},
 			LINE_OFFSET = "-1",
-			["REMOVE"] = "SECTION"},
+			REMOVE = "SECTION"},
 		{SPECIAL_KEY_WORDS = {"Name", "RefSnapScene7"},
 			LINE_OFFSET = "-1",
-			["REMOVE"] = "SECTION"}
+			REMOVE = "SECTION"}
 }},}}}}

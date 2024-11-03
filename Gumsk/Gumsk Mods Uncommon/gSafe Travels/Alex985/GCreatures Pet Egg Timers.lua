@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GCreatures Pet Egg Timers"
 ModNameSub = "Instant"
 BaseDescription = "Reduces pet egg timers"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 

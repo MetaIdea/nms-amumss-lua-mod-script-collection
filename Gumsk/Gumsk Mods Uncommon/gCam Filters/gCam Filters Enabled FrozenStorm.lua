@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCam Filters Enabled"
 ModNameSub = "FrozenStorm"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 --[[ Files Modified:

@@ -2,7 +2,7 @@ Author = "Mjjstral+Gumsk"
 ModName = "gSave Auto"
 ModNameSub = "5"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "464"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -152,7 +152,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							PRECEDING_KEY_WORDS = {"LodDistances"}, 
 							LINE_OFFSET 		= "-2",
-							["ADD"] 				= AddText,
+							ADD 				= AddText,
 						},
 					},
 				},

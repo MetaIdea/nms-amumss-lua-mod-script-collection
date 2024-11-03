@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSentinels Frequency"
 ModNameSub = "Fewer"
 BaseDescription = "Fewer Sentinels"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

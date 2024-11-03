@@ -2,7 +2,7 @@ Color = "BLACKGOLD2"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = Color.." MATTEMETALLIC"
 BaseDescription = "Changes color of hardframe exomech parts to "..Color.." MATTEMETALLIC"

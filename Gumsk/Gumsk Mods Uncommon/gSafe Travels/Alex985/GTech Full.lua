@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GTech"
 ModNameSub = ""
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -594,15 +594,15 @@ EXML_CHANGE_TABLE	= {
 		
 	{ --Incinerator
 	SPECIAL_KEY_WORDS = {"ID","FLAME","StatsType","Weapon_Projectile_Dispersion"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 		{"Bonus","70"}}},
 	{SPECIAL_KEY_WORDS = {"ID","FLAME","StatsType","Weapon_Projectile_Range"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 		{"Bonus","20"}}},
 	{SPECIAL_KEY_WORDS = {"ID","FLAME","StatsType","Weapon_Projectile_BulletsPerShot"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 		{"Bonus","4"}}},	
 	

@@ -7,8 +7,8 @@ Author			= "Gumsk"
 ModName 		= "gMultitool Neutron Cannon"
 ModNameSub		= ColorName
 BaseDescription = "Changes the neutron cannon projectile and impact colors to "..ColorName
-GameVersion = "4711"
-ModVersion		= "a"
+GameVersion = "5.2.2.0"
+ModVersion = "a"
 
 --[[Files Modified
 MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN

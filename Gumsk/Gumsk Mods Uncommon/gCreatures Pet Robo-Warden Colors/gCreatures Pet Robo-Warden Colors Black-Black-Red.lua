@@ -8,7 +8,7 @@ BlueAmount = "0"
 Author = "Gumsk"
 ModName = "gCreatures Pet Robo-Warden Colors"
 ModNameSub = BodyColor.."-"..HandsColor.."-"..LightColor
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 BaseDescription = "Changes color of robo-warden pet"
 

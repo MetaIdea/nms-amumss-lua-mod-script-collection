@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "GLight Proximity"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = "Light Box"
 BaseDescription = "Adds a proximity sensor to the small light box"
@@ -30,7 +30,7 @@ MBIN_CHANGE_TABLE = {
 	EXML_CHANGE_TABLE = {
 	{SPECIAL_KEY_WORDS = {"Name","Lightbox"},
 		LINE_OFFSET = "+14",
-		["ADD"] = EntityText,
+		ADD = EntityText,
 	},
 	-- {SPECIAL_KEY_WORDS = {"Name","FALLOFF"},
 		-- VALUE_CHANGE_TABLE = {

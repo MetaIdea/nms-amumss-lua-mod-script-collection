@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip Infraknife Colors"
 ModNameSub = Color
 BaseDescription = "Changes color of ship's infraknife to "..Color
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FileSource1 = "MODELS/COMMON/PROJECTILES/SHIP_MINIGUN/SHIPMINIGUNPROJECTILEGRADIENT.MATERIAL.MBIN"

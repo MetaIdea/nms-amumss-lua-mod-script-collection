@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "gExos Challenge"
 ModNameSub = "Savage Sentinels"
 BaseDescription = "Makes sentinels harder"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 
@@ -18,7 +18,7 @@ MODIFICATIONS	= {{
 MBIN_CHANGE_TABLE = {{
 MBIN_FILE_SOURCE = FileSource,
 EXML_CHANGE_TABLE = {
-	{["INTEGER_TO_FLOAT"] = "FORCE",
+	{INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GrenadeLaunchFlightTime", 2},
 		{"MaxNumPatrolDrones", 8},
@@ -63,7 +63,7 @@ EXML_CHANGE_TABLE = {
 		{"y", -0.007}}},
 
 	{PRECEDING_KEY_WORDS = {"WalkerLaser"},
-	["INTEGER_TO_FLOAT"] = "FORCE",	
+	INTEGER_TO_FLOAT = "FORCE",	
 	VALUE_CHANGE_TABLE = {
 		{"LaserMiningDamage", 130},
 		{"LaserChargeTime", 1},
@@ -82,7 +82,7 @@ EXML_CHANGE_TABLE = {
 		{"G", 0.588}}},
 		
 	{PRECEDING_KEY_WORDS = {"DroneControl"},
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"DronePatrolHonkTime", 1.2},
 		{"DronePatrolHonkProbability", 7},

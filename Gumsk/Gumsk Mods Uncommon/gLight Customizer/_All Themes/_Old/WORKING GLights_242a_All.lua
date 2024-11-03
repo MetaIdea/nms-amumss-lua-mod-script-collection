@@ -419,7 +419,7 @@ for x = 1,#GroupMBINArray do
 	}}}}}}
 end
 
-		-- local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+		-- local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINERMODIFICATIONS[1]MBIN_CHANGE_TABLE[1]EXML_CHANGE_TABLE
 		-- for i = 1,6 do
 			-- for j = 5,12 do	
 				-- local temp_table =

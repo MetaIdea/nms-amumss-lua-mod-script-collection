@@ -7,8 +7,8 @@ Author			= "Gumsk"
 ModName 		= "gMultitool Pulse Spitter"
 ModNameSub		= ColorName
 BaseDescription = "Changes the pulse spitter projectile and explosion color to "..ColorName
-GameVersion 	= "4711"
-ModVersion		= "a"
+GameVersion = "5.2.2.0"
+ModVersion = "a"
 
 FileSource1 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_SMG.SCENE.MBIN"
 FileSource2 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_SMG/PROJECTILEMESHMAT.MATERIAL.MBIN"

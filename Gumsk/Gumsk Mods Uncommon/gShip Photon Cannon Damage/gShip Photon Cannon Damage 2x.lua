@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Photon Cannon Damage"
 ModNameSub = "2"		--Change this to change the multiplier
 BaseDescription = "Increases ship photon cannon/spewing vents damage"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 --Files Modified
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"ID","SHIPGUN1","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"Bonus",ModNameSub},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","SHIPGUN_ALIEN","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"Bonus",ModNameSub},
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"ID","UP_SGUN1","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UP_SGUN2","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UP_SGUN3","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UP_SGUN4","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UP_SGUNX","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UA_SGUN1","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UA_SGUN2","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UA_SGUN3","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							SPECIAL_KEY_WORDS = {"ID","UA_SGUN4","StatsType","Ship_Weapons_Guns_Damage"},
-							["SECTION_UP"] = 1,
+							SECTION_UP = 1,
 							["MATH_OPERATION"]      = "*",
 							VALUE_CHANGE_TABLE = {
 								{"ValueMin",ModNameSub},

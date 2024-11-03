@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -71,7 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                {
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_EXGUN1","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.95"},
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_EXGUN2","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.9"},
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_EXGUN3","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.85"},
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_EXGUN4","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.8"},
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_MCGUN2","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.9"},
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_MCGUN3","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.85"},
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   },
                   {
                      SPECIAL_KEY_WORDS = {"ID","UP_MCGUN4","StatsType","Vehicle_GunRate",},
-                     ["SECTION_UP"] = 1,
+                     SECTION_UP = 1,
                      VALUE_CHANGE_TABLE =
                      {
                         {"ValueMin","0.8"},

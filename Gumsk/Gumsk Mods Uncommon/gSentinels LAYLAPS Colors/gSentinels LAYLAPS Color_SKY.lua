@@ -6,7 +6,7 @@ BlueAmount = "0.9"
 
 Author = "Gumsk"
 ModName = "gSentinels LAYLAPS Color"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = Color
 BaseDescription = "Changes color of LAYLAPS to "..Color

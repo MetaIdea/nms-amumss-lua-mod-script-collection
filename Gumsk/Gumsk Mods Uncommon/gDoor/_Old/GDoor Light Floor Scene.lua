@@ -56,7 +56,7 @@
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="BATCHSTARTPHYSI" />
-          <Property name="Value" value="4711" />
+          <Property name="Value" value="408" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="VERTRSTARTPHYSI" />
@@ -1738,7 +1738,7 @@
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="BATCHCOUNT" />
-              <Property name="Value" value="4711" />
+              <Property name="Value" value="408" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="VERTRSTART" />

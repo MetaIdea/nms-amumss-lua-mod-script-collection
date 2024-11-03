@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "UnderwaterSpeed"
 BaseDescription = "Increase to underwater player speed"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
@@ -18,7 +18,7 @@ MODIFICATIONS	= {
 			MBIN_FILE_SOURCE = FileSource,
 			EXML_CHANGE_TABLE = {
 				{
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						{"JetpackUnderwaterDrainRate",0.3},			--0.4
 						{"JetpackUnderwaterFillRate",2},			--1

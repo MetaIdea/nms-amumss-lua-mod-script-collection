@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Flight NPC"
 ModNameSub = "Station Approach"
 BaseDescription = "Flight modifications"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN"
 

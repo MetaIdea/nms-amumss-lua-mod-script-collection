@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = "All S"
 BaseDescription = "Hotspot balancing"
-GameVersion = "5.1.1.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 --Files Changed
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 }
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINERMODIFICATIONS[1]MBIN_CHANGE_TABLE[1]EXML_CHANGE_TABLE
 for i = 1,6 do
 	local temp_table1 =
 		{

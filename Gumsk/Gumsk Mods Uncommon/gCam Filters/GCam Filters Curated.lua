@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GCam Filters"
 ModNameSub = "All"
 BaseDescription = "Removes the environmental filters"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "METADATA\EFFECTS\SCREENFILTERS.MBIN"
 FileSource2 = "LANGUAGE\NMS_LOC6_ENGLISH.MBIN"
@@ -719,7 +719,7 @@ MODIFICATIONS	= {{
 		{
 			SPECIAL_KEY_WORDS = {"Id","UI_PREV_SYSTEM_LABEL"},
 			LINE_OFFSET = -2,
-			["ADD"] = AddText,
+			ADD = AddText,
 			["REMOVE_TYPE"] = "ADDAFTERSECTION",
 		},
 

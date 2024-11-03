@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gNPC Traveller Spawn"
 ModNameSub = "Small Increase"
 BaseDescription = "Increases Traveller spawn rate"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

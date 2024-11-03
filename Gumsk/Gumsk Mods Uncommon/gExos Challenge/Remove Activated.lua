@@ -1,7 +1,7 @@
 ModName = "gExos Challenge"
 ModNameSub = "Remove Activated"
 BaseDescription = "Removes activated metals from gameplay"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 RecipeAdd = [[	<Property value="GcRefinerRecipe.xml">
@@ -143,7 +143,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							PRECEDING_KEY_WORDS = {"MiningSubstanceStar"},
-							["VALUE_MATCH"] = {"GREEN2","BLUE2","RED2"},
+							VALUE_MATCH = {"GREEN2","BLUE2","RED2"},
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Value", "YELLOW2"}
@@ -151,28 +151,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							PRECEDING_KEY_WORDS = {"MiningSubstanceStarExtreme"},
-							["VALUE_MATCH"] = {"EX_YELLOW"},
+							VALUE_MATCH = {"EX_YELLOW"},
 							VALUE_CHANGE_TABLE = {
 								{"Value", "YELLOW2"}
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"MiningSubstanceStarExtreme"},
-							["VALUE_MATCH"] = {"EX_GREEN"},
+							VALUE_MATCH = {"EX_GREEN"},
 							VALUE_CHANGE_TABLE = {
 								{"Value", "GREEN2"}
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"MiningSubstanceStarExtreme"},
-							["VALUE_MATCH"] = {"EX_BLUE"},
+							VALUE_MATCH = {"EX_BLUE"},
 							VALUE_CHANGE_TABLE = {
 								{"Value", "BLUE2"}
 							}
 						},
 						{
 							PRECEDING_KEY_WORDS = {"MiningSubstanceStarExtreme"},
-							["VALUE_MATCH"] = {"EX_RED"},
+							VALUE_MATCH = {"EX_RED"},
 							VALUE_CHANGE_TABLE = {
 								{"Value", "RED2"}
 							}
@@ -185,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							SPECIAL_KEY_WORDS = {"Id","REFINERECIPE_39"},
 							REPLACE_TYPE = "ADDAFTERSECTION",
-							["ADD"] = RecipeAdd
+							ADD = RecipeAdd
 						},
 					}
 				}

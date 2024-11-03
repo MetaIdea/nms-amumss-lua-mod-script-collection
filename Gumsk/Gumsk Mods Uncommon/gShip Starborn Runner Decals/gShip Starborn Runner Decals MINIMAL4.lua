@@ -1,6 +1,6 @@
 ModName = "gShip Starborn Runner Decals"
 ModNameSub = "MINIMAL4"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

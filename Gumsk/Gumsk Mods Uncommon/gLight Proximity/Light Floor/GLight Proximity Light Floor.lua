@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "GLight Proximity"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = "Light Floor"
 BaseDescription = "Adds a proximity sensor to the light floor"
@@ -31,11 +31,11 @@ MBIN_CHANGE_TABLE = {
 	
 	-- {SPECIAL_KEY_WORDS = {"Name","CeilingLight_Ring1"},
 		-- LINE_OFFSET = "-3",
-		-- ["REMOVE"] = "LINE",
+		-- REMOVE = "LINE",
 	-- },
 	{SPECIAL_KEY_WORDS = {"Name","Lightbox"},
 		LINE_OFFSET = "+14",
-		["ADD"] = EntityText,
+		ADD = EntityText,
 	},
 	-- {SPECIAL_KEY_WORDS = {"Name","FALLOFF"},
 		-- VALUE_CHANGE_TABLE = {

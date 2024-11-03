@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gSwitch Prox"
 ModNameSub = DistanceOpen
 BaseDescription = "Shortened proximity switch distance"
-GameVersion = "5.1.1.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\SWITCH_PROXIMITY\ENTITIES\SWITCH_PROXIMITY.ENTITY.MBIN"
 

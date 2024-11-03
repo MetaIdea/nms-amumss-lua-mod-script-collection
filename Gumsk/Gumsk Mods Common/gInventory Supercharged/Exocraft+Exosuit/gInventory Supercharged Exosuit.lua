@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gInventory Supercharged"
 ModNameSub = "Exosuit"
 BaseDescription = "Makes all exosuit slots supercharged"
-GameVersion = "5.2.0.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
 

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Predators Frequency"
 ModNameSub = "Medium"
 BaseDescription = "More dense predators"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
@@ -96,28 +96,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Id","DEFAULT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREMED.MBIN"},
 							-- REPLACE_TYPE = "ADDAFTERSECTION",
-							-- ["ADD"] = AddPredatorText,
+							-- ADD = AddPredatorText,
 						-- },
 						{
 							SPECIAL_KEY_WORDS = {"Id","HERD","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEPREDATORLARGE.MBIN"},
 							REPLACE_TYPE = "ADDAFTERSECTION",
-							["ADD"] = AddPredatorText,
+							ADD = AddPredatorText,
 						},
 						
 						{
 							SPECIAL_KEY_WORDS = {"Id","HUNTEDHERD","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEPREDATORLARGE.MBIN"},
 							REPLACE_TYPE = "ADDAFTERSECTION",
-							["ADD"] = AddPredatorText,
+							ADD = AddPredatorText,
 						},
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Id","GIANT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
 							-- REPLACE_TYPE = "ADDAFTERSECTION",
-							-- ["ADD"] = AddPredatorText,
+							-- ADD = AddPredatorText,
 						-- },
 						-- {
 							-- SPECIAL_KEY_WORDS = {"Id","BUSY","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
 							-- REPLACE_TYPE = "ADDAFTERSECTION",
-							-- ["ADD"] = AddPredatorText,
+							-- ADD = AddPredatorText,
 						-- },
 					}
 				},

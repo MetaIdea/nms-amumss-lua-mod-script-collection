@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -130,7 +130,7 @@ EXML_CHANGE_TABLE = {
 		-- {"Damage", 40}}}, --default 30
 		
 	{SPECIAL_KEY_WORDS = {"Id","BOUNTYLASER3"},
-	["SECTION_ACTIVE"] = {1,2},
+	SECTION_ACTIVE = {1,2},
 	VALUE_CHANGE_TABLE = {	
 		{"Damage", 60}}}, --default 50
 		

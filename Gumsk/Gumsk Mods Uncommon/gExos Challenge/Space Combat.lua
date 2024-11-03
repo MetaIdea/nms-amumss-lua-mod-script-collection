@@ -2,7 +2,7 @@ Author = "Xaliber"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat"
 BaseDescription = "Adaptation of part of Xaliber's Space Combat Reworked"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 
@@ -71,7 +71,7 @@ EXML_CHANGE_TABLE = {
 	--SPECIAL_KEY_WORDS = {"Id","PIRATE"},
 	--["PRECEDING_FIRST"] = "True",
 	PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml"}, --PIRATE
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 3},
 		{"GunFireRate", 0.08},
@@ -89,7 +89,7 @@ EXML_CHANGE_TABLE = {
 		}},
 	{
 	PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --EASY
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 4},
 		{"GunFireRate", 0.1},
@@ -106,7 +106,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 10},
 		}},
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --MEDIUM
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 3},
 		{"GunFireRate", 0.08},
@@ -123,7 +123,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 10},
 		}},	
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --HARD
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 2},
 		{"GunFireRate", 0.06},
@@ -140,7 +140,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 210},
 		}},			
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --SOLO
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 1},
 		{"GunFireRate", 0.05},
@@ -157,7 +157,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 210},
 		}},		
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --POLICE
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 2},
 		{"GunFireRate", 0.06},
@@ -174,7 +174,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 210},
 		}},		
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --BOUNTY
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 1},
 		{"GunFireRate", 0.05},
@@ -191,7 +191,7 @@ EXML_CHANGE_TABLE = {
 		{"AttackBoostAngle", 210},
 		}},	
 	{PRECEDING_KEY_WORDS = {"GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml","GcShipAIAttackData.xml"}, --PIRATE_FREIGHT
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"GunDispersionAngle", 2},
 		{"GunFireRate", 0.06},
@@ -210,7 +210,7 @@ EXML_CHANGE_TABLE = {
 
 
 	{PRECEDING_KEY_WORDS = {"GcSpaceshipTravelData.xml"}, --STANDARD
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"MinSpeed", 10},
 		{"MaxSpeed", 200},
@@ -225,7 +225,7 @@ EXML_CHANGE_TABLE = {
 		{"Hovering", "True"},
 		}},	
 	{PRECEDING_KEY_WORDS = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --SOLO
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"MinSpeed", 10},
 		{"MaxSpeed", 250},
@@ -240,7 +240,7 @@ EXML_CHANGE_TABLE = {
 		{"Hovering", "False"},
 		}},	
 	{PRECEDING_KEY_WORDS = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --PIRATE
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"MinSpeed", 10},
 		{"MaxSpeed", 250},
@@ -255,7 +255,7 @@ EXML_CHANGE_TABLE = {
 		{"Hovering", "False"},
 		}},
 	{PRECEDING_KEY_WORDS = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --POLICE
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"MinSpeed", 10},
 		{"MaxSpeed", 250},
@@ -270,7 +270,7 @@ EXML_CHANGE_TABLE = {
 		{"Hovering", "False"},
 		}},	
 	{PRECEDING_KEY_WORDS = {"GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml","GcSpaceshipTravelData.xml"}, --BOUNTY
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"MinSpeed", 10},
 		{"MaxSpeed", 400},

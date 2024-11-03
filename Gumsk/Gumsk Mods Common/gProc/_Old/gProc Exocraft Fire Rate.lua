@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = "Exocraft Fire Rate"
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -17,7 +17,7 @@ MBIN_FILE_SOURCE = FileSource,
 EXML_CHANGE_TABLE = {
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN1","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.95"},
 			{"ValueMax","0.99"},
@@ -25,7 +25,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN2","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.9"},
 			{"ValueMax","0.95"},
@@ -33,7 +33,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN3","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.85"},
 			{"ValueMax","0.9"},
@@ -41,7 +41,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN4","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.8"},
 			{"ValueMax","0.85"},
@@ -49,7 +49,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_MCGUN2","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.9"},
 			{"ValueMax","0.95"},
@@ -57,7 +57,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_MCGUN3","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.85"},
 			{"ValueMax","0.9"},
@@ -65,7 +65,7 @@ EXML_CHANGE_TABLE = {
 	},
 	{
 		SPECIAL_KEY_WORDS = {"ID","UP_MCGUN4","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.8"},
 			{"ValueMax","0.85"},

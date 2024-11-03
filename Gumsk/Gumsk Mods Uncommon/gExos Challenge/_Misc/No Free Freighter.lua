@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "GExos Challenge"
 ModNameSub = "Exos No Free Freighter"
 BaseDescription = "No free first freighter"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FreighterPuzzleReplace = [[		<Property value="GcAlienPuzzleOption.xml">
@@ -125,31 +125,31 @@ MODIFICATIONS	= {{
 			EXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS = {"TextAlien","WAR_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-					["SECTION_UP"] = 2,
-					["ADD"] = FreighterPuzzleReplace,
+					SECTION_UP = 2,
+					ADD = FreighterPuzzleReplace,
 					REPLACE_TYPE = "ADDAFTERSECTION",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"TextAlien","TRA_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-					["SECTION_UP"] = 2,
-					["ADD"] = FreighterPuzzleReplace,
+					SECTION_UP = 2,
+					ADD = FreighterPuzzleReplace,
 					REPLACE_TYPE = "ADDAFTERSECTION",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"TextAlien","EXP_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-					["SECTION_UP"] = 2,
-					["ADD"] = FreighterPuzzleReplace,
+					SECTION_UP = 2,
+					ADD = FreighterPuzzleReplace,
 					REPLACE_TYPE = "ADDAFTERSECTION",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Value", "FREIGHT_REWARD"},
-					["SECTION_UP"] = 2,
-					["REMOVE"] = "SECTION",
+					SECTION_UP = 2,
+					REMOVE = "SECTION",
 					REPLACE_TYPE = "ALL",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Name","ALL_FREIGHTER_OPT_1","Value","FREIGHTERLOOT"},
-					["SECTION_UP"] = 2,
+					SECTION_UP = 2,
 					REPLACE_TYPE = "ALL",
 					VALUE_CHANGE_TABLE = {
 						{"Name","ALL_FREIGHTER_OPT_3"},
@@ -170,17 +170,17 @@ MODIFICATIONS	= {{
 			EXML_CHANGE_TABLE	= {
 				{
 					SPECIAL_KEY_WORDS = {"Id","FREIGHT_REWARD"},
-					["ADD"] = FreighterRewardReplace,
+					ADD = FreighterRewardReplace,
 					REPLACE_TYPE = "ADDAFTERSECTION",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Id", "FREIGHT_REWARD","PercentageChance","100"},
-					["SECTION_UP"] = 3,
-					["REMOVE"] = "SECTION",
+					SECTION_UP = 3,
+					REMOVE = "SECTION",
 				},
 				{
 					SPECIAL_KEY_WORDS = {"Id","FREIGHTERLOOT"},
-					["ADD"] = FreighterExoLoot,
+					ADD = FreighterExoLoot,
 					REPLACE_TYPE = "ADDAFTERSECTION",
 				},
 			}

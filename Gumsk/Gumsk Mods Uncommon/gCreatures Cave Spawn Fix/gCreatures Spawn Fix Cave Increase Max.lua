@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Spawn Fix"
 ModNameSub = "Cave Increase Max"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 --[[ Files Modified:

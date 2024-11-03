@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GProc"
 ModNameSub = "Hyper"
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -86,28 +86,28 @@ EXML_CHANGE_TABLE = {
 		REPLACE_TYPE = "ADDAFTERSECTION"},
 		
 	{SPECIAL_KEY_WORDS = {"ID","UP_HYP1","StatsType","Ship_Hyperdrive_JumpDistance"},
-		["SECTION_UP"] = 2,
+		SECTION_UP = 2,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin",200},
 			{"ValueMax",400}
 	}},
 	
 	{SPECIAL_KEY_WORDS = {"ID","UP_HYP2","StatsType","Ship_Hyperdrive_JumpDistance"},
-		["SECTION_UP"] = 2,
+		SECTION_UP = 2,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin",400},
 			{"ValueMax",600}
 	}},
 	
 	{SPECIAL_KEY_WORDS = {"ID","UP_HYP3","StatsType","Ship_Hyperdrive_JumpDistance"},
-		["SECTION_UP"] = 2,
+		SECTION_UP = 2,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin",600},
 			{"ValueMax",800}
 	}},
 	
 	{SPECIAL_KEY_WORDS = {"ID","UP_HYP4","StatsType","Ship_Hyperdrive_JumpDistance"},
-		["SECTION_UP"] = 2,
+		SECTION_UP = 2,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin",800},
 			{"ValueMax",1000}

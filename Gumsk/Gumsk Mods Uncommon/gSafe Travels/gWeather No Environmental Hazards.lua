@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather Environmental Hazards"
 ModNameSub = "None"
 BaseDescription = "Removes all environmental hazards"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

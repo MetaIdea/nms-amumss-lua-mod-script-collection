@@ -11,7 +11,7 @@ ModName = "_GLight"
 ModNameSub = "Grabbag"
 BaseDescription = "light modifications"
 GameVersion = "242"
-ModVersion = "g"
+ModVersion = "a"
 
 LightSettingsArray = {}
 GroupMbinArray = {}

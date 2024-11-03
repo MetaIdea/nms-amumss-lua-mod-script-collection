@@ -33,7 +33,6 @@
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcPowerStateAction.xml">
@@ -63,7 +62,6 @@
                 <Property name="AngleOffset" value="0" />
                 <Property name="AngleReflected" value="False" />
                 <Property name="AngleMinDistance" value="1" />
-                <Property name="MustAffordCostID" value="" />
                 <Property name="DistanceCheckType" value="Radius" />
                 <Property name="Inverse" value="False" />
                 <Property name="OnlyForLocalPlayer" value="False" />
@@ -87,10 +85,9 @@
           <Property name="StateID" value="SWITCHON" />
           <Property name="Triggers">
 		    <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
+              <Property name="Trigger" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcPowerStateAction.xml">
@@ -112,7 +109,7 @@
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcPlayerNearbyEvent.xml">
+              <Property name="Trigger" value="GcPlayerNearbyEvent.xml">
                 <Property name="RequirePlayerAction" value="OnFoot" />
                 <Property name="Distance" value="4" />
                 <Property name="Angle" value="360" />
@@ -120,7 +117,6 @@
                 <Property name="AngleOffset" value="0" />
                 <Property name="AngleReflected" value="False" />
                 <Property name="AngleMinDistance" value="1" />
-                <Property name="MustAffordCostID" value="" />
                 <Property name="DistanceCheckType" value="Radius" />
                 <Property name="Inverse" value="True" />
                 <Property name="OnlyForLocalPlayer" value="False" />

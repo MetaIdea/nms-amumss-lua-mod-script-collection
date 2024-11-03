@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Tech in Cargo"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "5.2.0.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

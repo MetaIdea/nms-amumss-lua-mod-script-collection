@@ -6,7 +6,7 @@ BlueAmount = "0.6"
 
 Author = "Gumsk"
 ModName = "gJetpack"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = "Trail".." "..Color
 BaseDescription = "Changes color of green jetpack trail to "..Color
@@ -26,15 +26,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 		= "TEXTURES/EFFECTS/TRAILS/PLAYER/GUMSKPLAYER"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "Textures\GUMSKPLAYER"..Color..".DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKPLAYER"..Color..".DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES/EFFECTS/TRAILS/PLAYER/GUMSKPLAYERJET"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "Textures\GUMSKPLAYERJET"..Color..".DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKPLAYERJET"..Color..".DDS",
 		},
 		{
 			FILE_DESTINATION 		= "TEXTURES/EFFECTS/TRAILS/PLAYER/GUMSKPLAYERCORE"..Color..".DDS",
-			["EXTERNAL_FILE_SOURCE"] 	= "Textures\GUMSKPLAYERCORE"..Color..".DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKPLAYERCORE"..Color..".DDS",
 		}
 	},
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",

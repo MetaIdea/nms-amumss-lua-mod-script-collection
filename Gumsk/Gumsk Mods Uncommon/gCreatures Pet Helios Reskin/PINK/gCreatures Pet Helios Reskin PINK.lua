@@ -7,7 +7,7 @@ Author = "Gumsk+Jasondude"
 ModName = "gCreatures Pet Helios Reskin"
 ModNameSub = Color
 BaseDescription = "Changes color of of the child of Helios pet to "..Color
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FileSource1 = "MODELS/PLANETS/CREATURES/FISH/LANDJELLYFISH.SCENE.MBIN"
@@ -103,16 +103,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						
 						{
 							SPECIAL_KEY_WORDS = {"Name","GlowPlane"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Name","GlowAuraEmitter"},
-							["REMOVE"] = "SECTION",
+							REMOVE = "SECTION",
 						},
 						{
 							SPECIAL_KEY_WORDS = {"Name","pointLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = LightText
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = LightText
 						},
 					}
 				},

@@ -106,8 +106,8 @@ MODIFICATIONS	= {{
 			{{"Delay",4},
 			{"Speed", 0.5}}},
 		-- {PRECEDING_KEY_WORDS = {"GcTriggerActionComponentData.xml"},
-			-- ["REMOVE"] = "SECTION"},
+			-- REMOVE = "SECTION"},
 		-- {PRECEDING_KEY_WORDS = {"TkAnimationComponentData.xml"},
-			-- ["ADD"] = States,
+			-- ADD = States,
 			-- REPLACE_TYPE = "ADDAFTERSECTION"}
 }}}}}}

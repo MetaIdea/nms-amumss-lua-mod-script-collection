@@ -2,7 +2,7 @@ Author = "Mjjstral+Gumsk+Babscoole"
 ModName = "gSave Auto"
 ModNameSub = "1"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "464"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							PRECEDING_KEY_WORDS = {"LodDistances"}, 
 							LINE_OFFSET 		= "-2",
-							["ADD"] 				= 
+							ADD 				= 
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="GUMSK/AUTOSAVE.SCENE.MBIN" />
@@ -57,7 +57,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
   <Property name="Attributes">
 	<Property value="TkSceneNodeAttributeData.xml">
 	  <Property name="Name" value="ATTACHMENT" />
-	  <Property name="AltID" value="" />
 	  <Property name="Value" value="GUMSK/AUTOSAVE.ENTITY.MBIN" />
 	</Property>
   </Property>

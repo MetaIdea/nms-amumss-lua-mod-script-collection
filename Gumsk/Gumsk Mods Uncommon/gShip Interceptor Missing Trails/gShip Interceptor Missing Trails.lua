@@ -1,6 +1,6 @@
 ModName = "gShip Interceptor Missing Trails"
 ModNameSub = ""
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 ENGINEFLAME1_ADD = [[        <Property value="TkSceneNodeData.xml">
@@ -419,8 +419,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME1_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME1_ADD
 						},
 					}
 				},
@@ -429,8 +429,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME2_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME2_ADD
 						},
 					}
 				},
@@ -439,8 +439,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME3_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME3_ADD
 						},
 					}
 				},
@@ -449,8 +449,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME4_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME4_ADD
 						},
 					}
 				},
@@ -459,8 +459,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME5_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME5_ADD
 						},
 					}
 				},
@@ -469,8 +469,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = ENGINEFLAME6_ADD
+							ADD_OPTION = "ADDafterSECTION",
+							ADD = ENGINEFLAME6_ADD
 						},
 					}
 				},

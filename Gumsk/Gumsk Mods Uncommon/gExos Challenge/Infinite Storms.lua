@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "gExos Challenge"
 ModNameSub = "Infinite Storms"
 BaseDescription = "Makes storms permanent on extreme planets"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -29,22 +29,22 @@ EXML_CHANGE_TABLE = {
 		{"NoAtmosphereFogStrength", "0.03"},
 		}},
 	{PRECEDING_KEY_WORDS = {"PlanetFog"},
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"FogMax", "0.5"},
 		}},
 	{PRECEDING_KEY_WORDS = {"PlanetExtremeFog"},
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"FogMax", "0.67"},
 		}},
 	{PRECEDING_KEY_WORDS = {"PlanetStormFog"},
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"FogMax", "0.67"},
 		}},
 	{PRECEDING_KEY_WORDS = {"PlanetFlightFog"},
-	["INTEGER_TO_FLOAT"] = "FORCE",
+	INTEGER_TO_FLOAT = "FORCE",
 	VALUE_CHANGE_TABLE = {
 		{"FogStrength", "0.07"},
 		{"FogMax", "0.67"},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Toy Sphere"
 BaseDescription = "Mutes the toy sphere decoration"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

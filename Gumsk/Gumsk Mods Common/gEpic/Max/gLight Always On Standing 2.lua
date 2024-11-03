@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "5.2.0.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 ModNameSub = "Standing 2"
 BaseDescription = "Makes Standing Light 2 work without power and improves lighting."

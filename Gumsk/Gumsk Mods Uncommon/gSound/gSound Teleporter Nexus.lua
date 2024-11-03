@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Nexus Teleporter"
 BaseDescription = "Mutes the Nexus Teleporter"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

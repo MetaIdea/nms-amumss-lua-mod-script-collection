@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GPower"
 ModNameSub = "Wireless"
 BaseDescription = ""
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 

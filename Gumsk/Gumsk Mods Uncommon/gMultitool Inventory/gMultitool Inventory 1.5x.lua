@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gMultitool Inventory"
 ModNameSub = "1.5"
 BaseDescription = "Increases multitool inventory limits"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"
 

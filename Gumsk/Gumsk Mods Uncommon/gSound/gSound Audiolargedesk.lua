@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSound"
 ModNameSub = "Large Desk"
 BaseDescription = "Mutes the Large Desk"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

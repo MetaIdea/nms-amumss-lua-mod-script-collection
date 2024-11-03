@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -82,7 +82,7 @@ EXML_CHANGE_TABLE = {
 {}
 },}},}}}
 
-local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINERMODIFICATIONS[1]MBIN_CHANGE_TABLE[1]EXML_CHANGE_TABLE
 
 --===========================================
 --Loop through each subtype for the upgrade
@@ -323,7 +323,7 @@ for i = 1,#Element_Name_Array do
 		temp_table =
 		{
 		SPECIAL_KEY_WORDS = {"ID", "UP_"..Element_Name_Array[i][1]..j},
-		["REMOVE"] = "SECTION"
+		REMOVE = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
 	end
@@ -334,7 +334,7 @@ for i = 1,#Water_Name_Array do
 		temp_table =
 		{
 		SPECIAL_KEY_WORDS = {"ID", "UP_"..Water_Name_Array[i][1]..j},
-		["REMOVE"] = "SECTION"
+		REMOVE = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
 	end
@@ -345,7 +345,7 @@ for i = 1,#Mining_Name_Array do
 		temp_table =
 		{
 		SPECIAL_KEY_WORDS = {"ID", "UP_"..Mining_Name_Array[i][1]..j},
-		["REMOVE"] = "SECTION"
+		REMOVE = "SECTION"
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table
 	end
@@ -353,14 +353,14 @@ end
 
 temp_table = {
 		SPECIAL_KEY_WORDS = {"ID","UP_SHLD4"},
-		["ADD"] = Upgrade_Text,
+		ADD = Upgrade_Text,
 		REPLACE_TYPE = "ADDAFTERSECTION"}
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 
 
 temp_table = {
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN1","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.95"},
 			{"ValueMax","0.99"},
@@ -368,7 +368,7 @@ temp_table = {
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN2","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.9"},
 			{"ValueMax","0.95"},
@@ -376,7 +376,7 @@ temp_table = {
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN3","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.85"},
 			{"ValueMax","0.9"},
@@ -384,7 +384,7 @@ temp_table = {
 Change_Table_Array[#Change_Table_Array + 1] = temp_table
 temp_table = {
 		SPECIAL_KEY_WORDS = {"ID","UP_EXGUN4","StatsType","Vehicle_GunRate"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin","0.8"},
 			{"ValueMax","0.85"},

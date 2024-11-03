@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gShip Phase Beam"
 ModNameSub = Color
 BaseDescription = "Changes color of phase beam to "..Color
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 FileSource1 = "MODELS\EFFECTS\LINES\SHIPLASERLINECORE.MATERIAL.MBIN"

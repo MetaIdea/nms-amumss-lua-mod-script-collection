@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Flight PC"
 ModNameSub = "Planet Backward Only"
 BaseDescription = "Flight modifications"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 

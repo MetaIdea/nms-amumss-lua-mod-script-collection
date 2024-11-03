@@ -2,8 +2,8 @@ Author			= "Gumsk"
 ModName			= "gNPC"
 ModNameSub		= "No Flyovers"
 BaseDescription	= "Disables random NPC flyovers"
-GameVersion		= "4711"
-ModVersion		= "a"
+GameVersion		= "415"
+ModVersion = "a"
 
 FileSource1		= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 

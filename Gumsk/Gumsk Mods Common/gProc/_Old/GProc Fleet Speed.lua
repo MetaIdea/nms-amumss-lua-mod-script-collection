@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GProc"
 ModNameSub = "Fleet Speed 0.05"
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.1.2.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
@@ -16,7 +16,7 @@ MODIFICATIONS	= {
 MBIN_FILE_SOURCE = FileSource1,
 EXML_CHANGE_TABLE = {
 	{SPECIAL_KEY_WORDS = {"ID","UP_FRSPE4","StatsType","Freighter_Fleet_Speed"},
-		["SECTION_UP"] = 1,
+		SECTION_UP = 1,
 		VALUE_CHANGE_TABLE = {
 			{"ValueMin", 0.05},
 			{"ValueMax", 0.05},

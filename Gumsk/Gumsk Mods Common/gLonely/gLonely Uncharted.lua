@@ -1,9 +1,9 @@
 Author			= "Gumsk"
 ModName			= "gLonely"
-ModNameSub		= "Uncharted Galaxy"
+ModNameSub		= "Uncharted"
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion	= "4462"
-ModVersion		= "a"
+GameVersion = "5.2.2.0"
+ModVersion = "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 FileSource2 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
@@ -62,8 +62,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							PRECEDING_KEY_WORDS = {"AbandonedSystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",0},			--Yellow
-								{"IGNORE",0},			--Green
+								{"IGNORE",0},		  	--Yellow
+								{"IGNORE",0},		  	--Green
 								{"IGNORE",0},				--Blue
 								{"IGNORE",0},				--Red
 							},
@@ -72,8 +72,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							PRECEDING_KEY_WORDS = {"EmptySystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",1},			--Yellow
-								{"IGNORE",1},			--Green
+								{"IGNORE",1},		  	--Yellow
+								{"IGNORE",1},		  	--Green
 								{"IGNORE",1},				--Blue
 								{"IGNORE",1},				--Red
 							},
@@ -81,34 +81,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--=============================================================================
 			--Fewer NPC Ships by Gumsk
 			--=============================================================================
-						-- {
-							-- PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
-							-- LINE_OFFSET = "+1",
-							-- VALUE_CHANGE_TABLE = {
-								-- {"IGNORE",0},
-							-- },
-						-- },
-						-- {
-							-- PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
-							-- LINE_OFFSET = "+2",
-							-- VALUE_CHANGE_TABLE = {
-								-- {"IGNORE",0},
-							-- },
-						-- },
-						-- {
-							-- PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
-							-- LINE_OFFSET = "+3",
-							-- VALUE_CHANGE_TABLE = {
-								-- {"IGNORE",0},
-							-- },
-						-- },			
-						-- {
-							-- PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
-							-- LINE_OFFSET = "+4",
-							-- VALUE_CHANGE_TABLE = {
-								-- {"IGNORE",0},
-							-- },
-						-- },	
+						{
+							PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
+							LINE_OFFSET = "+1",
+							VALUE_CHANGE_TABLE = {
+								{"IGNORE",0.01},
+							},
+						},
+						{
+							PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
+							LINE_OFFSET = "+2",
+							VALUE_CHANGE_TABLE = {
+								{"IGNORE",0.05},
+							},
+						},
+						{
+							PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
+							LINE_OFFSET = "+3",
+							VALUE_CHANGE_TABLE = {
+								{"IGNORE",0.2},
+							},
+						},			
+						{
+							PRECEDING_KEY_WORDS = {"SpaceshipSpawnFreqMultipliers"},
+							LINE_OFFSET = "+4",
+							VALUE_CHANGE_TABLE = {
+								{"IGNORE",0.05},
+							},
+						},	
 					}
 				},
 			--=============================================================================

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gExos Challenge"
 ModNameSub = "Reality"
 BaseDescription = "Increases suit upgrade prices"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 SuitMainPrices = [[ <Property name="SuitUpgradePrices">
@@ -119,26 +119,26 @@ EXML_CHANGE_TABLE = {
 	}},
 	
 	{PRECEDING_KEY_WORDS = {"SuitUpgradePrices"},
-		["REMOVE"] = "SECTION",
+		REMOVE = "SECTION",
 	},
 	{PRECEDING_KEY_WORDS = {"ShipTechOnlyStartingLayout"},
-		["ADD"] = SuitMainPrices,
+		ADD = SuitMainPrices,
 		REPLACE_TYPE = "ADDAFTERSECTION",
 	},
 
 	{PRECEDING_KEY_WORDS = {"SuitTechOnlyUpgradePrices"},
-		["REMOVE"] = "SECTION",
+		REMOVE = "SECTION",
 	},
 	{PRECEDING_KEY_WORDS = {"SuitUpgradePrices"},
-		["ADD"] = SuitTechPrices,
+		ADD = SuitTechPrices,
 		REPLACE_TYPE = "ADDAFTERSECTION",
 	},
 
 	{PRECEDING_KEY_WORDS = {"SuitCargoUpgradePrices"},
-		["REMOVE"] = "SECTION",
+		REMOVE = "SECTION",
 	},
 	{PRECEDING_KEY_WORDS = {"SuitTechOnlyUpgradePrices"},
-		["ADD"] = SuitCargoPrices,
+		ADD = SuitCargoPrices,
 		REPLACE_TYPE = "ADDAFTERSECTION",
 	},
 	

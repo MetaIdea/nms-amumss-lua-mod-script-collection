@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gFreighter Roberts Lights Colors Tertiary"
 ModNameSub = Color
 BaseDescription = "Changes color of tertiary external lights on Roberts class freighters to "..Color
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 
 ColorsRgb = {

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame Gameplay"
 ModNameSub = "Tech"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "5.2.0.0"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

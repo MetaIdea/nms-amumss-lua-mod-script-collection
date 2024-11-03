@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCharacter"
 ModNameSub = ""
 BaseDescription = "Character movement changes"
-GameVersion = "4711"
+GameVersion = "5.2.2.0"
 ModVersion = "a"
 FileSource1 = "GCCHARACTERGLOBALS.GLOBAL.MBIN"
 

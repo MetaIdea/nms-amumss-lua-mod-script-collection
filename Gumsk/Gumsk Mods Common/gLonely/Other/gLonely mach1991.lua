@@ -1,19 +1,34 @@
 Author			= "Gumsk"
 ModName			= "gLonely"
-ModNameSub		= "Normal"
+ModNameSub		= "mach1991"
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion	= "4462"
-ModVersion		= "a"
+GameVersion = "5.2.2.0"
+ModVersion = "a"
 
-FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
-FileSource2 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
-FileSource3 = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN"
-FileSource4 = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN"
-FileSource5 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
-FileSource6 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
-FileSource7 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
-FileSource8 = "METADATA\SIMULATION\NPCS\NPCSPAWNTABLE.MBIN"
-FileSource9 = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN"
+EffectMult = 0.3
+
+--[[ Files Modified:
+GCGRAPHICSGLOBALS.GLOBAL.MBIN
+GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN
+GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN
+METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN
+METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN
+GCGAMEPLAYGLOBALS.GLOBAL.MBIN
+GCAISPACESHIPGLOBALS.GLOBAL.MBIN
+METADATA\SIMULATION\NPCS\NPCSPAWNTABLE.MBIN
+METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN
+--]]
+
+function CalcEffect(OldValue,NewValue,NumDecimalPlaces)
+  local Difference = abs(OldValue - NewValue)
+  if RoundBool and NumDecimalPlaces > 0 then
+    local mult = 10^NumDecimalPlaces
+    return math.floor((Difference * EffectMult * mult) + 0.5) / mult
+  end
+  return math.floor((Difference * EffectMult) + 0.5)
+end
+
+CalcEffect(5000000,10000000,0)
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME			= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -23,14 +38,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	GLOBAL_INTEGER_TO_FLOAT	= "FORCE",
 	MODIFICATIONS			= {
 		{
-			MBIN_CHANGE_TABLE = {
+      MBIN_CHANGE_TABLE = {
 			--=============================================================================
 			--Increased system size and planet distance visibility by Fabricator
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource1,
+					MBIN_FILE_SOURCE = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
+              MATH_OPERATION = "*",
 							VALUE_CHANGE_TABLE = {
 								{"FarClipDistance",10000000}, --5000000
 							},
@@ -39,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 
 				{
-					MBIN_FILE_SOURCE = FileSource2,
+					MBIN_FILE_SOURCE = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
@@ -62,8 +78,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							PRECEDING_KEY_WORDS = {"AbandonedSystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",0.05},		--Yellow
-								{"IGNORE",0},			--Green
+								{"IGNORE",0.05},			--Yellow
+								{"IGNORE",0},				--Green
 								{"IGNORE",0},				--Blue
 								{"IGNORE",0.05},			--Red
 							},
@@ -72,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							PRECEDING_KEY_WORDS = {"EmptySystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",0.9},			--Yellow
+								{"IGNORE",0.9},				--Yellow
 								{"IGNORE",0.95},			--Green
 								{"IGNORE",0.95},			--Blue
 								{"IGNORE",0.95},			--Red
@@ -115,7 +131,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Fewer Freighter NPCs
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource3,
+					MBIN_FILE_SOURCE = "GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
@@ -129,17 +145,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--More Dead and Weird Biomes by Gumsk
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource4,
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
-							["MATH_OPERATION"] = "*",
+							MATH_OPERATION = "*",
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Dead",3}, 	--3x normal
 							},
 						},
 						{
-							["MATH_OPERATION"] = "*",
+							MATH_OPERATION = "*",
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Weird",2},	--2x normal
@@ -151,7 +167,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Fewer Civilized Pulse Encounters by Gumsk
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource5,
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Id","BLACK_HOLE"},
@@ -265,8 +281,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--=============================================================================
 			--Fewer Overall Pulse Encounters by Gumsk
 			--=============================================================================
+			MBIN_CHANGE_TABLE = {
 				{
-					MBIN_FILE_SOURCE = FileSource6,
+					MBIN_FILE_SOURCE = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
@@ -366,7 +383,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Disable Trade Routes by Gumsk
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource7,
+					MBIN_FILE_SOURCE = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							VALUE_CHANGE_TABLE = {
@@ -379,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Reduce NPCs by Gumsk
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource8,
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\NPCS\NPCSPAWNTABLE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"PlacementRuleId","FILLER","PlacmentNodeName","NPCHIREABLE_"},
@@ -466,7 +483,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--Fewer Buildings by Gumsk
 			--=============================================================================
 				{
-					MBIN_FILE_SOURCE = FileSource9,
+					MBIN_FILE_SOURCE = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN",
 					EXML_CHANGE_TABLE = {
 						{
 							SPECIAL_KEY_WORDS = {"Shelter","GcBuildingDefinitionData.xml"},

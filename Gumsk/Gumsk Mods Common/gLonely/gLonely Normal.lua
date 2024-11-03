@@ -1,9 +1,9 @@
 Author			= "Gumsk"
 ModName			= "gLonely"
-ModNameSub		= "Dead"
+ModNameSub		= "Normal"
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion	= "4462"
-ModVersion		= "a"
+GameVersion = "5.2.2.0"
+ModVersion = "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 FileSource2 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
@@ -17,7 +17,7 @@ FileSource9 = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME			= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-	MOD_DESCRIPTION			= BaseDescription,
+	MOD_DESCRIPTION		= BaseDescription,
 	MOD_AUTHOR				= Author,
 	NMS_VERSION				= GameVersion,
 	GLOBAL_INTEGER_TO_FLOAT	= "FORCE",
@@ -62,17 +62,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							PRECEDING_KEY_WORDS = {"AbandonedSystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",0.05},			--Yellow
-								{"IGNORE",0},				--Green
+								{"IGNORE",0.05},		--Yellow
+								{"IGNORE",0},			  --Green
 								{"IGNORE",0},				--Blue
-								{"IGNORE",0.05},			--Red
+								{"IGNORE",0.05},		--Red
 							},
 						},
 						{
 							PRECEDING_KEY_WORDS = {"EmptySystemProbability"},
 							LINE_OFFSET = "+1",
 							VALUE_CHANGE_TABLE = {
-								{"IGNORE",0.9},				--Yellow
+								{"IGNORE",0.9},		  	--Yellow
 								{"IGNORE",0.95},			--Green
 								{"IGNORE",0.95},			--Blue
 								{"IGNORE",0.95},			--Red
@@ -132,14 +132,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					MBIN_FILE_SOURCE = FileSource4,
 					EXML_CHANGE_TABLE = {
 						{
-							["MATH_OPERATION"] = "*",
+							MATH_OPERATION = "*",
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
-								{"Dead",10}, 	--10x normal
+								{"Dead",3}, 	--3x normal
 							},
 						},
 						{
-							["MATH_OPERATION"] = "*",
+							MATH_OPERATION = "*",
 							REPLACE_TYPE = "ALL",
 							VALUE_CHANGE_TABLE = {
 								{"Weird",2},	--2x normal
@@ -153,6 +153,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					MBIN_FILE_SOURCE = FileSource5,
 					EXML_CHANGE_TABLE = {
+						{
+							SPECIAL_KEY_WORDS = {"Id","SPACE_EGG"},
+							VALUE_CHANGE_TABLE = {
+								{"SpawnChance",7},							 	--7
+							},
+						},
 						{
 							SPECIAL_KEY_WORDS = {"Id","BLACK_HOLE"},
 							VALUE_CHANGE_TABLE = {

@@ -286,7 +286,7 @@ MODIFICATIONS	= {
 		{MBIN_FILE_SOURCE	= FileSource13,
 		EXML_CHANGE_TABLE 	= 
 				{{SPECIAL_KEY_WORDS	= {"Name","GunLight"},
-				["ADD"] 				= SpotlightText,
+				ADD 				= SpotlightText,
 				REPLACE_TYPE		= "AddAfterSection"}}
 	}}}
 }}
