@@ -3,7 +3,7 @@ ModAuthor       =   "Knightmare077"
 LuaAuthor       =   "Babscoole & Hypn0tick"
 BaseDescription =   "Spawns more debris and keeps it around longer."
 GameVersion     =   "5.12"
-ModVersion      =   "_Aquarius"
+ModVersion      =   "_Cursed"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -1816,6 +1816,31 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Radius" value="3" />
           <Property name="Scale" value="1" />
           <Property name="Speed" value="6" />
+          <Property name="AnglularSpeed" value="1" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "GRABEYEDROP"},
+                            ["PRECEDING_KEY_WORDS"] = {"Debris"},
+                            ["CREATE_HOS"] = "TRUE",
+                            ["ADD"] =
+[[
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/PLANETS/CREATURES/FISH/PARTS/GRABBYPLANTEYE.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
+          </Property>
+          <Property name="Number" value="1" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="1" />
+          <Property name="Speed" value="2" />
           <Property name="AnglularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
