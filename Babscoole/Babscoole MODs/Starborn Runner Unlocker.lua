@@ -1,12 +1,12 @@
-REWARD_ID       = "RS_S13_SHIP"
-REWARD_ICON     = "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/HERO1.EXPEDITION.SHIP13.DDS"
-REWARD_TITLE    = "Iron Vulture"
+REWARD_ID       = "RS_S12_SHIP"
+REWARD_ICON     = "TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL1.EXPEDITION.SHIP12.DDS"
+REWARD_TITLE    = "Starborn Runner"
 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
-["MOD_AUTHOR"]      = "Mjstral & Babscoole",
+["MOD_FILENAME"]    = "Starborn Runner Unlocker.pak",
+["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
 ["NMS_VERSION"]     = "5.22",
 ["MODIFICATIONS"]   =

@@ -1,6 +1,8 @@
 # nms-amumss-lua-mod-script-collection
 A collection of public amumss lua mod scripts for nms.
 
+If you enjoy and use the repo, please feel free to make a PayPal [DONATION](https://www.paypal.com/donate/?business=UV76WCVYT264G&no_recurring=0%C2%A4cy_code=CAD)
+
 Mod script authors:
 
 - [Mjstral aka MetaIdea](https://www.nexusmods.com/users/45932167?tab=user+files) -> Also check out my [ship customizer tool](https://nms.center/)
