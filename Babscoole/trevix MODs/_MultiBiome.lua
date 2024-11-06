@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_MultiBiome.pak",
 ["MOD_AUTHOR"]              = "trevix",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "5.03",
+["NMS_VERSION"]             = "5.22",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -487,6 +487,12 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="VariableSizeString.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/HUGEUWPLANTOBJECTS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
+        </Property>
+        <Property value="VariableSizeString.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
         </Property>
 ]]
                         },
