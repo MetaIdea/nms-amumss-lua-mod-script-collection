@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "PurplePortal.pak",
 ["MOD_AUTHOR"]      = "FriendlyFire & Babscoole",
-["NMS_VERSION"]     = "5.22",
+["NMS_VERSION"]     = "5.25",
 ["MOD_DESCRIPTION"] = "Changes portal activation lighting effects to purple",
 ["MODIFICATIONS"]   =
     {

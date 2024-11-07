@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gEpic"
 ModNameSub = "Normal"
 BaseDescription = ""
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.5.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

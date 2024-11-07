@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gProc"
 ModNameSub = ""
 BaseDescription = "Procedural technology upgrade modifications"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.5.0"
 ModVersion = "a"
 
 --[[ Files Modified:

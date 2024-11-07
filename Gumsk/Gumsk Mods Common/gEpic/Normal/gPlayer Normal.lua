@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Normal"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.5.0"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   

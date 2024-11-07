@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_Exo's Flora Colors.pak",
 ["MOD_AUTHOR"]      = "Exosolar & Babscoole",
-["NMS_VERSION"]     = "5.22",
+["NMS_VERSION"]     = "5.25",
 ["MODIFICATIONS"]   =
     {
         {

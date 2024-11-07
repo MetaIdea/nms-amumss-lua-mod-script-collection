@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Anti-Arachnophobia.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.22",
+["NMS_VERSION"]     = "5.25",
 ["MOD_DESCRIPTION"] = "Removes spider like creatures",
 ["MODIFICATIONS"]   =
     {

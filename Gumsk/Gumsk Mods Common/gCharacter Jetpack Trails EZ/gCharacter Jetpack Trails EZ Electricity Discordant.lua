@@ -5,7 +5,7 @@ Author = "Gumsk"
 ModName = "gCharacter Jetpack Trails EZ"
 ModNameSub = "Electricity Discordant"
 BaseDescription = "Adds new jetpack trails."
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.5.0"
 ModVersion = "a"
 
 TrailInfo = {

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip"
 ModNameSub = "Center Explorer Trails"
 BaseDescription = "Centers the trails on explorer engines"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.5.0"
 ModVersion = "a"
 
 --Files Modified

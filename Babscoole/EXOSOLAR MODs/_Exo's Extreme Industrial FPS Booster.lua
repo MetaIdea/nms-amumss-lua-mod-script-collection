@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Exo's Extreme Industrial FPS Booster.pak",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "5.22",
+["NMS_VERSION"]  = "5.25",
 ["ADD_FILES"]    =
     {
         {
