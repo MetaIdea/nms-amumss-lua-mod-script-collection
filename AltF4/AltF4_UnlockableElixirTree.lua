@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "AltF4_UnlockableElixirTree.pak",
     ["MOD_AUTHOR"] = "AltF4",
     ["LUA_AUTHOR"] = "AltF4",
-    ["NMS_VERSION"] = "5.22",
+    ["NMS_VERSION"] = "5.25",
     ["MOD_DESCRIPTION"] = "Add Elixir to Synthesis Laboratory unlockable item tree.",
     ["MODIFICATIONS"] = {
         {
@@ -34,6 +34,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 },
             },
         },
+-- Edit the value of "RecipeCost" to change the unlocking cost.
+--[[
         {
             ["MBIN_CHANGE_TABLE"] = {
                 {
@@ -52,5 +54,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 },
             },
         },
+]]
     }
 }

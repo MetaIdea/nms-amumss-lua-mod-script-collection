@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "A simple fix for a clearer, less foams, transparent and accurate height water for No Man's Sky.",
 ["MOD_AUTHOR"]      = "Invalidcod3",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.45",
+["NMS_VERSION"]     = "5.25",
 ["MODIFICATIONS"]   =
     {
         {
@@ -34,8 +34,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"WaterDataDay", "GcPlanetWaterData.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WaterStrength",         "0.005"},
-                                {"WaterColourStrength",   "0.5"},
+                                {"WaterStrength",         "0.01"},
+                                {"WaterColourStrength",   "0.55"},
                                 {"WaterMultiplyStrength", "0.005"},
                                 {"FoamFadeHeight",        "-10"},
                                 {"Foam1Scale",            "1"},
