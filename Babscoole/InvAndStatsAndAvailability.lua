@@ -2612,7 +2612,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Shuttle", "GcShipInventoryMaxUpgradeCapacity.xml"},
-
                             ["PRECEDING_KEY_WORDS"] = {"MaxTechInventoryCapacity"},
                             ["VALUE_CHANGE_TABLE"] =
                             {

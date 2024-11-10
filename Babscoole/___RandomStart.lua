@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "___RandomStart.pak",
-["MOD_AUTHOR"]    = "nvalidCode",
+["MOD_AUTHOR"]    = "invalidCode",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "5.25",
 ["MODIFICATIONS"] =
