@@ -2,7 +2,7 @@
 local mod_desc = [[
   Utilizes the SCENE files' descriptive name and path to match 'tags'
   from solar_modifiers table to each scene, then multiples the tags' values
-  with the properties in object_spawn_prop table.
+  with the properties in spawn_data table.
 
   Multiple modifiers in the same scene path are averaged:
   - Example:
@@ -17,25 +17,28 @@ local mod_desc = [[
    and LUSHBUBBLE applied to the one source with the matching name, overwriting LUSH.
   - The biome-specific modifiers are added to -or replace solar_modifiers.global_flora
    table and are averaged with it.
-  - Adding o=true makes a tag an override - Other matches will be ignored, unless the
-   the tag is overwritten by a biome tag.
-  - A tag with the single modifier {i=true} causes the scene to be ignored.
+  - Adding {ov=true} to a tag make it an override - Other matches will be discarded,
+   unless the the tag is overwritten by a biome tag.
+  - Adding {ul=true} to a tag adds an ULTRA section to QualityVariants and performs
+   the mod's changes only in the new section.
+  - A tag with the single modifier {ig=true} causes the scene to be ignored.
   - Other properties of GcObjectSpawnData.xml can be modded by adding a property's
-   name to object_spawn_prop with a unique key, then adding tag modifiers for it.
+   name to spawn_data with a unique key, then adding tag modifiers for it.
 ]]-------------------------------------------------------------------------------------
 
 --	Properties of [GcObjectSpawnData.xml] being modified
 local spawn_data = {
 	calcs = {
-		n	= 'MinScale',				-- [*]
-		x	= 'MaxScale',				-- [*]
-		a	= 'MaxAngle',				-- [+]
-		w	= 'ShearWindStrength',		-- [*]
-		c	= 'Coverage',				-- [*]
-		l	= 'LodDistances',			-- [*]
-		d	= 'FlatDensity',			-- [*] affects SlopeDensity
-		f	= 'FadeOutStartDistance',	-- [*] affects FadeOutEndDistance
-		r	= 'MaxRegionRadius',		-- [+]
+		ns	= 'MinScale',				-- [*] multiplier modifier
+		xs	= 'MaxScale',				-- [*]
+		an	= 'MaxAngle',				-- [+] additive modifier
+		sw	= 'ShearWindStrength',		-- [*]
+		cv	= 'Coverage',				-- [*]
+		ld	= 'LodDistances',			-- [*]
+		ds	= 'FlatDensity',			-- [*] affects SlopeDensity
+		fo	= 'FadeOutStartDistance',	-- [*] affects FadeOutEndDistance
+		rr	= 'MaxRegionRadius',		-- [+]
+		pr	= 'MaxImposterRadius',		-- [+] *10 multiplier
 	},
 	flags = {
         cp	= 'CollideWithPlayer',
@@ -50,66 +53,66 @@ local solar_modifiers = {
 		{
 			biotg = 'LUSH',
 			flora = { -- applied to all LUSH sources
-				TREE		= {n=1.15,	x=2.4,	c=0.9,	l=1.25},
-				BUBBLELUSH	= {n=1.15,	x=1.65,	f=2.6}
+				TREE		= {ns=1.15,	xs=2.4,		cv=0.9,	ld=1.25},
+				BUBBLELUSH	= {ns=1.15,	xs=1.65,	fo=2.6}
 			}
 		},
 		{
 			biotg = 'LUSHBIGPROPS',
 			flora = {
-				TREE		= {n=1.05,	x=2.2,	c=0.86},
-				CROSS		= {a=-5}
+				TREE		= {ns=1.05,	xs=2.2,		cv=0.86},
+				CROSS		= {an=-5}
 			}
 		},
 		{
 			biotg = 'LUSHBUBBLE',
 			flora = {
-				TREE		= {x=2.25,	c=0.86},
-				FERN		= {n=1.4,	x=2.6}
+				TREE		= {xs=2.25,	cv=0.86},
+				FERN		= {ns=1.4,	xs=2.6}
 			}
 		},
 		{
 			biotg = 'LUSHOBJECTSFULL',
 			flora = {
-				FERN		= {n=1.3,	x=1.9},
-				FLOWER		= {n=1.4,	x=1.8}
+				FERN		= {ns=1.3,	xs=1.9},
+				FLOWER		= {ns=1.4,	xs=1.8}
 			}
 		},
 		{
 			biotg = 'LUSHHQTENTACLE',
 			flora = {
-				TENTACLE	= {n=1.2,	x=1.78,	c=0.94}
+				TENTACLE	= {ns=1.2,	xs=1.78,	cv=0.94}
 			}
 		},
 		{
 			biotg = 'LUSHROOMB',
 			flora = {
-				SHROOMSINGL	= {n=1.8,	x=2.85,	o=true}
+				SHROOMSINGL	= {ns=1.8,	xs=2.85,	ov=true}
 			}
 		},
 		{
 			biotg = 'FROZEN',
 			flora = {-- applied to all FROZEN sources
-				TREE 		= {n=1.15,	x=2.45,	c=0.8,	l=1.25},
-				LIVINGSHIP	= {r=-1,	l=1.02}
+				TREE 		= {ns=1.15,	xs=2.45,	cv=0.8,	ld=1.25},
+				LIVINGSHIP	= {rr=-1,	ld=1.02}
 			}
 		},
 		{
 			biotg = 'RADIOBIG',
 			flora = {
-				ROCK		= {n=1.1,	x=1.3,	c=0.95}
+				ROCK		= {ns=1.1,	xs=1.3,		cv=0.95}
 			}
 		},
 		{
 			biotg = 'RADIOSPIKEPOTATO',
 			flora = {
-				WEIRD		= {x=1.4,	c=1.2} -- potato
+				WEIRD		= {xs=1.4,	cv=1.2} -- potato
 			}
 		},
 		{
 			biotg = 'SCORCHED',
 			flora = {
-				HUGESPIRE	= {n=0.9,	x=0.95,	c=0.8}
+				HUGESPIRE	= {ns=0.9,	xs=0.95,	cv=0.8}
 			},
 			flags = {
 				MEDIUMSPIRE	= {dv=true}
@@ -118,95 +121,123 @@ local solar_modifiers = {
 		{
 			biotg = 'TOXIC',
 			flora = {
-				HUGETOXIC	= {n=0.7,	x=0.96,	c=0.78}
+				HUGETOXIC	= {ns=0.7,	xs=0.96,	cv=0.78}
 			}
 		},
 		{
 			biotg = 'TOXICOBJECTSFULL',
 			flora = {
-				LARGEBLOB	= {n=0.4,	x=0.8},
-				FUNGALTREE	= {n=1.15,	x=1.75,	c=0.86}
+				LARGEBLOB	= {ns=0.4,	xs=0.8},
+				FUNGALTREE	= {ns=1.15,	xs=1.75,	cv=0.86}
 			}
 		},
 		{
 			biotg = 'ROCKY',
 			flora = {-- less -and smaller rocks on rocky biomes
-				FACEBLEND	= {n=0.8,	x=0.84,	c=0.76,	o=true},
-				TOXICGRASS	= {x=1.9,			c=1.05},
+				FACEBLEND	= {ns=0.8,	xs=0.84,	cv=0.76,	ov=true},
+				TOXICGRASS	= {xs=1.9,				cv=1.05},
 			}
 		},
 		{
 			biotg = 'SWAMP',
 			flora = {
-				GROVELARGEF	= {n=1.05,	x=1.55,	c=1.02,	u=true,	o=true},
-				GROVELARGE	= {n=0.8,	x=-0.7, c=0.82,	u=true},
-				HQTREE		= {n=1.15,	x=2.5,	c=0.9},
-				FERN		= {n=1.5,	x=2.1},
-				FLOWER		= {n=1.4,	x=1.8, 	w=0.94}
+				GROVELARGEF	= {ns=1.05,	xs=1.55,	cv=1.02,	ul=true,	ov=true},
+				GROVELARGE	= {ns=0.8,	xs=-0.7, 	cv=0.82,	ul=true},
+				HQTREE		= {ns=1.15,	xs=2.5,		cv=0.9},
+				FERN		= {ns=1.5,	xs=2.1},
+				FLOWER		= {ns=1.4,	xs=1.8, 	sw=0.94}
+			}
+		},
+		{
+			biotg = 'HUGERING',
+			flora = {
+				ROCKRING	= {cv=0.7}
 			}
 		},
 		{
 			biotg = 'ALIEN',
 			flora = {
-				LARGE		= {n=0.95,	x=1.02,	c=0.92},
-				MEDIUM		= {n=0.9,	x=1.05,	c=0.82},
-				SMALL		= {n=0.95,	x=1.05},
+				LARGE		= {ns=0.95,	xs=1.02,	cv=0.92},
+				MEDIUM		= {ns=0.9,	xs=1.05,	cv=0.82},
+				SMALL		= {ns=0.95,	xs=1.05},
 			}
 		},
 		{
 			biotg = 'WEIRD',
 			flora = {
-				WEIRD		= {f=2.5,	l=2.0},
+				WEIRD		= {ld=2.6,	rr=6,		ul=true},
+				BONESPIRE	= {pr=7},
+				CONTOUR		= {pr=7},
+				SHELLSAIL	= {pr=8},
+				SHELLSHARD	= {pr=8},
+				HYDROGARDEN	= {pr=7},
+				MSTRUCTURE	= {pr=7},
+			}
+		},
+		{
+			biotg = 'LEVELONE',
+			flora = {
+				DEBRIS		= {cv=0, 	ov=true},
+				CRATE		= {cv=0, 	ov=true},
+				UNDERGROUND	= {cv=0.1, 	ov=true},
+				WORDSTONE	= {cv=0.33}
+			}
+		},
+		{
+			biotg = 'STORMCRYSTAL',
+			flags = {
+				STORMCRYST	= {cv=true,	dv=false}
 			}
 		},
 		{
 			biotg = 'PLANT',
 			flora = {
-				INTERACTIVE	= {n=0.48,	x=0.01,	c=1.1},
+				INTERACTIVE	= {ns=0.48,	xs=0.01,	cv=1.1},
 			}
 		},
 		{
-			biotg = 'WATERCRYSTAL',
+			biotg = 'UNDERWATER',
 			flora = {
-				CRYSTAL		= {x=0.9,	c=0.65, d=0.8, 	o=true},
-				LARGE		= {x=1.02,	o=true}
+				CRYSTAL		= {xs=0.9,	cv=0.5,	ds=0.8, 	ov=true},
+				GASBAG		= {xs=0.85,	cv=0.5,	ds=0.9},
+				-- CRYSTALSSHAPE/LARGE
+				LARGE		= {xs=1.02,	ov=true}
 			}
 		}
 	},
 	global_flora = {
-		SHARD		= {n=1.05,	x=1.4},
-		SPIRE		= {n=1.15,	x=1.3},
-		ROCK		= {n=1.2,	x=1.75},
-		CACTUS		= {n=1.1,	x=1.55},
-		TREE		= {n=1.15,	x=2.4,	l=1.8},
-		SHROOM		= {n=1.05,	x=2.5},
-		FOLIAGE		= {n=1.1,	x=1.3},
-		FLOWERS		= {x=1.2,			f=1.4},
-		CROSS		= {n=0.95,	x=1.1,	f=2.0,	d=0.9,	l=1.5},	-- grass   (add fix with maximum value !?!)
-		LBOARD		= {n=0.95,	x=1.1,	f=1.8,	d=0.9,	l=1.5},	-- grass
-		LUSHGRASS	= {x=1.4,			f=1.6,	d=0.9,	l=1.5},	-- grass
-		BUBBLELUSH	= {x=1.15,			f=2.2,			l=1.5},	-- grass
-		TOXICGRASS	= {n=1.2,	x=1.6,	f=1.4,	w=0},			-- shrooms not grass!
-		PLANT		= {n=0.94,	x=1.5},
-		TENDRIL		= {n=1.1,	x=1.55,	f=1.4},
-		BOULDER		= {n=1.1,	x=1.4},
-		CURVED		= {x=1.5},
-		DROPLET		= {n=1.05,	x=1.55},
-		SPORE		= {x=1.2},
-		LARGE		= {n=1.2,	x=1.6,	c=0.92},
-		MEDIUM		= {n=1.05,	x=0.95},
-		SMALL		= {n=0.95,	x=0.8},
-		FIENDEGG	= {c=0.4},
+		SHARD		= {ns=1.05,	xs=1.4},
+		SPIRE		= {ns=1.15,	xs=1.3},
+		ROCK		= {ns=1.2,	xs=1.75},
+		CACTUS		= {ns=1.1,	xs=1.55},
+		TREE		= {ns=1.15,	xs=2.4,	ld=1.8},
+		SHROOM		= {ns=1.05,	xs=2.5},
+		FOLIAGE		= {ns=1.1,	xs=1.3},
+		FLOWERS		= {xs=1.2,			fo=1.4},
+		CROSS		= {ns=0.95,	xs=1.1,	fo=2.0,	ds=0.88,	ld=1.5},	-- grass
+		LBOARD		= {ns=0.95,	xs=1.1,	fo=1.8,	ds=0.88,	ld=1.5},	-- grass
+		LUSHGRASS	= {xs=1.4,			fo=1.6,	ds=0.88,	ld=1.5},	-- grass
+		BUBBLELUSH	= {xs=1.15,			fo=2.2,				ld=1.5},	-- grass
+		TOXICGRASS	= {ns=1.2,	xs=1.6,	fo=1.4,	sw=0},					-- shrooms!
+		PLANT		= {ns=0.94,	xs=1.5},
+		TENDRIL		= {ns=1.1,	xs=1.55,		fo=1.4},
+		BOULDER		= {ns=1.1,	xs=1.4},
+		CURVED		= {xs=1.5},
+		DROPLET		= {ns=1.05,	xs=1.55},
+		SPORE		= {xs=1.2},
+		LARGE		= {ns=1.2,	xs=1.6,	cv=0.92},
+		MEDIUM		= {ns=1.05,	xs=0.95},
+		SMALL		= {ns=0.95,	xs=0.8},
 
 	--- global lod multiplier
-		SCENE		= {l=1.2},
+		SCENE		= {ld=1.24},
 
-	---	skipped
-		LAVA		= {i=true},
-		FRAGMENT	= {i=true},
-		GRAVEL		= {i=true},
-		HUGEPROPS	= {i=true},
-		FARM		= {i=true}
+	---	ignored
+		LAVA		= {ig=true},
+		FRAGMENT	= {ig=true},
+		GRAVEL		= {ig=true},
+		HUGEPROPS	= {ig=true},
+		FARM		= {ig=true}
 	},
 	global_flags = {}
 }
@@ -287,6 +318,7 @@ local source_mbins = {
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESOBJECTS.MBIN',
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESOBJECTS.MBIN',
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/UNDERWATERCRYSTALS.MBIN',
+	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/UNDERWATER/UNDERWATERGASBAGS.MBIN',
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/BEAMSTONE/BEAMSOBJECTSDEAD.MBIN',
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/BONESPIRE/BONESPIREOBJECTSDEAD.MBIN',
 	'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/CONTOUR/CONTOUROBJECTSDEAD.MBIN',
@@ -488,7 +520,7 @@ end
 --	sum scale values and counters for averaging
 function spawn_data:addValues(tag)
 	for k, val in pairs(tag) do
-		if val ~= 1 then
+		if val ~= 1 and k ~= 'ul' then
 			self.mods[k].v = self.mods[k].v + val
 			self.mods[k].i = self.mods[k].i + 1
 		end
@@ -502,15 +534,14 @@ function spawn_data:averages()
 end
 --	copy scales to results in order to bypass averaging
 function spawn_data:copyRes(tag)
-	tag.o = nil -- o not needed any more & it gets in the way
 	for k, d in pairs(tag) do
 		self.res[k] = d
 	end
 end
 
 --	find all tags for a single spawn and return their average
---	o=true tag marks an override, values will not to be averaged with others
---	i=true tag marks ignored. results are deleted and the spawn will be unchanged
+--	ov=true tag marks an override, values will not to be averaged with others
+--	ig=true tag marks ignored. results are deleted and the spawn will be unchanged
 function spawn_data:averageScales(spawn, worktags)
 	-- Generate the modifiers and counters tables for each spawn
 	self.mods	= {}
@@ -523,15 +554,14 @@ function spawn_data:averageScales(spawn, worktags)
 	for key, tag in pairs(worktags) do
 		if spawn:find(key) then
 			-- process special flags first
-			if tag.i then
+			if tag.ig then
 				self.res = nil
 				return
 			end
-			if tag.u then
+			if tag.ul then
 				self.ultra = true
-				tag.u = nil
 			end
-			if tag.o then
+			if tag.ov then
 				self:copyRes(tag)
 				return
 			end
@@ -567,31 +597,29 @@ function solar_modifiers:getModifiers(mbin)
 	return scales, flags
 end
 
---	return if result is present for a given property key
-local function HasMod(k)
-	return spawn_data.res and (spawn_data.res[k] ~= -1)
-end
-
---	main work.
---	Receives the converted exml file from amumss
+--	main work process.
+--	Receives the exml file from amumss
 local function ProcessBiome(exml, mbin)
+	local function HasMod(k)
+	--	True if result is present for a given property key
+		return spawn_data.res and (spawn_data.res[k] ~= -1)
+	end
 	local function getHighVariant(qvars)
-	-- Select the highest GcObjectSpawnDataVariant (between LOW STANDARD ULTRA)
-	-- Add ULTRA section if flagged and return it for editing
+	--	Select the highest GcObjectSpawnDataVariant (between LOW STANDARD ULTRA)
+	--	Add ULTRA section if flagged and return it for editing
 		for _,qv in ipairs(qvars) do
 			qvars.meta[qv.ID] = qv
 		end
-		local qhigh = qvars.meta.STANDARD
 		if qvars.meta.ULTRA then
-			qhigh = qvars.meta.ULTRA
-		end
-		if not qvars.meta.ULTRA and spawn_data.ultra then
-			-- add ultra quality
-			qhigh			= UnionTables({qhigh})
+			return qvars.meta.ULTRA
+		elseif spawn_data.ultra then -- add ultra section
+			local qhigh		= UnionTables({qvars.meta.STANDARD})
 			qhigh.ID		= 'ULTRA'
 			qvars[#qvars+1] = qhigh
+			return qhigh
+		else
+			return qvars.meta.STANDARD
 		end
-		return qhigh
 	end
 	local solar_biome = ToLua(exml)
 
@@ -604,32 +632,35 @@ local function ProcessBiome(exml, mbin)
 		if key ~= 'SelectableObjects' and key ~= 'Creatures' and key ~= 'meta' then
 			for _, spn in ipairs(objs) do
 				spawn_data:averageScales(spn.Resource.Filename, workflora)
-				if HasMod('n') then spn.MinScale		  = spn.MinScale * spawn_data.res.n end
-				if HasMod('x') then spn.MaxScale		  = spn.MaxScale * spawn_data.res.x end
-				if HasMod('a') then spn.MaxAngle		  = spn.MaxAngle + spawn_data.res.a end
-				if HasMod('w') then spn.ShearWindStrength = spn.ShearWindStrength * spawn_data.res.w end
+				if HasMod('ns') then spn.MinScale		  = spn.MinScale * spawn_data.res.ns end
+				if HasMod('xs') then spn.MaxScale		  = spn.MaxScale * spawn_data.res.xs end
+				if HasMod('an') then spn.MaxAngle		  = spn.MaxAngle + spawn_data.res.an end
+				if HasMod('sw') then spn.ShearWindStrength = spn.ShearWindStrength * spawn_data.res.sw end
 
 				-- edit GcObjectSpawnDataVariant
 				local qvr = getHighVariant(spn.QualityVariants)
-				if HasMod('d') then
-					qvr.FlatDensity  = qvr.FlatDensity * spawn_data.res.d
+				if HasMod('ds') then
+					qvr.FlatDensity  = qvr.FlatDensity * spawn_data.res.ds
 					qvr.SlopeDensity = qvr.FlatDensity * 1.1
 				end
-				if HasMod('f') then
-					qvr.FadeOutStartDistance = qvr.FadeOutStartDistance * spawn_data.res.f
+				if HasMod('fo') and tonumber(qvr.FadeOutStartDistance) < 9000 then
+					qvr.FadeOutStartDistance = qvr.FadeOutStartDistance * spawn_data.res.fo
 					qvr.FadeOutEndDistance	 = qvr.FadeOutStartDistance + 20
 				end
-				if HasMod('c') then qvr.Coverage = qvr.Coverage * spawn_data.res.c end
+				if HasMod('cv') then qvr.Coverage = qvr.Coverage * spawn_data.res.cv end
 
-				lod = HasMod('l') and spawn_data.res.l or 1.2 -- default overwritten by SCENE global
+				lod = HasMod('ld') and spawn_data.res.ld or 1.22 -- default overwritten by SCENE global
 				for i=2, #qvr.LodDistances do
 					qvr.LodDistances[i].value = qvr.LodDistances[i].value * lod
 				end
-				if HasMod('r') then
-					qvr.MaxRegionRadius = qvr.MaxRegionRadius + spawn_data.res.r
-				else
-					mr = tonumber(qvr.MaxRegionRadius)
-					qvr.MaxRegionRadius = qvr.MaxRegionRadius + ((mr < 15 and mr > 6) and 1 or 4)
+				local rr = tonumber(qvr.MaxRegionRadius)
+				if HasMod('rr') then
+					qvr.MaxRegionRadius = math.floor(rr + spawn_data.res.rr)
+				elseif rr < 90 then
+					qvr.MaxRegionRadius = rr + ((rr < 15 and rr > 6) and 1 or 4)
+				end
+				if HasMod('pr') and tonumber(qvr.MaxImposterRadius) < 90 and rr < 90 then
+					qvr.MaxImposterRadius = math.floor(qvr.MaxImposterRadius + spawn_data.res.pr * 10)
 				end
 				--	loop through boolean flags
 				spawn_data:getFlags(spn.Resource.Filename, workflags)
@@ -656,7 +687,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.20',
+	NMS_VERSION			= '5.25',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
