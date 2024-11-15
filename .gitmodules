@@ -1,9 +1,6 @@
 [submodule "CodenameAwesome-aka-Ignacio"]
 	path = CodenameAwesome-aka-Ignacio
 	url = https://github.com/ignamiranda/NoMansSkyLuaMods
-[submodule "Silent369"]
-	path = Silent369
-	url = https://github.com/Silent369/NoMansSky
 [submodule "Lasagna"]
 	path = Lasagna
 	url = https://github.com/SunnySummit/LasagnaBiomeGeneration2/
