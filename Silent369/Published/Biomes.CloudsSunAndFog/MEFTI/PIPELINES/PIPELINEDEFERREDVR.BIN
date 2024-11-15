@@ -243,6 +243,12 @@
   <!-- Scene rendering -->
   <CommandQueue>
 
+    <Stage id="StartAsyncNext">
+      <!-- <StartPrevFrameAsync /> -->
+      <AllowWaitForSafeRendering />
+      <UpdateFoveatedRendering updategaze="true" />
+    </Stage>
+
     <Stage id="InstanceCulling" enabled="false">
       <PrepareInstanceCulling />
       <IssueInstanceCulling viewCount="4" />
@@ -254,14 +260,22 @@
     <Stage id="CloudsBlur">
     </Stage>
 
+    <Stage id="MeshWaterComputeDispatch">
+      <If>
+        <Conditions operation="and">
+          <Condition type="variable" id="WaterRenderer" test="notEqual" sourceType="variable" source="WaterRenderer_RayTraced" />
+          <Condition type="variable" id="WaterState"    test="notEqual" sourceType="variable" source="WaterState_NoWater" />
+        </Conditions>
+      </If>
+        <SyncGraphicsToCompute compute="async" />
+        <DoForwardLightLoop type="Water" class="MeshWater" context="CASCADE_WAVE_GERSTNER" order="" />
+      <EndIf />
+    </Stage>      
+      
     <Stage id="AttributesNG" enabled="false">
     </Stage>
 
     <Stage id="Attributes">
-
-      <StartPrevFrameAsync />
-      <UpdateFoveatedRendering updategaze="true" />
-
       <BeginTarget target="GBUFFER" depthTarget="DEPTH" />
 
       <ColourMask channels="RGBA"/>
@@ -383,17 +397,6 @@
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>      
       
-    <Stage id="MeshWaterComputeDispatch">
-      <If>
-        <Conditions operation="and">
-          <Condition type="variable" id="WaterRenderer" test="notEqual" sourceType="variable" source="WaterRenderer_RayTraced" />
-          <Condition type="variable" id="WaterState"    test="notEqual" sourceType="variable" source="WaterState_NoWater" />
-        </Conditions>
-      </If>
-        <DoForwardLightLoop type="Water" class="MeshWater" context="CASCADE_WAVE_GERSTNER" order="" />
-      <EndIf />
-    </Stage>
-
     <Stage id="MeshWaterMask">
       <If conditionType="variable" id="WaterRenderer" test="equal" sourceType="variable" source="WaterRenderer_MeshedDeferred" />
         <If conditionType="variable" id="WaterState"  test="notEqual" sourceType="variable" source="WaterState_NoWater" />
@@ -592,6 +595,61 @@
       <EndIf />
     </Stage>
 
+    <Stage id="GTAOGen_Low" enabled="false">
+      <BeginTarget target="GTAO_FRAME_0" />
+      <ColourMask channels="R"/>
+      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
+      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_LOW" compute="async" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>
+
+    <Stage id="GTAOGen_Medium" enabled="false">
+      <BeginTarget target="GTAO_FRAME_0" />
+      <ColourMask channels="R"/>
+      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
+      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_MEDIUM" compute="async" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>
+
+    <Stage id="GTAOGen_High" enabled="false">  
+      <BeginTarget target="GTAO_FRAME_0" />
+      <ColourMask channels="R"/>
+      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
+      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_HIGH" compute="async" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>      
+      
+    <Stage id="GTAOFin" enabled="false">
+      <BeginTarget target="GTAO_FRAME_1" />
+      <ColourMask channels="R" />
+      <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />               
+      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" />
+      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_SPATIAL_H_DENOISE" compute="async" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+
+      <BeginTarget target="GTAO_FRAME_0" />
+      <ColourMask channels="R" />
+      <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />
+      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_1" bufIndex="0" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" />
+      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_SPATIAL_V_DENOISE" compute="async" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>
+
 
     <Stage id="Shadow_0_Clear" enabled="false">
       <BeginTarget target="SHADOWBUF" />
@@ -733,6 +791,27 @@
       <EndTarget flushCB="false" flushDB="true" />
     </Stage>
      
+    <Stage id="SpotlightsTiled" enabled="false">
+      <BeginTarget target="LIGHTS_TILEBUF" />
+      <DiscardTargetContents colBuf0="true" />
+
+      <ColourMask channels="RGBA"/>
+      <ClearTarget depthBuf="false" colBuf0="true" col_R="0.0" col_G="0.0" col_B="0.0" />
+      <EndTarget flushCB="true" flushDB="false" flushForCompute="true" />
+
+      <BeginTarget target="LIGHTS_DUMMY" />
+
+      <BindBuffer sampler="gLightCluster" sourceRT="LIGHTS_TILEBUF" bufIndex="0" bindAsRwImage="true" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="front" blendMode="replace"    depthTest="always" />
+      <DoDeferredLightLoop context="SPOT_INNER_LIST" inner="true"/>
+
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace"    depthTest="always" />
+      <DoDeferredLightLoop context="SPOT_OUTER_LIST" inner="false"/>
+
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" flushForCompute="true"  />
+    </Stage>      
+     
     <Stage id="SkyScratchPad" enabled="false" >
 
       <BeginTarget target="HDRBUF_0" depthTarget="DEPTH"/>
@@ -781,7 +860,7 @@
       
       
     <Stage id="Decals">
-      <!-- wait for depth/ clouds -->
+      <!-- wait for depth/ clouds / gtao -->
       <SyncComputeToGraphics compute="async" />
       <BeginTarget target="GBUFFER" depthTarget="DEPTH" readOnlyDepth="true" />
       <BindBuffer sampler="gBufferMap"   sourceRT="DEPTH_LINEAR"    bufIndex="0"   />
@@ -817,66 +896,11 @@
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
 
-
-    <Stage id="GTAOGen_Low" enabled="false">
-      <BeginTarget target="GTAO_FRAME_0" />
-      <ColourMask channels="R"/>
-      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
-      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_LOW" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-    </Stage>
-
-    <Stage id="GTAOGen_Medium" enabled="false">
-      <BeginTarget target="GTAO_FRAME_0" />
-      <ColourMask channels="R"/>
-      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
-      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_MEDIUM" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-    </Stage>
-
-    <Stage id="GTAOGen_High" enabled="false">  
-      <BeginTarget target="GTAO_FRAME_0" />
-      <ColourMask channels="R"/>
-      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH" bufIndex="32" />
-      <BindBuffer sampler="gBuffer2Map" sourceRT="GBUFFER" bufIndex="2" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_GEN_HIGH" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-    </Stage>
-
-    <Stage id="GTAOFin" enabled="false">
-
-      <BeginTarget target="GTAO_FRAME_1" />
-      <ColourMask channels="R" />
-      <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />               
-      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
-      <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_SPATIAL_H_DENOISE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-
-      <BeginTarget target="GTAO_FRAME_0" />
-      <ColourMask channels="R" />
-      <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />
-      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_1" bufIndex="0" />
-      <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_SPATIAL_V_DENOISE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-           
+    <Stage id="GTAOTemp" enabled="false">          
       <BeginTarget target="GTAO_HISTORY_0" />
       <ColourMask channels="RG" />
       <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" /> 
-      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_HISTORY_1" bufIndex="0" />
+      <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_HISTORY_1" bufIndex="0" frameIdx="prev"  />
       <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH" bufIndex="32" />
       <BindBuffer sampler="gBuffer3Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
       <BindBuffer sampler="gBuffer4Map" sourceRT="MOTIONRESOLVE" bufIndex="0" />
@@ -961,27 +985,7 @@
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
-    <Stage id="SpotlightsTiled" enabled="false">
-
-      <BeginTarget target="LIGHTS_TILEBUF" />
-      <DiscardTargetContents colBuf0="true" />
-
-      <ColourMask channels="RGBA"/>
-      <ClearTarget depthBuf="false" colBuf0="true" col_R="0.0" col_G="0.0" col_B="0.0" />
-      <EndTarget flushCB="true" flushDB="false" flushForCompute="true" />
-
-      <BeginTarget target="LIGHTS_DUMMY" />
-
-      <BindBuffer sampler="gLightCluster" sourceRT="LIGHTS_TILEBUF" bufIndex="0" bindAsRwImage="true" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="front" blendMode="replace"    stencilMode="disabled" depthTest="always" />
-      <DoDeferredLightLoop context="SPOT_INNER_LIST" inner="true"/>
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace"    stencilMode="disabled" depthTest="always" />
-      <DoDeferredLightLoop context="SPOT_OUTER_LIST" inner="false"/>
-
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" flushForCompute="true"  />
-
+    <Stage id="SpotlightsTiledFS" enabled="false">
       <BeginTarget target="HDRBUF_0" depthTarget="DEPTH" />
 
       <ColourMask channels="RGB"  colBuf1="false"  colBuf2="false" />
@@ -1095,7 +1099,11 @@
       <BindBuffer sampler="gShadowMap"     sourceRT="SHADOWBUF"  bufIndex="32" />
       <BindBuffer sampler="gBufferMap"     sourceRT="DEPTH_WATER_DOWN" bufIndex="0" />
       <SetContext fsrMode="distort" zwrite="false" colourWrite="true" stencilMode="disabled" depthTest="always" blendMode="add" />
+      <If conditionType="variable" id="LightShaftsEnabled" />              
       <DrawQuadMT material="materials/Light.material.mbin" context="SCATTERING"  />  
+      <Else />
+      <DrawQuadMT material="materials/Light.material.mbin" context="SCATTERING_NOGR"  /> 
+      <EndIf />  
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
       
@@ -1191,30 +1199,32 @@
     <Stage id="CloudsForWorlds" enabled="false">
 
       <If conditionType="platform" id="PS5" />
-      <BeginTarget target="CLOUDS_FINAL" />
+      <BeginTarget target="CLOUDS_MRT" />
       <ColourMask channels="RGBA"/>
-      <BindBuffer sampler="gBufferMap" sourceRT="DEPTH_WATER_LINEAR" bufIndex="0" />
+      <BindBuffer sampler="gBufferMap" sourceRT="DEPTH_WATER_DOWN" bufIndex="0" />
       <SetContext fsrMode="distort" zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false" />
       <DrawQuad material="Materials/NewCloud.material.mbin" context="HIGH_QUALITY_CLOUDS"  width="1.0" height="1.0"  />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
-      
-      <BeginTarget target="CLOUDS_COLOUR" />
+     
+      <BeginTarget target="CLOUDS_FINAL" />
       <ColourMask channels="RGBA" />
-      <BindBuffer sampler="gBufferMap"  sourceRT="CLOUDS_FINAL"     bufIndex="0" />
+      <BindBuffer sampler="gBufferMap"  sourceRT="CLOUDS_DEPTH"    bufIndex="0" />
+      <BindBuffer sampler="gBuffer1Map" sourceRT="CLOUDS_COLOUR"   bufIndex="0" />
+      <BindBuffer sampler="gBuffer2Map" sourceRT="CLOUDS_HISTORY"  bufIndex="0" frameIdx="prev" />
       <SetContext fsrMode="distort" zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"/>
-      <DrawQuad material="Materials/NewCloud.material.mbin" context="CLOUDS_BLUR_V" width ="1.0" height="1.0" compute="async" />
+      <DrawQuad material="Materials/NewCloud.material.mbin" context="CLOUDS_TEMPORAL" width ="1.0" height="1.0" />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
 
-      <BeginTarget target="CLOUDS_FINAL" />
+      <BeginTarget target="CLOUDS_HISTORY" />
       <ColourMask channels="RGBA" />
-      <BindBuffer sampler="gBufferMap"  sourceRT="CLOUDS_COLOUR"    bufIndex="0" />
-      <SetContext fsrMode="distort" zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"/>
-      <DrawQuad material="Materials/NewCloud.material.mbin" context="CLOUDS_BLUR_H" width ="1.0" height="1.0" compute="async" />
+      <BindBuffer sampler="gBufferMap"  sourceRT="CLOUDS_FINAL" bufIndex="0" />
+      <SetContext zwrite="false" blendMode="replace" colourWrite="true" depthTest="always"  stencilMode="disabled"  />
+      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPY_RESOLVEFSR"  />
       <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />        
-           
+      <EndTarget flushCB="true" flushDB="false" />
+
       <EndIf />
 
       <BeginTarget target="SCATTER" />
