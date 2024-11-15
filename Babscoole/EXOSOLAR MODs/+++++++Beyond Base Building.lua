@@ -332,6 +332,8 @@ CUSTOM_BUILDCOUNT_LIMITS =
         {"MESSAGE",           0,                2,                0,                    0},        -- Communications Station
         {"MESSAGEMODULE",     0,                1,                0,                    0},        -- Message Module
         {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
+        {"BUILDLANDINGPAD",   0,                0,                12,                   0},        -- Landing Pad
+        {"S_LANDINGZONE",     0,                0,                12,                   0},        -- Alternative Landing Pad
         --{"DECALPATH",        0,                0,                0,                    0}        -- ?
 
 }
@@ -372,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "5.25",
+    ["NMS_VERSION"]   = "5.26",
     ["MODIFICATIONS"] =
     {
         {

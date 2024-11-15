@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_Exosolar's Invisible Power Wires.pak",
 ["MOD_AUTHOR"]              = "Exosolar & Babscoole",
 ["MOD_DESCRIPTION"]         = "Makes powered wires invisible",
-["NMS_VERSION"]             = "5.25",
+["NMS_VERSION"]             = "5.26",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

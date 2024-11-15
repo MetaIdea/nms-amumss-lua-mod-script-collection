@@ -32,7 +32,7 @@ end
 	
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "Custom Farm Crop Growth Time", -- do not use / or \ in MOD_FILENAME.  Use underscore
+  ["MOD_FILENAME"] 			= "Custom Farm Crop Growth Time.pak", -- do not use / or \ in MOD_FILENAME.  Use underscore
   ["MOD_DESCRIPTION"]		= "Changes the growth time of all farm crops to a player defined value (default 30 seconds)",
   ["MOD_AUTHOR"]			= "Kaizlin",
   ["MOD_VERSION"]			= "1.0",

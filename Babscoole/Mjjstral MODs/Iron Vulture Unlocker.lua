@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Iron Vulture Unlocker.pak",
 ["MOD_AUTHOR"]      = "Mjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "5.25",
+["NMS_VERSION"]     = "5.26",
 ["MODIFICATIONS"]   =
     {
         {

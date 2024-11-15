@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "TitanBeGone.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.25",
+["NMS_VERSION"]     = "5.26",
 ["MOD_DESCRIPTION"] = "Removes Titan burrow spawns from Infested planets",
 ["MODIFICATIONS"]   =
     {

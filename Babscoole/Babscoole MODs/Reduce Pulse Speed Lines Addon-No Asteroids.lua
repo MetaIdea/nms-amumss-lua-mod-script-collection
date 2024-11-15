@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Reduce Pulse Speed Lines Addon-No Asteroids.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.25",
+["NMS_VERSION"]     = "5.26",
 ["MOD_DESCRIPTION"] = "Remove Asteroids during Pulse Jumps",
 ["MODIFICATIONS"]   =
     {
