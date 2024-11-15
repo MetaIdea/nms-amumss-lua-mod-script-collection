@@ -4,6 +4,3 @@
 [submodule "Lasagna"]
 	path = Lasagna
 	url = https://github.com/SunnySummit/LasagnaBiomeGeneration2/
-[submodule "Silent369"]
-	path = Silent369
-	url = https://github.com/Silent369/NoMansSky
