@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "BackpackToggle.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "5.26",
+["NMS_VERSION"]     = "5.27",
 ["MODIFICATIONS"]   =
     {
         {

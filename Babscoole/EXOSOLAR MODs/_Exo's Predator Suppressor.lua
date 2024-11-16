@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_Exo's Predator Suppressor.pak",
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.26",
+["NMS_VERSION"]     = "5.27",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
     {

@@ -165,7 +165,7 @@ function teleportInteraction()
 end
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "PortablePortals.pak",
+["MOD_FILENAME"] = "Portable(Tele)Porter.pak",
 ["MOD_AUTHOR"] = "Aristotale",
 ["LUA_AUTHOR"]    = "Aristotale, Babscoole",
 ["NMS_VERSION"]   = "5.25",

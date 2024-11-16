@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "QuickShipExit.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.26",
+["NMS_VERSION"]     = "5.27",
 ["MOD_DESCRIPTION"] = "Exit ships instantly in 1st person",
 ["MODIFICATIONS"]   =
     {
