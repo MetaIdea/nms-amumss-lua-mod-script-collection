@@ -1,26 +1,65 @@
 Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = ""
-GameVersion = "5.2.5.0"
-ModVersion = "b"
+GameVersion = "5.2.7.0"
+ModVersion = "a"
 
 --[[Files Modified:
 GCCAMERAGLOBALS.GLOBAL.MBIN
 ]]--
 
-CharacterOffsetXLarge = 0
-CharacterOffsetXMedium = 0
-CharacterOffsetXSmall = 0
-MechOffsetXFollow = 0
-MechOffsetXCombat = 0
-PhotoModeMoveSpeed = 17
-PhotoModeVelocitySmoothTime = 1.0
-AerialViewDownDistance = 0
-AerialViewPause = 0
-AerialViewStartTime = 0
-AerialViewBackTime = 0
-AerialViewBlendTime = 0
-FreighterOffsetZ = 600
+CharacterOffsetXLarge = 0.8
+CharacterOffsetXMedium = 0.6
+CharacterOffsetXSmall = 0.4
+MechOffsetXFollow = 2.2
+MechOffsetXCombat = 5
+PhotoModeMoveSpeed = 11
+PhotoModeVelocitySmoothTime = 0.5
+
+AerialBeaconTime = 5
+AerialBeaconTimeBack = 4
+AerialBeaconStartTime = 1
+AerialBeaconPauseTime = 2.5
+AerialBeaconLookTime = 2
+AerialBeaconDistance = 2000
+AerialBeaconFocusTargetOffsetDistance = 2
+AerialSignalTime = 3
+AerialSignalTimeBack = 2
+AerialSignalStartTime = 2.5
+AerialSignalPauseTime = 0.3
+AerialSignalLookTime = 2
+AerialSignalDistance = 40
+AerialSignalFocusTargetOffsetDistance = 2
+AerialWaypointTime = 2
+AerialWaypointTimeBack = 1.5
+AerialWaypointStartTime = 0.4
+AerialWaypointPauseTime = 0.2
+AerialWaypointLookTime = 2
+AerialWaypointDistance = 3
+AerialWaypointFocusTargetOffsetDistance = 2
+AerialRadioTime = 5
+AerialRadioTimeBack = 3.5
+AerialRadioStartTime = 1
+AerialRadioPauseTime = 2
+AerialRadioLookTime = 2
+AerialRadioDistance = 8000
+AerialRadioFocusTargetOffsetDistance = 2
+AerialVisualTime = 5
+AerialVisualTimeBack = 4
+AerialVisualStartTime = 1
+AerialVisualPauseTime = 2.5
+AerialVisualLookTime = 2
+AerialVisualDistance = 2000
+AerialVisualFocusTargetOffsetDistance = 2
+AerialRoboTime = 4
+AerialRoboTimeBack = 2.5
+AerialRoboStartTime = 0.5
+AerialRoboPauseTime = 1.5
+AerialRoboLookTime = 2
+AerialRoboDistance = 350
+AerialRoboFocusTargetOffsetDistance = 2.5
+
+FreighterOffsetZ = 200
 
 OffsetGUIF = GUIF({true, [[Do you want the character camera centered?  Default = Y.  Press ENTER for default value.]]},10)
 if OffsetGUIF then
@@ -29,12 +68,6 @@ if OffsetGUIF then
 	CharacterOffsetXSmall = 0
 	MechOffsetXFollow = 0
 	MechOffsetXCombat = 0
-else
-	CharacterOffsetXLarge = 0.8
-	CharacterOffsetXMedium = 0.6
-	CharacterOffsetXSmall = 0.4
-	MechOffsetXFollow = 2.2
-	MechOffsetXCombat = 5
 end
 print("OffsetGUIF = "..tostring(OffsetGUIF))
 
@@ -59,25 +92,54 @@ print("PhotoModeVelocitySmoothTime = "..tostring(PhotoModeVelocitySmoothTime))
 
 EliminateAerialView = GUIF({true, [[Do you want to eliminate aerieal view zoomouts?  Default = Y.  Press ENTER for default value.]]},10)
 if EliminateAerialView then
-	AerialViewDownDistance = 0
-	AerialViewPause = 0
-	AerialViewStartTime = 0
-	AerialViewBackTime = 0
-	AerialViewBlendTime = 0
-else
-	AerialViewDownDistance = 40
-	AerialViewPause = 1
-	AerialViewStartTime = 1.5
-	AerialViewBackTime = 1.5
-	AerialViewBlendTime = 1
+  AerialBeaconTime = 0
+  AerialBeaconTimeBack = 0
+  AerialBeaconStartTime = 0
+  AerialBeaconPauseTime = 0
+  AerialBeaconLookTime = 0
+  AerialBeaconDistance = 0
+  AerialBeaconFocusTargetOffsetDistance = 0
+  AerialSignalTime = 0
+  AerialSignalTimeBack = 0
+  AerialSignalStartTime = 0
+  AerialSignalPauseTime = 0
+  AerialSignalLookTime = 0
+  AerialSignalDistance = 0
+  AerialSignalFocusTargetOffsetDistance = 0
+  AerialWaypointTime = 0
+  AerialWaypointTimeBack = 0
+  AerialWaypointStartTime = 0
+  AerialWaypointPauseTime = 0
+  AerialWaypointLookTime = 0
+  AerialWaypointDistance = 0
+  AerialWaypointFocusTargetOffsetDistance = 0
+  AerialRadioTime = 0
+  AerialRadioTimeBack = 0
+  AerialRadioStartTime = 0
+  AerialRadioPauseTime = 0
+  AerialRadioLookTime = 0
+  AerialRadioDistance = 0
+  AerialRadioFocusTargetOffsetDistance = 0
+  AerialVisualTime = 0
+  AerialVisualTimeBack = 0
+  AerialVisualStartTime = 0
+  AerialVisualPauseTime = 0
+  AerialVisualLookTime = 0
+  AerialVisualDistance = 0
+  AerialVisualFocusTargetOffsetDistance = 0
+  AerialRoboTime = 0
+  AerialRoboTimeBack = 0
+  AerialRoboStartTime = 0
+  AerialRoboPauseTime = 0
+  AerialRoboLookTime = 0
+  AerialRoboDistance = 0
+  AerialRoboFocusTargetOffsetDistance = 0
 end
 print("EliminateAerialView = "..tostring(EliminateAerialView))
 
 LargeFreighterWarpFix = GUIF({true, [[Do you want to fix the camera for large freighters during warp?  Default = Y.  Press ENTER for default value.]]},10)
 if LargeFreighterWarpFix then
 	FreighterOffsetZ = 600
-else
-	FreighterOffsetZ = 200
 end
 print("FreighterOffsetZ = "..tostring(FreighterOffsetZ))
 
@@ -95,6 +157,78 @@ MODIFICATIONS	= {
 			MBIN_FILE_SOURCE = "GCCAMERAGLOBALS.GLOBAL.MBIN",
 			EXML_CHANGE_TABLE = {
 				{
+					SPECIAL_KEY_WORDS = {"ID","BEACON"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialBeaconTime},
+            {"TimeBack", AerialBeaconTimeBack},
+            {"StartTime", AerialBeaconStartTime},
+            {"PauseTime", AerialBeaconPauseTime},
+            {"LookTime", AerialBeaconLookTime},
+            {"Distance", AerialBeaconDistance},
+            {"FocusTargetOffsetDistance", AerialBeaconFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","SIGNAL"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialSignalTime},
+            {"TimeBack", AerialSignalTimeBack},
+            {"StartTime", AerialSignalStartTime},
+            {"PauseTime", AerialSignalPauseTime},
+            {"LookTime", AerialSignalLookTime},
+            {"Distance", AerialSignalDistance},
+            {"FocusTargetOffsetDistance", AerialSignalFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","WAYPOINT"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialWaypointTime},
+            {"TimeBack", AerialWaypointTimeBack},
+            {"StartTime", AerialWaypointStartTime},
+            {"PauseTime", AerialWaypointPauseTime},
+            {"LookTime", AerialWaypointLookTime},
+            {"Distance", AerialWaypointDistance},
+            {"FocusTargetOffsetDistance", AerialWaypointFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","RADIO_TOWER"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialRadioTime},
+            {"TimeBack", AerialRadioTimeBack},
+            {"StartTime", AerialRadioStartTime},
+            {"PauseTime", AerialRadioPauseTime},
+            {"LookTime", AerialRadioLookTime},
+            {"Distance", AerialRadioDistance},
+            {"FocusTargetOffsetDistance", AerialRadioFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","VISUAL_ONLY"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialVisualTime},
+            {"TimeBack", AerialVisualTimeBack},
+            {"StartTime", AerialVisualStartTime},
+            {"PauseTime", AerialVisualPauseTime},
+            {"LookTime", AerialVisualLookTime},
+            {"Distance", AerialVisualDistance},
+            {"FocusTargetOffsetDistance", AerialVisualFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","ROBO_REVEAL"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialRoboTime},
+            {"TimeBack", AerialRoboTimeBack},
+            {"StartTime", AerialRoboStartTime},
+            {"PauseTime", AerialRoboPauseTime},
+            {"LookTime", AerialRoboLookTime},
+            {"Distance", AerialRoboDistance},
+            {"FocusTargetOffsetDistance", AerialRoboFocusTargetOffsetDistance}
+					}
+				},
+        {
 					PRECEDING_KEY_WORDS = "",
 					VALUE_CHANGE_TABLE = {
 						{"PauseThirdPersonCamInPause", "False"}, --False
@@ -118,11 +252,6 @@ MODIFICATIONS	= {
 						{"MiniportalFlashStrength", 0}, --0.8
 						{"VehicleExitFlashTime", 0}, --0.8
 						{"VehicleExitFlashStrength", 0}, --0.8
-						{"AerialViewDownDistance", AerialViewDownDistance}, --40
-						{"AerialViewPause", AerialViewPause}, --2
-						{"AerialViewStartTime", AerialViewStartTime}, --1.5
-						{"AerialViewBackTime", AerialViewBackTime}, --1.5
-						{"AerialViewBlendTime", AerialViewBlendTime}, --1
 						{"ScreenshotInTime", 0.5}, --1.5
 					}
 				},

@@ -1,9 +1,9 @@
-AmountMin = 1
-AmountMax = 2
+AmountMin = 5
+AmountMax = 4
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "IncreasedSalvageVPlus.pak",
+["MOD_FILENAME"] 			= "IncreasedSalvage.pak",
 ["MOD_AUTHOR"]				= "potatiustotalis",
 ["MOD_DESCRIPTION"]			= "Salvage Multipliers - Increases the amount of salvaged data you get from buried tech modules",
 ["NMS_VERSION"]				= "5.26",
@@ -25,8 +25,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["MATH_OPERATION"] 		= "*",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	AmountMin}, 	-- Original: 2 (x 1 = 2)
-								{"AmountMax",	AmountMax} 		-- Original: 4 (x 2 = 8)
+								{"AmountMin",	AmountMin}, 	-- Original: 2 (x 5 = 10)
+								{"AmountMax",	AmountMax} 		-- Original: 4 (x 4 = 16)
 							}
 						},
 					}
