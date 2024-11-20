@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
   ["MOD_FILENAME"]	= "RPwalk.pak",
   ["MOD_DESCRIPTION"]	= "Realistic Walking for Immersion",
   ["MOD_AUTHOR"]	= "earlyPlanet",
-  ["NMS_VERSION"]	= "5.25",
+  ["NMS_VERSION"]	= "5.27",
   ["MODIFICATIONS"]	=	
 	{
 		{

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = ""
 GameVersion = "5.2.7.0"
-ModVersion = "a"
+ModVersion = "b"
 
 --[[Files Modified:
 GCCAMERAGLOBALS.GLOBAL.MBIN
@@ -17,6 +17,7 @@ PhotoModeMoveSpeed = 11
 PhotoModeVelocitySmoothTime = 0.5
 
 AerialBeaconTime = 5
+AerialBeaconAerialViewMode = "FaceDownThenOut"
 AerialBeaconTimeBack = 4
 AerialBeaconStartTime = 1
 AerialBeaconPauseTime = 2.5
@@ -24,6 +25,7 @@ AerialBeaconLookTime = 2
 AerialBeaconDistance = 2000
 AerialBeaconFocusTargetOffsetDistance = 2
 AerialSignalTime = 3
+AerialSignalAerialViewMode = "FaceOut"
 AerialSignalTimeBack = 2
 AerialSignalStartTime = 2.5
 AerialSignalPauseTime = 0.3
@@ -31,6 +33,7 @@ AerialSignalLookTime = 2
 AerialSignalDistance = 40
 AerialSignalFocusTargetOffsetDistance = 2
 AerialWaypointTime = 2
+AerialWaypointAerialViewMode = "FaceDown"
 AerialWaypointTimeBack = 1.5
 AerialWaypointStartTime = 0.4
 AerialWaypointPauseTime = 0.2
@@ -38,6 +41,7 @@ AerialWaypointLookTime = 2
 AerialWaypointDistance = 3
 AerialWaypointFocusTargetOffsetDistance = 2
 AerialRadioTime = 5
+AerialRadioAerialViewMode = "FaceDown"
 AerialRadioTimeBack = 3.5
 AerialRadioStartTime = 1
 AerialRadioPauseTime = 2
@@ -45,6 +49,7 @@ AerialRadioLookTime = 2
 AerialRadioDistance = 8000
 AerialRadioFocusTargetOffsetDistance = 2
 AerialVisualTime = 5
+AerialVisualAerialViewMode = "FaceDownThenOut"
 AerialVisualTimeBack = 4
 AerialVisualStartTime = 1
 AerialVisualPauseTime = 2.5
@@ -52,6 +57,7 @@ AerialVisualLookTime = 2
 AerialVisualDistance = 2000
 AerialVisualFocusTargetOffsetDistance = 2
 AerialRoboTime = 4
+AerialRoboAerialViewMode = "FaceDownThenFocus"
 AerialRoboTimeBack = 2.5
 AerialRoboStartTime = 0.5
 AerialRoboPauseTime = 1.5
@@ -92,48 +98,54 @@ print("PhotoModeVelocitySmoothTime = "..tostring(PhotoModeVelocitySmoothTime))
 
 EliminateAerialView = GUIF({true, [[Do you want to eliminate aerieal view zoomouts?  Default = Y.  Press ENTER for default value.]]},10)
 if EliminateAerialView then
-  AerialBeaconTime = 0
-  AerialBeaconTimeBack = 0
-  AerialBeaconStartTime = 0
-  AerialBeaconPauseTime = 0
-  AerialBeaconLookTime = 0
-  AerialBeaconDistance = 0
-  AerialBeaconFocusTargetOffsetDistance = 0
-  AerialSignalTime = 0
-  AerialSignalTimeBack = 0
-  AerialSignalStartTime = 0
-  AerialSignalPauseTime = 0
-  AerialSignalLookTime = 0
-  AerialSignalDistance = 0
-  AerialSignalFocusTargetOffsetDistance = 0
-  AerialWaypointTime = 0
-  AerialWaypointTimeBack = 0
-  AerialWaypointStartTime = 0
-  AerialWaypointPauseTime = 0
-  AerialWaypointLookTime = 0
-  AerialWaypointDistance = 0
-  AerialWaypointFocusTargetOffsetDistance = 0
-  AerialRadioTime = 0
-  AerialRadioTimeBack = 0
-  AerialRadioStartTime = 0
-  AerialRadioPauseTime = 0
-  AerialRadioLookTime = 0
-  AerialRadioDistance = 0
-  AerialRadioFocusTargetOffsetDistance = 0
-  AerialVisualTime = 0
-  AerialVisualTimeBack = 0
-  AerialVisualStartTime = 0
-  AerialVisualPauseTime = 0
-  AerialVisualLookTime = 0
-  AerialVisualDistance = 0
-  AerialVisualFocusTargetOffsetDistance = 0
-  AerialRoboTime = 0
-  AerialRoboTimeBack = 0
-  AerialRoboStartTime = 0
-  AerialRoboPauseTime = 0
-  AerialRoboLookTime = 0
-  AerialRoboDistance = 0
-  AerialRoboFocusTargetOffsetDistance = 0
+  AerialBeaconTime = 0.0001
+  AerialBeaconAerialViewMode = "FaceOut"
+  AerialBeaconTimeBack = 0.0001
+  AerialBeaconStartTime = 0.0001
+  AerialBeaconPauseTime = 0.0001
+  AerialBeaconLookTime = 0.0001
+  AerialBeaconDistance = 0.0001
+  AerialBeaconFocusTargetOffsetDistance = 0.0001
+  AerialSignalTime = 0.0001
+  AerialSignalAerialViewMode = "FaceOut"
+  AerialSignalTimeBack = 0.0001
+  AerialSignalStartTime = 0.0001
+  AerialSignalPauseTime = 0.0001
+  AerialSignalLookTime = 0.0001
+  AerialSignalDistance = 0.0001
+  AerialSignalFocusTargetOffsetDistance = 0.0001
+  AerialWaypointTime = 0.0001
+  AerialWaypointAerialViewMode = "FaceOut"
+  AerialWaypointTimeBack = 0.0001
+  AerialWaypointStartTime = 0.0001
+  AerialWaypointPauseTime = 0.0001
+  AerialWaypointLookTime = 0.0001
+  AerialWaypointDistance = 0.0001
+  AerialWaypointFocusTargetOffsetDistance = 0.0001
+  AerialRadioTime = 0.0001
+  AerialRadioAerialViewMode = "FaceOut"
+  AerialRadioTimeBack = 0.0001
+  AerialRadioStartTime = 0.0001
+  AerialRadioPauseTime = 0.0001
+  AerialRadioLookTime = 0.0001
+  AerialRadioDistance = 0.0001
+  AerialRadioFocusTargetOffsetDistance = 0.0001
+  AerialVisualTime = 0.0001
+  AerialVisualAerialViewMode = "FaceOut"
+  AerialVisualTimeBack = 0.0001
+  AerialVisualStartTime = 0.0001
+  AerialVisualPauseTime = 0.0001
+  AerialVisualLookTime = 0.0001
+  AerialVisualDistance = 0.0001
+  AerialVisualFocusTargetOffsetDistance = 0.0001
+  AerialRoboTime = 0.0001
+  AerialRoboAerialViewMode = "FaceOut"
+  AerialRoboTimeBack = 0.0001
+  AerialRoboStartTime = 0.0001
+  AerialRoboPauseTime = 0.0001
+  AerialRoboLookTime = 0.0001
+  AerialRoboDistance = 0.0001
+  AerialRoboFocusTargetOffsetDistance = 0.0001
 end
 print("EliminateAerialView = "..tostring(EliminateAerialView))
 
@@ -160,6 +172,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","BEACON"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialBeaconTime},
+            {"AerialViewMode", AerialBeaconAerialViewMode},
             {"TimeBack", AerialBeaconTimeBack},
             {"StartTime", AerialBeaconStartTime},
             {"PauseTime", AerialBeaconPauseTime},
@@ -172,6 +185,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","SIGNAL"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialSignalTime},
+            {"AerialViewMode", AerialSignalAerialViewMode},
             {"TimeBack", AerialSignalTimeBack},
             {"StartTime", AerialSignalStartTime},
             {"PauseTime", AerialSignalPauseTime},
@@ -184,6 +198,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","WAYPOINT"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialWaypointTime},
+            {"AerialViewMode", AerialWaypointAerialViewMode},
             {"TimeBack", AerialWaypointTimeBack},
             {"StartTime", AerialWaypointStartTime},
             {"PauseTime", AerialWaypointPauseTime},
@@ -196,6 +211,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","RADIO_TOWER"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialRadioTime},
+            {"AerialViewMode", AerialRadioAerialViewMode},
             {"TimeBack", AerialRadioTimeBack},
             {"StartTime", AerialRadioStartTime},
             {"PauseTime", AerialRadioPauseTime},
@@ -208,6 +224,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","VISUAL_ONLY"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialVisualTime},
+            {"AerialViewMode", AerialVisualAerialViewMode},
             {"TimeBack", AerialVisualTimeBack},
             {"StartTime", AerialVisualStartTime},
             {"PauseTime", AerialVisualPauseTime},
@@ -220,6 +237,7 @@ MODIFICATIONS	= {
 					SPECIAL_KEY_WORDS = {"ID","ROBO_REVEAL"},
 					VALUE_CHANGE_TABLE = {
             {"Time", AerialRoboTime},
+            {"AerialViewMode", AerialRoboAerialViewMode},
             {"TimeBack", AerialRoboTimeBack},
             {"StartTime", AerialRoboStartTime},
             {"PauseTime", AerialRoboPauseTime},

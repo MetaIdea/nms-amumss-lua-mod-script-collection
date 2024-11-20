@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Max"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "5.2.5.0"
+GameVersion = "5.2.7.0"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
@@ -57,19 +57,19 @@ MODIFICATIONS	= {
 						{"FreeJetpackRange",7},						--3
 						{"FreeJetpackRangeNonTerrain",2},			--1.1
 						{"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",80},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",60},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-						{"JetpackMaxSpeed",50},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
-						{"JetpackMaxUpSpeed",100},					--30
-						{"JetpackUpForce",80},						--30 ; Needs to be above about 20 to overcome standard gravity
-						{"JetpackIgnitionForce",80},				--60 ; Initial force applied before JetpackIgnitionTime
+						{"JetpackMaxSpeed",40},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
+						{"JetpackMaxUpSpeed",85},					--30
+						{"JetpackUpForce",65},						--30 ; Needs to be above about 20 to overcome standard gravity
+						{"JetpackIgnitionForce",74},				--60 ; Initial force applied before JetpackIgnitionTime
 						{"JetpackIgnitionTime",9999},				--0.4 ; How many seconds until transition from JetpackIgnitionForce to JetpackForce and JetpackUpForce
 						{"JetpackMinIgnitionTime",0.1},				--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
 						{"JetpackFillRate",1},						--0.5
-						{"JetpackUpForceDeadPlanetExtra",30},		--10
-						{"JetpackForceDeadPlanetExtra",40},			--15
-						{"JetpackIgnitionForceDeadPlanetExtra",90},	--45
+						{"JetpackUpForceDeadPlanetExtra",24},		--10
+						{"JetpackForceDeadPlanetExtra",31},			--15
+						{"JetpackIgnitionForceDeadPlanetExtra",65},	--45
 						-- SpaceJetpackForce = 40								--40
 						-- SpaceJetpackUpForce = 30								--30
 						-- SpaceJetpackIgnitionForce = 15						--15
