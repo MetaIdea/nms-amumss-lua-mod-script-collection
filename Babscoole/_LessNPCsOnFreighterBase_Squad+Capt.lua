@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_LessNPCsOnFreighterBase_Squad+Capt.pak",
+["MOD_FILENAME"]            = "_hF_LessNPCsOnFreighterBase_Squad+Capt.pak",
 ["MOD_AUTHOR"]              = "hemisFEAR",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.10",
+["NMS_VERSION"]             = "5.28",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -38,18 +38,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ONCEINSIDE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
+                                {"IGNORE", "4"},
                                 {"IGNORE", "3"},
                                 {"IGNORE", "2"},
-                                {"IGNORE", "1"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"SquadronPilot", "GcFreighterNPCSpawnPriority.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"PriorityScale"},
-                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD_OPTION"] = "ADDendSECTION",
                             ["ADD"] =
 [[
-        <Property value="4" />
+        <Property value="1" />
 ]]
                         },
                         {

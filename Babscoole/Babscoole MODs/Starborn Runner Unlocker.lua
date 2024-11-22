@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Starborn Runner Unlocker.pak",
 ["MOD_AUTHOR"]      = "Babscoole & Mjstral",
 ["MOD_DESCRIPTION"] = "Unlock a reward via speical emote menu quick action",
-["NMS_VERSION"]     = "5.27",
+["NMS_VERSION"]     = "5.28",
 ["MODIFICATIONS"]   =
     {
         {

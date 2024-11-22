@@ -1,6 +1,6 @@
 ModName = "gFish Fishing Speed"
 ModNameSub = "Lightning 10"
-GameVersion = "5.2.5.0"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 --[[ Files Modified:

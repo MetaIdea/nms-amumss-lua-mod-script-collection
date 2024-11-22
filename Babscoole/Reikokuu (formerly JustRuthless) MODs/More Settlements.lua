@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "More Settlements.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.27",
+["NMS_VERSION"]     = "5.28",
 ["MOD_DESCRIPTION"] = "Allows more settlements to spawn on various planet types",
 ["MODIFICATIONS"]   =
     {

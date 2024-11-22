@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "_LessNPCsOnFreighterBase_Squadron.pak",
 ["MOD_AUTHOR"]              = "hemisFEAR",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.10",
+["NMS_VERSION"]             = "5.28",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {

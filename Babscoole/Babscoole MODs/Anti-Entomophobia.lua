@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "Anti-Entomophobia.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.27",
+["NMS_VERSION"]     = "5.28",
 ["MOD_DESCRIPTION"] = "Removes insect like creatures",
 ["MODIFICATIONS"]   =
     {

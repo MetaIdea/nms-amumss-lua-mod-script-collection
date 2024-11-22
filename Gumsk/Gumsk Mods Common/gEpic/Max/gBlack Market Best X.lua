@@ -3,7 +3,7 @@ LuaAuthor = "lyravega"
 ModName = "gBlack Market"
 ModNameSub = "Best X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "5.2.5.0"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 NewWeightingCurve = "MinIsSuperRare"			--MaxIsRare; X-class curves where higher is better

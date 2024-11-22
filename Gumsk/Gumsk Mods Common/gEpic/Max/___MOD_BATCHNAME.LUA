@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gEpic"
 ModNameSub = "Max"
 BaseDescription = ""
-GameVersion = "5.2.5.0"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {
