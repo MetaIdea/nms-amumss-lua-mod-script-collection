@@ -3,7 +3,7 @@ SecondaryColor = "GOLD"
 
 ModName = "gShip Starborn Runner Colors"
 ModNameSub = PrimaryColor.."."..SecondaryColor
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = {

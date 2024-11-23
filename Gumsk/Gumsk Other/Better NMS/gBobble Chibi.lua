@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBobble"
 ModNameSub = "Chibi"
 BaseDescription = "Changes bobbleheads to chibi"
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -26,8 +26,8 @@ MODIFICATIONS	= {
 			EXML_CHANGE_TABLE = {
 				{
 					PRECEDING_KEY_WORDS = {"Transform"},
-					["SECTION_ACTIVE"] = {1},
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					SECTION_ACTIVE = {1},
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						{"ScaleX","1.1"}, 	--left/right
 						{"ScaleY","0.7"},	--up/down

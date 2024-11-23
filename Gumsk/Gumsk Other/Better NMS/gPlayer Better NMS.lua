@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Better NMS"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
@@ -18,7 +18,7 @@ MODIFICATIONS	= {
 			MBIN_FILE_SOURCE = FileSource,
 			EXML_CHANGE_TABLE = {
 				{
-					["INTEGER_TO_FLOAT"] = "FORCE",
+					INTEGER_TO_FLOAT = "FORCE",
 					VALUE_CHANGE_TABLE = {
 						{"BinocularRangePlanet",2000},				--1000
 						{"BinocularRangeSpace",20000},				--10000
@@ -58,17 +58,17 @@ MODIFICATIONS	= {
 						-- {"FreeJetpackRange",7},						--3
 						-- {"FreeJetpackRangeNonTerrain",2},			--1.1
 						-- {"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",38},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",40},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-						{"JetpackMaxSpeed",9},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
-						{"JetpackMaxUpSpeed",40},					--30
-						{"JetpackUpForce",38},						--30 ; Needs to be above about 20 to overcome standard gravity
-						{"JetpackIgnitionForce",68},				--60 ; Initial force applied before JetpackIgnitionTime
+						{"JetpackMaxSpeed",11},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
+						{"JetpackMaxUpSpeed",45},					--30
+						{"JetpackUpForce",42},						--30 ; Needs to be above about 20 to overcome standard gravity
+						{"JetpackIgnitionForce",70},				--60 ; Initial force applied before JetpackIgnitionTime
 						{"JetpackIgnitionTime",9999},				--0.4 ; How many seconds until transition from JetpackIgnitionForce to JetpackForce and JetpackUpForce
 						{"JetpackMinIgnitionTime",0.1},				--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
 						{"JetpackFillRate",0.7},						--0.5
-						{"JetpackUpForceDeadPlanetExtra",14},		--10
+						{"JetpackUpForceDeadPlanetExtra",15},		--10
 						{"JetpackForceDeadPlanetExtra",20},			--15
 						{"JetpackIgnitionForceDeadPlanetExtra",52},	--45
 						-- SpaceJetpackForce = 40								--40
@@ -102,12 +102,12 @@ MODIFICATIONS	= {
 						-- RocketBootsWindUpBraking = 0.9						--0.9
 						-- RocketBootsDriftBraking = 0.6						--0.6
 						-- RocketBootsDriftDownwardForce = 0.5					--0.5
-						{"JetpackUnderwaterDrainRate",0.35},			--0.4
-						{"JetpackUnderwaterFillRate",1.2},			--1
+						{"JetpackUnderwaterDrainRate",0.3},			--0.4
+						{"JetpackUnderwaterFillRate",2},			--1
 						{"UnderwaterMaxSpeed",6},					--4
-						{"UnderwaterForce",20},						--15
-						{"UnderwaterMaxJetpackSpeed",13},			--8
-						{"UnderwaterJetpackForce",30},				--25
+						{"UnderwaterForce",22},						--15
+						{"UnderwaterMaxJetpackSpeed",15},			--8
+						{"UnderwaterJetpackForce",35},				--25
 						{"AutoLandRange",150},						--100
 						-- {"AutoLandTime",1},							--2
 						-- {"MeleeCooldown",0.3},						--0.62
@@ -165,7 +165,7 @@ MODIFICATIONS	= {
 						-- {"ChargeTime",0.3},							--0.4
 						-- {"EnergyBallSpeed",300},					--200
 						-- {"ChargedEnergyBallSpeed",150},				--75
-						-- {"DamageRateWhenUnderNoGravity",0.01},		--10
+						-- {"DamageRateWhenUnderNoGravity",0.1},		--10
 					}
 				},
 			}

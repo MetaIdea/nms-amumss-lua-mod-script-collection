@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gSentinels Laylaps Less Annoying"
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 ModNameSub = ""
 BaseDescription = "Removes Laylaps collisions so it doesn't get in the way as much"

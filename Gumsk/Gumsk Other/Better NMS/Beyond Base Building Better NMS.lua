@@ -21,6 +21,7 @@ ALL_PARTS_ABOVE_WATER = true                    --Vanilla false // Mod default t
 ALL_PARTS_UNDER_WATER = true                    --Vanilla false // Mod default true // true to enable all building parts under water
 --*******Please keep in mind that ALL_PARTS_ON_FREIGHTER only changes one property, but post Endurance other changes may be required*******
 ALL_PARTS_ON_FREIGHTER = true                   --Vanilla false // Mod default true // true to enable all building parts on freighters
+--*******Please keep in mind that ALL_PARTS_ON_FREIGHTER only changes one property, but post Endurance other changes may be required*******
 --*******Please keep in mind that ALL_PARTS_ON_PLANETBASE only changes one property, but post Endurance other changes may be required*******
 ALL_PARTS_ON_PLANETBASE = true                  --Vanilla false // Mod default true // true to enable all building parts on planet bases (like freighter ones).
 --*******Please keep in mind that ALL_PARTS_ON_PLANETBASE only changes one property, but post Endurance other changes may be required*******
@@ -38,6 +39,7 @@ O2_ATMO_HARVESTERS_ANYWHERE = true              --Vanilla false // Mod default t
 CAN_SCALE_PREFAB_PARTS = true                   --Vanilla false // Mod Default true // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
 CAN_SCALE_EXTRACTORS = true                     --Vanilla false // Mod Default true // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
 S9_ON_FREIGHTER = true                          --Vanilla false // Mod default true  // true to enable S9 blueprint stations on freighters, ALL_PARTS_ON_FREIGHTER must be true too.
+NPCSTATION_ON_FREIGHTER = false                 --Vanilla false // Mod default false // true to enable NPC stations on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Only enable if main story completed.
 -------- enable/disable features end --------
 ---------------------------------------------
 
@@ -221,28 +223,22 @@ end
 -- Exceptions if ALL_PARTS_ABOVE_WATER is true
 NOT_ABOVE_WATER_BUILDPART_ID_TABLE = {"GARAGE_SUB"}
 
-
 -- Exceptions if ALL_PARTS_ON_FREIGHTER is true
 NOT_FREIGHTER_BUILDPART_ID_TABLE = {"BASE_FLAG", "BASECAPSULE", "MESSAGE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BUILDSIGNAL", "BUILDBEACON", "U_EXTRACTOR_S", "U_GASEXTRACTOR", "U_SILO_S", "U_GENERATOR_S", "U_PIPELINE", "CREATURE_FEED", "CREATURE_FARM", "BUILDHARVESTER", "BUILDGASHARVEST", "TELEPORTER", "O2_HARVESTER"}
 -- Notes : BASECAPSULE (Base Salvage Capsule) originally buildable but bugged on freighters.
 -- Vehicles parts are excluded in the dedicated part at the bottom of the script (Geobays, Race Initiator...)
 
-
 -- Exceptions if ALL_PARTS_ON_PLANETBASE is true
 NOT_PLANETBASE_BUILDPART_ID_TABLE = {"TELEPORTER_F"}
-
 
 -- Keywords to match prefab parts if CAN_SCALE_PREFAB_PARTS is false
 PREFAB_KEYWORDS_TABLE = {"ROOMS", "FREIGHTER"}
 
-
 -- Freighter's storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
-FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
-
+-- FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
 
 -- Base storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
-BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
-
+-- BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
 
 -- Metal parts buildable outside of bases if METAL_PARTS_OUTSIDE_BASE is true
 METAL_OUTSIDE_BASE_ID_TABLE = {"M_WALL", "M_DOOR", "M_FLOOR", "M_RAMP", "M_ROOF", "M_ARCH"}
@@ -252,6 +248,9 @@ FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE = {"FRE_ROOM_FLEET", "FRE_ROOM_SCAN", "FRE
 
 -- Geobays buildable on freighters if GEOBAYS_ON_FREIGHTER is true
 GEOBAYS_ON_FREIGHTER_ID_TABLE = {"SUMMON_GARAGE", "GARAGE_B", "GARAGE_S", "GARAGE_M", "GARAGE_L", "GARAGE_MECH"}
+
+-- NPC Stations buildable on freighters if NPCSTATION_ON_FREIGHTER is true
+NPCSTATION_ON_FREIGHTER_ID_TABLE = {"NPCBUILDERTERM", "NPCFARMTERM", "NPCSCIENCETERM", "NPCVEHICLETERM", "NPCWEAPONTERM"}
 
 -- S9 blueprint stations buildable on freighters if S9_ON_FREIGHTER is true
 S9_ON_FREIGHTER_ID_TABLE = {"S9_SUITTREE", "S9_WEAPONTREE", "S9_EXOCRAFTTREE", "S9_SHIPTREE", "S9_BUILDERTREE"}
@@ -272,13 +271,17 @@ end
 PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3", "PLANTPOT4"}
 
 -- Re-add Misc on freighters after Endurance update
-MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE", "BUILDLANDINGPAD", "S_LANDINGZONE"}
+MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "MESSAGEMODULE", "BUILDLANDINGPAD", "S_LANDINGZONE", "BASECAPSULE"}
 
 -- Plant in any biome
 FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
 -- Exceptions to {"CanScale", "True"}
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG"}
+-- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
+
+-- Exceptions to {"CanScale", "False"}
+FINAL_CANSCALE_OVERRIDE_TABLE = {"BUILDLADDER", "FRE_ROOM_LADDER", "WALLFLOORLADDER"}
 -- Notes : vehicles and prefab parts are excluded in the dedicated part at the bottom of the script.
 
 EXTRACTORS_ID_TABLE = {"U_EXTRACTOR_S", "U_GASEXTRACTOR"}
@@ -293,7 +296,6 @@ end
 ---------------------------------------------
 
 
-
 -------- NOT settings related tables --------
 ---------------------------------------------
 
@@ -302,7 +304,7 @@ SCALEABLE_VEHICLESPART_ID_TABLE = {"RACE_RAMP", "RACE_BOOSTER"}
 
 -- Parts which are unlimited by the mod even if NO_BUILDCOUNT_LIMIT is false.
 -- Removed "GARAGE_FREIGHT" due to warning for 3.97 Endurance
-UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHERE", "BASE_TOYCORE", "DRESSING_TABLE", "SPAWNER_BALL", "U_SWITCHBUTTON", "BYTEBEAT", "MESSAGEMODULE", "BUILDTERMINAL", "RACE_RAMP", "RACE_BOOSTER", "BASE_ROBOTOY", "BASE_TOYCUBE", "BUILDLANDINGPAD", "S_LANDINGZONE", "TELEPORTER", "TELEPORTER_F", "RACE_START", "CHECKPOINT", "WATERBUBBLE", "BUILD_REFINER2", "BUILD_REFINER3", "BASE_TOYJELLY", "BLD_PLANET_HOLO"}
+UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHERE", "BASE_TOYCORE", "DRESSING_TABLE", "SPAWNER_BALL", "U_SWITCHBUTTON", "BYTEBEAT", "MESSAGEMODULE", "BUILDTERMINAL", "RACE_RAMP", "RACE_BOOSTER", "BASE_ROBOTOY", "BASE_TOYCUBE", "BUILDLANDINGPAD", "S_LANDINGZONE", "TELEPORTER", "TELEPORTER_F", "RACE_START", "CHECKPOINT", "WATERBUBBLE", "BUILD_REFINER2", "BUILD_REFINER3", "BASE_TOYJELLY", "BLD_PLANET_HOLO", "BUILDSEAHARVEST", "BLD_DATASIGN"}
 -- Decals are included in the "general modifications". Storage containers are included in the dedicated part at the bottom of the script.
 
 -- Custom build-count limits
@@ -329,9 +331,9 @@ CUSTOM_BUILDCOUNT_LIMITS =
         {"BUILDSAVE",         0,                6,                0,                    0},        -- Save Point
         {"MESSAGE",           0,                2,                0,                    0},        -- Communications Station
         {"MESSAGEMODULE",     0,                1,                0,                    0},        -- Message Module
-        {"BLD_DATASIGN",      0,                0,                0,                    0},        -- Data Display Unit
         {"BLD_FIREPIT",       0,                6,                0,                    0},        -- Flaming Barrel
-        {"SPAWNER_BALL",      0,                0,                0,                    0},        -- Sphere Creator
+        {"BUILDLANDINGPAD",   0,                0,                12,                   0},        -- Landing Pad
+        {"S_LANDINGZONE",     0,                0,                12,                   0},        -- Alternative Landing Pad
         --{"DECALPATH",        0,                0,                0,                    0}        -- ?
 
 }
@@ -339,13 +341,10 @@ CUSTOM_BUILDCOUNT_LIMITS =
 ------ NOT settings related tables end ------
 ---------------------------------------------
 
-
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]    = "_Beyond Base Building.pak",
-    ["MOD_AUTHOR"]      = "NeptuneX3 after Sparky after Exosolar",
-    ["MOD_MAINTENANCE"] = "Babscoole",
+    ["MOD_AUTHOR"]      = "Babscoole after NeptuneX3 after Sparky after Exosolar",
     ["MOD_DESCRIPTION"] =
     [[ An extreme degree of freedom added to the vanilla base-building options.
 
@@ -370,12 +369,12 @@ NMS_MOD_DEFINITION_CONTAINER =
     monkeyman192 for the MBINCompiler and his continued efforts to keep it up-to-date
     Mjjstral & Wbertro for the AMUMSS script-based auto modbuilder/updater,
     Tub0Crisco for the No Man's Sky Mod Station A.K.A. NMSMS
-    And, of course, thanks to all of the other modders who make mods too, as we often inspect the work of other modders to learn how things are done: RangerDulann, Redmas, WoodyMontana, jasondude, Gumsk, Mjjstral, moddinaccount, Devilin Pixy, saa044, and others
+    And, of course, thanks to all of the other modders who make mods too, as we often inspect the work of other modders to learn how things are done: RangerDulann, Babscoole, WoodyMontana, jasondude, Gumsk, Mjjstral, moddinaccount, Devilin Pixy, saa044, and others
 
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "4.73",
+    ["NMS_VERSION"]   = "5.28",
     ["MODIFICATIONS"] =
     {
         {
@@ -557,6 +556,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"IsPlaceable", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "HEATER"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                              {"CanPickUp", "True"},
                             }
                         },
                     },
@@ -741,6 +746,40 @@ if ALL_PARTS_ON_FREIGHTER then
             }
         end
     end
+
+    -- NPC stations on freighters if NPCSTATION_ON_FREIGHTER is true
+    if NPCSTATION_ON_FREIGHTER then
+
+        for i = 1,#NPCSTATION_ON_FREIGHTER_ID_TABLE do
+
+            Change_Table_Array[#Change_Table_Array + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", NPCSTATION_ON_FREIGHTER_ID_TABLE[i]},
+                ["VALUE_CHANGE_TABLE"] =
+                {
+                    {"BuildableOnFreighter", "True"},
+                },
+            }
+        end
+
+        for i = 1,#NPCSTATION_ON_FREIGHTER_ID_TABLE do
+
+            Change_Table_Array[#Change_Table_Array + 1] =
+            {
+                ["SPECIAL_KEY_WORDS"] = {"ID", NPCSTATION_ON_FREIGHTER_ID_TABLE[i]},
+                ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                ["ADD_OPTION"] = "ADDafterLINE",
+                ["ADD"] =
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+            }
+        end
+    end
     
     -- S9 blueprint stations if S9_ON_FREIGHTER is true
     if S9_ON_FREIGHTER then
@@ -749,7 +788,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", S9_ON_FREIGHTER_ID_TABLE[i]},
                 ["VALUE_CHANGE_TABLE"] =
                 {
                     {"BuildableOnFreighter", "True"},
@@ -761,7 +800,7 @@ if ALL_PARTS_ON_FREIGHTER then
 
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", S9_ON_FREIGHTER_ID_TABLE[i]},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
@@ -779,12 +818,11 @@ if ALL_PARTS_ON_FREIGHTER then
     -- Sets Group assignment for Base Storage Containers if BASESTORAGE_ON_FREIGHTER is true
     if BASESTORAGE_ON_FREIGHTER then
 
-        for i = 1,#BASE_CONTAINERID_TABLE do
-
             Change_Table_Array[#Change_Table_Array + 1] =
             {
-                ["SPECIAL_KEY_WORDS"] = {"ID", BASE_CONTAINERID_TABLE[i]},
+                ["SPECIAL_KEY_WORDS"] = {"ID", "CONTAINER%d+"},
                 ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                ["REPLACE_TYPE"] = "ALL",
                 ["ADD_OPTION"] = "ADDafterLINE",
                 ["ADD"] =
 [[
@@ -795,7 +833,6 @@ if ALL_PARTS_ON_FREIGHTER then
         </Property>
 ]]
             }
-        end
     end
 
     -- Specific exceptions list for parts not buildable on freighters
@@ -883,19 +920,16 @@ if CAN_SCALE_PREFAB_PARTS == false then
     end
 
     -- Reverts "CanScale" to "False" for freighter storage containers
-    for i = 1,#FREIGHTER_CONTAINERS_ID_TABLE do
 
         Change_Table_Array[#Change_Table_Array + 1] =
         {
-            ["SPECIAL_KEY_WORDS"]    = {"ID", FREIGHTER_CONTAINERS_ID_TABLE[i]},
-            -- ["VALUE_MATCH"] = "True",
+            ["SPECIAL_KEY_WORDS"] = {"ID", "S_CONTAINER%d+"},
             ["REPLACE_TYPE"] = "ALL",
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"CanScale", "False"},
             },
         }
-    end
 end
 
 -- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)
@@ -933,6 +967,19 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
         ["VALUE_CHANGE_TABLE"] =
         {
             {"CanScale", "False"},
+        },
+    }
+end
+
+-- Final Override to True
+for i = 1,#FINAL_CANSCALE_OVERRIDE_TABLE do
+
+    Change_Table_Array[#Change_Table_Array + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", FINAL_CANSCALE_OVERRIDE_TABLE[i]},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"CanScale", "True"},
         },
     }
 end
@@ -984,7 +1031,6 @@ else
             ["SPECIAL_KEY_WORDS"] = {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
             -- ["VALUE_MATCH"] = 0,
             -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
-            ["NOTICE_OFF"] = "True",
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"PlanetLimit",        0},

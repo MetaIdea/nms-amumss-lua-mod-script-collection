@@ -1849,7 +1849,10 @@ MODIFICATIONS           =
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT_XNEVER.SCENE.MBIN",
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {
@@ -2152,7 +2155,10 @@ MODIFICATIONS           =
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHTXNEVER.SCENE.MBIN",
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {
@@ -2420,7 +2426,10 @@ MODIFICATIONS           =
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHTXNEVER.SCENE.MBIN"
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {

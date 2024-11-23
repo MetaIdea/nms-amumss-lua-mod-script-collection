@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "FixHardframeEngineSource.pak", 
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.22",
+["NMS_VERSION"]				= "5.01.1",
 ["MOD_DESCRIPTION"]			= "Hardframe Engine can be acquired from destroying the barrel as well, not only picking it up",
 ["MODIFICATIONS"] 			= 
 	{
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PKW"]		= "GcDestructableComponentData.xml",
+							["SKW"]		= {"Template", "GcDestructableComponentData.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GivesReward", "MECH_LOOT"},

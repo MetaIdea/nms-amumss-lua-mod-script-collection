@@ -11,7 +11,7 @@ InputCOLORCHOICE = {COLORCHOICE,
     6 - ARMOR
     7 - INDUSTRIAL
     8 - DARKSTEEL
-    Default = 7 | Current = >> ]] .. (COLORCHOICE) .. [[ <<
+    Default = 1 | Current = >> ]] .. (COLORCHOICE) .. [[ <<
 ]]}
 
 while COLORCHOICE do
@@ -59,7 +59,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "~BetterColorfulRings-"..PAKNAME..".pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.70",
+["NMS_VERSION"]     = "5.28",
+["MOD_DESCRIPTION"] = "Change palette colors for planetary rings",
 ["MODIFICATIONS"]   =
     {
         {

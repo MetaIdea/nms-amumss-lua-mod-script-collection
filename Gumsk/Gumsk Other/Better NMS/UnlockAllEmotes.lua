@@ -212,25 +212,25 @@ NEW_EMOTES_EXPORT = table.concat(NEW_EMOTES_ALL)
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Emotes_Unlock.pak",
-["MOD_AUTHOR"]				= "Monkeyman192 and script conversion by Mjjstral, updated by WInderTP",
-["MOD_DESCRIPTION"]			= "Adds additional emotes",
-["NMS_VERSION"]				= "2.0+",
-["MODIFICATIONS"] 			= 
+MOD_FILENAME 			= "_Emotes_Unlock.pak",
+MOD_AUTHOR				= "Monkeyman192 and script conversion by Mjjstral, updated by WInderTP",
+MOD_DESCRIPTION			= "Adds additional emotes",
+NMS_VERSION				= "2.0+",
+MODIFICATIONS 			= 
 	{	
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			MBIN_CHANGE_TABLE 	= 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= { "METADATA\UI\EMOTEMENU.MBIN" },
-					["EXML_CHANGE_TABLE"] 	= 
+					MBIN_FILE_SOURCE 	= { "METADATA\UI\EMOTEMENU.MBIN" },
+					EXML_CHANGE_TABLE 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							--["LINE_OFFSET"] 		= "+0",
-							-- ["SPECIAL_KEY_WORDS"] = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
-							["ADD_OPTION"]  = "ADDendSECTION", 
-							["ADD"] 				= NEW_EMOTES_EXPORT
+							PRECEDING_KEY_WORDS = {"Emotes"}, 
+							--LINE_OFFSET 		= "+0",
+							-- SPECIAL_KEY_WORDS = {"PetCommandTitle", "UI_EMOTE_OVER_HERE_PET"}, 
+							ADD_OPTION  = "ADDendSECTION", 
+							ADD 				= NEW_EMOTES_EXPORT
 						}
 					}
 				}

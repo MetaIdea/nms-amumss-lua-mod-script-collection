@@ -13,18 +13,18 @@ METADATA_MOD_DESC       = "Fixed a bug where Humming Sacs had a wrong texture as
 -- mod container
 ----------------------------------------------------------------------------------------------------
 
-FILE_SCANNERICONS = "METADATA\UI\HUD\SCANNERICONS.MBIN"
+FILE_SCANNERICONS = "METADATA\\UI\\HUD\\SCANNERICONS.MBIN"
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION..".pak",
-    ["MOD_AUTHOR"]		    = METADATA_MOD_AUTHOR,
-    ["LUA_AUTHOR"]		    = METADATA_LUA_AUTHOR,
-    ["NMS_VERSION"]		    = METADATA_NMS_VERSION,
+    MOD_FILENAME 	    = "FF_"..METADATA_MOD_NAME.."_"..METADATA_NMS_VERSION..".pak",
+    MOD_AUTHOR		    = METADATA_MOD_AUTHOR,
+    LUA_AUTHOR		    = METADATA_LUA_AUTHOR,
+    NMS_VERSION		    = METADATA_NMS_VERSION,
     ["MOD_DESCRIPTION"]     = METADATA_MOD_DESC,
     
-    ["MODIFICATIONS"] =
+    MODIFICATIONS =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

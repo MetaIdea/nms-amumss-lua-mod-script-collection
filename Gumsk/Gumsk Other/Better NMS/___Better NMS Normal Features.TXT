@@ -1,0 +1,254 @@
+Bascoole's Better Colorful Planet Rings (Industrial)
+--Provides new colors for planet rings
+
+Exosolar's (Babscoole's) Beyond Base Building
+--All parts can be scaled except base computer
+--Most parts can be built in a freighter except base computer, industrial mining parts, and planet-based teleporter
+--Most parts can be built in planetary bases except the freighter teleporter
+--All parts can be built above and below water
+--All parts can change color and material
+--All parts, which can be deleted, can be deleted without also deleting attached objects except decals and posters
+--No build-count limits PER PART except for parts related to resources harvesting, certain terminals, beacons, and message capsules
+--Foundation, pavings, and communications stations can be placed anywhere
+
+Exosolar's (Babscoole's) Grass Fix
+--Grass is more dense, slightly larger, and grows on slopes
+
+FriendlyFirePL's Humming Sac Indicator Fix
+--This mod fixes the issue where Humming Sacs spawning in caves / underground had a wrong texture file assigned for their indicator
+
+(In a later version) FriendlyFirePL's Miscellaneous Text Fixes
+--This mod aims to fix various text inconsistencies, misleading descriptions and typos found in No Man's Sky. The fixes from this mod apply to English language only
+
+FriendlyFirePL's Procedurally Coloured Rare Crystals
+--This mod enables procedurally generated colours on textures used for Floating Crystals and Buried Mineral Formations found on planets. Floating Crystals will have colours assigned from the Grass palette, while the Buried Minerals will utilize the Crystal colour palette.
+
+FriendlyFirePL's Tethys Radiant Brain Fix
+--This mod adds the option to convert Walker Brains into Radiant Brains with the help of Iteration: Tethys residing at Space Anomaly
+
+Gumsk's gBase Boundaries
+--Default base boundaries extended to 2000u
+--Pipe and wire length increased to 4000u
+--Scaling limits increased to 0.1x to 5x
+
+Gumsk's gBobble Chibi
+--Makes bobbleheads smaller and chibi style to avoid blocking cockpit screens
+
+Gumsk's gCam
+--Centers third person camera, rather than offset over the right shoulder.
+--Ground Photo Mode range extended from 100u to 9999u.
+--Space Photo Mode range extended from 200u to 9999u.
+--Build camera range extended from 60u to 9999u.
+--Photo Mode movement speed increased from 11 to 17.
+--Frigate interaction range increased from 650 to 2000u.
+--Frigate purchase interaction range increased from 500u to 2000u.
+--Removed transition flashes from everything.
+--Removed shake from all cameras.
+--Removed aerial zoom out feature.
+--Increased vertical rotation limits on all cameras.
+--Reduced camera lag to keep the camera closer to the character.
+--Spaceship camera maximum free look rotation increased from 15 to 180 degrees.
+--Disabled automatic camera rotation when idle in exocrafts.
+--Removes collision detection on build cameras
+--Reduces collision detection on photomode camera
+--Fixes for large ships and freighters in warp tunnels (mainly for gShip Custom Ships and gFreighter Custom Freighters)
+--Reduced roll speed for build cameras
+--Slowed down how quickly the camera resets to center
+
+Gumsk's gDoor
+--Automatic proximity powered doors
+--Automatic proximity garage doors
+--No power lines required
+
+Gumsk's gEnviro Safe Space
+--No damage on foot in zero-g
+
+Gumsk's gFreighter No Sentinel Antennae Collisions
+--Removes collisions on the towers outside the hangar on sentinel freighters
+
+Gumsk's gGame Better NMS
+--Improved scanner colors
+--Improved scanner highlight behavior
+--Decreased scanner times
+--Increased scanner recharge rates
+--Increased scanner ranges
+--Decreased discovery display time
+--Increased ship interaction/transfer range
+--Slightly decreased dead planet gravity
+--Slightly increased light values
+--Increased torch strength
+--Decreased torch strength while interacting
+--Increased chance of traveller spawns
+
+Gumsk's gLight Always On
+--Base lights require no power
+
+Gumsk's gLight Better Ship Lighting
+--True white color, balanced brightness lighting for ships on landing pads for bases, stations, pirate stations, freighters, pirate freighters, and the Nexus Anomaly
+
+Gumsk's gMech Movement Better NMS
+--Improved movement for the Minotaur exomech
+
+Gumsk's gPlayer Better NMS
+--Increased binocular, player transfer, interaction, and player tracking arrow ranges
+--Walk speed decreased to actually walk
+--Run speed increased
+--Smaller health bars
+--No hazard protection loss in space
+--No falling damage
+--Increased falling speed
+--Increased jetpack speed and force
+--Fixed jetpack transition dip
+--Increased melee jetpack boost speed and force
+--Increased mining laser range for multitool and exocraft
+
+Gumsk's gGUI Clean Multiplayer Better NMS
+--Removes Communications Stations
+
+Gumsk's gGUI Parallax
+--Removes parallax scrolling tied to mouse in menus
+
+Gumsk's gSentinels Laylaps Less Annyoing (Unreleased)
+--Stops Laylaps blocking scanning
+--NEEDS TESTING
+
+Gumsk's gShip Center Explorer Trails
+--Fixes offcenter trails on explorers
+
+Gumsk's gShip Flight PC Better NMS
+--Easier and faster ship landings
+--Flat landings
+--Sharper turn angles
+--Reduced pulse jump charge time
+--Increased pulse jump speed
+--Removed pulse jump lines
+--Faster launch thruster recharge speed
+--Increased loot attraction distance in space
+--Rebalanced ship type boost force, speed, and handling
+--Rebalanced ship class boost force, speed, and handling
+--Hover enabled on all ship types
+--Low flight
+--Expanded free look angles in cockpit
+--Expanded orientation angles in atmosphere
+
+Gumsk's gSquad Damage
+--Slightly increased squad member damage
+
+Gumsk's gSwitch
+--Proximity switches extended to 6u
+--Push switches extended to 2 seconds
+
+Gumsk's gTech Better NMS
+--Slightly increased jetpack duration and recharge speeed
+--Slightly increased translator effectiveness
+--Increased teleport receiver effect
+--Slightly increased mining laser speed and resources
+--Increased exocraft engine and cannon charge effectiveness and damage
+--Increased Minotaur exomech jetpack range
+--Allow installation of Minotaur exomech hazard protection in all exocraft
+--Allow installation of all normal ship tech in all ships
+--Allow removal of mining laser from multitools
+
+Gumsk's gVehicle Lights Brighter (Unreleased)
+--Increased brightness for exocraft headlights
+
+Gumsk's gVehicle Movement Better NMS
+--Improved speed and movement for all exocraft
+
+Gumsk's gWeather Heater
+--Extended range of base heater (from derelict freighters)
+--Base heater is always on
+--Base heater protects against all elements
+
+Gumsk's gWeather Safe Buildings
+--Adds hazard protection bubble to base pieces to ensure safe areas
+
+Jasondude's Dud's Sky Colors
+--Minor performance gains
+--Custom first-person atmosphere entry effect
+--Custom biome, flora, terrain, cave, water, sky, sunset/sunrise, fog, space, nebula, and planet ring colors
+--Custom planetary, storm, analysis visor, and Nexus Anomaly filters
+--Procedural coloring for flora and terrain
+--Reduces the sun/light glare on ship and exocraft display screens
+--Changes behavior of fireflies to be more "natural"
+--Reduces amount of fireflies
+--Fireflies can have various sizes
+--Rework of SporeBag/GasBag textures for better environment blending
+--Increases sunlight intensity. Planet surfaces, underwater, and space will be more vibrant and naturally lit
+--Makes the planet screen filters work the same (properly) while in spaceship as they do on-foot
+--Adds DOF to distant underwater objects
+--Replaces default/vanilla glow effect around Helios pet with custom 3d volumetric light effect
+--Darker night light
+--Removes flat high altitude clouds
+--Removes blue ring effect at start of freighter/frigate warp-in effect
+--Improved rain and snow particles and behavior to be more "natural" and less of a repeating pattern
+--Improved cloud and horizon blending
+--Improved planet and space fog
+--Improved horizon lines
+--Reduced chances of finding binary and ternary star systems
+--Adjusted duration/transitions of sunset
+--Variable nebula brightness
+--Variable sun size
+--Improved light level and saturation level balancing during storms
+
+Lenni's Fix Hardframe Engine Source
+--Hardframe Engine can be acquired by destroying the container dropped from sentinel mechs, as well as picking it up
+
+Lenni's Fix Helios Story
+--Fixes the mission blocker that occurs when you talk to Helios before talking to Nada in the storyline
+
+Lo2k's Clean Ship Space Map
+--Neater Space Map HUD
+
+Lo2k's Fast Actions
+--Decreased hold time for interactions
+
+Lo2k's Integrated Planets
+--Applies space fog to planets (none is applied in vanilla)
+--Slightly reduces space fog over ships/station/asteroids
+
+Lo2k's Quick Crates
+--1-click no junk green crates
+
+Lo2k's Quick Damaged Machinery
+--1-click no junk damaged machineries
+
+Lo2k's Quick Milestone Notifications
+--Quick notifications, showing them only 3 seconds without any key issue nor black bars but the audio jingle
+
+Lo2k's ReLight
+--Full rework of lighting
+
+Lo2k's Small Cursor
+--Smaller pointer/cursor
+
+Lo2k's Small Panels
+--Reduces all item panels width by 20%
+--reduces all items panels height by 6 to 12%
+--Reduces font size by 20% (when possible)
+--Fixes doubled opacity of first separator
+--Fixes empty space below stats improvements
+--Removed "installed" resources wrench icons and green checkmarks
+
+Lo2k's True Black
+--Replaces vanilla "black" paint with a true black for player, exocrafts and freighter
+--Makes vanilla light grey and dark grey paint darker
+--Replaces 2 of the 64 (8th and 56th) vanilla ship possible tints with true black
+
+Lo2k's Shorter Arrival Messages
+--Reduces hang time each time you reach a destination
+
+Lo2k's Short Shop Dialog
+--Reduces shop dialogs to 1 page
+
+WinderTP's BAAA
+--Replaces current blackhole model with a slightly more scientific accurate looking one
+
+WinderTP's Consumerism
+--Unlocks Expedition, Twitch, and Community Rewards for purchase in the Quicksilver shop
+
+WinderTP's Extra Networked Emotes
+--Adds over 50 new emotes that can be seen in multiplayer
+
+WinderTP's Windrex
+--Makes glass look cleaner and provide uniform refractions

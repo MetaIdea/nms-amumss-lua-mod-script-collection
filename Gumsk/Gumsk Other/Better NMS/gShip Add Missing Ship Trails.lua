@@ -2,7 +2,7 @@ Author = "N8Crafter Gumsk"
 ModName = "gShip"
 ModNameSub = "Add Missing Ship Trails"
 BaseDescription = "Adds ship trails to all engines"
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -24,8 +24,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -42,7 +42,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -60,24 +60,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-50.894936"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Stage1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-50.894936"},
-                            }
                         },
                     }
                 },
@@ -87,8 +73,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -105,7 +91,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -123,24 +109,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Stage2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-50.894936"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Stage1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-50.894936"},
-                            }
                         },
                     }
                 },
@@ -150,8 +122,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -168,7 +140,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -186,26 +158,20 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
-                                {"RotX", "90"},
+                                {"Value", "0.802999"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_LEFT|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.802999"},
@@ -219,8 +185,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -237,7 +203,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -255,26 +221,20 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
-                                {"RotX", "90"},
+                                {"Value", "0.802999"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSB\THRUSTERSB_RIGHT|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.802999"},
@@ -288,8 +248,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -306,7 +266,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -324,7 +284,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -337,8 +297,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail" />
@@ -355,7 +315,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -373,7 +333,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -386,8 +346,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children","Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -404,80 +364,23 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children","Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children","Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children","Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children","Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_L|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.991504"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pCube8"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "20.132439"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "31.008146"},
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EndGlow"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Glow"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                                {"RotZ", "180"},
                             }
                         },
                     }
@@ -488,8 +391,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children","Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -506,73 +409,23 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "1.257733"},
                             }
                         },
                         {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            ["PRECEDING_FIRST"] = "TRUE",
-                            PRECEDING_KEY_WORDS = {"Children"},
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\DROPSHIPS\THRUSTERS\THRUSTERSD\THRUSTERSD_R|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.991504"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "33.651634"},
-                                {"RotZ", "0.104513"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EndGlow"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Glow"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                                {"RotZ", "180"},
                             }
                         },
                     }
@@ -583,8 +436,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail1" />
@@ -601,7 +454,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -619,17 +472,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Trail"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -639,8 +485,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail1" />
@@ -657,7 +503,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -675,17 +521,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Trail"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -694,23 +533,9 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "66.26712"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "66.26712"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -727,7 +552,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -745,7 +570,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -757,23 +582,9 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "66.26712"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSignL2_1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "66.26712"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -790,7 +601,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -808,7 +619,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -820,19 +631,9 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","VERTRENDGRAPHIC"},
-                            REPLACE_TYPE = "ALL",
-                            ["VALUE_MATCH"] = "415",
-                            ["VALUE_MATCH_OPTIONS"] = "=",
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "411"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","Stage2"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -849,7 +650,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -867,7 +668,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -885,7 +686,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -903,7 +704,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="0.541815" />
         <Property name="ScaleZ" value="0.541815" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -916,8 +717,8 @@ MODIFICATIONS           =
                     {
                         {
                             SPECIAL_KEY_WORDS = {"Name","Gun1Ref"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail20" />
@@ -934,7 +735,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -952,7 +753,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -970,7 +771,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -988,7 +789,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1001,8 +802,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail22" />
@@ -1019,7 +820,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1037,29 +838,15 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","SubWings_E"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "90"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","Turbine"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Turbine"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail20" />
@@ -1076,7 +863,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1094,27 +881,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Contrail2"},
-                                {"Name", "Contrail3"},
-                                {"Name", "Contrail4"},
-                                {"Name", "Contrail5"},
-                                {"Name", "Contrail6"},
-                                {"Name", "Contrail7"},
-                                {"Name", "Contrail8"},
-                                {"Name", "Contrail9"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -1124,8 +894,8 @@ MODIFICATIONS           =
                     {
                         {
                             SPECIAL_KEY_WORDS = {"Name","RefTurbineAR"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -1142,7 +912,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1160,7 +930,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1173,8 +943,8 @@ MODIFICATIONS           =
                     {
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingAnimData"},
-                            ["ADD_OPTION"]  = "ADDafterSECTION",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail20" />
@@ -1191,7 +961,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -1209,7 +979,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -1222,8 +992,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children","Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail4" />
@@ -1240,7 +1010,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1258,68 +1028,16 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "_logoRight_A1LOD0"},
-                                {"Name", "_LetterRight_A1LOD0"},
-                                {"Name", "_LetterRight_ALOD0"},
-                                {"Name", "_logoRight_ALOD0"},
-                                {"Name", "_logoRight_A1LOD1"},
-                                {"Name", "_LetterRight_A1LOD1"},
-                                {"Name", "_LetterRight_ALOD1"},
-                                {"Name", "_logoRight_ALOD1"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Contrail12"},
-                                {"Name", "Contrail13"},
-                                {"Name", "Contrail3"},
-                                {"Name", "Contrail4"},
-                                {"Name", "Contrail2"},
-                                {"Name", "Contrail5"},
-                                {"Name", "Contrail6"},
-                                {"Name", "Contrail7"},
-                                {"Name", "Contrail9"},
-                                {"Name", "Contrail10"},
-                                {"Name", "Contrail8"},
-                                {"Name", "Contrail11"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","SubWings_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-31.337997"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","SubWingsARight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "31.337997"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","_WingsK_B"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -1336,7 +1054,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1354,50 +1072,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_RectangleRight_A3"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "59.149002"},
-                                {"RotY", "90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_RectangleLeft_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "59.148624"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "SubWings_C1"},
-                                {"Name", "SubWingsCRight1"},
-                            },
-                            SPECIAL_KEY_WORDS = {"Name","SubWings_C1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Gun1Ref3"},
-                                {"Name", "Gun1Ref4"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
                         },
                     }
                 },
@@ -1408,8 +1086,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","AWingsL_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail1" />
@@ -1426,7 +1104,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1434,8 +1112,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","AWingsR_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail" />
@@ -1452,7 +1130,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1460,8 +1138,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","BWingsL_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail3" />
@@ -1478,7 +1156,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1486,8 +1164,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","BWingsR_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail2" />
@@ -1504,7 +1182,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1512,8 +1190,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","CWingsL_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail10" />
@@ -1530,7 +1208,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1548,7 +1226,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1566,7 +1244,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1574,8 +1252,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","CWingsR_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail4" />
@@ -1592,7 +1270,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1610,7 +1288,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
             <Property value="TkSceneNodeData.xml">
@@ -1628,7 +1306,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1636,8 +1314,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","FWingsL_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail7" />
@@ -1654,7 +1332,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1662,8 +1340,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","FWingsR_JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail6" />
@@ -1680,7 +1358,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -1693,8 +1371,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail2" />
@@ -1711,32 +1389,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo1_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo2_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "-5.985569"},
-                                {"RotX",   "-88.681206"},
-                            }
                         },
                     }
                 },
@@ -1745,36 +1401,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","_Number_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "38.172863"},
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter1_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "5.070969"},
-                                {"RotY", "87.78277"},
-                                {"RotZ", "38.698017"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter2_A"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "4.86547"},
-                                {"RotY", "-85.22856"},
-                                {"RotZ", "-39.07926"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","CockpitDData"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail2" />
@@ -1791,7 +1421,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1809,7 +1439,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -1827,87 +1457,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Trail"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "30.782652"},
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Trail1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "30.782652"},
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {3,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-48.134678"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {5,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-31.475044"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {7,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\COCKPIT\COCKPITD\COCKPITD","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {5,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.835520"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","RefLandingGear"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Gun1Ref3"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Gun1Ref4"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
                         },
                     }
                 },
@@ -1918,8 +1471,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingALeft"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -1936,17 +1489,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -1957,8 +1503,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingARight"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -1975,17 +1521,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -1996,8 +1535,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","SubWingD"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -2014,7 +1553,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2028,8 +1567,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","SubWingD"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -2046,7 +1585,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2060,8 +1599,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingALeft"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -2078,7 +1617,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2096,40 +1635,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_LEFT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.162085"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -2140,8 +1649,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingALeft"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -2158,7 +1667,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2176,40 +1685,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","RADIUS"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.324169"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSA\WINGSA_RIGHT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "2.345738"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pCylinder8"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -2219,8 +1698,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Contrail3" />
@@ -2237,7 +1716,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2255,7 +1734,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2273,7 +1752,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2285,14 +1764,13 @@ MODIFICATIONS           =
                                 {"TransX", "4.476562"},
                                 {"TransY", "-0.867432"},
                                 {"TransZ", "-3.521484"},
-                                {"RotY",   "-180"},
                             }
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","Data"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -2309,7 +1787,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2327,7 +1805,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2345,7 +1823,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2363,7 +1841,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2371,13 +1849,16 @@ MODIFICATIONS           =
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSB\WINGSBRIGHT_XNEVER.SCENE.MBIN",
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Contrail3" />
@@ -2394,7 +1875,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2412,7 +1893,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2430,7 +1911,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -2442,14 +1923,13 @@ MODIFICATIONS           =
                                 {"TransX", "-4.476562"},
                                 {"TransY", "-0.867432"},
                                 {"TransZ", "-3.521484"},
-                                {"RotY",   "-180"},
                             }
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","Data"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -2466,7 +1946,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2484,7 +1964,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2502,7 +1982,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -2520,7 +2000,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -2533,8 +2013,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -2551,7 +2031,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2569,42 +2049,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "0.117106"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "1.145515"},
-                                {"RotY", "-90"},
-                                {"RotZ", "0"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSC\WINGCLEFT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "39.953564"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -2614,8 +2062,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -2632,7 +2080,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2650,34 +2098,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "0.209196"},
-                                {"RotZ", "-14.142616"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-0.079342"},
-                                {"RotY", "89.146736"},
-                                {"RotZ", "-5.307622"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -2687,8 +2111,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -2705,7 +2129,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2723,35 +2147,24 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSD\WINGDRIGHTXNEVER.SCENE.MBIN",
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -2768,7 +2181,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2786,24 +2199,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_logo_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -2813,8 +2212,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Contrail3" />
@@ -2831,7 +2230,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2849,7 +2248,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2867,7 +2266,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2885,19 +2284,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSign_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-3.810077"},
-                                {"RotY", "90"},
-                                {"RotZ", "0"},
-                            }
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","Contrail2"},
@@ -2906,7 +2296,6 @@ MODIFICATIONS           =
                                 {"TransX", "2.363281"},
                                 {"TransY", "-0.927734"},
                                 {"TransZ", "-0.991211"},
-                                {"RotY",   "-180"},
                             }
                         },
                     }
@@ -2917,8 +2306,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Contrail3" />
@@ -2935,7 +2324,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2953,7 +2342,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2971,7 +2360,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -2989,25 +2378,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_SmallSign_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "82.007126"},
-                                {"RotZ", "-93.42244"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","Contrail2"},
@@ -3016,7 +2390,6 @@ MODIFICATIONS           =
                                 {"TransX", "-2.363281"},
                                 {"TransY", "-0.927734"},
                                 {"TransZ", "-0.991211"},
-                                {"RotY",   "-180"},
                             }
                         },
                     }
@@ -3027,8 +2400,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -3045,48 +2418,24 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Rectangle_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-78.13243"},
-                                {"RotZ", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "EngineGlowLOD0"},
-                                {"Name", "EngineGlowLOD1"},
-                                {"Name", "EngineGlowLOD2"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Subwing1_L"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "40"},
-                            }
-                        },
                     }
                 },
                 {
-                    MBIN_FILE_SOURCE  = "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
+                    MBIN_FILE_SOURCE  = {
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHT.SCENE.MBIN",
+                      "MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGSK\WINGKRIGHTXNEVER.SCENE.MBIN"
+                    },
                     EXML_CHANGE_TABLE =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -3103,30 +2452,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Rectangle_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-112.13716"},
-                                {"RotZ", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "EngineGlowLOD0"},
-                                {"Name", "EngineGlowLOD1"},
-                                {"Name", "EngineGlowLOD2"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -3136,8 +2465,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -3154,7 +2483,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3172,29 +2501,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "EngineGlowLOD0"},
-                                {"Name", "EngineGlowLOD1"},
-                                {"Name", "EngineGlowLOD2"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -3204,8 +2514,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail5" />
@@ -3222,7 +2532,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3240,29 +2550,10 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_Letter_A1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "EngineGlowLOD0"},
-                                {"Name", "EngineGlowLOD1"},
-                                {"Name", "EngineGlowLOD2"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -3272,8 +2563,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -3290,36 +2581,20 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.715366"},
                             }
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "30"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_LEFT|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.769422"},
@@ -3333,8 +2608,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -3351,36 +2626,20 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "30"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT|collisionCylinder1","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.769422"},
                             }
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
+                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SCIENTIFIC\WINGS\WINGTOPJOINT\WINGTOPJOINT_RIGHT|collisionCylinder","Name","HEIGHT"},
                             VALUE_CHANGE_TABLE =
                             {
                                 {"Value", "0.715366"},
@@ -3395,8 +2654,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","EngineBase"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail5" />
@@ -3413,7 +2672,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3427,8 +2686,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","_TopWing_A"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -3445,43 +2704,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Decal1"},
-                                {"Name", "Decal3"},
-                                {"Name", "Decal5"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Decal2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","SpinFront"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail2"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -3492,8 +2718,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","_TopWing_B"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail9" />
@@ -3510,61 +2736,21 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","Spin"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "90"},
-                            }
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Decal1"},
-                                {"Name", "Decal3"},
-                                {"Name", "Decal5"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Decal4"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "90"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Decal6"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-52.69893"},
-                                {"RotY", "-72.361374"},
-                                {"RotZ", "-19.862597"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Decal7"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "129.33669"},
-                                {"RotY", "104.102844"},
-                                {"RotZ", "21.317814"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","Contrail"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
+                            SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X36","Name","MESHLINK"},
+                            ADD_OPTION  = "ADDafterSECTION",
+                            ADD =
+[[
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\TOPWING\TOPWING_B\ENTITIES\.ENTITY.MBIN" />
+            </Property>
+]]
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","spotLight1"},
@@ -3624,8 +2810,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","Wings_B"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -3642,7 +2828,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -3660,7 +2846,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="0.1" />
             <Property name="ScaleZ" value="0.1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -3674,8 +2860,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RBottom1JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail10" />
@@ -3692,23 +2878,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","LBottom1JNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LBottom1JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail9" />
@@ -3725,7 +2904,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3739,8 +2918,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTop1JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail12" />
@@ -3757,7 +2936,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3772,8 +2951,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","LTop1JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail11" />
@@ -3790,7 +2969,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3804,8 +2983,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail8" />
@@ -3822,23 +3001,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail7" />
@@ -3855,7 +3027,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -3868,8 +3040,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -3886,7 +3058,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3904,7 +3076,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3917,8 +3089,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail10" />
@@ -3935,7 +3107,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -3953,7 +3125,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -3966,8 +3138,8 @@ MODIFICATIONS           =
                     {
                         {
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Trail11" />
@@ -3984,7 +3156,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
     <Property value="TkSceneNodeData.xml">
@@ -4002,7 +3174,7 @@ MODIFICATIONS           =
         <Property name="ScaleY" value="1" />
         <Property name="ScaleZ" value="1" />
       </Property>
-      <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
       <Property name="Children" />
     </Property>
 ]]
@@ -4016,8 +3188,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTop3JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail12" />
@@ -4034,23 +3206,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
                             SPECIAL_KEY_WORDS = {"Name","LTop3JNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTop3JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail11" />
@@ -4067,7 +3232,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
@@ -4081,8 +3246,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail4" />
@@ -4099,7 +3264,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4117,7 +3282,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4135,30 +3300,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail1" />
@@ -4175,7 +3326,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4193,7 +3344,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4211,25 +3362,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4240,8 +3376,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail5" />
@@ -4258,7 +3394,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4276,30 +3412,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail2" />
@@ -4316,7 +3438,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4334,25 +3456,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4363,8 +3470,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail6" />
@@ -4381,30 +3488,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail3" />
@@ -4421,25 +3514,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4450,8 +3528,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail4" />
@@ -4468,7 +3546,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4486,30 +3564,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail1" />
@@ -4526,7 +3590,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4544,25 +3608,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4573,8 +3622,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail4" />
@@ -4591,7 +3640,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4609,30 +3658,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail1" />
@@ -4649,7 +3684,7 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
                 <Property value="TkSceneNodeData.xml">
@@ -4667,25 +3702,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4696,8 +3716,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail4" />
@@ -4714,30 +3734,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail1" />
@@ -4754,25 +3760,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4783,8 +3774,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail5" />
@@ -4801,30 +3792,16 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
                         },
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LTbodyJNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
                 <Property value="TkSceneNodeData.xml">
                   <Property name="Name" value="Trail2" />
@@ -4841,25 +3818,10 @@ MODIFICATIONS           =
                     <Property name="ScaleY" value="1" />
                     <Property name="ScaleZ" value="1" />
                   </Property>
-                  <Property name="Attributes" />
+              <Property name="PlatformExclusion" value="0" />
                   <Property name="Children" />
                 </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineLight"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotZ", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","EngineParts"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"TransZ", "3.662417"},
-                                {"RotX",   "180"},
-                            }
                         },
                     }
                 },
@@ -4868,18 +3830,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","LBackClaw1JNT"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "180"},
-                                {"RotY", "8.155582"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","LBackClaw3JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                         <Property value="TkSceneNodeData.xml">
                           <Property name="Name" value="Trail9" />
@@ -4896,7 +3850,7 @@ MODIFICATIONS           =
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
                           </Property>
-                          <Property name="Attributes" />
+                      <Property name="PlatformExclusion" value="0" />
                           <Property name="Children" />
                         </Property>
 ]]
@@ -4904,8 +3858,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","RBackClaw3JNT"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
                         <Property value="TkSceneNodeData.xml">
                           <Property name="Name" value="Trail10" />
@@ -4922,28 +3876,10 @@ MODIFICATIONS           =
                             <Property name="ScaleY" value="1" />
                             <Property name="ScaleZ" value="1" />
                           </Property>
-                          <Property name="Attributes" />
+                      <Property name="PlatformExclusion" value="0" />
                           <Property name="Children" />
                         </Property>
 ]]
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "Stage1"},
-                                {"Name", "C"},
-                                {"Name", "Engines8"},
-                                {"Name", "Engines5"},
-                                {"Name", "Stage2"},
-                                {"Name", "C1"},
-                                {"Name", "Engines10"},
-                                {"Name", "Stage7"},
-                                {"Name", "pCylinder10"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
                         },
                     }
                 },
@@ -4952,17 +3888,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","EngineGlow"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","_Acc_A"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -4979,7 +3908,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -4997,57 +3926,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "1.592939"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "1.689445"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","_AA_3"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","RADIUS"},
-                            ["SECTION_ACTIVE"] = {3,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.874898"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.927902"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYA","Name","HEIGHT"},
-                            ["SECTION_ACTIVE"] = {3,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"Value", "0.833797"},
-                            }
                         },
                     }
                 },
@@ -5056,21 +3938,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "pPlane2"},
-                                {"Name", "pPlane1"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","acc3"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="Trail" />
@@ -5087,7 +3958,7 @@ MODIFICATIONS           =
                 <Property name="ScaleY" value="1" />
                 <Property name="ScaleZ" value="1" />
               </Property>
-              <Property name="Attributes" />
+          <Property name="PlatformExclusion" value="0" />
               <Property name="Children" />
             </Property>
 ]]
@@ -5099,17 +3970,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X4"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5126,22 +3990,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "polySurface9"},
-                                {"Name", "polySurface10"},
-                                {"Name", "polySurface11"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "90"},
-                            }
                         },
                     }
                 },
@@ -5152,8 +4004,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","Acc"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["CREATE_HOS"] = "TRUE",
-                            ["ADD"] =
+                            CREATE_HOS = "TRUE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5170,7 +4022,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
@@ -5182,21 +4034,10 @@ MODIFICATIONS           =
                     EXML_CHANGE_TABLE =
                     {
                         {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Name", "pCylinder7"},
-                                {"Name", "pCylinder8"},
-                            },
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
-                        },
-                        {
                             SPECIAL_KEY_WORDS = {"Name","MirrorMerged_X2"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5213,7 +4054,7 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkSceneNodeData.xml">
@@ -5231,18 +4072,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\ACCESSORYI","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {3,4,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "40.854893"},
-                            }
                         },
                     }
                 },
@@ -5253,8 +4086,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","polySurface7"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5271,17 +4104,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -5292,8 +4118,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","polySurface8"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5310,25 +4136,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSE\WINGSEEND_RIGHT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -5339,8 +4150,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","WingsLLeft"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5357,25 +4168,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_LEFT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {1,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },
@@ -5386,8 +4182,8 @@ MODIFICATIONS           =
                         {
                             SPECIAL_KEY_WORDS = {"Name","polySurface1"},
                             PRECEDING_KEY_WORDS = {"Children"},
-                            ["ADD_OPTION"]  = "ADDafterLINE",
-                            ["ADD"] =
+                            ADD_OPTION  = "ADDafterLINE",
+                            ADD =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Trail" />
@@ -5404,25 +4200,10 @@ MODIFICATIONS           =
             <Property name="ScaleY" value="1" />
             <Property name="ScaleZ" value="1" />
           </Property>
-          <Property name="Attributes" />
+      <Property name="PlatformExclusion" value="0" />
           <Property name="Children" />
         </Property>
 ]]
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","MODELS\COMMON\SPACECRAFT\SHUTTLE\WINGS\WINGSF\WINGSF_RIGHT","Type","COLLISION"},
-                            ["SECTION_ACTIVE"] = {2,},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotY", "-180"},
-                            }
-                        },
-                        {
-                            SPECIAL_KEY_WORDS = {"Name","pPlane1"},
-                            VALUE_CHANGE_TABLE =
-                            {
-                                {"RotX", "-90"},
-                            }
                         },
                     }
                 },

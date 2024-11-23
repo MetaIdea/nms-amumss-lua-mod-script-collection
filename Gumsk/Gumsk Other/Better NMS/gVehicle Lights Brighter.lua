@@ -2,12 +2,12 @@ Author = "Gumsk"
 ModName = "gVehicle Lights"
 ModNameSub = "Brighter"
 BaseDescription = "Increases vehicle headlight intensity"
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 FileSource = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	MOD_FILENAME	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 	MOD_DESCRIPTION	= BaseDescription,
 	MOD_AUTHOR		= Author,
 	NMS_VERSION		= GameVersion,

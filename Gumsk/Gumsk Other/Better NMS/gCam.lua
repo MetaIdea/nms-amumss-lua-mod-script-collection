@@ -1,26 +1,71 @@
 Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = ""
-GameVersion = "472"
+GameVersion = "5.2.8.0"
 ModVersion = "a"
 
 --[[Files Modified:
 GCCAMERAGLOBALS.GLOBAL.MBIN
 ]]--
 
-CharacterOffsetXLarge = 0
-CharacterOffsetXMedium = 0
-CharacterOffsetXSmall = 0
-MechOffsetXFollow = 0
-MechOffsetXCombat = 0
-PhotoModeMoveSpeed = 17
-PhotoModeVelocitySmoothTime = 1.0
-AerialViewDownDistance = 0
-AerialViewPause = 0
-AerialViewStartTime = 0
-AerialViewBackTime = 0
-AerialViewBlendTime = 0
-FreighterOffsetZ = 600
+CharacterOffsetXLarge = 0.8
+CharacterOffsetXMedium = 0.6
+CharacterOffsetXSmall = 0.4
+MechOffsetXFollow = 2.2
+MechOffsetXCombat = 5
+PhotoModeMoveSpeed = 11
+PhotoModeVelocitySmoothTime = 0.5
+
+AerialBeaconTime = 5
+AerialBeaconAerialViewMode = "FaceDownThenOut"
+AerialBeaconTimeBack = 4
+AerialBeaconStartTime = 1
+AerialBeaconPauseTime = 2.5
+AerialBeaconLookTime = 2
+AerialBeaconDistance = 2000
+AerialBeaconFocusTargetOffsetDistance = 2
+AerialSignalTime = 3
+AerialSignalAerialViewMode = "FaceOut"
+AerialSignalTimeBack = 2
+AerialSignalStartTime = 2.5
+AerialSignalPauseTime = 0.3
+AerialSignalLookTime = 2
+AerialSignalDistance = 40
+AerialSignalFocusTargetOffsetDistance = 2
+AerialWaypointTime = 2
+AerialWaypointAerialViewMode = "FaceDown"
+AerialWaypointTimeBack = 1.5
+AerialWaypointStartTime = 0.4
+AerialWaypointPauseTime = 0.2
+AerialWaypointLookTime = 2
+AerialWaypointDistance = 3
+AerialWaypointFocusTargetOffsetDistance = 2
+AerialRadioTime = 5
+AerialRadioAerialViewMode = "FaceDown"
+AerialRadioTimeBack = 3.5
+AerialRadioStartTime = 1
+AerialRadioPauseTime = 2
+AerialRadioLookTime = 2
+AerialRadioDistance = 8000
+AerialRadioFocusTargetOffsetDistance = 2
+AerialVisualTime = 5
+AerialVisualAerialViewMode = "FaceDownThenOut"
+AerialVisualTimeBack = 4
+AerialVisualStartTime = 1
+AerialVisualPauseTime = 2.5
+AerialVisualLookTime = 2
+AerialVisualDistance = 2000
+AerialVisualFocusTargetOffsetDistance = 2
+AerialRoboTime = 4
+AerialRoboAerialViewMode = "FaceDownThenFocus"
+AerialRoboTimeBack = 2.5
+AerialRoboStartTime = 0.5
+AerialRoboPauseTime = 1.5
+AerialRoboLookTime = 2
+AerialRoboDistance = 350
+AerialRoboFocusTargetOffsetDistance = 2.5
+
+FreighterOffsetZ = 200
 
 OffsetGUIF = GUIF({true, [[Do you want the character camera centered?  Default = Y.  Press ENTER for default value.]]},10)
 if OffsetGUIF then
@@ -29,12 +74,6 @@ if OffsetGUIF then
 	CharacterOffsetXSmall = 0
 	MechOffsetXFollow = 0
 	MechOffsetXCombat = 0
-else
-	CharacterOffsetXLarge = 0.8
-	CharacterOffsetXMedium = 0.6
-	CharacterOffsetXSmall = 0.4
-	MechOffsetXFollow = 2.2
-	MechOffsetXCombat = 5
 end
 print("OffsetGUIF = "..tostring(OffsetGUIF))
 
@@ -59,25 +98,60 @@ print("PhotoModeVelocitySmoothTime = "..tostring(PhotoModeVelocitySmoothTime))
 
 EliminateAerialView = GUIF({true, [[Do you want to eliminate aerieal view zoomouts?  Default = Y.  Press ENTER for default value.]]},10)
 if EliminateAerialView then
-	AerialViewDownDistance = 0
-	AerialViewPause = 0
-	AerialViewStartTime = 0
-	AerialViewBackTime = 0
-	AerialViewBlendTime = 0
-else
-	AerialViewDownDistance = 40
-	AerialViewPause = 1
-	AerialViewStartTime = 1.5
-	AerialViewBackTime = 1.5
-	AerialViewBlendTime = 1
+  AerialBeaconTime = 0.0001
+  AerialBeaconAerialViewMode = "FaceOut"
+  AerialBeaconTimeBack = 0.0001
+  AerialBeaconStartTime = 0.0001
+  AerialBeaconPauseTime = 0.0001
+  AerialBeaconLookTime = 0.0001
+  AerialBeaconDistance = 0.0001
+  AerialBeaconFocusTargetOffsetDistance = 0.0001
+  AerialSignalTime = 0.0001
+  AerialSignalAerialViewMode = "FaceOut"
+  AerialSignalTimeBack = 0.0001
+  AerialSignalStartTime = 0.0001
+  AerialSignalPauseTime = 0.0001
+  AerialSignalLookTime = 0.0001
+  AerialSignalDistance = 0.0001
+  AerialSignalFocusTargetOffsetDistance = 0.0001
+  AerialWaypointTime = 0.0001
+  AerialWaypointAerialViewMode = "FaceOut"
+  AerialWaypointTimeBack = 0.0001
+  AerialWaypointStartTime = 0.0001
+  AerialWaypointPauseTime = 0.0001
+  AerialWaypointLookTime = 0.0001
+  AerialWaypointDistance = 0.0001
+  AerialWaypointFocusTargetOffsetDistance = 0.0001
+  AerialRadioTime = 0.0001
+  AerialRadioAerialViewMode = "FaceOut"
+  AerialRadioTimeBack = 0.0001
+  AerialRadioStartTime = 0.0001
+  AerialRadioPauseTime = 0.0001
+  AerialRadioLookTime = 0.0001
+  AerialRadioDistance = 0.0001
+  AerialRadioFocusTargetOffsetDistance = 0.0001
+  AerialVisualTime = 0.0001
+  AerialVisualAerialViewMode = "FaceOut"
+  AerialVisualTimeBack = 0.0001
+  AerialVisualStartTime = 0.0001
+  AerialVisualPauseTime = 0.0001
+  AerialVisualLookTime = 0.0001
+  AerialVisualDistance = 0.0001
+  AerialVisualFocusTargetOffsetDistance = 0.0001
+  AerialRoboTime = 0.0001
+  AerialRoboAerialViewMode = "FaceOut"
+  AerialRoboTimeBack = 0.0001
+  AerialRoboStartTime = 0.0001
+  AerialRoboPauseTime = 0.0001
+  AerialRoboLookTime = 0.0001
+  AerialRoboDistance = 0.0001
+  AerialRoboFocusTargetOffsetDistance = 0.0001
 end
 print("EliminateAerialView = "..tostring(EliminateAerialView))
 
 LargeFreighterWarpFix = GUIF({true, [[Do you want to fix the camera for large freighters during warp?  Default = Y.  Press ENTER for default value.]]},10)
 if LargeFreighterWarpFix then
 	FreighterOffsetZ = 600
-else
-	FreighterOffsetZ = 200
 end
 print("FreighterOffsetZ = "..tostring(FreighterOffsetZ))
 
@@ -95,6 +169,84 @@ MODIFICATIONS	= {
 			MBIN_FILE_SOURCE = "GCCAMERAGLOBALS.GLOBAL.MBIN",
 			EXML_CHANGE_TABLE = {
 				{
+					SPECIAL_KEY_WORDS = {"ID","BEACON"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialBeaconTime},
+            {"AerialViewMode", AerialBeaconAerialViewMode},
+            {"TimeBack", AerialBeaconTimeBack},
+            {"StartTime", AerialBeaconStartTime},
+            {"PauseTime", AerialBeaconPauseTime},
+            {"LookTime", AerialBeaconLookTime},
+            {"Distance", AerialBeaconDistance},
+            {"FocusTargetOffsetDistance", AerialBeaconFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","SIGNAL"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialSignalTime},
+            {"AerialViewMode", AerialSignalAerialViewMode},
+            {"TimeBack", AerialSignalTimeBack},
+            {"StartTime", AerialSignalStartTime},
+            {"PauseTime", AerialSignalPauseTime},
+            {"LookTime", AerialSignalLookTime},
+            {"Distance", AerialSignalDistance},
+            {"FocusTargetOffsetDistance", AerialSignalFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","WAYPOINT"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialWaypointTime},
+            {"AerialViewMode", AerialWaypointAerialViewMode},
+            {"TimeBack", AerialWaypointTimeBack},
+            {"StartTime", AerialWaypointStartTime},
+            {"PauseTime", AerialWaypointPauseTime},
+            {"LookTime", AerialWaypointLookTime},
+            {"Distance", AerialWaypointDistance},
+            {"FocusTargetOffsetDistance", AerialWaypointFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","RADIO_TOWER"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialRadioTime},
+            {"AerialViewMode", AerialRadioAerialViewMode},
+            {"TimeBack", AerialRadioTimeBack},
+            {"StartTime", AerialRadioStartTime},
+            {"PauseTime", AerialRadioPauseTime},
+            {"LookTime", AerialRadioLookTime},
+            {"Distance", AerialRadioDistance},
+            {"FocusTargetOffsetDistance", AerialRadioFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","VISUAL_ONLY"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialVisualTime},
+            {"AerialViewMode", AerialVisualAerialViewMode},
+            {"TimeBack", AerialVisualTimeBack},
+            {"StartTime", AerialVisualStartTime},
+            {"PauseTime", AerialVisualPauseTime},
+            {"LookTime", AerialVisualLookTime},
+            {"Distance", AerialVisualDistance},
+            {"FocusTargetOffsetDistance", AerialVisualFocusTargetOffsetDistance}
+					}
+				},
+				{
+					SPECIAL_KEY_WORDS = {"ID","ROBO_REVEAL"},
+					VALUE_CHANGE_TABLE = {
+            {"Time", AerialRoboTime},
+            {"AerialViewMode", AerialRoboAerialViewMode},
+            {"TimeBack", AerialRoboTimeBack},
+            {"StartTime", AerialRoboStartTime},
+            {"PauseTime", AerialRoboPauseTime},
+            {"LookTime", AerialRoboLookTime},
+            {"Distance", AerialRoboDistance},
+            {"FocusTargetOffsetDistance", AerialRoboFocusTargetOffsetDistance}
+					}
+				},
+        {
 					PRECEDING_KEY_WORDS = "",
 					VALUE_CHANGE_TABLE = {
 						{"PauseThirdPersonCamInPause", "False"}, --False
@@ -118,11 +270,6 @@ MODIFICATIONS	= {
 						{"MiniportalFlashStrength", 0}, --0.8
 						{"VehicleExitFlashTime", 0}, --0.8
 						{"VehicleExitFlashStrength", 0}, --0.8
-						{"AerialViewDownDistance", AerialViewDownDistance}, --40
-						{"AerialViewPause", AerialViewPause}, --2
-						{"AerialViewStartTime", AerialViewStartTime}, --1.5
-						{"AerialViewBackTime", AerialViewBackTime}, --1.5
-						{"AerialViewBlendTime", AerialViewBlendTime}, --1
 						{"ScreenshotInTime", 0.5}, --1.5
 					}
 				},
@@ -132,11 +279,11 @@ MODIFICATIONS	= {
 						{"SpeedRange", 7}, --4
 						{"OffsetX", CharacterOffsetXMedium}, --0.8
 						{"OffsetY", 0}, --(-0.6)
-						{"BackMinDistance", 3}, --4
-						{"BackMaxDistance", 5}, --5.4
+						{"BackMinDistance", 3.8}, --4
+						{"BackMaxDistance", 4.9}, --5.4
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
-						{"HorizRotationAngleMaxPerFrame", 25}, --20
+						{"HorizRotationAngleMaxPerFrame", 23}, --20
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-65)
 						{"VertRotationMax", 85}, --65
@@ -152,14 +299,14 @@ MODIFICATIONS	= {
 				{
 					PRECEDING_KEY_WORDS = "CharacterRunCam",
 					VALUE_CHANGE_TABLE = {
-						{"SpeedRange", 14}, --8.8
+						{"SpeedRange", 12}, --8.8
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", -0.1}, --(-0.85)
-						{"BackMinDistance", 3}, --4
-						{"BackMaxDistance", 5.5}, --6.5
+						{"OffsetY", 0}, --(-0.85)
+						{"BackMinDistance", 3.8}, --4
+						{"BackMaxDistance", 4.9}, --6.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
-						{"HorizRotationAngleMaxPerFrame", 20}, --3
+						{"HorizRotationAngleMaxPerFrame", 15}, --3
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-60)
 						{"VertRotationMax", 85}, --60
@@ -177,9 +324,9 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"MinSpeed", 4}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.7
-						{"OffsetY", 0.1}, --(-0.45)
-						{"BackMinDistance", 1.3}, --1.5
-						{"BackMaxDistance", 4}, --5.2
+						{"OffsetY", 0}, --(-0.45)
+						{"BackMinDistance", 1.7}, --1.5
+						{"BackMaxDistance", 4.9}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -205,7 +352,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", 0}, --(-0.6)
 						{"BackMinDistance", 1.7}, --2
-						{"BackMaxDistance", 4.3}, --5.2
+						{"BackMaxDistance", 4.9}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -222,9 +369,9 @@ MODIFICATIONS	= {
 						{"MinSpeed", 4}, --10
 						{"SpeedRange", 20}, --1
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
-						{"OffsetY", -0.3}, --(-0.8)
-						{"BackMinDistance", 2}, --2.3
-						{"BackMaxDistance", 2.4}, --2.9
+						{"OffsetY", -0.4}, --(-0.8)
+						{"BackMinDistance", 2.3}, --2.3
+						{"BackMaxDistance", 2.9}, --2.9
 						{"PanNear", 0}, --1
 						{"PanFar", 0}, --(-1)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -262,8 +409,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", -0.2}, --(-0.75)
-						{"BackMinDistance", 1.8}, --2
-						{"BackMaxDistance", 3}, --4
+						{"BackMinDistance", 1.6}, --2
+						{"BackMaxDistance", 2.9}, --4
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -280,9 +427,9 @@ MODIFICATIONS	= {
 						{"MinSpeed", 4}, --6
 						{"SpeedRange", 20}, --5
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
-						{"OffsetY", -0.2}, --(-0.8)
-						{"BackMinDistance", 2.8}, --3.5
-						{"BackMaxDistance", 3.5}, --4.2
+						{"OffsetY", 0}, --(-0.8)
+						{"BackMinDistance", 2.3}, --3.5
+						{"BackMaxDistance", 2.9}, --4.2
 						{"PanNear", 0}, --1
 						{"PanFar", -1.5}, --(-3)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -324,8 +471,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 20}, --8.8
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", -0.2}, --(-0.85)
-						{"BackMinDistance", 2}, --2.5
+						{"OffsetY", -0.1}, --(-0.85)
+						{"BackMinDistance", 2.5}, --2.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"HorizRotationAngleMaxPerFrame", 20}, --3
@@ -346,7 +493,7 @@ MODIFICATIONS	= {
 						{"SpeedRange", 20}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
 						{"OffsetY", 0}, --(-0.5)
-						{"BackMaxDistance", 6}, --7
+						{"BackMaxDistance", 7}, --7
 						{"PanFar", 0}, --10
 						{"HorizRotationAngleMaxPerFrame", 20}, --10
 						{"VertRotationMin", -85}, --(-30)
@@ -368,9 +515,9 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "CharacterRocketBootsChargeCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXLarge}, --0.8
-						{"OffsetY", -0.2}, --(-0.8)
-						{"BackMinDistance", 2}, --2.5
-						{"BackMaxDistance", 3}, --3.5
+						{"OffsetY", 0}, --(-0.8)
+						{"BackMinDistance", 2.5}, --2.5
+						{"BackMaxDistance", 3.5}, --3.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"VertRotationMin", -85}, --(-60)
@@ -388,8 +535,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXLarge}, --0.8
 						{"OffsetY", 0}, --(-0.6)
-						{"BackMinDistance", 3}, --4
-						{"BackMaxDistance", 12}, --20
+						{"BackMinDistance", 3.8}, --4
+						{"BackMaxDistance", 13}, --20
 						{"UpMaxDistance", 0}, --(-5)
 						{"PanFar", 0}, --3
 						{"HorizRotationAngleMaxPerFrame", 20}, --0
@@ -436,7 +583,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 20}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", 0}, --(-0.5)
+						{"OffsetY", 0.1}, --(-0.5)
 						{"BackMaxDistance", 6}, --7
 						{"PanFar", 0}, --10
 						{"HorizRotationAngleMaxPerFrame", 20}, --10
@@ -459,7 +606,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
 						{"OffsetY", -0.4}, --(-1.2)
-						{"BackMaxDistance", 5}, --6
+						{"BackMaxDistance", 4.8}, --6
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"VertRotationMin", -85}, --(-60)
@@ -478,8 +625,8 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 10}, --3
 						{"OffsetX", CharacterOffsetXMedium}, --0.55
-						{"OffsetY", 0}, --(-0.6)
-						{"BackMaxDistance", 5}, --5.5
+						{"OffsetY", 0.1}, --(-0.6)
+						{"BackMaxDistance", 4.8}, --5.5
 						{"VertRotationMin", -85}, --(-60)
 						{"VertRotationMax", 85}, --60
 						{"SpringSpeed", 0.01}, --0.11
@@ -497,7 +644,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 16}, --8
 						{"OffsetX", CharacterOffsetXLarge}, --0.7
-						{"OffsetY", 0}, --(-0.6)
+						{"OffsetY", 0.1}, --(-0.6)
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
 						{"SpringSpeed", 0.01}, --0.08
@@ -522,7 +669,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"SpeedRange", 16}, --8
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
-						{"OffsetY", 0}, --(-0.5)
+						{"OffsetY", 0.1}, --(-0.5)
 						{"PanFar", 0}, --10
 						{"HorizRotationAngleMaxPerFrame", 20}, --10
 						{"VertRotationMin", -85}, --(-60)
@@ -645,10 +792,10 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "MechFollowCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", MechOffsetXFollow}, --2.2
-						{"OffsetY", 0.2}, --(-0.5)
-						{"OffsetYAlt", -1.0}, --2.5
+						{"OffsetY", 2}, --(-0.5)
+						{"OffsetYAlt", 4}, --2.5
 						{"OffsetZFlat", -1}, --0
-						{"BackMinDistance", 5.5}, --6.5
+						{"BackMinDistance", 5.8}, --6.5
 						{"BackMaxDistance", 12}, --14
 						{"VertRotationMin", -80}, --(-45)
 						{"VertRotationMax", 80}, --60
@@ -660,8 +807,8 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "MechCombatCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", MechOffsetXCombat}, --5
-						{"OffsetY", 0.4}, --(-1)
-						{"OffsetYAlt", 0}, --1.5
+						{"OffsetY", 10}, --(-1)
+						{"OffsetYAlt", 10}, --1.5
 						{"OffsetZFlat", 1.45}, --0
 						{"VertRotationMin", -80}, --(-45)
 						{"VertRotationMax", 80}, --60
@@ -673,10 +820,10 @@ MODIFICATIONS	= {
 					PRECEDING_KEY_WORDS = "MechJetpackCam",
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXLarge}, --1
-						{"OffsetY", 0}, --(-0.85)
-						{"OffsetYAlt", 1.5}, --1
+						{"OffsetY", 4}, --(-0.85)
+						{"OffsetYAlt", 6}, --1
 						{"OffsetZFlat", 1}, --0
-						{"BackMaxDistance", 20}, --20
+						{"BackMaxDistance", 16}, --20
 						{"VertRotationMin", -80}, --(-60)
 						{"VertRotationMax", 80}, --60
 						{"LockToObjectOnIdle", "False"}, --True
@@ -772,13 +919,13 @@ MODIFICATIONS	= {
 				{
 					PRECEDING_KEY_WORDS = "WarpSettings",
 					VALUE_CHANGE_TABLE = {
-						{"OffsetZRange", -1.5}, --1.5. Camera distance back from ship
+						{"OffsetZRange", -2.0}, --1.5. Camera distance back from ship/freighter
 					}
 				},
 				{
 					PRECEDING_KEY_WORDS = "FreighterWarpSettings",
 					VALUE_CHANGE_TABLE = {
-						{"OffsetZRange",FreighterOffsetZ}, --200. Camera distance back from freighter
+						{"OffsetZRange",FreighterOffsetZ}, --200. Camera distance back from ship/freighter
 					}
 				},
 			}
