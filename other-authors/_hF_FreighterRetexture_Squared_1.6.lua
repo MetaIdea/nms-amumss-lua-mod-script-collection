@@ -9,17 +9,17 @@ TileLightDiffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/TILINGLIGHTS.1X
 ContBeamDiffuse = "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAMX2.DDS" -- RED CONTAINER BEAM DIFFUSE
 SpotlightBase = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/SHARED/SPOTLIGHT.BASEX.DDS" -- RED SPOTLIGHT
 
-Version = "1.55"
-GameVersion = "4.23"
+Version = "1.6"
+GameVersion = "5.28"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_FreighterRetexture_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_FreighterRetexture_Squared_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["LUA_AUTHOR"]		= "Lowkie, Forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Overhaul of Exterior Freighter Textures / Retexture",
+["MOD_DESCRIPTION"]	= "Squared Edition - Freighter Retexture",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0.6"}-- Original "0.9"
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},	
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0.55"}-- Original "0.9"
@@ -285,8 +285,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},	
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0.5"}-- Original "0.9"
@@ -374,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},	
-							["INTEGER_TO_FLOAT"]    = "FORCE",								
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0.2"} 	-- Original "0.9"
@@ -387,6 +387,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/CONTAINERENDCAPA/LAMBERT1.MATERIAL.MBIN",
 						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR/FREIGHTERPROCLOGO_MAT.MATERIAL.MBIN",
+						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLTOP/ENGINEGLOW_MAT.MATERIAL.MBIN",
+						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLWINGS_B/ENGINEGLOW_MAT.MATERIAL.MBIN",
 						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN/FREIGHTERPROC_MAT.MATERIAL.MBIN",
 						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERD/PHONG68.MATERIAL.MBIN",
 						"MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYARAIL/PHONG2.MATERIAL.MBIN",

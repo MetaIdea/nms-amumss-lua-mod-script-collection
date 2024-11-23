@@ -1,3 +1,58 @@
+local CraftableTable = {
+    "PRODFUEL2",
+    "JELLY",
+    "NANOTUBES",
+    "HYDRALIC",
+    "MICROCHIP",
+    "COMPUTER",
+    "CARBON_SEAL",
+    "BIO",
+    "CASING",
+    "MAGNET",
+    "MIRROR",
+    "POWERCELL",
+    "SHIPCHARGE",
+    "LAUNCHFUEL",
+    "SUBFUEL",
+    "GRENFUEL1",
+    "HYPERFUEL1",
+    "ACCESS1",
+    "ACCESS2",
+    "HYPERFUEL2",
+    "ACCESS3",
+    "FARMPROD1",
+    "FARMPROD2",
+    "FARMPROD6",
+    "FARMPROD7",
+    "FARMPROD3",
+    "FARMPROD8",
+    "FARMPROD5",
+    "FARMPROD4",
+    "FARMPROD9",
+    "REACTION1",
+    "REACTION2",
+    "COMPOUND1",
+    "COMPOUND4",
+    "REACTION3",
+    "COMPOUND2",
+    "COMPOUND5",
+    "COMPOUND3",
+    "COMPOUND6",
+    "ALLOY1",
+    "ALLOY2",
+    "ALLOY3",
+    "ALLOY4",
+    "ALLOY5",
+    "ALLOY8",
+    "ALLOY6",
+    "ALLOY7",
+    "MEGAPROD1",
+    "MEGAPROD2",
+    "ULTRAPROD1",
+    "MEGAPROD3",
+    "ULTRAPROD2",
+    "TECH_COMP",
+}
 function GetPuzzleOption(NAME, ACTION)
     return
     [[
@@ -129,17 +184,17 @@ More_Options2 = GetMorePuzzleOption("?D_BPA_TECH_P3")
 Menu2_Options = Menu2_Option1..Menu2_Option2..Menu2_Option3..More_Options2
 
 Menu3_Option1 = GetPuzzleOption("UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT")  -- ExoSuit DropPod
-
+ResearchCost = 250
 
 ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Option1
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
-["MOD_AUTHOR"] = "Aristotale",
-["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
-["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
-["NMS_VERSION"]   = "5.25",
+    ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
+    ["MOD_AUTHOR"] = "Aristotale",
+    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
+    ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
+    ["NMS_VERSION"]   = "5.25",
     ["MODIFICATIONS"] =
     {
         {
@@ -189,9 +244,41 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
                             ["SEC_ADD_NAMED"] = "Base_parts"
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Title", "UI_PRODUCT_TREE_CRAFT"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CostTypeID", "NANITES"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Title", "UI_PRODUCT_TREE_FARM"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CostTypeID", "NANITES"},
+                            }
+                        },
                     }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {}
                 },
             }
         }
     }
 }
+
+local ProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+for i=1, #CraftableTable, 1 do
+  ProductRecipeTable[#ProductRecipeTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", CraftableTable[i]},
+        ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"RecipeCost", ResearchCost},
+        }
+    }
+end

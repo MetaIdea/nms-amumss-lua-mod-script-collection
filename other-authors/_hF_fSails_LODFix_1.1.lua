@@ -1,7 +1,7 @@
 LOD_MULTIPLIER = 3
 
-Version = "1.0"
-Game_Version = "4.23"
+Version = "1.1"
+Game_Version = "5.28"
 Mod_Author = "hemis FEAR"
 Lua_Author = "hemis FEAR"
 
