@@ -192,6 +192,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
     ["MOD_AUTHOR"] = "Aristotale",
+    ["MOD_VERSION"] = "1.1",
     ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
     ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
     ["NMS_VERSION"]   = "5.25",
@@ -231,9 +232,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                                ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
-                                ["PRECEDING_KEY_WORDS"] = {"Trees"},
-                                ["SEC_SAVE_TO"] = "Base_parts"
+                            ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Trees"},
+                            ["SEC_SAVE_TO"] = "Base_parts"
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
@@ -245,14 +246,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SEC_ADD_NAMED"] = "Base_parts"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "UI_PRODUCT_TREE_CRAFT"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"CostTypeID", "NANITES"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title", "UI_PRODUCT_TREE_FARM"},
+                            ["SPECIAL_KEY_WORDS"] = {
+                                {"Title", "UI_PRODUCT_TREE_CRAFT"},
+                                {"Title", "UI_PRODUCT_TREE_FARM"},
+                            },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"CostTypeID", "NANITES"},
@@ -263,6 +260,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] = {}
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"NexusRecipeCostNaniteMultiplier", "1"}
+                            }
+                        },
+                    }
                 },
             }
         }

@@ -2,17 +2,17 @@ Diffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- DIFFU
 Masks = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.MASKS.DDS" -- MASKS MAP
 Normal = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.NORMAL.DDS" -- NORMAL MAP
 
-Version = "1.3"
-GameVersion = "4.15"
+Version = "1.4"
+GameVersion = "5.28"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fSails_Orange_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_fSails_RainbowN2_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["LUA_AUTHOR"]		= "Lowkie, forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Vivid Series: Orange Sail for Freighters",
+["MOD_DESCRIPTION"]	= "Vivid Series: Rainbow #2 Sail for Freighters",
 ["MODIFICATIONS"]	= 
 	{
 		{
