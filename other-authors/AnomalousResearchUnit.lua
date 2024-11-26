@@ -53,6 +53,137 @@ local CraftableTable = {
     "ULTRAPROD2",
     "TECH_COMP",
 }
+
+recipeTree = {
+    {
+        ["Title"] = "Wooden Structures",
+        ["Unlockable"] = "W_WALL",
+        ["Children"] = {
+            {"W_FLOOR", {
+                {"W_GFLOOR", {
+                  {"W_FLOOR_Q", nil},
+                }},
+                {"W_RAMP", {
+                    {"W_RAMP_H", nil},
+                }},
+                {"W_TRIFLOOR", {
+                    {"W_TRIFLOOR_Q", nil},
+                }},
+            }},
+            {"W_WALL_H", {
+                {"W_WALLDIAGONAL", nil},
+                {"W_WALL_Q", nil},
+                {"W_WALL_Q_H", nil},
+            }},
+            {"W_DOOR_H", {
+                {"W_DOORWINDOW", {
+                    {"W_WALL_WINDOW", nil},
+                }},
+                {"W_DOOR", nil},
+                {"W_GDOOR", nil},
+                {"W_ARCH", {
+                    {"W_ARCH_H", nil},
+                }},
+            }},
+        },
+    },
+    {
+        ["Title"] = "Wooden Roofing",
+        ["Unlockable"] = "W_ROOF",
+        ["Children"] = {
+            {"W_ROOF_M", nil},
+            {"W_ROOF_C", {
+                {"W_ROOF_IC", nil},
+            }},
+        },
+    },
+    {
+        ["Title"] = "Metal Structures",
+        ["Unlockable"] = "M_WALL",
+        ["Children"] = {
+            {"M_FLOOR", {
+                {"M_GFLOOR", {
+                    {"M_FLOOR_Q", nil},
+                }},
+                {"M_RAMP", {
+                    {"M_RAMP_H", nil},
+                }},
+                {"M_TRIFLOOR", {
+                    {"M_TRIFLOOR_Q", nil},
+                }},
+            }},
+            {"M_WALL_H", {
+                {"M_WALLDIAGONAL", nil},
+                {"M_WALL_Q", nil},
+                {"M_WALL_Q_H", nil},
+            }},
+            {"M_DOOR_H", {
+                {"M_DOORWINDOW", {
+                    {"M_WALL_WINDOW", nil},
+                }},
+                {"M_DOOR", nil},
+                {"M_GDOOR", nil},
+                {"M_ARCH", {
+                    {"M_ARCH_H", nil},
+                }},
+            }},
+        },
+    },
+    {
+        ["Title"] = "Metal Roofing",
+        ["Unlockable"] = "M_ROOF",
+        ["Children"] = {
+            {"M_ROOF_M", nil},
+            {"M_ROOF_C", {
+                {"M_ROOF_IC", nil},
+            }},
+        },
+    },
+    {
+        ["Title"] = "Concrete Structures",
+        ["Unlockable"] = "C_WALL",
+        ["Children"] = {
+            {"C_FLOOR", {
+                {"C_GFLOOR", {
+                    {"C_FLOOR_Q", nil},
+                }},
+                {"C_RAMP", {
+                    {"C_RAMP_H", nil},
+                }},
+                {"C_TRIFLOOR", {
+                    {"C_TRIFLOOR_Q", nil},
+                }},
+            }},
+            {"C_WALL_H", {
+                {"C_WALLDIAGONAL", nil},
+                {"C_WALL_Q", nil},
+                {"C_WALL_Q_H", nil},
+            }},
+            {"C_DOOR_H", {
+                {"C_DOORWINDOW", {
+                    {"C_WALL_WINDOW", nil},
+                }},
+                {"C_DOOR", {
+                    {"C_GDOOR", nil},
+                }},
+                {"C_ARCH", {
+                    {"C_ARCH_H", nil},
+                }},
+            }},
+        },
+    },
+    {
+        ["Title"] = "Concrete Roofing",
+        ["Unlockable"] = "C_ROOF",
+        ["Children"] = {
+            {"C_ROOF_M", nil},
+            {"C_ROOF_C", {
+                {"C_ROOF_IC", nil},
+            }},
+        },
+    },
+}
+
 function GetPuzzleOption(NAME, ACTION)
     return
     [[
@@ -94,6 +225,7 @@ function GetPuzzleOption(NAME, ACTION)
             </Property>
     ]]
 end
+
 function GetMorePuzzleOption(NEXTACTION)
     return
     [[
@@ -172,22 +304,67 @@ function GetMorePuzzleOption(NEXTACTION)
     ]]
 end
 
-Menu1_Option3 = GetPuzzleOption("UI_S9_SUITTREE_OPT", "TREE_SUIT")  -- Suit Tree
+function AddTreeNodes(nodes)
+    local nodeOutput = ""
+    for i = 1, #nodes, 1 do
+        nodeOutput = nodeOutput .. [[
+        <Property value="GcUnlockableItemTreeNode.xml">
+            <Property name="Unlockable" value="]] .. nodes[i][1] .. [[" />
+        ]]
+        if nodes[i][2] == nil then
+            nodeOutput = nodeOutput .. [[
+                    <Property name="Children" />
+                </Property>
+            ]]
+        else
+            nodeOutput = nodeOutput .. [[
+                <Property name="Children">
+                ]] .. AddTreeNodes(nodes[i][2]) .. [[
+                </Property>
+            </Property>
+            ]]
+        end
+    end
+    return nodeOutput
+end
+
+function ConstructRecipeTree()
+    recipeTreeConstructed = '<Property name="Trees">'
+    for i = 1, #recipeTree, 1 do
+        recipeTreeConstructed = recipeTreeConstructed .. [[
+            <Property value="GcUnlockableItemTree.xml">
+                <Property name="Title" value="]] .. recipeTree[i]["Title"] .. [[" />
+                <Property name="CostTypeID" value="SALVAGE" />
+                <Property name="Root" value="GcUnlockableItemTreeNode.xml">
+                    <Property name="Unlockable" value="]] .. recipeTree[i]["Unlockable"] .. [[" />
+                    <Property name="Children">
+                        ]] .. AddTreeNodes(recipeTree[i]["Children"]) .. [[
+                    </Property>
+                </Property>
+            </Property>
+        ]]
+    end
+    recipeTreeConstructed = recipeTreeConstructed .. '</Property>'
+    return recipeTreeConstructed
+end
+
+Menu1_Option2 = GetPuzzleOption("Legacy Building Structures", "TREE_TECHBASICS")  -- Suit Research
+Menu1_Option3 = GetPuzzleOption("UI_S9_SUITTREE_OPT", "TREE_SUIT")  -- Suit Research
 More_Options1 = GetMorePuzzleOption("?D_BPA_TECH_P2")
-Menu1_Options = Menu1_Option3..More_Options1
+Menu1_Options = Menu1_Option2 .. Menu1_Option3 .. More_Options1
 
 --Second set of options
-Menu2_Option1 = GetPuzzleOption("NPC_NEXUS_TECH_SHIP", "TREE_SHIP") -- Crashed Starship
-Menu2_Option2 = GetPuzzleOption("NPC_NEXUS_TECH_WEAP", "TREE_WEAP")  -- Multi-tool Location
-Menu2_Option3 = GetPuzzleOption("NPC_NEXUS_TECH_EXO", "TREE_EXO")  -- Manufacturing Facility
+Menu2_Option1 = GetPuzzleOption("NPC_NEXUS_TECH_SHIP", "TREE_SHIP") -- Ship Resarch
+Menu2_Option2 = GetPuzzleOption("NPC_NEXUS_TECH_WEAP", "TREE_WEAP")  -- Multi-tool Research
+Menu2_Option3 = GetPuzzleOption("NPC_NEXUS_TECH_EXO", "TREE_EXO")  -- Exocraft Research
 More_Options2 = GetMorePuzzleOption("?D_BPA_TECH_P3")
-Menu2_Options = Menu2_Option1..Menu2_Option2..Menu2_Option3..More_Options2
+Menu2_Options = Menu2_Option1 .. Menu2_Option2 .. Menu2_Option3 .. More_Options2
 
-Menu3_Option1 = GetPuzzleOption("UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT")  -- ExoSuit DropPod
+Menu3_Option1 = GetPuzzleOption("UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT")  -- Products
 ResearchCost = 250
 
 ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Option1
-
+CONSTRUCTED_RECIPE_TREE = ConstructRecipeTree()
 NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
@@ -206,6 +383,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTB"},
+                            ["REMOVE"] = "SECTION",
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTA"},
                             ["VALUE_CHANGE_TABLE"] =
@@ -231,6 +412,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        -- Legacy parts
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Title","UI_PURCHASABLE_BASICTECH_TREE"},
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Title", "Legacy Building Structures"},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Trees"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+                            ["ADD"] = CONSTRUCTED_RECIPE_TREE,
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
                             ["PRECEDING_KEY_WORDS"] = {"Trees"},
