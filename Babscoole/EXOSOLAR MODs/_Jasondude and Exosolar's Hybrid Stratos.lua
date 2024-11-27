@@ -4276,7 +4276,7 @@ for i = 1, #DataTable do
             {
                 ["SPECIAL_KEY_WORDS"] = {"GenericSettings", "GcWeatherColourSettingList.xml"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
-                ["ADD_OPTIONS"] = "ADDendSECTION",
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = CreateColoursProperty(PaletteColours)
             }
         }
@@ -4297,7 +4297,7 @@ for i = 1, #BiomeDataTable do
                 ["SPECIAL_KEY_WORDS"] = {Palette, "GcWeatherColourSettingList.xml"},
                 ["PRECEDING_KEY_WORDS"] = {"Settings"},
                 ["CREATE_HOS"] = "TRUE",
-                ["ADD_OPTIONS"] = "ADDendSECTION",
+                ["ADD_OPTION"] = "ADDendSECTION",
                 ["ADD"] = CreateColoursProperty(PaletteColours)
             }
         }

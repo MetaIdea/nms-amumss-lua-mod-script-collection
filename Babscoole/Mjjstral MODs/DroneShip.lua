@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "4.64",
-["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
+["MOD_DESCRIPTION"] = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
     {
         {

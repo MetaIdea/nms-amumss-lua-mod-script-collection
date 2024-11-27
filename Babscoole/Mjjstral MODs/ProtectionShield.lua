@@ -744,7 +744,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "ProtectionShield.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["NMS_VERSION"]     = "5.28",
-["DESCRIPTION"]     = "Protective shield against hazards, bullets ...",
+["MOD_DESCRIPTION"] = "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"]   =
     {
         {

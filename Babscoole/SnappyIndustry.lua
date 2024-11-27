@@ -1384,12 +1384,12 @@ Huge = [[
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "SnappyIndustry.pak",
-["MOD_AUTHOR"]    = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
-["LUA_AUTHOR"]    = "Babscoole, EMPTY.d, KuroPeach",
-["NMS_VERSION"]   = "5.28",
-["DESCRIPTION"]   = "Add more snapping points to certain building modules in game",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "SnappyIndustry.pak",
+["MOD_AUTHOR"]      = "Ethreon, Babscoole, EMPTY.d, KuroPeach",
+["LUA_AUTHOR"]      = "Babscoole, EMPTY.d, KuroPeach",
+["NMS_VERSION"]     = "5.28",
+["MOD_DESCRIPTION"] = "Add more snapping points to certain building modules in game",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

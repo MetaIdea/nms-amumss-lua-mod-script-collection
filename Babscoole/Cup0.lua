@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Cup0.pak",
-["MOD_AUTHOR"]    = "CMK",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "5.12",
-["DESCRIPTION"]   = "Save by cup",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]    = "Cup0.pak",
+["MOD_AUTHOR"]      = "CMK",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "5.12",
+["MOD_DESCRIPTION"] = "Save by cup",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =

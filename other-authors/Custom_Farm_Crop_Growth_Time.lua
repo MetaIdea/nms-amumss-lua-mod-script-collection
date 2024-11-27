@@ -35,7 +35,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "Custom Farm Crop Growth Time.pak", -- do not use / or \ in MOD_FILENAME.  Use underscore
   ["MOD_DESCRIPTION"]		= "Changes the growth time of all farm crops to a player defined value (default 30 seconds)",
   ["MOD_AUTHOR"]			= "Kaizlin",
-  ["MOD_VERSION"]			= "1.0",
   ["MODIFICATIONS"] 		=
 	{
 		{
@@ -58,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"TriggerAction","STEP0",},
-							["CHANGE_TYPE"] = "ONCE",
+							["REPLACE_TYPE"] = "ONCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",	"1"},
@@ -66,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"TriggerAction","STEP1_ENTER",},
-							["CHANGE_TYPE"] = "ONCE",
+							["REPLACE_TYPE"] = "ONCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",	StageOne},
@@ -74,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"TriggerAction","STEP1",},
-							["CHANGE_TYPE"] = "ONCE",
+							["REPLACE_TYPE"] = "ONCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",	StageTwo},
@@ -82,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"TriggerAction","STEP2_ENTER",},
-							["CHANGE_TYPE"] = "ONCE",
+							["REPLACE_TYPE"] = "ONCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",	StageThree},
@@ -90,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"TriggerAction","STEP2",},
-							["CHANGE_TYPE"] = "ONCE",
+							["REPLACE_TYPE"] = "ONCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",	StageFour},

@@ -685,7 +685,7 @@ local function TextureMode_Add(data) return
 end
 
 local function TextureMode_SetTooltip(data) return
-{   ["SKW"] = {"MultiTextureOptionsID",data["multitex"],},  ["SPECIAL_UP"] = 1,     ["PKW"] = "Tips",    ["ADD_OPTION"] = "ADDendSECTION",
+{   ["SKW"] = {"MultiTextureOptionsID",data["multitex"],},  ["SECTION_UP_SPECIAL"] = 1,     ["PKW"] = "Tips",    ["ADD_OPTION"] = "ADDendSECTION",
     ["ADD"] = [[<Property value="NMSString0x20.xml"><Property name="Value" value="]]..data["tooltip"]..[[" /></Property>]]     }
 end
 

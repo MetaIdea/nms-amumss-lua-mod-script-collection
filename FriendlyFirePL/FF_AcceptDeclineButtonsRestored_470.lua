@@ -54,12 +54,12 @@ function SetStyle(style,type,section,vct) return
 end
 
 function SetMainTextLayout() return
-{   ["SKW"] = {"ID","TEXT",},   ["SPECIAL_UP"] = 1,       ["VCT"] = {{"PositionX",10,},{"PositionY",7,},
+{   ["SKW"] = {"ID","TEXT",},   ["SECTION_UP_SPECIAL"] = 1,       ["VCT"] = {{"PositionX",10,},{"PositionY",7,},
     {"Width",94,},{"Height",0,},{"Vertical","Top",},{"Horizontal","Left",},{"AnchorPercent","False",},},    }
 end
 
 function SetSubTextLayout() return
-{   ["SKW"] = {"ID","SUBTEXT",},    ["SPECIAL_UP"] = 1,   ["VCT"] = {{"PositionY",63,},},   }
+{   ["SKW"] = {"ID","SUBTEXT",},    ["SECTION_UP_SPECIAL"] = 1,   ["VCT"] = {{"PositionY",63,},},   }
 end
 
 function AlignAllText() return
