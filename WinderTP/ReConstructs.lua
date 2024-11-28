@@ -1264,7 +1264,7 @@ PROC_SCENE["DESCRIPTOR"]["Contents"] =
 </Data>]]
 
 -- MAKING THE DESCRIPTOR PATH FROM THE SCENE PATH
-PROC_SCENE["DESCRIPTOR"]["Path"] = PROC_SCENE["SCENE"]["Path"]:gsub(".SCENE.", ".DESCRIPTOR.")
+PROC_SCENE["DESCRIPTOR"]["Path"] = (PROC_SCENE["SCENE"]["Path"]:gsub(".SCENE.", ".DESCRIPTOR."))
 
 
 MBIN_CHANGE_TABLE_FINAL = 
@@ -1536,15 +1536,15 @@ Default is YES (Y)
 				["MBIN_FILE_SOURCE"] 	=
 				{
 					{
-						l["SCENEGRAPH"]:gsub(".SCENE.", ".DESCRIPTOR."),
-						EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN")
+						(l["SCENEGRAPH"]:gsub(".SCENE.", ".DESCRIPTOR.")),
+						(EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN"))
 					}
 				},
 				-- ["MBIN_FS_DISCARD"]	= "TRUE"
 			})
 			table.insert(MBIN_CHANGE_TABLE_FINAL,
 			{
-				["MBIN_FILE_SOURCE"] 	= EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN"),
+				["MBIN_FILE_SOURCE"] 	= (EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN")),
 				["EXML_CHANGE_TABLE"]	= 
 				{
 					{

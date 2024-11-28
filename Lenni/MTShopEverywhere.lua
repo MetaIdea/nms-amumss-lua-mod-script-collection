@@ -547,7 +547,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 {
 ["MOD_FILENAME"] 			=	"MTShopEverywhere.pak",
 ["MOD_AUTHOR"]				=	"Lenni",
-["Contributors"]			=	"Babscoole, ApexFatality, WinderTP",
+["MOD_CONTRIBUTORS"]	    =	"Babscoole, ApexFatality, WinderTP",
 ["NMS_VERSION"]				=	"5.01.1",
 ["ADD_FILES"]				=	ADD_FILES_TABLE,
 ["MODIFICATIONS"]			=

@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "BiggerExpeditionReminder"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "470"
+METADATA_NMS_VERSION    = "528"
 METADATA_MOD_DESC       = "This mod reworks the expedition reminder panel found in boot menu from 1 flimsy line of text into a proper box"
 
 
@@ -33,16 +33,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            -- add a transparent shade to all 3 styles of the expedition panel
+                            -- add a transparent shade and border to all 3 styles of the expedition panel
                             ["SKW"] = {"ID","EXPEDITION",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["ITF"] = "FORCE",
                             ["VCT"] =
                             {
-                                {"A",0.3,},{"A",1,},{"A",1,},{"A",1,},{"A",1,},
-                                {"A",0.3,},{"A",1,},{"A",1,},{"A",1,},{"A",1,},
-                                {"A",0.3,},{"A",1,},{"A",1,},{"A",1,},{"A",1,},
+                                {"A",0.3,},{"A",1,},{"A",0.5,},{"A",1,},{"A",1,},
+                                {"A",0.3,},{"A",1,},{"A",0.5,},{"A",1,},{"A",1,},
+                                {"A",0.3,},{"A",1,},{"A",0.5,},{"A",1,},{"A",1,},
                             },
+                        },
+
+                        {
+                            -- set thin border
+                            ["SKW"] = {"ID","EXPEDITION",},
+                            ["SECTION_UP_SPECIAL"] = 1,
+                            ["ITF"] = "FORCE",
+                            ["VCT"] = {{"StrokeSize",0.5,},{"StrokeSize",0.5,},{"StrokeSize",0.5,},}
                         },
                         
                         {
@@ -51,9 +59,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VCT"] = 
                             {
                                 {"PositionX",50,},                      -- anchor pos X: 50% of container width
-                                {"PositionY",70,},                      -- anchor pos Y: 70% of container height
-                                {"Width",820,},                         -- set width and height (what about other languages?)
-                                {"Height",60,},                         
+                                {"PositionY",75,},                      -- anchor pos Y: 75% of container height
+                                {"Width",650,},                         -- set width and height (what about other languages?)
+                                {"Height",58,},                         
                                 {"Vertical","Top",},                    -- panel relation to anchor: align top center
                                 {"Horizontal","Center",},
                             },
@@ -87,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SKW"] = {"ID","TEXT",},
                             ["SECTION_ACTIVE"] = 2,
                             ["SECTION_UP_SPECIAL"] = 1,
-                            ["VCT"] = {{"FontHeight",32,},{"AllowScroll","False",},},
+                            ["VCT"] = {{"FontHeight",26,},{"AllowScroll","False",},},
                         },
 
                         {
