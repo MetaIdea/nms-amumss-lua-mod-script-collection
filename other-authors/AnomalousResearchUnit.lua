@@ -1,4 +1,12 @@
-local CraftableTable = {
+enableLegacyParts = true
+enableAdvancedBuildingParts = true
+enableAnomalyResearchTrees = true
+useNanitesForProductTree = true
+
+-- Changes the product research table cost to match the one in the Anomaly.
+NaniteResearchCost = 250
+
+craftableItemsList = {
     "PRODFUEL2",
     "JELLY",
     "NANOTUBES",
@@ -54,7 +62,7 @@ local CraftableTable = {
     "TECH_COMP",
 }
 
-recipeTree = {
+legacyRecipeTree = {
     {
         ["Title"] = "Wooden Structures",
         ["Unlockable"] = "W_WALL",
@@ -184,6 +192,97 @@ recipeTree = {
     },
 }
 
+-- Comment out or remove the trees you don't want from this table
+researchTrees = {
+    {"UI_S9_SUITTREE_OPT", "TREE_SUIT"}, -- Suit Research
+    {"NPC_NEXUS_TECH_SHIP", "TREE_SHIP"}, -- Ship Research
+    {"NPC_NEXUS_TECH_WEAP", "TREE_WEAP"}, -- Multi-tool Research
+    {"NPC_NEXUS_TECH_EXO", "TREE_EXO"},   -- Exocraft Research
+    {"UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT"}, -- Products Research
+}
+
+NMS_MOD_DEFINITION_CONTAINER =
+{
+    ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
+    ["MOD_AUTHOR"] = "Aristotale",
+    ["MOD_VERSION"] = "1.1",
+    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
+    ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
+    ["NMS_VERSION"]   = "5.25",
+    ["MODIFICATIONS"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+            }
+        }
+    }
+}
+
+local ResearchTreeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local UnlockableTreeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+local ProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+local NanitePricing = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+
+function SetNanitePricing()
+    NanitePricing[#NanitePricing+1] = 
+    {
+        ["VALUE_CHANGE_TABLE"] = 
+        {
+            {"NexusRecipeCostNaniteMultiplier", "1"}
+        }
+    }
+
+    for i=1, #craftableItemsList, 1 do
+      ProductRecipeTable[#ProductRecipeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", craftableItemsList[i]},
+            ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"RecipeCost", NaniteResearchCost},
+            }
+        }
+    end
+
+    UnlockableTreeTable[#UnlockableTreeTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {
+            {"Title", "UI_PRODUCT_TREE_CRAFT"},
+            {"Title", "UI_PRODUCT_TREE_FARM"},
+        },
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"CostTypeID", "NANITES"},
+        }
+    }
+end
+
 function GetPuzzleOption(NAME, ACTION)
     return
     [[
@@ -248,7 +347,7 @@ function GetMorePuzzleOption(NEXTACTION)
               <Property name="TruncateCost" value="False" />
               <Property name="MarkInteractionComplete" value="False" />
               <Property name="NextInteraction" value="]]..NEXTACTION..[[" />
-              <Property name="SelectedOnBackOut" value="False" />
+              <Property name="SelectedOnBackOut" value="True" />
               <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                 <Property name="AkEvent" value="INVALID_EVENT" />
               </Property>
@@ -304,6 +403,19 @@ function GetMorePuzzleOption(NEXTACTION)
     ]]
 end
 
+function AssembleAnomalousMenu()
+    local pageCount = 3
+    Menu = ""
+    for i=1, #researchTrees, 1 do
+        if i == 2 or i % 5 == 0 then
+            Menu = Menu .. GetMorePuzzleOption("?D_BPA_TECH_P"..pageCount)
+            pageCount = pageCount + 1
+        end
+        Menu = Menu .. GetPuzzleOption(researchTrees[i][1], researchTrees[i][2])
+    end
+    return Menu
+end
+
 function AddTreeNodes(nodes)
     local nodeOutput = ""
     for i = 1, #nodes, 1 do
@@ -328,17 +440,17 @@ function AddTreeNodes(nodes)
     return nodeOutput
 end
 
-function ConstructRecipeTree()
+function ConstructLegacyRecipeTree()
     recipeTreeConstructed = '<Property name="Trees">'
-    for i = 1, #recipeTree, 1 do
+    for i = 1, #legacyRecipeTree, 1 do
         recipeTreeConstructed = recipeTreeConstructed .. [[
             <Property value="GcUnlockableItemTree.xml">
-                <Property name="Title" value="]] .. recipeTree[i]["Title"] .. [[" />
+                <Property name="Title" value="]] .. legacyRecipeTree[i]["Title"] .. [[" />
                 <Property name="CostTypeID" value="SALVAGE" />
                 <Property name="Root" value="GcUnlockableItemTreeNode.xml">
-                    <Property name="Unlockable" value="]] .. recipeTree[i]["Unlockable"] .. [[" />
+                    <Property name="Unlockable" value="]] .. legacyRecipeTree[i]["Unlockable"] .. [[" />
                     <Property name="Children">
-                        ]] .. AddTreeNodes(recipeTree[i]["Children"]) .. [[
+                        ]] .. AddTreeNodes(legacyRecipeTree[i]["Children"]) .. [[
                     </Property>
                 </Property>
             </Property>
@@ -348,142 +460,90 @@ function ConstructRecipeTree()
     return recipeTreeConstructed
 end
 
-Menu1_Option2 = GetPuzzleOption("Legacy Building Structures", "TREE_TECHBASICS")  -- Suit Research
-Menu1_Option3 = GetPuzzleOption("UI_S9_SUITTREE_OPT", "TREE_SUIT")  -- Suit Research
-More_Options1 = GetMorePuzzleOption("?D_BPA_TECH_P2")
-Menu1_Options = Menu1_Option2 .. Menu1_Option3 .. More_Options1
-
---Second set of options
-Menu2_Option1 = GetPuzzleOption("NPC_NEXUS_TECH_SHIP", "TREE_SHIP") -- Ship Resarch
-Menu2_Option2 = GetPuzzleOption("NPC_NEXUS_TECH_WEAP", "TREE_WEAP")  -- Multi-tool Research
-Menu2_Option3 = GetPuzzleOption("NPC_NEXUS_TECH_EXO", "TREE_EXO")  -- Exocraft Research
-More_Options2 = GetMorePuzzleOption("?D_BPA_TECH_P3")
-Menu2_Options = Menu2_Option1 .. Menu2_Option2 .. Menu2_Option3 .. More_Options2
-
-Menu3_Option1 = GetPuzzleOption("UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT")  -- Products
-ResearchCost = 250
-
-ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Option1
-CONSTRUCTED_RECIPE_TREE = ConstructRecipeTree()
-NMS_MOD_DEFINITION_CONTAINER =
-{
-    ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
-    ["MOD_AUTHOR"] = "Aristotale",
-    ["MOD_VERSION"] = "1.1",
-    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
-    ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
-    ["NMS_VERSION"]   = "5.25",
-    ["MODIFICATIONS"] =
-    {
+function AddLegacyStuff()
+    if enableLegacyParts then
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
         {
-            ["MBIN_CHANGE_TABLE"] =
+            ["SPECIAL_KEY_WORDS"] = {"Title","UI_PURCHASABLE_BASICTECH_TREE"},
+            ["VALUE_CHANGE_TABLE"] = {
+                {"Title", "Legacy Building Structures"},
+            },
+        }
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+            ["PRECEDING_KEY_WORDS"] = {"Trees"},
+            ["REMOVE"] = "SECTION",
+        }
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+            ["ADD"] = ConstructLegacyRecipeTree(),
+        }
+    end
+    if enableAdvancedBuildingParts then
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
+            ["PRECEDING_KEY_WORDS"] = {"Trees"},
+            ["SEC_SAVE_TO"] = "Base_parts"
+        }
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
+            ["PRECEDING_KEY_WORDS"] = {"Trees"},
+            ["REMOVE"] = "SECTION",
+        }
+        UnlockableTreeTable[#UnlockableTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
+            ["SEC_ADD_NAMED"] = "Base_parts"
+        }
+    end
+
+    if enableAnomalyResearchTrees and useNanitesForProductTree then
+        SetNanitePricing()
+    end
+end
+
+function AddAnomalyResearchTrees()
+    if enableLegacyParts then
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTB"},
+            ["VALUE_CHANGE_TABLE"] =
             {
-                
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTB"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTA"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Name", "Advanced Building Structures"},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "Advanced Building Structures"},
-                            ["ADD_OPTION"] = "ADDafterSECTION",
-                            ["ADD"] = ALL_PUZZLE_UPDATES,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"Title", "Anomalous Research Unit"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        -- Legacy parts
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Title","UI_PURCHASABLE_BASICTECH_TREE"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"Title", "Legacy Building Structures"},
-                            },
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Trees"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
-                            ["ADD"] = CONSTRUCTED_RECIPE_TREE,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Trees"},
-                            ["SEC_SAVE_TO"] = "Base_parts"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"Trees"},
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
-                            ["SEC_ADD_NAMED"] = "Base_parts"
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {
-                                {"Title", "UI_PRODUCT_TREE_CRAFT"},
-                                {"Title", "UI_PRODUCT_TREE_FARM"},
-                            },
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"CostTypeID", "NANITES"},
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {}
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-                    ["EXML_CHANGE_TABLE"] = {
-                        {
-                            ["VALUE_CHANGE_TABLE"] = 
-                            {
-                                {"NexusRecipeCostNaniteMultiplier", "1"}
-                            }
-                        },
-                    }
-                },
+                {"Name", "Legacy Structures"},
             }
         }
-    }
-}
-
-local ProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
-
-for i=1, #CraftableTable, 1 do
-  ProductRecipeTable[#ProductRecipeTable+1] =
+    end
+    if enableAdvancedBuildingParts then
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTA"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Name", "Advanced Building Structures"},
+            }
+        }
+    end
+    if enableAnomalyResearchTrees then
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "ALL_REQUEST_LEAVE"},
+            ["ADD_OPTION"] = "ADDbeforeSECTION",
+            ["ADD"] = AssembleAnomalousMenu(),
+        }
+    end
+    ResearchTreeTable[#ResearchTreeTable+1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", CraftableTable[i]},
-        ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"RecipeCost", ResearchCost},
+            {"Title", "Anomalous Research Unit"},
         }
     }
 end
+
+AddLegacyStuff()
+AddAnomalyResearchTrees()

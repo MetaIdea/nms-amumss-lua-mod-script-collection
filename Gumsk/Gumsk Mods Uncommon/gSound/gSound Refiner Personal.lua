@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","Obj_PortableRefinery_Start",
               },
               SECTION_UP = 1,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}

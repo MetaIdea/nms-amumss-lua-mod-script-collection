@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","Freighter_HangarDoor_Open",
               },
               SECTION_UP = 1,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}

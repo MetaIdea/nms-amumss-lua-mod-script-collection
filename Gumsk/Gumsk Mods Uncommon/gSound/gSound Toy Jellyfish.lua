@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","JELLYFISH_SWIM",
               },
               SECTION_UP = 3,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}

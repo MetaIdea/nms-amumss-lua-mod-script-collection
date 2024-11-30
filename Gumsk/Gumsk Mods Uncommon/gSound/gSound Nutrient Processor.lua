@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS = {
                 "Sound","Cooker_Cooking",
               },
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}

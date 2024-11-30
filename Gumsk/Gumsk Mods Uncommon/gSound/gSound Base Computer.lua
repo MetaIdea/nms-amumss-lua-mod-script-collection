@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","BaseBeacon",
               },
               SECTION_UP = 3,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","BaseTerminal",
               },
               SECTION_UP = 1,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}

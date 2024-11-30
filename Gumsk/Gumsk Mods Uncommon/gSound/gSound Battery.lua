@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 "Sound","Base_Battery_Charging",
               },
               SECTION_UP = 2,
-              REMOVE_TYPE = "ALL",
+              REPLACE_TYPE = "ALL",
               REMOVE = "SECTION",
 						}
 					}
