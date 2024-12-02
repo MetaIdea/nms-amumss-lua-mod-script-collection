@@ -4,18 +4,13 @@ local mod_desc = [[
   items to the derelict freighter encounter mission.
   Adds a slow tumble to floating items to make the scene more dynamic
 ]]-------------------------------------------------------------------------
-local mod_version = '1.02'
-
--------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+---	LUA 2 EXML (VERSION: 0.85.7) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
----	Helper functions for color class, vector class and string arrays
----	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+--- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
 -------------------------------------------------------------------------------
-
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
-function ToExml(class)
+local function ToExml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	function bool(b)
@@ -81,7 +76,7 @@ end
 --	Uses the contained template meta if found (instead of the received variable)
 --	@param data: a lua2exml formatted table
 --	@param template: an nms file template string
-function FileWrapping(data, template)
+local function FileWrapping(data, template)
 	local wrapper = '<Data template="%s">%s</Data>'
 	if type(data) == 'string' then
 		return string.format(wrapper, template, data)
@@ -98,45 +93,18 @@ function FileWrapping(data, template)
 	end
 end
 
---	Build a TkSceneNodeData class
+--	Build a single -or list of TkSceneNodeData classes
 --	@param props: a keyed table for scene class properties.
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
---	  stype	= scene node type
+--	  ntype	= scene node type
 --	  form	= [optional] Transform data. a list of 9 ordered values or keyed values,
 --			  but NOT a combination of the two!
+--	  pxlud = [optional] PlatformExclusion
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
-function ScNode(props)
-	--	Builds a TkTransformData class
-	local function scTransform(T)
-		T = T or {}
-		return {
-			meta	= {'Transform', 'TkTransformData.xml'},
-			TransX	= (T.tx or T[1]) or 0,
-			TransY	= (T.ty or T[2]) or 0,
-			TransZ	= (T.tz or T[3]) or 0,
-			RotX	= (T.rx or T[4]) or 0,
-			RotY	= (T.ry or T[5]) or 0,
-			RotZ	= (T.rz or T[6]) or 0,
-			ScaleX	= (T.sx or T[7]) or 1,
-			ScaleY	= (T.sy or T[8]) or 1,
-			ScaleZ	= (T.sz or T[9]) or 1
-		}
-	end
-	--	Builds a scene node attributes array
-	local function scAttributes(T)
-		local atr = {meta = {'name', 'Attributes'}}
-		for _,at in ipairs(T) do
-			atr[#atr+1] = {
-				meta	= {'value', 'TkSceneNodeAttributeData.xml'},
-				Name	= at[1],
-				Value	= at[2]
-			}
-		end
-		return atr
-	end
+local function ScNode(nodes)
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
 		local hash = 0
@@ -152,25 +120,66 @@ function ScNode(props)
 		hash = (hash + (hash << 15)) & 0xffffffff
 		return tostring(hash)
 	end
+	--	Build a TkSceneNodeData class
+	local function sceneNode(props)
+		local T	= {
+			meta	= {'value', 'TkSceneNodeData.xml'},
+			Name 				= props.name,
+			NameHash			= jenkinsHash(props.name),
+			Type				= props.ntype,
+			PlatformExclusion	= props.pxlud or nil
+		}
+		--	add TkTransformData class
+		props.form = props.form or {}
+		T.Form = {
+			meta	= {'Transform', 'TkTransformData.xml'},
+			TransX	= (props.form.tx or props.form[1]) or nil,
+			TransY	= (props.form.ty or props.form[2]) or nil,
+			TransZ	= (props.form.tz or props.form[3]) or nil,
+			RotX	= (props.form.rx or props.form[4]) or nil,
+			RotY	= (props.form.ry or props.form[5]) or nil,
+			RotZ	= (props.form.rz or props.form[6]) or nil,
+			ScaleX	= (props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.sy or props.form[8]) or 1,
+			ScaleZ	= (props.form.sz or props.form[9]) or 1
+		}
+		--	if present, add attributes list
+		if props.attr then
+			-- add accompanying attribute to scenegraph
+			if props.attr.SCENEGRAPH then
+				props.attr.EMBEDGEOMETRY = 'TRUE'
+			end
+			T.Attr = { meta = {'name', 'Attributes'} }
+			for nm, val in pairs(props.attr) do
+				T.Attr[#T.Attr+1] = {
+					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					Name	= nm,
+					Value	= val
+				}
+			end
+		end
+		if props.child then
+		--	add children list if found
+			local k,_ = next(props.child)
+			cnd = ScNode(props.child)
+			T.Child	= k == 1 and cnd or {cnd}
+			T.Child.meta = {'name', 'Children'}
+		end
+		return T
+	end
 	-----------------------------------------------------------------
-	local T	= {
-		meta	= {'value', 'TkSceneNodeData.xml'},
-		Name 		= props.name,
-		NameHash	= jenkinsHash(props.name),
-		Type		= props.stype
-	}
-	T[#T+1]		= scTransform(props.form or {})
-	if props.attr then
-		T[#T+1] = scAttributes(props.attr)
+	local k,_ = next(nodes)
+	if k == 1 then
+	-- k=1 means the first of a list of unrelated, non-nested, nodes
+		local T = {}
+		for _,nd in ipairs(nodes) do
+				T[#T+1] = sceneNode(nd)
+		end
+		return T
 	end
-	if props.child then
-		local tc = { meta = {'name', 'Children'} }
-		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
-		T[#T+1]	= tc
-	end
-	return T
+	return sceneNode(nodes)
 end
-
+-------------------------------------------------------------------------------
 local assets = {
 	{
 		name = '_Derelict_',
@@ -242,7 +251,7 @@ local assets = {
 				model	= 'MODELS/SPACE/POI/PILLARPOI.SCENE.MBIN'
 			},
 			{
-				form	= {420, 385, -720, 120, 210, 190, 2, 2, 2},
+				form	= {460, 405, -750, 120, 210, 190, 2, 2, 2},
 				model	= 'MODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN'
 			},
 			{
@@ -250,7 +259,7 @@ local assets = {
 				model	= 'MODELS/SPACE/POI/8PRONGEDSPINNER.SCENE.MBIN'
 			},
 			{
-				form	= {-320, 246, -700, 120, 210, 190, 2, 2, 2},
+				form	= {-360, 286, -740, 120, 210, 190, 2, 2, 2},
 				model	= 'MODELS/SPACE/POI/ATLASBEACON.SCENE.MBIN'
 			}
 		}
@@ -277,25 +286,25 @@ local assets = {
 	}
 }
 
-local function AddSceneNodes()
+local function AddSpaceAssets()
 	local T = {}
 	for _,group in ipairs(assets) do
 		if group.node then
 			for i, scene in ipairs(group.node) do
-				T[#T+1] = ScNode({
+				T[#T+1] = {
 					name	= group.name..string.char(64 + i),
-					stype	= 'REFERENCE',
+					ntype	= 'REFERENCE',
 					form	= scene.form,
 					attr	= {
-						{'SCENEGRAPH', scene.model},
+						SCENEGRAPH	= scene.model,
 					--	add a spin to 'drifting' wrecks
-						{'ATTACHMENT', 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.MBIN'}
+						ATTACHMENT	= 'MODELS/COMMON/SHARED/ENTITIES/SPIN001.ENTITY.MBIN'
 					}
-				})
+				}
 			end
 		end
 	end
-	return ToExml(T)
+	return ToExml(ScNode(T))
 end
 
 local function GenerateDescriptor()
@@ -309,11 +318,18 @@ local function GenerateDescriptor()
 			TypeId		= group.name:upper(),
 			Descriptors	= {meta = {'name', 'Descriptors'}}
 		}
-		for i,_ in ipairs(group.node or group.desc) do
+		for i, scene in ipairs(group.node or group.desc) do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
 				meta	= {'value', 'TkResourceDescriptorData.xml'},
 				Id		= (group.name..string.char(64 + i)):upper(),
 				Name	= group.name..string.char(64 + i),
+				ReferencePaths	= type(scene) == 'table' and {
+					meta = {'name','ReferencePaths'},
+					{
+						meta	= {'value', 'VariableSizeString.xml'},
+						Value	= scene.model
+					}
+				} or nil
 			}
 		end
 		T.List[#T.List+1] = tmp
@@ -322,11 +338,11 @@ local function GenerateDescriptor()
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.Derelict Procedural Additions.'..mod_version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Derelict Procedural Additions.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.00.1',
+	NMS_VERSION			= '5.28',
 	MOD_DESCRIPTION		= mod_desc,
-	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS,MIXED_TABLE',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -335,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'RefDungeonEntrance'},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD 				= AddSceneNodes()
+				ADD 				= AddSpaceAssets()
 			}
 		}
 	}
