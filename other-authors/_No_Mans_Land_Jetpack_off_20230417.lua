@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land Jetpack off", 
+["MOD_FILENAME"] 			= "No Mans Land Jetpack off.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "This mods effectively shits down the jetpack - use at your risk of getting trapped ;-.).",

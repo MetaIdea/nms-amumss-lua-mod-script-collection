@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land Launchfuel Launchsub Jelly illegal", 
+["MOD_FILENAME"] 			= "No Mans Land Launchfuel Launchsub Jelly illegal.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "This mods classifies Launfuel, Lauchsub (Di-Hydrogen) and Jelly (Di-Hydro Jeely).",

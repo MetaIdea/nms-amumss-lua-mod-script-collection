@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "No Mans Land HUD Hide HAzard Bar",
+["MOD_FILENAME"]            = "No Mans Land HUD Hide HAzard Bar.pak",
 ["MOD_AUTHOR"]              = "youngneil1",
 ["LUA_AUTHOR"]              = "youngneil1",
 ["NMS_VERSION"]             = "4.23",

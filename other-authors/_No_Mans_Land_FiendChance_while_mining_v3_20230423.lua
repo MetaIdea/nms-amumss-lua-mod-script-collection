@@ -9,6 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "youngneil1", --based on Xen0nex work
 	["NMS_VERSION"]			= GameVersion,
+    ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"]		= 
 	{
 		{

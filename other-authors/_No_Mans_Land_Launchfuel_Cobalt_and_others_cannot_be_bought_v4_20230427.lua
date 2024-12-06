@@ -4,7 +4,7 @@ ModNameSub = "Launchfuel and others cannot be bought"
 BaseDescription = "Excludes Launchfuel and others from all sales, like from terminals, when playing on highest scarcity of goods gameplay setting"
 GameVersion = "423"
 ModVersion = "a"
-FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+FileSource1 = "METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN"
 
 TEXT_TO_ADD =
 [[

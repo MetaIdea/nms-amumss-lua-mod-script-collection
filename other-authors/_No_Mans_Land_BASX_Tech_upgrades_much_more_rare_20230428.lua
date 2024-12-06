@@ -24,9 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						
 						{
 							--ShipTechSpecialist
-							["REPLACE_TYPE"] = "",
 							["SPECIAL_KEY_WORDS"] = {"Value", "U_LAUNCH2"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["SECTION_UP"] = 2,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -36,9 +34,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							--SuitTechSpecialist
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"Value", "U_ENERGY3"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
+							
+							["SPECIAL_KEY_WORDS"] = {"Value", "U_ENERGY3"},	
+                            ["SECTION_ACTIVE"] = 2,                            
 							["SECTION_UP"] = 2,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -48,9 +46,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							----WeapTechSpecialist
-							["REPLACE_TYPE"] = "",
-							["SPECIAL_KEY_WORDS"] = {"Value", "U_LASER3"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
+							["SPECIAL_KEY_WORDS"] = {"Value", "U_LASER3"},	
+                            ["SECTION_ACTIVE"] = 2,                             
 							["SECTION_UP"] = 2,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -60,9 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							--VehicleTechSpecialist
-							["REPLACE_TYPE"] = "",
 							["SPECIAL_KEY_WORDS"] = {"Value", "U_EXOGUN2"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["SECTION_UP"] = 2,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -74,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							--piratetech and illegalProds
 							["REPLACE_TYPE"] = "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Value", "U_SHIPBLOBX"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["SECTION_UP"] = 2,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

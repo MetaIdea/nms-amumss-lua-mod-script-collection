@@ -238,45 +238,44 @@ for _,snk in ipairs(new_ship_texture) do
 	end
 end
 --- fighter proc texture --------------------------------------------------------------------------
+local ship_path = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/'
 local ship_mct = {}
 for _,src in ipairs({
-	'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_PRIMARY.TEXTURE.MBIN',
-	'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/HQTRIM_SECONDARY.TEXTURE.MBIN',
-	'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.TEXTURE.MBIN',
-	'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/SECONDARY.TEXTURE.MBIN',
-	'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/TERTIARY.TEXTURE.MBIN'
+	'HQTRIM_PRIMARY.TEXTURE.MBIN',
+	'HQTRIM_SECONDARY.TEXTURE.MBIN',
+	'PRIMARY.TEXTURE.MBIN',
+	'SECONDARY.TEXTURE.MBIN',
+	'TERTIARY.TEXTURE.MBIN'
 }) do
 	local T = {{
 		SPECIAL_KEY_WORDS	= {'Name', 'PAINTED'},
 		SEC_SAVE_TO			= 'procedural_texture',
 	}}
 	for _,snk in ipairs(new_ship_texture) do
-		if not snk.org then
+		if not snk.org then	
 			T[#T+1] = {
 				SEC_EDIT 			= 'procedural_texture',
 				VALUE_CHANGE_TABLE 	= {
 					{'Name',		snk.name},
-					{'Probability',	0.005},
+					{'Probability',	0.005}
 				}
 			}
-			if not src:find('TERTIARY') then
-				T[#T+1] = {
-					SEC_EDIT 			= 'procedural_texture',
-					VALUE_CHANGE_TABLE 	= {
-						{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.X2.DDS'},
-						{'Normal',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.NORMAL.DDS'},
-						{'Mask',		'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/PRIMARY.'..snk.name..'.MASKS.DDS'}
-					}
+			T[#T+1] = {
+				SEC_EDIT 			= 'procedural_texture',
+				VALUE_CHANGE_TABLE 	= {
+					{'Diffuse',		ship_path..'PRIMARY.X2.DDS'},
+					{'Normal',		ship_path..'PRIMARY.'..snk.name..'.NORMAL.DDS'},
+					{'Mask',		ship_path..'PRIMARY.'..snk.name..'.MASKS.DDS'}
 				}
-				T[#T+1] = {
-					SEC_EDIT 			= 'procedural_texture',
-					PRECEDING_KEY_WORDS = 'Palette',
-					REPLACE_TYPE 		= 'OnceInside',
-					VALUE_CHANGE_TABLE 	= {
-						{'Palette',		src:find('/PRIM') and 'Paint' or  'Undercoat'}
-					}
+			}
+			T[#T+1] = {
+				SEC_EDIT 			= 'procedural_texture',
+				PRECEDING_KEY_WORDS = 'Palette',
+				REPLACE_TYPE 		= 'OnceInside',
+				VALUE_CHANGE_TABLE 	= {
+					{'Palette', (src:match('^PRIM') or src:match('^TERT')) and 'Paint' or  'Undercoat'}
 				}
-			end
+			}
 			T[#T+1] = {
 				SPECIAL_KEY_WORDS	= {'Name', 'BASE'},
 				PRECEDING_KEY_WORDS = 'Textures',
@@ -286,11 +285,12 @@ for _,src in ipairs({
 		end
 	end
 	ship_mct[#ship_mct+1] = {
-		MBIN_FILE_SOURCE	= src,
+		MBIN_FILE_SOURCE	= ship_path..src,
 		EXML_CHANGE_TABLE	= T
 	}
 end
 --- scientific proc texture -----------------------------------------------------------------------
+local sci_path = 'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/'
 local sci_ect = {
 	{
 		SPECIAL_KEY_WORDS	= {'Name', 'PAINT1', 'Name', 'PAINTED'},
@@ -308,9 +308,9 @@ for _,snk in ipairs(new_ship_texture) do
 			VALUE_CHANGE_TABLE 	= {
 				{'Name',		snk.name},
 				{'Probability',	0.005},
-				{'Diffuse',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.PAINT1.SHINY.DDS'},
-				{'Normal',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/PAINT1.'..snk.name..'.NORMAL.DDS'},
-				{'Mask',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
+				{'Diffuse',		sci_path..'SCIENTIFIC.PAINT1.SHINY.DDS'},
+				{'Normal',		sci_path..'PAINT1.'..snk.name..'.NORMAL.DDS'},
+				{'Mask',		sci_path..'SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
 			}
 		}
 		sci_ect[#sci_ect+1] = {
@@ -324,8 +324,11 @@ for _,snk in ipairs(new_ship_texture) do
 			VALUE_CHANGE_TABLE 	= {
 				{'Name',		snk.name},
 				{'Probability',	0.005},
-				{'Normal',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/PAINT1.'..snk.name..'.NORMAL.DDS'},
-				{'Mask',		'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
+				{'Normal',		sci_path..'PAINT1.'..snk.name..'.NORMAL.DDS'},
+				{'Mask',		sci_path..'SCIENTIFIC.BASE.SHINY.MASKS.DDS'}
+				
+				
+				
 			}
 		}
 		sci_ect[#sci_ect+1] = {
@@ -340,7 +343,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Embossed Ships.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.12',
+	NMS_VERSION				= '5.28',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MOD_DESCRIPTION			= mod_desc,
 	MODIFICATIONS 			= {
@@ -373,7 +376,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{
 			MBIN_CHANGE_TABLE	= {{
-				MBIN_FILE_SOURCE	= 'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/SCIENTIFIC.TEXTURE.MBIN',
+				MBIN_FILE_SOURCE	= sci_path..'SCIENTIFIC.TEXTURE.MBIN',
 				EXML_CHANGE_TABLE	= sci_ect
 			}}
 		}
@@ -385,11 +388,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				return {
 					{
 						EXTERNAL_FILE_SOURCE = tex_path..'Ship_2048/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/*.DDS'
+						FILE_DESTINATION	 = ship_path..'*.DDS'
 					},
 					{
 						EXTERNAL_FILE_SOURCE = tex_path..'Scientific/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/COMMON/SPACECRAFT/SCIENTIFIC/SHARED/*.DDS'
+						FILE_DESTINATION	 = sci_path..'*.DDS'
 					}
 				}
 			end

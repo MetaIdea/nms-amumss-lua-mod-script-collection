@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land Slow Terrain Manipulator", 
+["MOD_FILENAME"] 			= "No Mans Land Slow Terrain Manipulator.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.23",
 ["MOD_DESCRIPTION"]			= "This mods slows down the Terrain Manipulators edits and substracts to about 5% of their original speed",

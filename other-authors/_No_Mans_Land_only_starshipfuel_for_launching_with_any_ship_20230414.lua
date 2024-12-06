@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land Only starship fuel for launching", 
+["MOD_FILENAME"] 			= "No Mans Land Only starship fuel for launching.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				--Originally authored by Lo2K, edited by Xen0nex and then again by youngneil1
 ["NMS_VERSION"]				= "4.20",
 ["MOD_DESCRIPTION"]			= "This mods makes launchfuel the only resocurce eglible for refueling the launch thruster, regardless of ship type.",

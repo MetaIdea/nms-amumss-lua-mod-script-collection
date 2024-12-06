@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "No Mans Land HUD Weapons Bar",
+["MOD_FILENAME"]            = "No Mans Land HUD Weapons Bar.pak",
 ["MOD_AUTHOR"]              = "youngneil1",
 ["LUA_AUTHOR"]              = "youngneil1",
 ["NMS_VERSION"]             = "4.23",

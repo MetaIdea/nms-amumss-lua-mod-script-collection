@@ -9,6 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= Description,
 	["MOD_AUTHOR"]			= "youngneil1", --based on Xen0nex and gumsk work, extended espcially in regards to aggro/stay time, move speed and pounce attack delay
 	["NMS_VERSION"]			= GameVersion,
+    ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"]		= 
 	{
 		{
@@ -22,15 +23,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						
 						{
 							["REPLACE_TYPE"] = "",
-							--["SPECIAL_KEY_WORDS"] = {"VehicleDestroyEffect", "VEHICLECRASH"},				
-							--["PRECEDING_KEY_WORDS"] = {"Requirements"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FiendAggroTime",	"500"},
 								{"FiendDespawnDistance",	"3000"},
 								{"FiendPounceDistanceModifier" , "6"},
 								{"FiendPerceptionDistance", "300"},
-								{"FiendOnscreenMarkers", "300"},
 								{"FiendHealth", "1500"},
 								{"FiendMaxEngaged", "8"},
 								{"FiendMaxAttackers", "4"},

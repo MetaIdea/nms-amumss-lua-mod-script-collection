@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land No initial protection zone", 
+["MOD_FILENAME"] 			= "No Mans Land No initial protection zone.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.23",
 ["MOD_DESCRIPTION"]			= "This mods disables the initial protection zone.",

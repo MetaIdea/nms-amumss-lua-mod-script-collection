@@ -69,6 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource,
@@ -104,7 +105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"ShipFoVMax3rdPerson", ShipFoVMax3rdPerson},
 		{"ShipFoVBoost", ShipFoVBoost},
 		{"ShipFoVMiniJump", ShipFoVMiniJump}}},
-	{["PRECEDING_KEY_WORDS"] = "BeaconTransition",
+	{["SPECIAL_KEY_WORDS"] = {"ID", "BEACON"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Time",BeaconTime},
 		{"AerialViewMode",BeaconView},
@@ -112,7 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"StartTime",BeaconStartTime},
 		{"PauseTime",BeaconPauseTime},
 		{"Distance",BeaconDistance}}},
-	{["PRECEDING_KEY_WORDS"] = "SignalTransition",
+	{["SPECIAL_KEY_WORDS"] = {"ID", "SIGNAL"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Time",SignalTime},
 		{"AerialViewMode",SignalView},
@@ -120,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"StartTime",SignalStartTime},
 		{"PauseTime",SignalPauseTime},
 		{"Distance",SignalDistance}}},
-	{["PRECEDING_KEY_WORDS"] = "WaypointTransition",
+	{["SPECIAL_KEY_WORDS"] = {"ID", "WAYPOINT"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Time",WaypointTime},
 		{"AerialViewMode",WaypointView},
@@ -128,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"StartTime",WaypointStartTime},
 		{"PauseTime",WaypointPauseTime},
 		{"Distance",WaypointDistance}}},
-	{["PRECEDING_KEY_WORDS"] = "RadioTowerTransition",
+	{["SPECIAL_KEY_WORDS"] = {"ID", "RADIO_TOWER"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Time",RadioTime},
 		{"AerialViewMode",RadioView},

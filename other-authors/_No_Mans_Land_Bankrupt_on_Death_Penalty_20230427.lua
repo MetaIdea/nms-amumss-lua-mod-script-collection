@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land Banrupt on Death Penalty", 
+["MOD_FILENAME"] 			= "No Mans Land Banrupt on Death Penalty.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.23",
 ["MOD_DESCRIPTION"]			= "This mods drains on all credits on death.",

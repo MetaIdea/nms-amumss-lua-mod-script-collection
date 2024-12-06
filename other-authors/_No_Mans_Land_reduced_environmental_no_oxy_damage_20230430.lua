@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {
 
@@ -67,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 	--["SPECIAL_KEY_WORDS"] = {"Id","ENERGY"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"DamageRepairFactor", "0,1"}}
+		{"DamageRepairFactor", "0.1"}}
 		
 	}, --default 28
 

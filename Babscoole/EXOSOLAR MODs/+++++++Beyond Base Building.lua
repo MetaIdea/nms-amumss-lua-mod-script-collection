@@ -532,28 +532,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--Increase paragon device distance
-                            ["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_PARAGON"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ConnectionDistance",ParagonDistance},
+                                {"ConnectionDistance", ParagonDistance},
                             }
                         },
                         {--Increase power provided by freighter
-                            ["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "AIRLCKCONNECTOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Rate", FreighterRate},
+                                {"Rate",               FreighterRate},
+                                {"ConnectionDistance", ParagonDistance},
                             }
                         },
                         {--Fix bug with bulkhead doors
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_DOOR_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsPlaceable", "False"},
                             }
                         },
                         {--Fix bug with interior freighter walls
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_WALL"},
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"IsPlaceable", "False"},
                             }

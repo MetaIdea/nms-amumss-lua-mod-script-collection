@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land No interaction with teleporters", 
+["MOD_FILENAME"] 			= "No Mans Land No interaction with teleporters.pak", 
 ["MOD_AUTHOR"]				= "Pythonaut", -- this mod incorporates all changes from Pythonauts great, no longer maintained No Teleporters mod				
 ["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "This mods shortens intercation distance with telporters to zero",

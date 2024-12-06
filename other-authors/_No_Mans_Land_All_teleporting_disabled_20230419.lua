@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Mans Land All teleporters disabled", 
+["MOD_FILENAME"] 			= "No Mans Land All teleporters disabled.pak", 
 ["MOD_AUTHOR"]				= "Youngneil1",				
 ["NMS_VERSION"]				= "4.22",
 ["MOD_DESCRIPTION"]			= "This mods disables all teleporters in the game.",
