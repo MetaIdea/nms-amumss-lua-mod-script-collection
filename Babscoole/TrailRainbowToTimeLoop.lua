@@ -1,0 +1,23 @@
+NMS_MOD_DEFINITION_CONTAINER =
+{
+["MOD_FILENAME"]  = "TrailRainbowToTimeLoop.pak",
+["MOD_AUTHOR"]    = "F35568291F",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "5.28",
+["MODIFICATIONS"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {"MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\TIMELOOPTRAIL.MATERIAL.MBIN", "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\RAINBOWTRAIL.MATERIAL.MBIN", "REMOVE"},
+                        {"MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\TIMELOOPTRAIL.SCENE.MBIN",    "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\RAINBOWTRAIL.SCENE.MBIN",    "REMOVE"},
+                        {"MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\TIMELOOPTRAIL.TRAIL.MBIN",    "MODELS\EFFECTS\TRAILS\SPACECRAFT\HOT\RAINBOWTRAIL.TRAIL.MBIN",    "REMOVE"},
+                    },
+                },
+            }
+        }
+    }
+}
