@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_Exosolars Painless Rain.pak",
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "5.28",
+["NMS_VERSION"]     = "5.29",
 ["MOD_DESCRIPTION"] = "Makes lush storms harmless",
 ["MODIFICATIONS"]   =
     {

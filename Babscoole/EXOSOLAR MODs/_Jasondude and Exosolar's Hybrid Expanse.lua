@@ -3177,7 +3177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Jasondude and Exosolar's Hybrid Expanse.pak",
 ["MOD_AUTHOR"]    = "Exosolar & Babscoole",
-["NMS_VERSION"]   = "5.28",
+["NMS_VERSION"]   = "5.29",
 ["MODIFICATIONS"] =
     {
         {

@@ -1555,7 +1555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]     = "zzz-UltraBaseBuildingRemover.pak",
 ["MOD_AUTHOR"]       = "Mjjstral and Babscoole",
 ["MOD_CONTRIBUTORS"] = "Ignacio and GhostRick",
-["NMS_VERSION"]      = "5.28",
+["NMS_VERSION"]      = "5.29",
 ["ADD_FILES"]        = ADD_FILES_TABLE,
 ["MODIFICATIONS"]    =
     {

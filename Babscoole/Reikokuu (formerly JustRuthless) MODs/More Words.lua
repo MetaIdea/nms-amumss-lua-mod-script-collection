@@ -709,13 +709,13 @@ MonolithChanges =
 local AlienPuzzle = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
 local RewardTable = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]        = "More Words.pak",
 ["MOD_AUTHOR"]          = "Reikokuu & Babscoole",
 ["LUA_AUTHOR"]          = "Wbertro (speedup)",
 ["MOD_DESCRIPTION"]     = "Increases the amount of words learn from NPCs, Knowledge Stones, Encyclopedias, Monoliths, and Atlas Orbs",
-["NMS_VERSION"]         = "5.28",
+["NMS_VERSION"]         = "5.29",
 ["AMUMSS_SUPPRESS_MSG"] = "UNUSED_VARIABLE",
 ["MODIFICATIONS"]       =
     {
@@ -737,7 +737,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     },
                 },
-                
                 {
                     ["MBIN_FILE_SOURCE"] = AlienPuzzle,
                     ["EXML_CHANGE_TABLE"] =
@@ -749,10 +748,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
 
                     EXT_FUNC =
-                    { 
+                    {
                       "ProcessAlienPuzzleTable",
                     },
-                  
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE\ENTITIES\WORDSTONE.ENTITY.MBIN",
@@ -832,7 +830,7 @@ for i = 1, #WordChanges do
   local Change = WordChanges[i][2]
 
   changeCount = changeCount + #Change
-  
+
   RewardTable[#RewardTable+1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Id", WordID},
@@ -885,7 +883,7 @@ for i = 1, #NewWordChanges do
   local Change    = NewWordChanges[i][2]
 
   changeCount = changeCount + #Change
-  
+
   for j = 1, #Change do
     local Race        = Change[j][1]
     local Category    = Change[j][2]
@@ -936,10 +934,10 @@ print("    #NewWordChanges = "..#NewWordChanges..", changeCount = "..changeCount
 -- Alien Puzzle Table Changes --
 
 ProcessAlienPuzzleTable = nil
-function ProcessAlienPuzzleTable(TheData)  
+function ProcessAlienPuzzleTable(TheData)
   local start = os.clock()
   print([[    ***  Processing ]]..AlienPuzzle.."  ***")
-  
+
   local DEBUG = false
   local Dprint = print
   local Dprintf = printf
@@ -947,10 +945,10 @@ function ProcessAlienPuzzleTable(TheData)
     Dprint = function(...) end
     Dprintf = function(...) end
   end
-  
+
   -- NOTE: the code below is relative to the 'supplied' structure of MonolithChanges
   --       It could be simplified
-  
+
   -- *********************************************************************************
   local function CreateFastAccessKey1Table(t)
     local fastId = {}
@@ -989,14 +987,14 @@ function ProcessAlienPuzzleTable(TheData)
 
 
   local AlienPuzzle_table = TheData["ModdedEXMLs"][NormalizePath(AlienPuzzle, true)]
-  
+
   local processMonolithChanges = true
   if processMonolithChanges then
     print([[    ***  Processing MonolithChanges  ***]])
-    
+
 
     local AddReward_table = TheData["Sections"]["ADD_AddReward"]
-    
+
     local currentWordID = "__currentWordID__"
     local currentWordIDLine = 0
     for i=1,#AddReward_table do
@@ -1009,16 +1007,16 @@ function ProcessAlienPuzzleTable(TheData)
     end
 
     local fastKey1Table,count = CreateFastAccessKey1Table(MonolithChanges)
-    
+
     local fastOptionName,count = CreateFastAccessChangeInfoTable(MonolithChanges)
-    
+
     local RewardLinesIndex = {}
     local RewardLinesSorted = {}
-    
+
     local IsKeysFound = false
     local mOptionName = "__OptionName__"
     local mId = nil
-    
+
     Dprint(" Scanning AlienPuzzle_table")
     local count = 0
     for i=1,#AlienPuzzle_table do
@@ -1027,7 +1025,7 @@ function ProcessAlienPuzzleTable(TheData)
 
         RewardLinesIndex[i + 1] = mId.."+"..mOptionName
         RewardLinesSorted[#RewardLinesSorted + 1] = i + 1
-        
+
         Dprintf("       > Rewards at line %d",i)
         IsKeysFound = false
       end
@@ -1041,7 +1039,7 @@ function ProcessAlienPuzzleTable(TheData)
           IsKeysFound = false
         end
       end
-      
+
       if mId and not IsKeysFound and string.find(line,[[^.+ME="NAME"]]) then
 
         mOptionName = string.match(line,[[^.+UE="(.+)"]])
@@ -1054,11 +1052,11 @@ function ProcessAlienPuzzleTable(TheData)
     end
     Dprintf(" DONE: Scanning AlienPuzzle_table, found %d Rewards lines",count)
     Dprint("")
-    
+
     local changeCount = 0
     local previousWordID = currentWordID
-    
- 
+
+
     if DEBUG then
       printf("#RewardLinesSorted = %d",#RewardLinesSorted)
       for i=1,#RewardLinesSorted do
@@ -1066,18 +1064,18 @@ function ProcessAlienPuzzleTable(TheData)
       end
       print("")
     end
-    
+
     for i=#RewardLinesSorted,1,-1 do
       local addLineInExml = RewardLinesSorted[i]
       local optionNameToProcess = RewardLinesIndex[addLineInExml]
       Dprintf("%d: = = = = = =",i)
 
       Dprintf("  optionNameToProcess = %s",optionNameToProcess)
-      
+
 
       local changeInfo = fastOptionName[optionNameToProcess]
-      
-          
+
+
       local OptionName = changeInfo[1]
       local WordID     = changeInfo[2]
       local Amount     = changeInfo[3]
@@ -1090,7 +1088,7 @@ function ProcessAlienPuzzleTable(TheData)
 
         previousWordID = WordID
       end
-      
+
       local addTable = {}
       for _ = 1, Amount - 1 do
 
@@ -1098,15 +1096,15 @@ function ProcessAlienPuzzleTable(TheData)
 
         changeCount = changeCount + 1
       end
-      
+
       if #addTable > 0 then
 
         Dprintf("   #AlienPuzzle_table = %d",#AlienPuzzle_table)
-        
+
 
         table.move(AlienPuzzle_table, addLineInExml, #AlienPuzzle_table + #addTable, addLineInExml + #addTable)
         Dprint("         ==> grows to = "..#AlienPuzzle_table.." by "..#addTable.." lines")
-        
+
 
         table.move(addTable, 1, #addTable, addLineInExml, AlienPuzzle_table)
       end
@@ -1122,13 +1120,13 @@ function ProcessAlienPuzzleTable(TheData)
     Dprint = function(...) end
     Dprintf = function(...) end
   end
-  
+
   local processPlaqueChanges = true
   if processPlaqueChanges then
     print([[    ***  Processing PlaqueChanges  ***]])
 
     local AddReward_table = TheData["Sections"]["ADD_AddReward"]
-    
+
     local currentWordID = "__currentWordID__"
     local currentWordIDLine = 0
     for i=1,#AddReward_table do
@@ -1141,13 +1139,13 @@ function ProcessAlienPuzzleTable(TheData)
     end
 
     local fastOptionName,count = CreateFastAccessChangeInfoTable(PlaqueChanges)
-    
+
     local RewardLinesIndex = {}
     local RewardLinesSorted = {}
-    
+
     local IsKeysFound = false
     local mOptionName = "__OptionName__"
-    
+
     Dprint(" Scanning AlienPuzzle_table")
     local count = 0
     for i=1,#AlienPuzzle_table do
@@ -1156,7 +1154,7 @@ function ProcessAlienPuzzleTable(TheData)
 
         RewardLinesIndex[i + 1] = mOptionName
         RewardLinesSorted[#RewardLinesSorted + 1] = i + 1
-        
+
         Dprintf("       > Rewards at line %d",i)
         IsKeysFound = false
         count = count + 1
@@ -1174,11 +1172,11 @@ function ProcessAlienPuzzleTable(TheData)
     end
     Dprintf(" DONE: Scanning AlienPuzzle_table, found %d Rewards lines",count)
     Dprint("")
-    
+
 
     local changeCount = 0
     local previousWordID = currentWordID
-    
+
 
     if DEBUG then
       printf("#RewardLinesSorted = %d",#RewardLinesSorted)
@@ -1187,17 +1185,17 @@ function ProcessAlienPuzzleTable(TheData)
       end
       print("")
     end
-    
+
     for i=#RewardLinesSorted,1,-1 do
       local addLineInExml = RewardLinesSorted[i]
       local optionNameToProcess = RewardLinesIndex[addLineInExml]
       Dprintf("%d: = = = = = =",i)
 
       Dprintf("  optionNameToProcess = %s",optionNameToProcess)
-      
+
 
       local changeInfo = fastOptionName[optionNameToProcess]
-      
+
       local OptionName = tostring(changeInfo[1])
       local WordID     = changeInfo[2]
       local Amount     = changeInfo[3]
@@ -1210,7 +1208,7 @@ function ProcessAlienPuzzleTable(TheData)
 
         previousWordID = WordID
       end
-      
+
       local addTable = {}
       for _ = 1, Amount - 1 do
 
@@ -1218,14 +1216,14 @@ function ProcessAlienPuzzleTable(TheData)
 
         changeCount = changeCount + 1
       end
-      
+
       if #addTable > 0 then
 
         Dprintf("   #AlienPuzzle_table = %d",#AlienPuzzle_table)
-        
+
         table.move(AlienPuzzle_table, addLineInExml, #AlienPuzzle_table + #addTable, addLineInExml + #addTable)
         Dprint("         ==> grows to = "..#AlienPuzzle_table.." by "..#addTable.." lines")
-        
+
 
         table.move(addTable, 1, #addTable, addLineInExml, AlienPuzzle_table)
       end
@@ -1233,7 +1231,7 @@ function ProcessAlienPuzzleTable(TheData)
     Dprint("")
     Dprint("#PlaqueChanges = "..#PlaqueChanges..", changeCount = "..changeCount)
   end
-  
+
   printf("        ==> Done in %3.3f sec",os.clock() - start)
   return { [AlienPuzzle] = AlienPuzzle_table }
 end

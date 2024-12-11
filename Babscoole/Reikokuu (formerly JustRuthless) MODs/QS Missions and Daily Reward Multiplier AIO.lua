@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "QS Missions and Daily Reward Multiplier "..Multiplier.."x.pak",
 ["MOD_DESCRIPTION"] = "Adds quicksilver rewards to normal missions at the nexus, space station mission boards, and outlaw bounty masters & multiples the quicksilver reward from daily and weekly nexus missions",
 ["MOD_AUTHOR"]      = "Reikokuu & Babscoole",
-["NMS_VERSION"]     = "5.28",
+["NMS_VERSION"]     = "5.29",
 ["MODIFICATIONS"]   =
     {
         {
