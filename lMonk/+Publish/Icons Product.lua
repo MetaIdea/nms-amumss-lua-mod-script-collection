@@ -30,6 +30,7 @@ local prod_icons = {
 	FOOD_V_FLYER	= 'COOKINGPRODUCTS/PRODUCT.MILK.CRAW.DDS',
 	FOOD_V_MILK		= 'COOKINGPRODUCTS/PRODUCT.MILK.WILD.DDS',
 	FOOD_R_BONEMILK	= 'COOKINGPRODUCTS/PRODUCT.MILK.BONE.DDS',
+	FOOD_R_EYEBALLS	= 'COOKINGPRODUCTS/PRODUCT.R.EYEBALLS.DDS',
 	FOOD_R_HORROR	= 'COOKINGPRODUCTS/PRODUCT.R.HORROR.DDS',
 	FOOD_V_BONE		= 'COOKINGPRODUCTS/PRODUCT.BONE.PIECE.DDS',
 	FOOD_V_CAT		= 'COOKINGPRODUCTS/PRODUCT.MEAT.KIDNEY.DDS',
@@ -39,13 +40,13 @@ local prod_icons = {
 	FOOD_V_STRIDER	= 'COOKINGPRODUCTS/PRODUCT.EGG.TALL.DDS',
 	FOOD_W_CASE		= 'COOKINGPRODUCTS/PRODUCT.MEAT.DDS',
 	GEODE_CAVE		= 'U4PRODUCTS/PRODUCT.GEODECAVE.DDS',
-	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS',
+	SHIPCHARGE		= 'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Product Icons.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.12',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -58,7 +59,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					T[#T+1] = {
 						SPECIAL_KEY_WORDS	= {'ID', id},
 						PRECEDING_KEY_WORDS = 'Icon',
-						VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon} }
+						VALUE_CHANGE_TABLE 	= {
+							{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon}
+						}
 					}
 				end
 				T[#T+1] = {
@@ -84,32 +87,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= (
 		function()
+			local T = {}
 			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/'
-			if lfs.attributes(tex_path) then
-				return {
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Products/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'CookingProducts/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/COOKINGPRODUCTS/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'ShipIcons/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/SHIPICONS/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'u4Products/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Update3/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/UPDATE3/*.DDS',
+			for _,folder in ipairs({
+				'Products',
+				'CookingProducts',
+				'ShipIcons',
+				'u4Products',
+				'Update3'
+			}) do
+				if lfs.attributes(tex_path..folder) then
+					T[#T+1] = {
+						EXTERNAL_FILE_SOURCE = tex_path..folder..'/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/'..folder..'/*.DDS',
 					}
-				}
+				end
 			end
-			return nil
+			return #T > 0 and T or nil
 		end
 	)()
 }

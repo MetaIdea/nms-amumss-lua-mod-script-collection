@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 17000
 SELECTED_SEED_TYPES =
 {
     "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
-    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS", "RODMULTITOOL",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB", "ATLASMULTITOOL", "STAFFMULTITOOL", "STAFFMTATLAS",-- "RODMULTITOOL",
 }
 
 SEED_TYPE_PATH =
@@ -24,7 +24,7 @@ SEED_TYPE_PATH =
     ["ATLASMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMULTITOOL.SCENE.MBIN",
     ["STAFFMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL.SCENE.MBIN",
     ["STAFFMTATLAS"]="MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOLATLAS.SCENE.MBIN",
-    ["RODMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/RODMULTITOOL.SCENE.MBIN",
+    -- ["RODMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/RODMULTITOOL.SCENE.MBIN",
 }
 
 STATS =
@@ -163,16 +163,16 @@ STATS =
         {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
     },
-    ["RODMULTITOOL"] =
-    {
-        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "FISHLASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
-        -- {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        -- {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-        {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
-    },
+    -- ["RODMULTITOOL"] =
+    -- {
+        -- {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- {["ID"] = "FISHLASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        -- -- {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- -- {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- {["ID"] = "UT_BUI_SCAN", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        -- {["ID"] = "UT_BUI_SCAN2", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    -- },
 }
 
 ----------------------------------------------------
@@ -262,7 +262,7 @@ function AddBaseStats(TYPE)
                     <Property name="Value" value="1" />
                   </Property>
 ]]
-    
+
     elseif TYPE == "Robot" then
         return
 [[
@@ -565,8 +565,8 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\ROBOTPARTS\ROBOTPARTS.STAFFPOLE.5.DDS"
                 elseif ANIM_ID == "STAFFMTATLAS" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO1.EXPEDITION.ATLASSTAFF.DDS"
-                elseif ANIM_ID == "RODMULTITOOL" then
-                    ICON = "TEXTURES\UI\FRONTEND\ICONS\TECHNOLOGY\RENDER.FISHLASER.DDS"
+                -- elseif ANIM_ID == "RODMULTITOOL" then
+                    -- ICON = "TEXTURES\UI\FRONTEND\ICONS\TECHNOLOGY\RENDER.FISHLASER.DDS"
                 else ICON = "TEXTURES\UI\FRONTEND\COMPONENTS\STAR.DDS"
                 end
 
@@ -722,7 +722,7 @@ function CreateSeedRewardLists()
             for _j=1,DEFAULT_SEED_NUMBER,1 do
                 Seed = GetSeed()
                 local SREA_tmp = ""
-                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" or SST == "ATLASMULTITOOL" or SST == "STAFFMULTITOOL" or SST == "STAFFMTATLAS" or SST == "RODMULTITOOL" then
+                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" or SST == "ATLASMULTITOOL" or SST == "STAFFMULTITOOL" or SST == "STAFFMTATLAS" then --or SST == "RODMULTITOOL" then
                     SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
                 else
                     SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), Seed, SST)

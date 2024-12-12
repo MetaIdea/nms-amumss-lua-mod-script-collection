@@ -1,11 +1,18 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "103",
+		["Table"] =  
+		{
+			{ ["ID"] = "TGA_SHIP01",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "101",
 		["Table"] =  
 		{
 			-- { ["ID"] = "SPOOK_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
-			-- { ["ID"] = "PORTAL_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
+			{ ["ID"] = "PORTAL_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
 			-- { ["ID"] = "MESSAGE_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
 			{ ["ID"] = "BOSS_JUICE",	["IsConsumable"] = "True", ["IsCape"] = "False"},
 			-- { ["ID"] = "MESSAGE_JUICE1",	["IsConsumable"] = "True", ["IsCape"] = "False"},
