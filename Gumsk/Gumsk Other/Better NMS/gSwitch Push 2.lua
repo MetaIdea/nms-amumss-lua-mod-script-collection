@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gSwitch Push"
 ModNameSub = Time
 BaseDescription = "Extended switch button time"
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\SWITCH_BUTTON\ENTITIES\INTERACTION.ENTITY.MBIN"
 

@@ -1,7 +1,7 @@
 Author = "Gumsk"
 ModName = "gCam"
 ModNameSub = ""
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -280,7 +280,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.8
 						{"OffsetY", 0}, --(-0.6)
 						{"BackMinDistance", 3.8}, --4
-						{"BackMaxDistance", 4.9}, --5.4
+						{"BackMaxDistance", 5.4}, --5.4
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"HorizRotationAngleMaxPerFrame", 23}, --20
@@ -303,7 +303,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
 						{"OffsetY", 0}, --(-0.85)
 						{"BackMinDistance", 3.8}, --4
-						{"BackMaxDistance", 4.9}, --6.5
+						{"BackMaxDistance", 5.4}, --6.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"HorizRotationAngleMaxPerFrame", 15}, --3
@@ -326,7 +326,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.7
 						{"OffsetY", 0}, --(-0.45)
 						{"BackMinDistance", 1.7}, --1.5
-						{"BackMaxDistance", 4.9}, --5.2
+						{"BackMaxDistance", 5.4}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -352,7 +352,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", 0}, --(-0.6)
 						{"BackMinDistance", 1.7}, --2
-						{"BackMaxDistance", 4.9}, --5.2
+						{"BackMaxDistance", 5.4}, --5.2
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -371,7 +371,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
 						{"OffsetY", -0.4}, --(-0.8)
 						{"BackMinDistance", 2.3}, --2.3
-						{"BackMaxDistance", 2.9}, --2.9
+						{"BackMaxDistance", 3.4}, --2.9
 						{"PanNear", 0}, --1
 						{"PanFar", 0}, --(-1)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -393,7 +393,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", -0.2}, --(-0.75)
 						{"BackMinDistance", 1.6}, --1.6
-						{"BackMaxDistance", 1.8}, --1.8
+						{"BackMaxDistance", 3.4}, --1.8
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -410,7 +410,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXMedium}, --0.65
 						{"OffsetY", -0.2}, --(-0.75)
 						{"BackMinDistance", 1.6}, --2
-						{"BackMaxDistance", 2.9}, --4
+						{"BackMaxDistance", 3.4}, --4
 						{"VertRotationSpeed", 20}, --15
 						{"VertRotationMin", -85}, --(-75)
 						{"VertRotationMax", 85}, --65
@@ -429,7 +429,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
 						{"OffsetY", 0}, --(-0.8)
 						{"BackMinDistance", 2.3}, --3.5
-						{"BackMaxDistance", 2.9}, --4.2
+						{"BackMaxDistance", 3.4}, --4.2
 						{"PanNear", 0}, --1
 						{"PanFar", -1.5}, --(-3)
 						{"HorizRotationAngleMaxPerFrame", 20}, --15
@@ -517,7 +517,7 @@ MODIFICATIONS	= {
 						{"OffsetX", CharacterOffsetXLarge}, --0.8
 						{"OffsetY", 0}, --(-0.8)
 						{"BackMinDistance", 2.5}, --2.5
-						{"BackMaxDistance", 3.5}, --3.5
+						{"BackMaxDistance", 3.4}, --3.5
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"VertRotationMin", -85}, --(-60)
@@ -561,7 +561,7 @@ MODIFICATIONS	= {
 						{"SpeedRange", 20}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
 						{"OffsetY", 0}, --(-0.5)
-						{"BackMaxDistance", 6}, --7
+						{"BackMaxDistance", 5.4}, --7
 						{"PanFar", 0}, --10
 						{"HorizRotationAngleMaxPerFrame", 20}, --10
 						{"VertRotationMin", -85}, --(-60)
@@ -584,7 +584,7 @@ MODIFICATIONS	= {
 						{"SpeedRange", 20}, --10
 						{"OffsetX", CharacterOffsetXMedium}, --0.6
 						{"OffsetY", 0.1}, --(-0.5)
-						{"BackMaxDistance", 6}, --7
+						{"BackMaxDistance", 5.4}, --7
 						{"PanFar", 0}, --10
 						{"HorizRotationAngleMaxPerFrame", 20}, --10
 						{"VertRotationMin", -85}, --(-60)
@@ -606,7 +606,7 @@ MODIFICATIONS	= {
 					VALUE_CHANGE_TABLE = {
 						{"OffsetX", CharacterOffsetXSmall}, --0.4
 						{"OffsetY", -0.4}, --(-1.2)
-						{"BackMaxDistance", 4.8}, --6
+						{"BackMaxDistance", 5.4}, --6
 						{"PanNear", 0}, --(-1)
 						{"PanFar", 0}, --3
 						{"VertRotationMin", -85}, --(-60)
@@ -626,7 +626,7 @@ MODIFICATIONS	= {
 						{"SpeedRange", 10}, --3
 						{"OffsetX", CharacterOffsetXMedium}, --0.55
 						{"OffsetY", 0.1}, --(-0.6)
-						{"BackMaxDistance", 4.8}, --5.5
+						{"BackMaxDistance", 5.4}, --5.5
 						{"VertRotationMin", -85}, --(-60)
 						{"VertRotationMax", 85}, --60
 						{"SpringSpeed", 0.01}, --0.11

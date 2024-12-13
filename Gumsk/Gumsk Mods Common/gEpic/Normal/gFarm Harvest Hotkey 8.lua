@@ -2,7 +2,7 @@ Author = "Mjjstral+Gumsk"
 ModName = "gFarm Harvest Hotkey"
 ModNameSub = "8"
 BaseDescription = "Harvests all farm plants within specified u."
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[Files Used:

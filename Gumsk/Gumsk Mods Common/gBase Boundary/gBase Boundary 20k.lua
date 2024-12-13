@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Boundary 20k"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 

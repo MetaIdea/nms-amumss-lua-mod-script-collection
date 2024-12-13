@@ -3,7 +3,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_CSO v5.27 [Invisible Trade Routes Lines].pak",
+	["MOD_FILENAME"]	= "_CSO v5.29 [Invisible Trade Routes Lines].pak",
 	["MOD_DESCRIPTION"]	= "No more trade route lines in space.",
 	["MOD_AUTHOR"]		= "NeptuneX3",
 	["NMS_VERSION"]		= "2.61.1",		-- NMS version when first scripted

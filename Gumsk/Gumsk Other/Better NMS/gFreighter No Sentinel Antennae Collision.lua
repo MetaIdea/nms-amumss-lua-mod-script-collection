@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gFreighter No Sentinel Antennae Collision"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:

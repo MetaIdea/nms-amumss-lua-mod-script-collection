@@ -1,7 +1,7 @@
 Author = "Gumsk"
 ModName = "gFish Better Exo Skiff"
 ModNameSub = ""
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle"
 ModNameSub = "Normal"
 BaseDescription = "Exocraft modifications"
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 

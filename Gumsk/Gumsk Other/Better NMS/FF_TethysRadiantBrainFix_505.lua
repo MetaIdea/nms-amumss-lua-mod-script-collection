@@ -13,7 +13,7 @@ METADATA_MOD_DESC       = "This mod adds an option to convert Walker Brains into
 -- mod definition
 ----------------------------------------------------------------------------------------------------
 
-FILE_REALITY_PUZZLETABLE = "METADATA\\REALITY\\TABLES\\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
+FILE_REALITY_PUZZLETABLE = "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

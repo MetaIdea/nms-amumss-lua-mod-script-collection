@@ -1,6 +1,6 @@
 ModName = "gGame Gameplay"
 ModNameSub = "Hotspot"
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:

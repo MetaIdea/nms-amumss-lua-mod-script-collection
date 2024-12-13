@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Inventory"
 ModNameSub = "More"
 BaseDescription = "Increases vehicle inventory"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"
 

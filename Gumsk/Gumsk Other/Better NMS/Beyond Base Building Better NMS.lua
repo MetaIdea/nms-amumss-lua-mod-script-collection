@@ -114,42 +114,42 @@ if Multiplier == 1 then
   Multiplier = 1
   EMRate = 1
   SiloStorage = 1440000
-  EMAnywhere = "Power" 
+  EMAnywhere = "Power"
 elseif Multiplier == 2 then
   Multiplier = 1
   EMRate = 250
   SiloStorage = 1440000
-  EMAnywhere = "None" 
+  EMAnywhere = "None"
 elseif Multiplier == 3 then
   Multiplier = 2
   EMRate = 1
   SiloStorage = 2880000
-  EMAnywhere = "Power" 
+  EMAnywhere = "Power"
 elseif Multiplier == 4 then
   Multiplier = 2
   EMRate = 500
   SiloStorage = 2880000
-  EMAnywhere = "None" 
+  EMAnywhere = "None"
 elseif Multiplier == 5 then
   Multiplier = 5
   EMRate = 1
   SiloStorage = 7200000
-  EMAnywhere = "Power" 
+  EMAnywhere = "Power"
 elseif Multiplier == 6 then
   Multiplier = 5
   EMRate = 1000
   SiloStorage = 7200000
-  EMAnywhere = "None" 
+  EMAnywhere = "None"
 elseif Multiplier == 7 then
   Multiplier = 10
   EMRate = 1
   SiloStorage = 9999999
-  EMAnywhere = "Power" 
+  EMAnywhere = "Power"
 elseif Multiplier == 8 then
   Multiplier = 10
   EMRate = 2500
   SiloStorage = 9999999
-  EMAnywhere = "None" 
+  EMAnywhere = "None"
 end
 ------------- GUIF section ends -------------
 ---------------------------------------------
@@ -374,7 +374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     —For latest versions and more visit:-
     https://www.nexusmods.com/nomanssky/mods/1096
     ]],
-    ["NMS_VERSION"]   = "5.28",
+    ["NMS_VERSION"]   = "5.29",
     ["MODIFICATIONS"] =
     {
         {
@@ -424,7 +424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             -- ["REPLACE_TYPE"] = "ALL",
                             -- ["VALUE_MATCH"] = 0,
                             -- ["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
-                            -- ["VALUE_CHANGE_TABLE"] = 
+                            -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"GhostsCountOverride", 0},
                             -- },
@@ -532,28 +532,35 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {--Increase paragon device distance
-                            ["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "U_PARAGON"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ConnectionDistance",ParagonDistance},
+                                {"ConnectionDistance", ParagonDistance},
                             }
                         },
                         {--Increase power provided by freighter
-                            ["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "AIRLCKCONNECTOR"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Rate", FreighterRate},
                             }
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "BRIDGECONNECTOR"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ConnectionDistance", ParagonDistance},
+                            }
+                        },
                         {--Fix bug with bulkhead doors
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_DOOR_A"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsPlaceable", "False"},
                             }
                         },
                         {--Fix bug with interior freighter walls
-                            ["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_FACE_WALL"},
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"IsPlaceable", "False"},
                             }
@@ -780,7 +787,7 @@ if ALL_PARTS_ON_FREIGHTER then
             }
         end
     end
-    
+
     -- S9 blueprint stations if S9_ON_FREIGHTER is true
     if S9_ON_FREIGHTER then
 

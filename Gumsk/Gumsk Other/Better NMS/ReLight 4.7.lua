@@ -1,4 +1,3 @@
-
 --[[┎──────────────────────────────────────────────────────
 	┃ Insert new light object to MBIN - by IMonk
 	┃ WARNING : For lights to work, be sure to set strings 

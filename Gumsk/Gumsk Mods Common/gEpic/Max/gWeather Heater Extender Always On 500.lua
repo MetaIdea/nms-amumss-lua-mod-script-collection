@@ -4,7 +4,7 @@ Author = "Gumsk"
 ModName = "gWeather Heater Extender"
 ModNameSub = Range
 BaseDescription = "Extends the range on the heaters"
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN"
 

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGUI Stable UI"
 ModNameSub = "+Fast Actions+Small Cursor"
 BaseDescription = "Removes mouse-based parallax movement in menus"
-GameVersion = "5.2.5.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:

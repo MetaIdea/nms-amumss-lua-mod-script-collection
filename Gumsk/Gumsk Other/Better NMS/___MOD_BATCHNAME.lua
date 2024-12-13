@@ -2,7 +2,7 @@ Author = "Various"
 ModName = "Better NMS"
 ModNameSub = "Normal"
 BaseDescription = ""
-GameVersion = "5.2.8.0"
+GameVersion = "5.2.9.0"
 ModVersion = "b"
 
 NMS_MOD_DEFINITION_CONTAINER = {

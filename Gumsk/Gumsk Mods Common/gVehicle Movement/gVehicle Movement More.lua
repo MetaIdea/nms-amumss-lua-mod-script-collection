@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle Movement"
 ModNameSub = "More"
 BaseDescription = "Exocraft modifications"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -44,7 +44,7 @@ HovercraftUnderwaterEngineMaxSpeed	= 15		--15
 HovercraftVehicleJumpForce			= 1200		--1200
 HovercraftVehicleBoostForce			= 1200		--900
 HovercraftVehicleBoostMaxSpeed		= 70		--25
-HovercraftVehicleBoostTime			= 999		--1.5
+HovercraftVehicleBoostTime			= 5		--1.5
 
 SubTopSpeedForward					= 15		--15
 SubTopSpeedReverse					= 15		--15

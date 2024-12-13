@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Type Frequency"
 ModNameSub = "Exotic Common"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "5.2.2.0"
+GameVersion = "5.2.9.0"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
