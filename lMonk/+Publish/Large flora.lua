@@ -18,10 +18,12 @@ local mod_desc = [[
   - The biome-specific modifiers are added to -or replace solar_modifiers.global_flora
    table and are averaged with it.
   - Adding {ov=true} to a tag make it an override - Other matches will be discarded,
-   unless the the tag is overwritten by a biome tag.
+   unless the the tag is overwritten by a biome tag. A biome override tag supersedes
+   a global ignore tag!
+  - A tag with the single modifier {ig=true} causes the scene to be ignored,
+   even if other tags match it.
   - Adding {ul=true} to a tag adds an ULTRA section to QualityVariants and performs
    the mod's changes only in the new section.
-  - A tag with the single modifier {ig=true} causes the scene to be ignored.
   - Other properties of GcObjectSpawnData.xml can be modded by adding a property's
    name to spawn_data with a unique key, then adding tag modifiers for it.
 ]]-------------------------------------------------------------------------------------
@@ -93,7 +95,7 @@ local solar_modifiers = {
 		{
 			biotg = 'FROZEN',
 			flora = {-- applied to all FROZEN sources
-				TREE 		= {ns=1.15,	xs=2.45,	cr=0.8,	ld=1.25},
+				TREE 		= {ns=1.15,	xs=2.45,	cr=0.8,	ld=1.22},
 				LIVINGSHIP	= {rr=-1,	ld=1.02}
 			}
 		},
@@ -110,9 +112,15 @@ local solar_modifiers = {
 			}
 		},
 		{
+			biotg = 'IRRADIATE',
+			flora = {
+				HUGE		= {ns=0.75,	xs=3.6,		cr=0.8,		ld=2.2}
+			}
+		},
+		{
 			biotg = 'SCORCHED',
 			flora = {
-				HUGESPIRE	= {ns=0.9,	xs=0.95,	cr=0.8}
+				HUGESPIRE	= {ns=0.9,	xs=1.02,	cr=0.9,		ov=true}
 			},
 			flags = {
 				MEDIUMSPIRE	= {dv=true}
@@ -121,7 +129,7 @@ local solar_modifiers = {
 		{
 			biotg = 'TOXIC',
 			flora = {
-				HUGETOXIC	= {ns=0.7,	xs=0.96,	cr=0.78}
+				HUGETOXIC	= {ns=0.7,	xs=0.97,	cr=0.88,	ov=true}
 			}
 		},
 		{
@@ -151,7 +159,7 @@ local solar_modifiers = {
 		{
 			biotg = 'HUGERING',
 			flora = {
-				ROCKRING	= {cr=0.7}
+				ROCKRING	= {cr=0.85,	ov=true}
 			}
 		},
 		{
@@ -175,33 +183,15 @@ local solar_modifiers = {
 			}
 		},
 		{
-			biotg = 'LEVELONE',
-			flora = {
-				DEBRIS		= {cr=0, 	ov=true},
-				CRATE		= {cr=0, 	ov=true},
-				UNDERGROUND	= {cr=0.1, 	ov=true},
-				WORDSTONE	= {cr=0.33}
-			}
-		},
-		{
 			biotg = 'STORMCRYSTAL',
 			flags = {
 				STORMCRYST	= {cv=true,	dv=false}
 			}
 		},
 		{
-			biotg = 'FIENDEGG',
-			flora = {
-				FIENDEGG	= {cr=0.4}
-			}
-		},
-		{
 			biotg = 'PLANT',
 			flora = {
-				INTERACTIVE	= {ns=0.48,	xs=0.01,	cr=1.1},
-				TENTACLEP	= {cr=0.5},
-				SPOREVENT	= {cr=0.5},
-				FLYTRAP		= {cr=0.5}
+				INTERACTIVE	= {ns=0.48,	xs=0.01,	cr=1.1}
 			}
 		},
 		{
@@ -221,7 +211,7 @@ local solar_modifiers = {
 		SHROOM		= {ns=1.05,	xs=2.5},
 		FOLIAGE		= {ns=1.1,	xs=1.3},
 		FLOWERS		= {xs=1.2,			fo=1.4},
-		CROSS		= {ns=0.95,	xs=1.1,	fo=2.0,	dn=0.88,	ld=1.5},	-- grass
+		CROSS		= {ns=0.95,	xs=1.1,	fo=1.8,	dn=0.88,	ld=1.5},	-- grass
 		LBOARD		= {ns=0.95,	xs=1.1,	fo=1.8,	dn=0.88,	ld=1.5},	-- grass
 		LUSHGRASS	= {xs=1.4,			fo=1.6,	dn=0.88,	ld=1.5},	-- grass
 		BUBBLELUSH	= {xs=1.15,			fo=2.2,				ld=1.5},	-- grass
@@ -237,7 +227,7 @@ local solar_modifiers = {
 		SMALL		= {ns=0.95,	xs=0.8},
 
 	--- global lod multiplier
-		SCENE		= {ld=1.24},
+		SCENE		= {ld=1.2},
 
 	---	ignored
 		LAVA		= {ig=true},
@@ -561,16 +551,16 @@ function spawn_data:averageScales(spawn, worktags)
 	for key, tag in pairs(worktags) do
 		if spawn:find(key) then
 			-- process special flags first
+			if tag.ov then
+				self:copyRes(tag)
+				return
+			end
 			if tag.ig then
 				self.res = nil
 				return
 			end
 			if tag.ul then
 				self.ultra = true
-			end
-			if tag.ov then
-				self:copyRes(tag)
-				return
 			end
 			self:addValues(tag)
 		end
@@ -609,13 +599,13 @@ function solar_modifiers:getModifiers(mbin)
 	return scales, flags
 end
 
---	main work process.
---	Receives the exml file from amumss
+--	main work process (Receives the exml file from amumss)
 local function ProcessBiome(exml, mbin)
 	local function getHighVariant(qvars)
 	--	Select the highest GcObjectSpawnDataVariant (between LOW STANDARD ULTRA)
 	--	Add ULTRA section if flagged and return it for editing
 		for _,qv in ipairs(qvars) do
+			-- map variant id for direct access
 			qvars.meta[qv.ID] = qv
 		end
 		if qvars.meta.ULTRA then
@@ -637,7 +627,7 @@ local function ProcessBiome(exml, mbin)
 	-- merged, biome-specific flags table
 	local workflags	= UnionTables({solar_modifiers.global_flags, biomeflags})
 	for key, objs in pairs(solar_biome.template.Objects) do
-		if key ~= 'SelectableObjects' and key ~= 'Creatures' and key ~= 'meta' then
+		if key ~= 'meta' and objs[1].meta[2] == 'GcObjectSpawnData.xml' then
 			for _, spn in ipairs(objs) do
 				spawn_data:averageScales(spn.Resource.Filename, workflora)
 				if spawn_data:HasMod('ns') then spn.MinScale		  = spn.MinScale * spawn_data.res.ns end
@@ -695,7 +685,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.large flora.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.27',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
