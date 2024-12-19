@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "____Las_Skip_UI_Timers_v1.0c.pak",
+["MOD_FILENAME"] 			= "____Las_Skip_UI_Timers_v1.0d.pak",
 ["MOD_AUTHOR"]				= "goosetehmoose",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
