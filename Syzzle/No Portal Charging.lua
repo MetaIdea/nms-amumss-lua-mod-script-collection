@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "No Portal Charging"
-GameVersion = "5.25"
+GameVersion = "5.29"
 Description = "Skips the whole process of charging the portal in order to use it."
 
 NMS_MOD_DEFINITION_CONTAINER = 
