@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "ClearBuild.pak",
+["MOD_FILENAME"]  = "Hide_Top_Build_Menu.pak",
 ["MOD_AUTHOR"]    = "PakMack",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.65",
+["NMS_VERSION"]   = "5.29",
 ["MODIFICATIONS"] =
     {
         {
@@ -44,15 +44,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDBUILDNOTIFY.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\POPUP_BUILDMENUITEM.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"ID", "BUILD_INFO"},
-                                {"ID", "LARGE"},
-                            },
+                            ["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
+                            ["SECTION_ACTIVE"] = {1,2,3},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsHidden", "True"},
@@ -61,21 +58,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "UI\POPUP_BUILDMENUITEM.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "UI\HUD\HUDBUILDNOTIFY.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"ElementData", "GcNGuiElementData.xml"},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"IsHidden", "True"},
-                            }
-                        },
-                        {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"ID", "TITLELAYER"},
-                                {"ID", "CONTENT"},
+                                {"ID", "BUILD_INFO"},
+                                {"ID", "LARGE"},
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
