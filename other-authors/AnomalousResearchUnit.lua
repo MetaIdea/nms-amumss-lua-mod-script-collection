@@ -1,6 +1,7 @@
-enableLegacyParts = true
+enableLegacyParts = false
 enableAdvancedBuildingParts = true
 enableAnomalyResearchTrees = true
+enableFleetResearchTree = true
 useNanitesForProductTree = true
 
 -- Changes the product research table cost to match the one in the Anomaly.
@@ -201,14 +202,19 @@ researchTrees = {
     {"UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT"}, -- Products Research
 }
 
+-- Fleet Research
+if enableFleetResearchTree then
+    researchTrees[#researchTrees+1] = {"UI_FREIGHTER_RESEARCH_HINT", "TREE_FRIGATE"}
+end
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
     ["MOD_AUTHOR"] = "Aristotale",
-    ["MOD_VERSION"] = "1.1",
-    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors for purchase in the Construction Research Unit",
+    ["MOD_VERSION"] = "1.5",
+    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors and Freighter research for purchase in the Construction Research Unit",
     ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
-    ["NMS_VERSION"]   = "5.25",
+    ["NMS_VERSION"]   = "5.2x",
     ["MODIFICATIONS"] =
     {
         {
@@ -541,6 +547,16 @@ function AddAnomalyResearchTrees()
         ["VALUE_CHANGE_TABLE"] =
         {
             {"Title", "Anomalous Research Unit"},
+        }
+    }
+    ProductRecipeTable[#ProductRecipeTable+1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", "BP_ANALYSER"},
+        ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Name", "ANOMALOUS RESEARCH UNIT"},
+            {"NameLower", "Anomalous Research Unit"},
         }
     }
 end
