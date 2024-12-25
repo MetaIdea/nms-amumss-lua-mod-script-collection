@@ -4,6 +4,7 @@ GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:
+METADATA\GAMESTATE\DIFFICULTYCONFIG.MBIN
 METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN
 GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 ]]--
@@ -102,9 +103,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								-- {"BinocularScanTargetMinHeight",5},				--5; 
 								-- {"BinocularScanTargetHeightRange",0},			--0; 
 								{"BinocTimeBeforeScan",0.2},					      	--0.5; 
-								-- {"BinocMinScanTime",0.2},					     		--3.9; 
-								-- {"BinocScanTime",0.3},							      	--3.9; 
-								-- {"BinocCreatureScanTime",0.3},				  		--3.9; 
+								{"BinocMinScanTime",0.2},					     		--3.9; 
+								{"BinocScanTime",0.3},							      	--3.9; 
+								{"BinocCreatureScanTime",0.3},				  		--3.9; 
 								-- {"ScanStartTimeDelayMinDist",30},					--30; 
 								-- {"ScanStartTimeDelayRange",100},				  	--100; 
 								-- {"ScanStartTimeDistanceDelayTime",1},			--1; 

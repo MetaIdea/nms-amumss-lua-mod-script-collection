@@ -4,7 +4,6 @@ GameVersion = "5.2.9.0"
 ModVersion = "a"
 
 --[[ Files Modified:
-METADATA\SIMULATION\SCANNING\SCANDATATABLE.MBIN
 GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 ]]--
 
