@@ -4,7 +4,7 @@
 METADATA_MOD_NAME       = "SentinelStarshipFabricator"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
-METADATA_NMS_VERSION    = "512"
+METADATA_NMS_VERSION    = "529"
 METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-type starships in the fabricator machines using a very simplified assembly process. Modifies files in METADATA\\GAMESTATE\\PLAYERDATA\\ and UI directories."
 
 
@@ -19,6 +19,7 @@ METADATA_MOD_DESC       = "This mod allows players to synthesize Interceptor-typ
 
 FILE_METADATA_CUSTOM_MODULES =              "METADATA\\GAMESTATE\\PLAYERDATA\\MODULARCUSTOMISATIONDATATABLE.MBIN"
 FILE_METADATA_CUSTOM_DESCRIPTORS =          "METADATA\\GAMESTATE\\PLAYERDATA\\CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN"
+FILE_METADATA_CUSTOM_TEXTURES =             "METADATA\\GAMESTATE\\PLAYERDATA\\CHARACTERCUSTOMISATIONTEXTUREOPTIONDATA.MBIN"
 
 FILE_UI_SHIP_BUILDER =                      "UI\\SHIP_BUILDER_PAGE.MBIN"
 FILE_UI_SHIP_SLOT =                         "UI\\SLOTS\\SLOT_SHIPITEM.MBIN"
@@ -29,18 +30,18 @@ FILE_UI_SHIP_SLOT =                         "UI\\SLOTS\\SLOT_SHIPITEM.MBIN"
 
 UI_COCKPIT = {28,30}
 UI_LIGHTS = {28,40}
-UI_GRILL = {28,60}
-UI_SKIRT = {33,60}
+UI_GRILL = {47,66}
+UI_SKIRT = {53,66}
 
 UI_WINGSO = {33,30}
 UI_WINGSU = {33,40}
 UI_WINGSH = {38,30}
 UI_WINGSB = {48,30}
-
 UI_FLAPS = {43,30}
-UI_ADDON = {65,60}
-UI_FLAME = {70,60}
-UI_REACTOR = {53,35}
+
+UI_REACTOR = {70,55}
+UI_ADDON = {65,64}
+UI_FLAME = {70,64}
 
 ----------------------------------------------------------------------------------------------------
 -- items used in assembly process
@@ -402,20 +403,202 @@ NMS_MOD_DEFINITION_CONTAINER =
                         ReplaceReactorCore("A"),
                         ReplaceReactorCore("S"),
 
+                        --------------------------------------------------
+
                         {
-                            -- remove secondary and tertiary colour pickers
-                            ["SKW"] = 
-                            {
-                                {"Shuttle","GcModularCustomisationConfig.xml","Title","CUSTOMISE_SECONDARY",},
-                                {"Shuttle","GcModularCustomisationConfig.xml","Title","CUSTOMISE_TERTIARY",},
-                            },
+                            -- get template for colour pickers structure
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "GcModularCustomisationColourData.xml",
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_PAINT",
+                        },
+
+                        {
+                            -- get template for colour pickers structure
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "GcModularCustomisationColourData.xml",
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_METAL",
+                        },
+
+                        {
+                            -- get template for colour pickers structure
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "GcModularCustomisationColourData.xml",
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_ORANGE",
+                        },
+
+                        {
+                            -- get template for colour pickers structure
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "GcModularCustomisationColourData.xml",
+                            ["SEC_SAVE_TO"] = "SEC_COLOUR_BLACK",
+                        },
+
+                        {
+                            -- reset colour data list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["CREATE_HOES"] = "TRUE",
+                        },
+
+                        {
+                            -- open list for new entries
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["CREATE_HOS"] = "TRUE",
+                        },
+
+                        --------------------------------------------------
+
+                        {
+                            -- custom painted - assign data
+                            ["SEC_EDIT"] = "SEC_COLOUR_PAINT",
+                            ["VCT"] = {{"RequiredTextureGroup","SHIP_SENTINEL",},{"RequiredTextureOption","PAINT",},},
+                        },
+
+                        {
+                            -- custom painted - remove tertiary colour picker
+                            ["SEC_EDIT"] = "SEC_COLOUR_PAINT",
+                            ["SKW"] = {"Title","CUSTOMISE_TERTIARY",},
                             ["REMOVE"] = "SECTION",
                         },
 
                         {
-                            -- set orange as default colour
-                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml","Title","CUSTOMISE_PRIMARY",},
-                            ["VCT"] = {{"DefaultColourIndex",1,},},
+                            -- custom painted - make the 1st picker apply to hull
+                            ["SEC_EDIT"] = "SEC_COLOUR_PAINT",
+                            ["SKW"] = {"Title","CUSTOMISE_PRIMARY",},
+                            ["VCT"] = {{"DefaultColourIndex",9,},{"ColourAlt","Alternative1",},},
+                        },
+
+                        {
+                            -- custom painted - make 2nd picker apply to accents
+                            ["SEC_EDIT"] = "SEC_COLOUR_PAINT",
+                            ["SKW"] = {"Title","CUSTOMISE_SECONDARY",},
+                            ["VCT"] = {{"DefaultColourIndex",2,},{"ColourAlt","Primary",},}
+                        },
+
+                        {
+                            -- custom painted - add to the list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_PAINT",
+                        },
+
+                        --------------------------------------------------
+
+                        {
+                            -- custom weathered - assign data
+                            ["SEC_EDIT"] = "SEC_COLOUR_METAL",
+                            ["VCT"] =
+                            {
+                                {"RequiredTextureGroup","SHIP_SENTINEL",},
+                                {"RequiredTextureOption","METAL",},
+                                {"PaletteID","SHIP_METALLIC",},
+                            },
+                        },
+
+                        {
+                            -- custom weathered - remove tertiary colour picker
+                            ["SEC_EDIT"] = "SEC_COLOUR_METAL",
+                            ["SKW"] = {"Title","CUSTOMISE_TERTIARY",},
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
+                            -- custom weathered - make the 1st picker apply to hull
+                            ["SEC_EDIT"] = "SEC_COLOUR_METAL",
+                            ["SKW"] = {"Title","CUSTOMISE_PRIMARY",},
+                            ["VCT"] = {{"DefaultColourIndex",9,},{"ColourAlt","Alternative1",},},
+                        },
+
+                        {
+                            -- custom weathered - make 2nd picker apply to accents
+                            ["SEC_EDIT"] = "SEC_COLOUR_METAL",
+                            ["SKW"] = {"Title","CUSTOMISE_SECONDARY",},
+                            ["VCT"] = {{"DefaultColourIndex",2,},{"ColourAlt","Primary",},}
+                        },
+
+                        {
+                            -- custom weathered - add to the list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_METAL",
+                        },
+
+                        --------------------------------------------------
+
+                        {
+                            -- fixed orange - assign data
+                            ["SEC_EDIT"] = "SEC_COLOUR_ORANGE",
+                            ["VCT"] = {{"RequiredTextureGroup","SHIP_SENTINEL",},{"RequiredTextureOption","ORANGE",},},
+                        },
+
+                        {
+                            -- fixed orange - remove colour pickers
+                            ["SEC_EDIT"] = "SEC_COLOUR_ORANGE",
+                            ["PKW"] = "ColourGroups",
+                            ["CREATE_HOES"] = "TRUE",
+                        },
+
+                        {
+                            -- fixed orange - add to the list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_ORANGE",
+                        },
+
+                        --------------------------------------------------
+
+                        {
+                            -- fixed black - assign data
+                            ["SEC_EDIT"] = "SEC_COLOUR_BLACK",
+                            ["VCT"] = {{"RequiredTextureGroup","SHIP_SENTINEL",},{"RequiredTextureOption","BLACK",},},
+                        },
+
+                        {
+                            -- fixed black - remove secondary and tertiary colour pickers
+                            ["SEC_EDIT"] = "SEC_COLOUR_BLACK",
+                            ["SKW"] = {{"Title","CUSTOMISE_SECONDARY",},{"Title","CUSTOMISE_TERTIARY",},},
+                            ["REMOVE"] = "SECTION",
+                        },
+
+                        {
+                            -- fixed black - change default secondary colour and text
+                            ["SEC_EDIT"] = "SEC_COLOUR_BLACK",
+                            ["SKW"] = {"Title","CUSTOMISE_PRIMARY",},
+                            ["VCT"] = {{"Title","CUSTOMISE_SECONDARY",},{"DefaultColourIndex",9,},},
+                        },
+
+                        {
+                            -- fixed black - add to the list
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "ColourDataPriorityList",
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "SEC_COLOUR_BLACK",
+                        },
+
+                        --------------------------------------------------
+
+                        {
+                            -- get template for texture group
+                            ["PKW"] = "GcModularCustomisationTextureGroup.xml",
+                            ["SEC_SAVE_TO"] = "SEC_TEXTURES",
+                        },
+
+                        {
+                            -- edit the template
+                            ["SEC_EDIT"] = "SEC_TEXTURES",
+                            ["VCT"] = {{"TextureOptionGroup","SHIP_SENTINEL",},},
+                        },
+
+                        {
+                            -- add the texture picker
+                            ["SKW"] = {"Shuttle","GcModularCustomisationConfig.xml",},
+                            ["PKW"] = "TextureData",
+                            ["CREATE_HOS"] = "TRUE",
+                            ["SEC_ADD_NAMED"] = "SEC_TEXTURES",
                         },
 
                         --------------------------------------------------
@@ -430,6 +613,115 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --------------------------------------------------
                     ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOM_DESCRIPTORS,
                     ["EXML_CHANGE_TABLE"] = {} -- table populated by functions below
+                },
+
+                {
+                    --------------------------------------------------
+                    -- texture groups MBIN
+                    --------------------------------------------------
+                    ["MBIN_FILE_SOURCE"] = FILE_METADATA_CUSTOM_TEXTURES,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            -- get template for texture group
+                            ["PKW"] = "GcCustomisationMultiTextureOption.xml",
+                            ["SEC_SAVE_TO"] = "SEC_MULTI_TEXTURE",
+                        },
+
+                        {
+                            -- get template for sub option
+                            ["PKW"] = "GcCustomisationMultiTextureSubOption.xml",
+                            ["SEC_SAVE_TO"] = "SEC_SUB_OPTION",
+                        },
+
+                        {
+                            -- assign new ID
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["VCT"] = {{"MultiTextureOptionsID","SHIP_SENTINEL",},},
+                        },
+
+                        {
+                            -- rework option 1 - custom painted
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "GcCustomisationMultiTextureOptionList.xml",
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VCT"] =
+                            {
+                                {"TextureOptionsID","PAINT",},
+                                {"Layer","OVERLAY",},
+                                {"Option","4",},
+                            },
+                        },
+
+                        {
+                            -- rework option 2 - custom weathered
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "GcCustomisationMultiTextureOptionList.xml",
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VCT"] =
+                            {
+                                {"TextureOptionsID","METAL",},
+                                {"Layer","OVERLAY",},
+                                {"Option","4",},
+                            },
+                        },
+
+                        {
+                            -- rework option 3 - fixed orange
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "GcCustomisationMultiTextureOptionList.xml",
+                            ["SECTION_ACTIVE"] = 3,
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VCT"] =
+                            {
+                                {"TextureOptionsID","ORANGE",},
+                                {"Layer","OVERLAY",},
+                                {"Option","1",},
+                            },
+                        },
+
+                        {
+                            -- rework option 4 - fixed black
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "GcCustomisationMultiTextureOptionList.xml",
+                            ["SECTION_ACTIVE"] = 4,
+                            ["VALUE_MATCH_TYPE"] = "STRING",
+                            ["VCT"] =
+                            {
+                                {"TextureOptionsID","BLACK",},
+                                {"Layer","OVERLAY",},
+                                {"Option","3",},
+                            },
+                        },
+
+                        {
+                            -- change tooltips
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "Tips",
+                            ["VCT"] =
+                            {
+                                {"Value","ITEMGEN_TOOL_ADJ_18",},
+                                {"Value","ITEMGEN_SALVAGE_ADJ_10",},
+                                {"Value","ROBOT_NAME",},
+                                {"Value","UI_PAINT_BLACK_DARK",},
+                            },
+                        },
+
+                        {
+                            -- reset products
+                            ["SEC_EDIT"] = "SEC_MULTI_TEXTURE",
+                            ["PKW"] = "ProductsToUnlock",
+                            ["VCT"] = {{"Value","",},{"Value","",},{"Value","",},{"Value","",},},
+                        },
+
+                        {
+                            -- add new texture group to file
+                            ["PKW"] = "MultiTextureOptions",
+                            ["SEC_ADD_NAMED"] = "SEC_MULTI_TEXTURE",
+                        },
+                    }
                 },
 
                 {
