@@ -187,7 +187,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.20',
+	NMS_VERSION			= '5.29',
 	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{

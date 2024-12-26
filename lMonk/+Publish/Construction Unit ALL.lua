@@ -76,27 +76,27 @@ local tech_tree = {
 	}
 }
 
-local ECT = {}
-ECT[#ECT+1] = {
-	REPLACE_TYPE 		= 'All',
-	SPECIAL_KEY_WORDS	= {
-		{'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
-		{'Title', 'UI_PURCHASABLE_BASICTECH_TREE'}
-	},
-	PRECEDING_KEY_WORDS = 'GcUnlockableItemTree.xml',
-	REMOVE				= 'Section'
+local ex_ct = {
+	{
+		REPLACE_TYPE 		= 'All',
+		SPECIAL_KEY_WORDS	= {
+			{'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
+			{'Title', 'UI_PURCHASABLE_BASICTECH_TREE'}
+		},
+		PRECEDING_KEY_WORDS = 'GcUnlockableItemTree.xml',
+		REMOVE				= 'Section'
+	}
 }
-
 for _,node in ipairs(base_tree) do
 	for _,s in ipairs(node.subs) do
 		local subt, act = s[1] or s, s[2] or 1
 		for i=act, 1, -1 do
-			ECT[#ECT+1] = {
+			ex_ct[#ex_ct+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
 				SECTION_ACTIVE		= -i,
 				SEC_SAVE_TO			= 'unlockable_item_tree',
 			}
-			ECT[#ECT+1] = {
+			ex_ct[#ex_ct+1] = {
 				SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICPARTS_TREE'},
 				PRECEDING_KEY_WORDS	= 'Trees',
 				ADD_OPTION			= 'AddEndSection',
@@ -107,11 +107,11 @@ for _,node in ipairs(base_tree) do
 end
 for _,node in ipairs(tech_tree) do
 	for _,subt in ipairs(node.subs) do
-		ECT[#ECT+1] = {
+		ex_ct[#ex_ct+1] = {
 			SPECIAL_KEY_WORDS	= {'Title', node.title, 'Title', subt},
 			SEC_SAVE_TO			= 'unlockable_item_tree',
 		}
-		ECT[#ECT+1] = {
+		ex_ct[#ex_ct+1] = {
 			SPECIAL_KEY_WORDS	= {'Title', 'UI_PURCHASABLE_BASICTECH_TREE'},
 			PRECEDING_KEY_WORDS	= 'Trees',
 			ADD_OPTION			= 'AddEndSection',
@@ -123,12 +123,12 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit ALL.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.12',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN',
-		EXML_CHANGE_TABLE	= ECT
+		EXML_CHANGE_TABLE	= ex_ct
 	}
 }}}}

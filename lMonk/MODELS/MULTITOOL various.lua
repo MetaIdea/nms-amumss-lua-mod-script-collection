@@ -1,6 +1,9 @@
 -----------------------------------------------------------------------
 local mod_desc = [[
+  - change atlas white glare parts to blue (monolith=blue, atlas=red, artemis=b&w)
   - add procedual color to the pistol sentinel tool
+  - change sentinel tool red glow to blue
+  - reduce staff tool blue glow
   - remove laser horizontal flare
   - avoid unwanted parts from multitool
 ]]---------------------------------------------------------------------
@@ -8,11 +11,29 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL multitool various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
+	{--	|atlas no white glare|
+		MBIN_FILE_SOURCE	= {
+			-- 'MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMTPARTS/ATLASMTARTEMIS/ATLASGLOW2W4.MATERIAL.MBIN',
+			'MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMTPARTS/ATLASMTATLAS/ATLASGLOW2W4.MATERIAL.MBIN',
+			'MODELS/COMMON/WEAPONS/MULTITOOL/ATLASMTPARTS/ATLASMTMONOLITH/ATLASGLOW2W4.MATERIAL.MBIN',
+		},
+		EXML_CHANGE_TABLE	= {
+			{
+				INTEGER_TO_FLOAT	= 'Force',
+				SPECIAL_KEY_WORDS	= {'Name', 'gMaterialColourVec4'},
+				VALUE_CHANGE_TABLE 	= {
+					{'x',			0.1},
+					{'y',			0.1},
+					{'z',			0.28}
+				}
+			}
+		}
+	},
 	{--	|sentinel tool proc| colors
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL/ORANGEMETALMAT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -36,19 +57,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|sentinel tool blue glow|
+	{--	|sentinel and staff tool blue glow|
 		MBIN_FILE_SOURCE	= {
 			'MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL/REDGLOW_MAT2.MATERIAL.MBIN',
 			'MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOLB/REDGLOW_MAT2.MATERIAL.MBIN',
+			'MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL/REDGLOW_MAT5.MATERIAL.MBIN',
+			'MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL/REDGLOW_MAT8.MATERIAL.MBIN',
+			'MODELS/COMMON/WEAPONS/MULTITOOL/STAFFMULTITOOL/REDGLOW_MAT9.MATERIAL.MBIN',
 		},
 		EXML_CHANGE_TABLE	= {
 			{
 				INTEGER_TO_FLOAT	= 'Force',
 				SPECIAL_KEY_WORDS	= {'Name', 'gMaterialColourVec4'},
 				VALUE_CHANGE_TABLE 	= {
-					{'x',			0.2},
-					{'y',			0.4},
-					{'z',			0.7}
+					{'x',			0.16},
+					{'y',			0.32},
+					{'z',			0.64}
 				}
 			}
 		}

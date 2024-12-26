@@ -83,7 +83,7 @@ local tech_icons = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Technology Icons.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.20',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -93,10 +93,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			function()
 				T = {}
 				for id, icon in pairs(tech_icons) do
-					table.insert(T, {
+					T[#T+1] = {
 						SPECIAL_KEY_WORDS	= {'ID', id},
-						VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon} }
-					})
+						VALUE_CHANGE_TABLE 	= {
+							{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..icon}
+						}
+					}
 				end
 				return T
 			end
@@ -105,24 +107,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= (
 		function()
+			local T = {}
 			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Technology/'
-			if lfs.attributes(tex_path) then
-				return {
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Bio/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/BIO/*.DDS',
-					},
-					{
-						EXTERNAL_FILE_SOURCE = tex_path..'Vehicle/*.DDS',
-						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/VEHICLE/*.DDS',
-					},
-				}
+			for _,folder in ipairs({
+				'',
+				'Bio/',
+				'Vehicle/',
+			}) do
+				if lfs.attributes(tex_path..folder) then
+					T[#T+1] = {
+						EXTERNAL_FILE_SOURCE = tex_path..folder..'/*.DDS',
+						FILE_DESTINATION	 = 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/'..folder..'*.DDS',
+					}
+				end
 			end
-			return nil
+			return #T > 0 and T or nil
 		end
 	)()
 }

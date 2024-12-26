@@ -1,6 +1,6 @@
 ------------------------------
-dofile('LIB/lua_2_exml.lua')
-dofile('LIB/exml_2_lua.lua')
+dofile('LIB/_lua_2_exml.lua')
+dofile('LIB/_exml_2_lua.lua')
 ------------------------------
 local mod_desc = [[
   ALL random color palettes
@@ -59,7 +59,7 @@ for _,src in ipairs({
 	local palettes_file	= LoadRuntimeMbin(src)
 	for _,sky in ipairs(palettes_file.template.Settings) do
 		for color_name,_ in pairs(sky) do
-			if color_name ~= 'META' then
+			if color_name ~= 'meta' then
 				sky[color_name] = ColorData({1, math.random(), math.random(), math.random()}, color_name)
 			end
 		end
@@ -82,7 +82,7 @@ for _,src in ipairs({
 	}) do
 		for _,weather in ipairs(section.Settings) do
 			for color_name,_ in pairs(weather) do
-				if color_name ~= 'META' and color_name ~= 'SkyGradientSpeed' then
+				if color_name ~= 'meta' and color_name ~= 'SkyGradientSpeed' then
 					weather[color_name] = ColorData({1, math.random(), math.random(), math.random()}, color_name)
 				end
 			end
@@ -97,7 +97,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___ALL random palettes.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.7',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= ADF
 }

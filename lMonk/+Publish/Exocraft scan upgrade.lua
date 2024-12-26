@@ -498,7 +498,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.20',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{

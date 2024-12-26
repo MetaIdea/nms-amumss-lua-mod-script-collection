@@ -151,7 +151,7 @@ local function BuildProcTexListMbin(tex_layer)
 	local T = {}
 	-- build proc-tex layers
 	for _,ly in ipairs(tex_layer) do
-		table.insert( T, [[
+		T[#T+1] = [[
 			<Property value="TkProceduralTextureLayer.xml">
 				<Property name="Name" value="]]..(ly.ly_name or '')..[["/>
 				<Property name="Probability" value="]]..(tex_layer.ly_prob or 1)..[["/>
@@ -159,11 +159,10 @@ local function BuildProcTexListMbin(tex_layer)
 				<Property name="Textures">]]..
 				GetProcTextures(tex_layer.nmspath..tex_layer.label, ly)..
 			[[</Property></Property>]]
-		)
 	end
 	-- silly fixed length array
 	for _=1, (8 - #tex_layer) do
-		table.insert(T, '<Property value="TkProceduralTextureLayer.xml"/>')
+		T[#T+1] = '<Property value="TkProceduralTextureLayer.xml"/>'
 	end
 	return [[<Data template="TkProceduralTextureList">
 		<Property name="Layers">]]..table.concat(T)..[[</Property></Data>]]
@@ -172,15 +171,15 @@ end
 local function AddProcTexFiles()
 	local T = {}
 	for _,ptf in ipairs(proc_texture_files) do
-		table.insert(T, {
+		T[#T+1] = {
 			FILE_CONTENT		= BuildProcTexListMbin(ptf),
 			FILE_DESTINATION	= ptf.nmspath..ptf.label..'.TEXTURE.EXML'
-		})
+		}
 		if lfs.attributes(ptf.source) then
-			table.insert(T, {
+			T[#T+1] = {
 				EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
 				FILE_DESTINATION	= ptf.nmspath..'*.DDS'
-			})
+			}
 		end
 	end
 	return T
@@ -189,7 +188,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Alt Ship Decals.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.11',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MIXED_TABLE',
 	ADD_FILES			= AddProcTexFiles()

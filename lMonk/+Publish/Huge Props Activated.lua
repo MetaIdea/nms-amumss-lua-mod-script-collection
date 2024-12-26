@@ -76,6 +76,11 @@ local source_mbins = {
 		mbin = {'MODELS/PLANETS/BIOMES/WEIRD/CONTOUR/CONTOURTOWER.SCENE.MBIN'},
 		cat  = 'PLANT',
 		node = { 'Tower' }
+	},
+	{
+		mbin = {'MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/UNDERWATERCONTOURPOD.SCENE.MBIN'},
+		cat  = 'PLANT',
+		node = { 'Pod_LOD0' }
 	}
 }
 
@@ -172,7 +177,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Huge Props Activated.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '5.22',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= MBIN_CT

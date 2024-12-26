@@ -9,14 +9,13 @@ local mod_desc = [[
 
   * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+---	LUA 2 EXML (VERSION: 0.85.0) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
+--- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
 -------------------------------------------------------------------------------
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
-function ToExml(class)
+local function ToExml(class)
 	--	replace a boolean with its text equivalent (ignore otherwise)
 	--	@param b: any value
 	function bool(b)
@@ -78,45 +77,18 @@ function ToExml(class)
 	end
 end
 
---	Build a single -or list of scene nodes
+--	Build a single -or list of TkSceneNodeData classes
 --	@param props: a keyed table for scene class properties.
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
---	  stype	= scene node type
+--	  ntype	= scene node type
 --	  form	= [optional] Transform data. a list of 9 ordered values or keyed values,
 --			  but NOT a combination of the two!
+--	  pxlud = [optional] PlatformExclusion
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
 function ScNode(nodes)
-	--	Builds a TkTransformData class
-	local function scTransform(T)
-		T = T or {}
-		return {
-			meta	= {'Transform', 'TkTransformData.xml'},
-			TransX	= (T.tx or T[1]) or 0,
-			TransY	= (T.ty or T[2]) or 0,
-			TransZ	= (T.tz or T[3]) or 0,
-			RotX	= (T.rx or T[4]) or 0,
-			RotY	= (T.ry or T[5]) or 0,
-			RotZ	= (T.rz or T[6]) or 0,
-			ScaleX	= (T.sx or T[7]) or 1,
-			ScaleY	= (T.sy or T[8]) or 1,
-			ScaleZ	= (T.sz or T[9]) or 1
-		}
-	end
-	--	Builds a scene node attributes array
-	local function scAttributes(T)
-		local atr = {meta = {'name', 'Attributes'}}
-		for _,at in ipairs(T) do
-			atr[#atr+1] = {
-				meta	= {'value', 'TkSceneNodeAttributeData.xml'},
-				Name	= at[1],
-				Value	= at[2]
-			}
-		end
-		return atr
-	end
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
 		local hash = 0
@@ -136,33 +108,62 @@ function ScNode(nodes)
 	local function sceneNode(props)
 		local T	= {
 			meta	= {'value', 'TkSceneNodeData.xml'},
-			Name 		= props.name,
-			NameHash	= jenkinsHash(props.name),
-			Type		= props.stype
+			Name 				= props.name,
+			NameHash			= jenkinsHash(props.name),
+			Type				= props.ntype,
+			PlatformExclusion	= props.pxlud or nil
 		}
-		T[#T+1]		= scTransform(props.form or {})
+		--	add TkTransformData class
+		props.form = props.form or {}
+		T.Form = {
+			meta	= {'Transform', 'TkTransformData.xml'},
+			TransX	= (props.form.tx or props.form[1]) or nil,
+			TransY	= (props.form.ty or props.form[2]) or nil,
+			TransZ	= (props.form.tz or props.form[3]) or nil,
+			RotX	= (props.form.rx or props.form[4]) or nil,
+			RotY	= (props.form.ry or props.form[5]) or nil,
+			RotZ	= (props.form.rz or props.form[6]) or nil,
+			ScaleX	= (props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.sy or props.form[8]) or 1,
+			ScaleZ	= (props.form.sz or props.form[9]) or 1
+		}
+		--	if present, add attributes list
 		if props.attr then
-			T[#T+1] = scAttributes(props.attr)
+			-- add accompanying attribute to scenegraph
+			if props.attr.SCENEGRAPH then
+				props.attr.EMBEDGEOMETRY = 'TRUE'
+			end
+			T.Attr = { meta = {'name', 'Attributes'} }
+			for nm, val in pairs(props.attr) do
+				T.Attr[#T.Attr+1] = {
+					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					Name	= nm,
+					Value	= val
+				}
+			end
 		end
 		if props.child then
-			local tc = { meta = {'name', 'Children'} }
-			for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
-			T[#T+1]	= tc
+		--	add children list if found
+			local k,_ = next(props.child)
+			cnd = ScNode(props.child)
+			T.Child	= k == 1 and cnd or {cnd}
+			T.Child.meta = {'name', 'Children'}
 		end
 		return T
 	end
 	-----------------------------------------------------------------
 	local k,_ = next(nodes)
 	if k == 1 then
-		-- k=1 means the first of a list of tables
+	-- k=1 means the first of a list of unrelated, non-nested, nodes
 		local T = {}
-		for _,nd in pairs(nodes) do
+		for _,nd in ipairs(nodes) do
 				T[#T+1] = sceneNode(nd)
 		end
 		return T
 	end
 	return sceneNode(nodes)
 end
+-------------------------------------------------------------------------------
 
 local ECT = {}
 for node, form in pairs({
@@ -204,146 +205,146 @@ ECT[#ECT+1] = {
 	ADD					= ToExml( ScNode({
 		{
 			name	= '1RefBarrelBaz1',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=8.18, ty=-7.02, tz=66.4, rx=270, sx=0.9, sy=1.4, sz=0.9},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/BARREL1.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/BARREL1.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrossingB1',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-45.35, ty=-7.341775, tz=66.73, ry=180},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrossingB2',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=0, ty=-7.341775, tz=66.73},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONC.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrossingB3',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=45.35, ty=-7.341775, tz=66.73, ry=180},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONB.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARPROPS/HANGARFLOORSECTIONB.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateMilk01',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=5.06, ty=-7.33, tz=65.54, ry=86, sx=2.7, sy=1.8, sz=2.7},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/MILKCRATE.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateHazBig1',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=6.74, ty=-7.34, tz=66.5, ry=90, sx=1.7, sy=1.4, sz=1.6},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateTypeb1',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=5.06, ty=-7.33, tz=67.1, ry=3, sx=0.9, sy=0.9, sz=0.9},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateTypeb2',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=5.2, ty=-7.33, tz=68.2, ry=87, sx=0.9, sy=0.9, sz=0.9},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATE.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateHazBig2',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-53.3, ty=-6.67, tz=64.1, ry=13, rz=90, sx=0.57, sy=0.9, sz=0.9},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTSTYPEB/DOCK/PROPS/CRATEHAZARDOUS.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefScreenSilo',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-55.32, ty=-5.82, tz=63.46, ry=35.1, sx=0.36, sy=0.6, sz=0.4},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/WALLMONITORS/WALLMONITORA.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/WALLMONITORS/WALLMONITORA.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCoveredSilos',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-54, ty=-7.33, tz=66.8, ry=-90, sx=0.75, sy=0.75, sz=0.75},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/COVEREDSILOS.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/COVEREDSILOS.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateMould01',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-52.8, ty=-3.65, tz=65.65, rx=10, ry=-85, rz=180, sx=1.4},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefCrateMould02',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-52.7, ty=-3.6, tz=67.7, rx=-10, ry=85, rz=175, sx=1.4},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BAZAAR/CRATE1.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefBuilderHand',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-39.85, ty=-7.64, tz=-22.3, rx=-2, ry=-65, rz=180, sx=1.4, sy=1.4, sz=1.4},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/COMMON/ROBOTS/ROBOTHAND.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/COMMON/ROBOTS/ROBOTHAND.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefBuilderHead',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-39.8, ty=-7.64, tz=-21.6, rx=50, ry=160, rz=0, sx=1.1, sy=1.1, sz=1.1},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BUILDERHEAD.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORATION/BUILDERHEAD.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefGeometPlant01',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=37, ty=-7.72, tz=68.3, ry=-20, rz=20, sx=0.24, sy=0.24, sz=0.24},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/MEDGEO_NONE.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefMetalStruct01',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=11.8, ty=9.5, tz=22.7, sx=0.3, sy=0.3, sz=0.3},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/WEIRD/FRACTALCUBE/SHAPE1FLOAT.SCENE.MBIN'
 			}
 		},
 		{
 			name	= '1RefWirecell01',
-			stype	= 'REFERENCE',
+			ntype	= 'REFERENCE',
 			form	= {tx=-67, ty=14, tz=-18.2, sx=0.6, sy=0.6, sz=0.6},
 			attr	= {
-				{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN'}
+				SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/WIRECUBE.SCENE.MBIN'
 			}
 		}
 	}) )
@@ -357,7 +358,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.Freighter Hangar Changes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.11',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
@@ -378,30 +379,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = 'Children',
 				ADD					= ToExml( ScNode({
 					name	= '1RefMonitorShip',
-					stype	= 'REFERENCE',
+					ntype	= 'REFERENCE',
 					form	= {tx=2.55, ty=0.12, tz=5.4, ry=135, rz=180, sx=0.55, sy=0.55, sz=0.55},
 					attr	= {
-						{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'}
+						SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/ROOFMONITOR/ROOFMONITOR.SCENE.MBIN'
 					},
 					child	= {
-						ScNode({
-							name	= 'ColShipSalvage1',
-							stype	= 'COLLISION',
-							form	= {ty=-3},
+						name	= 'ColShipSalvage1',
+						ntype	= 'COLLISION',
+						form	= {ty=-3},
+						attr	= {
+							TYPE	= 'Sphere',
+							RADIUS	= 0.2
+						},
+						child	= {
+							name	= 'LocShipSalvage1',
+							ntype	= 'LOCATOR',
 							attr	= {
-								{'TYPE',	'Sphere'},
-								{'RADIUS',	0.2}
-							},
-							child	= {
-								ScNode({
-									name	= 'LocShipSalvage1',
-									stype	= 'LOCATOR',
-									attr	= {
-										{'ATTACHMENT', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'}
-									}
-								})
+								ATTACHMENT = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OBJECTSPAWNER/ENTITIES/SHIPSALVAGETERMINAL.ENTITY.MBIN'
 							}
-						})
+						}
 					}
 				}) )
 			}
@@ -492,16 +489,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	}
 }}},
-	ADD_FILES	= {(
+	ADD_FILES	= (
 		function()
 			local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Building/PirateStation/'
 			if lfs.attributes(tex_path) then
-				return {
+				return {{
 					EXTERNAL_FILE_SOURCE = tex_path..'*.DDS',
 					FILE_DESTINATION	 = 'TEXTURES/SPACE/SPACESTATION/PIRATES/*.DDS'
-				}
+				}}
 			end
 			return nil
 		end
-	)()}
+	)()
 }

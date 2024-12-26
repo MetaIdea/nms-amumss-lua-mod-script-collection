@@ -1,5 +1,5 @@
 -------------------------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Change green crystal reward to ionised cobalt
   Slightly increase green crystals spawn probability in cave biome
 ]]-----------------------------------------------------------------
@@ -7,7 +7,7 @@ mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Cobalt Crystals.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.38',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -52,5 +52,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			}
 		}
-	},
+	}
 }}}}

@@ -1,9 +1,12 @@
 ------------------------------------------------------------------
-local desc = [[
+local mod_desc = [[
   All those small, glowing lights; the old, fake, light beams;
     various headlights, will will match the ship's main color.
-	
+
+  * ADD_FILES will skipped SILENTLY if new files are not found!
   * Affects fighter, dropship, shuttle & sailship
+  * Restore procedural sail lights who match the sail's color
+
   --- WARNING: may affect ship proc-gen PAINTED/PANELS
 ]]----------------------------------------------------------------
 
@@ -14,7 +17,7 @@ local layered_textures = {
 		palette = 'Paint',
 		color	= 'Primary',
 		diff	= 'RECTWHITELIGHT',
-		dds		= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/RECTWHITELIGHT.DDS'
+		dds		= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/RECTWHITELIGHT.DDS'
 	},
 	{
 	---	ship: glow rectangle parts (uses internal texture)
@@ -22,25 +25,23 @@ local layered_textures = {
 		palette = 'Paint',
 		color	= 'Primary',
 		diff	= 'RECTLIGHT',
-		dds		= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/RECTLIGHT.DDS'
+		dds		= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/RECTLIGHT.DDS'
 	},
 	{
 	---	ship: glow circle parts (uses internal texture)
-		group  = '',
 		path   = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
 		palette = 'Paint',
 		color	= 'Primary',
 		diff	= 'CIRCLELIGHT',
-		dds		= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/CIRCLELIGHT.DDS'
+		dds		= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/CIRCLELIGHT.DDS'
 	},
 	{
 	---	ship: headlight
-		group  = '',
 		path   = 'TEXTURES/COMMON/SPACECRAFT/SHARED/',
 		palette = 'Paint',
 		color	= 'Primary',
 		diff	= 'HEADLIGHT',
-		dds		= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/HEADLIGHT.DDS'
+		dds		= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/HEADLIGHT.DDS'
 	}
 }
 
@@ -54,13 +55,6 @@ local function GetProceduralTexture(tex)
 			</Property>
 			<Property name="Probability" value="1"/>
 			<Property name="TextureGameplayUse" value="IgnoreName"/>
-			<Property name="OverrideAverageColour" value="False"/>
-			<Property name="AverageColour" value="Colour.xml">
-				<Property name="R" value="0"/>
-				<Property name="G" value="0"/>
-				<Property name="B" value="0"/>
-				<Property name="A" value="0"/>
-			</Property>
 			<Property name="Diffuse" value="]]..tex.path..tex.diff..[[.BASE.DDS"/>
 			<Property name="Normal" value=""/>
 			<Property name="Mask" value=""/>
@@ -77,35 +71,34 @@ local function GetProceduralTextureLayer(textures, name)
 		<Property value="TkProceduralTextureLayer.xml">
 			<Property name="Name" value="]]..(name or '')..[["/>
 			<Property name="Probability" value="1"/>
-			<Property name="Group" value=""/>
-			<Property name="SelectToMatchBase" value="False"/>
 			]]..textures..[[
 		</Property>
 	]]
 end
 
 local function BuildProcTextureLayers(tex)
-	local exml = {}
-	table.insert(exml, GetProceduralTextureLayer(GetProceduralTexture(tex), 'BASE'))
+	local T = {}
+	T[#T+1] = GetProceduralTextureLayer(GetProceduralTexture(tex), 'BASE')
 	-- silly fixed length array
-	for _=1, 7 do table.insert(exml, GetProceduralTextureLayer()) end
-	return [[<?xml version="1.0" encoding="utf-8"?>
-		<Data template="TkProceduralTextureList">
-		<Property name="Layers">]]..table.concat(exml)..[[</Property></Data>]]
+	for _=1, 7 do
+		T[#T+1] = GetProceduralTextureLayer()
+	end
+	return [[<Data template="TkProceduralTextureList">
+		<Property name="Layers">]]..table.concat(T)..[[</Property></Data>]]
 end
 
 local function add_tex_layers_files()
 	local T = {}
 	for _,lt in ipairs(layered_textures) do
-		table.insert(T, {
+		T[#T+1] = {
 			FILE_CONTENT		= BuildProcTextureLayers(lt),
 			FILE_DESTINATION	= lt.path..lt.diff..'.TEXTURE.EXML'
-		})
-		if lt.dds then
-			table.insert(T, {
+		}
+		if lt.dds and lfs.attributes(lt.dds) then
+			T[#T+1] = {
 				EXTERNAL_FILE_SOURCE= lt.dds,
 				FILE_DESTINATION	= lt.path..lt.diff..'.BASE.DDS'
-			})
+			}
 		end
 	end
 	return T
@@ -114,8 +107,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship procedural lights.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.91,
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '5.29',
+	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= add_tex_layers_files(),
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -130,6 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
+		-- sailship |sail proc lights|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC/HQLIGHT_MAT11.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{

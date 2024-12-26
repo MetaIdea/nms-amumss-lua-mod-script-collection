@@ -1,93 +1,101 @@
 -------------------------------------------------------------------------------
----	Construct reward table entries (VERSION: 0.82.4) ... by lMonk
----	* Requires lua_2_exml.lua !
+---	Construct reward table entries (VERSION: 0.83.6) ... by lMonk
+---	* Requires _lua_2_exml.lua !
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
 -------------------------------------------------------------------------------
 
----	RewardChoice Enum
-RC_={	ALL   =	'GiveAll',			ALL_S =	'GiveAllSilent',
-		ONE   =	'SelectAlways',		ONE_S =	'SelectAlwaysSilent',
-		WIN   =	'SelectFromSuccess',WIN_S =	'SelectFromSuccessSilent',
-		TRY   =	'TryEach',			TRY_ONE='TryFirst_ThenSelectAlways'
+--  * Default is first
+RC_={--	RewardChoice Enum
+	ALL   =	'GiveAll',			ALL_S =	'GiveAllSilent',
+	ONE   =	'SelectAlways',		ONE_S =	'SelectAlwaysSilent',
+	WIN   =	'SelectFromSuccess',WIN_S =	'SelectFromSuccessSilent',
+	TRY   =	'TryEach',			TRY_ONE='TryFirst_ThenSelectAlways'
 }
----	ProceduralProductCategory Enum
-PC_={	LOT='Loot',					SLV='Salvage',
-		BIO='BioSample',			BNS='Bones',
-		FOS='Fossil',
-		FRH='FreighterTechHyp',		FRS='FreighterTechSpeed',
-		FRF='FreighterTechFuel',	FRT='FreighterTechTrade',
-		FRC='FreighterTechCombat',	FRM='FreighterTechMine',
-		FRE='FreighterTechExp',
-		DBI='DismantleBio',			DTC='DismantleTech',
-		DDT='DismantleData',
-		SLT='SeaLoot',				SHR='SeaHorror',
-		SPB='SpaceBones',			SPH='SpaceHorror'
+PC_={--	ProceduralProductCategory Enum
+	LOT='Loot',					SLV='Salvage',
+	DOC='Document',				FOS='Fossil',
+	BIO='BioSample',			BNS='Bones',
+	PLT='Plant',				TOL='Tool',
+	FAR='Farm',					SLT='SeaLoot',
+	SHR='SeaHorror',			SPH='SpaceHorror',
+	SPB='SpaceBones',
+	FRH='FreighterTechHyp',		FRS='FreighterTechSpeed',
+	FRF='FreighterTechFuel',	FRT='FreighterTechTrade',
+	FRC='FreighterTechCombat',	FRM='FreighterTechMine',
+	FRE='FreighterTechExp',
+	DBI='DismantleBio',			DTC='DismantleTech',
+	DDT='DismantleData'
 }
----	InventoryType Enum
-IT_={	PRD='Product',		SBT='Substance',	TCH='Technology' }
----	AlienRace Enum
-AR_={	TRD='Traders',		WAR='Warriors',		XPR='Explorers',
-		RBT='Robots',		ATL='Atlas',		DPL='Diplomats',
-		XTC='Exotics',		NON='None',			BLD='Builders'
+IT_={--	InventoryType Enum
+	SBT='Substance',	TCH='Technology',	PRD='Product'
 }
----	Currency Enum
-CU_={	UT='Units',			NN='Nanites',		HG='Specials' }
-
----	MultiItemRewardType Enum
-RM_={	PRD='Product',		SBT='Substance',	PRP='ProcProduct' }
-
----	Rarity Enum
-RT_={	C='Common',			U='Uncommon',		R='Rare' }
-
----	FrigateFlybyType Enum
-FT_={	S='SingleShip',		G='AmbientGroup',	W='DeepSpaceCommon' }
+AR_={--	AlienRace Enum
+	TRD='Traders',		WAR='Warriors',		XPR='Explorers',
+	RBT='Robots',		ATL='Atlas',		DPL='Diplomats',
+	XTC='Exotics',		NON='None',			BLD='Builders'
+}
+CU_={--	Currency Enum
+	UT='Units',			NN='Nanites',		HG='Specials'
+}
+MI_={--	MultiItemRewardType Enum
+	PRD='Product',				SBT='Substance',
+	PRT='ProcTech',				PRP='ProcProduct',
+	ISP='InventorySlot',		ISS='InventorySlotShip',
+	ISW='InventorySlotWeapon'
+}
+RT_={--	Rarity Enum
+	C='Common',			U='Uncommon',		R='Rare'
+}
+FT_={--	FrigateFlybyType Enum
+	S='SingleShip',		G='AmbientGroup',	W='DeepSpaceCommon'
+}
 
 function R_RewardTableEntry(rte)
-	-- accepts an external list, if not found builds a new list
+	-- accepts an external list, if not found builds a new one
 	if not rte.list then
 		rte.list = {}
-		for _,rwd in pairs(rte.rewardlist) do
+		for _,rwd in ipairs(rte.itemlist) do
 			rte.list[#rte.list+1] = rwd.f(rwd)
 		end
 	end
-	rte.list.META = {'name', 'List'}
+	rte.list.meta = {'name', 'List'}
 	return {
-		META = {'value', 'GcGenericRewardTableEntry.xml'},
+		meta = {'value', 'GcGenericRewardTableEntry.xml'},
 		Id	 = rte.id,
 		List = {
-			META = {'List', 'GcRewardTableItemList.xml'},
-			RewardChoice	= rte.choice or RC_.ONE,
-			OverrideZeroSeed= rte.zeroseed,
-			ItemList		= rte.list
+			meta = {'List', 'GcRewardTableItemList.xml'},
+			RewardChoice	= rte.choice or RC_.ONE,			-- Enum
+			OverrideZeroSeed= rte.zeroseed,						-- b
+			List			= rte.list
 		}
 	}
 end
 
 function R_TableItem(item, reward_type, props)
-	props.META		= {'Reward', reward_type}
-	props.AmountMin	= item.mn or item.mx
-	props.AmountMax	= item.mx
+	props.meta		= {'Reward', reward_type}
+	props.AmountMin	= item.mn or item.mx						-- i
+	props.AmountMax	= item.mx									-- i
 	return {
-		META	= {'value', 'GcRewardTableItem.xml'},
-		PercentageChance	= item.c or 1,
+		meta	= {'value', 'GcRewardTableItem.xml'},
+		PercentageChance	= item.c or 1,						-- f
 		Reward				= props
 	}
 end
 
 function R_MultiItem(item)
-	local multies = {META = {'name', 'Items'}}
-	for _,itm in ipairs(item) do
-		multies[#multies+1] = {
-			META = {'value', 'GcMultiSpecificItemEntry.xml'},
-			MultiItemRewardType	= itm.tp,
+	local T = {meta = {'name', 'Items'}}
+	for _,itm in ipairs(item.list) do
+		T[#T+1] = {
+			meta = {'value', 'GcMultiSpecificItemEntry.xml'},
 			Id					= itm.id,
-			Amount				= itm.mn or 1,
-			ProcTechGroup		= itm.tg,
-			ProcTechQuality		= itm.qt,
-			IllegalProcTech		= itm.lgl,
+			MultiItemRewardType	= itm.tp,						-- Enum
+			Amount				= itm.mn or 1,					-- i
+			ProcTechGroup		= itm.tg,						-- s
+			ProcTechQuality		= itm.qt, -- used instead of ProcProdRarity
+			IllegalProcTech		= itm.lgl,						-- b
 			ProcProdType		= {
-				META = {'ProcProdType', 'GcProceduralProductCategory.xml'},
-				ProceduralProductCategory = itm.pid or 'Loot'
+				meta = {'ProcProdType', 'GcProceduralProductCategory.xml'},
+				ProceduralProductCategory = itm.pid or PC_.LOT	-- Enum
 			}
 		}
 	end
@@ -95,8 +103,8 @@ function R_MultiItem(item)
 		item,
 		'GcRewardMultiSpecificItems.xml',
 		{
-			Silent	= item.sl,
-			Items	= multies
+			Silent	= item.sl,									-- b
+			Items	= T
 		}
 	)
 end
@@ -107,14 +115,14 @@ function R_Procedural(item)
 		'GcRewardProceduralProduct.xml',
 		{
 			Type	= {
-				META = {'Type', 'GcProceduralProductCategory.xml'},
-				ProceduralProductCategory = item.id
+				meta = {'Type', 'GcProceduralProductCategory.xml'},
+				ProceduralProductCategory = item.id				-- Enum
 			},
 			Rarity	= {
-				META = {'Rarity', 'GcRarity.xml'},
-				Rarity = item.rt or 'Common'
+				meta = {'Rarity', 'GcRarity.xml'},
+				Rarity = item.rt or 'Common'					-- Enum
 			},
-			OverrideRarity	= item.ort
+			OverrideRarity	= item.ort							-- b
 		}
 	)
 end
@@ -125,7 +133,7 @@ function R_Substance(item)
 		'GcRewardSpecificSubstance.xml',
 		{
 			ID		= item.id,
-			Silent	= item.sl
+			Silent	= item.sl									-- b
 		}
 	)
 end
@@ -136,7 +144,19 @@ function R_Product(item)
 		'GcRewardSpecificProduct.xml',
 		{
 			ID		= item.id,
-			Silent	= item.sl
+			Silent	= item.sl									-- b
+		}
+	)
+end
+
+function R_DisguisedProduct(item)
+	return R_TableItem(
+		item,
+		'GcRewardDisguisedProduct.xml',
+		{
+			ID						= item.id,
+			DisplayAs				= item.display,				-- s
+			UseDisplayIDWhenInShip	= true,						-- b
 		}
 	)
 end
@@ -145,7 +165,7 @@ function R_ProductSysList(item)
 	return R_TableItem(
 		item,
 		'GcRewardSystemSpecificProductFromList.xml',
-		{ ProductList = StringArray(item.id, 'ProductList', 10) }
+		{ ProductList = StringArray(item.id, 'ProductList') }
 	)
 end
 
@@ -153,7 +173,7 @@ function R_ProductAllList(item)
 	return R_TableItem(
 		item,
 		'GcRewardMultiSpecificProducts.xml',
-		{ ProductIds = StringArray(item.id, 'ProductIds', 10) }
+		{ ProductIds = StringArray(item.id, 'ProductIds') }
 	)
 end
 
@@ -163,7 +183,7 @@ function R_Technology(item)
 		'GcRewardSpecificTech.xml',
 		{
 			TechId	= item.id,
-			Silent	= item.sl
+			Silent	= item.sl									-- b
 		}
 	)
 end
@@ -174,7 +194,7 @@ function R_ProductRecipe(item)
 		'GcRewardSpecificProductRecipe.xml',
 		{
 			ID		= item.id,
-			Silent	= item.sl
+			Silent	= item.sl									-- b
 		}
 	)
 end
@@ -185,8 +205,8 @@ function R_Word(item)
 		'GcRewardTeachWord.xml',
 		{
 			Race = {
-				META		= {'Race', 'GcAlienRace.xml'},
-				AlienRace	= item.id
+				meta		= {'Race', 'GcAlienRace.xml'},
+				AlienRace	= item.ar							-- Enum
 			}
 		}
 	)
@@ -198,8 +218,8 @@ function R_Money(item)
 		'GcRewardMoney.xml',
 		{
 			Currency = {
-				META		= {'Currency', 'GcCurrency.xml'},
-				Currency	= item.id
+				meta		= {'Currency', 'GcCurrency.xml'},
+				Currency	= item.id							-- Enum
 			}
 		}
 	)
@@ -210,10 +230,10 @@ function R_Jetboost(item)
 		item,
 		'GcRewardJetpackBoost.xml',
 		{
-			Duration		= (10 *  item.tm),
-			ForwardBoost	= (4.2 * item.pw),
-			UpBoost			= (0.9 * item.pw),
-			IgnitionBoost	= (1.6 * item.pw)
+			Duration		= (10 *  item.tm),					-- f
+			ForwardBoost	= (4.2 * item.pw),					-- f
+			UpBoost			= (0.9 * item.pw),					-- f
+			IgnitionBoost	= (1.6 * item.pw)					-- f
 		}
 	)
 end
@@ -222,7 +242,7 @@ function R_Stamina(item)
 	return R_TableItem(
 		item,
 		'GcRewardFreeStamina.xml',
-		{ Duration		= (10 * item.tm) }
+		{ Duration		= (10 * item.tm) }						-- f
 	)
 end
 
@@ -231,8 +251,8 @@ function R_Hazard(item)
 		item,
 		'GcRewardRefreshHazProt.xml',
 		{
-			Amount	= item.hz,
-			Silent	= item.sl
+			Amount	= item.hz,									-- f
+			Silent	= item.sl									-- b
 		}
 	)
 end
@@ -253,7 +273,7 @@ function R_Wanted(item)
 	return R_TableItem(
 		item,
 		'GcRewardWantedLevel.xml',
-		{ Level	= item.lvl or 0 }
+		{ Level	= item.lvl or 0 }								-- i (0-5)
 	)
 end
 
@@ -262,7 +282,7 @@ function R_NoSentinels(item)
 		item,
 		'GcRewardDisableSentinels.xml',
 		{
-			Duration			= item.tm or -1,
+			Duration			= item.tm or -1,				-- f
 			WantedBarMessage	= 'UI_SENTINELS_DISABLED_MSG'
 		}
 	)
@@ -272,7 +292,7 @@ function R_Storm(item)
 	return R_TableItem(
 		item,
 		'GcRewardTriggerStorm.xml',
-		{ Duration			= item.tm or -1 }
+		{ Duration			= item.tm or -1 }					-- f
 	)
 end
 
@@ -282,11 +302,22 @@ function R_FlyBy(item)
 		'GcRewardFrigateFlyby.xml',
 		{
 			FlybyType = {
-				META	= {'FlybyType', 'GcFrigateFlybyType.xml'},
-				FrigateFlybyType = item.tp or FT_.W
+				meta	= {'FlybyType', 'GcFrigateFlybyType.xml'},
+				FrigateFlybyType = item.tp or FT_.W				-- Enum
 			},
-			AppearanceDelay	= item.tm or 3,
+			AppearanceDelay	= item.tm or 3,						-- f
 			CameraShake		= 'FRG_FLYBY_PREP'
+		}
+	)
+end
+
+function R_OpenPage(item)
+	return R_TableItem(
+		item,
+		'GcRewardOpenPage.xml',
+		{
+			PageToOpen				= item.id,					-- Enum
+			ReinteractWhenComplete	= item.Reinteract			-- b
 		}
 	)
 end
@@ -297,32 +328,59 @@ function R_UnlockTree(item)
 		'GcRewardOpenUnlockTree.xml',
 		{
 			TreeToOpen = {
-				META	= {'TreeToOpen', 'GcUnlockableItemTreeGroups.xml'},
-				UnlockableItemTree = item.id
+				meta	= {'TreeToOpen', 'GcUnlockableItemTreeGroups.xml'},
+				UnlockableItemTree = item.id					-- Enum
 			}
 		}
 	)
 end
 
---	for tech inventory only. used by ship & tool rewards
+function R_UnlockSeasonal(item)
+	return R_TableItem(
+		item,
+		'GcRewardUnlockSeasonReward.xml',
+		{
+			ProductID				= item.id,
+			Silent					= item.sl,					-- b
+			UseSpecialFormatting	= item.frt,					-- b
+			MarkAsClaimedInShop		= item.mc or true,			-- b
+			UniqueInventoryItem		= item.unq					-- b
+		}
+	)
+end
+
+function R_Special(item)
+	return R_TableItem(
+		item,
+		'GcRewardSpecificSpecial.xml',
+		{
+			ProductID				= item.id,
+			ShowSpecialProductPopup	= item.pop,					-- b
+			UseSpecialFormatting	= item.frt,					-- b
+			HideInSeasonRewards		= item.hid					-- b
+		}
+	)
+end
+
+--	Used by ship & tool rewards for tech inventory only
 local function InventoryContainer(inventory)
 	if not inventory then return nil end
-	local T = {META = {'name', 'Slots'}}
-	for _,itm in ipairs(inventory) do
+	local T = {meta = {'name', 'Slots'}}
+	for id, chrg in pairs(inventory) do
 		T[#T+1] = {
-			META	= {'value', 'GcInventoryElement.xml'},
-			Id				= itm.id,
-			Amount			= itm.itype and itm.amount or (itm.amount and 1000 or -1),
-			MaxAmount		= itm.amount and 10000 or 100,
+			meta	= {'value', 'GcInventoryElement.xml'},
+			Id				= id,
+			Amount			= chrg and 10000 or -1,				-- i
+			MaxAmount		= chrg and 10000 or 100,			-- i
 			FullyInstalled	= true,
 			Type			= {
-				META	= {'Type', 'GcInventoryType.xml'},
-				InventoryType	= itm.itype or IT_.TCH
+				meta	= {'Type', 'GcInventoryType.xml'},
+				InventoryType	= IT_.TCH						-- Enum
 			},
 			Index	= {
-				META	= {'Index', 'GcInventoryIndex.xml'},
-				X		= -1,
-				Y		= -1
+				meta	= {'Index', 'GcInventoryIndex.xml'},
+				X		= -1,									-- i
+				Y		= -1									-- i
 			}
 		}
 	end
@@ -335,46 +393,84 @@ function R_Ship(item)
 		'GcRewardSpecificShip.xml',
 		{
 			ShipResource = {
-				META	= {'ShipResource', 'GcResourceElement.xml'},
-				Filename = item.filename,
+				meta	= {'ShipResource', 'GcResourceElement.xml'},
+				Filename = item.filename,						-- s
 				Seed	= {
-					META		= {'Seed', 'GcSeed.xml'},
-					Seed			= tonumber(item.seed),
-					UseSeedValue	= true
+					meta		= {'Seed', 'GcSeed.xml'},
+					Seed			= tonumber(item.seed),		-- i
+					UseSeedValue	= item.seed ~= nil
 				}
 			},
 			ShipLayout	= {
-				META	= {'ShipLayout', 'GcInventoryLayout.xml'},
-				Slots	= item.slots or 50
+				meta	= {'ShipLayout', 'GcInventoryLayout.xml'},
+				Slots	= item.slots or 50						-- i
 			},
-			{
-				META	= {'ShipInventory', 'GcInventoryContainer.xml'},
+			ShipInventory = {
+				meta	= {'ShipInventory', 'GcInventoryContainer.xml'},
 				Inventory	= InventoryContainer(item.inventory),
 				Class		= {
-					META	= {'Class', 'GcInventoryClass.xml'},
-					InventoryClass	= item.class and item.class:upper() or nil
+					meta	= {'Class', 'GcInventoryClass.xml'},
+					InventoryClass	= item.class and item.class:upper() or nil	-- Enum
 				},
-				BaseStatValues	= {
-					META	= {'name', 'BaseStatValues'},
+				BaseStatValues	= (
+					function()
+						local stat = nil
+						if item.filename:find('BIOSHIP')  then stat = 'ALIEN_SHIP' end
+						if item.filename:find('SENTINEL') then stat = 'ROBOT_SHIP' end
+						return stat and {
+							meta	= {'name', 'BaseStatValues'},
+							{
+								meta		= {'value', 'GcInventoryBaseStatEntry.xml'},
+								Value		= 1,
+								BaseStatID	= stat
+							}
+						} or nil
+					end
+				)(),
+			},
+			Customisation = item.custom and {
+				meta = {'Customisation','GcCharacterCustomisationData.xml'},
+				DescriptorGroups	= StringArray(item.custom.shipparts, 'DescriptorGroups'),
+				PaletteID			= item.custom.paletteid,
+				Colours				= (
+					function()
+						local T = {meta = {'name','Colours'}}
+						for _,col in ipairs(item.custom.colors) do
+							T[#T+1] = {
+								meta	= {'value','GcCharacterCustomisationColourData.xml'},
+								Palette	= {
+									meta	= {'Palette','TkPaletteTexture.xml'},
+									Palette		= col.palette,				-- Enum
+									ColourAlt	= col.alt					-- Enum
+								},
+								Colour	= ColorData(col.rgb, 'Colour')		-- rgb
+							}
+						end
+						return T
+					end
+				)(),
+				TextureOptions		= {
+					meta = {'name','TextureOptions'},
 					{
-						META		= {'value', 'GcInventoryBaseStatEntry.xml'},
-						Value		= 1,
-						BaseStatID	= (
-							function()
-								if item.filename:find('BIOSHIP')  then return 'ALIEN_SHIP' end
-								if item.filename:find('SENTINEL') then return 'ROBOT_SHIP' end
-								return nil
-							end
-						)()
+						meta = {'value','GcCharacterCustomisationTextureOptionData.xml'},
+						TextureOptionGroupName	= item.custom.texturegroup,	-- s
+						TextureOptionName		= item.custom.texturename	-- s
 					}
-				}
-			},
+				},
+				Scale	= 1
+			} or nil,
 			ShipType	= {
-				META	= {'ShipType', 'GcSpaceshipClasses.xml'},
-				ShipClass	= item.modeltype
+				meta	= {'ShipType', 'GcSpaceshipClasses.xml'},
+				ShipClass	= item.modeltype					-- Enum
 			},
-			NameOverride = item.name,
-			IsRewardShip = true
+			UseOverrideSizeType	= item.sizetype ~= nil,
+			OverrideSizeType	= {
+				meta	= {'OverrideSizeType', 'GcInventoryLayoutSizeType.xml'},
+				SizeType	= item.sizetype						-- Enum
+			},
+			NameOverride = item.name,							-- s
+			IsRewardShip = true,
+			IsGift		 = true
 		}
 	)
 end
@@ -385,31 +481,35 @@ function R_Multitool(item)
 		'GcRewardSpecificWeapon.xml',
 		{
 			WeaponResource = {
-				META	= {'WeaponResource', 'GcExactResource.xml'},
-				Filename	= item.filename,
+				meta	= {'WeaponResource', 'GcExactResource.xml'},
+				Filename	= item.filename,					-- s
 				GenerationSeed	= {
-					META	= {'GenerationSeed', 'GcSeed.xml'},
-					Seed			= tonumber(item.seed),
-					UseSeedValue	= true
+					meta	= {'GenerationSeed', 'GcSeed.xml'},
+					Seed			= tonumber(item.seed),		-- i
+					UseSeedValue	= item.seed ~= nil
 				}
 			},
 			WeaponLayout	= {
-				META	= {'WeaponLayout', 'GcInventoryLayout.xml'},
-				Slots	= item.slots or 30
+				meta	= {'WeaponLayout', 'GcInventoryLayout.xml'},
+				Slots	= item.slots or 30						-- i
 			},
 			WeaponInventory	= {
-				META	= {'WeaponInventory', 'GcInventoryContainer.xml'},
+				meta	= {'WeaponInventory', 'GcInventoryContainer.xml'},
 				Inventory	= InventoryContainer(item.inventory),
 				Class		= {
-					META	= {'Class', 'GcInventoryClass.xml'},
-					InventoryClass	= item.class and item.class:upper() or nil
+					meta	= {'Class', 'GcInventoryClass.xml'},
+					InventoryClass	= item.class and item.class:upper() or nil	-- Enum
 				}
 			},
 			WeaponType		= {
-				META	= {'WeaponType', 'GcWeaponClasses.xml'},
-				WeaponStatClass	= item.modeltype
+				meta	= {'WeaponType', 'GcWeaponClasses.xml'},
+				WeaponStatClass	= item.modeltype				-- Enum
 			},
-			NameOverride = item.name,
+			InventorySizeOverride	= {
+				meta	= {'InventorySizeOverride', 'GcInventoryLayoutSizeType.xml'},
+				SizeType	= item.sizetype	or 'WeaponLarge'	-- Enum
+			},
+			NameOverride = item.name,							-- s
 			IsRewardWeapon = true
 		}
 	)

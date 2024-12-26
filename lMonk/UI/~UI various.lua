@@ -1,5 +1,8 @@
 ------------------------------------------------------------
 local mod_desc = [[
+  Add another slot to staff building page for substances
+   (content data for the slot added to METADATA/GAMESTATE/PLAYERDATA/MODULARCUSTOMISATIONDATATABLE.MBIN)
+  Ship builder palette placement tweak
   Add space in the menu's Units display for larger numbers
   Remove cinematic black bars
   smaller item slot amount font
@@ -8,13 +11,57 @@ local mod_desc = [[
 ]]----------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '__UI fonts units & no bars.pak',
+	MOD_FILENAME 		= '__UI various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_BATCHNAME		= '_UI ~@~collection.pak',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
+	{--	|staff builder extra slot|
+		MBIN_FILE_SOURCE	= 'UI/MULTITOOL_BUILDER_PAGE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'SLOT03GRP'},
+				SECTION_UP_SPECIAL	= 1,
+				SEC_SAVE_TO			= 'gc_ng_uilayer_data'
+			},
+			{
+				SEC_EDIT 			= 'gc_ng_uilayer_data',
+				SPECIAL_KEY_WORDS	= {'ID', 'SLOT03GRP'},
+				VALUE_CHANGE_TABLE 	= {
+					{'ID',			'SLOT04GRP'},
+					{'PositionX',	49.602}
+				}
+			},
+			{
+				SEC_EDIT 			= 'gc_ng_uilayer_data',
+				SECTION_UP_SPECIAL	= 1,
+				SPECIAL_KEY_WORDS	= {'ID', 'LABEL'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Text',		''}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'SLOT03GRP'},
+				SECTION_UP_SPECIAL	= 1,
+				ADD_OPTION			= 'AddAfterSection',
+				SEC_ADD_NAMED		= 'gc_ng_uilayer_data'
+			}
+		}
+	},
+	{--	|ship builder UI| palette tweak
+		MBIN_FILE_SOURCE  	= 'UI/SHIP_BUILDER_PAGE.MBIN',
+		EXML_CHANGE_TABLE 	= {
+			{
+				SPECIAL_KEY_WORDS	= {'ID','COLOUR'},
+				VALUE_CHANGE_TABLE	= {
+					{'PositionY',	44},
+					{'Height',		580}
+				}
+			}
+		}
+	},
 	{--	|ship discovery screen| fix
 		MBIN_FILE_SOURCE  	= 'UI/HUD/SHIP/SIDESCREENSOLARSYSTEM.MBIN',
 		EXML_CHANGE_TABLE 	=
@@ -138,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 }}},
 	ADD_FILES	= {
 		{
-			EXTERNAL_FILE_SOURCE= 'D:/MODZ_stuff/NoMansSky/Sources/+Fonts/Ubuntu-Regular.ttf',
+			EXTERNAL_FILE_SOURCE= 'D:/MODZ_stuff/NoMansSky/Sources/Fonts/Ubuntu-Regular.ttf',
 			FILE_DESTINATION	= 'UI/GAMEFONT.TTF'
 		},
 		-- {

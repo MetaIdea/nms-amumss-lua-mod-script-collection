@@ -8,7 +8,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC SOLAR.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -21,6 +21,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'SparseAsteroidSpread',					-1010},	-- -7
 					{'AsteroidSpaceStationAvoidRadius',			6500},	-- 5000
 					{'AsteroidCreatureRichSystemProbability',	0.008}	-- 0.005
+				}
+			},
+			{
+				PRECEDING_KEY_WORDS = 'PirateSystemProbability',
+				VALUE_CHANGE_TABLE 	= {
+					{'Yellow',		0.1},		-- 0.25
+					{'Green',		0.08},		-- 0.15
+					{'Blue',		0.08},		-- 0.15
+					{'Red',			0.75},		-- 0.5
 				}
 			},
 			{

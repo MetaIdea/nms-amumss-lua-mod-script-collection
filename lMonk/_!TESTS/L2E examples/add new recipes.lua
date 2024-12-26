@@ -1,5 +1,5 @@
 ------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/table_entry.lua')
 ------------------------------------------------
 local mod_desc = [[
@@ -44,7 +44,7 @@ local new_recipes = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE RECIPE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -53,16 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = 'Table',
-				ADD 				= (
-					function()
-						local T = {}
-						for _,r in ipairs(new_recipes) do
-							T[#T+1] = RefinerRecipeEntry(r)
-						end
-						return ToExml(T)
-					end
-				)()
-			}
+				ADD 				= ToExml(RefinerRecipeEntry(new_recipes))
 		}
 	}
 }}}}

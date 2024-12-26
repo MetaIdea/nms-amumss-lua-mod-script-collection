@@ -1,5 +1,5 @@
 --------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 --------------------------------------------------------------------
 local mod_desc = [[
   Modifiers for ambient space color..near-black space and night sky
@@ -9,30 +9,28 @@ local mod_desc = [[
 
 local function NightColorModifiers()
 	local T = {}
-	for i, bio in pairs({
-		{k='GenericSettings',	m=0.42},
-		{k='Swamp',				m=0.28},
-		{k='Lava',				m=0.52}
+	for rgb, mod in pairs({
+		--				 generic	swamp	lava
+		SkyColour		= {0.38,	0.1,	0.92},
+		SkyUpperColour	= {0.38,	0.06,	0.92},
+		SkySolarColour	= {0.52,	0.38,	0.84},
+		HorizonColour	= {0.52,	0.48,	0.94},
+		HeightFogColour	= {0.42,	0.18,	0.52},
+		LightColour		= {0.7,		0.6,	1	},
+		CloudColour1	= {0.7,		0.52,	0.88},
+		CloudColour2	= {0.7,		0.52,	0.88}
 	}) do
-		for rgb, mod in pairs({
-			--				 generic	swamp	lava
-			SkyColour		= {-0.04,	-0.18,	0.4},
-			SkyUpperColour	= {-0.04,	-0.22,	0.4},
-			SkySolarColour	= {0.1,		0.1,	0.32},
-			HorizonColour	= {0.1,		0.2,	0.42},
-			HeightFogColour	= {0,		-0.1,	0},
-			LightColour		= {0.28,	0.32,	0.48},
-			CloudColour1	= {0.28,	0.24,	0.36},
-			CloudColour2	= {0.28,	0.24,	0.36}
+		for i, bio in ipairs({
+			'GenericSettings', 'Swamp', 'Lava'
 		}) do
 			T[#T+1] = {
 				INTEGER_TO_FLOAT	= 'Force',
 				MATH_OPERATION		= '*',
-				PRECEDING_KEY_WORDS	= {bio.k, rgb},
+				PRECEDING_KEY_WORDS	= {bio, rgb},
 				VALUE_CHANGE_TABLE 	= {
-					{'R', mod[i] + bio.m},
-					{'G', mod[i] + bio.m},
-					{'B', mod[i] + bio.m}
+					{'R',	mod[i]},
+					{'G',	mod[i]},
+					{'B',	mod[i]}
 				}
 			}
 		end
@@ -82,24 +80,25 @@ local sky_palettes = {
 	}
 }
 local sky_part = {
-	{k='SkyColour',			f=ColorData},
-	{k='SkyUpperColour',	f=ColorData},
-	{k='SkySolarColour',	f=ColorData},
-	{k='HorizonColour',		f=ColorData},
-	{k='SunColour',			f=ColorData},
-	{k='FogColour',			f=ColorData},
-	{k='HeightFogColour',	f=ColorData},
-	{k='SkyGradientSpeed',	f=VectorData},
-	{k='LightColour',		f=ColorData},
-	{k='CloudColour1',		f=ColorData},
-	{k='CloudColour2',		f=ColorData}
+	'SkyColour',
+	'SkyUpperColour',
+	'SkySolarColour',
+	'HorizonColour',
+	'SunColour',
+	'FogColour',
+	'HeightFogColour',
+	'SkyGradientSpeed',
+	'LightColour',
+	'CloudColour1',
+	'CloudColour2'
 }
 local function AddPlanetWeatherColor(skies)
 	local T = {}
 	for _, key in ipairs(skies) do
-		local pwcd = { META = {'value', 'GcPlanetWeatherColourData.xml'} }
+		local pwcd = { meta = {'value', 'GcPlanetWeatherColourData.xml'} }
 		for j, dat in pairs(sky_palettes[key]) do
-			pwcd[#pwcd+1] = sky_part[j].f(dat, sky_part[j].k)
+			func = sky_part[j]:find('Speed') and VectorData or ColorData
+			pwcd[#pwcd+1] = func(dat, sky_part[j])
 		end
 		T[#T+1] = pwcd
 	end
@@ -139,7 +138,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META sky dark space & nights.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

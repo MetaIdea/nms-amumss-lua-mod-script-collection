@@ -1,5 +1,6 @@
 ----------------------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
+dofile('LIB/shared_lists.lua')
 ----------------------------------------------------------------------------------------
 local mod_desc = [[
   Add a new language file.
@@ -12,36 +13,54 @@ local mod_desc = [[
 ]]--------------------------------------------------------------------------------------
 
 local text_lines = {
-	locale	= 'NMS_Loc88',
+	locale	= 'NMS_88',
 	default	= 'EN',
 	entries	= {
 	---	New text ---
-		JUMP_U_ALIEN_NAME = {
+		[new_tech.ROCEKT_ALIEN.name] = {
+			EN = [[EMISSIVE SEEDS POD]],
+		},
+		[new_tech.ROCEKT_ALIEN.namelower] = {
+			EN = [[Emissive Seeds Pod]],
+		},
+		[new_tech.ROCEKT_ALIEN.description] = {
+			EN = [[A <TECHNOLOGY>long range<> starship weapon, capable of delivering a targeted seed across great distances.|N|Note: explosive damage is <STELLAR>highly effective<> against <STELLAR>unshielded<> targets, but <TITLE>ineffective<> against <TITLE>shielded<> targets.|N|Use <IMG>CYCLEWEAPON<> to change weapon mode. Press <IMG>SHIPFIRE<> to fire.]],
+		},
+		[new_tech.ROCEKT_U_ALIEN.name] = {
+			EN = [[EXTENDED SEEDS POD]],
+		},
+		[new_tech.ROCEKT_U_ALIEN.namelower] = {
+			EN = [[Extended Seeds Pod]],
+		},
+		[new_tech.ROCEKT_U_ALIEN.description] = {
+			EN = [[A significant extension to emissive seeds pod's capacity, enabling enduring performance, improving exhaust performance and allowing for significantly faster <STELLAR>heat recovery<>.]],
+		},
+		[new_tech.JUMP_U_ALIEN.name] = {
 			EN = [[ENLARGED HEART]],
 		},
-		JUMP_U_ALIEN_NAME_L = {
+		[new_tech.JUMP_U_ALIEN.namelower] = {
 			EN = [[Enlarged Heart]],
 		},
-		JUMP_U_ALIEN_DESC = {
+		[new_tech.JUMP_U_ALIEN.description] = {
 			EN = [[A significant reinforcement to the vital organ's fibrous metallic superstructure, allowing greater performance and more subtle movement control.]],
 		},
-		SHIELD_U_ALIEN_NAME = {
+		[new_tech.SHIELD_U_ALIEN.name] = {
 			EN = [[HORROR NULLIFIER]]
 		},
-		SHIELD_U_ALIEN_NAME_L =	{
+		[new_tech.SHIELD_U_ALIEN.namelower] = {
 			EN = [[Horror Nullifier]]
 		},
-		SHIELD_U_ALIEN_DESC = {
+		[new_tech.SHIELD_U_ALIEN.description] = {
 			EN = [[Envelops the neurological array and erects a barrier around it against all emotional trauma.]],
 		},
-		SUPERFOOD_NAME = {
+		[new_product.SUPERFOOD.name] = {
 			EN = [[GLOWING PELLETS]],
 		},
-		SUPERFOOD_NAME_L = {
+		[new_product.SUPERFOOD.namelower] = {
 			EN = [[Glowing Pellets]],
 		},
-		SUPERFOOD_DESC = {
-			EN = [[This odd collection of pellets pulses with a faint, curiously organic phosphorescence. It seems to remember the whole from which it was parted...||NConsuming a sample seems to be a good for you.]],
+		[new_product.SUPERFOOD.description] = {
+			EN = [[This odd collection of pellets pulses with a faint, curiously organic phosphorescence. It seems to remember the whole from which it was parted...|N|Consuming a sample seems to be a good for you.]],
 		},
 		UI_STARCHART_BUILDER_NAME = {
 			EN = [[ROAMING BUILDER LOCATOR]],
@@ -55,38 +74,38 @@ local text_lines = {
 		UI_STARCHART_BUILDER_SUB = {
 			EN = [[Harmonious Synthetics Tracker]],
 		},
-		VEHICLESTUN_NAME = {
+		[new_tech.VEHICLESTUN.name] = {
 			EN = [[PARALYSIS GUN]]
 		},
-		VEHICLESTUN_NAME_L = {
+		[new_tech.VEHICLESTUN.namelower] = {
 			EN = [[Paralysis Gun]]
 		},
-		VEHICLESTUN_DESC = {
-			EN = [[Non-violent projectile weapon. Launched projectiles will incapacitate nearby targets with a burst of electrical energy. Effective against both biological and electronic entities.||NCharged with <FUEL>Unstable Plasma<>.]],
+		[new_tech.VEHICLESTUN.description] = {
+			EN = [[Non-violent projectile weapon. Launched projectiles will incapacitate nearby targets with a burst of electrical energy. Effective against both biological and electronic entities.|N|Charged with <FUEL>Unstable Plasma<>.]],
 		},
-		VEHICLESTUN_SUB = {
+		[new_tech.VEHICLESTUN.subtitle] = {
 			EN = [[Stun Weapons]]
 		},
-		RAMMOULD_NAME = {
+		[new_product.RAMMOULD5.name] = {
 			EN = [[RAMPANT MOLD]]
 		},
-		RAMMOULD_NAME_L = {
+		[new_product.RAMMOULD5.namelower] = {
 			EN = [[Rampant Mold]]
 		},
-		RAMMOULD_DESC = {
-			EN = [[A highly concentrated form, up to 1:5 ratio, of the runaway mold. Extremely volatile outside of its seal container! Use of power gloves recommended.]]
+		[new_product.RAMMOULD5.description] = {
+			EN = [[A highly <>EARTH<> concentrated form, up to 1:5 ratio, of the runaway mold. Extremely volatile outside of its seal container! Use of <TECHNOLOGY>power gloves<> recommended.]]
 		},
-		PRODX40_NAME = {
+		[new_product.ULTRAPRODX40.name] = {
 			EN = [[FUSED STASIS ENABLER]],
 			FR = [[ACTIVATEUR DE STASE FUSIBLE]],
 		},
-		PRODX40_NAME_L = {
+		[new_product.ULTRAPRODX40.namelower] = {
 			EN = [[Fused Stasis Enabler]],
 			FR = [[Activateur De Stase Fusible]],
 		},
-		PRODX40_DESC = {
-			EN = [[This plain-looking custom-made device is so vanishingly rare as to be practically extinct. It's value, for the right collector, is so outrageous the technology itself is considered worthless.]],
-			FR = [[Cet appareil sur mesure d'apparence simple est si rare qu'il est pratiquement éteint. Sa valeur, pour le bon collectionneur, est si scandaleuse que la technologie elle-même est considérée comme sans valeur.]]
+		[new_product.ULTRAPRODX40.description] = {
+			EN = [[This plain-looking custom-made device is so vanishingly rare as to be practically extinct. It's <IMG>UNITSMALL<><RED>value<>, for the right collector, is so outrageous the technology itself is considered worthless.]],
+			FR = [[Cet appareil sur mesure d'apparence simple est si rare qu'il est pratiquement éteint. Sa <IMG>UNITSMALL<><RED>valeur<>, pour le bon collectionneur, est si scandaleuse que la technologie elle-même est considérée comme sans valeur.]]
 		},
 		UI_TECH_EXPLORE_SUB = {
 			EN = [[Craftable Exploratory Blueprints]],
@@ -132,17 +151,26 @@ local text_lines = {
 		UI_EM_EX_SYM	= { EN = [[Em+]] },
 		UI_IN_EX_SYM	= { EN = [[In+]] },
 		UI_CU_EX_SYM	= { EN = [[Cu+]] },
-		UI_SGUNK1_SYM	= { EN = [[Ю]] },
-		UI_SGUNK2_SYM	= { EN = [[Ɣ]] },
-		UI_SGUNK3_SYM	= { EN = [[FeO]] },
-		UI_SGUNK4_SYM	= { EN = [[ƪ]] },
-		UI_SGUNK5_SYM	= { EN = [[œ]] },
-		UI_TIMEDUST_SYM	= { EN = [[Љ]] },
-		UI_TIMEMILK_SYM	= { EN = [[Ҩ]] },
-		UI_ROBOT2_SYM	= { EN = [[Ʊ]] },
+		UI_SGUNK1_SYM	= { EN = [[Ю]]	},
+		UI_SGUNK2_SYM	= { EN = [[Ψ]]	},
+		UI_SGUNK3_SYM	= { EN = [[FeO]]},
+		UI_SGUNK4_SYM	= { EN = [[Щ]]	},
+		UI_SGUNK5_SYM	= { EN = [[œ]]	},
+		UI_TIMEDUST_SYM	= { EN = [[Љ]]	},
+		UI_TIMEMILK_SYM	= { EN = [[Ҩ]]	},
+		UI_ROBOT2_SYM	= { EN = [[An]]	},
 
 	---	Existing text overwritten ---
 
+		UI_EXOHAZ_RAD_NAME = {
+			EN = [[ENVIRONMENTAL SHIELD]],
+		},
+		UI_EXOHAZ_RAD_NAME_L = {
+			EN = [[Environmental Shield]],
+		},
+		UI_EXOHAZ_RAD_DESC = {
+			EN = [[This environmental neutralising protection is plugged directly into the pilot as they enter the cockpit. The system is powered via the main engine and requires no additional input. Some minor pain may be noticed around the insertion site.|N|Bolsters the pilot's resistence to <STELLAR>all environmental hazards<>.]],
+		},
 		INTRCT_EMPTY = {
 			EN = [[.]],
 		},
@@ -232,33 +260,35 @@ local text_lines = {
 			EN = [[Shell Igniter]],
 		},
 		UT_SHOT_DESC = {
-			EN = [[A combat upgrade for the <TECHNOLOGY>Scatter Blaster<>. This module installs series of delicately calibrated fuel-injection nozzles within the firing chamber, which are used to initiate a controlled burn within its shells, while still offering improved <STELLAR>reload times<>.||N||NCauses targets to <RED>burn<> for a short while, causing additional damage]],
+			EN = [[A combat upgrade for the <TECHNOLOGY>Scatter Blaster<>. This module installs series of delicately calibrated fuel-injection nozzles within the firing chamber, which are used to initiate a controlled burn within its shells, while still offering improved <STELLAR>reload times<>.|N||N|Causes targets to <RED>burn<> for a short while, causing additional damage]],
 		},
-		UI_LAUNCHSUB2_SYM	= { EN = [[H2]] },
-		UI_HEXITE_SYM		= { EN = [[Ӂ]] },
-		UI_SUNGOLD_SYM		= { EN = [[Ƣ]] },
-		UI_SOULFRAG_SYM		= { EN = [[§]] },
-		UI_WORMDUST_SYM		= { EN = [[∂]] },
+		UI_LAUNCHSUB2_SYM	= { EN = [[H2]]	},
+		UI_HEXITE_SYM		= { EN = [[Ӂ]]	},
+		UI_SUNGOLD_SYM		= { EN = [[ζ]]	},
+		UI_SOULFRAG_SYM		= { EN = [[§]]	},
+		UI_WORMDUST_SYM		= { EN = [[∂]]	},
 
-		NOTIFY_BINOCULARS				= { EN = ' ' },
-		NOTIFY_BOOST					= { EN = ' ' },
-		NOTIFY_SHIPBOOST				= { EN = ' ' },
-		NOTIFY_SHIPJUMP					= { EN = ' ' },
-		NOTIFY_SCANNER					= { EN = ' ' },
-		NOTIFY_JETPACK					= { EN = ' ' },
-		NOTIFY_NOJETPACK				= { EN = ' ' },
-		NOTIFY_SHIPJUMP_PC				= { EN = ' ' },
-		NOTIFY_TORCH					= { EN = ' ' },
-		NOTIFY_TAKEOFF					= { EN = ' ' },
-		UI_CREATURE_MOUNT_TITLE			= { EN = ' ' },
-		UI_CREATURE_MOUNT_MSG			= { EN = ' ' },
-		UI_NEXUS_SALVAGE_TITLE			= { EN = ' ' },
-		UI_NEXUS_TECHFRAG_TITLE			= { EN = ' ' },
-		UI_NOTIFY_EXOCRAFT_TIP_TITLE	= { EN = ' ' },
-		UI_NOTIFY_SHIP_TIP_TITLE		= { EN = ' ' },
-		UI_NOTIFY_SHIP_SUMMON			= { EN = ' ' },
-		UI_NOTIFY_TAKEOFF				= { EN = ' ' },
-		UI_NOTIFY_TIP_TITLE				= { EN = ' ' },
+		NOTIFY_BINOCULARS			= { EN = ' ' },
+		NOTIFY_BOOST				= { EN = ' ' },
+		NOTIFY_SHIPBOOST			= { EN = ' ' },
+		NOTIFY_SHIPJUMP				= { EN = ' ' },
+		NOTIFY_SCANNER				= { EN = ' ' },
+		NOTIFY_JETPACK				= { EN = ' ' },
+		NOTIFY_NOJETPACK			= { EN = ' ' },
+		NOTIFY_SHIPJUMP_PC			= { EN = ' ' },
+		NOTIFY_TORCH				= { EN = ' ' },
+		NOTIFY_TAKEOFF				= { EN = ' ' },
+		UI_CREATURE_MOUNT_TITLE		= { EN = ' ' },
+		UI_CREATURE_MOUNT_MSG		= { EN = ' ' },
+		UI_NEXUS_SALVAGE_TITLE		= { EN = ' ' },
+		UI_NEXUS_TECHFRAG_TITLE		= { EN = ' ' },
+		UI_NOTIFY_SHIP_SUMMON		= { EN = ' ' },
+		UI_NOTIFY_TAKEOFF			= { EN = ' ' },
+		UI_NOTIFY_LASER_SUB			= { EN = ' ' },
+		UI_NOTIFY_LASER_MSG3		= { EN = ' ' },
+		UI_NOTIFY_EXOCRAFT_TIP_TITLE= { EN = ' ' },
+		UI_NOTIFY_SHIP_TIP_TITLE	= { EN = ' ' },
+		UI_NOTIFY_TIP_TITLE			= { EN = ' ' },
 	}
 }
 
@@ -290,7 +320,7 @@ local function InsertCharEntities(s)
 		{'<',	'&lt;'},
 		{'>',	'&gt;'},
 		{'"',	'&quot;'},
-		{'||N',	'&#10;'}
+		{'|N|',	'&#xA;'}
 	}
 	for _,e in ipairs(entity) do
 		s = s:gsub(e[1], e[2])
@@ -299,18 +329,15 @@ local function InsertCharEntities(s)
 end
 
 -- return a complete TkLocalisationTable exml
--- if a locale text is missing, insert default locale text
 local function BuildLocaleText(lang_code)
-	local T = {META = {'name', 'Table'}}
+	local T = {meta = {'name', 'Table'}}
 	for id, text in pairs(text_lines.entries) do
+		-- if a locale text is missing, insert default locale text
 		local code = text[lang_code] and lang_code or text_lines.default
 		T[#T+1] = {
-			META	= {'value', 'TkLocalisationEntry.xml'},
+			meta	= {'value', 'TkLocalisationEntry.xml'},
 			Id		= id,
-			Lang	= {
-				META	= {languages[lang_code], 'VariableSizeString.xml'},
-				Value	= InsertCharEntities(text[code])
-			}
+			[languages[lang_code]] = InsertCharEntities(text[code])
 		}
 	end
 	return FileWrapping(T, 'TkLocalisationTable')
@@ -321,7 +348,7 @@ local function AddLanguageFiles()
 	-- collect all language codes from entries
 	for _,e in pairs(text_lines.entries) do
 		for k,_ in pairs(e) do
-			lang_codes[k] = 0
+			lang_codes[k] = true
 		end
 	end
 	local T = {}
@@ -341,7 +368,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= string.format('_LANG %s_Personal.pak', text_lines.locale),
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= AddLanguageFiles(),
 	-- MODIFICATIONS		= {{
@@ -352,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				-- {
 					-- PRECEDING_KEY_WORDS	= 'LocTableList',
 					-- ADD					= ToExml({
-						-- META	= {'value', 'NMSString0x20.xml'},
+						-- meta	= {'value', 'NMSString0x20.xml'},
 						-- Value	= text_lines.locale
 					-- })
 				-- }

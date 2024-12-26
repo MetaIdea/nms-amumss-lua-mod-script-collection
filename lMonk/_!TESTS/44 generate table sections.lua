@@ -69,7 +69,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '___TEST 44 generate table sections.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.7',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

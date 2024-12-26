@@ -62,7 +62,7 @@ local dropship = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship Restoration.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '5.11',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -403,9 +403,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						T[inx] = {
 							MBIN_FILE_SOURCE	= part.src,
 							EXML_CHANGE_TABLE	= {
-								SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
-								VALUE_CHANGE_TABLE 	= {
-									{'Value',		4}
+								{
+									SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
+									VALUE_CHANGE_TABLE 	= {
+										{'Value',		4}
+									}
 								}
 							}
 						}

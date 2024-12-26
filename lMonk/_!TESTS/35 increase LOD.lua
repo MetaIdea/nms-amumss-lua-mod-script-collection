@@ -7,7 +7,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 12 increase LOD.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.7',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS = 'LodDistances',
 				VALUE_CHANGE_TABLE 	= {
-					{'IGNORE',		2} -- 3
+					{'Ignore',		2} -- 3
 				}
 			},
 			{
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS = 'LodDistances',
 				VALUE_CHANGE_TABLE 	= {
-					{'IGNORE',		1.2} -- 1.6
+					{'Ignore',		1.2} -- 1.6
 				}
 			},
 			-- {

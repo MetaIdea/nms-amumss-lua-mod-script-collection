@@ -1,5 +1,6 @@
----------------------------------------------------------
+--------------------------------------------------------------
 local mod_desc = [[
+  - cpital: shrink & move top fins away from hangar
   - Infraknife blue projectile
   - Dark blue instead of purple stealth trail
   - Replace gold trail with time swirl (for squadrons)
@@ -9,17 +10,58 @@ local mod_desc = [[
   - Remove bioship slime
   - Remove cockpit eject handle glow
   - Remove grainy shader from ship's system map
-]]-------------------------------------------------------
+]]------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP various.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_BATCHNAME			= '_SHIPS ~@~collection.pak',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
+	{--	|capital top fins|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'S1_Fin1'},
+				VALUE_CHANGE_TABLE 	= {
+					{'TransX',		0},
+					{'TransY',		-180},
+					{'TransZ',		-150},
+					{'RotX', 		180},
+					{'RotY', 		180},
+					{'RotZ', 		0},
+					{'ScaleX', 		0.8},
+					{'ScaleY', 		0.8},
+					{'ScaleZ', 		0.8}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'S1_Fin2'},
+				VALUE_CHANGE_TABLE 	= {
+					{'TransZ',		-420},
+					{'ScaleX', 		0.62},
+					{'ScaleY', 		0.62},
+					{'ScaleZ', 		0.62}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'S1_Fin3'},
+				VALUE_CHANGE_TABLE 	= {
+					{'TransZ',		-570},
+					{'ScaleX', 		0.48},
+					{'ScaleY', 		0.48},
+					{'ScaleZ', 		0.48}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'scaffolding1'},
+				REMOVE				= 'Section'
+			}
+		}
+	},
 	{--	|infraknife blue shot|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/PROJECTILES/SHIP_MINIGUN/SHIPMINIGUNPROJECTILEGRADIENT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -86,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|clean system map|
+	{--	|clean ship system map|
 		MBIN_FILE_SOURCE	= 'MODELS/HUD/SPACEMAPHORIZON/HORZ_MAT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{

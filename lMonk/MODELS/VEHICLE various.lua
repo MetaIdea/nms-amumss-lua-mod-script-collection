@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 ---------------------------------------------------------------------------
 local mod_desc = [[
@@ -16,47 +16,12 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__MODEL vehicles various.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
-	{--	Add |turret spotlight| to vehicle
-		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/SHARED/MININGLASER.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'GunLight'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransX',		0.516},	-- 0.530418
-					{'TransY',		-2.024},-- -2.16751
-					{'TransZ',		1.244},	-- 1.25
-					{'ScaleX',		0.94},	-- 1
-					{'ScaleY',		0.94},	-- 1
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'MiningLaser'},
-				ADD_OPTION			= 'AddAfterSection',
-				ADD 				= AddNewLight({
-										name='turret_light',
-										tx=	0.25,	ty=	0.45,	tz=	0.4,
-										rx=	10.6,	ry=	180,
-										fov	= 62,	i = 104000,	c=  'FFF0F5FF',
-										f	= 'l',	fr= 1.0
-									})
-			}
-		}
-	},
-	{--	|no vehicle muzzle flare|
-		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/MUZZLE/VEHICLELASERMUZZLE.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Flare'},
-				REMOVE				= 'Section'
-			}
-		}
-	},
-	{--	|bike tweaks|
+	{--	|nomad tweaks|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/BIKE/BIKEPRES.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -96,6 +61,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
+	{--	|buggy no fog cone|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/BUGGY/BUGGYPRES.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS 	= {
+					{'Name', 'spotLight3'},
+					{'Name', 'spotLight4'}
+				},
+				REMOVE				= 'Section'
+			}
+		}
+	},
 	{--	|bike blue lights|
 		MBIN_FILE_SOURCE	= {
 			'MODELS/COMMON/VEHICLES/WHEELEDBIKE/WHEELEDBIKEPRES/LIGHTFADE_MAT.MATERIAL.MBIN',	-- green
@@ -129,7 +106,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/MECH_SUIT/MECH_SUIT/ENTITIES/MECH.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				PRECEDING_KEY_WORDS = 'GcCreatureFullBodyIKComponentData.xml',
+				SPECIAL_KEY_WORDS	= {'Template', 'TkPhysicsComponentData.xml'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Mass',		40},	-- 10
+					-- {'Gravity',		20},	-- 20
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Template', 'GcCreatureFullBodyIKComponentData.xml'},
 				VALUE_CHANGE_TABLE 	= {
 					{'MaxHeadYaw',		120},	-- 125
 					{'MaxFootAngle',	65},	-- 45
@@ -175,12 +159,82 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
-	-- {--	|remove wheeled bike fake light|
-		-- MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/WHEELEDBIKE/WHEELEDBIKEPRES/HQLIGHT_MAT1.MATERIAL.MBIN',
+	{--	Add |turret spotlight| to vehicle
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/SHARED/MININGLASER.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'GunLight'},
+				VALUE_CHANGE_TABLE 	= {
+					{'TransX',		0.516},	-- 0.530418
+					{'TransY',		-2.024},-- -2.16751
+					{'TransZ',		1.244},	-- 1.25
+					{'ScaleX',		0.94},	-- 1
+					{'ScaleY',		0.94},	-- 1
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'MiningLaser'},
+				ADD_OPTION			= 'AddAfterSection',
+				ADD 				= AddLightNodes({
+					name='turret_light',
+					tx=	0.25,	ty=	0.45,	tz=	0.4,
+					rx= 10.6,	ry=	180,
+					fov=62,		i = 100000,	c=	'FFF0F5FF',
+					f=	'l',	fr= 1.0
+				})
+			}
+		}
+	},
+	{--	|no vehicle muzzle flare|
+		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/MUZZLE/VEHICLELASERMUZZLE.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'Flare'},
+				REMOVE				= 'Section'
+			}
+		}
+	},
+	-- {--	copy buoyancy component
+		-- MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/FISHINGPLATFORM/ENTITIES/FISHINGPLATFORM.ENTITY.MBIN',
 		-- EXML_CHANGE_TABLE	= {
 			-- {
-				-- PRECEDING_KEY_WORDS	= 'Samplers',
-				-- REMOVE				= 'Section'
+				-- SPECIAL_KEY_WORDS	= {'Template', 'GcBuoyancyComponentData.xml'},
+				-- SECTION_UP			= 1,
+				-- SEC_SAVE_TO			= 'gc_buoyancy_component'
+			-- }
+		-- }
+	-- },
+	-- {--	nomad float
+		-- MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/BIKE/BIKE/ENTITIES/BIKE.ENTITY.MBIN',
+		-- EXML_CHANGE_TABLE	= {
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Template', 'TkPhysicsComponentData.xml'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'Mass',		30},	-- 10 500
+					-- {'Gravity',		5},		-- 20 0
+				-- }
+			-- },
+			-- {
+				-- SEC_EDIT 			= 'gc_buoyancy_component',
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'SetAnchorOnPrepare',			false},	-- True
+					-- {'TargetSurfaceHeightRough',	7.0},	-- 3.5
+					-- {'TargetSurfaceHeightCalm',		1.5},	-- 0.75
+					-- {'TargetHeightBufferFactor',	0.2},	-- 0.7
+					-- {'AirborneSpringTime',			0.75},	-- 0.75
+					-- {'UnderwaterSpringTime',		0.1},	-- 0.1
+					-- {'SelfRightingStrength',		0},		-- 200
+					-- {'MinimumForce',				800},	-- 400
+					-- {'MaximumForce',				3200},	-- 1500
+					-- {'UpwardRotationFactor',		0.5},	-- 0.1
+					-- {'WaveRotationFactor',			5},		-- 0
+					-- {'AnchorArrivalTime',			-1},	-- 5
+					-- {'MaximumAnchorForce',			-1},	-- 100
+				-- }
+			-- },
+			-- {
+				-- PRECEDING_KEY_WORDS	= 'Components',
+				-- SEC_ADD_NAMED		= 'gc_buoyancy_component'
 			-- }
 		-- }
 	-- },

@@ -1,5 +1,5 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME = [[Test used E:\MODZ_stuff\NoMansSky\AMUMss_Scripts\META.pak]],
+	MOD_FILENAME = [[Test used E:\MODZ_stuff\NoMansSky\AMUMss_Scripts\meta.pak]],
 	MOD_DESCRIPTION = [[Testing used mbins compilation without value changes]],
 	MODIFICATIONS = {
 		{

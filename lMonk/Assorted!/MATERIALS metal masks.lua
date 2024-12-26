@@ -1,15 +1,27 @@
 ---------------------------------------------------------------------------------
 local mod_desc = [[
-  add _F39_METALLIC_MASK flag
+  add masks flag _F39_METALLIC_MASK
 ]]-------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__metal masks.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
+	{
+		MBIN_FILE_SOURCE	= 'TEXTURES/COMMON/SPACECRAFT/SHUTTLE/SHARED/SHUTTLE.TEXTURE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'RUST'},
+				PRECEDING_KEY_WORDS = 'Textures',
+				VALUE_CHANGE_TABLE 	= {
+					{'Mask', 'TEXTURES/COMMON/SPACECRAFT/SHUTTLE/SHARED/SHUTTLE.RUST.MASKS.DDS'}
+				}
+			}
+		}
+	},
 	{
 		MBIN_FILE_SOURCE	= {
 			'MODELS/COMMON/ROBOTS/WALKER/METALDETAILS_ALPHA_MAT.MATERIAL.MBIN',

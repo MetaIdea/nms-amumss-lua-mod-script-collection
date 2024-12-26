@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 -----------------------------------------------------------------
 local mod_desc = [[
   use the mouse wheel for switching multitool tech & zoom stages
@@ -8,17 +8,17 @@ local mod_desc = [[
 
 local function AddBindings(action, button, axis)
 	return {
-		META	= {'value', 'GcInputBinding.xml'},
+		meta	= {'value', 'GcInputBinding.xml'},
 		Action	= {
-			META		= {'Action', 'GcInputActions.xml'},
+			meta		= {'Action', 'GcInputActions.xml'},
 			InputAction	= action
 		},
 		Button	= {
-			META		= {'Button', 'TkInputEnum.xml'},
+			meta		= {'Button', 'TkInputEnum.xml'},
 			InputButton	= button
 		},
 		Axis	= {
-			META		= {'Axis', 'TkInputAxisEnum.xml'},
+			meta		= {'Axis', 'TkInputAxisEnum.xml'},
 			InputAxis	= axis or 'Invalid'
 		}
 	}
@@ -27,7 +27,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META key binds.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

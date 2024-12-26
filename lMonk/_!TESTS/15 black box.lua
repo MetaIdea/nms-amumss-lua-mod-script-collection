@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 6 black box.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '4.7',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = 'Components',
 				ADD 				= ToExml({
 					{
-						META	= {'value', 'GcScannableComponentData.xml'},
+						meta	= {'value', 'GcScannableComponentData.xml'},
 						ScanName					= 'SIGNAL_DISTRESS',
 						ScanTime					= 30,
 						CompassRangeMultiplier		= 1,
@@ -22,14 +22,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						CanTagIcon					= true,
 						ClearTagOnArrival			= true,
 						{
-							META	= {'Icon', 'GcScannerIconTypes.xml'},
+							meta	= {'Icon', 'GcScannerIconTypes.xml'},
 							ScanIconType			= 'FreighterHeater',
 						},
 						ScannableType				= 'Binoculars',
 						MinDisplayDistanceOverride	= 10
 					},
 					{
-						META	= {'value', 'GcShootableComponentData.xml'},
+						meta	= {'value', 'GcShootableComponentData.xml'},
 						Health						= 2500,
 						ImpactShake					= true,
 						ImpactShakeEffect			= 'SHOOTABLESHAKE',
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						IgnoreHitPush				= true
 					},
 					{
-						META	= {'value', 'GcDestructableComponentData.xml'},
+						meta	= {'value', 'GcDestructableComponentData.xml'},
 						Explosion					= 'ROCKEXPLODE',
 						ExplosionScale				= 1,
 						VehicleDestroyEffect		= 'VEHICLECRASH',

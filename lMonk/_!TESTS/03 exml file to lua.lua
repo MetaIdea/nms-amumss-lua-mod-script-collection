@@ -1,31 +1,50 @@
 -----------------------------------------------------------------------------------------
-dofile('D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/LIB/lua_2_exml.lua')
-dofile('D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/LIB/exml_2_lua.lua')
+dofile('D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/LIB/_lua_2_exml.lua')
+dofile('D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/LIB/_exml_2_lua.lua')
 -----------------------------------------------------------------------------------------
 
-local src0 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/CATALOGUECRAFTING.EXML'
-local src1 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/SIMULATION/MISSIONS/SEASONALMISSIONTABLE.EXML'
-local src2 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT.SCENE.EXML'
-local src3 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/REWARDTABLE.EXML'
-local src4 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.EXML'
-local src5 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.EXML'
-local src6 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/SIMULATION/SOLARSYSTEM/WEATHER/SKYSETTINGS/SPACESKYCOLOURS.EXML'
-local src7 = 'D:/MODZ_stuff/NoMansSky/UNPACKED/MODELS/PLANETS/CREATURES/STRIDERRIG/STRIDER.DESCRIPTOR.EXML'
-local src8 = 'D:/MODZ_stuff/NoMansSky/_game_mod_Folder/utopia constructor/MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/BLUEPRINTANALYSER_WEAP/ENTITIES/DATA.ENTITY.EXML'
+local function ConvertMbin(mbin)
+	local function fileExists(path)
+		local f = io.open(path)
+		return f ~= nil and f:close()
+	end
+	if not fileExists(mbin:gsub('.MBIN$', '.EXML')) then
+		os.execute(string.format(
+			'D:/MODZ_stuff/NoMansSky/Tools/AMUMSS/MODBUILDER/MBINCompiler.latest.exe convert -y -q --input-format=MBIN %s',
+			mbin
+		))
+	end
+end
 
+local function GetFileName(mbin)
+	return mbin:match([[.+[/\](.-)%.MBIN$]])
+end
+
+local mbin = {
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN',							-- 1
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/SIMULATION/MISSIONS/SEASONALMISSIONTABLE.MBIN',							-- 2
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSF/SUBWINGSF_LEFT.SCENE.MBIN',	-- 3
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/REWARDTABLE.MBIN',										-- 4
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/GAMESTATE/PLAYERDATA/MODULARCUSTOMISATIONDATATABLE.MBIN',				-- 5
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',						-- 6
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/METADATA/SIMULATION/SOLARSYSTEM/VOXELGENERATORSETTINGS.MBIN',						-- 7
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.DESCRIPTOR.MBIN',				-- 8
+	'D:/MODZ_stuff/NoMansSky/UNPACKED/GCCAMERAGLOBALS.GLOBAL.MBIN',														-- 9
+}
 -----------------------------------------------------------------------------------------
-local tbl_08 = 'exml_source'
+local index	 = 6
 
-local r_src = io.open(src0, 'r')
-local w_src = io.open('d:/_dump/'..tbl_08..'.lua', 'w')
-w_src:write( PrintExmlAsLua( r_src:read('*a') ) )
+ConvertMbin(mbin[index])
+local r_src  = io.open(mbin[index]:gsub('.MBIN$', '.EXML'), 'r')
+local w_src  = io.open('d:/_dump/'..GetFileName(mbin[index])..'.lua', 'w')
+
+w_src:write( PrintExmlAsLua({exml=r_src:read('*a')}) )
 r_src:close()
 w_src:close()
 
-print('saved '..tbl_08..' LUA to _dump')
+print('saved '..GetFileName(mbin[index])..' LUA to _dump')
 ---------------------------------------------------------------------------------------
-dofile('d:/_dump/'..tbl_08..'.lua')
----@diagnostic disable-next-line: undefined-global
--- io.open('d:/_dump/'..tbl_08..'.EXML', 'w'):write(FileWrapping(exml_source))
+-- l2e = dofile('d:/_dump/'..GetFileName(mbin[index])..'.lua')
+-- io.open('d:/_dump/'..GetFileName(mbin[index])..'.EXML', 'w'):write(FileWrapping(l2e))
 
--- print('saved '..tbl_08..' EXML to _dump')
+-- print('saved '..GetFileName(mbin[index])..' EXML to _dump')

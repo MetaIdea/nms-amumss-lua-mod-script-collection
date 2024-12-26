@@ -1,9 +1,10 @@
 ---------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 ---------------------------------------------------
 local mod_desc = [[
   cockpitA re-center trails.
+  docking fix
   cockpitA move guns below body to match interior
   cockpitD guns placed on body (instead of joint)
   Decals placement tweaks.
@@ -13,38 +14,41 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP scientific.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
-	{--	| wingA_L add trail|
+	{--	|sci interior light|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_KEY_WORDS	= 'Children',
+				ADD					= AddLightNodes({name='Light08', i=7000, ty=-0.6, tz=1.5, c='FF98A6F2'})
+			}
+		}
+	},
+	{--	|wingA_L add trail|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_LEFT.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'WingALeft'},
 				PRECEDING_KEY_WORDS	= 'Children',
-				ADD					= ToExml( ScNode(
-					'Trail', 'LOCATOR',
-					{ScTransform({8.55, 0, -0.458, 0, 180})}
-				) )
+				ADD					= AddSceneNodes({name='Trail', ntype='LOCATOR', form={8.55, 0, -0.458, 0, 180}})
 			}
 		}
 	},
-	{--	| wingA_R add trail|
+	{--	|wingA_R add trail|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSA/WINGSA_RIGHT.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'WingALeft'},
 				PRECEDING_KEY_WORDS	= 'Children',
-				ADD					= ToExml( ScNode(
-					'Trail', 'LOCATOR',
-					{ScTransform({-8.55, 0, -0.4, 0, 180})}
-				) )
+				ADD					= AddSceneNodes({name='Trail', ntype='LOCATOR', form={-8.55, 0, -0.4, 0, 180}})
 			}
 		}
 	},
-	{--	|Scientific cockpitD re-align trails|
+	{--	|Scientific cockpitD re-alignments|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITD/COCKPITD.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -89,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|Scientific cockpitA re-center trails|
+	{--	|Scientific cockpitA alignments|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/COCKPITA.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -138,12 +142,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				-- REMOVE				= 'Section'
 			-- },
 			-- {
-				-- SPECIAL_KEY_WORDS	= {'Name', 'Cockpit_AData'},
-				-- PRECEDING_KEY_WORDS	= 'Children',
-				-- ADD					= ToExml( ScNode(
-					-- 'Trailm', 'LOCATOR',
-					-- {ScTransform({ty=3.3, tz=-5.4, ry=180})}
-				-- ) )
+			-- 	SPECIAL_KEY_WORDS	= {'Name', 'Cockpit_AData'},
+			-- 	PRECEDING_KEY_WORDS	= 'Children',
+			-- 	ADD					= AddSceneNodes({
+			-- 		name='Trailm', ntype='LOCATOR',
+			-- 		form={ty=3.3, tz=-5.4, ry=180} }
+			-- 	)
 			-- }
 		}
 	},

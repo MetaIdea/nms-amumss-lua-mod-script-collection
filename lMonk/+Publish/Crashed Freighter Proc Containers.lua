@@ -1,35 +1,35 @@
--------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+------------------------------------------------------------------------------------------
+local mod_desc = [[
+  procedurally placed containers in the crashed -and underwater-crashed freigther
+  replaces the underwater one with the land model
+]]----------------------------------------------------------------------------------------
+---	LUA 2 EXML (VERSION: 0.85.0) ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
----	Helper functions for color class, vector class and string arrays
----	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
+--- The complete tool can be found at: https://github.com/roie-r/exml_2_lua
 -------------------------------------------------------------------------------
-
---	replace a boolean with its text equivalent (ignore otherwise)
---	@param b: any value
-function bool(b)
-	return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
-end
-
---	get the count of ALL objects in a table (non-recursive)
---	@param t: any table
-function len2(t)
-	i=0; for _ in pairs(t) do i=i+1 end; return i
-end
-
 --	Generate an EXML-tagged text from a lua table representation of exml class
 --	@param class: a lua2exml formatted table
-function ToExml(class)
+local function ToExml(class)
+	--	replace a boolean with its text equivalent (ignore otherwise)
+	--	@param b: any value
+	function bool(b)
+		return (type(b) == 'boolean') and ((b == true) and 'True' or 'False') or b
+	end
+	--	get the count of ALL objects in a table (non-recursive)
+	--	@param t: any table
+	function len2(t)
+		i=0; for _ in pairs(t) do i=i+1 end; return i
+	end
 	local function exml_r(tlua)
 		local exml = {}
 		function exml:add(t)
 			for _,v in ipairs(t) do self[#self+1] = v end
 		end
 		for key, cls in pairs(tlua) do
-			if key ~= 'META' then
+			if key ~= 'meta' then
 				exml[#exml+1] = '<Property '
-				if type(cls) == 'table' and cls.META then
-					local att, val = cls['META'][1], cls['META'][2]
+				if type(cls) == 'table' and cls.meta then
+					local att, val = cls['meta'][1], cls['meta'][2]
 					-- add and recurs for an inner table
 					if att == 'name' or att == 'value' then
 						exml:add({att, '="', val, '">'})
@@ -56,59 +56,32 @@ function ToExml(class)
 	-- check the table level structure and meta placement
 	-- add the needed layer for the recursion and handle multiple tables
 	local klen = len2(class)
-	if klen == 1 and class[1].META then
+	if klen == 1 and class[1].meta then
 		return exml_r(class)
-	elseif class.META and klen > 1 then
+	elseif class.meta and klen > 1 then
 		return exml_r( {class} )
 	-- concatenate unrelated exml sections, instead of nested inside each other
 	elseif type(class[1]) == 'table' and klen > 1 then
 		local T = {}
 		for _, tb in pairs(class) do
-			T[#T+1] = exml_r((tb.META and klen > 1) and {tb} or tb)
+			T[#T+1] = exml_r((tb.meta and klen > 1) and {tb} or tb)
 		end
 		return table.concat(T)
 	end
 end
 
---	Build a TkSceneNodeData class
+--	Build a single -or list of TkSceneNodeData classes
 --	@param props: a keyed table for scene class properties.
 --	{
 --	  name	= scene node name (NameHash is calculated automatically)
---	  stype	= scene node type
+--	  ntype	= scene node type
 --	  form	= [optional] Transform data. a list of 9 ordered values or keyed values,
 --			  but NOT a combination of the two!
+--	  pxlud = [optional] PlatformExclusion
 --	  attr	= [optional] Attributes table of {name, value} pairs
 --	  child	= [optional] Children table for ScNode tables
 --	}
-function ScNode(props)
-	--	Builds a TkTransformData class
-	local function scTransform(T)
-		T = T or {}
-		return {
-			META	= {'Transform', 'TkTransformData.xml'},
-			TransX	= (T.tx or T[1]) or 0,
-			TransY	= (T.ty or T[2]) or 0,
-			TransZ	= (T.tz or T[3]) or 0,
-			RotX	= (T.rx or T[4]) or 0,
-			RotY	= (T.ry or T[5]) or 0,
-			RotZ	= (T.rz or T[6]) or 0,
-			ScaleX	= (T.sx or T[7]) or 1,
-			ScaleY	= (T.sy or T[8]) or 1,
-			ScaleZ	= (T.sz or T[9]) or 1
-		}
-	end
-	--	Builds a scene node attributes array
-	local function scAttributes(T)
-		local atr = {META = {'name', 'Attributes'}}
-		for _,at in ipairs(T) do
-			atr[#atr+1] = {
-				META	= {'value', 'TkSceneNodeAttributeData.xml'},
-				Name	= at[1],
-				Value	= at[2]
-			}
-		end
-		return atr
-	end
+function ScNode(nodes)
 	--	returns a jenkins hash from a string (by lyravega)
 	local function jenkinsHash(input)
 		local hash = 0
@@ -124,29 +97,65 @@ function ScNode(props)
 		hash = (hash + (hash << 15)) & 0xffffffff
 		return tostring(hash)
 	end
+	--	Build a TkSceneNodeData class
+	local function sceneNode(props)
+		local T	= {
+			meta	= {'value', 'TkSceneNodeData.xml'},
+			Name 				= props.name,
+			NameHash			= jenkinsHash(props.name),
+			Type				= props.ntype,
+			PlatformExclusion	= props.pxlud or nil
+		}
+		--	add TkTransformData class
+		props.form = props.form or {}
+		T.Form = {
+			meta	= {'Transform', 'TkTransformData.xml'},
+			TransX	= (props.form.tx or props.form[1]) or nil,
+			TransY	= (props.form.ty or props.form[2]) or nil,
+			TransZ	= (props.form.tz or props.form[3]) or nil,
+			RotX	= (props.form.rx or props.form[4]) or nil,
+			RotY	= (props.form.ry or props.form[5]) or nil,
+			RotZ	= (props.form.rz or props.form[6]) or nil,
+			ScaleX	= (props.form.sx or props.form[7]) or 1,
+			ScaleY	= (props.form.sy or props.form[8]) or 1,
+			ScaleZ	= (props.form.sz or props.form[9]) or 1
+		}
+		--	if present, add attributes list
+		if props.attr then
+			-- add accompanying attribute to scenegraph
+			if props.attr.SCENEGRAPH then
+				props.attr.EMBEDGEOMETRY = 'TRUE'
+			end
+			T.Attr = { meta = {'name', 'Attributes'} }
+			for nm, val in pairs(props.attr) do
+				T.Attr[#T.Attr+1] = {
+					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
+					Name	= nm,
+					Value	= val
+				}
+			end
+		end
+		if props.child then
+		--	add children list if found
+			local k,_ = next(props.child)
+			cnd = ScNode(props.child)
+			T.Child	= k == 1 and cnd or {cnd}
+			T.Child.meta = {'name', 'Children'}
+		end
+		return T
+	end
 	-----------------------------------------------------------------
-	local T	= {
-		META	= {'value', 'TkSceneNodeData.xml'},
-		Name 		= props.name,
-		NameHash	= jenkinsHash(props.name),
-		Type		= props.stype
-	}
-	T[#T+1]		= scTransform(props.form or {})
-	if props.attr then
-		T[#T+1] = scAttributes(props.attr)
+	local k,_ = next(nodes)
+	if k == 1 then
+	-- k=1 means the first of a list of unrelated, non-nested, nodes
+		local T = {}
+		for _,nd in ipairs(nodes) do
+				T[#T+1] = sceneNode(nd)
+		end
+		return T
 	end
-	if props.child then
-		local tc = { META = {'name', 'Children'} }
-		for _,pc in ipairs(props.child) do tc[#tc+1] = pc end
-		T[#T+1]	= tc
-	end
-	return T
+	return sceneNode(nodes)
 end
-------------------------------------------------------------------------------------------
-local mod_desc = [[
-  procedurally placed containers in the crashed -and underwater-crashed freigther
-  replaces the underwater one with the land model
-]]----------------------------------------------------------------------------------------
 
 local loot_containers = {
 	{
@@ -211,11 +220,9 @@ local function AddSceneNodes()
 		for i=1, #scn.form do
 			T[#T+1] = ScNode({
 				name	= scn.name..string.char(64 + i),
-				stype	= 'REFERENCE',
+				ntype	= 'REFERENCE',
 				form	= scn.form[i],
-				attr	= {
-					{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
-				}
+				attr	= {SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
 			})
 		end
 	end
@@ -226,13 +233,13 @@ local function AddDescriptors()
 	local T = {}
 	for _,scn in ipairs(loot_containers) do
 		local tmp = {
-			META		= {'value', 'TkResourceDescriptorList.xml'},
+			meta		= {'value', 'TkResourceDescriptorList.xml'},
 			TypeId		= scn.name:upper(),
-			Descriptors	= {META = {'name', 'Descriptors'}}
+			Descriptors	= {meta = {'name', 'Descriptors'}}
 		}
 		for i=1, #scn.form do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
-				META	= {'value', 'TkResourceDescriptorData.xml'},
+				meta	= {'value', 'TkResourceDescriptorData.xml'},
 				Id		= (scn.name..string.char(64 + i)):upper(),
 				Name	= scn.name..string.char(64 + i),
 				Chance	= 0
@@ -246,7 +253,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Procedural Containers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.65',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -280,27 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS 	= {
 					{'Name', 'HeightAdjust3'},
-					{'Name', 'HeightAdjust4'},
-					-- {'Name', 'REFSmokeVFX'},
-					-- {'Name', 'REFSmokeVFX1'},
-					-- {'Name', 'REFSmokeVFX2'},
-					-- {'Name', 'REFSmokeVFX3'},
-					-- {'Name', 'REFLargeCrashedFreighterCloudsVFX3'},
-					-- {'Name', 'REFLargeCrashedFreighterCloudsVFX4'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX5'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX6'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX7'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX8'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX9'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX1'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX2'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX3'},
-					-- {'Name', 'REFLargeCrashedFreighterSmokeVFX4'},
-					-- {'Name', 'REFCrashedFreighterCloudsVFX'},
-					-- {'Name', 'REFCrashedFreighterCloudsVFX1'},
-					-- {'Name', 'REFCrashedFreighterCloudsVFX2'},
-					-- {'Name', 'REFCrashedFreighterCloudsVFX4'},
+					{'Name', 'HeightAdjust4'}
 				},
 				REMOVE				= 'Section'
 			},

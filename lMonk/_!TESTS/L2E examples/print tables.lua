@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-dofile('C:/AMUMSS/ModScript/ModHelperScripts/LIB/exml_2_lua.lua')
+dofile('C:/AMUMSS/ModScript/ModHelperScripts/LIB/_exml_2_lua.lua')
 --------------------------------------------------------------------------------
 --[[
   PrintExmlAsLua function is a tool for printing the exml-2-lua data.
@@ -27,14 +27,14 @@ local exml_sections = [[<Property name="Requirements">
 local function GetTableFromFile(path)
 	local f = io.open(path, 'r')
 	if f then
-		local s = PrintExmlAsLua(f:read('*a'))
+		local s = PrintExmlAsLua({exml=f:read('*a'), indent='  '})
 		f:close()
 	end
 	return s
 end
 
 local function GetTableFromString(s)
-	return PrintExmlAsLua(s)
+	return PrintExmlAsLua({exml=s, com='"'})
 end
 
 local function WriteToFile(s, path)

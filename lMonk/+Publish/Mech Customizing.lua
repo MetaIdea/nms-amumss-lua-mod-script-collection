@@ -7,7 +7,7 @@ local mod_desc = [[
 ]]-------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
----	LUA 2 EXML (VERSION: 0.83.2) ... by lMonk
+---	LUA 2 EXML ... by lMonk
 ---	A tool for converting exml to an equivalent lua table and back again.
 ---	Helper functions for color class, vector class and string arrays
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
@@ -26,7 +26,7 @@ function ToExml(class)
 	function len2(t)
 		i=0; for _ in pairs(t) do i=i+1 end; return i
 	end
-
+	
 	local function exml_r(tlua)
 		local exml = {}
 		function exml:add(t)

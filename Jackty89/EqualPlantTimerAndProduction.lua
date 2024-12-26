@@ -268,7 +268,7 @@ for i = 1, #PlantList do
                 ["REPLACE_TYPE"] = "ALL",
                 ["VALUE_CHANGE_TABLE"] =
                 {
-                    {"Time", Time}, 
+                    {"Time", Time},
                 }
             },
             {

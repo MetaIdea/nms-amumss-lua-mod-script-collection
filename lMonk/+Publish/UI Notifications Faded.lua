@@ -1,13 +1,13 @@
------------------------------------------------------------------------------------
+----------------------------------------------------------------------------
 local mod_desc = [[
   removes the notification panel's background and icon and add transparency
-  to the text - fading the message into the background (makes it a bit harder to read)
-]]---------------------------------------------------------------------------------
+  blending the message into the background (makes it a bit harder to read)
+]]--------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.FADED Notifications.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.65',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -16,10 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				FOREACH_SKW_GROUP 	= {
-					{'ID', 'TITLEBACKGROUND'},
-					{'ID', 'BACKGROUND'},
-				},
+				SPECIAL_KEY_WORDS 	= {'ID', '.-BACKGROUND'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
@@ -32,7 +29,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				FOREACH_SKW_GROUP 	= {
+				SPECIAL_KEY_WORDS 	= {'ID', '.-LINE'},
+				VALUE_MATCH			= 1,
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'A',			0.2}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS 	= {
 					{'ID', 'TITLE'},
 					{'ID', 'BODY'}
 				},
@@ -41,18 +46,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'A',			0.64}
-				}
-			},
-			{
-				FOREACH_SKW_GROUP 	= {
-					{'ID', 'HEADERLINE'},
-					{'ID', 'BASELINE'}
-				},
-				REPLACE_TYPE 		= 'All',
-				VALUE_MATCH			= 1,
-				SECTION_UP			= 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'A',			0.3}
 				}
 			}
 		}

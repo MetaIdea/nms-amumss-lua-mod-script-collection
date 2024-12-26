@@ -2,46 +2,46 @@
 local mod_desc = [[
   Spaceship controls changes:
    * reduced thrust force
-   * more drifting: greatly reduced speed falloff and turning brake
+   * more drifting: reduced speed falloff and turning brake
    * hover speed
-   * greater turning angle
+   * greater 3rdP turning angle
    * no auto leveling
-  reduced terrain avoidance protection
-  easier landing - ignoring obstacles
-  dive underwater
-  no contrails
+  Reduced terrain avoidance protection
+  Easier landing - ignoring obstacles
+  Dive underwater
+  No contrails
 ]]-----------------------------------------------------------------
---						space					atmos					space combat			atmos combat
-local eng_props = {--	c   l   h   v			c   l   h   v			c   l   h   v			c   l   h   v
-	ThrustForce 	  =	{0.8,					0.7,					0.96,					0.96					},
-	MinSpeed 		  =	{0.01,					{0.02, 0.02, 0.02,0.1},	0.005,					0.001					},
-	MaxSpeed 		  =	{1.4,					1.4,					1.3,					1.3						},
-	Falloff 		  =	{0.3,					0.7,					0.4,					0.5						},
-	BoostThrustForce  =	{0.85,					{1.0, 0.6, 2.0, 0.6},	0.96,					{0.94, 0.94, 1.4, 1.4}	},
-	BoostMaxSpeed	  =	{{1.3, 1, 1.1, 1.3},	1.2,					{1.4, 1, 1.2, 1.4},		{1.2, 1.2, 1.8, 1.8}	},
-	BoostFalloff 	  =	{0.4,					0.75,					0.5,					0.8						},
-	DirectionBrakeMin =	{0.4,					{0.7, 0.8, 1.2, 1.2},	0.5,					0.75					},
-	DirectionBrake	  =	{0.6,					{0.8, 1, 1.1, 1.1},		0.75,					0.75					},
-	ReverseBrake 	  =	{1.1,					1.3,					1.1,					1.2						},
-	OverspeedBrake	  =	{0.6,					1.05,					0.7,					0.92					},
-	TurnStrength	  =	{{1, 1, 1, 1.3},		1,						{1, 1, 1, 1.2},			{1, 1, 1, 1.2}			},
-	LowSpeedTurnDamper=	{0.7,					{0.9, 6.0, 0.9, 0.88},	0.4,					1						},
-	TurnBrakeMin 	  =	{1,						{1, 1, 1.2, 1.5},		1,						1						}
+--						space					atmos						space combat			atmos combat
+local eng_props = {--	c   l   h   hv   v		c   l   h   hv   v			c   l   h   hv   v		c   l   h   hv   v
+	ThrustForce 	  =	{0.8,					0.7,						0.9,					0.9						},
+	MinSpeed 		  =	{0.01,					{0.02,0.02,0.02, 0.1,0.1},	0.005,					0.001					},
+	MaxSpeed 		  =	{1.4,					1.4,						1.3,					1.3						},
+	Falloff 		  =	{1.1,					0.9,						1.2,					1.1						},
+	BoostThrustForce  =	{0.85,					{1, 0.8, 3, 3, 0.75},		0.95,					{0.94,0.94, 1.5,1.5,1.5}},
+	BoostMaxSpeed	  =	{{1.3,1,1.1, 1.3, 1.3},	1.2,						{1.4,1,1.2, 1.5, 1.4},	{1.2,1.2, 1.8,1.8,1.8}	},
+	BoostFalloff 	  =	{1.1,					0.9,						1.2,					1.1						},
+	DirectionBrakeMin =	{0.2,					{0.7, 0.8, 0.9, 0.9, 0.9},	0.4,					0.75					},
+	DirectionBrake	  =	{0.5,					{0.8, 0.9, 1.1, 1.1, 1.1},	0.7,					0.8						},
+	ReverseBrake 	  =	{1.1,					1.3,						1.1,					1.2						},
+	OverspeedBrake	  =	{0.6,					0.95,						0.7,					0.9						},
+	TurnStrength	  =	{{1, 1, 1, 1.4, 1.5},	1,							{1, 1, 1, 1.1, 1.2},	{1, 1, 1, 1.1, 1.2}		},
+	LowSpeedTurnDamper=	{0.7,					{0.9, 6, 0.9, 0.8, 0.8},	0.4,					1						},
+	TurnBrakeMin 	  =	{1,						{1, 1, 1.2, 1.4, 1.5},		1,						1						}
 }
-local ECT = {}
-for i, ctrl in ipairs(	{'Control',		'ControlLight',	'ControlHeavy',	'ControlHover'}) do
-	for j, em in ipairs({'SpaceEngine',	'PlanetEngine',	'CombatEngine',	'AtmosCombatEngine'}) do
-		ECT[#ECT+1] = {
+local ex_ct = {}
+for i, ctrl in ipairs({'Control', 'ControlLight', 'ControlHeavy', 'ControlHeavyHover', 'ControlHover'}) do
+	for j, eng in ipairs({'SpaceEngine', 'PlanetEngine', 'CombatEngine', 'AtmosCombatEngine'}) do
+		ex_ct[#ex_ct+1] = {
 			MATH_OPERATION 		= '*',
 			SPECIAL_KEY_WORDS	= {
 				ctrl,	'GcPlayerSpaceshipControlData.xml',
-				em,		'GcPlayerSpaceshipEngineData.xml'
+				eng,	'GcPlayerSpaceshipEngineData.xml'
 			},
 			VALUE_CHANGE_TABLE 	= (
 				function()
 					local tm = {}
 					for prop, mod in pairs(eng_props) do
-						local mul = type(mod[i]) == 'table' and mod[i][j] or mod[i]
+						local mul = type(mod[j]) == 'table' and mod[j][i] or mod[j]
 						tm[#tm+1] = {prop , mul}
 					end
 					return tm
@@ -50,11 +50,13 @@ for i, ctrl in ipairs(	{'Control',		'ControlLight',	'ControlHeavy',	'ControlHove
 		}
 	end
 end
-ECT[#ECT+1] = {
+ex_ct[#ex_ct+1] = {
 	VALUE_CHANGE_TABLE 	= {
+		{'LandingMaxSpeed',						120		},	-- 80
 		{'LandingMargin',						2.2		},	-- 1.4
 		{'LandingObstacleMinHeight',			3.2		},	-- 2
-		{'LowAltitudeAnimationHeight',			3300	},	-- 1200 -- solar sail trigger
+		{'LandingTooManyLowPointsFraction',		0.6		},	-- 0.3
+		{'LowAltitudeAnimationHeight',			3100	},	-- 1200 -- solar sail trigger
 		{'LowAltitudeAnimationHysteresisTime',	2		},	-- 4
 		{'LowAltitudeAnimationTime',			3		},	-- 6
 		{'ApplyHeightForce',					false	},
@@ -64,7 +66,7 @@ ECT[#ECT+1] = {
 		{'MaxOverspeedBrake',					900		},	-- 1000
 		{'PulseDrivePlanetApproachHeight',		4000	},	-- 6000
 		{'_3rdPersonRollAngle',					78		},	-- 75		(270)
-		{'_3rdPersonRollAngleScience',			76		},	-- 62
+		{'_3rdPersonRollAngleScience',			72		},	-- 62
 		{'_3rdPersonRollAngleDropship',			64		},	-- 45
 		{'_3rdPersonRollAngleAlien',			54		},	-- 30
 		{'_3rdPersonFlashIntensity',			0.5		},	-- 0.9
@@ -78,7 +80,7 @@ ECT[#ECT+1] = {
 		{'HoverTakeoffHeight',					68		},	-- 90
 		{'HoverLandReachedDistance',			8		},	-- 10
 		{'LandingButtonMinTime',				0.3		},	-- 0.5
-		{'LandingPushNoseUpFactor',				-0.03	},	-- 0.15
+		{'LandingPushNoseUpFactor',				-0.05	},	-- 0.15
 		{'AutoLevelMinAngle',					360		}, 	-- 5
 		{'AutoLevelMaxAngle',					0		}, 	-- 110
 		{'ShieldRechargeMinHitTime',			20		},	-- 60		(1136)
@@ -86,6 +88,7 @@ ECT[#ECT+1] = {
 		{'MuzzleLightIntensity',				6		},	-- 9
 		{'HoverBrakeStrength',					2		}, 	-- 10
 		{'PlayerFreighterClearSpaceRadius',		2100	},	-- 3000
+		{'ThrustDecaySpring',					50		},	-- 20
 		{'MiniWarpLinesNum',					0		},	-- 4
 		{'MiniWarpLinesSpacing',				0		},	-- 3000
 		{'MiniWarpLinesOffset',					0		},	-- 1000
@@ -96,13 +99,14 @@ ECT[#ECT+1] = {
 		{'MiniWarpHUDArrowAttractAngleStation',	3		},	-- 5
 		{'MiniWarpHUDArrowAttractAngleDense',	3		},	-- 4
 		{'MiniWarpHUDArrowNumMarkersToBeDense',	3		},	-- 6
+		{'CombatBoostTurnDamp',					0.75	},	-- 0.9
 		{'DockingRotateSpeed',					0.7		},	-- 1
 		{'ShakeMaxPower',						0.9		},	-- 1.3
 		{'GroundHeightSmoothTime',				3		},	-- 0
 		{'MaxSpeedUpVelocity',					80		},	-- 100
 	}
 }
-ECT[#ECT+1] = {
+ex_ct[#ex_ct+1] = {
 --	class bonuses
 	REPLACE_TYPE 		= 'All',
 	MATH_OPERATION 		= '*',
@@ -114,13 +118,13 @@ ECT[#ECT+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC SPACESHIP.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
 	{
 		MBIN_FILE_SOURCE	= 'GCSPACESHIPGLOBALS.GLOBAL.MBIN',
-		EXML_CHANGE_TABLE	= ECT
+		EXML_CHANGE_TABLE	= ex_ct
 	}
 }}}}

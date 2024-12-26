@@ -1,27 +1,37 @@
 -----------------------------------------------------------
 local mod_desc = [[
+  - trading post landing pad fix
   - Remove multiplayer comms messenger
-  - large living crystal reward fix
+  - remove builder body lights
+  - change builder cloth texture
   - Increase scan discovery range for rare resources
-  - green cave crystal rewards cave2
-  - shorter freighter landing tractor range
-  - organic rock bio gunk reward
   - Activate planetary portal without cost
   - remove gunk from damaged machinery
   - Remove resource crates at portals
   - remove lowest level frigates lod
-  - Re-insert the missing full mangrove tree in swamp biome
-  - null (test) anim for other mods
+  - better cloud map
+  - null anim for other mods
 ]]---------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
+	{--	|trade post pad| fix
+		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/LANDINGPAD.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'EXIT'},
+				VALUE_CHANGE_TABLE	= {
+					{'TransY',		-0.4221}
+				}
+			}
+		}
+	},
 	{--	no |comms messenger body|
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/MESSENGER/MESSENGER.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -39,8 +49,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/MESSENGER/ENTITIES/MESSENGER.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				VALUE_MATCH			= '{%.xml$}',
-				VALUE_MATCH_OPTIONS = '~=',
+				PRECEDING_KEY_WORDS	= 'InteractionType',
+				REPLACE_TYPE 		= 'OnceInside',
 				VALUE_CHANGE_TABLE	= {
 					{'InteractionType',	'None'}
 				}
@@ -82,94 +92,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	},
-	{--	|large crystal shard| reward fix
-		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/SENTINELCRYSTALDRONE.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'ATTACHMENT'},
-				VALUE_CHANGE_TABLE	= {
-					{'Value', 'MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/SENTINELCRYSTAL/ENTITIES/DATA.ENTITY.MBIN'}
-				}
-			}
-		}
-	},
-	{--	|fainter resource| lights
-		MBIN_FILE_SOURCE	= {
-			'MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/COMMODITYPLANT.SCENE.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FUELPLANT.SCENE.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/TECHPLANT1.SCENE.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'INTENSITY'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value', 		8000}
-				}
-			}
-		}
-	},
-	{--	|rares scan range| increase
-		MBIN_FILE_SOURCE	= {
-			'MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/ROLLINGPLANT/ENTITIES/ROLLINGPROP.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/METALFORMATION/ENTITIES/METALFORMATION.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/INAIR/FLOATINGGASBAGS/ENTITIES/FLOATINGGASBAG.ENTITY.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				VALUE_CHANGE_TABLE 	= {
-					{'ScanRange',		1600},		-- 400
-					{'ScannableType',	'Scanner'},	-- Binoculars
-				}
-			}
-		}
-	},
-	{--	cave |green crystal cobalt| reward
-		MBIN_FILE_SOURCE	= {
-			'MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/LARGE/CRYSTAL_LARGE_CAVE/ENTITIES/CRYSTAL_LARGE_CAVE.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/MEDIUM/CRYSTAL_MEDIUM_CAVE/ENTITIES/CRYSTAL_MEDIUM_CAVE.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/CRYSTAL_SMALL_CAVE/ENTITIES/CYSTAL_SMALL_CAVE.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/CRYSTALS/SMALL/CRYSTAL_FRAGMENT_CAVE/ENTITIES/SHARDS_CAVE.ENTITY.MBIN',
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				VALUE_CHANGE_TABLE 	= {
-					{'GivesReward',	'PLANT_TECH'},
-					{'ScanName',	'UI_GREEN_CRYSTAL_NAME'}, -- UI_CAVE2_NAME_L
-					{'ScanIconType','CaveSubstance'}
-				}
-			}
-		}
-	},
-	{--	Barren biome |organic rock bio reward| instead of mordite
-		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CRYSTALS/GEMCRYSTALS/ENTITIES/GEMCRYSTAL.ENTITY.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				PRECEDING_KEY_WORDS	= 'GcSimpleInteractionComponentData.xml',
-				VALUE_CHANGE_TABLE 	= {
-					{'Id',			'R_BREAK_BIO'}
-				}
-			}
-		}
-	},
-	{--	|no maintenance| use portal without cost, undamaged machinery
-		MBIN_FILE_SOURCE	= {
-			'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN',
-			'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/PARTS/DEBRILARGECONTAINER/ENTITIES/TECHDEBRIS.ENTITY.MBIN'
-		},
-		EXML_CHANGE_TABLE	= {
-			{
-				PRECEDING_KEY_WORDS	= 'GcMaintenanceComponentData.xml',
-				REMOVE				= 'Section'
-			}
-		}
-	},
 	{--	|No crates at portal|
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'PortalStructure'},
-				PRECEDING_KEY_WORDS	= 'TkSceneNodeData.xml',
-				VALUE_MATCH			= '{^_Clump[1-6]}',
+				SPECIAL_KEY_WORDS	= {'Name', '^_Clump[1-6]'},
 				REMOVE				= 'Section'
 			}
 		}
@@ -218,43 +145,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	add descriptor full mangroves
-		MBIN_FILE_SOURCE	= {
-			{
-				'MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/MANGROVELARGE.DESCRIPTOR.MBIN',
-				'MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/MANGROVELARGEFULL.DESCRIPTOR.MBIN',
-				'REMOVE'
-			}
-		}
-	},
-	{--	add descriptor full mangroves
-		MBIN_FILE_SOURCE	=  'MODELS/PLANETS/BIOMES/SWAMP/LARGEPLANT/MANGROVELARGEFULL.DESCRIPTOR.MBIN',
+	{--	|better clouds|
+		MBIN_FILE_SOURCE	= 'MATERIALS/ATMOSPHERE.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
+				SPECIAL_KEY_WORDS	= {'Name', 'gCloudMap'},
 				VALUE_CHANGE_TABLE 	= {
-					{'TypeId',		'_MFULL_'}
-				}
-			},
-			{
-				PRECEDING_KEY_WORDS	= 'TkResourceDescriptorData.xml',
-				SECTION_ACTIVE		= -1,
-				VALUE_CHANGE_TABLE 	= {
-					{'Id',			'_MFULL_01LOD0'},
-					{'Name',		'_MFull_01LOD0'}
-				}
-			},
-			{
-				PRECEDING_KEY_WORDS	= 'TkResourceDescriptorData.xml',
-				SECTION_ACTIVE		= -2,
-				VALUE_CHANGE_TABLE 	= {
-					{'Id',			'_MFULL_02LOD0'},
-					{'Name',		'_MFull_02LOD0'}
+					{'Map', 'TEXTURES/SPACE/ATMOSPHERE/ATMOSPHERE03.DDS'}
 				}
 			}
 		}
 	},
 	{--	null anim for other mods
-		MBIN_FILE_SOURCE	= 'MODELS/TESTS/EFFECTTEST.ANIM.MBIN',
+		MBIN_FILE_SOURCE	= {
+			{
+				'MODELS/EFFECTS/ENGINES/SPEEDCOOL.ANIM.MBIN',
+				'MODELS/COMMON/SHARED/NULL.ANIM.MBIN',
+				'REMOVE'
+			}
+		}
+	},
+	{--	null anim for other mods
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SHARED/NULL.ANIM.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {

@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 -------------------------------------------------------------------------
 local mod_desc = [[
@@ -16,7 +16,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP sentinel.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 				ADD_OPTION			= 'AddAfterSection',
 				ADD 				= ToExml({
-					META	= {'value', 'TkSceneNodeAttributeData.xml'},
+					meta	= {'value', 'TkSceneNodeAttributeData.xml'},
 					Name	= 'ATTACHMENT',
 					Value	= 'MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN'
 				})
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LandingLight'},
-				REMOVE 	= 'Section'
+				REMOVE				= 'Section'
 			}
 		}
 	},
@@ -75,11 +75,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		EXML_CHANGE_TABLE	= {
 			{
-				PRECEDING_FIRST		= true,
-				PRECEDING_KEY_WORDS = 'TkAnimationComponentData.xml',
+				-- PRECEDING_FIRST		= true,
+				-- PRECEDING_KEY_WORDS = 'TkAnimationData.xml',
 				SPECIAL_KEY_WORDS	= {
-					{'Anim', 'LANDING'},
-					{'Anim', 'TAKEOFF'}
+					{'Template', 'TkAnimationComponentData.xml', 'Anim', 'LANDING'},
+					{'Template', 'TkAnimationComponentData.xml', 'Anim', 'TAKEOFF'}
 				},
 				VALUE_CHANGE_TABLE 	= {
 					{'Speed',		0.624}
@@ -115,13 +115,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'Name', 'SentinelCableL'},		-- thick cables
 					{'Name', 'SentinelCableR'},
 					{'Name', 'CableSpinnerL'},		-- thick cables spinning section
-					{'Name', 'CableSpinnerR'}
+					{'Name', 'CableSpinnerR'},
+					-- {'Name', 'Red2'},				-- canopy scroll, Red1 ?
 				},
 				REMOVE = 'Section'
 			},
+			-- {
+				-- SPECIAL_KEY_WORDS 	= {
+					-- {'Name', 'HatchFrameL', 'Name', 'MATERIAL'},
+					-- {'Name', 'HatchFrameR', 'Name', 'MATERIAL'},
+				-- },
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'Value', 'MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/GLASSTRIM_MAT2.MATERIAL.MBIN'}
+				-- }
+			-- },
 		}
 	},
-
 	{--	|sentinel side engine trails|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SENTINELSHIP/PARTS/ENFLAMESIDESANI.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -129,17 +138,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Name', 'RTbodyJNT'},
 				PRECEDING_KEY_WORDS	= 'Children',
 				CREATE_HOS			= true,
-				ADD					= ToExml(ScNode('TrailER', 'LOCATOR', {ScTransform({tx=-3.9336, ty=-0.51785, tz=-2.3462, ry=180})}))
+				ADD					= AddSceneNodes(
+					{ name='TrailER', ntype='LOCATOR', form={tx=-3.9336, ty=-0.51785, tz=-2.3462, ry=180} }
+				)
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LTbodyJNT'},
 				PRECEDING_KEY_WORDS	= 'Children',
 				CREATE_HOS			= true,
-				ADD					= ToExml(ScNode('TrailEL', 'LOCATOR', {ScTransform({tx=3.9336, ty=0.51785, tz=2.3462, ry=180})}))
+				ADD					= AddSceneNodes(
+					{ name='TrailEL', ntype='LOCATOR', form={tx=3.9336, ty=0.51785, tz=2.3462, ry=180} }
+				)
 			}
 		}
 	},
-
 	{--	|sentinel blue lights| instead of red
 		MBIN_FILE_SOURCE	= {
 			'MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELCOCKPIT/LIGHTSCROLLBMAT.MATERIAL.MBIN',

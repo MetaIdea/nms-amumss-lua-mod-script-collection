@@ -1,12 +1,12 @@
 ----------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/table_entry.lua')
 ----------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_TEST L2E add new products.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Table',
-				ADD					= ToExml({
-					ProductEntry({
+				ADD					= ToExml(ProductEntry({
+					{
 						id				= 'ULTRAPRODX40',
 						name			= 'PRODX40_NAME',
 						namelower		= 'PRODX40_NAME_L',
@@ -34,8 +34,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						stackmultiplier	= 16,
 						icon			= 'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.CAPTUREDNANODE.DDS'
-					}),
-					ProductEntry({
+					},
+					{
 						id				= 'SUPERFOOD',
 						name			= 'SUPERFOOD_NAME',
 						namelower		= 'SUPERFOOD_NAME_L',
@@ -55,8 +55,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						stackmultiplier	= 20,
 						icon			= 'TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.GLOWPELLET.DDS'
-					})
-				})
+					}
+				}))
 			}
 		}
 	}

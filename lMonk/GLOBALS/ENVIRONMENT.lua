@@ -8,7 +8,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC ENVIRONMENT.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -16,6 +16,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		MBIN_FILE_SOURCE	= 'GCENVIRONMENTGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
+			-- {
+				-- MATH_OPERATION 		= '*',
+				-- SPECIAL_KEY_WORDS	= {'Name', '.-WIND'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'OverallWindStrength', 0.4},	-- 0.5 1
+					-- {'LdsWindStrength',		0.4},	-- 0.2 0.3
+					-- {'LdsWindSpeed',		0.4}	-- 1.5 2.5
+				-- }
+			-- },
 			{
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= {'Ultra', 'LODAdjust'},
@@ -31,43 +40,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '+',
 				PRECEDING_KEY_WORDS	= {'Ultra', 'RegionLODRadius'},
 				VALUE_CHANGE_TABLE 	= {
-					{'Ignore',		0},
-					{'Ignore',		2},
-					{'Ignore',		3},
-					{'Ignore',		4},
-					{'Ignore',		5},
-					{'Ignore',		6}
+					{'Ignore',		0},	-- 7
+					{'Ignore',		2},	-- 10
+					{'Ignore',		2},	-- 16
+					{'Ignore',		2},	-- 12
+					{'Ignore',		2},	-- 10
+					{'Ignore',		2}	-- 10
 				}
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'Ultra',
 				VALUE_CHANGE_TABLE = {
-					{'ImposterResolutionMultiplier', 8}
+					-- {'NumberOfImposterViews',		16},	-- 8
+					{'ImposterResolutionMultiplier',4}		-- 1
 				}
 			},
 			{
 				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '*',
 				VALUE_CHANGE_TABLE = {
-					{'PlanetObjectSwitch',        3},
-					{'PlanetLodSwitch0',          3},
-					{'PlanetLodSwitch0Elevation', 3},
-					{'PlanetLodSwitch1',          3},
-					{'PlanetLodSwitch2',          3},
-					{'PlanetLodSwitch3',          3},
+					{'PlanetObjectSwitch',        2},
+					{'PlanetLodSwitch0',          2},
+					{'PlanetLodSwitch0Elevation', 2},
+					{'PlanetLodSwitch1',          2},
+					{'PlanetLodSwitch2',          2},
+					{'PlanetLodSwitch3',          2},
 				}
 			},
 			{
 				VALUE_CHANGE_TABLE 	= {
-					{'TerrainFadeTime',						1},		-- 2
-					{'TerrainFadeTimeInShip',				1},		-- 2
-					{'CreatureFadeTime',					0.7},	-- 1.5
-					{'FloraFadeTimeMin',					0.8},	-- 0.6
-					{'FloraFadeTimeMax',					1.6},	-- 2.25
-					{'AnimationScale',						30},	-- 50 (clouds speed)
+					{'WaterChangeTime',						160	}, -- 90
+					{'WaterConditionTransitionTime',		22	}, -- 12
+					{'TerrainFadeTime',						1	},	-- 2
+					{'TerrainFadeTimeInShip',				1	},	-- 2
+					{'CreatureFadeTime',					0.7	},	-- 1.5
+					{'FloraFadeTimeMin',					0.8	},	-- 0.6
+					{'FloraFadeTimeMax',					1.6	},	-- 2.25
+					{'AnimationScale',						30	},	-- 50 (clouds speed)
 					{'IndoorsLightingPlanetMax',			0.98},	-- 0.42
-					{'IndoorsLightingAbandonedFreighterMax',5},		-- 1
-					{'IndoorsLightingFreighterMax',			10},	-- 1
+					{'IndoorsLightingAbandonedFreighterMax',4.8	},	-- 1
+					{'IndoorsLightingFreighterMax',			1.4	},	-- 1
 				}
 			},
 			{

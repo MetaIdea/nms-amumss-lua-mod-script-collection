@@ -1,14 +1,15 @@
 -----------------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 -----------------------------------------------------------------------------------
 local mod_desc = [[
   - Shorter overhead tail fin _Acc_A (clips with engines B & D)
   - Narrower _SubWings_D, so it doesn't clip the ground
   - Relocate bobble in cockpit so it doesn't obstruct the map
-  - Reduce ship body outer spotlight intensity, remove foggy light cone
+  - Reduce ship body outer lights, remove volumetric cone
   - Blue-white little glowlights (instead of green)
   - Add trails to wingF turbines
+  - Cockpit_F front fin color fix
   - Increase LOD for the various ship parts
   - metal (3rd palette color) instead of 2nd color for wings & engine parts.
    * Only if the metal texture is active (determined by seed).
@@ -62,7 +63,7 @@ local fighter = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP fighter.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -89,9 +90,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'Turbine'},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD					= ToExml({
-					ScNode('TrailFL', 'LOCATOR', {ScTransform({4.85, 1.19, -1.1})}),
-					ScNode('TrailFR', 'LOCATOR', {ScTransform({-4.85, 1.19, -1.1})})
+				ADD					= AddSceneNodes({
+					{ name='TrailFL', ntype='LOCATOR', form={4.85,  1.19, -1.1} },
+					{ name='TrailFR', ntype='LOCATOR', form={-4.85, 1.19, -1.1} }
 				})
 			}
 		}
@@ -217,7 +218,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|fighter cockpit_F fixs|
+	{--	|cockpit_F fixs|
 		MBIN_FILE_SOURCE	= fighter.cockpit_f.src,
 		EXML_CHANGE_TABLE	= {
 			{
@@ -254,14 +255,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'TransZ',		1.88},	-- 1.963748
 				}
 			},
-			-- {
-				-- REPLACE_TYPE 		= 'All',
-				-- SPECIAL_KEY_WORDS	= {'Type', 'LIGHT'},
-				-- REMOVE				= 'Section'
-			-- }
+			{
+				SPECIAL_KEY_WORDS 	= {'Name', 'SUB2BodyLOD[0-3]', 'Name', 'MATERIAL'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Value', 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_F/COCKPTF/PRIMARY6.MATERIAL.MBIN'}
+				}
+			}
 		}
 	},
-	{--	|no foggy headlights| cone from cockpits
+	{--	|cockpits no volumetric cone|
 		MBIN_FILE_SOURCE	= {
 			fighter.cockpit_b.src,
 			fighter.cockpit_e.src,
@@ -291,7 +293,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|Reduce ship spotlight intensity|, remove foggy light cone
+	{--	|Reduce ship lights|, remove volumetric cone
 		MBIN_FILE_SOURCE	= fighter.lamp.src,
 		EXML_CHANGE_TABLE	= {
 			{
@@ -312,36 +314,31 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	{--	|fighter long wingB short NoseC|
-		MBIN_FILE_SOURCE	= fighter.ship.src,
-		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_ANose_C'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ScaleZ',		0.94},	-- 1
-					{'TransZ',		0.12}	-- 0
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Wings_B'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ScaleZ',		1.1},	-- 1.09
-					{'TransZ',		0.2}	-- 0.18
-				}
-			}
-		}
-	},
-	{--	|fighter lower tail fin|
+	{--	|fighter ship fixes|
 		MBIN_FILE_SOURCE	= fighter.ship.src,
 		EXML_CHANGE_TABLE	= (
 			function()
-				T = {
+				local T = {
 					{
 						SKW					= {},
 						VALUE_CHANGE_TABLE 	= {
 							{'ScaleX',		0.88},
 							{'ScaleY',		0.68},
 							{'ScaleZ',		1.08}
+						}
+					},
+					{--	|fighter long wingB short NoseC|
+						SPECIAL_KEY_WORDS	= {'Name', '_ANose_C'},
+						VALUE_CHANGE_TABLE 	= {
+							{'ScaleZ',		0.94},	-- 1
+							{'TransZ',		0.12}	-- 0
+						}
+					},
+					{
+						SPECIAL_KEY_WORDS	= {'Name', '_Wings_B'},
+						VALUE_CHANGE_TABLE 	= {
+							{'ScaleZ',		1.1},	-- 1.09
+							{'TransZ',		0.2}	-- 0.18
 						}
 					}
 				}
@@ -354,10 +351,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{--	|METAL instead 2nd paint|
 		MBIN_FILE_SOURCE	= {
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_B/COCKPITB/TERTIARY.MATERIAL.MBIN',
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_E/COCKPIT_E/TERTIARY.MATERIAL.MBIN',
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEA/COCKPITANOSEA/TERTIARY.MATERIAL.MBIN',
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEC/COCKPITANOSEC/TERTIARY2.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/ACCESSORIES/ACCA/SUBWINGSC_TERTIARY.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/ENGINE/ENGINE_B/ENGINEB/TERTIARY1.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/ENGINE/ENGINE_C/ENGINEC/TERTIARY.MATERIAL.MBIN',
@@ -386,8 +379,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{--	|primary paint instead of 2nd|
 		MBIN_FILE_SOURCE	= {
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEC/COCKPITANOSEC/TERTIARY.MATERIAL.MBIN',
-			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_F/COCKPTF/TERTIARY1.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_D/SUBWINGSDLEFT/TERTIARY.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/SUBWINGS/SUBWINGS_D/SUBWINGSDRIGHT/TERTIARY.MATERIAL.MBIN',
 			'MODELS/COMMON/SPACECRAFT/FIGHTERS/WINGS/WINGS_K/WINGSK/SUBWINGSCRIGHT_TERTIARY2.MATERIAL.MBIN',
@@ -490,7 +481,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 							ADD_OPTION			= 'AddAfterSection',
 							ADD 				= ToExml({
-								META	= {'value', 'TkSceneNodeAttributeData.xml'},
+								meta	= {'value', 'TkSceneNodeAttributeData.xml'},
 								Name	= 'ATTACHMENT',
 								Value	= 'MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN'
 							})

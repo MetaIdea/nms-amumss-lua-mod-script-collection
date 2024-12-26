@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 ----------------------------------------------------------------------------------
 local mod_desc = [[
-  Fixes fighter's wingsK missing LOD sections and increases it to to 5 LOD stages
+  Fixes fighter's wingsK missing LOD sections and increases it to to 4 LOD stages
   Fixes the "unusual" decals descriptor choices so all decals show together
 ]]--------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP fighter wingK fixes.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -19,19 +19,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= (
 			function()
 				local attr = {
-					BATCHSTARTPHYSI	= {37668,			41736,			53247},
-					VERTRSTARTPHYSI	= {21866,			24590,			31380},
-					VERTRENDPHYSICS	= {24589,			29311,			33122},
-					BATCHCOUNT		= {4068,			7890,			2856},
-					VERTRENDGRAPHIC	= {2723,			4721,			1742},
-					BOUNDHULLST		= {212,				248,			328},
-					BOUNDHULLED		= {248,				292,			352},
-					AABBMINX		= {-2.891207,		-3.749691,		-3.733948},
-					AABBMINY		= {0.836564,		nil,			0.712383},
-					AABBMINZ		= {-1.380045,		-2.157869,		-2.149216},
-					AABBMAXX		= {nil,				3.749691,		3.733998},
-					AABBMAXY		= {1.77087,			nil,			1.885870},
-					AABBMAXZ		= {0.631633,		1.163431,		0.729330},
+					BATCHSTARTPHYSI	= {37668,		41736,			53247		},
+					VERTRSTARTPHYSI	= {21866,		24590,			31380		},
+					VERTRENDPHYSICS	= {24589,		29311,			33122		},
+					BATCHCOUNT		= {4068,		7890,			2856		},
+					VERTRENDGRAPHIC	= {2723,		4721,			1742		},
+					BOUNDHULLST		= {212,			248,			328			},
+					BOUNDHULLED		= {248,			292,			352			},
+					AABBMINX		= {-2.891207,	-3.749691,		-3.733948	},
+					AABBMINY		= {0.836564,	nil,			0.712383	},
+					AABBMINZ		= {-1.380045,	-2.157869,		-2.149216	},
+					AABBMAXX		= {nil,			3.749691,		3.733998	},
+					AABBMAXY		= {1.77087,		nil,			1.885870	},
+					AABBMAXZ		= {0.631633,	1.163431,		0.729330	},
 					MESHLINK		= {'WingsK_ALODShape1', 'WingsK_ALODShape1', 'WingsK_ALODShape1'}
 				}
 				local T = {}
@@ -46,8 +46,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						end
 					end
 					T[#T+1] = {
-						SPECIAL_KEY_WORDS	= {'Name', (lod..'0')},
-						VALUE_CHANGE_TABLE 	= { {'Name', (lod..'1')} }
+						SPECIAL_KEY_WORDS	= {'Name', lod..'0'},
+						VALUE_MATCH			= lod..'0',
+						VALUE_CHANGE_TABLE 	= { {'Name', lod..'1'} }
 					}
 				end
 				T[#T+1] = {
@@ -66,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 					ADD_OPTION			= 'AddAfterSection',
 					ADD 				= ToExml({
-						META	= {'value', 'TkSceneNodeAttributeData.xml'},
+						meta	= {'value', 'TkSceneNodeAttributeData.xml'},
 						Name	= 'ATTACHMENT',
 						Value	= 'MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN'
 					})
@@ -92,20 +93,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				ADD				 	= (
 					function()
 						local T = {}
-						for _,rsc in pairs({
-							{id='_RECTANGLELEFT',	name='_RectangleRight_ALOD1'},
-							{id='_LOGOLEFT_',		name='_logoRight_ALOD1'},
-							{id='_LETTERLEFT_',		name='_LetterRight_ALOD1'}
+						for id, name in pairs({
+							_RECTANGLELEFT	= '_RectangleRight_ALOD1',
+							_LOGOLEFT_		= '_logoRight_ALOD1',
+							_LETTERLEFT_	= '_LetterRight_ALOD1',
 						}) do
 							T[#T+1] = {
-								META		= {'value', 'TkResourceDescriptorList.xml'},
-								TypeId		= rsc.id,
+								meta		= {'value', 'TkResourceDescriptorList.xml'},
+								TypeId		= id,
 								Descriptors = {
-									META		= {'name', 'Descriptors'},
+									meta		= {'name', 'Descriptors'},
 									Resource	= {
-										META	= {'value', 'TkResourceDescriptorData.xml'},
-										Id		= rsc.name:upper(),
-										Name	= rsc.name
+										meta	= {'value', 'TkResourceDescriptorData.xml'},
+										Id		= name:upper(),
+										Name	= name
 									}
 								}
 							}

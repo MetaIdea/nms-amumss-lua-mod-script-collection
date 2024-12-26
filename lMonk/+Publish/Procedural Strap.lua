@@ -2,10 +2,11 @@
 local mod_desc = [[
   Adds procedural colors for the sentinel multitool and staff strap
   Adds procedural colors for the multitool glow parts
+
+  * ADD_FILES will skipped SILENTLY if new files are not found!
 ]]------------------------------------------------------------------
 
-local proc_texture = [[<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkProceduralTextureList">
+local proc_texture = [[<Data template="TkProceduralTextureList">
   <Property name="Layers">
 	<Property value="TkProceduralTextureLayer.xml">
 	  <Property name="Name" value="%s"/>
@@ -34,7 +35,7 @@ local proc_texture = [[<?xml version="1.0" encoding="utf-8"?>
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Procedural Strapping.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES			= {
 		-- {
@@ -67,9 +68,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				'TEXTURES/COMMON/WEAPONS/MULTITOOL/MULTITOOLGLOW.BASE.DDS'
 			)
 		},
-		{
-			EXTERNAL_FILE_SOURCE= 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Weapon/MULTITOOLGLOW.BASE.DDS',
-			FILE_DESTINATION	= 'TEXTURES/COMMON/WEAPONS/MULTITOOL/MULTITOOLGLOW.BASE.DDS'
-		}
+		(
+			function()
+				local tex_path = 'D:/MODZ_stuff/NoMansSky/Sources/_Textures/Weapon/MULTITOOLGLOW.BASE.DDS'
+				if lfs.attributes(tex_path) then
+					return {
+						EXTERNAL_FILE_SOURCE = tex_path,
+						FILE_DESTINATION	 = 'TEXTURES/COMMON/WEAPONS/MULTITOOL/MULTITOOLGLOW.BASE.DDS'
+					}
+				end
+				return nil
+			end
+		)()
 	}
 }

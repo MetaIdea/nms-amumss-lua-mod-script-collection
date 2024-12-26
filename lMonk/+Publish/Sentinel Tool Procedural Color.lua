@@ -1,17 +1,16 @@
 -----------------------------------------------------
-mod_desc = [[
+local mod_desc = [[
   Adds procedural colors for the sentinel multitools
 ]]---------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Sentinel Tool Procedural Color.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.34',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-	--	|sentinel tool proc| colors
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL/ORANGEMETALMAT.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -38,8 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	ADD_FILES	= {
 		{
 			FILE_DESTINATION = 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/PLASTICGRAIN.TEXTURE.EXML',
-			FILE_CONTENT	 = [[<?xml version="1.0" encoding="utf-8"?>
-				<Data template="TkProceduralTextureList">
+			FILE_CONTENT	 = [[<Data template="TkProceduralTextureList">
 					<Property name="Layers">
 						<Property value="TkProceduralTextureLayer.xml">
 							<Property name="Name" value="BASE"/>
@@ -62,8 +60,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						<Property value="TkProceduralTextureLayer.xml"/>
 						<Property value="TkProceduralTextureLayer.xml"/>
 						<Property value="TkProceduralTextureLayer.xml"/>
-					</Property>	
+					</Property>
 				</Data>]]
-		},
+		}
 	}
 }

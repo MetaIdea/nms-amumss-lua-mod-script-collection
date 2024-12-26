@@ -1,5 +1,5 @@
 ------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 ------------------------------------
 
@@ -25,11 +25,13 @@ local ECT = {}
 ECT[#ECT+1] = {
 	PRECEDING_KEY_WORDS = 'Children',
 	ADD					= ToExml({
-		ScNode('RefAdd1More01', 'REFERENCE', {
-			ScTransform({tx=1.0, ty=1.0, tz=1.0, rx=0, ry=0, rz=0, sx=1.0, sy=1.0, sz=1.0}),
-			ScAttributes({
+		ScNode({
+			name	= 'RefAdd1More01',
+			ntype	= 'REFERENCE',
+			form	= {tx=1.0, ty=1.0, tz=1.0, rx=0, ry=0, rz=0, sx=1.0, sy=1.0, sz=1.0},
+			attr	= {
 				{'SCENEGRAPH', 'MODELS/SPACE/NEXUS/PARTS/PROPS/HOVERTROLLEY.SCENE.MBIN'}
-			})
+			}
 		}),
 
 	})
@@ -38,7 +40,7 @@ ECT[#ECT+1] = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '___TEST 01 add to scene.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '4.7',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {

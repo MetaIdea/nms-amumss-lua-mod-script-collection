@@ -1,20 +1,18 @@
 ----------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/table_entry.lua')
 ----------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_TEST L2E add new basepart.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				-- SPECIAL_KEY_WORDS	= {'ID', 'U_PARAGON'},
-				-- ADD_OPTION			= 'AddAfterSection',
 				PRECEDING_KEY_WORDS	= 'Objects',
 				ADD					= ToExml(BaseBuildObjectEntry({
 					id				= 'BUILDLIGHT9',

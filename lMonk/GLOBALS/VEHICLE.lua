@@ -8,7 +8,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC VEHICLE.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -18,33 +18,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
-					{'MechJetpackTurnSpeed',				1.8},	-- 3
-					{'MechLandBrake',						5},		-- 4
-					{'MechJetpackStrafeStrength',			1.8},	-- 0.5
-					{'MechJetpackLandTime',					0.4},	-- 0.6
-					{'MechJetpackForce',					78},	-- 70
-					{'MechJetpackMaxSpeed',					42},	-- 20
-					{'MechJetpackMaxUpSpeed',				28},	-- 20
-					{'MechJetpackFallForce',				58},	-- 80
-					{'MechArmPitchAngleMin',				-45},	-- -30
-					{'MechArmPitchAngleMax',				75},	-- 60
-					{'MechPlayerGroundTurnSpeed',			0.7},	-- 0.5
-					{'ExitStopTime',						2},		-- 0.5
-					{'ExitStopForce',						10},	-- 50
-					{'SubmarineEjectRadius',				0},		-- 1.8 		549 stand on top
-					{'SubmarineEjectDownOffset',			1},		-- -2
-					{'MiningLaserRadius', 					0.8},	-- 1.3
+					{'MechJetpackTurnSpeed',				1.8	},	-- 3
+					{'MechLandBrake',						5	},	-- 4
+					{'MechJetpackStrafeStrength',			1.8	},	-- 0.5
+					{'MechJetpackLandTime',					0.4	},	-- 0.6
+					{'MechJetpackForce',					78	},	-- 70
+					{'MechJetpackMaxSpeed',					42	},	-- 20
+					{'MechJetpackMaxUpSpeed',				28	},	-- 20
+					{'MechJetpackFallForce',				58	},	-- 80
+					{'MechArmPitchAngleMin',				-45	},	-- -30
+					{'MechArmPitchAngleMax',				75	},	-- 60
+					{'MechPlayerGroundTurnSpeed',			0.7	},	-- 0.5
+					{'ExitStopTime',						2	},	-- 0.5
+					{'ExitStopForce',						10	},	-- 50
+					{'SubmarineEjectRadius',				0	},	-- 1.8 		549 stand on top
+					{'SubmarineEjectDownOffset',			1	},	-- -2
+					{'MiningLaserRadius', 					0.8	},	-- 1.3
 					{'VehicleMaxSummonDistance',			2000},	-- 50
 					{'VehicleMaxSummonDistanceUnderwater',	2000},	-- 50
-					{'SpawnRotation',						-30},	-- 10
-					{'MechSpawnRotation',					150},	-- 190
+					{'SpawnRotation',						-30	},	-- 10
+					{'MechSpawnRotation',					150	},	-- 190
 				}
 			},
 			{
 				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '*',
 				VALUE_CHANGE_TABLE 	= {
-					{'VehicleBoostMaxSpeed', 		1.24},
+					{'VehicleBoostMaxSpeed', 		2.1},
 					{'VehicleBoostTime', 			1.6},
 					{'VehicleBoostRechargeTime', 	0.8}
 				}
@@ -52,6 +52,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'BIKE'},
 				VALUE_CHANGE_TABLE 	= {
+					-- {'DriveOnTopOfWater',			false},
+					{'TopSpeedForward', 			19},	-- 18
 					{'VehicleGravity',				18},	-- 17.5
 					{'VehicleGravityWater',			15.5},	-- 17.5
 					{'VehicleJumpAirControlForce', 	140},	-- 100

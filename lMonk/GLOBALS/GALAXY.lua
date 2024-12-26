@@ -1,5 +1,5 @@
 ------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 ------------------------------------------------------
 local mod_desc = [[
   Change solar system to faster moving & more varied
@@ -9,7 +9,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC GALAXY.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -25,42 +25,42 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				PRECEDING_KEY_WORDS = {'SolarSystemParameters', 'PlanetParameters'},
 				VALUE_CHANGE_TABLE 	= {
-					{'FirstOrbitRadiusMin',		140},	-- 120
-					{'FirstOrbitRadiusMax',		200},	-- 160
-					{'OrbitRadiusOffsetMin',	60},	-- 50
-					{'OrbitRadiusOffsetMax',	80},	-- 70
-					{'OrbitRotationSpeedMin',	1.5},	-- 1
-					{'OrbitRotationSpeedMax',	4},		-- 2.5
+					{'FirstOrbitRadiusMin',		140	},	-- 120
+					{'FirstOrbitRadiusMax',		200	},	-- 160
+					{'OrbitRadiusOffsetMin',	60	},	-- 50
+					{'OrbitRadiusOffsetMax',	80	},	-- 70
+					{'OrbitRotationSpeedMin',	1.5	},	-- 1
+					{'OrbitRotationSpeedMax',	4	},	-- 2.5
 					{'OrbitLineWidth',			0.55}	-- 0.5
 				}
 			},
 			{
 				PRECEDING_KEY_WORDS = {'SolarSystemParameters', 'MoonParameters'},
 				VALUE_CHANGE_TABLE 	= {
-					{'FirstOrbitRadiusMin',		13},	-- 15
-					{'FirstOrbitRadiusMax',		22},	-- 20
-					{'OrbitRadiusOffsetMin',	13},	-- 15
-					{'OrbitRadiusOffsetMax',	36},	-- 35
-					{'OrbitRotationSpeedMin',	3},		-- 2
-					{'OrbitRotationSpeedMax',	7},		-- 5
+					{'FirstOrbitRadiusMin',		13	},	-- 15
+					{'FirstOrbitRadiusMax',		22	},	-- 20
+					{'OrbitRadiusOffsetMin',	13	},	-- 15
+					{'OrbitRadiusOffsetMax',	36	},	-- 35
+					{'OrbitRotationSpeedMin',	3	},	-- 2
+					{'OrbitRotationSpeedMax',	7	},	-- 5
 					{'OrbitLineWidth',			0.35}	-- 0.3
 				}
 			},
 			{
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Yellow'},
-				VALUE_CHANGE_TABLE	= ColorFromHex('4dfac905')
+				VALUE_CHANGE_TABLE	= Hex2VCT('4dfac905')
 			},
 			{
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Green'},
-				VALUE_CHANGE_TABLE	= ColorFromHex('8025bd03')
+				VALUE_CHANGE_TABLE	= Hex2VCT('8025bd03')
 			},
 			{
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Blue'},
-				VALUE_CHANGE_TABLE	= ColorFromHex('801852f5')
+				VALUE_CHANGE_TABLE	= Hex2VCT('801852f5')
 			},
 			{
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Red'},
-				VALUE_CHANGE_TABLE	= ColorFromHex('80fc2933')
+				VALUE_CHANGE_TABLE	= Hex2VCT('80fc2933')
 			}
 		}
 	}

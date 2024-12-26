@@ -2,7 +2,7 @@
 -- Generate a report of source mbin files in all scripts
 
 -- * Needs something like the following to deal with dofile()
--- * dofile((IsRunByAmumss() and '' or 'D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/')..'LIB/lua_2_exml.lua')
+-- * dofile((IsRunByAmumss() and '' or 'D:/MODZ_stuff/NoMansSky/AMUMss_Scripts/')..'LIB/_lua_2_exml.lua')
 ---------------------------------------------------------------------------------------------------------
 local scripts_path = 'E:\\MODZ_stuff\\NoMansSky\\AMUMss_Scripts\\test09'
 local output_path = 'E:\\_dump'

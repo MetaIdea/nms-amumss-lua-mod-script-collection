@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 ---	!! WORK IN PROGESS !! WORK IN PROGESS !! WORK IN PROGESS !!
----	Construct alien puzzle dialog entries (VERSION: 0.2) ... by lMonk
----	* Requires lua_2_exml.lua !
+---	Construct alien puzzle dialog entries (VERSION: 0.0.1) ... by lMonk
+---	* Requires _lua_2_exml.lua !
 ---	* This script should be in [AMUMSS folder]\ModScript\ModHelperScripts\LIB
 -------------------------------------------------------------------------------
 
@@ -14,18 +14,18 @@
 function PuzzleOption(option)
 ---	!! WORK IN PROGESS !!
 	return {
-		META = {'value','GcAlienPuzzleOption.xml'},
+		meta = {'value','GcAlienPuzzleOption.xml'},
 		Name					= option.name,
 		Text					= option.text,
 		IsAlien					= option.isalien,				-- b
 		Cost					= option.cost,					-- s
-		Rewards					= StringArray(option.rewards, 'Rewards', 10),
+		Rewards					= StringArray(option.rewards, 'Rewards'),
 		Mood = {
-			META = {'Mood','GcAlienMood.xml'},
+			meta = {'Mood','GcAlienMood.xml'},
 			Mood				= option.mood,					-- Enum
 		},
 		Prop = {
-			META = {'Prop','GcNPCPropType.xml'},
+			meta = {'Prop','GcNPCPropType.xml'},
 			NPCProp				= option.prop or 'DontCare',	-- Enum
 		},
 		KeepOpen				= option.keepopen,				-- b
@@ -39,20 +39,20 @@ end
 function PuzzleEntry(diag)
 ---	!! WORK IN PROGESS !!
 	return {
-		META = {'value','GcAlienPuzzleEntry.xml'},
+		meta = {'value','GcAlienPuzzleEntry.xml'},
 		Id 							= diag.id,
 		ProgressionIndex 			= diag.index or -1,
-		MinProgressionForSelection	= diag.minprogress or 0,
+		MinProgressionForSelection	= diag.minprogress or nil,
 		Race = {
-			META = {'Race','GcAlienRace.xml'},
+			meta = {'Race','GcAlienRace.xml'},
 			AlienRace				= diag.race or 'None',		-- Enum
 		},
 		Type = {
-			META = {'Type','GcInteractionType.xml'},
+			meta = {'Type','GcInteractionType.xml'},
 			InteractionType			= diag.itype,				-- Enum
 		},
 		Category = {
-			META = {'Category','GcAlienPuzzleCategory.xml'},
+			meta = {'Category','GcAlienPuzzleCategory.xml'},
 			AlienPuzzleCategory		= diag.category or 'Default',-- Enum
 		},
 		Title						= diag.title,				-- s
@@ -62,18 +62,18 @@ function PuzzleEntry(diag)
 		ProgressiveDialogue			= diag.progressive,			-- b
 		RequiresScanEvent			= diag.scanevent,			-- s
 		Mood = {
-			META = {'Mood','GcAlienMood.xml'},
+			meta = {'Mood','GcAlienMood.xml'},
 			Mood					= diag.mood or 'Neutral',	-- Enum
 		},
 		Prop = {
-			META = {'Prop','GcNPCPropType.xml'},
+			meta = {'Prop','GcNPCPropType.xml'},
 			NPCProp					= diag.prop or 'DontCare',	-- Enum
 		},
 		CustomFreighterTextIndex	= -1,
 		UseTitleOverrideInLabel		= true,
 		Options						= (
 			function()
-				local opts = {META = {'name','Options'}}
+				local opts = {meta = {'name','Options'}}
 				for _, option in ipairs(diag.options) do
 					opts[#opts+1] = PuzzleOption(option)
 				end

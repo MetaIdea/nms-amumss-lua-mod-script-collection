@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/scene_tools.lua')
 ------------------------------------------------------------------------------------------
 local mod_desc = [[
@@ -64,34 +64,34 @@ local loot_containers = {
 	}
 }
 
-local function AddSceneNodes()
+local function AddContainerScenes()
 	local T = {}
 	for _,scn in ipairs(loot_containers) do
 		for i=1, #scn.form do
-			T[#T+1] = ScNode(
-				scn.name..string.char(64 + i), 'REFERENCE', {
-					ScTransform(scn.form[i]),
-					ScAttributes({
-						{'SCENEGRAPH', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'}
-					})
+			T[#T+1] = {
+				name	= scn.name..string.char(64 + i),
+				ntype	= 'REFERENCE',
+				form	= scn.form[i],
+				attr	= {
+					SCENEGRAPH = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/PARTS/CRASH_CONTAINER.SCENE.MBIN'
 				}
-			)
+			}
 		end
 	end
-	return T
+	return AddSceneNodes(T)
 end
 
-local function AddDescriptors()
+local function AddContainerDescriptors()
 	local T = {}
 	for _,scn in ipairs(loot_containers) do
 		local tmp = {
-			META		= {'value', 'TkResourceDescriptorList.xml'},
+			meta		= {'value', 'TkResourceDescriptorList.xml'},
 			TypeId		= scn.name:upper(),
-			Descriptors	= {META = {'name', 'Descriptors'}}
+			Descriptors	= {meta = {'name', 'Descriptors'}}
 		}
 		for i=1, #scn.form do
 			tmp.Descriptors[#tmp.Descriptors+1] = {
-				META	= {'value', 'TkResourceDescriptorData.xml'},
+				meta	= {'value', 'TkResourceDescriptorData.xml'},
 				Id		= (scn.name..string.char(64 + i)):upper(),
 				Name	= scn.name..string.char(64 + i),
 				Chance	= 0
@@ -99,14 +99,20 @@ local function AddDescriptors()
 		end
 		T[#T+1] = tmp
 	end
+	return ToExml(T)
+end
+
+local function AddPrx(prx, T)
+	for i=1, #T do T[i] = {prx, T[i]} end
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL crashed freighter proc containers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MOD_DESCRIPTION		= mod_desc,
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -136,35 +142,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS 	= {
-					{'Name', 'HeightAdjust3'},
-					{'Name', 'HeightAdjust4'},
-					{'Name', 'REFSmokeVFX'},
-					{'Name', 'REFSmokeVFX1'},
-					{'Name', 'REFSmokeVFX2'},
-					{'Name', 'REFSmokeVFX3'},
-					{'Name', 'REFLargeCrashedFreighterCloudsVFX3'},
-					{'Name', 'REFLargeCrashedFreighterCloudsVFX4'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX5'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX6'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX7'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX8'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX1'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX2'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX3'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX4'},
-					{'Name', 'REFCrashedFreighterCloudsVFX'},
-					{'Name', 'REFCrashedFreighterCloudsVFX1'},
-					{'Name', 'REFCrashedFreighterCloudsVFX2'},
-					{'Name', 'REFCrashedFreighterCloudsVFX4'},
-				},
+				SPECIAL_KEY_WORDS 	= AddPrx('Name', {
+					'HeightAdjust3',
+					'HeightAdjust4',
+					'REFSmokeVFX',
+					'REFSmokeVFX1',
+					'REFSmokeVFX2',
+					'REFSmokeVFX3',
+					'REFLargeCrashedFreighterCloudsVFX3',
+					'REFLargeCrashedFreighterCloudsVFX4',
+					'REFLargeCrashedFreighterSmokeVFX5',
+					'REFLargeCrashedFreighterSmokeVFX6',
+					'REFLargeCrashedFreighterSmokeVFX7',
+					'REFLargeCrashedFreighterSmokeVFX8',
+					'REFLargeCrashedFreighterSmokeVFX',
+					'REFLargeCrashedFreighterSmokeVFX1',
+					'REFLargeCrashedFreighterSmokeVFX2',
+					'REFLargeCrashedFreighterSmokeVFX3',
+					'REFLargeCrashedFreighterSmokeVFX4',
+					'REFCrashedFreighterCloudsVFX',
+					'REFCrashedFreighterCloudsVFX1',
+					'REFCrashedFreighterCloudsVFX2',
+					'REFCrashedFreighterCloudsVFX4'
+				}),
 				REMOVE				= 'Section'
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LargeCargoRoomRef'},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD 				= ToExml(AddSceneNodes())
+				ADD 				= AddContainerScenes()
 			}
 		}
 	},
@@ -172,40 +178,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRASHEDFREIGHTER/CRASHEDFREIGHTER_UNDERWATER.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS 	= {
+				SPECIAL_KEY_WORDS 	= AddPrx('Name', {
 					-- vfx
 					-- mist
-					{'Name', 'REFPlatformMistVFX'},
-					{'Name', 'REFCrashedFreightMistVFX'},
-					{'Name', 'REFLargeCrashedFreighterSmokeVFX9'},
-					-- builder parts
-					{'Name', 'Interior_'},
-					{'Name', 'NAV_POI'},
-					{'Name', 'NAV_POI_CONV'},
-					{'Name', 'NAV_POI1'},
-					{'Name', 'NAV_POI2'},
-					{'Name', 'NAV_POI3'},
-					{'Name', 'NAV_POI4'},
-					{'Name', 'NAV_NODE'},
-					{'Name', 'NAV_NODE2'},
-					{'Name', 'NAV_NODE3'},
-					{'Name', 'NAV_NODE4'},
-					{'Name', 'NAV_NODE5'},
-					{'Name', 'NAV_NODE6'},
-					{'Name', 'NAV_NODE7'},
-					{'Name', 'NAV_NODE8'},
-					{'Name', 'NAV_NODE9'},
-					{'Name', 'NAV_NODE10'},
-					{'Name', 'NAV_NODE11'},
-					{'Name', 'NAV_NODE12'},
-					{'Name', 'NAV_NODE13'},
-					{'Name', 'NAV_NODE14'},
-					{'Name', '_Tents_Group_'},
-					{'Name', '_Tents_Group_1'},
-					{'Name', '_Tents_Group_2'},
-					{'Name', 'RefRobotTerminalMesh'},
-					{'Name', 'Barrel_Ref'}
-				},
+					'REFPlatformMistVFX',
+					'REFCrashedFreightMistVFX',
+					'REFLargeCrashedFreighterSmokeVFX9',
+					-- builder base parts
+					'Interior_',
+					'NAV_POI',
+					'NAV_POI_CONV',
+					'NAV_POI1',
+					'NAV_POI2',
+					'NAV_POI3',
+					'NAV_POI4',
+					'NAV_NODE',
+					'NAV_NODE2',
+					'NAV_NODE3',
+					'NAV_NODE4',
+					'NAV_NODE5',
+					'NAV_NODE6',
+					'NAV_NODE7',
+					'NAV_NODE8',
+					'NAV_NODE9',
+					'NAV_NODE10',
+					'NAV_NODE11',
+					'NAV_NODE12',
+					'NAV_NODE13',
+					'NAV_NODE14',
+					'_Tents_Group_',
+					'_Tents_Group_1',
+					'_Tents_Group_2',
+					'RefRobotTerminalMesh',
+					'Barrel_Ref'
+				}),
 				REMOVE				= 'Section'
 			}
 		}
@@ -226,7 +232,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = 'List',
-				ADD					= ToExml(AddDescriptors())
+				ADD					= AddContainerDescriptors()
 			}
 		}
 	},

@@ -6,7 +6,7 @@ local mod_desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__UI fade notifications.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.52',
+	NMS_VERSION				= '5.29',
 	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 		= {{
@@ -15,10 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS 	= {
-					{'ID', 'TITLEBACKGROUND'},
-					{'ID', 'BACKGROUND'}
-				},
+				SPECIAL_KEY_WORDS 	= {'ID', '.-BACKGROUND'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
@@ -28,6 +25,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'ID', 'ICONS'},
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS 	= {'ID', '.-LINE'},
+				VALUE_MATCH			= 1,
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'A',			0.2}
 				}
 			},
 			{
@@ -42,18 +47,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'A',			0.64}
 				}
 			},
-			{
-				SPECIAL_KEY_WORDS 	= {
-					{'ID', 'HEADERLINE'},
-					{'ID', 'BASELINE'}
-				},
-				REPLACE_TYPE 		= 'All',
-				VALUE_MATCH			= 1,
-				SECTION_UP			= 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'A',			0.2}
-				}
-			}
 		}
 	}
 }}}}

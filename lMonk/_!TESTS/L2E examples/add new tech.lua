@@ -1,12 +1,12 @@
 ----------------------------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 dofile('LIB/table_entry.lua')
 ----------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_TEST L2E add new tech.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Table',
-				ADD					= ToExml({
-					TechnologyEntry({-- vehicle stun cannon
+				ADD					= ToExml(TechnologyEntry({
+					{-- vehicle stun cannon
 						id				= 'VEHICLESTUN',
 						name			= 'VEHICLESTUN_NAME',
 						namelower		= 'VEHICLESTUN_NAME_L',
@@ -44,8 +44,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							{st='Vehicle_GunHeatTime',			bn=1,	lv=1},
 							{st='Vehicle_GunRate',				bn=0.5,	lv=1}
 						}
-					}),
-					TechnologyEntry({-- bioship pulse engine upgrade
+					},
+					{-- bioship pulse engine upgrade
 						id				= 'JUMP_U_ALIEN',
 						name			= 'JUMP_U_ALIEN_NAME',
 						namelower		= 'JUMP_U_ALIEN_NAME_L',
@@ -72,8 +72,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							{st='Ship_Drift',							bn=0.6,		lv=1},
 							{st='Ship_PulseDrive_MiniJumpFuelSpending',	bn=0.86,	lv=1}
 						}
-					}),
-					TechnologyEntry({-- bioship shield upgrade
+					},
+					{-- bioship shield upgrade
 						id				= 'SHIELD_U_ALIEN',
 						name			= 'SHIELD_U_ALIEN_NAME',
 						namelower		= 'SHIELD_U_ALIEN_NAME_L',
@@ -95,8 +95,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						statbonuses		= {
 							{st='Ship_Armour_Shield_Strength',	bn=0.06, lv=3}
 						}
-					})
-				})
+					}
+				}))
 			}
 		}
 	}

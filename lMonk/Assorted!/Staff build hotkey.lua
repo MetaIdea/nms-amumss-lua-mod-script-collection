@@ -1,5 +1,5 @@
 ---------------------------------------------------
-dofile('LIB/lua_2_exml.lua')
+dofile('LIB/_lua_2_exml.lua')
 ---------------------------------------------------
 local mod_desc = [[
   open staff build page from the quickmenu
@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__Open Staff build page hotkey.pak',
 	MOD_AUTHOR			= 'lMonk',
 	MOD_DESCRIPTION		= mod_desc,
-	NMS_VERSION			= '4.52',
+	NMS_VERSION			= '5.29',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -17,42 +17,42 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = {'Anims', 'TkAnimationData.xml'},
-				SECTION_SAVE_TO		= 'tk_animation_data'
+				SEC_SAVE_TO			= 'tk_animation_data'
 			},
 			{
-				SECTION_EDIT 		= 'tk_animation_data',
+				SEC_EDIT 			= 'tk_animation_data',
 				VALUE_CHANGE_TABLE 	= {
 					{'Anim',		'STAFF_IT_PAGE'},
-					{'Filename',	'MODELS/TESTS/EFFECTTEST.ANIM.MBIN'}
+					{'Filename',	'MODELS/COMMON/SHARED/NULL.ANIM.MBIN'}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Anim', '2H_STAFF_WALK'},
 				ADD_OPTION			= 'ADDAfterSection',
-				SECTION_ADD_NAMED 	= 'tk_animation_data'
+				SEC_ADD_NAMED		= 'tk_animation_data'
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'GcSpringAttachmentComponentData.xml',
 				ADD_OPTION			= 'ADDAfterSection',
 				ADD 				= ToExml({
-					META = {'value', 'GcTriggerActionComponentData.xml'},
+					meta = {'value', 'GcTriggerActionComponentData.xml'},
 					{
-						META = {'name', 'States'},
+						meta = {'name', 'States'},
 						{
-							META	= {'value', 'GcActionTriggerState.xml'},
+							meta	= {'value', 'GcActionTriggerState.xml'},
 							StateID	= 'BOOT',
 							{
-								META = {'name', 'Triggers'},
+								meta = {'name', 'Triggers'},
 								{
-									META = {'value', 'GcActionTrigger.xml'},
+									meta = {'value', 'GcActionTrigger.xml'},
 									{
-										META	= {'Event', 'GcAnimFrameEvent.xml'},
+										meta	= {'Event', 'GcAnimFrameEvent.xml'},
 										Anim	= 'STAFF_IT_PAGE'
 									},
 									{
-										META	= {'name', 'Action'},
+										meta	= {'name', 'Action'},
 										{
-											META	= {'value', 'GcGoToStateAction.xml'},
+											meta	= {'value', 'GcGoToStateAction.xml'},
 											State	= 'STAFF_IT_PAGE'
 										}
 									}
@@ -60,25 +60,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						},
 						{
-							META	= {'value', 'GcActionTriggerState.xml'},
+							meta	= {'value', 'GcActionTriggerState.xml'},
 							StateID	= 'STAFF_IT_PAGE',
 							{
-								META = {'name', 'Triggers'},
+								meta = {'name', 'Triggers'},
 								{
-									META = {'value', 'GcActionTrigger.xml'},
+									meta = {'value', 'GcActionTrigger.xml'},
 									{
-										META	= {'Event', 'GcStateTimeEvent.xml'},
+										meta	= {'Event', 'GcStateTimeEvent.xml'},
 										Seconds	= 0
 									},
 									{
-										META	= {'name', 'Action'},
+										meta	= {'name', 'Action'},
 										{
-											META	= {'value', 'GcRewardAction.xml'},
+											meta	= {'value', 'GcRewardAction.xml'},
 											-- where the action happens
 											Reward	= 'R_STAFF_PAGE'
 										},
 										{
-											META	= {'value', 'GcGoToStateAction.xml'},
+											meta	= {'value', 'GcGoToStateAction.xml'},
 											State	= 'BOOT'
 										}
 									}
@@ -95,10 +95,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Title', 'EMOTE_WAVE'},
-				SECTION_SAVE_TO		= 'gc_player_emote'
+				SEC_SAVE_TO			= 'gc_player_emote'
 			},
 			{
-				SECTION_EDIT 		= 'gc_player_emote',
+				SEC_EDIT 			= 'gc_player_emote',
 				VALUE_CHANGE_TABLE 	= {
 					{'Title',					'Open Staff Build'},
 					{'EmoteID',					'STAFF_IT_PAGE'},
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS = 'Emotes',
-				SECTION_ADD_NAMED 	= 'gc_player_emote'
+				SEC_ADD_NAMED		= 'gc_player_emote'
 			}
 		}
 	}
