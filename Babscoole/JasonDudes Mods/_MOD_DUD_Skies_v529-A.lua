@@ -818,6 +818,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Rock"},
+                            }
+                        },
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "Colour1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -846,6 +854,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Rock"},
                             }
                         },
                         {
@@ -878,6 +894,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Palette", "Snow"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms", "HeavyAir", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml", "GcHeavyAirSettingValues.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Palette", "Rock"},
                             }
                         },
                     }
