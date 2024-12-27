@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="90" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="90" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="90" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -95,7 +95,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="80" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -110,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="80" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -125,7 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="80" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="70" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -155,7 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="70" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -170,7 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="70" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -185,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="60" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -200,7 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="60" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -215,7 +215,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="60" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -230,7 +230,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="50" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="50" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -260,7 +260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="50" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -275,7 +275,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="40" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
@@ -290,7 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
+            <Property name="PercentageChance" value="40" />
             <Property name="LabelID" value="" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
