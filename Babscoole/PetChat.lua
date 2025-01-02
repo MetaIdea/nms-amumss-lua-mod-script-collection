@@ -3780,8 +3780,8 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 	    = "PetTalk.pak",
-    ["MOD_AUTHOR"]		    = "IllestontheMike",
+    ["MOD_FILENAME"] 	    = "PetChat.pak",
+    ["MOD_AUTHOR"]		    = "CMK & IllestontheMike",
     ["LUA_AUTHOR"]		    = "FriendlyFire_PL and Babscoole",
     ["NMS_VERSION"]		    = "4.72",
     ["MOD_DESCRIPTION"]     = "Adds pet talking points",
