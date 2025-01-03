@@ -1,5 +1,4 @@
-enableLegacyParts = false
-enableAdvancedBuildingParts = true
+enableLegacyParts = true
 enableAnomalyResearchTrees = true
 enableFleetResearchTree = true
 useNanitesForProductTree = true
@@ -194,15 +193,17 @@ legacyRecipeTree = {
 }
 
 -- Comment out or remove the trees you don't want from this table
-researchTrees = {
+local researchTrees = {
     {"UI_S9_SUITTREE_OPT", "TREE_SUIT"}, -- Suit Research
     {"NPC_NEXUS_TECH_SHIP", "TREE_SHIP"}, -- Ship Research
     {"NPC_NEXUS_TECH_WEAP", "TREE_WEAP"}, -- Multi-tool Research
     {"NPC_NEXUS_TECH_EXO", "TREE_EXO"},   -- Exocraft Research
     {"UI_PRODUCT_TREE_CRAFT", "TREE_CRAFT"}, -- Products Research
 }
-
--- Fleet Research
+if enableLegacyParts and enableAnomalyResearchTrees then
+    researchTrees[#researchTrees+1] = {"UI_BP_ANALYSTER_OPT", "TREE_BASE"} -- Blueprint Research
+end
+ -- Fleet Research
 if enableFleetResearchTree then
     researchTrees[#researchTrees+1] = {"UI_FREIGHTER_RESEARCH_HINT", "TREE_FRIGATE"}
 end
@@ -211,9 +212,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
     ["MOD_AUTHOR"] = "Aristotale",
-    ["MOD_VERSION"] = "1.5",
-    ["MOD_DESCRIPTION"] = "Add research trees from all Anomaly research vendors and Freighter research for purchase in the Construction Research Unit",
-    ["LUA_AUTHOR"]    = "Aristotale, with substantial input from Babscoole, Lowkie, and others in the NMS Modding Discord",
+    ["MOD_VERSION"] = "2.0",
+    ["MOD_DESCRIPTION"] = "Replaces the Utopia Build Station with all of the research trees from the Anomaly and your Freighter",
+    ["LUA_AUTHOR"]    = "Aristotale",
     ["NMS_VERSION"]   = "5.2x",
     ["MODIFICATIONS"] =
     {
@@ -245,6 +246,46 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                     }
                 },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/BLUEPRINTANALYSER_BUILD/ENTITIES/DATA.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Reward","R_S9_TREE_PART"},
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"Name", "Anomalous Research Unit"},
+                                {"Reward", "JUNK"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Puzzle", "%?D_S9_TREE_PART"},
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"Mission", "ANALYSER_DIAG"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SKW"] = {"ID", "S9_BUILDERTREE"},
+                            ["VALUE_CHANGE_TABLE"] = 
+                            {
+                                {"BuildableOnFreighter", "True"},
+                            }
+                        },
+                    }
+                },
             }
         }
     }
@@ -254,6 +295,21 @@ local ResearchTreeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN
 local UnlockableTreeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local ProductRecipeTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local NanitePricing = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+
+function BuildItemList(list)
+
+    local ListEntries = {}
+    local EntryStart = [[<Property value="NMSString0x10.xml"><Property name="Value" value="]]
+    local EntryEnd = [[" /></Property>]]
+    
+    for i=1,#list do
+        ListEntries[#ListEntries+1] = EntryStart .. list[i] .. EntryEnd
+    end
+
+    return table.concat(ListEntries)
+
+end
 
 function SetNanitePricing()
     NanitePricing[#NanitePricing+1] = 
@@ -413,7 +469,7 @@ function AssembleAnomalousMenu()
     local pageCount = 3
     Menu = ""
     for i=1, #researchTrees, 1 do
-        if i == 2 or i % 5 == 0 then
+        if i % 3 == 0 then
             Menu = Menu .. GetMorePuzzleOption("?D_BPA_TECH_P"..pageCount)
             pageCount = pageCount + 1
         end
@@ -468,42 +524,57 @@ end
 
 function AddLegacyStuff()
     if enableLegacyParts then
+        RewardTable[#RewardTable+1] =
+        {
+            ["SEC_EMPTY"] = "REWARD_LEGACY_TREE"
+        }
+        RewardTable[#RewardTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "TREE_TECHBASICS"},
+            ["SEC_SAVE_TO"] = "Tree_Legacy"
+        }
+        RewardTable[#RewardTable+1] =
+        {
+            ["SEC_EDIT"] = "Tree_Legacy",
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Id", "TREE_LEGACY"},
+                {"UnlockableItemTree", "Test"},
+            }
+        }
+        RewardTable[#RewardTable+1] =
+        {
+            ["SEC_EDIT"] = "REWARD_LEGACY_TREE",
+            ["ADD_OPTION"] = "ADDafterSECTION",
+            ["SEC_ADD_NAMED"] = "Tree_Legacy"
+        }
+        RewardTable[#RewardTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {
+                {"Id", "TREE_TECHBASICS"},
+            },
+            ["SECTION_UP"] = 1,
+            ["ADD_OPTION"] = "ADDendSECTION",
+            ["SEC_ADD_NAMED"] = "REWARD_LEGACY_TREE"
+        }
+
         UnlockableTreeTable[#UnlockableTreeTable+1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Title","UI_PURCHASABLE_BASICTECH_TREE"},
+            ["SPECIAL_KEY_WORDS"] = {"Title","TEST"},
             ["VALUE_CHANGE_TABLE"] = {
                 {"Title", "Legacy Building Structures"},
             },
         }
         UnlockableTreeTable[#UnlockableTreeTable+1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+            ["SPECIAL_KEY_WORDS"] = {"Test", "GcUnlockableItemTrees.xml"},
             ["PRECEDING_KEY_WORDS"] = {"Trees"},
             ["REMOVE"] = "SECTION",
         }
         UnlockableTreeTable[#UnlockableTreeTable+1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"BasicTechParts", "GcUnlockableItemTrees.xml"},
+            ["SPECIAL_KEY_WORDS"] = {"Test", "GcUnlockableItemTrees.xml"},
             ["ADD"] = ConstructLegacyRecipeTree(),
-        }
-    end
-    if enableAdvancedBuildingParts then
-        UnlockableTreeTable[#UnlockableTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"BaseParts", "GcUnlockableItemTrees.xml"},
-            ["PRECEDING_KEY_WORDS"] = {"Trees"},
-            ["SEC_SAVE_TO"] = "Base_parts"
-        }
-        UnlockableTreeTable[#UnlockableTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
-            ["PRECEDING_KEY_WORDS"] = {"Trees"},
-            ["REMOVE"] = "SECTION",
-        }
-        UnlockableTreeTable[#UnlockableTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"BasicBaseParts", "GcUnlockableItemTrees.xml"},
-            ["SEC_ADD_NAMED"] = "Base_parts"
         }
     end
 
@@ -516,50 +587,77 @@ function AddAnomalyResearchTrees()
     if enableLegacyParts then
         ResearchTreeTable[#ResearchTreeTable+1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTB"},
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART", "Name", "UI_S9_PARTTREE_OPT"},
+            ["PKW"] = {"Rewards"},
+            ["CREATE_HOES"] = "TRUE"
+        }
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART", "Name", "UI_S9_PARTTREE_OPT"},
+            ["PKW"] = {"Rewards"},
+            ["CREATE_HOS"] = "TRUE",
+            ["ADD"] = BuildItemList({"TREE_LEGACY"})
+        }
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART", "Name", "UI_S9_PARTTREE_OPT"},
             ["VALUE_CHANGE_TABLE"] =
             {
                 {"Name", "Legacy Structures"},
             }
         }
     end
-    if enableAdvancedBuildingParts then
-        ResearchTreeTable[#ResearchTreeTable+1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "UI_BP_ANALYSTER_OPTA"},
-            ["VALUE_CHANGE_TABLE"] =
-            {
-                {"Name", "Advanced Building Structures"},
-            }
-        }
-    end
     if enableAnomalyResearchTrees then
         ResearchTreeTable[#ResearchTreeTable+1] =
         {
-            ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER", "Name", "ALL_REQUEST_LEAVE"},
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART", "Name", "ALL_REQUEST_LEAVE"},
             ["ADD_OPTION"] = "ADDbeforeSECTION",
             ["ADD"] = AssembleAnomalousMenu(),
         }
+        ResearchTreeTable[#ResearchTreeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"Id", "%?D_S9_TREE_PART"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Title", "Anomalous Research Unit"},
+                {"TextAlien", "UI_BP_ANALYSTER_LANG"},
+            }
+        }
+        ProductRecipeTable[#ProductRecipeTable+1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", "S9_BUILDERTREE"},
+            ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Name", "ANOMALOUS RESEARCH UNIT"},
+                {"NameLower", "Anomalous Research Unit"},
+            }
+        }
     end
-    ResearchTreeTable[#ResearchTreeTable+1] =
+end
+function SomeNewFunction()
+    UnlockableTreeTable[#UnlockableTreeTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", "%?BLUEPRINT_ANALYSER"},
+        ["SPECIAL_KEY_WORDS"] = {"Unlockable", "T_WALL_H"},
+        ["PRECEDING_KEY_WORDS"] = {"GcUnlockableItemTreeNode.xml"},
+        ["SEC_SAVE_TO"] = "ITEM_TREE_SEC"
+    }
+    UnlockableTreeTable[#UnlockableTreeTable + 1] =
+    {
+        ["SEC_EDIT"] = "ITEM_TREE_SEC",
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"Title", "Anomalous Research Unit"},
+            {"Unlockable", "S9_BUILDERTREE"},
         }
     }
-    ProductRecipeTable[#ProductRecipeTable+1] =
+    UnlockableTreeTable[#UnlockableTreeTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "BP_ANALYSER"},
-        ["PRECEDING_KEY_WORDS"] = {"GcProductData.xml"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"Name", "ANOMALOUS RESEARCH UNIT"},
-            {"NameLower", "Anomalous Research Unit"},
-        }
+        ["SPECIAL_KEY_WORDS"] = {"Title", "UI_BASETECH_TREE", "Unlockable", "BUILDSAVE"},
+        ["PRECEDING_KEY_WORDS"] = {"Children"},
+        ["CREATE_HOS"] = "TRUE",
+        ["SEC_ADD_NAMED"] = "ITEM_TREE_SEC"
     }
 end
-
 AddLegacyStuff()
+SomeNewFunction()
 AddAnomalyResearchTrees()
