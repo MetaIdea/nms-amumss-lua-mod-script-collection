@@ -647,6 +647,9 @@ function Create_Ship_Reward_Entry(ship_model, ship_seed, ship_slots, ship_techno
                 <Property name="IsGift" value="True" />
                 <Property name="IsRewardShip" value="True" />
                 <Property name="FormatAsSeasonal" value="False" />
+                <Property name="ModelViewOverride" value="GcModelViews.xml">
+                    <Property name="ModelViews" value="None" />
+                </Property>
             </Property>
         </Property>
     ]]

@@ -197,9 +197,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Seed" value="1" />
                   <Property name="UseSeedValue" value="True" />
                 </Property>
+                <Property name="AltId" value="" />
                 <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
                   <Property name="Samplers" />
                 </Property>
+              </Property>
+              <Property name="Customisation" value="GcCharacterCustomisationData.xml">
+                <Property name="DescriptorGroups" />
+                <Property name="PaletteID" value="" />
+                <Property name="Colours" />
+                <Property name="TextureOptions" />
+                <Property name="BoneScales" />
+                <Property name="Scale" value="1" />
               </Property>
               <Property name="ShipLayout" value="GcInventoryLayout.xml">
                 <Property name="Slots" value="60" />
@@ -311,13 +320,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Name" value="" />
                 <Property name="Version" value="0" />
               </Property>
+              <Property name="CostAmount" value="0" />
+              <Property name="CostCurrency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
               <Property name="ShipType" value="GcSpaceshipClasses.xml">
                 <Property name="ShipClass" value="Fighter" />
               </Property>
+              <Property name="UseOverrideSizeType" value="False" />
               <Property name="NameOverride" value="Police" />
               <Property name="IsGift" value="True" />
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
+              <Property name="ModelViewOverride" value="GcModelViews.xml">
+                <Property name="ModelViews" value="None" />
+              </Property>
             </Property>
           </Property>
         </Property>

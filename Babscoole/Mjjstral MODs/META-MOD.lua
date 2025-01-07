@@ -763,7 +763,7 @@ QUICK_ACTION_MENU =
             <Property name="PercentageChance" value="100" />
             <Property name="LabelID" value="Trigger Storm" />
             <Property name="Reward" value="GcRewardTriggerStorm.xml">
-              <Property name="Duration" value="1" />
+              <Property name="Duration" value="3" />
             </Property>
           </Property>
         </Property>
@@ -1130,6 +1130,14 @@ return [[
                   <Property name="Samplers" />
                 </Property>
               </Property>
+              <Property name="Customisation" value="GcCharacterCustomisationData.xml">
+                <Property name="DescriptorGroups" />
+                <Property name="PaletteID" value="" />
+                <Property name="Colours" />
+                <Property name="TextureOptions" />
+                <Property name="BoneScales" />
+                <Property name="Scale" value="1" />
+              </Property>
               <Property name="ShipLayout" value="GcInventoryLayout.xml">
                 <Property name="Slots" value="48" />
                 <Property name="Seed" value="GcSeed.xml">
@@ -1240,13 +1248,21 @@ return [[
                 <Property name="Name" value="" />
                 <Property name="Version" value="0" />
               </Property>
+              <Property name="CostAmount" value="0" />
+              <Property name="CostCurrency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
               <Property name="ShipType" value="GcSpaceshipClasses.xml">
                 <Property name="ShipClass" value="Fighter" />
               </Property>
+              <Property name="UseOverrideSizeType" value="False" />
               <Property name="NameOverride" value="" />
               <Property name="IsGift" value="True" />
               <Property name="IsRewardShip" value="True" />
               <Property name="FormatAsSeasonal" value="False" />
+              <Property name="ModelViewOverride" value="GcModelViews.xml">
+                <Property name="ModelViews" value="None" />
+              </Property>
             </Property>
           </Property>
         </Property>
