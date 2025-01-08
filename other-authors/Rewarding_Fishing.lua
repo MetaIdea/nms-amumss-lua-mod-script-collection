@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = "Rewading_Fishing.pak",
+    ["MOD_FILENAME"] = "Rewarding_Fishing.pak",
     ["MOD_DESCRIPTION"] = "Adjust some parameters of fishing to make it more relaxing and rewarding.",
     ["MOD_AUTHOR"] = "catandlemonade",
     ["LUA_AUTHOR"] = "catandlemonade",
