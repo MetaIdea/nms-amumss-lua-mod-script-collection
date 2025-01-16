@@ -212,7 +212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] = "AnomalousResearchUnit.pak",
     ["MOD_AUTHOR"] = "Aristotale",
-    ["MOD_VERSION"] = "2.0",
+    ["MOD_VERSION"] = "2.0.1",
     ["MOD_DESCRIPTION"] = "Replaces the Utopia Build Station with all of the research trees from the Anomaly and your Freighter",
     ["LUA_AUTHOR"]    = "Aristotale",
     ["NMS_VERSION"]   = "5.2x",
@@ -278,10 +278,29 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Group", "PLANET_TECH"},
+                            ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntryGroup.xml"},
+                            ["SEC_SAVE_TO"] = "FREIGHTER_TECH_GROUP",
+                        },
+                        {
+                            ["SEC_EDIT"] = "FREIGHTER_TECH_GROUP",
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"Group", "FREIGHTER_TECH"},
+                                {"SubGroupName", "FRE_TECH_OTHER"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID", "S9_BUILDERTREE"},
+                            ["PRECEDING_KEY_WORDS"] = {"Groups"},
+                            ["ADD_OPTION"] = "ADDendSECTION",
+                            ["SEC_ADD_NAMED"] = "FREIGHTER_TECH_GROUP"
+                        },
+                        {
                             ["SKW"] = {"ID", "S9_BUILDERTREE"},
                             ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"BuildableOnFreighter", "True"},
+                                {"BuildableOnSpaceBase", "True"},
                             }
                         },
                     }
