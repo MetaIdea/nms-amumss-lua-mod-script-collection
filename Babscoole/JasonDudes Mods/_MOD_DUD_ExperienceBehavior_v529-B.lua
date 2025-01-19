@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v529-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_ExperienceBehavior_v529-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "5.29",
@@ -37,11 +37,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SandWormMaxSteer",               "0.2"},
                                 {"SandWormMaxHeightAdjust",        "0.6"},
                                 {"SandWormJumpHeight",             "80"},
-                                {"SandWormJumpTime",               "4"},
-                                {"SandWormSubmergeTime",           "6"},
-                                {"SandWormSurfaceTime",            "4"},
+                                {"SandWormJumpTime",               "3"},
+                                {"SandWormSubmergeTime",           "5"},
+                                {"SandWormSurfaceTime",            "3"},
                                 {"SandWormMaxJumps",               "4"},
-                                {"SandWormDespawnDist",            "4000"},
+                                {"SandWormDespawnDist",            "5000"},
                             }
                         },
                     },
@@ -85,7 +85,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"SwarmMovementSpeed",  "90"},
                                 {"SwarmMovementRadius", "100"},
-                                {"MaxPitchAmount",      "0.5"},
+                                {"MinPitchAmount",      "0.1"},
+                                {"MaxPitchAmount",      "0.3"},
                                 {"MaxSpeed",            "60"},
                             }
                         },
