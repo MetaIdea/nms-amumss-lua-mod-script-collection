@@ -279,7 +279,7 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "_MOD_DUD_Skies_v529-A.pak",
+["MOD_FILENAME"]            = "_MOD_DUD_Skies_v529-B.pak",
 ["MOD_AUTHOR"]              = "jasondude7116",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "5.29",
@@ -970,6 +970,1273 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/MEDIUMPLANT/FOXGLOVE.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL02.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale", "0.533333"},
+                                {"MaxScale", "0.866666"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSGRASS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale", "0.571428"},
+                                {"MaxScale", "0.714285"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.7"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.65"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.4"},
+                                {"MaxScale",          "0.533333"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.1"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.333333"},
+                                {"MaxScale",          "0.6"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.266666"},
+                                {"MaxScale",          "0.4"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.4"},
+                                {"MaxScale",          "0.533333"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 3,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.6"},
+                                {"MaxScale",          "0.666666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 4,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "0.6"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 5,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.333333"},
+                                {"MaxScale",          "0.666666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.65"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.4"},
+                                {"MaxScale",          "0.533333"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.1"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                
+                                
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "1"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "1"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.333333"},
+                                {"MaxScale",          "0.6"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.4"},
+                                {"MaxScale",          "0.666666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.6"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.5"},
+                                {"MaxScale",          "0.866666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.228571"},
+                                {"MaxScale",          "0.428571"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "0.866666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.228571"},
+                                {"MaxScale",          "0.428571"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.6"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.5"},
+                                {"MaxScale",          "0.866666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "1"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.733333"},
+                                {"MaxScale",          "1.066666"},
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale", "0.228571"},
+                                {"MaxScale", "0.428571"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.666666"},
+                                {"MaxScale",          "0.8"},
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\ROCKY\ROCKOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "1"},
+                                {"MaxScale",          "1.333333"},
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RUINS\RUINSOBJECTS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.228571"},
+                                {"MaxScale",          "0.428571"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =  {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.333333"},
+                                {"MaxScale",          "0.6"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = {1,2},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
+                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
+                            },
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 3,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "0.666666"},
+                                {"ShearWindStrength", "0.4"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "0.866666"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "1"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 3,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.333333"},
+                                {"MaxScale",          "0.8"},
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.3"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["SECTION_ACTIVE"] = 2,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.5"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/GROUNDFLOWER.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ShearWindStrength", "0.75"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD.MBIN",
+                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.533333"},
+                                {"MaxScale",          "0.8"},
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",          "0.666666"},
+                                {"MaxScale",          "0.933333"},
+                                {"ShearWindStrength", "0.2"}
+                            }
+                        },
+                    }
+                },
+                {
                     ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORM.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -1004,266 +2271,37 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "^%w+_LOD%d$"},
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/GROUNDFLOWER.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
+                                {"ScaleX", "2.807308"},
+                                {"ScaleY", "2.807308"},
+                                {"ScaleZ", "2.807308"}
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWLUSHGRASS.SCENE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
                         {
                             ["SPECIAL_KEY_WORDS"] =
                             {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
+                                {"Name", "Grass_LOD0"},
+                                {"Name", "Grass_LOD1"},
+                                {"Name", "Grass_LOD2"},
                             },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"}, 
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = {1,2,3,4},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 4,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA02.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/MEDIUMPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/YUKKA.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 4,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
+                                {"ScaleX", "4.81344"},
+                                {"ScaleY", "3.723105"},
+                                {"ScaleZ", "4.81344"}
                             }
                         },
                     }
@@ -1271,2028 +2309,55 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSLOW.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREEBEARDMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREEBRANCHMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREELEAF1MAT2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREELEAF2MAT2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREELEAF3MAT2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREEBRANCHMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\FOLIAGE\PEACOCKPLANT\PEACOCKTREETRUNKMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREEBEARDMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREEBRANCHMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREELEAF1MAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREELEAF2MAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREELEAF3MAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\PEACOCKTREE\PEACOCKTREETRUNKMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/FLUFFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
+                                {"x", "0.125"},
+                                {"y", "0.2"},
+                                {"t", "0.25"},
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENPEACOCKOBJECTS.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\ROCKY\GROUNDFLOWER\PETALSNOWIND.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ShearWindStrength", "1.75"}
+                                {"x", "0.4"},
+                                {"y", "0.6"},
+                                {"z", "0"},
+                                {"t", "0.55"},
                             }
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/POOFBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSPROC.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "4"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSPROC.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = {3,4},
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYWEIRDOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BURNT\BURNTOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BURNT/DETAIL/BURNTTALLGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DESOLATE\DESOLATEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSTALLGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSEMPTY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/MEDIUMPLANT/FOXGLOVE.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/MEDIUMPLANT/FOXGLOVE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL02.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FLORAL\FLORALOBJECTSGRASS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/FLORAL/SMALLPLANT/FLORALPLANTSMALL.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "6.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "0.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQOBJECTSMID.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSLOW.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSMID.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "0.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\IRRADIATED\IRRADIATEDOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/IRRADIATED/DETAIL/IRRADIATEDTALLGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "6.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/LONGALTGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\NOXIOUS\NOXIOUSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSTALLGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEALIENOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = 
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSLOW.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSMID.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\ROCKY\ROCKOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RUINS\RUINSOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "6.5"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =  {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSDEAD.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSMID.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSLOW.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/VOLUMEBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SUBZERO\SUBZEROOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/SUBZERO/DETAIL/SUBZEROTALLGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/NOXIOUS/DETAIL/NOXIOUSGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSLOW.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSMID.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSMOONOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSFULL.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 2,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSLOW.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBBUSH.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDOBJECTS.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESOBJECTS.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSOBJECTS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] =
-                            {
-                                {"Filename", "MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-                                {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-                            },
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["SECTION_ACTIVE"] = 3,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ALL",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "1.75"}
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/GROUNDFLOWER.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "2.75"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD.MBIN",
-                        "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-                            ["SECTION_UP"] = 1,
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"ShearWindStrength", "3.5"}
-                            }
-                        },
-                    }
-                },
-                {
-                    ["MBIN_FILE_SOURCE"] =
-                    {
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE01/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE02/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE03/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE04/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE05/HQFROND5.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE06/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE07/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE08/HQFROND8.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE09/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE10/HQFROND10.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE12/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE13/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE14/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE15/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE16/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE17/HQFROND10.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE18/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE18/HQTWIGWIND.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE19/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE19/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE20/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE21/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE22/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE23/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE24/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE25/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE27/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE28/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE29/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE30/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE31/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE32/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE33/HQFROND8.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE34/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE35/HQFROND10.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE37/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE38/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE39/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE40/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE41/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE42/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE43/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE44/HQFROND10.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE47/GLOWYTREEMATWIND.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE48/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE49/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE50/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE51/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE52/HQFROND5.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE53/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE54/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE55/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE57/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE58/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE59/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE60/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE61/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE62/HQFROND9.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE63/HQFROND10.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE68/HQFROND1.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE69/HQFROND2.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE70/HQFROND3.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE71/HQFROND4.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE72/HQFROND6.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE73/HQFROND7.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE74/HQFROND9.MATERIAL.MBIN",
-                    },
-                    ["EXML_CHANGE_TABLE"] =
-                    {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "2.49"},
-                                {"z", "1.4"},
+                                {"x", "0.125"},
+                                {"y", "0.4"},
+                                {"z", "0.2"},
                             }
                         },
                     }
@@ -3300,23 +2365,395 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE11/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE26/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE36/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE45/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE46/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE56/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE64/LEAF.MATERIAL.MBIN",
-                        "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE75/LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\RARE\RARELARGE\HUGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGEPLANTPARTS\LARGEPLANTE\LARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGEPLANTPARTS\LARGEPLANTC\LARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGEPLANTPARTS\LARGEPLANTD\LARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\NOXIOUS\HUGE\HUGETREE\HUGEPLANTWIND.MATERIAL.MBIN",
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.125"},
+                                {"y", "0.2"},
+                                {"z", "0"},
+                                {"t", "0.25"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "2.51"},
-                                {"z", "1.4"},
+                                {"x", "0.1"},
+                                {"y", "8"},
+                                {"z", "0.4"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\IRRADIATED\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\IRRADIATED\LARGE\LARGETREE\LARGEPLANTWIND.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.1"},
+                                {"y", "0.1"},
+                                {"z", "0.05"},
+                                {"t", "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.375"},
+                                {"y", "0.25"},
+                                {"z", "0.5"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\IRRADIATED\HUGE\HUGETREE\HUGEPLANTWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\IRRADIATED\HUGE\HUGETREE\HUGEPLANTWINDDS.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.15"},
+                                {"y", "0.1"},
+                                {"z", "0.05"},
+                                {"t", "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.25"},
+                                {"y", "0.5"},
+                                {"z", "0.25"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\FLORAL\LARGEPLANT\FLORALTREE01\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE12\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE13\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE14\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE26\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE46\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE47\BARK11WIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE48\BARK2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49\BARK2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE51\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE52\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE53\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE54\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE55\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE56\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE65\BARK11.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE66\BARK11.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE68\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE69\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE70\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE71\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE72\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE73\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE74\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\ROCKY\TREE46\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\CAP.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\FRUITMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\FRUITMAT1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\FUNGUSMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE46\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE56\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE75\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\ROCKY\TREE46\LEAF.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE03\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\HQFROND5.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\HQFROND8.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\HQFROND10.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE12\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE13\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE14\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17\HQFROND10.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE18\HQTWIGWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE20\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE23\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE24\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE25\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE27\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE28\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE29\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE30\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\HQFROND8.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\HQFROND10.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\HQFROND10.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE47\GLOWYTREEMATWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE48\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE50\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE51\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE52\HQFROND5.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE53\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE54\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE55\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\HQFROND10.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE68\HQFROND1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE69\HQFROND2.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE70\HQFROND3.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE71\HQFROND4.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE72\HQFROND6.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE73\HQFROND7.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE74\HQFROND9.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE01\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE02\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE04\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE05\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE06\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE07\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE08\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE09\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE10\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE11\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE31\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE32\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE33\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE34\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE35\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE36\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE37\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE38\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE39\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE40\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE41\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE42\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE43\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE44\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE57\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE58\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE59\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE60\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE61\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE62\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE63\IVYMAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE64\IVYMAT.MATERIAL.MBIN",
+
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.25"},
+                                {"y", "0.4"},
+                                {"t", "0.5"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "1.5"},
+                                {"z", "0.8"},
                             }
                         },
                     }
@@ -3330,26 +2767,343 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "1"},
+                                {"y", "1"},
+                                {"z", "0.5"},
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"x", "0.35"},
-                                {"y", "2"},
-                                {"z", "0"},
+                                {"x", "0.375"},
+                                {"y", "1"},
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE67/GLOWYTREEMAT.MATERIAL.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE49\HQFROND3.MATERIAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/LEAVES/HQLEAVES/HQFROND3.BASE.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/LEAVES/HQLEAVES/HQFROND3.BASE.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/LEAVES/HQLEAVES/HQFROND3.BASE.NORMAL.DDS"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE45\LEAF.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"t", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "LEAF"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Metamaterial", "Models/Planets/Biomes/HQLush/HQTrees/Parts/HQTree01/Materials/LEAFWind.metamaterial.mXml"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE15\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE16\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE17\BARK1.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F42_DETAIL_NORMAL"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.2.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.2.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.2.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.2.NORMAL.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","gDetailNormalMap"},
+                            ["REMOVE"] = "SECTION"
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE19\BARK1.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
+                            ["ADD_OPTION"] = "ADDendSECTION", 
+                            ["ADD"] =
+[[
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F42_DETAIL_NORMAL" />
+    </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.3.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.3.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.3.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.3.NORMAL.DDS"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Samplers"},
+                            ["ADD_OPTION"] = "ADDendSECTION", 
+                            ["ADD"] =
+[[
+    <Property value="TkMaterialSampler.xml">
+      <Property name="Name" value="gDetailNormalMap" />
+      <Property name="Map" value="TEXTURES/PLANETS/BIOMES/COMMON/BARK/BARKGROUNDDECAL.BASE.1.NORMAL.DDS" />
+      <Property name="IsCube" value="False" />
+      <Property name="UseCompression" value="True" />
+      <Property name="UseMipMaps" value="True" />
+      <Property name="IsSRGB" value="False" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
+]]
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE21\BARK1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\PARTS\HQTREE22\BARK1.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.1.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.1.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gMasks2Map"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.1.MASKS.DDS"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Map", "TEXTURES/PLANETS/BIOMES/COMMON/BARK/WOODLANDBARK.BASE.1.NORMAL.DDS"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FOXGLOVEBUDS\PETALS1.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\FLORAL\MEDIUMPLANT\FOXGLOVE\PETALS1.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.25"},
+                                {"y", "0.4"},
+                                {"t", "0.6"},
+                            }
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"y", "1.82"},
+                                {"x", "0.15"},
+                                {"y", "0.25"},
+                                {"z", "0.25"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PROCGLOWWIND.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\FLORAL\MEDIUMPLANT\FLYINGFERN\PROCGLOWWIND.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.5"},
+                                {"y", "0.5"},
+                                {"z", "0.5"},
+                                {"t", "0.2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"z", "0.75"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PETALSWIND.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MaterialFlag", "_F11_ALPHACUTOUT"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
+[[
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F15_WIND" />
+    </Property>
+]]
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] =
+                            {
+                                {"MaterialFlag", "_F31_DISPLACEMENT"},
+                                {"Name",         "gWaveOneAmpAndPosOffsetVec4"},
+                                {"Name",         "gWaveOneFrequencyVec4"},
+                                {"Name",         "gWaveOneFallOffAndSpeedVec4"},
+                                {"Name",         "gWaveTwoAmplitudeVec4"},
+                                {"Name",         "gWaveTwoFrequencyVec4"},
+                                {"Name",         "gWaveTwoFallOffAndSpeedVec4"},
+                            },
+                            ["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.3"},
+                                {"y", "0.5"},
                                 {"z", "0"},
+                                {"t", "0.65"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.7"},
+                                {"y", "0.3"},
+                                {"z", "0.4"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\FLORAL\SMALLPLANT\FLORALPLANTSMALL\PETALSNOWIND.MATERIAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams0Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.3"},
+                                {"y", "0.5"},
+                                {"z", "0"},
+                                {"t", "0.65"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "gTreeWindParams1Vec4"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.7"},
+                                {"y", "0.3"},
+                                {"z", "0.4"},
                             }
                         },
                     }
@@ -3413,22 +3167,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BranchVForcePeriod",     "2"},
-                                {"BranchVForcePeriodFast", "3"},
+                                {"BranchVForcePeriodFast", "2"},
                                 {"BranchHForcePeriod",     "1"},
-                                {"BranchHForcePeriodFast", "2"},
+                                {"BranchHForcePeriodFast", "3.5"},
                                 {"LeafForcePeriod",        "2"},
-                                {"LeafForcePeriodFast",    "4"},
-                                {"LeafNoiseSpeed",         "0.15"},
-                                {"LeafNoiseSpeedFast",     "0.3"},
+                                {"LeafForcePeriodFast",    "3.5"},
+                                {"LeafNoiseSpeed",         "0.13"},
+                                {"LeafNoiseSpeedFast",     "0.26"},
                             }
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "WIND"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"OverallWindStrength", "0.33"},
-                                {"LdsWindStrength",     "0.33"},
-                                {"LdsWindSpeed",        "0.9"},
+                                {"OverallWindStrength", "1"},
+                                {"LdsWindStrength",     "0.2"},
+                                {"LdsWindSpeed",        "1.5"},
                                 {"ShearWindSpeed",      "0.9"},
                             }
                         },
@@ -3437,10 +3191,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave0"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",   "0.3"},
-                                {"MaxStrength",   "0.3"},
-                                {"WaveSize",      "3"},
-                                {"WaveFrequency", "0.5"},
+                                {"MinStrength",           "0.05"},
+                                {"MaxStrength",           "0.3"},
+                                {"StrengthVariationFreq", "0.0625"},
+                                {"WaveSize",              "4"},
+                                {"WaveFrequency",         "0.5"},
                             }
                         },
                         {
@@ -3448,8 +3203,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",   "0.2"},
-                                {"WaveFrequency", "2"},
+                                {"MinStrength",           "0.05"},
+                                {"StrengthVariationFreq", "0.25"},
+                                {"WaveFrequency",         "2"},
                             }
                         },
                         {
@@ -3457,9 +3213,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",           "0.1"},
+                                {"MinStrength",           "0.01"},
                                 {"MaxStrength",           "0.1"},
-                                {"StrengthVariationFreq", "1"},
+                                {"StrengthVariationFreq", "0.25"},
                                 {"WaveSize",              "1"},
                                 {"WaveFrequency",         "5"},
                             }
@@ -3469,7 +3225,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"WaveFrequency", "18"},
+                                {"StrengthVariationFreq", "0.125"},
+                                {"WaveFrequency",         "3"},
                             }
                         },
                         {
@@ -3477,10 +3234,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OverallWindStrength",    "1"},
-                                {"LdsWindStrength",        "1"},
-                                {"LdsWindSpeed",           "1.1"},
-                                {"ShearWindSpeed",         "1.1"},
-                                {"WindStrengthToVertpush", "0.1"},
+                                {"LdsWindStrength",        "0.3"},
+                                {"LdsWindSpeed",           "2.5"},
+                                {"ShearWindSpeed",         "1.25"},
+                                {"WindStrengthToVertpush", "0.05"},
                             }
                         },
                         {
@@ -3488,10 +3245,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave0"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",   "0.15"},
-                                {"MaxStrength",   "0.15"},
-                                {"WaveSize",      "1"},
-                                {"WaveFrequency", "4"},
+                                {"MinStrength",           "0"},
+                                {"MaxStrength",           "0.25"},
+                                {"StrengthVariationFreq", "0.5"},
+                                {"WaveSize",              "4"},
+                                {"WaveFrequency",         "4"},
                             }
                         },
                         {
@@ -3499,10 +3257,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave1"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",   "0.1"},
-                                {"MaxStrength",   "0.1"},
-                                {"WaveSize",      "1"},
-                                {"WaveFrequency", "1"},
+                                {"MinStrength",           "0.35"},
+                                {"MaxStrength",           "0.35"},
+                                {"StrengthVariationFreq", "0.5"},
+                                {"WaveSize",              "2"},
+                                {"WaveFrequency",         "3.5"},
                             }
                         },
                         {
@@ -3510,11 +3269,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave2"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MinStrength",           "0.001"},
-                                {"MaxStrength",           "0.001"},
+                                {"MinStrength",           "0"},
+                                {"MaxStrength",           "0"},
                                 {"StrengthVariationFreq", "1"},
                                 {"WaveSize",              "1"},
-                                {"WaveFrequency",         "2"},
+                                {"WaveFrequency",         "6"},
                             }
                         },
                         {
@@ -3522,9 +3281,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"Octave3"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxStrength",   "0"},
-                                {"WaveSize",      "2"},
-                                {"WaveFrequency", "18"},
+                                {"MaxStrength",           "0"},
+                                {"StrengthVariationFreq", "0.125"},
+                                {"WaveSize",              "2"},
+                                {"WaveFrequency",         "3"},
                             }
                         },
                     }
