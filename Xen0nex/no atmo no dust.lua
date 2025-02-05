@@ -1,5 +1,5 @@
 ModName = "noatmonodust"
-GameVersion = "5_00"
+GameVersion = "5_52"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -18,10 +18,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "VariableSizeString.xml",
+							["VALUE_MATCH"] = "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
+								{"HeavyAir",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
 							}
 						}
 					}
@@ -31,10 +31,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "VariableSizeString.xml",
+							["VALUE_MATCH"] = "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
+								{"HeavyAir",			        ""},		-- (Original value "MODELS/EFFECTS/HEAVYAIR/MARS/MARS.SCENE.MBIN")
 							}
 						}
 					}
