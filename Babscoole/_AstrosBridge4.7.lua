@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\BIOROOM_FRAME.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -44,11 +44,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-18" />
@@ -61,18 +61,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-18" />
@@ -85,18 +85,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+		    <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-18" />
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+		    <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_WALL.SCENE.MBIN" />
         </Property>
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\BIOROOM_WALL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -159,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_BLUESTRIP.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -178,7 +178,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -197,7 +197,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -216,7 +216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -235,7 +235,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_SHIPMATCH.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MirrorMerged_Y", "Name", "MATERIAL"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "CubeRoomPhysics36"},
@@ -292,11 +292,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTri" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-5.2" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="12.5" />
@@ -309,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.MBIN" />
         </Property>
@@ -328,7 +328,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "CubeRoomPhysics36"},
@@ -347,11 +347,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesL1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="9.8" />
@@ -364,18 +364,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesCenter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="9.8" />
@@ -388,18 +388,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Frontrow_TilesR1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="9.8" />
@@ -412,7 +412,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
@@ -431,7 +431,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
@@ -461,7 +461,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
@@ -491,7 +491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Wall", "Name", "MATERIAL"},
@@ -521,7 +521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
@@ -540,7 +540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "REFmonitor1"},
@@ -556,7 +556,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -581,7 +581,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -606,7 +606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -624,11 +624,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Galaxy globe" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -641,7 +641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE.SCENE.MBIN" />
         </Property>
@@ -656,11 +656,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+		    <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="BridgeScanner" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="1" />
             <Property name="TransZ" value="0" />
@@ -673,7 +673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN" />
             </Property>
@@ -703,7 +703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "AudioMonitor", "Name", "ATTACHMENT"},
@@ -722,7 +722,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
@@ -733,11 +733,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+		<Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="HelmDesk" />
       <Property name="NameHash" value="1840047114" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="-12" />
@@ -750,18 +750,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\HELMDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.8" />
         <Property name="TransY" value="1.05" />
         <Property name="TransZ" value="-10.4" />
@@ -774,18 +774,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.8" />
         <Property name="TransY" value="-0.7" />
         <Property name="TransZ" value="-11" />
@@ -798,18 +798,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="OrangeMonitorL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.6" />
         <Property name="TransY" value="1.21" />
         <Property name="TransZ" value="-11.55" />
@@ -822,18 +822,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="OrangeMonitorR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.1" />
         <Property name="TransY" value="1.21" />
         <Property name="TransZ" value="-11.55" />
@@ -846,18 +846,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotDeskL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.6" />
         <Property name="TransY" value="0.8" />
         <Property name="TransZ" value="-10.65" />
@@ -870,18 +870,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotDeskR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
         <Property name="TransY" value="0.8" />
         <Property name="TransZ" value="-10.65" />
@@ -894,18 +894,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotBackgroundL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.81" />
         <Property name="TransY" value="1.65" />
         <Property name="TransZ" value="-11.95" />
@@ -918,18 +918,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotBackgroundR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.81" />
         <Property name="TransY" value="1.65" />
         <Property name="TransZ" value="-11.95" />
@@ -942,18 +942,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="mapL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.6" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="-11.6" />
@@ -966,18 +966,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="mapR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="-11.6" />
@@ -990,18 +990,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PILOTscreenLnear" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.5" />
         <Property name="TransY" value="1.75" />
         <Property name="TransZ" value="-11.9" />
@@ -1014,18 +1014,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PILOTscreenRnear" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.8" />
         <Property name="TransY" value="1.75" />
         <Property name="TransZ" value="-11.9" />
@@ -1038,18 +1038,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotscreenLfar" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.1" />
         <Property name="TransY" value="1.75" />
         <Property name="TransZ" value="-11.9" />
@@ -1062,18 +1062,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotscreenRfar" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.3" />
         <Property name="TransY" value="1.75" />
         <Property name="TransZ" value="-11.9" />
@@ -1086,18 +1086,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PILOTscreenFlatL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-1.3" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-10.7" />
@@ -1110,18 +1110,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PILOTscreenFlatR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="1.5" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-10.7" />
@@ -1134,18 +1134,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotscreenFlatL2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.2" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-10.7" />
@@ -1158,18 +1158,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="PilotscreenFlatR2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.5" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-10.7" />
@@ -1182,7 +1182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_L.SCENE.MBIN" />
         </Property>
@@ -1201,7 +1201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1268,7 +1268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
@@ -1279,11 +1279,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_BackL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.7" />
         <Property name="TransY" value="-0.23" />
         <Property name="TransZ" value="2.3" />
@@ -1296,18 +1296,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_BackR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.7" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="2" />
@@ -1320,18 +1320,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_railing_BackL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="2.05" />
         <Property name="TransZ" value="2.7" />
@@ -1344,18 +1344,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_railing_BackR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="-0.5" />
         <Property name="TransZ" value="3.2" />
@@ -1368,18 +1368,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="lower stairs left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7" />
         <Property name="TransY" value="-1.1" />
         <Property name="TransZ" value="2" />
@@ -1392,18 +1392,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="lower stairs right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7" />
         <Property name="TransY" value="-1.1" />
         <Property name="TransZ" value="2" />
@@ -1416,18 +1416,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="lower stairs middle" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.1" />
         <Property name="TransZ" value="2" />
@@ -1440,18 +1440,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="TechStationCurvedRailingL front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-11.8" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="5" />
@@ -1464,18 +1464,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="TechStationCurvedRailingR front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="11.8" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="5" />
@@ -1488,18 +1488,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="TechStationCurvedRailingL side" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.3" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="6.6" />
@@ -1512,18 +1512,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="TechStationCurvedRailingR side" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.3" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="6.6" />
@@ -1536,7 +1536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.MBIN" />
         </Property>
@@ -1555,7 +1555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -1573,7 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
@@ -1669,11 +1669,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Center Floor collision cylinder" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.65" />
         <Property name="TransZ" value="-18" />
@@ -1686,26 +1686,26 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Cylinder" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="RADIUS" />
           <Property name="Value" value="23" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pilot station center collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-27.3" />
@@ -1718,30 +1718,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1.5" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing center collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-11.6" />
@@ -1754,30 +1754,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="0.5" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="0.2" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing right collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.9" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-13.4" />
@@ -1790,30 +1790,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3.4" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing left collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.9" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-13.4" />
@@ -1826,30 +1826,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3.4" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="16" />
@@ -1862,30 +1862,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="7" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="0" />
@@ -1898,30 +1898,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="0" />
@@ -1934,30 +1934,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="transporter upper right collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="7" />
@@ -1970,30 +1970,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="8" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="transporter upper left collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="7" />
@@ -2006,30 +2006,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="8" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left curved back collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-6.5" />
@@ -2042,30 +2042,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right curved back collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-6.5" />
@@ -2078,19 +2078,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
@@ -2159,11 +2159,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCCaptain_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="2.1" />
             <Property name="TransY" value="-1.12" />
             <Property name="TransZ" value="-14.3" />
@@ -2178,11 +2178,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_1stMate_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.1" />
             <Property name="TransY" value="-1.12" />
             <Property name="TransZ" value="-14.3" />
@@ -2197,11 +2197,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_BackL2_STAND_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-9" />
             <Property name="TransY" value="1.94" />
             <Property name="TransZ" value="8" />
@@ -2216,11 +2216,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_BackR2_STAND_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="9" />
             <Property name="TransY" value="1.96" />
             <Property name="TransZ" value="8" />
@@ -2235,11 +2235,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_PilotL_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-1.8" />
             <Property name="TransY" value="-1.15" />
             <Property name="TransZ" value="-25" />
@@ -2254,11 +2254,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_PilotR_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="2" />
             <Property name="TransY" value="-1.15" />
             <Property name="TransZ" value="-25" />
@@ -2273,11 +2273,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCNAV_STAND_" />
           <Property name="NameHash" value="654097330" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.981092" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="-0.130298" />
@@ -2292,11 +2292,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="ObjectSpawner" />
           <Property name="NameHash" value="2569483507" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -2309,17 +2309,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE1" />
               <Property name="NameHash" value="1611483558" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -2334,11 +2334,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE2" />
               <Property name="NameHash" value="1923083979" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-4" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -2353,11 +2353,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE3" />
               <Property name="NameHash" value="4243587945" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="4" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -2372,11 +2372,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE4" />
               <Property name="NameHash" value="843345421" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-13" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="-5" />
@@ -2391,11 +2391,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE5" />
               <Property name="NameHash" value="3172107179" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="13" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="-5" />
@@ -2425,11 +2425,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="RefDrone" />
               <Property name="NameHash" value="1298127706" />
               <Property name="Type" value="REFERENCE" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
                 <Property name="TransY" value="0.26913" />
                 <Property name="TransZ" value="0" />
@@ -2442,7 +2442,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
                 </Property>
@@ -2456,11 +2456,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightL" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="0" />
@@ -2473,42 +2473,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightR" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="0" />
@@ -2521,42 +2521,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightFront" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="-25" />
@@ -2569,42 +2569,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightBack" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="15" />
@@ -2617,31 +2617,31 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -2687,11 +2687,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof left corner" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -2704,18 +2704,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof middle back" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -2728,18 +2728,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof right corner" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -2752,18 +2752,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof side right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="5.5" />
         <Property name="TransZ" value="-3.9" />
@@ -2776,18 +2776,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof side left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="5.5" />
         <Property name="TransZ" value="-3.9" />
@@ -2800,18 +2800,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof top middle middle " />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="12" />
         <Property name="TransZ" value="1" />
@@ -2824,18 +2824,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof top middle front " />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="12" />
         <Property name="TransZ" value="-13.5" />
@@ -2848,18 +2848,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom FRAME" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="0" />
@@ -2872,18 +2872,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BIOROOM_FRAME.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.7" />
         <Property name="TransZ" value="-18" />
@@ -2896,18 +2896,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor 1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.5" />
         <Property name="TransZ" value="-18" />
@@ -2920,18 +2920,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor 2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.7" />
         <Property name="TransZ" value="-18" />
@@ -2944,18 +2944,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge underfloor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-5.9" />
         <Property name="TransZ" value="-18" />
@@ -2968,18 +2968,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Midfloor under transporter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.16" />
         <Property name="TransZ" value="-7" />
@@ -2992,18 +2992,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor back in front of back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.62" />
         <Property name="TransZ" value="9" />
@@ -3016,18 +3016,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor door right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0" />
@@ -3040,18 +3040,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor door left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0" />
@@ -3064,18 +3064,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor angle right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="1.63" />
         <Property name="TransZ" value="10" />
@@ -3088,18 +3088,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor angle left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="1.63" />
         <Property name="TransZ" value="10" />
@@ -3112,18 +3112,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall top above back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="7.9" />
         <Property name="TransZ" value="14" />
@@ -3136,18 +3136,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall back above back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="5.4" />
         <Property name="TransZ" value="18" />
@@ -3160,18 +3160,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall back in front of back door 3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="9.6" />
@@ -3184,18 +3184,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall door right 1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="0" />
@@ -3208,18 +3208,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall door left 5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="0" />
@@ -3232,18 +3232,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall angle right 3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.5" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="7.5" />
@@ -3256,18 +3256,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall angle left 4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.5" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="7.5" />
@@ -3280,18 +3280,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under left door front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-11.8" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-7" />
@@ -3304,18 +3304,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under right door front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="11.8" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-7" />
@@ -3328,18 +3328,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door right left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="-5" />
@@ -3352,18 +3352,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door right right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="5" />
@@ -3376,18 +3376,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door left right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="-5" />
@@ -3400,18 +3400,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door left left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="5" />
@@ -3424,18 +3424,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under center stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.5" />
         <Property name="TransZ" value="-7" />
@@ -3448,18 +3448,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under left door outside" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-7" />
@@ -3472,18 +3472,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under right door outside" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-7" />
@@ -3496,18 +3496,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-3" />
@@ -3520,18 +3520,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="3" />
@@ -3544,18 +3544,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-3" />
@@ -3568,18 +3568,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="3" />
@@ -3592,18 +3592,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.7" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="16.2" />
@@ -3616,18 +3616,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.7" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="16.2" />
@@ -3640,18 +3640,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingFront" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3664,18 +3664,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingRAngle" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3688,18 +3688,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingLAngle" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3712,18 +3712,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriLBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3736,18 +3736,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriLdoor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3760,18 +3760,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriRBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3784,18 +3784,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriRBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3808,18 +3808,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingRSide" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3832,18 +3832,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingLSide" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -3856,18 +3856,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesL1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -3880,18 +3880,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesCenter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -3904,18 +3904,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesR1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -3928,18 +3928,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.3" />
         <Property name="TransZ" value="6" />
@@ -3952,18 +3952,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="6.8" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="0" />
@@ -3976,18 +3976,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-6.8" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="0" />
@@ -4000,18 +4000,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTerminal" />
       <Property name="NameHash" value="737739852" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="-18" />
@@ -4024,18 +4024,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captainchair1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-13.5" />
@@ -4048,18 +4048,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pilotstation" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.8" />
         <Property name="TransZ" value="-15" />
@@ -4072,18 +4072,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="stairs railings" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.9" />
         <Property name="TransZ" value="-12" />
@@ -4096,18 +4096,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackWall" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -4120,18 +4120,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="deskmonitorR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-6.5" />
@@ -4144,18 +4144,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="deskmonitorL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-6.5" />
@@ -4168,18 +4168,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="savepoint" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-9" />
@@ -4192,18 +4192,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpita" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-9" />
@@ -4216,18 +4216,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CIRCULAR RAILING" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.1" />
         <Property name="TransZ" value="-1.1" />
@@ -4240,7 +4240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MBIN" />
         </Property>
@@ -4252,8 +4252,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGEPIRATE.SCENE.EXML",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGEPIRATE.SCENE.MBIN",
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
@@ -4369,11 +4369,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Center Floor collision cylinder" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.65" />
         <Property name="TransZ" value="-18" />
@@ -4386,26 +4386,26 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Cylinder" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="RADIUS" />
           <Property name="Value" value="23" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pilot station center collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-27.3" />
@@ -4418,30 +4418,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1.5" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing center collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-11.6" />
@@ -4454,30 +4454,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="0.5" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="0.2" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing right collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.9" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-13.4" />
@@ -4490,30 +4490,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3.4" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain railing left collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.9" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-13.4" />
@@ -4526,30 +4526,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3.4" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="16" />
@@ -4562,30 +4562,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="7" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="0" />
@@ -4598,30 +4598,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door Floor collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="1.3" />
         <Property name="TransZ" value="0" />
@@ -4634,30 +4634,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="10" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="1" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="12" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="transporter upper right collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="7" />
@@ -4670,30 +4670,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="8" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="transporter upper left collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="7" />
@@ -4706,30 +4706,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="8" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="2" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left curved back collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-6.5" />
@@ -4742,30 +4742,30 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right curved back collision" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="COLLISION" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="1.4" />
         <Property name="TransZ" value="-6.5" />
@@ -4778,19 +4778,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="TYPE" />
           <Property name="Value" value="Box" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="WIDTH" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="HEIGHT" />
           <Property name="Value" value="3" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="DEPTH" />
           <Property name="Value" value="1" />
         </Property>
@@ -4859,11 +4859,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCCaptain_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="2.1" />
             <Property name="TransY" value="-1.12" />
             <Property name="TransZ" value="-14.3" />
@@ -4878,11 +4878,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_1stMate_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.1" />
             <Property name="TransY" value="-1.12" />
             <Property name="TransZ" value="-14.3" />
@@ -4897,11 +4897,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_BackL2_STAND_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-9" />
             <Property name="TransY" value="1.94" />
             <Property name="TransZ" value="8" />
@@ -4916,11 +4916,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_BackR2_STAND_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="9" />
             <Property name="TransY" value="1.96" />
             <Property name="TransZ" value="8" />
@@ -4935,11 +4935,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_PilotL_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-1.8" />
             <Property name="TransY" value="-1.15" />
             <Property name="TransZ" value="-25" />
@@ -4954,11 +4954,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPC_PilotR_SIT_" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="2" />
             <Property name="TransY" value="-1.15" />
             <Property name="TransZ" value="-25" />
@@ -4973,11 +4973,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="NPCNAV_STAND_" />
           <Property name="NameHash" value="654097330" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="-2.981092" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="-0.130298" />
@@ -4992,11 +4992,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Attributes" />
           <Property name="Children" />
         </Property>
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="ObjectSpawner" />
           <Property name="NameHash" value="2569483507" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="0" />
             <Property name="TransZ" value="0" />
@@ -5009,17 +5009,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children">
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE1" />
               <Property name="NameHash" value="1611483558" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -5034,11 +5034,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE2" />
               <Property name="NameHash" value="1923083979" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-4" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -5053,11 +5053,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE3" />
               <Property name="NameHash" value="4243587945" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="4" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="12" />
@@ -5072,11 +5072,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE4" />
               <Property name="NameHash" value="843345421" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="-13" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="-5" />
@@ -5091,11 +5091,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Attributes" />
               <Property name="Children" />
             </Property>
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="PROPTDRAPE5" />
               <Property name="NameHash" value="3172107179" />
               <Property name="Type" value="LOCATOR" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="13" />
                 <Property name="TransY" value="7.5" />
                 <Property name="TransZ" value="-5" />
@@ -5125,11 +5125,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["CREATE_HOS"] = "TRUE",
                             ["ADD"] =
 [[
-            <Property value="TkSceneNodeData.xml">
+            <Property name="Children" value="TkSceneNodeData">
               <Property name="Name" value="RefDrone" />
               <Property name="NameHash" value="1298127706" />
               <Property name="Type" value="REFERENCE" />
-              <Property name="Transform" value="TkTransformData.xml">
+              <Property name="Transform" value="TkTransformData">
                 <Property name="TransX" value="0" />
                 <Property name="TransY" value="0.26913" />
                 <Property name="TransZ" value="0" />
@@ -5142,7 +5142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               </Property>
               <Property name="PlatformExclusion" value="0" />
               <Property name="Attributes">
-                <Property value="TkSceneNodeAttributeData.xml">
+                <Property name="Attributes" value="TkSceneNodeAttributeData">
                   <Property name="Name" value="SCENEGRAPH" />
                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\BRIDGE\DRONE.SCENE.MBIN" />
                 </Property>
@@ -5156,11 +5156,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightL" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="0" />
@@ -5173,42 +5173,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightR" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="0" />
@@ -5221,42 +5221,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightFront" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="-25" />
@@ -5269,42 +5269,42 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pointLightBack" />
       <Property name="NameHash" value="4219409884" />
       <Property name="Type" value="LIGHT" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="25" />
         <Property name="TransZ" value="15" />
@@ -5317,31 +5317,31 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FOV" />
           <Property name="Value" value="360.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="FALLOFF" />
           <Property name="Value" value="linear" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="INTENSITY" />
           <Property name="Value" value="40000.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_R" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_G" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="COL_B" />
           <Property name="Value" value="1.000000" />
         </Property>
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="MATERIAL" />
           <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
         </Property>
@@ -5377,11 +5377,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterSECTION",
                             ["ADD"] =
 [[
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof left corner" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -5394,18 +5394,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof middle back" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -5418,18 +5418,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof right corner" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="8" />
         <Property name="TransZ" value="11" />
@@ -5442,18 +5442,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_CORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof side right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="5.5" />
         <Property name="TransZ" value="-3.9" />
@@ -5466,18 +5466,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof side left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="5.5" />
         <Property name="TransZ" value="-3.9" />
@@ -5490,18 +5490,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_MIDDLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof top middle middle " />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="12" />
         <Property name="TransZ" value="1" />
@@ -5514,18 +5514,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom roof top middle front " />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="12" />
         <Property name="TransZ" value="-13.5" />
@@ -5538,18 +5538,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_ROOF_TOP.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bioroom FRAME" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="0" />
@@ -5562,18 +5562,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BIOROOM_FRAME.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.7" />
         <Property name="TransZ" value="-18" />
@@ -5586,18 +5586,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor 1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.5" />
         <Property name="TransZ" value="-18" />
@@ -5610,18 +5610,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge floor 2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.7" />
         <Property name="TransZ" value="-18" />
@@ -5634,18 +5634,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\MAINROOM_FLOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge underfloor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-5.9" />
         <Property name="TransZ" value="-18" />
@@ -5658,18 +5658,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\ROOMFOUNDATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Midfloor under transporter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.16" />
         <Property name="TransZ" value="-7" />
@@ -5682,18 +5682,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor back in front of back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.62" />
         <Property name="TransZ" value="9" />
@@ -5706,18 +5706,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor door right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0" />
@@ -5730,18 +5730,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor door left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0" />
@@ -5754,18 +5754,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor angle right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="1.63" />
         <Property name="TransZ" value="10" />
@@ -5778,18 +5778,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as floor angle left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="1.63" />
         <Property name="TransZ" value="10" />
@@ -5802,18 +5802,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall top above back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="7.9" />
         <Property name="TransZ" value="14" />
@@ -5826,18 +5826,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall back above back door" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="5.4" />
         <Property name="TransZ" value="18" />
@@ -5850,18 +5850,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall back in front of back door 3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="9.6" />
@@ -5874,18 +5874,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall door right 1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="0" />
@@ -5898,18 +5898,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall door left 5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="0" />
@@ -5922,18 +5922,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall angle right 3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.5" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="7.5" />
@@ -5946,18 +5946,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall angle left 4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.5" />
         <Property name="TransY" value="-0.3" />
         <Property name="TransZ" value="7.5" />
@@ -5970,18 +5970,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under left door front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-11.8" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-7" />
@@ -5994,18 +5994,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under right door front" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="11.8" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-7" />
@@ -6018,18 +6018,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door right left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="-5" />
@@ -6042,18 +6042,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door right right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="5" />
@@ -6066,18 +6066,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door left right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="-5" />
@@ -6090,18 +6090,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall above door left left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4" />
         <Property name="TransZ" value="5" />
@@ -6114,18 +6114,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under center stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.5" />
         <Property name="TransZ" value="-7" />
@@ -6138,18 +6138,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under left door outside" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-7" />
@@ -6162,18 +6162,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom wall as wall under right door outside" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-7" />
@@ -6186,18 +6186,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-3" />
@@ -6210,18 +6210,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="right door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="3" />
@@ -6234,18 +6234,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="-3" />
@@ -6258,18 +6258,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="left door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="16" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="3" />
@@ -6282,18 +6282,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door entrance wall left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.7" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="16.2" />
@@ -6306,18 +6306,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="back door entrance wall right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.7" />
         <Property name="TransY" value="-2.1" />
         <Property name="TransZ" value="16.2" />
@@ -6330,18 +6330,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_INNERWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingFront" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6354,18 +6354,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingRAngle" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6378,18 +6378,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingLAngle" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6402,18 +6402,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriLBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6426,18 +6426,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriLdoor" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6450,18 +6450,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriRBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6474,18 +6474,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingTriRBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6498,18 +6498,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingRSide" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6522,18 +6522,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="FloorTilingLSide" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6546,18 +6546,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesL1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -6570,18 +6570,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesCenter" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -6594,18 +6594,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bridge_Backrow_TilesR1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="1.8" />
         <Property name="TransZ" value="14.2" />
@@ -6618,18 +6618,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.3" />
         <Property name="TransZ" value="6" />
@@ -6642,18 +6642,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="6.8" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="0" />
@@ -6666,18 +6666,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Cuberoom stairs" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-6.8" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="0" />
@@ -6690,18 +6690,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_STAIRS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="RefTerminal" />
       <Property name="NameHash" value="737739852" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.2" />
         <Property name="TransZ" value="-18" />
@@ -6714,18 +6714,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captainchair1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-13.5" />
@@ -6738,18 +6738,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="pilotstation" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.8" />
         <Property name="TransZ" value="-15" />
@@ -6762,18 +6762,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="stairs railings" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1.9" />
         <Property name="TransZ" value="-12" />
@@ -6786,18 +6786,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackWall" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0" />
         <Property name="TransZ" value="0" />
@@ -6810,18 +6810,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="deskmonitorR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-6.5" />
@@ -6834,18 +6834,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="deskmonitorL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-6.5" />
@@ -6858,18 +6858,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="savepoint" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-9" />
@@ -6882,18 +6882,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINT.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="cockpita" />
       <Property name="NameHash" value="2443808107" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-2" />
         <Property name="TransZ" value="-9" />
@@ -6906,18 +6906,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CIRCULAR RAILING" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.1" />
         <Property name="TransZ" value="-1.1" />
@@ -6930,7 +6930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MBIN" />
         </Property>
@@ -6943,7 +6943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -6962,11 +6962,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"] = "ADDafterLINE",
                             ["ADD"] =
 [[
-        <Property value="TkSceneNodeData.xml">
+        <Property name="Children" value="TkSceneNodeData">
           <Property name="Name" value="BridgeScanner" />
           <Property name="NameHash" value="0" />
           <Property name="Type" value="LOCATOR" />
-          <Property name="Transform" value="TkTransformData.xml">
+          <Property name="Transform" value="TkTransformData">
             <Property name="TransX" value="0" />
             <Property name="TransY" value="1" />
             <Property name="TransZ" value="0" />
@@ -6979,7 +6979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
           <Property name="PlatformExclusion" value="0" />
           <Property name="Attributes">
-            <Property value="TkSceneNodeAttributeData.xml">
+            <Property name="Attributes" value="TkSceneNodeAttributeData">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN" />
             </Property>
@@ -7006,7 +7006,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] =
@@ -7031,11 +7031,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
+                    ["MXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcMaintenanceComponentData.xml"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
                             ["REMOVE"] = "SECTION"
                         },
                     }
@@ -7046,16 +7045,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["ADD_FILES"] =
     {
         {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
   <Property name="NameHash" value="3449727632" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -7068,21 +7067,21 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2" />
         <Property name="TransY" value="1.5" />
         <Property name="TransZ" value="18" />
@@ -7095,18 +7094,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2" />
         <Property name="TransY" value="1.5" />
         <Property name="TransZ" value="18" />
@@ -7119,18 +7118,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOORBGC" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="4.5" />
         <Property name="TransZ" value="18" />
@@ -7143,18 +7142,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BRIDGEDOOR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="3.4" />
         <Property name="TransZ" value="18" />
@@ -7167,18 +7166,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Back_CounterLeft" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-9.2" />
         <Property name="TransY" value="2.8" />
         <Property name="TransZ" value="9.2" />
@@ -7191,18 +7190,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Back_CounterRight" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="9.2" />
         <Property name="TransY" value="2.8" />
         <Property name="TransZ" value="9.2" />
@@ -7215,18 +7214,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.2" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="6.8" />
@@ -7239,18 +7238,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.2" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="6.8" />
@@ -7263,18 +7262,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-9.5" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="9.5" />
@@ -7287,18 +7286,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR2" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="9.5" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="9.5" />
@@ -7311,18 +7310,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenL3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="12" />
@@ -7335,18 +7334,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="screenR3" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7" />
         <Property name="TransY" value="3" />
         <Property name="TransZ" value="12" />
@@ -7359,18 +7358,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\COMMON\VEHICLES\SHARED\INTERIOR\SCREENS\SCREEN1_R.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor1" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.9" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="7.4" />
@@ -7383,18 +7382,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor1" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.9" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="7.4" />
@@ -7407,18 +7406,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor2" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.1" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="10.2" />
@@ -7431,18 +7430,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor2" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.1" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="10.2" />
@@ -7455,18 +7454,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallLeftMonitor3" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.7" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="12.6" />
@@ -7479,18 +7478,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackwallRightMonitor3" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.7" />
         <Property name="TransY" value="3.5" />
         <Property name="TransZ" value="12.6" />
@@ -7503,18 +7502,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall1Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-13.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="7.4" />
@@ -7527,18 +7526,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall1Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="13.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="7.4" />
@@ -7551,18 +7550,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall2Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="10.4" />
@@ -7575,18 +7574,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall2Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="10.4" />
@@ -7599,18 +7598,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall3Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="13.4" />
@@ -7623,18 +7622,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall3Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.3" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="13.4" />
@@ -7647,18 +7646,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall4Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-4.6" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="14.2" />
@@ -7671,18 +7670,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackBottomWall4Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="4.6" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="14.2" />
@@ -7695,18 +7694,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SideBottomWallRightRight" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="5" />
@@ -7719,18 +7718,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="sideBottomWall4RightLeft" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-14" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="-5" />
@@ -7743,18 +7742,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="SideBottomWallLeftRight" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="5" />
@@ -7767,18 +7766,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="sideBottomWall4LeftLeft" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="14" />
         <Property name="TransY" value="4.9" />
         <Property name="TransZ" value="-5" />
@@ -7791,18 +7790,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWallLeft" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-11.2" />
         <Property name="TransY" value="8.5" />
         <Property name="TransZ" value="8.5" />
@@ -7815,18 +7814,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow1Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-12.9" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="6.8" />
@@ -7839,18 +7838,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow1Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="12.9" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="6.8" />
@@ -7863,18 +7862,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow2Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-10.2" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="9.5" />
@@ -7887,18 +7886,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow2Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="10.2" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="9.5" />
@@ -7911,18 +7910,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow3Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-7.5" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="12.2" />
@@ -7935,18 +7934,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow3Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="7.5" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="12.2" />
@@ -7959,18 +7958,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow4Left" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-4.7" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="14" />
@@ -7983,18 +7982,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="BackTopWindow4Right" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="4.7" />
         <Property name="TransY" value="6.5" />
         <Property name="TransZ" value="14" />
@@ -8007,18 +8006,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_WINDOWSMALL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="fanbackground" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="5" />
         <Property name="TransZ" value="18" />
@@ -8031,18 +8030,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Fan" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="6.3" />
         <Property name="TransZ" value="18" />
@@ -8055,18 +8054,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\VENTILATION\VENTUNIT.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bluelight" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2" />
         <Property name="TransY" value="6.3" />
         <Property name="TransZ" value="18" />
@@ -8079,18 +8078,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Bluelight" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2" />
         <Property name="TransY" value="6.3" />
         <Property name="TransZ" value="18" />
@@ -8103,7 +8102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN" />
         </Property>
@@ -8115,16 +8114,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
   <Property name="NameHash" value="3449727632" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -8137,21 +8136,21 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captain_platform" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.85" />
         <Property name="TransZ" value="0.6" />
@@ -8164,18 +8163,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BIOROOM_CEILING_3.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="captainchair1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="0.88" />
         <Property name="TransZ" value="1.3" />
@@ -8188,18 +8187,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\CHAIRS\WAITINGROOMCHAIR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.47" />
         <Property name="TransY" value="1.05" />
         <Property name="TransZ" value="0.7" />
@@ -8212,18 +8211,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.47" />
         <Property name="TransY" value="1.05" />
         <Property name="TransZ" value="0.7" />
@@ -8236,18 +8235,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="chaircontrolsBack" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="1" />
         <Property name="TransZ" value="1" />
@@ -8260,18 +8259,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainOrangeMonitorL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0.47" />
@@ -8284,18 +8283,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainOrangeMonitorR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.48" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0.47" />
@@ -8308,18 +8307,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0.4" />
@@ -8332,18 +8331,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\SMALLCONSOLE.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.5" />
         <Property name="TransY" value="1.69" />
         <Property name="TransZ" value="0.35" />
@@ -8356,18 +8355,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\DATA_PAD.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="DatapadRscreen" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.53" />
         <Property name="TransY" value="1.69" />
         <Property name="TransZ" value="0.35" />
@@ -8380,18 +8379,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\SCREENS\DROPPODSCREEN.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainTechL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-0.48" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0.7" />
@@ -8404,18 +8403,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CaptainTechR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0.48" />
         <Property name="TransY" value="1.6" />
         <Property name="TransZ" value="0.7" />
@@ -8428,18 +8427,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TECHPANEL\TECHPANEL.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorDeskL" />
       <Property name="NameHash" value="253667532" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.1" />
         <Property name="TransY" value="0.5" />
         <Property name="TransZ" value="-1.8" />
@@ -8452,18 +8451,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorDeskR" />
       <Property name="NameHash" value="253667532" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
         <Property name="TransY" value="0.5" />
         <Property name="TransZ" value="-1.8" />
@@ -8476,18 +8475,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorL" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.1" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-1.8" />
@@ -8500,18 +8499,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="CommandMonitorR" />
       <Property name="NameHash" value="576956202" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.1" />
         <Property name="TransY" value="1.7" />
         <Property name="TransZ" value="-1.8" />
@@ -8524,7 +8523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORA.SCENE.MBIN" />
         </Property>
@@ -8536,16 +8535,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE" />
   <Property name="NameHash" value="3449727632" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -8558,21 +8557,21 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontL" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-2.8" />
         <Property name="TransY" value="1.05" />
         <Property name="TransZ" value="-10.4" />
@@ -8585,18 +8584,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Curved_Bridge_FrontR" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="2.8" />
         <Property name="TransY" value="-0.7" />
         <Property name="TransZ" value="-11" />
@@ -8609,7 +8608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.MBIN" />
         </Property>
@@ -8621,16 +8620,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
         },
         {
-            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.EXML",
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.MXML",
             ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
-<Data template="TkSceneNodeData">
+<Data template="cTkSceneNodeData">
   <Property name="Name" value="MODELS\EFFECTS\SPHERE" />
   <Property name="NameHash" value="4262346560" />
   <Property name="Type" value="MODEL" />
-  <Property name="Transform" value="TkTransformData.xml">
+  <Property name="Transform" value="TkTransformData">
     <Property name="TransX" value="0" />
     <Property name="TransY" value="0" />
     <Property name="TransZ" value="0" />
@@ -8643,21 +8642,21 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
   <Property name="PlatformExclusion" value="0" />
   <Property name="Attributes">
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="GEOMETRY" />
       <Property name="Value" value="MODELS\EFFECTS\SPHERE.GEOMETRY.MBIN" />
     </Property>
-    <Property value="TkSceneNodeAttributeData.xml">
+    <Property name="Attributes" value="TkSceneNodeAttributeData">
       <Property name="Name" value="NUMLODS" />
       <Property name="Value" value="1" />
     </Property>
   </Property>
   <Property name="Children">
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 1" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="0" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-10.9" />
@@ -8670,18 +8669,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 4" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="-3" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-12.2" />
@@ -8694,18 +8693,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
       </Property>
       <Property name="Children" />
     </Property>
-    <Property value="TkSceneNodeData.xml">
+    <Property name="Children" value="TkSceneNodeData">
       <Property name="Name" value="Circular railing 5" />
       <Property name="NameHash" value="0" />
       <Property name="Type" value="REFERENCE" />
-      <Property name="Transform" value="TkTransformData.xml">
+      <Property name="Transform" value="TkTransformData">
         <Property name="TransX" value="3" />
         <Property name="TransY" value="-1" />
         <Property name="TransZ" value="-12.25" />
@@ -8718,7 +8717,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="PlatformExclusion" value="0" />
       <Property name="Attributes">
-        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Attributes" value="TkSceneNodeAttributeData">
           <Property name="Name" value="SCENEGRAPH" />
           <Property name="Value" value="MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.MBIN" />
         </Property>
