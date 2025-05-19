@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_MOD_Frigate_repair.pak",
 ["MOD_AUTHOR"]    = "Democrity",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.52",
+["NMS_VERSION"]   = "5.64",
 ["MODIFICATIONS"] =
     {
         {
@@ -20,16 +20,17 @@ NMS_MOD_DEFINITION_CONTAINER =
                         "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\INTERACTIONS\TORPEDOCONTAINER\ENTITIES\MAINTENANCEINTERACTION.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\INTERACTIONS\TORPEDOCONTFRONTL\ENTITIES\MAINTENANCEINTERACTION.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\INTERACTIONS\TORPEDOCONTFRONTR\ENTITIES\MAINTENANCEINTERACTION.ENTITY.MBIN",
+                        "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\INTERACTIONS\TORPEDOCONTBACKR\ENTITIES\MAINTENANCEINTERACTION.ENTITY.MBIN",
                         "MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\SCENES\MAINBATTERY\ENTITIES\TURRET.ENTITY.MBIN",
                         
                     },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Template", "GcMaintenanceComponentData.xml"},
+                            ["SPECIAL_KEY_WORDS"] = {"Components", "GcMaintenanceComponentData"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"DamageStatus", "Repaired"},
+                                {"DamageStatus",          "Repaired"},
                                 {"CompletionRequirement", "NoRequirement"},
                             }
                         },
